@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 1 – Coordinates Practice | Grade 9</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📍 Chapter 1 – Orienting Yourself: The Use of Coordinates</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Coordinate Geometry Foundation</p>
+</header>
+
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">The Cartesian Plane — Axes and Quadrants</a></li>
+    <li><a href="#t2">Plotting Points in All Four Quadrants</a></li>
+    <li><a href="#t3">Reading Coordinates from a Graph</a></li>
+    <li><a href="#t4">Distance Between Two Points</a></li>
+    <li><a href="#t5">Midpoint of a Line Segment</a></li>
+    <li><a href="#t6">Collinearity of Three Points</a></li>
+    <li><a href="#t7">Graphs of Linear Equations (y=mx+c)</a></li>
+    <li><a href="#t8">Slope (Gradient) of a Line</a></li>
+    <li><a href="#t9">x-intercept and y-intercept</a></li>
+    <li><a href="#t10">Horizontal and Vertical Lines</a></li>
+    <li><a href="#t11">Parallel and Perpendicular Lines via Slope</a></li>
+    <li><a href="#t12">Real-World Coordinate Applications</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 1 -->
+<section class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>The Cartesian Plane — Axes and Quadrants</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/v/the-coordinate-plane" target="_blank">Intro to the Coordinate Plane</a>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/v/quadrants-of-coordinate-plane" target="_blank">Quadrants of the Coordinate Plane</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=9Uc62CuQjc4" target="_blank">The Coordinate Plane</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Axes and Origin</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What is the name of the horizontal number line in the Cartesian plane?<details class="ans"><summary>Show Answer</summary><p>It is called the <strong>x-axis</strong> (also called the abscissa axis).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the name of the vertical number line in the Cartesian plane?<details class="ans"><summary>Show Answer</summary><p>It is called the <strong>y-axis</strong> (also called the ordinate axis).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the point where the x-axis and y-axis intersect called, and what are its coordinates?<details class="ans"><summary>Show Answer</summary><p>It is called the <strong>origin</strong>. Its coordinates are <strong>(0, 0)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Who invented the Cartesian coordinate system? After which mathematician is it named?<details class="ans"><summary>Show Answer</summary><p>It was invented by <strong>René Descartes</strong>, a French mathematician. The word "Cartesian" comes from the Latin form of his name, <em>Cartesius</em>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">State the sign convention for points on the positive x-axis and negative x-axis.<details class="ans"><summary>Show Answer</summary><p>Points on the <strong>positive x-axis</strong> have x > 0 (right of origin). Points on the <strong>negative x-axis</strong> have x < 0 (left of origin). In both cases, y = 0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">How many quadrants does the Cartesian plane have? Name them and describe their positions.<details class="ans"><summary>Show Answer</summary><p>There are <strong>four quadrants</strong>: Quadrant I (top-right), Quadrant II (top-left), Quadrant III (bottom-left), Quadrant IV (bottom-right). They are numbered anticlockwise (in the standard convention) from the positive x-axis.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point lies on the y-axis but is not the origin. What can you say about its x-coordinate?<details class="ans"><summary>Show Answer</summary><p>Its x-coordinate is <strong>0</strong>. Any point on the y-axis has the form (0, y) where y ≠ 0.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point has coordinates (−5, 0). On which axis does it lie? In which direction from the origin?<details class="ans"><summary>Show Answer</summary><p>It lies on the <strong>x-axis</strong>, specifically on the <strong>negative x-axis</strong>, 5 units to the left of the origin.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Explain the difference between the x-coordinate (abscissa) and the y-coordinate (ordinate) of a point.<details class="ans"><summary>Show Answer</summary><p>The <strong>abscissa (x-coordinate)</strong> is the perpendicular distance of the point from the y-axis (measured along the x-axis direction). The <strong>ordinate (y-coordinate)</strong> is the perpendicular distance from the x-axis (measured along the y-axis direction).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If a point lies exactly on the x-axis at a distance of 7 units to the right of the origin, write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(7, 0)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Quadrant Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the sign of x and y coordinates in each of the four quadrants.<details class="ans"><summary>Show Answer</summary><p>Quadrant I: (+, +) | Quadrant II: (−, +) | Quadrant III: (−, −) | Quadrant IV: (+, −)</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In which quadrant does the point (3, 5) lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant I</strong> — both x and y are positive.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In which quadrant does the point (−4, 7) lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant II</strong> — x is negative, y is positive.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In which quadrant does the point (−6, −2) lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant III</strong> — both x and y are negative.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In which quadrant does the point (8, −3) lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant IV</strong> — x is positive, y is negative.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point P has a negative abscissa and a positive ordinate. In which quadrant does it lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant II</strong> (x < 0, y > 0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Without plotting, identify the quadrant for: (a) (−9, −1) (b) (2, −7) (c) (5, 11)<details class="ans"><summary>Show Answer</summary><p>(a) <strong>Quadrant III</strong> (b) <strong>Quadrant IV</strong> (c) <strong>Quadrant I</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point lies in Quadrant III. Its x-coordinate is −3. Can its y-coordinate be +2? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> In Quadrant III, both coordinates must be negative. If y = +2, the point would lie in Quadrant II.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How many quadrants have at least one negative coordinate?<details class="ans"><summary>Show Answer</summary><p><strong>Three</strong> quadrants: II (x negative), III (both negative), IV (y negative). Only Quadrant I has both coordinates positive.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point is reflected across the y-axis. It was originally in Quadrant IV. In which quadrant does it land after reflection?<details class="ans"><summary>Show Answer</summary><p>Reflecting across the y-axis changes the sign of x. Quadrant IV has (+, −). After reflection: (−, −) = <strong>Quadrant III</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Axes, Plane Properties and Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Can a point belong to two quadrants simultaneously? Why or why not?<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> Each point has a unique location. Points on the axes belong to no quadrant — the axes are the boundaries between quadrants.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The point (0, −4) lies on which axis? What is its distance from the origin?<details class="ans"><summary>Show Answer</summary><p>It lies on the <strong>negative y-axis</strong>. Distance from origin = <strong>4 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Is the point (0, 0) in any quadrant? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> The origin (0, 0) is the intersection of both axes. It belongs to neither axis nor any quadrant.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Name the axes and state the quadrant for: a point with equal positive x and y coordinates (like (3, 3)).<details class="ans"><summary>Show Answer</summary><p>Both coordinates are positive and equal, so the point lies in <strong>Quadrant I</strong> on the line y = x.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The x-axis divides the Cartesian plane into which two half-planes?<details class="ans"><summary>Show Answer</summary><p>The x-axis divides the plane into the <strong>upper half-plane</strong> (y > 0, containing Quadrants I and II) and the <strong>lower half-plane</strong> (y < 0, containing Quadrants III and IV).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If a point (a, b) is in Quadrant II, what can you say about a + b? Give an example.<details class="ans"><summary>Show Answer</summary><p>In Quadrant II: a < 0, b > 0. So a + b can be positive, negative, or zero depending on magnitudes. Example: (−2, 5) → a + b = 3 (positive); (−5, 2) → a + b = −3 (negative).</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A point (k, k) where k > 0. In which quadrant does it always lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant I</strong>, because both coordinates are positive (k > 0).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point (k, −k) where k > 0. In which quadrant does it lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant IV</strong>: x = k > 0 and y = −k < 0.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For what value of p does the point (p, 4) lie on the y-axis?<details class="ans"><summary>Show Answer</summary><p><strong>p = 0</strong>. A point lies on the y-axis when its x-coordinate is 0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The Cartesian plane is named after Descartes. Briefly describe how he is believed to have conceived the idea.<details class="ans"><summary>Show Answer</summary><p>Legend says Descartes observed a <strong>fly on his ceiling</strong> and realised he could describe its position using two perpendicular measurements from the corner walls — giving birth to the idea of a coordinate grid.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed and Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Write the coordinates of two points, one each from Quadrant II and Quadrant IV.<details class="ans"><summary>Show Answer</summary><p>Quadrant II: e.g. <strong>(−3, 4)</strong>; Quadrant IV: e.g. <strong>(5, −2)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point P is equidistant from both axes and lies in Quadrant III. If the distance from each axis is 6, write its coordinates.<details class="ans"><summary>Show Answer</summary><p>Equidistant from both axes in Quadrant III: both coordinates are negative and equal in magnitude. P = <strong>(−6, −6)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a city map modelled on a coordinate grid, Town Hall is at the origin. A school is 4 km east and 3 km north. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p>East is the positive x-direction, north is the positive y-direction. Coordinates: <strong>(4, 3)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Point A is in Quadrant I. Its reflection across the x-axis is A'. In which quadrant is A'?<details class="ans"><summary>Show Answer</summary><p>Reflecting across the x-axis negates the y-coordinate. Quadrant I (+ , +) → (+ , −) = <strong>Quadrant IV</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If (x, y) is in Quadrant III, in which quadrant is (−x, −y)?<details class="ans"><summary>Show Answer</summary><p>Quadrant III: x < 0, y < 0. So −x > 0 and −y > 0 → <strong>Quadrant I</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A treasure hunt map has a base camp at (0, 0). Clue 1 moves you 5 steps East and 2 steps South. Write the new coordinates and identify the quadrant.<details class="ans"><summary>Show Answer</summary><p>East = +x, South = −y. Coordinates: <strong>(5, −2)</strong> → <strong>Quadrant IV</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If (a, b) is in Quadrant I and (c, d) is in Quadrant III, what can you say about (a+c, b+d)?<details class="ans"><summary>Show Answer</summary><p>We cannot determine the quadrant without specific values. a > 0 and c < 0, so a + c could be positive, negative, or zero. Similarly for b + d. The result could be in any quadrant or on an axis.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How do GPS coordinates relate to the Cartesian coordinate system? Name the two measurements used in GPS.<details class="ans"><summary>Show Answer</summary><p>GPS uses <strong>latitude</strong> (like the y-axis, measuring north/south) and <strong>longitude</strong> (like the x-axis, measuring east/west) — analogous to the y and x axes of a Cartesian plane, with the equator and prime meridian as reference lines.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point (m, n) has m × n > 0. Which quadrants could it be in?<details class="ans"><summary>Show Answer</summary><p>m × n > 0 means both have the same sign. Both positive → <strong>Quadrant I</strong>; both negative → <strong>Quadrant III</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Can the x-axis and y-axis of a Cartesian plane be non-perpendicular? What happens to the coordinate system if they are not?<details class="ans"><summary>Show Answer</summary><p>By definition, the axes must be <strong>perpendicular</strong>. If they are not, the system is called an <em>oblique coordinate system</em>, which is valid mathematically but is not the standard Cartesian (rectangular) system and is harder to work with.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 2 -->
+<section class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Plotting Points in All Four Quadrants</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/v/plotting-points-in-all-four-quadrants" target="_blank">Plotting Points in All Four Quadrants</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=9Uc62CuQjc4" target="_blank">Graphing on a Coordinate Plane</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Basic Plotting Recall</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">To plot the point (4, 3), how many units do you move along the x-axis and y-axis from the origin?<details class="ans"><summary>Show Answer</summary><p>Move <strong>4 units right</strong> along the x-axis, then <strong>3 units up</strong> parallel to the y-axis.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Describe the steps to plot (−3, 5) on a coordinate grid.<details class="ans"><summary>Show Answer</summary><p>Start at origin → move <strong>3 units left</strong> along the x-axis (x = −3) → move <strong>5 units up</strong> (y = 5). Mark the point.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Describe the steps to plot (−2, −6).<details class="ans"><summary>Show Answer</summary><p>Start at origin → <strong>2 units left</strong> (x = −2) → <strong>6 units down</strong> (y = −6). This is in Quadrant III.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Describe the steps to plot (7, −4).<details class="ans"><summary>Show Answer</summary><p>Start at origin → <strong>7 units right</strong> (x = 7) → <strong>4 units down</strong> (y = −4). This is in Quadrant IV.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Plot the origin. What are its coordinates?<details class="ans"><summary>Show Answer</summary><p>The origin is plotted at the intersection of the two axes. Coordinates: <strong>(0, 0)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which direction is positive on the y-axis and which is negative?<details class="ans"><summary>Show Answer</summary><p><strong>Upward</strong> is positive (y > 0). <strong>Downward</strong> is negative (y < 0).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A student plots (3, 5) by first going 5 units up and then 3 units right. Do they arrive at the same point? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, they arrive at the same point. Coordinates are just perpendicular distances from the axes, so the order of movement does not matter — you end up at the same location (3, 5).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Plot the four points: A(2, 3), B(−2, 3), C(−2, −3), D(2, −3). What shape do they form?<details class="ans"><summary>Show Answer</summary><p>The four points form a <strong>rectangle</strong> (in fact, because the sides are equal in pairs and perpendicular, it could be confirmed as a rectangle with vertices equidistant from the axes).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why is the order of coordinates in a point important? What happens if (3, 5) is written as (5, 3)?<details class="ans"><summary>Show Answer</summary><p>Order matters because coordinates are an <strong>ordered pair</strong>. (3, 5) means x = 3, y = 5; (5, 3) means x = 5, y = 3. These are <strong>different points</strong> unless both values are equal.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Mark and label the five points: O(0,0), P(4,0), Q(0,3), R(−4,0), S(0,−3). What figures do PQRS, PRQ, and QRS each describe?<details class="ans"><summary>Show Answer</summary><p>P, Q, R, S lie on the axes symmetrically. Triangle PQR and similar triangles can be drawn. OPQS forms a right-angled set. The four points P, Q, R, S form a <strong>rhombus</strong> (a square rotated 45°) with diagonals along the axes of length 8 and 6.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Plotting from Descriptions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A point is 5 units to the left of the origin and 0 units up or down. Write its coordinates and plot it.<details class="ans"><summary>Show Answer</summary><p><strong>(−5, 0)</strong> — lies on the negative x-axis.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point is 3 units below the x-axis and lies on the y-axis. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(0, −3)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bug starts at (2, 1) and walks 3 units to the right. Write its new coordinates.<details class="ans"><summary>Show Answer</summary><p>Moving right increases x by 3. New coordinates: <strong>(5, 1)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bug starts at (2, 1) and walks 4 units downward. Write its new coordinates.<details class="ans"><summary>Show Answer</summary><p>Moving down decreases y by 4. New coordinates: <strong>(2, −3)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Plot the vertices of a triangle: A(0, 4), B(−3, −2), C(3, −2). Describe the type of triangle.<details class="ans"><summary>Show Answer</summary><p>A is directly above the midpoint of BC. BC is horizontal. Since B and C are symmetric about the y-axis, AB = AC. This is an <strong>isosceles triangle</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point P is 4 units from the y-axis (to the right) and 3 units from the x-axis (below). Write P's coordinates.<details class="ans"><summary>Show Answer</summary><p>Right of y-axis → x = +4; below x-axis → y = −3. P = <strong>(4, −3)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">List 3 points, all with the same x-coordinate of −2 but different y-coordinates. What do they have in common geometrically?<details class="ans"><summary>Show Answer</summary><p>E.g., (−2, 1), (−2, 4), (−2, −3). All lie on the <strong>vertical line x = −2</strong>, which is parallel to the y-axis.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A square has one vertex at (1, 1) and its centre at the origin. Find the other three vertices.<details class="ans"><summary>Show Answer</summary><p>By symmetry about the origin: (1,1), (−1,1), (−1,−1), (1,−1). The other three vertices are <strong>(−1, 1), (−1, −1), (1, −1)</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A point lies in Quadrant II at equal distances from both axes. If that distance is 5 units, write its coordinates.<details class="ans"><summary>Show Answer</summary><p>Quadrant II: x < 0, y > 0. Equal distances: |x| = |y| = 5. Coordinates: <strong>(−5, 5)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Ananya marks four points: (2, 3), (−2, 3), (−2, −3), (2, −3). She joins them in order. What is the perimeter of the shape formed? (Use the grid values.)<details class="ans"><summary>Show Answer</summary><p>The shape is a <strong>rectangle</strong>. Width = 2 − (−2) = 4; Height = 3 − (−3) = 6. Perimeter = 2(4 + 6) = <strong>20 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Symmetry and Reflections while Plotting</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If P = (3, 4), what are the coordinates of its reflection across the x-axis?<details class="ans"><summary>Show Answer</summary><p>Reflection across x-axis: negate y-coordinate. P' = <strong>(3, −4)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If P = (3, 4), what are the coordinates of its reflection across the y-axis?<details class="ans"><summary>Show Answer</summary><p>Reflection across y-axis: negate x-coordinate. P' = <strong>(−3, 4)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the reflection of (−5, 7) through the origin?<details class="ans"><summary>Show Answer</summary><p>Reflection through origin: negate both. P' = <strong>(5, −7)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Point A = (4, −2) is reflected across the y-axis to get A'. Then A' is reflected across the x-axis to get A''. Find A''.<details class="ans"><summary>Show Answer</summary><p>A = (4, −2) → reflect across y-axis: A' = (−4, −2) → reflect across x-axis: A'' = <strong>(−4, 2)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If a point and its reflection across the x-axis both lie on the x-axis, what can you say about the original point?<details class="ans"><summary>Show Answer</summary><p>If the reflection across the x-axis is on the x-axis, then y and −y are both 0, so <strong>y = 0</strong>. The point already lies on the x-axis.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P = (a, b) is in Quadrant I. Its reflection across the line y = x gives (b, a). In which quadrant is (b, a) if a > b > 0?<details class="ans"><summary>Show Answer</summary><p>Since a > b > 0, both b and a are positive, so (b, a) is in <strong>Quadrant I</strong>. It is just a different point in the same quadrant.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The point (−3, −4) is reflected across the x-axis. What are the new coordinates?<details class="ans"><summary>Show Answer</summary><p><strong>(−3, 4)</strong> — in Quadrant II.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Plot the image of triangle with vertices (1,2), (3,2), (2,4) after reflection in the y-axis. Write the new vertices.<details class="ans"><summary>Show Answer</summary><p>Negate each x-coordinate: (1,2)→(−1,2), (3,2)→(−3,2), (2,4)→(−2,4). New vertices: <strong>(−1, 2), (−3, 2), (−2, 4)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A shape has vertices at (2,1), (5,1), (5,4), (2,4). After reflection across the x-axis, write the new vertices.<details class="ans"><summary>Show Answer</summary><p>Negate y-coordinates: <strong>(2,−1), (5,−1), (5,−4), (2,−4)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If Q = (2, 3) and R = (−2, 3), are they reflections of each other across any axis? Which one?<details class="ans"><summary>Show Answer</summary><p>Yes — they are reflections of each other across the <strong>y-axis</strong> (same y, opposite x).</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge and Mixed</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Four points form a square. Three vertices are (0,0), (4,0), (4,4). Find the fourth vertex.<details class="ans"><summary>Show Answer</summary><p>The fourth vertex is <strong>(0, 4)</strong>. The square has side 4 along both axes from (0,0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Point A is at (1, 1). It is translated (moved) 3 units right and 2 units up. Find the new coordinates.<details class="ans"><summary>Show Answer</summary><p>x increases by 3, y increases by 2. New point: <strong>(4, 3)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">On a coordinate grid with scale 1 unit = 10 m, a football player at (3, 4) kicks a ball to (7, 4). How far did the ball travel?<details class="ans"><summary>Show Answer</summary><p>Horizontal distance = 7 − 3 = 4 units = <strong>40 m</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A robot starts at (0, 0), moves to (3, 0), then to (3, 4), then to (0, 4), then back to (0, 0). Describe the path and total distance.<details class="ans"><summary>Show Answer</summary><p>The robot traces a <strong>rectangle</strong>. Distances: 3 + 4 + 3 + 4 = <strong>14 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Aarav plots A(−1,−1), B(1,−1), C(1,1), D(−1,1) and joins them. What is the area of figure ABCD?<details class="ans"><summary>Show Answer</summary><p>ABCD is a square with side = 2 units. Area = 2² = <strong>4 square units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Plot the points (0,5), (5,0), (0,−5), (−5,0). What shape do they form? Calculate its area.<details class="ans"><summary>Show Answer</summary><p>The four points form a <strong>square</strong> (a rhombus with equal diagonals) rotated 45°. Diagonals = 10 each. Area = ½ × d₁ × d₂ = ½ × 10 × 10 = <strong>50 square units</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Give coordinates of 4 points, one in each quadrant, each exactly 5 units from the origin (do NOT use the axes).<details class="ans"><summary>Show Answer</summary><p>Examples (using 3-4-5 triangle): Q I: (3,4); Q II: (−3,4); Q III: (−3,−4); Q IV: (3,−4). Each satisfies 3²+4²=25, so distance = 5.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The point P(x, y) is plotted such that x = y. For what special line does P always lie on?<details class="ans"><summary>Show Answer</summary><p>P lies on the line <strong>y = x</strong>, which passes through the origin at 45° to both axes (in Q I and Q III).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A town planner places a park at (−4, 2) and a school at (4, 2). Are they the same distance from the y-axis? From the x-axis?<details class="ans"><summary>Show Answer</summary><p>Distance from y-axis = |x| → |−4| = 4 and |4| = 4. <strong>Yes</strong>, equidistant from y-axis. Distance from x-axis = |y| → both are 2. <strong>Yes</strong>, equidistant from x-axis too.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Seema plots two points that are mirror images across the y-axis. The first point is (7, −3). What are the possible coordinates of the second point?<details class="ans"><summary>Show Answer</summary><p>Mirror across y-axis → negate x. Second point: <strong>(−7, −3)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 3 -->
+<section class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Reading Coordinates from a Graph</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/e/identifying_points_1" target="_blank">Identifying Points on a Coordinate Plane</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=9Uc62CuQjc4" target="_blank">Reading Graphs and Coordinates</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Reading Integer Coordinates</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A point is 5 grid squares to the right and 3 squares up from the origin. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(5, 3)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point is 4 squares to the left and 6 squares up from the origin. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(−4, 6)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point is 2 squares to the left and 5 squares below the origin. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(−2, −5)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A point lies on the x-axis, 8 units to the right of the origin. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(8, 0)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From a graph, a point appears to be at the intersection of the vertical line x = −3 and the horizontal line y = 7. Write the coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(−3, 7)</strong></p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">On a grid, a point P appears to be 0 units from the x-axis and 4 units right of the y-axis. Write P's coordinates.<details class="ans"><summary>Show Answer</summary><p>0 units from x-axis → y = 0; 4 units right → x = 4. P = <strong>(4, 0)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two points are marked on a graph at (3, k) and (3, −k). If they are 8 units apart vertically, find k.<details class="ans"><summary>Show Answer</summary><p>Vertical distance = |k − (−k)| = 2|k| = 8 → |k| = 4 → k = <strong>4</strong> (or −4).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a graph, identify which quadrant a point with x = −8 and y = −1 belongs to.<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant III</strong> (both negative).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">You read a point from a graph as (0, −7). Where exactly does this point lie?<details class="ans"><summary>Show Answer</summary><p>On the <strong>negative y-axis</strong>, 7 units below the origin.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A graph shows three points: one at (4, 4), one at (−4, 4), one at (0, 0). If they form a triangle, which vertex is at the origin?<details class="ans"><summary>Show Answer</summary><p>The vertex at the <strong>origin (0, 0)</strong>. The triangle has vertices at (4,4), (−4,4), and (0,0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Reading Fractional and Decimal Coordinates</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A grid has major lines every 1 unit. A point falls halfway between x = 2 and x = 3, on y = 4. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(2.5, 4)</strong> or equivalently (5/2, 4).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point appears at ¾ of the way from (0,0) to (4,0). What are its coordinates?<details class="ans"><summary>Show Answer</summary><p>¾ × 4 = 3. Coordinates: <strong>(3, 0)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">On a graph, a point is exactly between y = −1 and y = −2, at x = 5. Write its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(5, −1.5)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point is read from a graph as being 1/3 of the way from (0,3) to (0,6). Write its coordinates.<details class="ans"><summary>Show Answer</summary><p>y = 3 + 1/3 × (6−3) = 3 + 1 = 4. Coordinates: <strong>(0, 4)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The x-axis has gridlines at each integer. A point is between x = −3 and x = −2, closer to −3 (at 1/4 of the way). Write the x-coordinate.<details class="ans"><summary>Show Answer</summary><p>x = −3 + 1/4 × (−2 − (−3)) = −3 + 0.25 = <strong>−2.75</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Describe how to read the coordinates of a point that does not fall on a grid line.<details class="ans"><summary>Show Answer</summary><p>Estimate the x and y values by noting the gridlines on either side and estimating what fraction of the gap the point occupies. Express as a decimal or fraction. For example, midway between 2 and 3 → 2.5.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point appears to have coordinates (2.5, −3.5). In which quadrant does it lie?<details class="ans"><summary>Show Answer</summary><p><strong>Quadrant IV</strong>: x = 2.5 > 0, y = −3.5 < 0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If a graph uses a scale where 1 cm = 5 units, and a point is measured at 2.4 cm from the origin along the x-axis, what is its x-coordinate?<details class="ans"><summary>Show Answer</summary><p>x = 2.4 × 5 = <strong>12</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point is plotted at (1.5, 2.5). A second point is its reflection across the y-axis. Write the second point's coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(−1.5, 2.5)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Explain how you would check if a point read from a graph (e.g., (−2, 3)) satisfies the equation y = −x + 1.<details class="ans"><summary>Show Answer</summary><p>Substitute: y = −(−2) + 1 = 2 + 1 = 3. Since the y-value (3) matches, the point <strong>(−2, 3) does satisfy</strong> the equation.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Coordinate Interpretation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A graph of temperature vs. time shows a point at (3, 25). What does this mean in context?<details class="ans"><summary>Show Answer</summary><p>At time = <strong>3 units</strong> (e.g., 3 hours), the temperature was <strong>25°</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A distance-time graph has a point at (0, 5). What does the y-coordinate 5 mean?<details class="ans"><summary>Show Answer</summary><p>At time = 0 (the start), the object was already <strong>5 units of distance</strong> away from the reference point. This is the initial distance.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a graph, two points are read: (1, 3) and (4, 3). What can you say about the segment joining them?<details class="ans"><summary>Show Answer</summary><p>Both points have the same y-coordinate (y = 3), so the segment is <strong>horizontal</strong>, parallel to the x-axis, with length 4 − 1 = 3 units.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From a graph, points A(2, 1), B(2, 5) are read. What is the length of segment AB?<details class="ans"><summary>Show Answer</summary><p>Both have x = 2, so AB is vertical. Length = |5 − 1| = <strong>4 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A graph shows points P(−3, 2) and Q(3, 2). What is the distance PQ and where is its midpoint?<details class="ans"><summary>Show Answer</summary><p>PQ is horizontal. Distance = 3 − (−3) = <strong>6 units</strong>. Midpoint = ((−3+3)/2, 2) = <strong>(0, 2)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A graph shows a quadrilateral with vertices at (1,1), (4,1), (4,4), (1,4). What shape is this and what are its dimensions?<details class="ans"><summary>Show Answer</summary><p>A <strong>square</strong> with side length 4 − 1 = 3 units. Area = 9 sq units.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three points are read from a graph: (0,0), (6,0), (3,4). Calculate the area of the triangle they form using base × height / 2.<details class="ans"><summary>Show Answer</summary><p>Base = distance from (0,0) to (6,0) = 6. Height = perpendicular distance from (3,4) to the x-axis = 4. Area = ½ × 6 × 4 = <strong>12 sq units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a graph you read the points (−2, 4) and (−2, −4). Are they symmetric about the x-axis or the y-axis?<details class="ans"><summary>Show Answer</summary><p>Same x-coordinate, opposite y-coordinates → symmetric about the <strong>x-axis</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A graph shows a line passing through (0, 3) and (4, 0). Read these intercepts and determine whether (2, 1.5) is on the line.<details class="ans"><summary>Show Answer</summary><p>The line has slope = (0−3)/(4−0) = −3/4 and y-intercept 3: y = −(3/4)x + 3. At x=2: y = −1.5 + 3 = 1.5. <strong>Yes</strong>, (2, 1.5) is on the line.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a graph, a student reads the coordinates of a point as (4, −3). Another student reads the same point as (−3, 4). Who is correct, and what mistake did the second student make?<details class="ans"><summary>Show Answer</summary><p>The <strong>first student</strong> is correct. The second student swapped the x and y coordinates — the x-coordinate (horizontal distance) must be read first, then the y-coordinate (vertical).</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Graph Matching and Error Spotting</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A student says the point (0, 4) is in Quadrant I because y is positive. Is this correct?<details class="ans"><summary>Show Answer</summary><p><strong>No</strong>. The point (0, 4) lies on the y-axis, not in any quadrant. A point on an axis is not in any quadrant.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Ramesh reads a point from a graph as (y = −2, x = 3). Rewrite the coordinates in standard form.<details class="ans"><summary>Show Answer</summary><p>Standard form is (x, y), so the coordinates are <strong>(3, −2)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">On a map grid, 1 unit = 50 m. A hospital is read at (6, 4) and a school at (6, 1). How far apart are they in metres?<details class="ans"><summary>Show Answer</summary><p>Same x, different y: distance = (4−1) = 3 units = 3 × 50 = <strong>150 m</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a graph, the highest point of a curve is at (3, 10). What does the x-coordinate 3 represent if x = time in seconds and y = height in metres?<details class="ans"><summary>Show Answer</summary><p>At <strong>3 seconds</strong>, the object reaches its maximum height of <strong>10 metres</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A graph has points A(1, 2) and B(5, 2). A student says the midpoint is (6, 4). Find the error and give the correct midpoint.<details class="ans"><summary>Show Answer</summary><p>The student added the coordinates instead of averaging them. Correct midpoint = ((1+5)/2, (2+2)/2) = <strong>(3, 2)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a graph, three collinear points are read as (0, 1), (2, 5), and (1, 3). Verify they are collinear by checking slope between consecutive pairs.<details class="ans"><summary>Show Answer</summary><p>Slope (0,1) to (2,5) = (5−1)/(2−0) = 4/2 = 2. Slope (0,1) to (1,3) = (3−1)/(1−0) = 2/1 = 2. Equal slopes through a common point → <strong>collinear ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A graph shows a point at (−5, −3). What is its distance from the x-axis and from the y-axis?<details class="ans"><summary>Show Answer</summary><p>Distance from x-axis = |y| = <strong>3 units</strong>. Distance from y-axis = |x| = <strong>5 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A line graph passes through (0, 0) and (5, 10). Read the y-value when x = 3 from the graph (assume linear).<details class="ans"><summary>Show Answer</summary><p>Slope = 10/5 = 2. y = 2x. At x = 3: y = <strong>6</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A graph has two points: A at (−3, 5) and B at (3, 5). A student claims they are reflections of each other across the x-axis. Is the student correct?<details class="ans"><summary>Show Answer</summary><p><strong>No</strong>. They have opposite x-coordinates and the same y-coordinate, so they are reflections across the <strong>y-axis</strong>, not the x-axis.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a graph, you note that every plotted point has a y-coordinate exactly double its x-coordinate. Write the equation of the line these points lie on.<details class="ans"><summary>Show Answer</summary><p>y = 2x (or equivalently, <strong>y = 2x</strong>). This line passes through the origin with slope 2.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 4 -->
+<section class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Distance Between Two Points</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Distance Formula</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BfZObnTIsYk" target="_blank">Pythagorean Theorem Connection</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Formula and Basic Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the distance formula between points P(x₁, y₁) and Q(x₂, y₂).<details class="ans"><summary>Show Answer</summary><p>PQ = √[(x₂ − x₁)² + (y₂ − y₁)²]</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the distance between (0, 0) and (3, 4).<details class="ans"><summary>Show Answer</summary><p>d = √(3² + 4²) = √(9 + 16) = √25 = <strong>5 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the distance between (1, 2) and (4, 6).<details class="ans"><summary>Show Answer</summary><p>d = √((4−1)² + (6−2)²) = √(9 + 16) = √25 = <strong>5 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the distance between (−3, −4) and (3, 4).<details class="ans"><summary>Show Answer</summary><p>d = √((3−(−3))² + (4−(−4))²) = √(36 + 64) = √100 = <strong>10 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the distance between (2, 5) and (2, 9) (same x-coordinate).<details class="ans"><summary>Show Answer</summary><p>d = √((2−2)² + (9−5)²) = √(0 + 16) = √16 = <strong>4 units</strong>. (Vertical segment)</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the distance between (−1, 3) and (4, 3) (same y-coordinate).<details class="ans"><summary>Show Answer</summary><p>d = √((4−(−1))² + 0²) = √25 = <strong>5 units</strong>. (Horizontal segment)</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The distance formula is derived from which theorem? Explain the connection.<details class="ans"><summary>Show Answer</summary><p>From the <strong>Pythagorean theorem</strong>. The horizontal difference (x₂−x₁) and vertical difference (y₂−y₁) form the two legs of a right triangle; the distance is the hypotenuse: d² = Δx² + Δy².</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the distance between A(−5, 2) and B(3, −4).<details class="ans"><summary>Show Answer</summary><p>d = √((3−(−5))² + (−4−2)²) = √(64 + 36) = √100 = <strong>10 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point P is at (a, 0) and the origin O is at (0, 0). Write the distance OP in terms of a.<details class="ans"><summary>Show Answer</summary><p>OP = √(a² + 0²) = √(a²) = <strong>|a|</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Is the distance formula affected by the order of the points? Prove with the pair (1,2) and (4,6).<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> d = √((4−1)²+(6−2)²) = √(9+16) = 5. Reversed: √((1−4)²+(2−6)²) = √(9+16) = 5. Same result because the differences are squared.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Distance in Context</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A park is at (1, 1) and a library at (4, 5) on a map where 1 unit = 100 m. Find the straight-line distance in metres.<details class="ans"><summary>Show Answer</summary><p>d = √((4−1)²+(5−1)²) = √(9+16) = √25 = 5 units = <strong>500 m</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two aircraft are at coordinates (3, 4) and (−1, 1) on a radar grid where 1 unit = 50 km. Find the distance between them in km.<details class="ans"><summary>Show Answer</summary><p>d = √((3−(−1))²+(4−1)²) = √(16+9) = √25 = 5 units = <strong>250 km</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A cricket fielder is at (6, 0) and a stump at (0, 0). Another fielder is at (0, 8). Who is farther from the stump?<details class="ans"><summary>Show Answer</summary><p>Fielder 1: d = 6 units. Fielder 2: d = 8 units. <strong>Fielder 2</strong> is farther.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Show that the triangle with vertices A(0, 0), B(5, 0), C(0, 5) is an isosceles right triangle using the distance formula.<details class="ans"><summary>Show Answer</summary><p>AB = 5, AC = 5, BC = √(25+25) = 5√2. AB = AC = 5 (isosceles). AB²+AC² = 25+25 = 50 = BC² (right angle at A). <strong>Isosceles right triangle ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove that A(1, 1), B(4, 1), C(4, 5), D(1, 5) form a rectangle using distances.<details class="ans"><summary>Show Answer</summary><p>AB = 3, BC = 4, CD = 3, DA = 4. Opposite sides equal. Diagonal AC = √(9+16)=5, BD = √(9+16) = 5. Equal diagonals → <strong>rectangle ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find the perimeter of triangle PQR where P(−1, 0), Q(3, 0), R(3, 3).<details class="ans"><summary>Show Answer</summary><p>PQ = 4, QR = 3, PR = √(16+9) = 5. Perimeter = 4+3+5 = <strong>12 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A delivery drone starts at (0,0), goes to (0, 6), then to (8, 6). Find the total distance it travels.<details class="ans"><summary>Show Answer</summary><p>Leg 1: (0,0) to (0,6) = 6. Leg 2: (0,6) to (8,6) = 8. Total = <strong>14 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three cities are at A(0, 0), B(3, 4), C(6, 0). Show that ABC is isosceles.<details class="ans"><summary>Show Answer</summary><p>AB = √(9+16) = 5. BC = √(9+16) = 5. AC = 6. AB = BC = 5 → <strong>isosceles ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the distance from (−2, 3) to the origin.<details class="ans"><summary>Show Answer</summary><p>d = √(4+9) = √13 ≈ <strong>3.6 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A student claims the distance between (2, 3) and (−1, 7) is √(1+16)=√17. Find the error and give the correct answer.<details class="ans"><summary>Show Answer</summary><p>Error: Δx = −1−2 = −3, Δx² = 9 (not 1). Correct: d = √(9+16) = √25 = <strong>5 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding Unknown Coordinates from Distance</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If the distance between (x, 0) and (0, 0) is 7, find x.<details class="ans"><summary>Show Answer</summary><p>|x| = 7 → x = <strong>7 or −7</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The distance between A(3, y) and B(3, 1) is 5. Find y.<details class="ans"><summary>Show Answer</summary><p>|y − 1| = 5 → y − 1 = ±5 → y = <strong>6 or −4</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The distance between P(1, 2) and Q(x, 6) is 5. Find x.<details class="ans"><summary>Show Answer</summary><p>√((x−1)²+16) = 5 → (x−1)² = 9 → x−1 = ±3 → x = <strong>4 or −2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point P is equidistant from A(0, 0) and B(6, 0) and lies on the y-axis. Find P.<details class="ans"><summary>Show Answer</summary><p>On y-axis: P = (0, y). PA = √y², PB = √(36+y²). PA = PB → y² = 36+y² → −36 = 0. No solution! A point equidistant from A and B on the y-axis exists only on the perpendicular bisector: x = 3. There is <strong>no such point on the y-axis</strong> unless A and B are symmetric about it.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The distance between (0, 0) and (a, a) is 6√2. Find a.<details class="ans"><summary>Show Answer</summary><p>√(a²+a²) = 6√2 → √(2a²) = 6√2 → a√2 = 6√2 → a = <strong>6</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point (x, 3) is at distance 5 from (1, 7). Find x.<details class="ans"><summary>Show Answer</summary><p>√((x−1)²+(3−7)²) = 5 → (x−1)²+16 = 25 → (x−1)² = 9 → x = <strong>4 or −2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The vertices of a rhombus are at (0, 3), (4, 0), (0, −3), (−4, 0). Find the side length.<details class="ans"><summary>Show Answer</summary><p>Side from (0,3) to (4,0): √(16+9) = √25 = 5. All sides = <strong>5 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Show that (1, 1), (−1, −1), (1, −1), (−1, 1) form a square and find its side and diagonal.<details class="ans"><summary>Show Answer</summary><p>Side: e.g. (1,1) to (1,−1) = 2. All sides = 2. Diagonal: (1,1) to (−1,−1) = √(4+4) = 2√2. Side = <strong>2</strong>, diagonal = <strong>2√2 ≈ 2.83 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P is at distance 10 from origin and has x = 6. Find possible y-coordinates.<details class="ans"><summary>Show Answer</summary><p>√(36 + y²) = 10 → y² = 64 → y = <strong>±8</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The distance between two points on the x-axis is 9. One point is at (−2, 0). Find the other point.<details class="ans"><summary>Show Answer</summary><p>The other point is also on x-axis: (x, 0). |x − (−2)| = 9 → x + 2 = ±9 → x = <strong>7 or −11</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Proof and Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Using the distance formula, show that the points A(2, 2), B(−2, 2), C(−2, −2), D(2, −2) are vertices of a square.<details class="ans"><summary>Show Answer</summary><p>AB = 4, BC = 4, CD = 4, DA = 4. Diagonal AC = √(16+16) = 4√2. BD = 4√2. All sides equal and diagonals equal → <strong>square ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Check if A(0,0), B(1,√3), C(2,0) forms an equilateral triangle.<details class="ans"><summary>Show Answer</summary><p>AB = √(1+3) = 2. BC = √(1+3) = 2. AC = 2. All sides = 2. <strong>Equilateral ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A(−3, 0), B(3, 0), C(0, h) form an equilateral triangle. Find h.<details class="ans"><summary>Show Answer</summary><p>AB = 6. AC = √(9+h²). For equilateral: AC = 6 → 9+h² = 36 → h² = 27 → h = <strong>3√3</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove that the diagonals of rectangle with vertices (0,0),(5,0),(5,3),(0,3) are equal.<details class="ans"><summary>Show Answer</summary><p>D1 from (0,0) to (5,3): √(25+9)=√34. D2 from (5,0) to (0,3): √(25+9)=√34. <strong>Equal ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point P moves such that its distance from (3, 0) always equals its distance from (−3, 0). What is the locus of P?<details class="ans"><summary>Show Answer</summary><p>Equidistant from (3,0) and (−3,0): the perpendicular bisector of the segment, which is the <strong>y-axis (x = 0)</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find the perimeter of the quadrilateral with vertices A(1,2), B(4,6), C(7,2), D(4,−2).<details class="ans"><summary>Show Answer</summary><p>AB = √(9+16)=5; BC = √(9+16)=5; CD = √(9+16)=5; DA = √(9+16)=5. Perimeter = <strong>20 units</strong>. (Rhombus!)</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two points are (k, 2k) and (2k, k). If their distance is 3√2, find k.<details class="ans"><summary>Show Answer</summary><p>d = √((2k−k)²+(k−2k)²) = √(k²+k²) = k√2. k√2 = 3√2 → k = <strong>3</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If the distance between (2, −3) and (10, y) is 10, find y.<details class="ans"><summary>Show Answer</summary><p>√(64+(y+3)²) = 10 → (y+3)² = 36 → y+3 = ±6 → y = <strong>3 or −9</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the lengths of the medians of triangle A(0,0), B(6,0), C(0,8).<details class="ans"><summary>Show Answer</summary><p>Midpoints: M_AB=(3,0), M_BC=(3,4), M_CA=(0,4). Median from C to M_AB: √(9+64)=√73. Median from A to M_BC: √(9+16)=5. Median from B to M_CA: √(36+16)=√52=2√13.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Show that the point (5, 5) is equidistant from (1, 1) and (9, 1) but NOT the midpoint of the segment joining them.<details class="ans"><summary>Show Answer</summary><p>d to (1,1) = √(16+16)=√32. d to (9,1) = √(16+16)=√32. Equal ✓. Midpoint of (1,1) and (9,1) = (5, 1) ≠ (5, 5). <strong>Not the midpoint ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 5 -->
+<section class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Midpoint of a Line Segment</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/midpoint-formula" target="_blank">Midpoint Formula</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Applying the Midpoint Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the midpoint formula for the segment joining (x₁, y₁) and (x₂, y₂).<details class="ans"><summary>Show Answer</summary><p>M = ((x₁+x₂)/2 , (y₁+y₂)/2)</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of the segment joining (2, 4) and (8, 10).<details class="ans"><summary>Show Answer</summary><p>M = ((2+8)/2, (4+10)/2) = (10/2, 14/2) = <strong>(5, 7)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of (−3, 5) and (7, −1).<details class="ans"><summary>Show Answer</summary><p>M = ((−3+7)/2, (5+(−1))/2) = (4/2, 4/2) = <strong>(2, 2)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of (0, 0) and (10, 6).<details class="ans"><summary>Show Answer</summary><p>M = (5, 3).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of (−4, −6) and (4, 6).<details class="ans"><summary>Show Answer</summary><p>M = (0, 0) — the <strong>origin</strong>. The two points are symmetric about the origin.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the midpoint of a point P(a, b) and the origin O(0, 0)?<details class="ans"><summary>Show Answer</summary><p>M = (a/2, b/2).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of (1/2, 3) and (3/2, 7).<details class="ans"><summary>Show Answer</summary><p>M = ((1/2+3/2)/2, (3+7)/2) = (2/2, 10/2) = (1, 5).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The midpoint of AB is (4, 3). A = (2, 1). Find B.<details class="ans"><summary>Show Answer</summary><p>(2+x)/2 = 4 → x = 6. (1+y)/2 = 3 → y = 5. B = <strong>(6, 5)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The midpoint of PQ is (0, 0). P = (−3, 4). Find Q.<details class="ans"><summary>Show Answer</summary><p>(−3+x)/2=0 → x=3; (4+y)/2=0 → y=−4. Q = <strong>(3, −4)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of the segment from (−7, 2) to (3, −8).<details class="ans"><summary>Show Answer</summary><p>M = ((−7+3)/2, (2+(−8))/2) = (−4/2, −6/2) = <strong>(−2, −3)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Finding Endpoints from Midpoints</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">M(3, 5) is the midpoint of AB. A = (1, 3). Find B.<details class="ans"><summary>Show Answer</summary><p>B = (2×3−1, 2×5−3) = (6−1, 10−3) = <strong>(5, 7)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">M(−1, 2) is the midpoint of PQ. P = (3, −4). Find Q.<details class="ans"><summary>Show Answer</summary><p>Q = (2×(−1)−3, 2×2−(−4)) = (−2−3, 4+4) = <strong>(−5, 8)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The midpoint of RS is (0, 3). R = (−4, 5). Find S.<details class="ans"><summary>Show Answer</summary><p>S = (2×0−(−4), 2×3−5) = (4, 1).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A diameter of a circle has endpoints A(2, −3) and B. If the centre is at (5, 1), find B.<details class="ans"><summary>Show Answer</summary><p>Centre = midpoint of diameter. (2+x)/2 = 5 → x = 8; (−3+y)/2 = 1 → y = 5. B = <strong>(8, 5)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">M(2, 2) is the midpoint of AC where A = (−2, 4). Find C.<details class="ans"><summary>Show Answer</summary><p>C = (2×2−(−2), 2×2−4) = (6, 0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The midpoint of a line segment is on the y-axis at (0, 5). One endpoint is (4, 2). Find the other endpoint.<details class="ans"><summary>Show Answer</summary><p>(4+x)/2 = 0 → x = −4; (2+y)/2 = 5 → y = 8. Other endpoint: <strong>(−4, 8)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The mid-points of three sides of a triangle are (1,1), (2,3), (3,2). One vertex is at (0,0). Find another vertex using midpoint reversal.<details class="ans"><summary>Show Answer</summary><p>If (1,1) is the midpoint of side from (0,0) to vertex B: B = (2×1−0, 2×1−0) = <strong>(2, 2)</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A line segment has one endpoint at (−3, −1) and its midpoint at the origin. Find the other endpoint.<details class="ans"><summary>Show Answer</summary><p>Other = (−(−3), −(−1)) = <strong>(3, 1)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(a, b) has midpoint M(3, 4) with Q(7, 2). Find a and b.<details class="ans"><summary>Show Answer</summary><p>(a+7)/2 = 3 → a = −1; (b+2)/2 = 4 → b = 6. <strong>a = −1, b = 6</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The midpoint of (2k, k+1) and (4, 3) is (k+2, k). Find k.<details class="ans"><summary>Show Answer</summary><p>x: (2k+4)/2 = k+2 → 2k+4 = 2k+4 → always true. y: (k+1+3)/2 = k → k+4 = 2k → k = <strong>4</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Midpoints in Geometry</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the centroid (average of all three vertices) of triangle A(2, 0), B(0, 4), C(4, 2).<details class="ans"><summary>Show Answer</summary><p>Centroid = ((2+0+4)/3, (0+4+2)/3) = (6/3, 6/3) = <strong>(2, 2)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line segment joins (−6, 4) and (2, −4). Find its midpoint and verify it lies between the two endpoints.<details class="ans"><summary>Show Answer</summary><p>M = ((−6+2)/2, (4−4)/2) = (−4/2, 0) = <strong>(−2, 0)</strong>. x value −2 is between −6 and 2 ✓. y = 0 is between 4 and −4 ✓.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Prove that the diagonals of a parallelogram with vertices A(0,0), B(4,0), C(5,3), D(1,3) bisect each other.<details class="ans"><summary>Show Answer</summary><p>Diagonal AC midpoint: ((0+5)/2,(0+3)/2) = (2.5, 1.5). Diagonal BD midpoint: ((4+1)/2,(0+3)/2) = (2.5, 1.5). Same midpoint → <strong>diagonals bisect each other ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find the midpoint of the hypotenuse of the right triangle with legs along the axes: A(0,0), B(6,0), C(0,8).<details class="ans"><summary>Show Answer</summary><p>Hypotenuse is BC. Midpoint = ((6+0)/2, (0+8)/2) = <strong>(3, 4)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The midpoints of the sides of a triangle are (1,0), (0,1), (1,2). Find the vertices of the original triangle.<details class="ans"><summary>Show Answer</summary><p>Using the midpoint triangle property: Vertices are (0,−1), (2,1), (0,3). (Detailed working: if midpoints M_AB, M_BC, M_CA are given, vertex A = M_AB + M_CA − M_BC etc.)</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Show that the midpoint of any segment from (a, 0) to (0, b) always lies on the line x/a + y/b = 1/1 (intercept form check).<details class="ans"><summary>Show Answer</summary><p>Midpoint M = (a/2, b/2). Check on x/a + y/b = 1: (a/2)/a + (b/2)/b = 1/2 + 1/2 = 1 ✓. <strong>The midpoint lies on the intercept line</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A wire is stretched from A(−5, 0) to B(5, 0). A support post is placed at the midpoint. Find where the post is placed.<details class="ans"><summary>Show Answer</summary><p>M = (0, 0) — at the <strong>origin</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If M(2, 3) is the midpoint of AB and N(5, 7) is the midpoint of BC, find the midpoint of AC (where B is common).<details class="ans"><summary>Show Answer</summary><p>A = 2M−B, C = 2N−B. Midpoint of AC = (A+C)/2 = (2M+2N−2B)/2 = M+N−B. We need B: this problem needs more info. If we interpret differently: midpoint of MN = ((2+5)/2,(3+7)/2) = <strong>(3.5, 5)</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The centre of a circle is at (3, −1). One end of a diameter is at (6, 2). Find the other end.<details class="ans"><summary>Show Answer</summary><p>Other end = (2×3−6, 2×(−1)−2) = (0, −4). <strong>(0, −4)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For the rectangle A(0,0), B(8,0), C(8,6), D(0,6), find the intersection of the diagonals using the midpoint formula.<details class="ans"><summary>Show Answer</summary><p>Diagonal AC: midpoint = ((0+8)/2,(0+6)/2) = (4, 3). Diagonal BD: midpoint = ((8+0)/2,(0+6)/2) = (4, 3). Intersection = <strong>(4, 3)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Word Problems and Mixed</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two friends live at A(2, 5) and B(8, 1) on a map. They agree to meet at the midpoint. Where do they meet?<details class="ans"><summary>Show Answer</summary><p>M = (5, 3).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A signboard is to be placed at the middle of a road stretching from (−10, 4) to (6, 4). Find the position of the sign.<details class="ans"><summary>Show Answer</summary><p>M = ((−10+6)/2, 4) = (−2, 4). Sign at <strong>(−2, 4)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bridge spans from pier A(−4, 0) to pier B(4, 0). The midpoint is strengthened with a column. Where is the column?<details class="ans"><summary>Show Answer</summary><p>M = (0, 0) — at the <strong>origin</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two ships are at sea at coordinates (10, −2) and (−4, 8). A rescue helicopter heads to the midpoint. Where does it go?<details class="ans"><summary>Show Answer</summary><p>M = (3, 3).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Riya runs from (0, 0) to (12, 0) and Arjun runs from (0, 0) to (0, 8). They mark the midpoints of their paths. Who is farther from the origin?<details class="ans"><summary>Show Answer</summary><p>Riya's midpoint: (6,0), distance = 6. Arjun's midpoint: (0,4), distance = 4. <strong>Riya is farther (6 > 4)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A highway runs between (−8, 3) and (4, −5). A rest stop is built at its midpoint. Find the coordinates of the rest stop.<details class="ans"><summary>Show Answer</summary><p>M = ((−8+4)/2, (3+(−5))/2) = (−2, −1).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The midpoint of the segment joining (3a, 4) and (−a, 2b) is (−2, 5). Find a and b.<details class="ans"><summary>Show Answer</summary><p>x: (3a+(−a))/2 = −2 → 2a/2 = −2 → a = −2. y: (4+2b)/2 = 5 → 4+2b = 10 → b = 3. <strong>a = −2, b = 3</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If the midpoint of (x, 4) and (3, y) is (5, 7), find x and y.<details class="ans"><summary>Show Answer</summary><p>(x+3)/2 = 5 → x = 7. (4+y)/2 = 7 → y = 10. <strong>x = 7, y = 10</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Using the midpoint theorem, find the midpoint of the segment connecting the midpoints of the diagonals AC and BD of quadrilateral A(0,0), B(4,2), C(6,6), D(2,4).<details class="ans"><summary>Show Answer</summary><p>Midpoint AC = (3,3). Midpoint BD = (3,3). They coincide → <strong>(3, 3)</strong>. (In fact ABCD is a parallelogram.)</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tightrope walker starts at (−6, 0) and ends at (6, 0), but the rope sags at the midpoint to (0, −2). Find the midpoint of each half-segment.<details class="ans"><summary>Show Answer</summary><p>Left half: midpoint of (−6,0) and (0,−2) = (−3, −1). Right half: midpoint of (0,−2) and (6,0) = (3, −1).</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 6 -->
+<section class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Collinearity of Three Points</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:slope/v/slope-of-a-line" target="_blank">Slope and Collinearity</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Area Method</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the condition for A(x₁,y₁), B(x₂,y₂), C(x₃,y₃) to be collinear using the area formula.<details class="ans"><summary>Show Answer</summary><p>½|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)| = 0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Check if A(1,1), B(2,2), C(3,3) are collinear.<details class="ans"><summary>Show Answer</summary><p>Area = ½|1(2−3)+2(3−1)+3(1−2)| = ½|−1+4−3| = 0. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Check if P(0,0), Q(1,2), R(2,4) are collinear.<details class="ans"><summary>Show Answer</summary><p>Area = ½|0+1(4)+2(−2)| = ½|4−4| = 0. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are A(1,2), B(3,4), C(5,7) collinear?<details class="ans"><summary>Show Answer</summary><p>Area = ½|1(4−7)+3(7−2)+5(2−4)| = ½|−3+15−10| = ½|2| = 1 ≠ 0. <strong>Not collinear</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Are (−2,−3), (1,0), (4,3) collinear?<details class="ans"><summary>Show Answer</summary><p>Area = ½|(−2)(0−3)+1(3+3)+4(−3−0)| = ½|6+6−12| = 0. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are (0,4), (3,1), (6,−2) collinear?<details class="ans"><summary>Show Answer</summary><p>Area = ½|0(1+2)+3(−2−4)+6(4−1)| = ½|0−18+18| = 0. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">For what value of k are (1,2), (3,k), (5,8) collinear?<details class="ans"><summary>Show Answer</summary><p>Area=0: 1(k−8)+3(8−2)+5(2−k)=0 → k−8+18+10−5k=0 → −4k+20=0 → k=<strong>5</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For what value of p are (2,1), (p,3), (6,5) collinear?<details class="ans"><summary>Show Answer</summary><p>2(3−5)+p(5−1)+6(1−3)=0 → −4+4p−12=0 → 4p=16 → p=<strong>4</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain why collinear points form a "triangle" of zero area.<details class="ans"><summary>Show Answer</summary><p>If all three points lie on one line, they form a <strong>degenerate triangle</strong> with no enclosed area — all vertices are on the same line.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three points A(0,0), B(a,0), C(0,b) are collinear. What must hold?<details class="ans"><summary>Show Answer</summary><p>Area = ½|ab| = 0 → ab=0 → a=0 or b=0. At least one point coincides with the origin.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Slope Method</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How is slope used to check collinearity of three points?<details class="ans"><summary>Show Answer</summary><p>A, B, C are collinear if slope(AB) = slope(BC). Equal slopes through a common point confirm all three lie on one line.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Check (1,3), (3,7), (5,11) using slopes.<details class="ans"><summary>Show Answer</summary><p>Slope AB=2, Slope BC=2. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Check (2,0), (5,6), (8,12).<details class="ans"><summary>Show Answer</summary><p>Slope AB=2, Slope BC=2. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Check (0,0), (4,3), (8,7).<details class="ans"><summary>Show Answer</summary><p>Slope OA=3/4, Slope AB=(7−3)/4=1. Not equal → <strong>Not collinear</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For what m are (1,2), (3,m), (5,10) collinear?<details class="ans"><summary>Show Answer</summary><p>Slope (1,2)→(5,10)=2. (m−2)/2=2 → m=<strong>6</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Points (0,5),(3,8),(6,k): find k for collinearity.<details class="ans"><summary>Show Answer</summary><p>Slope constant=1. k=8+3=<strong>11</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Check A(−3,−4), B(0,−1), C(3,2).<details class="ans"><summary>Show Answer</summary><p>Slope AB=1, Slope BC=1. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If (k,2k),(3,5),(2,1) are collinear, find k.<details class="ans"><summary>Show Answer</summary><p>Slope (2,1)→(3,5)=4. (5−2k)/(3−k)=4 → 5−2k=12−4k → 2k=7 → k=<strong>7/2</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Why does the slope method fail for vertical pairs?<details class="ans"><summary>Show Answer</summary><p>Slope is undefined when x₁=x₂ (division by zero). Use the area method instead.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">(1,1),(3,3),(5,5) all satisfy y=x. Are they collinear without calculation?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong> — all lie on the same line y=x.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding Unknowns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find a if A(a,2), B(3,4), C(7,8) are collinear.<details class="ans"><summary>Show Answer</summary><p>Slope BC=1. (4−2)/(3−a)=1 → 2=3−a → a=<strong>1</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Are (3,−1),(0,−7),(−2,−11) collinear?<details class="ans"><summary>Show Answer</summary><p>Slope (3,−1)→(0,−7)=2; Slope (0,−7)→(−2,−11)=2. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For A(t,2t), B(2,−3), C(4,−9) collinear, find t.<details class="ans"><summary>Show Answer</summary><p>Slope BC=−3. Line: y=−3x+3. At A: 2t=−3t+3 → t=<strong>3/5</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find q if (q,0),(0,q),(1,1) are collinear (q≠0).<details class="ans"><summary>Show Answer</summary><p>Area: q(q−1)+0(1−0)+1(0−q)=q²−2q=0 → q(q−2)=0 → q=<strong>2</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">O(0,0), A(2,3), B(4,6): collinear? Which point is between the others?<details class="ans"><summary>Show Answer</summary><p>Slope OA=3/2=slope AB. Collinear ✓. x values: 0<2<4 → <strong>A lies between O and B</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If (0,b),(1,b+3),(2,b+6) are always collinear, find the slope.<details class="ans"><summary>Show Answer</summary><p>Slope = 3/1 = <strong>3</strong>. Line: y=3x+b.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Towns at A(0,0), B(5,5), C(10,10): collinear? Equation of road?<details class="ans"><summary>Show Answer</summary><p>Slope AB=1=slope BC. Collinear ✓. Road: <strong>y=x</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find k: (3,k),(2,−2),(−1,−8) collinear.<details class="ans"><summary>Show Answer</summary><p>Slope (2,−2)→(−1,−8)=2. (−2−k)/(2−3)=2 → k+2=2 → k=<strong>0</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three bus stops at (2,4),(5,7),(8,10). On same road? Equation?<details class="ans"><summary>Show Answer</summary><p>All slopes=1. Collinear ✓. Line: <strong>y=x+2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Stumps at (0,0),(0,1),(0,2): collinear? Which line?<details class="ans"><summary>Show Answer</summary><p>All x=0 → on the <strong>y-axis (x=0)</strong>. Collinear ✓.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A(1,2),B(3,4),C(5,6) are on y=x+1. Is D(7,8) also on it?<details class="ans"><summary>Show Answer</summary><p>8=7+1=8 ✓. <strong>Yes</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Students at (2,0),(5,0),(8,0): collinear? Why?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong> — all on the x-axis (y=0).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A(1,1),B(2,2),C(k,k): always collinear? What line?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong> — all satisfy y=x for any k.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Show: midpoint of A(0,0) and C(6,6) is B(3,3) → A,B,C collinear.<details class="ans"><summary>Show Answer</summary><p>Midpoint of AC = (3,3)=B ✓. B lies on AC → <strong>collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three points have area 6. Are they collinear?<details class="ans"><summary>Show Answer</summary><p><strong>No</strong>. Collinear ↔ area=0. Area=6≠0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If (x₁,y₁),(x₂,y₂) lie on y=3x−2, is any third point on this line also collinear with them?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong> — any three points on the same line are collinear.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find a if (a,1),(0,3),(−a,5) are always collinear for a≠0. Prove it.<details class="ans"><summary>Show Answer</summary><p>Area=½|a(3−5)+0(5−1)+(−a)(1−3)|=½|−2a+2a|=0 always. <strong>Collinear for all a≠0</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Are (a,a²),(b,b²),(c,c²) always collinear for distinct a,b,c?<details class="ans"><summary>Show Answer</summary><p><strong>No</strong>. Points on a parabola are generally not collinear; area=½|(a−b)(b−c)(c−a)|≠0 for distinct a,b,c.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A(2,5),B(4,9),C(6,13): verify collinearity by slope.<details class="ans"><summary>Show Answer</summary><p>Slope AB=2, Slope BC=2. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">For what value of a is the triangle formed by (a,1),(0,3),(−a,5) degenerate?<details class="ans"><summary>Show Answer</summary><p>Always degenerate (area always 0 as shown above) — <strong>for all real a</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 7 -->
+<section class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Graphs of Linear Equations (y = mx + c)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:slope-intercept-form/v/slope-intercept-form" target="_blank">Slope-Intercept Form y=mx+c</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=MXV65i9g1Xg" target="_blank">Graphing Linear Equations</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying m and c; Checking Points</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In y=mx+c, what do m and c represent?<details class="ans"><summary>Show Answer</summary><p><strong>m</strong> = slope (gradient); <strong>c</strong> = y-intercept (value of y when x=0).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From y=3x+5, identify slope and y-intercept.<details class="ans"><summary>Show Answer</summary><p>Slope=<strong>3</strong>, y-intercept=<strong>5</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From y=−2x+7, identify slope and y-intercept.<details class="ans"><summary>Show Answer</summary><p>Slope=<strong>−2</strong>, y-intercept=<strong>7</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Rewrite 2x+y=8 in slope-intercept form.<details class="ans"><summary>Show Answer</summary><p>y=−2x+8. Slope=<strong>−2</strong>, c=<strong>8</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Is (2,7) on y=3x+1?<details class="ans"><summary>Show Answer</summary><p>3(2)+1=7=7 ✓. <strong>Yes</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Is (−1,4) on y=−2x+2?<details class="ans"><summary>Show Answer</summary><p>−2(−1)+2=4 ✓. <strong>Yes</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find y when x=4 on y=½x+3.<details class="ans"><summary>Show Answer</summary><p>y=2+3=<strong>5</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Make a table for y=4x−3 at x=−1,0,1,2.<details class="ans"><summary>Show Answer</summary><p>x=−1:y=−7; x=0:y=−3; x=1:y=1; x=2:y=5.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line has slope 2 and passes through (0,−4). Write its equation.<details class="ans"><summary>Show Answer</summary><p>y=2x−4.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Rewrite 3x−4y+12=0 in y=mx+c form.<details class="ans"><summary>Show Answer</summary><p>y=(3/4)x+3. Slope=<strong>3/4</strong>, c=<strong>3</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Graphing Lines</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Describe how to graph y=2x+1 using slope and y-intercept.<details class="ans"><summary>Show Answer</summary><p>Plot (0,1). Use slope 2: go 1 right, 2 up → (1,3). Draw line.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Plot three points on y=−x+4 and describe the line's direction.<details class="ans"><summary>Show Answer</summary><p>(0,4),(2,2),(4,0). Line <strong>falls left to right</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find x and y intercepts of y=3x−9.<details class="ans"><summary>Show Answer</summary><p>y-int: (0,−9). x-int: x=3 → (3,0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find two intercepts of y=½x−2 to sketch it.<details class="ans"><summary>Show Answer</summary><p>y-int:(0,−2). x-int:(4,0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Compare y=2x+1 and y=2x−3. How do they relate?<details class="ans"><summary>Show Answer</summary><p>Same slope=2. They are <strong>parallel</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Describe the line y=x geometrically.<details class="ans"><summary>Show Answer</summary><p>Passes through origin, slope=1, 45° angle, bisects Q I and Q III.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Does y=5x pass through the origin? Why?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>. At x=0, y=0. Any y=mx passes through origin.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Equation with slope −3 and y-intercept 6. Find y when x=2.<details class="ans"><summary>Show Answer</summary><p>y=−3x+6. At x=2: y=<strong>0</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line crosses y-axis at −5 and rises 3 per unit right. Where does it cross x-axis?<details class="ans"><summary>Show Answer</summary><p>y=3x−5. x-int: x=5/3 → <strong>(5/3, 0)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Verify: line through (2,5) and (4,9) has equation y=2x+1.<details class="ans"><summary>Show Answer</summary><p>Slope=(9−5)/2=2. At (2,5): 2(2)+1=5 ✓. <strong>Correct</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Writing Equations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Equation through (0,3) with slope 4.<details class="ans"><summary>Show Answer</summary><p>y=4x+3.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Equation through (1,3) and (3,7).<details class="ans"><summary>Show Answer</summary><p>Slope=2. y=2x+1.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Equation through (−2,5) and (2,1).<details class="ans"><summary>Show Answer</summary><p>Slope=−1. y=−x+3.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Line through origin and (3,6).<details class="ans"><summary>Show Answer</summary><p>Slope=2. y=2x.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Line with zero slope through (0,−4).<details class="ans"><summary>Show Answer</summary><p>y=−4.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope −½ through (4,2).<details class="ans"><summary>Show Answer</summary><p>y=−½x+4.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">y=mx+4 passes through (2,10). Find m.<details class="ans"><summary>Show Answer</summary><p>10=2m+4 → m=<strong>3</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Line through (0,0) and (−4,8).<details class="ans"><summary>Show Answer</summary><p>Slope=−2. y=−2x.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Parallel to y=3x−1 through (0,5).<details class="ans"><summary>Show Answer</summary><p>y=3x+5.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the equation of a line with slope ⅔ and x-intercept 6.<details class="ans"><summary>Show Answer</summary><p>Point (6,0), slope ⅔. y−0=⅔(x−6) → y=⅔x−4.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Real-Life Linear Graphs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Taxi: ₹50 fixed + ₹15/km. Equation for cost C vs km x.<details class="ans"><summary>Show Answer</summary><p>C=15x+50.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Using C=15x+50, find cost for 8 km.<details class="ans"><summary>Show Answer</summary><p>C=120+50=₹<strong>170</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Candle 20 cm, burns 0.5 cm/min. Height equation h(t).<details class="ans"><summary>Show Answer</summary><p>h=−0.5t+20.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">When does the candle burn out (h=0)?<details class="ans"><summary>Show Answer</summary><p>0=−0.5t+20 → t=<strong>40 min</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Water tank 200 L drains at 5 L/min. How long to empty?<details class="ans"><summary>Show Answer</summary><p>V=−5t+200. t=<strong>40 min</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">F=1.8C+32. Convert 25°C to °F.<details class="ans"><summary>Show Answer</summary><p>F=45+32=<strong>77°F</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Car at 10 km at t=0, 90 km at t=2 h. Equation for distance d.<details class="ans"><summary>Show Answer</summary><p>Slope=40. d=40t+10.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Savings: ₹500 at month 0, ₹1500 at month 5. Predict at month 12.<details class="ans"><summary>Show Answer</summary><p>S=200t+500. At t=12: S=₹<strong>2900</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Plans: A=2x+100; B=3x+80. For which x is Plan A cheaper?<details class="ans"><summary>Show Answer</summary><p>2x+100<3x+80 → x><strong>20 GB</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Why doesn't real data always form a perfect straight line even when modelled as linear?<details class="ans"><summary>Show Answer</summary><p>Real data has <strong>measurement errors, randomness, and non-linear effects</strong>. A linear model is an approximation.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 8 -->
+<section class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Slope (Gradient) of a Line</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:slope/v/slope-of-a-line" target="_blank">Slope of a Line</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=-_yACIsPu4A" target="_blank">Rise Over Run — Understanding Slope</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Computing Slope</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the slope formula for a line through (x₁,y₁) and (x₂,y₂).<details class="ans"><summary>Show Answer</summary><p>m=(y₂−y₁)/(x₂−x₁), where x₁≠x₂.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope through (2,3) and (6,7).<details class="ans"><summary>Show Answer</summary><p>m=4/4=<strong>1</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope through (1,5) and (4,−1).<details class="ans"><summary>Show Answer</summary><p>m=−6/3=<strong>−2</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope through (−3,2) and (5,6).<details class="ans"><summary>Show Answer</summary><p>m=4/8=<strong>½</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope through (0,0) and (−4,8).<details class="ans"><summary>Show Answer</summary><p>m=8/(−4)=<strong>−2</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of a horizontal line? Example.<details class="ans"><summary>Show Answer</summary><p>Slope=<strong>0</strong>. e.g., (2,5)→(7,5): m=0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of a vertical line? Why undefined?<details class="ans"><summary>Show Answer</summary><p><strong>Undefined</strong> — denominator (x₂−x₁)=0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of y=−4x+7 (no calculation).<details class="ans"><summary>Show Answer</summary><p>m=<strong>−4</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Ramp rises 3 m over 12 m horizontal. Gradient?<details class="ans"><summary>Show Answer</summary><p>m=3/12=<strong>¼</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope through (a,2a) and (2a,4a).<details class="ans"><summary>Show Answer</summary><p>m=2a/a=<strong>2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Positive, Negative, Zero, Undefined</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What does a positive slope mean?<details class="ans"><summary>Show Answer</summary><p>Line <strong>rises left to right</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What does a negative slope mean?<details class="ans"><summary>Show Answer</summary><p>Line <strong>falls left to right</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which is steeper: slope 5 or ½?<details class="ans"><summary>Show Answer</summary><p>Slope <strong>5</strong> — larger absolute value = steeper.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which is steeper: −3 or −¼?<details class="ans"><summary>Show Answer</summary><p>|−3|>|−¼|. Slope <strong>−3</strong> is steeper.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Ski slope drops 50 m over 20 m horizontal. Gradient?<details class="ans"><summary>Show Answer</summary><p>m=−50/20=<strong>−2.5</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A flat road has slope ___.<details class="ans"><summary>Show Answer</summary><p><strong>0</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A perfectly vertical wall has slope ___.<details class="ans"><summary>Show Answer</summary><p><strong>Undefined</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of y=7? Slope of x=7?<details class="ans"><summary>Show Answer</summary><p>y=7: slope=<strong>0</strong>. x=7: slope=<strong>undefined</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Line through (k,3) and (2k,7) has slope 4. Find k.<details class="ans"><summary>Show Answer</summary><p>4/k=4 → k=<strong>1</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Condition for parallel lines? For perpendicular?<details class="ans"><summary>Show Answer</summary><p>Parallel: m₁=m₂. Perpendicular: m₁×m₂=−1.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Slope from Equations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Slope of 3x+2y=6.<details class="ans"><summary>Show Answer</summary><p>y=−(3/2)x+3. m=<strong>−3/2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Slope of 5x−y=10.<details class="ans"><summary>Show Answer</summary><p>y=5x−10. m=<strong>5</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of x/3+y/4=1.<details class="ans"><summary>Show Answer</summary><p>y=4−(4/3)x. m=<strong>−4/3</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Slope of y−5=3(x−2).<details class="ans"><summary>Show Answer</summary><p>y=3x−1. m=<strong>3</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are y=4x+1 and 8x−2y+3=0 parallel?<details class="ans"><summary>Show Answer</summary><p>Both slope=4. <strong>Yes, parallel</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find k: y=kx+3 passes through (2,9).<details class="ans"><summary>Show Answer</summary><p>k=<strong>3</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of ax+by=c.<details class="ans"><summary>Show Answer</summary><p>m=<strong>−a/b</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Perpendicular slope to y=(2/3)x+5.<details class="ans"><summary>Show Answer</summary><p>m=<strong>−3/2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Slope of line through x-intercept of 2x+y=8 and y-intercept of x−3y=6.<details class="ans"><summary>Show Answer</summary><p>Points: (4,0) and (0,−2). m=(−2−0)/(0−4)=<strong>½</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If slope angle θ with x-axis and m=1, find θ.<details class="ans"><summary>Show Answer</summary><p>tanθ=1 → θ=<strong>45°</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Real-World and Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Road rises 8 m over 200 m horizontal. Gradient as %?<details class="ans"><summary>Show Answer</summary><p>8/200=0.04=<strong>4%</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Slope of A(1,3)→B(4,9). Positive or negative?<details class="ans"><summary>Show Answer</summary><p>m=2. <strong>Positive</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Aeroplane climbs from (0,0) to (100,8) km. Slope?<details class="ans"><summary>Show Answer</summary><p>m=8/100=<strong>0.08</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">River bank drops 3 m over 4 m horizontal. Slope?<details class="ans"><summary>Show Answer</summary><p>m=<strong>−3/4</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of line joining (t,t²) and (t+1,(t+1)²).<details class="ans"><summary>Show Answer</summary><p>Δy=(t+1)²−t²=2t+1. Δx=1. m=<strong>2t+1</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Speed-time graph: (0,0) to (10,60). Slope and meaning?<details class="ans"><summary>Show Answer</summary><p>m=6. Represents <strong>acceleration of 6 km/h per second</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Verify A(2,5),B(4,9),C(6,13) are collinear using slope.<details class="ans"><summary>Show Answer</summary><p>Slope AB=2=slope BC. <strong>Collinear ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Slope of AB=3/4. Find perpendicular slope.<details class="ans"><summary>Show Answer</summary><p>m=<strong>−4/3</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Slope undefined → what about x-coordinates of two points on line?<details class="ans"><summary>Show Answer</summary><p>They are <strong>equal</strong> (vertical line).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Stadium seating rises 1 m per 3 m depth. Discuss sightlines.<details class="ans"><summary>Show Answer</summary><p>Slope=1/3≈0.33. Gentle rise → rear seats have <strong>poor sightlines</strong> over those in front. Steeper slope gives better views.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 9 -->
+<section class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>x-intercept and y-intercept</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:x-intercepts-and-y-intercepts/v/introduction-to-x-and-y-intercepts" target="_blank">x-intercepts and y-intercepts</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Finding Intercepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How do you find the x-intercept of a line? How do you find the y-intercept?<details class="ans"><summary>Show Answer</summary><p><strong>x-intercept</strong>: set y=0 and solve for x. <strong>y-intercept</strong>: set x=0 and solve for y.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the x and y intercepts of 3x+4y=12.<details class="ans"><summary>Show Answer</summary><p>x-int: y=0→3x=12→x=4→(4,0). y-int: x=0→4y=12→y=3→(0,3).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find intercepts of 2x−5y=10.<details class="ans"><summary>Show Answer</summary><p>x-int: (5,0). y-int: (0,−2).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find intercepts of y=4x−8.<details class="ans"><summary>Show Answer</summary><p>x-int: 0=4x−8→x=2→(2,0). y-int: (0,−8).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find intercepts of x/3+y/5=1.<details class="ans"><summary>Show Answer</summary><p>x-int: y=0→x=3→(3,0). y-int: x=0→y=5→(0,5). (This is the intercept form!)</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Does the line y=3x have x and y intercepts at the same point? Where?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, both at the origin (0,0). Lines through origin have both intercepts at (0,0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the x-intercept of y=−2x+6.<details class="ans"><summary>Show Answer</summary><p>0=−2x+6→x=3. x-intercept: <strong>(3,0)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the y-intercept of 5x+2y=−10.<details class="ans"><summary>Show Answer</summary><p>x=0: 2y=−10→y=−5. y-intercept: <strong>(0,−5)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A line has x-intercept 4 and y-intercept 3. Write its equation.<details class="ans"><summary>Show Answer</summary><p>x/4+y/3=1 → 3x+4y=12.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line passes through (6,0) and (0,−4). Write its equation using intercept form.<details class="ans"><summary>Show Answer</summary><p>x/6+y/(−4)=1 → 2x−3y=12.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Intercepts and Graphing</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Sketch the graph of 2x+3y=6 using intercepts.<details class="ans"><summary>Show Answer</summary><p>x-int: (3,0). y-int: (0,2). Draw line through both.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What does the y-intercept of a cost-distance graph represent physically?<details class="ans"><summary>Show Answer</summary><p>The <strong>fixed/base cost</strong> — the cost when distance=0 (e.g., booking fee, minimum charge).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line has equal intercepts (x-int = y-int = k ≠ 0). What is its equation?<details class="ans"><summary>Show Answer</summary><p>x/k+y/k=1 → x+y=k.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find x-intercept of y=½x−3.<details class="ans"><summary>Show Answer</summary><p>0=½x−3→x=6→<strong>(6,0)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The x-intercept of a line is −4. The slope is 2. Find the y-intercept.<details class="ans"><summary>Show Answer</summary><p>Point (−4,0), slope 2: y=2(x+4)=2x+8. y-int=<strong>8</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line 4x−y=8 crosses both axes. Find where it crosses each axis.<details class="ans"><summary>Show Answer</summary><p>x-int: y=0→x=2→(2,0). y-int: x=0→y=−8→(0,−8).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Can a line have only one intercept? Give an example.<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong> — a line through the origin (e.g., y=2x) has both intercepts at (0,0), effectively one point. Or a line parallel to an axis (e.g., y=3) has only a y-intercept.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The intercepts of a line are (5,0) and (0,−5). Find the equation and slope.<details class="ans"><summary>Show Answer</summary><p>Slope=(−5−0)/(0−5)=1. y=x−5.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line with equal and opposite intercepts (x-int=a, y-int=−a). Write its equation.<details class="ans"><summary>Show Answer</summary><p>Slope=(−a−0)/(0−a)=1. y=x−a. Or: x−y=a.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Verify that (3,0) is the x-intercept and (0,4) is the y-intercept of 4x+3y=12.<details class="ans"><summary>Show Answer</summary><p>At (3,0): 12+0=12 ✓. At (0,4): 0+12=12 ✓. <strong>Verified</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Intercept Form and Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the intercept form of a line with x-intercept a and y-intercept b.<details class="ans"><summary>Show Answer</summary><p>x/a + y/b = 1.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Write in intercept form: 5x+3y=15.<details class="ans"><summary>Show Answer</summary><p>x/3+y/5=1. x-int=3, y-int=5.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A triangle is formed by a line and the two axes. The line has x-int 6 and y-int 4. Find the area of the triangle.<details class="ans"><summary>Show Answer</summary><p>Area=½×base×height=½×6×4=<strong>12 sq units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line cuts equal intercepts on both axes and passes through (3,3). Find the intercepts and the equation.<details class="ans"><summary>Show Answer</summary><p>Equal intercepts: y=x. Passes through (3,3): 3=3 ✓. The line is <strong>y=x</strong>; intercepts both at origin (or the line x+y=k through (3,3): k=6, giving intercepts (6,0) and (0,6)).</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The sum of the intercepts of a line is 9 and the x-intercept is twice the y-intercept. Find both.<details class="ans"><summary>Show Answer</summary><p>Let y-int=b, x-int=2b. 2b+b=9→b=3. y-int=<strong>3</strong>, x-int=<strong>6</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find the equation of the line with x-intercept −3 and y-intercept 6.<details class="ans"><summary>Show Answer</summary><p>x/(−3)+y/6=1 → −2x+y=6 → y=2x+6.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A candle's height model h=−½t+10 (h in cm, t in min). What are the t and h intercepts and what do they mean?<details class="ans"><summary>Show Answer</summary><p>h-int (t=0): h=10 → candle starts at <strong>10 cm</strong>. t-int (h=0): t=20 → candle burns out in <strong>20 minutes</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line passes through A(2,0) and B(0,5). Find slope and equation.<details class="ans"><summary>Show Answer</summary><p>Slope=(5−0)/(0−2)=−5/2. y=−(5/2)x+5.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line has x-intercept 4 and is parallel to 2x+y=7. Find the equation.<details class="ans"><summary>Show Answer</summary><p>Slope of 2x+y=7 is −2. Line: y=−2(x−4)=−2x+8.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If a line's y-intercept is 5 and it has slope −2, at what x does it hit y=1?<details class="ans"><summary>Show Answer</summary><p>1=−2x+5→x=<strong>2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The x-intercept of kx+2y=8 is 4. Find k.<details class="ans"><summary>Show Answer</summary><p>At (4,0): 4k=8→k=<strong>2</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find intercepts of 3x−2y+6=0.<details class="ans"><summary>Show Answer</summary><p>x-int: y=0→x=−2→(−2,0). y-int: x=0→y=3→(0,3).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Line with y-intercept 4 and passing through (2,0). Find slope and equation.<details class="ans"><summary>Show Answer</summary><p>Points (0,4) and (2,0). Slope=(0−4)/2=−2. y=−2x+4.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A line's x-intercept is 3 and y-intercept is −6. Verify the line is y=2x−6.<details class="ans"><summary>Show Answer</summary><p>At (3,0): y=6−6=0 ✓. At (0,y): y=−6 ✓. <strong>Verified</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Can a non-horizontal line have no x-intercept? Can a non-vertical line have no y-intercept?<details class="ans"><summary>Show Answer</summary><p><strong>No</strong> to both. Every non-horizontal line must cross the x-axis, and every non-vertical line must cross the y-axis.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find the area of the triangle cut from the axes by x/4+y/3=1.<details class="ans"><summary>Show Answer</summary><p>Intercepts: (4,0) and (0,3). Area=½×4×3=<strong>6 sq units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The line ax+by=1 has x-intercept 1/2 and y-intercept 1/3. Find a and b.<details class="ans"><summary>Show Answer</summary><p>x-int: y=0→a(1/2)=1→a=<strong>2</strong>. y-int: x=0→b(1/3)=1→b=<strong>3</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The product of the intercepts of 2x+3y=12 is ___.<details class="ans"><summary>Show Answer</summary><p>x-int=6, y-int=4. Product=6×4=<strong>24</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A profit model: P=50x−200 (x=units sold). What is the break-even point (x-intercept)?<details class="ans"><summary>Show Answer</summary><p>P=0: 50x=200→x=<strong>4 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is significant about the x-intercept in a speed-time graph?<details class="ans"><summary>Show Answer</summary><p>It shows when the object <strong>stops (speed=0)</strong> — the time at which the object comes to rest.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 10 -->
+<section class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Horizontal and Vertical Lines</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:horizontal-vertical-lines/v/horizontal-and-vertical-lines" target="_blank">Horizontal and Vertical Lines</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Equations and Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Write the equation of the horizontal line passing through (0,5).<details class="ans"><summary>Show Answer</summary><p>y=5.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Write the equation of the vertical line passing through (3,0).<details class="ans"><summary>Show Answer</summary><p>x=3.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the slope of any horizontal line? Why?<details class="ans"><summary>Show Answer</summary><p><strong>0</strong>. Horizontal lines have zero rise for any run (Δy=0).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the slope of any vertical line? Why?<details class="ans"><summary>Show Answer</summary><p><strong>Undefined</strong>. Vertical lines have Δx=0 (denominator zero in slope formula).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the equation of the x-axis?<details class="ans"><summary>Show Answer</summary><p>y=0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the equation of the y-axis?<details class="ans"><summary>Show Answer</summary><p>x=0.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Write the horizontal line through (−7, 4).<details class="ans"><summary>Show Answer</summary><p>y=4.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Write the vertical line through (−2, 9).<details class="ans"><summary>Show Answer</summary><p>x=−2.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Do all points on the line y=−3 have the same y-coordinate? What is it?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, y=−3 for every point on this line.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Do all points on x=7 have the same x-coordinate?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, x=7 for every point on this vertical line.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Identifying and Comparing</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Is the line y=0 horizontal or vertical?<details class="ans"><summary>Show Answer</summary><p><strong>Horizontal</strong> — it is the x-axis.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Is the line x=0 horizontal or vertical?<details class="ans"><summary>Show Answer</summary><p><strong>Vertical</strong> — it is the y-axis.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three points: (1,4),(3,4),(−5,4). What single line do they all lie on?<details class="ans"><summary>Show Answer</summary><p>All have y=4 → horizontal line <strong>y=4</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three points: (2,1),(2,−3),(2,8). What line?<details class="ans"><summary>Show Answer</summary><p>All have x=2 → vertical line <strong>x=2</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are the lines y=3 and y=−3 parallel? What is the distance between them?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, both horizontal. Distance=|3−(−3)|=<strong>6 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Are x=5 and x=−2 parallel? What is the distance between them?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, both vertical. Distance=|5−(−2)|=<strong>7 units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Do the lines y=4 and x=4 intersect? If yes, where?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong> — at point <strong>(4,4)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A horizontal line and a vertical line always intersect at right angles. True or false?<details class="ans"><summary>Show Answer</summary><p><strong>True</strong>. Horizontal lines have slope 0, vertical lines have undefined slope — they are perpendicular to each other.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The lines y=k and x=k intersect at ___.<details class="ans"><summary>Show Answer</summary><p>They intersect at <strong>(k, k)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Write equations of two lines parallel to the x-axis and two parallel to the y-axis.<details class="ans"><summary>Show Answer</summary><p>Parallel to x-axis: e.g., y=2 and y=−5. Parallel to y-axis: e.g., x=3 and x=−1.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Regions and Distances</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A point P(3,7) is above or below the line y=5?<details class="ans"><summary>Show Answer</summary><p>7>5 → P is <strong>above</strong> y=5.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">How far is P(3,7) from the line y=5?<details class="ans"><summary>Show Answer</summary><p>|7−5|=<strong>2 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">How far is Q(−4,2) from the line x=1?<details class="ans"><summary>Show Answer</summary><p>|−4−1|=<strong>5 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A rectangle has sides along y=1, y=5, x=2, x=8. Find its perimeter and area.<details class="ans"><summary>Show Answer</summary><p>Width=8−2=6, Height=5−1=4. Perimeter=20, Area=<strong>24 sq units</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The four lines x=−3, x=3, y=−3, y=3 form a square. Find its side and area.<details class="ans"><summary>Show Answer</summary><p>Side=6. Area=36 sq units.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A point lies on both y=2 and x=−5. Find its coordinates.<details class="ans"><summary>Show Answer</summary><p><strong>(−5, 2)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Between which two horizontal lines does the point (3,2.5) lie if integer-y lines are drawn?<details class="ans"><summary>Show Answer</summary><p>Between <strong>y=2</strong> and <strong>y=3</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">City blocks are between x=0,1,2,3 and y=0,1,2,3. How many blocks are in the grid?<details class="ans"><summary>Show Answer</summary><p>3×3=<strong>9 blocks</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A football pitch width is modelled between x=0 and x=68. Write the equation of the boundary lines.<details class="ans"><summary>Show Answer</summary><p>Left boundary: <strong>x=0</strong>. Right boundary: <strong>x=68</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find all points equidistant from y=2 and y=8.<details class="ans"><summary>Show Answer</summary><p>Midway: y=(2+8)/2=<strong>y=5</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed and Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The point (a,3) lies on y=3. What values can a take?<details class="ans"><summary>Show Answer</summary><p><strong>Any real number</strong>. All points on y=3 have y=3 regardless of x.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">The point (5,b) lies on x=5. What values can b take?<details class="ans"><summary>Show Answer</summary><p><strong>Any real number</strong>. All points on x=5 have x=5 regardless of y.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A design uses lines y=0,y=4,y=8 and x=0,x=3,x=6. How many intersection points are formed?<details class="ans"><summary>Show Answer</summary><p>3 horizontal × 3 vertical = <strong>9 intersection points</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Write the equation of a line parallel to the x-axis that is 6 units above it.<details class="ans"><summary>Show Answer</summary><p>y=6.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Write the equation of a line parallel to the y-axis that is 4 units to the left of it.<details class="ans"><summary>Show Answer</summary><p>x=−4.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A horizontal shelf in a room is at height y=2.5 m. A person of height 1.8 m stands at x=3. Does the person touch the shelf?<details class="ans"><summary>Show Answer</summary><p>Person's height=1.8 m < shelf height=2.5 m. <strong>No</strong>, they don't touch the shelf.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain why a vertical line cannot be expressed in y=mx+c form.<details class="ans"><summary>Show Answer</summary><p>A vertical line has <strong>undefined slope</strong>. The y=mx+c form requires a defined slope m. A vertical line has equation x=k (not expressible as a function y=f(x)).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">On a map, streets run along x=1,2,3,...,10 and avenues along y=1,2,...,8. How many intersections (corners) are there?<details class="ans"><summary>Show Answer</summary><p>10×8=<strong>80 intersections</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If a horizontal line passes through (5, −9), does it also pass through (−100, −9)?<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>. The horizontal line is y=−9, which includes all points with y=−9 for any x.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A rectangle has diagonals with endpoints (1,1),(7,5) and (1,5),(7,1). Find the equations of all four sides.<details class="ans"><summary>Show Answer</summary><p>Vertices: (1,1),(7,1),(7,5),(1,5). Sides: y=1, y=5, x=1, x=7.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 11 -->
+<section class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Parallel and Perpendicular Lines via Slope</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-parallel-perpendicular-eq/v/parallel-lines" target="_blank">Parallel and Perpendicular Lines</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Parallel and Perpendicular Lines</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the slope condition for two lines to be parallel.<details class="ans"><summary>Show Answer</summary><p>Lines are parallel if and only if their slopes are equal: <strong>m₁ = m₂</strong> (and they are different lines).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">State the slope condition for two lines to be perpendicular.<details class="ans"><summary>Show Answer</summary><p>Lines are perpendicular if and only if the product of their slopes is −1: <strong>m₁ × m₂ = −1</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are y=3x+1 and y=3x−7 parallel?<details class="ans"><summary>Show Answer</summary><p>Both have slope=3. <strong>Yes, parallel</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are y=2x+1 and y=−½x+3 perpendicular?<details class="ans"><summary>Show Answer</summary><p>2×(−½)=−1 ✓. <strong>Yes, perpendicular</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Are y=4x−2 and 8x−2y=3 parallel?<details class="ans"><summary>Show Answer</summary><p>Second: y=4x−3/2. Both slope=4. <strong>Yes, parallel</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Are y=3x+2 and y=−(1/3)x+5 perpendicular?<details class="ans"><summary>Show Answer</summary><p>3×(−1/3)=−1 ✓. <strong>Yes, perpendicular</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the slope of a line perpendicular to y=−4x+7.<details class="ans"><summary>Show Answer</summary><p>Perpendicular slope=−1/(−4)=<strong>¼</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Find the slope of a line parallel to 3x+5y=15.<details class="ans"><summary>Show Answer</summary><p>y=−(3/5)x+3. Parallel slope=<strong>−3/5</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Line L₁: y=kx+3. Line L₂: y=2x+5. For what k are they parallel? Perpendicular?<details class="ans"><summary>Show Answer</summary><p>Parallel: k=<strong>2</strong>. Perpendicular: k×2=−1→k=<strong>−½</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Can two perpendicular lines both have positive slopes?<details class="ans"><summary>Show Answer</summary><p><strong>No</strong>. If m₁>0 and m₂>0, then m₁×m₂>0≠−1. Perpendicular lines have slopes of opposite signs (one positive, one negative).</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Writing Parallel and Perpendicular Line Equations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Write the equation of the line parallel to y=2x−3 passing through (1,5).<details class="ans"><summary>Show Answer</summary><p>Slope=2. y−5=2(x−1) → y=2x+3.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Write the equation of the line perpendicular to y=3x+1 passing through (3,2).<details class="ans"><summary>Show Answer</summary><p>Perp slope=−1/3. y−2=−(1/3)(x−3) → y=−x/3+3.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the line through (0,4) perpendicular to y=−2x+5.<details class="ans"><summary>Show Answer</summary><p>Perp slope=½. y=½x+4.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the line through (2,−1) parallel to 4x−y=7.<details class="ans"><summary>Show Answer</summary><p>4x−y=7 → slope=4. y+1=4(x−2) → y=4x−9.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Line through (4,3) perpendicular to x-axis.<details class="ans"><summary>Show Answer</summary><p>Perpendicular to x-axis = vertical line. Equation: <strong>x=4</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Line through (4,3) perpendicular to y-axis.<details class="ans"><summary>Show Answer</summary><p>Perpendicular to y-axis = horizontal line. Equation: <strong>y=3</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find the equation of the line parallel to y=x+7 with y-intercept −3.<details class="ans"><summary>Show Answer</summary><p>Slope=1, y-int=−3. y=x−3.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Write equation of line perpendicular to 2x+3y=6 through (0,0).<details class="ans"><summary>Show Answer</summary><p>Slope of given=−2/3. Perp slope=3/2. Through origin: y=(3/2)x.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A road is on y=2x+5. A new road is built perpendicular to it through (4,3). Find the new road's equation.<details class="ans"><summary>Show Answer</summary><p>Perp slope=−½. y−3=−½(x−4) → y=−½x+5.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Write 3 lines all parallel to each other and all different from 2x−y=5.<details class="ans"><summary>Show Answer</summary><p>Any 3 lines with slope=2 and different y-intercepts, e.g., y=2x+1, y=2x−3, y=2x+10.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Proving Geometric Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Show that A(0,0),B(4,0),C(4,3),D(0,3) form a rectangle using slopes.<details class="ans"><summary>Show Answer</summary><p>AB slope=0 (horiz). BC slope=undefined (vert). CD slope=0. DA slope=undef. Adjacent sides perp → <strong>rectangle ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Show AB⊥CD for A(1,2),B(4,6),C(0,3),D(4,0).<details class="ans"><summary>Show Answer</summary><p>Slope AB=(6−2)/(4−1)=4/3. Slope CD=(0−3)/(4−0)=−3/4. Product=−1 ✓. <strong>Perpendicular ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove that the line joining midpoints of two sides of a triangle is parallel to the third side (for A(0,0),B(4,0),C(2,4)).<details class="ans"><summary>Show Answer</summary><p>Midpoints: M_AB=(2,0), M_AC=(1,2). Slope M_AB→M_AC=(2−0)/(1−2)=−2. Slope BC=(4−0)/(2−4)=−2. Equal → <strong>parallel ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Show that A(1,1),B(5,3),C(4,5),D(0,3) form a parallelogram.<details class="ans"><summary>Show Answer</summary><p>Slope AB=½. Slope DC=(3−5)/(0−4)=½. AB∥DC. Slope BC=(5−3)/(4−5)=−2. Slope AD=(3−1)/(0−1)=−2. BC∥AD. Both pairs parallel → <strong>parallelogram ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Is the parallelogram in the previous question a rectangle?<details class="ans"><summary>Show Answer</summary><p>Check if adjacent sides perpendicular: slope AB×slope BC = ½×(−2)=−1. <strong>Yes, it is a rectangle ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Show that the diagonals of a square with vertices (0,0),(4,0),(4,4),(0,4) are perpendicular.<details class="ans"><summary>Show Answer</summary><p>Diagonal 1: (0,0)→(4,4), slope=1. Diagonal 2: (4,0)→(0,4), slope=−1. 1×(−1)=−1 ✓. <strong>Perpendicular ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Verify AB∥CD: A(2,3),B(5,7),C(0,1),D(3,5).<details class="ans"><summary>Show Answer</summary><p>Slope AB=4/3. Slope CD=4/3. Equal → <strong>AB∥CD ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The two diagonals of rhombus have slopes m and −1/m. Why must they be perpendicular?<details class="ans"><summary>Show Answer</summary><p>m×(−1/m)=−1 → <strong>perpendicular by definition</strong>. Diagonals of a rhombus always bisect each other at right angles.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Show A(0,0),B(6,0),C(7,3),D(1,3) form a parallelogram (not a rectangle).<details class="ans"><summary>Show Answer</summary><p>Slope AB=0, slope DC=0 → parallel. Slope BC=3/1=3, slope AD=3/1=3 → parallel. Slope AB×slope BC=0×3=0≠−1 → <strong>not a rectangle ✓</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two roads are y=2x+1 and y=−½x+4. Prove they are perpendicular.<details class="ans"><summary>Show Answer</summary><p>2×(−½)=−1. <strong>Perpendicular ✓</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If 3x+ky=7 is parallel to y=(3/2)x+1, find k.<details class="ans"><summary>Show Answer</summary><p>Slope of 3x+ky=7 is −3/k. Set −3/k=3/2 → k=−2.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find k if 2x+ky=5 ⊥ 3x−2y=1.<details class="ans"><summary>Show Answer</summary><p>Slope L1=−2/k. Slope L2=3/2. (−2/k)×(3/2)=−1→−3/k=−1→k=3.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A city block has corners at (0,0),(3,0),(3,4),(0,4). Find equations of the diagonals and check if they are perpendicular.<details class="ans"><summary>Show Answer</summary><p>D1: (0,0)→(3,4): slope=4/3. D2: (3,0)→(0,4): slope=−4/3. Product=−16/9≠−1. <strong>Not perpendicular</strong> (it's a rectangle, not a square).</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Write equation of line through (3,−2) parallel to the line joining (0,4) and (2,0).<details class="ans"><summary>Show Answer</summary><p>Slope of (0,4)→(2,0)=−2. y+2=−2(x−3)→y=−2x+4.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A triangle has vertices (0,0),(4,0),(0,3). Find the equation of the altitude from (0,0) to side BC.<details class="ans"><summary>Show Answer</summary><p>Side BC: (4,0)→(0,3), slope=−3/4. Altitude perp slope=4/3. Through (0,0): y=(4/3)x.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Lines y=ax+2 and y=bx−5 are parallel and b=4. Find a.<details class="ans"><summary>Show Answer</summary><p>Parallel → a=b=<strong>4</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Lines y=ax+1 and y=(a+3)x+2 are parallel. For what values of a is this possible?<details class="ans"><summary>Show Answer</summary><p>a=a+3 → 0=3 — impossible. There is <strong>no value of a</strong> that makes these parallel (their slopes can never be equal).</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain why two perpendicular lines (neither horizontal nor vertical) must have slopes with opposite signs.<details class="ans"><summary>Show Answer</summary><p>m₁×m₂=−1<0. If both were positive or both negative, their product would be positive. So one must be positive and one negative → <strong>opposite signs</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Are the lines 3x+4y=12 and 4x−3y=6 perpendicular?<details class="ans"><summary>Show Answer</summary><p>Slope L1=−3/4. Slope L2=4/3. (−3/4)×(4/3)=−1 ✓. <strong>Perpendicular ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Find all lines through (2,3) that are parallel to the x-axis or to the y-axis.<details class="ans"><summary>Show Answer</summary><p>Parallel to x-axis: <strong>y=3</strong>. Parallel to y-axis: <strong>x=2</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ TOPIC 12 -->
+<section class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>Real-World Coordinate Applications</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=BVen6yGIdYs" target="_blank">How GPS Works</a>
+      </div>
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry" target="_blank">Analytic Geometry Applications</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Maps, Grids, and Navigation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A city is mapped on a grid where 1 unit = 1 km. The school is at (3,4) and the hospital at (7,1). Find the straight-line distance between them.<details class="ans"><summary>Show Answer</summary><p>d=√((7−3)²+(1−4)²)=√(16+9)=√25=<strong>5 km</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two friends live at A(1,2) and B(9,8). A meeting point is at the midpoint of AB. Find the meeting point's coordinates.<details class="ans"><summary>Show Answer</summary><p>M=((1+9)/2,(2+8)/2)=<strong>(5,5)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">GPS uses latitude and longitude. How is this similar to a Cartesian coordinate system?<details class="ans"><summary>Show Answer</summary><p>Latitude is like the y-axis (north-south), longitude is like the x-axis (east-west). The equator and prime meridian serve as the reference axes (like x-axis and y-axis). Every location is given as a unique ordered pair.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">On a treasure map, the treasure is at (8,6) and the starting point at (2,2). How far is the walk and what is the midpoint (rest stop)?<details class="ans"><summary>Show Answer</summary><p>Distance=√(36+16)=√52≈7.2 units. Midpoint=(5,4).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A town planning grid has the market at origin. The post office is 5 km East and 2 km North. The school is 5 km East and 6 km North. Are the market, post office, and school collinear?<details class="ans"><summary>Show Answer</summary><p>Market (0,0), Post office (5,2), School (5,6). Slope (0,0)→(5,2)=2/5. Slope (5,2)→(5,6) is undefined (vertical). <strong>Not collinear</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A road runs from (−4,−4) to (4,4). Write its equation. What direction does it run?<details class="ans"><summary>Show Answer</summary><p>Slope=1. y=x. Runs <strong>diagonally from SW to NE at 45°</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A park entrance is at (0,0). The park extends to all points (x,y) where 0≤x≤10 and 0≤y≤8. What is the area of the park in square units?<details class="ans"><summary>Show Answer</summary><p>Area=10×8=<strong>80 sq units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bus route is a straight line through stops at (1,3) and (5,7). Does the stop (3,5) lie on this route?<details class="ans"><summary>Show Answer</summary><p>Slope=1, equation y=x+2. At (3,5): 5=3+2=5 ✓. <strong>Yes</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">An Aadhaar card database stores locations using coordinate pairs. Why is a coordinate system useful for large databases?<details class="ans"><summary>Show Answer</summary><p>Coordinates provide a <strong>unique, precise, and standardised</strong> way to identify each location. Distance queries, clustering, and searching are computationally efficient with coordinate data.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student walks from (0,0) to (6,0) to (6,8) to (0,8) and back to (0,0). Total distance walked?<details class="ans"><summary>Show Answer</summary><p>6+8+6+8=<strong>28 units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Cricket, Sports, and Fields</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A cricket pitch has stumps at (0,0) and (0,20) (in metres). The midpoint of the pitch is the popping crease. Find the midpoint.<details class="ans"><summary>Show Answer</summary><p>M=((0+0)/2,(0+20)/2)=(0,10). Midpoint at <strong>(0,10)</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A fielder at (30,40) m from the stumps at (0,0). How far is the fielder from the stumps?<details class="ans"><summary>Show Answer</summary><p>d=√(900+1600)=√2500=<strong>50 m</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three fielders are placed at (0,20), (20,0), and (−20,0). Are they equidistant from the origin (wickets)?<details class="ans"><summary>Show Answer</summary><p>All distances=20 units. <strong>Yes, equidistant</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A football goal is between posts at (−4,0) and (4,0). A player shoots from (0,10). Does the shot line y=−x+10 pass through the goal region (−4≤x≤4 at y=0)?<details class="ans"><summary>Show Answer</summary><p>At y=0: x=10. 10 is outside [−4,4]. <strong>No</strong>, the shot misses the goal.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tennis court baseline is along y=0 from x=−5 to x=5. The net is at y=12 from x=−5 to x=5. Find the equation of the sideline on the right.<details class="ans"><summary>Show Answer</summary><p>Right sideline: from (5,0) to (5,12) → <strong>x=5</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A relay baton is passed at (4,3). The next runner's path is y=−x+7. Verify the baton exchange point lies on this path.<details class="ans"><summary>Show Answer</summary><p>y=−4+7=3. <strong>Yes ✓</strong>, (4,3) lies on y=−x+7.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A basketball court has the centre circle at (0,0) with radius 1.8 m. Find whether (1,1.5) is inside, on, or outside the circle.<details class="ans"><summary>Show Answer</summary><p>d=√(1+2.25)=√3.25≈1.80 ≈ r. Very close to the circle boundary; approximately <strong>on the circle</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a kabaddi court mapped on a grid (20×13 m), the midline is at x=10. Find the equation of the midline and both boundary lines.<details class="ans"><summary>Show Answer</summary><p>Midline: x=10. Boundaries: x=0 and x=20.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A swimmer at A(0,0) swims to B(50,0) then to C(50,20) then to D(0,20). Find total distance and area of the rectangular pool.<details class="ans"><summary>Show Answer</summary><p>Perimeter=50+20+50+20=140 m. Area=50×20=<strong>1000 sq m</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A penalty spot in football is at (0,11) from the goal centre (0,0). A player kicks perpendicular to the goal line. Write the equation of the kick's path.<details class="ans"><summary>Show Answer</summary><p>Goal line is y=0 (horizontal). Perpendicular = vertical. Path: <strong>x=0</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Architecture, Design, and Technology</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">An architect plots a building on a coordinate grid. The four corners are (2,1),(14,1),(14,9),(2,9). Find the perimeter and area of the building's footprint.<details class="ans"><summary>Show Answer</summary><p>Width=12, Height=8. Perimeter=40 units. Area=<strong>96 sq units</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A diagonal support beam runs from (0,0) to (6,8) in a building. Find its length and the equation of the beam's line.<details class="ans"><summary>Show Answer</summary><p>Length=√(36+64)=10 units. Slope=8/6=4/3. Line: y=(4/3)x.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A solar panel is placed on a roof with equation y=−½x+10. At what height does it start (y-intercept) and where does the roof meet the ground (x-intercept)?<details class="ans"><summary>Show Answer</summary><p>y-int: (0,10) → starts at <strong>height 10 units</strong>. x-int: x=20 → meets ground at <strong>x=20</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A computer screen has resolution 1920×1080 pixels. The pixel (960,540) is the centre. Verify using the midpoint formula with corners (0,0) and (1920,1080).<details class="ans"><summary>Show Answer</summary><p>Midpoint=((0+1920)/2,(0+1080)/2)=(960,540) ✓. <strong>Verified</strong>.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In a computer game, a missile travels from (1,1) to (7,9). Write its path equation and find the midpoint.<details class="ans"><summary>Show Answer</summary><p>Slope=8/6=4/3. y=(4/3)x−1/3. Midpoint=<strong>(4,5)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two antennas are at A(−3,0) and B(3,0). A relay station must be equidistant from both. Where can it be placed (in general)?<details class="ans"><summary>Show Answer</summary><p>Equidistant from A and B → perpendicular bisector of AB → <strong>x=0 (the y-axis)</strong>. The relay can be anywhere on the y-axis.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A triangular garden has vertices at A(0,0), B(12,0), C(6,8). Find the centroid (average of vertices) where the gardener places a central fountain.<details class="ans"><summary>Show Answer</summary><p>Centroid=((0+12+6)/3,(0+0+8)/3)=(18/3,8/3)=<strong>(6, 8/3)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A robot factory layout: machines at (1,1),(1,5),(5,5),(5,1). Are they corners of a square? Find its area.<details class="ans"><summary>Show Answer</summary><p>Side=4. All sides equal, right angles (horizontal/vertical). <strong>Square</strong>. Area=16 sq units.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A phone tower at T(5,5) covers all points within 5 km. Does it cover the village at V(1,2)?<details class="ans"><summary>Show Answer</summary><p>d=√(16+9)=5. V is exactly 5 km away → <strong>just on the boundary of coverage ✓</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A pipeline runs from P(0,10) to Q(8,0). A valve is placed at the midpoint. Find the valve position and the pipeline's length.<details class="ans"><summary>Show Answer</summary><p>Midpoint=(4,5). Length=√(64+100)=√164=2√41≈12.8 units.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> India-Specific and Integrated Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The Aadhaar database records a person's district centre as a coordinate. District A is at (72.8, 18.9) and District B at (77.6, 12.9) (approx. longitude, latitude). Which type of measurement is each?<details class="ans"><summary>Show Answer</summary><p>72.8 and 77.6 are <strong>longitudes</strong> (x-axis equivalent — east-west). 18.9 and 12.9 are <strong>latitudes</strong> (y-axis equivalent — north-south).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A railway map uses a Cartesian grid. Station Mumbai is at (0,0), Pune at (90,0), Nashik at (45,80). Is Nashik the midpoint of Mumbai–Pune horizontally? Where is its actual midpoint?<details class="ans"><summary>Show Answer</summary><p>Midpoint Mumbai–Pune=(45,0). Nashik is at (45,80) — same x but different y. <strong>Not the midpoint</strong>; the horizontal midpoint is (45,0).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The Gaudium School is at (1,3) on a map. IKEA Hyderabad is at (5,7). Raidurgam Metro is at (3,5). Is the metro on the straight line between school and IKEA?<details class="ans"><summary>Show Answer</summary><p>Slope school→IKEA=(7−3)/(5−1)=1. Line: y=x+2. At (3,5): 5=3+2=5 ✓. <strong>Yes</strong>, the metro is on the same line.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A farmer divides a rectangular field with corners (0,0),(100,0),(100,60),(0,60) into 4 equal plots with one vertical and one horizontal line. Find the equations of the dividing lines.<details class="ans"><summary>Show Answer</summary><p>Vertical midline: <strong>x=50</strong>. Horizontal midline: <strong>y=30</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A cricket commentator says "the fielder is in the region x>0, y>0 of the field." Which part of the field is described?<details class="ans"><summary>Show Answer</summary><p>The <strong>first quadrant</strong> — the region to the right of the pitch and beyond the popping crease (conventional orientation). In cricket, this would be the off-side, covers region.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A drone delivery service tracks packages using coordinates. Package A is at (4,3) and needs to reach (4+6t, 3+8t) after t minutes. How far does it travel per minute?<details class="ans"><summary>Show Answer</summary><p>Distance per minute = √(6²+8²)=√(36+64)=√100=<strong>10 units/minute</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three ambulance stations are at A(0,0), B(6,0), C(3,4). Find the circumcentre (point equidistant from all three) by using the perpendicular bisectors.<details class="ans"><summary>Show Answer</summary><p>Perp bisector of AB: x=3. Perp bisector of AC: slope AC=4/3, perp slope=−3/4. Mid AC=(1.5,2). Line: y−2=−¾(x−1.5)→y=−¾x+3.125. At x=3: y=0.875. Circumcentre=<strong>(3, 7/8)</strong>.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a Hyderabad city planning grid, IT companies cluster in the rectangle defined by x∈[5,15] and y∈[3,10]. Find the area and the centre of this tech zone.<details class="ans"><summary>Show Answer</summary><p>Area=10×7=70 sq units. Centre=midpoint of (5,3) and (15,10)=<strong>(10, 6.5)</strong>.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two trains start from stations at (0,0) and (100,0) and travel toward each other. After t hours, Train 1 is at (30t,0) and Train 2 at (100−40t,0). When do they meet?<details class="ans"><summary>Show Answer</summary><p>30t=100−40t→70t=100→t=10/7 hours. They meet at x=30×(10/7)=<strong>300/7≈42.9</strong> units.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Summarise three real-world uses of the Cartesian coordinate system seen in daily Indian life.<details class="ans"><summary>Show Answer</summary><p>1. <strong>GPS navigation</strong> (Google Maps uses lat-long = coordinates). 2. <strong>Aadhaar / land records</strong> (geographic coordinates uniquely identify locations). 3. <strong>Cricket field analysis</strong> (wagon-wheel plots use coordinate grids to show shot directions).</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Grade 9 &middot; Ganita Manjari &middot; Chapter 1 &middot; The Gaudium School &middot; 2026&ndash;27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

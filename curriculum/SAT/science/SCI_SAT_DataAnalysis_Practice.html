@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAT Science Reading & Data Analysis Practice</title>
+<style>
+:root{--primary:#92400e;--accent:#f59e0b;--green:#16a34a;--bg:#fffbeb;--card:#fff;--border:#fde68a;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#78350f,#b45309,#f59e0b);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:#b45309;text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:#f59e0b;color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:#78350f}.set-card{background:var(--card);border:1px solid #fde68a;border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:#b45309;margin-bottom:14px}.set-label{display:inline-block;background:#f59e0b;color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:#f59e0b;color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:#b45309;margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid #fde68a;border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:#b45309;font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#fffbeb;border-left:4px solid #f59e0b;padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:#92400e}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 SAT Science Reading &amp; Data Analysis Practice</h1>
+  <p>10 Topics · 3 Practice Sets per Topic · 10 Questions per Set · Reading Science Passages, Interpreting Data &amp; Tables</p>
+</header>
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Identifying the Main Claim</a></li>
+    <li><a href="#t2">Science Vocabulary in Context</a></li>
+    <li><a href="#t3">Supporting Evidence</a></li>
+    <li><a href="#t4">Interpreting Data Tables</a></li>
+    <li><a href="#t5">Reading Bar Graphs &amp; Histograms</a></li>
+    <li><a href="#t6">Interpreting Line Graphs</a></li>
+    <li><a href="#t7">Scatter Plots &amp; Correlation</a></li>
+    <li><a href="#t8">Anomalies &amp; Limitations</a></li>
+    <li><a href="#t9">Drawing Valid Conclusions</a></li>
+    <li><a href="#t10">Comparing Multiple Sources</a></li>
+  </ol>
+</nav>
+
+<!-- ============================================================ TOPIC 1 -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Identifying the Main Claim</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=2Ga1JbGKN6M">Identifying the Main Idea in Science Texts</a><a href="https://www.youtube.com/watch?v=AEvBy3XFPAM">Author's Purpose &amp; Central Claim</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=H6u0VBqNBQ8">How to Read Scientific Papers</a><a href="https://www.youtube.com/watch?v=0Rnq1NpHdmw">The Scientific Method</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=WnMd9N4ql_A">Science Reading Strategies</a><a href="https://www.youtube.com/watch?v=oYwhFOgBzlE">Evaluating Arguments in Science</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">Nat Geo / Other</span><a href="https://www.youtube.com/watch?v=GlZtEjtlirc">Understanding Scientific Claims</a><a href="https://www.youtube.com/watch?v=jtd2lEeLOvU">How Scientists Communicate Findings</a></div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — What does the passage say? (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Researchers at Westfield University tested whether daily walking reduces blood pressure. After an eight-week programme, participants who walked 30 minutes each day showed an average blood pressure reduction of 6 mmHg. The researchers concluded that regular walking is an effective intervention for managing mild hypertension."</em><br>
+          What is the central claim of this passage?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Regular walking is an effective intervention for managing mild hypertension. This is explicitly stated as the researchers' conclusion in the final sentence.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Scientists monitoring a coral reef found that water temperature rose by 2°C over ten years. The study's main argument is that rising sea temperatures are the primary driver of coral bleaching events in the region."</em><br>
+          According to the passage, what does the study argue is the PRIMARY driver of coral bleaching?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Rising sea temperatures. The passage explicitly states this is the primary driver identified by the study.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A nutritional study followed 400 adults for six months. Half ate a diet rich in leafy greens; half did not change their diet. The leafy-greens group showed improved iron levels. The authors argue that leafy-green consumption can address iron deficiency in adults. The authors do not claim this applies to children."</em><br>
+          What population does the study's main claim apply to, according to the passage?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Adults. The passage explicitly states the authors do not claim the finding applies to children.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "The report examines air pollution levels in five cities. Its central purpose is to document seasonal variations in particulate matter. The report does not attempt to explain why those variations occur."</em><br>
+          What is the stated purpose of the report?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>To document seasonal variations in particulate matter. The passage directly states this as the central purpose.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Ecologists studying a forest found that tree density declined 18% over 20 years. They claim deforestation, not disease, is the main cause of this decline. Evidence cited includes logging records showing increased activity during the same period."</em><br>
+          What do the ecologists claim is the main cause of tree decline?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Deforestation (not disease). The passage explicitly states this as the ecologists' claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A sleep study monitored 200 teenagers. The researchers argue that teenagers who sleep fewer than 7 hours per night perform worse on cognitive tests. The study focused only on cognitive performance and did not measure physical health outcomes."</em><br>
+          Which outcome did the study NOT measure?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Physical health outcomes. The passage states the study focused only on cognitive performance and did not measure physical health.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "An agricultural study tested three irrigation methods. The central argument is that drip irrigation conserves the most water among the methods tested. The study was conducted over one growing season in a semi-arid region."</em><br>
+          What is the main claim of the agricultural study?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Drip irrigation conserves the most water among the methods tested. This is directly stated as the central argument.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Physicists propose that a newly discovered particle may help explain dark matter. The article's main argument is that the particle's properties are consistent with theoretical dark matter models. The physicists do not claim they have proven dark matter exists."</em><br>
+          What do the physicists explicitly NOT claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>They do not claim they have proven dark matter exists. The passage directly states this limitation.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Marine biologists tracked 50 sea turtles using GPS. The study's central finding is that sea turtles return to the same nesting beaches year after year. The researchers conclude that beach preservation is critical for sea turtle survival."</em><br>
+          What conclusion do the researchers draw from their finding?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>That beach preservation is critical for sea turtle survival, since turtles return to the same beaches each year.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Chemists developed a new polymer that degrades in sunlight within 90 days. The paper argues this polymer could replace conventional plastics in packaging. The scope of the claim is limited to outdoor packaging applications."</em><br>
+          To what scope does the paper limit its claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Outdoor packaging applications. The passage explicitly states the claim is limited to this scope.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — What does it mean? (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Botanists found that Plant A grew 40% taller than Plant B under identical light conditions. They conclude that Plant A is 'more efficient at converting light energy.' A student claims the study proves Plant A is healthier overall."</em><br>
+          Which statement best describes what the authors actually claim versus what the student claims?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The authors claim only that Plant A converts light energy more efficiently under the tested conditions. The student's claim about overall health is broader and not supported by the passage — the study only measured height under specific light conditions.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A climate study states: 'Average global temperatures have risen 1.1°C since pre-industrial times. This warming trend is primarily attributable to human greenhouse gas emissions.' A newspaper headline reads: 'Scientists Say All Temperature Change Is Man-Made.'"</em><br>
+          How does the newspaper headline misrepresent the passage's claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The passage claims warming is "primarily attributable" to human emissions — not entirely. The headline overstates the claim by saying "all" temperature change is man-made, which goes beyond what the passage states.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Researchers tested a new vaccine in 1,000 volunteers. The study's main claim is that the vaccine reduced infection rates by 72% compared to a placebo group. The researchers note the study was conducted during a single flu season."</em><br>
+          Why might the phrase "during a single flu season" be important for understanding the scope of the main claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>It limits the claim's scope — the 72% reduction was measured in one season only. The vaccine's effectiveness in other seasons or against different virus strains is not established by this study alone.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A psychology paper argues that students who take handwritten notes retain information better than those using laptops. The study involved 80 university students over one semester. The paper does not address primary school children."</em><br>
+          A teacher wants to apply this finding to her class of 10-year-olds. What limitation of the main claim should she consider?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The study was conducted with university students, not primary school children. The paper explicitly does not address younger children, so applying the claim to 10-year-olds goes beyond the study's stated scope.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "An environmental report presents three main arguments: (1) river pollution has increased, (2) fish populations have declined, and (3) industrial run-off is responsible for both trends. A reader summarises the report as 'arguing that fish are disappearing.'"</em><br>
+          What is missing from the reader's summary of the main claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The reader's summary omits the causal claim — that industrial run-off is responsible — and the river pollution trend. The report's central argument is about a cause-and-effect relationship, not just the observation that fish are declining.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A medical study tracked 500 patients taking a new drug. The authors argue the drug 'significantly reduces symptoms' in patients with moderate disease. The study excluded patients with severe disease and those under 18."</em><br>
+          If a doctor wants to prescribe this drug to a patient with severe disease, what does the study's main claim tell us about this situation?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The main claim does not apply — the study explicitly excluded patients with severe disease. The claim about symptom reduction was only established for patients with moderate disease.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Researchers studying wildfire frequency argue that drought conditions are the strongest predictor of wildfire outbreaks in the study region. They also note that wind speed and human activity contribute to fire spread, but these were not their primary focus."</em><br>
+          Which factors does the main claim address, and which does it acknowledge but not primarily focus on?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The main claim focuses on drought as the strongest predictor. Wind speed and human activity are acknowledged as contributing factors to fire spread, but they are not the primary subject of the study's central argument.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "An astronomy paper claims that the newly observed exoplanet lies in the 'habitable zone' of its star, meaning liquid water could theoretically exist on its surface. The authors are careful to state they have not detected water or any signs of life."</em><br>
+          What is the difference between what the authors claim and what the term 'habitable zone' might suggest to a general reader?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The authors claim only that conditions allow for the theoretical possibility of liquid water. They have not detected water or life. A general reader might interpret 'habitable zone' as meaning life exists there — which goes beyond the actual claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A study of 200 urban gardens found that gardens with diverse plant species had 30% more pollinator visits than single-species gardens. The central claim is that plant diversity increases pollinator activity in urban settings."</em><br>
+          If a researcher finds the same pattern in rural gardens, does this strengthen, weaken, or neither affect the passage's main claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>It neither directly strengthens nor weakens the passage's specific claim, which is limited to urban settings. The rural finding is consistent with the claim but extends beyond its stated scope. The main claim's validity in urban settings remains the same.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Geologists studying rock layers in a canyon argue that the layers were deposited over approximately 10,000 years. This estimate is based on known rates of sediment deposition. The researchers acknowledge that deposition rates may have varied."</em><br>
+          How does the researchers' acknowledgement affect the strength of their main claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>It introduces uncertainty. If deposition rates varied, the 10,000-year estimate could be off. The acknowledgement shows intellectual honesty but also indicates the main claim is an estimate rather than a definitive fact.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — Is the claim valid? (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A study of 30 athletes found that those who listened to music while training improved their sprint times by an average of 4%. The authors claim: 'Music is an effective performance enhancer for all athletes.'"</em><br>
+          Evaluate the validity of the authors' claim. What is the most significant problem with generalising from this study?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The sample is too small (30 athletes) and not representative enough to support "all athletes." The claim over-generalises — it ignores sport type, athlete level, musical preference, and context. The word "all" makes the claim far broader than the evidence supports.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Researchers gave caffeine supplements to sleep-deprived participants and found improved reaction times. The paper's central claim is: 'Caffeine improves cognitive function.' A critic notes that all participants were sleep-deprived."</em><br>
+          Why does the critic's observation challenge the validity of the main claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The study only tested caffeine in sleep-deprived individuals. The main claim is broader — it implies caffeine improves cognition generally. The results may only show that caffeine counteracts sleep deprivation effects, not that it enhances cognition in well-rested individuals.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A five-year study of a lake found that water clarity improved after introducing species X. The study's main claim: 'Species X improves water clarity in lakes.' A reviewer notes no control lake was studied."</em><br>
+          Why is the absence of a control lake a critical flaw in evaluating this claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Without a control lake (a similar lake without species X), we cannot know whether water clarity would have improved naturally over the same five years regardless of species X. The improvement might be due to other environmental factors, not the introduced species.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A pharmaceutical company funds a study showing their new drug reduces headaches in 80% of patients. The study's main claim is that the drug is 'highly effective.' The study was not peer-reviewed and lasted only two weeks."</em><br>
+          Identify TWO factors that weaken the validity of the main claim.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>(1) Funding bias — the company funding the study has a financial interest in positive results, creating potential bias. (2) Short duration — two weeks may not reveal long-term effectiveness or side effects, making "highly effective" an overstatement. Lack of peer review also means the methodology was not independently validated.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A study of children in one city found that those who attended pre-school scored higher on literacy tests at age 7. The main claim: 'Pre-school attendance causes improved literacy outcomes.' The study did not account for parental education levels."</em><br>
+          Why is the unaccounted variable a threat to the causal claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Children with more educated parents may be more likely to attend pre-school AND to have better literacy outcomes due to enriched home environments. If parental education is a confounding variable, it — not pre-school attendance — could explain the higher literacy scores. The claim of causation is premature.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Scientists observe that every summer, ice cream sales and drowning rates both increase. A tabloid reports: 'Ice cream consumption causes drowning — scientists find.' The scientists' actual claim was only that both variables increase simultaneously in summer."</em><br>
+          What logical error does the tabloid commit in forming its claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The tabloid commits a correlation-causation error. The scientists only noted that both variables rise in summer — likely because hot weather increases both swimming and ice cream sales. Correlation does not imply causation; ice cream sales do not cause drowning.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A botanist grows ten plants under red light and ten under blue light. Plants under red light grew taller. The botanist's main claim: 'Red light is superior to blue light for plant growth.' A colleague points out that 'growth' was measured only as height."</em><br>
+          How does the colleague's observation limit the validity of the claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Growth encompasses more than height — it includes root development, leaf area, biomass, and fruit production. Using height as the sole metric is a narrow operational definition. The claim that red light is "superior" is too broad given only one growth measure was assessed.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "Anthropologists studying two remote villages found that Village A, which had more social gatherings, had longer average lifespans. Their main claim: 'Social interaction extends human lifespan.' The villages differed in diet, altitude, and healthcare access."</em><br>
+          Why do the differences between villages undermine the main claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Multiple confounding variables (diet, altitude, healthcare) could explain the lifespan difference. Since these variables were not controlled, we cannot isolate social interaction as the cause. The claim attributes the lifespan difference to one variable when many uncontrolled variables differ between the groups.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "An experiment exposed bacteria to antibiotic X. After 10 generations, resistant bacteria appeared. The researcher's main claim: 'Antibiotic X creates resistant bacteria.' A reviewer argues the antibiotic does not create resistance but rather selects for it."</em><br>
+          What important conceptual distinction does the reviewer raise about the main claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The reviewer distinguishes between creating resistance and selecting for it. The antibiotic does not generate new resistance genes; rather, it kills non-resistant bacteria, allowing pre-existing resistant variants to survive and reproduce. The researcher's claim implies the antibiotic is the origin of resistance, which is mechanistically inaccurate.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Passage: "A 2-week survey found that students in schools with green spaces reported lower stress. The study's main claim: 'Green spaces in schools reduce student stress long-term.' The study used self-reported stress levels and lasted only two weeks."</em><br>
+          Identify two methodological weaknesses that challenge this specific claim.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>(1) The claim says "long-term" but the study lasted only two weeks — far too short to establish long-term effects. (2) Self-reported stress is subjective and susceptible to response bias — students may report what they think is expected. Neither issue alone invalidates the general finding, but both prevent the "long-term" aspect of the claim from being supported.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 2 -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Science Vocabulary in Context</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=yLB-_X4x2LU">Words in Context — SAT Reading</a><a href="https://www.youtube.com/watch?v=Nm_VFVoGSB4">Science Vocabulary Strategies</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=R5-QUfr49bE">Statistical Significance Explained</a><a href="https://www.youtube.com/watch?v=9jW9G8MO4PQ">Correlation vs Causation</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=Hz_Lgv5cPME">Statistical Thinking</a><a href="https://www.youtube.com/watch?v=VH4oawCiHPU">Hypothesis Testing</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=i60wwZDA1CI">What Is a Scientific Hypothesis?</a><a href="https://www.youtube.com/watch?v=GUpd2HJHUt8">Reading Science in the News</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — What does the word mean here? (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The drug significantly reduced pain scores, dropping them from an average of 7.2 to 4.1 on a 10-point scale."</em><br>
+          In this context, "significantly" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Meaningfully or notably. In scientific writing, "significantly" often means the result is large enough to matter. Here, a drop of 3.1 points on a 10-point scale is a substantial, noticeable change — not just a small fluctuation.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Compound Y inhibits the growth of bacteria by blocking a key enzyme in cell wall construction."</em><br>
+          In this sentence, "inhibits" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Slows down or prevents. The context describes a blocking action — the compound stops or reduces bacterial growth by interfering with enzyme function.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Researchers found a correlation between hours of screen time and sleep duration: students with more screen time tended to sleep fewer hours."</em><br>
+          In this context, "correlation" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>A relationship or pattern between two variables. The sentence describes how two things (screen time and sleep) tend to change together, which is the meaning of correlation.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The mechanism by which caffeine keeps people awake involves blocking adenosine receptors in the brain."</em><br>
+          In this sentence, "mechanism" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>The process or way in which something works. The sentence explains how (the process by which) caffeine produces its effect — through a specific biological action.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The team's hypothesis was that increased CO₂ levels would accelerate plant growth, but results were inconclusive."</em><br>
+          In this sentence, "hypothesis" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>A testable prediction or proposed explanation. The team proposed an expected outcome before conducting their experiment — this is the definition of a hypothesis in scientific context.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The variable that researchers deliberately changed was the temperature; all other conditions remained constant."</em><br>
+          In this sentence, "variable" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>A factor or condition that can change. In experimental design, variables are the elements that can be altered or measured — here, temperature is the one being deliberately changed.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The results were deemed inconclusive because the data did not clearly support or refute the hypothesis."</em><br>
+          In this context, "inconclusive" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Not providing a clear answer or definite result. The context explains that the data neither confirmed nor denied the hypothesis — so no firm conclusion could be drawn.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Species diversity in the soil sample was robust, with over 200 distinct microbial types identified."</em><br>
+          In this sentence, "robust" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Strong, rich, or high. The context describes finding over 200 types, which supports the idea that diversity is substantial and well-represented.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The enzyme catalyses the breakdown of sugar molecules, speeding up a reaction that would otherwise take hours."</em><br>
+          In this sentence, "catalyses" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Speeds up or facilitates. The sentence explains that the enzyme makes a reaction happen much faster than it would naturally — catalysing means enabling or accelerating a process.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The experiment yielded anomalous results: three of the data points fell far outside the expected range."</em><br>
+          In this sentence, "anomalous" most nearly means:
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Unusual or not fitting the expected pattern. The context describes data points that fall outside the expected range — anomalous data is data that deviates from what was anticipated.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — What does the usage imply? (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The study found a statistically significant improvement in recovery time (p = 0.03). However, the average improvement was only 0.4 days."</em><br>
+          What is the implication of describing a 0.4-day improvement as "statistically significant"?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Statistical significance means the result is unlikely to be due to chance — but it does not mean the result is practically meaningful. A 0.4-day difference, while real, may not be clinically or practically important, showing that "significant" in science means something different from everyday usage.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Pesticide Z was found to inhibit reproduction in frogs at concentrations of 50 parts per billion (ppb). Typical river concentrations are 2–5 ppb."</em><br>
+          What does the use of "inhibit" combined with the concentration comparison tell you about the real-world relevance of this finding?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The word "inhibit" tells us reproduction is reduced at 50 ppb. However, since typical rivers only have 2–5 ppb, the concentrations shown to inhibit reproduction are 10–25 times higher than normal exposure. This suggests the effect may not be significant in typical environmental conditions.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The team proposed a novel mechanism for heat transfer in deep-sea vents, suggesting that mineral-laden water acts as a thermal conductor along the ocean floor."</em><br>
+          Why is the word "proposed" important in interpreting the strength of this claim about the mechanism?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>"Proposed" indicates the mechanism is a suggestion or hypothesis, not a confirmed fact. The team is offering a possible explanation — it has not yet been tested or verified. This hedging language signals the claim is preliminary.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Although a correlation was observed between urban tree cover and reduced hospital admissions, the researchers caution that confounding variables were not fully controlled."</em><br>
+          What does the researchers' caution about confounding variables suggest about the word "correlation" in this context?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>It emphasises that correlation is not causation. Other factors (income, access to healthcare, pollution) that correlate with both tree cover and health outcomes may be responsible for the pattern. The researchers are careful not to imply trees cause lower admissions.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Our working hypothesis is that increased iron availability drives algal blooms; however, we have not yet conducted controlled field trials."</em><br>
+          What does the phrase "working hypothesis" imply about the current status of this idea?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>A "working hypothesis" is a preliminary, operational assumption being used to guide research — not a confirmed conclusion. The phrase signals the idea is tentative and subject to revision, especially since the researchers note they haven't yet done field trials.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The drug appeared to mitigate symptoms in the short term; long-term effects remain uncharacterised."</em><br>
+          What does "uncharacterised" imply about what the researchers know regarding long-term effects?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>"Uncharacterised" means not yet studied or described — the long-term effects are unknown, not necessarily harmful or harmless. The word does not say effects are absent; it says they haven't been investigated, which is an important distinction for safety evaluation.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Subjects in the control group received a placebo — an inert substance designed to look identical to the treatment pill."</em><br>
+          Why is an "inert" substance important in understanding what the control group tells us?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>An inert substance has no active chemical effect. Using it means any difference between the groups cannot be attributed to the substance itself, only to the actual drug. This isolates the drug's effect and controls for the placebo effect (psychological response to taking a pill).</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Viral replication was attenuated in cells treated with the compound, suggesting potential antiviral properties."</em><br>
+          What does "attenuated" tell you about the extent of the compound's effect on viral replication?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>"Attenuated" means reduced or weakened — not eliminated. Viral replication was slowed or diminished, not stopped entirely. This nuance matters: the compound may reduce virus activity without completely preventing infection.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The species is considered endemic to the island, meaning it is found nowhere else in the world."</em><br>
+          Using only the context provided, what does "endemic" mean, and why is this ecologically important?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The sentence itself defines endemic as "found nowhere else in the world." Ecologically, this means if the island's habitat is destroyed, the species has no other population to fall back on — making it particularly vulnerable to extinction.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The experiment was replicated three times by independent teams, each yielding concordant results."</em><br>
+          What does "concordant" tell us about the reliability of the experimental results?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Concordant means in agreement — all three independent replications produced the same or very similar results. This increases confidence that the original results are reliable and not due to experimental error or chance in a single trial.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — Precision of language in claims (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The study found a significant correlation between sugar consumption and hyperactivity in children (r = 0.12, p = 0.04)."</em><br>
+          The correlation coefficient r = 0.12 is very close to 0. What does this tell you about the use of "significant" in this statement, and is the claim misleading?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>r = 0.12 indicates a very weak correlation — nearly no relationship. While p = 0.04 meets the threshold for statistical significance (meaning the result is unlikely to be chance), the effect size is tiny and practically meaningless. Calling it "significant" without noting the weakness of r is potentially misleading to a general reader.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Scientists have established the mechanism by which Vitamin D regulates calcium absorption. However, the precise molecular steps within the intestinal cell membrane are still debated."</em><br>
+          How does the word "precise" change the meaning of what is and is not known about the mechanism?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The broad mechanism is established, but the fine detail (precise molecular steps) remains uncertain. "Precise" limits the scope of what is debated — the general process is accepted, only the exact molecular-level sequence is contested. This is a nuanced distinction between partial and complete mechanistic understanding.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"This study suggests that air pollution may contribute to cognitive decline in elderly populations. We cannot rule out reverse causation."</em><br>
+          What does "reverse causation" mean in this context, and how does it affect interpretation of the finding?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Reverse causation would mean cognitive decline leads to living in more polluted areas (perhaps due to reduced economic mobility), rather than pollution causing decline. The researchers acknowledge they cannot determine the direction of causality — the association could run either way, undermining the implied causal interpretation.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The new material exhibits superconductive properties at temperatures below −150°C. It is being heralded as a 'room-temperature superconductor.'"</em><br>
+          Evaluate the accuracy of the term "room-temperature superconductor" based on the information given.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The term is inaccurate — −150°C is far below room temperature (approximately 20–25°C). The material requires extreme cold to superconduct. The label "room-temperature superconductor" is either an error, an exaggeration, or (in context) may mean it superconducts at a warmer temperature than previous materials — but that is not what the literal phrase means.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The research team observed that the treatment inhibited tumour growth in vitro (in laboratory cell cultures). The lead researcher stated in a press release: 'We have found a cure for cancer.'"</em><br>
+          What is the gap between the research finding and the researcher's press release claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>In vitro results in cell cultures are very early-stage — what works in isolated cells often fails in living organisms. The jump from "inhibited tumour growth in a lab dish" to "cured cancer" is enormous: no animal trials, no human trials, no evidence of safety or efficacy in vivo. The press release catastrophically over-states the finding.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Our model predicts a 3°C rise in global temperature by 2100. This projection assumes current emission trends continue unchanged."</em><br>
+          A politician quotes this study saying: "Scientists guarantee a 3-degree rise." Identify the misuse of scientific vocabulary in the politician's statement.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>"Predict" and "guarantee" are very different. A model prediction is conditional (based on stated assumptions) and carries uncertainty ranges. The study explicitly states the projection assumes unchanged trends — if emissions change, the prediction changes. "Guarantee" implies certainty, which is never appropriate for model projections.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"Participants who exercised showed elevated levels of Brain-Derived Neurotrophic Factor (BDNF), a protein associated with neuroplasticity. The study hypothesises that exercise directly enhances memory."</em><br>
+          Evaluate the logic connecting BDNF levels to the memory hypothesis.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>There are multiple inferential leaps: (1) BDNF rose with exercise; (2) BDNF is associated with neuroplasticity; (3) neuroplasticity is associated with memory. Each "associated with" link is correlational, not causal. The direct exercise-to-memory claim requires evidence that elevated BDNF actually causes improved memory — not just that these things correlate. The word "hypothesises" correctly signals this is not yet proven.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The species population declined by 40% over the study period. This decline was deemed 'negligible' by the environmental impact assessment."</em><br>
+          What problem does this sentence raise about the use of the word "negligible"?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>A 40% population decline is not ordinarily described as negligible — negligible means too small to be worth considering. The use of the word here is highly questionable; it appears to minimise a substantial decline. This may reflect a motivated use of vocabulary (perhaps to avoid regulatory action), and readers should scrutinise whether the classification is scientifically justified.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The treatment was found to be non-inferior to the standard therapy in clinical trials." A patient reads this and concludes: "The new treatment is just as good as the standard one."</em><br>
+          Is the patient's interpretation of "non-inferior" accurate? Explain.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>"Non-inferior" is a specific statistical term meaning the new treatment did not perform worse than the standard by more than a pre-specified margin — it does not mean they are equally good. The new treatment could still be slightly worse, just within an acceptable limit. The patient's interpretation is close but technically imprecise; "non-inferior" is not the same as "equivalent."</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>"The genome of Species A was sequenced with 98.7% accuracy." A journalist writes: "Scientists have perfectly decoded the DNA of Species A."</em><br>
+          How does 98.7% accuracy differ from "perfectly decoded," and why does the difference matter?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>98.7% accuracy means 1.3% of the genome was misread or missed. For a genome of 3 billion base pairs, that represents roughly 39 million errors or unknown bases. "Perfectly decoded" implies zero errors. This distinction matters enormously for research applications where even small sequencing errors can lead to incorrect biological conclusions.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 3 -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Supporting Evidence</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=7XjMBrHHR3g">Evidence in Science Reading</a><a href="https://www.youtube.com/watch?v=LCNhca0Bk_U">What Strengthens or Weakens a Claim?</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=X72-PYAroVY">The Scientific Method Explained</a><a href="https://www.youtube.com/watch?v=kH0OAPV2nLQ">How Science Works</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=VH4oawCiHPU">Experimental Design</a><a href="https://www.youtube.com/watch?v=eSAKN-FYMvY">Evidence &amp; Argumentation</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=eev_cJ2KNXU">How to Spot Bad Science</a><a href="https://www.youtube.com/watch?v=GUpd2HJHUt8">Peer Review Process</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — Does this evidence relate to the claim? (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Regular exercise reduces the risk of type 2 diabetes." Evidence presented: "Study participants who exercised 150 minutes per week had a 35% lower incidence of type 2 diabetes over 10 years."</em><br>
+          Does this evidence directly support the claim? Why or why not?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes, it directly supports the claim. The evidence measures exercise frequency and diabetes incidence in the same group, showing a quantified reduction in diabetes risk associated with regular exercise — matching the claim precisely.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Bees are essential for pollinating apple trees." Evidence presented: "Apple orchards located near bee colonies produced 60% more fruit per tree than orchards without nearby bee colonies."</em><br>
+          Is this evidence relevant to the claim? What does it show?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes, it is directly relevant. It shows a measurable difference in fruit production related to bee presence, supporting the idea that bees play an important role in apple tree pollination.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Ocean acidification harms coral reef growth." Evidence presented: "Coral reefs are beautiful ecosystems with hundreds of species."</em><br>
+          Does this evidence support the claim? Explain.
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>No. The evidence describes coral reefs generally but says nothing about acidification or growth rates. It is irrelevant to the specific claim about ocean acidification harming reef growth.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Solar panels are becoming more affordable." Evidence presented: "The average cost per watt of solar panels dropped from $5.00 in 2010 to $0.80 in 2023."</em><br>
+          Does this evidence support the claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes, strongly. The data shows a dramatic decrease in cost over 13 years — from $5.00 to $0.80 per watt — directly demonstrating that solar panels have become more affordable.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Lack of sleep impairs memory consolidation." Evidence presented: "Sleep-deprived rats performed worse on maze-navigation tasks they had learned the previous day, compared to well-rested rats."</em><br>
+          Does this animal study provide relevant evidence for the human claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>It is relevant but limited. The study supports the general idea that sleep deprivation impairs memory-related performance. However, it is an animal study, so direct applicability to human memory consolidation requires additional evidence from human studies.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Deforestation increases local temperatures." Evidence presented: "Countries with high deforestation rates rank highly on global inequality indices."</em><br>
+          Is this evidence relevant to the temperature claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>No. Inequality indices measure economic and social factors, not temperatures. The evidence is completely unrelated to the claim about deforestation and local temperature change.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Hand washing reduces the spread of respiratory illness in schools." Evidence presented: "Schools that introduced mandatory hand-washing programmes saw a 28% reduction in student absences due to illness over one academic year."</em><br>
+          Evaluate whether this evidence supports the claim.
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes, it supports the claim. The evidence directly connects hand-washing programmes to a measurable reduction in illness-related absences in the school setting — matching both the intervention and the population in the claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Nitrogen fertiliser increases crop yield." Evidence presented: "Farmers who used nitrogen fertiliser reported feeling more confident about their harvest season."</em><br>
+          Does this evidence support the claim? Why or why not?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>No. Farmer confidence is a subjective feeling, not a measurement of crop yield. The claim requires data on actual plant growth or harvest amounts — feelings do not constitute scientific evidence of increased yield.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Wetlands act as natural water filters." Evidence presented: "Water samples taken downstream of intact wetlands showed 45% lower levels of agricultural runoff pollutants compared to water upstream of the wetlands."</em><br>
+          Does this evidence support the claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes, directly. The upstream/downstream comparison shows water pollutant levels are substantially lower after passing through wetlands, supporting the claim that wetlands filter water.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Wolves reintroduced to Yellowstone changed river behaviour." Evidence presented: "After wolves were reintroduced, elk herds avoided riverbanks, allowing vegetation to regrow, which reduced erosion and changed how rivers meandered."</em><br>
+          Does this evidence support the claim?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes. The evidence provides a causal chain: wolves → elk behaviour change → vegetation regrowth → reduced erosion → altered river behaviour. This directly supports and explains the claim.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — What additional evidence would help? (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Listening to classical music improves mathematical performance in students." Current evidence: "Students who attended a classical music concert scored higher on a maths test the next day than students who did not attend."</em><br>
+          What additional evidence would most strengthen this claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>A controlled experiment where students are randomly assigned to listen to classical music (or not) immediately before a maths test, measuring scores under identical conditions — and ideally repeated across multiple sessions and student groups to rule out the concert experience itself (excitement, social activity) as the cause.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Low-income households are disproportionately affected by flooding." Evidence: "A survey of flood-affected residents in City A found that 68% had annual incomes below the city median."</em><br>
+          What additional evidence would strengthen the claim that this is a widespread pattern, not specific to City A?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Data from multiple cities or regions showing the same income-flooding relationship would strengthen the claim. A comparison of flood zone locations overlaid with income maps across diverse geographic areas would demonstrate the pattern is systematic, not a local coincidence.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Reducing screen time improves sleep quality in teenagers." Evidence: "Teenagers who reported using screens less than 1 hour before bed slept an average of 45 minutes longer per night."</em><br>
+          This evidence uses self-reported data. What type of evidence would most strengthen the claim?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Objective measurement of sleep using polysomnography or actigraphy (wrist-worn sleep trackers) combined with experimentally controlled screen time — where researchers randomly assign screen time limits rather than relying on self-reporting — would provide much stronger evidence.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Antibiotics in livestock feed contribute to antibiotic-resistant infections in humans." Evidence: "Farms using antibiotics prophylactically have higher rates of resistant bacteria in animal samples."</em><br>
+          What evidence is still missing to complete the causal chain to humans?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Evidence that the resistant bacteria from animals transfer to humans — for example, identical resistance genes found in both farm animals and nearby human patients, or tracking of specific resistant strains from food products into human gut bacteria. The current evidence only shows resistance in animals, not transmission to humans.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Urban green spaces reduce stress." Evidence: "People who spent 20 minutes in a park reported lower stress levels than before their visit."</em><br>
+          A sceptic argues that people who choose to visit parks may already be less stressed. What study design would address this concern?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>A randomised controlled trial where participants are randomly assigned to spend time in a park OR an urban non-green space (e.g., a shopping area), measuring stress levels before and after with objective measures (cortisol levels), would control for self-selection bias and allow comparison of the two environments directly.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "A new drug X cures Disease Y in 90% of patients." Evidence: "In a trial of 20 patients, 18 recovered after taking Drug X."</em><br>
+          What is the most important limitation of this evidence, and what would address it?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The sample size of 20 is very small — 18 out of 20 could be coincidental. A larger trial (hundreds or thousands of patients) with a placebo control group would establish whether recovery rates with Drug X exceed those without it, and whether 90% is a reliable figure rather than a small-sample artefact.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Cycling to school improves children's academic performance." Evidence: "Schools with high rates of cycling to school had higher average test scores than schools with low cycling rates."</em><br>
+          What confounding variable is likely present, and what additional evidence would control for it?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>School location and socioeconomic status are likely confounders — schools where cycling is common may be in wealthier, safer neighbourhoods with better resources. Controlling for school funding level, neighbourhood income, and parental education when comparing test scores, or tracking individual students' scores before and after they begin cycling, would help isolate the cycling effect.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Plastic pollution reduces fish populations." Evidence: "Beaches with high plastic pollution had fewer fish in nearby waters."</em><br>
+          What does this evidence not tell us that would be important to establish?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The evidence shows correlation — plastic-polluted beaches coincide with fewer fish. It does not establish: (1) whether plastic caused the decline or other factors (overfishing, water temperature) are responsible, (2) the mechanism by which plastic affects fish, or (3) whether fish populations declined after plastic levels rose (temporal evidence). Longitudinal studies or controlled exposure experiments would be needed.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Morning sunlight exposure regulates circadian rhythms." Evidence: "Lab mice exposed to bright light at 7 a.m. showed more regular sleep-wake cycles than mice kept in constant artificial light."</em><br>
+          What additional evidence would best extend this finding to human populations?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Human studies tracking circadian biomarkers (melatonin levels, core body temperature rhythms) in participants randomly assigned to morning sunlight exposure versus indoor conditions would directly test whether the mouse findings translate to humans. Ecological studies of shift workers or those in polar regions (with unusual light patterns) could also provide relevant data.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Reforestation programmes restore biodiversity." Evidence: "A replanted forest in Brazil showed 40 bird species after 15 years, compared to zero in an adjacent cleared field."</em><br>
+          What would strengthen the claim that the reforestation programme — rather than natural recovery — caused the biodiversity increase?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Comparing the replanted forest against a naturally regenerating area of similar age would isolate the specific effect of the programme. If the programme forest showed greater diversity than natural regrowth, we could credit the intervention. Without this comparison, some recovery may have occurred naturally regardless of the replanting effort.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — What weakens the claim? (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "A high-protein diet causes faster muscle growth." Evidence: "Athletes who consumed 2g protein/kg body weight daily gained 3kg of muscle over 12 weeks, compared to 1.2kg for those on a standard diet." New finding: "The high-protein group also trained 20% more hours per week."</em><br>
+          How does the new finding affect the evidence for this claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The new finding introduces a critical confounding variable — the high-protein group trained significantly more. The muscle gain could be due to extra training rather than the high-protein diet. The two variables (diet and training volume) were not controlled, so we cannot attribute the difference to diet alone. The evidence no longer clearly supports the causal claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Compound X prevents tumour growth." Supporting evidence: "In cell cultures, Compound X reduced tumour cell division by 70%." Weakening evidence: "In three mouse trials, Compound X showed no significant effect on tumour size."</em><br>
+          How should the weakening evidence change our assessment of the supporting evidence?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The in vitro (cell culture) success does not translate to in vivo (living organism) results. This is a common pattern in drug research — cell culture results frequently fail in animal models. The mouse trials provide a higher level of biological complexity, and their null results significantly weaken confidence in the original claim. The in vitro evidence alone is insufficient support.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Social media use causes depression in teenagers." Evidence A: "Teenagers with high social media use report higher depression rates." Evidence B: "Teenagers already experiencing depression report spending more time on social media."</em><br>
+          How does Evidence B challenge Evidence A's support for the causal claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Evidence B raises the reverse causation possibility — depression may cause increased social media use, not the other way around. Both pieces of evidence show the same correlation but suggest opposite causal directions. The causal claim (social media causes depression) is undermined because the direction of causation cannot be determined from either piece of evidence alone.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Noise pollution from traffic harms bird communication." Evidence: "Bird species in noisy urban areas sing at higher frequencies than the same species in quiet rural areas."</em><br>
+          A researcher notes that urban birds may also face different predator pressures. How does this weaken the evidence?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Different predator environments could also drive changes in song frequency independent of noise — for example, urban predators may differ in the frequencies they detect, selecting for different song pitches. Without controlling for predator pressure, we cannot be certain that noise (rather than predation selection pressure) is responsible for the frequency shift.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Vitamin C supplements reduce cold duration." Evidence A (supports): "A meta-analysis of 20 studies found supplements reduced cold duration by 8% on average." Evidence B (weakens): "When only double-blind placebo-controlled studies are included, the effect drops to 1.5% and is not statistically significant."</em><br>
+          Why is Evidence B more compelling than Evidence A in evaluating the claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Evidence B filters for higher-quality studies (double-blind, placebo-controlled), which eliminate placebo effects and researcher bias. The 8% average in Evidence A may be inflated by weaker study designs. When only the most rigorous studies are considered, the effect nearly disappears and is statistically insignificant — far less supportive of the claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "The new fertiliser increases wheat yield by 25%." Evidence: "Trials at three farms in the same valley showed a 25% yield increase." Weakening observation: "All three farms are in the same microclimate and drew from the same irrigation source during an unusually wet year."</em><br>
+          How do the weakening details undermine the generalisability of the 25% figure?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The three farms are not independent — they share the same microclimate, irrigation source, and experienced unusual weather. The 25% increase may be due to the wet conditions or irrigation quality rather than the fertiliser. The evidence cannot be generalised to other farms in different climates until trials in diverse, independent conditions confirm the result.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Mindfulness meditation reduces workplace stress." Evidence supports it with a study of 50 volunteers. Weakening factor: All 50 participants volunteered for the meditation programme; none were randomly assigned.</em><br>
+          Why is the self-selection of participants a significant methodological weakness?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>People who voluntarily sign up for meditation programmes may already be more motivated to reduce stress, more open to its benefits, or less severely stressed. This self-selection bias means the group is not representative of all employees. The improvement could reflect participant characteristics rather than meditation's effectiveness.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "LED street lights deter crime." Evidence: "Crime rates fell 15% in neighbourhoods where LED lights replaced older sodium lights." Weakening evidence: "During the same period, the city increased police patrols by 20% in those same neighbourhoods."</em><br>
+          How does the weakening evidence affect the validity of the claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Both LED lighting and increased police patrols were implemented simultaneously — making it impossible to attribute the crime reduction to lights alone. Increased policing is a well-established crime deterrent. Without a comparison neighbourhood where only lights changed (not patrols), the evidence cannot isolate the lighting effect. The claim is not supported as stated.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Diet A is more effective than Diet B for weight loss." Evidence: "Participants on Diet A lost an average of 5.2kg; participants on Diet B lost 3.1kg over 3 months." Weakening factor: "Drop-out rates were 5% for Diet A and 42% for Diet B."</em><br>
+          How do the different drop-out rates undermine the comparison?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Participants who drop out often do so because the diet isn't working or is unsustainable. The 42% who dropped out of Diet B likely include those losing little weight. The remaining 58% who completed Diet B may be its best performers — yet Diet A still outperformed them. This means Diet B's reported average is artificially inflated by survivor bias. Diet A's lower drop-out rate also suggests it may be more sustainable, which complicates the comparison further.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Claim: "Species diversity prevents ecosystem collapse." Evidence: "Ecosystems with more species showed greater stability over 20 years." New contradictory finding: "A highly diverse but fragile coral reef collapsed within 2 years following a single bleaching event."</em><br>
+          How should this contradictory case be weighed against the broader evidence?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>One contradictory case (an outlier or exception) does not invalidate a pattern observed across many ecosystems. However, it does reveal that diversity is not a sufficient protection against all disturbance types — extreme acute events may override diversity benefits. The claim should be qualified: diversity may improve resilience against gradual or moderate stressors but may not protect against sudden, severe disruptions.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 4 -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Interpreting Data Tables</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=_v5DPEAbLdc">Reading Data Tables</a><a href="https://www.youtube.com/watch?v=sXQjafvNmbo">Tables and Two-Way Tables</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=IpGxLWOIZy4">Data Literacy Basics</a><a href="https://www.youtube.com/watch?v=Sm5xF-UYgdg">Understanding Data</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=oI3DG6-WOKE">Stats: Tables &amp; Distributions</a><a href="https://www.youtube.com/watch?v=GamlRMEMQAo">Data Tables in Science</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=5Zg-C8AAIGg">How to Read Scientific Data</a><a href="https://www.youtube.com/watch?v=OPQH8kLCXlo">Making Sense of Numbers</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — Reading the table correctly (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Plant growth under different light colours after 2 weeks.<br>
+          | Light colour | Avg height (cm) | Leaf count |<br>
+          | Red | 18.4 | 12 |<br>
+          | Blue | 21.7 | 15 |<br>
+          | Green | 9.2 | 6 |<br>
+          | White | 19.8 | 13 |</em><br>
+          Under which light colour did plants grow tallest?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Blue light — plants reached an average height of 21.7 cm, the highest value in the "Avg height" column.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table (same as above): Plant growth under different light colours after 2 weeks.</em><br>
+          Which light colour produced the fewest leaves, and how many leaves did those plants have?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Green light produced the fewest leaves — only 6 per plant on average.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Water temperature (°C) at different ocean depths.<br>
+          | Depth (m) | Temperature (°C) |<br>
+          | 0 | 26.1 |<br>
+          | 100 | 20.5 |<br>
+          | 500 | 12.3 |<br>
+          | 1000 | 6.8 |<br>
+          | 2000 | 3.1 |</em><br>
+          What is the temperature at 500 metres depth?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>12.3°C. Read across the row where Depth = 500 m.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table (same depth/temperature table).</em><br>
+          Between which two consecutive depth measurements does the greatest temperature drop occur?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Between 0 m and 100 m: temperature drops 5.6°C (from 26.1 to 20.5). This is larger than any other consecutive pair: 100–500m drops 8.2°C but spans 400m; per 100m, the surface-to-100m drop is the steepest.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Reaction rate (mmol/min) at different enzyme concentrations.<br>
+          | Enzyme conc. (mg/mL) | Reaction rate |<br>
+          | 0.5 | 4.2 |<br>
+          | 1.0 | 8.6 |<br>
+          | 1.5 | 12.9 |<br>
+          | 2.0 | 16.1 |<br>
+          | 2.5 | 16.3 |</em><br>
+          At what enzyme concentration does the reaction rate appear to level off?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Between 2.0 and 2.5 mg/mL — the rate only increases by 0.2 mmol/min (from 16.1 to 16.3), suggesting the rate is approaching a plateau (maximum enzyme saturation).</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Number of species in forest plots of different sizes.<br>
+          | Plot size (hectares) | Bird species | Mammal species |<br>
+          | 1 | 8 | 3 |<br>
+          | 5 | 19 | 7 |<br>
+          | 20 | 34 | 12 |<br>
+          | 100 | 56 | 22 |</em><br>
+          How many bird species were found in the 20-hectare plot?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>34 bird species, as shown in the Bird species column for the 20-hectare row.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table (same species/plot table).</em><br>
+          In every plot size shown, which group has more species — birds or mammals?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Birds have more species in every plot size. Comparing each row: 8 vs 3, 19 vs 7, 34 vs 12, 56 vs 22 — birds consistently outnumber mammals.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Average test scores by study method and hours studied per week.<br>
+          | Hours/week | Flashcards | Reading | Practice tests |<br>
+          | 2 | 61 | 58 | 64 |<br>
+          | 4 | 68 | 63 | 74 |<br>
+          | 6 | 72 | 67 | 81 |<br>
+          | 8 | 74 | 70 | 88 |</em><br>
+          Which study method produced the highest score at 8 hours per week?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Practice tests — they produced a score of 88 at 8 hours per week, the highest value in that row.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table (same study method table).</em><br>
+          By how many points did practice tests outperform reading at 6 hours per week?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>81 − 67 = 14 points.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Soil mineral content (mg/kg) in three field types.<br>
+          | Mineral | Farmland | Forest | Grassland |<br>
+          | Nitrogen | 45 | 120 | 78 |<br>
+          | Phosphorus | 22 | 18 | 31 |<br>
+          | Potassium | 89 | 143 | 104 |</em><br>
+          Which field type has the highest nitrogen content?
+          <span class="diff diff-easy">Easy</span>
+          <details class="ans"><summary>Show Answer</summary><p>Forest soil has the highest nitrogen content at 120 mg/kg.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — What trends appear? (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Antibiotic resistance rates (%) in bacteria sampled from three hospital units over four years.<br>
+          | Year | ICU | General Ward | Outpatient |<br>
+          | 2020 | 12 | 5 | 2 |<br>
+          | 2021 | 18 | 7 | 3 |<br>
+          | 2022 | 25 | 9 | 3 |<br>
+          | 2023 | 31 | 12 | 4 |</em><br>
+          What overall trend is visible across all three units, and which unit shows the fastest rate of increase?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>All three units show increasing resistance over time. The ICU shows the fastest increase — rising from 12% to 31% (an increase of 19 percentage points), compared to 7 points for General Ward and 2 points for Outpatient. The ICU also has the highest absolute rates throughout.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Average CO₂ emissions (tonnes per capita) by country income group, 2000–2020.<br>
+          | Year | High income | Middle income | Low income |<br>
+          | 2000 | 12.1 | 3.4 | 0.3 |<br>
+          | 2005 | 11.8 | 4.1 | 0.4 |<br>
+          | 2010 | 11.2 | 5.3 | 0.4 |<br>
+          | 2015 | 10.5 | 6.2 | 0.5 |<br>
+          | 2020 | 9.8 | 6.8 | 0.6 |</em><br>
+          Describe the diverging trends and what they suggest about the source of global emissions over time.
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>High-income emissions are declining (12.1 → 9.8), while middle-income emissions are rising sharply (3.4 → 6.8). Low-income emissions remain very small and roughly stable. This suggests that as middle-income countries industrialise, they are contributing an increasing share of global emissions, while high-income countries are somewhat reducing their per-capita output.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Survival rate (%) of patients receiving three cancer treatments at different disease stages.<br>
+          | Stage | Treatment A | Treatment B | Treatment C |<br>
+          | I | 95 | 92 | 89 |<br>
+          | II | 78 | 80 | 71 |<br>
+          | III | 45 | 61 | 38 |<br>
+          | IV | 18 | 30 | 12 |</em><br>
+          Which treatment performs best overall, and does the same treatment lead at all stages?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Treatment B performs best at Stages II, III, and IV. However, Treatment A leads at Stage I (95% vs 92%). Treatment C has the lowest survival rates at every stage. A clinician would need to consider disease stage when choosing between A and B.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Bee colony counts (per km²) in regions with different pesticide policies.<br>
+          | Policy | 2015 | 2018 | 2021 |<br>
+          | Ban on neonicotinoids | 14 | 17 | 22 |<br>
+          | Restricted use | 13 | 13 | 14 |<br>
+          | Unrestricted use | 15 | 11 | 8 |</em><br>
+          What pattern does the table reveal about pesticide policy and bee colony counts?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>Regions with a ban show steadily increasing colony counts (14 → 22). Restricted use regions show flat counts. Unrestricted use regions show a significant decline (15 → 8). The data suggests a relationship between pesticide restriction and bee population health, though the starting counts were similar, ruling out a simple starting-advantage explanation.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Mean river flow rate (m³/s) by month for two rivers.<br>
+          | Month | River A | River B |<br>
+          | Jan | 85 | 30 |<br>
+          | Mar | 120 | 28 |<br>
+          | Jun | 42 | 95 |<br>
+          | Sep | 30 | 110 |<br>
+          | Dec | 78 | 35 |</em><br>
+          What seasonal pattern does each river show, and what might this suggest about their water sources?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>River A peaks in late winter/spring (Jan–Mar: 85–120) and is lowest in Sep (30), suggesting it is fed by snowmelt. River B peaks in Jun–Sep (95–110) and is lowest in winter, suggesting it is fed by monsoon or summer rainfall. Their peak flow seasons are opposite.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Average weight gain (g) of mice fed different diets over 8 weeks.<br>
+          | Diet | Week 2 | Week 4 | Week 6 | Week 8 |<br>
+          | Standard | 3.1 | 5.8 | 8.4 | 10.2 |<br>
+          | High sugar | 4.7 | 10.3 | 17.8 | 26.5 |<br>
+          | High fat | 4.2 | 9.1 | 14.6 | 19.3 |</em><br>
+          What does the accelerating gap between Standard and High Sugar diets suggest about weight gain over time?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The gap widens progressively — at Week 2 it is 1.6g, by Week 8 it is 16.3g. This acceleration suggests that the high-sugar diet causes weight gain that compounds over time rather than remaining constant — the difference is not just additive but growing, possibly due to metabolic changes.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Soil carbon content (%) under different land uses after 10 years.<br>
+          | Land use | Sandy soil | Clay soil | Loam soil |<br>
+          | Crops | 0.8 | 1.9 | 2.1 |<br>
+          | Pasture | 1.4 | 2.8 | 3.3 |<br>
+          | Woodland | 2.3 | 4.1 | 5.2 |</em><br>
+          What TWO patterns are visible across both rows and columns?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>(1) Across land uses: carbon content increases from Crops to Pasture to Woodland in every soil type. (2) Across soil types: carbon content increases from Sandy to Clay to Loam in every land use. Both vegetation type and soil type independently influence carbon storage.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Hours of sleep per night vs next-day test scores (sample of 6 students).<br>
+          | Student | Hours of sleep | Score (%) |<br>
+          | A | 5 | 58 |<br>
+          | B | 6 | 64 |<br>
+          | C | 7 | 71 |<br>
+          | D | 8 | 79 |<br>
+          | E | 9 | 82 |<br>
+          | F | 10 | 80 |</em><br>
+          What overall trend do you see, and is there any exception to it?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The general trend is that more sleep correlates with higher scores. The exception is at 10 hours — Student F scored 80, which is slightly lower than Student E's 82 at 9 hours. This suggests there may be a point of diminishing or slightly reversed returns beyond 9 hours, though with only one data point this is tentative.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Electricity generation (TWh) by source in Country X.<br>
+          | Year | Coal | Natural Gas | Solar | Wind |<br>
+          | 2010 | 480 | 210 | 2 | 15 |<br>
+          | 2015 | 430 | 240 | 18 | 45 |<br>
+          | 2020 | 360 | 255 | 67 | 120 |<br>
+          | 2023 | 290 | 260 | 142 | 198 |</em><br>
+          Which energy transition trend does this table show most dramatically?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>The most dramatic trend is the rapid growth of solar and wind: solar grew 71× (2 to 142 TWh) and wind grew 13× (15 to 198 TWh) between 2010 and 2023. Meanwhile, coal declined steadily. By 2023, wind has nearly reached natural gas levels, suggesting a significant ongoing energy transition away from fossil fuels.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Population of three predator species and prey species (thousands) over 5 years.<br>
+          | Year | Wolves | Deer | Lynx | Rabbits |<br>
+          | 1 | 4.2 | 58 | 3.1 | 42 |<br>
+          | 2 | 4.8 | 51 | 3.4 | 36 |<br>
+          | 3 | 5.3 | 44 | 3.7 | 28 |<br>
+          | 4 | 4.9 | 47 | 3.2 | 33 |<br>
+          | 5 | 4.3 | 53 | 2.9 | 38 |</em><br>
+          What pattern in the predator-prey relationship is visible between wolves and deer?
+          <span class="diff diff-medium">Medium</span>
+          <details class="ans"><summary>Show Answer</summary><p>As wolf populations increase (years 1–3), deer populations decline. When wolf numbers fall (years 4–5), deer populations recover. This inverse pattern is consistent with a classic predator-prey oscillation — predators reduce prey, which in turn reduces the food supply for predators, causing their population to fall too.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — Which values support which claims? (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Infant mortality rate (per 1,000 births) and doctors per 10,000 people in six countries.<br>
+          | Country | Infant mortality | Doctors/10k |<br>
+          | A | 3.1 | 42 |<br>
+          | B | 5.8 | 28 |<br>
+          | C | 18.4 | 9 |<br>
+          | D | 7.2 | 19 |<br>
+          | E | 2.4 | 51 |<br>
+          | F | 12.1 | 14 |</em><br>
+          Claim: "More doctors per capita reduces infant mortality." Do all data points support this claim? Identify any exception.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The general pattern supports the claim: Country E (51 doctors, 2.4 mortality), Country A (42, 3.1), Country B (28, 5.8) — high doctors, low mortality. Country C (9, 18.4) and F (14, 12.1) also fit. Country D (19 doctors, 7.2 mortality) is a mild exception — it has fewer doctors than B but similar mortality. The general inverse trend holds, but D shows the relationship is imperfect, suggesting other factors also influence infant mortality.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Particle size (micrometres) and filter efficiency (%) for four filter materials.<br>
+          | Particle size | Filter A | Filter B | Filter C | Filter D |<br>
+          | 10 | 99 | 98 | 97 | 89 |<br>
+          | 5 | 97 | 90 | 88 | 72 |<br>
+          | 2.5 | 88 | 71 | 65 | 51 |<br>
+          | 1 | 62 | 45 | 38 | 29 |<br>
+          | 0.3 | 41 | 28 | 22 | 14 |</em><br>
+          A manufacturer claims Filter A is "suitable for all particle sizes." Does the table support this claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The claim is too broad. Filter A performs excellently at 10 µm (99%) but only captures 41% of particles at 0.3 µm. For applications requiring high efficiency with very small particles (fine dust, aerosols), 41% efficiency is inadequate. The table shows Filter A's efficiency declines significantly at smaller sizes, meaning it is NOT suitable for all applications involving small particles.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Average harvest (kg/plot) under four irrigation systems × two soil types.<br>
+          | Irrigation | Clay soil | Sandy soil |<br>
+          | Drip | 420 | 390 |<br>
+          | Sprinkler | 380 | 340 |<br>
+          | Flood | 310 | 220 |<br>
+          | None | 180 | 95 |</em><br>
+          Two claims: Claim 1: "Drip irrigation is best for sandy soils." Claim 2: "Soil type does not matter if drip irrigation is used." Which claim does the table support and which does it contradict?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Claim 1 is supported — drip gives the highest yield in sandy soil (390), outperforming all other methods. Claim 2 is contradicted — drip in clay soil (420) outperforms drip in sandy soil (390), showing soil type still matters even with optimal irrigation. The gap is 30 kg/plot, indicating clay soil yields more under drip than sandy soil does.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Drug concentration (ng/mL) in blood at different time intervals after a single dose.<br>
+          | Time (hrs) | Drug X | Drug Y |<br>
+          | 0.5 | 48 | 12 |<br>
+          | 1 | 62 | 35 |<br>
+          | 2 | 58 | 71 |<br>
+          | 4 | 31 | 68 |<br>
+          | 8 | 9 | 43 |<br>
+          | 12 | 2 | 18 |</em><br>
+          Claim: "Drug Y provides more sustained therapeutic coverage than Drug X." Does the table support this claim, and what specific values are most relevant?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>Yes, the table supports this claim. Drug X peaks at 1 hr (62 ng/mL) then falls sharply, dropping to 9 by 8 hrs. Drug Y peaks later at 2–4 hrs (68–71 ng/mL) and remains at 43 ng/mL at 8 hrs — far higher than Drug X at the same time. At 12 hrs, Drug Y (18) still substantially exceeds Drug X (2). Drug Y's sustained higher concentrations support the "more sustained coverage" claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Species richness in marine protected areas (MPAs) vs non-protected areas, by region.<br>
+          | Region | MPA (species) | Non-MPA (species) | Difference |<br>
+          | Tropics | 214 | 138 | +76 |<br>
+          | Temperate | 89 | 71 | +18 |<br>
+          | Polar | 34 | 36 | −2 |<br>
+          | Upwelling zones | 156 | 101 | +55 |</em><br>
+          A report claims "MPAs consistently increase marine species richness." Does the table fully support this?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The word "consistently" is the problem — MPAs show higher richness in 3 of 4 regions (tropics, temperate, upwelling zones), but in polar regions, the non-MPA area actually has slightly more species (+2). The claim is mostly but not fully supported. In polar regions, MPAs do not appear to increase richness, contradicting "consistently." A more accurate claim would say "MPAs generally increase richness in most regions."</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Heart rate (bpm) and oxygen consumption (mL/kg/min) during exercise at different intensities.<br>
+          | Intensity | Heart rate | O₂ consumption |<br>
+          | Rest | 65 | 3.5 |<br>
+          | Light | 95 | 10.2 |<br>
+          | Moderate | 135 | 22.8 |<br>
+          | Vigorous | 170 | 38.4 |<br>
+          | Maximum | 192 | 52.1 |</em><br>
+          Claim: "Heart rate increases proportionally with oxygen consumption during exercise." Test this claim using two pairs of values from the table.
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>From Rest to Light: HR increases 46% (65→95), O₂ increases 191% (3.5→10.2) — not proportional. From Moderate to Vigorous: HR increases 26% (135→170), O₂ increases 68% (22.8→38.4) — also not proportional. O₂ consumption increases much faster than heart rate at lower intensities. The claim of proportionality is not supported — the relationship is non-linear.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Percentage of students passing a standardised exam, by school size and funding level.<br>
+          | Funding | Small school | Medium school | Large school |<br>
+          | Low | 52 | 58 | 55 |<br>
+          | Medium | 61 | 67 | 64 |<br>
+          | High | 74 | 79 | 71 |</em><br>
+          A researcher claims "school size is the most important factor in exam pass rates." Does the table support this over funding level?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>No — the table shows funding is a stronger factor. Within each funding level, pass rates differ by only 3–8 percentage points across school sizes. But within each school size, pass rates differ by 17–21 percentage points across funding levels. The variation due to funding far exceeds the variation due to school size, contradicting the researcher's claim.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Pollutant levels (µg/m³) measured at three monitoring stations before and after a new emissions regulation.<br>
+          | Station | Before | After | Change (%) |<br>
+          | Industrial | 148 | 102 | −31% |<br>
+          | Residential | 67 | 49 | −27% |<br>
+          | Rural | 22 | 21 | −5% |</em><br>
+          Claim: "The new regulation effectively reduced pollution across all areas." Do the data support "effectively" and "across all areas"?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>"All areas" is technically correct — all three stations show some reduction. However, "effectively" is debatable for the rural station, which saw only a 5% reduction (just 1 µg/m³). Industrial and residential areas saw substantial drops (31% and 27%). The rural data suggests the regulation had minimal impact outside industrial/urban sources. "Effectively across all areas" overstates the rural finding.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Crop yield (tonnes/hectare) and water usage (m³/hectare) for four crops.<br>
+          | Crop | Yield | Water used | Yield per m³ water |<br>
+          | Rice | 5.2 | 1800 | 0.0029 |<br>
+          | Wheat | 4.8 | 550 | 0.0087 |<br>
+          | Maize | 7.3 | 680 | 0.0107 |<br>
+          | Sorghum | 3.9 | 320 | 0.0122 |</em><br>
+          A farmer in a water-scarce region claims maize is the best crop choice because it has the highest yield. Is this the best interpretation of the table for their situation?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>No. For a water-scarce region, water efficiency matters more than total yield. The "Yield per m³ water" column shows sorghum (0.0122) and maize (0.0107) are the most water-efficient, but sorghum uses far less water (320 vs 680 m³/ha) while producing a decent yield. Maize has the highest total yield but uses twice the water of sorghum. Sorghum would be the better choice given water scarcity, despite lower absolute yield.</p></details>
+        </div>
+      </div>
+
+      <div class="q-item">
+        <div class="q-text">
+          <em>Table: Recovery rate (%) after surgery, split by age group and hospital type.<br>
+          | Age | Teaching hospital | Community hospital |<br>
+          | Under 40 | 98 | 96 |<br>
+          | 40–60 | 91 | 89 |<br>
+          | 60–80 | 82 | 84 |<br>
+          | Over 80 | 71 | 74 |</em><br>
+          A health administrator argues "teaching hospitals are always better." What does the table reveal about this claim?
+          <span class="diff diff-hard">Hard</span>
+          <details class="ans"><summary>Show Answer</summary><p>The claim is incorrect. Teaching hospitals perform better in two age groups (under 40 and 40–60), but community hospitals have higher recovery rates for patients aged 60–80 (84 vs 82) and over 80 (74 vs 71). The pattern reverses for older patients, possibly reflecting different case mixes or specialisations. "Always better" is contradicted by two age groups in the table.</p></details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 5 -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Reading Bar Graphs and Histograms</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=t4BtFN6r28I">Reading Bar Graphs</a><a href="https://www.youtube.com/watch?v=hpY4JBGzUuE">Histograms Explained</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=5Zg-C8AAIGg">Making Sense of Graphs</a><a href="https://www.youtube.com/watch?v=IpGxLWOIZy4">Data Visualisation</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=oI3DG6-WOKE">Bar Graphs and Frequency</a><a href="https://www.youtube.com/watch?v=GamlRMEMQAo">Statistics: Graphical Displays</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=OPQH8kLCXlo">How to Read Charts</a><a href="https://www.youtube.com/watch?v=5Zg-C8AAIGg">Misleading Graphs</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — Reading bar heights and values (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Bar graph: Average daily water intake (litres). Sedentary adults=1.8L; Office workers=2.1L; Cyclists=3.4L; Marathon runners=4.2L; Swimmers=3.8L. Y-axis starts at 0.</em><br>Which group has the highest daily water intake?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Marathon runners — their bar reaches 4.2 L, the highest value in the graph.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph (same data).</em><br>How much more water do swimmers drink per day compared to sedentary adults?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>3.8 − 1.8 = 2.0 litres more per day.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Number of students per 10-point exam score band. 40–49=3; 50–59=7; 60–69=15; 70–79=18; 80–89=12; 90–100=5.</em><br>In which score band did the most students fall?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>70–79 — this band contains 18 students, the tallest bar in the histogram.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram (same, total 60 students).</em><br>What percentage of students scored 80 or above?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>12 + 5 = 17 students. 17/60 ≈ 28.3%.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Grouped bar graph: Sports club members. Swimming: Male=22, Female=31. Tennis: Male=18, Female=14. Running: Male=35, Female=28.</em><br>In which sport do females outnumber males?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Swimming — females (31) outnumber males (22).</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Waste recycled (%). City A=42%; B=61%; C=28%; D=55%. Y-axis starts at 0.</em><br>Which city recycles the smallest proportion?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>City C at 28% — the lowest bar.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Mean annual rainfall (mm). 1970s=680; 1980s=710; 1990s=695; 2000s=640; 2010s=605.</em><br>In which decade was rainfall highest?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The 1980s — 710 mm, the tallest bar.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Plant heights (cm). 10–19=4; 20–29=11; 30–39=22; 40–49=18; 50–59=9; 60–69=2.</em><br>What is the range of heights in this histogram?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>From 10 cm to 69 cm — a range of 59 cm.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Carbon emissions (million tonnes). Energy=42; Transport=27; Agriculture=19; Industry=34.</em><br>What is the combined emissions of Transport and Agriculture?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>27 + 19 = 46 million tonnes.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Stacked bar graph: Endangered species. Africa: CE=14, V=31; Asia: CE=22, V=45; Americas: CE=8, V=24; Europe: CE=4, V=18.</em><br>Which region has the most critically endangered species?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Asia — 22 critically endangered species, the highest CE value.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — Comparing bars, scale, conclusions (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Bar graph: Test scores before=68%, after=74%. Y-axis starts at 60 (not 0).</em><br>A student says "the programme doubled scores — look how much taller the after-bar is!" What is wrong?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The y-axis starts at 60, not 0, making the difference look visually larger than it is. The actual improvement is only 6 percentage points (68% to 74%), not a doubling. This is a truncated-axis distortion.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Ages of study participants. 20–29=8; 30–39=14; 40–49=21; 50–59=17; 60–69=9; 70+=3.</em><br>Describe the shape: symmetric, left-skewed, or right-skewed?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Roughly symmetric with a slight right skew. The peak is at 40–49 with declining counts on both sides, but the right tail (70+) extends slightly further — approximating a bell shape centred on middle age.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Grouped bar graph: Physical activity (hrs/week). Ages 10–17: Boys=7.2, Girls=4.8. 18–35: Boys=5.1, Girls=3.9. 36–60: Boys=3.4, Girls=3.0. 60+: Boys=2.8, Girls=2.7.</em><br>What two trends are visible?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(1) Activity decreases with age for both genders. (2) Males are consistently more active, though the gap narrows significantly with age — from 2.4 hrs at ages 10–17 to only 0.1 hrs at 60+.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Monthly ER visits. Jan=210, Feb=195, Mar=180, Apr=162, May=148, Jun=134, Jul=141, Aug=155, Sep=168, Oct=188, Nov=205, Dec=224.</em><br>What seasonal pattern does the graph show, and which month is a minor turning point within the low season?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Visits peak in winter (Dec–Feb) and fall to a minimum in June, then rise again into autumn. July (141) is slightly higher than June (134), making it a turning point — the start of the recovery toward higher winter visits.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Reaction times (ms) in 80 participants. 150–199=5; 200–249=14; 250–299=28; 300–349=19; 350–399=10; 400–449=4.</em><br>If "normal" is defined as the middle 60% of the distribution, approximately what range does this cover?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The bottom 20% (~16 people) fall within 150–249ms. The top 20% (~16 people) fall above ~355ms. The middle 60% spans approximately 250–355ms.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Species before and after drought. Forest: 84→71; Wetland: 112→68; Grassland: 56→49; Desert: 31→30; Coastal: 93→74.</em><br>Which habitat had the greatest proportional decline?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Wetland: (112−68)/112 = 39% decline — the largest proportional loss of any habitat, suggesting wetlands are most vulnerable to drought.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Grade A rates — Maths=38%, Science=44%, English=52%, History=61%, Art=68%. Y-axis runs 30–70% (truncated).</em><br>A headline claims "Art has nearly twice as many A grades as Maths." Is this numerically accurate?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>68/38 = 1.79 — approximately 1.8 times, not quite "nearly twice." Visually the truncated axis exaggerates the difference. The claim is an overstatement but not wildly inaccurate numerically.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Hours reading per week in 100 adults. 0–1hr=25; 1–3hrs=34; 3–5hrs=22; 5–8hrs=12; 8–12hrs=5; 12+hrs=2.</em><br>What does the shape suggest about reading habits?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The distribution is right-skewed — 59% read 3 hours or fewer per week. A small minority are heavy readers who pull the distribution's right tail out. Most adults in this sample read relatively little.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Grouped bar graph: Crop yield (t/ha) by fertiliser. Fertiliser A: Wet=4.8, Dry=2.1. B: Wet=5.2, Dry=3.4. C: Wet=5.1, Dry=4.8.</em><br>Which fertiliser is best for a farmer in unpredictable rainfall conditions?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Fertiliser C — its yield is nearly identical in wet (5.1) and dry (4.8) conditions, making it the most stable. Fertiliser A shows the largest drop in drought conditions (−2.7 t/ha), making it the most risky.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Days per year with PM2.5 above 35µg/m³. City X: 2020=48, 2021=52, 2022=41, 2023=38. City Y: 2020=130, 2021=118, 2022=109, 2023=94. City Z: 2020=22, 2021=25, 2022=24, 2023=19.</em><br>Which city is improving most and which shows the least change?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>City Y shows the greatest absolute improvement (130→94, down 36 days). City Z shows the least change (22→19, down only 3 days), though it already had the cleanest air. City Y has by far the worst air quality despite its improvement.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — Scale distortion, valid conclusions (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Bar graph: Company A's bar is drawn twice as wide AND twice as tall as Company B's. Caption: "Company A's revenue is double that of Company B."</em><br>What misleading visual element is present?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Making the bar twice as wide AND tall creates a visual area four times larger (2×2), implying Company A has four times (not double) the revenue. Only bar height should convey value; width should be uniform across all bars.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Two histograms of exam scores for Class A and Class B (30 students each). Class A: scores cluster tightly in 70–80. Class B: scores spread evenly 40–100. Both have mean=72.</em><br>What does the shape difference tell you that the mean does not?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Class A has low variance — students perform consistently. Class B has high variance — a wide spread of abilities with students at both extremes. The same mean masks completely different distributions, requiring different teaching strategies for each class.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Research funding. Basic=12M; Applied=18M; Development=35M; Commercialisation=29M. A journalist writes: "Development receives three times more funding than basic research."</em><br>Is this accurate?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>35/12 = 2.92 — Development receives approximately 2.9 times AS MUCH as basic research, not "three times more." "Three times more" technically means 12 + 3(12) = 48M. The journalist uses imprecise language and overstates the ratio slightly.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Mercury concentration in fish from two lakes. Lake A: all bars below 0.5 µg/g. Lake B: bimodal peaks at 0.3 µg/g and 1.8 µg/g.</em><br>What does Lake B's bimodal shape suggest?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Two distinct subgroups exist — possibly fish from different lake zones with different pollution exposure, different species with different bioaccumulation, or a localised pollution source affecting part of the lake. Treating Lake B fish as one uniform group would be misleading.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Hospital infection rates before=3.8%, after=3.1%. Y-axis runs 2.5%–4.5%. The after-bar looks 35% shorter visually.</em><br>Calculate the actual reduction and explain the visual distortion.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Actual reduction: (3.8−3.1)/3.8 × 100 = 18.4%. The y-axis starting at 2.5% (not 0%) compresses the visible range, so a 0.7 percentage-point change appears much larger proportionally. The truncated axis inflates the visual impression of the improvement.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Graduate incomes. STEM=£52k; Business=£48k; Law=£61k; Arts=£34k; Education=£31k. Prospectus: "Law graduates earn almost twice as much as Education graduates."</em><br>Evaluate this claim and what additional context a student would need.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>61/31 = 1.97 — "almost twice" is numerically correct. However, a student should also consider: (1) are these averages or medians? (2) does Law require expensive postgraduate training? (3) what are employment rates for each discipline? (4) are these starting or peak salaries? High average income from a small, highly-employed cohort can be misleading without context.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Bird calls per hour — Summer: right-skewed (most hours 0–5 calls, few hours 20+). Winter: normal distribution centred at 8–10 calls/hr.</em><br>Why might comparing average calls per season be misleading?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Summer's right-skewed distribution inflates the mean above the typical (modal) value — most summer hours are quiet, with rare bursts of intense activity. The winter mean accurately represents a typical hour. Comparing means implies summer activity is moderate overall, when actually most summer hours are low-activity. Medians would give a more honest comparison.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: % households with internet access (2010 vs 2023). A=41%→89%, B=78%→94%, C=12%→68%, D=62%→88%, E=5%→41%. Report: "Country B made the most progress."</em><br>Do the data support this claim?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>No. Country B's absolute increase is only 16 pp (78→94) — the smallest of all five countries. Country C gained 56 pp, Country A gained 48 pp. The report confused having the highest 2023 coverage with making the most progress. Country C made by far the greatest improvement.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Histogram: Particle sizes in two waste streams. Stream 1: uniform 1–100µm. Stream 2: 85% below 5µm, long tail to 200µm. Regulator uses average particle size as safety threshold for filter requirements.</em><br>Why is average particle size an inadequate metric for Stream 2?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The long tail pulls Stream 2's mean upward, suggesting moderately sized particles — but 85% of particles are very small (below 5µm), which are the most harmful and hardest to filter. A mean-based threshold would recommend a coarser filter when a fine filter is actually needed for the vast majority of particles. Distribution shape matters more than the mean here.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Bar graph: Animal sightings per month. Jan=42, Feb=38, Mar=65, Apr=91, May=118, Jun=134, Jul=128, Aug=121, Sep=89, Oct=62, Nov=45, Dec=39.</em><br>A park manager concludes: "July had more sightings than June, suggesting tourism peaked in July." Evaluate this.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>This is factually wrong — June (134) had more sightings than July (128). The manager has misread the graph. Even if correctly read, sightings depend on animal behaviour, weather, and observer effort — not just tourist numbers. The manager is also assuming sightings equal tourist activity, which is a separate, unsupported inference.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 6 -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Interpreting Line Graphs</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=pIvmb3Drxc4">Reading Line Graphs</a><a href="https://www.youtube.com/watch?v=WnMd9N4ql_A">Rate of Change from Graphs</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=HeQX2HjkcNo">Exponential Growth and Decay</a><a href="https://www.youtube.com/watch?v=sI-PGFR39hI">Trends Over Time</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=GamlRMEMQAo">Graph Interpretation</a><a href="https://www.youtube.com/watch?v=oYwhFOgBzlE">Analysing Data Trends</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=5Zg-C8AAIGg">Reading Scientific Graphs</a><a href="https://www.youtube.com/watch?v=OPQH8kLCXlo">Extrapolation and Prediction</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — Identifying trends and reading values (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Line graph: Global temperature anomaly (°C above 1900 baseline). 1900=0.0; 1930=+0.1; 1960=+0.2; 1990=+0.5; 2010=+0.8; 2020=+1.1.</em><br>What is the overall trend?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A consistent upward trend — global temperature has risen steadily above the 1900 baseline, with the rate of increase accelerating after 1960.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph (same temperature data).</em><br>Between which two time points did the anomaly increase most rapidly?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Between 1990 and 2020 (30 years): the anomaly rose 0.6°C, compared to only 0.5°C over the previous 90 years — the steepest rate of change in the graph.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Bacterial population in a flask over 12 hours. Hrs 0–2: ~100 cells (lag phase). Hrs 2–6: rapid exponential rise to 8,000. Hrs 6–10: slows, levels at ~10,000. Hrs 10–12: slight decline.</em><br>During which phase is growth fastest?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Hours 2–6 — the exponential phase. The steepest gradient indicates the fastest rate of population growth.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Drug concentration (mg/L) after a single dose. Rises to peak of 8.4 mg/L at hour 2, then gradually declines to 0.3 mg/L at hour 24.</em><br>At what time does the drug reach peak concentration?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>At hour 2, the drug reaches its maximum concentration of 8.4 mg/L.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Two-line graph: Fox and Rabbit populations over 10 years. Rabbit peaks at year 3; Fox peaks at approximately year 4. Rabbit troughs at year 6; Fox troughs at approximately year 7.</em><br>What relationship between the populations is visible?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The fox population follows the rabbit population with a lag of about one year — a classic predator-prey cycle where predators rise and fall in response to prey abundance.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Mobile phone usage (%). 2000=12%; 2005=35%; 2010=67%; 2015=84%; 2020=91%.</em><br>During which five-year period did usage increase most rapidly?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2005–2010: an increase of 32 percentage points (35% to 67%), the largest gain of any five-year period shown.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Dissolved oxygen (mg/L) in a river by month. Jan=9.8; Mar=9.2; May=7.1; Jul=5.4; Sep=6.2; Nov=8.9.</em><br>In which month is oxygen lowest, and what seasonal pattern appears?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>July — lowest at 5.4 mg/L. Oxygen is high in winter, drops through spring and summer (warm water holds less dissolved oxygen), and recovers in autumn.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Photosynthesis rate vs light intensity. 0–2,000 lux: steep rise. 2,000–5,000 lux: plateau at ~14 units. Above 5,000 lux: slight decline.</em><br>What does the plateau suggest?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A limiting factor other than light (likely CO2 concentration or enzyme availability) is now restricting the rate. Increasing light further cannot increase photosynthesis while another factor is the bottleneck.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Two crop yield lines. Irrigated: rises steadily 4.2→5.8 t/ha over 5 years. Rain-fed: fluctuates 3.8, 2.1, 4.5, 2.8, 4.1.</em><br>What does comparing the two lines reveal about irrigation?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Irrigated crops show consistent upward yields with no year-to-year drops. Rain-fed crops are variable. Irrigation provides both higher yields and greater year-to-year stability compared to rainfall dependence.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Patient body temperature (°C) over 48 hours. Starts 38.5°C, peaks at 40.1°C at hour 8, declines to 37.0°C at hour 36, stable thereafter.</em><br>At approximately what time does temperature return to normal?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>At approximately hour 36, the patient's temperature reaches the normal level of 37.0°C.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — Rate of change, limits, extrapolation (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Line graph: Arctic sea ice extent (million km²) in September. 1980=7.8; 1990=6.9; 2000=6.3; 2010=5.1; 2020=3.7. Average decline ≈ 0.10 million km²/year.</em><br>At this rate, approximately what would extent be in 2030?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3.7 − (10 × 0.10) = 2.7 million km². This is a linear extrapolation — actual changes may differ if the rate accelerates or slows. Extrapolation beyond the data range carries significant uncertainty.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Enzyme reaction rate vs pH. Peak at pH 7 (14 units); sharp declines at both lower and higher pH values.</em><br>What is the optimum pH, and what do the sharp declines indicate?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Optimum pH = 7. The sharp declines indicate the enzyme's 3D active site is sensitive to pH — extreme values alter the enzyme's shape, reducing its ability to bind substrates effectively (denaturation at extremes).</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Two countries' CO2 emissions (billion tonnes). Country P rises 3.0→6.5; Country Q falls 5.8→4.2. Lines cross at approximately 2016.</em><br>What does the crossing point represent, and what assumptions underlie continuing the lines to 2030?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The crossing (2016) is when Country P surpassed Country Q as the larger emitter. Continuing to 2030 assumes P maintains its current growth rate and Q maintains its current reduction rate — both requiring unchanged economic and energy policies, which is a strong assumption.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: A child's height from age 0–18. Rapid growth 0–2 (50→90cm); slow growth 2–10 (→140cm); rapid growth 11–14 (→165cm); plateaus 15–18 (→172cm).</em><br>Identify the two periods of rapid growth and their biological significance.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(1) Ages 0–2: infancy growth spurt — highest absolute growth rate per year. (2) Ages 11–14: adolescent growth spurt linked to puberty and hormonal changes. The plateau after 15 indicates growth plates are closing and adult height is being reached.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Chemical reaction rate (mol/min). t=0: 0.080; t=5min: 0.040; t=10min: 0.020; t=15min: 0.010.</em><br>What pattern does the rate follow, and what does this indicate?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The rate halves every 5 minutes — exponential (first-order) decay. This indicates the reaction rate is proportional to the remaining reactant concentration: as reactant is consumed, fewer molecules are available and the rate drops proportionally.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Weekly flu cases. Low weeks 1–10 (~200/wk); sharp spike to peak 2,400 at week 16; declines to baseline by week 24; flat weeks 25–40; slight secondary rise weeks 41–52 (~600/wk).</em><br>What does the flat period suggest epidemiologically?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The flat low period (weeks 25–40, summer) suggests the flu virus is not circulating widely, possibly due to warmer temperatures, lower indoor crowding, or school holidays. The autumn secondary rise may mark the beginning of the next flu season.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Tree ring width (mm) over 200 years. Generally variable, but clear downward trend from year 160 onwards.</em><br>What might narrowing rings from year 160 indicate, and what additional data would help?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Narrowing rings indicate slower growth — caused by drought, increased competition, disease, climate change, or pollution. Historical rainfall records, soil analysis, air quality data, or comparison with nearby trees of the same period would help identify the cause.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Average temperature (rising) and crop yield over 30 years. Yield rises for 20 years then declines sharply in the last 10, despite continued warming.</em><br>What does the divergence of the two lines suggest?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The relationship is not simply positive. Early warming may have extended growing seasons, but beyond a temperature threshold, further warming harms yields — possibly through heat stress, water stress, or altered precipitation. The relationship is non-linear, not a simple positive correlation.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Pollutant concentration (ppm) in a river over 30 days. Flat ~2ppm days 1–8; sharp spike to 18ppm on day 9; gradual decline to ~2ppm by day 20; flat again.</em><br>What does the spike shape suggest about the pollution source?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>An acute single-event discharge (e.g., industrial spill) on day 9, rather than chronic ongoing pollution. The gradual return to baseline over 11 days reflects natural river dilution and possible pollutant breakdown.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Product X sales (thousands/month) over 3 years. Peaks each December (~90k), troughs each February (~22k), moderate other months (~45k). Annual average ≈ 48k/month.</em><br>What practical problem arises from using the average as a production target?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The average (48k) masks extreme seasonal variation. In December, demand (90k) nearly doubles the average — production at only 48k leads to stockouts. In February (22k), only half the target sells, creating excess inventory. Production targets should mirror the seasonal demand curve, not the annual mean.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — Validity of extrapolation and conclusions (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Line graph: Cost per GFLOP of computing has halved every 18 months for 40 years. A journalist: "Computing will be essentially free in 10 years."</em><br>Give two reasons to be cautious about this extrapolation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(1) Physical limits: miniaturisation is approaching atomic scale — Moore's Law has already slowed. (2) Asymptotic zero: even if prices halve repeatedly, they approach zero asymptotically — never reaching it. Infrastructure, energy, and maintenance costs persist regardless of chip price.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: New social media platform user count. Month 1=1,000; Month 3=8,000; Month 6=45,000; Month 9=120,000. Exponential shape. A VC projects 5 million users in 18 months.</em><br>Why is exponential extrapolation of user growth likely to overestimate?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Exponential growth cannot continue indefinitely — early adoption follows an S-curve. As the market saturates, the pool of new potential users shrinks, competition retains existing users, and novelty fades. The early exponential phase does not predict the flattening top of the S-curve.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Sea level (mm above 1993) rises from 0→+100mm over 1993–2023, with a steeper gradient after 2010. Researcher uses the full 1993–2023 average rate to project sea level in 2100.</em><br>Why might this be an underestimate?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The graph itself shows acceleration after 2010 — meaning the current rate is faster than the 30-year average. Using the slower average underestimates future levels if acceleration continues. Projections should incorporate the more recent, faster rate or model the acceleration explicitly.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Patient's systolic blood pressure over 8 weeks on a new drug. Week 0=158; Week 2=151; Week 4=144; Week 6=137; Week 8=130. Linear decline of ~7 mmHg per 2 weeks. Doctor: "By week 20, pressure will reach normal (120 mmHg)."</em><br>Evaluate the reliability of this projection.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Linear projection: 130 − (6 × 7) = 88 mmHg by week 20 — dangerously low. Physiological feedback mechanisms typically slow BP reduction as it nears normal ranges. The drug likely reaches maximum effect before week 20. Eight weeks of linear data cannot be reliably extrapolated to 20 weeks for a physiological process subject to homeostatic limits.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: New EV registrations per year. 2015=2,000; 2017=8,500; 2019=31,000; 2021=95,000; 2023=210,000. Government target: 500,000/year by 2025.</em><br>Assess the target's achievability and identify a risk factor not in the graph.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The trend roughly triples every 2–3 years; from 210,000 in 2023, growth to 500,000 by 2025 appears plausible if the trend holds. A risk factor not shown: battery material supply chain constraints, charging infrastructure gaps, economic recession, or subsidy removal — any of which could abruptly slow the trend the graph cannot predict.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Average summer temperature (rising) and wildfire area burned over 10 years — both trending up. After year 7, temperature continues rising but wildfire area levels off.</em><br>What does the decoupling after year 7 suggest?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>A third factor changed after year 7 — likely improved fire management, reduced fuel load from previous burns, or land use changes. Temperature alone cannot explain wildfire area once the lines diverge. Attributing wildfire area solely to temperature is not supported once the relationship breaks down.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Falling object speed (m/s). 0–5 seconds: linear rise (gravity). 5–8 seconds: rate of increase slows. After 8 seconds: constant at 53 m/s.</em><br>What does the constant speed indicate, and why is extrapolating the initial linear trend incorrect?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Constant speed = terminal velocity, where air resistance equals gravity. Extrapolating the early linear trend would predict ever-increasing speed, which is physically impossible once terminal velocity is reached. The line's behaviour changes at 5 and 8 seconds — extrapolating the initial segment ignores a real physical constraint.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: National literacy rate (%) over 50 years. Rises from 45% to 78% by year 30 (steady). Slows from 78% to 89% by year 50. Planner extrapolates the first-30-year linear trend to predict 100% literacy by year 65.</em><br>Why will this linear projection likely overestimate progress?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The graph already shows slowing progress (years 30–50) — the "last mile" problem. The remaining 11% includes hardest-to-reach populations (remote, disabled, elderly). A linear extrapolation from the easier early gains ignores this diminishing-returns pattern. A realistic model would require an S-curve projection with a flattening top.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Annual rainfall and river flow in a catchment over 20 years. Both track together until year 12; after year 12, rainfall is constant but river flow declines significantly.</em><br>What does the post-year-12 divergence suggest?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>More rainfall is being retained or intercepted within the catchment after year 12 — possible causes include increased vegetation (more transpiration), expanded irrigation, new reservoirs, or greater groundwater abstraction. The rainfall-to-runoff relationship changed, so river flow can no longer be predicted from rainfall alone after that point.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Line graph: Nitrate concentration (mg/L) at a river mouth over 25 years. Declines 18→8 mg/L over years 1–15, then plateaus at ~8 mg/L years 15–25. Stricter agricultural regulations introduced in year 10.</em><br>What can and cannot be concluded about the regulations?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>CAN conclude: nitrate declined after regulations were introduced, consistent with a positive effect. CANNOT conclude: (1) regulations caused the decline — other factors may be responsible; (2) whether 8 mg/L meets environmental targets (no threshold is given); (3) why decline stopped at year 15 — it may reflect a regulatory effectiveness ceiling or competing pollution sources offsetting gains.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 7 -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Scatter Plots and Correlation</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.youtube.com/watch?v=apcYxMJ-6A4">Scatter Plots and Correlations</a><a href="https://www.youtube.com/watch?v=d_i4JFcmHwE">Correlation Coefficients</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=9jW9G8MO4PQ">Correlation vs Causation</a><a href="https://www.youtube.com/watch?v=R5-QUfr49bE">Statistics Explained</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=xAgIyAc3jeM">Correlation and Regression</a><a href="https://www.youtube.com/watch?v=Hz_Lgv5cPME">Bivariate Data</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=8SMtBXvQEpI">Why Correlation Is Not Causation</a><a href="https://www.youtube.com/watch?v=OPQH8kLCXlo">Reading Scatter Graphs</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Literal — Identifying correlation type and outliers (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=hours studied/week; Y=exam score (%). Points rise bottom-left to top-right. One point at (2 hrs, 92%) sits far above the trend line.</em><br>What type of correlation does this show, and what is the outlier?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Positive correlation — scores tend to increase with study hours. The outlier is the point at (2 hours, 92%) — a student who studied very little but scored exceptionally high, deviating far above the trend line.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=daily sugar intake (g); Y=resting heart rate (bpm). Points scattered randomly, no visible pattern. Line of best fit nearly horizontal.</em><br>What type of correlation does this show?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>No correlation (zero/near-zero correlation). Sugar intake does not appear to be related to resting heart rate in this dataset.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=distance from city centre (km); Y=land price (£/m²). Tight cluster along a descending line. r = −0.91.</em><br>Describe the strength and direction of this correlation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Strong negative correlation — land prices decrease as distance from the city increases. r = −0.91 is close to −1, indicating a very strong inverse relationship.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=hospital beds per 1,000 people; Y=life expectancy (years). General positive trend. One country: 8.2 beds/1,000 but life expectancy of only 58 years — far below the trend line.</em><br>What is this data point called statistically?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>An outlier — it deviates significantly from the overall trend. Despite many hospital beds, unusually low life expectancy suggests other factors (conflict, disease burden, poverty) override healthcare infrastructure.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=daily temperature (°C); Y=hot drinks sold at a cafe. Points descend top-left to bottom-right. r = −0.87.</em><br>What does r = −0.87 tell you?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A strong negative correlation — as temperature rises, hot drink sales decrease. r = −0.87 is close to −1, indicating the relationship is strong and that most of the variation in sales is explained by temperature.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=shoe size; Y=reading ability score in 8-year-olds. Positive trend. r = +0.72.</em><br>Can we conclude larger feet cause better reading?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>No. Both shoe size and reading ability increase with age — age is the confounding variable. Larger feet do not cause better reading; both are consequences of children growing older.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=hours of sleep; Y=reaction time (ms). U-shaped pattern — reaction times are high below 6 hours and above 9 hours, lowest at 7–8 hours.</em><br>Does a linear correlation describe this well?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>No — the relationship is curvilinear (U-shaped). A linear r would suggest a weak or no relationship and would be a misleading summary of this non-linear pattern.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=cigarettes/day; Y=lung capacity (litres). Descending trend. r = −0.78. Non-smokers (x=0) have lung capacity 4.0–5.5 L. Smokers range 2.1–4.8 L.</em><br>What does the cluster at x=0 tell you that r alone cannot?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Even non-smokers have a range of lung capacities — other factors (genetics, fitness, age) determine capacity independent of smoking. r describes the trend across the whole dataset but misses within-group variation at x=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=fertiliser (kg/ha); Y=crop yield (t/ha). Steep rise 0–200 kg/ha, then levels off and slightly falls above 400 kg/ha. r = +0.55 overall.</em><br>Why does r = +0.55 understate the relationship at low fertiliser levels?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r measures overall linear fit. The plateau and slight decline at high doses reduce r. At low doses (0–200 kg/ha), the positive relationship is much stronger. r is a poor summary for a non-linear relationship.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=age of car (years); Y=market price (£). Generally falling. One point: 30-year-old car priced at £45,000 — far above the trend line.</em><br>What explains this outlier, and should it be removed?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>It is likely a classic/vintage vehicle, which appreciates with age unlike ordinary used cars. It is a real, meaningful data point — not an error. Removing it would be unjustified; the dataset may need to distinguish classic cars from regular used cars as separate categories.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Interpretation — Strength, direction, causation (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Scatter plot: 50 cities. X=annual sunshine hours; Y=tourism revenue (millions £). r = +0.68.</em><br>A mayor says "If we increase sunshine hours, we'll increase tourism revenue." What is wrong?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sunshine hours are not controllable — they are a natural climate variable. The mayor conflates correlation with a manipulable causal factor. Even if the correlation is genuine, it does not mean cities can intervene to change sunshine, or that sunshine alone determines revenue.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Study A: Exercise vs cholesterol. r = −0.82, n=500. Study B: Same variables. r = −0.41, n=30.</em><br>Which is more reliable and why?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Study A — its much larger sample (500 vs 30) makes r far more statistically robust. A correlation of −0.41 from only 30 points could easily arise by chance. Larger n provides much tighter confidence intervals around r.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=number of TVs per household; Y=children's exam scores. r = +0.61.</em><br>Researcher: "TV exposure improves exam performance." What alternative explains this?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Household income is a likely confound — wealthier households have more TVs and children who perform better (due to better schools, nutrition, parental education). Number of TVs is a proxy for wealth, not a direct cause of academic success.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=soil pH; Y=earthworm density. Bell-shaped cluster — highest density at pH 6–7, declining at both extremes.</em><br>Why is r an inappropriate summary for this scatter plot?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r measures linear correlation. This relationship is curvilinear (quadratic/bell-shaped). A linear r near zero would falsely suggest no relationship when a clear non-linear pattern exists.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=school noise level (dB); Y=student reading comprehension scores. r = −0.74. Two schools above 75 dB show especially low scores.</em><br>What does the scatter plot suggest, and what does it NOT prove?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Suggests a meaningful negative relationship — noisier schools are associated with lower reading scores, possibly with a threshold effect above 75 dB. Does NOT prove causation — schools in noisy areas may also have fewer resources; reducing noise alone may not improve scores if other factors are primary drivers.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=ice cream sales (units/day); Y=sunburn reports. r = +0.88. A comedian: "Ice cream causes sunburn."</em><br>Name the error and identify the third variable.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Spurious correlation / third-variable problem. The third variable is hot sunny weather — it independently causes both high ice cream sales and more time outdoors (sunburn). Ice cream and sunburn correlate but neither causes the other.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=years of education; Y=annual income. r = +0.65, widely scattered. Line of best fit predicts £42,000 for 16 years of education.</em><br>Why is predicting an individual's income from this line unreliable?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r = +0.65 means only 42% of income variance is explained by education. Many other variables (industry, location, experience, social connections) account for the remaining 58%. The line predicts the average for a group, not an individual — individuals deviate enormously from the group average.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: 40 countries. X=average caloric intake; Y=obesity rate. Mostly positive trend but 5 countries show high calorie intake and low obesity — all have physically demanding traditional lifestyles.</em><br>How do these outliers reveal a limitation of the correlation?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>They demonstrate that calorie intake alone does not determine obesity — high physical activity can offset high intake. The scatter plot's single-variable correlation ignores energy expenditure, making it an oversimplification of a multi-factorial relationship.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=books in the home; Y=child's vocabulary score. r = +0.71 (n=200 children).</em><br>A parent plans to buy 50 books to improve vocabulary. Is this a valid use of the correlation?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Not necessarily. Books in the home likely reflect parental education and reading habits — the actual driver may be reading interaction, not book ownership. Buying books without reading them together may not improve vocabulary. Also, population correlations cannot predict outcomes for one individual child with certainty.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=screen time (hrs/day); Y=wellbeing score (0–100) in teenagers. r = −0.22.</em><br>Headline: "Screen time destroys teenage wellbeing." How does r = −0.22 challenge this?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r = −0.22 indicates a very weak correlation (r² = 0.05 — only 5% of wellbeing variance explained by screen time). The relationship is almost negligible. "Destroys" dramatically overstates a statistically trivial association. Most wellbeing variation comes from other factors entirely.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluation — Causation, confounders, valid inferences (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=coffee cups/day; Y=heart disease incidence (per 1,000). r = −0.61. Observational study. Company wants to sell "coffee extract" as a heart disease preventive.</em><br>List three concerns a medical regulator would raise.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(1) Correlation ≠ causation — coffee drinkers may have other healthy behaviours (exercise, diet) reducing heart disease. (2) Confounders (income, genetics, lifestyle) not controlled. (3) Observational data cannot establish whether a coffee extract pill produces the same effect as natural coffee consumption — bioavailability and dose differ entirely.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=temperature (°C); Y=traffic accidents. Strong positive r = +0.83 in summer months only. Researcher: "Higher temperatures cause more accidents."</em><br>Why is seasonal subsetting a critical methodological issue?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Analysing only summer data restricts the range and introduces selection bias. The correlation disappears in winter, suggesting temperature is not universally linked to accidents. Summer driving behaviours (more holiday traffic, tourists, longer daylight) may explain the pattern — temperature is a proxy for these confounding factors, not a direct cause.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=fast-food restaurants per km²; Y=childhood obesity rate (%). Strong positive correlation across 100 counties. Health minister proposes closing fast-food restaurants.</em><br>What does the scatter plot support and what policy leap does it make?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>It supports an association at the county level. However: (1) ecological data cannot prove individual-level causation; (2) fast-food density correlates with low-income areas, which have higher obesity independently; (3) closing restaurants may not change eating habits if people travel to access similar food; (4) correlation does not guarantee the proposed intervention will produce the expected result without addressing underlying socioeconomic drivers.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: n=8 data points. X=annual sunshine hours; Y=national happiness index. r = +0.91. Journalist: "Sunshine is the strongest predictor of national happiness."</em><br>What statistical caution applies with only 8 data points?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>With only 8 data points, very few aligned values can produce a high r by chance — the confidence interval around r is enormous. The sample of 8 countries is far too small to reliably generalise. A large r from a tiny n is a warning sign, not a strong conclusion.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=vaccination rate (%); Y=Disease Z incidence (per 100,000). r = −0.89 across 80 countries. Vaccine sceptic: "Healthier countries choose to vaccinate more — it's not the vaccine making them healthy."</em><br>Evaluate this reverse causation argument.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Implausible here: high vaccination should logically cause low disease — that is the expected causal mechanism. The sceptic's argument requires a convoluted sequence: lower disease already leads to more vaccination for no clear reason. Additionally, randomised controlled vaccine trials independently confirm efficacy through mechanistic evidence beyond correlation, making the causal direction well-established.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=parental income; Y=child's standardised test score. r = +0.58 across 200 students. School proposes using predicted test scores (from the regression line applied to parental income) to place students in ability groups.</em><br>What ethical and statistical problems arise?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Statistical: r² = 0.34 — only 34% of score variance explained by income, meaning 66% is unexplained. Individual predictions carry enormous uncertainty. Ethical: this institutionalises socioeconomic disadvantage — pre-judging students by parents' income creates a self-fulfilling prophecy, denying lower-income students access to enriched instruction based on prediction rather than demonstrated ability.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=annual hours worked per worker; Y=GDP per capita (£). Negative correlation (r = −0.71) — high-GDP countries work fewer hours.</em><br>What counterintuitive conclusion might be drawn, and what confounders complicate it?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The counterintuitive conclusion: fewer hours worked is associated with higher GDP per capita, possibly because high-productivity economies work more efficiently. Confounders: different economic structures (services vs manufacturing), labour laws and paid leave policies, automation levels, and the fact that GDP per capita reflects productivity per hour, not total hours — making the relationship reflect development level, not a simple hours-output trade-off.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=average school test score; Y=average household income of pupils' families. r = +0.74 across 200 schools. Government report: "Improving school quality will raise test scores regardless of family income."</em><br>What is the ecological fallacy here?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Applying school-level correlations to individual-level conclusions is the ecological fallacy. The data show school averages correlate with family income averages — it cannot tell us whether school interventions would overcome income-based disadvantage for individuals. The report's conclusion ignores that income strongly predicts outcomes, suggesting systemic factors beyond school quality are at play.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Scatter plot: X=daily red meat (g); Y=cardiovascular event risk (% over 10 years). r = +0.48. Observational study using food questionnaires.</em><br>List three methodological limitations preventing a causal conclusion.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(1) Self-reported dietary data via questionnaires is inaccurate — people misremember and underreport "bad" foods. (2) Red meat consumption correlates with other lifestyle factors (smoking, inactivity, low vegetable intake) that are not controlled. (3) Observational design cannot establish causal direction or rule out reverse causation. Only a randomised dietary intervention could address causation.</p></details></div></div>
+      <div class="q-item"><div class="q-text"><em>Two scatter plots of the same data at different scales. Plot A: Full axis ranges (temperature 0–40°C, rate 0–100 units). Plot B: Restricted axes (20–30°C, 80–100 units). The correlation appears far stronger and steeper in Plot B.</em><br>What principle does this demonstrate, and how should students approach non-standard axis ranges?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Axis scaling dramatically affects the visual impression of scatter plots — restricted ranges make weak correlations appear strong. Students should always check: (1) the range and starting point of both axes, (2) whether the scale is proportional, and (3) look for the reported r value rather than relying on visual slope steepness, which is a function of scale choice rather than data strength.</p></details></div></div>
+    </div>
+  </div>
+</div>
+

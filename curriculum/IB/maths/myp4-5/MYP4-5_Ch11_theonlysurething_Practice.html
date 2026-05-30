@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATHS MYP4-5 Chapter 11 - The only sure thing? · Practice Sets</title>
+<style>
+
+:root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
+header h1 { font-size:2rem; }
+header p { margin-top:8px; opacity:.85; font-size:.95rem; }
+nav { background:var(--card); border-bottom:2px solid var(--border); padding:18px 28px; }
+nav h2 { font-size:.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+nav ol { padding-left:22px; columns:2; column-gap:40px; }
+nav li { margin:4px 0; font-size:.88rem; }
+nav a { color:var(--primary); text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+.topic { max-width:960px; margin:36px auto; padding:0 18px; }
+.topic-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.t-num { background:var(--accent); color:#fff; border-radius:50%; width:46px; height:46px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.topic-header h2 { font-size:1.4rem; color:var(--primary); }
+.set-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.set-card h3 { font-size:1rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.set-label { display:inline-block; background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 8px; margin-right:6px; }
+.q-list { counter-reset:q; }
+.q-item { counter-increment:q; display:flex; gap:10px; margin:10px 0; align-items:flex-start; }
+.q-item::before { content:"Q" counter(q); background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 6px; flex-shrink:0; margin-top:3px; }
+.q-text { flex:1; font-size:.91rem; }
+.diff { font-size:.72rem; border-radius:99px; padding:1px 8px; flex-shrink:0; margin-top:4px; white-space:nowrap; }
+.diff-easy { background:#dcfce7; color:#15803d; }
+.diff-medium { background:#fef9c3; color:#854d0e; }
+.diff-hard { background:#fee2e2; color:#991b1b; }
+details.ans { margin-top:4px; }
+details.ans summary { cursor:pointer; color:var(--green); font-size:.82rem; font-weight:600; }
+details.ans p { background:#f0faf5; border-left:3px solid var(--green); padding:8px 12px; margin-top:6px; border-radius:6px; font-size:.85rem; }
+footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; margin-top:20px; }
+.topic-videos { background:#fff8f5; border:1px solid #f5d8cc; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+.topic-videos h3 { font-size:.95rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.vid-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media(max-width:640px){ .vid-grid{ grid-template-columns:1fr; } }
+.vid-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; }
+.vid-box .ch-tag { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; display:block; }
+.vid-box.khan .ch-tag { color:#137333; }
+.vid-box.antics .ch-tag { color:#d93025; }
+.vid-box.nphile .ch-tag { color:#7b2cbf; }
+.vid-box.teded .ch-tag { color:#e8734a; }
+.vid-box a { display:block; color:var(--primary); font-size:.84rem; margin:4px 0; text-decoration:none; }
+.vid-box a:hover { text-decoration:underline; }
+.vid-box a::before { content:"▶ "; }
+.working { background:#eef2ff; border-left:4px solid var(--primary); padding:10px 14px; margin-top:8px; border-radius:0 6px 6px 0; font-size:.84rem; line-height:1.9; }
+.working strong { color:var(--primary); }
+@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+.print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
+.print-set-btn:hover { background: #dce5ff; }
+
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 MATHS MYP4-5 Chapter 11 - The only sure thing?</h1>
+  <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">The only sure thing?</a></li>
+  </ol>
+</nav>
+
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>The only sure thing?</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.google.com/search?q=maths+The+only+sure+thing%3F+Khan+Academy" target="_blank">Khan Academy lesson links</a>
+        <a href="https://www.khanacademy.org/" target="_blank">Khan Academy home</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">YouTube Lessons</span>
+        <a href="https://www.youtube.com/results?search_query=maths+The+only+sure+thing%3F+explained" target="_blank">Chapter lesson videos</a>
+        <a href="https://www.youtube.com/results?search_query=maths+The+only+sure+thing%3F+real+world+problems" target="_blank">Application/problem videos</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Concept Deep Dives</span>
+        <a href="https://www.google.com/search?q=IB+MYP+maths+The+only+sure+thing%3F+revision" target="_blank">IB-aligned revision videos</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">Extension</span>
+        <a href="https://www.youtube.com/results?search_query=The+only+sure+thing%3F+TED-Ed" target="_blank">TED-Ed/topic extension videos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundation - Basic Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Find mean of: 6, 8, 7, 9, 10.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Mean = 40/5 = 8.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find median of: 3, 5, 7, 8, 12.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Median = 7.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find mode of: 4, 5, 5, 7, 7, 7, 9.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Mode = 7.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find range of: 11, 14, 8, 19, 12.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Range = 19 - 8 = 11.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A coin is tossed once. P(Head)?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(H) = 1/2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A fair die rolled once. P(even)?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Even outcomes 2,4,6 so P=3/6=1/2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Bag has 5 red, 3 blue balls. P(red)?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(red)=5/8.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">If P(A)=0.35, find P(not A).</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(not A)=1-0.35=0.65.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write frequency table for data: 2,2,3,4,4,4,5.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 2:2, 3:1, 4:3, 5:1.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Convert counts A=18, B=12, C=10 into percentages.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Total 40; A=45%, B=30%, C=25%.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Core Practice - Skill Building</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A spinner has angles 90°,120°,150°. Find probabilities.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P=90/360=1/4, 120/360=1/3, 150/360=5/12.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">From 30 students, 18 like football, 12 basketball, 7 both. Only football?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Only football = 18-7 = 11.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Only basketball from previous data?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Only basketball = 12-7 = 5.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Like at least one of the two sports?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: At least one = 18+12-7 = 23.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A die rolled 120 times, six appears 26. Experimental P(6)?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 26/120 = 13/60 ≈ 0.217.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Compare experimental P(6) with theoretical.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Theoretical is 1/6 ≈ 0.167; experimental is higher.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Grouped data classes 0-10,10-20,20-30 with f=4,9,7. Estimate mean.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Midpoints 5,15,25: mean=(20+135+175)/20=16.5.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find IQR of ordered set 1,3,5,7,8,9,11,12,14.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Q1=(3+5)/2=4, Q3=(11+12)/2=11.5, IQR=7.5.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Probability of not getting 1 on a die?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(not 1)=5/6.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">If event B is impossible, what is P(B)?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(B)=0.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application - Context and Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Survey 20 learners; 9 prefer bus, 7 walk, 4 cycle. Find percentages.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Bus 45%, walk 35%, cycle 20%.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Probability of at least one rain day in 5 days if daily rain probability is 0.4 (independent).</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 1-(0.6^5)=0.92224.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Create 8 paired points and identify if correlation is positive/negative/no correlation.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: If y rises with x, correlation is positive (example based).</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Weekly sales: 40,44,42,48,50,52. Find 3-point moving average for first 4 positions.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: MA: 42, 44.67, 46.67, 50.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Game: pay ₹10, win ₹50 with probability 0.1. Expected gain per play?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Expected return=5, net = 5-10 = -₹5.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find mean and median of 5,6,7,20,22.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Mean=12, median=7.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Which is better central measure with outliers?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Median is better with outliers.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A class average is 68 from 24 students. Total marks?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Total = 68x24 = 1632.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">If one missing mark is x and new average for 25 students is 69, find x.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Total needed 1725, so x=1725-1632=93.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain one limitation of a very small sample.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: It may not represent the full population reliably.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge - Complex and Extended</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Hospital A: 78/100 recover, B:153/200 recover. Which better?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A=78%, B=76.5%, so A is better by 1.5%.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Coin tossed 200 times with 118 heads. Comment on fairness.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Expected 100; deviation 18 suggests possible bias but not conclusive alone.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Design a simple two-stage probability tree for weather (rain/no rain) and bus delay (yes/no).</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Tree with branch probabilities; multiply along branches for joint events.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Data set with outlier: 12,13,12,14,50. Compare mean and median.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Mean=20.2, median=13; median better represents typical value.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A report says “chance of failure 2% daily”. Approx chance of no failure in 30 days?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: No-failure ≈ 0.98^30 ≈ 0.545.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">If P(A)=0.6 and P(B)=0.5 independent, find P(A and B).</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(A∩B)=0.6x0.5=0.3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">For same events find P(A or B).</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: P(A∪B)=0.6+0.5-0.3=0.8.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A student scores 40, 55, 60, 70. What score needed for average 62 over 5 tests?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Need total 310; current 225; required 85.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Interpret a bar chart where one category dominates 70% share.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Indicates strong concentration; comparisons should note imbalance.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one conclusion and one limitation from any dataset you used.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Conclusion from trend; limitation from sample size/measurement bias.</b></p>
+      </details>
+
+    </div>
+  </div>
+</div>
+<footer>Maths · MYP4-5 · Chapter 11 · Practice Worksheet</footer>
+<script>
+
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'</title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'</style></head><body>'
+    +'<h1>'+chapTitle+'</h1><h2>'+setTitle+'</h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};</'+'script>'
+    +'</body></html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+
+</script>
+</body>
+</html>

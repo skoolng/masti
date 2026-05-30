@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 10 – Circles | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⭕ Chapter 10 – Circles</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Tangents &amp; Circle Properties</p>
+</header>
+<nav>
+  <h2>Topics at a Glance</h2>
+  <ol>
+    <li><a href="#t1">Circle — Review of Terms</a></li>
+    <li><a href="#t2">Tangent — Definition &amp; Properties</a></li>
+    <li><a href="#t3">Tangent Perpendicular to Radius</a></li>
+    <li><a href="#t4">Number of Tangents from External Point</a></li>
+    <li><a href="#t5">Length of Tangent from External Point</a></li>
+    <li><a href="#t6">Proving PA = PB</a></li>
+    <li><a href="#t7">Tangent-Chord Angle (Alternate Segment)</a></li>
+    <li><a href="#t8">Cyclic Quadrilaterals</a></li>
+    <li><a href="#t9">Chord — Perpendicular from Centre</a></li>
+    <li><a href="#t10">Equal Chords Equidistant from Centre</a></li>
+    <li><a href="#t11">Angle in a Semicircle = 90°</a></li>
+    <li><a href="#t12">SAT-Style Circle Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ───────────────────────── TOPIC 1 ───────────────────────── -->
+<section class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Circle — Review of Terms (chord, arc, sector, segment)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=na6-cAETEr8" target="_blank">Circles — basic terminology</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=O-cawByg2aA" target="_blank">Circles — area and circumference</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Definitions &amp; Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define: (a) circle, (b) radius, (c) diameter, (d) chord, (e) arc.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Distinguish between a minor arc and a major arc. Draw a diagram.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is a sector? How does it differ from a segment?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Is every diameter also a chord? Is every chord also a diameter? Explain.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Every diameter is a chord (it connects two points on the circle). Not every chord is a diameter (a chord is a diameter only if it passes through the centre).</p></details></div>
+      <div class="q-item"><span class="q-text">Name the longest chord of a circle and prove it passes through the centre.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The diameter is the longest chord. Any chord not passing through the centre is shorter than the diameter (proven using the triangle inequality).</p></details></div>
+      <div class="q-item"><span class="q-text">A circle has radius 7 cm. Find: (a) diameter, (b) circumference, (c) area. Use π = 22/7.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(a) 14 cm; (b) 44 cm; (c) 154 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle of radius 10 cm, a chord is 12 cm long. Find the distance of the chord from the centre. (Use Pythagoras.)</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Half chord = 6. Distance = √(100−36) = √64 = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">What is a concentric circle? Give one real-life example.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">How many points can two distinct circles have in common? List all cases with diagrams.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>0 (one inside other or external), 1 (internally or externally tangent), or 2 (intersecting).</p></details></div>
+      <div class="q-item"><span class="q-text">A semicircle has diameter 20 cm. Find its perimeter (arc + diameter).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Arc = π × 10 = 10π ≈ 31.4 cm. Perimeter = 10π + 20 ≈ 51.4 cm</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Chord, Arc and Sector</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A sector has radius 14 cm and angle 90°. Find its area and perimeter. (π = 22/7)</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Area = (90/360)π(14²) = (1/4)(22/7)(196) = 154 cm². Arc = (90/360)(2)(22/7)(14) = 22 cm. Perimeter = 22 + 28 = 50 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords AB and CD of a circle intersect inside at P. If AP = 4, PB = 9, CP = 6, find PD. (Use intersecting chords theorem.)</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP × PB = CP × PD → 36 = 6 × PD → PD = 6</p></details></div>
+      <div class="q-item"><span class="q-text">A chord subtends an angle of 60° at the centre of a circle of radius 6 cm. Find the chord length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Using the formula: chord = 2r sin(θ/2) = 2(6) sin30° = 12 × 0.5 = 6 cm. Alternatively, the triangle is equilateral → chord = 6 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords PQ and RS of a circle are equal in length. Prove that the arcs PQ and RS are also equal.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a circle with centre O, chord AB = 8 cm. The perpendicular from O to AB meets it at M. OM = 3 cm. Find the radius.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AM = 4 cm. r = √(16+9) = √25 = 5 cm</p></details></div>
+      <div class="q-item"><span class="q-text">If two arcs of a circle are equal, are the corresponding chords equal? Prove or disprove.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Yes. Equal arcs subtend equal angles at centre → equal chords (by congruence of triangles).</p></details></div>
+      <div class="q-item"><span class="q-text">A minor segment is formed by a chord 10 cm long in a circle of radius 13 cm. Find the area of the major segment.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A bicycle wheel has 20 spokes, all equal. Each spoke is a radius. What angle does adjacent spokes make at the centre? What arc length is between adjacent spokes if radius = 35 cm?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Angle = 360°/20 = 18°. Arc = (18/360)(2π)(35) = (1/20)(70π) = 3.5π ≈ 11 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Explain the relationship between the arc length and the central angle for a given circle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Arc length = (θ/360°) × 2πr. Arc length is proportional to the central angle.</p></details></div>
+      <div class="q-item"><span class="q-text">Circle O has radius 5. Two chords AB and CD are each 6 cm long. Prove they are equidistant from the centre.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Distance = √(r²−(half chord)²) = √(25−9) = 4 cm for each. Equal distances. QED.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A clock face has a circle of radius 15 cm. Find the area swept by the minute hand in 20 minutes.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Angle in 20 min = 120°. Area = (120/360)π(15²) = (1/3)(225π) = 75π ≈ 235.6 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">Two equal circles of radius 5 cm intersect. The common chord is 8 cm. Find the distance between the centres.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Each centre is at distance √(25−16) = 3 cm from the chord. Total distance = 6 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A pizza is divided into 8 equal sectors. If the pizza has diameter 30 cm, find the area and arc length of one sector.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Area = (1/8)π(15²) = 225π/8 ≈ 88.4 cm². Arc = (1/8)(2π)(15) = 30π/8 ≈ 11.78 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle, chord PQ = chord RS. Chord PQ is at distance 5 cm from the centre. Find the distance of RS from the centre.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Equal chords are equidistant from the centre → distance = 5 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A running track is a circle with radius 50 m. How many complete laps does an athlete run to cover 5 km?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Circumference = 2π(50) = 100π ≈ 314.16 m. Laps = 5000/314.16 ≈ 15.92 → 15 complete laps</p></details></div>
+      <div class="q-item"><span class="q-text">The minute and hour hands of a clock are each 10 cm long. Find the area swept by the hour hand in 6 hours.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hour hand sweeps 180° in 6 h. Area = (180/360)π(100) = 50π ≈ 157 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">A chord 24 cm long is at a perpendicular distance of 5 cm from the centre. Find the radius of the circle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = √(12²+5²) = √169 = 13 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle of radius 10 cm, two parallel chords of lengths 12 cm and 16 cm are drawn. Find the distance between them if they are on the same side of the centre.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = √(100−64) = 6; d₂ = √(100−36) = 8. Distance = 8−6 = 2 cm (same side). On opposite sides: 8+6 = 14 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A 120° sector of a circle with radius 6 cm is folded into a cone. Find the base radius and height of the cone.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Arc = (120/360)(2π)(6) = 4π. Base circumference = 4π → base radius = 2 cm. Slant = 6 cm. Height = √(36−4) = √32 = 4√2 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two concentric circles have radii 5 cm and 13 cm. A chord of the outer circle is tangent to the inner circle. Find the chord length.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Distance from centre to chord = 5 (radius of inner circle). Half-chord = √(169−25) = √144 = 12. Chord = 24 cm</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: The perpendicular from the centre to a chord bisects the chord. (Full proof with diagram.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: Equal chords of a circle are equidistant from the centre.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A chord divides a circle into two segments. If the minor segment has area = half the major segment area, find the central angle of the minor arc. (Leave in terms of π.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three points A, B, C are on a circle such that AB = BC = CA = 10 cm (equilateral triangle). Find the circle's radius.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>For equilateral triangle side a, circumradius R = a/√3 = 10/√3 = 10√3/3 ≈ 5.77 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A ring-shaped region (annulus) is formed between two concentric circles. If a chord of the outer circle just touches the inner circle and is 20 cm, find the area of the annulus.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Inner radius = r (unknown), outer radius = R. Chord = 20 (tangent to inner). (R²−r²) is what we need. Half chord = 10 → r² = R² − 100. Area = π(R²−r²) = 100π ≈ 314.16 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">In real life, why are manhole covers circular? Explain using the property that the diameter (longest chord) never falls through any orientation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A chord of a circle of radius r subtends an angle 2θ at the centre. Derive the formula for: (a) chord length, (b) distance from centre to chord.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(a) chord = 2r sinθ; (b) distance = r cosθ</p></details></div>
+      <div class="q-item"><span class="q-text">The intersecting chords theorem states PA·PB = PC·PD. Prove this using similar triangles.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A circular swimming pool has radius 10 m. A rope is stretched straight across, 6 m from the centre. Find the rope length and the area of the smaller portion of pool on the other side of the rope.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain the difference between 'arc' and 'chord' in your own words. Then describe a real-world context where distinguishing between these matters.</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 2 ───────────────────────── -->
+<section class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Tangent to a Circle — Definition and Properties</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Definition &amp; Basic</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define a tangent to a circle. How many points does a tangent have in common with the circle?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A tangent is a line that touches the circle at exactly one point (the point of tangency). It has exactly one point in common with the circle.</p></details></div>
+      <div class="q-item"><span class="q-text">How does a tangent differ from a secant? Draw both for the same circle.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">At point P on a circle of centre O and radius 5 cm, a tangent is drawn. What is the angle between the tangent and the radius OP?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>90° (tangent is perpendicular to radius at point of contact)</p></details></div>
+      <div class="q-item"><span class="q-text">Can a tangent be drawn to a circle from a point inside the circle? Explain why or why not.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>No. From an interior point, any line through it crosses the circle at two points (a secant), never just touching it.</p></details></div>
+      <div class="q-item"><span class="q-text">State two properties of a tangent to a circle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(1) A tangent touches the circle at exactly one point. (2) The tangent is perpendicular to the radius at the point of contact.</p></details></div>
+      <div class="q-item"><span class="q-text">From an external point P, two tangents are drawn to a circle of radius 5 cm. If the tangent length is 12 cm, find the distance OP.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OP = √(5²+12²) = √169 = 13 cm</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent at point A on circle O is horizontal. What is the direction of OA?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OA is vertical (perpendicular to the horizontal tangent)</p></details></div>
+      <div class="q-item"><span class="q-text">A wheel rolls along a flat road. At any instant, the road is tangent to the wheel. What is the relationship between the contact point, the road, and the wheel's centre?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The radius from the wheel's centre to the contact point is perpendicular to the road (tangent), so the centre is directly above the contact point.</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle, the tangent at point T makes an angle of 50° with chord TQ. Name the angle in the alternate segment that equals 50°.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">True or False: A tangent can be parallel to a diameter. Justify with a diagram.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>True. A tangent at either endpoint of the diameter is perpendicular to the diameter, so two such tangents are parallel to each other but they're not parallel to the diameter. Tangent perpendicular to the diameter... A tangent at a point where the diameter is perpendicular (i.e. at the endpoints of a perpendicular diameter) IS parallel to the original diameter. Yes, this is possible.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Standard Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A tangent PQ touches a circle at T. PT = 8 cm. A secant through P meets the circle at A and B (PA = 4 cm). Find PB. (Use tangent-secant theorem: PT² = PA × PB.)</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>64 = 4 × PB → PB = 16 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From point P, tangent PA = 6 cm. A secant from P passes through the circle at B (nearer) and C (farther). If PB = 4 cm, find PC.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PA² = PB × PC → 36 = 4 × PC → PC = 9 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two parallel tangents to a circle of radius 7 cm are drawn. Find the distance between them.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Distance = 2r = 14 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A tangent at P and a chord PQ of a circle make an angle of 40°. Find the inscribed angle subtended by arc PQ on the other side.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>By the alternate segment theorem, inscribed angle = 40°</p></details></div>
+      <div class="q-item"><span class="q-text">The length of the tangent from point P to a circle is equal to the distance from P to the circle's nearest point. Is this correct? When is it true?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A circle of radius 3 cm has its centre at (0,0). Write the equation of the tangent at the point (0, 3).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Radius at (0,3) is vertical. Tangent is horizontal: y = 3.</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles of radii 5 and 3 are externally tangent. Find the length of their external common tangent.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Distance between centres = 5+3 = 8. External common tangent = √(d²−(r₁−r₂)²) = √(64−4) = √60 = 2√15 ≈ 7.75 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Define the point of tangency. Why is it called the "point of contact"?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A tangent is drawn to a circle from a point 25 cm from the centre. The radius is 7 cm. Find the tangent length.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Tangent = √(25²−7²) = √(625−49) = √576 = 24 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two concentric circles have radii 5 cm and 13 cm. A tangent to the inner circle from a point on the outer circle — find its length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Point is on outer circle (radius 13). Tangent to inner circle (radius 5): length = √(13²−5²) = √(169−25) = √144 = 12 cm</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A bicycle tyre has radius 35 cm. Describe the tangent at the contact point with the road and explain why the tyre rolls smoothly.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In a roller coaster loop, the tangent at the top of the loop is horizontal. What is the direction of the normal (perpendicular to tangent) at that point?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The normal at the top is vertical (pointing towards the centre of the loop, which is directly below).</p></details></div>
+      <div class="q-item"><span class="q-text">A tangent to a circle of radius r touches at point T. If the tangent makes a 30° angle with a chord from T, find the arc's central angle.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two tangents from P to a circle touch at A and B. If ∠APB = 60°, find ∠AOB (O is the centre).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠OAP = ∠OBP = 90°. In quadrilateral OAPB: 360 = 90+90+60+∠AOB → ∠AOB = 120°</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent at any point of a circle is perpendicular to the radius. Use this to find the angle ∠OAT where O is centre, A is point of tangency, and T is a point on the tangent.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠OAT = 90°</p></details></div>
+      <div class="q-item"><span class="q-text">A tangent from point P (outside circle, centre O, radius r) has length t. Prove t² + r² = OP².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>In right triangle OAP (A = tangent point, angle OAP = 90°): OA² + AP² = OP² → r² + t² = OP²</p></details></div>
+      <div class="q-item"><span class="q-text">From external point P, tangent length = 15 cm and OP = 17 cm. Find the radius of the circle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = √(17²−15²) = √(289−225) = √64 = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent PQ from P touches the circle at Q. PQ = 24 cm. The circle has centre O and radius 7 cm. Find OP and angle OPQ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OP = √(576+49) = √625 = 25. sin(OPQ) = 7/25. ∠OPQ = sin⁻¹(0.28) ≈ 16.3°</p></details></div>
+      <div class="q-item"><span class="q-text">Describe how GPS navigation uses the concept of tangent lines to model roads going around circular roundabouts.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">An artistic circular frame has a ribbon tangent to it at the bottom. If the circle's radius is 15 cm and the ribbon touches at the lowest point, describe the ribbon's orientation and the angle it makes with the circle's diameter.</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: The tangent to a circle is perpendicular to the radius at the point of contact. (Full proof using contradiction or shortest distance argument.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two circles are internally tangent. Prove that the point of tangency lies on the line joining the two centres.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The tangent-secant theorem: if a tangent and secant are drawn from the same external point, prove PT² = PA × PB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three mutually tangent circles of radii 1, 1, and 1 are arranged. Find the radius of the smallest circle that fits in the space between them (Descartes' kissing circles — basic version).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tangent to a circle of radius 5 passes through (0, 0). If the circle has centre (3, 4), find the equation(s) of the tangent(s).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a point P outside a circle, two tangents PA and PB and a secant PCD are drawn. Prove PA² = PC × PD using similar triangles.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If a tangent and a chord are drawn from the same point on a circle, prove the tangent-chord angle equals the inscribed angle in the alternate segment.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A belt around two pulleys (radii 5 and 3, centres 10 apart) is tangent to both. Find the length of the belt's straight portion.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tangent to a circle at a point forms a 45° angle with the chord from that point. Find the arc subtended by that chord.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>By alternate segment theorem, inscribed angle = 45°. Central angle = 2 × 45° = 90°. Arc = 90° (quarter circle).</p></details></div>
+      <div class="q-item"><span class="q-text">Construct: draw a tangent to a circle of radius 4 cm from an external point 7 cm from the centre. Verify using Pythagoras that the tangent length = √33.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Tangent = √(49−16) = √33 ≈ 5.74 cm ✓</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 3 ───────────────────────── -->
+<section class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Tangent is Perpendicular to Radius at Point of Contact</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Theorem Statement &amp; Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius at that point.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In circle O, tangent AB touches at P. OP = 5 cm. Find angle OPA and angle OPB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Both = 90° (tangent ⊥ radius)</p></details></div>
+      <div class="q-item"><span class="q-text">A tangent to a circle of radius 8 cm makes an angle of 90° with the radius. A chord from the point of tangency makes a 30° angle with the tangent. Find the angle between the chord and the radius.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Radius ⊥ tangent → angle between radius and chord = 90° − 30° = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">Prove that the tangent at any point is the shortest distance from the line to the circle's interior. (Hint: any other point on the line is farther from O.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">O is the centre of a circle. AB is a tangent at point P. OP = 6 cm and OB = 10 cm. Find PB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠OPB = 90°. PB = √(OB²−OP²) = √(100−36) = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A tangent is drawn at point Q on circle O. If OQ = 7 cm and the tangent makes angle θ with line OT (T on tangent, not Q), write the equation relating OT and OQ using θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ = OQ/OT = 7/OT → OT = 7/cos θ</p></details></div>
+      <div class="q-item"><span class="q-text">Two radii of a circle make a 90° angle. Tangents are drawn at each endpoint. Do the tangents meet? If yes, find the angle between them.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>In the quadrilateral formed, angles = 90°+90°+90°+∠P = 360° → ∠P = 90°. Yes, tangents meet at 90°.</p></details></div>
+      <div class="q-item"><span class="q-text">Circle O has radius 5. Point P is on the circle. Tangent at P makes angle 90° with OP. A line through P at angle 30° to the tangent — find the angle this line makes with OP.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Angle with tangent = 30°, angle with OP = 90°−30° = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle OAP, where O is the centre, A is the tangent point, PA is the tangent, and OP is the line from centre to external point, which angle is 90°?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠OAP = 90° (tangent ⊥ radius)</p></details></div>
+      <div class="q-item"><span class="q-text">A car's tyre (radius 40 cm) rolls on a flat road. At the contact point, the road is tangent to the tyre. Find the angle between the road and the line from the contact point to the tyre's centre.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>90° (radius ⊥ tangent)</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Angle Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Tangent PT from external point P touches circle O at T. OP = 13 cm, OT = 5 cm. Find PT and ∠OPT.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>PT = 12 cm. sin∠OPT = 5/13 → ∠OPT ≈ 22.6°</p></details></div>
+      <div class="q-item"><span class="q-text">PA is a tangent to a circle at A and PB passes through the centre O. OP = 10 cm, OA = 8 cm. Find PA and ∠APO.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PA = 6 cm (since ∠OAP=90°, PA=√(100−64)=6). sin∠APO = 8/10 → ∠APO = 53.13°</p></details></div>
+      <div class="q-item"><span class="q-text">In circle O, chord AB makes a 55° angle with tangent AT. Find ∠AOB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>By alternate segment: inscribed angle in alternate segment = 55°. ∠AOB = 2 × 55° = 110°.</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents to circle O. ∠APB = 50°. Find ∠AOB and ∠OAB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠AOB = 180°−50° = 130°. In ∆AOB (OA=OB=r): ∠OAB = ∠OBA = (180°−130°)/2 = 25°</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents from P to circle O. ∠PAB = 40°. Find ∠APB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>PA = PB (equal tangents) → ∆PAB isosceles. ∠PBA = 40°. ∠APB = 180°−80° = 100°</p></details></div>
+      <div class="q-item"><span class="q-text">In the figure, tangent PQ at Q, radius OQ = 6, and PO = 10. Find the angle ∠QPO. Use trig.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos∠QPO = PQ/PO. PQ = 8. cos∠QPO = 8/10 = 0.8 → ∠QPO ≈ 36.87°</p></details></div>
+      <div class="q-item"><span class="q-text">In circle O, tangent at T, OT = radius = r. A line from T makes angle α with tangent. Find the arc on the opposite side that the line subtends (in terms of α).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two tangents PA and PB from P. ∠APO = 35°. Find ∠APB (O is centre, OA ⊥ PA).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠OAP=90°. In △OAP: ∠AOP = 180°−90°−35° = 55°. ∠AOB = 2×55° = 110°. ∠APB = 180°−110° = 70°</p></details></div>
+      <div class="q-item"><span class="q-text">A tangent at A on circle O, and a chord AB making 45° with the tangent. Find ∠OAB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OA ⊥ tangent → ∠OAB = 90°−45° = 45°. So △OAB is isosceles with ∠OAB = ∠OBA = 45° → OA = AB.</p></details></div>
+      <div class="q-item"><span class="q-text">From P, tangent to circle of radius 5. Distance OP = 13. Find length of tangent and angle at P in the right triangle formed.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Tangent = 12. ∠P = sin⁻¹(5/13) ≈ 22.6°</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Proof &amp; Extended</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: the tangent at any point of a circle is perpendicular to the radius. Use the method of proof by contradiction.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">O is the centre of a circle, T is any point on the circle, and AB is tangent at T. Prove OT ⊥ AB using the fact that OT is the shortest segment from O to line AB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents from P to circle O. Prove that OP is the perpendicular bisector of chord AB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two tangents PA = PB from P, and PO is drawn (O is centre). Prove that PO bisects angle APB and angle AOB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A line is tangent to a circle if and only if it is perpendicular to the radius at the point it intersects the circle. Prove the 'only if' direction.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In △OAP (O = centre, A = tangent point, P = external point), state all 6 elements (3 sides, 3 angles) using r, t (tangent length), and OP.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From external point P, tangent PA is drawn. A secant PBC is also drawn (B closer). Use the tangent-radius relationship to prove PA² = PB × PC.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a circle, a chord and a tangent are drawn from the same point on the circle. The chord makes a 60° angle with the tangent. Find the arc subtended by the chord and the inscribed angle in the major arc.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Inscribed angle in alternate segment = 60°. Central angle = 120°. Arc = 120°.</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles are externally tangent at T. Prove that their common internal tangent at T passes through the point of tangency and that the two radii at T are collinear.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Using coordinate geometry: Circle x² + y² = 25. Tangent at point (3, 4). Show OA ⊥ tangent (i.e., verify the tangent equation is 3x + 4y = 25 and it's perpendicular to OA).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Slope of OA = 4/3. Slope of tangent = −3/4. Product = (4/3)(−3/4) = −1. ⊥ confirmed. ✓</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A circle is inscribed in a square of side 10 cm. Find the radius and the points of tangency. Verify that each tangent is ⊥ to the radius at those points.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r = 5 cm. Points of tangency are midpoints of each side. Radius to each midpoint is ⊥ to that side (horizontal/vertical). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: if two tangents are drawn from an external point, the line joining the external point to the centre bisects the angle between the tangents.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A satellite orbits Earth in a circular orbit. Ground communications use a tangent ray to the orbit circle. Explain why the tangent represents the instantaneous direction of travel of the satellite.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In △ABC inscribed in a circle, the tangent at A is parallel to BC. Prove that △ABC is isosceles with AB = AC.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A rod of length L is tangent to a circle of radius r from an external point P. Find the distance OP in terms of r and L.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OP = √(L² + r²)</p></details></div>
+      <div class="q-item"><span class="q-text">In engineering, a cam (circular disc) pushes a follower that rides the cam's surface. Explain how the tangent at the contact point determines the force direction on the follower.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Generalize: for a circle of radius r centred at the origin, derive the equation of the tangent at any point (r cosθ, r sinθ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Tangent: x cosθ + y sinθ = r</p></details></div>
+      <div class="q-item"><span class="q-text">From an external point P, two tangents PA and PB are drawn. A third tangent at any point T on arc AB (minor) touches the circle at T. Prove that the perimeter of triangle PAB' (where B' is on PB and the third tangent meets PB) is PA + PB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Design a problem involving a circular Ferris wheel, where the rider's gondola is tangent to the ground circle at the bottom. What angle does the support cable make with the Ferris wheel at the tangent point?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: if PA is tangent and PBC is secant from same point P, then triangles PAB and PCA are similar. Hence derive PT² = PB × PC.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 4 ───────────────────────── -->
+<section class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Number of Tangents from an External Point (exactly 2)</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Concept &amp; Count</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How many tangents can be drawn to a circle from: (a) a point inside the circle, (b) a point on the circle, (c) a point outside the circle?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(a) 0; (b) exactly 1; (c) exactly 2</p></details></div>
+      <div class="q-item"><span class="q-text">State Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Explain why only 2 tangents can be drawn from an external point (not more, not fewer). Use a diagram.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">PA and PB are two tangents from P to a circle of centre O. If PA = 8 cm, what is PB?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>PB = 8 cm (equal tangent lengths)</p></details></div>
+      <div class="q-item"><span class="q-text">Prove that the two tangents from an external point make equal angles with the line joining the external point to the centre.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From point P, tangents PA and PB are drawn to a circle. If ∠APB = 80°, find ∠OAP and ∠OBP (O = centre).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠OAP = ∠OBP = 90° (tangent ⊥ radius)</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles are drawn. What is the maximum number of common tangents? List all cases based on relative positions.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>0 (one inside other), 1 (internal tangent), 2 (internal tangent only, externally tangent), 3 (external tangent only, internally tangent), 4 (external circles, no tangency)</p></details></div>
+      <div class="q-item"><span class="q-text">From a point 10 cm from the centre of a circle of radius 6 cm, how many tangents can be drawn? Find their lengths.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2 tangents. Length = √(100−36) = 8 cm each</p></details></div>
+      <div class="q-item"><span class="q-text">A student says "I can draw 3 tangents from an external point." Is this possible? Correct the student.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Not possible. From an external point, exactly 2 tangents can be drawn to a circle.</p></details></div>
+      <div class="q-item"><span class="q-text">From a point on the circle itself, exactly one tangent can be drawn. Explain why, and what happens if you try to draw a "second" tangent from the same point on the circle.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Two-Tangent Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">PA and PB are tangents from external P. O is the centre. Prove that OP bisects chord AB perpendicularly.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From point P outside circle O (radius 5), tangents PA = PB = 12 cm. Find OP and ∠APB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OP = 13 cm. sin(∠APO) = 5/13. ∠APO ≈ 22.6°. ∠APB = 2×22.6° ≈ 45.2°</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents; ∠AOB = 140°. Find ∠APB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠APB = 180°−140° = 40°</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: PA = PB (tangent lengths are equal). Use congruent triangles △OAP ≅ △OBP.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OA = OB (radii), OP = OP (common), ∠OAP = ∠OBP = 90° → RHS congruent → PA = PB</p></details></div>
+      <div class="q-item"><span class="q-text">Two tangents from P enclose a region with the circle. If PA = PB = 10 and r = 6, find the area of quadrilateral OAPB (O = centre).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>OP = √(100+36) = √136. Area of △OAP = (1/2)(6)(10) = 30. Area of OAPB = 2 × 30 = 60 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">From external point P, two tangents PA and PB are drawn. Chord AB is drawn. Prove that ∠PAB = ∠PBA.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PA = PB → △PAB isosceles → ∠PAB = ∠PBA</p></details></div>
+      <div class="q-item"><span class="q-text">In quadrilateral OAPB: OA = OB = r (radii), PA = PB (tangents), ∠OAP = ∠OBP = 90°. Find the sum of opposite angles ∠AOB + ∠APB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum = 360° − 90° − 90° = 180°. So ∠AOB + ∠APB = 180°.</p></details></div>
+      <div class="q-item"><span class="q-text">A circle of radius 5 is inscribed in an angle (two lines meeting at P). If the tangent lengths PA = PB = 12, find OP.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OP = √(144+25) = 13 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From external point P, ∠APB = 60°. Find ∠OAB (O = centre, A and B = tangent points).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠AOB = 120°. In △OAB: OA = OB (radii), ∠OAB = (180°−120°)/2 = 30°</p></details></div>
+      <div class="q-item"><span class="q-text">From external point, the two tangents and the chord of contact form a triangle. If r = 5 and OP = 13, find all angles and sides of the triangle formed by PA, PB, and AB.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Common Tangents to Two Circles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two circles with radii 5 and 3 have their centres 10 cm apart. How many common tangents exist? Name them.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Since d = 10 > r₁ + r₂ = 8... actually 10 > 8, so circles are external → 4 common tangents (2 external, 2 internal/transverse).</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles are internally tangent. How many common tangents? Draw the diagram.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Exactly 1 common tangent (at the point of tangency).</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles intersect at two points. How many common tangents?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Exactly 2 common tangents (both external).</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles are externally tangent. How many common tangents? Identify the transverse common tangent.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>3 common tangents (2 external + 1 at the point of tangency).</p></details></div>
+      <div class="q-item"><span class="q-text">Find the length of the direct common tangent to two circles of radii 4 and 1 with centres 5 cm apart.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>DCT = √(d²−(r₁−r₂)²) = √(25−9) = 4 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Find the length of the transverse common tangent to two circles of radii 3 and 5 with centres 10 cm apart.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>TCT = √(d²−(r₁+r₂)²) = √(100−64) = 6 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles of equal radii have 2 common tangents. Find the distance between their centres if each tangent is 8 cm long and radii = 3 cm.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tabulate: for two circles with centres d apart and radii r₁ and r₂, state the number of common tangents for: d > r₁+r₂, d = r₁+r₂, r₁−r₂ < d < r₁+r₂, d = r₁−r₂, d < r₁−r₂.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4, 3, 2, 1, 0</p></details></div>
+      <div class="q-item"><span class="q-text">A direct common tangent to two circles divides the segment joining their centres in a certain ratio. For radii 6 and 4, find where the direct common tangent crosses the line of centres externally.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: the transverse common tangent divides the line segment joining the centres internally in the ratio of the radii.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If PA and PB are tangents from P and C is any point on the minor arc AB, prove ∠ACB + ∠APB = 180°.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three circles are mutually externally tangent. Prove that the three points of tangency form a triangle and find the tangent from each vertex.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a point P, two tangents PA and PB are drawn. A circle is inscribed in triangle PAB. Find its radius in terms of PA and the circle's original radius r.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two circles of radii 6 and 10 have centres 20 cm apart. Find both common tangent lengths (direct and transverse).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>DCT = √(400−16) = √384 = 8√6 ≈ 19.6. TCT = √(400−256) = √144 = 12 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a gear system, two gears (circles) are connected by a belt (tangent). If radii are 8 and 3 and centres are 15 apart, find the belt's straight length on each side.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: if PA and PB are tangents from external P, then P, O, and the midpoint of AB are collinear.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From external point P, tangents PA and PB. Prove the area of △PAB = PA × r / OP where r = radius.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">What is the locus of a point from which the tangent length to a fixed circle equals a fixed value k? Describe geometrically.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>From P: tangent = k → OP² = r² + k² → OP = √(r²+k²). Locus is a circle concentric with the original, radius √(r²+k²).</p></details></div>
+      <div class="q-item"><span class="q-text">A quadrilateral is circumscribed about a circle. Prove that the sum of opposite sides are equal (AB + CD = BC + DA).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Challenge: From P, tangents to a circle of radius r, touching at A and B. The chord AB has length l. Express OP and ∠APB in terms of r and l only.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 5 ───────────────────────── -->
+<section class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Length of Tangent from an External Point (PA = PB)</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Calculation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From an external point, the tangent length is 15 cm and the radius is 8 cm. Find the distance from the point to the centre.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OP = √(225+64) = √289 = 17 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From an external point P, OP = 10 cm and radius = 6 cm. Find the tangent length.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Tangent = √(100−36) = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent from P to a circle equals the radius of the circle. If radius = 7, find OP.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OP = √(49+49) = 7√2 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From P, tangent PT = 24 cm and OP = 25 cm. Find the radius of the circle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = √(625−576) = 7 cm</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents. PA = 3x + 5 and PB = 5x − 3. Find x and the tangent length.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>3x+5 = 5x−3 → 2x = 8 → x = 4. Tangent = 17 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A point is 26 cm from the centre of a circle of radius 10 cm. Find the tangent length.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Tangent = √(676−100) = √576 = 24 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two tangents from P are each 20 cm. The circle has radius 15 cm. Find OP.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OP = √(400+225) = √625 = 25 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From P, tangent PT = √(OP² − r²). If OP = 5r, express the tangent in terms of r.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PT = √(25r²−r²) = √(24r²) = 2r√6</p></details></div>
+      <div class="q-item"><span class="q-text">Circle with radius 5. External point P is 13 cm from O. Find the tangent length and ∠POT (T = tangent point).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PT = 12 cm. sin∠TPO = 5/13. ∠TPO ≈ 22.6°. ∠POT = 90°−22.6° = 67.4°</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent length from P equals the radius. Find ∠OPT and ∠POT.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PT = r, OT = r → OP = r√2. cos∠OPT = PT/OP = r/(r√2) = 1/√2 → ∠OPT = 45°. ∠POT = 45°.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Algebraic &amp; Mixed</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From external point P, tangents PA and PB. PA = 2x + 3 and PB = x + 7. Find x and the tangent length.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2x+3=x+7 → x=4. Length = 11 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In triangle ABC, a circle is inscribed touching AB at P, BC at Q, CA at R. If AP = 4, BP = 6, CQ = 5, find AR, RC, and the perimeter of △ABC.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>BP = BQ = 6; CQ = CR = 5; AP = AR = 4. Perimeter = 2(4+6+5) = 30 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A circle is inscribed in △ABC. The tangent lengths from A, B, C are x, y, z. Express the sides of the triangle in terms of x, y, z.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AB = x+y; BC = y+z; CA = z+x</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle with legs 6 and 8, a circle is inscribed. Find the inradius.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Hyp = 10. r = (a+b−c)/2 = (6+8−10)/2 = 2 cm</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent from an external point to two concentric circles have lengths 8 cm and 15 cm. Find the difference of squares of the radii.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>t₁² = OP²−r₁²; t₂² = OP²−r₂². r₁²−r₂² = t₂²−t₁² = 225−64 = 161</p></details></div>
+      <div class="q-item"><span class="q-text">PA = PB are tangents, OP = 2r. Find ∠APB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin∠OAP = r/OP = r/2r = 1/2 → ∠OAP = 30°. Wait: sin∠APO = r/OP = 1/2 → ∠APO = 30°. ∠APB = 2×30° = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent length from an external point is 3 times the radius. Find the angle ∠OPT.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan∠OPT = r/(3r) = 1/3 → ∠OPT = tan⁻¹(1/3) ≈ 18.43°</p></details></div>
+      <div class="q-item"><span class="q-text">Circle O has radius r. From an external point P at distance 2r from O, find the angle ∠APB and the area of quadrilateral OAPB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin∠APO = r/2r = 1/2 → ∠APO = 30°. ∠APB = 60°. Area = 2×(1/2)(r)(r√3) = r²√3</p></details></div>
+      <div class="q-item"><span class="q-text">From P, tangent to circle A (r=5) is 12 cm. A second circle B (r=3) is concentric with A. Find the tangent from P to circle B.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>OP = 13. Tangent to B = √(169−9) = √160 = 4√10 ≈ 12.65 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent PT² = OP² − r². Differentiate this (as a concept): if OP increases by δ, by how much does PT approximately change?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Incircle &amp; Excircle Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A circle is inscribed in a square of side 12 cm. Find the tangent length from each corner of the square to the nearest tangent point.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = 6. Each corner is √(6²+6²) = 6√2 from centre. Tangent from corner = √(72−36) = 6 cm</p></details></div>
+      <div class="q-item"><span class="q-text">△ABC with AB = 10, BC = 8, CA = 6. A circle is inscribed. Find all tangent lengths from A, B, and C.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s = 12. x+y=10, y+z=8, z+x=6. Adding: 2(x+y+z)=24 → x+y+z=12. z=2, x=4, y=6</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC with incircle touching BC at D, CA at E, AB at F: AF = AE, BD = BF, CD = CE. Prove using tangent length equality.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A circle of radius 4 is inscribed in a right triangle with legs a and b and hypotenuse c. Show r = (a+b−c)/2.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three circles of radii 3, 4, and 5 are mutually externally tangent. Find the distance between the centres of each pair.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d₁₂ = 7; d₂₃ = 9; d₁₃ = 8</p></details></div>
+      <div class="q-item"><span class="q-text">The sides of a triangle are 7, 8, 9 cm. A circle is inscribed. Find the inradius and the tangent lengths from each vertex.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s = 12. Area = √(12×5×4×3) = √720 = 12√5. r = Area/s = √5. x = s−a = 5; y = s−b = 4; z = s−c = 3</p></details></div>
+      <div class="q-item"><span class="q-text">A rhombus has side 10 cm. A circle is inscribed touching all 4 sides. If the tangent length from each vertex is 5 cm, find the inscribed circle's radius given the rhombus has diagonals 12 and 16 cm.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In △PQR, a circle is inscribed touching PQ at X, QR at Y, RP at Z. PX = 3, QX = 4, RY = 5. Find the perimeter of △PQR.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>QY = QX = 4; RZ = RY = 5; PZ = PX = 3. Perimeter = 2(3+4+5) = 24 cm</p></details></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has an inscribed circle of radius r. Express the side length of the triangle in terms of r.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r = a/(2√3) → a = 2r√3</p></details></div>
+      <div class="q-item"><span class="q-text">A quadrilateral ABCD is circumscribed about a circle. AB + CD = BC + DA. If AB = 8, BC = 7, CD = 6, find DA.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>8 + 6 = 7 + DA → DA = 7 cm</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: in a right triangle with incircle of radius r and legs a, b, hypotenuse c: r = (a+b−c)/2.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two concentric circles: the tangent from a point on the outer circle to the inner circle is 8 cm. The outer radius is 10 cm. Find the inner radius and the area of the annular region.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r² = 10²−8² = 36 → r = 6. Area = π(100−36) = 64π ≈ 201.1 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">The tangent from P to a circle with centre O is equal in length to PO itself. Find r/OP ratio.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>PT = OP. PT² + r² = OP² → OP² + r² = OP² → r = 0. Contradiction. So it's impossible unless we mean PT = OP/2 or similar. Re-read: if PT = OP: PT² = OP²−r² → OP² = OP²−r² → r = 0. Impossible for a real circle. So tangent from P cannot equal OP (for r > 0).</p></details></div>
+      <div class="q-item"><span class="q-text">In a triangle with sides 13, 14, 15, find the inradius, the tangent lengths from each vertex, and verify the formula r = Area/s.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s = 21. Area = √(21×8×7×6) = √7056 = 84. r = 84/21 = 4. x = 21−15=6; y=21−14=7; z=21−13=8</p></details></div>
+      <div class="q-item"><span class="q-text">From point P outside a circle, the tangent length is PT. Prove that PT is the geometric mean of PA and PB where A and B are the near and far intersections of a secant through P.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A park has a circular fountain of radius 5 m. A path is tangent to the fountain from a lamppost 13 m from the centre. Find the length of the tangent path and the angle it makes at the lamppost.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PT = 12 m. ∠TPO: sin = 5/13. ∠ ≈ 22.6°. Full angle between two tangents ≈ 45.2°</p></details></div>
+      <div class="q-item"><span class="q-text">If the tangent length from every vertex of a regular hexagon to an inscribed circle equals the apothem, what is the apothem in terms of the hexagon's side s?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A student incorrectly says "the tangent length from P equals the perpendicular from P to the circle." Find a counterexample.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If a circle of radius r is inscribed in a right-angled isosceles triangle with hypotenuse h, express r in terms of h.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Legs = h/√2. r = (a+b−c)/2 = (h/√2 + h/√2 − h)/2 = h(√2−1)/2</p></details></div>
+      <div class="q-item"><span class="q-text">In Apollonius's problem, a circle is tangent to three given circles. Describe the basic setup and why tangent length calculations are central to finding such circles.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 6 ───────────────────────── -->
+<section class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Proving PA = PB (Tangent Lengths Equal)</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> The Proof</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the theorem: tangents drawn from an external point to a circle are equal in length.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In △OAP and △OBP (O = centre, A and B = tangent points, P = external): state all the equal pairs and give the congruence criterion used.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OA = OB (radii), OP = OP (common), ∠OAP = ∠OBP = 90°. RHS (Right angle, Hypotenuse, Side) congruence. → PA = PB.</p></details></div>
+      <div class="q-item"><span class="q-text">Write the complete two-column proof of PA = PB.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">PA = PB is proven by RHS congruence. Which theorem justifies ∠OAP = ∠OBP = 90°?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Theorem 10.1: tangent is perpendicular to the radius at the point of contact.</p></details></div>
+      <div class="q-item"><span class="q-text">Using PA = PB, prove that PO bisects ∠APB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>△OAP ≅ △OBP (RHS). By CPCT, ∠APO = ∠BPO. So PO bisects ∠APB. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Using the congruence △OAP ≅ △OBP, state four pairs of equal elements (by CPCT).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PA = PB; ∠APO = ∠BPO; ∠AOP = ∠BOP; OA = OB (already given)</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents. PA = 7 cm. A point X lies on PA extended. If PX = 12 cm, find XB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove PA = PB using the Pythagorean theorem instead of congruent triangles.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PA² = OP²−OA² and PB² = OP²−OB². Since OA = OB, PA² = PB², so PA = PB. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents to a circle. C is the midpoint of arc AB (minor). Prove that PC bisects ∠APB and is perpendicular to AB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Summarize: What four results follow from the congruence △OAP ≅ △OBP? State each with a brief justification.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Applications of PA = PB</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △ABC, the incircle touches AB at D, BC at E, CA at F. Write all six tangent equalities.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AD = AF; BD = BE; CE = CF</p></details></div>
+      <div class="q-item"><span class="q-text">A circle is inscribed in △ABC touching BC at D, AB at E, AC at F. AB = 10, BC = 8, CA = 7. Find AD, BE, CF.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s = 12.5. AD=AF=s−a=4.5; BE=BD=s−b=4.5; CF=CE=s−c=2.5... wait: a=BC=8, b=CA=7, c=AB=10. x=s−a=4.5; y=s−b=5.5; z=s−c=2.5. AD=AF=x=4.5; BD=BE=y=5.5; CF=CE=z=2.5</p></details></div>
+      <div class="q-item"><span class="q-text">Quadrilateral ABCD is circumscribed about a circle. Using PA = PB for each vertex, prove AB + CD = BC + DA.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In △PQR, a circle is inscribed with tangent lengths: from P = a, from Q = b, from R = c. Express all sides. Find the perimeter.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>PQ = a+b; QR = b+c; RP = c+a. Perimeter = 2(a+b+c)</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents; PA = 5. The chord AB = 6. Find the distance from P to the midpoint of AB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let M = midpoint AB. In △PAB: PM² = PA² − AM² = 25−9 = 16. PM = 4 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Using PA = PB, find ∠PAB if ∠APB = 40°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>△PAB isosceles (PA=PB). ∠PAB = ∠PBA = (180°−40°)/2 = 70°</p></details></div>
+      <div class="q-item"><span class="q-text">PA and PB are tangents; ∠AOB = 100°. Find ∠ABP and ∠BAP.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠APB = 180°−100° = 80°. ∠PAB = ∠PBA = 50°</p></details></div>
+      <div class="q-item"><span class="q-text">If PA and PB are tangents and the circle has radius r, express OA, OB, OT (where T is midpoint of AB) in terms of r and OP.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From P, tangents to two different circles (same tangent point P). First circle: r₁ = 3, d₁ = 5. Second: r₂ = 5, d₂ = 13. Are the tangent lengths equal? Calculate.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PT₁ = √(25−9) = 4. PT₂ = √(169−25) = 12. No, they're different.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: if four tangents from the vertices of a quadrilateral to an inscribed circle give equal sums of opposite sides, the quadrilateral can be circumscribed.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Numerical &amp; Proof Mashup</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A circle of radius 7 is inscribed in △ABC. AB = 18, BC = 20, CA = 22. Find the tangent lengths from A, B, C and verify.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s = 30. x = 30−20=10; y = 30−22=8; z = 30−18=12. Verify: x+y=18=AB ✓; y+z=20=BC ✓; z+x=22=CA ✓</p></details></div>
+      <div class="q-item"><span class="q-text">From P, PA = PB (tangents). If PA = 9 and ∠APB = 60°, find AB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>△PAB isosceles, ∠APB=60°. So ∠PAB=∠PBA=60° → equilateral! AB = PA = 9 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From external P, tangent PA and chord PB inside the circle. PA = 6, PB = 4. Find the length of the chord through P that PB is part of.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>PA² = PB × PC → 36 = 4×PC → PC = 9. Chord BC = PC − PB = 5 cm</p></details></div>
+      <div class="q-item"><span class="q-text">PA = PB and PO is drawn. If ∠APO = 30°, find ∠APB, ∠AOB, ∠OAP.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠APB = 60°; ∠AOB = 120°; ∠OAP = 90°</p></details></div>
+      <div class="q-item"><span class="q-text">In the figure, O is the centre, P is external, PA and PB are tangents. OP = 2r. Find PA and verify that △APB is equilateral.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>PA = √(4r²−r²) = r√3. ∠APO = 30°, ∠APB = 60°. PA=PB=r√3, AB = ? In △OAB: ∠AOB=120°, OA=OB=r. AB²=r²+r²−2r²cos120°=2r²+r²=3r² → AB=r√3. So △APB has all sides r√3 → equilateral. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: the angle ∠AOB + ∠APB = 180° (O = centre, P = external, A and B = tangent points).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two tangents PA and PB and a chord AB. If ∠APO = 25°, find ∠OAB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠AOP = 65°; ∠AOB = 130°; OA=OB → ∠OAB = (180°−130°)/2 = 25°</p></details></div>
+      <div class="q-item"><span class="q-text">Tangents PA and PB touch circle O at A and B. Prove that AB is a chord of the circle and that OP ⊥ AB.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Given PA = PB = 12, r = 5, find the area of the region inside quadrilateral OAPB but outside the circle.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Area of OAPB = 2×(1/2)(5)(12) = 60. Area of sector AOB (∠AOB): cos∠AOB/2 = r/OP = 5/13 → ∠AOB/2 ≈ 67.4° → ∠AOB ≈ 134.8°. Sector area = (134.8/360)π(25) ≈ 29.4. Region = 60 − 29.4 ≈ 30.6 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD is a quadrilateral with an inscribed circle. AB = 7, BC = 9, CD = x, DA = 5. Find x.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AB+CD = BC+DA → 7+x = 9+5 → x = 7</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: the locus of the point P from which tangents to a circle of radius r have length l is a circle of radius √(r²+l²) concentric with the original.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If PA = PB are tangents and M is the midpoint of AB, prove O, P, M are collinear.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From external point P, tangents PA and PB. A third tangent is drawn touching the circle at T (between A and B on the minor arc). It meets PA at X and PB at Y. Prove XY = XA + YB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tangent lengths from the vertices of △ABC are x, y, z (from A, B, C). The inradius is r. Prove the area of the triangle = r(x+y+z).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Area = r × s where s = x+y+z (since perimeter = 2(x+y+z), so s = x+y+z). Area = r(x+y+z). QED.</p></details></div>
+      <div class="q-item"><span class="q-text">If a circle is inscribed in an equilateral triangle of side a, find the tangent length from each vertex and the inradius.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>s = 3a/2. Tangent from each vertex = s−a = a/2. r = Area/s = (a²√3/4)/(3a/2) = a√3/6 = a/(2√3)</p></details></div>
+      <div class="q-item"><span class="q-text">Prove that the RHS criterion (used to show △OAP ≅ △OBP) requires: right angle, hypotenuse, and one side. Verify all three conditions are satisfied in the tangent proof.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A quadrilateral ABCD has an inscribed circle. Prove that this is only possible if AB + CD = BC + DA. (Converse: if AB + CD = BC + DA, a circle can be inscribed.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From P outside circle O (radius r, distance d), tangent PA is drawn. A line through P and O meets the circle at B (near) and C (far). Show PA² = PB × PC using the equal tangent lengths concept.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In IB MYP criterion C (Communication), write up the proof of PA = PB in full mathematical notation with a clear diagram and explanation for a classmate who missed the lesson.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Challenge: PA = PB from external P. If ∠APB = 2α, express r/OP and PA/OP in terms of α. Find the special value of α for which PA = OP.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠APO = α. sin α = r/OP → r/OP = sin α. cos α = PA/OP → PA/OP = cos α. PA = OP when cos α = 1 → α = 0°, impossible. So PA < OP always for α > 0. For PA = r: cos α = sin α → α = 45°, ∠APB = 90°.</p></details></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────────────────── TOPIC 7 ───────────────────────── -->
+<section class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Angles in Alternate Segment (Tangent-Chord Angle)</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Theorem &amp; Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the Alternate Segment Theorem (Tangent-Chord Angle theorem).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The angle between a tangent to a circle and a chord drawn from the point of tangency equals the inscribed angle subtending the same arc on the opposite side (alternate segment).</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent PQ at T; chord TA is drawn. ∠ATQ = 50°. Find the inscribed angle in the alternate segment.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Angle in alternate segment = 50°</p></details></div>
+      <div class="q-item"><span class="q-text">Draw a diagram showing the tangent-chord angle and its alternate segment angle. Label all relevant parts.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Tangent at T; chord TB. ∠BTangent = 40°. Find ∠TAB where A is on the major arc.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠TAB = 40° (alternate segment theorem)</p></details></div>
+      <div class="q-item"><span class="q-text">In the alternate segment theorem, what is meant by the "alternate segment"? Give a clear explanation with reference to a diagram.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Tangent at P. Chord PQ makes 35° with tangent. ∠PRQ (R on major arc) = ?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>35° (alternate segment theorem)</p></details></div>
+      <div class="q-item"><span class="q-text">Using the alternate segment theorem: tangent-chord angle = 60°. Find the arc PQ (central angle) subtended by the chord PQ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Inscribed angle = 60° → central angle = 120°. Arc = 120°.</p></details></div>
+      <div class="q-item"><span class="q-text">If the angle in the alternate segment is 75°, what is the tangent-chord angle?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>75° (they are equal by the theorem)</p></details></div>
+      <div class="q-item"><span class="q-text">Prove (outline only) why the tangent-chord angle equals the inscribed angle in the alternate segment using the angle in a semicircle.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tangent touches circle O at A. Chord AB makes 30° with the tangent. Find ∠ACB where C is on the minor arc.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Angle in the alternate (minor) segment = 30°. But ∠ACB is the angle in the major arc = 180°−30° = 150°... Wait: ∠ACB on minor arc = angle in minor segment. The tangent-chord angle (30°) = angle in MAJOR arc. So ∠ACB (C on major arc) = 30°. C on minor arc: ∠ACB = 180°−30° = 150°.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Numerical Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Tangent TQ at T, chord TA. ∠QTA = 55°. A point B on the major arc. Find ∠TBA.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠TBA = 55°</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle, chord PQ makes 40° with tangent at P. ∠PXQ (X on major arc) = 40°. ∠PYQ (Y on minor arc) = ?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠PYQ = 180°−40° = 140°</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent at A; AB is a chord with ∠tangent-AB = 65°. Find ∠AOB (O = centre).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Inscribed angle = 65° → central angle ∠AOB = 130°</p></details></div>
+      <div class="q-item"><span class="q-text">Chord PQ makes 50° with tangent at P. Find ∠POQ and the arc length if r = 10 cm.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠POQ = 100°. Arc = (100/360)(2π)(10) = 100π/18 ≈ 17.45 cm</p></details></div>
+      <div class="q-item"><span class="q-text">AB is a chord; tangent at A makes 70° with AB. ∠ADB (D on major arc) = ?; ∠AEB (E on minor arc) = ?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠ADB = 70°; ∠AEB = 110°</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent at T, chord TK, ∠tangent-TK = 45°. Show that TK is a diameter if the angle in the semicircle is 90°.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In circle O with tangent at P and chord PQ, ∠QPtangent = 35°. Find ∠OPQ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠OPQ = 90° − 35° = 55° (since OP ⊥ tangent and ∠QPtangent = 35°, so ∠OPQ = 90°−35° = 55°)</p></details></div>
+      <div class="q-item"><span class="q-text">PQ is a chord; tangent at P makes 60° with PQ. Find ∠PRQ for R on the major arc and ∠PSQ for S on the minor arc.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠PRQ = 60°; ∠PSQ = 120°</p></details></div>
+      <div class="q-item"><span class="q-text">In the figure, tangent TXY at T, chord TA, chord TB. ∠ATX = 40°, ∠BTY = 50°. Find ∠ATB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠ATB = 180° − 40° − 50° = 90°... Let's use: ∠ATX + ∠ATB + ∠BTY = 180° (angles on a straight line). 40° + ∠ATB + 50° = 180° → ∠ATB = 90°</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent at A; AB = diameter; ∠BAC = 30° for chord AC. Find the tangent-chord angle at A for chord AC.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90° (angle in semicircle). In △ABC: ∠BAC = 30°, ∠ACB = 90°, ∠ABC = 60°. Tangent-chord angle at A for AC = ∠ABC = 60° (alternate segment).</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Proof &amp; Extended</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove the Alternate Segment Theorem in full. (Use the fact that the angle in a semicircle is 90°.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tangent at P; chord PQ makes angle α with tangent. R is on the major arc. Show ∠PRQ = α.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tangent at A; chord AB makes 55° with tangent. Find ∠AEB where E is on the minor arc.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠AEB = 180°−55° = 125°</p></details></div>
+      <div class="q-item"><span class="q-text">In triangle ABC inscribed in a circle, the tangent at A is parallel to BC. Prove AB = AC using the alternate segment theorem.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Tangent at A ∥ BC. Let tangent make angle α with AB (on left). By alternate segment: ∠ACB = α. By alternate angles (tangent ∥ BC): ∠ABС = α. So ∠ACB = ∠ABC → AB = AC. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent at P and chord PQ. A second chord PR is drawn. ∠QPtangent = 30°, ∠RPtangent = 50°. Find ∠QOR and ∠QPR (O = centre).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Using the alternate segment theorem, show that the angle between a tangent to a circle and a chord equals half the central angle subtending the same arc.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Tangent-chord angle = inscribed angle = (1/2) central angle. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">PA is a tangent at A; chord AB makes 35° with PA. BC is a chord. Find ∠BAC and ∠BCA if they are related to the same arc.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In ∆PQR inscribed in circle, tangent at P. ∠QPtangent = ∠R. Prove tangent at P is parallel to QR.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠QPtangent = ∠R (given). By alternate segment theorem: ∠QPtangent = inscribed angle in alternate segment = ∠R. Also, ∠QPtangent = alternate angle with QR (if tangent ∥ QR). So tangent ∥ QR. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent to a circle at T; TU is a chord. V is on the minor arc TU. Prove ∠TVU + ∠tangent-TU = 180°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠tangent-TU = inscribed angle in major arc = α. ∠TVU (V on minor arc) = 180°−α. Sum = 180°. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Two tangents from P touch at A and B. Chord AB makes equal angles with both tangents PA and PB. Verify this using the alternate segment theorem.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Using the alternate segment theorem, prove that the angle in a semicircle is 90°. (Reverse application.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A triangle is inscribed in a circle. The tangent at each vertex makes a certain angle with the opposite side. Show these three angles equal the three angles of the triangle.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Chord PQ of a circle divides it into two segments. Tangent at P makes angle α with PQ. Tangent at Q makes angle β with QP. Prove α = β if and only if PQ is a diameter.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tangent at T makes 45° with chord TA. AB is another chord through A. ∠TAB = 30°. Find ∠TBA.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Find the alternate segment angle for: (a) tangent-chord = 30°, (b) 45°, (c) 60°, (d) 90°. What happens at 90°?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(a) 30°; (b) 45°; (c) 60°; (d) 90°. At 90°: chord is a diameter, and inscribed angle in the semicircle = 90°. Consistent.</p></details></div>
+      <div class="q-item"><span class="q-text">In a cyclic quadrilateral ABCD, the tangent at A makes angle α with AB. Prove that ∠ACD = α.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The alternate segment theorem is used in the proof that tangents from an external point are equal. Explain the connection.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Design a proof challenge: given only the alternate segment theorem and angle sum properties, prove that the tangent at the end of a diameter is perpendicular to the diameter.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tangent at P to circle O; chord PQ at 40°. A second tangent at Q. Find the angle between the two tangents at P and Q.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Write three real-life situations where the alternate segment theorem appears implicitly (e.g., in gear design, architecture, optics). Explain each briefly.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 8 ───────────────────────── -->
+<section class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Cyclic Quadrilaterals (Opposite Angles Supplement)</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Theorem</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define a cyclic quadrilateral. State the property of its opposite angles.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A quadrilateral whose all four vertices lie on a circle. Opposite angles of a cyclic quadrilateral are supplementary (sum = 180°).</p></details></div>
+      <div class="q-item"><span class="q-text">In cyclic quadrilateral ABCD, ∠A = 80°. Find ∠C.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠C = 180°−80° = 100°</p></details></div>
+      <div class="q-item"><span class="q-text">In cyclic quadrilateral PQRS, ∠P = 3x, ∠R = 2x+10. Find x and both angles.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>3x + 2x+10 = 180 → 5x = 170 → x = 34. ∠P = 102°, ∠R = 78°</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD is cyclic. ∠A = 70°, ∠B = 80°. Find ∠C and ∠D.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠C = 110°, ∠D = 100°</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: opposite angles of a cyclic quadrilateral are supplementary. (Use the inscribed angle theorem.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Is a rectangle a cyclic quadrilateral? Justify using the opposite angles property.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Yes. Opposite angles of a rectangle are both 90° each, so they sum to 180°. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Is a rhombus (non-square) cyclic? Explain.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Not generally. Opposite angles of a rhombus are equal, not supplementary (unless 90°, making it a square). So rhombus is cyclic only if it's a square.</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD is cyclic. ∠DAB + ∠BCD = 180°. If ∠DAB = 5∠BCD, find each angle.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>5∠BCD + ∠BCD = 180° → 6∠BCD = 180° → ∠BCD = 30°, ∠DAB = 150°</p></details></div>
+      <div class="q-item"><span class="q-text">An isosceles trapezium is always cyclic. Verify by checking if opposite angles are supplementary.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Can a parallelogram be cyclic? Under what specific condition?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Only if it's a rectangle (all angles 90°). For a general parallelogram, opposite angles are equal, not supplementary, so it can't be cyclic unless equal + supplementary = each is 90°.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Angle Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">ABCD is cyclic. ∠A = 2x+10, ∠C = 4x−20. Find x and verify ∠A + ∠C = 180°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2x+10+4x−20=180 → 6x=190 → x=31.67°. ∠A=73.3°, ∠C=106.7°. Sum=180° ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In cyclic quad ABCD, diagonal AC bisects ∠A and ∠C. Prove ABCD is an isosceles trapezium.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">PQRS is cyclic. ∠P = 95°, ∠Q = 85°. Find ∠R and ∠S.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠R = 85°, ∠S = 95°</p></details></div>
+      <div class="q-item"><span class="q-text">A cyclic quadrilateral has angles in ratio 1:2:3:4. Find all four angles.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Let angles = k, 2k, 3k, 4k. Sum = 10k = 360°, k = 36°. Angles: 36°, 72°, 108°, 144°. Check: 36+108=144≠180. Not cyclic with ratio constraint alone. Need opposite pairs: 36+144=180 ✓; 72+108=180 ✓. So order must be 36°, 72°, 144°, 108° (alternating) or 36°, 108°, 144°, 72°.</p></details></div>
+      <div class="q-item"><span class="q-text">In cyclic ABCD, ∠ABC = 130°. Find ∠ADC and ∠ADB if BD is a diagonal and ∠ABD = 50°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠ADC = 50°. ∠ADB = ∠ACB (same arc AB) ... ∠ADB = ∠ABC − ∠ABD = 80°... Wait: ∠ADC = 180°−130° = 50°. ∠ADB = ∠ABD = 50° ... no. ∠ADB = inscribed angle on arc AB = ∠ACB.</p></details></div>
+      <div class="q-item"><span class="q-text">Cyclic ABCD: ∠A = 90°. What type of quadrilateral could it be? Find ∠C.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠C = 90°. Could be a rectangle (all 90°) or a right-angled cyclic quad.</p></details></div>
+      <div class="q-item"><span class="q-text">In cyclic ABCD, AB = CD (equal chords). Prove ∠ABC = ∠DCB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">ABCD cyclic, AB ∥ CD (trapezium). Prove AD = BC (isosceles trapezium).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In cyclic ABCD, ∠ADB = 35° and ∠BDC = 40°. Find ∠BAC and ∠BCA.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Cyclic ABCD with diagonals intersecting at P. ∠DAB = 70°, ∠ABD = 45°. Find ∠DBC, ∠BCA, ∠ACD.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Proof &amp; Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: the exterior angle of a cyclic quadrilateral equals the interior opposite angle.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Ext. ∠ at D = 180° − ∠ADC. But ∠ADC + ∠ABC = 180° → ∠ADC = 180° − ∠ABC. So ext. ∠ = 180° − (180°−∠ABC) = ∠ABC. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD cyclic. The tangent at A makes ∠TAB = 60°. Find ∠ADB (D on major arc AB).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>By alternate segment: ∠ADB = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: a quadrilateral is cyclic if and only if one pair of opposite angles is supplementary.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In cyclic ABCD, prove ∠A + ∠C = ∠B + ∠D = 180°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠A + ∠C = 180° and sum of all angles = 360°. So ∠B + ∠D = 360° − 180° = 180°. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Two circles intersect at A and B. P is on circle 1 and Q is on circle 2 such that PAQ is a straight line. Prove PBQC is cyclic if C is another intersection.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A quadrilateral ABCD has ∠A = 75°, ∠B = 110°, ∠C = 105°, ∠D = 70°. Is it cyclic? Check.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠A + ∠C = 180° ✓; ∠B + ∠D = 180° ✓. Yes, cyclic.</p></details></div>
+      <div class="q-item"><span class="q-text">Ptolemy's theorem: for cyclic ABCD, AC × BD = AB × CD + BC × AD. Apply to a cyclic rectangle with sides 3 and 4 to verify.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Diagonals = 5 each. 5×5 = 3×3+4×4 = 9+16=25 ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In cyclic ABCD, if AB = BC, prove AC bisects ∠BCD.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">An architect designs a circular window with an inscribed quadrilateral. Each vertex touches the frame. The angles are 85°, 92°, x°, y°. Find x and y if opposite pairs are supplementary.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x = 180°−85° = 95°; y = 180°−92° = 88°</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: if ABCD is cyclic and AB is a diameter, then ∠ADB = ∠ACB = 90°.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: the sum of the products of opposite sides of a cyclic quadrilateral equals the product of the diagonals (Ptolemy's theorem). Prove for a square.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A cyclic quadrilateral has all sides equal. Prove it must be a square.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: the perpendicular bisectors of all sides of a cyclic quadrilateral are concurrent (at the circle's centre).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In cyclic ABCD, diagonals AC and BD intersect at P. Prove △APB ∼ △DPC.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠PAB = ∠PDC (same arc BC). ∠APB = ∠DPC (vertical angles). By AA: △APB ∼ △DPC. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Brahmagupta's formula: area of cyclic quad = √((s−a)(s−b)(s−c)(s−d)) where s = (a+b+c+d)/2. Apply to sides 5, 6, 7, 8.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s = 13. Area = √(8×7×6×5) = √1680 ≈ 40.99 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD cyclic. Prove that the product of the diagonals equals the sum of products of opposite sides (basic Ptolemy). Use similar triangles.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A cyclic quadrilateral has consecutive angles forming an arithmetic sequence. Find all four angles.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let angles = a−3d, a−d, a+d, a+3d. Sum = 4a = 360° → a = 90°. Opposite: (a−3d)+(a+d) = 2a−2d = 180 → 180−2d = 180 → d = 0. All angles = 90° → rectangle.</p></details></div>
+      <div class="q-item"><span class="q-text">If a cyclic quadrilateral is also a trapezium (one pair of parallel sides), prove it must be isosceles.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In IB MYP, you study "space and shape." Write a paragraph explaining why cyclic quadrilaterals appear in architecture (e.g., gothic arches, dome windows) and how the supplementary angles property is used in design.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: if ABCD is cyclic and both diagonals bisect each other, then ABCD is a rectangle.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────────────────── TOPIC 9 ───────────────────────── -->
+<section class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Chord Properties — Perpendicular from Centre Bisects Chord</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Theorem &amp; Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State: the perpendicular from the centre of a circle to a chord bisects the chord.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Chord AB = 10 cm. The perpendicular from O meets AB at M. Find AM and MB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AM = MB = 5 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Circle O, radius 13 cm. Chord PQ, OM ⊥ PQ, OM = 5 cm. Find PQ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>MP = √(169−25) = 12. PQ = 24 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Circle O, radius 10. Chord AB, OM ⊥ AB, AB = 16 cm. Find OM.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OM = √(100−64) = 6 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: the perpendicular from the centre to a chord bisects it. Use congruent triangles.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In circle O, OM ⊥ chord AB. OA = 5, OM = 3. Find AB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>MA = 4. AB = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Prove the converse: the line from the centre to the midpoint of a chord is perpendicular to the chord.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">O is the centre; M is the midpoint of chord PQ. What is the angle ∠OMP?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>90°</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords AB and CD of a circle, both perpendicular to the same line from O. What can you conclude about AB and CD?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>If both are perpendicular to the same line from O, and that line bisects both, then AB ∥ CD (both are perpendicular to the radius direction). They are parallel chords.</p></details></div>
+      <div class="q-item"><span class="q-text">A chord is 8 cm from the centre of a circle of radius 10 cm. Find the chord length. If the chord moves to 6 cm from the centre, what is the new chord length?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Chord₁ = 2√(100−64) = 12 cm. Chord₂ = 2√(100−36) = 16 cm</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Numerical Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two parallel chords in a circle of radius 10 cm are on the same side of the centre, at distances 6 cm and 8 cm. Find the lengths of both chords.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Chord₁ = 2√(100−36) = 16 cm; Chord₂ = 2√(100−64) = 12 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two parallel chords of lengths 16 cm and 12 cm in a circle of radius 10 cm. Find the distance between them (both same side, then opposite sides).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 6 (from 16 cm chord); d₂ = 8 (from 12 cm chord). Same side: 8−6 = 2 cm. Opposite sides: 8+6 = 14 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A chord AB is 24 cm long. The centre O is 5 cm from the chord. Find the radius.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = √(12²+5²) = 13 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Find the perpendicular distance from the centre to a chord of length 2l in a circle of radius r. Express in simplified form.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d = √(r²−l²)</p></details></div>
+      <div class="q-item"><span class="q-text">Circle O, radius 15. Two chords AB = 18 and CD = 24. Which is closer to the centre? By how much?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d_AB = √(225−81) = 12; d_CD = √(225−144) = 9. CD is closer, by 3 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">A chord PQ passes at distance 7 cm from centre O of a circle radius r. If PQ = 48 cm, find r.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = √(24²+7²) = √(576+49) = √625 = 25 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle of radius 17, a chord is at distance 8 from the centre. Find its length, and then find the distance between this chord and a chord of length 30.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>First chord: 2√(289−64) = 2×15 = 30 cm. Distance of chord of length 30 from centre = 8 cm (same length!). Distance between them = 0 if they're the same chord, or 16 if on opposite sides.</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords at equal distances (4 cm each) from the centre, on opposite sides. Circle radius = 5 cm. Find both chord lengths and the distance between them.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Chord = 2√(25−16) = 6 cm each. Distance between = 4+4 = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle of radius 13 cm, two chords AB = 10 cm and CD = 24 cm. Find the distance of each from the centre.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d_AB = √(169−25) = 12; d_CD = √(169−144) = 5</p></details></div>
+      <div class="q-item"><span class="q-text">A chord of length 2r sin θ subtends angle 2θ at the centre of a circle of radius r. Find the distance from the centre to the chord.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = r cos θ (using half-chord = r sin θ; d² + (r sin θ)² = r² → d = r cos θ)</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended Chord Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two equal chords AB and CD are on opposite sides of the centre O. OM ⊥ AB and ON ⊥ CD. Prove OM = ON.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Chord AB is twice as long as chord CD. If OM ⊥ AB and ON ⊥ CD, find the relationship between OM and ON.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: the greater the chord, the closer it is to the centre. (i.e., longer chord → smaller perpendicular distance.)</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two concentric circles have radii 5 and 13. A chord of the outer circle is tangent to the inner. How many such chords of the same length exist? Find their length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Infinitely many (tangent at any point of inner circle). Each has length 2√(169−25) = 24 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">Three parallel chords in a circle of radius 10 are at distances 2, 6, and 8 from the centre. Find all three chord lengths.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2√(100−4)=2√96=8√6≈19.6; 2√(100−36)=16; 2√(100−64)=12 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Chord AB and chord CD intersect at P inside a circle. OM ⊥ AB, ON ⊥ CD. Given OM = ON, prove AB = CD.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two chords AB and AC from the same point A. The centre O is equidistant from both chords. Prove AB = AC.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A chord PQ = 6 cm is in a circle of radius 5 cm. Find the area of the minor segment cut off by PQ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>OM = √(25−9) = 4. Half angle at centre: sin θ = 3/5, θ = 36.87°, central angle = 73.74°. Area of sector = (73.74/360)π(25) ≈ 16.08. Area of △OPQ = (1/2)(6)(4) = 12. Segment area = 16.08−12 ≈ 4.08 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle of radius r, the perpendicular from the centre bisects chord AB at M. AM = r/2. Find the central angle ∠AOB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin(∠AOB/2) = (r/2)/r = 1/2 → ∠AOB/2 = 30° → ∠AOB = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">A chord AB is the perpendicular bisector of another chord CD. What can you conclude about AB?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>If AB is the perpendicular bisector of CD, then AB passes through the midpoint of CD and is perpendicular to it. By the chord theorem, AB must pass through the centre O. So AB is a diameter.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: of all chords of a circle, the diameter is the longest. (Use the perpendicular distance argument.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two chords intersect inside a circle. The perpendicular from O to each meets them at their midpoints. Prove the chords are parallel.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A regular hexagon is inscribed in a circle of radius r. Using the chord bisector theorem, find the length of each side and the distance of each side from the centre.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Side = r (equilateral triangle). Distance = r cos 30° = r√3/2.</p></details></div>
+      <div class="q-item"><span class="q-text">A circle has two parallel chords of lengths 24 and 32 on the same side of the centre, distance 4 apart. Find the radius.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁² + 12² = r² and d₂² + 16² = r² with d₁ − d₂ = 4 (or d₂ − d₁ = 4). r²−144−(r²−256) = d₁²−d₂² = (d₁−d₂)(d₁+d₂). 112 = 4(d₁+d₂) → d₁+d₂ = 28. d₁ = 16, d₂ = 12. r = √(256+144) = 20 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: if AB is a chord and M is its midpoint, then OM ⊥ AB AND the perpendicular bisector of any chord passes through the centre.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three non-collinear points determine a unique circle. Prove this using perpendicular bisectors of the chords formed by the points.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Using coordinate geometry: circle x²+y²=25. Chord from (−3,4) to (3,4). Find: (a) chord length, (b) perpendicular from origin, (c) verify perpendicular bisector passes through origin.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(a) 6; (b) y=4 → perpendicular from origin to y=4 is 4 (correct, OM=4); (c) midpoint of chord = (0,4); line from origin (0,0) to (0,4) is x=0 (y-axis), which is ⊥ to y=4. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">An arc is 120° of a circle of radius 6 cm. Find the chord and the perpendicular from centre to chord.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Chord = 2×6×sin60° = 6√3. OM = 6 cos 60° = 3 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In real life, engineers cut circular cross-sections. If a pipe of diameter 20 cm is cut by a plane 6 cm from the centre, what is the diameter of the cross-section?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Half-chord = √(100−36) = 8. Diameter of cross-section = 16 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: the perpendicular bisectors of the three sides of a triangle are concurrent at the circumcentre. Connect this to the chord bisector theorem.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 10 ───────────────────────── -->
+<section class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Equal Chords are Equidistant from Centre</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Theorem &amp; Basic</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State: equal chords of a circle are equidistant from the centre.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">State the converse: chords equidistant from the centre are equal.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Chord AB = CD = 14 cm in circle O (radius 25 cm). Find the distances of AB and CD from O.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = √(625−49) = √576 = 24 cm each</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords are each at distance 8 cm from the centre of a circle of radius 10 cm. Find their lengths.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Length = 2√(100−64) = 12 cm each</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: equal chords are equidistant from the centre.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>If AB = CD, then OA = OC (radii), AM = AB/2 = CD/2 = CN (M, N = midpoints). In right triangles OMA and ONC: hypotenuse OA=OC, leg AM=CN → OM = ON by Pythagoras. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords PQ = 10 and RS = 10 in a circle of radius 13. Find OM and ON (perpendiculars from centre).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>OM = ON = √(169−25) = 12 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Chords AB = CD in circle. OM ⊥ AB, ON ⊥ CD. If OM = ON = 5 and r = 13, find AB and CD.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AB = CD = 2√(169−25) = 24 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Prove the converse: chords equidistant from the centre are equal.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a circle of radius 10, three equal chords are drawn. The distance of each from the centre is 6 cm. Verify the chord length.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Length = 2√(100−36) = 16 cm each ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Chord AB > chord CD. Which is closer to the centre? Explain using the theorem.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AB is closer to the centre. Longer chord → shorter perpendicular distance (since d = √(r²−(L/2)²) decreases as L increases).</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Numerical &amp; Algebraic</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two chords are at distances 3 cm and 4 cm from the centre. The circle has radius 5 cm. Find both chord lengths.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Chord₁ = 2×4 = 8 cm; Chord₂ = 2×3 = 6 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Chords AB and CD: OM ⊥ AB, ON ⊥ CD, OM = 2x+1, ON = 4x−5. If AB = CD, find x.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Equal chords → equal distances: 2x+1 = 4x−5 → 2x = 6 → x = 3</p></details></div>
+      <div class="q-item"><span class="q-text">Chord AB = 2(x+3) and chord CD = 3x−1 are equidistant from centre. Find the chord lengths.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2x+6 = 3x−1 → x=7. AB = CD = 20 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle of radius r, two chords are at distances d₁ and d₂ from the centre. Express both chord lengths and find when they are equal.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>L₁ = 2√(r²−d₁²); L₂ = 2√(r²−d₂²). Equal when d₁ = d₂.</p></details></div>
+      <div class="q-item"><span class="q-text">Two chords of a circle, each 6 cm long, subtend equal angles at the centre. Is this consistent with the theorem? Find the central angles if r = 5 cm.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Yes, consistent. Half-chord = 3. sin(∠/2) = 3/5 → ∠/2 = 36.87° → ∠ = 73.74° each.</p></details></div>
+      <div class="q-item"><span class="q-text">A regular polygon is inscribed in a circle. Prove all its sides are equidistant from the centre.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In circle O, OM ⊥ AB and ON ⊥ CD. OM = ON. Chord AB = 3x+2 and CD = 5x−8. Find x and the chord lengths.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>3x+2 = 5x−8 → 2x = 10 → x = 5. AB = CD = 17 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Three parallel chords are equal. What can you say about their distances from the centre?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>All three are equidistant from the centre. Since they are parallel and equal, they are symmetric about the centre's perpendicular to them.</p></details></div>
+      <div class="q-item"><span class="q-text">Chord AB is twice as long as chord CD. If AB is at distance d from centre, express the distance of CD from the centre in terms of d and r.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AB = 2√(r²−d²); CD = AB/2 = √(r²−d²). For CD: (CD/2)² + d_CD² = r² → (r²−d²)/4 + d_CD² = r² → d_CD² = r²−(r²−d²)/4 = (3r²+d²)/4. d_CD = √(3r²+d²)/2.</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle, 4 equal chords form a square (like the sides of a square inscribed in the circle). Find the distance of each chord from the centre if r = 5 cm.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>For inscribed square, side = r√2 = 5√2. Half-chord = 5√2/2 = 5/√2. d = √(25−12.5) = √12.5 = 5/√2 ≈ 3.54 cm</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Proof &amp; Extended</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: in a circle, if two chords are equidistant from the centre, they are equal.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two circles have equal radii. Chord AB in circle 1 is equal to chord CD in circle 2. Prove the arcs AB and CD are equal.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Equal chords AB and CD in circle O. They intersect inside the circle at P. Prove AP = CP or AP = DP.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">AB = CD (equal chords), both on the same side of centre O. OM ⊥ AB, ON ⊥ CD. Prove OM = ON using the theorem.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In circle O with equal chords AB = CD, and diameters through their midpoints. Prove these diameters make equal angles with the diameter perpendicular to AB and CD.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Chord AB = chord CD. AB is at 5 cm from centre, CD is at 5 cm from centre. They are on opposite sides. If AB and CD are also parallel, describe the symmetry of the figure.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In circle O, AB and CD are equal chords. M and N are their midpoints. Prove OM = ON and ∠MON is related to the central angles of the chords.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a music record (circular), equally spaced grooves are parallel chords of equal length. Using the equal chord theorem, explain why these grooves are all at the same distance from the centre.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Prove: the midpoints of all equal chords of a circle lie on a concentric circle. Find that circle's radius.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>For equal chords of length 2l: all midpoints are at distance d = √(r²−l²) from centre O. So all midpoints lie on a circle of radius d, concentric with the original.</p></details></div>
+      <div class="q-item"><span class="q-text">Equal chords AB and CD in circle O are not parallel. Prove that the quadrilateral ABDC (or ABCD) is an isosceles trapezium.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: among all chords of a circle, the diameter is the only chord that is its own perpendicular bisector's passing through the centre.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">n equal chords are drawn in a circle, evenly spaced angularly. Find the distance of each from the centre if the chord length equals the radius.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Chord = r. Half-chord = r/2. d = √(r²−r²/4) = r√3/2. Central angle: sin(∠/2) = 1/2 → ∠ = 60°.</p></details></div>
+      <div class="q-item"><span class="q-text">Using coordinate geometry: circle x²+y²=100. Two equal chords: one from (6,8) to (−6,8) and one from (8,6) to (8,−6). Verify they are equal and equidistant from origin.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Chord 1 length: distance from (6,8) to (−6,8) = 12. d₁ = 8. Chord 2: from (8,6) to (8,−6) = 12. d₂ = 8. Equal length (12) and equal distance (8). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In an ellipse (not a circle), equal chords are NOT always equidistant from the centre. Explain why this theorem is specific to circles.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A chord moves parallel to itself towards the centre. As it does, its length increases. Derive the relationship between the rate of change of chord length and the rate of change of distance from centre.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a circle, n chords are drawn such that each chord is at distance d from the centre. They all have the same length 2√(r²−d²). What is the set of all such chords? Describe geometrically.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>All tangent lines to the inner concentric circle of radius d. They form the family of tangents to a concentric circle of radius d.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: the chord of a circle that is a tangent to a concentric circle of radius d is the unique chord at distance d from the centre.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In ISRO satellite imagery, circular orbits at different altitudes have different chord lengths to any given ground station. Relate this to the equal chord theorem.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Design a challenge: in a circle of radius 10, find all integer-valued chord lengths and their distances from the centre. List at least 5 Pythagorean pairs.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Using Pythagorean triples where hyp=10: (6,8,10): chord=16, d=6; chord=12, d=8. Others: d=0, chord=20; d=10, chord=0. Half-chord integer pairs: (6,8), (0,10). Extended: non-right triangles don't give integer pairs easily with r=10.</p></details></div>
+      <div class="q-item"><span class="q-text">Generalize: for a circle of radius r, derive the maximum number of distinct chord lengths possible if the distance from centre must be a non-negative integer and r = 13.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────────────────── TOPIC 11 ───────────────────────── -->
+<section class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Angle in a Semicircle = 90°</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Theorem &amp; Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State Thales' Theorem: the angle in a semicircle is 90°.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">AB is a diameter. C is any point on the circle (not A or B). What is ∠ACB?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90° (angle in semicircle)</p></details></div>
+      <div class="q-item"><span class="q-text">Prove Thales' Theorem using the central angle theorem (inscribed angle = half central angle).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AB is diameter → central angle = 180°. Inscribed angle ACB = 180°/2 = 90°. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">AB is a diameter of circle O. C is on the circle. ∠CAB = 35°. Find ∠CBA and ∠ACB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90°. ∠CBA = 180°−90°−35° = 55°</p></details></div>
+      <div class="q-item"><span class="q-text">In triangle ABC inscribed in a circle, if ∠A = 90°, what must BC be?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>BC must be the diameter of the circle.</p></details></div>
+      <div class="q-item"><span class="q-text">O is the centre of a circle, AB is the diameter. C is on the circle, OC = OA = OB = r. Find ∠CAB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90°. OA = OC = r → ∠OAC = ∠OCA. ∠AOC is central angle for arc AC. Without more info, we can say OC = r makes △OCA isosceles. ∠ACB = 90° (Thales). This alone gives ∠CAB + ∠CBA = 90°.</p></details></div>
+      <div class="q-item"><span class="q-text">AB is a diameter = 10 cm. C is on the circle. AC = 6 cm. Find BC.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90°. BC = √(100−36) = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In a semicircle of radius 5, a chord PQ is drawn from the diameter. PQ = 8 cm. Find the angle that PQ subtends at the centre.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PQ from the centre: half PQ = 4. d = 3. Angle at centre = 2 sin⁻¹(4/5) = 2×53.13° ≈ 106.26°</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse 26 cm. Find the radius of its circumscribed circle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = diameter = 26 cm. Radius = 13 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">True or False: any angle inscribed in a circle that subtends a diameter is exactly 90°. Justify.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>True (Thales' Theorem). The inscribed angle is always 90° for a diameter chord.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Numerical Using Thales</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">AB is a diameter of circle O. C is on the circle. ∠CAB = 40°. Find all angles of triangle ABC.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠ACB=90°, ∠CAB=40°, ∠CBA=50°</p></details></div>
+      <div class="q-item"><span class="q-text">AB = 20 cm (diameter). C is on circle. AC = 12 cm. Find BC and all angles of △ABC.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>BC = 16. ∠ACB=90°. sin∠CAB = 16/20 = 0.8 → ∠CAB ≈ 53.13°. ∠CBA ≈ 36.87°</p></details></div>
+      <div class="q-item"><span class="q-text">In a circle, AB is a diameter. Points C and D are on the circle (same side). ∠ACB = ∠ADB = 90°. What does this confirm?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Confirms Thales' theorem: any point on the circle sees the diameter at 90°.</p></details></div>
+      <div class="q-item"><span class="q-text">A right-angled triangle is inscribed in a circle. The hypotenuse is 26 cm, legs are 10 and 24 cm. Verify using Pythagoras and find the circumradius.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>10²+24² = 100+576 = 676 = 26². ✓ Circumradius = 13 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">O is the centre; AB is diameter = 2r. C is on the circle. OC = r (radius). Find ∠CAO using the fact that OA = OC = r.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>△OAC is isosceles (OA=OC=r). Let ∠OAC = ∠OCA = α. ∠ACB = 90° (Thales). ∠OCB = 90° − α. In △OCB: OC=OB=r → isosceles → ∠OBC = ∠OCB = 90°−α. In △AOC: ∠AOC = 180°−2α. Since ∠AOB = 180° (diameter), ∠COB = 180°−(180°−2α) = 2α. △OCB: ∠COB+2(90°−α)=180° → 2α+180°−2α=180° ✓. Can't determine α without more info.</p></details></div>
+      <div class="q-item"><span class="q-text">A cyclic quadrilateral ABCD has AB as diameter. Find ∠ADB and ∠ACB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠ADB = ∠ACB = 90° (both are angles in semicircle on diameter AB)</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC, circumscribed in circle O. If ∠B = 90°, show AC is the diameter. Then find the circumradius if AC = 15.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>By converse of Thales: ∠B = 90° → AC is diameter. R = 15/2 = 7.5 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">Semicircle of diameter 10 cm. A rectangle is inscribed with one side on the diameter. If the side on the diameter = 8 cm, find the rectangle's height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Radius = 5. The corners of the rectangle on the circle are at (±4, h) on circle x²+y²=25. h = √(25−16) = 3 cm</p></details></div>
+      <div class="q-item"><span class="q-text">From a point on the circle, a perpendicular is drawn to the diameter AB, meeting AB at M. OA = 5 (radius). If AM = 8, find the perpendicular's length CM.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>C is on the circle. Using the intersecting chords/semicircle: CM² = AM × MB. AM = 8, MB = 10−8 = 2 (diameter = 10). CM = √16 = 4 cm</p></details></div>
+      <div class="q-item"><span class="q-text">O is centre, AB = diameter. P is the midpoint of arc AB (semicircle). What is ∠APB? What type of triangle is △APB?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠APB = 90° (Thales). PA = PB (P is midpoint of arc → equidistant from A and B). △APB is an isosceles right triangle.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Proof &amp; Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove Thales' theorem: angle in a semicircle = 90°. (Method: use OA=OC=OB = radii and isosceles triangles.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove the converse: if ∠ACB = 90°, then AB is a diameter of the circumscribed circle.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">AB is a diameter. Two points C and D on the circle (same semicircle). Prove ∠ACB = ∠ADB = 90° and hence CD does not subtend 90° at any point on the arc CD.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Using Thales' theorem, prove: in a circle, the angle subtended by a chord at the centre is twice the angle subtended at any point on the major arc.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A ladder of length 5 m leans against a wall, with the foot sliding on the floor. The top slides on the wall. Show that the midpoint of the ladder traces a circle of radius 2.5 m.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The right angle is always at the foot (wall ⊥ floor). By Thales: the angle in a semicircle is 90°. The midpoint of the hypotenuse (ladder) is the circumcentre, distance = hypotenuse/2 = 2.5 m from origin. So midpoint traces a circle of radius 2.5 m. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">AB is a diameter. C is on the circle. D is the foot of the perpendicular from C to AB. Prove CD² = AD × DB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90° (Thales). CD ⊥ AB. In right △ACB: CD is altitude to hypotenuse → CD² = AD × DB. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">A circle is drawn with the hypotenuse of a right triangle as diameter. Does the right-angle vertex lie inside, on, or outside the circle? Prove.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>By Thales' converse: the right-angle vertex lies ON the circle.</p></details></div>
+      <div class="q-item"><span class="q-text">Use Thales' theorem to construct a right angle: describe how to find a right angle at a point P on a circle using a diameter AB.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A = 90°. The circumcircle passes through A, B, C. Find the circumradius in terms of BC.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>R = BC/2</p></details></div>
+      <div class="q-item"><span class="q-text">In navigation, a ship sees two lighthouses A and B at a 90° angle. Prove the ship lies on a circle with AB as diameter. What is the practical implication for maritime navigation?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Thales' theorem is a special case of the inscribed angle theorem. State the general theorem and show how Thales' is derived from it.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Converse of Thales: given three points A, B, C where ∠ACB = 90°, prove C lies on the circle with AB as diameter. (Use contradiction.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a semicircle of radius r, a right triangle is inscribed. If one leg = a, find the other leg and hypotenuse. Show that the hypotenuse equals the diameter.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = diameter = 2r. Other leg = √(4r²−a²). This is direct application of Thales.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle with legs 3 and 4 is inscribed in a circle. Find: (a) hypotenuse, (b) circumradius, (c) area of the triangle, (d) distance from the right-angle vertex to the circumcentre.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(a) 5; (b) 2.5; (c) 6; (d) 2.5 (right-angle vertex lies on circle → distance to centre = radius = 2.5)</p></details></div>
+      <div class="q-item"><span class="q-text">A rectangle ABCD is inscribed in a circle. Diagonals are diameters. Using Thales, verify that ∠DAB = 90°.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Using Thales' theorem, prove that the largest triangle inscribed in a circle (by area) is equilateral. (Hint: use the 90° angle constraint for the semicircle.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Fermat point problem: in a triangle, the point from which the sum of distances to the three vertices is minimum lies on a circle with each side as chord subtending 120°. Explain the connection to inscribed angle theorem.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In digital circuit design, a "NOR gate" can be drawn as a circle with inputs on a diameter. Describe how Thales' theorem applies to the geometric interpretation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two circles have a common chord AB. Points C and D on each circle respectively see AB at 90°. Prove that CD passes through the midpoint of AB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: the midpoint of the hypotenuse of a right triangle is equidistant from all three vertices. Connect this to the circumcircle and Thales' theorem.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Midpoint M of hypotenuse = circumcentre (by Thales). Circumradius = distance from M to each vertex = half hypotenuse. So M is equidistant from all 3 vertices. QED.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 12 ───────────────────────── -->
+<section class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>SAT-Style Circle Problems</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> SAT Multiple Choice</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">[SAT] PA and PB are tangents from external P to a circle. PA = 5. PB = ? (A) 5 (B) 10 (C) 2.5 (D) Cannot be determined</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(A) 5 (tangent lengths are equal)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] In a circle, AB is a diameter, C on circle, ∠ACB = ? (A) 45° (B) 90° (C) 180° (D) 60°</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B) 90°</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] A tangent from point P (OP = 13, r = 5). Tangent length = ? (A) 8 (B) 10 (C) 12 (D) 14</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(C) 12</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] Cyclic quadrilateral ABCD, ∠A = 75°. ∠C = ? (A) 75° (B) 115° (C) 105° (D) 95°</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(C) 105°</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] Two tangents from P enclose ∠APB = 60°. ∠AOB (O = centre) = ? (A) 120° (B) 60° (C) 300° (D) 240°</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(A) 120°</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] Equal chords AB and CD in a circle. Which of the following must be true? (A) AB ∥ CD (B) Arc AB = Arc CD (C) ∠AOB = 2∠COD (D) AB and CD are diameters</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(B) Arc AB = Arc CD (equal chords → equal arcs)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] Chord PQ is at distance 5 from centre O of circle radius 13. PQ = ? (A) 10 (B) 24 (C) 12 (D) 48</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B) 24</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] Tangent at T; chord TA makes 65° with tangent. Inscribed angle in alternate segment = ? (A) 25° (B) 115° (C) 65° (D) 130°</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(C) 65°</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] AB is a chord. Perpendicular from O bisects AB at M. OA = 5, OM = 3. AB = ? (A) 4 (B) 8 (C) 6 (D) 10</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B) 8</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] A circle of radius 5. From an external point P, tangent length = 12. OP = ? (A) 7 (B) 17 (C) 13 (D) 15</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(C) 13</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> SAT Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From point P outside a circle, tangent PA = 15 cm. A secant through P meets the circle at B (nearer, PB = 9 cm) and C. Find PC.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PA² = PB×PC → 225 = 9×PC → PC = 25 cm</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC inscribed in circle, ∠B = 90°, BC = 6, AC = 10. Find the circumradius and AB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>R = AC/2 = 5. AB = √(100−36) = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Two tangents from P touch circle at A and B. ∠APB = 50°. Find ∠OAB (O = centre).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠AOB = 130°. ∠OAB = (180°−130°)/2 = 25°</p></details></div>
+      <div class="q-item"><span class="q-text">AB is diameter of length 20. Chord CD = 12, at distance x from centre. Find x.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r=10. x = √(100−36) = 8 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A circle of radius 10 has two parallel chords 6 and 8 apart, on opposite sides. Find both chord lengths.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁+d₂ = 8 and d₁²+h₁²=100, d₂²+h₂²=100. Without more info, let d₁=3, d₂=5: h₁=√91≈9.54, h₂=√75≈8.66. Chords: 2√91 and 2√75. (Many solutions; problem may need both equal → d₁=d₂=4: chords = 2√84 each.)</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD is cyclic. AB = 5, BC = 7, CD = 4. AD = ? (Hint: use the property AB+CD = BC+AD.)</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>5+4 = 7+AD → AD = 2 cm</p></details></div>
+      <div class="q-item"><span class="q-text">Tangent TQ at T; chord TA subtends angle 55° with tangent. Find ∠TCA where C is on the major arc.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>∠TCA = 55°</p></details></div>
+      <div class="q-item"><span class="q-text">A 6-8-10 right triangle is inscribed in a circle. Find the circle's area.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = diameter = 10. r = 5. Area = 25π ≈ 78.54 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">Two tangents from P form ∠APB = 2α. Show the tangent length PA = r·cos α / sin α = r cot α, where r = radius.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin∠APO = r/OP, cos∠APO = PA/OP. PA = OP cos α and r = OP sin α → PA = r·cos α/sin α = r cot α. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">In circle O, chord AB = diameter = 16. C on circle. ∠ACB = 90°. AC = 12. Find BC, area of △ABC, and area of the circle.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>BC = √(256−144) = √112 = 4√7. Area △ = (1/2)(12)(4√7) = 24√7. Circle area = 64π.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Reasoning &amp; Analysis</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A student claims: "If ∠ACB = 90° and C is inside the circle, then AB is a diameter." Is this correct?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Incorrect. Thales' converse applies only when C is ON the circle. If C is inside, ∠ACB > 90°; if outside, ∠ACB < 90°.</p></details></div>
+      <div class="q-item"><span class="q-text">A circle has centre O and radius 10. A tangent from P (OP = 26). A chord through P meets the circle at A (PA = 14, closer). Find the chord length.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Tangent = √(676−100) = 24. PA × PB = 24² = 576. 14 × PB = 576 → PB = 41.14... Hmm: tangent² = PA × PB. 576 = 14 × PB → PB = 576/14 ≈ 41.14. Chord = PB − PA = 27.14 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">In an SAT problem, a circle passes through A, B, C where AB is a diameter. ∠BAC = 30°. BC = 5. Find the radius.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>∠ACB = 90°. sin∠BAC = BC/AB → sin30° = 5/AB → AB = 10. Radius = 5.</p></details></div>
+      <div class="q-item"><span class="q-text">Error analysis: a student writes "∠AOB = ∠APB for an inscribed angle." Find the mistake and correct it.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Error: ∠APB (inscribed) = (1/2)∠AOB (central). Central angle is TWICE the inscribed angle, not equal.</p></details></div>
+      <div class="q-item"><span class="q-text">From P outside circle O (r = 5), tangent length is 12. P moves 1 cm closer to O. Find the new tangent length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Old OP = 13. New OP = 12. New tangent = √(144−25) = √119 ≈ 10.91 cm</p></details></div>
+      <div class="q-item"><span class="q-text">ABCD is cyclic with ∠A = 85°. The exterior angle at D is 85°. Verify this is consistent with the cyclic quadrilateral theorem.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Ext. ∠ at D = interior opposite ∠ = ∠B. So ∠B = 85°. Then ∠C = 180°−85° = 95°. ∠A+∠C = 85°+95° = 180°. ✓ Consistent.</p></details></div>
+      <div class="q-item"><span class="q-text">Two tangents from P are 24 cm each. The chord of contact AB = 20 cm. Find the radius of the circle.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>PA = 24, AB = 20. In △PAB: PM ⊥ AB, PM² = 24² − 10² = 476. PM = 2√119. OP × OM = PA² (power): OP × d = 576 where d = distance from O to AB. r² + OM² = ... use: OP = √(PA²+r²)/... Let r = radius, OP = d_OP. PA² = OP²−r². AB/2 = 10; distance from O to AB: d² + 10² = r². Also d × OP = r² (property). PA = 24, PA² = OP²−r² = 576. OP² = 576+r². d = r²/OP. d² = r⁴/OP². r² − 100 = r⁴/(576+r²). (r²−100)(576+r²) = r⁴. 576r²+r⁴−57600−100r² = r⁴. 476r² = 57600. r² = 57600/476 ≈ 121. r ≈ 11 cm. Check: OP = √(576+121) = √697 ≈ 26.4. d = 121/26.4 ≈ 4.58. d²+100 = 121 → d = √21 ≈ 4.58. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In the IB MYP criterion A (Knowledge and Understanding): explain the difference between a chord, tangent, and secant and give an example of each in a real-world context.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain why every cyclic quadrilateral's opposite angles sum to 180°, using the inscribed angle theorem in your explanation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A circle with centre O has two tangents from P at 60° apart (∠APB = 60°). Compare the triangle APB with the triangle that would be formed if ∠APB = 90°. Describe what changes.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS &amp; Interdisciplinary</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The ancient Greeks used Thales' theorem to measure distances across rivers. Describe the method and the mathematics behind it.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In architecture, circular windows (rose windows in gothic cathedrals) use the cyclic quadrilateral property. Find the angles of an inscribed quadrilateral if three angles are 75°, 85°, and 95°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Fourth angle = 360°−75°−85°−95° = 105°. Check: 75+105=180 ✓; 85+95=180 ✓. Cyclic ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In optics, a lens has circular cross-sections. A ray of light enters the lens as a tangent and is bent at the point of contact. Explain how the tangent-radius relationship governs the angle of refraction conceptually.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A satellite dish is a paraboloid, but its cross-section resembles a circle. If a chord of the cross-section is 80 cm and is 30 cm from the centre, find the radius of the cross-section.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r = √(40²+30²) = √(1600+900) = 50 cm</p></details></div>
+      <div class="q-item"><span class="q-text">A security camera rotates in a circle. The angle it sweeps to cover a hall is equal to the inscribed angle. If the hall subtends 60° at the camera's axis, find the arc it covers given the rotation radius is 5 m.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Write a complete NCERT-style proof of: "The tangent at any point of a circle is perpendicular to the radius at the point of contact." Include figure, given, to prove, construction, proof, and conclusion.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In IB MYP Global Context "Identities and Relationships": explain how circles and their properties appear in Islamic geometric art (girih tiles) and how tangents and chord properties govern the symmetry.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The Nine-Point Circle theorem states that 9 specific points associated with any triangle lie on a single circle. Name these 9 points and state one connection to the chord and tangent theorems.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Final Challenge: A point P is outside a circle. PA is tangent (A on circle). PBC is a secant. ABDC is a quadrilateral (D on circle). Prove ABDC is cyclic and find all four angles if ∠APB = 40° and ∠ABC = 70°.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Create an original problem that uses at least 3 circle theorems from this chapter. Write the problem clearly, draw a labelled diagram, solve it in full, and write an IB MYP criterion C (communication) reflection on the mathematical process used.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Grade 10 · NCERT Mathematics · Chapter 10 · The Gaudium School · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

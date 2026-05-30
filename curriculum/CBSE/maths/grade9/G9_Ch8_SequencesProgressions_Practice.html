@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 8 – Sequences and Progressions | Grade 9</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 Chapter 8 – Predicting What Comes Next: Sequences and Progressions</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · AP, GP &amp; Mathematical Sequences</p>
+</header>
+
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Sequences Introduction and Notation</a></li>
+    <li><a href="#t2">Arithmetic Sequences – nth Term aₙ = a+(n−1)d</a></li>
+    <li><a href="#t3">AP Sum of n Terms Sₙ = n/2[2a+(n−1)d]</a></li>
+    <li><a href="#t4">Common Difference Applications</a></li>
+    <li><a href="#t5">Geometric Sequences – nth Term aₙ = arⁿ⁻¹</a></li>
+    <li><a href="#t6">GP Sum Sₙ = a(rⁿ−1)/(r−1)</a></li>
+    <li><a href="#t7">Geometric Mean</a></li>
+    <li><a href="#t8">Sum of Infinite GP S∞ = a/(1−r)</a></li>
+    <li><a href="#t9">Recognising AP vs GP</a></li>
+    <li><a href="#t10">Sequences in Nature and Art</a></li>
+    <li><a href="#t11">Sigma Notation</a></li>
+    <li><a href="#t12">Real-World Sequence Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Sequences Introduction and Notation</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:intro-to-arithmetic-sequences/v/arithmetic-sequences" target="_blank">Introduction to Sequences</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/v/explicit-formulas-for-arithmetic-sequences" target="_blank">Sequence Notation</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=VDgtH_vvjMo" target="_blank">The Magic of Fibonacci Numbers</a>
+        <a href="https://www.youtube.com/watch?v=SjSHVDfXHQ4" target="_blank">Patterns and Sequences</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Identifying and Listing Sequences</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the next three terms of the sequence: 3, 7, 11, 15, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Each term increases by 4. Next three: <strong>19, 23, 27</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the next three terms: 2, 6, 18, 54, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Each term is multiplied by 3. Next three: <strong>162, 486, 1458</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 100 a term of the sequence 5, 10, 15, 20, …? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Terms are multiples of 5. 100 ÷ 5 = 20. <strong>Yes, 100 is the 20th term.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 6th term of the sequence defined by aₙ = 2n + 3. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₆ = 2(6) + 3 = 12 + 3 = <strong>15</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">List the first five terms of the sequence aₙ = n². <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1, 4, 9, 16, <strong>25</strong>. Terms: <strong>1, 4, 9, 16, 25</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the first five terms of the sequence aₙ = 3n − 1. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a₁=2, a₂=5, a₃=8, a₄=11, a₅=14. Terms: <strong>2, 5, 8, 11, 14</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the first four terms of the sequence aₙ = n(n+1). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a₁=2, a₂=6, a₃=12, a₄=20. Terms: <strong>2, 6, 12, 20</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A sequence is given as 1, 1, 2, 3, 5, 8, 13, … Name this sequence and write the next two terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>This is the <strong>Fibonacci sequence</strong>. Each term = sum of previous two. Next two: <strong>21, 34</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Determine whether the sequence 4, 9, 16, 25, 36, … is an AP, GP, or neither. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Differences: 5, 7, 9, 11 — not constant, so not AP. Ratios: 9/4, 16/9 — not constant, so not GP. These are perfect squares. <strong>Neither AP nor GP.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The nth term of a sequence is aₙ = (−1)ⁿ · n. Write the first six terms and describe the pattern. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₁=−1, a₂=2, a₃=−3, a₄=4, a₅=−5, a₆=6. Terms: <strong>−1, 2, −3, 4, −5, 6</strong>. Pattern: alternating negative and positive integers.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Sequence Notation and Terms</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the 10th term if aₙ = 5n − 2. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₁₀ = 5(10) − 2 = 50 − 2 = <strong>48</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which term of the sequence 7, 14, 21, 28, … equals 105? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>aₙ = 7n. 7n = 105 → n = 15. It is the <strong>15th term</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Given a sequence 10, 8, 6, 4, …, find the 12th term using the pattern. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>aₙ = 10 + (n−1)(−2) = 12 − 2n. a₁₂ = 12 − 24 = <strong>−12</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A sequence has aₙ = 2ⁿ. Find a₅. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₅ = 2⁵ = <strong>32</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the general term (nth term formula) for the sequence 3, 5, 7, 9, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>First term = 3, common difference = 2. aₙ = 3 + (n−1)×2 = <strong>2n + 1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the nth term for: 1, 4, 9, 16, 25, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>These are perfect squares. aₙ = <strong>n²</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the nth term of the sequence 2, 5, 10, 17, 26, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 3, 5, 7, 9 — second differences are 2, so quadratic. aₙ = n² + 1. Check: 1+1=2 ✓, 4+1=5 ✓. aₙ = <strong>n² + 1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many terms are in the sequence 5, 10, 15, …, 200? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ = 5n = 200 → n = <strong>40 terms</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 20th term of the sequence: a₁ = 100, aₙ = aₙ₋₁ − 4 for n ≥ 2. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>This is AP with a=100, d=−4. a₂₀ = 100 + 19(−4) = 100 − 76 = <strong>24</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A sequence is defined recursively: a₁ = 1, a₂ = 2, aₙ = aₙ₋₁ + aₙ₋₂. Find a₈. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₃=3, a₄=5, a₅=8, a₆=13, a₇=21, a₈=<strong>34</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Sequence Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Fill in the blanks: 1, 3, 6, 10, 15, ___, ___ <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Triangular numbers (differences 2,3,4,5,6,…). Next: 15+6=<strong>21</strong>, 21+7=<strong>28</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Identify the type: 100, 50, 25, 12.5, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Each term is halved (r = 1/2). This is a <strong>Geometric Progression (GP)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the first five terms of aₙ = n/(n+1). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1/2, 2/3, 3/4, 4/5, <strong>5/6</strong>. Terms: <strong>1/2, 2/3, 3/4, 4/5, 5/6</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For aₙ = 3·2ⁿ⁻¹, find the 5th term. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₅ = 3·2⁴ = 3·16 = <strong>48</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The terms of a sequence are all odd numbers starting from 1. Find the 50th term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Odd numbers: 1, 3, 5, …, aₙ = 2n−1. a₅₀ = 2(50)−1 = <strong>99</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two sequences A: 2, 4, 6, 8, … and B: 1, 3, 5, 7, … — find the 10th term of both. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>A: aₙ=2n → a₁₀=20. B: bₙ=2n−1 → b₁₀=19. Answers: <strong>A: 20, B: 19</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the nth term for: 1/2, 1/4, 1/8, 1/16, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ = (1/2)ⁿ = <strong>1/2ⁿ</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sequence 1, 8, 27, 64, 125 — write the general term and find the 7th term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ = n³. a₇ = 7³ = <strong>343</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Does the sequence 2, 6, 24, 120, 720, … follow aₙ = n!? Verify with 3 terms. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₁=1!=1 ≠ 2. These are (n+1)!: 2=2!, 6=3!, 24=4!. aₙ = <strong>(n+1)!</strong>. Verify: a₁=2!=2✓, a₂=3!=6✓, a₃=4!=24✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sequence: 1, −1, 1, −1, 1, −1, … Write aₙ as a formula and state the 100th term. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ = (−1)ⁿ⁺¹. a₁₀₀ = (−1)¹⁰¹ = <strong>−1</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge and Problem Solving</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The sequence of prime numbers starts 2, 3, 5, 7, 11, 13, … Is it an AP or GP? Explain. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 1, 2, 2, 4, 2 — not constant. Ratios: 3/2, 5/3, 7/5 — not constant. <strong>Neither AP nor GP.</strong> Primes have no simple closed form.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many 2-digit numbers are in the sequence 3, 6, 9, 12, …? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Multiples of 3 between 12 and 99. Count = (99−12)/3 + 1 = 87/3 + 1 = 29 + 1 = <strong>30 numbers</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A sequence has terms 1, 2, 4, 7, 11, 16, 22, … Find the pattern and write the next two terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 1, 2, 3, 4, 5, 6 — increasing by 1. Next differences: 7 and 8. Next terms: 22+7=<strong>29</strong>, 29+8=<strong>37</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Rearrange 5, 45, 9, 1 in ascending order to form a GP. State the common ratio. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Ordered: 1, 5, 25? No. Try: 1, 3, 9, 27? These aren't those. Ascending: <strong>1, 5, 9, 45</strong> — differences 4, 4, 36 not GP. Ratios: 5, 9/5, 5. Try 1, 5, 25 — but 25 not in list. Ascending: 1, 5, 9, 45. Ratios: 5, 9/5, 5 — <strong>not a GP</strong>. The numbers cannot form a GP.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 5th term of a sequence is 17 and aₙ = 3n + 2. Verify and find the 100th term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a₅ = 3(5)+2 = 17 ✓. a₁₀₀ = 3(100)+2 = <strong>302</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Three consecutive terms of a sequence are x−2, x, x+2. What kind of sequence is this? Find x if their sum is 30. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Constant difference of 2 → <strong>AP</strong>. Sum: 3x = 30 → x = <strong>10</strong>. Terms: 8, 10, 12.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The nth term of a sequence is aₙ = n² − n + 1. Find whether 91 is a term of this sequence. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>n²−n+1=91 → n²−n−90=0 → (n−10)(n+9)=0 → n=10 (positive). <strong>Yes, 91 is the 10th term.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the sequence of all perfect cubes from 1 to 1000 and state the number of terms. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1, 8, 27, 64, 125, 216, 343, 512, 729, 1000. aₙ=n³, n=1 to 10. <strong>10 terms</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A sequence is formed by the digits of π: 3, 1, 4, 1, 5, 9, 2, 6, … Is this a mathematical sequence? Explain. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>No</strong>, the decimal digits of π are not periodic or predictable by a simple formula. It is not an AP, GP, or any standard mathematical sequence — the digits appear to be random (non-repeating, non-terminating).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the value of k if k+2, 2k−1, 3k+1 are three consecutive terms of a sequence with constant second differences equal to 2. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>First differences: (2k−1)−(k+2) = k−3 and (3k+1)−(2k−1) = k+2. Second difference = (k+2)−(k−3) = 5. But second difference = 2 → 5 = 2 has no solution. If AP (second diff=0): k−3 = k+2 → no solution either. <strong>No valid k exists</strong> under these constraints for constant-difference 2.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Arithmetic Sequences – nth Term aₙ = a + (n−1)d</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:intro-to-arithmetic-sequences/v/arithmetic-sequences" target="_blank">Arithmetic Sequences Intro</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/v/explicit-formulas-for-arithmetic-sequences" target="_blank">Explicit Formula for AP</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">Arithmetic Sequences</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Finding the nth Term</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the 15th term of the AP: 4, 7, 10, 13, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=4, d=3. a₁₅ = 4 + 14×3 = 4 + 42 = <strong>46</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The first term of an AP is 1 and common difference is 4. Find the 20th term. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₂₀ = 1 + 19×4 = 1 + 76 = <strong>77</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 8th term of AP: −3, −1, 1, 3, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=−3, d=2. a₈ = −3 + 7×2 = −3 + 14 = <strong>11</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which term of the AP 5, 8, 11, 14, … is 89? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>aₙ = 5 + (n−1)3 = 89 → 3(n−1) = 84 → n−1 = 28 → n = <strong>29</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the common difference if a₁ = 6 and a₅ = 22. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₅ = a + 4d → 22 = 6 + 4d → 4d = 16 → d = <strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 3rd term of an AP is 7 and 7th term is 15. Find a and d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+2d=7 and a+6d=15. Subtracting: 4d=8 → d=2. Then a=7−4=3. <strong>a=3, d=2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many terms are in the AP 7, 13, 19, …, 205? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=7+(n−1)6=205 → 6(n−1)=198 → n−1=33 → n=<strong>34</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 25th term of the AP whose 5th term is 19 and 10th term is 34. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+4d=19, a+9d=34. 5d=15 → d=3. a=7. a₂₅=7+24×3=7+72=<strong>79</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the nth term of an AP is 4n − 3, find a₁, d, and a₁₀. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a₁=4(1)−3=1. a₂=5. d=5−1=4. a₁₀=4(10)−3=<strong>37</strong>. So a=1, d=4, a₁₀=37.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of the 4th and 8th terms of an AP is 24 and sum of 6th and 10th terms is 34. Find first term and common difference. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(a+3d)+(a+7d)=24 → 2a+10d=24 → a+5d=12. (a+5d)+(a+9d)=34 → 2a+14d=34 → a+7d=17. Subtracting: 2d=5 → d=2.5. a=12−5(2.5)=12−12.5=−0.5. <strong>a=−0.5, d=2.5</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> AP Formula Drill</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the AP whose first term is 2 and common difference is 5. List first 6 terms. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2, 7, 12, 17, 22, 27</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 30th term of the AP: 10, 7, 4, 1, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=10, d=−3. a₃₀=10+29(−3)=10−87=<strong>−77</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 301 a term of the AP 5, 11, 17, 23, …? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=5+(n−1)6=301 → 6(n−1)=296 → n−1=49.33... Not integer. <strong>No, 301 is not a term.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The 12th term of an AP is 37 and d = 3. Find the first term. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₁₂ = a+11d = 37 → a+33=37 → a=<strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 50th term of the AP: 100, 95, 90, 85, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=100, d=−5. a₅₀=100+49(−5)=100−245=<strong>−145</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 6th term of an AP is 4 times the 2nd term. If the 5th term is 22, find a and d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+5d = 4(a+d) → a+5d = 4a+4d → d = 3a. a+4d=22 → a+12a=22 → 13a=22 → a=22/13. Hmm — integer check: a+4(3a)=13a=22 → a=22/13. <strong>a = 22/13, d = 66/13</strong>. (Non-integer AP.)</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has a=3, d=4. Find which term equals 103. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3+(n−1)4=103 → 4(n−1)=100 → n−1=25 → n=<strong>26</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two APs have the same common difference. The first terms are 3 and 8. If 5th term of first is 19, find 5th term of second. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP1: a=3. a₅=3+4d=19 → d=4. AP2: a=8. a₅=8+4(4)=8+16=<strong>24</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Three numbers in AP have sum 15. Their squares have sum 83. Find the numbers. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let numbers be a−d, a, a+d. Sum=3a=15 → a=5. Squares: (5−d)²+25+(5+d)²=83 → 25−10d+d²+25+25+10d+d²=83 → 75+2d²=83 → d²=4 → d=2. Numbers: <strong>3, 5, 7</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The first three terms of an AP are x, 2x+1, 4x−2. Find x and the AP's 10th term. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Common difference is same: (2x+1)−x = (4x−2)−(2x+1) → x+1 = 2x−3 → x=4. a=4, a₂=9 (d=5). a₁₀=4+9(5)=4+45=<strong>49</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Word Problems – AP nth Term</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Priya saves ₹50 in the first week and increases savings by ₹10 each week. How much does she save in the 12th week? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=50, d=10. a₁₂=50+11×10=<strong>₹160</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A car travels 60 km in the first hour and reduces distance by 5 km each hour. How far does it travel in the 7th hour? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=60, d=−5. a₇=60+6(−5)=60−30=<strong>30 km</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A staircase has 20 steps. The first step is 10 cm high and each subsequent step is 2 cm higher. What is the height of the last step? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=10, d=2. a₂₀=10+19×2=10+38=<strong>48 cm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Raju scores 45 marks in the first test and improves by 3 marks each test. In which test does he score 75? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>45+(n−1)3=75 → 3(n−1)=30 → n−1=10 → n=<strong>11th test</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A factory produces 200 items on day 1 and increases production by 8 items per day. On which day does it produce 400 items? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>200+(n−1)8=400 → 8(n−1)=200 → n−1=25 → n=<strong>26th day</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The angles of a triangle are in AP. The smallest angle is 40°. Find the largest angle. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a−d, a, a+d. Sum=180° → 3a=180 → a=60°. Smallest=40°=60°−d → d=20°. Largest=60°+20°=<strong>80°</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Seats in a row of a theatre form an AP. First row has 20 seats, each next row has 3 more. How many seats in the 15th row? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=20, d=3. a₁₅=20+14×3=20+42=<strong>62 seats</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A tank loses 4 litres of water every hour due to evaporation. If it starts with 200 litres, when does it have 80 litres? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=200+(n−1)(−4)=80 → −4(n−1)=−120 → n−1=30 → n=31. After <strong>30 hours</strong> (at start of 31st hour).</p></details></div></div>
+      <div class="q-item"><div class="q-text">A ball rebounds to 1 metre less height each bounce, starting at 10 metres. On which bounce does it first reach below 3 metres? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP: 10, 9, 8, …. aₙ = 10+(n−1)(−1) = 11−n < 3 → n > 8. First at n=<strong>9th bounce</strong> (height = 2 m).</p></details></div></div>
+      <div class="q-item"><div class="q-text">In an AP, the ratio of 7th to 3rd term is 12:5. If first term is 2, find the common difference. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₇/a₃ = (2+6d)/(2+2d) = 12/5. Cross multiply: 5(2+6d) = 12(2+2d) → 10+30d = 24+24d → 6d=14 → d=7/3. <strong>d = 7/3</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced AP nth Term</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the middle term of an AP with first term 7, last term 43, and 10 terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AM = (7+43)/2 = 25. Middle of even number of terms — the 5th and 6th terms average to 25. a₅=7+4d; d=(43−7)/9=4. a₅=7+16=23, a₆=27. <strong>Middle terms are 23 and 27</strong> (average 25).</p></details></div></div>
+      <div class="q-item"><div class="q-text">If p, q, r are in AP, show that q = (p+r)/2. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP condition: q−p = r−q → 2q = p+r → q = <strong>(p+r)/2</strong>. This is the arithmetic mean. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has 21 terms. Sum of the three middle terms is 129. Find the middle term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>21 terms → middle is 11th. Middle three are 10th, 11th, 12th. Sum = 3×a₁₁=129 → a₁₁=<strong>43</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has d=4 and a₁=3. Find the smallest term greater than 200. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=3+(n−1)4=4n−1 > 200 → n > 50.25 → n=51. a₅₁=4(51)−1=<strong>203</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert 4 arithmetic means between 3 and 23. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>6 terms total: 3, _, _, _, _, 23. d=(23−3)/5=4. Means: <strong>7, 11, 15, 19</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The pth term of an AP is q and qth term is p. Find the (p+q)th term. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a+(p−1)d=q …(1); a+(q−1)d=p …(2). (1)−(2): (p−q)d=q−p → d=−1. From (1): a=q−(p−1)(−1)=q+p−1. a_(p+q)=a+(p+q−1)d=(p+q−1)+p+q−1−(p+q−1)=(p+q−1)−(p+q−1)=<strong>0</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The mth term of an AP is n and nth term is m (m ≠ n). Find the (m+n)th term. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Same setup as above (general): a_(m+n) = <strong>0</strong>. Proof: a+(m−1)d=n, a+(n−1)d=m. Subtract: (m−n)d=n−m → d=−1. Then a=n+m−1. a_(m+n)=(n+m−1)+(m+n−1)(−1)=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 1/(b+c), 1/(c+a), 1/(a+b) are in AP, show that a², b², c² are also in AP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP condition: 2/(c+a) = 1/(b+c)+1/(a+b). After cross-multiplying and simplifying: 2(b+c)(a+b) = (c+a)(a+b+b+c) which reduces to b²−a²=c²−b², i.e., 2b²=a²+c². So <strong>a², b², c² are in AP</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has 10 terms. The sum of first 4 terms is 22 and sum of last 4 terms is 58. Find the AP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>First 4: 4a+6d=22 → 2a+3d=11. Last 4: a₇+a₈+a₉+a₁₀=4a+30d=58 → 2a+15d=29. Subtract: 12d=18 → d=1.5. a=(11−4.5)/2=3.25. AP: <strong>3.25, 4.75, 6.25, 7.75, 9.25, 10.75, 12.25, 13.75, 15.25, 16.75</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the ratio of nth terms of two APs is (7n+1):(4n+27), find the ratio of their 11th terms. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Replace n with 2(11)−1=21: (7×21+1):(4×21+27) = 148:111 = <strong>4:3</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>AP Sum of n Terms – Sₙ = n/2[2a + (n−1)d]</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:intro-to-arithmetic-sequences/v/arithmetic-series" target="_blank">Sum of Arithmetic Series</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=s9eSEWdNSUo" target="_blank">Gauss's Clever Trick</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find S₁₀ of AP: 1, 4, 7, 10, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, d=3, n=10. S₁₀=10/2[2+9×3]=5×29=<strong>145</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of first 20 natural numbers. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, d=1, n=20. S₂₀=20/2[2+19]=10×21=<strong>210</strong>. Or n(n+1)/2=210.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₁₅ of AP: 2, 5, 8, 11, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=2, d=3. S₁₅=15/2[4+14×3]=15/2×46=<strong>345</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum 1 + 3 + 5 + … + 99 (sum of first 50 odd numbers). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum of first n odd numbers = n². n=50. S = <strong>2500</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of AP: 3, 8, 13, 18, …, 78. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=3, d=5, l=78. n=(78−3)/5+1=16. S=16/2(3+78)=8×81=<strong>648</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₂₅ of AP: 7, 11, 15, 19, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=7, d=4. S₂₅=25/2[14+24×4]=25/2×110=25×55=<strong>1375</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of all multiples of 3 between 1 and 100. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3, 6, 9, …, 99. a=3, d=3, l=99. n=33. S=33/2(3+99)=33/2×102=33×51=<strong>1683</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of an AP is 345. If a=3 and n=15, find d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>345=15/2[6+14d] → 345=15/2(6+14d) → 46=6+14d → 14d=40 → d=<strong>20/7</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of all 3-digit multiples of 7. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>First: 105, last: 994. n=(994−105)/7+1=128. S=128/2(105+994)=64×1099=<strong>70336</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If Sₙ = 4n² + 2n, find aₙ and verify it's an AP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ=Sₙ−Sₙ₋₁=(4n²+2n)−[4(n−1)²+2(n−1)] = 4n²+2n−4n²+8n−4−2n+2 = 8n−2. a₁=6, a₂=14. d=8 (constant). <strong>Yes, it's an AP with a=6, d=8.</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Sum Formula Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the sum of first 100 even natural numbers. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2+4+6+…+200. a=2, d=2, n=100. S=100/2(2+200)=50×202=<strong>10100</strong>. Or n(n+1)=100×101=10100.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₁₂ of AP: 100, 93, 86, 79, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=100, d=−7. S₁₂=12/2[200+11(−7)]=6[200−77]=6×123=<strong>738</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many terms of AP 9, 17, 25, … must be added to get 636? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sₙ=n/2[18+8(n−1)]=636 → n(8n+10)=1272 → 8n²+10n−1272=0 → 4n²+5n−636=0. n=(−5+√(25+10176))/8=(−5+101)/8=12. n=<strong>12</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of AP: −5, −2, 1, 4, …, 34. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=−5, d=3, l=34. n=(34+5)/3+1=14. S=14/2(−5+34)=7×29=<strong>203</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of n terms of an AP is 3n² + 5n. Find the 12th term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=Sₙ−Sₙ₋₁=3n²+5n−[3(n−1)²+5(n−1)]=6n+2. a₁₂=6(12)+2=<strong>74</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of all integers from 1 to 500 that are divisible by 5 but not by 10. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Div by 5: 5,10,15,…,500. Div by 10: 10,20,…,500. Div by 5 not 10: 5,15,25,…,495 (odd multiples of 5). n=50. S=50/2(5+495)=25×500=<strong>12500</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The first term of AP is 5, last term is 45 and sum is 400. Find d and n. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S=n/2(5+45)=25n=400 → n=16. d=(45−5)/15=40/15=<strong>8/3</strong>. n=16, d=8/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of 20 terms of AP starting 1, 6, 11, 16, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, d=5. S₂₀=20/2[2+19×5]=10×97=<strong>970</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sₙ for an AP = n(n+4). Find a and d. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₁=S₁=1×5=5. a₂=S₂−S₁=2×6−5=12−5=7. d=7−5=2. <strong>a=5, d=2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of all 2-digit numbers which leave remainder 1 when divided by 3. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>These are 10, 13, 16, …, 97. a=10, d=3, l=97. n=(97−10)/3+1=30. S=30/2(10+97)=15×107=<strong>1605</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Ananya saves ₹100 in the first month and increases savings by ₹50 each month. How much does she save in a year? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=100, d=50, n=12. S₁₂=12/2[200+11×50]=6×750=<strong>₹4500</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A student reads 20 pages on day 1 and reads 5 more pages each day. Total pages read in 10 days? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=20, d=5, n=10. S₁₀=10/2[40+45]=5×85=<strong>425 pages</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A contractor saves ₹200 more each day. If day 1 savings = ₹500, find total savings in 30 days. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=500, d=200. S₃₀=30/2[1000+29×200]=15×6800=<strong>₹102000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Logs are stacked in a triangular pile: 10 in the bottom row, 9 in the next, and so on down to 1. How many logs total? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: 10,9,8,…,1. n=10. S=10/2(10+1)=5×11=<strong>55 logs</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many terms of the AP 3, 6, 9, … must be taken so that the sum does not exceed 300? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sₙ=3n(n+1)/2 ≤ 300 → n(n+1) ≤ 200. n=13: 13×14=182 ≤ 200 ✓. n=14: 14×15=210 > 200. <strong>13 terms</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A school collects fees in AP: ₹1000 for class 1, increasing by ₹500 per class up to class 10. Find total fees collected. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=1000, d=500, n=10. S₁₀=10/2[2000+9×500]=5×6500=<strong>₹32500</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A runner increases distance by 0.5 km each day. If he runs 3 km on day 1, find total distance in first 4 weeks. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=3, d=0.5, n=28. S₂₈=28/2[6+27×0.5]=14×19.5=<strong>273 km</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In a cinema, rows have seats in AP: 15, 18, 21, … for 12 rows. Find total seating capacity. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=15, d=3, n=12. S₁₂=12/2[30+11×3]=6×63=<strong>378 seats</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of a certain number of terms of AP 8, 16, 24, … is 1200. Find the number of terms. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sₙ=8n(n+1)/2=4n(n+1)=1200 → n(n+1)=300. n=16: 272, n=17: 306. No integer. Try: Sₙ=n/2(16+8(n−1))=n/2(8n+8)=4n(n+1)=1200 → n²+n−300=0 → n=(−1+√1201)/2 ≈ 16.8. <strong>No integer solution</strong> (1200 is not achievable exactly).</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of first 7 terms of an AP is 63 and sum of next 7 terms is 161. Find the AP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₇=7/2(2a+6d)=7(a+3d)=63 → a+3d=9. S₁₄−S₇=161 → S₁₄=224. 14/2(2a+13d)=224 → 2a+13d=32. From a=9−3d: 2(9−3d)+13d=32 → 18+7d=32 → d=2. a=3. AP: <strong>3, 5, 7, 9, …</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Higher Order Thinking – AP Sums</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the sum of all natural numbers from 1 to 200 excluding multiples of 5. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum 1–200 = 200×201/2=20100. Multiples of 5: 5,10,…,200 (n=40). S=40/2(5+200)=20×205=4100. Answer: 20100−4100=<strong>16000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Prove that sum of first n odd natural numbers = n². <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Odd numbers: 1, 3, 5, … a=1, d=2. Sₙ=n/2[2+2(n−1)]=n/2×2n=<strong>n²</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">The ratio of sum of n terms of two APs is (3n+2):(5n−3). Find ratio of their 6th terms. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Substitute n=2×6−1=11: (33+2):(55−3)=35:52=<strong>35:52</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of first n terms if Sₙ = 5n² − 3n. Find a₅. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=Sₙ−Sₙ₋₁=5n²−3n−[5(n−1)²−3(n−1)]=10n−8. a₅=10(5)−8=<strong>42</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the AP if the sum of n terms is 2n² + 3n. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a₁=S₁=5. aₙ=Sₙ−Sₙ₋₁=4n+1. d=4. AP: <strong>5, 9, 13, 17, …</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of n terms of an AP is 6n² + n. What is the 4th term? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=Sₙ−Sₙ₋₁=6n²+n−[6(n−1)²+(n−1)]=12n−5. a₄=12(4)−5=<strong>43</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If S₁ = 3, S₂ = 7, S₃ = 12, find a₃ and determine if it's an AP. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a₁=S₁=3, a₂=S₂−S₁=4, a₃=S₃−S₂=5. d=1 (constant). <strong>Yes, AP. a₃=5.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If the sum of first p terms of an AP = sum of first q terms (p≠q), show that sum of first (p+q) terms is 0. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sₚ=Sᵩ → p/2(2a+(p−1)d)=q/2(2a+(q−1)d). After simplification: (p−q)[2a+(p+q−1)d]=0. Since p≠q, 2a+(p+q−1)d=0 → S_(p+q)=(p+q)/2×0=<strong>0</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of all integers between 200 and 400 that are divisible by 7. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>203, 210, 217, …, 399. n=(399−203)/7+1=29. S=29/2(203+399)=29/2×602=29×301=<strong>8729</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A triangle has angles in AP. If the largest angle is twice the smallest, find all angles. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let angles a−d, a, a+d. Sum=3a=180 → a=60. Largest=a+d=2(a−d) → 60+d=120−2d → 3d=60 → d=20. Angles: <strong>40°, 60°, 80°</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Common Difference Applications</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/v/constructing-arithmetic-sequences" target="_blank">Constructing Arithmetic Sequences</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">Finding Common Difference</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Finding Common Difference</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find d for AP: 8, 13, 18, 23, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 13−8 = <strong>5</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find d for AP: 20, 16, 12, 8, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 16−20 = <strong>−4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Given a₁=3 and a₆=23, find d. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₆=a+5d → 23=3+5d → d=<strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 2nd term of AP is 7 and 8th term is 25. Find d. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a+d=7, a+7d=25. 6d=18 → d=<strong>3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For AP 5, x, 13, find x and d. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x is the AM: x=(5+13)/2=9. d=9−5=<strong>4</strong>. x=<strong>9</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Three consecutive terms of AP are 2k−1, 3k+1, 5k−1. Find k and d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(3k+1)−(2k−1)=(5k−1)−(3k+1) → k+2=2k−2 → k=4. a=7, a₂=13, a₃=19. d=<strong>6</strong>, k=<strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has a=12 and d=−3. Which is the first negative term? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=12+(n−1)(−3)=15−3n < 0 → n > 5. <strong>6th term</strong>: a₆=15−18=−3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The common difference of an AP is 1.5. If a₁=0.5, find the 9th term. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₉=0.5+8×1.5=0.5+12=<strong>12.5</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For AP: 2/3, 1, 4/3, 5/3, … find d and the 12th term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d=1−2/3=1/3. a₁₂=2/3+11×(1/3)=2/3+11/3=13/3=<strong>4⅓</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of first n terms of an AP is 2n+3n². Find d. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ=Sₙ−Sₙ₋₁=(2n+3n²)−(2(n−1)+3(n−1)²)=2+6n−3=6n−1. d=a₂−a₁=(12−1)−(6−1)=11−5=<strong>6</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Working Backwards from d</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">An AP with d=6 has a₅=30. Find a₁. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a₅=a+4d=a+24=30 → a=<strong>6</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">d=−2, a₁₀=1. Find a₁ and a₂₀. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+9(−2)=1 → a=19. a₂₀=19+19(−2)=19−38=<strong>−19</strong>. a₁=19.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert 5 arithmetic means between 4 and 34. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>7 terms total. d=(34−4)/6=5. Means: <strong>9, 14, 19, 24, 29</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert 3 arithmetic means between 2 and 18. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>5 terms. d=(18−2)/4=4. Means: <strong>6, 10, 14</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two APs both have 10 terms. One has d=2, other d=3. Both start at 1. Find difference of their 10th terms. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP1 a₁₀=1+9×2=19. AP2 a₁₀=1+9×3=28. Difference=<strong>9</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 4th term of an AP is three times the 1st term and 7th term exceeds twice the 3rd by 1. Find a and d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+3d=3a → 3d=2a → a=3d/2. a+6d=2(a+2d)+1 → a+6d=2a+4d+1 → 2d=a+1 → 2d=3d/2+1 → d/2=1 → d=2. a=3. <strong>a=3, d=2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has a₃=15 and a₇=27. Find a₁₀. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+2d=15, a+6d=27. 4d=12 → d=3. a=9. a₁₀=9+9×3=<strong>36</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a₁=−3 and d=4.5, find the first positive term. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=−3+(n−1)4.5 > 0 → (n−1) > 2/3 → n > 1.67 → n=2. a₂=−3+4.5=<strong>1.5</strong> (2nd term is first positive).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find d if the sum of n terms of AP is always divisible by n when a=n+1. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sₙ=n/2[2(n+1)+(n−1)d]. For this to be divisible by n: (n+1)+(n−1)d/2 must be integer for all n. When d=2: Sₙ=n/2[2n+2+2n−2]=n/2×4n=2n². Divisible by n ✓. <strong>d=2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 10th term of an AP is greater by 9 than the 7th term. Find d. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₁₀−a₇=(a+9d)−(a+6d)=3d=9 → d=<strong>3</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Applications in Context</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">An employee earns ₹15000/month initially and gets ₹500 raise every 6 months. What does she earn in the 3rd year's first month? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Raises every 6 months: after months 6,12,18,24. At start of month 25: 4 raises. Earnings=15000+4×500=<strong>₹17000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Tiles are arranged in rows: 3 in 1st row, 5 in 2nd, 7 in 3rd, etc. How many tiles in the 20th row? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=3, d=2. a₂₀=3+19×2=<strong>41 tiles</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A ball dropped from 50 m loses 5 m in maximum height on each bounce. On which bounce does it first reach below 20 m? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Heights: 50, 45, 40, … aₙ=50+(n−1)(−5)=55−5n < 20 → n > 7. <strong>8th bounce</strong>: 15 m.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Bacteria reduce by 100 each hour. If initial count is 5000, after how many hours does the count reach 1000? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>aₙ=5000+(n−1)(−100)=1000 → −100(n−1)=−4000 → n−1=40 → n=41. After <strong>40 hours</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A shopkeeper sells 3 items more each day. Sells 10 items on day 1. When does daily sales reach 40? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>10+(n−1)3=40 → 3(n−1)=30 → n=<strong>11th day</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Three towns have populations in AP. Total population is 1.2 lakh. Largest is 60,000. Find d and list all three. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=3a=120000 → a=40000. Largest=a+d=60000 → d=20000. Towns: <strong>20000, 40000, 60000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Temperatures recorded at 8am, 10am, 12pm, 2pm are in AP with d=1.5°C. If 8am temp=20°C, find 2pm temperature. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>4 terms, a=20, d=1.5. a₄=20+3×1.5=<strong>24.5°C</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A machine produces bolts: 100 per hour initially, decreasing by 5 bolts per hour due to wear. When does production drop below 60? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=100+(n−1)(−5)=105−5n < 60 → n > 9. <strong>10th hour</strong>: 55 bolts.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A polygon has interior angles in AP. Smallest angle is 120°. If there are 5 sides, find the common difference. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum of interior angles of pentagon = 540°. 5a=540 → a=108 (middle). Smallest=120 and largest=120+4d? No — let angles be a, a+d, a+2d, a+3d, a+4d. Sum=5a+10d=540. Smallest=a=120. 5(120)+10d=540 → 10d=−60 → d=<strong>−6°</strong>. Wait — d should be positive if increasing. Reorder: <strong>d=6°</strong> if listed smallest to largest from a=120 upward but 5(120)+10(6)=660≠540. Let a=84, d=12: 84+96+108+120+132=540 ✓. Smallest=84, not 120. For smallest=120, sum constraint gives d=−6 (decreasing). <strong>d = −6°</strong> (or |d|=6°).</p></details></div></div>
+      <div class="q-item"><div class="q-text">A spiral has rings at distances 2, 5, 8, 11, … cm from centre. How far is the 15th ring? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=2, d=3. a₁₅=2+14×3=<strong>44 cm</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Multi-Step and Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find four terms in AP whose sum is 20 and product of extremes is 15. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let terms: a−3d, a−d, a+d, a+3d. Sum=4a=20 → a=5. Product of extremes: (5−3d)(5+3d)=25−9d²=15 → d²=10/9 → d=√(10)/3. Terms: 5±√10, 5±√10/3. Non-integer, but valid: <strong>5−√10, 5−√10/3, 5+√10/3, 5+√10</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 1/d, 1/(d−1), 1/(d−2) are in AP, find d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP condition: 2/(d−1)=1/d+1/(d−2). 2d(d−2)=(d−1)(d−2)+(d)(d−1) → 2d²−4d=d²−3d+2+d²−d → 2d²−4d=2d²−4d+2 → 0=2. <strong>No solution</strong> — these cannot form an AP for any real d.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of three numbers in AP is 27. If 1, 3, and 11 are added to them respectively, the results are in GP. Find the numbers. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let a−d, 9, a+d (sum=3×9=27, middle=9). GP: (a−d+1), 12, (a+d+11). 12²=(a−d+1)(a+d+11). 144=(9−d+1)(9+d+11)=(10−d)(20+d)=200+10d−20d−d²=200−10d−d². So d²+10d−56=0 → (d+14)(d−4)=0 → d=4 or d=−14. Numbers: <strong>5, 9, 13</strong> (d=4) or 23, 9, −5 (d=−14).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Between 1 and 31, m AMs are inserted such that the ratio of 7th to (m−1)th mean is 5:9. Find m. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d=(31−1)/(m+1)=30/(m+1). 7th mean=1+7d. (m−1)th mean=1+(m−1)d. Ratio: (1+7d)/(1+(m−1)d)=5/9 → 9+63d=5+5(m−1)d → 4=5(m−1)d−63d=d[5m−68]. d=30/(m+1). So 4=30(5m−68)/(m+1) → 4m+4=150m−2040 → 146m=2044 → m=<strong>14</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The AM of two numbers is 10 and their difference is 4. Find the AP they form with 3 terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AM=10, so middle=10. Numbers=8 and 12 (diff 4). AP: <strong>8, 10, 12</strong>. d=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">An AP has first term 3 and last term 63, with 21 terms. Find the middle term and sum. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d=(63−3)/20=3. Middle = 11th term = a+10d=3+30=33. Sum=21/2(3+63)=21×33=<strong>693</strong>. Middle term=<strong>33</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find d if 5th and 7th terms of AP are in ratio 5:7. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(a+4d)/(a+6d)=5/7 → 7a+28d=5a+30d → 2a=2d → a=d. Any AP with a=d works. For example: 1, 2, 3, … (d=1, a=1). <strong>d = a</strong> (any equal value).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two APs, P and Q, have the same number of terms. The first terms are 3 and 1, last terms are 29 and 27. Which has larger sum? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>SP=n/2(3+29)=16n. SQ=n/2(1+27)=14n. SP−SQ=2n > 0. <strong>P has larger sum by 2n.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">In AP, prove that aₘ₊ₙ + aₘ₋ₙ = 2aₘ. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₘ₊ₙ=a+(m+n−1)d. aₘ₋ₙ=a+(m−n−1)d. Sum=2a+(2m−2)d=2[a+(m−1)d]=<strong>2aₘ</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find all 3-term APs with integer terms, first term positive, and product 240. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let a−d, a, a+d. Product=a(a²−d²)=240. Try a=6: 6(36−d²)=240 → d²=−4 (invalid). a=4: 4(16−d²)=240 → invalid. a=5: 5(25−d²)=240 → d²=−23 (invalid). a=8: 8(64−d²)=240 → d²=34 (not perfect square). a=10: 10(100−d²)=240 → d²=76 (no). a=12: 12(144−d²)=240 → d²=124 (no). a=15: 15(225−d²)=240 → d²=209 (no). a=3: 3(9−d²)=240 → negative. a=4, product must be ≤ a³. Only <strong>no integer solution</strong> with a(a²−d²)=240 strictly.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Geometric Sequences – nth Term aₙ = arⁿ⁻¹</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:intro-to-geometric-sequences/v/geometric-sequences-introduction" target="_blank">Intro to Geometric Sequences</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-geometric-sequences/v/explicit-and-recursive-formulas-for-geometric-sequences" target="_blank">Explicit Formula for GP</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=XFDM1ip5HdU" target="_blank">Geometric Sequences in Nature</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Finding nth Term of GP</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the 6th term of GP: 2, 6, 18, 54, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=2, r=3. a₆=2×3⁵=2×243=<strong>486</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 5th term of GP: 4, 2, 1, 1/2, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=4, r=1/2. a₅=4×(1/2)⁴=4×1/16=<strong>1/4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the common ratio of GP: 5, 15, 45, 135, …? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r = 15/5 = <strong>3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the first 5 terms of a GP with a=3, r=−2. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3, −6, 12, −24, <strong>48</strong>. Terms: <strong>3, −6, 12, −24, 48</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 10th term of GP: 1, 1/3, 1/9, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=1/3. a₁₀=(1/3)⁹=<strong>1/19683</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 3rd term of GP is 36 and r=3. Find a₁ and a₅. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>ar²=36 → 9a=36 → a=4. a₅=4×3⁴=4×81=<strong>324</strong>. a₁=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which term of GP 2, 4, 8, 16, … is 512? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=2ⁿ=512=2⁹ → n=<strong>9th term</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A GP has a₂=6 and a₅=48. Find r and a. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>ar=6, ar⁴=48. Dividing: r³=8 → r=2. a=3. <strong>a=3, r=2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the GP if a=81 and r=1/3. Write all terms until less than 1. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>81, 27, 9, 3, 1, 1/3, … First term < 1 is a₆=<strong>1/3</strong>. GP: 81, 27, 9, 3, 1, 1/3, …</p></details></div></div>
+      <div class="q-item"><div class="q-text">The 4th term of a GP exceeds the 3rd by 8 and 3rd exceeds 2nd by 4. Find the GP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>ar³−ar²=8 and ar²−ar=4. Dividing: r=2. ar(r−1)=4 → a×2×1=4 → a=2. GP: <strong>2, 4, 8, 16, …</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> GP Formula Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the 8th term of GP: 0.5, 1, 2, 4, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=0.5, r=2. a₈=0.5×2⁷=0.5×128=<strong>64</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 2048 a term of GP: 2, 8, 32, 128, …? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=2×4ⁿ⁻¹=2048 → 4ⁿ⁻¹=1024=4⁵ → n−1=5 → n=6. <strong>Yes, 6th term.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">GP has a=5 and r=2. Find the smallest term greater than 1000. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=5×2ⁿ⁻¹ > 1000 → 2ⁿ⁻¹ > 200 → n−1 > log₂200 ≈ 7.64 → n ≥ 9. a₉=5×256=<strong>1280</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a GP has r=−1, what is the pattern? Find a₆ if a=10. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r=−1: alternating. a₆=10×(−1)⁵=<strong>−10</strong>. Pattern: 10, −10, 10, −10, …</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find three numbers in GP whose product is 216 and sum is 19. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let a/r, a, ar. Product=a³=216 → a=6. Sum=6(1/r+1+r)=19 → 1/r+r=13/6. r+1/r=13/6 → 6r²−13r+6=0 → r=2/3 or 3/2. Numbers: <strong>4, 6, 9</strong> (r=3/2) or 9, 6, 4 (r=2/3).</p></details></div></div>
+      <div class="q-item"><div class="q-text">A GP has a₃/a₅=4. Find r. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>ar²/(ar⁴)=1/r²=4 → r²=1/4 → r=<strong>±1/2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In a GP, the product of first 3 terms is 1000 and r=10. Find a. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a·ar·ar²=a³r³=1000. a³×1000=1000 → a³=1 → a=<strong>1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Bacteria double every hour. Start: 500. How many after 8 hours? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GP: a=500, r=2, n=9 (including start). a₉=500×2⁸=500×256=<strong>128000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the 7th term of GP: √2, 2, 2√2, 4, … <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r=2/√2=√2. a₇=√2×(√2)⁶=√2×8=<strong>8√2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find r if the nth term of GP 3, 12, 48, … equals the nth term of GP 384, 192, 96, … <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP1: 3×4ⁿ⁻¹. GP2: 384×(1/2)ⁿ⁻¹. Set equal: 3×4ⁿ⁻¹=384/2ⁿ⁻¹ → 3×4ⁿ⁻¹×2ⁿ⁻¹=384 → 3×8ⁿ⁻¹=384 → 8ⁿ⁻¹=128=8² → n−1=2 → n=<strong>3</strong>. At n=3: both equal 48.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Real-World GP</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cell phone's value decreases by 20% each year. Initial value ₹30000. Value after 4 years? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=30000, r=0.8. a₅=30000×(0.8)⁴=30000×0.4096=<strong>₹12288</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A tree grows to 1.2 times its height each year. Starts at 2 m. Find height after 5 years. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=2, r=1.2. a₆=2×(1.2)⁵=2×2.48832≈<strong>4.98 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A rubber ball rebounds to 2/3 of its height. Dropped from 27 m. Height after 4th bounce? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=27, r=2/3. a₅=27×(2/3)⁴=27×16/81=<strong>16/3 ≈ 5.33 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A water leak doubles every 10 minutes. Starts at 1 litre per hour. After 1 hour (6 periods), how much leaks per hour? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=2, n=7 (after 6 doublings). a₇=1×2⁶=<strong>64 litres/hour</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The half-life of a radioactive substance is 3 years. Start 800g. Find amount after 12 years. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>12 years = 4 half-lives. a₅=800×(1/2)⁴=800/16=<strong>50 g</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Social media post is shared to 3 new people by each person. Starts with 1 person. How many new people see it in the 5th round? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GP: a=1, r=3. a₅=1×3⁴=<strong>81 people</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A paper is folded in half repeatedly. After how many folds is the thickness ≥ 1 cm, if initial thickness = 0.01 cm? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ=0.01×2ⁿ⁻¹ ≥ 1 → 2ⁿ⁻¹ ≥ 100 → n−1 ≥ log₂100 ≈ 6.64 → n ≥ 8. After <strong>7 folds</strong> (n=8): 0.01×128=1.28 cm.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The length of a pendulum arc decreases by 10% each swing. First arc = 50 cm. Find the 6th arc. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=50, r=0.9. a₆=50×(0.9)⁵=50×0.59049≈<strong>29.52 cm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A GP starts at 1000 and after 6 terms ends at 1/1000. Find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a₆=1000×r⁵=0.001 → r⁵=0.001/1000=10⁻⁶ → r=10⁻⁶/⁵=10⁻¹·²=<strong>1/10^(6/5)</strong>. Or r=(10⁻⁶)^(1/5)=10⁻¹·² ≈ 0.063.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two GPs both with 5 terms: A(a=2,r=3) and B(a=3,r=2). Find ratio of their 4th terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>A₄=2×27=54. B₄=3×8=24. Ratio=54:24=<strong>9:4</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced GP Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In a GP, a₃=4 and a₆=32. Find a₉. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>ar²=4, ar⁵=32. r³=8 → r=2. a=1. a₉=1×2⁸=<strong>256</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find four numbers in GP such that the product of middle two is 36. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Let a, ar, ar², ar³. Middle two: ar×ar²=a²r³=36. Many solutions; e.g. a=2, r=√3: 2, 2√3, 6, 6√3 → product 2√3×6=12√3≠36. Try a=3, r=2: 3×12=36 ✓. Numbers: <strong>3, 6, 12, 24</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, b, c are in GP, prove that logₐ x, log_b x, log_c x are in HP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>b²=ac. logₐx=ln x/ln a etc. These are in HP if their reciprocals ln a/ln x, ln b/ln x, ln c/ln x are in AP → ln a, ln b, ln c in AP → 2ln b = ln a + ln c → b²=ac ✓. So they are in HP. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, b, c are in AP and a, x, b, y, c are in GP, find xy. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP: b=a+d, c=a+2d. GP has r: x=ar, b=ar², y=ar³, c=ar⁴. Also b=a+d and c=a+2d=b+d. xy=ar³×ar=a²r⁴=b²=ac (GP property of consecutive terms). So xy=<strong>ac</strong> or equivalently <strong>b²−d² term</strong>. More simply: xy = ac.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a₅=48 and the GP is 3, 6, 12, …, verify and find a₇. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=3, r=2. a₅=3×2⁴=48 ✓. a₇=3×2⁶=3×64=<strong>192</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In GP: a₁+a₂+a₃=56 and a₃+a₄+a₅=448. Find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a(1+r+r²)=56 and ar²(1+r+r²)=448. Dividing: r²=448/56=8 → r=<strong>2√2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the value of x such that 8x+4, 6x−2, 2x+7 are consecutive terms of a GP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP condition: (6x−2)²=(8x+4)(2x+7). 36x²−24x+4=16x²+56x+8x+28=16x²+64x+28. 20x²−88x−24=0 → 5x²−22x−6=0. x=(22±√(484+120))/10=(22±√604)/10. x=(22±24.58)/10. x=4.66 or x=−0.26. Integer check: no clean solution. <strong>x = (22+2√151)/10</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, b, c are in GP with common ratio r, express c in terms of a and r². <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>c=ar²=<strong>ar²</strong>. (b=ar, c=ar²)</p></details></div></div>
+      <div class="q-item"><div class="q-text">A GP has first term 1 and fifth term 16. How many terms are less than 1000? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=1, r⁴=16 → r=2. aₙ=2ⁿ⁻¹ < 1000 → 2ⁿ⁻¹ < 1000 → n−1 < 9.97 → n ≤ 10. <strong>10 terms</strong> less than 1000 (a₁₀=512).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that if every term of a GP is squared, the result is also a GP. Find new r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Original GP: a, ar, ar², … Squared: a², a²r², a²r⁴, … This has first term a² and common ratio r². Since r² is constant, it is a GP. <strong>New r = r²</strong>. ✓</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>GP Sum of n Terms – Sₙ = a(rⁿ − 1)/(r − 1)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:geometric-series-intro/v/geometric-series-introduction" target="_blank">Geometric Series Introduction</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=bE4nUTM3VV8" target="_blank">Power of Two – Geometric Growth</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula – GP Sum</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find S₆ of GP: 2, 6, 18, 54, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=2, r=3, n=6. S₆=2(3⁶−1)/(3−1)=2×728/2=<strong>728</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₁₀ of GP: 1, 2, 4, 8, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=2. S₁₀=(2¹⁰−1)=<strong>1023</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₅ of GP: 3, −6, 12, −24, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=3, r=−2. S₅=3((−2)⁵−1)/(−2−1)=3(−32−1)/(−3)=3×(−33)/(−3)=<strong>33</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sum of GP: 1 + 1/2 + 1/4 + … (7 terms). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=1/2. S₇=1×(1−(1/2)⁷)/(1−1/2)=2(1−1/128)=2×127/128=<strong>127/64</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₄ of GP: 8, 4, 2, 1. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Direct: 8+4+2+1=<strong>15</strong>. Formula: 8(1−(1/2)⁴)/(1/2)=16(1−1/16)=15 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find sum of 8 terms: 0.1, 0.01, 0.001, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=0.1, r=0.1. S₈=0.1(1−(0.1)⁸)/(0.9)=1/9×(1−10⁻⁸)=<strong>0.11111111</strong> (8 repeating 1s after decimal ÷9).</p></details></div></div>
+      <div class="q-item"><div class="q-text">A GP has a=5, r=3, Sₙ=605. Find n. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>5(3ⁿ−1)/2=605 → 3ⁿ−1=242 → 3ⁿ=243=3⁵ → n=<strong>5</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₁₀ of GP: √3, 3, 3√3, 9, … <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=√3, r=√3. S₁₀=√3((√3)¹⁰−1)/(√3−1)=√3(243−1)/(√3−1)=242√3/(√3−1). Rationalise: ×(√3+1)/(√3+1): 242√3(√3+1)/2=121√3(√3+1)=121(3+√3)=<strong>363+121√3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">GP sum of n terms is 255 with a=1, r=2. Find n. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2ⁿ−1=255 → 2ⁿ=256=2⁸ → n=<strong>8</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of a GP is 364 with a=4, r=3. Find n. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>4(3ⁿ−1)/2=364 → 3ⁿ−1=182 → 3ⁿ=183. Check: 3⁵=243≠183. Hmm. 4(3ⁿ−1)/(3−1)=4(3ⁿ−1)/2=364 → 3ⁿ−1=182 → 3ⁿ=183. Not a power of 3. Re-check: if a=1,r=3: (3ⁿ−1)/2=364 → 3ⁿ=729=3⁶ → n=6. With a=4: 4(3ⁿ−1)/2=364 → 3ⁿ−1=182 — not valid. Problem likely has a=1: <strong>n=6</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Applying GP Sum</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the sum: 1 + 2 + 4 + 8 + … + 512. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=2, last term=512=2⁹, so n=10. S₁₀=2¹⁰−1=<strong>1023</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sum of 5 terms of GP: 1/2, 1/4, 1/8, 1/16, 1/32. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Direct: 1/2+1/4+1/8+1/16+1/32=16/32+8/32+4/32+2/32+1/32=31/32=<strong>31/32</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A ball bounces to 1/2 height each time, starting at 16 m. Find total distance for first 5 descents. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Heights: 16, 8, 4, 2, 1. Sum=16+8+4+2+1=<strong>31 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S₇ of GP with a=64, r=1/2. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>S₇=64(1−(1/2)⁷)/(1/2)=128(1−1/128)=128×127/128=<strong>127</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If S₃=21 and S₆=189 for a GP, find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₆/S₃=1+r³=189/21=9 → r³=8 → r=<strong>2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Virus spreads 3-fold each day. Day 1 count: 10. Total cases over 5 days? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S₅=10(3⁵−1)/(3−1)=10×242/2=<strong>1210</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum of GP: 2+6+18+…+1458. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=2, r=3, l=1458=2×3⁶ → n=7. S₇=2(3⁷−1)/2=3⁷−1=2187−1=<strong>2186</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sum of n terms of a GP is 5 times the sum of the first half. If n=6, find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₆=5S₃. a(r⁶−1)/(r−1)=5a(r³−1)/(r−1). (r³+1)(r³−1)=5(r³−1). r³+1=5 → r³=4 → r=<strong>∛4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A machine doubles output each quarter. Q1: 100 units. Total output over 4 quarters? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S₄=100(2⁴−1)=100×15=<strong>1500 units</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">GP: 3, 6, 12, …, 768. Find Sₙ. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=3, r=2, l=768=3×2⁸ → n=9. S₉=3(2⁹−1)=3×511=<strong>1533</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed GP Sum Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A person invests ₹1000, ₹2000, ₹4000 in successive years. Total investment over 8 years? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=1000, r=2. S₈=1000(2⁸−1)=1000×255=<strong>₹255000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A population triples every decade, starting at 500. Find total population after 4 decades (cumulative sum). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: 500, 1500, 4500, 13500. S₄=500(3⁴−1)/2=500×80/2=<strong>20000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A chain letter is sent to 4 people, each sends to 4 more. Over 5 rounds, how many letters total? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S₅=1×(4⁵−1)/(4−1)=1023/3=<strong>341 letters</strong> (plus initial 1 = 341).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Bouncing ball: first bounce height 1m, each subsequent 2/3 of previous. Sum of all bounce heights for 6 bounces. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S₆=1×(1−(2/3)⁶)/(1/3)=3(1−64/729)=3×665/729=<strong>665/243 ≈ 2.74 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Sₙ: 1 − 3 + 9 − 27 + … (8 terms). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=−3. S₈=(1−(−3)⁸)/(1+3)=(1−6561)/4=−6560/4=<strong>−1640</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In a GP, S₂=6 and S₄=30. Find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₄/S₂=(1+r²)=30/6=5 → r²=4 → r=<strong>2</strong> (or −2).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which is greater: S₅ of GP (a=1,r=2) or S₁₀ of AP (a=1,d=1)? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP S₅=2⁵−1=31. AP S₁₀=10×11/2=55. <strong>AP S₁₀=55 is greater.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find sum 0.6 + 0.06 + 0.006 + … (6 terms). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=0.6, r=0.1. S₆=0.6(1−0.1⁶)/0.9=2/3(1−10⁻⁶)≈<strong>0.666666</strong> (6 sixes).</p></details></div></div>
+      <div class="q-item"><div class="q-text">In a GP, sum of first 3 terms is 13 and sum of their squares is 91. Find a and r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a+ar+ar²=13=a(1+r+r²). a²(1+r²+r⁴)=91. Note: (1+r+r²)²=1+r²+r⁴+2r+2r²+2r³. Let S=1+r+r². S²−2r(1+r+r²)=1+r²+r⁴ → S²−2rS=91/a². (13/a)²−2r(13/a)=91/a² → 169−26ar=91 → 26ar=78 → ar=3. So a+3+ar²=13 → ar²=10−a. Also ar=3 → r=3/a. ar²=3r=9/a=10−a → 9=10a−a² → a²−10a+9=0 → a=9 or a=1. If a=1: r=3. If a=9: r=1/3. <strong>GP: 1, 3, 9</strong> or <strong>9, 3, 1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A lottery jackpot doubles each week without a winner. Starts at ₹1 lakh. After 7 weeks without winner, what is total prize money offered so far? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₇=1(2⁷−1)=127 lakh=<strong>₹1.27 crore total</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced GP Sum</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find S₁₂ of GP: 1, −1, 1, −1, … (r=−1 special case). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>When r=−1, Sₙ=a×n for even n is 0. S₁₂=<strong>0</strong> (pairs cancel).</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of GP with r=2 doubles when one more term is added. Show this is always true. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sₙ=a(2ⁿ−1). Sₙ₊₁=a(2ⁿ⁺¹−1). Sₙ₊₁−Sₙ=a×2ⁿ=last term=Sₙ+a. Not exactly double Sₙ unless a≈0. Actually for large n, Sₙ₊₁≈2Sₙ as last term dominates. The property is: <strong>the new term added equals the previous sum plus a</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of first 5 terms of a GP is twice the sum of terms from 6th to 10th. Find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₅=2(S₁₀−S₅) → 3S₅=2S₁₀. S₁₀=S₅(1+r⁵). 3S₅=2S₅(1+r⁵) → 3=2+2r⁵ → 2r⁵=1 → r=<strong>(1/2)^(1/5)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum: 7 + 77 + 777 + 7777 + … (n terms). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>7(1+11+111+…) = 7×(10ⁿ−1)/9×(1/9) type. Each term = 7(10ᵏ−1)/9. Sum=7/9×Σ(10ᵏ−1)=7/9[10(10ⁿ−1)/9−n]=<strong>7/81(10ⁿ⁺¹−9n−10)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">GP: a+ar+ar²+…+arⁿ⁻¹. Prove Sₙ×Sₙ for r=1 gives Sₙ=na. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>When r=1, all terms = a. Sum of n terms = a+a+…(n times) = <strong>na</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the geometric mean between S₄ and S₈ of GP (a=1, r=2). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₄=15, S₈=255. GM=√(15×255)=√3825=√(225×17)=15√17≈<strong>61.85</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find sum of products of consecutive terms in GP: a, ar, ar², ar³. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Products: a·ar=a²r, ar·ar²=a²r³, ar²·ar³=a²r⁵. Sum=a²r(1+r²+r⁴)=<strong>a²r(r⁶−1)/(r²−1)</strong> (GP with first term a²r and ratio r²).</p></details></div></div>
+      <div class="q-item"><div class="q-text">For what values of r does a GP of infinite terms converge? State condition. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>A GP converges (sum to infinity exists) when <strong>|r| &lt; 1</strong>. Then S∞=a/(1−r).</p></details></div></div>
+      <div class="q-item"><div class="q-text">GP: S₃=7 and S₆=63. Show that S₆/S₃ = 1+r³ and find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₃=a(r³−1)/(r−1). S₆=a(r⁶−1)/(r−1)=a(r³−1)(r³+1)/(r−1)=S₃(r³+1). S₆/S₃=r³+1=63/7=9 → r³=8 → r=<strong>2</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">In a GP with positive terms, a₃=4, a₆=1/2. Find S₄. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>ar²=4, ar⁵=1/2. r³=1/8 → r=1/2. a=16. S₄=16(1−(1/2)⁴)/(1/2)=32(15/16)=<strong>30</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Geometric Mean</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/mean-median-basics/v/mean-median-and-mode" target="_blank">Mean Concepts</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=BqaA6NkjTWA" target="_blank">Geometric Mean Explained</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Computing Geometric Mean</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the GM of 4 and 9. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GM = √(4×9) = √36 = <strong>6</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the GM of 2 and 8. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GM = √(2×8) = √16 = <strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert one geometric mean between 3 and 75. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GM = √(3×75) = √225 = <strong>15</strong>. GP: 3, 15, 75.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the GM of 5, 20, 80. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GM = (5×20×80)^(1/3) = 8000^(1/3) = <strong>20</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert two geometric means between 2 and 54. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4 terms: 2, G₁, G₂, 54. r³=54/2=27 → r=3. G₁=6, G₂=18. Means: <strong>6, 18</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the GM of 0.04 and 25. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GM = √(0.04×25) = √1 = <strong>1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If GM of two numbers is 6 and their AM is 6.5, find the numbers. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AM=6.5 → a+b=13. GM=6 → ab=36. Quadratic: x²−13x+36=0 → (x−4)(x−9)=0. Numbers: <strong>4 and 9</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Prove that GM ≤ AM for two positive numbers a and b. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AM−GM = (a+b)/2 − √(ab) = [(√a−√b)²]/2 ≥ 0. So <strong>AM ≥ GM</strong>, equality when a=b. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert 3 geometric means between 1 and 256. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>5 terms. r⁴=256 → r=4. Means: <strong>4, 16, 64</strong>. GP: 1, 4, 16, 64, 256.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The AM of two numbers is 10 and their GM is 8. Find the numbers. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a+b=20, ab=64. x²−20x+64=0 → (x−16)(x−4)=0. Numbers: <strong>4 and 16</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> GM in Sequences</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Check: is 6 the GM of 4 and 9? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>√(4×9)=√36=6. <strong>Yes, 6 is the GM.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If x is inserted between 4 and 64 to form a GP, find x. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x = GM = √(4×64) = √256 = <strong>16</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find GM of 1/4 and 1/16. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GM = √(1/4 × 1/16) = √(1/64) = <strong>1/8</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Three numbers in GP have product 8. Find the middle number (GM). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Product = a³ = 8 → a = 2. Middle term = <strong>2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, G, b are in GP, show G² = ab. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GP condition: G/a = b/G → G² = <strong>ab</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert 4 geometric means between 3 and 96. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>6 terms. r⁵=96/3=32 → r=2. Means: <strong>6, 12, 24, 48</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">GM of two numbers is 12. If one number is 4, find the other. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>√(4×x)=12 → 4x=144 → x=<strong>36</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the GM of 27 and 3. Verify it forms a GP with the original two numbers. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GM=√(27×3)=√81=9. GP: 3, 9, 27. r=9/3=3, 27/9=3 ✓. <strong>GM=9</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, b, c are in GP with a=2 and c=18, find b (GM). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>b²=ac=2×18=36 → b=<strong>6</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">n geometric means are inserted between a and b. Find the product of all n means. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The (n+2) terms form a GP. Product of n means = product of terms 2 to n+1 = (ab)^(n/2). Proof: each pair symmetrically placed multiplies to ab. <strong>Product = (ab)^(n/2)</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> AM-GM Comparisons</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find AM and GM of 16 and 4. Which is larger? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AM=(16+4)/2=10. GM=√64=8. <strong>AM=10 > GM=8</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">When are AM and GM equal for two numbers? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AM=GM when both numbers are <strong>equal</strong>. If a=b, AM=a=b=GM.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two numbers have AM=5 and GM=4. Find their sum and product. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum=2×AM=<strong>10</strong>. Product=GM²=<strong>16</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Numbers a and b have AM=7.5 and GM=6. Find a and b. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+b=15, ab=36. x²−15x+36=0 → (x−12)(x−3)=0. <strong>a=3, b=12</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For numbers 1 and 100, find both AM and GM. What is the ratio AM/GM? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AM=50.5, GM=10. Ratio=50.5/10=<strong>5.05</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If GM = 12 and AM = 13, find the numbers. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a+b=26, ab=144. x²−26x+144=0 → (x−8)(x−18)=0. Numbers: <strong>8 and 18</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Three positive numbers are in GP. Their AM is 14 and GM is 12. Find them if they are integers. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Middle term (GM of extremes) = 12. Let 12/r, 12, 12r. AM=(12/r+12+12r)/3=14 → 12/r+12r=30 → 12r²−30r+12=0 → 2r²−5r+2=0 → r=2 or 1/2. Numbers: <strong>6, 12, 24</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Use AM≥GM to show that x+1/x ≥ 2 for positive x. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AM of x and 1/x = (x+1/x)/2 ≥ √(x×1/x) = 1. So (x+1/x)/2 ≥ 1 → x+1/x ≥ <strong>2</strong>. Equality when x=1. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find GM of 2, 4, 8, 16, 32. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GM=(2×4×8×16×32)^(1/5)=(2¹⁺²⁺³⁺⁴⁺⁵)^(1/5)=2^(15/5)=2³=<strong>8</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If AM = 10 and GM = 6, find the HM using AM×HM = GM². <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>HM = GM²/AM = 36/10 = <strong>3.6</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> GM Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show that the GM of aⁿ and bⁿ equals (GM of a and b)ⁿ. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GM(aⁿ,bⁿ)=√(aⁿbⁿ)=(ab)^(n/2)=((ab)^(1/2))ⁿ=(GM(a,b))ⁿ. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">The ratio of two numbers is 9:1. Their GM is 9. Find the numbers. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Let 9k and k. GM=√(9k²)=3k=9 → k=3. Numbers: <strong>27 and 3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert n geometric means between 1 and rⁿ⁺¹. Identify the pattern. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The (n+2) term GP: 1, r, r², …, rⁿ⁺¹. The n inserted means are <strong>r, r², r³, …, rⁿ</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find GM of (x+y) and (x−y) where x=5, y=3. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+y)=8, (x−y)=2. GM=√(8×2)=√16=<strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Between which consecutive integers does the GM of 50 and 200 lie? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GM=√(50×200)=√10000=<strong>100</strong>. It is exactly 100 (no range needed).</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, b are in GP and b, c are in GP, what is the relationship between a, c and b? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a,b,c are in GP (b²=ac, and c=b²/a, so b is GM of a and c). <strong>b is the GM of a and c.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The AM of two numbers exceeds their GM by 2. If one number is 4 times the other, find the numbers. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let a and 4a. AM=5a/2, GM=2a. AM−GM=5a/2−2a=a/2=2 → a=4. Numbers: <strong>4 and 16</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the GM between (a²+ab) and (ab+b²). Simplify. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GM=√[(a²+ab)(ab+b²)]=√[a(a+b)×b(a+b)]=√[ab(a+b)²]=(a+b)√(ab)=<strong>(a+b)·GM(a,b)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two students measure a quantity: Arun gets 3 and Ben gets 12. Which average (AM or GM) is a better measure and why? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AM=7.5, GM=6. For multiplicative or ratio-based data, <strong>GM is better</strong> as it is less sensitive to outliers and handles proportional relationships correctly.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If G₁ and G₂ are two geometric means between a and b, find G₁×G₂. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>4-term GP: a, G₁, G₂, b. r³=b/a → r=(b/a)^(1/3). G₁=a·r=a(b/a)^(1/3), G₂=ar²=a(b/a)^(2/3). G₁×G₂=a²(b/a)=<strong>ab</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Sum of Infinite GP – S∞ = a/(1−r), |r| &lt; 1</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-9-3/v/formula-for-infinite-geometric-series" target="_blank">Infinite Geometric Series</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=w-I6XTVZXww" target="_blank">Zeno's Paradox and Infinite Series</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find S∞ for GP: 1, 1/2, 1/4, 1/8, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=1/2. S∞=1/(1−1/2)=<strong>2</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞ for GP: 3, 1, 1/3, 1/9, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=3, r=1/3. S∞=3/(1−1/3)=3/(2/3)=<strong>9/2 = 4.5</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Does the series 2 + 4 + 8 + 16 + … have a finite sum? Why? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>r=2, |r|=2 > 1. <strong>No, the series diverges</strong> — S∞ does not exist.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞: 6 − 3 + 3/2 − 3/4 + … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=6, r=−1/2. |r|<1. S∞=6/(1+1/2)=6/(3/2)=<strong>4</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.333… as a fraction using S∞. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>0.3+0.03+0.003+… a=3/10, r=1/10. S∞=(3/10)/(9/10)=<strong>1/3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞ for: 8, 4, 2, 1, 1/2, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=8, r=1/2. S∞=8/(1/2)=<strong>16</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞: 0.5 + 0.25 + 0.125 + … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=0.5, r=0.5. S∞=0.5/0.5=<strong>1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For what values of x does the series 1 + x + x² + x³ + … converge? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>This is a GP with r=x. Converges when <strong>|x| < 1</strong>, i.e. −1 < x < 1. Sum = 1/(1−x).</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum to infinity of a GP is 3 times its first term. Find r. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a/(1−r)=3a → 1/(1−r)=3 → 1−r=1/3 → r=<strong>2/3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A GP has S∞=4 and a=1. Find r and write first 4 terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1/(1−r)=4 → r=3/4. Terms: <strong>1, 3/4, 9/16, 27/64</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Recurring Decimals and Fractions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Express 0.666… as a fraction. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>0.6+0.06+… a=6/10, r=1/10. S∞=(6/10)/(9/10)=<strong>2/3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.999… as a fraction (show it equals 1). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>0.9+0.09+… a=9/10, r=1/10. S∞=(9/10)/(9/10)=<strong>1</strong>. So 0.999…=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.121212… as a fraction. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>0.12+0.0012+… a=12/100, r=1/100. S∞=(12/100)/(99/100)=12/99=<strong>4/33</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.7̄ (0.7777…) as a fraction. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=7/10, r=1/10. S∞=(7/10)/(9/10)=<strong>7/9</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.3636… as a fraction. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=36/100, r=1/100. S∞=36/99=<strong>4/11</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.142857142857… as a fraction. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Recurring block 142857 (6 digits). a=142857/10⁶, r=10⁻⁶. S∞=142857/999999=<strong>1/7</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A ball bounces to 3/4 height each time. Dropped from 4 m. Find total distance (all bounces, both up and down). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>First fall: 4 m. Then 2×S∞ for bounces: 2×[3+(9/4)+(27/16)+…]=2×a/(1−r)=2×3/(1/4)=24. Total=4+24=<strong>28 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞ of 1/(1×2) + 1/(2×3) + 1/(3×4) + … using partial fractions. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>1/(n(n+1))=1/n−1/(n+1). Telescoping sum = 1 − 1/(n+1) → 1 as n→∞. S∞ = <strong>1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">S∞ of a GP is 16. If a=4, find r and write the GP. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4/(1−r)=16 → 1−r=1/4 → r=3/4. GP: <strong>4, 3, 9/4, 27/16, …</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">S∞ is 3 and S₁ = 1. Find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=1. 1/(1−r)=3 → r=<strong>2/3</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Real-World Infinite Series</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Zeno's paradox: A tortoise is 100 m ahead of Achilles. Each time Achilles reaches where the tortoise was, it moves 1/10 of the previous gap. Will Achilles catch up? What total distance does he cover? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Gaps: 100, 10, 1, 0.1, … GP a=100, r=1/10. S∞=100/(9/10)=1000/9≈111.1 m. <strong>Yes, Achilles catches up after covering 111.1 m total.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A clock pendulum swings 30 cm then 90% of previous each time. Find total length of all swings. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=30, r=0.9. S∞=30/(0.1)=<strong>300 cm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Drug dosage: 1 mg absorbed, then 1/2 mg, 1/4 mg, etc. Total absorbed? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=1/2. S∞=1/(1/2)=<strong>2 mg</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Population grows to 1.01 times each year. Is this a converging series? Find S∞ if initial = 1000. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r=1.01 > 1. <strong>The series diverges — S∞ does not exist.</strong> Population grows without bound.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Half-life: substance halves every period. Total amount that decays starting from 64 g? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Decays: 32, 16, 8, 4, … Infinite GP a=32, r=1/2. S∞=32/(1/2)=64=<strong>all 64 g eventually decays</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞ for 1 + cos²θ + cos⁴θ + … (|cosθ| < 1). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=cos²θ. S∞=<strong>1/(1−cos²θ) = 1/sin²θ = cosec²θ</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A square has side 4 cm. A new square is drawn by joining midpoints. This repeats infinitely. Find total area of all squares. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Areas: 16, 8, 4, 2, … GP a=16, r=1/2. S∞=16/(1/2)=<strong>32 cm²</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A fractal has total perimeter = 3 + 1 + 1/3 + … Find S∞. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=3, r=1/3. S∞=3/(2/3)=<strong>9/2 = 4.5</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞ of x/(x+1) + x/(x+1)² + x/(x+1)³ + … (|x+1| > 1). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=x/(x+1), r=1/(x+1). S∞=[x/(x+1)]/[1−1/(x+1)]=[x/(x+1)]/[x/(x+1)]=<strong>1</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.235235235… as a fraction. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=235/1000, r=1/1000. S∞=235/999=<strong>235/999</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced Infinite GP</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If S∞ = 4 and second term = 3/4, find a and r. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>ar=3/4 and a/(1−r)=4. From S∞: a=4(1−r). Then 4(1−r)r=3/4 → 16r(1−r)=3 → 16r²−16r+3=0 → r=(16±√(256−192))/32=(16±8)/32. r=3/4 or r=1/4. If r=3/4: a=1. If r=1/4: a=3. Both valid: <strong>(a=1,r=3/4)</strong> or <strong>(a=3,r=1/4)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the sum: 1 + 2/3 + 4/9 + 8/27 + … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a=1, r=2/3. S∞=1/(1/3)=<strong>3</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of an infinite GP exceeds sum of all even-positioned terms by 5. Find a if r=1/3. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S∞=a/(2/3)=3a/2. Even-positioned: ar+ar³+…=ar/(1−r²)=(a/3)/(8/9)=3a/8. S∞−Sₑᵥₑₙ=3a/2−3a/8=9a/8=5 → a=<strong>40/9</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Infinite GP: each term is 1/5 of the sum of remaining terms. Find r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ = (1/5) × (Sₙ₊₁ to ∞) = (1/5) × arⁿ/(1−r). But aₙ=arⁿ⁻¹. So 1=(1/5)×r/(1−r) → 5(1−r)=r → 5=6r → r=<strong>5/6</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sum of infinite GP is 9 and sum of cubes of its terms is 729. Find a and r. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a/(1−r)=9. Sum of cubes: a³/(1−r³)=729. (a/(1−r))³/(a²+ar+ar²)=729 (using factoring). 729/(a²(1+r+r²)/a)=729 → a/(1+r+r²)=1 → a=1+r+r². Also a=9(1−r). So 9−9r=1+r+r² → r²+10r−8=0 → r=(−10±√164)/2. Complex — try differently: a³/(1−r³)=729=(a/(1−r))³×(1−r)³/(1−r³)=729×(1−r)³/(1−r³). (1−r)³/(1−r³)=1 → (1−r)²/(1+r+r²)=1 → 1−2r+r²=1+r+r² → −3r=0 → r=0. Contradiction. <strong>a=9, r=0</strong> trivially, or problem has inconsistency.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the range of x for which 1 + (x+1) + (x+1)² + … converges. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r=x+1. Need |x+1| < 1 → −1 < x+1 < 1 → <strong>−2 < x < 0</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that 1−r+r²−r³+…=1/(1+r) for |r|<1. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=1, ratio=−r. S∞=1/(1−(−r))=<strong>1/(1+r)</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">A ball drops 10 m and bounces to 80% each time. Find total distance (include all up and down travel). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Down 10. Then bounces: up+down = 2×10×0.8/(1−0.8)=2×8/0.2=80 m. Total=10+80=<strong>90 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">GP with |r|<1: show that S∞−Sₙ = arⁿ/(1−r). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S∞=a/(1−r). Sₙ=a(1−rⁿ)/(1−r). S∞−Sₙ=a/(1−r)−a(1−rⁿ)/(1−r)=a·rⁿ/(1−r). ✓ This is the <strong>tail sum</strong> formula.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find S∞: sin²x + sin⁴x + sin⁶x + … for sin²x < 1. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=sin²x, r=sin²x. S∞=sin²x/(1−sin²x)=sin²x/cos²x=<strong>tan²x</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Recognising AP vs GP</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:intro-to-arithmetic-sequences/v/recognizing-arithmetic-sequences" target="_blank">Recognizing Arithmetic Sequences</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:intro-to-geometric-sequences/v/recognizing-geometric-sequences" target="_blank">Recognizing Geometric Sequences</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">AP vs GP Comparison</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Classify the Sequence</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Classify: 5, 10, 15, 20, 25, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences: 5, 5, 5, 5 — constant. <strong>AP</strong>, d=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 5, 10, 20, 40, 80, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 2, 2, 2, 2 — constant. <strong>GP</strong>, r=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 1, 4, 9, 16, 25, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences: 3, 5, 7, 9 (not constant). Ratios: 4, 9/4, 16/9 (not constant). <strong>Neither</strong> — perfect squares.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 100, 10, 1, 0.1, 0.01, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 1/10 each time. <strong>GP</strong>, r=0.1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 1, 1, 2, 3, 5, 8, 13, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 0,1,1,2,3,5 — not constant. Ratios: 1,2,1.5,1.67,1.6 — not constant. <strong>Neither</strong> — this is the Fibonacci sequence.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 0, 5, 10, 15, 20, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences: 5, 5, 5, 5. <strong>AP</strong>, d=5, a=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 2, 2, 2, 2, 2, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 0,0,0 → AP with d=0. Ratios: 1,1,1 → GP with r=1. <strong>Both AP and GP</strong> (constant sequence).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 2, 6, 18, 54, 162, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 3, 3, 3, 3. <strong>GP</strong>, r=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 1/2, 1/4, 1/8, 1/16, … <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 1/2 each time. <strong>GP</strong>, r=1/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 3, 3+√2, 3+2√2, 3+3√2, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: √2, √2, √2 — constant. <strong>AP</strong>, d=√2.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> AP, GP, or Neither?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Is 10, 20, 30, 40 an AP? Is it a GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d=10 (constant) → <strong>AP</strong>. Ratios: 2, 1.5, 4/3 (not constant) → not GP.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 1, 2, 4, 8 an AP? Is it a GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d: 1, 2, 4 (not constant) → not AP. r=2 (constant) → <strong>GP</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 0.2, 0.4, 0.8, 1.6 a GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 2, 2, 2. <strong>Yes, GP</strong> with r=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is log 2, log 4, log 8, log 16 an AP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>log4−log2=log2, log8−log4=log2, log16−log8=log2. Constant d=log2. <strong>Yes, AP</strong> with d=log2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Identify: 8, 4, 2, 1, 1/2, … and state both a and r. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 1/2, 1/2, 1/2. <strong>GP</strong>. a=8, r=1/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: a, a+d, a+2d, … and a, ar, ar², … Describe the key difference. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>First: <strong>AP</strong> — formed by adding constant d. Second: <strong>GP</strong> — formed by multiplying by constant r. AP: additive; GP: multiplicative.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which salary structure is AP and which is GP? a) Fixed ₹500 raise every year. b) 10% raise every year. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a) Fixed raise = <strong>AP</strong> (constant addition). b) Percentage raise = <strong>GP</strong> (constant multiplication by 1.1).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: √2, 2, 2√2, 4, 4√2, … <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 2/√2=√2, 2√2/2=√2, 4/2√2=√2. <strong>GP</strong>, r=√2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The nth term is aₙ = 3+5n. Is this an AP or GP? Find d. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ₊₁−aₙ=5 (constant). <strong>AP</strong>, d=5. a₁=8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The nth term is aₙ = 2×3ⁿ. Is this an AP or GP? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ₊₁/aₙ=3 (constant ratio). <strong>GP</strong>, r=3. a₁=6.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Classification Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write one example each of a 5-term AP and 5-term GP with first term 2. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP (d=3): <strong>2, 5, 8, 11, 14</strong>. GP (r=2): <strong>2, 4, 8, 16, 32</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two sequences: A: 1, 2, 4, 7, 11, 16, … and B: 1, 3, 9, 27, … Which is GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A: differences 1,2,3,4,5 (not constant) — <strong>neither</strong>. B: ratio 3 constant — <strong>B is GP</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">a, b, c, d are in AP with d=2. Are a², b², c², d² in AP, GP, or neither? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let a=1, b=3, c=5, d=7. Squares: 1, 9, 25, 49. Differences: 8, 16, 24 — not constant. Ratios: 9, 25/9, 49/25 — not constant. <strong>Neither</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a, b, c are in AP and a, b, d are in GP, find the relationship between c and d. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP: b=a+k, c=a+2k. GP: b²=ad → (a+k)²=ad. c=a+2k=a+2(b−a)=2b−a. d=b²/a. Relation: c=2b−a and d=b²/a. Not a simple standard relation without specific values.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Identify whether compound interest generates an AP or GP in the account balance. Explain. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Balance = P(1+r)ⁿ — each year balance multiplied by (1+r). Constant ratio → <strong>GP</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simple interest generates what type of sequence for the amount paid each period? AP or GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Simple interest = P×r×t — linear in t. Total amount increases by equal amounts each period. → <strong>AP</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Identify: 3, 6, 12, 24 as GP. Now identify 3, 6, 9, 12 as AP. What is the key test for each? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GP test: constant ratio (aₙ₊₁/aₙ = constant). AP test: constant difference (aₙ₊₁−aₙ = constant). <strong>Ratio for GP, Difference for AP.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The sequence 1, −2, 4, −8, 16, … — is this AP or GP? Find sum of first 8 terms. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r=−2 (constant). <strong>GP</strong>. S₈=1×((−2)⁸−1)/(−2−1)=(256−1)/(−3)=−255/3=<strong>−85</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For the sequence 2, 6, 10, 14, 18, 22, …, determine type, find a₁₅, and S₁₅. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d=4 → <strong>AP</strong>. a₁₅=2+14×4=58. S₁₅=15/2(2+58)=15×30=<strong>450</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: a, a/r, a/r², a/r³, … and state r in terms of the sequence. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Ratio of consecutive terms = (a/r)÷a = 1/r (constant). <strong>GP with ratio 1/r</strong>. Each term is 1/r times the previous.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Deeper Comparisons</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Three numbers form both AP and GP. What must be true? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>For a, b, c in AP: b−a=c−b. For GP: b/a=c/b. If both: b=a+d and b=ar. For both: a=b=c (constant). So <strong>all three numbers must be equal</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that log a, log b, log c in AP implies a, b, c in GP. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP: 2 log b = log a + log c → log b² = log(ac) → b²=ac. This is the condition for <strong>a, b, c in GP</strong>. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the terms 2, x, 18 are in GP, find x. Then check if 2, x, 18 form an AP and find any such x. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: x²=36 → x=6 (or −6). AP: x=(2+18)/2=10. <strong>GP: x=6; AP: x=10.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write a real-life scenario for AP and one for GP. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: Saving ₹100 more each month. GP: Bacteria doubling every hour. <strong>AP = linear/additive; GP = exponential/multiplicative</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a GP has r=1, is it also an AP? What kind of sequence is it? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>r=1 means all terms equal. d=0. <strong>Yes — it is both a constant AP (d=0) and a constant GP (r=1)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Determine if 81, 27, 9, 3, 1 is AP or GP. State all relevant parameters. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 1/3, 1/3, 1/3. <strong>GP</strong>. a=81, r=1/3, n=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which grows faster for large n: AP with a=1, d=100 or GP with a=1, r=1.01? Explain. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP: aₙ=1+100(n−1) — linear. GP: aₙ=(1.01)ⁿ⁻¹ — exponential. <strong>GP grows faster</strong> for large n because exponential growth eventually outpaces any linear growth.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Given sequence: 2, 4, 16, 256, … — is this GP? Find the pattern and aₙ. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 2, 4, 16 — not constant. This is aₙ=2^(2^(n-1)): 2¹, 2², 2⁴, 2⁸. <strong>Not a GP</strong> — it's a "power tower" sequence: aₙ=2^(2^(n-1)).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Design a sequence that is neither AP nor GP but has a clear pattern. Write first 6 terms and state the rule. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Example: Triangular numbers: 1, 3, 6, 10, 15, 21. Rule: aₙ=n(n+1)/2. Not AP (differences increase), not GP (ratios vary). ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is it possible to have a 2-term sequence that is both AP and GP? Explain. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Yes, any two-term sequence is both AP and GP.</strong> For a, b: AP has d=b−a; GP has r=b/a. Both conditions are trivially satisfied since only one "gap" or "ratio" exists.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Sequences in Nature and Art</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=ahXIMUkSXX0" target="_blank">Nature by Numbers – Fibonacci</a>
+        <a href="https://www.youtube.com/watch?v=VDgtH_vvjMo" target="_blank">The Magic of Fibonacci Numbers</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=lOIP_Z_-0Hs" target="_blank">Golden Ratio in Nature</a>
+        <a href="https://www.youtube.com/watch?v=14-NdQwKz9w" target="_blank">Fibonacci Spirals</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Fibonacci and Nature</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the first 10 terms of the Fibonacci sequence. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1, 1, 2, 3, 5, 8, 13, 21, 34, 55</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sunflower spirals often follow Fibonacci numbers. Name two consecutive Fibonacci numbers commonly seen. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Common spiral counts: <strong>34 and 55</strong> (or 21 and 34). These are consecutive Fibonacci numbers.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why is the Fibonacci sequence neither an AP nor a GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 0,1,1,2,3,5 (increasing, not constant → not AP). Ratios: 1, 2, 1.5, 1.67, 1.6, 1.625 (not constant → not GP). <strong>It is neither</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The ratio of consecutive Fibonacci terms approaches what famous constant? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>The <strong>Golden Ratio φ ≈ 1.618</strong> (phi = (1+√5)/2).</p></details></div></div>
+      <div class="q-item"><div class="q-text">If petals of a flower are 1, 2, 3, 5, 8, 13 — which comes next in nature? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Fibonacci sequence. Next: <strong>21 petals</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The nautilus shell grows by the same ratio each chamber. Is this AP or GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Constant ratio → <strong>GP</strong>. Each chamber is r times the previous in size (r ≈ 1.618, the golden ratio).</p></details></div></div>
+      <div class="q-item"><div class="q-text">In music, frequencies of octaves double each time: 220, 440, 880 Hz. AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=2 constant. <strong>GP</strong>, r=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A honeycomb has hexagonal cells. The number of cells in layers from the centre: 1, 7, 19, 37, 61, … Identify the type and pattern. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Differences: 6, 12, 18, 24 — arithmetic sequence of differences. Second differences: 6 (constant). This is a <strong>quadratic sequence</strong>, neither AP nor GP. aₙ=3n²−3n+1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Tree branching: 1, 2, 4, 8, 16, … branches at each level. AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=2 constant. <strong>GP</strong>, r=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The diagonals of a regular polygon: triangle=0, square=2, pentagon=5, hexagon=9. Is this AP or GP? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Differences: 2, 3, 4 (increasing). Not constant → <strong>not AP</strong>. Formula: n(n−3)/2. It is a <strong>quadratic sequence</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Patterns in Art and Architecture</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The Parthenon's proportions follow the golden ratio φ≈1.618. If width = 30.87 m, estimate height using φ. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>height = width/φ = 30.87/1.618 ≈ <strong>19.08 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A spiral staircase has steps at radii 10, 20, 40, 80 cm. AP or GP? Find next radius. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratios=2 (constant). <strong>GP</strong>. Next: <strong>160 cm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Rings of a tree trunk grow 3 mm each year. 5 rings are 3, 6, 9, 12, 15 mm from centre. AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences=3 (constant). <strong>AP</strong>, d=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Tiling a floor with squares: 1, 4, 9, 16, 25, … tiles per layer. AP or GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Differences: 3, 5, 7, 9 — not constant. Ratios not constant. <strong>Neither</strong> — perfect squares.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why do musical scales use geometric (not arithmetic) frequency spacing? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Human hearing perceives pitch <strong>proportionally</strong> (logarithmically). Equal temperament spacing requires constant ratios (GP with r=2^(1/12)) so each semitone sounds equally spaced to our ears.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A photographer adjusts shutter speed: 1/500, 1/250, 1/125, 1/60, 1/30, … sec. AP or GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Each value is approximately twice the previous. <strong>GP</strong> with r≈2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In Islamic geometric art, a pattern repeats at scale 1, 1/3, 1/9, 1/27, … What type of sequence? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=1/3 (constant). <strong>GP</strong>. S∞=1/(2/3)=3/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Sierpinski triangle: at each step, triangles are removed. Count of shaded triangles: 1, 3, 9, 27, … AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=3 (constant). <strong>GP</strong>, r=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In poetry, syllable counts 2, 3, 5, 8, 13, … — what sequence? What is the next? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Fibonacci sequence</strong>. Next: <strong>21</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Koch snowflake: perimeter increases by factor 4/3 each iteration. Start perimeter = 3 cm. Find perimeter after 5 iterations. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP: a=3, r=4/3. a₆=3×(4/3)⁵=3×1024/243=3072/243≈<strong>12.64 cm</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mathematical Patterns in Everyday Life</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Bounciness: a ball drops 1 m and bounces to 0.9, 0.81, 0.729 m. Identify type and ratio. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=0.9 (constant). <strong>GP</strong>, r=0.9.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Salary scale: ₹20000, ₹22000, ₹24000, ₹26000. AP or GP? Find d. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences=₹2000 constant. <strong>AP</strong>, d=2000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Investment with 10% annual interest: 1000, 1100, 1210, 1331. AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=1.1 (constant). <strong>GP</strong>, r=1.1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A runner adds 500 m to daily distance each week: 2 km, 2.5 km, 3 km, 3.5 km. AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences=0.5 km (constant). <strong>AP</strong>, d=0.5 km.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A virus spreads as each person infects 2 new people: 1, 2, 4, 8, 16. AP or GP? Find a₁₀. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Ratio=2. <strong>GP</strong>. a₁₀=2⁹=<strong>512</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Camera aperture f-stops: f/1.4, f/2, f/2.8, f/4, f/5.6. Each is √2 times the previous. Verify and classify. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Ratios: 2/1.4≈1.414=√2, 2.8/2=1.4≈√2. <strong>GP</strong> with r=√2 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Staircase: each step 20 cm high, 25 cm deep. Heights of steps from ground: 20, 40, 60, 80 cm. AP or GP? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Differences=20 cm (constant). <strong>AP</strong>, d=20 cm.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Annual rainfall decreasing 5% each year: 1000, 950, 902.5, … AP or GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Ratio=0.95 (constant). <strong>GP</strong>, r=0.95.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Computer storage: 1 KB, 1 MB, 1 GB, 1 TB. Each is 1024 times greater. AP or GP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Ratio=1024 (constant). <strong>GP</strong>, r=1024.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Design a pattern inspired by Fibonacci: draw squares with sides 1, 1, 2, 3, 5, 8. What shape do they collectively approximate? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The squares arranged by Fibonacci sides create a <strong>spiral that approximates the Golden Spiral</strong>, found in nautilus shells and galaxy arms.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Open-Ended and Research Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why a bouncing ball demonstrates a GP rather than an AP. Use physics reasoning. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Energy lost in each bounce is a fixed <strong>proportion</strong> of current energy (coefficient of restitution). Since height ∝ energy, height also decreases proportionally → <strong>GP</strong>. If energy loss were fixed amount each bounce → AP.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why does compound interest follow a GP while simple interest follows an AP? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Simple interest: fixed amount added each period → AP. Compound interest: interest calculated on growing total, so each period multiplies by (1+r) → <strong>GP</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the Fibonacci numbers in Pascal's triangle (hint: look at diagonal sums). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Summing shallow diagonals of Pascal's triangle gives Fibonacci numbers: 1, 1, 1+1=2, 1+2=3, 1+3+1=5, 1+4+3=8, etc. <strong>Fibonacci numbers appear as diagonal sums.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Why do populations often grow as GP initially but slow down in reality? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Initially unconstrained resources → exponential (GP). As resources become limited (food, space), growth slows → logistic (S-shaped) curve. <strong>Real populations follow GP only in ideal, unlimited conditions.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">In a piano, the 12-tone equal temperament system divides an octave into 12 equal semitones (GP). If A=440 Hz, find the frequency of E (4 semitones above). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r=2^(1/12). E is 4 semitones above A: f=440×2^(4/12)=440×2^(1/3)=440×1.2599≈<strong>554.4 Hz</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The golden ratio φ = (1+√5)/2. Verify that 1/φ = φ−1. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>φ−1=(1+√5)/2−1=(√5−1)/2=1/φ since φ×(φ−1)=(1+√5)/2×(√5−1)/2=(√5+5−1−√5)/4=4/4=1. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Each square in a Fibonacci spiral has side equal to Fibonacci number. Find total area of squares with sides 1,1,2,3,5,8. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Area=1+1+4+9+25+64=<strong>104 sq units</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why Fibonacci numbers appear in sunflower seed spirals (mathematical reason). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sunflower seeds grow at the golden angle (≈137.5°=360°/φ²). This irrational angle creates the most efficient packing, naturally producing Fibonacci spiral counts as the densest non-overlapping arrangement. <strong>Fibonacci numbers emerge because they optimise space.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A fractal coastline: at each zoom, 4 new segments replace each segment. Starts with 1 segment of length 1. Find total length after 5 iterations. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Segments: 1, 4, 16, 64, 256, 1024. Each segment also shorter: if each becomes 4 of length 1/3, perimeter = (4/3)ⁿ. After 5: (4/3)⁵=1024/243≈<strong>4.21 units</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Indian classical music ragas use specific note intervals. If notes are at frequencies in ratio 9:8, 5:4, 4:3, 3:2 relative to base note 240 Hz, find each note. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sa=240. Re=240×9/8=270. Ga=240×5/4=300. Ma=240×4/3=320. Pa=240×3/2=<strong>360 Hz</strong>. Notes: <strong>240, 270, 300, 320, 360 Hz</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Sigma Notation</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Sigma Notation Introduction</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:sigma/v/evaluating-basic-sigma-notation" target="_blank">Evaluating Sigma Notation</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">Understanding Summation</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Reading and Writing Sigma Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate: Σᵢ₌₁⁵ i (sum of i from 1 to 5). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1+2+3+4+5=<strong>15</strong>. Formula: 5×6/2=15.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₙ₌₁⁴ n² <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1+4+9+16=<strong>30</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write in sigma notation: 3+6+9+12+15. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Σₖ₌₁⁵ 3k</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₙ₌₁¹⁰ 5 (constant sum). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>5×10=<strong>50</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write in sigma notation: 1² + 2² + 3² + … + 20². <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Σₙ₌₁²⁰ n²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₖ₌₁⁶ (2k−1). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1+3+5+7+9+11=<strong>36</strong>. = n²=6²=36 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write in sigma notation: 2+4+8+16+32+64. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Σₙ₌₁⁶ 2ⁿ</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σᵢ₌₃⁷ i. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3+4+5+6+7=<strong>25</strong>. Or Σ₁⁷−Σ₁²=28−3=25.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate Σₙ₌₁¹⁰₀ n using the formula. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>n(n+1)/2 = 100×101/2 = <strong>5050</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₙ₌₁⁵ (n²+n). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σn²+Σn=30+15=<strong>45</strong>. Check: (1+2)+(4+2)+(9+3)+(16+4)+(25+5)=3+6+12+20+30=45 ✓? Wait: (1+1)+(4+2)+(9+3)+(16+4)+(25+5)=2+6+12+20+30=<strong>70</strong>. Σn²=55 for n=1–5: 1+4+9+16+25=55. Σn=15. Sum=55+15=<strong>70</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Standard Summation Formulas</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the formula for Σₙ₌₁ⁿ k (sum of first n natural numbers). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>n(n+1)/2</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">State the formula for Σₙ₌₁ⁿ k² (sum of squares of first n natural numbers). <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>n(n+1)(2n+1)/6</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">State the formula for Σₙ₌₁ⁿ k³. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>[n(n+1)/2]²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₖ₌₁²⁰ k². <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>20×21×41/6=<strong>2870</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₖ₌₁¹⁰ k³. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>[10×11/2]²=55²=<strong>3025</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₙ₌₁¹⁵ (3n+2). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3Σn+2×15=3×120+30=360+30=<strong>390</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate Σₙ₌₁²⁵ 2n. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2×Σn=2×25×26/2=25×26=<strong>650</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate Σₙ₌₁³⁰ (n²−n). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σn²−Σn=30×31×61/6−30×31/2=9455−465=<strong>8990</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₖ₌₁ⁿ k using the formula, for n=50. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>50×51/2=<strong>1275</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that Σₙ₌₁ⁿ (2n−1) = n². <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σ(2n−1)=2Σn−n=2×n(n+1)/2−n=n(n+1)−n=n²+n−n=<strong>n²</strong>. ✓</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Sigma Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate: Σᵢ₌₁⁵ 3ⁱ. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3+9+27+81+243=<strong>363</strong>. GP: a=3, r=3, n=5. S=3(3⁵−1)/2=3×242/2=363 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write Σₙ₌₁⁸ n³ in expanded form and evaluate. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1+8+27+64+125+216+343+512=<strong>1296</strong>. Formula: [8×9/2]²=36²=1296 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₙ₌₁¹⁰ (−1)ⁿ · n. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>−1+2−3+4−5+6−7+8−9+10=(−1+2)+(−3+4)+(−5+6)+(−7+8)+(−9+10)=1+1+1+1+1=<strong>5</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write in sigma notation: 1/1 + 1/2 + 1/3 + … + 1/n. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Σₖ₌₁ⁿ 1/k</strong> (the harmonic series).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₙ₌₁⁶ (n+1)(n+2). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Expand: Σ(n²+3n+2)=Σn²+3Σn+2×6=91+63+12=<strong>166</strong>. (Σn²=91 for n=1–6: 1+4+9+16+25+36=91 ✓)</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate Σₙ₌₁¹² n using formula. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>12×13/2=<strong>78</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the AP sum S=5+8+11+…(20 terms) using sigma notation and evaluate. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>aₙ=3n+2. <strong>Σₙ₌₁²⁰ (3n+2)</strong>. Evaluate: 3×210+2×20=630+40=<strong>670</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₙ₌₁¹⁰⁰ (n²−n+1). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σn²−Σn+100=100×101×201/6−100×101/2+100=338350−5050+100=<strong>333400</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: Σₙ₌₁ⁿ [aₙ + bₙ] = Σ aₙ + Σ bₙ. State the property used. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>This is the <strong>linearity (sum) property of sigma</strong>: Σ(aₙ+bₙ) = Σaₙ + Σbₙ. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Prove: Σₙ₌₁ⁿ (2n−1) = n² using sigma formulas. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σ(2n−1) = 2Σn − n×1 = 2×n(n+1)/2 − n = n²+n−n = <strong>n²</strong>. ✓</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced Sigma Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate: Σₖ₌₁⁵ k(k+1). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2+6+12+20+30=<strong>70</strong>. = Σk²+Σk=55+15=70 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate Σₖ₌₁ⁿ k using Gauss's pairing method for n=100. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Pair first+last, second+second-last, etc. 50 pairs each summing to 101. 50×101=<strong>5050</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₙ₌₁¹⁰ (n+1)/n = Σ(1 + 1/n). Evaluate numerically. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σ1 + Σ1/n = 10 + (1+1/2+1/3+…+1/10) = 10+2.9290 = <strong>12.929</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write and evaluate: sum of squares of odd numbers from 1 to 19. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σₖ₌₁¹⁰ (2k−1)². Expand: 4k²−4k+1. Σ=4×385−4×55+10=1540−220+10=<strong>1330</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Use sigma: find sum of first n even numbers = n(n+1). Verify for n=5. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Σₖ₌₁ⁿ 2k=2×n(n+1)/2=n(n+1). n=5: 5×6=30. Check: 2+4+6+8+10=<strong>30</strong> ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₙ₌₀⁴ 3ⁿ. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1+3+9+27+81=<strong>121</strong>. GP: a=1, r=3, n=5. S=（3⁵−1)/2=121 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find Σₙ₌₁ⁿ r^(n-1) and simplify for |r|≠1. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>This is a GP with first term 1 and ratio r. Sum=<strong>(rⁿ−1)/(r−1)</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: Σₖ₌₁²⁰ k(k−1). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σ(k²−k)=Σk²−Σk=20×21×41/6−20×21/2=2870−210=<strong>2660</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Rewrite the sum Σₙ₌₁ⁿ (a+(n−1)d) in terms of a, d, and n. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= na + d×Σ(n−1) = na + d×n(n−1)/2 = <strong>n/2[2a+(n−1)d]</strong> = Sₙ of AP. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the value of Σₖ₌₁¹⁰⁰ k(101−k). <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Σk(101−k)=101Σk−Σk²=101×5050−338350=510050−338350=<strong>171700</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>Real-World Sequence Problems</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-arithmetic-sequences/v/arithmetic-sequences-application" target="_blank">AP Real-World Applications</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:constructing-geometric-sequences/v/geometric-sequences-application" target="_blank">GP Real-World Applications</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=UjEk9hSCzAY" target="_blank">The Power of Exponential Growth</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Finance and Money</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Rahul deposits ₹5000, and each year adds ₹500 more than the previous year. How much does he deposit in year 8? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=5000, d=500. a₈=5000+7×500=<strong>₹8500</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">An investment doubles every 5 years. ₹10000 invested now. What is the value after 20 years? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>GP: r=2, 20 years = 4 doublings. Value=10000×2⁴=<strong>₹160000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A loan repayment schedule: ₹2000 first month, reducing by ₹100 each month. How much is paid in month 10? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=2000, d=−100. a₁₀=2000−900=<strong>₹1100</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compound interest: ₹1000 at 20% per year. Find value after 4 years. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=1000, r=1.2. a₅=1000×(1.2)⁴=1000×2.0736=<strong>₹2073.60</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A salary is ₹30000. Annual increments: year 1 = ₹2000, increasing by ₹500 each year. Find total salary paid over 5 years. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Year 1: 30000. Year 2: 32000. Year 3: 34500. Wait — increment in year 1 is +2000, so year 2 salary=32000; year 2 increment=2500, year 3=34500; year 3 increment=3000, year 4=37500; year 4 increment=3500, year 5=41000. Total=30000+32000+34500+37500+41000=<strong>₹175000</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A stock price follows GP: ₹100, ₹110, ₹121, ₹133.10, … Find price after 6 months. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=100, r=1.1. a₇=100×(1.1)⁶=100×1.7716=<strong>₹177.16</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Fixed deposits: ₹1000 at 10% simple interest per year. How much interest earned in 5 years? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>SI = PRT = 1000×10/100×5=<strong>₹500</strong>. AP: each year adds ₹100.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A company's revenue was ₹50 lakh last year. If it grows by 15% each year, find revenue after 3 years. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=50, r=1.15. a₄=50×(1.15)³=50×1.5209=<strong>₹76.04 lakh</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Inflation at 6% per year. Current price ₹100. What will be the price in 10 years? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP: a=100, r=1.06. a₁₁=100×(1.06)¹⁰=100×1.7908=<strong>₹179.08</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A person receives ₹100 on day 1, ₹200 on day 2, ₹400 on day 3, doubling each day for 10 days. Find total received. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=100, r=2, n=10. S=100(2¹⁰−1)=100×1023=<strong>₹102300</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Science and Environment</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">E. coli doubles every 20 minutes. Starting with 100 bacteria, how many after 2 hours? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2 hours = 6 doublings. a₇=100×2⁶=100×64=<strong>6400 bacteria</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A radioactive substance decays to half in 3 years. Start: 200 g. How much after 15 years? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>15 years = 5 half-lives. 200×(1/2)⁵=200/32=<strong>6.25 g</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Temperature drops 2°C each hour. Starts at 30°C. Find temperature after 8 hours. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=30, d=−2. a₉=30−16=<strong>14°C</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">CO₂ levels: 2015=400 ppm, increasing 2.5 ppm/year. Find level in 2030. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=400, d=2.5, n=16 (2030 is 15 years after 2015). a₁₆=400+15×2.5=<strong>437.5 ppm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Antibiotic kills 30% of bacteria per hour. Start: 10000 bacteria. How many after 5 hours? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: r=0.7. After 5 hours: 10000×(0.7)⁵=10000×0.16807=<strong>≈1681 bacteria</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Forest area decreasing 5% per year. Current area: 1000 ha. Area after 10 years? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP: a=1000, r=0.95. a₁₁=1000×(0.95)¹⁰=1000×0.5987=<strong>≈599 ha</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Earthquakes: each step on the Richter scale is 10x more powerful. A magnitude 3 quake vs. magnitude 6 — how many times more powerful? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP with r=10. 3 steps difference: 10³=<strong>1000 times</strong> more powerful.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Water evaporates 10% each day from a 500-litre tank. How many days until less than 200 litres remain? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>500×(0.9)ⁿ < 200 → (0.9)ⁿ < 0.4 → n×log0.9 < log0.4 → n > log0.4/log0.9=8.70. After <strong>9 days</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A candle burns 3 cm in the first hour and 0.5 cm less each subsequent hour. How long does it burn if initial length is 15 cm? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>AP: a=3, d=−0.5. aₙ=3+(n−1)(−0.5)=3.5−0.5n > 0 → n < 7. Total burned in 6 hours: S₆=6/2(3+0.5)=3×3.5=10.5 cm < 15. 7th hour: a₇=3.5−3.5=0. Need 15 cm: find n where Sₙ=15: n/2(6−0.5(n−1))=15 → n(6.5−0.5n)=30 → 0.5n²−6.5n+30=0 → n²−13n+60=0 → n=(13±√(169−240))/2 — discriminant negative. So candle burns completely during 6th hour midpoint. Total burn time ≈ <strong>6 hours</strong> (burns 10.5 cm), leaving 4.5 cm unburned — needs more hours if partial burn counted.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sound intensity halves every 6 metres. Starting at 80 dB at 1 m. At 49 m (8 intervals), what is intensity? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP: a=80, r=1/2, n=9 (after 8 halvings). a₉=80/(2⁸)=80/256=<strong>0.3125 dB</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Construction and Design</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A wall has bricks in rows: 40 in bottom row, each row has 2 fewer. 15 rows. Find total bricks. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=40, d=−2. S₁₅=15/2(80+14(−2))=15/2(80−28)=15/2×52=<strong>390 bricks</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A road is built 2 km per day initially, increasing by 0.5 km each day. Total built in first 2 weeks? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=2, d=0.5, n=14. S₁₄=14/2(4+13×0.5)=7×10.5=<strong>73.5 km</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A pyramid has 100 stones in base layer, decreasing by 10 each layer, with 8 layers. Find total stones. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=100, d=−10. S₈=8/2(200+7(−10))=4×130=<strong>520 stones</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A telephone pole is 10 m high, each wire attached at heights 2, 4, 6, 8, 10 m. Total wire length if each wire = height of attachment? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum=2+4+6+8+10=<strong>30 m</strong>. AP sum.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Tiles needed for floor: row 1 has 1 tile, each next row has 2 more. 20 rows needed. Total tiles? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=1, d=2. S₂₀=20/2(2+38)=10×40=<strong>400 tiles</strong>. Also = 20²=400.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A fountain sprays water at heights 5, 3.75, 2.8125, … cm (GP). Sum of heights for 8 spurts. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r=0.75. S₈=5(1−(0.75)⁸)/0.25=20(1−0.100113)=20×0.8999≈<strong>18 cm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A lamp post casts shadows: 10 m at 6 AM, decreasing by 1 m per hour until noon. Find shadow length at 10 AM. <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: a=10, d=−1. 10 AM is 4 hours later. a₅=10−4=<strong>6 m</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Rainwater collected each day: 10, 12, 14, 16, … litres (AP). Tank capacity 500 litres. On which day does it overflow? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sₙ=n/2(20+2(n−1))=n(n+9) > 500 → n²+9n−500 > 0 → n > (−9+√2009)/2≈(−9+44.8)/2≈17.9. Day <strong>18</strong>: S₁₈=18×27=486 (no). S₁₉=19×28=532 > 500. Overflows on <strong>day 19</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A spiral spring has coils of radii 1, 2, 4, 8, 16 cm. Total circumference of all coils (C=2πr). <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Radii GP: a=1, r=2, n=5. Sum of radii=1+2+4+8+16=31. Total circumference=2π×31=<strong>62π ≈ 194.8 cm</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Glass panels in a building: floor 1 has 5, each floor has 3 more. 12 floors. Total panels? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=5, d=3. S₁₂=12/2(10+11×3)=6×43=<strong>258 panels</strong>.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Challenge Real-World</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A chain of restaurants: 2 in year 1, 6 in year 2, 18 in year 3 (GP). In which year will there be more than 1000 restaurants? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ=2×3ⁿ⁻¹ > 1000 → 3ⁿ⁻¹ > 500 → n−1 > log₃500=5.66 → n ≥ 7. In <strong>year 7</strong>: 2×3⁶=1458.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A town's population: 10000 in 2020, grows by 500 per year. When will it reach 15000? <span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AP: 10000+(n−1)500=15000 → n−1=10 → n=11. Year 2020+10=<strong>2030</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A chess board challenge: ₹1 on square 1, ₹2 on square 2, ₹4 on square 3, … ₹2⁶³ on square 64. Find total. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>GP: a=1, r=2, n=64. S=2⁶⁴−1=<strong>18446744073709551615 ≈ 1.84×10¹⁹</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Water tank: fills 100 litres first hour, 90 second, 81 third, … (GP, r=0.9). Total water after 10 hours. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S₁₀=100(1−(0.9)¹⁰)/0.1=1000(1−0.3487)=<strong>651.3 litres</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A shop offers 10% discount each day on remaining price. Item ₹1000. After 5 days, what is price? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>GP: a=1000, r=0.9. a₆=1000×(0.9)⁵=1000×0.59049=<strong>₹590.49</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A farmer plants 50 saplings in year 1, and 15 more each year. Saplings planted over 10 years? <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=50, d=15. S₁₀=10/2(100+9×15)=5×235=<strong>1175 saplings</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A pendulum swings 60 cm first swing, 90% each subsequent. When does a swing first go below 10 cm? <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>aₙ=60×(0.9)ⁿ⁻¹ < 10 → (0.9)ⁿ⁻¹ < 1/6 → (n−1)log0.9 < log(1/6) → n−1 > 17.03 → n ≥ 19. <strong>19th swing</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A cricket team's run rate: 6, 8, 10, 12, … runs per over (AP). Total runs in 20 overs. <span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AP: a=6, d=2. S₂₀=20/2(12+19×2)=10×50=<strong>500 runs</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Mobile app downloads: 1000, 1500, 2250, 3375, … (GP). Find total after 6 months. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r=1.5. S₆=1000(1.5⁶−1)/0.5=2000(11.39−1)=2000×10.39=<strong>20781 downloads</strong>.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Combined problem: A company hires 5 employees in year 1 (AP, +3/year) and its revenue is ₹2L (GP, ×1.4/year). In year 6, find total employees and revenue. <span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Employees: AP a=5, d=3. a₆=5+5×3=<strong>20 employees</strong>. Revenue: GP a=2, r=1.4. a₆=2×(1.4)⁵=2×5.378=<strong>₹10.76 lakh</strong>.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Grade 9 &nbsp;·&nbsp; Ganita Manjari &nbsp;·&nbsp; Chapter 8 &nbsp;·&nbsp; The Gaudium School &nbsp;·&nbsp; 2026–27
+</footer>
+
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

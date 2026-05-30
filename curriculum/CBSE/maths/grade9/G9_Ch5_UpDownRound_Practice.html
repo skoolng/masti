@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 5 – I'm Up and Down, and Round and Round</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🔄 Chapter 5 – I'm Up and Down, and Round and Round</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Functions, Quadratics &amp; Circles</p>
+</header>
+<nav>
+  <h2>Topics at a Glance</h2>
+  <ol>
+    <li><a href="#t1">Functions Concept and Notation</a></li>
+    <li><a href="#t2">Domain and Range</a></li>
+    <li><a href="#t3">Linear Functions and Graphs</a></li>
+    <li><a href="#t4">Quadratic Function y = x²</a></li>
+    <li><a href="#t5">Properties of Parabolas y = ax²+bx+c</a></li>
+    <li><a href="#t6">Vertex Form y = a(x−h)²+k</a></li>
+    <li><a href="#t7">Circles x²+y² = r²</a></li>
+    <li><a href="#t8">Plotting Circles on Coordinate Plane</a></li>
+    <li><a href="#t9">Semicircles and Arcs</a></li>
+    <li><a href="#t10">Periodic Patterns Introduction</a></li>
+    <li><a href="#t11">Real-World Function Contexts</a></li>
+    <li><a href="#t12">Interpreting Graphs of Functions</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Functions Concept and Notation</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:intro-to-functions/v/what-is-a-function" target="_blank">What is a Function?</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:function-notation/v/function-notation-1" target="_blank">Function Notation</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=52tpYl2tTqk" target="_blank">What is a Function?</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=kpRc8p3xqUk" target="_blank">Functions and Relations</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=kvGsIo1TmsM" target="_blank">Functions and their Graphs</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> What Is a Function?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define a function. How is it different from a general relation?<details class="ans"><summary>Show Answer</summary><p>A function is a relation where every input (x-value) maps to <strong>exactly one</strong> output (y-value). A relation may map one input to multiple outputs, which would disqualify it as a function.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is the mapping {(1,3), (2,5), (3,3), (4,7)} a function? Justify.<details class="ans"><summary>Show Answer</summary><p>Yes. Each x-value (1, 2, 3, 4) appears exactly once, so every input has a unique output. Different inputs can share the same output — that is allowed.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is the mapping {(1,2), (1,4), (2,3)} a function? Why or why not?<details class="ans"><summary>Show Answer</summary><p>No. The input x = 1 maps to two different outputs (2 and 4), violating the one-output rule.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Explain the vertical line test. Draw a sketch to support your answer.<details class="ans"><summary>Show Answer</summary><p>If any vertical line crosses a graph at more than one point, the graph is <strong>not</strong> a function. A circle fails the test (a vertical line through its interior hits two points); a straight line passes it.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Which of the following is NOT a function? (A) y = 3x + 1  (B) y = x²  (C) x = y²  (D) y = |x|<details class="ans"><summary>Show Answer</summary><p><strong>C: x = y²</strong>. For x = 4, y = ±2, so one input gives two outputs.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A machine takes any number and doubles it. Write this as a function using f(x) notation.<details class="ans"><summary>Show Answer</summary><p>f(x) = 2x</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = 5x − 3, find f(2) and f(0).<details class="ans"><summary>Show Answer</summary><p>f(2) = 5(2) − 3 = 10 − 3 = <strong>7</strong>; f(0) = 5(0) − 3 = <strong>−3</strong></p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If g(x) = x² + 1, find g(3) and g(−3). What do you notice?<details class="ans"><summary>Show Answer</summary><p>g(3) = 9 + 1 = <strong>10</strong>; g(−3) = 9 + 1 = <strong>10</strong>. Equal outputs for opposite inputs — g is an even function.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A relation is given by the table: x: 0, 1, 2, 3 → y: 4, 7, 4, 9. Is it a function?<details class="ans"><summary>Show Answer</summary><p>Yes. Each x-value appears only once; it doesn't matter that y = 4 appears twice.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">True or false: every function is a relation, but not every relation is a function. Explain.<details class="ans"><summary>Show Answer</summary><p><strong>True.</strong> A function is a special relation with the single-output rule. Relations that violate this (e.g., a circle) are not functions.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Function Notation Practice</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If f(x) = 3x + 7, find f(4).<details class="ans"><summary>Show Answer</summary><p>f(4) = 3(4) + 7 = 12 + 7 = <strong>19</strong></p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If h(x) = x² − 4x, find h(5).<details class="ans"><summary>Show Answer</summary><p>h(5) = 25 − 20 = <strong>5</strong></p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(t) = 2t² + t − 3, find p(0) and p(1).<details class="ans"><summary>Show Answer</summary><p>p(0) = 0 + 0 − 3 = <strong>−3</strong>; p(1) = 2 + 1 − 3 = <strong>0</strong></p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = 6, what type of function is this? Find f(100).<details class="ans"><summary>Show Answer</summary><p>A <strong>constant function</strong>. f(100) = <strong>6</strong> — the output is always 6 regardless of input.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Given f(x) = 4x − 1, solve for x when f(x) = 11.<details class="ans"><summary>Show Answer</summary><p>4x − 1 = 11 → 4x = 12 → x = <strong>3</strong></p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = x² and g(x) = 2x, find f(3) + g(3).<details class="ans"><summary>Show Answer</summary><p>f(3) = 9, g(3) = 6; 9 + 6 = <strong>15</strong></p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = 3x − 5, find f(a + 1) in simplified form.<details class="ans"><summary>Show Answer</summary><p>f(a+1) = 3(a+1) − 5 = 3a + 3 − 5 = <strong>3a − 2</strong></p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A function is defined as f(x) = |2x − 6|. Find f(0), f(3), f(5).<details class="ans"><summary>Show Answer</summary><p>f(0) = |−6| = <strong>6</strong>; f(3) = |0| = <strong>0</strong>; f(5) = |4| = <strong>4</strong></p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = x² − 2x + 1, show that f(x) = (x − 1)².<details class="ans"><summary>Show Answer</summary><p>Expand (x−1)² = x² − 2x + 1 ✓. So f(x) = (x−1)².</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = 2x + 3 and f(k) = f(2k − 1), find k.<details class="ans"><summary>Show Answer</summary><p>2k + 3 = 2(2k−1) + 3 → 2k + 3 = 4k − 2 + 3 → 2k + 3 = 4k + 1 → 2 = 2k → k = <strong>1</strong></p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Identifying Functions from Graphs and Tables</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A graph is a straight line through the origin. Is it a function?<details class="ans"><summary>Show Answer</summary><p>Yes. Any non-vertical straight line passes the vertical line test.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A circle centred at the origin with radius 5 — is it a function? Use the vertical line test.<details class="ans"><summary>Show Answer</summary><p>No. A vertical line through x = 0 (for instance) intersects the circle at (0, 5) and (0, −5) — two points.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Table: x → −2, 0, 2, 4 and y → 5, 5, 5, 5. Is this a function?<details class="ans"><summary>Show Answer</summary><p>Yes — it is a constant function f(x) = 5. Each input maps to exactly one output.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A graph looks like a parabola opening upward. Does it represent a function?<details class="ans"><summary>Show Answer</summary><p>Yes. A vertical line can hit a parabola (opening up or down) at most once, so it passes the test.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is y = √x a function? What restriction applies?<details class="ans"><summary>Show Answer</summary><p>Yes, provided we take only the principal (non-negative) square root. The domain is x ≥ 0 and range is y ≥ 0.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The mapping diagram shows: 1→a, 2→b, 2→c, 3→d. Is it a function?<details class="ans"><summary>Show Answer</summary><p>No. Input 2 maps to both b and c, violating the single-output rule.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can two different inputs share the same output and still form a function?<details class="ans"><summary>Show Answer</summary><p>Yes. For example f(2) = 4 and f(−2) = 4 is perfectly valid — the rule only says each input has one output, not that outputs must be unique.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A graph has a horizontal line y = 3. Does it represent a function?<details class="ans"><summary>Show Answer</summary><p>Yes. Every x maps to exactly one y-value (3). It is a constant function.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain why a vertical line x = 2 does NOT represent a function.<details class="ans"><summary>Show Answer</summary><p>For x = 2, there are infinitely many y-values (the entire vertical line). One input maps to infinitely many outputs — not a function.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Does the graph of y = |x| represent a function? Describe its shape.<details class="ans"><summary>Show Answer</summary><p>Yes. y = |x| is a V-shaped graph with vertex at the origin; the right arm has slope +1 and the left arm slope −1. Every x gives exactly one y.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Challenge — Functions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If f(x) = x² − 9, for what value(s) of x is f(x) = 0?<details class="ans"><summary>Show Answer</summary><p>x² = 9 → x = ±3</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a real-life example of a function. Identify the input and output.<details class="ans"><summary>Show Answer</summary><p>Example: the area of a square as a function of its side length — input: side s, output: area s². Each side length gives exactly one area.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = 2x + 1 and g(x) = x − 3, find f(g(5)).<details class="ans"><summary>Show Answer</summary><p>g(5) = 2; f(2) = 5. Answer: <strong>5</strong></p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A function machine outputs 3 times the input minus 4. Write f(x) and find f(7).<details class="ans"><summary>Show Answer</summary><p>f(x) = 3x − 4; f(7) = 21 − 4 = <strong>17</strong></p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Given f(x) = x² + 3x, find f(−2).<details class="ans"><summary>Show Answer</summary><p>f(−2) = 4 + (−6) = <strong>−2</strong></p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If f(1) = 5, f(2) = 9, f(3) = 13, what is the rule? Write f(n).<details class="ans"><summary>Show Answer</summary><p>The outputs increase by 4 each time. f(1) = 5 = 4(1) + 1. So <strong>f(n) = 4n + 1</strong>.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = 1/x, why can x not equal 0?<details class="ans"><summary>Show Answer</summary><p>Division by zero is undefined; there is no output for x = 0, so x = 0 is excluded from the domain.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = x³, find f(2), f(−2), and state whether f is even or odd.<details class="ans"><summary>Show Answer</summary><p>f(2) = 8; f(−2) = −8. Since f(−x) = −f(x), f is an <strong>odd function</strong>.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The cost C of buying n pens at ₹5 each is C(n) = 5n. Find C(12) and interpret it.<details class="ans"><summary>Show Answer</summary><p>C(12) = ₹60. Buying 12 pens costs ₹60.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = ax + b, f(0) = 4, and f(2) = 10, find a and b.<details class="ans"><summary>Show Answer</summary><p>f(0) = b = 4; f(2) = 2a + 4 = 10 → a = 3. So f(x) = 3x + 4.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Domain and Range</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:domain-and-range/v/domain-and-range-from-graph" target="_blank">Domain and Range from a Graph</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:domain-and-range/v/domain-and-range-1" target="_blank">Domain and Range of a Function</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=O0uUVH8dRiU" target="_blank">Domain and Range</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BQMyeQOLvpg" target="_blank">Why Infinity Comes in Different Sizes</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=kvGsIo1TmsM" target="_blank">How Functions Work</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Understanding Domain and Range</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define domain and range of a function.<details class="ans"><summary>Show Answer</summary><p><strong>Domain</strong>: the set of all valid input (x) values. <strong>Range</strong>: the set of all resulting output (y) values.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = {(1,3),(2,5),(3,7)}, state the domain and range.<details class="ans"><summary>Show Answer</summary><p>Domain = {1, 2, 3}; Range = {3, 5, 7}</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the domain of f(x) = x + 4? (no restrictions)<details class="ans"><summary>Show Answer</summary><p>All real numbers, written ℝ or (−∞, +∞). Any x-value is valid.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the domain of f(x) = 1/(x−3)?<details class="ans"><summary>Show Answer</summary><p>x − 3 ≠ 0, so x ≠ 3. Domain: all real numbers except 3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the domain of f(x) = √(x − 5)?<details class="ans"><summary>Show Answer</summary><p>x − 5 ≥ 0 → x ≥ 5. Domain: [5, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = x², state the domain and range.<details class="ans"><summary>Show Answer</summary><p>Domain: all real numbers (−∞, ∞). Range: y ≥ 0, i.e. [0, ∞) since squares are never negative.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = −x², state the range.<details class="ans"><summary>Show Answer</summary><p>y ≤ 0. Range: (−∞, 0].</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A function has domain {−2, 0, 2, 4} and rule f(x) = 2x + 1. Find the range.<details class="ans"><summary>Show Answer</summary><p>f(−2)=−3, f(0)=1, f(2)=5, f(4)=9. Range = {−3, 1, 5, 9}</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For the graph y = √x (x ≥ 0), what is the range?<details class="ans"><summary>Show Answer</summary><p>y ≥ 0, i.e. [0, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can the range of a function be a single number? Give an example.<details class="ans"><summary>Show Answer</summary><p>Yes — a constant function like f(x) = 7 has range {7}.</p></div></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Domain Restrictions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the domain of f(x) = 1/x.<details class="ans"><summary>Show Answer</summary><p>x ≠ 0. Domain: all reals except 0.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the domain of f(x) = √(2x + 8).<details class="ans"><summary>Show Answer</summary><p>2x + 8 ≥ 0 → x ≥ −4. Domain: [−4, ∞).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the domain of f(x) = 3/(x² − 1).<details class="ans"><summary>Show Answer</summary><p>x² − 1 ≠ 0 → x ≠ ±1. Domain: all reals except −1 and 1.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The temperature T (°C) of a city on a given day is a function of time t (hours), 0 ≤ t ≤ 24. State the domain.<details class="ans"><summary>Show Answer</summary><p>Domain: 0 ≤ t ≤ 24 (closed interval [0, 24]).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For a quadratic y = x² + 2x − 3, is there any restriction on the domain?<details class="ans"><summary>Show Answer</summary><p>No. Polynomials are defined for all real numbers. Domain: ℝ.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Why does f(x) = √(−x) have domain x ≤ 0?<details class="ans"><summary>Show Answer</summary><p>We need −x ≥ 0, which means x ≤ 0. Negative inputs make −x positive or zero.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = |x|, state the domain and range.<details class="ans"><summary>Show Answer</summary><p>Domain: all real numbers; Range: y ≥ 0, i.e. [0, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ball is thrown and its height h = −5t² + 20t for t ≥ 0 until it lands. Find the domain (values of t when h ≥ 0).<details class="ans"><summary>Show Answer</summary><p>h = 0: −5t² + 20t = 0 → t(−5t + 20) = 0 → t = 0 or t = 4. Domain: 0 ≤ t ≤ 4.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find domain of f(x) = √(9 − x²).<details class="ans"><summary>Show Answer</summary><p>9 − x² ≥ 0 → x² ≤ 9 → −3 ≤ x ≤ 3. Domain: [−3, 3].</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = 1/√(x + 4), find the domain.<details class="ans"><summary>Show Answer</summary><p>x + 4 > 0 (strictly, to avoid zero denominator) → x > −4. Domain: (−4, ∞).</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Range from Equations and Graphs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For f(x) = 2x + 3, what is the range?<details class="ans"><summary>Show Answer</summary><p>All real numbers — a non-constant linear function covers all outputs.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = x² + 2, state the minimum value and range.<details class="ans"><summary>Show Answer</summary><p>Minimum at x = 0: f(0) = 2. Range: [2, ∞).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = −x² + 5, state the maximum value and range.<details class="ans"><summary>Show Answer</summary><p>Maximum at x = 0: f(0) = 5. Range: (−∞, 5].</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola has vertex (2, −3) and opens upward. State the range.<details class="ans"><summary>Show Answer</summary><p>Range: y ≥ −3, i.e. [−3, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = √x, describe the range.<details class="ans"><summary>Show Answer</summary><p>y ≥ 0 — the square root of a non-negative number is always non-negative.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A graph has a minimum y-value of −4 and goes up infinitely. State the range.<details class="ans"><summary>Show Answer</summary><p>[−4, ∞)</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = 3 (constant), what is the range?<details class="ans"><summary>Show Answer</summary><p>{3} — the range contains only the single value 3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = (x−1)² + 4, state vertex and range.<details class="ans"><summary>Show Answer</summary><p>Vertex: (1, 4). Opens upward. Range: [4, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = √(9 − x²), determine the range.<details class="ans"><summary>Show Answer</summary><p>Domain [−3, 3]; at x = 0, f = 3; at x = ±3, f = 0. Range: [0, 3].</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = −2(x + 3)² + 7, state the vertex, direction, and range.<details class="ans"><summary>Show Answer</summary><p>Vertex: (−3, 7); opens downward (a = −2 < 0). Range: (−∞, 7].</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Domain and Range Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A function is defined only for x ∈ {1, 2, 3}. If f(x) = x², list all domain-range pairs.<details class="ans"><summary>Show Answer</summary><p>(1,1), (2,4), (3,9). Domain={1,2,3}; Range={1,4,9}.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = 2x² − 8, find the minimum value and hence the range.<details class="ans"><summary>Show Answer</summary><p>Vertex at x=0: f(0)=−8. Range: [−8, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The height of a Ferris wheel seat is h(t) = 10sin(t) + 15 metres. Without computing, state the range of h.<details class="ans"><summary>Show Answer</summary><p>sin(t) ∈ [−1, 1], so h ∈ [10(−1)+15, 10(1)+15] = [5, 25]. Range: 5 m to 25 m.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = x² − 4x + 4, factorise and state the range.<details class="ans"><summary>Show Answer</summary><p>f(x) = (x−2)². Min at x=2: f=0. Range: [0, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A pupil says "the domain is the y-values and the range is the x-values." Correct this mistake.<details class="ans"><summary>Show Answer</summary><p>It's the reverse: <strong>domain is the set of x-values (inputs)</strong>; <strong>range is the set of y-values (outputs)</strong>.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = 1/x², find the domain and describe the range.<details class="ans"><summary>Show Answer</summary><p>Domain: x ≠ 0. Range: y > 0 (always positive, never zero, can be arbitrarily large).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">List two functions with domain ℝ and range [0, ∞).<details class="ans"><summary>Show Answer</summary><p>f(x) = x² and f(x) = |x|.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For f(x) = √(x+2) − 3, find domain and range.<details class="ans"><summary>Show Answer</summary><p>Domain: x ≥ −2. At x=−2, y=−3; increases from there. Range: [−3, ∞).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Does a function with domain {1,2,3,4} necessarily have 4 elements in its range?<details class="ans"><summary>Show Answer</summary><p>No. If f(1)=f(2)=f(3)=f(4)=5, the range is {5} — just one element.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For the circle x² + y² = 25, is y a function of x? If we restrict y ≥ 0, what is the range?<details class="ans"><summary>Show Answer</summary><p>The full circle is not a function. With y ≥ 0 (upper semicircle), range is [0, 5].</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Linear Functions and Graphs</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:slope/v/slope-of-a-line" target="_blank">Slope of a Line</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:slope-intercept-form/v/slope-intercept-form" target="_blank">Slope-Intercept Form</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=MXV65i9g1Xg" target="_blank">Graphing Linear Equations</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BQMyeQOLvpg" target="_blank">Lines and Equations</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=NybHckSEQBI" target="_blank">Linear Functions in Real Life</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Slope and Intercepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the slope-intercept form of a linear function and label each part.<details class="ans"><summary>Show Answer</summary><p>y = mx + c, where m is the slope (gradient) and c is the y-intercept.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the slope and y-intercept of y = 4x − 7.<details class="ans"><summary>Show Answer</summary><p>Slope m = 4; y-intercept c = −7 (point (0, −7)).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the slope of a horizontal line y = 5?<details class="ans"><summary>Show Answer</summary><p>Slope = 0. Horizontal lines are flat — no rise for any run.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the slope between points (2, 3) and (6, 11).<details class="ans"><summary>Show Answer</summary><p>m = (11−3)/(6−2) = 8/4 = <strong>2</strong></p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A line has slope −3 and passes through (0, 4). Write the equation.<details class="ans"><summary>Show Answer</summary><p>y = −3x + 4</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the x-intercept of y = 2x − 6.<details class="ans"><summary>Show Answer</summary><p>Set y = 0: 0 = 2x − 6 → x = 3. x-intercept is (3, 0).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write in slope-intercept form: 3x + 2y = 12.<details class="ans"><summary>Show Answer</summary><p>2y = −3x + 12 → y = −(3/2)x + 6. Slope: −3/2; y-intercept: 6.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two points on a line are (1, 5) and (3, 11). Find the equation of the line.<details class="ans"><summary>Show Answer</summary><p>m = (11−5)/(3−1) = 3. y − 5 = 3(x−1) → y = 3x + 2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Are the lines y = 2x + 1 and y = 2x − 5 parallel? Explain.<details class="ans"><summary>Show Answer</summary><p>Yes. Both have slope 2 but different y-intercepts — parallel lines never meet.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Line A has slope 3 and line B has slope −1/3. Are they perpendicular?<details class="ans"><summary>Show Answer</summary><p>Yes. Product of slopes = 3 × (−1/3) = −1, confirming perpendicularity.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Graphing and Reading Linear Functions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe how to plot y = x + 2 using two points.<details class="ans"><summary>Show Answer</summary><p>At x=0: y=2 → (0,2). At x=3: y=5 → (3,5). Draw a straight line through these points.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A graph shows a straight line crossing (0, −1) with slope 2. Write the equation.<details class="ans"><summary>Show Answer</summary><p>y = 2x − 1</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Plot y = −x + 4 and state where it crosses both axes.<details class="ans"><summary>Show Answer</summary><p>y-intercept: (0, 4). x-intercept: set y=0 → x=4 → (4, 0).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A line has a negative slope and positive y-intercept. Describe its direction on a graph.<details class="ans"><summary>Show Answer</summary><p>It falls from left to right, starting above the origin on the y-axis.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">From a graph, a line passes through (0, 3) and (4, 0). Find the slope and equation.<details class="ans"><summary>Show Answer</summary><p>m = (0−3)/(4−0) = −3/4. Equation: y = −(3/4)x + 3.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Graph y = (1/2)x − 3. Where does it cross the x-axis?<details class="ans"><summary>Show Answer</summary><p>0 = (1/2)x − 3 → x = 6. Crosses x-axis at (6, 0).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The cost of a taxi ride is C = 2.5d + 5 where d is distance in km. Find C(10) and explain.<details class="ans"><summary>Show Answer</summary><p>C(10) = 25 + 5 = ₹30. A 10 km ride costs ₹30; the ₹5 is a fixed boarding charge.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Do the lines y = 3x − 1 and y = −(1/3)x + 4 intersect perpendicularly?<details class="ans"><summary>Show Answer</summary><p>Slopes: 3 and −1/3. Product = −1. Yes, they are perpendicular.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of the line through (−2, 1) with slope 4.<details class="ans"><summary>Show Answer</summary><p>y − 1 = 4(x − (−2)) → y = 4x + 9.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two linear functions: f(x) = x + 2 and g(x) = −2x + 8. Find their intersection point.<details class="ans"><summary>Show Answer</summary><p>x + 2 = −2x + 8 → 3x = 6 → x = 2; y = 4. Intersection: (2, 4).</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Slope Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A ramp rises 3 m over a horizontal distance of 12 m. What is its slope?<details class="ans"><summary>Show Answer</summary><p>Slope = rise/run = 3/12 = 1/4 = 0.25</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The temperature drops from 20°C to 8°C in 4 hours. Find the rate of change (slope).<details class="ans"><summary>Show Answer</summary><p>(8 − 20)/(4 − 0) = −12/4 = −3°C per hour.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A car travels at 60 km/h. Write distance d as a function of time t (hours).<details class="ans"><summary>Show Answer</summary><p>d(t) = 60t. This is a linear function with slope 60.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A graph of savings (₹) vs months is a straight line through (0, 200) and (6, 800). Find the monthly savings rate.<details class="ans"><summary>Show Answer</summary><p>Slope = (800−200)/6 = 600/6 = ₹100 per month.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A water tank initially has 500 litres and drains at 25 litres/min. Write V(t) and find when it is empty.<details class="ans"><summary>Show Answer</summary><p>V(t) = 500 − 25t. Empty when V=0: t = 20 min.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain what a slope of 0 means in a real-world context.<details class="ans"><summary>Show Answer</summary><p>No change over time — for example, an object at rest, constant temperature, or fixed price.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What does a negative slope represent in a distance-time graph?<details class="ans"><summary>Show Answer</summary><p>The object is returning toward the starting point — distance from origin is decreasing.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A plant grows from 5 cm to 17 cm in 6 weeks. Find the growth function G(t).<details class="ans"><summary>Show Answer</summary><p>Slope = (17−5)/6 = 2 cm/week. G(t) = 2t + 5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two trains start at the same station. Train A: d = 80t; Train B: d = 60t + 40. After how many hours are they at the same distance?<details class="ans"><summary>Show Answer</summary><p>80t = 60t + 40 → 20t = 40 → t = 2 hours.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A line has equation 5x − 2y = 10. Find its x-intercept, y-intercept, and slope.<details class="ans"><summary>Show Answer</summary><p>x-int: set y=0 → 5x=10 → (2,0). y-int: set x=0 → −2y=10 → (0,−5). Rearrange: y=(5/2)x−5; slope=5/2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Linear Functions Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If f(x) = mx + c passes through (1, 7) and (3, 13), find m and c.<details class="ans"><summary>Show Answer</summary><p>m = (13−7)/(3−1) = 3. c = 7−3(1) = 4. f(x) = 3x + 4.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of a line parallel to y = 5x − 2 passing through (0, 3).<details class="ans"><summary>Show Answer</summary><p>Same slope 5, y-intercept 3: y = 5x + 3.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of a line perpendicular to y = 4x + 1 passing through (0, −2).<details class="ans"><summary>Show Answer</summary><p>Perpendicular slope = −1/4. y = −(1/4)x − 2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A pupil claims y = x² is linear. Correct the mistake.<details class="ans"><summary>Show Answer</summary><p>y = x² is <strong>quadratic</strong> — the variable is squared, producing a curved parabola, not a straight line.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The lines 2y = kx + 6 and y = 3x − 1 are parallel. Find k.<details class="ans"><summary>Show Answer</summary><p>Rewrite 2y=kx+6 → y=(k/2)x+3. Parallel means same slope: k/2 = 3 → k = 6.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">On a graph, a linear function starts at (0, 10) and reaches (5, 0). What is the slope and what does it mean?<details class="ans"><summary>Show Answer</summary><p>m = (0−10)/(5−0) = −2. The quantity decreases by 2 units for each unit increase in x.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is x = 4 a function? What kind of line is it?<details class="ans"><summary>Show Answer</summary><p>x = 4 is a <strong>vertical line</strong> — not a function, as x = 4 maps to all y-values.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Plot the following: y = 2x + 1 for x ∈ {−2, −1, 0, 1, 2}. List all (x, y) pairs.<details class="ans"><summary>Show Answer</summary><p>(−2,−3), (−1,−1), (0,1), (1,3), (2,5).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The total cost of printing T-shirts is C = 120 + 15n. What does the 120 represent? What does the 15 represent?<details class="ans"><summary>Show Answer</summary><p>₹120 is the fixed setup cost; ₹15 is the cost per T-shirt (slope = rate of change).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find where y = 3x − 9 and y = −x + 3 intersect. Verify your answer.<details class="ans"><summary>Show Answer</summary><p>3x−9=−x+3 → 4x=12 → x=3; y=0. Intersection: (3,0). Check: 3(3)−9=0 ✓ and −3+3=0 ✓.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Quadratic Function y = x²</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:intro-to-parabolas/v/parabola-intuition" target="_blank">Parabola Intuition</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:graphs-of-quadratics/v/graphs-of-quadratic-functions" target="_blank">Graphs of Quadratics</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=6E4JDv14uSs" target="_blank">Quadratic Functions</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=X1E7I7_r3Cw" target="_blank">Parabolas and Projectiles</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hgh3AaOjPDg" target="_blank">Why are Manhole Covers Round?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> The Basic Parabola y = x²</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Complete the table: x = −3, −2, −1, 0, 1, 2, 3 for y = x².<details class="ans"><summary>Show Answer</summary><p>y: 9, 4, 1, 0, 1, 4, 9. The graph is symmetric about the y-axis.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the vertex of y = x²? Where is the axis of symmetry?<details class="ans"><summary>Show Answer</summary><p>Vertex: (0, 0). Axis of symmetry: x = 0 (the y-axis).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Does y = x² open upward or downward? What is the minimum value?<details class="ans"><summary>Show Answer</summary><p>Opens <strong>upward</strong> (coefficient of x² is +1 > 0). Minimum value: y = 0 at x = 0.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Why does y = x² give the same output for x = 3 and x = −3?<details class="ans"><summary>Show Answer</summary><p>Because squaring removes the sign: (3)² = (−3)² = 9. The function is even — symmetric about the y-axis.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Compare y = x² and y = 2x². Which is steeper?<details class="ans"><summary>Show Answer</summary><p>y = 2x² is steeper — the coefficient 2 stretches the parabola vertically, making it narrower.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Compare y = x² and y = (1/2)x². Which is wider?<details class="ans"><summary>Show Answer</summary><p>y = (1/2)x² is wider — a coefficient less than 1 compresses the graph vertically, spreading it horizontally.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How does y = −x² differ from y = x² in terms of graph shape?<details class="ans"><summary>Show Answer</summary><p>y = −x² is a reflection of y = x² in the x-axis — it opens downward with a maximum at the origin.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = x², find the y-value when x = 2.5.<details class="ans"><summary>Show Answer</summary><p>y = (2.5)² = 6.25</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = x², solve for x when y = 49.<details class="ans"><summary>Show Answer</summary><p>x² = 49 → x = ±7</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ball is dropped. Its distance fallen is d = 5t² metres. How far has it fallen after 3 seconds?<details class="ans"><summary>Show Answer</summary><p>d = 5(3²) = 45 metres.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Transformations of y = x²</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe the graph of y = x² + 3 compared to y = x².<details class="ans"><summary>Show Answer</summary><p>Shifted <strong>3 units upward</strong>. Vertex moves from (0,0) to (0,3).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe the graph of y = x² − 5 compared to y = x².<details class="ans"><summary>Show Answer</summary><p>Shifted <strong>5 units downward</strong>. Vertex: (0, −5).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe the graph of y = (x − 2)² compared to y = x².<details class="ans"><summary>Show Answer</summary><p>Shifted <strong>2 units to the right</strong>. Vertex: (2, 0).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe the graph of y = (x + 4)² compared to y = x².<details class="ans"><summary>Show Answer</summary><p>Shifted <strong>4 units to the left</strong>. Vertex: (−4, 0).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">State the vertex of y = (x − 1)² + 6.<details class="ans"><summary>Show Answer</summary><p>Vertex: (1, 6). Shifted 1 right and 6 up from origin.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">State the vertex of y = (x + 3)² − 2.<details class="ans"><summary>Show Answer</summary><p>Vertex: (−3, −2).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is the vertex of y = (x − 5)² + 1 a minimum or maximum? State the range.<details class="ans"><summary>Show Answer</summary><p>Minimum (opens upward). Vertex (5, 1). Range: [1, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of a parabola with vertex (3, 0) opening upward.<details class="ans"><summary>Show Answer</summary><p>y = (x − 3)²</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola is y = 2(x − 1)² + 3. How does the "2" affect the shape?<details class="ans"><summary>Show Answer</summary><p>It makes the parabola <strong>narrower</strong> (steeper) than y = x², stretching it vertically by a factor of 2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of a downward parabola with vertex at (0, 4).<details class="ans"><summary>Show Answer</summary><p>y = −x² + 4 (or y = −(x−0)² + 4).</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Sketching and Interpreting y = ax²</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Sketch y = x² and y = 3x² on the same axes. Which is narrower?<details class="ans"><summary>Show Answer</summary><p>y = 3x² is narrower — larger coefficient means steeper parabola.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = −2x², state the direction, vertex, and range.<details class="ans"><summary>Show Answer</summary><p>Opens downward; vertex (0,0); range: (−∞, 0].</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = 4x², calculate y at x = −1, 0, 1, 2.<details class="ans"><summary>Show Answer</summary><p>y = 4, 0, 4, 16.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Why does y = ax² always pass through the origin?<details class="ans"><summary>Show Answer</summary><p>At x = 0: y = a(0)² = 0. The vertex is always at the origin for y = ax².</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = (1/4)x², find y when x = 8. Explain why the answer is bigger than x.<details class="ans"><summary>Show Answer</summary><p>y = (1/4)(64) = 16. Even though 1/4 < 1, x² = 64 is large enough that the result exceeds x = 8.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A company's profit P = 0.01n² (₹) for n items sold. Find P(100).<details class="ans"><summary>Show Answer</summary><p>P = 0.01 × 10000 = ₹100.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Graph y = x² and y = −x² together. Describe their relationship.<details class="ans"><summary>Show Answer</summary><p>They are reflections of each other across the x-axis — mirror images sharing vertex (0,0).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = ax², if y = 12 when x = 2, find a.<details class="ans"><summary>Show Answer</summary><p>12 = a(4) → a = 3. Function: y = 3x².</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A child slides down a parabolic slide modelled by y = (1/3)x² for x ∈ [−3, 0]. Find the height at x = −3.<details class="ans"><summary>Show Answer</summary><p>y = (1/3)(9) = 3 metres.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Compare y = 0.1x² and y = 10x². Which has a wider opening and why?<details class="ans"><summary>Show Answer</summary><p>y = 0.1x² is much wider — its small coefficient means y grows slowly. y = 10x² is very narrow — y grows quickly.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Quadratic y = x² Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For y = x² − 4, where does the parabola cross the x-axis?<details class="ans"><summary>Show Answer</summary><p>Set y=0: x²=4 → x=±2. Crosses at (−2,0) and (2,0).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">State the axis of symmetry for y = (x − 5)² + 3.<details class="ans"><summary>Show Answer</summary><p>x = 5 (vertical line through vertex).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A parabola passes through (0,0) and (4,16). Find the rule y = ax².<details class="ans"><summary>Show Answer</summary><p>16 = a(16) → a = 1. Rule: y = x².</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = 2x² + 3, find the minimum y-value and range.<details class="ans"><summary>Show Answer</summary><p>Min at x=0: y=3. Range: [3, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The height of a thrown ball is h = −t² + 4t. Find the maximum height.<details class="ans"><summary>Show Answer</summary><p>Vertex at t = −b/2a = 4/2 = 2; h(2) = −4+8 = 4 metres.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">What is the y-intercept of y = 3x² − 7x + 2?<details class="ans"><summary>Show Answer</summary><p>Set x=0: y = 2. Y-intercept: (0, 2).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe three differences between y = x and y = x².<details class="ans"><summary>Show Answer</summary><p>1) y=x is a straight line; y=x² is a curved parabola. 2) y=x has no minimum; y=x² has minimum at (0,0). 3) y=x is one-to-one; y=x² is two-to-one (e.g. x=2 and x=−2 give same y).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = x² − 2x + 1, find x when y = 0.<details class="ans"><summary>Show Answer</summary><p>(x−1)²=0 → x=1 (one repeated root).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola y = ax² passes through (3, 18). Find a and write the equation.<details class="ans"><summary>Show Answer</summary><p>18 = 9a → a = 2. y = 2x².</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain why y = x² has no negative y-values.<details class="ans"><summary>Show Answer</summary><p>Squaring any real number always gives a non-negative result. So y = x² ≥ 0 for all real x.</p></div></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Properties of Parabolas y = ax² + bx + c</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:features-of-quadratic-functions/v/quadratic-functions-review" target="_blank">Features of Quadratics</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:quadratic-vertex/v/ex3-completing-the-square" target="_blank">Finding the Vertex</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=6E4JDv14uSs" target="_blank">Quadratic Functions and Parabolas</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=X1E7I7_r3Cw" target="_blank">The Quadratic Formula</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hgh3AaOjPDg" target="_blank">Parabolic Flight Path</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Key Features</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For y = 2x² − 4x + 1, state a, b, c.<details class="ans"><summary>Show Answer</summary><p>a = 2, b = −4, c = 1.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Does y = 3x² + x − 2 open upward or downward?<details class="ans"><summary>Show Answer</summary><p>Upward — a = 3 > 0.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Does y = −x² + 5x + 3 open upward or downward?<details class="ans"><summary>Show Answer</summary><p>Downward — a = −1 < 0.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the y-intercept of y = 4x² − 3x + 7.<details class="ans"><summary>Show Answer</summary><p>Set x = 0: y = 7. Y-intercept: (0, 7).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the axis of symmetry of y = x² − 6x + 5 using x = −b/2a.<details class="ans"><summary>Show Answer</summary><p>x = −(−6)/(2×1) = 6/2 = 3. Axis: x = 3.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the vertex of y = x² − 6x + 5.<details class="ans"><summary>Show Answer</summary><p>Axis x=3; y(3) = 9−18+5 = −4. Vertex: (3, −4).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the axis of symmetry of y = −2x² + 8x − 3.<details class="ans"><summary>Show Answer</summary><p>x = −8/(2×−2) = −8/−4 = 2. Axis: x = 2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the vertex of y = −2x² + 8x − 3.<details class="ans"><summary>Show Answer</summary><p>x=2; y = −2(4)+16−3 = −8+16−3 = 5. Vertex: (2, 5).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola has vertex (4, −1) and opens upward. Does it have a minimum or maximum?<details class="ans"><summary>Show Answer</summary><p>Minimum — value is −1 at x = 4.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = x² − 4x + 4, find the zeroes (x-intercepts).<details class="ans"><summary>Show Answer</summary><p>y = (x−2)² = 0 → x = 2. One repeated zero at (2, 0).</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Zeroes and Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the zeroes of y = x² − 9 by factorising.<details class="ans"><summary>Show Answer</summary><p>(x−3)(x+3) = 0 → x = 3 or x = −3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of y = x² + 5x + 6.<details class="ans"><summary>Show Answer</summary><p>(x+2)(x+3)=0 → x = −2 or x = −3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of y = x² − 5x + 6.<details class="ans"><summary>Show Answer</summary><p>(x−2)(x−3)=0 → x = 2 or x = 3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">How many zeroes does y = x² + 4 have? Why?<details class="ans"><summary>Show Answer</summary><p>None — x² + 4 ≥ 4 > 0 always. The parabola never touches the x-axis.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola has zeroes at x = −1 and x = 5. Write its equation in factored form (a = 1).<details class="ans"><summary>Show Answer</summary><p>y = (x+1)(x−5) = x² − 4x − 5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = 2x² − 8, find the x-intercepts.<details class="ans"><summary>Show Answer</summary><p>0 = 2x² − 8 → x² = 4 → x = ±2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The axis of symmetry of a parabola is x = 3 and one zero is at x = 1. Find the other zero.<details class="ans"><summary>Show Answer</summary><p>The zeroes are symmetric about x=3. Other zero: x = 3 + (3−1) = 5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ball's height h = −5t² + 10t. Find when it hits the ground (h = 0).<details class="ans"><summary>Show Answer</summary><p>−5t(t−2) = 0 → t = 0 (launch) or t = 2 seconds.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Parabola y = x² − kx + 9 has exactly one zero. Find k.<details class="ans"><summary>Show Answer</summary><p>Discriminant = 0: k² − 36 = 0 → k = ±6.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of a parabola are 2 and 8. What is the axis of symmetry?<details class="ans"><summary>Show Answer</summary><p>x = (2+8)/2 = 5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Vertex and Maximum/Minimum</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the vertex of y = x² + 4x + 3.<details class="ans"><summary>Show Answer</summary><p>Axis x = −4/2 = −2; y = 4−8+3 = −1. Vertex: (−2, −1).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">State the minimum value of y = x² + 4x + 3.<details class="ans"><summary>Show Answer</summary><p>−1 (at x = −2).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A parabola opens downward and has vertex (3, 10). What is the maximum value?<details class="ans"><summary>Show Answer</summary><p>Maximum y = 10, occurring at x = 3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A rocket's height h = −4t² + 24t. Find the maximum height and time to reach it.<details class="ans"><summary>Show Answer</summary><p>t = 24/8 = 3 s; h(3) = −36 + 72 = 36 m.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = −x² + 6x − 5, find the vertex and maximum.<details class="ans"><summary>Show Answer</summary><p>x = 6/2 = 3; y = −9+18−5 = 4. Vertex (3,4); max = 4.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = 3x² − 12x + 7, find the axis of symmetry and minimum value.<details class="ans"><summary>Show Answer</summary><p>x = 12/6 = 2; y(2) = 12−24+7 = −5. Min = −5 at x = 2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A farmer has 40 m of fencing to make a rectangular pen against a wall. One side is the wall (no fence needed). If the pen's width is x, express the area and find the maximum.<details class="ans"><summary>Show Answer</summary><p>Two widths + one length = 40 → length = 40−2x. Area A = x(40−2x) = −2x² + 40x. Max at x=10: A = −200+400 = 200 m².</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = 2(x+1)² − 8, find the minimum value and zeros.<details class="ans"><summary>Show Answer</summary><p>Min = −8 at x=−1. Zeros: 2(x+1)²=8 → (x+1)²=4 → x=1 or x=−3.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with vertex (5, 2) that opens upward.<details class="ans"><summary>Show Answer</summary><p>y = (x−5)² + 2</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The profit P = −2n² + 120n − 800 for n units sold. Find optimal n.<details class="ans"><summary>Show Answer</summary><p>n = −120/(2×−2) = 30 units.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Parabola Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A parabola has equation y = x² − 8x + 12. Find zeroes, vertex, and range.<details class="ans"><summary>Show Answer</summary><p>Zeroes: (x−2)(x−6)=0 → x=2,6. Vertex: x=4, y=16−32+12=−4. Range: [−4,∞).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = −x² + 4, find the maximum and where it crosses the x-axis.<details class="ans"><summary>Show Answer</summary><p>Max: y=4 at x=0. Crosses x-axis: x²=4 → x=±2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write the general form of y = (x−3)² + 2 (expand it).<details class="ans"><summary>Show Answer</summary><p>y = x²−6x+9+2 = x²−6x+11.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is (3, 0) on the parabola y = x² − 5x + 6? Check.<details class="ans"><summary>Show Answer</summary><p>y = 9−15+6=0. Yes, (3,0) is on the parabola.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two parabolas: y = x² − 2 and y = −x² + 4. Find their intersection points.<details class="ans"><summary>Show Answer</summary><p>x²−2=−x²+4 → 2x²=6 → x²=3 → x=±√3. Points: (√3,1) and (−√3,1).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = x² + bx + 9, for what value of b does the parabola just touch the x-axis?<details class="ans"><summary>Show Answer</summary><p>Discriminant = 0: b²−36=0 → b=±6.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Give the y-intercept, axis of symmetry, and vertex of y = 2x² − 4x + 3.<details class="ans"><summary>Show Answer</summary><p>y-int: (0,3). Axis: x=1. Vertex: y=2−4+3=1 → (1,1).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Describe the effect of changing c in y = ax² + bx + c on the parabola.<details class="ans"><summary>Show Answer</summary><p>Changing c shifts the parabola vertically — it changes the y-intercept without affecting the shape or axis of symmetry.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola opens upward, has vertex (2,−3), and passes through (0, 1). Find its equation.<details class="ans"><summary>Show Answer</summary><p>y = a(x−2)²−3. At (0,1): 1=4a−3 → a=1. y=(x−2)²−3.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = x² − 4x + 4, how many times does the parabola meet the x-axis? What does this mean?<details class="ans"><summary>Show Answer</summary><p>y=(x−2)²; one repeated root x=2. The parabola is <strong>tangent</strong> to the x-axis at (2,0).</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Vertex Form y = a(x − h)² + k</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:vertex-form/v/vertex-form-intro" target="_blank">Vertex Form Intro</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:completing-the-square/v/completing-the-square-1" target="_blank">Completing the Square</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=6E4JDv14uSs" target="_blank">Vertex Form of Quadratics</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=X1E7I7_r3Cw" target="_blank">Quadratic Applications</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hgh3AaOjPDg" target="_blank">Projectile Motion</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Reading Vertex Form</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the vertex of y = (x − 4)² + 5.<details class="ans"><summary>Show Answer</summary><p>Vertex: (4, 5).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">State the vertex of y = (x + 2)² − 7.<details class="ans"><summary>Show Answer</summary><p>h = −2, k = −7. Vertex: (−2, −7).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">State the vertex of y = 3(x − 1)² + 0.<details class="ans"><summary>Show Answer</summary><p>Vertex: (1, 0).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = −2(x + 3)² + 4, state direction, vertex, and maximum value.<details class="ans"><summary>Show Answer</summary><p>Opens downward (a=−2). Vertex (−3, 4). Maximum = 4.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = (x − 6)² + 2, write the axis of symmetry and range.<details class="ans"><summary>Show Answer</summary><p>Axis: x = 6. Range: [2, ∞).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand y = (x − 3)² + 1 into standard form.<details class="ans"><summary>Show Answer</summary><p>y = x² − 6x + 9 + 1 = x² − 6x + 10.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand y = 2(x + 1)² − 5 into standard form.<details class="ans"><summary>Show Answer</summary><p>2(x²+2x+1)−5 = 2x²+4x+2−5 = 2x²+4x−3.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two parabolas have the same vertex (2, 3) but one opens up and one opens down. Write both equations.<details class="ans"><summary>Show Answer</summary><p>y = (x−2)²+3 (opens up) and y = −(x−2)²+3 (opens down).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = 4(x − 2)² + 3, find the y-intercept.<details class="ans"><summary>Show Answer</summary><p>x=0: y = 4(−2)²+3 = 16+3 = 19. Y-intercept: (0, 19).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write the vertex form of a parabola with vertex (0, 0) and a = 5.<details class="ans"><summary>Show Answer</summary><p>y = 5(x − 0)² + 0 = 5x²</p></div></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Converting to Vertex Form (Completing the Square)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write y = x² + 6x + 11 in vertex form.<details class="ans"><summary>Show Answer</summary><p>y = (x² + 6x + 9) + 2 = (x+3)² + 2. Vertex: (−3, 2).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write y = x² − 4x + 7 in vertex form.<details class="ans"><summary>Show Answer</summary><p>y = (x²−4x+4) + 3 = (x−2)² + 3. Vertex: (2, 3).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write y = x² + 2x − 3 in vertex form.<details class="ans"><summary>Show Answer</summary><p>y = (x+1)² − 4. Vertex: (−1, −4).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write y = x² − 8x in vertex form.<details class="ans"><summary>Show Answer</summary><p>y = (x−4)² − 16. Vertex: (4, −16).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write y = 2x² − 12x + 14 in vertex form.<details class="ans"><summary>Show Answer</summary><p>Factor 2: y=2(x²−6x)+14 = 2(x²−6x+9)−18+14 = 2(x−3)²−4. Vertex: (3,−4).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write y = −x² + 4x + 1 in vertex form.<details class="ans"><summary>Show Answer</summary><p>y=−(x²−4x)+1 = −(x²−4x+4)+4+1 = −(x−2)²+5. Vertex: (2,5).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Complete the square: x² + 10x + ___ = (x + ___)².<details class="ans"><summary>Show Answer</summary><p>Half of 10 is 5; 5² = 25. x²+10x+25=(x+5)².</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Why is completing the square useful for finding the vertex?<details class="ans"><summary>Show Answer</summary><p>It rewrites y=ax²+bx+c as y=a(x−h)²+k, directly revealing the vertex (h,k).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write y = 3x² + 6x + 5 in vertex form.<details class="ans"><summary>Show Answer</summary><p>y=3(x²+2x)+5=3(x+1)²−3+5=3(x+1)²+2. Vertex: (−1,2).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Given vertex form y = (x−h)²+k, explain what happens when k is negative.<details class="ans"><summary>Show Answer</summary><p>The vertex is <em>below</em> the x-axis — the parabola dips below zero before rising, giving two x-intercepts.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Shifts and Reflections</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe all transformations: y = 2(x − 3)² + 1 relative to y = x².<details class="ans"><summary>Show Answer</summary><p>Vertical stretch by 2, shift 3 units right, shift 1 unit up.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Describe all transformations: y = −(x + 2)² − 4 relative to y = x².<details class="ans"><summary>Show Answer</summary><p>Reflection in x-axis, shift 2 units left, shift 4 units down.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Starting from y = x², describe the steps to get y = (x − 1)² + 3.<details class="ans"><summary>Show Answer</summary><p>Shift 1 unit right (replace x with x−1), then shift 3 units up (add 3).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of the parabola obtained by shifting y = x² left 5 and down 2.<details class="ans"><summary>Show Answer</summary><p>y = (x+5)² − 2</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What does a negative value of a in vertex form do to the parabola?<details class="ans"><summary>Show Answer</summary><p>It reflects the parabola across the x-axis (flips it), so it opens downward.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If |a| > 1, the parabola is ___; if 0 < |a| < 1, the parabola is ___.<details class="ans"><summary>Show Answer</summary><p><strong>Narrower</strong> (vertically stretched); <strong>wider</strong> (vertically compressed).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The vertex of y = a(x−h)²+k is (3, −5) and the parabola passes through (5, 3). Find a.<details class="ans"><summary>Show Answer</summary><p>3 = a(5−3)²−5 → 3=4a−5 → a=2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write y = (x+1)² + 3 in vertex form and identify all key features.<details class="ans"><summary>Show Answer</summary><p>Already in vertex form. h=−1, k=3. Vertex (−1,3); opens up; axis x=−1; range [3,∞).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Parabola y = (x−p)² + q has vertex (4, −2). Write the equation and find where it crosses the x-axis.<details class="ans"><summary>Show Answer</summary><p>y=(x−4)²−2. Zeros: (x−4)²=2 → x=4±√2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two parabolas y=(x−2)²+3 and y=2(x−2)²+3 have the same vertex. How do they differ visually?<details class="ans"><summary>Show Answer</summary><p>Same vertex (2,3) and same direction, but y=2(x−2)²+3 is narrower (steeper) by factor 2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Vertex Form Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A parabola has vertex (−1, 4) and passes through (1, 0). Find a and write the equation.<details class="ans"><summary>Show Answer</summary><p>0=a(1+1)²+4=4a+4 → a=−1. y=−(x+1)²+4.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Convert y = x² − 10x + 21 to vertex form and find zeros.<details class="ans"><summary>Show Answer</summary><p>y=(x−5)²−4. Zeros: (x−5)²=4 → x=3 or x=7.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = −3(x−2)²+12, find the zeros and maximum.<details class="ans"><summary>Show Answer</summary><p>Max=12 at x=2. Zeros: (x−2)²=4 → x=0 or x=4.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write the vertex form for a parabola with axis x = −4 and min value −6.<details class="ans"><summary>Show Answer</summary><p>y = a(x+4)²−6 with a > 0. Simplest: y=(x+4)²−6.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ball's height h = −(t−3)² + 9 (metres). Find the max height, time of max, and when it lands.<details class="ans"><summary>Show Answer</summary><p>Max=9m at t=3s. Lands when h=0: (t−3)²=9 → t=0 or t=6s.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write the standard form of y = −2(x+4)²+3.<details class="ans"><summary>Show Answer</summary><p>y=−2(x²+8x+16)+3=−2x²−16x−32+3=−2x²−16x−29.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If vertex form is y=a(x−h)²+k and axis x=−3, k=5, write the general equation.<details class="ans"><summary>Show Answer</summary><p>y = a(x+3)² + 5 for any non-zero a.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A parabola is symmetric about x=2, has y-intercept 6, and vertex y-coordinate of 2. Find the equation.<details class="ans"><summary>Show Answer</summary><p>y=a(x−2)²+2. At x=0: 6=4a+2 → a=1. y=(x−2)²+2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Describe the graph of y = −(x−0)² + 0 in full. Name key features.<details class="ans"><summary>Show Answer</summary><p>y=−x². Opens downward, vertex (0,0), axis x=0, max=0, range (−∞,0].</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of a parabola with vertex (3,1) that also passes through (0,10).<details class="ans"><summary>Show Answer</summary><p>y=a(x−3)²+1. At (0,10): 10=9a+1 → a=1. y=(x−3)²+1.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Circles x² + y² = r²</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-circles/hs-geo-circle-basics/v/intro-to-circles" target="_blank">Introduction to Circles</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:conics/x2ec2f6f830c9fb89:circle-conics/v/equation-of-a-circle" target="_blank">Equation of a Circle</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=O-cawByg2aA" target="_blank">Circles and Pi</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=5iUh_CSjaSw" target="_blank">Pi and Circles</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hgh3AaOjPDg" target="_blank">Why is Pi Everywhere?</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Understanding the Circle Equation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the equation of a circle centred at the origin with radius 7.<details class="ans"><summary>Show Answer</summary><p>x² + y² = 49</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the radius of the circle x² + y² = 100?<details class="ans"><summary>Show Answer</summary><p>r² = 100 → r = 10.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the radius of x² + y² = 50? Leave in surd form.<details class="ans"><summary>Show Answer</summary><p>r = √50 = 5√2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Does the point (3, 4) lie on x² + y² = 25? Show working.<details class="ans"><summary>Show Answer</summary><p>3² + 4² = 9 + 16 = 25 ✓. Yes.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Does (5, 5) lie on x² + y² = 25?<details class="ans"><summary>Show Answer</summary><p>25 + 25 = 50 ≠ 25. No — outside.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the circumference of x² + y² = 36 (use π ≈ 3.14).<details class="ans"><summary>Show Answer</summary><p>r = 6. C = 2π(6) = 12π ≈ 37.7 units.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the area of x² + y² = 16.<details class="ans"><summary>Show Answer</summary><p>r = 4. A = π(16) = 16π ≈ 50.3 sq units.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find y when x = 0 on x² + y² = 49.<details class="ans"><summary>Show Answer</summary><p>y² = 49 → y = ±7.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find x when y = 3 on x² + y² = 25.<details class="ans"><summary>Show Answer</summary><p>x² = 16 → x = ±4.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Why can't x² + y² = r² represent a function?<details class="ans"><summary>Show Answer</summary><p>For any x in (−r, r), there are two y-values (positive and negative), failing the vertical line test.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Points On, Inside, Outside a Circle</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Classify (6, 8): on, inside, or outside x² + y² = 100.<details class="ans"><summary>Show Answer</summary><p>36 + 64 = 100. On the circle.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Classify (2, 2): on, inside, or outside x² + y² = 9.<details class="ans"><summary>Show Answer</summary><p>4 + 4 = 8 < 9. Inside.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Classify (4, 5): on, inside, or outside x² + y² = 36.<details class="ans"><summary>Show Answer</summary><p>16 + 25 = 41 > 36. Outside.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Verify that (5, 12) is on x² + y² = 169.<details class="ans"><summary>Show Answer</summary><p>25 + 144 = 169 ✓.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find all points on x² + y² = 25 where x = y.<details class="ans"><summary>Show Answer</summary><p>2x² = 25 → x = ±5/√2. Points: (5/√2, 5/√2) and (−5/√2, −5/√2).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">What are the four axis intercepts of x² + y² = 4?<details class="ans"><summary>Show Answer</summary><p>(2,0), (−2,0), (0,2), (0,−2).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A point (p,q) is inside x²+y²=r² if p²+q² ___ r².<details class="ans"><summary>Show Answer</summary><p>&lt; r².</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (5, 5) on x² + y² = 50?<details class="ans"><summary>Show Answer</summary><p>25 + 25 = 50 ✓. Yes.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find y for x = 8 on x² + y² = 100.<details class="ans"><summary>Show Answer</summary><p>y² = 36 → y = ±6.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A circle x²+y²=r² passes through (8, 6). Find r.<details class="ans"><summary>Show Answer</summary><p>r² = 64 + 36 = 100 → r = 10.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Radius, Area, Circumference</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the area and circumference of x²+y²=81 in terms of π.<details class="ans"><summary>Show Answer</summary><p>r=9. Area=81π; C=18π.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If area = 49π, find the circle equation.<details class="ans"><summary>Show Answer</summary><p>r=7. x²+y²=49.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If circumference = 10π, find r and the equation.<details class="ans"><summary>Show Answer</summary><p>r=5. x²+y²=25.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A circle has area 200π cm². Find its equation.<details class="ans"><summary>Show Answer</summary><p>r²=200. x²+y²=200.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Diameter = 24 cm. Write the equation centred at origin.<details class="ans"><summary>Show Answer</summary><p>r=12. x²+y²=144.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Circumference = 2π√5. Find r and equation.<details class="ans"><summary>Show Answer</summary><p>r=√5. x²+y²=5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two circles: x²+y²=4 and x²+y²=9. Ratio of areas.<details class="ans"><summary>Show Answer</summary><p>4π : 9π = 4:9.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Wheel has equation x²+y²=r². Travels 62.8 cm per revolution. Find r (π≈3.14).<details class="ans"><summary>Show Answer</summary><p>2πr=62.8 → r=10 cm.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the annulus area between x²+y²=25 and x²+y²=9.<details class="ans"><summary>Show Answer</summary><p>π(25−9)=16π sq units.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Double the radius: by what factor does area increase?<details class="ans"><summary>Show Answer</summary><p>Area ∝ r². Factor = 4.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Circle Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Circle passes through (0, 5). Write the equation.<details class="ans"><summary>Show Answer</summary><p>x²+y²=25.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Does y=x intersect x²+y²=1? Find points.<details class="ans"><summary>Show Answer</summary><p>2x²=1 → x=±1/√2. Points: (1/√2, 1/√2) and (−1/√2, −1/√2).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the circle where area equals circumference numerically (πr²=2πr).<details class="ans"><summary>Show Answer</summary><p>r=2. x²+y²=4.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Point (k, 2k) lies on x²+y²=45. Find k.<details class="ans"><summary>Show Answer</summary><p>5k²=45 → k=±3.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Compare x²+y²=16 and x²+y²=64: ratio of circumferences.<details class="ans"><summary>Show Answer</summary><p>Radii 4:8 = 1:2. Circumferences ratio = 1:2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How does Pythagoras connect to x²+y²=r²?<details class="ans"><summary>Show Answer</summary><p>Each point (x,y) and origin forms a right triangle with hypotenuse r. By Pythagoras: x²+y²=r².</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">State all intercepts of x²+y²=r².<details class="ans"><summary>Show Answer</summary><p>(r,0),(−r,0),(0,r),(0,−r).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the chord length connecting (3,4) and (−3,4) on x²+y²=25.<details class="ans"><summary>Show Answer</summary><p>|3−(−3)|=6 units.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Circle has r=√13. Write the equation.<details class="ans"><summary>Show Answer</summary><p>x²+y²=13.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">How does x²+y²=r² differ from (x−a)²+(y−b)²=r²?<details class="ans"><summary>Show Answer</summary><p>x²+y²=r² is centred at origin; (x−a)²+(y−b)²=r² is centred at (a,b).</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Plotting Circles on Coordinate Plane</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-circles/hs-geo-circle-basics/v/circles-in-the-coordinate-plane" target="_blank">Circles in the Coordinate Plane</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:conics/x2ec2f6f830c9fb89:circle-conics/v/graphing-circles" target="_blank">Graphing Circles</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=O-cawByg2aA" target="_blank">Coordinate Geometry and Circles</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=5iUh_CSjaSw" target="_blank">Circle Constructions</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hgh3AaOjPDg" target="_blank">The Beauty of the Circle</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Plotting Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">List the four axis-intercepts to sketch x²+y²=9.<details class="ans"><summary>Show Answer</summary><p>(3,0),(−3,0),(0,3),(0,−3).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For x²+y²=25, mark the radius on both positive axes.<details class="ans"><summary>Show Answer</summary><p>r=5. Mark (5,0) and (0,5).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe the symmetry of x²+y²=r².<details class="ans"><summary>Show Answer</summary><p>Symmetric about both axes and origin — 4-fold symmetry.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe the relationship between x²+y²=4 and x²+y²=16 on the same plane.<details class="ans"><summary>Show Answer</summary><p>Concentric circles — same centre (origin), radii 2 and 4.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find four non-axis points on x²+y²=25.<details class="ans"><summary>Show Answer</summary><p>(3,4),(−3,4),(3,−4),(−3,−4). Check: 9+16=25 ✓.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sketch x²+y²=1 (unit circle). Label intercepts.<details class="ans"><summary>Show Answer</summary><p>(1,0),(−1,0),(0,1),(0,−1).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For x²+y²=169, find 3 non-axis integer points using Pythagorean triples.<details class="ans"><summary>Show Answer</summary><p>5²+12²=169: (5,12),(12,5),(−5,12), etc.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For r=3.5, what are the axis intercepts?<details class="ans"><summary>Show Answer</summary><p>(3.5,0),(−3.5,0),(0,3.5),(0,−3.5).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can two circles x²+y²=r₁² and x²+y²=r₂² (r₁≠r₂) intersect?<details class="ans"><summary>Show Answer</summary><p>No — both centred at origin, a point can't be two different distances from the same point simultaneously.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">What does x²+y²≤16 represent vs x²+y²=16?<details class="ans"><summary>Show Answer</summary><p>= 16 is the circle boundary; ≤16 is the filled disc (all points on or inside).</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Finding Points and Quadrants</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the Q1 point on x²+y²=25 where x=3.<details class="ans"><summary>Show Answer</summary><p>y=4. Point: (3,4).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the Q3 point on x²+y²=25 where x=−3.<details class="ans"><summary>Show Answer</summary><p>y=−4. Point: (−3,−4).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In how many quadrants does x²+y²=r² have points?<details class="ans"><summary>Show Answer</summary><p>All four.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For x²+y²=100, find the Q2 point where y=8.<details class="ans"><summary>Show Answer</summary><p>x=−6. Point: (−6,8).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For x²+y²=200, find the Q4 point where x=10.<details class="ans"><summary>Show Answer</summary><p>y=−10. Point: (10,−10).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many points does the line y=k (|k|&lt;r) have on x²+y²=r²?<details class="ans"><summary>Show Answer</summary><p>Exactly 2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For x²+y²=50, find all points where x=y.<details class="ans"><summary>Show Answer</summary><p>x=±5. Points: (5,5) and (−5,−5).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Student marks (4,3) and says r=5. Verify.<details class="ans"><summary>Show Answer</summary><p>16+9=25=5². Correct.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find an integer-coordinate point on x²+y²=65.<details class="ans"><summary>Show Answer</summary><p>4²+7²=16+49=65. Point: (4,7).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Why is the topmost point of x²+y²=r² always (0, r)?<details class="ans"><summary>Show Answer</summary><p>At topmost point x=0; y²=r² and y=r (positive).</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Connections to Pythagorean Triples</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain the connection between x²+y²=r² and Pythagoras' theorem.<details class="ans"><summary>Show Answer</summary><p>Each point (x,y) forms a right triangle with legs x,y and hypotenuse r. The circle is the locus of all such points.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">List all Pythagorean-triple points (a,b) with a&lt;b on x²+y²=25.<details class="ans"><summary>Show Answer</summary><p>Only (3,4) and reflections: 3²+4²=25.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For x²+y²=100, list 2 Pythagorean-triple points in Q1.<details class="ans"><summary>Show Answer</summary><p>(6,8) and (8,6): 36+64=100 ✓.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Does (5,10) lie on x²+y²=125?<details class="ans"><summary>Show Answer</summary><p>25+100=125 ✓. Yes.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">List two integer-coordinate points on x²+y²=50.<details class="ans"><summary>Show Answer</summary><p>(5,5): 50 ✓; (1,7): 1+49=50 ✓.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Right triangle legs 9 and 12 — does the hypotenuse endpoint lie on x²+y²=225?<details class="ans"><summary>Show Answer</summary><p>81+144=225 ✓. Yes.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find all integer points on x²+y²=169.<details class="ans"><summary>Show Answer</summary><p>5²+12²=169, 13²+0²=169. Points: (±5,±12),(±12,±5),(±13,0),(0,±13) — 12 total.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If (a,b) is on x²+y²=r², show (b,a) is also on it.<details class="ans"><summary>Show Answer</summary><p>b²+a²=a²+b²=r² ✓.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A square OABC has diagonal equal to the diameter of x²+y²=2. Find the side length.<details class="ans"><summary>Show Answer</summary><p>Diameter=2√2. Side=diagonal/√2=2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Explain why (r·cosθ, r·sinθ) always lies on x²+y²=r².<details class="ans"><summary>Show Answer</summary><p>r²cos²θ + r²sin²θ = r²(cos²θ+sin²θ) = r²·1 = r² ✓.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Plotting and Circle Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Sketch x²+y²=36 and mark 4 approximate non-axis points.<details class="ans"><summary>Show Answer</summary><p>r=6. Approximate: (4.2,4.2) in each quadrant (since 6/√2≈4.24).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the largest x-value on x²+y²=49?<details class="ans"><summary>Show Answer</summary><p>x=7, at (7,0).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two circles x²+y²=4 and x²+y²=16: distance between them along x-axis.<details class="ans"><summary>Show Answer</summary><p>4−2=2 units (from (2,0) to (4,0)).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Point P always 5 units from origin. What path?<details class="ans"><summary>Show Answer</summary><p>x²+y²=25.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Effect of increasing r on x²+y²=r²?<details class="ans"><summary>Show Answer</summary><p>The circle expands outward from the origin.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Where does x=2 intersect x²+y²=25?<details class="ans"><summary>Show Answer</summary><p>y=±√21≈±4.58. Points: (2,√21) and (2,−√21).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Circle with area 100π, write equation and find 2 non-axis points.<details class="ans"><summary>Show Answer</summary><p>r=10, x²+y²=100. Points: (6,8),(8,6).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many axis intercepts does x²+y²=r² have?<details class="ans"><summary>Show Answer</summary><p>4: (±r,0) and (0,±r).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find where y=2x intersects x²+y²=20.<details class="ans"><summary>Show Answer</summary><p>5x²=20 → x=±2. Points: (2,4),(−2,−4).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Reflect x²+y²=r² in the x-axis. New equation?<details class="ans"><summary>Show Answer</summary><p>Unchanged — x²+(−y)²=x²+y²=r². The circle maps to itself.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Semicircles and Arcs</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-circles/hs-geo-arc-length/v/arc-length-as-fraction-of-circumference" target="_blank">Arc Length</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-circles/hs-geo-sector-area/v/area-of-a-sector" target="_blank">Area of a Sector</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=O-cawByg2aA" target="_blank">Semicircles and Arcs</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=5iUh_CSjaSw" target="_blank">Why Circles?</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hgh3AaOjPDg" target="_blank">Arc Length and Radian Measure</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Upper and Lower Semicircles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the equation of the upper semicircle of x²+y²=25.<details class="ans"><summary>Show Answer</summary><p>y=√(25−x²), −5≤x≤5.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of the lower semicircle of x²+y²=36.<details class="ans"><summary>Show Answer</summary><p>y=−√(36−x²), −6≤x≤6.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is y=√(r²−x²) a function? Domain and range?<details class="ans"><summary>Show Answer</summary><p>Yes. Domain [−r,r]; range [0,r].</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y=√(16−x²), find y at x=0, 2, 4.<details class="ans"><summary>Show Answer</summary><p>y(0)=4; y(2)=2√3; y(4)=0.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Describe the graph of y=√(9−x²).<details class="ans"><summary>Show Answer</summary><p>Upper semicircle, radius 3, from (−3,0) to (3,0), max at (0,3).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sketch y=−√(4−x²) and state the minimum.<details class="ans"><summary>Show Answer</summary><p>Lower semicircle, r=2. Min y=−2 at x=0.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area bounded by y=√(25−x²) and x-axis.<details class="ans"><summary>Show Answer</summary><p>25π/2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Perimeter of a semicircle with r=6 (include diameter).<details class="ans"><summary>Show Answer</summary><p>6π+12.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write the right semicircle of x²+y²=r².<details class="ans"><summary>Show Answer</summary><p>x=√(r²−y²), −r≤y≤r.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that y=√(r²−x²) and y=−√(r²−x²) together form x²+y²=r².<details class="ans"><summary>Show Answer</summary><p>Upper half (y≥0) + lower half (y≤0) = complete circle ✓.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Arc Length and Sector</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What fraction of the circumference is a semicircle?<details class="ans"><summary>Show Answer</summary><p>1/2. Arc=πr.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Arc length of a semicircle with r=10.<details class="ans"><summary>Show Answer</summary><p>10π units.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Arc length of a quarter circle (90°) with r=8.<details class="ans"><summary>Show Answer</summary><p>(1/4)×16π=4π units.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sector angle 60°, r=6. Arc length.<details class="ans"><summary>Show Answer</summary><p>(60/360)×12π=2π units.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of a semicircle with r=5.<details class="ans"><summary>Show Answer</summary><p>25π/2.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area of a quarter-circle with r=4.<details class="ans"><summary>Show Answer</summary><p>4π sq units.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sector angle 120°, r=9. Arc length and area.<details class="ans"><summary>Show Answer</summary><p>Arc=6π; area=27π.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can the arc length of a semicircle equal its diameter?<details class="ans"><summary>Show Answer</summary><p>No — πr=2r → π=2, which is impossible.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Arc length of 270° of circle r=4.<details class="ans"><summary>Show Answer</summary><p>(3/4)×8π=6π units.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Arc subtends 45° at centre; circumference=48π. Find arc length.<details class="ans"><summary>Show Answer</summary><p>(1/8)×48π=6π units.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Semicircles as Functions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Is y=√(25−x²) increasing or decreasing on [0,5]?<details class="ans"><summary>Show Answer</summary><p>Decreasing.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is y=√(25−x²) increasing or decreasing on [−5,0]?<details class="ans"><summary>Show Answer</summary><p>Increasing.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Domain and range of y=−√(16−x²).<details class="ans"><summary>Show Answer</summary><p>Domain [−4,4]; range [−4,0].</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate y=√(100−x²) at x=6, 8, 10.<details class="ans"><summary>Show Answer</summary><p>y=8, 6, 0.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is y=√(r²−x²) even, odd, or neither?<details class="ans"><summary>Show Answer</summary><p>Even — f(−x)=f(x).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">y=√(9−x²) looks like a ___.<details class="ans"><summary>Show Answer</summary><p>Upper semicircle.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y=√(r²−x²), find x where y=r/2.<details class="ans"><summary>Show Answer</summary><p>x=±r√3/2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Symmetry of y=√(25−x²)?<details class="ans"><summary>Show Answer</summary><p>Symmetric about the y-axis.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Why has y=√(r²−x²) no value for x&gt;r?<details class="ans"><summary>Show Answer</summary><p>r²−x²&lt;0 for x&gt;r — square root of negative is not real.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Rainbow modelled by y=√(100−x²). Max height and width?<details class="ans"><summary>Show Answer</summary><p>Max=10 (at x=0); width=20.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Semicircle and Arc Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Protractor semicircle r=10cm. Perimeter (arc + straight edge).<details class="ans"><summary>Show Answer</summary><p>10π+20 cm.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Pizza sector 45°, r=12cm. Arc length and area.<details class="ans"><summary>Show Answer</summary><p>Arc=3π cm; area=18π cm².</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Perimeter of semicircle = 36cm. Find r (π≈3.14).<details class="ans"><summary>Show Answer</summary><p>r(π+2)=36 → r≈7 cm.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Area of square 10×10 with semicircle on top (r=5).<details class="ans"><summary>Show Answer</summary><p>100+12.5π.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Arc of semicircle = 15.7 cm (π≈3.14). Find r and diameter.<details class="ans"><summary>Show Answer</summary><p>r=5 cm; diameter=10 cm.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Compare areas: full circle r=3, semicircle r=3, quarter-circle r=3.<details class="ans"><summary>Show Answer</summary><p>9π : 4.5π : 2.25π. Each is half the previous.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Describe y=√(4−x²)+3 (shifted semicircle).<details class="ans"><summary>Show Answer</summary><p>Upper semicircle r=2, shifted 3 units up. Centre (0,3); range y=3 to 5.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Describe y=√(4−(x−1)²).<details class="ans"><summary>Show Answer</summary><p>Upper semicircle r=2 centred at (1,0). Domain [−1,3].</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Running track: two semicircles r=50m + two straights 100m each. Total length.<details class="ans"><summary>Show Answer</summary><p>100π+200≈514 m.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write the left semicircle of x²+y²=r².<details class="ans"><summary>Show Answer</summary><p>x=−√(r²−y²), −r≤y≤r.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Periodic Patterns Introduction</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:trig/x2ec2f6f830c9fb89:unit-circle-trig/v/unit-circle-definition-of-trig-functions" target="_blank">Intro to Periodic Functions</a>
+        <a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:trig/x2ec2f6f830c9fb89:graphs-of-sine-cosine/v/graphing-the-sine-function" target="_blank">Graphs of Sine</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=mc5J-m7K3PE" target="_blank">Periodic Functions</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=spUNpyF58BY" target="_blank">Fourier Series</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=ds0cmAV-abs" target="_blank">What's a Fourier Transform?</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> What is Periodic?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define a periodic function and period.<details class="ans"><summary>Show Answer</summary><p>A function that repeats its values at regular intervals. Period T = length of one cycle.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Give three real-life periodic examples.<details class="ans"><summary>Show Answer</summary><p>Tides, seasons, Ferris wheel height.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ferris wheel takes 40 seconds per full turn. Period?<details class="ans"><summary>Show Answer</summary><p>T=40 seconds.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Tide repeats every 12.5 hours. Period?<details class="ans"><summary>Show Answer</summary><p>T=12.5 hours.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Seasonal temperature, period 12 months: what does "period 12 months" mean?<details class="ans"><summary>Show Answer</summary><p>The pattern fully repeats every year.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is f(t)=5 periodic? Explain.<details class="ans"><summary>Show Answer</summary><p>Yes (trivially) — constant functions repeat with any period.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Describe a sinusoidal wave shape.<details class="ans"><summary>Show Answer</summary><p>Alternating smooth peaks and troughs — like the sine function.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sound wave vibrates 440 times/second. Period?<details class="ans"><summary>Show Answer</summary><p>T=1/440≈0.00227 s.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Amplitude of a wave varying from −6 to +6?<details class="ans"><summary>Show Answer</summary><p>6.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For h(t)=8sin(t)+12, highest point?<details class="ans"><summary>Show Answer</summary><p>8+12=20 m.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Periodic Graphs and Patterns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Tide pattern: 5,1,5,1,… Period and amplitude?<details class="ans"><summary>Show Answer</summary><p>Period=2 intervals; amplitude=2.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Describe a wave: period 4, amplitude 3, centred at y=0.<details class="ans"><summary>Show Answer</summary><p>Peaks at 3, troughs at −3, completing one cycle every 4 units.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">f has period 6 and f(2)=7. Find f(8) and f(14).<details class="ans"><summary>Show Answer</summary><p>Both equal 7.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Seasonal temp: Jan 10°C, Jul 35°C. Period?<details class="ans"><summary>Show Answer</summary><p>12 months.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ferris wheel r=15m, centre 20m. Height range?<details class="ans"><summary>Show Answer</summary><p>Min=5m; max=35m.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Natural phenomenon with period 24 hours.<details class="ans"><summary>Show Answer</summary><p>Day/night cycle (daylight hours).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Define amplitude.<details class="ans"><summary>Show Answer</summary><p>Maximum displacement from the midline.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Pattern 3,7,3,7,… — period, max, min, amplitude, midline.<details class="ans"><summary>Show Answer</summary><p>Period=2; max=7; min=3; amplitude=2; midline=5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Heartbeat spike every 0.8 s. Beats per minute?<details class="ans"><summary>Show Answer</summary><p>75 bpm.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Why is y=x² NOT periodic?<details class="ans"><summary>Show Answer</summary><p>It keeps growing and never repeats the same pattern.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Ferris Wheel and Real Contexts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Ferris wheel r=10m, centre 12m, period 60s. Max and min heights.<details class="ans"><summary>Show Answer</summary><p>Max=22m; min=2m.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ferris wheel starts at bottom. After half a period, where is the seat?<details class="ans"><summary>Show Answer</summary><p>At the top (maximum height).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">h(t)=15sin(t)+20. Find h(0), h(π/2), h(π).<details class="ans"><summary>Show Answer</summary><p>20, 35, 20.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For h(t)=15sin(t)+20, max and min heights.<details class="ans"><summary>Show Answer</summary><p>Max=35m; min=5m.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Pendulum period 2s. Complete swings per minute.<details class="ans"><summary>Show Answer</summary><p>30.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">July max 35°C, January min 15°C. Amplitude and midline.<details class="ans"><summary>Show Answer</summary><p>Amplitude=10°C; midline=25°C.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain Ferris wheel "round and round" via function.<details class="ans"><summary>Show Answer</summary><p>Height oscillates sinusoidally: h=r·sin(t)+centre. The repeating up-down is the periodic motion.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write h(t) for period 8s, amplitude 4m, starting at midline going up.<details class="ans"><summary>Show Answer</summary><p>h(t)=4sin(πt/4).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Why is Ferris wheel height a wave, not a parabola?<details class="ans"><summary>Show Answer</summary><p>A parabola doesn't repeat; the Ferris wheel cycles continuously.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For h(t)=10sin(t)+15, find two times in [0,2π] when h=15.<details class="ans"><summary>Show Answer</summary><p>sin(t)=0 → t=0 and t=π.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Periodic Pattern Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Three features describing a periodic wave.<details class="ans"><summary>Show Answer</summary><p>Period, amplitude, midline.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Pattern 2,5,8,2,5,8,… Period?<details class="ans"><summary>Show Answer</summary><p>Period=3.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">f has period 5, f(3)=11. Find f(13) and f(23).<details class="ans"><summary>Show Answer</summary><p>Both=11.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What does the midline of a wave represent for a Ferris wheel?<details class="ans"><summary>Show Answer</summary><p>The height of the wheel's centre.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Amplitude=6, midline y=4. Max and min?<details class="ans"><summary>Show Answer</summary><p>Max=10; min=−2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Guitar string vibrates at 330 Hz. Period?<details class="ans"><summary>Show Answer</summary><p>T≈0.00303 s.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is y=|sin(x)| periodic? Period vs sin(x)?<details class="ans"><summary>Show Answer</summary><p>Yes, period=π (half of sin's 2π).</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Connect "up and down" (parabola) with "round and round" (periodic).<details class="ans"><summary>Show Answer</summary><p>Ball thrown up: parabola — rises and falls once. Ferris wheel: sine wave — rises and falls repeatedly.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For h=A·sin(t)+C, max=12, min=2. Find A and C.<details class="ans"><summary>Show Answer</summary><p>A=5; C=7. h=5sin(t)+7.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Sketch Ferris wheel height over 2 rotations. Label max, min, period.<details class="ans"><summary>Show Answer</summary><p>Wave with 2 complete cycles; max=top of wheel, min=bottom, period=rotation time.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Real-World Function Contexts</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:linear-word-problems/v/linear-function-models" target="_blank">Linear Function Models</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:quadratic-word-problems/v/quadratic-word-problem" target="_blank">Quadratic Word Problems</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=NybHckSEQBI" target="_blank">Functions in Real Life</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=X1E7I7_r3Cw" target="_blank">Maths in Everyday Life</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=kvGsIo1TmsM" target="_blank">Applications of Quadratic Functions</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Projectile and Ball Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Ball: h=−5t²+20t. Find h(1) and h(3).<details class="ans"><summary>Show Answer</summary><p>h(1)=15m; h(3)=15m.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For h=−5t²+20t, time to reach max height.<details class="ans"><summary>Show Answer</summary><p>t=2s.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Max height of h=−5t²+20t.<details class="ans"><summary>Show Answer</summary><p>20m.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For h=−5t²+20t, when does the ball land?<details class="ans"><summary>Show Answer</summary><p>t=4s.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Stone dropped from 80m: h=80−5t². When does it hit ground?<details class="ans"><summary>Show Answer</summary><p>t=4s.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Why is h(t)=−5t²+20t a downward parabola?<details class="ans"><summary>Show Answer</summary><p>a=−5&lt;0 — opens downward, giving a maximum height.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ball thrown from 2m: h=−4.9t²+10t+2. Find h(0).<details class="ans"><summary>Show Answer</summary><p>h(0)=2m (initial height).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For h=−4.9t²+14t+2, estimate max height (t≈−b/2a).<details class="ans"><summary>Show Answer</summary><p>t≈1.43s; h≈12m.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Ball lands 40m away — shape of flight path?<details class="ans"><summary>Show Answer</summary><p>Downward-opening parabola.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For h=−t²+6t, at what times is h=5?<details class="ans"><summary>Show Answer</summary><p>t=1s and t=5s.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Linear Models in Context</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Mobile plan: ₹0.50/min + ₹30/month. Write C(m) and find C(100).<details class="ans"><summary>Show Answer</summary><p>C(m)=0.5m+30; C(100)=₹80.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Tank: V=500−25t. When empty?<details class="ans"><summary>Show Answer</summary><p>t=20 min.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factory: C=50n+2000. Cost for 30 items.<details class="ans"><summary>Show Answer</summary><p>₹3500.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Car: V=800000−50000t. Find V(5) and when V=0.<details class="ans"><summary>Show Answer</summary><p>V(5)=₹550000; t=16 years.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cost A=3n+100 vs B=5n+40. Equal at n=?<details class="ans"><summary>Show Answer</summary><p>n=30.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">F=(9/5)C+32. Find F(100).<details class="ans"><summary>Show Answer</summary><p>212°F.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Rearrange F=(9/5)C+32 to find C in terms of F.<details class="ans"><summary>Show Answer</summary><p>C=(5/9)(F−32).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Pen shop: revenue=4n, delivery cost=₹20. Profit at n=50.<details class="ans"><summary>Show Answer</summary><p>4(50)−20=₹180.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">s=100/t. Find s when t=2.5.<details class="ans"><summary>Show Answer</summary><p>s=40 km/h.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Function through (0,5) and (10,25). Write it and find f(15).<details class="ans"><summary>Show Answer</summary><p>f(x)=2x+5; f(15)=35.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Quadratic and Circular Models</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A=s². If s=7, A=? If A=64, s=?<details class="ans"><summary>Show Answer</summary><p>49 cm²; 8 cm.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Circular pond x²+y²=100. Area and circumference.<details class="ans"><summary>Show Answer</summary><p>100π m²; 20π m.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Stopping distance d=0.05v². Find d(80).<details class="ans"><summary>Show Answer</summary><p>320m.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cliff 180m: h=180−5t². When does stone hit water?<details class="ans"><summary>Show Answer</summary><p>t=6s.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Pizza r=15cm. Area in π. Cost at ₹1/10cm².<details class="ans"><summary>Show Answer</summary><p>225π cm²≈706.9; cost≈₹71.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Ferris wheel r=20m, centre 25m. Write h(t).<details class="ans"><summary>Show Answer</summary><p>h(t)=20sin(t)+25.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Profit P=−2n²+80n−300. Max profit and optimal n.<details class="ans"><summary>Show Answer</summary><p>n=20; P=₹500.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Semicircular garden, diameter 14m. Area and perimeter.<details class="ans"><summary>Show Answer</summary><p>49π/2 m²; 7π+14 m.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Ball: h=125−5t². Find h at t=1,2,3,4,5.<details class="ans"><summary>Show Answer</summary><p>120, 105, 80, 45, 0.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">h(t)=−(t−3)²+16. Max height, time, landing time.<details class="ans"><summary>Show Answer</summary><p>Max=16m at t=3s; lands at t=7s.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Real-World Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">P=4s. Type and P(6).<details class="ans"><summary>Show Answer</summary><p>Linear; P=24.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">V=s³. Quadratic? Find V(5).<details class="ans"><summary>Show Answer</summary><p>No — cubic. V(5)=125.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">C=2πr. Type of function of r?<details class="ans"><summary>Show Answer</summary><p>Linear — directly proportional to r.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A=πr². Type of function of r?<details class="ans"><summary>Show Answer</summary><p>Quadratic — proportional to r².</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">h=−3t²+12t. Max height and time.<details class="ans"><summary>Show Answer</summary><p>t=2s; h=12m.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">s(t)=3sin(t). Period and amplitude.<details class="ans"><summary>Show Answer</summary><p>Period=2π; amplitude=3.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Circular track r=50m. Distance for 3 full laps.<details class="ans"><summary>Show Answer</summary><p>300π≈942m.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">h=−5(t−2)²+45. Max and landing time.<details class="ans"><summary>Show Answer</summary><p>Max=45m at t=2; lands at t=5s.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a real-world scenario for y=2x+50. Interpret slope and intercept.<details class="ans"><summary>Show Answer</summary><p>Example: pages read y after x days, starting at 50 pages, reading 2/day. Slope=2 pages/day; intercept=50 starting pages.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Match: (a) thrown ball height; (b) car at constant speed; (c) spinning wheel position → linear/quadratic/periodic.<details class="ans"><summary>Show Answer</summary><p>(a) Quadratic; (b) Linear; (c) Periodic.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>Interpreting Graphs of Functions</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:interpreting-function-notation/v/interpreting-function-notation" target="_blank">Interpreting Function Notation</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:intervals-where-function-positive/v/positive-and-negative-intervals" target="_blank">Positive and Negative Intervals</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kvGsIo1TmsM" target="_blank">Reading and Interpreting Graphs</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BQMyeQOLvpg" target="_blank">Story Graphs</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=NybHckSEQBI" target="_blank">Graphs Tell Stories</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Reading Graphs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Graph through (0,2) and (4,10). Find f(2).<details class="ans"><summary>Show Answer</summary><p>m=2; f(x)=2x+2; f(2)=6.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Horizontal segment on distance-time graph means ___.<details class="ans"><summary>Show Answer</summary><p>Stationary — not moving.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Highest point on height-time graph for a ball represents ___.<details class="ans"><summary>Show Answer</summary><p>Maximum height (vertex of parabola).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Graph crosses x-axis at x=3. What does this mean?<details class="ans"><summary>Show Answer</summary><p>f(3)=0 — a zero/root.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cost graph rises steeply. What does this tell you?<details class="ans"><summary>Show Answer</summary><p>Costs are increasing rapidly.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Parabola vertex (2,8), opens downward. What can you read off?<details class="ans"><summary>Show Answer</summary><p>Maximum value = 8 at x=2.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Graph above x-axis for 1&lt;x&lt;5. What does this mean?<details class="ans"><summary>Show Answer</summary><p>f(x)&gt;0 on (1,5).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">f increasing on [0,3], decreasing on [3,6]. What is x=3?<details class="ans"><summary>Show Answer</summary><p>Turning point (maximum).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Wave repeating every 4 units. Period?<details class="ans"><summary>Show Answer</summary><p>T=4.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Graph passes through (5,0). What equation can you write?<details class="ans"><summary>Show Answer</summary><p>f(5)=0; (x−5) is a factor.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Increasing, Decreasing, and Turning Points</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For y=x², intervals of increase and decrease.<details class="ans"><summary>Show Answer</summary><p>Decreasing on (−∞,0]; increasing on [0,∞).</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y=−x²+4x, where is it increasing?<details class="ans"><summary>Show Answer</summary><p>(−∞,2].</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">f(x)=2x+1. Always increasing, decreasing, or both?<details class="ans"><summary>Show Answer</summary><p>Always increasing.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Define turning point. Find it for y=x²−6x+8.<details class="ans"><summary>Show Answer</summary><p>Where function changes direction. Vertex: (3,−1).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">f: increasing, then flat, then decreasing. What does the flat part mean?<details class="ans"><summary>Show Answer</summary><p>Slope=0 — reached max/min before changing direction.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For h=−5t²+20t, on what time interval is ball rising?<details class="ans"><summary>Show Answer</summary><p>[0,2].</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">On what interval is y=x²−4 negative?<details class="ans"><summary>Show Answer</summary><p>(−2,2).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y=−(x−1)²+9, on what interval is y≥0?<details class="ans"><summary>Show Answer</summary><p>[−2,4].</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Periodic graph, turning points y=8 and y=2. Amplitude and midline?<details class="ans"><summary>Show Answer</summary><p>Amplitude=3; midline=5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">f below x-axis on (−3,0) and above on (0,5). Where is f(x)=0?<details class="ans"><summary>Show Answer</summary><p>At x=−3, x=0, and x=5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Matching Graphs to Equations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Straight line through origin. Which: y=x², y=2x, y=x²+1?<details class="ans"><summary>Show Answer</summary><p>y=2x.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">U-shape touching x-axis at origin. Which: y=x, y=x², y=x−1?<details class="ans"><summary>Show Answer</summary><p>y=x².</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Circle centred at origin, r=3. Equation?<details class="ans"><summary>Show Answer</summary><p>x²+y²=9.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Upside-down U peaking at (0,4). Which: y=−x²+4, y=x²+4, y=4x?<details class="ans"><summary>Show Answer</summary><p>y=−x²+4.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Top half of circle r=5. Equation?<details class="ans"><summary>Show Answer</summary><p>y=√(25−x²).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Repeating wave, max 6, min −6, period 2π. Function?<details class="ans"><summary>Show Answer</summary><p>y=6sin(x).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Vertex (3,−1), opens upward. Write an equation.<details class="ans"><summary>Show Answer</summary><p>y=(x−3)²−1.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Horizontal line at y=7. f(x)?<details class="ans"><summary>Show Answer</summary><p>f(x)=7.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Graph rises steeply for x&lt;0, falls steeply for x&gt;0. Likely y=___.<details class="ans"><summary>Show Answer</summary><p>y=−x² or y=−|x|.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">V-shaped graph, vertex at origin, slope ±2. Could it be y=2|x|?<details class="ans"><summary>Show Answer</summary><p>Yes — y=2|x| is a V-shape with slopes ±2.</p></div></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Graph Interpretation Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">f(0)=3, f(2)=7, f(4)=11. Function type and rule?<details class="ans"><summary>Show Answer</summary><p>Linear. f(x)=2x+3.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">f(0)=0, f(1)=1, f(2)=4, f(3)=9. Function?<details class="ans"><summary>Show Answer</summary><p>f(x)=x².</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What does a positive slope mean in a real-world linear function?<details class="ans"><summary>Show Answer</summary><p>As input increases, output increases — e.g. more items, higher cost.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ferris wheel height-time graph crosses midline — what does that represent?<details class="ans"><summary>Show Answer</summary><p>The seat is at the centre height of the wheel (midway between top and bottom).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Temperature vs month is wave-shaped. What are the x-values at peaks?<details class="ans"><summary>Show Answer</summary><p>The hottest months — typically June/July (x≈6–7) in northern hemisphere.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">f negative for x&lt;−3 and x&gt;5, positive in between. State zeros.<details class="ans"><summary>Show Answer</summary><p>Zeros at x=−3 and x=5.</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Turning point (4,9), y-intercept (0,5). Opens up or down?<details class="ans"><summary>Show Answer</summary><p>Downward — y-intercept below vertex, graph falls on both sides.</p></div></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Graph crosses x-axis exactly twice. How many solutions to f(x)=0?<details class="ans"><summary>Show Answer</summary><p>Exactly 2 real solutions.</p></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">f: increasing (0,3), constant (3,5), decreasing (5,8). Describe real scenario.<details class="ans"><summary>Show Answer</summary><p>Person walks uphill (0–3), rests (3–5), walks downhill (5–8).</p></div></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">f(x)=0 at x=1 and x=7, vertex is a minimum. Axis of symmetry?<details class="ans"><summary>Show Answer</summary><p>x=(1+7)/2=4.</p></div></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>Grade 9 · Ganita Manjari · Chapter 5 · The Gaudium School · 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

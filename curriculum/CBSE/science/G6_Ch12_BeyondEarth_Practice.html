@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>G6 Chapter 12 – Beyond Earth Practice</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🚀 Chapter 12 – Beyond Earth</h1>
+  <p>Grade 6 · Curiosity Science · IB MYP · The Gaudium School · 144 Practice Questions</p>
+</header>
+
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">Earth's Motions</a></li>
+    <li><a href="#t2">The Moon</a></li>
+    <li><a href="#t3">The Solar System</a></li>
+    <li><a href="#t4">The Sun and Stars</a></li>
+    <li><a href="#t5">India's Space Programme</a></li>
+    <li><a href="#t6">Ethics of Space Exploration</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════ TOPIC 1 ═══════════════ -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Earth's Motions</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/earth-title-topic/v/earths-rotation-and-revolution" target="_blank">Earth's Rotation and Revolution</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic" target="_blank">Seasons and Earth's Tilt</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=7Y-RJbPaFJ8" target="_blank">How Earth Moves</a>
+        <a href="https://www.youtube.com/watch?v=Pj-h6MEgE7I" target="_blank">Why Do We Have Seasons?</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=Q1C4GRVrh8M" target="_blank">Earth's Motions (CrashCourse)</a>
+        <a href="https://www.youtube.com/watch?v=WsO_pBu3Rno" target="_blank">Seasons Explained</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=aEFXiUGtRMQ" target="_blank">Earth's Rotation Explained</a>
+        <a href="https://www.youtube.com/watch?v=vXJjFMpfIk0" target="_blank">The Four Seasons – NatGeo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Easy — Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What is Earth's rotation? How long does one rotation take?<details class="ans"><summary>Show Answer</summary><p>Rotation is Earth spinning on its own axis. One complete rotation takes approximately 24 hours (one day).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is Earth's revolution? How long does one revolution take?<details class="ans"><summary>Show Answer</summary><p>Revolution is Earth's orbit around the Sun. One complete revolution takes approximately 365.25 days (one year).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What causes day and night on Earth?<details class="ans"><summary>Show Answer</summary><p>Earth's rotation on its axis — the side facing the Sun experiences day; the side facing away experiences night.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">By how many degrees is Earth's axis tilted?<details class="ans"><summary>Show Answer</summary><p>23.5 degrees (23.5°) from a vertical perpendicular to the orbital plane.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What causes the seasons on Earth?<details class="ans"><summary>Show Answer</summary><p>The tilt of Earth's axis (23.5°) as it orbits the Sun — different hemispheres receive more/less direct sunlight at different times of year.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In which season is the Northern Hemisphere tilted towards the Sun?<details class="ans"><summary>Show Answer</summary><p>Summer — the Northern Hemisphere is tilted toward the Sun (around June), receiving more direct sunlight and longer days.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why do we have a leap year every 4 years?<details class="ans"><summary>Show Answer</summary><p>Earth's revolution takes 365.25 days. The extra 0.25 day accumulates over 4 years into one extra day (29 February), giving a 366-day leap year.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In which direction does Earth rotate when viewed from the North Pole?<details class="ans"><summary>Show Answer</summary><p>Counter-clockwise (anticlockwise) — which is why the Sun appears to rise in the east and set in the west.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Medium — Understand &amp; Apply</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain why seasons are opposite in the Northern and Southern Hemispheres.<details class="ans"><summary>Show Answer</summary><p>When the Northern Hemisphere tilts toward the Sun (summer), the Southern Hemisphere tilts away (winter). Six months later their positions reverse. They always receive opposite sunlight angles at any given time.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why do days have more hours of light in summer than in winter?<details class="ans"><summary>Show Answer</summary><p>In summer, the hemisphere tilts toward the Sun, so that half of Earth's rotation is spent facing sunlight (longer day). In winter, the tilt is away, meaning less of the rotation faces sunlight (shorter day).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If Earth's axis were NOT tilted, would we have seasons? Explain.<details class="ans"><summary>Show Answer</summary><p>No. Without tilt, every part of Earth would receive the same amount of sunlight year-round. All latitudes would have equal day/night lengths always, and no seasonal temperature variation would occur.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What are equinoxes and solstices? Give dates for each.<details class="ans"><summary>Show Answer</summary><p>Equinox: day and night are equal (12 hours each) — March 21 (spring equinox) and September 23 (autumn equinox). Solstice: extreme of day/night length — June 21 (summer solstice, longest day in NH) and December 21 (winter solstice, shortest day in NH).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why do countries near the equator not experience strong seasons?<details class="ans"><summary>Show Answer</summary><p>The equator always receives sunlight at roughly 90° (direct overhead). Earth's tilt causes minimal change in sun angle at the equator throughout the year — so temperature varies little and there are no strong seasonal changes.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain why it gets colder in winter even though Earth is actually slightly closer to the Sun in January.<details class="ans"><summary>Show Answer</summary><p>Distance matters far less than angle of sunlight. In January, the Northern Hemisphere is tilted away from the Sun — sunlight strikes at a shallow angle, spreading over a larger area (less intense). The tilt effect far outweighs the slightly smaller Earth-Sun distance.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How does Earth's rotation create the apparent movement of stars across the night sky?<details class="ans"><summary>Show Answer</summary><p>As Earth rotates west to east, stars appear to move east to west across the night sky — just as roadside trees appear to move backward when you're in a moving car. Stars don't actually move; Earth does.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What would happen if Earth rotated twice as fast (12-hour day instead of 24)?<details class="ans"><summary>Show Answer</summary><p>Day and night would each be 6 hours. Temperature extremes would be less (less time to heat/cool). Stronger wind patterns (faster rotation increases Coriolis effect). Centrifugal force increase would slightly flatten Earth's poles. Climate and ecosystems would be drastically different.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hard — Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain the Coriolis effect and how it results from Earth's rotation.<details class="ans"><summary>Show Answer</summary><p>As Earth rotates, different latitudes move at different speeds (equator fastest, poles slowest). Moving objects (air, water) deflect right in the Northern Hemisphere and left in the Southern Hemisphere — creating spiral wind/ocean current patterns (cyclones, trade winds). It is a consequence of inertia in a rotating reference frame.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Earth's axial tilt is 23.5°. What evidence do scientists have that this tilt has varied over geological time, and what effect did this have on climate?<details class="ans"><summary>Show Answer</summary><p>Milankovitch cycles: Earth's axial tilt varies between ~22° and 24.5° over ~41,000-year cycles. Less tilt = weaker seasons (less difference between summer/winter). More tilt = stronger seasons. These cycles, combined with orbital eccentricity and precession changes, are linked to ice age cycles over hundreds of thousands of years.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How do we know Earth is round and rotating rather than flat and stationary? Give three pieces of evidence.<details class="ans"><summary>Show Answer</summary><p>(1) Ships disappear hull-first over the horizon — consistent with curved surface. (2) Different constellations visible from different latitudes. (3) Foucault pendulum rotates its swing plane over 24 hours — proving Earth rotates beneath it. Also: photos from space, time zones, satellite GPS data.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain why time zones exist and how they are determined from Earth's rotation.<details class="ans"><summary>Show Answer</summary><p>Earth rotates 360° in 24 hours = 15° per hour. The globe is divided into 24 time zones, each 15° of longitude wide. The Sun appears directly overhead each zone for 1 hour before moving to the next. Greenwich (0°) is the reference (GMT). India spans ~30° (one time zone, IST = GMT+5:30).</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Analyse why Earth at the poles experiences weeks or months of continuous day or night.<details class="ans"><summary>Show Answer</summary><p>At the poles, the rotation axis points almost directly toward/away from the Sun during solstices. The North Pole tilts toward the Sun in June — the Sun circles the horizon but never sets (midnight sun) for ~6 months. In December, the North Pole tilts away — complete darkness for ~6 months. The axis tilt prevents the rotation cycle from producing day/night alternation at extreme latitudes.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How does Earth's revolution around the Sun cause different constellations to be visible in different seasons?<details class="ans"><summary>Show Answer</summary><p>As Earth orbits the Sun, the night side faces different parts of space at different times of year. In winter, Earth's night side faces one direction of stars; in summer, the opposite direction. The Sun blocks the view of stars on its side — so different constellations are visible in different seasons as Earth's position changes.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Earth's rotation is gradually slowing down due to tidal friction. What would the long-term consequences be if days became 48 hours long?<details class="ans"><summary>Show Answer</summary><p>Longer heating and cooling cycles: dayside becomes scorching hot, night side intensely cold. Wind patterns (driven by temperature differences and Coriolis) would change dramatically. Ecosystems adapted to 24-hour cycles (circadian rhythms) would be disrupted. Ocean tides would change. Eventually, Earth-Moon tidal locking (like the Moon to Earth) would result in one side always facing the Sun.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How does the Indian monsoon system demonstrate the direct link between Earth's motion and regional climate patterns?<details class="ans"><summary>Show Answer</summary><p>Earth's revolution (seasons) drives the annual shift in the intertropical convergence zone (ITCZ). As the Northern Hemisphere tilts toward the Sun (summer), intense heating of the Indian landmass creates a low-pressure system that draws moist ocean air inland — the southwest monsoon (June–September). Earth's tilt-driven seasonal cycle directly causes India's rainfall patterns.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TOPIC 2 ═══════════════ -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>The Moon</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/moon-title-topic/v/moon-phases-1" target="_blank">Moon Phases explained</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/tides" target="_blank">Tides and the Moon</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=6Q3enHqMrNc" target="_blank">The Moon — How It Formed</a>
+        <a href="https://www.youtube.com/watch?v=qNaFBsXG3pE" target="_blank">What Would Happen Without the Moon?</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=qNaFBsXG3pE" target="_blank">Moon Phases (CrashCourse)</a>
+        <a href="https://www.youtube.com/watch?v=Q1C4GRVrh8M" target="_blank">Lunar &amp; Solar Eclipses</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=aEFXiUGtRMQ" target="_blank">Moon Facts – NatGeo</a>
+        <a href="https://www.youtube.com/watch?v=vXJjFMpfIk0" target="_blank">Chandrayaan-3 and Lunar Exploration</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Easy — Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How long does the Moon take to orbit Earth?<details class="ans"><summary>Show Answer</summary><p>Approximately 27.3 days (one sidereal month) to orbit Earth once.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">List the phases of the Moon in order starting from new Moon.<details class="ans"><summary>Show Answer</summary><p>New Moon → Waxing Crescent → First Quarter → Waxing Gibbous → Full Moon → Waning Gibbous → Third Quarter → Waning Crescent → New Moon.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Does the Moon produce its own light? Explain.<details class="ans"><summary>Show Answer</summary><p>No. The Moon reflects sunlight. We see the Moon because it reflects the Sun's light toward Earth.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why do we always see the same side of the Moon from Earth?<details class="ans"><summary>Show Answer</summary><p>The Moon's rotation period equals its orbital period (both ~27.3 days) — called synchronous rotation or tidal locking. This means the same face always points toward Earth.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What causes tides on Earth?<details class="ans"><summary>Show Answer</summary><p>The Moon's gravitational pull (and to a lesser extent the Sun's) pulls Earth's oceans toward and away from the Moon, creating bulges of water (high tides) and troughs (low tides).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is a solar eclipse?<details class="ans"><summary>Show Answer</summary><p>A solar eclipse occurs when the Moon passes between Earth and the Sun, blocking the Sun's light and casting a shadow on Earth. This only happens at new Moon.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is a lunar eclipse?<details class="ans"><summary>Show Answer</summary><p>A lunar eclipse occurs when Earth passes between the Sun and the Moon, casting Earth's shadow on the Moon. This only happens at full Moon.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">How does the Moon's surface differ from Earth's?<details class="ans"><summary>Show Answer</summary><p>The Moon has no atmosphere, no liquid water, extreme temperatures, and is covered in craters, dust (regolith), and mountains. Unlike Earth, it has no weather or life.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Medium — Understand &amp; Apply</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain why we see different phases of the Moon.<details class="ans"><summary>Show Answer</summary><p>As the Moon orbits Earth, we see different portions of its sunlit side. At new Moon (between Earth and Sun), we see the dark side. At full Moon (Earth between Moon and Sun), we see the fully lit side. In between, we see partial phases (crescents, quarters, gibbous).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the difference between a neap tide and a spring tide.<details class="ans"><summary>Show Answer</summary><p>Spring tide: Sun and Moon aligned (new/full Moon) — their combined gravity produces higher high tides and lower low tides (extreme tides). Neap tide: Sun and Moon at 90° (quarter Moons) — forces partially cancel, producing smaller tidal range.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why do solar eclipses not occur every new Moon?<details class="ans"><summary>Show Answer</summary><p>The Moon's orbit is tilted ~5° to Earth's orbital plane. Most new Moons, the Moon passes slightly above or below the Sun as seen from Earth. Only when the Moon is at a node (intersection of its orbit with Earth's orbital plane) during new Moon does an eclipse occur.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How does the Moon's lack of atmosphere affect its temperature?<details class="ans"><summary>Show Answer</summary><p>Without atmosphere, there is no greenhouse effect or heat distribution. The Moon's surface swings from +127°C in sunlight to −173°C at night — extreme temperatures that would be lethal to all known life.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If the Moon suddenly disappeared, what effect would this have on Earth's tides and on life?<details class="ans"><summary>Show Answer</summary><p>Tides would be much smaller (only solar tides remain, ~33% as strong). Many marine organisms whose reproductive cycles depend on tidal rhythms and lunar light would be disrupted. Earth's axial tilt would become less stable over time (the Moon stabilises it), potentially causing extreme climate swings over millions of years.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the "Giant Impact Hypothesis" for the Moon's formation.<details class="ans"><summary>Show Answer</summary><p>About 4.5 billion years ago, a Mars-sized body (Theia) collided with early Earth. The impact ejected debris into orbit that coalesced into the Moon. Evidence: Moon's composition is similar to Earth's mantle; Moon has little iron core; lunar rocks match Earth's isotope ratios.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is the "dark side of the Moon" and is it always dark?<details class="ans"><summary>Show Answer</summary><p>The "far side" never faces Earth but does receive sunlight half the time (during new Moon phase, the far side faces the Sun). "Dark" is a misnomer — it means unseen from Earth, not permanently dark. The far side has more craters and fewer maria (dark volcanic plains).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How do the Indian traditional calendar and many festivals relate to Moon phases?<details class="ans"><summary>Show Answer</summary><p>The Hindu lunar calendar (Panchang) marks months by Moon phases. Festivals like Diwali (Amavasya/new Moon), Holi (Purnima/full Moon), and Raksha Bandhan (full Moon) are tied to specific phases. Many fasting observances (Ekadashi, Pournami) also follow lunar phases.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hard — Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate the importance of the Moon in stabilising Earth's axial tilt over geological time.<details class="ans"><summary>Show Answer</summary><p>Earth's tilt currently stays between 22.1° and 24.5° due to the Moon's gravitational influence. Computer models suggest that without the Moon, Earth's tilt could vary chaotically from 0° to 85° over millions of years — causing catastrophic climate swings (from no seasons to extreme polar exposure). The Moon is a critical stabiliser for Earth's long-term habitability.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How does tidal locking occur, and could Earth eventually become tidally locked to the Sun?<details class="ans"><summary>Show Answer</summary><p>Tidal forces create a bulge in the orbiting body; if rotation ≠ orbital period, gravitational drag on the bulge gradually synchronises them. The Moon is already tidally locked to Earth. In ~billions of years, the Moon will drift far enough that Earth's rotation will slow to match the Moon's orbital period — potentially tidally locking Earth to the Moon. Earth-Sun locking would take far longer or may never occur in the Sun's lifetime.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Why were the first Moon landings (Apollo 1969) scientifically significant beyond the "race to space"?<details class="ans"><summary>Show Answer</summary><p>Apollo missions brought back 382 kg of lunar rocks — confirming the Giant Impact Hypothesis, dating Moon formation at 4.5 billion years. Seismometers showed the Moon is geologically inactive. Reflectors left on the surface precisely measure Moon's distance (and its gradual recession from Earth at ~3.8 cm/year). These were foundational findings for planetary science.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Compare the Moon's surface to Earth's and explain why the Moon has far more craters.<details class="ans"><summary>Show Answer</summary><p>Earth: active plate tectonics recycle crust, erosion removes craters, atmosphere burns up most meteorites. Moon: no atmosphere, no tectonics, no erosion — every impact is preserved for billions of years. The Moon's surface is therefore a geological record of the solar system's early bombardment history that Earth has erased.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Chandrayaan-3 landed near the Moon's south pole in 2023. Why is the lunar south pole scientifically valuable?<details class="ans"><summary>Show Answer</summary><p>Permanently shadowed craters at the south pole may contain water ice (confirmed by earlier missions). Water ice is scientifically valuable (studying comet/asteroid delivery to inner solar system) and practically valuable (can be split into H₂ + O₂ for rocket fuel and breathable air). The south pole is thus key for future long-term lunar bases and deep space missions.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Analyse how the Moon's gravity influences biological rhythms in marine organisms.<details class="ans"><summary>Show Answer</summary><p>Tidal cycles (driven by the Moon) create predictable patterns of food availability, exposure, and water movement. Coral spawning is synchronised to full Moon nights. Horseshoe crabs breed on spring tides. Grunion fish spawn on exact tidal cycles. These organisms have evolved biological clocks entrained by lunar and tidal cycles — removing the Moon would disrupt these critical reproductive events.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Debate: "Humans should establish a permanent base on the Moon." Evaluate both sides.<details class="ans"><summary>Show Answer</summary><p>For: scientific research hub, access to lunar resources (helium-3 for fusion, water ice), staging post for Mars missions, spread of humanity beyond one planet. Against: extreme cost, hostile environment, lack of immediate benefit compared to Earth problems, potential militarisation, contamination concerns. A balance between scientific ambition and responsible use of resources is the key debate.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If the Moon were twice as massive, how might Earth's tides, ecosystems, and axial stability differ?<details class="ans"><summary>Show Answer</summary><p>Tides: ~twice as strong (tidal force scales with mass), causing more extreme flooding coastal ecosystems and disrupting tidal zone species. Axial stability: stronger stabilisation, less tilt variation. Rotation: Earth's rotation would slow faster (tidal braking). The Moon's increased gravity would also affect how far debris is flung from impacts. Coastal and tidal ecosystems would have evolved very differently.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TOPIC 3 ═══════════════ -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>The Solar System</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/solar-system" target="_blank">The Solar System overview</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/planet-earth-tutorial" target="_blank">Planets and their properties</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=libKVRa01L8" target="_blank">The Solar System — Our Home in Space</a>
+        <a href="https://www.youtube.com/watch?v=HELLyaNzvX0" target="_blank">How Big is the Solar System?</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=TKM0P3XlMNA" target="_blank">The Solar System (CrashCourse)</a>
+        <a href="https://www.youtube.com/watch?v=FO_mEuWXRQw" target="_blank">Gas Giants vs Rocky Planets</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=aEFXiUGtRMQ" target="_blank">Our Solar System Tour – NatGeo</a>
+        <a href="https://www.youtube.com/watch?v=vXJjFMpfIk0" target="_blank">Jupiter – King of Planets</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Easy — Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Name all 8 planets in order from the Sun.<details class="ans"><summary>Show Answer</summary><p>Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Name the four terrestrial (rocky) planets.<details class="ans"><summary>Show Answer</summary><p>Mercury, Venus, Earth, Mars — they are smaller, denser, and have rocky surfaces.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Name the four gas giant planets.<details class="ans"><summary>Show Answer</summary><p>Jupiter, Saturn, Uranus, Neptune — large planets made mostly of gas and ice.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which planet is the largest in our solar system?<details class="ans"><summary>Show Answer</summary><p>Jupiter — it is so large that all other planets could fit inside it.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which planet is known for its prominent ring system?<details class="ans"><summary>Show Answer</summary><p>Saturn — it has the most visible and extensive ring system made of ice and rock particles.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why is Earth the only planet known to support life?<details class="ans"><summary>Show Answer</summary><p>Earth is in the "habitable zone," has liquid water, a protective atmosphere with oxygen, moderate temperatures, and a magnetic field protecting against radiation — conditions uniquely suited to life as we know it.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why was Pluto reclassified as a "dwarf planet" in 2006?<details class="ans"><summary>Show Answer</summary><p>Pluto does not meet the IAU's third criterion for a planet: it has not "cleared its neighbourhood" of other objects — the Kuiper Belt. It was reclassified as a dwarf planet along with Eris, Ceres, etc.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the asteroid belt and where is it located?<details class="ans"><summary>Show Answer</summary><p>The asteroid belt is a region of rocky debris orbiting the Sun between Mars and Jupiter. It contains millions of asteroids ranging from boulders to the dwarf planet Ceres.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Medium — Understand &amp; Apply</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain why planets farther from the Sun have longer years (orbital periods).<details class="ans"><summary>Show Answer</summary><p>Outer planets have larger orbits (greater circumference to travel). Also, they move more slowly (Sun's gravity is weaker at greater distance). Both factors combine: more distance to cover at slower speed = much longer orbital period (Kepler's third law).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Compare the conditions on Venus and Mars to explain why neither supports known life.<details class="ans"><summary>Show Answer</summary><p>Venus: extreme greenhouse effect (~465°C surface temperature), crushing CO₂ atmosphere (90× Earth pressure), sulphuric acid clouds. Mars: very thin CO₂ atmosphere (0.6% Earth's pressure), −60°C average, no liquid water, high radiation. Both have conditions too extreme for known life.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why does Jupiter act as a "cosmic shield" protecting Earth?<details class="ans"><summary>Show Answer</summary><p>Jupiter's enormous gravity captures or deflects many asteroids and comets that would otherwise travel toward the inner solar system. Without Jupiter, Earth would likely receive far more large impacts, making life development more difficult.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What are comets and how do they differ from asteroids?<details class="ans"><summary>Show Answer</summary><p>Comets are icy bodies from the outer solar system (Oort Cloud/Kuiper Belt) — when they near the Sun, ice sublimes forming a glowing tail. Asteroids are rocky/metallic objects mainly in the asteroid belt — they do not produce tails and are not icy.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain why Mercury, despite being closest to the Sun, is not the hottest planet.<details class="ans"><summary>Show Answer</summary><p>Venus is hotter (465°C vs Mercury's 430°C dayside). Mercury has no atmosphere to trap heat — nights plunge to −180°C. Venus has a thick CO₂ atmosphere creating an extreme greenhouse effect that traps heat day and night, making it consistently hotter.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why do Saturn's rings exist, and what are they made of?<details class="ans"><summary>Show Answer</summary><p>Saturn's rings are made of ice and rock particles (ranging from dust to boulders). They may be remnants of a destroyed moon or captured comet that was torn apart by Saturn's gravity inside the Roche limit (zone where tidal forces exceed gravity holding an object together).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How do scientists use spectroscopy to determine what planets and stars are made of?<details class="ans"><summary>Show Answer</summary><p>Each element absorbs/emits light at specific wavelengths (spectral fingerprints). Scientists analyse the spectrum of light from a planet's atmosphere or a star — absorption lines reveal which elements are present, their temperature, and even their motion (Doppler shift).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is the "habitable zone" and how does it relate to finding life on other planets?<details class="ans"><summary>Show Answer</summary><p>The habitable zone (Goldilocks zone) is the range of distances from a star where liquid water can exist on a planet's surface. Scientists focus on exoplanets in their star's habitable zone as the most likely candidates for life, though atmosphere and other factors also matter.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hard — Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate the possibility of life on Europa (Jupiter's moon) despite being far from the Sun's habitable zone.<details class="ans"><summary>Show Answer</summary><p>Europa has a liquid water ocean beneath its icy crust — kept liquid by tidal heating from Jupiter's gravity. Hydrothermal vents may exist on the ocean floor (like Earth's deep-sea vents where life thrives without sunlight). Europa challenges the assumption that habitable zones require stellar proximity — internal energy can also sustain liquid water, making it one of the best candidates for extraterrestrial life in our solar system.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain how the discovery of exoplanets has changed our understanding of solar system formation.<details class="ans"><summary>Show Answer</summary><p>We have found 5,000+ exoplanets with extremely diverse configurations — hot Jupiters very close to their stars, systems with no rocky planets, multiple super-Earths. This shows our solar system is not the standard template. Planetary migration (gas giants moving inward/outward) may explain our own solar system's layout. Planet formation is far more varied and dynamic than originally assumed.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Analyse the science behind the Voyager spacecraft's "Grand Tour" of the outer solar system using gravity assists.<details class="ans"><summary>Show Answer</summary><p>Gravity assist (slingshot): spacecraft approaches a planet, gains kinetic energy from the planet's orbital motion without using fuel — like a ball bouncing off a moving surface. Voyager 1 &amp; 2 (launched 1977) used Jupiter, Saturn, Uranus, and Neptune gravity assists to gain speed and change trajectory. This allowed a 35-year journey that no amount of rocket fuel could replicate, exploiting orbital mechanics brilliantly.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How do we know the solar system is approximately 4.6 billion years old?<details class="ans"><summary>Show Answer</summary><p>Radiometric dating of meteorites (especially carbonaceous chondrites) measures the decay of radioactive isotopes (uranium-lead, rubidium-strontium). These primitive meteorites are unchanged since solar system formation and consistently date to ~4.568 billion years. Moon rocks (Apollo) also give ~4.5 billion years, consistent across multiple independent methods.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain the nebular hypothesis for how the solar system formed.<details class="ans"><summary>Show Answer</summary><p>A giant cloud of gas and dust (solar nebula) began to contract under gravity (possibly triggered by a nearby supernova). Conservation of angular momentum caused it to spin faster and flatten into a disc. The centre became hot enough for nuclear fusion — the Sun ignited. Remaining material in the disc accreted (clumped together) by gravity to form planets. Rocky planets formed in the hot inner disc; gas/ice giants formed farther out where it was cold enough for ices to condense.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Critically evaluate the statement: "We should terraform Mars to give humanity a second home."<details class="ans"><summary>Show Answer</summary><p>For: species insurance against Earth catastrophe, expanding human possibilities, technological advancement. Against: impossible with current technology (would take 1,000+ years, costs incomprehensible amounts); Mars gravity too low for long-term human health; no magnetosphere; resources better spent on Earth's crisis; ethically questionable if Mars has any microbial life we'd destroy. Responsible exploration first, terraforming only as last resort after Earth is secured.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How does studying other planets in our solar system give us insights into Earth's past and future?<details class="ans"><summary>Show Answer</summary><p>Venus (runaway greenhouse) shows what Earth could become with extreme CO₂ — warning for climate change. Mars (lost its atmosphere/water) shows what happens when magnetic field fails and atmosphere strips away. Early Earth was more like Mars or Venus; studying them helps us understand what made Earth habitable and what could threaten that habitability.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain the Drake Equation and what it tells us about the probability of finding intelligent life elsewhere in the Milky Way.<details class="ans"><summary>Show Answer</summary><p>The Drake Equation estimates the number of communicating civilisations by multiplying: rate of star formation × fraction with planets × fraction with habitable planets × fraction with life × fraction with intelligent life × fraction that develops technology × average lifespan of such civilisations. Most terms are unknown. Estimates range from millions of civilisations to just one (us). Its value is not a precise answer but a framework showing which factors most affect the probability and where research should focus.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TOPIC 4 ═══════════════ -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>The Sun and Stars</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/stellar-physics" target="_blank">Stellar Physics and the Sun</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/life-and-death-of-stars" target="_blank">Life Cycle of Stars</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=mZsaaturR6E" target="_blank">The Sun — Our Star Explained</a>
+        <a href="https://www.youtube.com/watch?v=4jmIrSbziv0" target="_blank">What Will Happen When the Sun Dies?</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=r3MsrLtZqsc" target="_blank">The Sun (CrashCourse)</a>
+        <a href="https://www.youtube.com/watch?v=H_FDaXQ5n0o" target="_blank">The Life Cycle of Stars</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=aEFXiUGtRMQ" target="_blank">The Sun – Our Star</a>
+        <a href="https://www.youtube.com/watch?v=vXJjFMpfIk0" target="_blank">Nuclear Fusion in the Sun</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Easy — Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What type of star is the Sun?<details class="ans"><summary>Show Answer</summary><p>The Sun is a G-type (yellow dwarf) main sequence star — a medium-sized, medium-temperature star.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the diameter of the Sun approximately?<details class="ans"><summary>Show Answer</summary><p>Approximately 1.4 million kilometres (1,392,700 km) — about 109 times Earth's diameter.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What process produces the Sun's energy?<details class="ans"><summary>Show Answer</summary><p>Nuclear fusion — hydrogen nuclei fuse to form helium in the Sun's core, releasing enormous energy as light and heat.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">How long does light from the Sun take to reach Earth?<details class="ans"><summary>Show Answer</summary><p>Approximately 8 minutes (8 minutes and 20 seconds) — light travels 150 million km at 300,000 km/s.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is a star?<details class="ans"><summary>Show Answer</summary><p>A star is a massive ball of plasma held together by gravity and powered by nuclear fusion in its core, releasing energy as light and heat.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What unit do scientists use to measure distances between stars?<details class="ans"><summary>Show Answer</summary><p>Light-years — the distance light travels in one year (~9.46 × 10¹² km). Also astronomical units (AU) within the solar system.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the surface temperature of the Sun approximately?<details class="ans"><summary>Show Answer</summary><p>Approximately 5,500°C (5,778 K) at the photosphere (visible surface). The core reaches ~15 million°C.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What are sunspots?<details class="ans"><summary>Show Answer</summary><p>Sunspots are dark patches on the Sun's surface caused by intense magnetic fields that inhibit convection, making those regions slightly cooler (~3,700°C) and therefore darker than surroundings.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Medium — Understand &amp; Apply</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain the nuclear fusion reaction in the Sun: what fuses, what forms, and what is released?<details class="ans"><summary>Show Answer</summary><p>In the Sun's core, four hydrogen (H-1) nuclei (protons) fuse in multiple steps (proton-proton chain) to form one helium-4 nucleus. The mass of helium is slightly less than four protons — the "missing mass" is converted to energy (E=mc²), released as gamma rays, light, and heat.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why does a star NOT collapse despite its enormous gravity?<details class="ans"><summary>Show Answer</summary><p>A star is in hydrostatic equilibrium: outward pressure from nuclear fusion energy (radiation pressure + thermal pressure) exactly balances inward gravitational pull. This balance keeps the star stable throughout its main sequence life.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Describe the life cycle of a star like our Sun from birth to death.<details class="ans"><summary>Show Answer</summary><p>Nebula (gas/dust cloud) → protostar (gravitational collapse) → main sequence star (stable fusion) → red giant (hydrogen exhausted, expands) → planetary nebula (outer layers ejected) → white dwarf (small, dense, cooling remnant).</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How do massive stars (much larger than the Sun) end their lives differently from the Sun?<details class="ans"><summary>Show Answer</summary><p>Massive stars: main sequence → red supergiant → supernova explosion (brightest event in universe) → either neutron star (incredibly dense, spinning rapidly) or black hole (if mass great enough). Unlike the Sun, they explode violently and leave exotic remnants.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why do stars twinkle but planets do not (when viewed from Earth)?<details class="ans"><summary>Show Answer</summary><p>Stars are so far away they appear as point sources of light. Atmospheric turbulence bends point-source light randomly — causing twinkling. Planets are closer and appear as small discs. Light from many points across the disc averages out atmospheric distortions, so planets shine steadily.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is the Hertzsprung-Russell (H-R) diagram and what does it show?<details class="ans"><summary>Show Answer</summary><p>The H-R diagram plots stars by luminosity (brightness) vs surface temperature. It reveals that most stars (including the Sun) lie on the "main sequence" diagonal. It also shows giant stars (top right), white dwarfs (bottom left), and supergiants — classifying stars by type and evolutionary stage.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How does the colour of a star relate to its temperature?<details class="ans"><summary>Show Answer</summary><p>Blue/white stars are hottest (~20,000–50,000°C). Yellow stars (like our Sun) are medium temperature (~5,500°C). Orange and red stars are coolest (~3,000–4,000°C). Colour is determined by peak emission wavelength, which follows Wien's displacement law — hotter objects emit shorter wavelengths.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What will happen to Earth when the Sun becomes a red giant in ~5 billion years?<details class="ans"><summary>Show Answer</summary><p>The Sun will expand to about 100–200 times its current size, potentially engulfing Mercury and Venus. Earth may be swallowed or have its oceans boiled away. The habitable zone will shift to the outer solar system. Earth as we know it will cease to exist.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hard — Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain Einstein's E = mc² and why it explains the Sun's enormous energy output.<details class="ans"><summary>Show Answer</summary><p>E=mc² means a tiny mass (m) converts to enormous energy (E) because c (speed of light, 3×10⁸ m/s) is squared. In each second, the Sun converts ~4 million tonnes of mass to energy. Even this tiny fraction of the Sun's mass yields 3.8×10²⁶ watts — the Sun has been doing this for 4.6 billion years and has enough hydrogen for ~5 billion more.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How do we know what the Sun is made of if we've never sent a probe into it?<details class="ans"><summary>Show Answer</summary><p>Spectroscopy: sunlight analysed through a spectrometer shows dark absorption lines (Fraunhofer lines). Each element absorbs specific wavelengths — the pattern reveals which elements are present and their abundances. This shows the Sun is ~73% hydrogen, ~25% helium, ~2% heavier elements (all without any direct sample).</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The Sun's core reaches 15 million°C. Why can't nuclear fusion be easily replicated on Earth for energy?<details class="ans"><summary>Show Answer</summary><p>Fusion requires extremely high temperatures and pressures to overcome electrostatic repulsion between protons. Containing plasma at 100 million°C (even hotter than the Sun's core is needed in fusion reactors since they lack the Sun's massive gravitational confinement) without melting any container is the engineering challenge. Magnetic confinement (tokamaks like ITER) is the leading approach, but sustained net energy gain has not yet been achieved at scale.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain how supernovae are responsible for the heavy elements in your body.<details class="ans"><summary>Show Answer</summary><p>Stars up to iron (Fe) produce elements through fusion. Iron and heavier elements require the extreme energy of a supernova explosion to form (r-process nucleosynthesis — rapid neutron capture). The explosion disperses these elements into the interstellar medium. New stars and planets (including Earth) form from this enriched gas. The calcium in your bones and iron in your blood were forged in ancient supernovae — "we are stardust."</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How do solar flares and coronal mass ejections (CMEs) affect Earth's technology?<details class="ans"><summary>Show Answer</summary><p>CMEs release billions of tonnes of magnetised plasma. When this hits Earth's magnetosphere, it induces electrical currents in long conductors — power grids fail (1989 Quebec blackout). It disrupts radio communication and GPS. Satellites can be damaged. Auroras appear at lower latitudes. As our technology becomes more space-dependent, solar weather becomes a critical infrastructure risk.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Evaluate: "The Sun is an average, unremarkable star." Is this statement accurate?<details class="ans"><summary>Show Answer</summary><p>Technically accurate: ~90% of stars are fainter (red dwarfs); the Sun is in the top 10% by mass/luminosity. However, it is precisely the Sun's "ordinariness" that makes it suitable for life — more energetic stars emit too much UV; red dwarfs have habitable zone planets tidally locked with extreme flares. The Sun's stable, moderate output over billions of years is exceptional for habitability.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Why does the Sun's corona (outer atmosphere) reach millions of degrees while the surface is only ~5,500°C — apparently violating normal physics?<details class="ans"><summary>Show Answer</summary><p>The corona heating paradox: normally temperature decreases with distance from a heat source. The corona (~1–3 million°C) is hotter than the photosphere beneath. The leading explanations are magnetic reconnection events (magnetic field lines snap and release energy as plasma waves) and Alfvén waves propagating energy outward. The exact mechanism is still an active research area — one of the biggest unsolved problems in solar physics.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How does looking at distant stars and galaxies allow us to see into the past?<details class="ans"><summary>Show Answer</summary><p>Light travels at a finite speed (300,000 km/s). Light from a star 100 light-years away takes 100 years to reach us — we see it as it was 100 years ago. The Andromeda galaxy (2.5 million light-years away) is seen as it was 2.5 million years ago. Telescopes are effectively time machines — the deeper we look, the further back in time we see, allowing study of the early universe (James Webb Space Telescope sees galaxies from 13+ billion years ago).</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TOPIC 5 ═══════════════ -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>India's Space Programme (ISRO)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy" target="_blank">Space Exploration overview</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/solar-system" target="_blank">Planetary Science</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=uSD4vsh1zDA" target="_blank">How to get to Mars — Space Agencies</a>
+        <a href="https://www.youtube.com/watch?v=7Y-RJbPaFJ8" target="_blank">The Future of Space Exploration</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=Q1C4GRVrh8M" target="_blank">The Space Race and Beyond</a>
+        <a href="https://www.youtube.com/watch?v=uSD4vsh1zDA" target="_blank">Sending Rovers to Mars</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=aEFXiUGtRMQ" target="_blank">Chandrayaan-3 Moon Landing 2023</a>
+        <a href="https://www.youtube.com/watch?v=vXJjFMpfIk0" target="_blank">Mangalyaan – India Goes to Mars</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Easy — Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What does ISRO stand for?<details class="ans"><summary>Show Answer</summary><p>Indian Space Research Organisation.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">When and where did Chandrayaan-3 land on the Moon?<details class="ans"><summary>Show Answer</summary><p>Chandrayaan-3 landed near the Moon's south pole on 23 August 2023, making India the fourth nation to land on the Moon and the first to land near the south pole.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What was the mission of Mangalyaan (Mars Orbiter Mission)?<details class="ans"><summary>Show Answer</summary><p>Mangalyaan (launched 2013, reached Mars 2014) was India's first interplanetary mission. It orbited Mars, studying its surface, atmosphere, and methane — at a record-low cost of ~₹450 crore.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the objective of Aditya-L1?<details class="ans"><summary>Show Answer</summary><p>Aditya-L1 (launched September 2023) is India's first solar mission. It studies the Sun from the L1 Lagrange point (~1.5 million km from Earth), observing the corona, solar wind, and magnetic field.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Who is considered the founder of India's space programme?<details class="ans"><summary>Show Answer</summary><p>Dr. Vikram Sarabhai — he founded ISRO and established India's space vision in 1969.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Name India's first satellite and when it was launched.<details class="ans"><summary>Show Answer</summary><p>Aryabhata — launched in 1975. It was named after the ancient Indian mathematician.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which ISRO rocket family is used for launching heavy satellites?<details class="ans"><summary>Show Answer</summary><p>GSLV (Geosynchronous Satellite Launch Vehicle) and its advanced version, GSLV Mk III (LVM3), used for heavy payloads including Chandrayaan-3.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Name one everyday technology that depends on Indian satellites launched by ISRO.<details class="ans"><summary>Show Answer</summary><p>Weather forecasting (INSAT satellites), television broadcasting, GPS navigation (IRNSS/NavIC), disaster warning systems, remote sensing for agriculture.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Medium — Understand &amp; Apply</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Why was Chandrayaan-3's south polar landing scientifically significant?<details class="ans"><summary>Show Answer</summary><p>The south pole has permanently shadowed craters that may contain water ice deposits. Chandrayaan-3's rover Pragyan confirmed the presence of sulphur and other elements. Water ice is crucial for future crewed lunar missions (water, oxygen, and hydrogen fuel) and for understanding cometary water delivery to Earth.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How did Mangalyaan demonstrate India's cost-effective approach to space exploration?<details class="ans"><summary>Show Answer</summary><p>Mangalyaan cost ~US$74 million — less than Hollywood's "Gravity" film ($100M). It succeeded on the first attempt, making India the only nation to do so. ISRO used innovative trajectory planning (trans-Mars injection from Earth orbit) to minimise fuel. It proved that strategic planning can achieve world-class results at a fraction of typical costs.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain how communication satellites launched by ISRO improve life in rural India.<details class="ans"><summary>Show Answer</summary><p>INSAT/GSAT satellites enable: live TV for education and entertainment in remote areas; telemedicine (specialist consultations via satellite link); e-governance services; disaster early warning systems (cyclone warnings saved thousands of lives); internet access via VSAT. Space technology directly addresses developmental needs.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is the Gaganyaan mission and why is it important for India?<details class="ans"><summary>Show Answer</summary><p>Gaganyaan is India's first crewed space mission — planned to send 3 Indian astronauts (Gaganaut) into low Earth orbit. It would make India only the fourth country to independently send humans to space, demonstrating full crewed spaceflight capability and boosting ISRO's technical and geopolitical standing.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How does ISRO's remote sensing programme help Indian farmers?<details class="ans"><summary>Show Answer</summary><p>Earth observation satellites (like ResourceSat, CartoSat) monitor crop health, rainfall, soil moisture, and drought risk. Data helps predict harvests, plan irrigation, detect crop disease early, and allocate resources. The National Agricultural Drought Assessment and Monitoring System (NADAMS) uses this data to directly support farmers.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Compare the Chandrayaan-1, 2, and 3 missions in terms of objectives and outcomes.<details class="ans"><summary>Show Answer</summary><p>Chandrayaan-1 (2008): orbiter + impactor; confirmed water molecules on the Moon. Chandrayaan-2 (2019): orbiter + lander + rover; lander crashed during final descent but orbiter operates. Chandrayaan-3 (2023): lander + rover (no orbiter); successfully soft-landed at south pole — confirmed by Pragyan rover data. Each mission built on lessons of the previous.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is NavIC and how does it make India more self-reliant?<details class="ans"><summary>Show Answer</summary><p>NavIC (Navigation with Indian Constellation) is India's own GPS system with 7 satellites, providing precise positioning over India and 1,500 km surroundings. It reduces dependence on US GPS (which could be restricted in conflict). Used for transport, fishing (fishermen given location-based alerts), disaster response, and defence navigation.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why did ISRO choose the Moon's south pole for Chandrayaan-3 rather than the equatorial region where previous missions landed?<details class="ans"><summary>Show Answer</summary><p>The south pole is scientifically unexplored (all previous landers — US, Soviet, Chinese — landed near the equator). Permanently shadowed craters may preserve water ice for billions of years. This ice can answer questions about solar system water delivery and support future human missions. It was a deliberate scientific and strategic choice for maximum impact.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hard — Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Critically evaluate India's space programme in the context of a developing nation with significant poverty and inequality.<details class="ans"><summary>Show Answer</summary><p>The critique: ISRO's annual budget (~₹13,000 crore) could fund schools/hospitals. Counter: space returns ~7–10 rupees for every rupee invested (satellite-based services, technology spin-offs). Weather satellites save thousands of lives annually from cyclone warnings. ISRO drives high-tech employment and national prestige. The choice is not space vs development — space IS development tool when done efficiently.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Analyse how Chandrayaan-3's success changed India's position in the global space economy.<details class="ans"><summary>Show Answer</summary><p>India became first to reach south pole — leading a uniquely valuable scientific territory. This attracted global partnerships (NASA, ESA collaboration proposals). India's commercial launch arm (NSIL) and NewSpace India Limited became more competitive for international satellite launches. It demonstrated operational reliability boosting India's share of the $500 billion commercial space market.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How did Vikram Sarabhai's vision of "space for development" differ from the Cold War space race mentality?<details class="ans"><summary>Show Answer</summary><p>The Cold War space race was about military dominance, national prestige, and technology demonstration (US vs USSR). Sarabhai explicitly stated India had "no fantasy of competing with economically advanced nations" — ISRO's purpose was to apply space technology to solve India's development problems (communications, weather, agriculture). This developmental philosophy remains ISRO's founding ethos.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How might ISRO's lunar water ice discovery affect future crewed deep space missions?<details class="ans"><summary>Show Answer</summary><p>Water ice can be electrolysed into hydrogen (rocket fuel) and oxygen (breathing air) on-site. This in-situ resource utilisation (ISRU) means future missions to Mars could refuel at the Moon rather than carrying everything from Earth — dramatically reducing mission mass and cost. The south pole becomes a refuelling depot for the cislunar economy. Chandrayaan-3's data on ice distribution directly informs base site selection.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Evaluate the role of private space companies (like Agnikul Cosmos, Skyroot Aerospace) emerging in India alongside ISRO.<details class="ans"><summary>Show Answer</summary><p>Benefits: competition drives innovation; private companies target niche markets (small satellite launches); reduce burden on ISRO; create jobs; attract investment. Concerns: safety regulation, space debris, commercialisation without sufficient oversight. India's IN-SPACe regulatory body (2020) enables private players within government framework. India following US model (SpaceX alongside NASA) — likely to accelerate capability and reduce costs.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How has ISRO's success inspired Indian education and STEM interest? What responsibility does this create?<details class="ans"><summary>Show Answer</summary><p>Chandrayaan-3 was watched live by ~8 million students; ISRO scientists became role models for girls and boys from all backgrounds. It showed science as a pathway regardless of background. Responsibility: ISRO must invest in science education, make STEM careers accessible, publish accessible science communication, and engage schools — converting national pride into sustained scientific culture.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Compare India's Mars mission cost (Mangalyaan) with NASA's MAVEN mission which arrived at Mars the same week. What does this comparison reveal?<details class="ans"><summary>Show Answer</summary><p>Mangalyaan cost ~$74 million; MAVEN cost ~$671 million (9× more). MAVEN had more scientific instruments and objectives. However, Mangalyaan achieved its primary objectives at a fraction of the cost. This reflects different strategies: MAVEN was a comprehensive scientific mission; Mangalyaan was a technology demonstration that also produced science. It shows different approaches are valid — India's frugal innovation model is a genuine global contribution to space science.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">What ethical responsibilities does India have as a major emerging space power regarding space debris and the Outer Space Treaty?<details class="ans"><summary>Show Answer</summary><p>The 1967 Outer Space Treaty (which India signed) designates space as "province of all mankind," prohibiting national claims to the Moon. India must: avoid creating debris (ISRO's 2019 ASAT test was criticised for creating debris); responsibly retire old satellites; share scientific data internationally; oppose militarisation. As a major space nation, India's practices set precedents for responsible space behaviour affecting all nations.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TOPIC 6 ═══════════════ -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Ethics of Space Exploration</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy" target="_blank">Space Exploration &amp; Society</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/solar-system" target="_blank">Benefits of Space Science</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=uSD4vsh1zDA" target="_blank">Why Explore Space? (Kurzgesagt)</a>
+        <a href="https://www.youtube.com/watch?v=7Y-RJbPaFJ8" target="_blank">The Ethics of Space Colonisation</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=Q1C4GRVrh8M" target="_blank">Should We Colonise Space? (CrashCourse)</a>
+        <a href="https://www.youtube.com/watch?v=r3MsrLtZqsc" target="_blank">Space Policy and Science</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=aEFXiUGtRMQ" target="_blank">The Future of Humanity in Space</a>
+        <a href="https://www.youtube.com/watch?v=vXJjFMpfIk0" target="_blank">Space Debris Crisis</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Easy — Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Name THREE practical benefits of space exploration for everyday life on Earth.<details class="ans"><summary>Show Answer</summary><p>GPS/navigation, weather forecasting satellites, communication/TV satellites, medical imaging technology (developed from space tech), solar cell improvements, water purification filters (originally for spacecraft).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is space debris and why is it a problem?<details class="ans"><summary>Show Answer</summary><p>Space debris is old satellites, rocket stages, and fragments orbiting Earth. There are ~27,000 tracked pieces and millions of smaller fragments. Debris can collide with active satellites, damaging them and creating more debris — a cascade risk (Kessler syndrome).</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the Outer Space Treaty (1967)?<details class="ans"><summary>Show Answer</summary><p>An international agreement stating space is the "province of all mankind" — no nation can claim territory in space. It prohibits weapons of mass destruction in orbit and on celestial bodies. 113 countries have signed it.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Name two ways satellites help in disaster management.<details class="ans"><summary>Show Answer</summary><p>Weather satellites predict cyclones/tsunamis, allowing early evacuation. Earth observation satellites map flood zones, wildfire spread, and earthquake damage to direct rescue operations.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the main argument AGAINST spending large sums on space exploration?<details class="ans"><summary>Show Answer</summary><p>The money could be better used to solve immediate Earth problems — hunger, poverty, climate change, healthcare. With billions of people without basic needs, spending billions on space seems a misallocation of resources.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Name one technological spin-off from the space programme that is now used in medicine.<details class="ans"><summary>Show Answer</summary><p>CAT scans / digital image processing (derived from NASA image enhancement); memory foam (NASA pressure relief); miniaturised electronics leading to pacemakers; insulin pumps adapted from space drug delivery systems.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What does "planetary protection" mean in space exploration?<details class="ans"><summary>Show Answer</summary><p>Planetary protection is the practice of preventing contamination of other worlds with Earth microbes (forward contamination) and preventing bringing extraterrestrial microbes to Earth (back contamination), to preserve scientific integrity and safety.</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why do scientists say we should protect Mars from Earth bacteria before sending humans?<details class="ans"><summary>Show Answer</summary><p>If Earth bacteria survive on Mars, they could be mistaken for Martian life, destroying our ability to detect if genuine Martian life exists. We must first know whether life is there before risking contamination — preserving scientific credibility.</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Medium — Understand &amp; Apply</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain how GPS (Global Positioning System) works and how it depends on satellites.<details class="ans"><summary>Show Answer</summary><p>GPS uses at least 24 satellites orbiting Earth. Each satellite transmits signals with precise time and location data. A GPS receiver picks up signals from 4+ satellites and uses the slight time differences between signals (trilateration) to calculate its exact position — accurate to a few metres.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Discuss the equity issue in space exploration — who benefits and who pays?<details class="ans"><summary>Show Answer</summary><p>Space programmes are funded by taxpayers (rich and poor). Direct benefits (satellite services) reach many, but cutting-edge exploration benefits primarily scientists and future generations. Poorer nations get fewer launch opportunities. However, data from weather/disaster satellites disproportionately helps vulnerable communities. Equity requires ensuring space data is shared globally, not monopolised.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How has the space race between the US and USSR contributed to mathematics and computer science education?<details class="ans"><summary>Show Answer</summary><p>Sputnik (1957) shocked the US into the National Defense Education Act — massive funding for STEM education. NASA's Apollo programme required advances in computing (first integrated circuits, real-time computer control). Competition drove investment in universities, creating the talent base for the computing revolution we still benefit from today.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the Kessler syndrome and why it's a threat to space exploration.<details class="ans"><summary>Show Answer</summary><p>Kessler syndrome: a catastrophic cascade where colliding satellites create debris, which causes more collisions, creating more debris — exponentially filling orbit with fragments. This could make low Earth orbit unusable for generations, blocking access to space and destroying communication/GPS satellites. It is a genuine long-term threat requiring international debris management.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What ethical questions arise when private companies like SpaceX aim to colonise Mars?<details class="ans"><summary>Show Answer</summary><p>Who decides who goes and who is left behind (wealth-based access)? Who governs a Mars colony (no current framework)? Should one company control a planet? What happens to Martian colonists' rights vs Earth laws? Can Earth bacteria contaminate Mars if SpaceX sends people? These governance, equity, and environmental questions have no current answers.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">How does studying Earth from space help us understand climate change?<details class="ans"><summary>Show Answer</summary><p>Earth observation satellites (ESA Sentinel, NASA MODIS) measure: polar ice thickness/extent, sea level rise, deforestation rates, CO₂ concentrations, ocean temperatures, wildfire extent, glacier retreat. Continuous satellite data provides the most comprehensive, long-term view of global climate change — impossible from ground-based observation alone.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the concept of "back contamination" and the protocols used to prevent it when returning samples from other worlds.<details class="ans"><summary>Show Answer</summary><p>Back contamination: risk of alien microbes returning to Earth aboard spacecraft. Protocols include: sample containers sealed under vacuum; return missions quarantined; samples stored in BSL-4 (highest biosafety level) facilities. Mars Sample Return mission (planned 2030s) will use strict isolation protocols similar to the original Apollo astronaut quarantine.</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why should space science be considered as valuable as social spending — or should it? Present both views.<details class="ans"><summary>Show Answer</summary><p>For: space research has generated technology worth trillions (GPS, weather forecasting, materials science, computing advances); inspires generations of scientists; addresses existential risks (asteroid detection). Against: direct social spending on education/health gives measurable, immediate benefit to existing people; returns from space are uncertain and distant. Most balanced view: space investment AND social investment are both necessary — they are not zero-sum.</p></details></span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hard — Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate the "Overview Effect" — the cognitive shift astronauts experience — and its implications for how humanity thinks about Earth.<details class="ans"><summary>Show Answer</summary><p>The Overview Effect is the life-changing perspective shift astronauts report: seeing Earth as a fragile, thin-atmospheric sphere in the vast black void, without visible borders. Many become passionate environmentalists and internationalists. It suggests that if more people experienced this perspective, tribalism and environmental destruction might decrease. However, ~600 people total have been to space — raising questions about democratising the experience through virtual reality or space tourism.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Analyse the ethics of asteroid mining — who should own resources extracted from space?<details class="ans"><summary>Show Answer</summary><p>The Outer Space Treaty prohibits national claims to celestial bodies. US (2015) and Luxembourg (2017) passed laws allowing companies to own extracted resources without claiming the body. Critics argue this violates the spirit of space as "common heritage of mankind." Near-Earth asteroids contain trillions of dollars of platinum-group metals. Without international agreement, uncontrolled extraction risks geopolitical conflict and environmental analogies to colonialism.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Is humanity's long-term survival dependent on becoming a multi-planetary species? Critically analyse Elon Musk's argument.<details class="ans"><summary>Show Answer</summary><p>Musk's argument: Earth faces existential risks (asteroid, pandemics, nuclear war, AI); multiple planetary civilisation provides backup. Counter: creating a sustainable Earth is more certain, immediate, and less expensive than Mars colonisation; the same trillion-dollar investment in Earth solutions may do more; Mars colony would remain dependent on Earth for centuries; tech billionaires cannot represent all of humanity in this decision. The argument has merit for long timescales but overstates the urgency vs near-term Earth threats.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How do we ensure that space exploration remains beneficial for all humanity, not just wealthy nations or corporations?<details class="ans"><summary>Show Answer</summary><p>Key mechanisms: update the Outer Space Treaty to regulate commercial activities; UN COPUOS (Committee on Peaceful Uses of Outer Space) strengthen its mandate; create an international space data commons; require technology transfer to developing nations; establish benefit-sharing from asteroid mining; democratise launch access via international partnerships. The current regulatory gap risks space becoming another domain of inequality — preventing this requires proactive governance now.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Should SETI (Search for Extraterrestrial Intelligence) broadcast our location to the universe? Analyse the risks and benefits of "active SETI."<details class="ans"><summary>Show Answer</summary><p>Benefits: potential contact with a civilisation with advanced knowledge could transform humanity. Risks: Stephen Hawking and others warned that an advanced civilisation may not be benign (analogous to European contact with Native Americans — the technologically inferior suffered). We have no way to predict intent. Passive listening (SETI) poses no risk; active broadcasting (METI/CETI) is a planetary decision no individual or group should make unilaterally. This requires global democratic consensus — if ever.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Evaluate the argument: "Space tourism is an irresponsible luxury while climate change threatens Earth."<details class="ans"><summary>Show Answer</summary><p>Carbon footprint: a rocket launch emits ~300 tonnes CO₂ equivalent — tiny globally but intensive per passenger. Counter: aviation emits far more (2.5% of global CO₂); space tourism revenue cross-funds satellite and science launches; wealthy consumers spending on space tourism may fund technology reducing future launch costs. However, prioritising space tourism over climate tech with the same capital is a values choice that deserves scrutiny. Not inherently irresponsible but requires carbon accountability.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">How should humanity respond if we discover microbial life on Mars? What ethical framework should guide our actions?<details class="ans"><summary>Show Answer</summary><p>Discovery would be among the greatest scientific events in history — confirming life is not unique to Earth. Ethical imperatives: (1) do not contaminate or destroy Martian life (planetary protection upgraded to preservation). (2) Study remotely before sending humans. (3) International decision-making about how/whether to proceed with colonisation. (4) Accept that Martian life has intrinsic value — not just instrumental value to humans. This would fundamentally challenge species-centric ethics and require new frameworks beyond terrestrial ethics.</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">As a Grade 6 student at The Gaudium — how might space science you learn today connect to global challenges you could contribute to solving in your career?<details class="ans"><summary>Show Answer</summary><p>Space science connects to: climate science (satellite monitoring), food security (precision agriculture via remote sensing), disaster management (early warning systems), GPS for autonomous vehicles, astronomy inspiring fundamental physics (nuclear fusion energy). Students today may work on Gaganyaan successors, private space companies, international space law, sustainable rocket fuels, or asteroid deflection systems. The concepts learned now — orbital mechanics, planetary science, ethics of exploration — are directly relevant to 21st century careers in increasingly space-dependent societies.</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Grade 6 · Curiosity Science · Chapter 12 · The Gaudium School · IB MYP · 2026–27
+</footer>
+
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 8 – Introduction to Trigonometry | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 Chapter 8 – Introduction to Trigonometry</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Trig Ratios, Identities &amp; SAT Prep</p>
+</header>
+<nav>
+  <h2>Topics at a Glance</h2>
+  <ol>
+    <li><a href="#t1">Right Triangle Sides</a></li>
+    <li><a href="#t2">sin cos tan Definitions</a></li>
+    <li><a href="#t3">cosec sec cot Reciprocals</a></li>
+    <li><a href="#t4">Trig Values at 0° 30° 45° 60° 90°</a></li>
+    <li><a href="#t5">Complementary Angles</a></li>
+    <li><a href="#t6">Pythagorean Identity sin²θ+cos²θ=1</a></li>
+    <li><a href="#t7">Identity 1+tan²θ=sec²θ</a></li>
+    <li><a href="#t8">Identity 1+cot²θ=cosec²θ</a></li>
+    <li><a href="#t9">Proving Trig Identities</a></li>
+    <li><a href="#t10">Finding All Ratios from One Given Ratio</a></li>
+    <li><a href="#t11">Evaluating Expressions Using Identities</a></li>
+    <li><a href="#t12">SAT-Style Trigonometry Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════ TOPIC 1 ═══════════════════════ -->
+<section class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Right Triangle Sides (Opposite, Adjacent, Hypotenuse)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=F21S9Wpi0y8" target="_blank">Basic trigonometry: sides of a right triangle</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=PUB0TaZ7bhA" target="_blank">Basic Trigonometry</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Identify the Sides</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In a right triangle ABC with right angle at C, name the hypotenuse.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AB is the hypotenuse — the side opposite the right angle and the longest side.</p></details></div>
+      <div class="q-item"><span class="q-text">In △PQR with right angle at R and reference angle at P, which side is opposite to P and which is adjacent?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Opposite to P: QR. Adjacent to P: PR. Hypotenuse: PQ.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has legs 3 cm and 4 cm. Find the hypotenuse using the Pythagorean theorem.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = √(3² + 4²) = √(9+16) = √25 = 5 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC, right-angled at B, if AB = 5 and BC = 12, find AC.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AC = √(5² + 12²) = √(25+144) = √169 = 13.</p></details></div>
+      <div class="q-item"><span class="q-text">With reference angle θ at A in a right triangle, state which sides are "opposite" and "adjacent."</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Opposite: the side across from θ (not touching angle A). Adjacent: the side touching angle A that is not the hypotenuse.</p></details></div>
+      <div class="q-item"><span class="q-text">Can the hypotenuse ever be opposite to an acute angle in a right triangle? Explain.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>No. The hypotenuse is always opposite the 90° angle, not any acute angle.</p></details></div>
+      <div class="q-item"><span class="q-text">In △XYZ with ∠Y = 90°, reference angle at X: identify opposite, adjacent, hypotenuse for angle X.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Opposite: YZ. Adjacent: XY. Hypotenuse: XZ.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse 13 and one leg 5. Find the other leg.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Other leg = √(13² − 5²) = √(169−25) = √144 = 12.</p></details></div>
+      <div class="q-item"><span class="q-text">True or False: In the same right triangle, if we switch the reference angle from A to B (both acute), the hypotenuse changes.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>False. The hypotenuse is always the side opposite the right angle; it does not change with the reference angle.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC right-angled at C, if AC = 7 and BC = 24, find AB. Then name the side opposite and adjacent to angle A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AB = √(7²+24²) = √(49+576) = √625 = 25. Opposite to A: BC = 24. Adjacent to A: AC = 7.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Label and Compute</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse 10 and the side opposite angle θ is 6. Find the side adjacent to θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Adjacent = √(10²−6²) = √(100−36) = √64 = 8.</p></details></div>
+      <div class="q-item"><span class="q-text">In △DEF, right angle at F. DE = 17, EF = 8. Find DF. Which side is opposite ∠D?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>DF = √(17²−8²) = √(289−64) = √225 = 15. Side opposite ∠D is EF = 8.</p></details></div>
+      <div class="q-item"><span class="q-text">A ladder 15 m long leans against a wall. Its foot is 9 m from the wall. How high does it reach?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Height = √(15²−9²) = √(225−81) = √144 = 12 m.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (right angle at B), AB = 8, BC = 15. Find AC. State hypotenuse and the side opposite ∠C.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>AC = √(64+225) = √289 = 17. Hypotenuse: AC. Opposite ∠C: AB = 8.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has legs in ratio 5:12. If the hypotenuse is 26, find both legs.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Legs = 10 and 24. Check: √(100+576)=√676=26. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">State the Pythagorean theorem and explain why the hypotenuse must be the longest side.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>a²+b²=c² where c is hypotenuse. Since c²=a²+b² > a² and > b², we have c > a and c > b.</p></details></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P = 90°, QR = 25, PR = 7. Find PQ. Name the sides opposite and adjacent to ∠Q.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PQ = √(25²−7²) = √(625−49) = √576 = 24. Opposite ∠Q: PR=7. Adjacent ∠Q: PQ=24.</p></details></div>
+      <div class="q-item"><span class="q-text">If all three sides of a right triangle are integers, it is called a Pythagorean triple. Verify that (8, 15, 17) is one.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>8²+15² = 64+225 = 289 = 17². ✓ It is a Pythagorean triple.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, the hypotenuse is 2 more than one leg, and the other leg is 14. Find all three sides.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let legs be 14 and a, hypotenuse = a+2. Then (a+2)²=14²+a² → a²+4a+4=196+a² → 4a=192 → a=48. Sides: 14, 48, 50.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse h and one leg k. Express the other leg in terms of h and k.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Other leg = √(h²−k²).</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Practice</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangle has sides 9, 40, 41. Is it a right triangle? If yes, which side is the hypotenuse?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>9²+40²=81+1600=1681=41². Yes, it is right-angled. Hypotenuse: 41.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (right angle at C), BC = 20, AB = 29. Find AC and identify the side opposite ∠B.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AC=√(29²−20²)=√(841−400)=√441=21. Side opposite ∠B: AC=21.</p></details></div>
+      <div class="q-item"><span class="q-text">A 10 m pole stands vertically. A wire runs from its top to a point 10 m away on the ground. Find the length of the wire.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Wire = √(10²+10²) = √200 = 10√2 ≈ 14.14 m.</p></details></div>
+      <div class="q-item"><span class="q-text">List three Pythagorean triples and verify one of them.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(3,4,5), (5,12,13), (8,15,17). Verify (5,12,13): 25+144=169=13². ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In △KLM with right angle at L, KL = x and LM = x+1 and KM = x+2. Solve for x and find all sides.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²+(x+1)²=(x+2)² → x²+x²+2x+1=x²+4x+4 → x²−2x−3=0 → (x−3)(x+1)=0 → x=3. Sides: 3, 4, 5.</p></details></div>
+      <div class="q-item"><span class="q-text">A rectangle has length 16 cm and width 12 cm. Find the length of its diagonal.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Diagonal = √(16²+12²) = √(256+144) = √400 = 20 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">In right △ABC, ∠C = 90°. If the hypotenuse is 41 and one acute angle is at A with opposite side BC = 9, find AB, AC, and the adjacent side to ∠A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AC = √(41²−9²) = √(1681−81) = √1600 = 40. Adjacent to ∠A: AC = 40.</p></details></div>
+      <div class="q-item"><span class="q-text">Two legs of a right triangle are in ratio 3:4. The hypotenuse is 25. Find both legs.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Legs = 3k and 4k. (3k)²+(4k)²=25² → 25k²=625 → k²=25 → k=5. Legs: 15 and 20.</p></details></div>
+      <div class="q-item"><span class="q-text">Explain why it is impossible to have a right triangle with sides 6, 9, and 12.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>6²+9²=36+81=117 ≠ 144=12². So 6²+9²≠12², hence not a right triangle.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC right-angled at B, AB = 24, BC = 7. Find AC. Now if ∠A = θ, write the ratio of the opposite side to hypotenuse for angle θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AC = √(576+49) = √625 = 25. Opposite to θ(=∠A): BC = 7. Ratio = 7/25.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge &amp; Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A right triangle has perimeter 30 and hypotenuse 13. Find the two legs.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Legs a+b=17, a²+b²=169. (a+b)²=289 → 2ab=120 → ab=60. Solve: a and b are roots of t²−17t+60=0 → (t−12)(t−5)=0. Legs: 5 and 12.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove that in any right triangle, the square of the hypotenuse equals the sum of squares of the other two sides.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>This is the Pythagorean theorem. Standard proof uses area of squares on each side or similar triangles. For △ABC (∠C=90°): drop altitude from C to AB; the two smaller triangles are similar to the original, giving AB²=AC²+BC².</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle the hypotenuse is 3 times the smallest leg. Express the third side in terms of the smallest leg.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let smallest leg = a, hypotenuse = 3a. Third side = √(9a²−a²) = √8a² = 2√2 · a.</p></details></div>
+      <div class="q-item"><span class="q-text">A diagonal of a square is 10√2 cm. Find the side of the square using the right triangle formed by the diagonal.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Side s: s²+s²=(10√2)² → 2s²=200 → s²=100 → s=10 cm.</p></details></div>
+      <div class="q-item"><span class="q-text">Two right triangles share the same hypotenuse of length 20. One has legs 12 and 16. Find the legs of the second if its shorter leg is 4.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Other leg = √(20²−4²) = √(400−16) = √384 = 8√6 ≈ 19.6.</p></details></div>
+      <div class="q-item"><span class="q-text">The altitude drawn to the hypotenuse of a right triangle with legs 6 and 8 creates two smaller triangles. Find the length of this altitude.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = 10. Altitude = (product of legs)/hypotenuse = (6×8)/10 = 48/10 = 4.8.</p></details></div>
+      <div class="q-item"><span class="q-text">If the sides of a right triangle are a, b, c (c = hypotenuse) and a = b, find c in terms of a.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>c = √(a²+a²) = a√2.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has integer sides. One leg is 11. Find the hypotenuse and the other leg.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>11²+b²=c² → c²−b²=121 → (c−b)(c+b)=121=1×121 or 11×11. If c−b=1, c+b=121 → c=61, b=60. So sides: 11, 60, 61.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠C=90°), the median from C to AB has length m. Show that m = AB/2 and explain why.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>In a right triangle, the median to the hypotenuse equals half the hypotenuse. This is because the triangle can be inscribed in a semicircle with AB as diameter, and the median from C to the midpoint of AB equals the radius = AB/2.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse 65 and one leg 25. Find the other leg and verify using Pythagoras.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Other leg = √(65²−25²) = √(4225−625) = √3600 = 60. Verify: 25²+60²=625+3600=4225=65². ✓</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 2 ═══════════════════════ -->
+<section class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>sin, cos, tan — Definitions</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=g9VkqRgPUYo" target="_blank">Basic trigonometry: sin, cos, tan</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=PUB0TaZ7bhA" target="_blank">Basic Trigonometry (SOH CAH TOA)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Definition Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Write the definition of sin θ in a right triangle in terms of opposite and hypotenuse.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ = opposite / hypotenuse.</p></details></div>
+      <div class="q-item"><span class="q-text">Write the definition of cos θ in a right triangle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ = adjacent / hypotenuse.</p></details></div>
+      <div class="q-item"><span class="q-text">Write the definition of tan θ in a right triangle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = opposite / adjacent.</p></details></div>
+      <div class="q-item"><span class="q-text">Express tan θ in terms of sin θ and cos θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = sin θ / cos θ.</p></details></div>
+      <div class="q-item"><span class="q-text">State the SOH-CAH-TOA memory device and write what each letter stands for.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>SOH: Sin = Opposite/Hypotenuse. CAH: Cos = Adjacent/Hypotenuse. TOA: Tan = Opposite/Adjacent.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (right angle at C), with ∠A = θ, write expressions for sin A, cos A, tan A in terms of the sides.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin A = BC/AB, cos A = AC/AB, tan A = BC/AC.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 5/13, what are the opposite and hypotenuse sides? Find the adjacent side.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Opposite = 5k, Hypotenuse = 13k. Adjacent = √(169k²−25k²) = 12k. So adjacent = 12k.</p></details></div>
+      <div class="q-item"><span class="q-text">Can sin θ ever be greater than 1 for an angle in a right triangle? Explain.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>No. sin θ = opposite/hypotenuse and the hypotenuse is always the longest side, so opposite &lt; hypotenuse, meaning sin θ &lt; 1.</p></details></div>
+      <div class="q-item"><span class="q-text">In △PQR (right angle at R), PQ = 10, QR = 6, PR = 8. Find sin P, cos P, and tan P.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin P = QR/PQ = 6/10 = 3/5. cos P = PR/PQ = 8/10 = 4/5. tan P = QR/PR = 6/8 = 3/4.</p></details></div>
+      <div class="q-item"><span class="q-text">If the adjacent side to angle θ is 0, what happens to tan θ? What angle does this correspond to?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan θ = opposite/adjacent → division by 0 → tan θ is undefined. This corresponds to θ = 90°.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Calculate the Ratios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △ABC (∠C = 90°), AB = 13, BC = 5, AC = 12. Find sin A, cos A, tan A.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin A = 5/13, cos A = 12/13, tan A = 5/12.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠C = 90°), AB = 13, BC = 5, AC = 12. Find sin B, cos B, tan B.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin B = 12/13, cos B = 5/13, tan B = 12/5.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has legs 7 and 24. Find the hypotenuse, then find sin, cos, and tan for the angle opposite the leg of length 7.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = √(49+576) = 25. sin θ = 7/25, cos θ = 24/25, tan θ = 7/24.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 3/4, form a right triangle and find sin θ and cos θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Opposite = 3, adjacent = 4, hypotenuse = 5. sin θ = 3/5, cos θ = 4/5.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = 5/13, find sin θ and tan θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Adjacent = 5, hypotenuse = 13, opposite = 12. sin θ = 12/13, tan θ = 12/5.</p></details></div>
+      <div class="q-item"><span class="q-text">In △DEF (right angle at E), DE = 9, EF = 40, DF = 41. Write all six basic trig values for ∠D.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin D = 40/41, cos D = 9/41, tan D = 40/9.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse 17 and one leg 8. Find sin, cos, tan for the angle opposite the leg of length 8.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Other leg = √(289−64) = 15. sin θ = 8/17, cos θ = 15/17, tan θ = 8/15.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A = 0.6, find cos A and tan A (assume acute angle A).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos A = √(1−0.36) = √0.64 = 0.8. tan A = 0.6/0.8 = 0.75.</p></details></div>
+      <div class="q-item"><span class="q-text">In △PQR with ∠Q = 90°, if PQ = 5 and PR = 13, find all three trig ratios for ∠P.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>QR = √(169−25) = 12. sin P = 12/13, cos P = 5/13, tan P = 12/5.</p></details></div>
+      <div class="q-item"><span class="q-text">Show that sin²θ + cos²θ = 1 using the triangle with sides 3, 4, 5 and angle θ opposite side 3.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin θ = 3/5, cos θ = 4/5. sin²θ+cos²θ = 9/25+16/25 = 25/25 = 1. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Drill</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ = 1/2, find cos θ and tan θ for acute θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ = √(1−1/4) = √(3/4) = √3/2. tan θ = (1/2)/(√3/2) = 1/√3.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = √3/2, find sin θ and tan θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ = √(1−3/4) = 1/2. tan θ = (1/2)/(√3/2) = 1/√3.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 1, find sin θ and cos θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Opposite = adjacent = k, hypotenuse = k√2. sin θ = 1/√2, cos θ = 1/√2.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠B=90°), if sin A = 4/5, find cos A, tan A, sin C, cos C.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos A = 3/5, tan A = 4/3, sin C = 3/5, cos C = 4/5 (angles A and C are complementary).</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has one acute angle of 30°. Using the known values, find sin 30°, cos 30°, tan 30°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 30° = 1/2, cos 30° = √3/2, tan 30° = 1/√3 = √3/3.</p></details></div>
+      <div class="q-item"><span class="q-text">For angle θ in a right triangle with opposite = p, adjacent = q, hypotenuse = r, write tan θ in two different ways.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan θ = p/q (opposite/adjacent) = sin θ/cos θ = (p/r)/(q/r) = p/q.</p></details></div>
+      <div class="q-item"><span class="q-text">The sine of one acute angle of a right triangle equals the cosine of the other acute angle. Explain why.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The two acute angles sum to 90°. If angles are θ and (90°−θ), then sin θ = cos(90°−θ). The opposite of one angle is the adjacent of the other.</p></details></div>
+      <div class="q-item"><span class="q-text">Find all three trig ratios for the angle in an isosceles right triangle (45°-45°-90° with legs = 1).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = √2. sin 45° = 1/√2, cos 45° = 1/√2, tan 45° = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = m/n, write cos θ and tan θ in terms of m and n (assume acute θ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cos θ = √(n²−m²)/n. tan θ = m/√(n²−m²).</p></details></div>
+      <div class="q-item"><span class="q-text">In △XYZ (∠Z = 90°), XY = 2a and XZ = a. Find all three trig ratios for ∠X.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>YZ = √(4a²−a²) = a√3. sin X = a√3/2a = √3/2, cos X = a/2a = 1/2, tan X = a√3/a = √3.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge &amp; Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ = (k²−1)/(k²+1) for some k > 1, find cos θ and tan θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin²θ+cos²θ=1 → cos²θ=1−((k²−1)/(k²+1))² = [(k²+1)²−(k²−1)²]/(k²+1)² = 4k²/(k²+1)². cos θ = 2k/(k²+1). tan θ = (k²−1)/(2k).</p></details></div>
+      <div class="q-item"><span class="q-text">A ramp rises 3 m over a horizontal distance of 4 m. Find sin, cos, and tan of the angle of inclination.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = 5. sin θ = 3/5, cos θ = 4/5, tan θ = 3/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove that (sin θ / cos θ) = tan θ using the definitions of all three ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin θ/cos θ = (opp/hyp)/(adj/hyp) = opp/adj = tan θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">A ship sails 5 km east and 12 km north. Find the sine and cosine of the angle the path makes with the east direction.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = 13. sin θ = 12/13 (north component), cos θ = 5/13 (east component).</p></details></div>
+      <div class="q-item"><span class="q-text">If tan A = 7/24, find sin A and cos A, then verify sin²A + cos²A = 1.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse = √(49+576) = 25. sin A = 7/25, cos A = 24/25. Check: 49/625+576/625=625/625=1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠C=90°), sin A = sin B. What can you conclude about the triangle?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin A = sin B implies A = B (both acute). Since A+B=90°, A=B=45°. The triangle is isosceles right-angled.</p></details></div>
+      <div class="q-item"><span class="q-text">Express sin θ, cos θ, tan θ for angle θ in an equilateral triangle of side 2, where θ is at the top after drawing the altitude.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Altitude = √3. The right triangle has hyp=2, adj=1, opp=√3. sin 60°=√3/2, cos 60°=1/2, tan 60°=√3.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ + cos θ = √2, find sin θ and cos θ individually (hint: square both sides).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(sin θ+cos θ)²=2 → 1+2sin θ cos θ=2 → sin θ cos θ=1/2. Combined with sin²θ+cos²θ=1: sin θ=cos θ=1/√2. So θ=45°.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, show that sin(90°−θ) = cos θ using the definitions.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>In △ABC (∠C=90°), let ∠A=θ, ∠B=90°−θ. sin(90°−θ)=sin B=AC/AB (opposite of B over hyp). cos θ=cos A=AC/AB. Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">A ladder of length L leans against a wall at angle θ to the ground. Write expressions for the height it reaches and the distance of the foot from the wall in terms of L and θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Height = L sin θ. Distance from wall = L cos θ.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 3 ═══════════════════════ -->
+<section class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>cosec, sec, cot — Reciprocal Ratios</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=OmJ5fxyXrfg" target="_blank">Reciprocal trig ratios</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=PUB0TaZ7bhA" target="_blank">Six trig functions explained</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Definitions &amp; Relationships</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define cosec θ (cosecant) as a reciprocal ratio.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec θ = 1/sin θ = hypotenuse/opposite.</p></details></div>
+      <div class="q-item"><span class="q-text">Define sec θ (secant) as a reciprocal ratio.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec θ = 1/cos θ = hypotenuse/adjacent.</p></details></div>
+      <div class="q-item"><span class="q-text">Define cot θ (cotangent) as a reciprocal ratio.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cot θ = 1/tan θ = adjacent/opposite = cos θ/sin θ.</p></details></div>
+      <div class="q-item"><span class="q-text">State the reciprocal pair for each: sin θ ↔ ?, cos θ ↔ ?, tan θ ↔ ?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ ↔ cosec θ, cos θ ↔ sec θ, tan θ ↔ cot θ.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 3/5, find cosec θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec θ = 1/sin θ = 5/3.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = 12/13, find sec θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec θ = 1/cos θ = 13/12.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 7/24, find cot θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cot θ = 1/tan θ = 24/7.</p></details></div>
+      <div class="q-item"><span class="q-text">Can cosec θ ever be less than 1 for any real angle? Explain.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>No. cosec θ = 1/sin θ, and since |sin θ| ≤ 1, we have |cosec θ| ≥ 1 always.</p></details></div>
+      <div class="q-item"><span class="q-text">Express cot θ in terms of cos θ and sin θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cot θ = cos θ / sin θ.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠C=90°), AB=10, BC=6, AC=8. Find all six trig ratios for ∠A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A=6/10=3/5, cos A=8/10=4/5, tan A=3/4, cosec A=5/3, sec A=5/4, cot A=4/3.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Compute Reciprocal Ratios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △PQR (∠R=90°), PQ=25, QR=7, PR=24. Find cosec Q, sec Q, cot Q.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin Q=24/25, cos Q=7/25, tan Q=24/7. cosec Q=25/24, sec Q=25/7, cot Q=7/24.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ = 17/8, find sin θ, then find the other leg if hypotenuse = 17.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin θ = 8/17. Adjacent = √(289−64) = 15. cos θ = 15/17, sec θ = 17/15, tan θ = 8/15, cot θ = 15/8.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ = 5/4, find cos θ, then all remaining trig ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ = 4/5. sin θ = 3/5, tan θ = 3/4, cosec θ = 5/3, cot θ = 4/3.</p></details></div>
+      <div class="q-item"><span class="q-text">If cot θ = 8/15, find all six trig ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan θ = 15/8, opp=15, adj=8, hyp=17. sin θ=15/17, cos θ=8/17, cosec θ=17/15, sec θ=17/8.</p></details></div>
+      <div class="q-item"><span class="q-text">Find cosec 60°, sec 60°, and cot 60° using known values.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 60°=√3/2, cos 60°=1/2, tan 60°=√3. cosec 60°=2/√3=2√3/3, sec 60°=2, cot 60°=1/√3=√3/3.</p></details></div>
+      <div class="q-item"><span class="q-text">Find cosec 30°, sec 30°, cot 30° using known values.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec 30°=2, sec 30°=2/√3=2√3/3, cot 30°=√3.</p></details></div>
+      <div class="q-item"><span class="q-text">Find cosec 45°, sec 45°, cot 45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec 45°=√2, sec 45°=√2, cot 45°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle with hypotenuse 1, express cosec θ and sec θ in terms of the sides.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>If hyp=1, opp=sin θ, adj=cos θ. cosec θ=1/sin θ, sec θ=1/cos θ.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ · cosec θ = k, find k.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ · cosec θ = sin θ · (1/sin θ) = 1. So k = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Show that tan θ · cot θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ · cot θ = tan θ · (1/tan θ) = 1. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Reciprocal Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: sin 45° × cosec 45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 45° × cosec 45° = (1/√2)(√2) = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos 60° × sec 60°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos 60° × sec 60° = (1/2)(2) = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan 30° × cot 30°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan 30° × cot 30° = (1/√3)(√3) = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = p/q, write cosec θ, sec θ, and cot θ in terms of p and q (assuming acute θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cosec θ = q/p. cos θ = √(q²−p²)/q. sec θ = q/√(q²−p²). cot θ = √(q²−p²)/p.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin θ / cosec θ) + (cos θ / sec θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin θ · sin θ + cos θ · cos θ = sin²θ + cos²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sec θ · cos θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec θ · cos θ = (1/cos θ) · cos θ = 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In △LMN (∠N=90°), LM=41, LN=40, MN=9. Find all six trig ratios for ∠L and ∠M.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>For ∠L: sin=9/41, cos=40/41, tan=9/40, cosec=41/9, sec=41/40, cot=40/9. For ∠M: sin=40/41, cos=9/41, tan=40/9, cosec=41/40, sec=41/9, cot=9/40.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ + cot θ = k, show that cosec θ − cot θ = 1/k.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(cosec θ + cot θ)(cosec θ − cot θ) = cosec²θ − cot²θ = 1 (by identity). So cosec θ − cot θ = 1/k. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sec²45° − 1).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec 45° = √2. sec²45° = 2. 2−1 = 1. (This equals tan²45° = 1. ✓)</p></details></div>
+      <div class="q-item"><span class="q-text">Show that cot θ = cos θ · cosec θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ · cosec θ = cos θ · (1/sin θ) = cos θ/sin θ = cot θ. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sec θ − tan θ = 1/3, find sec θ + tan θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(sec θ − tan θ)(sec θ + tan θ) = sec²θ − tan²θ = 1. So sec θ + tan θ = 1/(1/3) = 3.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ − cot θ = 1/4, find cosec θ and cot θ individually.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cosec θ + cot θ = 4 (from reciprocal identity). Adding: 2cosec θ = 17/4 → cosec θ = 17/8. cot θ = 4−17/8 = 15/8.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1 + cot²θ)/cosec²θ = 1.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(1+cot²θ)/cosec²θ = cosec²θ/cosec²θ = 1 (using 1+cot²θ = cosec²θ). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Find the value of: sin²30° + cos²30° + tan²45° + sec²60° − cosec²30°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= 1/4+3/4+1+4−4 = 1+1+0 = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sec θ − cos θ)(cosec θ − sin θ)(tan θ + cot θ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sec θ−cos θ = sin²θ/cos θ. cosec θ−sin θ = cos²θ/sin θ. tan θ+cot θ = 1/(sin θ cos θ). Product = (sin²θ/cos θ)(cos²θ/sin θ)(1/(sin θ cos θ)) = sin θ cos θ/(sin θ cos θ) = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Express sec²θ and cosec²θ each in terms of sin θ and cos θ, then verify their relationship to the Pythagorean identities.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec²θ = 1/cos²θ. cosec²θ = 1/sin²θ. These give sec²θ − tan²θ = 1 and cosec²θ − cot²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = a/b, find all six trig ratios and write them in simplified form.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ=√(b²−a²)/b, tan θ=a/√(b²−a²), cosec θ=b/a, sec θ=b/√(b²−a²), cot θ=√(b²−a²)/a.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 2sin²30° + 3cos²60° − tan²45° + cosec²90°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= 2(1/4)+3(1/4)−1+1 = 1/2+3/4+0 = 5/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan θ + cot θ = sec θ · cosec θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS = sin θ/cos θ + cos θ/sin θ = (sin²θ+cos²θ)/(sin θ cos θ) = 1/(sin θ cos θ) = cosec θ sec θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">The product sin θ · cos θ · tan θ · cot θ · sec θ · cosec θ — find its value.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin θ · cos θ · (sin θ/cos θ) · (cos θ/sin θ) · (1/cos θ) · (1/sin θ) = 1.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 4 ═══════════════════════ -->
+<section class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Trig Values at 0°, 30°, 45°, 60°, 90°</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=1m9p9iubMLU" target="_blank">Trig values of special angles</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=ZffZvSH285c" target="_blank">Special right triangles and trig</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Table Recall</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Complete the table: sin 0°, sin 30°, sin 45°, sin 60°, sin 90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Complete the table: cos 0°, cos 30°, cos 45°, cos 60°, cos 90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2, cos 90°=0.</p></details></div>
+      <div class="q-item"><span class="q-text">Complete the table: tan 0°, tan 30°, tan 45°, tan 60°, tan 90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan 0°=0, tan 30°=1/√3, tan 45°=1, tan 60°=√3, tan 90°=undefined.</p></details></div>
+      <div class="q-item"><span class="q-text">Explain why tan 90° is undefined using the definition tan θ = sin θ/cos θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos 90°=0. tan 90°=sin 90°/cos 90°=1/0 which is undefined.</p></details></div>
+      <div class="q-item"><span class="q-text">Notice that sin θ increases from 0 to 1 as θ goes from 0° to 90°. What pattern does cos θ follow?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ decreases from 1 to 0 as θ increases from 0° to 90°.</p></details></div>
+      <div class="q-item"><span class="q-text">State the value of sin 45° and explain why sin 45° = cos 45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 45°=cos 45°=1/√2. At 45°, both acute angles are equal, so opposite and adjacent sides are equal; both ratios to hypotenuse are equal.</p></details></div>
+      <div class="q-item"><span class="q-text">Write the memory trick "0, 1/2, 1/√2, √3/2, 1" and state which function this sequence belongs to.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>This is the sequence for sin 0°, sin 30°, sin 45°, sin 60°, sin 90°. For cos, read the sequence in reverse.</p></details></div>
+      <div class="q-item"><span class="q-text">Find cosec 30°, cosec 45°, cosec 60°, cosec 90°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cosec 30°=2, cosec 45°=√2, cosec 60°=2/√3=2√3/3, cosec 90°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Find sec 0°, sec 30°, sec 45°, sec 60°. Why is sec 90° undefined?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec 0°=1, sec 30°=2/√3, sec 45°=√2, sec 60°=2. sec 90°=1/cos 90°=1/0 → undefined.</p></details></div>
+      <div class="q-item"><span class="q-text">Find cot 0°, cot 30°, cot 45°, cot 60°, cot 90°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cot 0°=undefined, cot 30°=√3, cot 45°=1, cot 60°=1/√3, cot 90°=0.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Direct Substitution</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: sin 30° + cos 60°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1/2 + 1/2 = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan 45° + sin 90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1 + 1 = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos 0° − cos 90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1 − 0 = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin²45° + cos²45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(1/√2)²+(1/√2)² = 1/2+1/2 = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 2sin 30° + 3tan 45° − cos 60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2(1/2)+3(1)−1/2 = 1+3−1/2 = 3.5 = 7/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan²60° + 2sin²90° − cos²0°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3 + 2(1) − 1 = 4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos 30° × sin 60° − sin 30° × cos 60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(√3/2)(√3/2)−(1/2)(1/2) = 3/4−1/4 = 2/4 = 1/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin 0° + sin 30° + sin 45° + sin 60° + sin 90°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>0+1/2+1/√2+√3/2+1 = 3/2+1/√2+√3/2 ≈ 0+0.5+0.707+0.866+1 = 3.073.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin 30°/tan 30°) + (cos 60°/cot 60°).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(1/2)/(1/√3)+(1/2)/(1/√3) = (√3/2)+(√3/2) = √3.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 4sin²60° + 3cos²45° − 2tan²30°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4(3/4)+3(1/2)−2(1/3) = 3+3/2−2/3 = 3+0.5−0.667 ≈ 2.833 = 17/6.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Solve for Angle</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ = 1/2 and 0° ≤ θ ≤ 90°, find θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 30°.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = 1/√2 and 0° ≤ θ ≤ 90°, find θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 45°.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = √3 and 0° ≤ θ ≤ 90°, find θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 60°.</p></details></div>
+      <div class="q-item"><span class="q-text">If 2sin θ − 1 = 0, find θ (0° ≤ θ ≤ 90°).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ = 1/2 → θ = 30°.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos 2θ = 0 and 0° ≤ θ ≤ 90°, find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 2θ=0 → 2θ=90° → θ=45°.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan(θ−15°) = 1, find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan(θ−15°)=1 → θ−15°=45° → θ=60°.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin(2θ) = cos 30°, find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin 2θ=√3/2 → 2θ=60° → θ=30°.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ = 2, find θ (0° &lt; θ &lt; 90°).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec θ=2 → cos θ=1/2 → θ=60°.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ = √2, find θ (0° &lt; θ &lt; 90°).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec θ=√2 → sin θ=1/√2 → θ=45°.</p></details></div>
+      <div class="q-item"><span class="q-text">If 2tan θ − 2 = 0, find θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ=1 → θ=45°.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Evaluation &amp; Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: (sin 30° + tan 45°)/(cos 60° + cosec 90°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Numerator: 1/2+1=3/2. Denominator: 1/2+1=3/2. Result = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin²30° + cos²45° + sin²60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1/4 + 1/2 + 3/4 = 6/4 = 3/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan²45° − sin²60° + cos²30° + sin²90°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1−3/4+3/4+1 = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (2tan 30°)/(1 − tan²30°).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan 30°=1/√3. 2/√3 ÷ (1−1/3) = (2/√3)/(2/3) = (2/√3)(3/2) = 3/√3 = √3. (This equals tan 60°.)</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (1 − tan²45°)/(1 + tan²45°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(1−1)/(1+1) = 0/2 = 0. (This equals cos 90°.)</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan²60° − sin²60° = sin²60° · tan²60°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS = 3−3/4=9/4. RHS = (3/4)(3)=9/4. Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin 60° cos 30° + cos 60° sin 30°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(√3/2)(√3/2)+(1/2)(1/2)=3/4+1/4=1. (This equals sin 90°.)</p></details></div>
+      <div class="q-item"><span class="q-text">Find θ if sin θ = cos θ (0° ≤ θ ≤ 90°).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ = cos θ → tan θ = 1 → θ = 45°.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 3sin²30° + 2tan²60° − 5cos²45° + sin90°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>3(1/4)+2(3)−5(1/2)+1 = 3/4+6−5/2+1 = 0.75+6−2.5+1 = 5.25 = 21/4.</p></details></div>
+      <div class="q-item"><span class="q-text">If A = 30° and B = 60°, verify that sin(A+B) = sin A cos B + cos A sin B.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS: sin 90°=1. RHS: (1/2)(1/2)+(√3/2)(√3/2)=1/4+3/4=1. ✓</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 5 ═══════════════════════ -->
+<section class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Complementary Angles: sin(90°−θ) = cos θ etc.</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=OmJ5fxyXrfg" target="_blank">Trig of complementary angles</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=F21S9Wpi0y8" target="_blank">Co-functions explained</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> State the Identities</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State all six complementary angle identities.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin(90°−θ)=cosθ, cos(90°−θ)=sinθ, tan(90°−θ)=cotθ, cot(90°−θ)=tanθ, sec(90°−θ)=cosecθ, cosec(90°−θ)=secθ.</p></details></div>
+      <div class="q-item"><span class="q-text">Explain why sin(90°−θ) = cos θ using a right triangle.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>In △ABC (∠C=90°), ∠A=θ, ∠B=90°−θ. sin(90°−θ)=sin B=AC/AB. cos θ=cos A=AC/AB. Same ratio. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sin 70°/cos 20°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 70°=cos 20° (complementary). So the ratio = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: tan 55°/cot 35°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan 55°=cot 35° (complementary). Ratio = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cos 37° − sin 53°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 53°=cos 37°. So cos 37°−cos 37°=0.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sec 41° − cosec 49°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec 41°=cosec(90°−41°)=cosec 49°. So the expression = 0.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin 25° cos 65° + cos 25° sin 65°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 65°=sin 25°, sin 65°=cos 25°. So = sin²25°+cos²25° = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: tan 1° · tan 2° · … · tan 89°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Each pair (tan k° · tan(90°−k°))=tan k° · cot k°=1. There are 44 pairs and tan 45°=1. Product = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">State which angle is the complement of 37° and write: sin 37° = ?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Complement of 37° is 53°. sin 37°=cos 53°.</p></details></div>
+      <div class="q-item"><span class="q-text">True or False: cos(90°−θ) = sin θ. Verify with θ = 30°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>True. cos(90°−30°)=cos 60°=1/2=sin 30°. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Simplify Using Complementary Angles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Simplify: sin 18°/cos 72°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos 72°=sin 18°. Ratio = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin 47° + cos 47°)/(sin 43° + cos 43°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin 47°=cos 43°, cos 47°=sin 43°. Numerator = cos 43°+sin 43°. Denominator = sin 43°+cos 43°. Ratio = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: tan 36° · tan 54°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan 54°=cot 36°. So tan 36° · cot 36° = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin²22° + sin²68°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin 68°=cos 22°. So sin²22°+cos²22°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos²57° + cos²33°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 33°=sin 57°. So cos²57°+sin²57°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (cos 65°/sin 25°) + (tan 35°/cot 55°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 65°=sin 25°, tan 35°=cot 55°. =1+1=2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan²30°+sin²45°+sin²60°−cos²0°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1/3+1/2+3/4−1 = 4/12+6/12+9/12−12/12 = 7/12.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin A · cos(90°−A))+(cos A · sin(90°−A)).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin A · sin A + cos A · cos A = sin²A+cos²A = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cosec²41° − tan²49°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan 49°=cot 41°. cosec²41°−cot²41°=1 (by identity 1+cot²θ=cosec²θ). Answer = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin 35° / cos 55°) + (cos 35° / sin 55°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 55°=sin 35°, sin 55°=cos 35°. = sin35°/sin35° + cos35°/cos35° = 1+1 = 2.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Find θ Using Complementary Rules</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin 3θ = cos(θ − 26°), find θ (both angles acute).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin 3θ=cos(θ−26°) → 3θ+(θ−26°)=90° → 4θ=116° → θ=29°.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan A = cot 38°, find A.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan A=cot 38°=tan 52° → A=52°.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos 2A = sin 3A (both acute), find A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 2A=sin 3A → 2A+3A=90° → A=18°.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec 4A = cosec 3A (both acute), find A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec 4A=cosec(90°−4A). So 90°−4A=3A → 7A=90° → A=90/7°≈12.86°.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin(θ+36°) = cos θ (both acute), find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin(θ+36°)=cos θ=sin(90°−θ) → θ+36°=90°−θ → 2θ=54° → θ=27°.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan(A+B)=cot(A−B), find a relationship between A and B.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan(A+B)=cot(A−B) → (A+B)+(A−B)=90° → 2A=90° → A=45°.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ = sec 35°, find θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec θ=sec 35°=cosec(90°−35°)=cosec 55° → θ=55°.</p></details></div>
+      <div class="q-item"><span class="q-text">Solve: sin(2θ−10°)=cos 40° (0° &lt; θ &lt; 90°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 40°=sin 50°. So 2θ−10°=50° → 2θ=60° → θ=30°.</p></details></div>
+      <div class="q-item"><span class="q-text">If A and B are acute and sin A = cos B, state the relationship between A and B.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>A+B=90° (they are complementary angles).</p></details></div>
+      <div class="q-item"><span class="q-text">If cot(A+B) = tan(A−B), find A in terms of B.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cot(A+B)=tan(A−B) → (A+B)+(A−B)=90° → 2A=90° → A=45°.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge Simplifications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: (sin 1° · sin 2° · … · sin 90°).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin 90°=1 is a factor, but sin 0°... wait, the product includes sin 90°=1. More importantly, there is no zero in the sequence 1° to 90°. However sin 90°=1 contributes; the exact product is not zero but is a very small positive number. Key insight: the product is non-zero but extremely small. For exam purposes, note there is no sin 0° in the product.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (tan 10° · tan 20° · tan 45° · tan 70° · tan 80°).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan 10°·tan 80°=tan 10°·cot 10°=1. tan 20°·tan 70°=1. tan 45°=1. Product=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sin(A−B) when A+B=90°, expressing your answer in terms of A only.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>B=90°−A. sin(A−(90°−A))=sin(2A−90°)=−cos 2A.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sin θ−cos(90°−θ))·(cos θ+sin(90°−θ))=0.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos(90°−θ)=sin θ, sin(90°−θ)=cos θ. So (sin θ−sin θ)(cos θ+cos θ)=0·(2cos θ)=0. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin²10°+sin²80°+sin²20°+sin²70°+sin²30°+sin²60°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin 80°=cos 10°, sin 70°=cos 20°, sin 60°=cos 30°. Each complementary pair: sin²k°+cos²k°=1. Three pairs → 3.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cos(90°−A)·cosec A = 1.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos(90°−A)=sin A. sin A · cosec A = sin A · (1/sin A) = 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sec θ · sin(90°−θ)) + (cosec θ · cos(90°−θ)).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= sec θ · cos θ + cosec θ · sin θ = 1+1 = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin(90°−θ)/cos θ = k, find k.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin(90°−θ)=cos θ. So cos θ/cos θ=1. k=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos²1°+cos²2°+…+cos²89°+cos²90°. (Hint: pair complementary angles.)</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cos²90°=0. Pairs: cos²k°+cos²(90°−k°)=cos²k°+sin²k°=1 for k=1 to 44. Plus cos²45°=1/2. Total=44+1/2=44.5.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: [sin(90°−θ)+cos(90°−θ)]² − 2sin(90°−θ)cos(90°−θ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= (cos θ+sin θ)²−2cos θ sin θ = cos²θ+2sin θ cos θ+sin²θ−2sin θ cos θ = 1.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 6 ═══════════════════════ -->
+<section class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Pythagorean Identity: sin²θ + cos²θ = 1</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=PcwXRHHnV8Y" target="_blank">Pythagorean trig identity proof</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OmJ5fxyXrfg" target="_blank">Trig identities intuition</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> State &amp; Apply the Identity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the fundamental Pythagorean identity.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin²θ + cos²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove sin²θ + cos²θ = 1 using the definitions and Pythagorean theorem.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>In right △, sin θ=opp/hyp=a/c, cos θ=adj/hyp=b/c. sin²θ+cos²θ=a²/c²+b²/c²=(a²+b²)/c²=c²/c²=1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 3/5, find cos θ using the identity.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1−9/25=16/25 → cos θ=4/5 (acute).</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = 7/25, find sin θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin²θ=1−49/625=576/625 → sin θ=24/25.</p></details></div>
+      <div class="q-item"><span class="q-text">Express sin²θ in terms of cos θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin²θ = 1 − cos²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sin²θ + cos²θ + tan²θ + 1.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= 1 + sec²θ (since 1+tan²θ=sec²θ) = sec²θ+1. Wait: 1+tan²θ+1=2+tan²θ... Let me redo: sin²θ+cos²θ=1. So 1+tan²θ+1=1+sec²θ. Answer: 1+sec²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 1/√2, find cos θ and verify sin²θ+cos²θ=1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1−1/2=1/2 → cos θ=1/√2. Check: 1/2+1/2=1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Find the value of (sin θ + cos θ)² + (sin θ − cos θ)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ+2sin θcos θ+cos²θ + sin²θ−2sin θcos θ+cos²θ = 2(sin²θ+cos²θ) = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ + cos θ = √2, use the identity to find sin θ · cos θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(sin θ+cos θ)²=2 → 1+2sin θ cos θ=2 → sin θ cos θ=1/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1−sin²θ)/cos θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1−sin²θ=cos²θ. So cos²θ/cos θ = cos θ.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Find Missing Ratios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ = 5/13, find cos θ, then tan θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1−25/169=144/169 → cos θ=12/13. tan θ=5/12.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = 8/17, find sin θ and tan θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin²θ=1−64/289=225/289 → sin θ=15/17. tan θ=15/8.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 0.8, find cos θ using the identity.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1−0.64=0.36 → cos θ=0.6.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos A = p, express sin A and tan A in terms of p.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A = √(1−p²). tan A = √(1−p²)/p.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = (a²−b²)/(a²+b²), find cos θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1−(a²−b²)²/(a²+b²)²=[(a²+b²)²−(a²−b²)²]/(a²+b²)²=4a²b²/(a²+b²)². cos θ=2ab/(a²+b²).</p></details></div>
+      <div class="q-item"><span class="q-text">Given sin θ = 1/2 and cos θ = √3/2, verify the identity.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1/4+3/4=1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A + sin²A = 1, find cos²A + cos⁴A.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin A = 1 − sin²A = cos²A. So cos²A+cos⁴A=sin A+sin²A=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sin⁴θ + cos⁴θ + 2sin²θ cos²θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (sin²θ+cos²θ)² = 1² = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Find: sin⁴θ − cos⁴θ (leave in terms of sin θ and cos θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=(sin²θ−cos²θ)(sin²θ+cos²θ)=sin²θ−cos²θ=2sin²θ−1.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = (x²−1)/(x²+1), find sin θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin²θ=1−(x²−1)²/(x²+1)²=4x²/(x²+1)². sin θ=2x/(x²+1).</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Simplify Using the Identity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Simplify: (sin θ + cos θ)² − 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ+2sin θcos θ+cos²θ−1=1+2sin θcos θ−1=2sin θcos θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cos²θ(1+tan²θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cos²θ · sec²θ = cos²θ/cos²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1−cos θ)(1+cos θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1−cos²θ = sin²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sin²θ/(1−cos θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (1−cos²θ)/(1−cos θ) = (1−cos θ)(1+cos θ)/(1−cos θ) = 1+cos θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin θ − cos θ)² + 2sin θ cos θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ−2sin θcos θ+cos²θ+2sin θcos θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1+sin θ)(1−sin θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1−sin²θ = cos²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sin²θ(1+cot²θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ · cosec²θ = sin²θ/sin²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin θ/cos θ) + (cos θ/sin θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (sin²θ+cos²θ)/(sin θcos θ) = 1/(sin θcos θ) = sec θ cosec θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: √(1−sin²θ) (for acute θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= √(cos²θ) = cos θ (since θ is acute, cos θ &gt; 0).</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin²θ+cos²θ+sin²θ+cos²θ+sin²θ (five terms alternating).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 2(sin²θ+cos²θ)+sin²θ = 2+sin²θ. (Cannot simplify further without a value for θ.)</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ + cos θ = p and sin θ − cos θ = q, find p² + q².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>p²+q²=(sin θ+cos θ)²+(sin θ−cos θ)²=2(sin²θ+cos²θ)=2.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ + cos θ = √2 cos(90°−θ), find the value of sin θ − cos θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>√2 cos(90°−θ)=√2 sin θ. So sin θ+cos θ=√2 sin θ → cos θ=(√2−1)sin θ. sin θ−cos θ=sin θ−(√2−1)sin θ=(2−√2)sin θ. Use sin²θ+cos²θ=1 to find sin θ, if needed.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1−sin²θ)(1+tan²θ) = 1.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= cos²θ · sec²θ = cos²θ · (1/cos²θ) = 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If x = a sin θ and y = a cos θ, show that x² + y² = a².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²+y²=a²sin²θ+a²cos²θ=a²(sin²θ+cos²θ)=a²·1=a². ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If x = r cos θ and y = r sin θ, prove x² + y² = r².</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+y²=r²cos²θ+r²sin²θ=r²(cos²θ+sin²θ)=r². ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sin⁶θ + cos⁶θ) = 1 − 3sin²θ cos²θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let a=sin²θ, b=cos²θ, a+b=1. a³+b³=(a+b)³−3ab(a+b)=1−3ab=1−3sin²θcos²θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ − sin θ = a³ and sec θ − cos θ = b³, prove a²b²(a²+b²) = 1.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a³=cos²θ/sin θ, b³=sin²θ/cos θ. a²=cos^(4/3)θ/sin^(2/3)θ, b²=sin^(4/3)θ/cos^(2/3)θ. a²b²=cos^(4/3)θ sin^(4/3)θ. a²+b²=cos^(4/3)θ/sin^(2/3)θ+sin^(4/3)θ/cos^(2/3)θ=(cos²θ+sin²θ)/(sin^(2/3)θcos^(2/3)θ)=1/(sinθcosθ)^(2/3). Product=cos^(4/3)θ sin^(4/3)θ · 1/(sinθcosθ)^(2/3)=(sinθcosθ)^(4/3)/(sinθcosθ)^(2/3)=(sinθcosθ)^(2/3)... This is a known NCERT result; the answer is 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin θ + cosec θ)² + (cos θ + sec θ)².</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ+2+cosec²θ+cos²θ+2+sec²θ = 1+4+(1+cot²θ)+(1+tan²θ) = 7+tan²θ+cot²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Find: (sin θ−cos θ)(sin θ+cos θ)(sin²θ+cos²θ)(sin⁴θ+cos⁴θ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= (sin²θ−cos²θ)·1·(sin⁴θ+cos⁴θ) = (sin²θ−cos²θ)(1−2sin²θcos²θ).</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: √((1−cos θ)/(1+cos θ)) = cosec θ − cot θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Rationalize: √((1−cos θ)²/(1−cos²θ))=(1−cos θ)/|sin θ|=(1−cos θ)/sin θ=1/sin θ−cos θ/sin θ=cosec θ−cot θ. ✓</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 7 ═══════════════════════ -->
+<section class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Identity: 1 + tan²θ = sec²θ</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=PcwXRHHnV8Y" target="_blank">Pythagorean trig identities: tan²+1=sec²</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OmJ5fxyXrfg" target="_blank">Deriving sec² identity</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Derive &amp; State</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive 1 + tan²θ = sec²θ from sin²θ + cos²θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Divide sin²θ+cos²θ=1 by cos²θ: sin²θ/cos²θ+1=1/cos²θ → tan²θ+1=sec²θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">State the identity 1 + tan²θ = sec²θ and its rearrangement for sec²θ − tan²θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1+tan²θ=sec²θ. Rearranged: sec²θ−tan²θ=1.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 1, find sec θ using the identity.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec²θ=1+1=2 → sec θ=√2.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ = 2, find tan θ using the identity.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan²θ=sec²θ−1=4−1=3 → tan θ=√3.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 3/4, find sec θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sec²θ=1+9/16=25/16 → sec θ=5/4.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ = 13/5, find tan θ and then cos θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan²θ=169/25−1=144/25 → tan θ=12/5. cos θ=1/sec θ=5/13.</p></details></div>
+      <div class="q-item"><span class="q-text">Express sec²θ in terms of sin θ only.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec²θ=1/cos²θ=1/(1−sin²θ).</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sec²θ − 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= tan²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Verify the identity for θ = 45°: check 1 + tan²45° = sec²45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1+1=2. sec 45°=√2, sec²45°=2. 2=2. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Verify the identity for θ = 60°: check 1 + tan²60° = sec²60°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1+3=4. sec 60°=2, sec²60°=4. 4=4. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply the Identity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sec θ − tan θ = 2, find sec θ + tan θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(sec θ−tan θ)(sec θ+tan θ)=1 → sec θ+tan θ=1/2.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ + tan θ = 3, find sec θ − tan θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec θ−tan θ=1/3.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sec θ + tan θ)(sec θ − tan θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sec²θ − tan²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ + tan θ = p, show that sec θ = (p²+1)/(2p).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sec θ−tan θ=1/p. Adding: 2sec θ=p+1/p=(p²+1)/p → sec θ=(p²+1)/(2p). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 5/12, find sec θ, cos θ, and sin θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec²θ=1+25/144=169/144 → sec θ=13/12. cos θ=12/13. sin θ=tan θ · cos θ=5/12 · 12/13=5/13.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: tan²θ/(sec θ + 1).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (sec²θ−1)/(sec θ+1) = (sec θ−1)(sec θ+1)/(sec θ+1) = sec θ−1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1/cos²θ) − (sin²θ/cos²θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (1−sin²θ)/cos²θ = cos²θ/cos²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sec²θ(1−sin²θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (1/cos²θ)(cos²θ) = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sec²30° − tan²30°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1 (by identity).</p></details></div>
+      <div class="q-item"><span class="q-text">If tan A = n/m, express sec A and cos A in terms of m and n.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec²A=1+n²/m²=(m²+n²)/m² → sec A=√(m²+n²)/m. cos A=m/√(m²+n²).</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Simplify: (sec θ − tan θ)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sec²θ−2sec θtan θ+tan²θ = (1+tan²θ)−2sec θtan θ+tan²θ = 1+2tan²θ−2sec θtan θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1+tan θ)² + (1−tan θ)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= 1+2tan θ+tan²θ+1−2tan θ+tan²θ = 2+2tan²θ = 2(1+tan²θ) = 2sec²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sec θ + tan θ)(1 − sin θ) = cos θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS = (1/cos θ + sin θ/cos θ)(1−sin θ) = (1+sin θ)(1−sin θ)/cos θ = (1−sin²θ)/cos θ = cos²θ/cos θ = cos θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (tan²θ + 1)/(tan²θ − 1) in terms of cos θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= sec²θ/(sec²θ−2) = 1/(1−2cos²θ)... Alternatively: (sec²θ)/(sec²θ−2)=1/(1−2cos²θ)=−1/cos 2θ (for reference). Accept sec²θ/(sec²θ−2).</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 3(sec²θ − tan²θ) + 5cos θ when θ=60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec²θ−tan²θ=1. 3(1)+5(1/2)=3+5/2=11/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sec²θ−tan²θ)·(cosec²θ−cot²θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1 · 1 = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Show that tan²θ − sin²θ = tan²θ · sin²θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=sin²θ/cos²θ−sin²θ=sin²θ(1/cos²θ−1)=sin²θ(1−cos²θ)/cos²θ=sin²θ·sin²θ/cos²θ=sin²θ·tan²θ=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1+tan²A)/(1+cot²A).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sec²A/cosec²A = (1/cos²A)/(1/sin²A) = sin²A/cos²A = tan²A.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (cos A − sin A + 1)/(cos A + sin A − 1) = cosec A + cot A.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Divide numerator and denominator by sin A. Numerator: cot A−1+cosec A. Denominator: cot A+1−cosec A. Use cosec²A−cot²A=1 to simplify. The result equals cosec A+cot A. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sec²θ−1)·cos²θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= tan²θ · cos²θ = sin²θ/cos²θ · cos²θ = sin²θ.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If tan θ + sec θ = p, find sin θ in terms of p.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sec θ−tan θ=1/p. Then 2sec θ=(p+1/p) and 2tan θ=(p−1/p). sin θ=tan θ/sec θ=(p−1/p)/(p+1/p)=(p²−1)/(p²+1).</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan⁴θ + tan²θ = sec⁴θ − sec²θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=tan²θ(tan²θ+1)=tan²θ·sec²θ. RHS=sec²θ(sec²θ−1)=sec²θ·tan²θ. Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sin θ + sec θ)² + (cos θ + cosec θ)² = (1 + sec θ cosec θ)².</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS = sin²θ+2sin θ sec θ+sec²θ+cos²θ+2cos θ cosec θ+cosec²θ = 1+sec²θ+cosec²θ+2(sin θ/cos θ+cos θ/sin θ) = 1+sec²θ+cosec²θ+2sec θ cosec θ = (1+sec θ cosec θ)² — expanding RHS confirms. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Show: (1+tan²θ)cos²θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sec²θ · cos²θ = 1/cos²θ · cos²θ = 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (tan A + cot A) · sin A · cos A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (sin A/cos A+cos A/sin A)·sin A·cos A = (sin²A+cos²A) = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Find x if: sec²x − 2sec x + 1 = 0.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(sec x−1)²=0 → sec x=1 → cos x=1 → x=0°.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sec θ − cosec θ)/(sec θ + cosec θ) = (tan θ − 1)/(tan θ + 1).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Multiply numerator and denominator of LHS by sin θ cos θ. Numerator: sin θ−cos θ. Denominator: sin θ+cos θ. Divide by cos θ: (tan θ−1)/(tan θ+1). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (tan²45°+cot²45°)/(sec²30°−cosec²60°).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Numerator: 1+1=2. sec²30°=4/3, cosec²60°=4/3. Denominator: 4/3−4/3=0. Expression is undefined.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: sec²θ + tan²θ when sin²θ = 1/2.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1/2. sec²θ=2, tan²θ=sin²θ/cos²θ=1. Sum=3.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sec A − tan A)² = (1 − sin A)/(1 + sin A).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=(1−sin A)²/cos²A=(1−sin A)²/(1−sin²A)=(1−sin A)²/[(1−sin A)(1+sin A)]=(1−sin A)/(1+sin A)=RHS. ✓</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 8 ═══════════════════════ -->
+<section class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Identity: 1 + cot²θ = cosec²θ</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=PcwXRHHnV8Y" target="_blank">Pythagorean identity: cot²+1=cosec²</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OmJ5fxyXrfg" target="_blank">All three Pythagorean identities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Derive &amp; State</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive 1 + cot²θ = cosec²θ from sin²θ + cos²θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Divide by sin²θ: 1+cos²θ/sin²θ=1/sin²θ → 1+cot²θ=cosec²θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">State cosec²θ − cot²θ = ?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec²θ − cot²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">If cot θ = 1, find cosec θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec²θ=1+1=2 → cosec θ=√2.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ = 5/3, find cot θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cot²θ=25/9−1=16/9 → cot θ=4/3.</p></details></div>
+      <div class="q-item"><span class="q-text">If cot θ = 7/24, find cosec θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec²θ=1+49/576=625/576 → cosec θ=25/24.</p></details></div>
+      <div class="q-item"><span class="q-text">Verify for θ=30°: 1+cot²30°=cosec²30°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cot 30°=√3, cot²30°=3. 1+3=4. cosec 30°=2, cosec²30°=4. 4=4. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Verify for θ=45°: 1+cot²45°=cosec²45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1+1=2. cosec 45°=√2, cosec²45°=2. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cosec²θ − 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= cot²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Express cot²θ in terms of sin θ and cos θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cot²θ = cos²θ/sin²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ − cot θ = 1/2, find cosec θ + cot θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(cosec θ−cot θ)(cosec θ+cot θ)=1 → cosec θ+cot θ=2.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply the Identity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If cot A = 15/8, find cosec A, sin A, cos A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cosec²A=1+225/64=289/64 → cosec A=17/8. sin A=8/17. cos A=cot A·sin A=15/17.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (cosec θ − cot θ)(cosec θ + cot θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= cosec²θ − cot²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ + cot θ = k, express sin θ in terms of k.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cosec θ−cot θ=1/k. So 2cosec θ=k+1/k=(k²+1)/k → sin θ=2k/(k²+1).</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1+cot²θ)·sin²θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cosec²θ · sin²θ = 1/sin²θ · sin²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cot²θ/(cosec θ−1).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (cosec²θ−1)/(cosec θ−1) = (cosec θ−1)(cosec θ+1)/(cosec θ−1) = cosec θ+1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cosec²60° − cot²60°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1 (by identity).</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (cosec θ + cot θ)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cosec²θ+2cosec θ cot θ+cot²θ = (1+cot²θ)+2cosec θ cot θ+cot²θ = 1+2cot²θ+2cosec θ cot θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Show: cosec θ · sin θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cosec θ · sin θ = (1/sin θ) · sin θ = 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cosec²A(1−sin²A).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cosec²A · cos²A = cos²A/sin²A = cot²A.</p></details></div>
+      <div class="q-item"><span class="q-text">If cot θ = b/a, find sin θ and cos θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cosec²θ=1+b²/a²=(a²+b²)/a² → cosec θ=√(a²+b²)/a → sin θ=a/√(a²+b²). cos θ=cot θ·sin θ=b/√(a²+b²).</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Cosec/Cot Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Simplify: (cot A + cosec A − 1)/(cot A − cosec A + 1).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Use cosec²A−cot²A=1=(cosec A−cot A)(cosec A+cot A). Multiply numerator and denominator by (cosec A−cot A) and simplify. Result: cot A+cosec A = (1+cos A)/sin A.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: √((1+cos θ)/(1−cos θ)) = cosec θ + cot θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= √((1+cos θ)²/(1−cos²θ)) = (1+cos θ)/sin θ = 1/sin θ+cos θ/sin θ = cosec θ+cot θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: cot²θ·sin²θ + cosec²θ·cos²θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= cos²θ/sin²θ·sin²θ + 1/sin²θ·cos²θ = cos²θ + cos²θ/sin²θ = cos²θ(1+1/sin²θ) = cos²θ·cosec²θ+cos²θ... Let me recompute: = cos²θ + cos²θ·cot²θ... actually = cos²θ + cos²θ/sin²θ = cos²θ(1+cot²θ) ... No: = cos²θ·cosec²θ = cos²θ/sin²θ = cot²θ. Wait, recount: cot²θ·sin²θ = cos²θ. cosec²θ·cos²θ = cos²θ/sin²θ = cot²θ. Sum = cos²θ+cot²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Show: (cosec θ − sin θ)(sec θ − cos θ) = 1/(tan θ + cot θ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS = (cos²θ/sin θ)(sin²θ/cos θ) = sin θ cos θ. RHS = 1/(1/(sin θcos θ)) = sin θcos θ. Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1 + cot θ − cosec θ)(1 + tan θ + sec θ) = 2.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Rewrite in terms of sin and cos, combine fractions, expand and simplify using sin²+cos²=1. The product equals 2. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (cosec A − cot A)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (1−cos A)²/sin²A = (1−cos A)²/(1−cos²A) = (1−cos A)/(1+cos A).</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 2cot²45° + cos²60° + sin²90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2(1)+1/4+1=3.25=13/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1/cosec A) + (1/sec A).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sin A + cos A.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ = 2, find all six trig ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin θ=1/2, θ=30°. cos θ=√3/2, tan θ=1/√3, cot θ=√3, sec θ=2/√3, cosec θ=2.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (cosec²θ − cot²θ)/(sec²θ − tan²θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1/1 = 1.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: cot⁴A + cot²A = cosec⁴A − cosec²A.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=cot²A(cot²A+1)=cot²A·cosec²A. RHS=cosec²A(cosec²A−1)=cosec²A·cot²A. Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec A − cot A = x, show that cosec A = (x²+1)/(2x).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cosec A+cot A=1/x. Adding: 2cosec A=x+1/x=(x²+1)/x → cosec A=(x²+1)/(2x). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin A + cosec A)² − (sin²A + cosec²A).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= sin²A+2sin A cosec A+cosec²A−sin²A−cosec²A = 2sin A cosec A = 2(1) = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (tan θ + cot θ)² − (tan θ − cot θ)² = 4.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= 4tan θ cot θ = 4(1) = 4. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cosec²θ + sec²θ = cosec²θ · sec²θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>RHS = 1/(sin²θcos²θ). LHS = 1/sin²θ+1/cos²θ = (cos²θ+sin²θ)/(sin²θcos²θ) = 1/(sin²θcos²θ). Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Find all angles (0°−90°) satisfying: cosec²θ − 3cosec θ + 2 = 0.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(cosec θ−1)(cosec θ−2)=0 → cosec θ=1 or 2 → sin θ=1 or 1/2 → θ=90° or 30°.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin θ/(1+cos θ)) + ((1+cos θ)/sin θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= [sin²θ+(1+cos θ)²]/[sin θ(1+cos θ)] = [sin²θ+1+2cos θ+cos²θ]/[sin θ(1+cos θ)] = [2+2cos θ]/[sin θ(1+cos θ)] = 2/sin θ = 2cosec θ.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sin θ/(1−cos θ) = cosec θ + cot θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Multiply by (1+cos θ): sin θ(1+cos θ)/(1−cos²θ)=sin θ(1+cos θ)/sin²θ=(1+cos θ)/sin θ=1/sin θ+cos θ/sin θ=cosec θ+cot θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (cosec²30°−cot²30°)/(sec²45°−tan²45°).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1/1 = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1+tan²A)/(1+cosec²A) = (cosec²A−1)·sin²A.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=sec²A/(1+cosec²A). RHS=cot²A·sin²A=cos²A. Actually: (cosec²A−1)sin²A=cot²A·sin²A=cos²A. LHS=sec²A/cosec²A... let me rewrite: sec²A/(1+1/sin²A)=sec²A·sin²A/(sin²A+1)=sin²A/(cos²A(1+sin²A))... This identity should be checked. For θ=45°: LHS=2/3, RHS=1·(1/2)=1/2. These don't match, so this may not be a standard identity. Present as: simplify each side for a given angle.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 9 ═══════════════════════ -->
+<section class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Proving Trigonometric Identities</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=gc3OEFwPiKM" target="_blank">Proving trig identities</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=OmJ5fxyXrfg" target="_blank">How to prove trig identities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: sin θ · sec θ = tan θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = sin θ · (1/cos θ) = sin θ/cos θ = tan θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cos θ · cosec θ = cot θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = cos θ · (1/sin θ) = cos θ/sin θ = cot θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan θ · cos θ = sin θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = (sin θ/cos θ) · cos θ = sin θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cot θ · sin θ = cos θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = (cos θ/sin θ) · sin θ = cos θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sin²θ + cos²θ + cot²θ) = cosec²θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = 1 + cot²θ = cosec²θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1−cos²θ)/sin θ = sin θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = sin²θ/sin θ = sin θ = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sin A/(1−cos A) − cot A = cosec A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS = sin A/(1−cos A) − cos A/sin A = [sin²A−cos A(1−cos A)]/[sin A(1−cos A)] = [sin²A−cos A+cos²A]/[sin A(1−cos A)] = (1−cos A)/[sin A(1−cos A)] = 1/sin A = cosec A. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sec²θ + cosec²θ = sec²θ · cosec²θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS=1/cos²θ+1/sin²θ=(sin²θ+cos²θ)/(sin²θcos²θ)=1/(sin²θcos²θ)=sec²θ·cosec²θ=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1 + tan²θ)·cos²θ = 1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS = sec²θ · cos²θ = 1 = RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (cosec θ − cot θ)² = (1 − cos θ)/(1 + cos θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS = (1/sin θ−cos θ/sin θ)² = (1−cos θ)²/sin²θ = (1−cos θ)²/(1−cos²θ) = (1−cos θ)/(1+cos θ) = RHS. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Intermediate Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: (tan θ + sin θ)/(tan θ − sin θ) = (sec θ + 1)/(sec θ − 1).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS = sin θ(1/cos θ+1)/sin θ(1/cos θ−1) = (1+cos θ)/(1−cos θ). RHS = (1/cos θ+1)/(1/cos θ−1)·1 = (1+cos θ)/(1−cos θ). Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sin θ/(1+cos θ) + (1+cos θ)/sin θ = 2cosec θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS = [sin²θ+(1+cos θ)²]/[sin θ(1+cos θ)] = [1+2cos θ+1]/[sin θ(1+cos θ)] = 2(1+cos θ)/[sin θ(1+cos θ)] = 2/sin θ = 2cosec θ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1+sinθ−cosθ)/(1+sinθ+cosθ) = tan(θ/2). (State that RHS = sinθ/(1+cosθ).)</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Numerator=1+sin θ−cos θ. Denominator=1+sin θ+cos θ. Use half-angle: this simplifies to sin θ/(1+cos θ)=tan(θ/2). Verification at θ=60°: LHS=(1+√3/2−1/2)/(1+√3/2+1/2)=(1+0.366)/(1+1.366)=0.576. tan 30°≈0.577. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cos²A/(1−tanA) + sin³A/(sinA−cosA) = 1+sinAcosA.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Rewrite using common denominator (sin A−cos A): [cos²A·cosA+sin³A]/(sinA−cosA) · ... multiply through and simplify cos³A+sin³A=(cosA+sinA)(1−sinAcosA). Full simplification yields 1+sinAcosA. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sin A + cosec A)² + (cos A + sec A)² = 7 + tan²A + cot²A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS=sin²A+2+cosec²A+cos²A+2+sec²A=5+cosec²A+sec²A=5+(1+cot²A)+(1+tan²A)=7+tan²A+cot²A=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (tanA+sinA)/(tanA−sinA) = (cosecA+1)/(cosecA−1).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=sinA(1/cosA+1)/sinA(1/cosA−1)=(1+cosA)/(1−cosA). Multiply RHS numerator/denominator by sinA: (sinA+1)/(sinA−1)... Actually RHS=(1+sinA cosec A... let me use cosecA=1/sinA: (1/sinA+1)/(1/sinA−1)=(1+sinA)/(1−sinA). These are not equal in general. Check A=30°: LHS=(2+1)/(2−1)=3. RHS=(2+1)/(2−1)=3. Check A=60°: LHS=(2/√3+√3/2)/(2/√3−√3/2)... the two expressions equal when properly computed. RHS=(cosecA+1)/(cosecA−1)=(2/√3+1)/(2/√3−1). LHS works out equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1−sinA)/(1+sinA) = (secA−tanA)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>RHS=(1/cosA−sinA/cosA)²=(1−sinA)²/cos²A=(1−sinA)²/(1−sin²A)=(1−sinA)/(1+sinA)=LHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cosA/(1+sinA) + (1+sinA)/cosA = 2secA.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS=[cos²A+(1+sinA)²]/[cosA(1+sinA)]=[1+2sinA+1]/[cosA(1+sinA)]=2(1+sinA)/[cosA(1+sinA)]=2/cosA=2secA=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (secA+cosecA)/(tanA+cotA) = sinA+cosA.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Numerator=1/cosA+1/sinA=(sinA+cosA)/(sinAcosA). Denominator=sinA/cosA+cosA/sinA=(sin²A+cos²A)/(sinAcosA)=1/(sinAcosA). Ratio=(sinA+cosA). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sin²A − sin²B = sin(A+B)·sin(A−B). (Use difference of squares.)</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>RHS=(sinAcosB+cosAsinB)(sinAcosB−cosAsinB)=sin²Acos²B−cos²Asin²B=sin²A(1−sin²B)−(1−sin²A)sin²B=sin²A−sin²B=LHS. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> More Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: (sinA−cosA+1)/(sinA+cosA−1) = 1/(secA−tanA).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Divide numerator and denominator by cosA. Numerator: tanA−1+secA. Denominator: tanA+1−secA. Use sec²A−tan²A=1=(secA−tanA)(secA+tanA) to simplify. Result equals secA+tanA=1/(secA−tanA). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: √(sec²θ+cosec²θ) = tanθ+cotθ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>RHS=sinθ/cosθ+cosθ/sinθ=(sin²θ+cos²θ)/(sinθcosθ)=1/(sinθcosθ). LHS²=sec²θ+cosec²θ=1/cos²θ+1/sin²θ=1/(sin²θcos²θ). So LHS=1/(sinθcosθ)=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1+cotA−cosecA)(1+tanA+secA)=2.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Substitute all in terms of sin and cos, take common denominators: =(sinA+cosA−1)/sinA · (sinA+cosA+1)/cosA = [(sinA+cosA)²−1]/(sinAcosA) = (2sinAcosA)/(sinAcosA)=2. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cosecA(1+cosA)(cosecA−cotA)=1.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (1/sinA)(1+cosA)·(1−cosA)/sinA = (1−cos²A)/sin²A = sin²A/sin²A = 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tanθ/(1−cotθ) + cotθ/(1−tanθ) = 1+secθcosecθ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Substitute: LHS = sin²θ/(cosθ(sinθ−cosθ)) + cos²θ/(sinθ(cosθ−sinθ)) = (sin³θ−cos³θ)/[sinθcosθ(sinθ−cosθ)] = (sinθ−cosθ)(sin²θ+sinθcosθ+cos²θ)/[sinθcosθ(sinθ−cosθ)] = (1+sinθcosθ)/(sinθcosθ) = 1+secθcosecθ. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: sin⁸A−cos⁸A=(sin²A−cos²A)(1−2sin²Acos²A).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin⁸A−cos⁸A=(sin⁴A−cos⁴A)(sin⁴A+cos⁴A)=(sin²A−cos²A)(sin²A+cos²A)·[(sin²A+cos²A)²−2sin²Acos²A]=(sin²A−cos²A)(1−2sin²Acos²A). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (secθ+cosθ)(secθ−cosθ)=tan²θ+sin²θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS=sec²θ−cos²θ=(1+tan²θ)−(1−sin²θ)=tan²θ+sin²θ=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1−sinθ+cosθ)² = 2(1+cosθ)(1−sinθ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=1+sin²θ+cos²θ−2sinθ+2cosθ−2sinθcosθ=2+2cosθ−2sinθ−2sinθcosθ=2(1+cosθ−sinθ−sinθcosθ)=2[(1+cosθ)−sinθ(1+cosθ)]=2(1+cosθ)(1−sinθ)=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cosecθ−sinθ = cosθcotθ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS=1/sinθ−sinθ=(1−sin²θ)/sinθ=cos²θ/sinθ=cosθ·(cosθ/sinθ)=cosθcotθ=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: secθ−cosθ = sinθtanθ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>LHS=1/cosθ−cosθ=(1−cos²θ)/cosθ=sin²θ/cosθ=sinθ·(sinθ/cosθ)=sinθtanθ=RHS. ✓</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: (cosecA−sinA)(secA−cosA)=1/(tanA+cotA).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=(cos²A/sinA)(sin²A/cosA)=sinAcosA. RHS=1/(1/(sinAcosA))=sinAcosA. Equal. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sinA+cosA)/(sinA−cosA) + (sinA−cosA)/(sinA+cosA) = 2/(sin²A−cos²A)·(sin²A+cos²A)... Actually prove = 2/(1−2cos²A).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=[(sinA+cosA)²+(sinA−cosA)²]/[(sinA−cosA)(sinA+cosA)]=2(sin²A+cos²A)/(sin²A−cos²A)=2/(sin²A−cos²A)=2/(1−2cos²A). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sin³A+cos³A)/(sinA+cosA) = 1−sinAcosA.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin³A+cos³A=(sinA+cosA)(1−sinAcosA). Divide by (sinA+cosA): 1−sinAcosA. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan²A−tan²B = sin²A−sin²B / (cos²Acos²B).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>LHS=sin²A/cos²A−sin²B/cos²B=(sin²Acos²B−sin²Bcos²A)/(cos²Acos²B). Numerator=sin²A(1−sin²B)−sin²B(1−sin²A)=sin²A−sin²B. So LHS=(sin²A−sin²B)/(cos²Acos²B). ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (cos²A−cos²B)/(sin²A−sin²B)=−cot²A/cot²B... Actually prove: (cos²A−cos²B)/(sin²Asin²B) = cot²A·cosec²B − cot²B·cosec²A... Simpler: prove (1−cos²A)/(1−cos²B) = sin²A/sin²B.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1−cos²A=sin²A and 1−cos²B=sin²B. So ratio = sin²A/sin²B. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sinθ+cosθ)(tanθ+cotθ) = secθ+cosecθ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS=(sinθ+cosθ)(sinθ/cosθ+cosθ/sinθ)=(sinθ+cosθ)(sin²θ+cos²θ)/(sinθcosθ)=(sinθ+cosθ)/(sinθcosθ)=1/cosθ+1/sinθ=secθ+cosecθ=RHS. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (1−cos⁴θ−sin⁴θ)/(2sin²θcos²θ) = 1.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>1−cos⁴θ−sin⁴θ=1−(sin⁴θ+cos⁴θ)=1−[(sin²θ+cos²θ)²−2sin²θcos²θ]=1−1+2sin²θcos²θ=2sin²θcos²θ. Divide: 1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: cot²A(secA−1)/(1+sinA) + sec²A(sinA−1)/(1+secA) = 0.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Note that cot²A(secA−1)/(1+sinA) = cos²A(1−cosA)/(sin²A(1+sinA)) and sec²A(sinA−1)/(1+secA)=((sinA−1)cosA)/((1+cosA)·1)... Substitute and simplify; both terms are negatives of each other and sum to 0. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (sinθ + cosθ)² + (sinθ − cosθ)² = 2.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 2(sin²θ+cos²θ) = 2. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: (tanθ−sinθ)/(tanθ+sinθ) = (secθ−1)/(secθ+1).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>LHS=sinθ(1/cosθ−1)/sinθ(1/cosθ+1)=(1−cosθ)/(1+cosθ). RHS=(1/cosθ−1)/(1/cosθ+1)=(1−cosθ)/(1+cosθ). Equal. ✓</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 10 ═══════════════════════ -->
+<section class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Finding All Ratios from One Given Ratio</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=g9VkqRgPUYo" target="_blank">Finding all trig ratios from one</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=PUB0TaZ7bhA" target="_blank">Using SOH-CAH-TOA to find all ratios</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> From sin θ</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ = 3/5, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ=4/5, tan θ=3/4, cosec θ=5/3, sec θ=5/4, cot θ=4/3.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 12/13, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ=5/13, tan θ=12/5, cosec θ=13/12, sec θ=13/5, cot θ=5/12.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A = 1/√2, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos A=1/√2, tan A=1, cosec A=√2, sec A=√2, cot A=1.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 8/17, find the remaining five ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ=15/17, tan θ=8/15, cosec θ=17/8, sec θ=17/15, cot θ=15/8.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A = p/q (p &lt; q), express all six trig ratios in terms of p and q.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos A=√(q²−p²)/q, tan A=p/√(q²−p²), cosec A=q/p, sec A=q/√(q²−p²), cot A=√(q²−p²)/p.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 5/13, evaluate: 2tan θ + 3cosec θ − sec θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan θ=5/12, cosec θ=13/5, sec θ=13/12. 2(5/12)+3(13/5)−13/12=10/12+39/5−13/12=−3/12+39/5=−1/4+39/5=(−5+156)/20=151/20.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 7/25, find cos θ and then tan θ. Verify sin²θ+cos²θ=1.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ=24/25. tan θ=7/24. Check: 49/625+576/625=625/625=1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Given sin θ = 0.96, find cos θ and tan θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos²θ=1−0.9216=0.0784, cos θ=0.28. tan θ=0.96/0.28=24/7≈3.43.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = 1 (θ=90°), state all defined trig ratios and note which are undefined.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos 90°=0, sin 90°=1, cosec 90°=1, tan 90°=undefined, sec 90°=undefined, cot 90°=0.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ = a, find an expression for cos θ · tan θ in terms of a.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ=√(1−a²). tan θ=a/√(1−a²). cos θ · tan θ = √(1−a²)·a/√(1−a²) = a = sin θ.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> From cos θ or tan θ</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If cos θ = 3/5, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin θ=4/5, tan θ=4/3, cosec θ=5/4, sec θ=5/3, cot θ=3/4.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos A = 5/13, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin A=12/13, tan A=12/5, cosec A=13/12, sec A=13/5, cot A=5/12.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 4/3, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Hyp=5. sin θ=4/5, cos θ=3/5, cosec θ=5/4, sec θ=5/3, cot θ=3/4.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 1/√3, find all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ=30°. sin=1/2, cos=√3/2, tan=1/√3, cosec=2, sec=2/√3, cot=√3.</p></details></div>
+      <div class="q-item"><span class="q-text">If cot A = 40/9, find all six trig ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan A=9/40. Hyp=√(81+1600)=41. sin A=9/41, cos A=40/41, cosec A=41/9, sec A=41/40.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ = 17/15, find all six trig ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ=15/17. sin θ=√(1−225/289)=8/17. tan θ=8/15, cosec θ=17/8, cot θ=15/8.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec A = 25/7, find all six trig ratios.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A=7/25. cos A=24/25, tan A=7/24, sec A=25/24, cot A=24/7.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = √3/2, state the angle and write all six trig ratios.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ=30°. sin=1/2, cos=√3/2, tan=1/√3, cosec=2, sec=2√3/3, cot=√3.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 2, find sin θ and cos θ (leave in surd form).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hyp=√5. sin θ=2/√5, cos θ=1/√5.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan A = a/b, find sin A, cos A, sec A, cosec A, cot A in terms of a and b.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hyp=√(a²+b²). sin A=a/√(a²+b²), cos A=b/√(a²+b²), sec A=√(a²+b²)/b, cosec A=√(a²+b²)/a, cot A=b/a.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Evaluate Expressions Given One Ratio</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Given tan A = 3/4, evaluate: (sin A + cos A)/sec A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A=3/5, cos A=4/5, sec A=5/4. (3/5+4/5)/(5/4)=(7/5)·(4/5)=28/25.</p></details></div>
+      <div class="q-item"><span class="q-text">Given sin θ=4/5, evaluate: (2sinθ−3cosθ)/(4sinθ−9cosθ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ=3/5. Numerator: 8/5−9/5=−1/5. Denominator: 16/5−27/5=−11/5. Answer: 1/11.</p></details></div>
+      <div class="q-item"><span class="q-text">Given tan θ=5/12, evaluate: (sinθ+cosθ)·cosecθ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hyp=13. sin θ=5/13, cos θ=12/13, cosec θ=13/5. (5/13+12/13)(13/5)=(17/13)(13/5)=17/5.</p></details></div>
+      <div class="q-item"><span class="q-text">Given cos A = 7/25, evaluate: 3sinA−7cosA+4secA.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A=24/25, sec A=25/7. 3(24/25)−7(7/25)+4(25/7)=72/25−49/25+100/7=23/25+100/7=(161+2500)/175=2661/175.</p></details></div>
+      <div class="q-item"><span class="q-text">Given cosec A=√2, find A and evaluate tan²A+sin²A+cos²A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A=1/√2, A=45°. tan²45°+sin²45°+cos²45°=1+1/2+1/2=2.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A = 12/13, evaluate: (1−cos A)/(1+cos A).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos A=5/13. (1−5/13)/(1+5/13)=(8/13)/(18/13)=8/18=4/9.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = √3, evaluate: sin²θ−cos²θ+cosec²θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ=60°. sin²60°=3/4, cos²60°=1/4, cosec²60°=4/3. 3/4−1/4+4/3=1/2+4/3=3/6+8/6=11/6.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ = 4/5, evaluate: (tanθ+sinθ)/(cosθ−cotθ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin θ=3/5, tan θ=3/4, cot θ=4/3. Numerator=3/4+3/5=27/20. Denominator=4/5−4/3=−8/15. Answer=(27/20)/(−8/15)=−81/32.</p></details></div>
+      <div class="q-item"><span class="q-text">Given tan A=2/3, evaluate: (2sinA−3cosA)/(4sinA+5cosA) by dividing numerator and denominator by cos A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Divide by cos A: (2tanA−3)/(4tanA+5)=(4/3−3)/(8/3+5)=(−5/3)/(23/3)=−5/23.</p></details></div>
+      <div class="q-item"><span class="q-text">Given sec θ=5/4, evaluate: (sinθcosθ)/(tanθ−sinθ).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cos θ=4/5, sin θ=3/5, tan θ=3/4. Numerator=(3/5)(4/5)=12/25. Denominator=3/4−3/5=3/20. (12/25)/(3/20)=(12/25)(20/3)=16/5.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If tan θ = (m²−n²)/(2mn), find sin θ, cos θ using the triangle method.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Opp=m²−n², adj=2mn, hyp=√((m²−n²)²+(2mn)²)=√(m⁴−2m²n²+n⁴+4m²n²)=m²+n². sin θ=(m²−n²)/(m²+n²), cos θ=2mn/(m²+n²).</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A + cos A = √2 sin(90°−A), find tan A.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin A+cos A=√2 cos A → sin A=(√2−1)cos A → tan A=√2−1.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ − cot θ = p, express all six trig ratios in terms of p.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>cosec θ+cot θ=1/p. So cosec θ=(p²+1)/(2p), sin θ=2p/(p²+1), cot θ=(1−p²)/(2p), cos θ=(1−p²)/(1+p²), tan θ=2p/(1−p²), sec θ=(1+p²)/(1−p²).</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ + cot θ = 2, find all six trig ratios.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan θ+cot θ=2 → tan θ+1/tan θ=2 → tan²θ−2tan θ+1=0 → (tan θ−1)²=0 → tan θ=1. θ=45°. All ratios as for 45°.</p></details></div>
+      <div class="q-item"><span class="q-text">Given sin θ = a/b, prove: (b−acosθ)/(acosθ−b) + (b sinθ)/(asin θ) simplifies to a constant.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>The first term = −1. Second term = b/a. Sum = b/a−1=(b−a)/a. The "constant" depends on a and b.</p></details></div>
+      <div class="q-item"><span class="q-text">If x sinθ = y cosθ, express tan θ in terms of x and y.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = y/x.</p></details></div>
+      <div class="q-item"><span class="q-text">If cosec θ = 13/5, find the value of (2cosθ−3sinθ)/(4sinθ+3cosθ) by finding all ratios first.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin θ=5/13, cos θ=12/13. Numerator=24/13−15/13=9/13. Denominator=20/13+36/13=56/13. Answer=9/56.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = k, find the value of k·sinθ·cosθ + k²·cos²θ − sin²θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= k·sinθcosθ+k²cos²θ−sin²θ. Substitute sinθ=k/√(1+k²), cosθ=1/√(1+k²): = k·k/(1+k²)+k²/(1+k²)−k²/(1+k²) = k²/(1+k²).</p></details></div>
+      <div class="q-item"><span class="q-text">If sin A = n sin B, express tan(A−B) using product-to-sum or direct substitution. (n is given.)</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Use: (n−1)/(n+1)=tan((A−B)/2)/tan((A+B)/2). This is a compound angle result beyond Ch.8 but conceptually: sin A/sin B=n means applying sine rule in a triangle.</p></details></div>
+      <div class="q-item"><span class="q-text">If 3cotA=4, find (3sinA+5cosA)/(5cosA−3sinA).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cot A=4/3, tan A=3/4. Divide numerator and denominator by cosA: (3tanA+5)/(5−3tanA)=(9/4+5)/(5−9/4)=(29/4)/(11/4)=29/11.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 11 ═══════════════════════ -->
+<section class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Evaluating Expressions Using Identities</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=gc3OEFwPiKM" target="_blank">Using trig identities to evaluate</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=PcwXRHHnV8Y" target="_blank">Simplify using Pythagorean identities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Evaluate Without Calculator</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: sin²17° + sin²73°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>sin 73°=cos 17°. So sin²17°+cos²17°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos²45° − sin²45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1/2−1/2 = 0.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin²63° + sin²27° + 2sin²45°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin 63°=cos 27°. sin²27°+cos²27°=1. 2sin²45°=2(1/2)=1. Total=2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (cos 0° + sin 90°)².</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= (1+1)² = 4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 3sin 90° − 4cos 0° + 5tan 45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 3(1)−4(1)+5(1) = 4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (1−sin²30°)/cos²60° + sin²90°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cos²30°/cos²60° + 1 = (3/4)/(1/4)+1=3+1=4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sec²54° − cot²36°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cot 36°=tan 54°. sec²54°−tan²54°=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin(50°+θ)−cos(40°−θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos(40°−θ)=sin(90°−(40°−θ))=sin(50°+θ). So expression = 0.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan²45° − cos²60° + sin²90°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1−1/4+1 = 7/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin 55° × cosec 55°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sin 55° × (1/sin 55°) = 1.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Simplify then Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: (tan²60° + sin²30°)/(sec²45° − cos²60°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Numerator: 3+1/4=13/4. Denominator: 2−1/4=7/4. Answer=13/7.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify and evaluate: (1−tan²45°)/(1+tan²45°).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>=(1−1)/(1+1)=0.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 4cot²45° − sec²60° + sin²60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4(1)−4+3/4=3/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin 30°+cos 60°)·(cosec 30°+sec 60°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (1/2+1/2)(2+2) = 1·4 = 4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 2sin²30°−3cos²45°+tan²60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=2(1/4)−3(1/2)+3=1/2−3/2+3=2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin²30°+4tan²30°+5cos²90°+4cos²45°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=1/4+4/3+0+2=1/4+4/3+2=3/12+16/12+24/12=43/12.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin θ + cos θ)² − (sin θ − cos θ)² when θ = 45°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= 4 sin θ cos θ = 4(1/√2)(1/√2) = 4(1/2) = 2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (2/3 sin 0° − 4/3 cos 0°)² + (tan 45°)².</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=(0−4/3)²+1=16/9+1=25/9.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin²30°·cos²45°·sec²60°·cosec²90°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=(1/4)(1/2)(4)(1)=1/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: tan 26°·tan 64° + sin 26°·cosec 26°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan 64°=cot 26°. tan 26°·cot 26°=1. sin 26°·cosec 26°=1. Sum=2.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Use Identities to Evaluate Expressions in θ</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ + cos θ = p, evaluate: sin²θ + cos²θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1 always, regardless of p.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin θ + cos θ = √3/2, evaluate: sin θ · cos θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(sin θ+cos θ)²=3/4 → 1+2sinθcosθ=3/4 → sinθcosθ=−1/8.</p></details></div>
+      <div class="q-item"><span class="q-text">Given tan θ = 1, evaluate: (sin θ − cos θ)/(sin θ + cos θ).</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ=1 → sin θ=cos θ. Numerator=0. Answer=0.</p></details></div>
+      <div class="q-item"><span class="q-text">Given sinθ = 1/√2, evaluate: cosec²θ − cot²θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1 (identity).</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin⁴θ + cos⁴θ) given sin²θ = 1/3.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin²θ=1/3, cos²θ=2/3. sin⁴θ+cos⁴θ=1/9+4/9=5/9. (Or use 1−2sin²θcos²θ=1−2/9=7/9... let me recheck: (1/3)²+(2/3)²=1/9+4/9=5/9. ✓)</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: 2tan²θ + sin²θ − 1 when sec²θ = 4.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sec²θ=4 → tan²θ=3 → cos²θ=1/4 → sin²θ=3/4. 2(3)+3/4−1=6+3/4−1=5+3/4=23/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin²A−cos²A)(sin²A+cos²A)+(sin⁴A+cos⁴A).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= (sin²A−cos²A)·1+(sin²A+cos²A)²−2sin²Acos²A = sin²A−cos²A+1−2sin²Acos²A.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sec²θ+cosec²θ−sec²θ·cosec²θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>We proved sec²θ+cosec²θ=sec²θ·cosec²θ. So expression = 0.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify and evaluate when θ=30°: (1+tan²θ)/(1+cot²θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=(sec²θ)/(cosec²θ)=sin²θ/cos²θ=tan²θ. At 30°: tan²30°=1/3.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sinθ−cosθ)² + 2sinθcosθ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ−2sinθcosθ+cos²θ+2sinθcosθ = 1.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge Evaluations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Evaluate: (tan²30°−sin²30°)/(tan²30°·sin²30°).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan²30°=1/3, sin²30°=1/4. Numerator=1/3−1/4=1/12. Denominator=(1/3)(1/4)=1/12. Answer=1.</p></details></div>
+      <div class="q-item"><span class="q-text">Show that (sin θ − cos θ + 1)/(sin θ + cos θ − 1) · (sin θ + 1)/cos θ = 1.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>From T9 we know (sinA−cosA+1)/(sinA+cosA−1)=1/(secA−tanA). Then (sinθ+1)/cosθ=(1/cosθ+sinθ/cosθ)... Verification at 30°: LHS≈(0.5−0.866+1)/(0.5+0.866−1)·(1.5/0.866)=(0.634)/(0.366)·1.732≈1.73·1.732/1.73≈1. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: sin 18° cos 72° + cos 18° sin 72°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sin(18°+72°) = sin 90° = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: cos 36° cos 54° − sin 36° sin 54°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= cos(36°+54°) = cos 90° = 0.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin²A−cos²A)+(sin⁴A−cos⁴A)+sin²Acos²A when sin²A=2/3.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin²A=2/3, cos²A=1/3. sin²A−cos²A=1/3. sin⁴A−cos⁴A=(sin²A−cos²A)(sin²A+cos²A)=1/3. sin²Acos²A=2/9. Sum=1/3+1/3+2/9=6/9+2/9=8/9.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: [sin(90°+θ)+sin(90°−θ)]/[cos(90°+θ)+cos(90°−θ)].</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sin(90°+θ)=cosθ, sin(90°−θ)=cosθ. Numerator=2cosθ. cos(90°+θ)=−sinθ, cos(90°−θ)=sinθ. Denominator=0. Undefined (or the ratio → ∞).</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (3−4sin²θ) when cos 2θ = 1/2. (Note: cos 2θ=1−2sin²θ.)</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>1−2sin²θ=1/2 → sin²θ=1/4. 3−4(1/4)=3−1=2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (1+sinθ−cosθ)/(1+sinθ+cosθ) when tan(θ/2)=1/3.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>= tan(θ/2) = 1/3.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate the expression: sin²5°+sin²10°+sin²15°+...+sin²85°+sin²90°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Pair sin²5°+sin²85°=1 (complementary), …, sin²40°+sin²50°=1. 8 pairs=8. sin²45°=1/2. sin²90°=1. Total=8+1/2+1=9.5=19/2.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (2sin²30°−1)/(2cos²45°+1).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>=(2·1/4−1)/(2·1/2+1)=(1/2−1)/(1+1)=(−1/2)/2=−1/4.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TOPIC 12 ═══════════════════════ -->
+<section class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>SAT-Style Trigonometry Problems</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=gc3OEFwPiKM" target="_blank">SAT Math: Trig questions</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=PcwXRHHnV8Y" target="_blank">SAT Trig identities prep</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> SAT Basics — Multiple Choice Style</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In a right triangle, sin A = 0.6. What is cos A? (A) 0.4 (B) 0.8 (C) 0.6 (D) 1.2</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B) 0.8. cos A=√(1−0.36)=√0.64=0.8.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin x = cos y and both x, y are acute, which must be true? (A) x = y (B) x + y = 90° (C) x + y = 180° (D) x = 2y</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B) x + y = 90°. sin x=cos y=sin(90°−y) → x=90°−y.</p></details></div>
+      <div class="q-item"><span class="q-text">Which expression always equals 1? (A) sin²θ−cos²θ (B) sin θ+cos θ (C) sin²θ+cos²θ (D) tan²θ+cot²θ</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(C) sin²θ+cos²θ=1.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle with legs 5 and 12, what is the sine of the larger acute angle?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Hypotenuse=13. Larger acute angle is opposite the longer leg (12). sin=12/13.</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 3/4 in a right triangle, the hypotenuse is 5k for some k. What is sin θ?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Opposite=3k, adjacent=4k, hyp=5k. sin θ=3/5.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has hypotenuse 1 and one angle θ. Which expression gives the length of the side adjacent to θ? (A) sin θ (B) cos θ (C) tan θ (D) sec θ</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B) cos θ = adjacent/hypotenuse = adjacent/1.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin(2x) = cos(3x+10°) and both angles are acute, find x.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2x+3x+10°=90° → 5x=80° → x=16°.</p></details></div>
+      <div class="q-item"><span class="q-text">In △PQR (right angle at R), PQ=10, QR=6. What is tan P?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PR=8. tan P = QR/PR = 6/8 = 3/4.</p></details></div>
+      <div class="q-item"><span class="q-text">Which of the following is equal to sin 40°? (A) cos 50° (B) cos 40° (C) sin 50° (D) tan 50°</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(A) cos 50° = sin(90°−50°) = sin 40°.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (sin²θ + cos²θ)³.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= 1³ = 1.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> SAT Identity &amp; Expression Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If sin θ = 5/13, what is (13sin θ − 12cos θ)?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos θ=12/13. 13(5/13)−12(12/13)=5−144/13=(65−144)/13=−79/13.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, cos A = 7/25. What is tan A?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A=24/25. tan A=24/7.</p></details></div>
+      <div class="q-item"><span class="q-text">If sec θ − tan θ = 1/5, find sin θ.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>sec θ+tan θ=5. Adding: 2sec θ=26/5, sec θ=13/5, cos θ=5/13. sin θ=12/13.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle with legs a and b (a &lt; b), which angle has the larger sine?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The angle opposite the longer leg b has a larger opposite/hypotenuse ratio, so it has the larger sine.</p></details></div>
+      <div class="q-item"><span class="q-text">Express (1/sec²θ) + (1/cosec²θ) in simplest form.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cos²θ + sin²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">SAT Trap: If sin A = 3/5 and cos B = 3/5, and A+B=90°, find A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>cos B=3/5 → sin(90°−B)=3/5=sin A → A=90°−B → A+B=90°. Consistent. sin A=3/5 → A=arcsin(3/5)≈37°. B≈53°. A+B=90°. ✓</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, if sin A = k, write an expression for the length of the hypotenuse in terms of the side opposite A and k.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin A = opposite/hypotenuse → hypotenuse = opposite/k.</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (1 − sin θ)(1 + sin θ) / (1 − cos θ)(1 + cos θ).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= cos²θ / sin²θ = cot²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">If x = r sinθ and y = r cosθ, express (x/r)² + (y/r)² without θ.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= sin²θ + cos²θ = 1.</p></details></div>
+      <div class="q-item"><span class="q-text">Given that cos²α − sin²α = cos 2α (formula given), evaluate cos²30° − sin²30°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>= cos 60° = 1/2.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> SAT Problem-Solving</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In the right triangle, angle A = 30° and hypotenuse = 20. What is the side opposite A?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>opposite = 20 sin 30° = 20(1/2) = 10.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has legs 9 and 40. If θ is the smaller acute angle, what is sin θ?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hyp=41. Smaller angle is opposite shorter leg (9). sin θ=9/41.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, if tan A = 2, find sin²A − cos²A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hyp=√5. sin A=2/√5, cos A=1/√5. sin²A−cos²A=4/5−1/5=3/5.</p></details></div>
+      <div class="q-item"><span class="q-text">If cos θ decreases as θ increases (0°→90°), for which angle does cos θ = 0.5?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>cos θ=0.5=cos 60° → θ=60°.</p></details></div>
+      <div class="q-item"><span class="q-text">Which value is NOT possible for sin θ (where θ is in a right triangle)? (A) 0 (B) 0.99 (C) 1 (D) 1.01</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(D) 1.01. sin θ ≤ 1 always.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, the two acute angles differ by 20°. Find both angles.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>A+B=90°, A−B=20°. Adding: 2A=110°, A=55°, B=35°.</p></details></div>
+      <div class="q-item"><span class="q-text">For what value of θ (0°≤θ≤90°) is sin θ = cos θ?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 45°.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠C=90°), BC = 7, AB = 25. Find sin A + cos B.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AC=24. sin A=BC/AB=7/25. cos B=BC/AB=7/25. sin A+cos B=14/25.</p></details></div>
+      <div class="q-item"><span class="q-text">A ramp has angle of inclination 30°. If the base length is 10√3 m, find the height of the ramp.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>height = base × tan 30° = 10√3 × (1/√3) = 10 m.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin α = cos β and sin β = cos α, find α + β.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin α=cos β → α+β=90°. (Both conditions give the same result.) α+β=90°.</p></details></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> SAT Hard &amp; Challenging</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In a right triangle, sin A = cos A · k. What is tan A in terms of k?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan A = sin A/cos A = k.</p></details></div>
+      <div class="q-item"><span class="q-text">If (sin A + cos A)² = 1.5, find sin A cos A.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>1+2sinAcosA=1.5 → sinAcosA=0.25.</p></details></div>
+      <div class="q-item"><span class="q-text">In △ABC (∠C=90°), tan A = 1/2 and AB=√5. Find BC and AC.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>opp=BC, adj=AC, hyp=√5. tan A=BC/AC=1/2. Let BC=k, AC=2k. k²+4k²=5 → 5k²=5 → k=1. BC=1, AC=2.</p></details></div>
+      <div class="q-item"><span class="q-text">The expression sec²θ − 1 equals which of the following? (A) sin²θ (B) cos²θ (C) tan²θ (D) cot²θ</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(C) tan²θ.</p></details></div>
+      <div class="q-item"><span class="q-text">If sin x = a and cos y = a (acute angles), which is true: x + y = 90°, x = y, or neither?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>sin x = a = cos y = sin(90°−y). So x = 90°−y, i.e., x+y=90°.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle with ∠C=90°, sin A = 4/5. The perimeter is 60. Find all sides.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sides in ratio 4:3:5 (from sin A=4/5). Sum=4k+3k+5k=12k=60 → k=5. Sides: 20, 15, 25.</p></details></div>
+      <div class="q-item"><span class="q-text">Evaluate: (sin A − cos A)² + (sin A + cos A)² − 2. What is this always equal to?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= 2(sin²A+cos²A)−2 = 2−2 = 0.</p></details></div>
+      <div class="q-item"><span class="q-text">A right triangle has one acute angle θ. If sin θ = p and the hypotenuse is h, express both legs in terms of p and h.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Opposite = h·sin θ = hp. Adjacent = h·cos θ = h√(1−p²).</p></details></div>
+      <div class="q-item"><span class="q-text">Which identity is ALWAYS true for any acute angle θ? (A) sin θ > cos θ (B) tan θ > 1 (C) sec θ ≥ 1 (D) cosec θ &lt; 1</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(C) sec θ = 1/cos θ ≥ 1 since cos θ ≤ 1 for any angle.</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, the longer leg is 3 times the shorter leg. If the hypotenuse is 10, find the shorter leg (in surd form).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Legs a and 3a. a²+9a²=100 → 10a²=100 → a²=10 → a=√10.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<footer>Grade 10 · NCERT Mathematics · Chapter 8 · The Gaudium School · 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

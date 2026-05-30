@@ -1,0 +1,17 @@
+{
+  "name": "Algbrox Runner",
+  "short_name": "Algbrox",
+  "description": "Client-side algebra precedence runner game for students.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#d9f8e5",
+  "theme_color": "#2f6f54",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='24' fill='%232f6f54'/%3E%3Ctext x='100' y='124' text-anchor='middle' font-family='Verdana' font-size='88' fill='%23f9a03f'%3EA%3C/text%3E%3C/svg%3E",
+      "sizes": "200x200",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

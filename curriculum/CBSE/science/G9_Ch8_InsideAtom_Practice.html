@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 8 – Journey Inside the Atom | Grade 9 Science</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>&#9883;&#65039; Chapter 8 &#8211; Journey Inside the Atom</h1>
+  <p>Grade 9 &middot; Exploration Science &middot; The Gaudium School &middot; IB MYP &middot; 144 Practice Questions</p>
+</header>
+
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">History of Atomic Models</a></li>
+    <li><a href="#t2">Rutherford's Gold Foil Experiment</a></li>
+    <li><a href="#t3">Subatomic Particles</a></li>
+    <li><a href="#t4">Atomic Number and Mass Number</a></li>
+    <li><a href="#t5">Isotopes</a></li>
+    <li><a href="#t6">Electronic Configuration</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════ TOPIC 1 ═══════════════════════════ -->
+<section class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>History of Atomic Models</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>&#128250; Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=xazQRcSCRaY" target="_blank">History of atomic structure</a>
+        <a href="https://www.youtube.com/watch?v=Gx5omBMBVPA" target="_blank">Bohr model of the atom</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=SpNr5HiHjqs" target="_blank">Atomic Theory and Atomic Structure</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall &amp; Concept</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Name the four atomic models in chronological order and their proposers. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>1. Dalton's solid sphere model (1803). 2. Thomson's plum pudding model (1897). 3. Rutherford's nuclear model (1911). 4. Bohr's planetary model (1913).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe Dalton's atomic model. What were its key assumptions? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Dalton proposed atoms are tiny, solid, indivisible spheres. All atoms of an element are identical; different elements have different atoms; atoms combine in simple ratios to form compounds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe Thomson's plum pudding model and what discovery led to it. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Thomson discovered the electron (1897). He proposed the atom as a sphere of positive charge with electrons embedded like plums in a pudding. The atom was overall neutral.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What key feature did Rutherford's model introduce that Thomson's model lacked? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rutherford introduced the concept of a small, dense, positively charged nucleus at the centre of the atom, with electrons orbiting around it in mostly empty space.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What did Bohr add to Rutherford's model? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Bohr proposed that electrons orbit the nucleus in specific, fixed energy levels (shells). Electrons cannot spiral inward; they exist only in defined shells with specific energies.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why was Dalton's model eventually revised? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Thomson's discovery of the electron proved atoms are not indivisible. Later, Rutherford's experiment showed the positive charge is concentrated in a small nucleus, not spread throughout the atom.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is scientific modelling important even if models are later proved wrong? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Models represent the best understanding at a given time. Each model explained known data and made testable predictions. Revised models incorporate new evidence, improving understanding. Science progresses through this cycle of modelling, testing, and refinement.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What limitation does the Bohr model have that modern quantum mechanics addresses? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>The Bohr model accurately predicts hydrogen's spectrum but fails for multi-electron atoms. It treats electrons as particles in fixed orbits, whereas quantum mechanics describes them as probability clouds (orbitals), using wave functions to describe electron positions.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Application &amp; Analysis</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe the four atomic models showing key differences in electron placement. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Dalton: solid undivided sphere. Thomson: sphere with + charge throughout, electrons scattered inside. Rutherford: tiny + nucleus at centre, electrons orbiting far away in mostly empty space. Bohr: nucleus + electrons in fixed, numbered shells at specific distances.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How did Thomson's cathode ray experiment provide evidence for the electron? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Thomson used cathode ray tubes and found rays deflected toward positive plates, indicating the rays carried negative charge. He measured the charge-to-mass ratio, showing these particles (electrons) were the same regardless of the cathode material &mdash; proving electrons are universal subatomic particles.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student says "Rutherford's model is wrong because it couldn't explain electron stability." Is this a valid criticism? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Valid. Classical physics predicts orbiting electrons would continuously radiate energy and spiral into the nucleus. This doesn't happen &mdash; Bohr resolved this by proposing electrons only exist in stable, non-radiating quantised orbits.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What evidence disproved Thomson's plum pudding model? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rutherford's gold foil experiment (1911): most alpha particles passed straight through (inconsistent with spread-out positive charge), and some were deflected at large angles &mdash; only possible if positive charge is concentrated in a tiny dense nucleus.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Create a timeline of atomic model development from 1800 to 1932 with key scientists and discoveries. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>1803: Dalton &ndash; solid sphere. 1897: Thomson &ndash; discovers electron, proposes plum pudding. 1909: Geiger &amp; Marsden &ndash; gold foil experiment. 1911: Rutherford &ndash; nuclear model. 1913: Bohr &ndash; electron shells. 1932: Chadwick &ndash; discovers neutron.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why the discovery of the neutron (Chadwick, 1932) was important for completing the nuclear model. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Before Chadwick, the nucleus was known to have protons but measured atomic masses were roughly double the proton number. Neutrons explained the extra mass without adding charge, completing the picture of nuclear composition as protons + neutrons.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How did Bohr explain the emission of specific coloured light (spectral lines) by heated hydrogen gas? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>When electrons gain energy, they jump to higher shells. When they fall back, they emit photons of specific wavelengths (colours) corresponding exactly to the energy difference between shells. This explained hydrogen's distinct spectral lines, which earlier models could not.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare Rutherford's model to the solar system analogy. Where does this analogy break down? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Similarity: central massive body (nucleus/sun) with smaller bodies orbiting. Breakdown: electrons are not drawn by gravity but by electrostatic attraction; electrons do not have fixed elliptical orbits but exist in probability clouds; the analogy wrongly implies continuous orbits, which violates quantum rules.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Critical Thinking &amp; Extended Response</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If Thomson's model were correct, what result would you expect from the gold foil experiment? What actually happened and what did it prove? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>If Thomson's model were correct, alpha particles would pass through with only slight deflections &mdash; like bullets through a cloud. Actually: most passed straight through (empty space), some deflected at large angles, ~1 in 8000 bounced back. This proved a tiny, dense, positive nucleus exists.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why did each atomic model represent progress, even though each was later revised? Use evidence from the history of atomic theory. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Dalton explained chemical reactions and ratios. Thomson explained cathode rays. Rutherford explained alpha particle deflection. Bohr explained spectral lines. Each model explained more phenomena than the previous, representing genuine scientific progress through evidence-based revision.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How did technology (cathode ray tubes, radioactive sources, particle accelerators) drive advances in atomic theory? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Without cathode ray tubes, Thomson couldn't discover electrons. Without radioactive alpha sources, Rutherford couldn't probe the nucleus. Later accelerators revealed quarks inside protons. Each technological advance enabled experiments at smaller scales, revealing new subatomic structure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Write a short dialogue between Dalton and Rutherford where Rutherford explains why the solid sphere model is incomplete. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rutherford: "Mr. Dalton, I fired alpha particles at gold. Most passed straight through &mdash; the atom is mostly empty space!" Dalton: "But atoms are indivisible spheres!" Rutherford: "Not quite &mdash; a tiny dense nucleus carries all the positive charge, and electrons orbit far away." Dalton: "Then your evidence forces me to revise my model."</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does the history of the atom illustrate the nature of science (NOS) concept that knowledge is tentative yet reliable? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Tentative: each model was revised when new evidence emerged. Reliable: each revision was evidence-based and retained what worked. The progression shows science self-corrects &mdash; models are not permanent truths but the best explanations supported by current evidence.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why might Bohr's model be called a "quantised" model? What does quantisation mean in this context? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Quantised means energy comes in discrete, fixed amounts (quanta) rather than a continuous range. Electrons can only exist in specific energy levels (shells). They absorb or emit exactly the energy difference between shells as photons. This contradicted classical physics and launched quantum theory.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If an alien civilization developed atomic theory independently, would they likely end up with the same model? Justify using scientific reasoning. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Yes &mdash; the universe operates by consistent physical laws. Any civilization performing similar experiments would observe the same phenomena and draw similar conclusions. The specific names might differ, but the structural model (nucleus + electrons) would converge, demonstrating that scientific knowledge is universal and observation-based.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">In 50 words, describe what you would add to Bohr's model if you had just read about quantum mechanics in 1930. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Replace fixed circular orbits with probability distributions (orbitals). Electrons don't travel in defined paths; they exist in 3D clouds of probability. Each orbital has a specific shape (s, p, d) and energy. This explains multi-electron atoms and chemical bonding far better than Bohr's circles.</p></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TOPIC 2 ═══════════════════════════ -->
+<section class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Rutherford's Gold Foil Experiment</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>&#128250; Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=5pZj0u_XMbc" target="_blank">Rutherford's experiment explained</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=SpNr5HiHjqs" target="_blank">Atomic Theory and Gold Foil</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall &amp; Concept</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe the setup of Rutherford's gold foil experiment. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A radioactive source of alpha particles was aimed at a thin gold foil. A circular zinc sulphide (ZnS) detection screen surrounded the foil to detect flashes wherever alpha particles struck it at any angle.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What are alpha particles and what charge do they carry? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Alpha particles are helium-4 nuclei: 2 protons + 2 neutrons. They carry a charge of +2 and have a mass of 4 atomic mass units (u).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">State the three types of results observed in the gold foil experiment. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>1. Most alpha particles passed straight through (undeflected). 2. Some were deflected at small angles. 3. A very few (~1 in 8000) bounced back at large angles (&gt;90&deg;) or were reflected back.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What conclusion did Rutherford draw from the fact that most alpha particles passed straight through? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Most of the atom is empty space. Since most alpha particles passed through without deflection, the atom cannot be a solid sphere &mdash; there is vast empty space between the nucleus and electrons.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What conclusion did Rutherford draw from the few alpha particles that bounced back? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The positive charge must be concentrated in a tiny, dense region (nucleus) at the centre. Only a dense concentrated positive charge could repel the +2 alpha particle enough to deflect it back.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why was gold chosen for the foil in Rutherford's experiment? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gold can be beaten into extremely thin sheets (a few hundred atoms thick) while remaining intact. A thin single-layer foil ensures single-encounter scattering events, making the results easier to interpret.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Rutherford said finding a large deflection was "as if you fired artillery shells at tissue paper and they bounced back." Explain this analogy. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>He expected alpha particles (heavy, fast) to easily pass through the "soft" plum pudding atom. Finding large deflections was completely unexpected &mdash; like a cannon shell bouncing off paper. This meant something very dense and hard existed in the atom: the nucleus.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why couldn't Thomson's plum pudding model explain large-angle deflections? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>In Thomson's model, positive charge is spread thinly throughout the atom. A diffuse positive charge could only deflect alpha particles slightly. Large-angle deflections require an intensely concentrated repulsive force, only possible from a tiny dense nucleus.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Application &amp; Analysis</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If 10 000 alpha particles are fired at gold foil, roughly how many would bounce back based on Rutherford's results? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Approximately 1 in 8000 bounces back. From 10 000: about 10 000/8000 &asymp; 1&ndash;2 alpha particles reflected back.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the relative sizes: if the nucleus were a marble (1 cm diameter), how large would the atom be? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The nucleus is about 1/100 000 the diameter of the atom. If the nucleus is 1 cm, the atom would be ~100 000 cm = 1000 m = 1 km across. Most of the atom is empty space.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Predict what would happen if Rutherford had used aluminium foil (Z=13) instead of gold (Z=79). Would more or fewer particles deflect at large angles? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Fewer large-angle deflections with aluminium. Gold has Z=79 (more protons) creating stronger nuclear repulsion. Aluminium's nucleus (Z=13) repels alpha particles less strongly, resulting in fewer large-angle deflections.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why did Rutherford use alpha particles rather than electrons for the gold foil experiment? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Alpha particles are heavy (+2 charge) and fast-moving, carrying enough momentum to probe the nucleus. Electrons are ~7000 times lighter and would be deflected by even the electron cloud, not revealing nuclear structure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design a modified gold foil experiment to estimate the size of the nucleus. What measurements would you need? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Measure the fraction f of particles deflected beyond 90&deg;. If each nucleus has cross-section area &pi;r&sup2; and foil has n atoms/m&sup2;, then f = n&pi;r&sup2;. Measuring f and n allows calculation of nuclear radius r. Rutherford estimated nuclear radius ~10&sup2;&sup1;&sup4; m this way.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What further experiment proved the existence of protons? Who conducted it? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rutherford (1917) bombarded nitrogen with alpha particles and detected hydrogen nuclei (protons) emitted. This proved nuclei contain protons. He named the proton from the Greek "protos" (first).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How did Geiger and Marsden contribute to Rutherford's experiment? Why is team science important? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Geiger and Marsden conducted the actual observations &mdash; painstakingly counting scintillation flashes in the dark for hours. Their careful data provided the evidence Rutherford analysed. Science requires collaboration: theoretical insight (Rutherford) + meticulous experimentation (Geiger/Marsden).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">The experiment found ~1 in 8000 alpha particles bounced back. What does this tell us about the fraction of atomic volume occupied by the nucleus? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Since only 1/8000 interact strongly (hit the nucleus), the nucleus occupies roughly 1/8000 of the atom's cross-sectional area. Since volume scales as r&sup3;, nuclear volume fraction is even smaller &mdash; about 10&sup2;&sup1;&sup5; of atomic volume. The nucleus is unimaginably small compared to the atom.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Critical Thinking &amp; Extended Response</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write a lab report abstract (50 words) for Rutherford's experiment: aim, method summary, results, and conclusion. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Aim: Investigate atomic structure by scattering alpha particles. Method: Fired alpha particles at thin gold foil; detected scattering pattern with ZnS screen. Results: Most particles passed through; ~1 in 8000 deflected back. Conclusion: Atoms have a small, dense, positively charged nucleus surrounded by mostly empty space.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If the nucleus is so small and dense, what keeps electrons from falling into it? (Consider Bohr's explanation.) <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Bohr proposed electrons orbit in fixed, stable energy levels. In permitted orbits, electrons do not radiate energy. The centripetal force needed to maintain the orbit exactly equals the electrostatic attraction. Only quantum mechanical rules stabilise the electron in its shell.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How would the gold foil results differ if the foil were much thicker (100 layers)? Explain the complications. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>With multiple layers, an alpha particle slightly deflected by one nucleus could be deflected again by another &mdash; multiple-scattering effects. The angular distribution becomes broader and harder to interpret because it's no longer a single-encounter event. Single-layer foil was crucial for clean results.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Rutherford's experiment disproved Thomson's model. What does this tell us about the importance of experimental evidence in science? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Science progresses when experiments contradict existing theories. Thomson's model was widely accepted but disproved by a single well-designed experiment. This shows: (1) no theory is immune to revision, (2) experimental evidence overrides theoretical preference, (3) science is self-correcting.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Using density = mass/volume and V = (4/3)&pi;r&sup3;, discuss why nuclear density is ~10&sup1;&sup7; kg/m&sup3; when a nucleus radius is ~10&sup2;&sup1;&sup5; m and mass ~4 &times; 10&sup2;&sup2;&sup7; kg. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>V = (4/3)&pi;(10&sup2;&sup1;&sup5;)&sup3; &asymp; 4.19 &times; 10&sup2;&sup4;&sup5; m&sup3;. Density = 4&times;10&sup2;&sup2;&sup7;/4.19&times;10&sup2;&sup4;&sup5; &asymp; 10&sup1;&sup7; kg/m&sup3;. Nuclear density is ~10&sup1;&sup7; kg/m&sup3; &mdash; about 100 trillion times denser than water. Almost all atomic mass is crammed into the tiny nucleus.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If an alien civilization received only the gold foil data (no theory), what model would they likely propose? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Observations: mostly no deflection (empty space), occasional large deflection (hard small object), rare backward bounce (very dense repulsive centre). They would logically propose: tiny dense positive centre surrounded by mostly empty space &mdash; the same conclusion as Rutherford. Physical evidence is universal.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate whether Rutherford's experiment was safe by modern standards. What precautions would a modern lab require? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Not fully safe by modern standards. Alpha sources emit ionising radiation; Geiger and Marsden were exposed during long sessions. Modern precautions: lead shielding; dosimetry badges; limited exposure time; fume hood; proper radioactive waste disposal; institutional ethics review.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How did the gold foil experiment change humanity's understanding of matter? Explain its broader philosophical impact. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>It revealed that "solid" matter is mostly empty space &mdash; a profound philosophical shift. The solidity we feel is an illusion of electromagnetic forces. This launched nuclear physics, led to nuclear energy, and transformed our understanding of what matter fundamentally is.</p></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TOPIC 3 ═══════════════════════════ -->
+<section class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Subatomic Particles &mdash; Proton, Neutron, Electron</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>&#128250; Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=xazQRcSCRaY" target="_blank">Subatomic particles: protons, neutrons, electrons</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=SpNr5HiHjqs" target="_blank">Atoms and Elements</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall &amp; Concept</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For each subatomic particle, state its charge, relative mass, and location in the atom. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Proton: charge +1, mass 1 u, location: nucleus. Neutron: charge 0, mass 1 u, location: nucleus. Electron: charge &minus;1, mass ~1/1836 u (negligible), location: shells/orbitals around nucleus.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is the overall charge of an atom zero? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>In a neutral atom, the number of protons (positive charge) equals the number of electrons (negative charge), so the charges cancel to give zero net charge.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What holds protons and neutrons together in the nucleus despite protons repelling each other? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The strong nuclear force acts at very short range (&lt;10&sup2;&sup1;&sup5; m) and is far stronger than the electrostatic repulsion between protons. It holds nucleons (protons and neutrons) tightly together.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is the mass of an electron often considered negligible in atomic mass calculations? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>An electron's mass is about 1/1836 of a proton's mass. Electrons contribute less than 0.05% to total atomic mass and are ignored in most mass calculations.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the difference between nucleons and subatomic particles? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Nucleons are particles inside the nucleus (protons and neutrons). Subatomic particles include all particles smaller than an atom: protons, neutrons, AND electrons (electrons are not nucleons).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Who discovered the neutron and when? What experiment was used? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>James Chadwick discovered the neutron in 1932 by bombarding beryllium with alpha particles. The uncharged, mass-1 particle was identified as the neutron by its ability to knock protons from paraffin wax.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What happens to atomic charge when an electron is removed from a neutral atom? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Removing an electron removes &minus;1 charge. The atom now has more protons than electrons, giving it a net positive charge of +1. It becomes a positive ion (cation).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why are neutrons particularly useful as probes in nuclear physics research? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neutrons carry no charge, so they are not repelled by the positively charged nucleus. They can penetrate deeply into nuclei without electrostatic deflection, making them ideal for probing nuclear structure and inducing nuclear reactions (e.g., nuclear fission).</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Application &amp; Calculation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">An atom has 17 protons and 18 neutrons. What is its atomic number, mass number, and number of electrons? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Atomic number Z = 17. Mass number A = 17 + 18 = 35. Electrons = 17 (neutral atom). Element: Chlorine-35.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An ion has 11 protons, 12 neutrons, and 10 electrons. State its charge and symbol. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Charge = protons &minus; electrons = 11 &minus; 10 = +1. Z=11 is Sodium. Symbol: Na&#8314; (sodium cation, formed by losing 1 electron).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Calculate the total number of protons, neutrons, and electrons in 3 atoms of Ag-107 (silver, Z=47). <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Per atom: protons = 47; neutrons = 107&minus;47 = 60; electrons = 47. For 3 atoms: protons = 141; neutrons = 180; electrons = 141.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An atom has equal numbers of protons and neutrons, and mass number 40. Identify the element. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Protons = neutrons and total = 40, so protons = 20, neutrons = 20. Z = 20 = Calcium (Ca-40).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A fluoride ion (F&sup2;&#8315;) has 10 electrons. How many protons does it have? Write its electron configuration. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>F&#8315; has charge &minus;1, meaning 1 more electron than protons. Electrons = 10, so protons = 9. Z = 9 = Fluorine. Electron configuration: 2, 8 (like neon &mdash; stable full outer shell).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the total charge of a nucleus containing 26 protons and 30 neutrons? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Nuclear charge = 26 &times; (+1) = +26. Neutrons contribute 0 charge. Total nuclear charge = +26 (Iron nucleus, Fe).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An atom X has 15 protons, 16 neutrons. Write the full symbol. If it gains 3 electrons, write the new symbol. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neutral atom: P-31 (Phosphorus, A=31, Z=15). If it gains 3 electrons: P&sup3;&#8315; (phosphide ion) with 18 electrons, charge &minus;3. Electronic configuration: 2, 8, 8.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does nuclear density (~10&sup1;&sup7; kg/m&sup3;) vastly exceed the density of any ordinary material (~10&sup3; kg/m&sup3;)? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>In ordinary matter, most atomic volume is empty space (electrons far from nucleus). Nuclear density is achieved only within the nucleus where nucleons are tightly packed by the strong nuclear force. Ordinary matter is ~10&sup1;&sup4; times less dense because it includes the vast empty atomic volume.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Critical Thinking &amp; Extended Response</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Why is the electron's mass "approximately zero" in atomic mass units, yet electrons determine almost all of chemistry? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electrons have negligible mass (1/1836 u) so barely affect atomic mass. However, chemistry is entirely about electrons: bonding (sharing/transferring electrons), reactivity (valence electrons), and electrical properties all depend on electrons. Mass determines physical properties; electrons determine chemical behaviour.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If a neutron is uncharged, how can it help stabilise a nucleus against proton-proton repulsion? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neutrons contribute to the strong nuclear force (which attracts all nearby nucleons regardless of charge) without adding electrostatic repulsion. They act as "nuclear glue" &mdash; increasing attractive binding while not worsening proton-proton repulsion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Predict the likely properties of Pb-208 (Z=82, N=126). Why is it unusually stable? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Pb-208 is doubly magic: both 82 protons and 126 neutrons are "magic numbers" in the nuclear shell model (completely filled nuclear shells). This gives it exceptional stability &mdash; it is the heaviest completely stable nucleus.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design an experiment to demonstrate that an atom has more empty space than solid matter. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Use Rutherford's approach: fire projectiles at target and measure penetration. If solid, none pass through; if mostly empty, most pass through. Alternatively, calculate atomic and nuclear radii (nuclear: ~10&sup2;&sup1;&sup5; m; atomic: ~10&sup2;&sup1;&sup0; m). Volume ratio shows nucleus occupies ~10&sup2;&sup1;&sup5; of atomic volume, confirming mostly empty space.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do scientists say quarks are "inside" protons? Does this mean subatomic particles are not truly fundamental? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>High-energy accelerator experiments (CERN) revealed protons/neutrons are composed of quarks held by gluons. So protons/neutrons are not fundamental &mdash; they have internal structure. Currently, quarks and electrons appear to be truly fundamental (point-like, no internal structure detected). Science continues probing deeper.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the forces acting inside an atom: gravitational, electrostatic, and strong nuclear. Rank their relative strengths. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Strong nuclear force: strongest (~1), short-range &lt;10&sup2;&sup1;&sup5; m. Electrostatic force: ~10&sup2;&sup2; weaker than strong force (keeps electrons in orbit). Gravitational force: ~10&sup2;&sup3;&sup9; weaker than strong force (completely negligible between subatomic particles). Inside atoms: strong &gt;&gt; electrostatic &gt;&gt;&gt;&gt; gravity.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If a proton and electron are 10&sup2;&sup1;&sup0; m apart, what force keeps the electron orbiting, and why doesn't it fall into the nucleus? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electrostatic (Coulomb) attraction keeps the electron orbiting. It doesn't fall in because: (1) quantum mechanics forbids electrons from existing within the nucleus (uncertainty principle &mdash; confinement to nuclear size would require enormous momentum); (2) electrons exist in discrete quantised energy states with a minimum (ground state) energy &mdash; they cannot go lower.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain how knowledge of subatomic particles led to practical applications in medicine (X-rays, PET scans) and energy (nuclear power). <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electrons led to X-rays (high-energy photons from decelerated electrons). PET scans use positrons (antielectrons) emitted by radioactive tracers; positron-electron annihilation produces gamma rays for imaging metabolism. Nuclear power exploits neutron-induced uranium fission (Fermi, 1942), releasing energy from mass via E=mc&sup2;. Every medical imaging technology and nuclear application traces back to subatomic particle discoveries.</p></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TOPIC 4 ═══════════════════════════ -->
+<section class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Atomic Number (Z) and Mass Number (A)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>&#128250; Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=V43m_JjKFRQ" target="_blank">Atomic number and mass number</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=SpNr5HiHjqs" target="_blank">Atoms and the Periodic Table</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall &amp; Concept</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define atomic number (Z). What does it determine about an element? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Atomic number Z = number of protons in the nucleus. It uniquely identifies the element: all atoms of the same element have the same Z. It determines the element's position in the periodic table and its chemical properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Define mass number (A) and write the formula relating A, Z, and neutron number N. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Mass number A = total nucleons (protons + neutrons) in the nucleus. A = Z + N, so N = A &minus; Z.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">In the notation S-32 (sulphur, Z=16), identify the atomic number, mass number, and number of neutrons. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Atomic number Z = 16. Mass number A = 32. Neutrons = A &minus; Z = 32 &minus; 16 = 16.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two atoms have the same mass number but different atomic numbers. Can they be the same element? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Element identity is determined by atomic number (proton number). Different atomic numbers = different elements, even if mass numbers are the same. Such atoms are called isobars.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is atomic number a better identifier of an element than mass number? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Mass number can vary between atoms of the same element (isotopes have different neutron numbers but same Z). Atomic number is fixed for all atoms of an element &mdash; it uniquely defines the element. You cannot change Z without changing to a different element.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What are isobars? Give an example. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Isobars are atoms of different elements (different Z) with the same mass number A. Example: Ar-40 (Z=18) and K-40 (Z=19) &mdash; both A=40 but different elements with different chemical properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An element has Z=26. Name it, give its symbol, and state how many electrons a neutral atom has. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Z=26 is Iron (Fe). A neutral atom has 26 electrons (equal to proton number).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why the relative atomic mass of chlorine is 35.5, not a whole number. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Chlorine naturally exists as two isotopes: Cl-35 (75%) and Cl-37 (25%). The relative atomic mass is the weighted average: (35 &times; 0.75) + (37 &times; 0.25) = 26.25 + 9.25 = 35.5. Being an average, it is not a whole number.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Application &amp; Calculation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">He-4 has Z=2. How many protons, neutrons, and electrons does it have? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Protons = Z = 2. Neutrons = A&minus;Z = 4&minus;2 = 2. Electrons = 2 (neutral atom).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An unknown element X has 29 protons and 34 neutrons. Identify it and write its symbol with mass number. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Z=29 is Copper (Cu). A = 29+34 = 63. Symbol: Cu-63.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Potassium (K, Z=19, A=39). Calculate neutron number and write the nuclear symbol. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neutrons = A&minus;Z = 39&minus;19 = 20. Symbol: K-39 (39 as superscript, 19 as subscript).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Magnesium (Mg, Z=12, A=24) forms the ion Mg&sup2;&#8314;. How many protons, neutrons, and electrons does Mg&sup2;&#8314; have? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Protons = 12. Neutrons = 24&minus;12 = 12. Electrons = 12&minus;2 = 10 (lost 2 electrons to form +2 ion).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Calculate the weighted average atomic mass of bromine: Br-79 (50%) and Br-81 (50%). <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ar = (79 &times; 0.50) + (81 &times; 0.50) = 39.5 + 40.5 = 80. Bromine's relative atomic mass = 80.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An element has Ar = 6.94. Its two isotopes are mass 6 (abundance x%) and mass 7 (abundance (100&minus;x)%). Find x. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>6(x/100) + 7(1&minus;x/100) = 6.94. 7 &minus; x/100 = 6.94. x/100 = 0.06. x = 6. So 6% Li-6 and 94% Li-7. Element = Lithium.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How many neutrons are in Pb-208 (lead, Z=82)? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neutrons = A&minus;Z = 208&minus;82 = 126. Lead-208 is the most stable heavy nucleus (doubly magic: 82 protons, 126 neutrons).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Uranium-235 (Z=92) undergoes fission to form barium-141 (Z=56) and another element. Find the other element's Z and A (3 neutrons released). <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Conservation of mass: 235+1 = 141+A+3 &rarr; A = 92. Conservation of charge: 92 = 56+Z_x &rarr; Z_x = 36 = Krypton. The other element is Kr-92.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Critical Thinking &amp; Extended Response</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Why does the periodic table arrange elements by atomic number rather than atomic mass? Give a historical example where this mattered. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Arranging by Z gives consistent ordering by element identity. Before isotopes were understood, arranging by mass placed tellurium (Ar=127.6) before iodine (Ar=126.9), violating chemical properties. Moseley (1913) showed arrangement by Z correctly places Te (Z=52) before I (Z=53), matching chemical properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If you changed the number of protons in an atom, would you still have the same element? Explain with an example. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>No &mdash; you would have a completely different element. Removing 1 proton from gold (Z=79) gives platinum (Z=78); adding 1 proton gives mercury (Z=80). This is nuclear transmutation. Alchemists dreamed of it; it actually occurs in particle accelerators and nuclear reactions.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare neutron-to-proton ratios for carbon (A=12, Z=6) and lead (A=207, Z=82). What trend do you notice for heavy elements? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Carbon: N/Z = 6/6 = 1.00. Lead-207: N/Z = 125/82 = 1.52. Heavier elements need proportionally more neutrons to remain stable. Extra neutrons dilute the proton-proton repulsion, providing additional strong force binding without adding positive charge.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two elements have the same number of neutrons but different atomic numbers. What are they called? Give an example and explain any similarities. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Isotones: same N, different Z. Example: S-34 (Z=16, N=18) and Ar-36 (Z=18, N=18). They share nuclear stability properties related to neutron number, but chemical behaviour is completely different because Z differs.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does knowledge of atomic number and mass number underpin nuclear medicine (e.g., cancer treatment with radiation)? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Doctors choose specific isotopes based on Z and A. E.g., I-131 (Z=53, A=131) for thyroid cancer &mdash; iodine is absorbed by thyroid tissue, and extra neutrons make it radioactive, emitting beta/gamma radiation to destroy cancer cells. Precise knowledge of Z and A enables targeted isotope selection.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why transmutation is so energy-intensive compared to ordinary chemical reactions. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Chemical reactions involve only electrons (at ~eV energy scale). Transmutation requires changing proton number &mdash; overcoming the strong nuclear force and electrostatic repulsion inside the nucleus (at ~MeV scale, millions of times more energetic). This is why alchemists could never turn lead to gold with chemical methods.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A nucleus emits an alpha particle. How do Z and A change? Write a general equation and give a real example. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Alpha decay: &#8308;&#8314;Z X &rarr; (A-4)/(Z-2) Y + &#8308;He. Z decreases by 2, A decreases by 4. Example: U-238 (Z=92) &rarr; Th-234 (Z=90) + He-4 (alpha).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is Pb-208 (Z=82, N=126) unusually stable? Connect to atomic number and neutron number. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Nuclear shell model: certain "magic numbers" (2, 8, 20, 28, 50, 82, 126) completely fill nuclear shells. Pb-208 has both 82 protons AND 126 neutrons as magic numbers &mdash; "doubly magic." Both proton and neutron shells are completely full, making it the heaviest completely stable nucleus.</p></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TOPIC 5 ═══════════════════════════ -->
+<section class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Isotopes &mdash; Same Z, Different A; Carbon-14 Dating</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>&#128250; Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=Ootr39BCRPo" target="_blank">What is an isotope?</a>
+        <a href="https://www.youtube.com/watch?v=GnGgTcJNkEk" target="_blank">Radioactive isotopes and carbon dating</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=SpNr5HiHjqs" target="_blank">Isotopes and Nuclear Chemistry</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall &amp; Concept</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define isotopes. Give the three isotopes of carbon and state which is radioactive. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Isotopes are atoms of the same element (same Z) with different numbers of neutrons (different A). Carbon isotopes: C-12 (stable), C-13 (stable), C-14 (radioactive &mdash; used in carbon dating).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do isotopes of an element have the same chemical properties? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Chemical properties are determined by the number of electrons, which equals Z. Since isotopes have the same Z, they have the same electrons and identical chemical behaviour. Extra neutrons only affect mass and nuclear stability.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does carbon-14 dating work? What is the principle? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Living organisms continuously absorb C-14. When they die, absorption stops and C-14 decays (half-life 5730 years). Measuring the remaining C-14/C-12 ratio gives the age of organic material (useful up to ~50 000 years).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is a half-life? Give the half-life of carbon-14. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Half-life is the time for half of the radioactive nuclei in a sample to decay. Carbon-14 has a half-life of approximately 5730 years.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do some isotopes decay (become radioactive) while others are stable? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Nuclear stability depends on the neutron-to-proton ratio. Too many or too few neutrons relative to protons makes a nucleus unstable &mdash; it decays (alpha, beta, or gamma emission) to reach a more stable configuration.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name one medical and one archaeological application of isotopes. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Medical: I-131 to treat thyroid cancer; Tc-99m for medical imaging. Archaeological: C-14 carbon dating to date organic artefacts and fossils.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How are hydrogen's isotopes (deuterium and tritium) used in nuclear energy? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Deuterium (H-2) and tritium (H-3) are used as fuel in nuclear fusion reactors. They fuse to produce helium + a neutron + 17.6 MeV of energy. This is the reaction powering the sun; scientists are working to replicate it for clean energy (e.g., ITER project).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the difference between stable and radioactive isotopes? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Stable isotopes do not spontaneously decay. Radioactive (unstable) isotopes have imbalanced proton/neutron ratios; they emit radiation to release energy and become more stable. Most elements have both stable and radioactive isotopes.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Application &amp; Calculation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">An artefact has C-14 activity that is 25% of a living sample. How old is it? (half-life = 5730 years) <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>25% = (1/2)&sup2; &rarr; 2 half-lives. Age = 2 &times; 5730 = 11 460 years.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A 100 g sample of iodine-131 (half-life = 8 days) is left for 24 days. How much remains? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>24 days / 8 days = 3 half-lives. Remaining = 100 &times; (1/2)&sup3; = 100/8 = 12.5 g.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the neutron numbers of U-233, U-235, and U-238 (all Z=92). <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>U-233: N = 233&minus;92 = 141. U-235: N = 235&minus;92 = 143. U-238: N = 238&minus;92 = 146. Same element but increasing neutron numbers = isotopes.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Calculate the relative atomic mass of neon: Ne-20 (90.48%), Ne-21 (0.27%), Ne-22 (9.25%). <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ar = (20 &times; 0.9048) + (21 &times; 0.0027) + (22 &times; 0.0925) = 18.096 + 0.0567 + 2.035 = 20.19 &asymp; 20.2.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">After 3 half-lives, what fraction remains? If initial mass was 160 g, how much remains? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Fraction = (1/2)&sup3; = 1/8. Mass = 160 &times; (1/8) = 20 g.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Uranium-238 (half-life = 4.5 billion years). A rock contains U-238 and its decay product Pb-206 in a 1:1 ratio. How old is the rock? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>1:1 ratio means half the U-238 has decayed &rarr; 1 half-life. Age = 4.5 billion years.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Tritium (H-3) has a half-life of 12.3 years. A warhead manufactured in 1999 is checked in 2023. What fraction of tritium remains? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Time = 2023&minus;1999 = 24 years = 24/12.3 &asymp; 1.95 half-lives. Fraction = (1/2)^1.95 &asymp; 0.259 &asymp; 26%. About 26% remains, which is why warheads must be periodically recharged with tritium.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why can't C-14 dating be used for objects older than ~50 000 years? Suggest an isotope for dating billion-year-old rocks. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>After ~8&ndash;9 half-lives (~50 000 years), C-14 activity is too small to measure accurately. For billion-year-old rocks, use K-40 (half-life = 1.25 billion years) or U-238 (half-life = 4.5 billion years) &mdash; their longer half-lives match geological timescales.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Critical Thinking &amp; Extended Response</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate the ethical implications of using radioactive isotopes in medicine. What benefits and risks must doctors weigh? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Benefits: targeted cancer treatment (I-131), precise imaging (Tc-99m), fewer side effects than surgery. Risks: radiation exposure to healthy tissue, long-term mutation risk, radioactive waste disposal. Doctors use the ALARA principle &mdash; minimum radiation for maximum diagnostic/therapeutic benefit.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An archaeologist claims a wooden artefact is 15 000 years old based on C-14 dating. Critically evaluate this claim. What assumptions must hold? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Assumptions: (1) atmospheric C-14/C-12 ratio was constant over 15 000 years (calibration curves correct for variation). (2) No contamination with older/newer carbon. (3) Organism was alive and exchanging carbon until death. (4) Accurate half-life measurement. Well-calibrated dating is reliable to &plusmn;1&ndash;5%, so &asymp;15 000 &plusmn; 150&ndash;750 years.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare physical and chemical properties of protium (H-1), deuterium (H-2), and tritium (H-3). Why is heavy water (D&sub2;O) different from ordinary water? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>All three have identical chemical properties (1 proton, 1 electron). Physically: masses differ (1, 2, 3 u). Heavy water (D&sub2;O) has mass 20 vs 18 for H&sub2;O: higher melting point (3.8&deg;C), higher boiling point (101.4&deg;C), higher density (1.105 g/cm&sup3;). It is toxic in large amounts (slows biological reactions).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is nuclear power based on U-235 fission rather than U-238? Connect to isotopic properties. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>U-235 is fissile &mdash; it readily undergoes fission when struck by a slow neutron, releasing energy + more neutrons (chain reaction). U-238 is not directly fissile with slow neutrons. Natural uranium is only 0.7% U-235; reactors require enrichment to 3&ndash;5%. Different neutron numbers (143 vs 146) create dramatically different nuclear properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe how isotope analysis of ancient ice cores can reveal past temperatures. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ice cores and shells contain different ratios of oxygen isotopes (O-16/O-18). During cold periods, lighter O-16 evaporates more readily and falls as snow, enriching ice with O-16. During warm periods, more O-18 is available. Measuring O-isotope ratios allows reconstruction of temperature records going back 800 000 years.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Write a letter from a radiochemist to a sceptical newspaper editor explaining why radioactive isotopes used in medicine are safe. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Dear Editor, Medical isotopes are selected for short half-lives (minutes to days) so they decay to harmless levels quickly. Doses are carefully calculated to benefit target tissue with minimum exposure to healthy tissue. Regulatory bodies (AERB in India) monitor all use. The diagnostic and therapeutic benefits &mdash; early cancer detection, thyroid treatment &mdash; far outweigh the small, carefully managed radiation risk. Yours sincerely, Dr. [Radiochemist].</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If you were a scientist in 1910 (before isotopes were discovered), how would you explain chlorine's atomic mass of 35.5? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>In 1910, a scientist might think chlorine has a non-integer atomic mass as a fundamental property, or that measurements are imprecise. The discovery of isotopes (Soddy, 1913) resolved the mystery: 35.5 is a weighted average of Cl-35 (75%) and Cl-37 (25%), explaining a long-standing puzzle in chemistry.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How do stable and radioactive isotopes both have industrial applications? Give one specific example of each. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Stable isotopes: O-18 is used in isotope-ratio mass spectrometry for climate research and food authentication. Radioactive isotopes: Co-60 (gamma emitter) is used in industrial radiography to find cracks in metal pipelines and in food irradiation to extend shelf life without heating.</p></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TOPIC 6 ═══════════════════════════ -->
+<section class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Electronic Configuration &mdash; 2, 8, 8, 18 Shells</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>&#128250; Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=6IZjNqhSYfY" target="_blank">Electron configurations and the periodic table</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=SpNr5HiHjqs" target="_blank">Electron Configuration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall &amp; Concept</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the maximum number of electrons in shells 1, 2, 3, and 4. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Shell 1: max 2. Shell 2: max 8. Shell 3: max 18 (or 8 for elements up to Z=20). Shell 4: max 32. General rule: max = 2n&sup2; where n is shell number.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Write the electronic configuration of sodium (Z=11) and chlorine (Z=17). <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sodium (Na, Z=11): 2, 8, 1 (1 valence electron). Chlorine (Cl, Z=17): 2, 8, 7 (7 valence electrons).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What are valence electrons and why are they important? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Valence electrons are electrons in the outermost shell. They determine chemical reactivity, bonding behaviour, and periodic table group. Elements with the same valence electron count have similar chemical properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What electronic configuration gives an atom maximum stability? Give two examples. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A full outer shell (2 for shell 1; 8 for shells 2&ndash;3) gives maximum stability. Examples: Helium (2), Neon (2,8), Argon (2,8,8) &mdash; all noble gases with full outer shells, chemically inert.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does sodium achieve a stable electronic configuration when it reacts with chlorine? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sodium (2,8,1) loses its 1 valence electron to become Na&#8314; with configuration 2,8 (like neon). Chlorine (2,8,7) gains that electron to become Cl&#8315; with configuration 2,8,8 (like argon). Both achieve stable full outer shells.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Define cation and anion. Which does sodium form and which does chlorine form? <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Cation: positive ion (loses electrons). Anion: negative ion (gains electrons). Sodium forms a cation (Na&#8314;: loses 1 electron). Chlorine forms an anion (Cl&#8315;: gains 1 electron).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Write the electronic configurations of the first 10 elements (H to Ne). <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>H: 1 | He: 2 | Li: 2,1 | Be: 2,2 | B: 2,3 | C: 2,4 | N: 2,5 | O: 2,6 | F: 2,7 | Ne: 2,8.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do elements in the same group of the periodic table have similar chemical properties? <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Elements in the same group have the same number of valence electrons. Since chemical reactions involve valence electrons, elements with the same valence count react similarly. E.g., all Group 1 elements (Li, Na, K) have 1 valence electron and react similarly with water.</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Application &amp; Calculation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the electronic configuration of: (a) Aluminium (Z=13), (b) Calcium (Z=20), (c) Argon (Z=18). <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(a) Al (Z=13): 2, 8, 3. (b) Ca (Z=20): 2, 8, 8, 2. (c) Ar (Z=18): 2, 8, 8 &mdash; full outer shell, noble gas.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An element has electronic configuration 2, 8, 6. Name the element, its group, and predict what ion it forms. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Total electrons = 16, Z=16 = Sulphur (S). Group 16 (6 valence electrons). It gains 2 electrons to form S&sup2;&#8315; (sulphide ion), achieving 2,8,8 configuration.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Magnesium (Z=12) reacts with oxygen (Z=8) to form MgO. Show the electron transfer and resulting electronic configurations. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Mg (2,8,2) loses 2 electrons &rarr; Mg&sup2;&#8314; (2,8) like neon. O (2,6) gains 2 electrons &rarr; O&sup2;&#8315; (2,8) like neon. MgO is ionic: Mg&sup2;&#8314;O&sup2;&#8315;.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Which elements have the configurations (a) 2, 8, 4 and (b) 2, 8, 8, 1? Name them and predict their reactivity. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>(a) Z=14 = Silicon. 4 valence electrons &mdash; forms covalent bonds, semiconductor. (b) Z=19 = Potassium. 1 valence electron &mdash; very reactive metal, loses 1 electron easily to form K&#8314;.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe electron shell diagrams for Na, Cl, Na&#8314;, and Cl&#8315;. Compare the ion diagrams to the neutral atoms. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Na (2,8,1): 11 protons, 3 shells. Na&#8314; (2,8): 11 protons, 2 shells, like neon (one fewer electron). Cl (2,8,7): 17 protons, 3 shells. Cl&#8315; (2,8,8): 17 protons, 3 shells, like argon (one more electron). Ions have complete outer shells.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An element X is in period 3 with 3 valence electrons. Identify X and state how many electrons it loses when forming an ion. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Period 3 with 3 valence electrons = 2,8,3 = Z=13 = Aluminium (Al). It loses 3 electrons to form Al&sup3;&#8314; (configuration 2,8, like neon).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How many electrons does each shell contain for argon (2,8,8)? Verify that argon is chemically inert. <span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Shell 1: 2 (full). Shell 2: 8 (full). Shell 3: 8 (full for period 3). Total = 18 = Z=18 = Argon. With a full outer shell (8 electrons), argon has no tendency to gain or lose electrons &mdash; chemically inert (noble gas).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Predict the formula of the compound formed between calcium (Z=20) and chlorine (Z=17). Justify using electronic configurations. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ca (2,8,8,2) loses 2 electrons &rarr; Ca&sup2;&#8314;. Cl (2,8,7) gains 1 electron &rarr; Cl&#8315;. To balance: 1 Ca&sup2;&#8314; + 2 Cl&#8315; &rarr; formula CaCl&sub2; (calcium chloride).</p></details>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Critical Thinking &amp; Extended Response</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why noble gases are chemically inert using electronic configuration and the octet rule. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Noble gases (He, Ne, Ar, Kr, Xe) all have full outer electron shells (He: 2; others: 8 outer electrons = octet). The octet rule states 8 outer electrons = maximum stability. With full outer shells, noble gases have no energetic driving force to gain, lose, or share electrons &mdash; essentially unreactive.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do transition metals (like iron, Z=26) not follow the simple 2,8,8 filling rule? What complicates their configurations? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Transition metals have d orbitals close in energy to the outer s orbital. Electrons fill 3d and 4s orbitals in a complex order. Fe configuration: 2,8,14,2 (using d orbitals). This creates variable valence states (Fe&sup2;&#8314; and Fe&sup3;&#8314;) and special magnetic/catalytic properties not seen in main group elements.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A mystery element has configuration 2,8,8,2. Predict its (a) atomic number, (b) group, (c) ion formed, (d) bonding type. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>(a) Z = 2+8+8+2 = 20 = Calcium. (b) Group 2 (2 valence electrons). (c) Ion: Ca&sup2;&#8314; (loses 2 electrons). (d) Ionic bonding &mdash; Ca&sup2;&#8314; transfers electrons to non-metals, forming ionic compounds with high melting points.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does electronic configuration explain why period 2 elements are limited to an octet but period 3 elements can exceed 8 valence electrons? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Period 2 has only 2s and 2p orbitals (max 8 electrons). Period 3 also has 3d orbitals available, allowing "expanded octets." This permits sulphur (SF&sub6;: 12 electrons around S) and phosphorus to form more than 4 bonds when energetically favourable.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Lithium (2,1) and sodium (2,8,1) are both in Group 1. Why is sodium more reactive despite having the same number of valence electrons? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sodium's valence electron is in shell 3, further from the nucleus than lithium's (shell 2). Greater distance + more electron shielding = weaker nuclear attraction = lower ionisation energy. It's easier to remove Na's outer electron, making sodium more reactive.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain how electronic configuration determines whether NaCl forms by ionic bonding and H&sub2;O by covalent bonding. <span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>NaCl: Na (2,8,1) &mdash; metal, low ionisation energy; Cl (2,8,7) &mdash; non-metal, high electron affinity. Large electronegativity difference &rarr; electron transfer &rarr; ionic bond. H&sub2;O: H (1) and O (2,6) &mdash; both non-metals, similar electronegativities, neither fully transfers electrons &rarr; share electrons &rarr; covalent bond.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does the periodic table's structure reflect electronic configurations? Explain periods and groups in terms of electrons. <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Periods = shell numbers being filled. Period 1: shell 1 filling (2 elements). Period 2: shell 2 filling (8 elements). Groups = valence electron number: Group 1 = 1 valence electron; Group 17 = 7; Group 18 = full outer shell. The entire periodic table is a map of electron configurations.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design a "most reactive element" competition between fluorine (Z=9) and cesium (Z=55). What drives each element's extreme reactivity? <span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Fluorine (2,7): most electronegative; small size means valence electrons are close to a highly charged nucleus (9 protons), giving enormous electron affinity. It desperately wants 1 more electron. Cesium (2,8,18,18,8,1): 6 shells, outermost electron very far from nucleus and shielded &mdash; extremely easy to remove. In a reaction, Cs immediately donates its electron to F &mdash; one of the most violent reactions in chemistry. Two different drivers: F wants to gain; Cs wants to lose.</p></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<footer>Grade 9 &middot; Exploration Science &middot; Chapter 8 &middot; The Gaudium School &middot; IB MYP &middot; 2026&ndash;27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

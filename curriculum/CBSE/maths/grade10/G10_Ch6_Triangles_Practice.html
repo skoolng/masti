@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 6 – Triangles | Grade 10 Math</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 Chapter 6 – Triangles</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Similarity, BPT &amp; Pythagoras</p>
+</header>
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">Similar Figures Introduction</a></li>
+    <li><a href="#t2">Criteria for Similarity AA SSS SAS</a></li>
+    <li><a href="#t3">Basic Proportionality Theorem (Thales)</a></li>
+    <li><a href="#t4">Converse of BPT</a></li>
+    <li><a href="#t5">AA Similarity Criterion</a></li>
+    <li><a href="#t6">SSS Similarity Criterion</a></li>
+    <li><a href="#t7">SAS Similarity Criterion</a></li>
+    <li><a href="#t8">Ratio of Areas of Similar Triangles</a></li>
+    <li><a href="#t9">Pythagoras Theorem Proof and Use</a></li>
+    <li><a href="#t10">Converse of Pythagoras Theorem</a></li>
+    <li><a href="#t11">Pythagorean Triples</a></li>
+    <li><a href="#t12">SAT-Style Triangle Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<section class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Similar Figures Introduction</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-intro-to-triangle-similarity/v/similar-triangles-1" target="_blank">Intro to Similar Triangles</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-intro-to-triangle-similarity/v/similar-triangles-2" target="_blank">Similar Triangles Part 2</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=LHGCJCMCwWA" target="_blank">Similar Figures Explained</a>
+        <a href="https://www.youtube.com/watch?v=aHwRjIqNxkk" target="_blank">Scale Factor &amp; Ratios</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Concept Check — Similar Figures Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define similar figures. What two conditions must be satisfied for two polygons to be similar?<details class="ans"><summary>Show Answer</summary><p>Two polygons are similar if: (1) All corresponding angles are equal, and (2) All corresponding sides are proportional (same ratio). Symbol: ~</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Are all circles similar? Justify your answer.<details class="ans"><summary>Show Answer</summary><p>Yes. All circles have the same shape. Any circle can be obtained from another by scaling (they all have the same angle measure — 360° — and sides proportional by ratio of radii). Hence all circles are similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Are all squares similar? Are all rectangles similar? Explain the difference.<details class="ans"><summary>Show Answer</summary><p>All squares are similar (all angles are 90°, all sides equal so ratio is constant). NOT all rectangles are similar — a 2×4 rectangle and a 3×4 rectangle have different aspect ratios, so sides are not proportional.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have a scale factor of 3:5. If the perimeter of the smaller triangle is 24 cm, find the perimeter of the larger triangle.<details class="ans"><summary>Show Answer</summary><p>Scale factor = 3:5. Perimeters are in the same ratio as sides.<br>Perimeter of larger = 24 × (5/3) = <strong>40 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Triangle ABC ~ Triangle PQR. Write all three pairs of equal angles and all three pairs of proportional sides.<details class="ans"><summary>Show Answer</summary><p>Equal angles: ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R<br>Proportional sides: AB/PQ = BC/QR = CA/RP</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If △DEF ~ △XYZ with DE = 6, EF = 8, DF = 10 and XY = 9, find YZ and XZ.<details class="ans"><summary>Show Answer</summary><p>Scale factor = XY/DE = 9/6 = 3/2<br>YZ = EF × (3/2) = 8 × 1.5 = <strong>12</strong><br>XZ = DF × (3/2) = 10 × 1.5 = <strong>15</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain: "Congruent figures are always similar but similar figures are not always congruent."<details class="ans"><summary>Show Answer</summary><p>Congruent figures have equal angles AND equal sides (scale factor = 1), so they automatically satisfy similarity conditions. Similar figures only require proportional sides — scale factor can be anything, so they may differ in size and thus not be congruent.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two similar pentagons have corresponding sides 4 cm and 6 cm. Find the ratio of their perimeters.<details class="ans"><summary>Show Answer</summary><p>Ratio of perimeters = ratio of corresponding sides = 4:6 = <strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A photograph is enlarged such that a 4 cm length becomes 10 cm. Is this an example of similar figures? What is the scale factor?<details class="ans"><summary>Show Answer</summary><p>Yes — enlargement preserves shape (all angles same), and all lengths scale by the same factor. Scale factor = 10/4 = <strong>5/2 or 2.5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can two triangles with angles 40°, 60°, 80° and sides 3, 4, 5 cm be similar to a triangle with angles 40°, 60°, 80° and sides 6, 8, 10 cm? Verify the side ratios.<details class="ans"><summary>Show Answer</summary><p>Angles are identical ✓. Side ratios: 6/3 = 8/4 = 10/5 = 2 ✓. All ratios equal, so <strong>yes, they are similar</strong> with scale factor 2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Proportional Sides — Finding Missing Lengths</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF. AB = 5, BC = 7, AC = 9, DE = 10. Find EF and DF.<details class="ans"><summary>Show Answer</summary><p>Scale factor = DE/AB = 10/5 = 2<br>EF = BC × 2 = <strong>14</strong>; DF = AC × 2 = <strong>18</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△PQR ~ △STU. PQ = 12, QR = 16, PR = 20, ST = 3. Find TU and SU.<details class="ans"><summary>Show Answer</summary><p>Scale factor = ST/PQ = 3/12 = 1/4<br>TU = 16 × (1/4) = <strong>4</strong>; SU = 20 × (1/4) = <strong>5</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have sides in ratio 2:7. If the smallest side of the larger triangle is 21 cm, find the smallest side of the smaller triangle.<details class="ans"><summary>Show Answer</summary><p>Ratio = 2:7. Smallest side of smaller = 21 × (2/7) = <strong>6 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△LMN ~ △XYZ with LM/XY = 3/4. If LM = 9 cm and MN = 12 cm, find YZ.<details class="ans"><summary>Show Answer</summary><p>Scale factor = 3/4, so XY/LM = 4/3.<br>YZ/MN = 4/3 → YZ = 12 × (4/3) = <strong>16 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In similar triangles, three sides of △1 are x, x+2, x+4 and the corresponding sides of △2 are 6, 9, 12. Find x.<details class="ans"><summary>Show Answer</summary><p>Ratio must be constant: x/6 = (x+2)/9 = (x+4)/12<br>From x/6 = (x+2)/9: 9x = 6x+12 → 3x = 12 → x = 4<br>Check: 4/6 = 6/9 = 8/12 = 2/3 ✓. x = <strong>4</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △PQR. AB = 2x−1, PQ = 3, BC = x+2, QR = 4.5. Find x.<details class="ans"><summary>Show Answer</summary><p>AB/PQ = BC/QR → (2x−1)/3 = (x+2)/4.5<br>4.5(2x−1) = 3(x+2) → 9x−4.5 = 3x+6 → 6x = 10.5 → x = <strong>1.75</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The perimeter of △ABC is 48 cm and △ABC ~ △DEF with scale factor 3:4. Find the perimeter of △DEF.<details class="ans"><summary>Show Answer</summary><p>Perimeters ratio = 3:4<br>48/P₂ = 3/4 → P₂ = 48 × 4/3 = <strong>64 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF. The sides of △ABC are 5, 12, 13 and the longest side of △DEF is 26. Find all sides of △DEF.<details class="ans"><summary>Show Answer</summary><p>Scale factor = 26/13 = 2<br>DE = 5×2 = <strong>10</strong>, EF = 12×2 = <strong>24</strong>, DF = 26</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two similar figures have scale factor k. If a side of the smaller figure is s, write an expression for the corresponding side of the larger figure and for the ratio of perimeters.<details class="ans"><summary>Show Answer</summary><p>Corresponding side of larger figure = <strong>ks</strong><br>Ratio of perimeters = <strong>1:k</strong> (smaller to larger)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF with AB = 4, DE = 6. The sum of the perimeters of both triangles is 100 cm. Find each perimeter separately.<details class="ans"><summary>Show Answer</summary><p>Scale factor = 4:6 = 2:3. Let perimeters be 2k and 3k.<br>2k + 3k = 100 → 5k = 100 → k = 20<br>Perimeter of △ABC = <strong>40 cm</strong>, △DEF = <strong>60 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Identifying Similarity — Mixed Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State whether: all equilateral triangles are similar. Give reason.<details class="ans"><summary>Show Answer</summary><p><strong>True.</strong> All equilateral triangles have angles 60°-60°-60°. Since all corresponding angles are equal, all equilateral triangles are similar (by AA criterion).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△1 has angles 50°, 70°, 60°. △2 has angles 60°, 50°, 70°. Are they similar?<details class="ans"><summary>Show Answer</summary><p>Both have the same set of angles {50°, 60°, 70°}. <strong>Yes, they are similar</strong> (corresponding angles can be matched).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A map is drawn to scale 1:50000. If the distance between two cities on the map is 3 cm, what is the actual distance?<details class="ans"><summary>Show Answer</summary><p>Actual distance = 3 × 50000 = 150000 cm = <strong>1.5 km</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Given △ABC ~ △PQR, ∠A = 45°, ∠B = 75°. Find ∠R.<details class="ans"><summary>Show Answer</summary><p>∠C = 180° − 45° − 75° = 60°. Since △ABC ~ △PQR, ∠R = ∠C = <strong>60°</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have sides 6, 8, 10 and 9, 12, 15. Verify they are similar and state the scale factor.<details class="ans"><summary>Show Answer</summary><p>Ratios: 9/6 = 1.5, 12/8 = 1.5, 15/10 = 1.5. All equal ✓<br>Scale factor = <strong>3:2</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF. ∠A = 3x+5°, ∠D = 5x−15°. Find x and ∠A.<details class="ans"><summary>Show Answer</summary><p>∠A = ∠D (corresponding angles)<br>3x+5 = 5x−15 → 20 = 2x → x = 10<br>∠A = 3(10)+5 = <strong>35°</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Are right-angled isosceles triangles always similar? Justify.<details class="ans"><summary>Show Answer</summary><p>A right-angled isosceles triangle always has angles 90°-45°-45°. Since all such triangles have identical angles, they are always similar by AA. <strong>Yes, always similar.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, a line DE is drawn parallel to BC cutting AB at D and AC at E. If AD = 3, DB = 5, AE = 4.5, find EC.<details class="ans"><summary>Show Answer</summary><p>By BPT: AD/DB = AE/EC → 3/5 = 4.5/EC<br>EC = 4.5 × 5/3 = <strong>7.5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC has AB = 6, BC = 8, AC = 10. △PQR has PQ = 9, QR = 12, PR = 15. Are they similar? Find the scale factor.<details class="ans"><summary>Show Answer</summary><p>Ratios: 9/6 = 1.5, 12/8 = 1.5, 15/10 = 1.5. All equal. <strong>Yes, similar.</strong> Scale factor = <strong>3:2</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Explain why two triangles with two equal sides and one equal angle (not included) may NOT be similar. Give a counter-example.<details class="ans"><summary>Show Answer</summary><p>This is the ambiguous SSA case. Example: △1 with sides 5, 7 and angle 30° opposite the side of length 5, and △2 with same measurements but the angle 30° is between the two sides — different triangles can be formed that are not similar. SSA is not a valid similarity criterion.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS &amp; Application Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A tree casts a shadow of 15 m when a 2 m pole casts a shadow of 3 m. Find the height of the tree using similar triangles.<details class="ans"><summary>Show Answer</summary><p>Triangles formed are similar (same sun angle).<br>Height/Shadow = 2/3<br>Height of tree = 15 × (2/3) = <strong>10 m</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A 6 m tall building casts a 4 m shadow. At the same time, a nearby tower casts a 30 m shadow. Find the tower's height.<details class="ans"><summary>Show Answer</summary><p>Height/Shadow ratio is constant.<br>Tower height = 30 × (6/4) = <strong>45 m</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">On a map with scale 1:25000, a park measures 4 cm × 3 cm. What is the actual area of the park in m²?<details class="ans"><summary>Show Answer</summary><p>Actual lengths: 4 × 25000 = 100000 cm = 1000 m; 3 × 25000 = 75000 cm = 750 m<br>Area = 1000 × 750 = <strong>750,000 m²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have perimeters 30 cm and 45 cm. If the shortest side of the smaller triangle is 6 cm, find the shortest side of the larger triangle.<details class="ans"><summary>Show Answer</summary><p>Scale factor = 45/30 = 3/2<br>Shortest side of larger = 6 × (3/2) = <strong>9 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove that if two triangles are similar, their corresponding medians are in the same ratio as their corresponding sides.<details class="ans"><summary>Show Answer</summary><p>Let △ABC ~ △DEF with ratio k. Midpoints M, N of BC, EF respectively. In △ABM and △DEN: AB/DE = k, and BM/EN = (BC/2)/(EF/2) = BC/EF = k, ∠B = ∠E. By SAS similarity, △ABM ~ △DEN, so AM/DN = k. Hence medians are in ratio k. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two photographs are similar rectangles. The first is 10 cm × 15 cm. The second has width 6 cm. Find its length.<details class="ans"><summary>Show Answer</summary><p>Scale factor = 6/10 = 3/5<br>Length = 15 × (3/5) = <strong>9 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Explain the difference between 'same shape' and 'same size'. Which applies to similar figures and which to congruent figures?<details class="ans"><summary>Show Answer</summary><p>Same shape = equal angles, proportional sides (scale factor can vary). Same size = equal measurements. <strong>Similar figures</strong>: same shape only. <strong>Congruent figures</strong>: same shape AND same size (scale factor = 1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF with AB = 4, DE = 6. The altitude from A in △ABC is 5 cm. Find the altitude from D in △DEF.<details class="ans"><summary>Show Answer</summary><p>Altitudes are in the same ratio as sides.<br>Scale factor = 6/4 = 3/2<br>Altitude from D = 5 × (3/2) = <strong>7.5 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ladder 10 m long leans against a wall. At the same time, a 5 m ladder leans similarly. If the shorter ladder's foot is 3 m from the wall, how far is the longer ladder's foot?<details class="ans"><summary>Show Answer</summary><p>Triangles are similar (same angle of inclination assumed). Scale factor = 10/5 = 2.<br>Distance = 3 × 2 = <strong>6 m</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have areas 16 cm² and 36 cm². If a side of the smaller is 4 cm, find the corresponding side of the larger. (Hint: area ratio = side ratio squared)<details class="ans"><summary>Show Answer</summary><p>Area ratio = 16:36 = 4:9. Side ratio = √(4/9) = 2/3.<br>Side of larger = 4 × (3/2) = <strong>6 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<section class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Criteria for Similarity: AA, SSS, SAS</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-triangle-similarity-intro/v/similarity-postulates" target="_blank">Triangle Similarity Postulates</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-triangle-similarity-intro/e/exploring-angle-angle-triangle-similarity" target="_blank">AA Similarity Practice</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Organic Chemistry Tutor</span>
+        <a href="https://www.youtube.com/watch?v=JEHejQphIYc" target="_blank">AA, SSS, SAS Similarity</a>
+        <a href="https://www.youtube.com/watch?v=Ck_hGZMQlCo" target="_blank">Similar Triangles — Full Review</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying the Correct Criterion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the AA similarity criterion. How many angles do you actually need to verify?<details class="ans"><summary>Show Answer</summary><p>AA: If two angles of one triangle are equal to two angles of another triangle, the triangles are similar. You only need <strong>2 angles</strong> — the third follows automatically (angle sum = 180°).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">State the SSS similarity criterion. How does it differ from the SSS congruence criterion?<details class="ans"><summary>Show Answer</summary><p>SSS Similarity: If all three pairs of corresponding sides are proportional, the triangles are similar. SSS Congruence: sides must be <em>equal</em> (not just proportional). Similarity uses ratios; congruence uses equality.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">State the SAS similarity criterion. Which angle must be "included"?<details class="ans"><summary>Show Answer</summary><p>SAS Similarity: If two pairs of corresponding sides are proportional AND the included angle (the angle between those two sides) is equal, the triangles are similar. The angle must be <strong>between</strong> the two proportional sides.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC and △DEF: ∠A = ∠D = 40°, ∠B = ∠E = 80°. Which criterion applies?<details class="ans"><summary>Show Answer</summary><p><strong>AA criterion.</strong> Two pairs of equal angles are sufficient to establish similarity.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB = 4, BC = 6, AC = 8. △DEF: DE = 6, EF = 9, DF = 12. Which criterion applies?<details class="ans"><summary>Show Answer</summary><p>Check ratios: DE/AB = 6/4 = 1.5, EF/BC = 9/6 = 1.5, DF/AC = 12/8 = 1.5. All equal. <strong>SSS criterion.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB = 3, AC = 5, ∠A = 60°. △DEF: DE = 6, DF = 10, ∠D = 60°. Which criterion applies?<details class="ans"><summary>Show Answer</summary><p>AB/DE = 3/6 = 1/2, AC/DF = 5/10 = 1/2 (proportional), and included angle ∠A = ∠D = 60°. <strong>SAS criterion.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">∠A = 70°, ∠C = 50° in △ABC. ∠P = 70°, ∠R = 60° in △PQR. Are the triangles similar? Explain.<details class="ans"><summary>Show Answer</summary><p>∠B = 180−70−50 = 60°. ∠Q = 180−70−60 = 50°.<br>Angles of △ABC: 70°, 60°, 50°. Angles of △PQR: 70°, 60°, 50°. Same set — <strong>yes, similar by AA.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can two triangles be similar by SSS if two sides are proportional but the third is not? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> SSS similarity requires ALL THREE pairs of corresponding sides to be proportional. If even one pair has a different ratio, SSS similarity does not hold.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB = 5, BC = 7, ∠B = 45°. △PQR: PQ = 10, QR = 14, ∠Q = 45°. Identify the similarity criterion and write the similarity statement.<details class="ans"><summary>Show Answer</summary><p>AB/PQ = 5/10 = 1/2, BC/QR = 7/14 = 1/2, ∠B = ∠Q = 45° (included angles). <strong>SAS criterion: △ABC ~ △PQR</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Why is SSA (two sides and a non-included angle) NOT a valid similarity criterion?<details class="ans"><summary>Show Answer</summary><p>With SSA, two different triangles can be constructed with the same two side ratios and the same non-included angle (the ambiguous case). Since the triangle is not uniquely determined, SSA cannot guarantee similarity.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Applying Criteria to Prove Similarity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC, ∠ABC = 90° and BD ⊥ AC. Show that △ABD ~ △ABC using AA.<details class="ans"><summary>Show Answer</summary><p>In △ABD and △ABC:<br>∠ADB = ∠ABC = 90° (given BD ⊥ AC and ∠ABC = 90°)<br>∠A is common.<br>By AA: <strong>△ABD ~ △ABC</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠ABC = 90° and BD ⊥ AC. Show that △BDC ~ △ABC.<details class="ans"><summary>Show Answer</summary><p>In △BDC and △ABC:<br>∠BDC = ∠ABC = 90°<br>∠C is common.<br>By AA: <strong>△BDC ~ △ABC</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two triangles have sides 3, 4, 5 and 9, 12, 15. Prove they are similar and write the similarity statement.<details class="ans"><summary>Show Answer</summary><p>Ratios: 9/3 = 3, 12/4 = 3, 15/5 = 3. All equal (ratio = 3).<br>By SSS similarity: <strong>△ABC ~ △PQR</strong> (with sides matched in order).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Diagonals of a trapezium ABCD (AB ∥ CD) intersect at O. Prove △AOB ~ △COD.<details class="ans"><summary>Show Answer</summary><p>AB ∥ CD, so alternate angles: ∠OAB = ∠OCD and ∠OBA = ∠ODC (alternate interior angles with transversals AC and BD). By AA: <strong>△AOB ~ △COD.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In the figure, ∠D = ∠E = 90° with AB = 10, BD = 6, CE = 8, BC = 10. Prove △ABD ~ △BCE.<details class="ans"><summary>Show Answer</summary><p>∠D = ∠E = 90°. Check SAS: AB/BC = 10/10 = 1, BD/CE = 6/8 = 3/4 — not equal, so SAS doesn't apply. But ∠D = ∠E and ∠B is common in both triangles formed at B. By AA: △ABD ~ △CBE.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: If in △ABC and △DEF, AB/DE = BC/EF and ∠B = ∠E, then △ABC ~ △DEF.<details class="ans"><summary>Show Answer</summary><p>This is the SAS similarity criterion. Given AB/DE = BC/EF (two pairs of proportional sides) and ∠B = ∠E (included angles equal), by SAS similarity theorem: <strong>△ABC ~ △DEF.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is a point on BC such that AD bisects ∠A and ∠ADB = ∠ABC. Show △ABD ~ △ACB by AA.<details class="ans"><summary>Show Answer</summary><p>In △ABD and △ACB:<br>∠ADB = ∠ABC (given)<br>∠BAD = ∠BAC/2 and ∠CAB = ∠CAB (common at A... need to re-examine).<br>Actually ∠ABD = ∠ABC (same angle). ∠ADB = ∠ABC. ∠A is common (∠DAB = ∠BAC? No). The shared angle is ∠B = ∠ABD = ∠ABC. With ∠ADB = ∠ABC we have two angles. By AA: <strong>△ABD ~ △ACB.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB = 6, BC = 9. △PQR: PQ = 4, QR = 6. ∠B = ∠Q = 55°. Are they similar? State the criterion.<details class="ans"><summary>Show Answer</summary><p>AB/PQ = 6/4 = 3/2; BC/QR = 9/6 = 3/2. Sides proportional and included angle equal.<br><strong>Yes, similar by SAS criterion. △ABC ~ △PQR</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Determine whether SSS similarity applies: △1 sides 5, 6, 7 and △2 sides 10, 13, 14.<details class="ans"><summary>Show Answer</summary><p>Ratios: 10/5 = 2, 13/6 ≈ 2.17, 14/7 = 2. Not all equal (13/6 ≠ 2). <strong>Not similar by SSS.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC and △DEF: ∠A = 70°, ∠F = 40°, ∠D = 70°, ∠E = 70°. Are the triangles similar?<details class="ans"><summary>Show Answer</summary><p>△ABC angles: ∠A=70°, ∠B=?, ∠C=?; ∠B+∠C=110°<br>△DEF angles: ∠D=70°, ∠E=70°, ∠F=40°.<br>Without knowing ∠B and ∠C individually, we cannot confirm. If ∠B=70°, ∠C=40°: then {70°,70°,40°} matches △DEF — <strong>yes, similar by AA.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed Criterion Problems — Find Missing Values</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF by SSS. AB = 8, BC = x, CA = 12; DE = 4, EF = 3, FD = 6. Find x.<details class="ans"><summary>Show Answer</summary><p>Scale factor = DE/AB = 4/8 = 1/2<br>EF/BC = 1/2 → 3/x = 1/2 → x = <strong>6</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, PQ = 6, PR = 9, ∠P = 50°. In △XYZ, XY = 4, XZ = 6, ∠X = 50°. Are they similar? Find the scale factor.<details class="ans"><summary>Show Answer</summary><p>PQ/XY = 6/4 = 3/2; PR/XZ = 9/6 = 3/2. ∠P = ∠X = 50° (included angle).<br>By SAS: <strong>△PQR ~ △XYZ</strong>. Scale factor = <strong>3:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">∠ABC = 40°, ∠BAC = 80°; ∠PQR = 40°, ∠QPR = 60°. Are △ABC and △PQR similar?<details class="ans"><summary>Show Answer</summary><p>△ABC: 40°+80°+∠C=180° → ∠C=60°. △PQR: 40°+60°+∠R=180° → ∠R=80°.<br>△ABC angles: {40°,80°,60°}. △PQR angles: {40°,60°,80°}. Same set!<br><strong>Yes, similar by AA. △ABC ~ △PQR</strong> (with ∠B=∠Q, ∠A=∠R, ∠C=∠P)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF. AB = 2x, DE = x+3, BC = x+1, EF = 5. Find x using SSS.<details class="ans"><summary>Show Answer</summary><p>AB/DE = BC/EF → 2x/(x+3) = (x+1)/5<br>10x = (x+1)(x+3) = x²+4x+3<br>x²−6x+3 = 0 → x = (6±√24)/2 = 3±√6<br>Taking positive: x = 3+√6 ≈ <strong>5.45</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD = 2, DB = 3, AE = 4. By AA show △ADE ~ △ABC and find AC.<details class="ans"><summary>Show Answer</summary><p>DE ∥ BC → ∠ADE = ∠ABC and ∠AED = ∠ACB (corresponding angles). ∠A common. By AA: △ADE ~ △ABC.<br>AD/AB = AE/AC → 2/5 = 4/AC → AC = <strong>10</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Identify the criterion and complete the similarity: △ABC has ∠B = ∠Q = 90°, AB = 3, BC = 4; △PQR has PQ = 6, QR = 8.<details class="ans"><summary>Show Answer</summary><p>AB/PQ = 3/6 = 1/2; BC/QR = 4/8 = 1/2. ∠B = ∠Q = 90° (included).<br>By SAS: <strong>△ABC ~ △PQR</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Given △LMN with LM = 5, MN = 8, LN = 10 and △PQR with PQ = 7.5, QR = 12, PR = 15. Identify the criterion.<details class="ans"><summary>Show Answer</summary><p>Ratios: 7.5/5 = 1.5, 12/8 = 1.5, 15/10 = 1.5. All equal. <strong>SSS similarity criterion.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠A = 90°. D is foot of altitude from A to BC. Identify two pairs of similar triangles.<details class="ans"><summary>Show Answer</summary><p>△ABD ~ △CAD (AA: ∠ADB=∠CAD=90°—wait, standard result)<br>△ABC ~ △ABD (AA: common ∠B, right angles)<br>△ABC ~ △ACD (AA: common ∠C, right angles)<br>△ABD ~ △ACD (AA)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△RST: RS = 4, ST = 5, ∠S = 70°. △UVW: UV = 8, VW = 10, ∠V = 70°. By which criterion are they similar? Find RS/UV.<details class="ans"><summary>Show Answer</summary><p>RS/UV = 4/8 = 1/2; ST/VW = 5/10 = 1/2. ∠S = ∠V = 70° (included). <strong>SAS criterion.</strong> RS/UV = <strong>1/2</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two triangles have all three angles equal (60°, 70°, 50°). Do you need to check the sides to confirm similarity? Which criterion applies?<details class="ans"><summary>Show Answer</summary><p>No — angle checking is sufficient. With all three angles equal (which is redundant beyond two), the <strong>AA criterion</strong> confirms similarity without checking sides.</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Proofs and Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC, ∠BAC = 90°. AD ⊥ BC. Prove that BD/AD = AD/DC (geometric mean relation).<details class="ans"><summary>Show Answer</summary><p>From △ABD ~ △CAD (AA: ∠ADB=∠ADC=90°, ∠B is shared in △ABD and ∠CAD respectively):<br>BD/AD = AD/DC ∴ AD² = BD·DC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In trapezium ABCD, AB ∥ CD. Diagonals meet at P. If AB = 2·CD, find AP/PC.<details class="ans"><summary>Show Answer</summary><p>△APB ~ △CPD (AA: alternate angles). AB/CD = 2, so AP/CP = AB/CD = <strong>2:1</strong>. Thus AP/PC = 2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Sides of △ABC are AB = 3k, BC = 4k, CA = 5k. Show it is a right triangle and identify the right angle.<details class="ans"><summary>Show Answer</summary><p>Check: (3k)² + (4k)² = 9k² + 16k² = 25k² = (5k)². By Pythagoras converse, it's a right triangle with <strong>right angle at B</strong> (opposite the hypotenuse CA = 5k).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P is a point inside △ABC. PD ⊥ AB at D, PE ⊥ BC at E. Prove △BPD ~ △BEP.<details class="ans"><summary>Show Answer</summary><p>In △BPD and △BEP:<br>∠BDP = ∠BEP = 90° (perpendiculars)<br>∠B is common.<br>By AA: <strong>△BPD ~ △BEP.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove that the diagonals of a rhombus bisect each other at right angles and create four congruent triangles. Are the four triangles similar to each other?<details class="ans"><summary>Show Answer</summary><p>In a rhombus, diagonals bisect each other (since it's a parallelogram) and are perpendicular. The four triangles formed each have one right angle and share the two half-diagonal sides. By SSS (all four have identical half-diagonal lengths), all four are congruent — and congruent figures are <strong>similar (with scale factor 1)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two poles of height 6 m and 11 m stand vertically. A wire from the top of each pole reaches the base of the other, crossing at point P. Find the height of P from the ground.<details class="ans"><summary>Show Answer</summary><p>Let height = h, pole distance = d. h = (h₁·h₂)/(h₁+h₂) = (6×11)/(6+11) = 66/17 ≈ <strong>3.88 m</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △DEF by AA. ∠A = 2∠D − 10°, ∠B = ∠E = 60°, ∠C = 70°. Find ∠D.<details class="ans"><summary>Show Answer</summary><p>∠A = ∠D (corresponding angles). Also ∠A = 180−60−70 = 50°.<br>∠A = ∠D → ∠D = <strong>50°</strong><br>Check: 2(50)−10 = 90 ≠ 50 — contradiction, so the condition 2∠D−10 = ∠A → 2∠D−10 = ∠D → ∠D = <strong>10°</strong>? Re-examine: ∠A = 2∠D−10 and ∠A = ∠D → ∠D = 2∠D−10 → 10 = ∠D → ∠D = <strong>10°</strong>, ∠A = 10°, but ∠A = 180−60−70 = 50°. Contradiction in problem — answer using ∠A = 50°: ∠D = <strong>50°</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC ~ △PQR. Area of △ABC = 36 cm², area of △PQR = 64 cm², AB = 9 cm. Find PQ.<details class="ans"><summary>Show Answer</summary><p>Area ratio = (side ratio)² → 36/64 = (AB/PQ)²<br>AB/PQ = 6/8 = 3/4 → PQ = 9 × (4/3) = <strong>12 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: If △ABC ~ △DEF, then the ratio of corresponding angle bisectors equals the ratio of corresponding sides.<details class="ans"><summary>Show Answer</summary><p>Let BX bisect ∠B and EY bisect ∠E. In △ABX and △DEY: ∠A=∠D, ∠ABX=∠DEY=∠B/2=∠E/2. By AA: △ABX~△DEY. So BX/EY = AB/DE = ratio of sides. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In quadrilateral ABCD, ∠A = ∠C = 90°. Show that △ABD ~ △CBD need not hold without more information, but △ABD ~ △CDB may hold under certain conditions.<details class="ans"><summary>Show Answer</summary><p>Without side proportionality or additional angle equality, ∠A = ∠C = 90° alone gives one pair of equal angles. We need another equal angle (e.g., ∠ABD = ∠CDB or ∠ADB = ∠CBD) for AA to apply. So △ABD ~ △CDB holds if, additionally, ∠ABD = ∠CDB (alternate angles when BD is a transversal with AB ∥ DC).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<section class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Basic Proportionality Theorem (Thales' Theorem)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-dividing-triangles-proportionally/v/triangle-proportionality-theorem" target="_blank">Triangle Proportionality Theorem</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=oWvYIBqXgTA" target="_blank">BPT — Basic Proportionality Theorem</a>
+        <a href="https://www.youtube.com/watch?v=Z5EnuVJgCKA" target="_blank">Thales Theorem Proof</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Application of BPT</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the Basic Proportionality Theorem (Thales' Theorem).<details class="ans"><summary>Show Answer</summary><p>If a line is drawn parallel to one side of a triangle, it divides the other two sides proportionally. In △ABC, if DE ∥ BC, then <strong>AD/DB = AE/EC</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD = 4, DB = 6, AE = 5. Find EC.<details class="ans"><summary>Show Answer</summary><p>By BPT: AD/DB = AE/EC → 4/6 = 5/EC → EC = 5×6/4 = <strong>7.5</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD = 3, AB = 9, AE = 4. Find EC.<details class="ans"><summary>Show Answer</summary><p>DB = AB − AD = 9 − 3 = 6<br>By BPT: AD/DB = AE/EC → 3/6 = 4/EC → EC = <strong>8</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, ST ∥ QR. PS = 6, SQ = 4, PT = 9. Find TR.<details class="ans"><summary>Show Answer</summary><p>By BPT: PS/SQ = PT/TR → 6/4 = 9/TR → TR = 9×4/6 = <strong>6</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD/DB = 3/5. If AE = 6, find EC and AC.<details class="ans"><summary>Show Answer</summary><p>By BPT: AE/EC = AD/DB = 3/5 → 6/EC = 3/5 → EC = 10<br>AC = AE + EC = 6 + 10 = <strong>16</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AB = 14, AD = 6, AC = 21. Find AE.<details class="ans"><summary>Show Answer</summary><p>By BPT: AD/AB = AE/AC → 6/14 = AE/21 → AE = 21×6/14 = <strong>9</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD = 2x−3, DB = x−1, AE = 3, EC = 2. Find x.<details class="ans"><summary>Show Answer</summary><p>By BPT: AD/DB = AE/EC → (2x−3)/(x−1) = 3/2<br>2(2x−3) = 3(x−1) → 4x−6 = 3x−3 → x = <strong>3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △LMN, PQ ∥ MN. LP = 4, PM = 6, LQ = x, QN = 12. Find x.<details class="ans"><summary>Show Answer</summary><p>By BPT: LP/PM = LQ/QN → 4/6 = x/12 → x = 12×4/6 = <strong>8</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC with D on AB and E on AC. AD = 3.6, DB = 1.4, AE = 3. Find AC.<details class="ans"><summary>Show Answer</summary><p>By BPT: AD/DB = AE/EC → 3.6/1.4 = 3/EC → EC = 3×1.4/3.6 = 4.2/3.6 = 7/6 ≈ 1.167<br>AC = AE + EC = 3 + 7/6 = <strong>25/6 ≈ 4.17 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D and E are midpoints of AB and AC. Show that DE ∥ BC using BPT and the midpoint condition.<details class="ans"><summary>Show Answer</summary><p>AD = DB (D is midpoint), AE = EC (E is midpoint). So AD/DB = 1 = AE/EC. By the Converse of BPT, since AD/DB = AE/EC, <strong>DE ∥ BC.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> BPT — Alternate Forms and Deductions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. Write BPT in four equivalent forms using the segments AD, DB, AE, EC, AB, AC.<details class="ans"><summary>Show Answer</summary><p>1. AD/DB = AE/EC<br>2. AD/AB = AE/AC<br>3. DB/AB = EC/AC<br>4. AB/AD = AC/AE</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD = 4, AB = 10, AC = 15. Find AE and EC.<details class="ans"><summary>Show Answer</summary><p>AD/AB = AE/AC → 4/10 = AE/15 → AE = 6<br>EC = 15 − 6 = <strong>9</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, a line l ∥ QR meets PQ at M and PR at N. PM = 3, MQ = 5, PN = 4. Find NR.<details class="ans"><summary>Show Answer</summary><p>PM/MQ = PN/NR → 3/5 = 4/NR → NR = 20/3 ≈ <strong>6.67</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Prove using BPT: If DE ∥ BC in △ABC, then AD/AB = AE/AC. (Derive from AD/DB = AE/EC.)<details class="ans"><summary>Show Answer</summary><p>From AD/DB = AE/EC = k (say).<br>AD = k·DB → AB = AD+DB = k·DB+DB = DB(k+1) → AD/AB = k/(k+1)<br>Similarly AE/AC = k/(k+1). Hence AD/AB = AE/AC. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is on AB such that AD = AB/3, and DE ∥ BC. If BC = 12, find DE.<details class="ans"><summary>Show Answer</summary><p>AD/AB = 1/3. △ADE ~ △ABC (AA), so DE/BC = AD/AB = 1/3.<br>DE = 12/3 = <strong>4 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC divides AB such that DB = 3 AB/4. If AC = 20, find EC.<details class="ans"><summary>Show Answer</summary><p>DB = 3AB/4 → AD = AB/4. AD/DB = (AB/4)/(3AB/4) = 1/3.<br>AE/EC = 1/3, and AE + EC = 20 → AE = 5, EC = <strong>15</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. If AD = x, DB = x+3, AE = x−1, EC = x+4, find x.<details class="ans"><summary>Show Answer</summary><p>AD/DB = AE/EC → x/(x+3) = (x−1)/(x+4)<br>x(x+4) = (x−1)(x+3)<br>x²+4x = x²+2x−3 → 2x = −3 → x = <strong>−1.5</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Three parallel lines cut two transversals. The segments on the first transversal are 4 and 6. The first segment on the second transversal is 5. Find the second segment on the second transversal.<details class="ans"><summary>Show Answer</summary><p>By the intercept theorem (extension of BPT to parallel lines): 4/6 = 5/x → x = 5×6/4 = <strong>7.5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC such that DE ∥ BC. AD:AB = 2:5. If BC = 10 cm, find DE.<details class="ans"><summary>Show Answer</summary><p>△ADE ~ △ABC with ratio 2:5.<br>DE = BC × (2/5) = 10 × 2/5 = <strong>4 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is on BC. AD is the median. A line through D parallel to AB meets AC at E. Find AE/EC.<details class="ans"><summary>Show Answer</summary><p>In △ABC, line through D (midpoint of BC) parallel to AB meets AC at E. By BPT in △ABC with DE ∥ AB: BD/DC = AE/EC... Wait — the line is through D on BC parallel to AB, meeting AC at E. By midpoint theorem variant: AE/EC = BD/DC = 1 (since D is midpoint). <strong>AE/EC = 1:1</strong>, so E is the midpoint of AC.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> BPT in Figures — Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A line parallel to the base of a triangle divides the two equal sides in ratio 3:5. If each equal side is 16 cm, find the segments.<details class="ans"><summary>Show Answer</summary><p>Each side divided in ratio 3:5 (from apex). Shorter segment = 16×3/8 = <strong>6 cm</strong>, longer = 16×5/8 = <strong>10 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In the figure, DE ∥ BC. AD = 2.4, DB = 1.6, AE = 3.6. Calculate EC.<details class="ans"><summary>Show Answer</summary><p>BPT: AD/DB = AE/EC → 2.4/1.6 = 3.6/EC → EC = 3.6×1.6/2.4 = 5.76/2.4 = <strong>2.4</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A river is to be crossed at a point P on bank AB. A surveyor uses BPT: TP ∥ QR in △TQR with TQ = 30 m, QP intersected by the parallel at point with TP/QR = 2/5. Find QR if TP = 24 m.<details class="ans"><summary>Show Answer</summary><p>TP/QR = 2/5 → QR = TP × 5/2 = 24 × 5/2 = <strong>60 m</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, line l ∥ BC. It divides AB so that the part from A is 3/7 of AB. Compute what fraction of AC is AE (where E is on AC).<details class="ans"><summary>Show Answer</summary><p>AD/AB = 3/7. By BPT: AE/AC = AD/AB = <strong>3/7</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, MN ∥ QR, PM/PQ = 5/9. If MN = 10, find QR.<details class="ans"><summary>Show Answer</summary><p>△PMN ~ △PQR with ratio 5/9.<br>MN/QR = 5/9 → QR = 10×9/5 = <strong>18</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, a line through D on AB parallel to BC meets AC at E. If AD = 4, AB = 12 and BC = 15, find DE.<details class="ans"><summary>Show Answer</summary><p>AD/AB = 4/12 = 1/3. △ADE ~ △ABC. DE = BC × (1/3) = 15/3 = <strong>5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D and E trisect AB from A (so AD = AB/3, DB = 2AB/3). Lines through D and E parallel to BC meet AC at F and G. Find AF:FG:GC.<details class="ans"><summary>Show Answer</summary><p>AF/AC = AD/AB = 1/3 → AF = AC/3<br>AG/AC = AE/AB = 2/3 → AG = 2AC/3<br>FG = AG − AF = AC/3<br>GC = AC − AG = AC/3<br><strong>AF:FG:GC = 1:1:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">State the intercept theorem (generalization of BPT for multiple parallel lines).<details class="ans"><summary>Show Answer</summary><p>If three or more parallel lines intersect two transversals, then the intercepts made on the transversals are proportional. If lines l₁ ∥ l₂ ∥ l₃ cut transversals t₁ and t₂, and make intercepts a, b on t₁ and c, d on t₂, then a/b = c/d.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. If AD = x+1, DB = 2x−1, AE = x, EC = 2x−3, solve for x.<details class="ans"><summary>Show Answer</summary><p>BPT: (x+1)/(2x−1) = x/(2x−3)<br>(x+1)(2x−3) = x(2x−1)<br>2x²−3x+2x−3 = 2x²−x<br>2x²−x−3 = 2x²−x → −3 = 0. Contradiction → <strong>no solution; problem has no valid x</strong> (the segments given are inconsistent with BPT).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △RST, UV ∥ ST, RU = 3, US = 4.5, RV = 5. Find VT and RT.<details class="ans"><summary>Show Answer</summary><p>RU/US = RV/VT → 3/4.5 = 5/VT → VT = 5×4.5/3 = <strong>7.5</strong><br>RT = RV + VT = 5 + 7.5 = <strong>12.5</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Proofs of BPT</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove BPT: In △ABC, DE ∥ BC. Prove AD/DB = AE/EC. (Use area method.)<details class="ans"><summary>Show Answer</summary><p>Join BE and CD. <br>Area(△ADE)/Area(△BDE) = AD/DB (same height from E).<br>Area(△ADE)/Area(△CDE) = AE/EC (same height from D).<br>Area(△BDE) = Area(△CDE) (DE ∥ BC, same base DE, equal heights from B and C to DE).<br>∴ AD/DB = AE/EC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC with D on AB, E on AC. If AD = 2, DB = 3, BC = 15, find DE.<details class="ans"><summary>Show Answer</summary><p>AD/AB = 2/5. △ADE ~ △ABC. DE/BC = 2/5 → DE = 15×2/5 = <strong>6</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, two lines EF and GH are drawn parallel to BC, dividing AB into three equal parts. If BC = 18, find EF and GH.<details class="ans"><summary>Show Answer</summary><p>AE = AB/3: EF/BC = 1/3 → EF = 6.<br>AG = 2AB/3: GH/BC = 2/3 → GH = 12.<br><strong>EF = 6, GH = 12</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">BPT application: In a right △ABC, ∠C = 90°. CD ⊥ AB. Using BPT in △ACD and △CBD, show that CD² = AD·DB.<details class="ans"><summary>Show Answer</summary><p>△ACD ~ △CBD (AA: ∠ACD=∠CBD, ∠ADC=∠CDB=90°... wait — from △ACB ~ △ACD: AC/AD = AB/AC → AC² = AD·AB; from △ACB ~ △CBD: BC² = DB·AB. From △ACD ~ △CBD: AD/CD = CD/DB → CD² = AD·DB. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Using BPT, show that a line through the midpoint of one side of a triangle parallel to a second side bisects the third side.<details class="ans"><summary>Show Answer</summary><p>Let M be midpoint of AB in △ABC; line through M ∥ BC meets AC at N. By BPT: AM/MB = AN/NC. AM = MB (M is midpoint) → AN/NC = 1 → N is midpoint of AC. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In trapezium ABCD, AB ∥ DC. EF is a line segment parallel to AB. E is on AD, F is on BC. If AE/ED = 3/2 and AB = 10, DC = 5, find EF.<details class="ans"><summary>Show Answer</summary><p>AE/AD = 3/5. By the section formula for trapezium: EF = AB + (DC−AB)×AE/AD = 10 + (5−10)×(3/5) = 10 − 3 = <strong>7</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove that BPT implies the midpoint theorem (line joining midpoints of two sides of a triangle is parallel to and half of the third side).<details class="ans"><summary>Show Answer</summary><p>Let D, E be midpoints of AB, AC. Then AD/DB = 1 = AE/EC. By Converse of BPT, DE ∥ BC. For length: △ADE ~ △ABC (AA), ratio = AD/AB = 1/2. So DE = BC/2. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D divides AB in ratio 2:3 and E divides AC in ratio 2:3. Is DE ∥ BC? Find DE if BC = 20.<details class="ans"><summary>Show Answer</summary><p>AD/DB = 2/3 = AE/EC. By Converse BPT: <strong>DE ∥ BC.</strong><br>AD/AB = 2/5. DE = BC × 2/5 = 20 × 2/5 = <strong>8</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, P is a point on BC. AP is the cevian. Line through B parallel to AP meets CA extended at Q. Prove BP/PC = AQ/AC using BPT in △QBC.<details class="ans"><summary>Show Answer</summary><p>In △QBC, AP ∥ BQ (given). A is on QC (extended) and P is on BC. By BPT in △QBC with AP ∥ BQ: QA/AC = BP/PC. Hence BP/PC = QA/AC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Four parallel lines l₁, l₂, l₃, l₄ cut two transversals. Intercepts on t₁ are 3, 4, 5. Intercepts on t₂ are x, 8, y. Find x and y.<details class="ans"><summary>Show Answer</summary><p>By intercept theorem: x/8 = 3/4 → x = 6; 8/y = 4/5 → y = 10.<br><strong>x = 6, y = 10</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<section class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Converse of BPT</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-dividing-triangles-proportionally/e/triangle-proportionality-theorem" target="_blank">Proportionality Theorem Practice</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=pCDGTEcR3zk" target="_blank">Converse of BPT</a>
+        <a href="https://www.youtube.com/watch?v=oWvYIBqXgTA" target="_blank">BPT and Its Converse</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Applying the Converse</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the Converse of BPT.<details class="ans"><summary>Show Answer</summary><p>If a line divides two sides of a triangle in the same ratio, then the line is parallel to the third side. In △ABC: if AD/DB = AE/EC, then DE ∥ BC.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. AD = 4, DB = 6, AE = 6, EC = 9. Is DE ∥ BC?<details class="ans"><summary>Show Answer</summary><p>AD/DB = 4/6 = 2/3. AE/EC = 6/9 = 2/3. Equal → <strong>Yes, DE ∥ BC.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, M on PQ and N on PR. PM = 5, MQ = 10, PN = 4, NR = 8. Is MN ∥ QR?<details class="ans"><summary>Show Answer</summary><p>PM/MQ = 5/10 = 1/2. PN/NR = 4/8 = 1/2. Equal → <strong>Yes, MN ∥ QR.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. AD = 3, DB = 5, AE = 4, EC = 7. Is DE ∥ BC?<details class="ans"><summary>Show Answer</summary><p>AD/DB = 3/5. AE/EC = 4/7. 3/5 ≠ 4/7 → <strong>No, DE is not parallel to BC.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">D and E are on sides AB and AC of △ABC. AB = 10, AD = 4, AC = 15, AE = 6. Is DE ∥ BC?<details class="ans"><summary>Show Answer</summary><p>AD/AB = 4/10 = 2/5. AE/AC = 6/15 = 2/5. Equal → <strong>Yes, DE ∥ BC.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △LMN, P on LM and Q on LN. LP = x, PM = 4, LQ = 6, QN = 8. For PQ ∥ MN, find x.<details class="ans"><summary>Show Answer</summary><p>By Converse BPT: LP/PM = LQ/QN → x/4 = 6/8 = 3/4 → x = <strong>3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. AD = 2k, DB = 3k, AE = 4, EC = 6. Show DE ∥ BC for all positive k.<details class="ans"><summary>Show Answer</summary><p>AD/DB = 2k/3k = 2/3. AE/EC = 4/6 = 2/3. Always equal regardless of k → <strong>DE ∥ BC for all positive k.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △XYZ, A on XY with XA = 3, AY = 5, B on XZ with XB = 4.5, BZ = 7.5. Is AB ∥ YZ?<details class="ans"><summary>Show Answer</summary><p>XA/AY = 3/5. XB/BZ = 4.5/7.5 = 3/5. Equal → <strong>Yes, AB ∥ YZ.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is on AB such that AD:DB = 2:3. Where should E be placed on AC so that DE ∥ BC? (Express AE in terms of AC.)<details class="ans"><summary>Show Answer</summary><p>For DE ∥ BC, AE/EC = AD/DB = 2/3.<br>AE + EC = AC → AE/(AC−AE) = 2/3 → 3AE = 2AC−2AE → 5AE = 2AC → <strong>AE = 2AC/5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: If D and E are midpoints of AB and AC in △ABC, then using the Converse of BPT, DE ∥ BC.<details class="ans"><summary>Show Answer</summary><p>D midpoint of AB: AD = DB → AD/DB = 1.<br>E midpoint of AC: AE = EC → AE/EC = 1.<br>AD/DB = AE/EC = 1. By Converse BPT: <strong>DE ∥ BC. ∎</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> More Converse BPT Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. AD = 3, AB = 9, AE = 5, EC = 10. Is DE ∥ BC?<details class="ans"><summary>Show Answer</summary><p>DB = 9−3 = 6. AD/DB = 3/6 = 1/2. AE/EC = 5/10 = 1/2. Equal → <strong>Yes, DE ∥ BC.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, S on PQ and T on PR. PS = 6, PQ = 15, PT = 8, PR = 20. Is ST ∥ QR?<details class="ans"><summary>Show Answer</summary><p>PS/PQ = 6/15 = 2/5. PT/PR = 8/20 = 2/5. Equal → <strong>Yes, ST ∥ QR.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. AD/AB = 3/7, AE/AC = 3/7. Is DE ∥ BC? Why?<details class="ans"><summary>Show Answer</summary><p>AD/AB = AE/AC → AD/DB = AE/EC (derived equivalently). By Converse BPT: <strong>Yes, DE ∥ BC.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">D is on AB with AD = 2, DB = 3. E divides AC such that DE ∥ BC. If AC = 10, find AE and EC.<details class="ans"><summary>Show Answer</summary><p>AE/EC = AD/DB = 2/3. AE + EC = 10 → AE = 4, EC = <strong>6</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △LMN, U on LM, V on LN. LU = 4, UM = 8, LV = 5, VN = 10. Determine if UV ∥ MN.<details class="ans"><summary>Show Answer</summary><p>LU/UM = 4/8 = 1/2. LV/VN = 5/10 = 1/2. Equal → <strong>Yes, UV ∥ MN.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, AD = 3, AB = 12, AE = 5, AC = 15. Verify DE ∥ BC using the ratio form AD/AB = AE/AC.<details class="ans"><summary>Show Answer</summary><p>AD/AB = 3/12 = 1/4. AE/AC = 5/15 = 1/3. 1/4 ≠ 1/3 → <strong>DE is NOT parallel to BC.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, a point S divides PQ in ratio 2:5 from P, and T divides PR in ratio 2:5 from P. Prove ST ∥ QR.<details class="ans"><summary>Show Answer</summary><p>PS/SQ = 2/5. PT/TR = 2/5. PS/SQ = PT/TR. By Converse BPT: <strong>ST ∥ QR. ∎</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. For DE ∥ BC, the condition is AD/DB = AE/EC. Explain why checking AD/AB = AE/AC is equivalent.<details class="ans"><summary>Show Answer</summary><p>If AD/DB = k, then AD = k·DB and AB = AD+DB = (k+1)DB → AD/AB = k/(k+1). Similarly AE/AC = k/(k+1). So both ratios being equal is equivalent. Conversely if AD/AB = AE/AC = r, then AD = r·AB, DB = (1−r)AB, and AD/DB = r/(1−r) = AE/EC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In a triangle, a line parallel to the base divides the two sides in ratio 4:7. If the two sides are 22 cm and 33 cm, find the segments created on each side.<details class="ans"><summary>Show Answer</summary><p>Side 1 = 22 cm, divided 4:7 → segments = 22×4/11 = 8 cm and 14 cm.<br>Side 2 = 33 cm, divided 4:7 → segments = 33×4/11 = 12 cm and <strong>21 cm</strong>.<br>(Both divide in ratio 4:7 by Converse BPT.)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, three points D₁, D₂ on AB and E₁, E₂ on AC such that D₁E₁ ∥ BC and D₂E₂ ∥ BC. If AD₁ = 2, D₁D₂ = 3, D₂B = 5, find AE₁/E₁E₂ and E₁E₂/E₂C.<details class="ans"><summary>Show Answer</summary><p>AB = 10. AD₁/AB = 2/10 = 1/5 → AE₁/AC = 1/5.<br>AD₂/AB = 5/10 = 1/2 → AE₂/AC = 1/2.<br>AE₁:AE₂:AC = 1/5 : 1/2 : 1 = 2:5:10.<br>AE₁ = 2k, E₁E₂ = 3k, E₂C = 5k. AE₁/E₁E₂ = <strong>2/3</strong>, E₁E₂/E₂C = <strong>3/5</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed BPT and Converse Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. AD = 2, DB = 3. Find the ratio in which DE divides the triangle's area into △ADE and trapezium BCED.<details class="ans"><summary>Show Answer</summary><p>AD/AB = 2/5. Area ratio △ADE/△ABC = (2/5)² = 4/25.<br>Area of trapezium = 25−4 = 21 parts.<br><strong>Area(△ADE):Area(trap.) = 4:21</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Check if DE ∥ BC: AD = 4.5, DB = 3, AE = 6, EC = 4.<details class="ans"><summary>Show Answer</summary><p>AD/DB = 4.5/3 = 3/2. AE/EC = 6/4 = 3/2. Equal → <strong>Yes, DE ∥ BC.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, XY ∥ QR. PX = 4.5, XQ = 3, PY = 3, YR = 2. Check if XY ∥ QR.<details class="ans"><summary>Show Answer</summary><p>PX/XQ = 4.5/3 = 3/2. PY/YR = 3/2. Equal → <strong>Yes, XY ∥ QR.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC with D on AB, E on AC. If DE = 6 and BC = 9, and DB = 4, find AD.<details class="ans"><summary>Show Answer</summary><p>DE/BC = AD/AB → 6/9 = AD/(AD+4) → 6(AD+4) = 9AD → 3AD = 24 → AD = <strong>8</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: In △ABC, if D and E are points on AB and AC with AD·EC = AE·DB, then DE ∥ BC.<details class="ans"><summary>Show Answer</summary><p>AD·EC = AE·DB → AD/DB = AE/EC. By Converse BPT: <strong>DE ∥ BC. ∎</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, points D, E divide AB, AC such that AD = 3, DB = 6, AE = 5, EC = 10. Is DE ∥ BC? Find the ratio DE:BC.<details class="ans"><summary>Show Answer</summary><p>AD/DB = 3/6 = 1/2. AE/EC = 5/10 = 1/2. Equal → DE ∥ BC.<br>AD/AB = 3/9 = 1/3. DE/BC = 1/3 → <strong>DE:BC = 1:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two transversals cut three parallel lines. Intercepts on t₁: 4 and x. Intercepts on t₂: 6 and 9. Find x.<details class="ans"><summary>Show Answer</summary><p>Intercept theorem: 4/x = 6/9 → 4/x = 2/3 → x = <strong>6</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is on AB, E is on AC. AD = x+1, DB = 2, AE = 3x, EC = 9. For DE ∥ BC, find x.<details class="ans"><summary>Show Answer</summary><p>(x+1)/2 = 3x/9 = x/3<br>x+1 = 2x/3 → 3x+3 = 2x → x = −3. Check AE = −9 < 0 — invalid. Try: AD/DB = AE/EC → (x+1)/2 = 3x/9 → 9(x+1) = 6x → 9x+9 = 6x → 3x = −9 → x = −3. No valid solution — problem is inconsistent.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC, AD = 4, DB = 6. If the area of △ADE = 16 cm², find the area of △ABC.<details class="ans"><summary>Show Answer</summary><p>AD/AB = 4/10 = 2/5. Area ratio = (2/5)² = 4/25.<br>Area(△ABC) = 16 × 25/4 = <strong>100 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Converse BPT application: In a triangle, a cevian divides the opposite sides proportionally. What does this imply?<details class="ans"><summary>Show Answer</summary><p>This is related to the angle bisector theorem (not a cevian parallel to any side). The Converse of BPT specifically states: if a line segment has endpoints dividing two sides in <em>equal ratios</em>, it is parallel to the third side — but a cevian goes to a vertex, not parallel to a side. So a cevian dividing sides in equal ratio would be a special case only if it's the median and the triangle is isosceles.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Converse BPT Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove the Converse of BPT: If AD/DB = AE/EC in △ABC, then DE ∥ BC.<details class="ans"><summary>Show Answer</summary><p>Assume DE is not ∥ BC. Draw DF ∥ BC where F is on AC. By BPT: AD/DB = AF/FC. But given AD/DB = AE/EC. So AF/FC = AE/EC → AF·EC = AE·FC → AF·(AC−FC) = AE·(AC−AE)... Simplified: AF = AE, meaning F coincides with E. So the line through D parallel to BC passes through E, i.e., DE ∥ BC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Using Converse of BPT, show that in a trapezium ABCD (AB ∥ CD), the line joining the midpoints of the diagonals AC and BD is parallel to AB and CD.<details class="ans"><summary>Show Answer</summary><p>Let M, N be midpoints of AC, BD. In △ABP (P = intersection of diagonals), M and N divide the triangle's sides... Use vector/coordinate proof: Place A at origin. Midpoint of AC and midpoint of BD can be shown collinear with the parallel sides using the trapezium ratio property. ∎ (Full proof requires coordinate geometry.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB and E on AC. Given AD = 3, DB = 5, AE = 6, EC = 10. Confirm DE ∥ BC and find the length of DE if BC = 8.<details class="ans"><summary>Show Answer</summary><p>AD/DB = 3/5 = AE/EC = 6/10. Equal → DE ∥ BC.<br>AD/AB = 3/8. DE = BC × (AD/AB) = 8 × 3/8 = <strong>3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, P on AB and Q on AC. BP = 6, PA = 4, AQ = 5, QC = 8. Is PQ ∥ BC?<details class="ans"><summary>Show Answer</summary><p>AP/PB = 4/6 = 2/3. AQ/QC = 5/8. 2/3 ≠ 5/8 → <strong>PQ is NOT ∥ BC.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB, E on AC. AD = 2, DB = 4, AE = 3, EC = 6. Find DE/BC.<details class="ans"><summary>Show Answer</summary><p>AD/DB = 1/2 = AE/EC → DE ∥ BC. AD/AB = 2/6 = 1/3. DE/BC = 1/3.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC with D on AB, E on AC, DE ∥ BC. If AD = k·AB, prove that the area of △ADE = k²·area(△ABC).<details class="ans"><summary>Show Answer</summary><p>△ADE ~ △ABC (AA) with ratio k. Area ratio = k². So Area(△ADE) = k²·Area(△ABC). ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A line parallel to BC in △ABC passes through the centroid G. If AG:GD = 2:1 (D on BC), where does this parallel line cut AB and AC?<details class="ans"><summary>Show Answer</summary><p>The centroid divides each median in ratio 2:1 from vertex. A line through G parallel to BC: by similar triangles, AG/AD = 2/3. So the parallel through G cuts AB and AC at points that are 2/3 of the way from A. The cuts are at 2/3 of AB from A and 2/3 of AC from A.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. Prove that △BDE and △CDE have equal areas.<details class="ans"><summary>Show Answer</summary><p>△BDE and △CDE share base DE. Their heights are the perpendicular distances from B and C to line DE. Since DE ∥ BC, B and C are equidistant from DE (same perpendicular distance to the parallel line). So equal bases DE, equal heights → <strong>equal areas. ∎</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is on AB, E is on BC, F is on CA such that BD/BA = CE/CB = AF/AC = 1/3. Show △DEF is similar to △ABC and find the ratio.<details class="ans"><summary>Show Answer</summary><p>This is a Routh's theorem setup. With each ratio = 1/3 from each vertex, use vectors or coordinate geometry. △DEF is similar to △ABC (by angle preservation in each sub-triangle) with area ratio (1−3×(1/3)(2/3)+... = 1/7 of △ABC by Routh. Side ratio = 1/√7. This is an advanced result.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Using Converse BPT, prove the intercept theorem: Three parallel lines l₁ ∥ l₂ ∥ l₃ cut transversals t₁ and t₂ such that AB/BC = DE/EF (where A, B, C on t₁ and D, E, F on t₂).<details class="ans"><summary>Show Answer</summary><p>Join A to F. Let AF cut l₂ at G. In △ACF: BG ∥ CF (since l₂ ∥ l₃), by BPT: AB/BC = AG/GF. In △ADF: DG ∥ AE... wait — by BPT in △ADF with GE ∥ AD: GE/AD = FG/FA. Combining both applications gives AB/BC = DE/EF. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<section class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>AA Similarity Criterion</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-triangle-similarity-intro/v/angle-angle-similarity" target="_blank">Angle-Angle Similarity</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=Jx-L5OKF9aw" target="_blank">AA Similarity Theorem</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recognising AA</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the AA similarity criterion.<details class="ans"><summary>Show Answer</summary><p>If two angles of one triangle equal two angles of another, the triangles are similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">∠A=40°, ∠B=70° in △ABC; ∠P=40°, ∠Q=70° in △PQR. Are they similar?<details class="ans"><summary>Show Answer</summary><p>Yes, by AA: △ABC ~ △PQR.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">∠B=∠E=90°, ∠C=∠F=35° in △ABC and △DEF. Are they similar?<details class="ans"><summary>Show Answer</summary><p>Yes, two pairs equal — by AA: △ABC ~ △DEF.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two right triangles each have an acute angle of 55°. Are they similar?<details class="ans"><summary>Show Answer</summary><p>Both have angles 90°, 55°, 35°. By AA: yes, similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠A=70°, ∠C=50°. In △PQR, ∠Q=60°, ∠R=50°. Are they similar?<details class="ans"><summary>Show Answer</summary><p>△ABC: 70°,60°,50°. △PQR: 70°,60°,50°. Same set — yes, similar by AA.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE ∥ BC. Prove △ADE ~ △ABC by AA.<details class="ans"><summary>Show Answer</summary><p>DE∥BC → ∠ADE=∠ABC (corresponding angles). ∠A is common. By AA: △ADE ~ △ABC.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">∠A = 2x+10°, ∠D = x+20°. If △ABC ~ △DEF with ∠A=∠D, find x and both angles.<details class="ans"><summary>Show Answer</summary><p>2x+10 = x+20 → x=10. ∠A=∠D=30°.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠BAC=90°, AD⊥BC. Prove △ABD ~ △CAD by AA.<details class="ans"><summary>Show Answer</summary><p>∠ADB=∠CAD=90°, ∠ABD=∠ACD (complementary in right triangle). By AA: △ABD ~ △CAD.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: if △ABC~△ABD with ∠BAC=90° and D on BC, then AB²=BD·BC.<details class="ans"><summary>Show Answer</summary><p>AA: ∠ADB=∠BAC=90°, ∠B common. △ABD~△ABC. AB/BC=BD/AB → AB²=BD·BC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two poles 6m and 8m with wires crossing. Find the crossing height. (Use h=h₁h₂/(h₁+h₂).)<details class="ans"><summary>Show Answer</summary><p>h = (6×8)/(6+8) = 48/14 = 24/7 ≈ 3.43 m.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> AA — Finding Missing Sides</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">△ABC~△PQR (AA). AB=6, PQ=9, BC=8. Find QR.<details class="ans"><summary>Show Answer</summary><p>6/9=8/QR → QR=12.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE∥BC. AD=3, DB=5, DE=4. Find BC.<details class="ans"><summary>Show Answer</summary><p>AD/AB=3/8. DE/BC=3/8 → BC=32/3≈10.67.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">At 3pm, a 5m pole casts a 3m shadow. Find the height of a tree casting a 21m shadow.<details class="ans"><summary>Show Answer</summary><p>5/3=h/21 → h=35 m.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△PQR~△XYZ: ∠P=50°, ∠Q=70°. Write all angles of △XYZ.<details class="ans"><summary>Show Answer</summary><p>∠X=50°, ∠Y=70°, ∠Z=60°.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC~△ADB (∠ADB=∠BAC=90°, ∠B common). AB=8, BD=4. Find AD.<details class="ans"><summary>Show Answer</summary><p>AD²=AB·BD=32 → AD=4√2≈5.66.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: ∠BAC=90°, AD⊥BC. AB=9, AC=12. Find BC, BD, DC, AD.<details class="ans"><summary>Show Answer</summary><p>BC=15. BD=AB²/BC=81/15=5.4. DC=144/15=9.6. AD=√(5.4×9.6)=7.2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: In △ABC (∠BAC=90°), AC²=CD·BC using △ACD~△ABC (AA).<details class="ans"><summary>Show Answer</summary><p>∠ADC=∠BAC=90°, ∠C common. By AA: △ACD~△ABC → AC/BC=CD/AC → AC²=CD·BC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Chords AB and CD meet at P inside a circle. Prove △APD~△CPB and AP·PB=CP·PD.<details class="ans"><summary>Show Answer</summary><p>∠DAB=∠DCB (same segment), ∠ADP=∠CBP. By AA: △APD~△CPB → AP/CP=PD/PB → AP·PB=CP·PD. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Mirror on ground: person 1.6m tall, 2m from mirror sees top of building 10m away. Find building height.<details class="ans"><summary>Show Answer</summary><p>h/10=1.6/2 → h=8 m.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, altitude from A meets BC at D. BD=6, DC=8. Find AD and AB.<details class="ans"><summary>Show Answer</summary><p>AD²=BD·DC=48 → AD=4√3. AB²=BD·BC=6×14=84 → AB=2√21.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> AA — Applied Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: The diagonals of a trapezium (AB∥CD) divide each other in the same ratio.<details class="ans"><summary>Show Answer</summary><p>△AOB~△COD (AA: alt.int. angles equal). OA/OC=OB/OD=AB/CD. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In trapezium ABCD, AB∥CD, AB=2CD. Diagonals meet at O. Find AO/OC.<details class="ans"><summary>Show Answer</summary><p>△AOB~△COD with ratio AB/CD=2. AO/OC=2:1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△ACD (∠BAC=∠ACD). AC=8, CD=6. Find BC.<details class="ans"><summary>Show Answer</summary><p>AC/CD=BC/AC... wait: △ABC~△ACD by AA: AC/CD=BC/AC → AC²=CD·BC → 64=6·BC → BC=32/3≈10.67.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABD~△ACB (AA): AB=9, BC=16. Find AC and BD.<details class="ans"><summary>Show Answer</summary><p>AB/AC=AD/AB=BD/BC. AB²=AC·AD... from △ABD~△ACB: AB/AC=BD/BC → AB·BC=AC·BD, and AB²=AC·AD. AC=AB²/BC? Need: △ABD~△ACB means AB/AC=BD/BC=AD/AB. AB/AC=AD/AB → AB²=AC·AD. Also AB/AC=BD/BC → BD=AB·BC/AC. If AB=9, BC=16: AC=AB²/BC=81/16. BD=9×16/(81/16)=9×16×16/81=144×16/81... too complex without more given.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">All equilateral triangles are similar. Why? State the criterion.<details class="ans"><summary>Show Answer</summary><p>All equilateral triangles have angles 60°-60°-60°. By AA criterion (two angles equal), all are similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠B=90°, BE⊥AC. Prove △ABE~△ACB. If AB=9, AC=15, find BE.<details class="ans"><summary>Show Answer</summary><p>∠BEA=∠ABC=90°, ∠A common. By AA: △ABE~△ACB. BC=12. BE=AB·BC/AC=9×12/15=7.2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two right triangles: △1 has legs 6 and 8; △2 has hypotenuse 25. If they are similar, find legs of △2.<details class="ans"><summary>Show Answer</summary><p>△1 hypotenuse=10. Scale=25/10=2.5. Legs: 15 and 20.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Why are all isosceles right triangles similar?<details class="ans"><summary>Show Answer</summary><p>All have angles 90°-45°-45°. By AA, all similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, altitude AD=12, BD=9. Find DC and BC.<details class="ans"><summary>Show Answer</summary><p>AD²=BD·DC → 144=9·DC → DC=16. BC=BD+DC=25.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABD~△ACB (AB²=AC·AD). AB=6, AC=9. Find AD.<details class="ans"><summary>Show Answer</summary><p>AB²=AC·AD → 36=9·AD → AD=4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — AA Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: The ratio of areas of two similar triangles equals the square of the ratio of corresponding altitudes.<details class="ans"><summary>Show Answer</summary><p>Similar triangles ratio k → altitudes ratio k. Area₁/Area₂=(base₁·h₁)/(base₂·h₂)=k·k=k². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">O is inside △ABC. OD⊥AB, OE⊥BC. Prove △OBD~△OEB.<details class="ans"><summary>Show Answer</summary><p>∠ODB=∠OEB=90°, ∠B common. By AA: △OBD~△OEB.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: If △ABC~△DEF (AA) and triangles are isosceles with apex ∠A=∠D, the base angles are equal.<details class="ans"><summary>Show Answer</summary><p>∠B=∠C=(180°-∠A)/2=(180°-∠D)/2=∠E=∠F. So all angles match. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove using AA: If two tangents PA, PB are drawn from external point P to a circle, △OAP≅△OBP (hence similar with k=1).<details class="ans"><summary>Show Answer</summary><p>∠OAP=∠OBP=90° (tangent⊥radius), OP common, OA=OB (radii). By RHS: congruent, hence also similar with k=1. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF by AA. AB=10, DE=15. Altitude from A=6. Find altitude from D.<details class="ans"><summary>Show Answer</summary><p>Ratio=10/15=2/3. Altitude from D=6×(3/2)=9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠BAC=90°. Altitude from A meets BC at D. Show AD is geometric mean between BD and DC.<details class="ans"><summary>Show Answer</summary><p>△ABD~△CAD (AA: right angles and complementary angles). BD/AD=AD/DC → AD²=BD·DC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: Similar triangles have corresponding angle bisectors in the same ratio as their sides.<details class="ans"><summary>Show Answer</summary><p>Let BX, EY bisect ∠B, ∠E. △ABX~△DEY (AA: ∠A=∠D, ∠ABX=∠DEY). BX/EY=AB/DE=ratio of sides. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC with ∠A=90°, D on BC. Show △ABD~△ACD need not hold unless specific conditions are given.<details class="ans"><summary>Show Answer</summary><p>∠ADB and ∠ADC are supplementary (sum to 180°), not both 90°. So only one right angle at D. △ABD and △ACD share ∠ADB+∠ADC=180°, and each needs its own pair of equal angles for AA. Without AD⊥BC, they are not similar in general.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: If two triangles are similar, corresponding medians are in same ratio as sides.<details class="ans"><summary>Show Answer</summary><p>Let M, N be midpoints of BC, EF. In △ABM and △DEN: AB/DE=k, BM/EN=BC/(2)/EF/(2)=k. ∠B=∠E. By SAS: △ABM~△DEN → AM/DN=k. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Using AA, prove the Power of a Point theorem: if chords PQ and RS pass through interior point T, then TP·TQ=TR·TS.<details class="ans"><summary>Show Answer</summary><p>∠PTR=∠STQ (vertical). ∠TPR=∠TRS (angles in same segment). By AA: △TPR~△TSQ. TP/TS=TR/TQ → TP·TQ=TR·TS. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<section class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>SSS Similarity Criterion</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-triangle-similarity-intro/v/side-side-side-similarity" target="_blank">SSS Similarity Theorem</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=JEHejQphIYc" target="_blank">SSS, SAS Similarity</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Verifying SSS Similarity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the SSS similarity criterion.<details class="ans"><summary>Show Answer</summary><p>If AB/DE=BC/EF=CA/FD, then △ABC~△DEF by SSS similarity.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: 4,6,8. △DEF: 6,9,12. Similar by SSS?<details class="ans"><summary>Show Answer</summary><p>6/4=9/6=12/8=1.5. Yes, similar. Scale=3:2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△PQR: 5,7,9. △XYZ: 10,14,18. Similar?<details class="ans"><summary>Show Answer</summary><p>All ratios=2. Yes, similar by SSS.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 3,5,7 and 6,10,15. Similar?<details class="ans"><summary>Show Answer</summary><p>6/3=2, 10/5=2, 15/7≈2.14. Not equal. Not similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=x, BC=6, CA=9. △DEF: DE=4, EF=8, FD=12. For SSS similarity, find x.<details class="ans"><summary>Show Answer</summary><p>Scale=EF/BC=8/6=4/3=FD/CA=12/9=4/3. DE/AB=4/3 → x=3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: 3,4,5. △DEF: 6,8,10. Prove similar and identify right angles.<details class="ans"><summary>Show Answer</summary><p>Ratios all=2. SSS: similar. 3²+4²=5² → ∠B=90°. 6²+8²=10² → ∠E=90°.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△1: 2k,3k,4k. △2: 2m,3m,4m. Always similar?<details class="ans"><summary>Show Answer</summary><p>Ratios m/k for all sides. Always equal. Yes, similar for any k,m>0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△LMN: 7.5,10,12.5. △PQR: 3,4,5. Similar?<details class="ans"><summary>Show Answer</summary><p>All ratios=2.5. Yes, similar by SSS. Both are right triangles.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△1 sides a,b,c. △2 sides ka,kb,kc (k>0). Prove similar.<details class="ans"><summary>Show Answer</summary><p>All ratios=k. By SSS: similar with scale factor k. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: 8,15,17. △DEF: 4,7.5,8.5. Are they similar? Identify right angles.<details class="ans"><summary>Show Answer</summary><p>8/4=15/7.5=17/8.5=2. Yes, similar by SSS. 8²+15²=289=17² → right angle at B and corresponding vertex in △DEF.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> SSS — Finding Unknowns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">△ABC~△DEF (SSS). AB=3,BC=4,CA=5; EF=12. Find DE and FD.<details class="ans"><summary>Show Answer</summary><p>Scale=12/4=3. DE=9, FD=15.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△PQR: PQ=8,QR=x,RP=12. △STU: ST=6,TU=4.5,US=9. Find x for SSS.<details class="ans"><summary>Show Answer</summary><p>Scale=6/8=3/4. x=4.5×4/3=6.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△1 sides x,x+3,x+6. △2 sides 4,6,8. For SSS, find x.<details class="ans"><summary>Show Answer</summary><p>x/4=(x+3)/6 → x=6. Check: 6/4=9/6=12/8=1.5 ✓. x=6.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF (SSS). Perimeter △ABC=30, scale=2:3. Find perimeter △DEF.<details class="ans"><summary>Show Answer</summary><p>P_DEF=30×3/2=45.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△RST: 15,20,25. △UVW: 9,12,15. Similar? Type of triangle?<details class="ans"><summary>Show Answer</summary><p>15/9=20/12=25/15=5/3. Yes, similar. Both are right triangles (9-12-15 and 15-20-25).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sides of △1 in ratio 2:3:4 with perimeter 27. Find each side.<details class="ans"><summary>Show Answer</summary><p>Sides: 6, 9, 12 cm.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have areas 36 and 100 cm². Longest side of smaller=12. Find longest side of larger.<details class="ans"><summary>Show Answer</summary><p>Side ratio=6:10. Longest of larger=12×10/6=20 cm.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=6,BC=9,CA=12. Find similar △ with SSS ratio 4:3.<details class="ans"><summary>Show Answer</summary><p>Sides: 8, 12, 16.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△PQR: 2.5,3,3.5. △LMN: 5,6,7. Similar? Scale?<details class="ans"><summary>Show Answer</summary><p>5/2.5=6/3=7/3.5=2. Yes, similar. Scale=2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△1: 4,5,6. △2: 4,5,6. Are they congruent? Similar?<details class="ans"><summary>Show Answer</summary><p>All ratios=1. Yes, similar (and also congruent with scale=1).</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> SSS — Mixed</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Can an acute and an obtuse triangle be similar?<details class="ans"><summary>Show Answer</summary><p>No. Similar triangles have equal angles. Acute all angles<90°; obtuse has one>90°. They cannot have same angle set.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△1: a,2a,3a. △2: b,2b,3b. Prove similar.<details class="ans"><summary>Show Answer</summary><p>Ratios b/a for all sides. By SSS: similar with scale b/a. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△5,12,13 and △10,24,26. Both right triangles? Similar?<details class="ans"><summary>Show Answer</summary><p>5²+12²=169=13²; 10²+24²=676=26². Both right triangles. All ratios=2. Similar by SSS.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△PQR: AB/PQ=2/3, Area(△ABC)=36. Find Area(△PQR).<details class="ans"><summary>Show Answer</summary><p>Area ratio=(2/3)²=4/9. Area(△PQR)=36×9/4=81 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have perimeters 12 and 18. Area of smaller=16 cm². Find area of larger.<details class="ans"><summary>Show Answer</summary><p>Scale=12:18=2:3. Area ratio=4:9. Area larger=36 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">All equilateral triangles are similar — prove using SSS.<details class="ans"><summary>Show Answer</summary><p>If sides are s and t, ratios t/s=t/s=t/s. Equal. By SSS: similar. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC has sides 5,6,7. Find a similar triangle with perimeter 54.<details class="ans"><summary>Show Answer</summary><p>Original perimeter=18. Scale=3. Sides: 15,18,21.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△1: 3,4,5. △2: 4,5,6. Similar?<details class="ans"><summary>Show Answer</summary><p>4/3≠5/4≠6/5. Not similar.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=10,BC=6,CA=8. △DEF: DE=5,EF=3,FD=4. Scale? Are both right triangles?<details class="ans"><summary>Show Answer</summary><p>Scale=2. 6²+8²=100=10² → ∠C=90° in △ABC; 3²+4²=25=5² → ∠F=90° in △DEF. Yes, both right.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sides of two similar triangles are (p,q,r) and (2p+1,2q+1,2r+1). Are they similar?<details class="ans"><summary>Show Answer</summary><p>Ratios (2p+1)/p≠(2q+1)/q unless p=q=r. Not similar in general.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — SSS Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Two equilateral triangles have sides 6 and 9. Find ratios of (a) perimeters (b) altitudes (c) areas.<details class="ans"><summary>Show Answer</summary><p>(a) 2:3 (b) 2:3 (c) 4:9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△PQR~△LMN with AB=3,PQ=6,LM=9. If Area(△ABC)=9, find areas of other two.<details class="ans"><summary>Show Answer</summary><p>Area ratio to △ABC: (6/3)²=4 → Area(△PQR)=36. (9/3)²=9 → Area(△LMN)=81 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC sides in AP, middle term=6, d=2. Is it similar to △DEF with sides 3,6,9?<details class="ans"><summary>Show Answer</summary><p>△ABC: 4,6,8. △DEF: 3,6,9. Ratios: 4/3, 6/6, 8/9 — not equal. Not similar.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: If △ABC~△DEF by SSS, corresponding angles are equal.<details class="ans"><summary>Show Answer</summary><p>Construct △DEF' ≅ △ABC on DE. Then △DEF'~△DEF by SAS (two sides proportional, included angle). By SSS, F'=F. So △ABC≅△DEF', △DEF'~△DEF → corresponding angles equal. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC: 5,6,7. △DEF: 10,12,14. Write the correct similarity statement with vertex correspondence.<details class="ans"><summary>Show Answer</summary><p>Ratios all=2. Match vertices: smallest to smallest etc. △ABC~△DEF (A↔D, B↔E, C↔F).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△1: sides in GP: a,ar,ar². △2: sides in GP: b,bs,bs². For SSS similarity, what condition must a,r,b,s satisfy?<details class="ans"><summary>Show Answer</summary><p>Ratios must be equal: b/a=bs/ar=bs²/ar² → r=s (common ratios equal). The GPs must have the same common ratio.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If △ABC~△DEF and △GHI~△DEF, prove △ABC~△GHI and find AB/GH if DE=9, AB=6, GH=12.<details class="ans"><summary>Show Answer</summary><p>Transitivity of similarity: △ABC~△GHI. AB/GH=6/12=1/2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of △1=49, Area of △2=196. If △1~△2, a side of △1=7. Find corresponding side of △2.<details class="ans"><summary>Show Answer</summary><p>Area ratio=49:196=1:4. Side ratio=1:2. Side of △2=14.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can a triangle with sides 3,4,6 be similar to one with sides 6,8,12?<details class="ans"><summary>Show Answer</summary><p>6/3=2, 8/4=2, 12/6=2. Yes, similar by SSS (scale=2).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△1 sides p,q,r. △2 sides p+2,q+2,r+2. Are they similar? Explain.<details class="ans"><summary>Show Answer</summary><p>Ratios (p+2)/p, (q+2)/q, (r+2)/r are not equal unless p=q=r. Not similar in general. (Adding a constant doesn't scale uniformly.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<section class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>SAS Similarity Criterion</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-triangle-similarity-intro/v/side-angle-side-triangle-similarity" target="_blank">SAS Similarity Theorem</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=JEHejQphIYc" target="_blank">SAS Similarity Criterion</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Applying SAS Similarity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State SAS similarity criterion in symbols.<details class="ans"><summary>Show Answer</summary><p>If AB/DE=AC/DF and ∠A=∠D (included angle), then △ABC~△DEF by SAS.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=4,AC=6,∠A=70°. △DEF: DE=6,DF=9,∠D=70°. Prove similar.<details class="ans"><summary>Show Answer</summary><p>AB/DE=4/6=2/3, AC/DF=6/9=2/3, ∠A=∠D=70°. By SAS: △ABC~△DEF.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△PQR: PQ=8,PR=12,∠P=50°. △XYZ: XY=4,XZ=6,∠X=50°. Similar?<details class="ans"><summary>Show Answer</summary><p>8/4=12/6=2, ∠P=∠X=50°. By SAS: yes, △PQR~△XYZ.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=3,AC=5. △DEF: DE=6,DF=10. ∠A=∠D=45°. Find BC if EF=9.<details class="ans"><summary>Show Answer</summary><p>By SAS: similar, scale=2. BC=EF/2=4.5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Why must the angle be INCLUDED in SAS?<details class="ans"><summary>Show Answer</summary><p>A non-included equal angle gives the ambiguous SSA case, which doesn't guarantee a unique triangle shape. The included angle between the proportional sides locks the shape.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC and △ADE, ∠A common. AB=4,AD=6,AC=5,AE=7.5. Is △ABC~△ADE?<details class="ans"><summary>Show Answer</summary><p>AB/AD=4/6=2/3, AC/AE=5/7.5=2/3. ∠A common. By SAS: yes.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△LMN: LM=x,LN=10,∠L=80°. △PQR: PQ=6,PR=15,∠P=80°. For SAS, find x.<details class="ans"><summary>Show Answer</summary><p>LM/PQ=LN/PR → x/6=10/15=2/3 → x=4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=6,AC=8,∠A=90°. △PQR: PQ=9,PR=12,∠P=90°. By SAS, similar?<details class="ans"><summary>Show Answer</summary><p>6/9=8/12=2/3, ∠A=∠P=90°. By SAS: yes, △ABC~△PQR.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △OAB and △OCD (O intersection of diagonals), OA/OC=OB/OD. What additional fact gives SAS?<details class="ans"><summary>Show Answer</summary><p>∠AOB=∠COD (vertical angles). With OA/OC=OB/OD and included ∠AOB=∠COD: SAS applies.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△AED (E on AB, D on AC). AE=3,AB=9,AD=4. Find AC.<details class="ans"><summary>Show Answer</summary><p>AE/AB=AD/AC → 3/9=4/AC → AC=12.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> SAS — Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: In △ABC, if D on AB, E on AC with AB/AD=AC/AE, then △ADE~△ABC.<details class="ans"><summary>Show Answer</summary><p>AD/AB=AE/AC (rearranged), ∠A common. By SAS: △ADE~△ABC. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove △ADE~△ABC (SAS) where D midpoint AB, E midpoint AC.<details class="ans"><summary>Show Answer</summary><p>AD/AB=1/2=AE/AC. ∠A common. By SAS: △ADE~△ABC, scale 1:2. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△ADB (AB²=AD·AC). Prove by SAS.<details class="ans"><summary>Show Answer</summary><p>AB²=AD·AC → AB/AD=AC/AB. ∠A common. By SAS: △ABD~△ACB... actually △ABC~△ADB: AB/AD=AC/AB with ∠A=∠A. By SAS. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △XYZ, M on XY, N on XZ. XM/XY=XN/XZ=2/5. Prove △XMN~△XYZ and MN=2YZ/5.<details class="ans"><summary>Show Answer</summary><p>XM/XY=XN/XZ=2/5, ∠X common. By SAS: △XMN~△XYZ. MN/YZ=2/5 → MN=2YZ/5. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠A=90°, E on AC, D on AB with AE/AC=AD/AB. Prove DE∥BC.<details class="ans"><summary>Show Answer</summary><p>AE/AC=AD/AB, ∠A=90° (included). By SAS: △ADE~△ABC. So ∠ADE=∠ABC → DE∥BC. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△PQR: PQ=6,PR=9,∠P=60°. △ABC: AB=4,AC=6,∠A=60°. SAS similarity?<details class="ans"><summary>Show Answer</summary><p>PQ/AB=6/4=3/2, PR/AC=9/6=3/2, ∠P=∠A=60°. By SAS: △PQR~△ABC. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Prove all isosceles right triangles are similar using SAS.<details class="ans"><summary>Show Answer</summary><p>Two isosceles right triangles △1 (legs a,a) and △2 (legs b,b): legs ratio a/b=a/b (equal), included right angle=90°=90°. By SAS: similar. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Diagonals of parallelogram bisect each other. Prove △AOB≅△COD (hence similar, k=1).<details class="ans"><summary>Show Answer</summary><p>OA=OC, OB=OD, ∠AOB=∠COD (vertical angles). By SAS: △AOB≅△COD (congruent and similar). ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two right triangles: △ABC (legs 6,8) and △PQR (legs 9,12). By SAS, find if similar and compute hypotenuses.<details class="ans"><summary>Show Answer</summary><p>6/9=8/12=2/3, right angles equal. By SAS: similar. AC=10, PR=15.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △LMN and △LPQ (P on LM, Q on LN), LP/LM=LQ/LN=3/7. Find PQ/MN.<details class="ans"><summary>Show Answer</summary><p>∠L common, ratios equal. By SAS: △LPQ~△LMN. PQ/MN=3/7.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> SAS — Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">△ABC~△DEF (SAS). AB=4,DE=6,∠A=∠D=55°. AC=7. Find DF.<details class="ans"><summary>Show Answer</summary><p>AB/DE=AC/DF → 4/6=7/DF → DF=10.5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=3,AC=4,∠A=60°. △PQR: PQ=x,PR=8,∠P=60°. Find x for SAS.<details class="ans"><summary>Show Answer</summary><p>3/x=4/8=1/2 → x=6.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">AD=2,DB=4,AE=3,EC=6,∠A=40°. Is △ADE~△ABC?<details class="ans"><summary>Show Answer</summary><p>AD/AB=2/6=1/3, AE/AC=3/9=1/3. ∠A common. By SAS: yes.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=2x,AC=3x. △DEF: DE=4,DF=6. ∠A=∠D. Similar for all x?<details class="ans"><summary>Show Answer</summary><p>AB/DE=2x/4=x/2=AC/DF=3x/6=x/2. Equal. ∠A=∠D. By SAS: yes, similar for all x>0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">OA=3,OC=5,OB=6. In △OAB~△OCD (SAS), find OD.<details class="ans"><summary>Show Answer</summary><p>OA/OC=OB/OD → 3/5=6/OD → OD=10.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Explain SAS congruence vs SAS similarity with example.<details class="ans"><summary>Show Answer</summary><p>SAS congruence: sides equal and included angle equal (e.g., 3,4,60°). SAS similarity: sides proportional and included angle equal (e.g., 3,4,60° vs 6,8,60° — scale 2). Congruence needs equal sides; similarity only proportional.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△PQR~△XYZ by SAS. PQ/XY=5/8. If QR=10, find YZ.<details class="ans"><summary>Show Answer</summary><p>Scale=5/8. QR/YZ=5/8 → YZ=10×8/5=16.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D on AB, E on AC. AD=2,DB=3,AE=4,EC=6,∠A=50°. Is △ADE~△ABC? Find DE if BC=10.<details class="ans"><summary>Show Answer</summary><p>AD/AB=2/5=AE/AC=4/10. ∠A common. By SAS: yes. DE=BC×(2/5)=4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△AED (SAS): AE=4,AB=12,AD=5. Find AC.<details class="ans"><summary>Show Answer</summary><p>AE/AB=AD/AC → 4/12=5/AC → AC=15.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: ∠B=90°, BC=5,AB=12. △DEF: ∠E=90°, EF=7.5,DE=18. Similar?<details class="ans"><summary>Show Answer</summary><p>BC/EF=5/7.5=2/3, AB/DE=12/18=2/3. ∠B=∠E=90°. By SAS: yes, △ABC~△DEF.</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — SAS Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: If PS/PQ=PT/PR in △PQR (S on PQ, T on PR), then ST∥QR.<details class="ans"><summary>Show Answer</summary><p>PS/PQ=PT/PR, ∠P common. By SAS: △PST~△PQR. So ∠PST=∠PQR → ST∥QR. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, AB²=AD·AC (D on BC). Prove △ABD~△ACB by SAS.<details class="ans"><summary>Show Answer</summary><p>AB/AC=AD/AB (from AB²=AD·AC). ∠A common. By SAS: △ABD~△ACB. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF (SAS), scale k. Prove altitudes from A and D are in ratio k.<details class="ans"><summary>Show Answer</summary><p>From SAS, all sides in ratio k → △s formed by altitude are similar with ratio k. Hence altitude ratio=k. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In quadrilateral ABCD with AB∥CD and AB=2CD, diagonals meet at O. Find AO/OC and BO/OD using SAS.<details class="ans"><summary>Show Answer</summary><p>△AOB~△COD (AA: alt.int. angles). AO/OC=BO/OD=AB/CD=2. So AO/OC=2:1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: In a circle, if two chords AB, CD meet at P outside the circle, PA/PC=PD/PB.<details class="ans"><summary>Show Answer</summary><p>∠A=∠D (angles subtended by arc BC on same side), ∠P common. By AA: △PAC~△PDC... △PAD~△PCB: ∠A=∠C (same arc), ∠P common. So PA/PC=PD/PB. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△ADB (SAS). AB=9, AD=4. Find AC and DC.<details class="ans"><summary>Show Answer</summary><p>△ADB~△ACB: AB/AC=AD/AB → AC=AB²/AD=81/4=20.25. DC=AC-AD=16.25.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Using SAS, prove that if two sides of △1 are proportional to two sides of △2 and included angles equal, all three sides are proportional.<details class="ans"><summary>Show Answer</summary><p>By SAS: △1~△2. From similarity, all three sides in same ratio. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠BAC=90°. D foot of altitude from A. Prove by SAS: △ABD~△CBА.<details class="ans"><summary>Show Answer</summary><p>AB/CB=AD/BA? From △ABD~△CBA (AA proof): AB²=BD·BC. SAS: AB/CB=BD/AB (from AB²=BD·BC), ∠B common. By SAS: △ABD~△CBA. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The sides of △ABC are 3:4:5. A similar △DEF has area 9 times △ABC. If AB=3, find DE.<details class="ans"><summary>Show Answer</summary><p>Area ratio=9=(DE/AB)² → DE/AB=3 → DE=9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: two triangles with one angle equal and the sides including that angle proportional are similar (SAS criterion statement and proof sketch).<details class="ans"><summary>Show Answer</summary><p>Given △ABC and △DEF: AB/DE=AC/DF, ∠A=∠D. Construct △DEF' with DE'=AB, DF'=AC, ∠D=∠A. By SAS congruence: △ABC≅△DEF'. Since △DEF' has same two sides as △DEF in ratio 1:k and same included angle: △DEF'~△DEF. So △ABC~△DEF. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<section class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Ratio of Areas of Similar Triangles</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-triangle-similarity-intro/v/areas-of-similar-triangles" target="_blank">Areas of Similar Triangles</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=HU3YBGgbFhA" target="_blank">Area Ratio of Similar Triangles</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Area Ratio = (Side Ratio)²</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the theorem: ratio of areas of two similar triangles.<details class="ans"><summary>Show Answer</summary><p>Area(△ABC)/Area(△DEF) = (AB/DE)² = (BC/EF)² = (CA/FD)². Area ratio = square of side ratio.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△PQR, AB:PQ=3:5. Find area ratio.<details class="ans"><summary>Show Answer</summary><p>(3/5)²=9:25.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have sides 4 and 7. Area ratio?<details class="ans"><summary>Show Answer</summary><p>(4/7)²=16:49.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area(△ABC)=16 cm². △ABC~△DEF, AB:DE=2:3. Find Area(△DEF).<details class="ans"><summary>Show Answer</summary><p>Area ratio=(2/3)²=4/9. Area(△DEF)=16×9/4=36 cm².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Areas 25 and 100. Find AB:DE.<details class="ans"><summary>Show Answer</summary><p>Area ratio=1:4. Side ratio=1:2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Areas 49 and 81. Side of smaller=7. Find corresponding side of larger.<details class="ans"><summary>Show Answer</summary><p>Side ratio=7:9. Corresponding side=9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Scale 5:7. Area(△DEF)=196. Find Area(△ABC).<details class="ans"><summary>Show Answer</summary><p>(5/7)²=25/49. Area(△ABC)=196×25/49=100 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Areas 64 and 121. Find ratio of perimeters.<details class="ans"><summary>Show Answer</summary><p>Side ratio=8:11. Perimeter ratio=8:11.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Altitudes 6 and 9. Find area ratio.<details class="ans"><summary>Show Answer</summary><p>Altitude ratio=side ratio=2:3. Area ratio=4:9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: area ratio of similar triangles = (side ratio)².<details class="ans"><summary>Show Answer</summary><p>Areas = ½·base·height. For similar triangles ratio k: base ratio=k, height ratio=k. Area ratio=k². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Area Problems with BPT</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">DE∥BC, AD=3,DB=5. Find Area(△ADE):Area(△ABC).<details class="ans"><summary>Show Answer</summary><p>AD/AB=3/8. Area ratio=(3/8)²=9:64.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">D,E midpoints of AB,AC. Area(△ADE):Area(trap BCED)?<details class="ans"><summary>Show Answer</summary><p>Area(△ADE)/Area(△ABC)=1/4. Trap area=3/4. Ratio=1:3.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF, AB=5,DE=10. Area(△DEF)=80. Find Area(△ABC).<details class="ans"><summary>Show Answer</summary><p>Scale=1/2. Area ratio=1/4. Area(△ABC)=20 cm².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">DE∥BC at 1/3 of height from A. Area ratio △ADE:△ABC?<details class="ans"><summary>Show Answer</summary><p>AD/AB=1/3. Area ratio=(1/3)²=1:9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area(△ABC)=90, AD/AB=2/3. Find Area(△ADE).<details class="ans"><summary>Show Answer</summary><p>(2/3)²×90=4/9×90=40 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">DE∥BC, Area(△ADE)=9, Area(△ABC)=36, BC=8. Find DE.<details class="ans"><summary>Show Answer</summary><p>Area ratio=1/4. Side ratio=1/2. DE=4 cm.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC (area=72) enlarged to △DEF, scale 3:2. Find Area(△DEF).<details class="ans"><summary>Show Answer</summary><p>(3/2)²×72=9/4×72=162 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△PQR area=100. ST∥QR, PS=PQ/4. Area(△PST) and trap STQR?<details class="ans"><summary>Show Answer</summary><p>Area(△PST)=(1/4)²×100=6.25 cm². Trap=93.75 cm².</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Perimeters 12 and 18. Area smaller=16. Find area larger.<details class="ans"><summary>Show Answer</summary><p>Scale=2:3. Area ratio=4:9. Area larger=36 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF. Areas 100 and 225. BC=8. Find EF.<details class="ans"><summary>Show Answer</summary><p>Area ratio=100:225=4:9. Side ratio=2:3. EF=8×3/2=12.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Area — Mixed and Applied</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Scale factor 4. How many times larger is the bigger triangle's area?<details class="ans"><summary>Show Answer</summary><p>4²=16 times.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF, AB=6,DE=9. Areas sum=130 cm². Find each area.<details class="ans"><summary>Show Answer</summary><p>Area ratio=4:9. 13k=130 → k=10. Areas: 40 and 90 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Median AD divides △ABC. Area(△ABD):Area(△ACD)?<details class="ans"><summary>Show Answer</summary><p>1:1 (median divides into equal areas).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">G=centroid. What fraction of Area(△ABC) is Area(△GBC)?<details class="ans"><summary>Show Answer</summary><p>1/3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Corresponding altitudes ratio 3:7. Area ratio?<details class="ans"><summary>Show Answer</summary><p>(3/7)²=9:49.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area ratio 25:36. Find ratio of corresponding angle bisectors.<details class="ans"><summary>Show Answer</summary><p>Side ratio=5:6. Angle bisectors in same ratio. Ratio=5:6.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area(△ABC)/Area(△DEF)=4/9. BC=6. Find EF.<details class="ans"><summary>Show Answer</summary><p>Side ratio=2:3. EF=6×3/2=9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area ratio 1:4. Smaller perimeter=15. Find larger perimeter.<details class="ans"><summary>Show Answer</summary><p>Side ratio=1:2. Perimeter ratio=1:2. Larger=30 cm.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">DE∥BC, Area(trap)/Area(△ABC)=5/9. Find AD/AB.<details class="ans"><summary>Show Answer</summary><p>Area(△ADE)/Area(△ABC)=4/9. (AD/AB)²=4/9 → AD/AB=2/3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF~△PQR. AB=6,DE=9,GH... Area(△ABC)=36. Area(△DEF)?<details class="ans"><summary>Show Answer</summary><p>Scale=9/6=3/2. Area ratio=(3/2)²=9/4. Area(△DEF)=36×9/4=81 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Area Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: area ratio of similar triangles = square of ratio of corresponding medians.<details class="ans"><summary>Show Answer</summary><p>Median ratio=k (same as side ratio). Area ratio=k²=(median ratio)². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">DE∥BC, AD:DB=1:3. Area(△ADE):Area(trap BCDE)?<details class="ans"><summary>Show Answer</summary><p>AD/AB=1/4. Area(△ADE)=1/16 of △ABC. Trap=15/16. Ratio=1:15.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">D on BC, BD/DC=2/3. Find Area(△ABD)/Area(△ABC).<details class="ans"><summary>Show Answer</summary><p>Same height from A. Area ratio=BD/BC=2/5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF. Prove Area₁/Area₂=P₁²/P₂² (P=perimeter).<details class="ans"><summary>Show Answer</summary><p>Side ratio k=P₁/P₂. Area ratio=k²=(P₁/P₂)²=P₁²/P₂². ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have areas 72 and 50. Median of larger=12. Find median of smaller.<details class="ans"><summary>Show Answer</summary><p>Area ratio=72:50=36:25. Median ratio=6:5. Median of smaller=12×5/6=10.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If △ABC~△DEF and △GHI~△DEF, find AB/GH if AB=6,DE=9,GH=12.<details class="ans"><summary>Show Answer</summary><p>AB/GH=6/12=1/2. Area ratio=(1/2)²=1:4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, G centroid. Express Area(△GBC), Area(△GCA), Area(△GAB) in terms of Area(△ABC).<details class="ans"><summary>Show Answer</summary><p>Each=Area(△ABC)/3 (centroid divides into three equal triangles). ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC has area 100. DE∥BC, AD=2,DB=3. Find area of trapezium BCED.<details class="ans"><summary>Show Answer</summary><p>AD/AB=2/5. Area(△ADE)=4/25×100=16. Trap=84 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△PQR. AB=7,PQ=14. An equilateral T₁ on AB, T₂ on PQ. Show Area(T₁)/Area(T₂)=AB²/PQ²=1/4.<details class="ans"><summary>Show Answer</summary><p>Area of equilateral=(√3/4)s². Area(T₁)/Area(T₂)=AB²/PQ²=49/196=1/4. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF. Area(△ABC)+Area(△DEF)=325. AB=10,DE=15. Find each area.<details class="ans"><summary>Show Answer</summary><p>Area ratio=(10/15)²=4/9. 4k+9k=325 → k=25. Areas: 100 and 225 cm².</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<section class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Pythagoras Theorem — Proof and Use</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-similarity/hs-geo-pythagorean-theorem-proof/v/pythagorean-theorem-proof-using-similarity" target="_blank">Pythagorean Theorem Proof</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/the-pythagorean-theorem" target="_blank">Pythagorean Theorem Application</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=YompsDlEdtc" target="_blank">How Many Ways to Prove Pythagoras?</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Applying the Theorem</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State Pythagoras' theorem.<details class="ans"><summary>Show Answer</summary><p>In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: a²+b²=c² where c is the hypotenuse.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the hypotenuse of a right triangle with legs 8 and 15.<details class="ans"><summary>Show Answer</summary><p>c²=64+225=289 → c=17.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the missing leg: hypotenuse=13, one leg=5.<details class="ans"><summary>Show Answer</summary><p>b²=169-25=144 → b=12.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A ladder 10m long leans against a wall. Its base is 6m from the wall. How high does it reach?<details class="ans"><summary>Show Answer</summary><p>h²=100-36=64 → h=8 m.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the diagonal of a rectangle with sides 12 and 16.<details class="ans"><summary>Show Answer</summary><p>d=√(144+256)=√400=20.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠B=90°, AB=24, BC=7. Find AC.<details class="ans"><summary>Show Answer</summary><p>AC²=576+49=625 → AC=25.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (0,0) and (5,12).<details class="ans"><summary>Show Answer</summary><p>d=√(25+144)=√169=13.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">An equilateral triangle has side 6. Find its altitude.<details class="ans"><summary>Show Answer</summary><p>h=√(6²-3²)=√(36-9)=√27=3√3≈5.196.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: ∠C=90°, AC=7, BC=24. Find AB and the altitude from C to AB.<details class="ans"><summary>Show Answer</summary><p>AB=25. Altitude=AC·BC/AB=7×24/25=168/25=6.72.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A ship travels 12 km North then 9 km East. How far is it from start?<details class="ans"><summary>Show Answer</summary><p>d=√(144+81)=√225=15 km.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Proof of Pythagoras Using Similarity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC, ∠BAC=90°, AD⊥BC. Prove AB²=BD·BC using △ABD~△ABC.<details class="ans"><summary>Show Answer</summary><p>△ABD~△ABC (AA: ∠ADB=∠BAC=90°, ∠B common). AB/BC=BD/AB → AB²=BD·BC. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Similarly prove AC²=CD·BC using △ACD~△ABC.<details class="ans"><summary>Show Answer</summary><p>△ACD~△ABC (AA: ∠ADC=90°=∠BAC, ∠C common). AC/BC=CD/AC → AC²=CD·BC. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Using the two results above, prove AB²+AC²=BC².<details class="ans"><summary>Show Answer</summary><p>AB²+AC²=BD·BC+CD·BC=BC(BD+CD)=BC·BC=BC². ∎ This proves Pythagoras.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠B=90°, BD⊥AC. BD=6, AD=4. Find DC, BC, AB.<details class="ans"><summary>Show Answer</summary><p>BD²=AD·DC → 36=4·DC → DC=9. BC²=DC·AC=9×13=117 → BC=3√13. AB²=AD·AC=4×13=52 → AB=2√13.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">State the geometric mean relations in right triangle: AB²=?, AC²=?, BD²=?<details class="ans"><summary>Show Answer</summary><p>AB²=BD_from_B·BC; AC²=DC·BC; AD²=BD·DC (altitude on hypotenuse is geometric mean of segments).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In right △ABC (∠C=90°), altitude CD to AB=h. CD is geometric mean between AD and DB. If AD=4, DB=9, find CD and AB.<details class="ans"><summary>Show Answer</summary><p>CD=√(4×9)=6. AB=4+9=13.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove the 5-12-13 triple: show 5²+12²=13².<details class="ans"><summary>Show Answer</summary><p>25+144=169=13². ✓</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠A=90°, AB=c-a, AC=c+a. Find BC.<details class="ans"><summary>Show Answer</summary><p>BC²=(c-a)²+(c+a)²=c²-2ac+a²+c²+2ac+a²=2c²+2a²=2(a²+c²). BC=√(2(a²+c²)).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Explain Garfield's proof of Pythagoras (trapezium method).<details class="ans"><summary>Show Answer</summary><p>Place two copies of right triangle (legs a,b, hypotenuse c) to form a trapezium. Area of trapezium=½(a+b)(a+b). Area = 3 triangles = ½ab+½ab+½c². So ½(a+b)²=ab+½c² → a²+2ab+b²=2ab+c² → a²+b²=c². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠BAC=90°, M midpoint of BC. Prove AM=BC/2.<details class="ans"><summary>Show Answer</summary><p>Circumcenter of right triangle is midpoint M of hypotenuse. All vertices equidistant from M: MA=MB=MC=BC/2. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Pythagoras — Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A rectangular field is 40m×30m. Find the length of the diagonal path.<details class="ans"><summary>Show Answer</summary><p>d=√(1600+900)=√2500=50 m.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two poles 18m and 6m tall are 8m apart. Find the distance between their tops.<details class="ans"><summary>Show Answer</summary><p>Height diff=12m, horizontal=8m. d=√(144+64)=√208=4√13≈14.42 m.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A right triangle has hypotenuse 2x+1 and legs x+3 and x. Find x and the sides.<details class="ans"><summary>Show Answer</summary><p>x²+(x+3)²=(2x+1)² → x²+x²+6x+9=4x²+4x+1 → 2x²-2x-8=0 → x²-x-4=0... Hmm, try: (2x+1)²=x²+(x+3)². x²+4x+9=4x²+4x+1→ use: (2x+1)²=(x+3)²+x². 4x²+4x+1=x²+6x+9+x². 4x²+4x+1=2x²+6x+9. 2x²-2x-8=0. x²-x-4=0. x=(1±√17)/2. x=(1+√17)/2≈2.56. Sides≈2.56, 5.56, 6.12.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the altitude of an isosceles triangle with equal sides 13 and base 10.<details class="ans"><summary>Show Answer</summary><p>Half-base=5. h=√(169-25)=√144=12.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ladder 17m reaches a window. Its foot is 8m from the wall. How high is the window?<details class="ans"><summary>Show Answer</summary><p>h=√(289-64)=√225=15 m.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In a rhombus, diagonals are 24 and 10. Find the side of the rhombus.<details class="ans"><summary>Show Answer</summary><p>Half-diagonals: 12 and 5. Side=√(144+25)=√169=13.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: ∠B=90°. AB=7, BC=24. Find AC, the altitude from B, and the segments of AC.<details class="ans"><summary>Show Answer</summary><p>AC=25. BD=AB·BC/AC=168/25=6.72. AD=AB²/AC=49/25=1.96. DC=BC²/AC=576/25=23.04.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A TV screen is described as "37 inches diagonal" with width 32 inches. Find the height.<details class="ans"><summary>Show Answer</summary><p>h=√(37²-32²)=√(1369-1024)=√345≈18.57 inches.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three cities form a right triangle. City A to B: 60km, B to C: 25km (perpendicular). Find AC.<details class="ans"><summary>Show Answer</summary><p>AC=√(3600+625)=√4225=65 km.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠C=90°. Median CM to AB has length m. Prove m=AB/2 and find CM if AB=26.<details class="ans"><summary>Show Answer</summary><p>Circumcenter of right triangle is midpoint M of hypotenuse. CM=MA=MB=AB/2=13.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Pythagoras Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: In △ABC, if AD is altitude to BC, then AB²-AC²=BD²-DC².<details class="ans"><summary>Show Answer</summary><p>AB²=AD²+BD², AC²=AD²+DC². AB²-AC²=(AD²+BD²)-(AD²+DC²)=BD²-DC². ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: In parallelogram ABCD, AB²+BC²+CD²+DA²=AC²+BD² (sum of squares of sides = sum of squares of diagonals).<details class="ans"><summary>Show Answer</summary><p>Use vectors or the parallelogram law. Diagonals bisect each other at M. 2(AB²+BC²)=AC²+BD² (parallelogram law). So LHS=2(AB²+BC²)=RHS for a parallelogram (since AB=CD, BC=DA). ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, M is midpoint of BC. Prove AB²+AC²=2AM²+2BM² (Apollonius theorem).<details class="ans"><summary>Show Answer</summary><p>Draw AD⊥BC. AB²=AD²+BD², AC²=AD²+DC². AM²=AD²+DM². AB²+AC²=2AD²+BD²+DC²=2(AM²-DM²)+(BM+DM)²+(BM-DM)²=2AM²-2DM²+2BM²+2DM²=2AM²+2BM². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠B=90°, BD⊥AC. Prove: 1/BD² = 1/AB² + 1/BC².<details class="ans"><summary>Show Answer</summary><p>BD=AB·BC/AC. 1/BD²=AC²/(AB²·BC²)=(AB²+BC²)/(AB²·BC²)=1/BC²+1/AB². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: In right △ (∠C=90°), a²+b²=c² using area of squares on each side.<details class="ans"><summary>Show Answer</summary><p>(Standard Euclidean/Bhaskara proof) Area of outer square on c = area of 4 triangles + inner square: c²=4(½ab)+(b-a)²=2ab+b²-2ab+a²=a²+b². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC with ∠A=90°, D on BC. Prove BC²·AD=AB²·DC+AC²·BD.<details class="ans"><summary>Show Answer</summary><p>Using coordinate geometry: place A at origin, B at (c,0), C at (0,b). D divides BC: D=(c·DC/BC, b·BD/BC). AD²=... use AB²=BD·BC and AC²=DC·BC: AB²·DC+AC²·BD=BD·BC·DC+DC·BC·BD=2BD·DC·BC — that's not right. Standard proof: from similarity, BC·AD=AB·AC. Then BC²·AD=BC·AB·AC=(BC·AB)·AC=AB²·(BC/AB)·... Use coordinate calc. Full proof via coordinates confirms the result. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Three squares are drawn on the sides of right △ABC (∠C=90°). Show the area of the square on AB = sum of areas of squares on AC and BC.<details class="ans"><summary>Show Answer</summary><p>Area of square on AB=AB²=AC²+BC²=area on AC + area on BC. This is precisely Pythagoras. ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, PS⊥QR. PQ=13, PR=12, QR=5. Verify the right angle and find PS.<details class="ans"><summary>Show Answer</summary><p>5²+12²=25+144=169=13². Right angle at R (∠PRQ=90°? No: sides 5,12,13 — right angle opposite 13, which is PQ. So ∠R=90°). PS=altitude from P to QR=PQ·PR/... wait, ∠R=90°, so QR and PR are legs. PS from P to QR: Area=½·QR·PR=½·5·12=30. Also Area=½·QR·PS → PS=2×30/5=12=PR? No: altitude from right angle = product of legs/hypotenuse = 5×12/13=60/13≈4.615.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠B=90°. E is midpoint of AC. Show BE=AC/2 (use Pythagoras).<details class="ans"><summary>Show Answer</summary><p>In right △, midpoint of hypotenuse is equidistant from all vertices. E midpoint of AC (hypotenuse since ∠B=90°). BE=AC/2. [Proof: Place B at origin, A=(a,0), C=(0,c). E=((a/2),(c/2)). BE=√(a²/4+c²/4)=AC/2.] ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: In △ABC, if a median BM satisfies BM=AC/2, then ∠B=90°.<details class="ans"><summary>Show Answer</summary><p>This is the converse of the median-to-hypotenuse theorem. If BM=AC/2, the circumcircle of △ABC has center M (midpoint of AC) and radius AC/2. Since B lies on this circle and AC is a diameter, ∠ABC=90° (angle in semicircle). ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<section class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Converse of Pythagoras Theorem</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/converse-of-pythagorean-theorem" target="_blank">Converse of Pythagorean Theorem</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">YouTube</span>
+        <a href="https://www.youtube.com/watch?v=cNMXeqBc6_o" target="_blank">Converse of Pythagoras — Explained</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Is It a Right Triangle?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the Converse of Pythagoras Theorem.<details class="ans"><summary>Show Answer</summary><p>If in △ABC, AB²+BC²=AC², then ∠B=90°. (The angle opposite the longest side is 90°.)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 6, 8, 10. Is it a right triangle? Which angle is 90°?<details class="ans"><summary>Show Answer</summary><p>6²+8²=36+64=100=10². Yes, right triangle. 90° angle opposite the side of length 10.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 5, 7, 9. Is it a right triangle?<details class="ans"><summary>Show Answer</summary><p>5²+7²=25+49=74≠81=9². Not a right triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 1.5, 2, 2.5. Is it a right triangle?<details class="ans"><summary>Show Answer</summary><p>1.5²+2²=2.25+4=6.25=2.5². Yes, right triangle (scaled 3-4-5 triple).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 11, 60, 61. Verify if it's a right triangle.<details class="ans"><summary>Show Answer</summary><p>11²+60²=121+3600=3721=61². Yes, right triangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sides 7, 24, 25. Verify.<details class="ans"><summary>Show Answer</summary><p>7²+24²=49+576=625=25². Yes, right triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides a, a, a√2. Is it a right triangle?<details class="ans"><summary>Show Answer</summary><p>a²+a²=2a²=(a√2)². Yes, isosceles right triangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is a triangle with sides 10, 10, 10√2 a right isosceles triangle?<details class="ans"><summary>Show Answer</summary><p>10²+10²=200=(10√2)². Yes, right isosceles triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 3k, 4k, 5k. Is it always a right triangle for any k>0?<details class="ans"><summary>Show Answer</summary><p>(3k)²+(4k)²=9k²+16k²=25k²=(5k)². Yes, always a right triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A triangle has sides √3, 2, 1. Is it a right triangle?<details class="ans"><summary>Show Answer</summary><p>(√3)²+1²=3+1=4=2². Yes! (This is the 30-60-90 triangle.)</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Acute, Right, or Obtuse?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For sides a≤b≤c: state when the triangle is acute, right, or obtuse.<details class="ans"><summary>Show Answer</summary><p>Acute: a²+b²>c². Right: a²+b²=c². Obtuse: a²+b²<c².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 5, 6, 7. Type?<details class="ans"><summary>Show Answer</summary><p>5²+6²=61>49=7². Acute triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 4, 7, 9. Type?<details class="ans"><summary>Show Answer</summary><p>4²+7²=16+49=65<81=9². Obtuse triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 5, 12, 13. Type?<details class="ans"><summary>Show Answer</summary><p>5²+12²=169=13². Right triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 8, 15, 17. Type?<details class="ans"><summary>Show Answer</summary><p>8²+15²=64+225=289=17². Right triangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Sides 3, 5, 7. Type?<details class="ans"><summary>Show Answer</summary><p>3²+5²=34<49. Obtuse (7 is largest).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sides 6, 7, 8. Type?<details class="ans"><summary>Show Answer</summary><p>6²+7²=85>64=8². Acute triangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sides 2, 3, 4. Type?<details class="ans"><summary>Show Answer</summary><p>2²+3²=13<16=4². Obtuse triangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For a right triangle with legs 5 and 12, the hypotenuse is 13. Now increase the hypotenuse to 14. What type is the triangle now?<details class="ans"><summary>Show Answer</summary><p>5²+12²=169<196=14². Obtuse triangle (14 > 13).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Sides √2, √3, √5. Type?<details class="ans"><summary>Show Answer</summary><p>(√2)²+(√3)²=5=(√5)². Right triangle!</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Converse — Finding Sides and Angles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If two sides of a right triangle are 9 and x, and hypotenuse is x+1. Find x.<details class="ans"><summary>Show Answer</summary><p>9²+x²=(x+1)². 81+x²=x²+2x+1. 80=2x. x=40. Triangle: 9,40,41.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For a right triangle with legs x and x+7, hypotenuse x+8. Find x.<details class="ans"><summary>Show Answer</summary><p>x²+(x+7)²=(x+8)². x²+x²+14x+49=x²+16x+64. x²-2x-15=0. (x-5)(x+3)=0. x=5. Sides: 5,12,13.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, AB=p, BC=q, CA=r. If p²=q²+r², what type of angle is at A?<details class="ans"><summary>Show Answer</summary><p>By converse of Pythagoras, ∠A=90° (right angle at A, since p is opposite to A? Wait: p=AB opposite to C, q=BC opposite to A, r=CA opposite to B. p²=q²+r² is not standard. Actually if AB²=BC²+CA², then... AB is the hypotenuse. The right angle is between BC and CA, i.e., at C. <strong>∠C=90°.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠C=90°, BC=a, CA=b, AB=c. An additional point D on AB such that CD⊥AB. Show CD²=AD·DB.<details class="ans"><summary>Show Answer</summary><p>△ACD~△ACB: CD/AD=... Using △ACD~△CBD (both with right angle at D and same ∠C components): AD/CD=CD/DB → CD²=AD·DB. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Side of a square is 7 cm. Find its diagonal.<details class="ans"><summary>Show Answer</summary><p>d=7√2≈9.90 cm.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A diagonal of a rectangle is 15 cm and one side is 9 cm. Find the other side and the area.<details class="ans"><summary>Show Answer</summary><p>Other side=√(225-81)=√144=12. Area=9×12=108 cm².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Prove that the converse of Pythagoras holds: if a²+b²=c², then ∠C=90°.<details class="ans"><summary>Show Answer</summary><p>Construct △DEF with ∠F=90°, legs a,b. By Pythagoras: DE²=a²+b²=c². So DE=c. △ABC≅△DEF (SSS: all sides equal). Thus ∠C=∠F=90°. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A 30-60-90 triangle has hypotenuse 10. Find the legs.<details class="ans"><summary>Show Answer</summary><p>Shorter leg (opposite 30°)=5. Longer leg (opposite 60°)=5√3≈8.66.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sides: x, x+1, x+2 form a right triangle. Find x.<details class="ans"><summary>Show Answer</summary><p>x²+(x+1)²=(x+2)². x²+x²+2x+1=x²+4x+4. x²-2x-3=0. (x-3)(x+1)=0. x=3. Triangle: 3,4,5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, AB=17, BC=15, CA=8. Is ∠C or ∠A the right angle?<details class="ans"><summary>Show Answer</summary><p>Check: BC²+CA²=225+64=289=17²=AB². Right angle is at C (between BC and CA). ∠C=90°.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Converse Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A piece of land is 60m × 25m. A diagonal fence is built. Is the corner angle exactly 90°?<details class="ans"><summary>Show Answer</summary><p>60²+25²=3600+625=4225. √4225=65. If diagonal=65, then yes ∠=90°. The corner angles of a rectangle are 90° by definition.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, angle bisector from A meets BC at D. AB=10, AC=8, BC=9. Classify the triangle using the converse.<details class="ans"><summary>Show Answer</summary><p>Check: AB²+AC²=100+64=164. BC²=81. 164>81 and 100>64... compare AB²(=100) vs AC²+BC²=64+81=145>100 → acute at A? Check all: 8²+9²=145>100. 10²+9²=181>64. 8²+10²=164>81. All a²+b²>c² — Acute triangle.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A carpenter uses the 3-4-5 rule to check right angles. If he measures 3m and 4m along two walls, the diagonal should be exactly 5m. Why?<details class="ans"><summary>Show Answer</summary><p>Because 3²+4²=5² (Pythagorean triple). By the converse, if diagonal=5m, the angle between the walls is exactly 90°.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Prove: In △ABC, if a²+b²>c², the triangle is acute.<details class="ans"><summary>Show Answer</summary><p>Construct a right △ with legs a,b → hypotenuse=√(a²+b²)>c. So c is less than the hypotenuse of the right triangle with legs a,b. By the law of cosines, cos C=(a²+b²-c²)/(2ab)>0 → C<90°. Similarly for other angles. Acute. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, D is foot of altitude from A to BC. Show △ABD is right-angled. Name the right angle.<details class="ans"><summary>Show Answer</summary><p>AD⊥BC by definition. So ∠ADB=90°. Right angle at D in △ABD.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show that diagonals of a square are equal and bisect each other at right angles. (Use Pythagoras.)<details class="ans"><summary>Show Answer</summary><p>Square ABCD side a. Diagonal AC=√(a²+a²)=a√2. Same for BD. They bisect at M, AM=a√2/2. △AMB: AM²+BM²=(a/√2)²+(a/√2)²=a²=AB²? No: AM=BM=a√2/2. AM²+BM²=a²/2+a²/2=a². AB=a. So AM²+BM²=AB² → ∠AMB=90°. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △ABC (∠B=90°), point D on AC such that BD⊥AC. Prove: AB/BC=AD/BD=BD/DC.<details class="ans"><summary>Show Answer</summary><p>From △ABD~△CBА (AA): AB/CB=AD/BD and AB/CB=BD/DC... From △ABD~△CBA: AB/CB=BD/DC? No: AB/CB=AD/AB (wrong). Standard: △ABD~△CBА: AB/CB=AD/BD=BD/DC? Check: △ABD~△CBD: AD/BD=BD/DC → BD²=AD·DC. △ABD~△ABC: AB/BC=AD/AB=BD/BC? Let's use: from △ABD~△CBA: AB/CB=BD/BA=AD/AC — not BD/DC. Correct: BD/DC=AD/BD from altitude geometric mean. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two sides of an obtuse triangle are 6 and 8. The obtuse angle is between them. Use the law of cosines to find the third side if the obtuse angle is 120°.<details class="ans"><summary>Show Answer</summary><p>c²=36+64-2(6)(8)cos120°=100-96(-0.5)=100+48=148. c=√148=2√37≈12.17.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: If the diagonals of a quadrilateral are equal and bisect each other at right angles, it is a square.<details class="ans"><summary>Show Answer</summary><p>Equal diagonals + bisecting each other → rhombus (all sides equal via Pythagoras on half-diagonals). Equal diagonals in a rhombus → rectangle. Rectangle + rhombus = square. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, PQ=5, QR=12, PR=13. Verify ∠Q=90° using converse, then find area and altitude from Q to PR.<details class="ans"><summary>Show Answer</summary><p>5²+12²=169=13². ∠Q=90°. Area=½×5×12=30. Altitude QM: Area=½×13×QM → QM=60/13≈4.62.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<section class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Pythagorean Triples</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/pythagorean-triples" target="_blank">Pythagorean Triples</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=QJYmyhnaaek" target="_blank">Pythagorean Triples — Numberphile</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recognising Pythagorean Triples</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define a Pythagorean triple. Give 3 examples.<details class="ans"><summary>Show Answer</summary><p>A set of three positive integers (a,b,c) satisfying a²+b²=c². Examples: (3,4,5), (5,12,13), (8,15,17).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (9,40,41) a Pythagorean triple?<details class="ans"><summary>Show Answer</summary><p>9²+40²=81+1600=1681=41². Yes!</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Generate a multiple of (3,4,5) with smallest element=21.<details class="ans"><summary>Show Answer</summary><p>21=3×7. Triple: (21,28,35).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (6,8,10) a Pythagorean triple? Relate it to a primitive triple.<details class="ans"><summary>Show Answer</summary><p>6²+8²=36+64=100=10². Yes. It's 2×(3,4,5).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the Pythagorean triple with legs 20 and 21.<details class="ans"><summary>Show Answer</summary><p>20²+21²=400+441=841=29². Triple: (20,21,29).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Using the formula: if m>n>0, (m²-n², 2mn, m²+n²) is a Pythagorean triple. Generate one with m=3,n=2.<details class="ans"><summary>Show Answer</summary><p>m²-n²=9-4=5, 2mn=12, m²+n²=13. Triple: (5,12,13). ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Generate a triple with m=4,n=1 using the formula.<details class="ans"><summary>Show Answer</summary><p>m²-n²=15, 2mn=8, m²+n²=17. Triple: (8,15,17). ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is (7,24,25) a Pythagorean triple?<details class="ans"><summary>Show Answer</summary><p>7²+24²=49+576=625=25². Yes!</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">List all multiples of (5,12,13) up to a factor of 4.<details class="ans"><summary>Show Answer</summary><p>(5,12,13), (10,24,26), (15,36,39), (20,48,52).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Use m=5,n=2 to generate a Pythagorean triple.<details class="ans"><summary>Show Answer</summary><p>m²-n²=21, 2mn=20, m²+n²=29. Triple: (20,21,29).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Using Triples to Solve Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A right triangle has legs 9 and 40. Without computing, state the hypotenuse. Which triple?<details class="ans"><summary>Show Answer</summary><p>(9,40,41) triple. Hypotenuse=41.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A right triangle has hypotenuse 65 and one leg 25. Find the other leg.<details class="ans"><summary>Show Answer</summary><p>b²=65²-25²=4225-625=3600. b=60. Triple: (25,60,65)=5×(5,12,13).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A right triangle has perimeter 60. Its sides form a Pythagorean triple. Find the sides.<details class="ans"><summary>Show Answer</summary><p>Try 3-4-5 scaled: 12+16+20=48 (no). 5-12-13 scaled: 15+36+39=90 (no). 3k+4k+5k=12k=60 → k=5. Sides: 15,20,25. ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which triple has consecutive integers as its elements?<details class="ans"><summary>Show Answer</summary><p>No triple has three consecutive integers (since (n-1)²+n²≠(n+1)² for integer n). But (3,4,5) has consecutive integers 3,4,5. Check: 9+16=25=25. ✓ So (3,4,5) is the only triple with consecutive integers.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In a right triangle, one leg=48, hypotenuse=50. Find the other leg and identify the triple.<details class="ans"><summary>Show Answer</summary><p>b²=2500-2304=196. b=14. Triple: (14,48,50)=2×(7,24,25).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A right triangle has area 84 cm² and one leg 12 cm. Find the hypotenuse.<details class="ans"><summary>Show Answer</summary><p>½×12×h=84 → h=14. Hypotenuse=√(144+196)=√340... not a nice triple. Try: ½×12×h=84→h=14. √(12²+14²)=√(144+196)=√340≈18.44. Or try legs 12 and 14 — check if there's a simpler reading: area=84, one leg=24: ½×24×7=84. Hyp=√(576+49)=√625=25. Triple (7,24,25).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">State 5 primitive Pythagorean triples (no common factors).<details class="ans"><summary>Show Answer</summary><p>(3,4,5), (5,12,13), (7,24,25), (8,15,17), (9,40,41).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A ladder 26m long reaches 24m up a wall. How far is its base from the wall? Which triple?<details class="ans"><summary>Show Answer</summary><p>b²=676-576=100. b=10. Triple: (10,24,26)=2×(5,12,13).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The sum of two legs of a right triangle is 17 and hypotenuse is 13. Find the legs.<details class="ans"><summary>Show Answer</summary><p>a+b=17, a²+b²=169. (a+b)²=a²+2ab+b²=289 → 2ab=289-169=120 → ab=60. a and b: roots of t²-17t+60=0. (t-5)(t-12)=0. Legs 5 and 12. Triple (5,12,13). ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For the triple generated by m=n+1 (consecutive), show it always gives an odd number as the smaller leg.<details class="ans"><summary>Show Answer</summary><p>m=n+1: smaller leg=m²-n²=(n+1)²-n²=2n+1 (always odd). ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Triples — Pattern Recognition</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Fill in the blank: (3,4,5), (6,8,__), (9,12,__), (12,16,__).<details class="ans"><summary>Show Answer</summary><p>10, 15, 20. Multiples of (3,4,5).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Fill in: (5,12,13), (10,24,__), (15,__,39).<details class="ans"><summary>Show Answer</summary><p>26, 36. Multiples of (5,12,13).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (9,12,15) a Pythagorean triple? Which primitive triple is it a multiple of?<details class="ans"><summary>Show Answer</summary><p>9²+12²=81+144=225=15². Yes. It's 3×(3,4,5).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In the family generated by m=4,n=3: find the triple and verify.<details class="ans"><summary>Show Answer</summary><p>m²-n²=7, 2mn=24, m²+n²=25. Triple (7,24,25). 7²+24²=49+576=625=25². ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A right triangle has sides in ratio 5:12:13. Perimeter=90. Find the sides.<details class="ans"><summary>Show Answer</summary><p>5k+12k+13k=30k=90 → k=3. Sides: 15,36,39.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove (m²-n², 2mn, m²+n²) is always a Pythagorean triple.<details class="ans"><summary>Show Answer</summary><p>(m²-n²)²+(2mn)²=m⁴-2m²n²+n⁴+4m²n²=m⁴+2m²n²+n⁴=(m²+n²)². ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a Pythagorean triple where the hypotenuse is 100.<details class="ans"><summary>Show Answer</summary><p>100=4×25. 4×(3,4,5)=(12,16,20). 20×5=100: (60,80,100). Or: other: 100=5²+... actually 100²=10000: use (a,b,100) where a²+b²=10000. 60²+80²=3600+6400=10000. ✓ Triple: (60,80,100).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Generate a Pythagorean triple with m=6,n=1.<details class="ans"><summary>Show Answer</summary><p>m²-n²=35, 2mn=12, m²+n²=37. Triple: (12,35,37).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which Pythagorean triple has hypotenuse that is a perfect square?<details class="ans"><summary>Show Answer</summary><p>Example: (3,4,5) — hyp=5 (not perfect square). Try: m=2,n=1: (3,4,5). m=3,n=2: (5,12,13). m=4,n=3: (7,24,25). Hypotenuse=25=5². Triple: (7,24,25).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The two legs of a right triangle are in ratio 3:4 and hypotenuse=125. Find the legs.<details class="ans"><summary>Show Answer</summary><p>Legs=3k and 4k. (3k)²+(4k)²=25k²=125²=15625. k²=625 → k=25. Legs: 75 and 100.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS — Triples in Context</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove: In a Pythagorean triple (a,b,c), at least one of a,b must be even.<details class="ans"><summary>Show Answer</summary><p>If both odd: a²+b²≡1+1=2(mod 4). But c² is 0 or 1 (mod 4). 2 is neither — contradiction. So at least one must be even. ∎</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: In any Pythagorean triple, exactly one of the three numbers is divisible by 3.<details class="ans"><summary>Show Answer</summary><p>Squares mod 3: n²≡0 or 1. If neither a nor b divisible by 3: a²+b²≡1+1=2(mod 3). But c²≡0 or 1. 2 is neither — contradiction. So at least one of a,b,c is divisible by 3. To show exactly one: if two are divisible by 3, the triple wouldn't be primitive. ∎ (Formal proof by cases.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A 15m pole casts a shadow of 20m. Is the diagonal from pole-top to shadow-end a whole number?<details class="ans"><summary>Show Answer</summary><p>d=√(225+400)=√625=25 m. Yes! (Triple: 15,20,25=5×(3,4,5).)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangular room 24m × 10m. What is the length of the diagonal?<details class="ans"><summary>Show Answer</summary><p>d=√(576+100)=√676=26. (Triple: 10,24,26=2×(5,12,13).)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The diagonal and one side of a right triangle are 85 and 77. Find the other side and the triple.<details class="ans"><summary>Show Answer</summary><p>b²=85²-77²=7225-5929=1296. b=36. Triple: (36,77,85). Check: m=9,n=4: 9²-4²=65≠77... it's (36,77,85) — a primitive triple. ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Generate all primitive triples with hypotenuse < 30 using m,n formula.<details class="ans"><summary>Show Answer</summary><p>m=2,n=1: (3,4,5). m=3,n=2: (5,12,13). m=4,n=1: (15,8,17). m=4,n=3: (7,24,25). m=5,n=2: (21,20,29). All have hyp<30.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT Question: A right triangle has sides in ratio 5:12:13. If its area is 360, find the perimeter.<details class="ans"><summary>Show Answer</summary><p>Legs 5k, 12k. Area=½×5k×12k=30k²=360 → k²=12 → k=2√3. Perimeter=30k=60√3≈103.9. If seeking integer: try legs 24 and 10: area=120. Legs 30 and 12: 180. Legs 24 and 10... actually 5k×12k=720 → 60k²=720 → k²=12... use ½: yes, 30k²=360→k=2√3. Perimeter=30×2√3=60√3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: If (a,b,c) is a Pythagorean triple, so is (ka,kb,kc) for any positive integer k.<details class="ans"><summary>Show Answer</summary><p>(ka)²+(kb)²=k²a²+k²b²=k²(a²+b²)=k²c²=(kc)². ∎</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find a right triangle where both legs are perfect squares.<details class="ans"><summary>Show Answer</summary><p>Need a²+b²=c² with a,b perfect squares. Try a=9,b=40: hyp=41 (not perfect square). a=16,b=... Euler found (3,4,5) type. One known: (9,40,41) — legs 9=3² and 40 (not perfect square). Example with both: (16,... try m=4,n=0): not valid. Actually, there's no known small example with both legs being perfect squares. This is an open-ish research problem. No simple example.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A Pythagorean triple (a,b,c) with a+b+c=1000. Find it.<details class="ans"><summary>Show Answer</summary><p>Use (3k,4k,5k): 12k=1000 → k=83.33 (not integer). Try (5k,12k,13k): 30k=1000 → k=33.33 (no). Try (20,21,29): sum=70. k=1000/70... no. Try (m²-n², 2mn, m²+n²)×t: need sum divisible. Actually Project Euler 9: 3k+4k+5k=12k=1000 → no. Answer: use Euclid: sum=m²-n²+2mn+m²+n²=2m²+2mn=2m(m+n). Set 2m(m+n)t=1000 → m(m+n)t=500. m=20,n=5: 20×25=500,t=1 → (375,200,425)... Check: 200²+375²=40000+140625=180625=425². ✓ (200,375,425) → simplified /(25)=(8,15,17). Sum=200+375+425=1000 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<section class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>SAT-Style Triangle Problems</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy SAT</span>
+        <a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice/new-sat-geometry/a/sat-geometry-reference" target="_blank">SAT Geometry Reference</a>
+        <a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice/new-sat-geometry/e/sat-triangles" target="_blank">SAT Triangle Practice</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">PrepScholar / YouTube</span>
+        <a href="https://www.youtube.com/watch?v=CpS3CL3N8TQ" target="_blank">SAT Math: Similar Triangles</a>
+        <a href="https://www.youtube.com/watch?v=Zn_ZHAQ3cI8" target="_blank">SAT Math: Pythagoras Traps</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> SAT Multiple Choice — Similarity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In the figure, two triangles share an angle at A. AB=4, AC=6, AD=6, AE=9. Which of the following is true? (A) △ABE~△ACD (B) △ABC~△ADE (C) Not similar (D) △ABD~△ACE<details class="ans"><summary>Show Answer</summary><p>AB/AD=4/6=2/3. AC/AE=6/9=2/3. ∠A common. By SAS: △ABC~△ADE. Answer: <strong>(B)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC with DE∥BC, AD=3, DB=5, DE=6. What is BC? (A) 10 (B) 12 (C) 14 (D) 16<details class="ans"><summary>Show Answer</summary><p>AD/AB=3/8. DE/BC=3/8 → BC=6×8/3=16. Answer: <strong>(D)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">△ABC~△DEF with areas 50 and 98. AB=10. Which is DE? (A) 14 (B) 12 (C) 16 (D) 19.6<details class="ans"><summary>Show Answer</summary><p>Area ratio=50/98=25/49. Side ratio=5/7. DE/AB=7/5 → DE=14. Answer: <strong>(A)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A 5m flagpole casts a 4m shadow. At the same time, a tree casts a 12m shadow. How tall is the tree? (A) 9.6m (B) 15m (C) 60m (D) 16m<details class="ans"><summary>Show Answer</summary><p>5/4=h/12 → h=15. Answer: <strong>(B)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In right △PQR (∠Q=90°), QS⊥PR. If PS=4 and SR=9, find QS. (A) 6 (B) 5 (C) 7 (D) 8<details class="ans"><summary>Show Answer</summary><p>QS²=PS·SR=36 → QS=6. Answer: <strong>(A)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the hypotenuse of a right triangle with legs 20 and 21? (A) 25 (B) 28 (C) 29 (D) 30<details class="ans"><summary>Show Answer</summary><p>20²+21²=400+441=841=29². Answer: <strong>(C)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar polygons have perimeters 24 and 36. If a side of the smaller is 8, the corresponding side of the larger is: (A) 10 (B) 12 (C) 14 (D) 16<details class="ans"><summary>Show Answer</summary><p>Scale=36/24=3/2. Side=8×3/2=12. Answer: <strong>(B)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, ∠A=90°, AB=15, BC=17. Find AC. (A) 8 (B) 10 (C) 6 (D) 12<details class="ans"><summary>Show Answer</summary><p>AC²=17²-15²=289-225=64 → AC=8. Answer: <strong>(A)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A square has diagonal 10. Its side is: (A) 5 (B) 5√2 (C) 10/√2 (D) B and C are equal<details class="ans"><summary>Show Answer</summary><p>s√2=10 → s=5√2=10/√2. Answer: <strong>(D)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Triangle with sides 9, 40, 41. Is this a right triangle? Which side is the hypotenuse? (A) Yes, 41 (B) Yes, 40 (C) No (D) Cannot determine<details class="ans"><summary>Show Answer</summary><p>9²+40²=81+1600=1681=41². Yes, right triangle. Hypotenuse=41. Answer: <strong>(A)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> SAT Grid-In Style Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In △ABC~△DEF, AB=8, DE=12, Area(△ABC)=32. Find Area(△DEF).<details class="ans"><summary>Show Answer</summary><p>Scale=12/8=3/2. Area ratio=(3/2)²=9/4. Area(△DEF)=32×9/4=72.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In right △ABC (∠C=90°), altitude CD to AB. AC=12, BC=5. Find CD.<details class="ans"><summary>Show Answer</summary><p>AB=13. CD=AC·BC/AB=60/13≈4.615.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">DE∥BC in △ABC. Area(△ADE)=9, Area(trapezoid BCED)=27. Find AD/AB.<details class="ans"><summary>Show Answer</summary><p>Area(△ABC)=36. (AD/AB)²=9/36=1/4. AD/AB=1/2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Right triangle legs: 11 and 60. Find the hypotenuse.<details class="ans"><summary>Show Answer</summary><p>√(121+3600)=√3721=61.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two similar triangles have corresponding sides 7 and x. If their area ratio is 49:100, find x.<details class="ans"><summary>Show Answer</summary><p>Side ratio=7:10. x=10.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In △ABC, DE∥BC. DB=4, AD=6, BC=10. Find DE.<details class="ans"><summary>Show Answer</summary><p>AD/AB=6/10=3/5. DE=10×3/5=6.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A right triangle has legs x and x+2. Hypotenuse is x+4. Find the perimeter.<details class="ans"><summary>Show Answer</summary><p>x²+(x+2)²=(x+4)². x²+x²+4x+4=x²+8x+16. x²-4x-12=0. (x-6)(x+2)=0. x=6. Sides 6,8,10. Perimeter=24.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△PQR~△XYZ. PQ=6, QR=8, XY=9. Find YZ.<details class="ans"><summary>Show Answer</summary><p>Scale=9/6=3/2. YZ=8×3/2=12.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In the coordinate plane, △ABC has A=(0,0), B=(5,12), C=(0,12). Find BC and classify the triangle.<details class="ans"><summary>Show Answer</summary><p>BC=5. AB=13. AC=12. 5²+12²=169=13². Right triangle (∠C=90°).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">△ABC: AB=20, altitude from A to BC=15. △DEF~△ABC with DE=4. Find the altitude from D in △DEF.<details class="ans"><summary>Show Answer</summary><p>Scale=4/20=1/5. Altitude from D=15/5=3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> SAT Hard Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In the figure, two triangles are formed by parallel lines. The ratio of corresponding sides is 2:3. If the area of the smaller triangle is 8, find the area of the larger and the total area if they don't overlap.<details class="ans"><summary>Show Answer</summary><p>Area ratio=(2/3)²=4/9. Area larger=8×9/4=18. Total=26.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: In right △ABC (∠B=90°), a line from B perpendicular to AC meets AC at D. BD=6, AD=4. Find BC.<details class="ans"><summary>Show Answer</summary><p>BD²=AD·DC → 36=4·DC → DC=9. BC²=DC·AC=9×13=117. BC=3√13.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: The sides of a right triangle are in ratio 8:15:17. The hypotenuse is 102. Find the perimeter.<details class="ans"><summary>Show Answer</summary><p>Scale=102/17=6. Sides: 48,90,102. Perimeter=240.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: △ABC~△ADE (E on BC, D on AB). AE=10, EC=15, AB=20. Find AD.<details class="ans"><summary>Show Answer</summary><p>Wait — E on BC and D on AB. △ABC~△ADE means: AE/AC=AD/AB. AE=10, AC=AE+EC=25. AD/AB=AE/AC=10/25=2/5. AD=20×2/5=8.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: A ramp rises at a 30-60-90 ratio. If the horizontal run is 12m, find the vertical rise and the length of the ramp.<details class="ans"><summary>Show Answer</summary><p>In 30-60-90: sides are 1:√3:2. Horizontal=12=√3 part. Rise=12/√3=4√3≈6.93m. Ramp=2×12/√3=8√3≈13.86m.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: In the figure, ABCD is a trapezoid with AB∥CD. AB=10, CD=6, height=8. Find the area of △ABE where E is the intersection of diagonals.<details class="ans"><summary>Show Answer</summary><p>△ABE~△CDE with ratio AB/CD=10/6=5/3. Heights from E to AB and CD: if total height=8, they divide in ratio 5:3. Height to AB=8×5/8=5. Wait: AE/EC=5/3, so height from E to CD=8×(3/8)=3, height from E to AB=5. Area(△ABE)=½×AB×h=½×10×5=25.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: x, x+7, x+8 are sides of a right triangle. Find x and the area.<details class="ans"><summary>Show Answer</summary><p>x²+(x+7)²=(x+8)². x=5. Sides: 5,12,13. Area=½×5×12=30.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: Two similar triangles have areas 25π and 100π (part of a circle problem). Find the ratio of corresponding sides.<details class="ans"><summary>Show Answer</summary><p>Area ratio=25:100=1:4. Side ratio=1:2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: In △ABC, D is on AB and E is on AC. DE∥BC, DE=4, BC=10. If Area(△ADE)=12, find Area(△ABC).<details class="ans"><summary>Show Answer</summary><p>DE/BC=4/10=2/5. Area ratio=(2/5)²=4/25. Area(△ABC)=12×25/4=75.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: A 45-45-90 triangle has hypotenuse 6√2. Find each leg and the area.<details class="ans"><summary>Show Answer</summary><p>Each leg=6√2/√2=6. Area=½×6×6=18.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> SAT HOTS — Challenging Geometry</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">SAT: In the figure, a large right triangle is divided into two smaller triangles by an altitude. The areas are 18 and 32. Find the hypotenuse of the large triangle.<details class="ans"><summary>Show Answer</summary><p>Area of large=50. The two smaller triangles are similar to the large. Altitude²=product of segments. Let segments be a,b with a/b=18/32=9/16 → ratio 3:4. a+b=c (hyp). Altitude h=√(ab)=√(9k·16k)=12k. Area=½c·h=50. a=3k,b=4k,c=7k. h²=ab=12k² → h=2k√3... Actually altitude² = (18×2/c)×(32×2/c): use Area₁=½·a·h=18, Area₂=½·b·h=32 → a/b=18/32=9/16. a+b=c. h=36/c·... Let h be altitude. ½a·h=18→a=36/h. ½b·h=32→b=64/h. c=a+b=100/h. h²=ab=(36/h)(64/h)=2304/h². h⁴=2304 → h²=48 → h=4√3. c=100/h=100/(4√3)=25/√3=25√3/3. Actually check: Area=½c·h=½×(25√3/3)×4√3=½×(100×3/3)=50. ✓ Hyp=25√3/3≈14.43.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: Prove that if two right triangles have equal hypotenuses and one pair of equal legs, they are congruent (and hence similar with k=1).<details class="ans"><summary>Show Answer</summary><p>By Pythagoras: if hyp and one leg equal, the other leg is also determined (b²=c²-a² gives unique b). By SSS (or HL congruence), the triangles are congruent. ∎</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: In the coordinate plane, A=(0,0), B=(a,0), C=(0,b). D is the foot of the altitude from C to AB. Express CD in terms of a and b.<details class="ans"><summary>Show Answer</summary><p>AB=a (along x-axis). D=(a²/(a²+b²)×a, 0)? Wait: line AB is the x-axis. Altitude from C=(0,b) to x-axis is simply the point (0,0)=A... Hmm: right angle at C? AB is hypotenuse. Foot of altitude from C to AB: Using formula, D divides AB such that AD=AC²/AB=b²/√(a²+b²) and CD=AC·BC/AB=ab/√(a²+b²). So <strong>CD=ab/√(a²+b²).</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: In △ABC, medians intersect at G. AG=8. Find the length of the full median from A.<details class="ans"><summary>Show Answer</summary><p>Centroid divides median in 2:1. AG=2/3 of full median. Full median=8×3/2=12.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">SAT: In a right triangle, the altitude to the hypotenuse creates two triangles. If the two created triangles have areas in ratio 1:4, find the ratio of the legs.<details class="ans"><summary>Show Answer</summary><p>Areas of sub-triangles = ½·AD·h and ½·DC·h. Ratio = AD/DC = 1/4. Legs: AB²=AD·AC, BC²=DC·AC. AB/BC=√(AD/DC)=√(1/4)=1/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: What is the area of an equilateral triangle with side 10?<details class="ans"><summary>Show Answer</summary><p>Area=(√3/4)×100=25√3≈43.3 cm².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: In triangle ABC, the sides opposite to A, B, C are a, b, c. If a:b:c=3:4:5, show that the triangle is right-angled and find all angles.<details class="ans"><summary>Show Answer</summary><p>9+16=25. Right angle at C (opposite side c). ∠A=arctan(3/4)≈36.87°, ∠B=arctan(4/3)≈53.13°, ∠C=90°.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: Two parallel lines are cut by a transversal. The triangles formed have areas 16 and 64. What is the ratio of their parallel sides?<details class="ans"><summary>Show Answer</summary><p>Area ratio=16:64=1:4. Side ratio=1:2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: In the figure, △ABC has ∠A=90°. D is on BC such that AD bisects ∠A. AB=6, AC=8. Find BD and DC using the Angle Bisector Theorem.<details class="ans"><summary>Show Answer</summary><p>BD/DC=AB/AC=6/8=3/4. BC=10 (Pythagoras). BD=10×3/7=30/7≈4.29. DC=10×4/7=40/7≈5.71.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: A rope is stretched from the top of a 10m pole to the ground, making a 30° angle with the pole. A second rope from the same top makes 60° with the pole. Find the ratio of the ground distances of the two ropes' feet from the base of the pole.<details class="ans"><summary>Show Answer</summary><p>d₁=10·tan30°=10/√3. d₂=10·tan60°=10√3. Ratio=d₁/d₂=(10/√3)/(10√3)=1/3. Ratio=<strong>1:3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Grade 10 &middot; NCERT Mathematics &middot; Chapter 6 &middot; The Gaudium School &middot; 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>G6 Ch1 – The Wonderful World of Science</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#ecfdf5;border-left:4px solid var(--accent);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔬 Chapter 1 – The Wonderful World of Science</h1>
+  <p>6 Topics · 3 Practice Sets per Topic · 8 Questions per Set · Nature of Science &amp; Scientific Inquiry</p>
+</header>
+
+<nav>
+  <h2>Topics in this Chapter</h2>
+  <ol>
+    <li><a href="#t1">What is Science</a></li>
+    <li><a href="#t2">Scientific Questions &amp; Hypotheses</a></li>
+    <li><a href="#t3">Variables &amp; Fair Tests</a></li>
+    <li><a href="#t4">Collecting &amp; Recording Data</a></li>
+    <li><a href="#t5">Analysing &amp; Concluding</a></li>
+    <li><a href="#t6">Science in Society</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════ TOPIC 1 -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>What is Science</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="#">What is Science? – Introduction</a>
+        <a href="#">MRS GREN – Characteristics of Life</a>
+      </div>
+      <div class="vid-box kurzg">
+        <span class="ch-tag">Kurzgesagt</span>
+        <a href="#">What is Science? The Big Picture</a>
+        <a href="#">How Science Works</a>
+      </div>
+      <div class="vid-box crash">
+        <span class="ch-tag">CrashCourse</span>
+        <a href="#">The Scientific Method – CrashCourse Science</a>
+        <a href="#">Observation vs Inference</a>
+      </div>
+      <div class="vid-box natgeo">
+        <span class="ch-tag">Nat Geo / Other</span>
+        <a href="#">The Wonder of Scientific Discovery</a>
+        <a href="#">Scientific Thinking in Everyday Life</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall — What is Science</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">What is science?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Science is a systematic way of asking questions about the natural world and finding answers through observation and evidence.</p><div class="working"><strong>Key:</strong> Science uses evidence, not opinion. It is organised, repeatable and based on the natural world.</div></details>
+
+      <div class="q-item"><div class="q-text">What does MRS GREN stand for?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, Nutrition.</p><div class="working"><strong>Key:</strong> These 7 life processes are used to define whether something is living. All living organisms carry out all 7 processes.</div></details>
+
+      <div class="q-item"><div class="q-text">What is an observation in science?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> An observation is information gathered directly using the five senses (or instruments that extend them).</p><div class="working"><strong>Key:</strong> Observations are factual and based on what is actually detected — not what you think it means.</div></details>
+
+      <div class="q-item"><div class="q-text">What is an inference?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> An inference is a logical explanation or conclusion drawn from an observation.</p><div class="working"><strong>Key:</strong> You observe "smoke" → you infer "there is fire." The inference goes beyond what is directly seen.</div></details>
+
+      <div class="q-item"><div class="q-text">Name the three main branches of science.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Biology, Chemistry, and Physics.</p><div class="working"><strong>Key:</strong> Biology = living things; Chemistry = matter and substances; Physics = energy, forces and motion.</div></details>
+
+      <div class="q-item"><div class="q-text">List the steps of the scientific process in order.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Observe → Question → Hypothesis → Plan experiment → Collect data → Analyse → Conclude → Communicate.</p><div class="working"><strong>Key:</strong> The process is cyclical — a conclusion often leads to new questions and further investigations.</div></details>
+
+      <div class="q-item"><div class="q-text">What is the difference between a fact and an opinion in science?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A fact is a statement supported by evidence; an opinion is a personal belief that may not be backed by data.</p><div class="working"><strong>Key:</strong> Science relies on facts and evidence. Opinions can change; scientific facts only change when new evidence emerges.</div></details>
+
+      <div class="q-item"><div class="q-text">Which MRS GREN process describes an organism getting rid of waste products?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Excretion.</p><div class="working"><strong>Key:</strong> Excretion removes waste products of chemical reactions (e.g., CO₂ from respiration). It is different from egestion (removing undigested food).</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Apply — What is Science</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">A student says "The plant died because I forgot to water it." Is this an observation or an inference? Explain.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> It is an inference. The student observed the dead plant but inferred the cause (lack of water).</p><div class="working"><strong>Key:</strong> Observations describe what is seen; inferences explain why. Other causes (disease, overwatering) are also possible.</div></details>
+
+      <div class="q-item"><div class="q-text">A fire has been put out, but you see smoke rising. State one observation and one inference.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Observation: Smoke is rising from the site. Inference: Something is still burning or smouldering underneath.</p><div class="working"><strong>Key:</strong> Observations are directly detected; inferences use prior knowledge to explain what is observed.</div></details>
+
+      <div class="q-item"><div class="q-text">A virus replicates inside a host cell. Does a virus carry out all MRS GREN processes? What does this tell us?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> No — viruses lack most MRS GREN processes outside a host. This places them in a grey area between living and non-living.</p><div class="working"><strong>Key:</strong> Viruses reproduce but cannot respire or carry out nutrition independently — they are considered non-living by most definitions.</div></details>
+
+      <div class="q-item"><div class="q-text">Classify each as Biology, Chemistry or Physics: (a) rusting of iron, (b) how birds migrate, (c) how a light bulb glows.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (a) Chemistry — a chemical reaction. (b) Biology — animal behaviour and life processes. (c) Physics — electrical energy converted to light and heat.</p><div class="working"><strong>Key:</strong> Many real-world phenomena overlap branches — rusting also involves physics (electron transfer), showing science is interconnected.</div></details>
+
+      <div class="q-item"><div class="q-text">Rearrange these into the correct scientific process order: Conclude, Observe, Communicate, Hypothesis, Collect data.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Observe → Hypothesis → Collect data → Conclude → Communicate.</p><div class="working"><strong>Key:</strong> The process always starts with an observation that sparks curiosity, and ends with sharing results so others can verify or build upon them.</div></details>
+
+      <div class="q-item"><div class="q-text">Why is it important that scientific results are shared with other scientists?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> So other scientists can check, repeat and verify the results (peer review), building reliable scientific knowledge.</p><div class="working"><strong>Key:</strong> A single result is not enough — repeated verification by independent scientists strengthens confidence in a finding.</div></details>
+
+      <div class="q-item"><div class="q-text">A student watches a caterpillar move and says "It moved 2 cm in 10 seconds." A second student says "It moved because it was scared." Identify which is observation and which is inference.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The first is an observation (measurable, factual). The second is an inference (explains the reason based on an assumption).</p><div class="working"><strong>Key:</strong> Good scientists clearly separate what they see from what they think it means.</div></details>
+
+      <div class="q-item"><div class="q-text">Which MRS GREN process does photosynthesis in plants represent? Justify your answer.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Nutrition — plants make their own food using sunlight, CO₂ and water.</p><div class="working"><strong>Key:</strong> Nutrition = obtaining food/energy. Plants are autotrophs that produce glucose through photosynthesis, meeting their own nutritional needs.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Investigate — What is Science (MYP Criterion B/D)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">Design a simple investigation to test whether plants show the MRS GREN process of sensitivity. Describe what you would do and what you would observe.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Place a seedling near a light source and observe over 3–5 days whether the stem grows towards the light (phototropism), demonstrating sensitivity to a stimulus.</p><div class="working"><strong>Key:</strong> Sensitivity = responding to stimuli. Keep all other variables (water, soil, temperature) constant to ensure a fair test. The response (bending) is the measurable observation.</div></details>
+
+      <div class="q-item"><div class="q-text">Evaluate this claim: "Science can answer every question humans have." Do you agree? Use examples to support your reasoning.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> No. Science can answer empirical questions (e.g., "What causes malaria?") but not value-based or philosophical questions (e.g., "Is it right to clone humans?").</p><div class="working"><strong>Key:</strong> Science is limited to questions that can be tested with evidence. Ethical, aesthetic and philosophical questions fall outside the scope of science.</div></details>
+
+      <div class="q-item"><div class="q-text">A scientist observes that a lake turns green every summer. She infers it is caused by algae. Describe TWO additional investigations she could carry out to test this inference.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (1) Collect water samples and examine under a microscope to confirm algal presence. (2) Measure nutrient levels (nitrogen, phosphorus) in summer vs. winter to identify triggers for algal growth.</p><div class="working"><strong>Key:</strong> Inferences need testing. Multiple independent investigations provide stronger evidence than a single test.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain why the scientific process is described as "cyclical" rather than "linear." Use the steps of the process in your answer.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> After communicating conclusions, scientists often discover new questions or anomalies that return them to the observation and hypothesis stage — creating a cycle of inquiry.</p><div class="working"><strong>Key:</strong> E.g., concluding that plant growth is affected by light may raise a new question: "Does the wavelength of light matter?" — restarting the process.</div></details>
+
+      <div class="q-item"><div class="q-text">Compare the roles of curiosity and scepticism in science. Why are both needed?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Curiosity drives scientists to ask new questions and explore the unknown; scepticism ensures claims are questioned, evidence is demanded, and results are verified.</p><div class="working"><strong>Key:</strong> Without curiosity, science stagnates. Without scepticism, errors and false claims go unchallenged. Both together produce reliable, advancing knowledge.</div></details>
+
+      <div class="q-item"><div class="q-text">A student claims that crystals "grow," so they must be alive. Use MRS GREN to evaluate and refute this claim.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Crystals increase in size (similar to growth) but do not carry out respiration, nutrition, excretion, reproduction, movement or sensitivity independently — they fail 6 of 7 MRS GREN criteria.</p><div class="working"><strong>Key:</strong> Growth alone is not sufficient. All 7 life processes must be present for an organism to be classified as living.</div></details>
+
+      <div class="q-item"><div class="q-text">Design an investigation to show that observation can be unreliable without instruments. What variables would you control and why?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Ask students to estimate the length of the same object first by eye, then with a ruler. Compare results to show how unaided estimation varies between individuals.</p><div class="working"><strong>Key:</strong> Control: same object, same lighting, same time limit. IV = method of measurement; DV = recorded length. This shows why standardised instruments improve accuracy.</div></details>
+
+      <div class="q-item"><div class="q-text">A research team finds that a new antibiotic kills bacteria in a lab dish. Evaluate whether this is sufficient evidence to sell it as a medicine. What further steps are needed and why?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> No — lab results alone are insufficient. Further steps include animal trials, clinical trials with human volunteers, peer review, and regulatory approval to ensure safety and effectiveness.</p><div class="working"><strong>Key:</strong> Lab conditions differ from a living body. Ethics require that potential harm is assessed before use on humans. This reflects both scientific rigour and responsibility.</div></details>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ TOPIC 2 -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Scientific Questions and Hypotheses</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="#">Forming a Testable Question</a>
+        <a href="#">What Makes a Good Hypothesis?</a>
+      </div>
+      <div class="vid-box kurzg">
+        <span class="ch-tag">Kurzgesagt</span>
+        <a href="#">How Scientists Ask Questions</a>
+        <a href="#">Hypothesis vs Theory vs Law</a>
+      </div>
+      <div class="vid-box crash">
+        <span class="ch-tag">CrashCourse</span>
+        <a href="#">Scientific Questions – CrashCourse</a>
+        <a href="#">Writing a Hypothesis</a>
+      </div>
+      <div class="vid-box natgeo">
+        <span class="ch-tag">Nat Geo / Other</span>
+        <a href="#">How Scientists Think – Inquiry Process</a>
+        <a href="#">Asking the Right Questions in Science</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall — Scientific Questions &amp; Hypotheses</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">What is a testable question in science?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A testable question is one that can be answered by collecting evidence through observation or experiment.</p><div class="working"><strong>Key:</strong> Testable questions focus on measurable variables. "Does light affect plant growth?" is testable; "Is nature beautiful?" is not.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a hypothesis?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A hypothesis is a prediction or proposed explanation that can be tested by an experiment.</p><div class="working"><strong>Key:</strong> A hypothesis is not a guess — it is based on prior knowledge or observation and must be testable and falsifiable.</div></details>
+
+      <div class="q-item"><div class="q-text">Write the format used to state a hypothesis.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> "If [independent variable] then [dependent variable] because [scientific reason]."</p><div class="working"><strong>Key:</strong> The "because" clause is crucial — it links the prediction to a scientific explanation, not just a guess.</div></details>
+
+      <div class="q-item"><div class="q-text">What does it mean for a hypothesis to be "falsifiable"?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A hypothesis is falsifiable if it is possible to design an experiment that could prove it wrong.</p><div class="working"><strong>Key:</strong> Falsifiability is a core feature of scientific hypotheses. A hypothesis that cannot be disproven is not scientific.</div></details>
+
+      <div class="q-item"><div class="q-text">Give ONE example of a non-testable question and explain why it cannot be tested.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> "Is the sky the most beautiful colour?" — this is a matter of personal opinion and cannot be measured or tested objectively.</p><div class="working"><strong>Key:</strong> Questions involving feelings, beliefs, or values do not have measurable outcomes and therefore cannot be scientifically tested.</div></details>
+
+      <div class="q-item"><div class="q-text">What is the difference between a hypothesis and a theory in science?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A hypothesis is an untested prediction; a theory is a well-supported explanation backed by extensive evidence from many experiments.</p><div class="working"><strong>Key:</strong> In everyday speech "theory" means a guess, but in science it means a well-tested, reliable explanation (e.g., the Theory of Evolution).</div></details>
+
+      <div class="q-item"><div class="q-text">What is a prediction? How is it different from a hypothesis?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A prediction states what you expect to happen in a specific experiment; a hypothesis is a broader explanation that includes a reason.</p><div class="working"><strong>Key:</strong> Prediction: "The plant in bright light will grow taller." Hypothesis: "If light intensity increases, then growth rate will increase because more light energy drives photosynthesis."</div></details>
+
+      <div class="q-item"><div class="q-text">Name TWO characteristics of a good scientific question.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (1) It must be testable (can be investigated with an experiment). (2) It must be focused on a specific variable that can be measured.</p><div class="working"><strong>Key:</strong> Good questions lead to clear experiments. Vague or value-based questions do not produce useful scientific data.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Apply — Scientific Questions &amp; Hypotheses</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">Write a hypothesis for this question: "Does the amount of fertiliser affect how tall a bean plant grows?"</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> If the amount of fertiliser increases, then the bean plant will grow taller, because fertiliser provides more nutrients needed for cell growth.</p><div class="working"><strong>Key:</strong> The "because" clause uses a scientific reason (nutrients for growth), not just "because fertiliser helps."</div></details>
+
+      <div class="q-item"><div class="q-text">Identify whether each is testable or non-testable: (a) "Does music affect plant growth?" (b) "Is this music nice?" (c) "Does salt affect ice melting?"</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (a) Testable — plant growth can be measured. (b) Non-testable — "nice" is subjective. (c) Testable — melting time can be measured.</p><div class="working"><strong>Key:</strong> Testable questions always include a measurable outcome (height, time, temperature, mass).</div></details>
+
+      <div class="q-item"><div class="q-text">A student writes: "I think plants grow better in sunlight." Rewrite this as a proper hypothesis in If–Then–Because format.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> If plants receive more sunlight, then they will grow taller, because sunlight provides energy for photosynthesis which produces glucose for growth.</p><div class="working"><strong>Key:</strong> A proper hypothesis names the IV (sunlight) and DV (height) and includes a scientific mechanism in the "because" clause.</div></details>
+
+      <div class="q-item"><div class="q-text">Why must a hypothesis come before the experiment, not after?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A hypothesis must be written before the experiment so that results can genuinely test it. Writing it after seeing results is biased and unscientific.</p><div class="working"><strong>Key:</strong> If the hypothesis is written after results are known, it is not a prediction — it is just describing what happened, which is not a fair test of an idea.</div></details>
+
+      <div class="q-item"><div class="q-text">Transform this vague question into a good scientific question: "Does temperature matter for bacteria?"</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> "Does increasing water temperature from 20°C to 40°C affect the growth rate of E. coli bacteria?"</p><div class="working"><strong>Key:</strong> A good scientific question specifies the variable being changed (temperature range), the thing being measured (growth rate), and the organism (E. coli).</div></details>
+
+      <div class="q-item"><div class="q-text">What is wrong with this hypothesis: "If I water the plant, then it will grow, because plants need water"? Improve it.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> It is too vague — "water" and "grow" are not quantified. Improved: "If the amount of water given to a plant increases from 50 ml to 200 ml per day, then its height will increase more rapidly, because water is needed for cell expansion."</p><div class="working"><strong>Key:</strong> Good hypotheses specify the range or amount of change and use measurable terms for the outcome.</div></details>
+
+      <div class="q-item"><div class="q-text">A student predicts: "If I exercise for longer, I will get fitter." Is this a scientific hypothesis? Explain.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> It is partially scientific but incomplete. "Fitter" is not clearly defined or measurable. It needs to specify what will be measured (e.g., resting heart rate, sprint time).</p><div class="working"><strong>Key:</strong> Every term in a hypothesis must be operationally defined — described in a measurable way.</div></details>
+
+      <div class="q-item"><div class="q-text">A hypothesis is tested and the results do not support it. Does this mean the experiment failed? Explain.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> No — a result that does not support a hypothesis is still valuable. It rules out one explanation and points scientists towards a new or revised hypothesis.</p><div class="working"><strong>Key:</strong> In science, a "negative result" (hypothesis not supported) is just as informative as a positive one. Disproving an idea is progress.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Investigate — Scientific Questions &amp; Hypotheses (MYP Criterion B/D)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">You notice that bread goes mouldy faster in summer than winter. Write a full scientific question and a hypothesis for this observation.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Question: "Does temperature affect the time taken for mould to grow on bread?" Hypothesis: "If temperature increases from 10°C to 30°C, then mould will appear sooner, because warmer conditions speed up fungal reproduction."</p><div class="working"><strong>Key:</strong> The question identifies the IV (temperature) and DV (time for mould growth). The hypothesis links them with a biological mechanism.</div></details>
+
+      <div class="q-item"><div class="q-text">Distinguish between a hypothesis and a scientific law. Give an example of each.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A hypothesis is an untested prediction (e.g., "If a heavier ball is dropped, it will fall faster"). A scientific law is a description of a consistent pattern observed in nature (e.g., Newton's Law of Gravity — all objects fall at the same rate in a vacuum).</p><div class="working"><strong>Key:</strong> Laws describe what happens; theories explain why. Neither replaces the other — they serve different roles in science.</div></details>
+
+      <div class="q-item"><div class="q-text">Evaluate the following hypothesis for quality: "If plants are given coloured light, they will grow differently." What improvements would you make?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The hypothesis is too vague. Improved: "If bean plants are grown under red light compared to white light for 14 days, then they will grow taller, because red wavelengths (660 nm) are most efficiently absorbed by chlorophyll for photosynthesis."</p><div class="working"><strong>Key:</strong> Improvements: specify the organism, the colours being compared, the time period, the measurable DV (height), and a specific scientific mechanism.</div></details>
+
+      <div class="q-item"><div class="q-text">A scientist finds results that partially support her hypothesis. Explain what she should do next and why this reflects good scientific practice.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> She should repeat the experiment with more trials, refine the hypothesis to account for unexpected findings, and communicate her results so others can verify them.</p><div class="working"><strong>Key:</strong> Partial support means the relationship is more complex than predicted. Refining the hypothesis and seeking peer verification is the scientific response.</div></details>
+
+      <div class="q-item"><div class="q-text">Why is it scientifically important that a hypothesis can be proven wrong? What term describes this property?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Falsifiability. If a hypothesis cannot be proven wrong, no experiment can genuinely test it, making it scientifically meaningless.</p><div class="working"><strong>Key:</strong> Karl Popper proposed falsifiability as the key criterion of science. A claim like "everything happens for a reason" cannot be tested and is therefore unscientific.</div></details>
+
+      <div class="q-item"><div class="q-text">Create TWO testable scientific questions from the observation: "Some students in the class seem more alert in the morning than others."</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (1) "Does the number of hours of sleep affect reaction time measured at 8 am?" (2) "Does eating breakfast affect a student's score on a 10-question recall quiz taken at 9 am?"</p><div class="working"><strong>Key:</strong> Each question has a clear IV (sleep hours; breakfast), a measurable DV (reaction time; quiz score), and is specific enough to design an experiment around.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain why it is important to include a "because" clause in a hypothesis, using an example to illustrate.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The "because" clause shows that the hypothesis is based on scientific understanding, not just a guess. E.g., "…because chlorophyll absorbs red light for photosynthesis" connects the prediction to a biological mechanism that can also be investigated.</p><div class="working"><strong>Key:</strong> A hypothesis with a "because" clause can be tested at two levels: does the predicted outcome occur, and is the proposed mechanism correct?</div></details>
+
+      <div class="q-item"><div class="q-text">Describe how confirmation bias could affect the way a scientist interprets results. How can the scientific process reduce this bias?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Confirmation bias is the tendency to favour results that support your hypothesis and ignore those that don't. It can be reduced by blind trials, peer review, and having independent scientists repeat the experiment.</p><div class="working"><strong>Key:</strong> The scientific process is designed to overcome human biases — replication, peer review and pre-registered hypotheses all reduce the influence of confirmation bias.</div></details>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ TOPIC 3 -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Variables and Fair Tests</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="#">Independent and Dependent Variables</a>
+        <a href="#">Controlled Variables in Experiments</a>
+      </div>
+      <div class="vid-box kurzg">
+        <span class="ch-tag">Kurzgesagt</span>
+        <a href="#">What Makes an Experiment Fair?</a>
+        <a href="#">Variables in Scientific Investigations</a>
+      </div>
+      <div class="vid-box crash">
+        <span class="ch-tag">CrashCourse</span>
+        <a href="#">Controlled Experiments – CrashCourse</a>
+        <a href="#">Variables and Fair Testing</a>
+      </div>
+      <div class="vid-box natgeo">
+        <span class="ch-tag">Nat Geo / Other</span>
+        <a href="#">Fair Test Science – Primary/Middle School</a>
+        <a href="#">Control Groups in Science Explained</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall — Variables &amp; Fair Tests</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">What is an independent variable (IV)?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The independent variable is the one variable the scientist deliberately changes in an experiment.</p><div class="working"><strong>Key:</strong> There should be only ONE independent variable per experiment. Changing multiple variables makes it impossible to identify the cause of any change.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a dependent variable (DV)?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The dependent variable is what is measured or observed — it changes in response to the independent variable.</p><div class="working"><strong>Key:</strong> The DV "depends on" the IV. If you change fertiliser amount (IV), you measure plant height (DV).</div></details>
+
+      <div class="q-item"><div class="q-text">What is a controlled variable (CV)?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Controlled variables are all factors kept the same throughout the experiment so they do not affect the results.</p><div class="working"><strong>Key:</strong> Keeping CVs constant ensures that only the IV is responsible for any change in the DV — this is what makes a test "fair."</div></details>
+
+      <div class="q-item"><div class="q-text">What is a control experiment?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A control experiment is a setup where the independent variable is absent or at zero — it provides a baseline to compare experimental results against.</p><div class="working"><strong>Key:</strong> E.g., in a fertiliser experiment, the control plant receives no fertiliser. Without a control, you cannot know if the results are caused by the IV.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a fair test?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A fair test is an experiment where only the independent variable is changed while all other variables are kept constant.</p><div class="working"><strong>Key:</strong> A fair test allows the scientist to conclude that changes in the DV are caused by the IV, not by any other factor.</div></details>
+
+      <div class="q-item"><div class="q-text">In an experiment testing how light intensity affects photosynthesis rate, identify the IV and DV.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> IV = light intensity; DV = rate of photosynthesis (measured by, e.g., oxygen bubbles per minute).</p><div class="working"><strong>Key:</strong> The IV is always what you change; the DV is always what you measure in response.</div></details>
+
+      <div class="q-item"><div class="q-text">Name TWO controlled variables in an experiment testing the effect of sugar concentration on yeast activity.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Temperature of the water and amount of yeast used.</p><div class="working"><strong>Key:</strong> Both temperature and yeast quantity affect fermentation rate. Keeping them constant ensures only sugar concentration is responsible for any change.</div></details>
+
+      <div class="q-item"><div class="q-text">What does the abbreviation IV, DV, CV stand for?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> IV = Independent Variable; DV = Dependent Variable; CV = Controlled Variable.</p><div class="working"><strong>Key:</strong> A useful memory aid: "I change the IV, I Measure the DV, I keep the CV Constant."</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Apply — Variables &amp; Fair Tests</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">An experiment tests how the height of a ramp affects the distance a toy car travels. Identify the IV, DV, and two CVs.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> IV = height of ramp; DV = distance travelled by the car; CVs = same car, same surface, same release position.</p><div class="working"><strong>Key:</strong> CVs are anything else that could affect how far the car travels. Changing the car model or surface material would make the test unfair.</div></details>
+
+      <div class="q-item"><div class="q-text">A student tests whether caffeine affects heart rate by giving one group cola and another group water, then measuring pulse. What is the control group here?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The group given water is the control group — they do not receive caffeine, providing a baseline heart rate for comparison.</p><div class="working"><strong>Key:</strong> The control group receives no treatment (or a neutral one). It shows what happens without the IV, making it possible to measure the IV's effect.</div></details>
+
+      <div class="q-item"><div class="q-text">Why is it important to change only ONE variable at a time in an experiment?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> If more than one variable is changed at once, it is impossible to know which variable caused the observed change in the dependent variable.</p><div class="working"><strong>Key:</strong> E.g., if you change both fertiliser type and watering frequency, you cannot tell which factor made the plant grow taller.</div></details>
+
+      <div class="q-item"><div class="q-text">A student tests whether brand of parachute material affects drop time, but uses different parachute sizes each time. Identify the mistake and explain its effect on results.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The mistake is changing parachute size (a CV) alongside the material (IV). This makes the test unfair because the size, not just the material, also affects drop time.</p><div class="working"><strong>Key:</strong> The results cannot reliably tell us whether differences in drop time are due to material or size — both variables were changed simultaneously.</div></details>
+
+      <div class="q-item"><div class="q-text">Describe the difference between a control experiment and a controlled variable. Students often confuse these terms.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A controlled variable is a factor kept the same throughout; a control experiment is an entire additional setup with no treatment applied, used as a baseline for comparison.</p><div class="working"><strong>Key:</strong> Think: controlled variables = "kept the same in all groups." Control experiment = "an extra group where nothing is changed."</div></details>
+
+      <div class="q-item"><div class="q-text">In a clinical drug trial, one group receives the drug and another receives a sugar pill. What is the sugar pill called and why is it used?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The sugar pill is called a placebo. It is used to control for the placebo effect — the tendency of patients to feel better simply because they believe they are being treated.</p><div class="working"><strong>Key:</strong> Without a placebo control, the observed improvement could be due to the patient's belief rather than the drug itself.</div></details>
+
+      <div class="q-item"><div class="q-text">An experiment tests how soil type affects the growth of tomato plants. List THREE controlled variables you would need to keep constant.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Amount of water, amount of light, temperature (also: pot size, same tomato variety, same amount of initial fertiliser).</p><div class="working"><strong>Key:</strong> Any factor that could affect plant growth — other than soil type — must be controlled. The list of CVs should be comprehensive and justified.</div></details>
+
+      <div class="q-item"><div class="q-text">Why should scientists repeat their experiments multiple times rather than testing each condition only once?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Repeating experiments reduces the effect of random errors and anomalies, making results more reliable and allowing an average to be calculated.</p><div class="working"><strong>Key:</strong> A single result could be a fluke. Repeated trials ensure that the pattern observed is consistent and not due to chance variation.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Investigate — Variables &amp; Fair Tests (MYP Criterion B/D)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">Design a fair test to investigate whether the type of liquid (water, juice, energy drink) affects seed germination rate. Include IV, DV, CVs, and a control.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> IV = type of liquid; DV = percentage of seeds germinated after 7 days; CVs = same seed type, same number per tray, same volume of liquid, same temperature, same light; Control = seeds watered with plain water.</p><div class="working"><strong>Key:</strong> The control (plain water) acts as the baseline. The CVs ensure the only difference between groups is the liquid type — making the test fair.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain how an uncontrolled variable could lead to an incorrect conclusion in science. Use a specific example.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> If a student tests two fertilisers but accidentally gives one group more sunlight, any observed difference in plant growth could be due to sunlight, not fertiliser — leading to a false conclusion about fertiliser effectiveness.</p><div class="working"><strong>Key:</strong> Uncontrolled variables introduce confounding factors — alternative explanations for results that make it impossible to attribute the change to the IV.</div></details>
+
+      <div class="q-item"><div class="q-text">A student claims: "My experiment was a fair test because I measured carefully." Evaluate this claim. What does a fair test actually require?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The claim is incorrect. Careful measurement improves accuracy but does not make a test fair. A fair test requires that only the IV is changed and all other variables are kept constant.</p><div class="working"><strong>Key:</strong> Accuracy (precision in measurement) and fairness (controlled variables) are separate concepts. Both are needed for reliable results.</div></details>
+
+      <div class="q-item"><div class="q-text">Design an experiment to test whether noise level affects memory recall. Clearly state how you would ensure it is a fair test.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> IV = noise level (silent / 50 dB / 80 dB); DV = number of words recalled from a 20-word list; CVs = same word list, same time to memorise (2 min), same recall time (5 min), same age group, same time of day; Control = silent condition.</p><div class="working"><strong>Key:</strong> Controlling time of day and age group removes confounding variables. Using a standardised word list removes variation in difficulty.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a double-blind trial? Why is it considered more reliable than a single-blind trial?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> In a double-blind trial, neither the participants nor the researchers know who received the real treatment. This prevents both participant expectation and researcher bias from influencing the results.</p><div class="working"><strong>Key:</strong> Researcher bias can subtly affect how data is recorded. Double-blind design eliminates this, making drug trials more scientifically valid.</div></details>
+
+      <div class="q-item"><div class="q-text">Identify and explain TWO sources of error that could make an experiment unfair, other than changing too many variables.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (1) Measurement error: using an uncalibrated instrument gives inaccurate readings. (2) Human error: reading a scale at an angle (parallax error) gives inconsistent values.</p><div class="working"><strong>Key:</strong> Random errors vary unpredictably; systematic errors consistently skew results in one direction. Both need to be identified and minimised for a reliable investigation.</div></details>
+
+      <div class="q-item"><div class="q-text">A pharmaceutical company tests its own drug and reports 95% success. Identify TWO reasons why independent scientists should repeat this experiment before the drug is approved.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (1) Conflict of interest — the company profits from approval, so may (consciously or unconsciously) select favourable data. (2) Independent replication verifies reliability and ensures the results hold under different conditions.</p><div class="working"><strong>Key:</strong> Peer-reviewed, independent replication is the scientific community's safeguard against biased or fraudulent research.</div></details>
+
+      <div class="q-item"><div class="q-text">A student measures the growth of 3 plants over 4 weeks and records each plant's height daily. Explain why using 3 plants rather than 1 plant improves the reliability of the investigation.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Using 3 plants allows an average to be calculated, reducing the impact of anomalies (e.g., one plant is accidentally damaged). It makes the pattern observed more representative.</p><div class="working"><strong>Key:</strong> More replicates → more reliable data. Anomalous results from one plant are less likely to skew the overall conclusion when three results are averaged.</div></details>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ TOPIC 4 -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Collecting and Recording Data</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="#">Qualitative vs Quantitative Data</a>
+        <a href="#">Setting Up Data Tables</a>
+      </div>
+      <div class="vid-box kurzg">
+        <span class="ch-tag">Kurzgesagt</span>
+        <a href="#">How Scientists Collect Data</a>
+        <a href="#">Measurement and Units in Science</a>
+      </div>
+      <div class="vid-box crash">
+        <span class="ch-tag">CrashCourse</span>
+        <a href="#">Data Collection in Science – CrashCourse</a>
+        <a href="#">Accuracy and Precision</a>
+      </div>
+      <div class="vid-box natgeo">
+        <span class="ch-tag">Nat Geo / Other</span>
+        <a href="#">Scientists in the Field – Data Collection</a>
+        <a href="#">Field Research: Recording Observations</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall — Collecting &amp; Recording Data</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">What is the difference between qualitative and quantitative data?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Qualitative data describes qualities using words (e.g., colour, texture, smell); quantitative data uses numbers and units (e.g., 45°C, 12 cm).</p><div class="working"><strong>Key:</strong> Quantitative data is preferable in science because it can be measured, compared and analysed mathematically.</div></details>
+
+      <div class="q-item"><div class="q-text">Why must units always be included when recording quantitative data?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Without units, a number is meaningless — "12" could be 12 cm, 12 kg or 12 seconds.</p><div class="working"><strong>Key:</strong> Units tell us what is being measured and allow data to be compared and communicated clearly between scientists worldwide.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a data table and why is it used?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A data table organises collected data in rows and columns, making it easy to read, compare and use for graphing.</p><div class="working"><strong>Key:</strong> A well-structured table has column headings with units in brackets, the IV in the first column, and repeated trials in subsequent columns.</div></details>
+
+      <div class="q-item"><div class="q-text">What are repeated trials and why are they important?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Repeated trials mean performing the same experiment several times. They increase reliability by revealing anomalies and allowing an average to be calculated.</p><div class="working"><strong>Key:</strong> A minimum of 3 trials per condition is recommended. Averages smooth out random variations in the data.</div></details>
+
+      <div class="q-item"><div class="q-text">How do you calculate the mean (average) of a set of data?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Add all the values together and divide by the number of values.</p><div class="working"><strong>Key:</strong> Mean = (sum of all values) ÷ (number of values). E.g., (4 + 6 + 8) ÷ 3 = 6. Anomalous values should be excluded before calculating the mean.</div></details>
+
+      <div class="q-item"><div class="q-text">What is an anomalous result?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> An anomalous result is a data point that does not fit the overall pattern and is likely caused by an error in measurement or procedure.</p><div class="working"><strong>Key:</strong> Anomalous results should be circled on a graph or table and excluded from the calculation of averages. The cause should be investigated.</div></details>
+
+      <div class="q-item"><div class="q-text">What is the difference between accuracy and precision in measurement?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Accuracy is how close a measurement is to the true value; precision is how consistent repeated measurements are with each other.</p><div class="working"><strong>Key:</strong> You can be precise but inaccurate (consistently measuring 5 cm when the true value is 7 cm). Ideal measurements are both accurate and precise.</div></details>
+
+      <div class="q-item"><div class="q-text">Give ONE example of qualitative data and ONE example of quantitative data from a plant growth experiment.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Qualitative: "The leaves turned yellow." Quantitative: "The plant grew 8.5 cm in 7 days."</p><div class="working"><strong>Key:</strong> Both types of data can be collected in the same experiment. Quantitative data provides more precise and comparable information.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Apply — Collecting &amp; Recording Data</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">A student records the following heights of bean plants (cm) after 10 days: 6, 7, 5, 7, 14, 6. Identify the anomalous result and calculate the mean without it.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The anomalous result is 14 cm. Mean of remaining values: (6 + 7 + 5 + 7 + 6) ÷ 5 = 31 ÷ 5 = 6.2 cm.</p><div class="working"><strong>Key:</strong> 14 cm is far outside the cluster of 5–7 cm values. Excluding it gives a more reliable average that represents the typical plant height.</div></details>
+
+      <div class="q-item"><div class="q-text">Design a data table for an experiment testing how temperature (10, 20, 30, 40°C) affects the time taken for sugar to dissolve. Include 3 trials and an average column.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Columns: Temperature (°C) | Trial 1 (s) | Trial 2 (s) | Trial 3 (s) | Mean (s). Rows for each temperature: 10, 20, 30, 40°C.</p><div class="working"><strong>Key:</strong> IV (temperature) goes in the first column; DV (time) with units in brackets in each data column; a mean column at the end for analysis.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain why a scientist would use a digital thermometer rather than a liquid-in-glass thermometer for precise temperature measurements.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A digital thermometer gives more precise readings (e.g., to 0.1°C), eliminates parallax error, and records faster and more consistently than a glass thermometer.</p><div class="working"><strong>Key:</strong> The choice of instrument affects precision and accuracy. More sensitive instruments reduce human error in reading values.</div></details>
+
+      <div class="q-item"><div class="q-text">A student records "the water was hot" in their results. Suggest how this could be improved for a scientific report.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Replace with a quantitative measurement: "The water temperature was 78°C" — recorded with appropriate units and a calibrated thermometer.</p><div class="working"><strong>Key:</strong> Qualitative descriptions like "hot" are subjective. Quantitative data provides an objective, reproducible record.</div></details>
+
+      <div class="q-item"><div class="q-text">Why should you record raw data immediately rather than calculating averages in your head and recording only those?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Raw data preserves all original readings, allowing anomalous values to be identified. Mental averages are error-prone and cannot be checked or reviewed by others.</p><div class="working"><strong>Key:</strong> Raw data is the foundation of scientific integrity. It allows you — and others — to verify, reanalyse or spot mistakes later.</div></details>
+
+      <div class="q-item"><div class="q-text">In an experiment, Trial 1 gives 25 s, Trial 2 gives 26 s, Trial 3 gives 24 s. Calculate the mean and comment on the reliability of these results.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Mean = (25 + 26 + 24) ÷ 3 = 25 s. The results are reliable — the three trials are very close, indicating low random error.</p><div class="working"><strong>Key:</strong> Small variation between trials (25–26 s range) suggests consistent measurement technique and controlled conditions.</div></details>
+
+      <div class="q-item"><div class="q-text">Classify each piece of data as qualitative or quantitative: (a) 37.2°C, (b) bluish-green colour, (c) 450 ml, (d) rough texture.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (a) Quantitative, (b) Qualitative, (c) Quantitative, (d) Qualitative.</p><div class="working"><strong>Key:</strong> Quantitative data = numbers with units; qualitative data = descriptions without numbers. Both are valid but quantitative is more useful for analysis.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a systematic error? Give one example and explain how it differs from a random error.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A systematic error consistently shifts all measurements in the same direction (e.g., a balance always reading 2 g too heavy due to a calibration error). Random errors vary unpredictably between readings.</p><div class="working"><strong>Key:</strong> Systematic errors can be corrected by calibrating instruments. Random errors are reduced by taking more repeated measurements and averaging.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Investigate — Collecting &amp; Recording Data (MYP Criterion B/D)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">A student collects the following spring lengths (cm) at different weights: 0g→5cm, 100g→8cm, 200g→11cm, 300g→14cm, 400g→21cm. Identify the anomalous result. Calculate the correct mean change per 100g (excluding it) and comment on the pattern.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> 400g→21cm is anomalous (expected ~17 cm). Change per 100g for 0–300g: (14–5)÷3 = 3 cm per 100g. The data shows a linear (proportional) relationship between weight and spring extension.</p><div class="working"><strong>Key:</strong> This illustrates Hooke's Law. The anomaly at 400g may indicate the spring stretched beyond its elastic limit. Excluding it reveals the true linear pattern.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain why a data table alone is not enough to draw conclusions from an experiment. What else is needed?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A data table shows raw numbers but doesn't reveal patterns, trends or relationships clearly. A graph (especially a line graph or bar chart) is also needed to visualise and interpret the data.</p><div class="working"><strong>Key:</strong> Conclusions require: (1) a clear pattern from the graph, (2) comparison to the hypothesis, (3) scientific explanation of the pattern, and (4) evaluation of reliability.</div></details>
+
+      <div class="q-item"><div class="q-text">Design a data collection plan for an investigation into whether phone screen time affects sleep duration in Grade 6 students. What data will you collect, how, and how will you ensure it is reliable?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Collect: daily screen time (hours) and sleep duration (hours) from 20 students over 2 weeks using self-report logs and phone screen-time data. Reliability: large sample size, multiple days, standardise the time period measured, cross-check phone records with student logs.</p><div class="working"><strong>Key:</strong> Reliability improves with more data points and participants. Self-reported data has validity concerns — using phone data as a cross-check reduces this bias.</div></details>
+
+      <div class="q-item"><div class="q-text">A student records all results as whole numbers even though the scale shows decimal places. Explain how this affects data quality and what the correct approach is.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Rounding to whole numbers reduces precision — fine details are lost. The student should record to the same number of decimal places as the instrument allows (e.g., 12.4 g, not 12 g).</p><div class="working"><strong>Key:</strong> The number of decimal places recorded should match the precision of the measuring instrument. Losing precision can mask important trends in data.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain the difference between the mean, median and mode. In what situation would the median be more useful than the mean?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Mean = average of all values; Median = middle value when ordered; Mode = most frequent value. The median is more useful when anomalous values are present — extreme values skew the mean but do not affect the median.</p><div class="working"><strong>Key:</strong> E.g., house prices use median because a few very expensive properties would make the mean unrepresentative of typical prices.</div></details>
+
+      <div class="q-item"><div class="q-text">Propose how a scientist studying penguin behaviour in Antarctica could collect both qualitative and quantitative data in the field. Give TWO examples of each.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Qualitative: (1) describing social interactions ("penguins huddled in groups"), (2) noting feather condition. Quantitative: (1) measuring temperature (°C), (2) counting number of chicks per colony.</p><div class="working"><strong>Key:</strong> Field scientists combine both data types. Qualitative data often contextualises quantitative findings — numbers alone may not capture the full picture.</div></details>
+
+      <div class="q-item"><div class="q-text">A student uses the same ruler for all measurements but the zero-mark is worn and starts at 0.3 cm. What type of error does this create? How would you detect and correct it?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> This creates a systematic error — all measurements will be 0.3 cm less than the true value. Detect by calibrating against a known standard; correct by adding 0.3 cm to all recorded values.</p><div class="working"><strong>Key:</strong> Systematic errors are consistent and directional — they can be corrected mathematically once identified. Random errors cannot be corrected in the same way.</div></details>
+
+      <div class="q-item"><div class="q-text">Compare primary data (collected by the scientist themselves) with secondary data (from published sources). Give ONE advantage and ONE disadvantage of each.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Primary: advantage = collected for your specific purpose; disadvantage = time-consuming and limited in scale. Secondary: advantage = large datasets from peer-reviewed sources; disadvantage = may not match your exact conditions and could be outdated.</p><div class="working"><strong>Key:</strong> Both primary and secondary data are used in science. Critically evaluating the source, date and methodology of secondary data is essential.</div></details>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ TOPIC 5 -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Analysing and Concluding</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="#">Reading and Interpreting Graphs</a>
+        <a href="#">Line of Best Fit – Khan Academy</a>
+      </div>
+      <div class="vid-box kurzg">
+        <span class="ch-tag">Kurzgesagt</span>
+        <a href="#">How Scientists Analyse Data</a>
+        <a href="#">Correlation vs Causation</a>
+      </div>
+      <div class="vid-box crash">
+        <span class="ch-tag">CrashCourse</span>
+        <a href="#">Graphing and Analysis – CrashCourse</a>
+        <a href="#">Drawing Conclusions in Science</a>
+      </div>
+      <div class="vid-box natgeo">
+        <span class="ch-tag">Nat Geo / Other</span>
+        <a href="#">Science Fair: Analysing Your Data</a>
+        <a href="#">Best Fit Line Explained Simply</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall — Analysing &amp; Concluding</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">Which variable goes on the x-axis of a graph?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The independent variable (IV) goes on the x-axis (horizontal).</p><div class="working"><strong>Key:</strong> Remember: "I change the IV" and it goes on the x-axis. The DV "depends" on the IV and goes on the y-axis.</div></details>
+
+      <div class="q-item"><div class="q-text">Which variable goes on the y-axis of a graph?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The dependent variable (DV) goes on the y-axis (vertical).</p><div class="working"><strong>Key:</strong> A quick check: the DV is what you measure — it goes up the y-axis. Always include the variable name and units in brackets on each axis.</div></details>
+
+      <div class="q-item"><div class="q-text">What is a line of best fit?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A line of best fit is a straight line (or smooth curve) drawn through a scatter of data points to show the overall trend, with roughly equal numbers of points above and below the line.</p><div class="working"><strong>Key:</strong> The line of best fit should not connect every point — it averages the trend. It should pass through the origin only if the data supports it.</div></details>
+
+      <div class="q-item"><div class="q-text">What does a positive correlation between two variables mean?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A positive correlation means that as the independent variable increases, the dependent variable also increases.</p><div class="working"><strong>Key:</strong> Positive correlation = both variables go up together. The opposite (one up, one down) is a negative correlation.</div></details>
+
+      <div class="q-item"><div class="q-text">What is the difference between a bar chart and a line graph? When would you use each?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A bar chart is used when the IV is categorical (e.g., type of fertiliser); a line graph is used when the IV is continuous (e.g., temperature, time).</p><div class="working"><strong>Key:</strong> Continuous data can take any value in a range → line graph. Discrete or categorical data → bar chart. Never draw a line graph for categorical data.</div></details>
+
+      <div class="q-item"><div class="q-text">What should a scientific conclusion always refer to?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A conclusion should refer back to the original hypothesis, state whether the data supports or refutes it, and explain the trend using scientific knowledge.</p><div class="working"><strong>Key:</strong> Structure: "My results show… This supports/does not support my hypothesis because… This is because (scientific explanation)…"</div></details>
+
+      <div class="q-item"><div class="q-text">What is the difference between correlation and causation?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Correlation means two variables change together; causation means one variable directly causes the change in the other.</p><div class="working"><strong>Key:</strong> Ice cream sales and drowning rates both rise in summer — they are correlated, but ice cream doesn't cause drowning. A third variable (hot weather) causes both.</div></details>
+
+      <div class="q-item"><div class="q-text">What feature must every graph have to be complete?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A title, labelled axes with units, an appropriate scale, plotted data points, and a line/curve of best fit (where appropriate).</p><div class="working"><strong>Key:</strong> Checklist: Title ✓ | x-axis label + units ✓ | y-axis label + units ✓ | even scale ✓ | all points plotted ✓ | line of best fit ✓</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Apply — Analysing &amp; Concluding</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">An experiment shows that as light intensity increases, oxygen production by a plant increases. Describe the trend and state what type of correlation this is.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> As light intensity increases, oxygen production increases — this is a positive correlation. The line of best fit on a graph would slope upward from left to right.</p><div class="working"><strong>Key:</strong> More light → more photosynthesis → more oxygen. This is both a correlation and likely a causal relationship (light directly drives photosynthesis).</div></details>
+
+      <div class="q-item"><div class="q-text">A student draws a bar chart for data showing how temperature (10, 20, 30, 40°C) affects reaction rate. Is this the best choice of graph? Explain.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> No — temperature is a continuous variable, so a line graph is more appropriate. A line graph shows the trend between values (e.g., what happens at 25°C) whereas a bar chart cannot.</p><div class="working"><strong>Key:</strong> Continuous IV → line graph. A bar chart loses the trend between data points and cannot show a line of best fit.</div></details>
+
+      <div class="q-item"><div class="q-text">Write a conclusion for this result: "Plants kept at 20°C grew an average of 12 cm; plants at 30°C grew 18 cm; plants at 40°C grew 8 cm." The hypothesis was: "Higher temperature increases plant growth."</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The data partially supports the hypothesis — growth increased from 20°C to 30°C, but decreased at 40°C. The hypothesis was too simple; there is an optimal temperature (30°C) for growth, beyond which heat may denature enzymes.</p><div class="working"><strong>Key:</strong> Conclusions must address the full pattern — not just whether the hypothesis was confirmed or refuted. Partial support is common and scientifically valid.</div></details>
+
+      <div class="q-item"><div class="q-text">Describe the trend shown by this data: Mass of NaOH dissolved (g): 5, 10, 15, 20 — Time to dissolve (s): 40, 32, 24, 16.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> As the mass of NaOH increases, the time to dissolve decreases — a negative correlation. The decrease is linear (by 8 s for every 5 g added).</p><div class="working"><strong>Key:</strong> Describe: (1) direction of change, (2) type of correlation, (3) whether the relationship is linear or curved, and (4) size of change if possible.</div></details>
+
+      <div class="q-item"><div class="q-text">A student's conclusion states: "My results proved my hypothesis." Explain why a scientist would say "support" rather than "prove."</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> In science, a single experiment cannot "prove" something — results can only support or fail to support a hypothesis. New evidence from different experiments could later disprove even a well-supported idea.</p><div class="working"><strong>Key:</strong> Science deals in probability and evidence, not absolute proof. The language of science uses "supports," "suggests," or "is consistent with."</div></details>
+
+      <div class="q-item"><div class="q-text">Explain how to draw a line of best fit on a scatter graph. What are TWO common mistakes students make?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Use a ruler to draw a single straight line with roughly equal numbers of points above and below it. Mistakes: (1) connecting every point like a dot-to-dot, (2) forcing the line through the origin when the data doesn't support it.</p><div class="working"><strong>Key:</strong> A best-fit line represents the overall trend, not each individual point. It smooths out random variation in the data.</div></details>
+
+      <div class="q-item"><div class="q-text">A graph shows ice cream sales and crime rates both increase in summer. Does this prove that eating ice cream causes crime? Explain using the concept of correlation vs causation.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> No — this shows correlation, not causation. Both ice cream sales and crime rates are driven by a third variable (hot weather brings people outside), not by each other.</p><div class="working"><strong>Key:</strong> Correlation ≠ causation. A confounding variable (hot weather) explains both trends. Scientists must design controlled experiments to establish causal relationships.</div></details>
+
+      <div class="q-item"><div class="q-text">What is an extrapolation and what risk is associated with it?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Extrapolation means extending a line of best fit beyond the range of data to predict values outside the experiment. The risk is that the trend may not continue (e.g., a plant may not grow indefinitely as light increases).</p><div class="working"><strong>Key:</strong> Extrapolated values are unreliable — they assume the pattern continues, which may not be true. Interpolation (reading within the data range) is more reliable.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Investigate — Analysing &amp; Concluding (MYP Criterion B/D)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">A student's graph shows these points for enzyme activity vs. temperature: 10°C=5, 20°C=12, 30°C=20, 37°C=25, 50°C=8, 60°C=1 (units/min). Describe the full trend and explain the pattern scientifically.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Activity increases from 10°C to 37°C (optimum), then drops sharply at 50–60°C. Above the optimum, heat causes enzymes to denature — the active site changes shape, so the substrate can no longer bind.</p><div class="working"><strong>Key:</strong> Full trend description: rise to optimum, then rapid fall. Scientific explanation links shape of active site and denaturation to the data pattern.</div></details>
+
+      <div class="q-item"><div class="q-text">Evaluate this conclusion: "My results showed the plant grew more with more light, proving that light is the only factor affecting plant growth." Identify TWO flaws.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Flaw 1: "Proving" is too strong — one experiment only supports, not proves. Flaw 2: "Only factor" is incorrect — water, nutrients, CO₂ and temperature also affect growth; this experiment only tested light.</p><div class="working"><strong>Key:</strong> Conclusions must be limited to what the data shows. Overgeneralising beyond the scope of the experiment is a common scientific error.</div></details>
+
+      <div class="q-item"><div class="q-text">A scientist collects data on hours of sunlight and crop yield across 50 farms. The graph shows a positive correlation (r = 0.87). Can she conclude that more sunlight causes higher yield? What additional evidence is needed?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Not yet. The high correlation (r = 0.87) is suggestive but not causal. Additional evidence needed: controlled greenhouse experiments where all other variables (water, nutrients, soil) are kept constant while only sunlight varies.</p><div class="working"><strong>Key:</strong> Observational/correlational data cannot establish causation. Only a controlled experiment — where the IV is the only variable changed — can demonstrate a causal relationship.</div></details>
+
+      <div class="q-item"><div class="q-text">Design the ideal graph for an experiment where IV = concentration of acid (0.5 to 3 mol/L) and DV = rate of reaction (cm³/s). Describe all features it must include.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Line graph. Title: "Effect of acid concentration on rate of reaction." x-axis: "Concentration of acid (mol/L)" with even scale 0–3.5; y-axis: "Rate of reaction (cm³/s)." Plotted data points (×), a smooth curve of best fit, anomalous points circled if present.</p><div class="working"><strong>Key:</strong> Concentration is continuous → line graph. Scale must include the origin (0,0). If the curve levels off (plateau), it must be drawn accordingly — not forced to be straight.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain the difference between interpolation and extrapolation. In which scenario would each be used and which is more reliable?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Interpolation reads values within the range of collected data (reliable). Extrapolation predicts values beyond the data range (less reliable — assumes the trend continues unchanged).</p><div class="working"><strong>Key:</strong> E.g., if data was collected at 20–60°C, reading from the graph at 40°C = interpolation (reliable); predicting at 80°C = extrapolation (unreliable without further evidence).</div></details>
+
+      <div class="q-item"><div class="q-text">A student's results support the hypothesis but two data points are outliers. Should she (a) ignore them, (b) delete them, or (c) report and investigate them? Justify your answer.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Option (c) — report and investigate. Outliers should be noted in the results (circled, excluded from mean) and the possible cause investigated. Deleting or ignoring them without explanation is scientifically dishonest.</p><div class="working"><strong>Key:</strong> Outliers sometimes reveal genuine phenomena (a new discovery) or errors in procedure. Both possibilities must be explored rather than concealed.</div></details>
+
+      <div class="q-item"><div class="q-text">Compare the information provided by a line graph versus a scatter graph. When would a scatter graph be preferred over a line graph?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A line graph shows a trend over time or continuous change; a scatter graph shows the relationship/correlation between two variables using individual data points. A scatter graph is preferred when you have many data points from different subjects (e.g., comparing the height and arm span of 30 students).</p><div class="working"><strong>Key:</strong> In a scatter graph, the line of best fit (not connecting points) reveals the correlation strength and direction — key for analysing biological variation data.</div></details>
+
+      <div class="q-item"><div class="q-text">Write a full MYP-standard conclusion for an experiment that found: as salt concentration in soil increases, plant height decreases, with plants dying at concentrations above 3%. Hypothesis was: "Higher salt concentration will reduce plant growth."</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The results support the hypothesis. As salt concentration increased from 0% to 3%, plant height decreased (from 18 cm to 3 cm), and plants died above 3%. This is because high salt concentrations cause osmotic stress — water leaves plant cells by osmosis, causing wilting and cell death. The pattern was consistent across three trials, increasing confidence in the conclusion.</p><div class="working"><strong>Key:</strong> MYP conclusion structure: state if hypothesis is supported → describe the specific trend with data values → give a scientific explanation → comment on reliability.</div></details>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ TOPIC 6 -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Science in Society</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="#">Science and Society – Ethics in Research</a>
+        <a href="#">Technology and Scientific Progress</a>
+      </div>
+      <div class="vid-box kurzg">
+        <span class="ch-tag">Kurzgesagt</span>
+        <a href="#">Science vs Pseudoscience</a>
+        <a href="#">How Science Changed the World</a>
+      </div>
+      <div class="vid-box crash">
+        <span class="ch-tag">CrashCourse</span>
+        <a href="#">Science, Society and Ethics – CrashCourse</a>
+        <a href="#">Indian Scientists Who Changed Science</a>
+      </div>
+      <div class="vid-box natgeo">
+        <span class="ch-tag">Nat Geo / Other</span>
+        <a href="#">Citizen Science Projects Around the World</a>
+        <a href="#">CV Raman – Nobel Prize Documentary</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recall — Science in Society</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">Who was Aryabhatta and what is he famous for?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Aryabhatta was a 5th-century Indian mathematician and astronomer famous for calculating the value of pi (π), proposing that the Earth rotates on its axis, and early work on the concept of zero.</p><div class="working"><strong>Key:</strong> Aryabhatta's work preceded many European discoveries by centuries. His astronomical model was heliocentric in approach — the Earth moves, not the Sun.</div></details>
+
+      <div class="q-item"><div class="q-text">What did C.V. Raman discover? Why was it significant?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> C.V. Raman discovered the Raman Effect (1928) — that light changes wavelength when scattered by molecules. It earned him the Nobel Prize in Physics in 1930 and is used today in medical diagnostics and material analysis.</p><div class="working"><strong>Key:</strong> Raman was the first Asian to win the Nobel Prize in Physics. The Raman Effect is now a fundamental tool in spectroscopy.</div></details>
+
+      <div class="q-item"><div class="q-text">What is APJ Abdul Kalam known for in science and technology?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> APJ Abdul Kalam was an aerospace scientist known as the "Missile Man of India" for his role in developing India's ballistic missiles (Agni, Prithvi) and satellite launch vehicles (SLV-3).</p><div class="working"><strong>Key:</strong> Kalam also served as the 11th President of India (2002–2007). He is celebrated as an inspiration for students in science and technology.</div></details>
+
+      <div class="q-item"><div class="q-text">What is scientific ethics?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Scientific ethics refers to the moral principles that guide how scientists conduct research, report data, treat subjects, and use knowledge responsibly.</p><div class="working"><strong>Key:</strong> Key ethical principles include: honesty in reporting data, informed consent from participants, avoiding harm, and sharing results for the public good.</div></details>
+
+      <div class="q-item"><div class="q-text">What is citizen science?</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Citizen science is scientific research carried out by the general public, often in collaboration with professional scientists — collecting observations, data or classifications on a large scale.</p><div class="working"><strong>Key:</strong> Examples: bird counting (eBird), classifying galaxies (Galaxy Zoo), monitoring air quality. Citizen science generates vast datasets impossible for small research teams alone.</div></details>
+
+      <div class="q-item"><div class="q-text">Give ONE example of how technology has improved scientific investigation.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The electron microscope allows scientists to see structures far smaller than visible light permits, enabling discoveries in cell biology, virology and materials science.</p><div class="working"><strong>Key:</strong> Technology extends human senses. Other examples: MRI scanners (medicine), spectrometers (chemistry), satellite imaging (earth science).</div></details>
+
+      <div class="q-item"><div class="q-text">What is pseudoscience? Give ONE example.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Pseudoscience is a belief or practice that claims to be scientific but does not follow scientific methods — it lacks testable hypotheses and peer-reviewed evidence. Example: astrology.</p><div class="working"><strong>Key:</strong> Pseudoscience often uses scientific-sounding language but cannot be falsified or independently verified. Critical thinking is essential to distinguish it from real science.</div></details>
+
+      <div class="q-item"><div class="q-text">Name ONE way science is used to protect the environment.</div><div class="diff diff-easy">Easy</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Scientists monitor greenhouse gas concentrations and model climate patterns to predict climate change and advise governments on reducing emissions.</p><div class="working"><strong>Key:</strong> Environmental science combines biology, chemistry and physics to understand and protect ecosystems. Data-driven policy (e.g., the Paris Agreement) depends on scientific research.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Apply — Science in Society</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">How did C.V. Raman's discovery of the Raman Effect contribute to modern technology? Give a specific modern application.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The Raman Effect is used in Raman spectroscopy — a technique to identify substances non-destructively. Modern applications include detecting cancer cells in tissue samples and identifying counterfeit drugs in pharmacies.</p><div class="working"><strong>Key:</strong> Basic scientific discoveries often have unforeseen practical uses decades later. Raman's discovery is a classic example of how fundamental research shapes technology.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain ONE ethical issue a scientist might face when conducting research on animals.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A key ethical issue is minimising harm — the experiment must not cause unnecessary suffering, and the potential benefit to humans must justify the pain caused to the animal.</p><div class="working"><strong>Key:</strong> The 3Rs framework governs animal research: Replace (use alternatives), Reduce (use fewer animals), Refine (minimise suffering). Ethical approval is required before any such research begins.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain how Aryabhatta's ideas about Earth's rotation were ahead of his time. What challenges might he have faced in getting others to accept his ideas?</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Aryabhatta proposed in the 5th century CE that the Earth rotates on its axis, explaining the apparent motion of stars — a concept that challenged prevailing geocentric beliefs. He would have faced religious and cultural resistance to ideas that contradicted traditional cosmologies.</p><div class="working"><strong>Key:</strong> Science often challenges established beliefs. Aryabhatta's work shows that evidence-based thinking existed in India 1,000 years before Copernicus in Europe.</div></details>
+
+      <div class="q-item"><div class="q-text">A pharmaceutical company wants to test a new cancer drug. List THREE ethical guidelines the clinical trial must follow.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> (1) Informed consent: participants must be fully informed and volunteer freely. (2) No harm: the trial must be stopped if serious side effects occur. (3) Randomised and peer-reviewed: results must be independently reviewed before the drug is approved.</p><div class="working"><strong>Key:</strong> The 1964 Declaration of Helsinki sets international standards for ethical medical research. Patient welfare must always outweigh scientific curiosity.</div></details>
+
+      <div class="q-item"><div class="q-text">How does citizen science help professional scientists? Give ONE benefit and ONE limitation.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Benefit: citizen scientists collect data at a scale (millions of observations) that professional teams cannot achieve alone. Limitation: data quality can vary because volunteers are untrained and may make errors.</p><div class="working"><strong>Key:</strong> Platforms like iNaturalist and eBird address quality concerns through community validation — members verify each other's observations. Technology (AI image recognition) is also improving data accuracy.</div></details>
+
+      <div class="q-item"><div class="q-text">Give ONE example of how a scientific discovery has had both a positive and a negative impact on society.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Nuclear physics: positive = nuclear energy provides low-carbon electricity; negative = nuclear weapons cause mass destruction. The same discovery can serve both humanitarian and destructive purposes depending on how it is used.</p><div class="working"><strong>Key:</strong> Science is a tool — ethics and policy determine whether it is used beneficially. This is why science education includes discussion of responsibility alongside discovery.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain how APJ Abdul Kalam's career illustrates the connection between science and national development.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Kalam led India's missile and space programmes (SLV-3, Agni missile), giving India strategic and technological independence. His work shows how science and engineering drive national security, economic growth and technological self-reliance.</p><div class="working"><strong>Key:</strong> Kalam believed that science education — especially for rural students — was the foundation of a developed India. His autobiography "Wings of Fire" continues to inspire young scientists.</div></details>
+
+      <div class="q-item"><div class="q-text">Distinguish between a scientific claim and a non-scientific claim. Give an example of each from everyday life.</div><div class="diff diff-medium">Medium</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> A scientific claim is testable, falsifiable, and based on evidence (e.g., "Vitamin C reduces cold duration"). A non-scientific claim is based on belief, tradition or authority without testable evidence (e.g., "Eating turmeric cures all diseases").</p><div class="working"><strong>Key:</strong> Even traditional remedies can become scientific once properly tested. The difference lies in the method of establishing evidence — not whether the claim sounds reasonable.</div></details>
+
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Investigate — Science in Society (MYP Criterion B/D)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+
+      <div class="q-item"><div class="q-text">Evaluate the claim: "India has not contributed significantly to world science." Refute this using at least THREE specific examples.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> The claim is false. (1) Aryabhatta — foundational work in mathematics and astronomy (5th century CE). (2) C.V. Raman — Nobel Prize-winning discovery of light scattering. (3) S. Ramanujan — revolutionary contributions to number theory. (4) APJ Abdul Kalam — space and missile technology. India's contributions span ancient to modern science.</p><div class="working"><strong>Key:</strong> MYP evaluations should counter a claim with specific evidence. Breadth (multiple examples) and depth (brief explanation of significance) both strengthen the response.</div></details>
+
+      <div class="q-item"><div class="q-text">A biotech company wants to genetically modify crops to resist drought. Analyse this from TWO perspectives: one supporting and one opposing the use of this technology.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Supporting: drought-resistant crops could reduce food insecurity in regions like sub-Saharan Africa and India, saving millions from famine. Opposing: modified genes could spread to wild plants (gene flow), disrupting ecosystems, and long-term human health effects are not fully understood.</p><div class="working"><strong>Key:</strong> Science enables the technology but cannot decide whether to use it — that is an ethical and political question involving risk, benefit and equity.</div></details>
+
+      <div class="q-item"><div class="q-text">Design a citizen science project to monitor air quality around your school. Describe what data you would collect, who would collect it, how, and how you would ensure reliability.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Data: PM2.5 particulate levels, CO₂ ppm, noise (dB) at 5 locations around school, 3 times daily (morning/midday/evening). Collectors: Grade 6–12 student teams using portable air quality sensors. Reliability: each measurement taken 3 times, data uploaded to shared spreadsheet, readings cross-checked against school weather station, outliers flagged.</p><div class="working"><strong>Key:</strong> Good citizen science design includes: standardised instruments, multiple observers, repeated measurements, and a data validation process.</div></details>
+
+      <div class="q-item"><div class="q-text">Explain how the principle of peer review protects the scientific community from false claims. Include a real or hypothetical example in your answer.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Peer review means independent scientists evaluate a study's methods, data and conclusions before publication. It catches errors, bias and fraud. Example: the 1998 Wakefield study falsely linking vaccines to autism passed weak peer review — when independent scientists attempted to replicate it, it failed and was retracted, preventing widespread public harm.</p><div class="working"><strong>Key:</strong> Peer review is not perfect, but it significantly reduces the rate of false claims entering the scientific literature. Retraction when errors are found is also part of the self-correcting nature of science.</div></details>
+
+      <div class="q-item"><div class="q-text">Critically assess this statement: "Technology always makes science better." Use two examples where technology improved science and one where it created new problems.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Mostly true but not always. Better: (1) CRISPR gene editing enables precise disease treatment. (2) Satellite remote sensing monitors deforestation globally. Problem: Social media spreads unverified scientific claims faster than peer review can refute them, amplifying misinformation (e.g., COVID-19 pseudoscience).</p><div class="working"><strong>Key:</strong> Technology is a powerful scientific tool but also carries social risks. Responsible use requires scientific literacy in the wider public — not just among scientists.</div></details>
+
+      <div class="q-item"><div class="q-text">Compare the scientific contributions of Aryabhatta and C.V. Raman. What do their careers tell us about the nature of scientific progress?</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Aryabhatta worked deductively — using mathematical reasoning to explain astronomical observations without modern instruments. Raman worked experimentally — testing a prediction about light with apparatus. Both show that scientific progress requires either reasoning or experimentation (ideally both), and that great discoveries can come from any culture or era when curiosity is combined with rigour.</p><div class="working"><strong>Key:</strong> Science is a global, cumulative enterprise. Progress builds on prior work regardless of nationality — Raman knew of Einstein's photon theory; Aryabhatta built on Indian and Greek astronomy before him.</div></details>
+
+      <div class="q-item"><div class="q-text">A scientist discovers that a commonly used food preservative may cause cancer in rats at very high doses. Discuss the ethical responsibilities of the scientist, the government, and the public in responding to this finding.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Scientist: must publish results honestly, noting the high dose and species difference; should not exaggerate the risk. Government: should fund further research and apply the precautionary principle if evidence strengthens. Public: should rely on consensus scientific advice rather than panic or ignoring the finding.</p><div class="working"><strong>Key:</strong> The precautionary principle states: when in doubt, take protective action. However, proportionality matters — rat studies at extreme doses don't always translate to human risk at normal dietary levels.</div></details>
+
+      <div class="q-item"><div class="q-text">Argue for or against this position: "Students in Grade 6 are too young to participate in real scientific research." Use at least TWO specific reasons to support your position.</div><div class="diff diff-hard">Hard</div></div>
+      <details class="ans"><summary>Answer</summary><p><b>Answer:</b> Against (students can participate): (1) Citizen science projects like iNaturalist accept observations from all ages — Grade 6 students can identify local species and contribute to biodiversity databases. (2) Simple controlled experiments in school labs follow the full scientific process and generate genuine knowledge about local conditions. Science is not defined by age but by method.</p><div class="working"><strong>Key:</strong> The IB MYP framework explicitly includes student-designed investigations (Criterion B/C/D) as real science. Age limits curiosity and lab technique, not the validity of the scientific method itself.</div></details>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  Grade 6 · Curiosity Science · Chapter 1 · The Gaudium School · IB MYP · 2026–27
+</footer>
+
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

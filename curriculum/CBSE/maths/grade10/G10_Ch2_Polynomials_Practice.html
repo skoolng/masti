@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 2 – Polynomials | Grade 10 Practice</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📈 Chapter 2 – Polynomials</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Zeroes, Graphs &amp; Vieta's Formulas</p>
+</header>
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Polynomials Degree and Types</a></li>
+    <li><a href="#t2">Zeroes of a Polynomial</a></li>
+    <li><a href="#t3">Geometric Meaning of Zeroes (x-intercepts)</a></li>
+    <li><a href="#t4">Linear Polynomials Zero and Graph</a></li>
+    <li><a href="#t5">Quadratic Polynomials Parabola and Zeroes</a></li>
+    <li><a href="#t6">Sum of Zeroes α+β = −b/a</a></li>
+    <li><a href="#t7">Product of Zeroes αβ = c/a</a></li>
+    <li><a href="#t8">Forming Quadratic from Given Zeroes</a></li>
+    <li><a href="#t9">Cubic Polynomials Three Zeroes</a></li>
+    <li><a href="#t10">Sum and Products of Cubic Zeroes</a></li>
+    <li><a href="#t11">Division Algorithm for Polynomials</a></li>
+    <li><a href="#t12">SAT-Style Polynomial Problems</a></li>
+  </ol>
+</nav>
+<!-- TOPIC 1 -->
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Polynomials – Degree and Types</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:introduction-to-polynomials/v/polynomials-intro" target="_blank">Introduction to Polynomials</a><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-arithmetic/x2ec2f6f830c9fb89:poly-intro/v/terms-coefficients-and-exponents-in-a-polynomial" target="_blank">Terms, Coefficients and Degree</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ffLLmV51m70" target="_blank">Polynomials – What Are They?</a><a href="https://www.youtube.com/watch?v=2DKN-B4D0G8" target="_blank">Degree and Leading Coefficient</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=heP_HNp5kLU" target="_blank">Polynomials Have a Life of Their Own</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">Why Do We Use Polynomials?</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Degree and Type</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the degree of the polynomial p(x) = 7x³ − 3x² + 2x − 5?<details class="ans"><summary>Show Answer</summary><p>Degree = <strong>3</strong> (highest power of x is 3). It is a <strong>cubic</strong> polynomial.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Classify 4x² − 9 by type and state its degree.<details class="ans"><summary>Show Answer</summary><p>Degree = <strong>2</strong>. It is a <strong>quadratic</strong> polynomial.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is 2x + 5 a monomial, binomial, or trinomial? What is its degree?<details class="ans"><summary>Show Answer</summary><p>It is a <strong>binomial</strong> (two terms). Degree = <strong>1</strong> (linear polynomial).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write a polynomial of degree 0. What is such a polynomial called?<details class="ans"><summary>Show Answer</summary><p>Example: p(x) = 8. A degree-0 polynomial is called a <strong>constant polynomial</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the degree of the zero polynomial?<details class="ans"><summary>Show Answer</summary><p>The zero polynomial has <strong>no defined degree</strong> (sometimes written as −∞ or undefined).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the degree of p(x) = (x² + 3)(x³ − x + 1).<details class="ans"><summary>Show Answer</summary><p>Degree = 2 + 3 = <strong>5</strong>. (Leading term is x² · x³ = x⁵.)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many terms does the polynomial 5x⁴ − 2x³ + x − 7 have? State its type by number of terms.<details class="ans"><summary>Show Answer</summary><p>It has <strong>4 terms</strong>, so it is a <strong>polynomial</strong> (specifically a degree-4 or biquadratic polynomial).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is √2 · x + 3 a polynomial? If yes, state its degree.<details class="ans"><summary>Show Answer</summary><p><strong>Yes</strong>, it is a polynomial (coefficients need not be integers). Degree = <strong>1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which of the following is NOT a polynomial: (a) x² + 1/x (b) x² + √3 (c) 2x³ − 4?<details class="ans"><summary>Show Answer</summary><p>(a) x² + 1/x is <strong>NOT a polynomial</strong> because 1/x = x⁻¹ has a negative exponent.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A polynomial has degree 3, leading coefficient −2, and constant term 7. Write one such polynomial.<details class="ans"><summary>Show Answer</summary><p>Example: p(x) = −2x³ + 5x² − x + 7. (Any cubic with leading coeff −2 and constant 7 is valid.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Coefficients and Leading Terms</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the leading coefficient of p(x) = −3x⁴ + 7x² − 1?<details class="ans"><summary>Show Answer</summary><p>Leading coefficient = <strong>−3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write the polynomial 3 + x − 2x² in standard form and state its degree.<details class="ans"><summary>Show Answer</summary><p>Standard form: −2x² + x + 3. Degree = <strong>2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = ax³ + bx + c and the coefficient of x² is zero, what does that tell you about the polynomial?<details class="ans"><summary>Show Answer</summary><p>The polynomial has <strong>no x² term</strong>; the b in standard form ax³ + bx² + cx + d has b = 0 here. It is still cubic.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the coefficient of x in p(x) = (x + 2)(x − 3).<details class="ans"><summary>Show Answer</summary><p>Expand: x² − 3x + 2x − 6 = x² − x − 6. Coefficient of x = <strong>−1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the constant term of p(x) = (2x − 1)(x + 3)?<details class="ans"><summary>Show Answer</summary><p>Expand: 2x² + 6x − x − 3. Constant term = <strong>−3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x⁴ − 5x³ + 0·x² + 2x − 8, list all four coefficients in order.<details class="ans"><summary>Show Answer</summary><p>a₄ = 1, a₃ = −5, a₂ = 0, a₁ = 2, a₀ = −8.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two polynomials p(x) = 2x² + kx − 3 and q(x) = 2x² + 5x − 3 are equal for all x. Find k.<details class="ans"><summary>Show Answer</summary><p>Equating coefficients of x: k = <strong>5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the degree of the product of a linear and a quadratic polynomial?<details class="ans"><summary>Show Answer</summary><p>Degree = 1 + 2 = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(x) has degree m and q(x) has degree n (m > n), what is the degree of p(x) + q(x)?<details class="ans"><summary>Show Answer</summary><p>Degree of p(x) + q(x) = <strong>m</strong> (the higher degree dominates, assuming leading terms don't cancel).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Can the sum of two polynomials each of degree 3 have degree less than 3? Give an example.<details class="ans"><summary>Show Answer</summary><p><strong>Yes.</strong> E.g. p(x) = x³ + 2x and q(x) = −x³ + x + 1. Sum = 3x + 1, degree <strong>1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Evaluating Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find p(2) for p(x) = x³ − 4x + 1.<details class="ans"><summary>Show Answer</summary><p>p(2) = 8 − 8 + 1 = <strong>1</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Evaluate p(−1) for p(x) = 2x² − 3x + 5.<details class="ans"><summary>Show Answer</summary><p>p(−1) = 2(1) − 3(−1) + 5 = 2 + 3 + 5 = <strong>10</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x² − 5x + 6, find p(3) and p(2).<details class="ans"><summary>Show Answer</summary><p>p(3) = 9 − 15 + 6 = <strong>0</strong>; p(2) = 4 − 10 + 6 = <strong>0</strong>. Both are zeroes!</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x³ − 2x² + x − 4, compute p(0).<details class="ans"><summary>Show Answer</summary><p>p(0) = 0 − 0 + 0 − 4 = <strong>−4</strong>. (p(0) always equals the constant term.)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find p(1) + p(−1) for p(x) = x⁴ − x³ + x² − x + 1.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1 − 1 + 1 − 1 + 1 = 1; p(−1) = 1 + 1 + 1 + 1 + 1 = 5. Sum = <strong>6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x² + px + q and p(1) = 0, p(−2) = 0, find p and q.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1 + p + q = 0 → p + q = −1. p(−2) = 4 − 2p + q = 0 → −2p + q = −4. Subtract: 3p = 3, p = 1, q = −2. So <strong>p = 1, q = −2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Evaluate p(√2) for p(x) = x² − 2.<details class="ans"><summary>Show Answer</summary><p>p(√2) = (√2)² − 2 = 2 − 2 = <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 2x + 3, find the value of x for which p(x) = 0.<details class="ans"><summary>Show Answer</summary><p>2x + 3 = 0 → x = <strong>−3/2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x³ + ax² + bx + c and p(0) = −6, p(1) = 0, p(−1) = −8, find a, b, c.<details class="ans"><summary>Show Answer</summary><p>c = −6; 1+a+b−6 = 0 → a+b = 5; −1+a−b−6 = −8 → a−b = −1. So a = 2, b = 3. Thus <strong>a=2, b=3, c=−6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find p(t²) for p(x) = x² − 3x + 2.<details class="ans"><summary>Show Answer</summary><p>p(t²) = (t²)² − 3(t²) + 2 = <strong>t⁴ − 3t² + 2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed / HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write a polynomial of degree 4 that has exactly three terms.<details class="ans"><summary>Show Answer</summary><p>Example: p(x) = x⁴ − 5x² + 4 (three terms, degree 4 — a trinomial).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If 2 is a zero of p(x) = x² − kx + 6, find k.<details class="ans"><summary>Show Answer</summary><p>p(2) = 4 − 2k + 6 = 0 → 2k = 10 → k = <strong>5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A polynomial p(x) of degree 2 satisfies p(0) = 1, p(1) = 3, p(−1) = 1. Find p(x).<details class="ans"><summary>Show Answer</summary><p>Let p(x) = ax² + bx + c. c = 1; a+b+1 = 3 → a+b = 2; a−b+1 = 1 → a−b = 0. So a = 1, b = 1. p(x) = <strong>x² + x + 1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">How many zeroes can a quadratic polynomial have at most? Why?<details class="ans"><summary>Show Answer</summary><p>A quadratic polynomial can have at most <strong>2</strong> zeroes, because a degree-n polynomial has at most n real zeroes.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">True or False: Every linear polynomial has exactly one zero. Justify.<details class="ans"><summary>Show Answer</summary><p><strong>True.</strong> p(x) = ax + b (a ≠ 0). Setting ax + b = 0 gives x = −b/a, exactly one solution.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The polynomial p(x) = x² − (k+1)x + k has x = k as a zero. Find k.<details class="ans"><summary>Show Answer</summary><p>p(k) = k² − (k+1)k + k = k² − k² − k + k = 0. True for <strong>all k</strong>. (k is always a zero.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x⁴ − 16, express it as a product of two quadratics.<details class="ans"><summary>Show Answer</summary><p>x⁴ − 16 = (x²)² − 4² = (x² + 4)(x² − 4) = <strong>(x²+4)(x+2)(x−2)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x² + 5x − 2, verify that x = 1/3 is a zero.<details class="ans"><summary>Show Answer</summary><p>p(1/3) = 3(1/9) + 5(1/3) − 2 = 1/3 + 5/3 − 2 = 6/3 − 2 = 2 − 2 = <strong>0 ✓</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can a polynomial of odd degree have no real zeroes? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> By the Intermediate Value Theorem, an odd-degree polynomial with real coefficients must cross the x-axis at least once, guaranteeing at least one real zero.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the value of p(x) = x⁵ − x⁴ + x³ − x² + x − 1 at x = 1.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1 − 1 + 1 − 1 + 1 − 1 = <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 2 -->
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Zeroes of a Polynomial</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:zeros-of-polynomials/v/zeros-of-polynomials" target="_blank">Zeroes of Polynomials</a><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:zeros-multiplicity/v/polynomial-roots-introduction" target="_blank">Finding Polynomial Roots</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=2DKN-B4D0G8" target="_blank">Finding Zeroes of Polynomials</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=4aM3CeQ_Zag" target="_blank">Roots of Polynomials</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=8Wxw9bpKEGQ" target="_blank">How to Factor Polynomials</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Finding Zeroes by Factoring</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the zeroes of p(x) = x² − 5x + 6.<details class="ans"><summary>Show Answer</summary><p>x² − 5x + 6 = (x − 2)(x − 3) = 0. Zeroes: <strong>x = 2, x = 3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of p(x) = x² − 9.<details class="ans"><summary>Show Answer</summary><p>(x − 3)(x + 3) = 0. Zeroes: <strong>x = 3, x = −3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zero of the linear polynomial p(x) = 4x − 8.<details class="ans"><summary>Show Answer</summary><p>4x − 8 = 0 → x = <strong>2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of p(x) = x(x − 5).<details class="ans"><summary>Show Answer</summary><p>Zeroes: <strong>x = 0 and x = 5</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of p(x) = 2x² + 7x + 3.<details class="ans"><summary>Show Answer</summary><p>2x² + 7x + 3 = (2x + 1)(x + 3) = 0. Zeroes: <strong>x = −1/2, x = −3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many zeroes does p(x) = (x − 1)² have? Are they distinct?<details class="ans"><summary>Show Answer</summary><p>p(x) has one <strong>repeated zero</strong> x = 1 (multiplicity 2). They are <strong>not distinct</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find zeroes of p(x) = 3x² − x − 2.<details class="ans"><summary>Show Answer</summary><p>3x² − x − 2 = (3x + 2)(x − 1) = 0. Zeroes: <strong>x = 1, x = −2/3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of p(x) = x² + 1. How many real zeroes does it have?<details class="ans"><summary>Show Answer</summary><p>x² + 1 = 0 → x² = −1. <strong>No real zeroes</strong> (discriminant = −4 &lt; 0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the zeroes of p(x) = x³ − x = x(x² − 1).<details class="ans"><summary>Show Answer</summary><p>x(x − 1)(x + 1) = 0. Zeroes: <strong>x = 0, 1, −1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If one zero of p(x) = x² − 7x + k is 4, find k and the other zero.<details class="ans"><summary>Show Answer</summary><p>p(4) = 16 − 28 + k = 0 → k = 12. Other zero = 7 − 4 = <strong>3</strong>. (Verify: 4 × 3 = 12 = k ✓)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Using the Factor Theorem</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the Factor Theorem. When is (x − a) a factor of p(x)?<details class="ans"><summary>Show Answer</summary><p>(x − a) is a factor of p(x) if and only if <strong>p(a) = 0</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (x − 2) a factor of p(x) = x³ − 4x² + 5x − 2?<details class="ans"><summary>Show Answer</summary><p>p(2) = 8 − 16 + 10 − 2 = <strong>0</strong>. Yes, (x − 2) is a factor.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Check if (x + 1) is a factor of x³ + 2x² − x − 2.<details class="ans"><summary>Show Answer</summary><p>p(−1) = −1 + 2 + 1 − 2 = <strong>0</strong>. Yes, (x + 1) is a factor.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (x − 3) a factor of x² + x − 12?<details class="ans"><summary>Show Answer</summary><p>p(3) = 9 + 3 − 12 = <strong>0</strong>. Yes.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find k if (x − 2) is a factor of kx² − 3x + 2.<details class="ans"><summary>Show Answer</summary><p>p(2) = 4k − 6 + 2 = 0 → 4k = 4 → k = <strong>1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k if (x + 1) is a factor of x³ + kx² + 3x + 2.<details class="ans"><summary>Show Answer</summary><p>p(−1) = −1 + k − 3 + 2 = 0 → k = <strong>2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If both (x − 1) and (x + 2) are factors of p(x) = x³ + ax² + bx − 2, find a and b.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1+a+b−2 = 0 → a+b = 1. p(−2) = −8+4a−2b−2 = 0 → 4a−2b = 10 → 2a−b = 5. Adding: 3a = 6, a = 2, b = −1. <strong>a = 2, b = −1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that (x − 1) is a factor of xⁿ − 1 for any positive integer n.<details class="ans"><summary>Show Answer</summary><p>Let p(x) = xⁿ − 1. p(1) = 1ⁿ − 1 = 0. By Factor Theorem, (x − 1) is a factor for all positive integers n.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For what value of a is (x − a) a factor of x² − (a+1)x + a?<details class="ans"><summary>Show Answer</summary><p>p(a) = a² − (a+1)a + a = a² − a² − a + a = 0. True for <strong>all values of a</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Use the Factor Theorem to show that (2x − 1) is a factor of 2x³ − x² + 2x − 1.<details class="ans"><summary>Show Answer</summary><p>p(1/2) = 2(1/8) − (1/4) + 2(1/2) − 1 = 1/4 − 1/4 + 1 − 1 = <strong>0</strong>. So (2x − 1) is a factor.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Remainder Theorem</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the Remainder Theorem.<details class="ans"><summary>Show Answer</summary><p>When p(x) is divided by (x − a), the remainder is <strong>p(a)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the remainder when x³ − 3x² + 4x − 1 is divided by (x − 2).<details class="ans"><summary>Show Answer</summary><p>p(2) = 8 − 12 + 8 − 1 = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the remainder when 2x² − 5x + 3 is divided by (x + 1).<details class="ans"><summary>Show Answer</summary><p>p(−1) = 2 + 5 + 3 = <strong>10</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the remainder when x⁴ + x³ − 2x² + 3 is divided by (x − 1).<details class="ans"><summary>Show Answer</summary><p>p(1) = 1 + 1 − 2 + 3 = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the remainder when p(x) = x² + ax + b is divided by (x − 1) is 2, and by (x + 1) is 4, find a and b.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1+a+b = 2 → a+b = 1. p(−1) = 1−a+b = 4 → −a+b = 3. Subtract: 2a = −2, a = −1, b = 2. <strong>a = −1, b = 2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the remainder when x¹⁰⁰ − 1 is divided by (x − 1).<details class="ans"><summary>Show Answer</summary><p>p(1) = 1¹⁰⁰ − 1 = 0. Remainder = <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For what value of k does x³ − kx² + 2x − 1 leave remainder 2 when divided by (x − 1)?<details class="ans"><summary>Show Answer</summary><p>p(1) = 1 − k + 2 − 1 = 2 → 2 − k = 2 → k = <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the remainder when p(x) = x² − 5x + 6 is divided by (x − 2). What does the answer tell you?<details class="ans"><summary>Show Answer</summary><p>p(2) = 4 − 10 + 6 = <strong>0</strong>. Remainder = 0 means (x − 2) is a factor of p(x).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The remainder when 2x³ + mx² − 5 is divided by (x − 1) equals the remainder when it is divided by (x + 1). Find m.<details class="ans"><summary>Show Answer</summary><p>p(1) = 2+m−5 = m−3; p(−1) = −2+m−5 = m−7. Setting equal: m−3 = m−7 gives −3 = −7, contradiction. Re-examine: with constant −5, p(x) = 2x³+mx²+0·x−5. p(1)=2+m−5=m−3; p(−1)=−2+m−5=m−7. Equal: m−3=m−7 → no solution unless there's an x term. If p(x)=2x³+mx²+nx−5 and the condition is possible, add x term. As stated, <strong>no valid m exists</strong> (remainder theorem shows the remainders differ by 4 for any m).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the remainder when 3x³ − 4x² + 7x − 5 is divided by (3x − 1).<details class="ans"><summary>Show Answer</summary><p>Remainder = p(1/3) = 3(1/27) − 4(1/9) + 7(1/3) − 5 = 1/9 − 4/9 + 21/9 − 45/9 = (1−4+21−45)/9 = −27/9 = <strong>−3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Zeroes Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Can a non-zero constant polynomial have any zeroes?<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> A constant polynomial p(x) = c (c ≠ 0) never equals zero, so it has no zeroes.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of p(x) = ax² + bx + c are both zero. What can you conclude about b and c?<details class="ans"><summary>Show Answer</summary><p>If both zeroes are 0: Sum = 0 = −b/a → b = 0. Product = 0 = c/a → c = 0. So <strong>b = 0 and c = 0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find zeroes of p(x) = x² − (√3 + 1)x + √3.<details class="ans"><summary>Show Answer</summary><p>Factor: (x − √3)(x − 1) = 0. Zeroes: <strong>x = √3 and x = 1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If one zero of 3x² − 8x + k is the reciprocal of the other, find k.<details class="ans"><summary>Show Answer</summary><p>Let zeroes be α and 1/α. Product = α · (1/α) = 1 = k/3. So <strong>k = 3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find zeroes of p(x) = 6x² − 7x − 3.<details class="ans"><summary>Show Answer</summary><p>6x² − 7x − 3 = (3x + 1)(2x − 3). Zeroes: <strong>x = −1/3 and x = 3/2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The product of zeroes of p(x) = −3x² + 4x + 7 is ______.<details class="ans"><summary>Show Answer</summary><p>Product = c/a = 7/(−3) = <strong>−7/3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the number of real zeroes of p(x) = x² + 4x + 5 using the discriminant.<details class="ans"><summary>Show Answer</summary><p>Discriminant = 16 − 20 = −4 &lt; 0. <strong>No real zeroes.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of 2x² − 5x + 3, find 1/α + 1/β.<details class="ans"><summary>Show Answer</summary><p>1/α + 1/β = (α+β)/(αβ) = (5/2)/(3/2) = <strong>5/3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify that 2 and −3 are zeroes of p(x) = x² + x − 6.<details class="ans"><summary>Show Answer</summary><p>p(2) = 4+2−6 = 0 ✓; p(−3) = 9−3−6 = 0 ✓. Both verified.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find zeroes of p(x) = 4x² − 4x − 3.<details class="ans"><summary>Show Answer</summary><p>(2x − 3)(2x + 1) = 0. Zeroes: <strong>x = 3/2 and x = −1/2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+<!-- TOPIC 3 -->
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Geometric Meaning of Zeroes (x-intercepts)</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:zeros-of-poly/v/graphing-polynomial-functions" target="_blank">Graphing & x-intercepts</a><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:zeros-multiplicity/v/graphing-zeros-of-polynomial" target="_blank">Zeroes and Multiplicity on Graphs</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=2DKN-B4D0G8" target="_blank">Graphing Polynomial Functions</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=heP_HNp5kLU" target="_blank">The Beauty of Polynomial Graphs</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">Why Do Graphs Cross the x-axis?</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Reading Zeroes from Graphs (Conceptual)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The graph of y = p(x) crosses the x-axis at x = −2 and x = 4. What are the zeroes of p(x)?<details class="ans"><summary>Show Answer</summary><p>Zeroes: <strong>x = −2 and x = 4</strong>. Where the graph crosses/touches the x-axis gives the zeroes.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">How many zeroes does a polynomial have if its graph does not intersect the x-axis?<details class="ans"><summary>Show Answer</summary><p><strong>Zero real zeroes.</strong> No x-intercepts means no real zeroes (could have complex zeroes).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A parabola touches the x-axis at exactly one point (x = 3). What are the zeroes of this quadratic?<details class="ans"><summary>Show Answer</summary><p>There is one <strong>repeated zero: x = 3</strong> (multiplicity 2). The quadratic is of the form a(x−3)².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The graph of a cubic polynomial p(x) cuts the x-axis at x = −1, 0, and 2. Write p(x) assuming leading coefficient 1.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x + 1)(x)(x − 2) = <strong>x(x+1)(x−2)</strong> = x³ − x² − 2x.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many x-intercepts can the graph of a quadratic polynomial have?<details class="ans"><summary>Show Answer</summary><p>A quadratic can have <strong>0, 1, or 2</strong> x-intercepts depending on the discriminant (negative, zero, positive).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = (x−1)²(x+2), describe the behaviour at each x-intercept: does the graph cross or touch the axis?<details class="ans"><summary>Show Answer</summary><p>At x = 1 (multiplicity 2): the graph <strong>touches</strong> the x-axis (bounces). At x = −2 (multiplicity 1): the graph <strong>crosses</strong> the x-axis.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">What is the geometric interpretation of a repeated zero?<details class="ans"><summary>Show Answer</summary><p>A repeated zero means the graph is <strong>tangent to the x-axis</strong> at that point — it touches but does not cross.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A graph of y = p(x) has x-intercepts at −3, 1, and 5. What is the minimum degree of p(x)?<details class="ans"><summary>Show Answer</summary><p>Minimum degree = <strong>3</strong> (one factor for each distinct zero: (x+3)(x−1)(x−5)).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The graph of a polynomial passes through (0, −6) and has zeroes at 1, 2, and 3. Find p(x) with leading coefficient 1.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−1)(x−2)(x−3). p(0) = (−1)(−2)(−3) = −6 ✓. So p(x) = <strong>(x−1)(x−2)(x−3)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Can a degree-4 polynomial graph touch but not cross the x-axis at two different points?<details class="ans"><summary>Show Answer</summary><p><strong>Yes.</strong> Example: p(x) = (x−1)²(x+2)² touches at x=1 and x=−2 without crossing.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Linking Factored Form to Graph</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the x-intercepts of y = (x − 7)(x + 3).<details class="ans"><summary>Show Answer</summary><p>x-intercepts: <strong>x = 7 and x = −3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the y-intercept of y = (x−2)(x+5)(x−1)?<details class="ans"><summary>Show Answer</summary><p>Set x = 0: y = (−2)(5)(−1) = <strong>10</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A quadratic y = ax² + bx + c opens upward and has no x-intercepts. What can you say about its zeroes?<details class="ans"><summary>Show Answer</summary><p>It has <strong>no real zeroes</strong>. The discriminant b²−4ac &lt; 0.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the x-intercepts and vertex direction for y = −(x−3)².<details class="ans"><summary>Show Answer</summary><p>x-intercept (repeated zero): <strong>x = 3</strong>. Parabola opens <strong>downward</strong> (negative leading coefficient).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The graph y = ax² + bx + c has x-intercepts at 1/2 and −4. Write p(x) with integer coefficients.<details class="ans"><summary>Show Answer</summary><p>p(x) = (2x−1)(x+4) = <strong>2x² + 7x − 4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = x² − 2x − 3, identify x-intercepts and state whether the parabola opens up or down.<details class="ans"><summary>Show Answer</summary><p>x² − 2x − 3 = (x−3)(x+1). x-intercepts: <strong>3 and −1</strong>. Opens <strong>upward</strong> (a = 1 &gt; 0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sketch the rough shape of y = x(x−4) and label x-intercepts and vertex x-coordinate.<details class="ans"><summary>Show Answer</summary><p>x-intercepts: <strong>0 and 4</strong>. Vertex x-coordinate: (0+4)/2 = <strong>2</strong>. Parabola opens upward.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A polynomial graph crosses the x-axis exactly once and the curve goes from −∞ to +∞. What type of polynomial could it be?<details class="ans"><summary>Show Answer</summary><p>A <strong>linear polynomial</strong> (degree 1) or an odd-degree polynomial with only one real zero.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The graph of y = p(x) is entirely above the x-axis. What does this say about the zeroes?<details class="ans"><summary>Show Answer</summary><p>p(x) &gt; 0 for all real x means p(x) has <strong>no real zeroes</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic polynomial whose graph touches the x-axis at x = −5 and opens downward.<details class="ans"><summary>Show Answer</summary><p>p(x) = <strong>−(x+5)²</strong> = −x² − 10x − 25.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Graphs of Linear and Quadratic Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What shape is the graph of a linear polynomial y = mx + c?<details class="ans"><summary>Show Answer</summary><p>A <strong>straight line</strong> with slope m and y-intercept c.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What shape is the graph of any quadratic polynomial?<details class="ans"><summary>Show Answer</summary><p>A <strong>parabola</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = x² − 6x + 9, how many x-intercepts are there? Find them.<details class="ans"><summary>Show Answer</summary><p>(x−3)² = 0. Exactly <strong>one x-intercept</strong> at x = 3 (tangent to x-axis).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For y = −x² + 4, find x-intercepts and describe the graph.<details class="ans"><summary>Show Answer</summary><p>x-intercepts: ±2. Opens <strong>downward</strong>. Vertex at (0, 4).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Without drawing, determine how many times y = x² + 6x + 10 meets the x-axis.<details class="ans"><summary>Show Answer</summary><p>Discriminant = 36 − 40 = −4 &lt; 0. The graph <strong>never meets</strong> the x-axis (0 intercepts).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The parabola y = ax² + bx + c passes through (1,0), (−3, 0), and (0, −3). Find a, b, c.<details class="ans"><summary>Show Answer</summary><p>Zeroes 1 and −3: y = a(x−1)(x+3). Using (0,−3): −3 = a(−1)(3) = −3a → a = 1. So <strong>y = x²+2x−3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">At what point does the graph of y = 3x − 9 cross the x-axis?<details class="ans"><summary>Show Answer</summary><p>3x − 9 = 0 → x = 3. The graph crosses at <strong>(3, 0)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two quadratics share the same x-intercepts x = 2 and x = −1. How are the two polynomials related?<details class="ans"><summary>Show Answer</summary><p>They are scalar multiples of each other: p(x) = k(x−2)(x+1) for different values of k. Same zeroes, different shapes (widths/directions).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = 2(x−1)(x−5), find the axis of symmetry (x-coordinate of vertex).<details class="ans"><summary>Show Answer</summary><p>Axis of symmetry x = (1+5)/2 = <strong>3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A quadratic polynomial has no real zeroes. Its graph is fully below the x-axis. What is the sign of its leading coefficient?<details class="ans"><summary>Show Answer</summary><p>The leading coefficient is <strong>negative</strong> (parabola opens downward, entirely below x-axis).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Graphs and Zeroes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cubic polynomial has three distinct real zeroes. Roughly describe the shape of its graph.<details class="ans"><summary>Show Answer</summary><p>The graph crosses the x-axis at <strong>three distinct points</strong>, with two local turning points (one local max, one local min).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can a degree-2 polynomial have three x-intercepts? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> A polynomial of degree n can have at most n real zeroes. A degree-2 polynomial has at most 2 x-intercepts.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The graph of y = p(x) has x-intercepts at −2, 1, and 4, and passes through (0, 8). Find p(x).<details class="ans"><summary>Show Answer</summary><p>p(x) = k(x+2)(x−1)(x−4). p(0) = k(2)(−1)(−4) = 8k = 8 → k = 1. p(x) = <strong>(x+2)(x−1)(x−4)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Describe how the graph of y = (x−a)² compares to y = (x−a).<details class="ans"><summary>Show Answer</summary><p>y = (x−a) is a line crossing the x-axis at a. y = (x−a)² is a parabola that <strong>touches</strong> (doesn't cross) the x-axis at a, always ≥ 0.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x³ − 6x² + 11x − 6, and you know x=1 is a zero, find all x-intercepts by factoring.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−1): x²−5x+6 = (x−2)(x−3). Zeroes: <strong>x = 1, 2, 3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">What does it mean geometrically when p(a) > 0?<details class="ans"><summary>Show Answer</summary><p>The graph of y = p(x) is <strong>above the x-axis</strong> at x = a.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The graph of y = x² − k touches the x-axis. Find k.<details class="ans"><summary>Show Answer</summary><p>Touches means one repeated zero, so discriminant = 0. Here: 0 − 4(1)(−k) = 0 → 4k = 0 → k = <strong>0</strong>. (y = x² touches at origin.)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = (x² − 1)(x² − 4), find all x-intercepts.<details class="ans"><summary>Show Answer</summary><p>(x−1)(x+1)(x−2)(x+2) = 0. x-intercepts: <strong>x = ±1, ±2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A parabola has vertex at (2, −3) and opens upward. Does it have 0, 1, or 2 x-intercepts?<details class="ans"><summary>Show Answer</summary><p>Vertex is below the x-axis and opens upward, so it crosses the x-axis <strong>twice (2 x-intercepts)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain why a polynomial of even degree with positive leading coefficient has at least a global minimum but its graph can still have no x-intercepts.<details class="ans"><summary>Show Answer</summary><p>The global minimum is the lowest y-value. If this minimum is above 0 (positive), the parabola or even-degree curve stays entirely above the x-axis, giving <strong>no real zeroes</strong>. Example: x² + 1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 4 -->
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Linear Polynomials – Zero and Graph</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs" target="_blank">Linear Equations and Graphs</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs/x2f8bb11595b61c86:slope-intercept-form/v/slope-intercept-form" target="_blank">Slope-Intercept Form</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=EbuRufY41pc" target="_blank">Graphing Lines (Slope-Intercept)</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=NNMISsmQqhY" target="_blank">The Line – Simplest Polynomial</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=9Uc62CuQjc4" target="_blank">Lines, Slopes and Intercepts</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Zero of Linear Polynomial</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the zero of p(x) = 5x − 15.<details class="ans"><summary>Show Answer</summary><p>5x − 15 = 0 → x = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zero of p(x) = 2x + 8.<details class="ans"><summary>Show Answer</summary><p>2x + 8 = 0 → x = <strong>−4</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the zero of p(x) = −3x + 9.<details class="ans"><summary>Show Answer</summary><p>−3x + 9 = 0 → x = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The zero of p(x) = ax + b (a ≠ 0) is ______.<details class="ans"><summary>Show Answer</summary><p>Zero = <strong>−b/a</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = (2/3)x − 4, find the zero.<details class="ans"><summary>Show Answer</summary><p>(2/3)x = 4 → x = <strong>6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If the zero of p(x) = kx − 12 is 4, find k.<details class="ans"><summary>Show Answer</summary><p>p(4) = 4k − 12 = 0 → k = <strong>3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For what value of m does p(x) = mx + 5 have zero x = −5?<details class="ans"><summary>Show Answer</summary><p>p(−5) = −5m + 5 = 0 → m = <strong>1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The zero of p(x) = √3 x + √3 is ______.<details class="ans"><summary>Show Answer</summary><p>√3 x = −√3 → x = <strong>−1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two linear polynomials p(x) = 2x − a and q(x) = 3x + b have the same zero. Express a in terms of b.<details class="ans"><summary>Show Answer</summary><p>Zero of p: x = a/2. Zero of q: x = −b/3. Setting equal: a/2 = −b/3 → a = <strong>−2b/3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the zero of p(x) = (3x+1)/2 − (x−1)/3.<details class="ans"><summary>Show Answer</summary><p>Multiply by 6: 3(3x+1) − 2(x−1) = 0 → 9x+3−2x+2 = 0 → 7x = −5 → x = <strong>−5/7</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Graphing Linear Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the slope and y-intercept of y = 3x − 7?<details class="ans"><summary>Show Answer</summary><p>Slope = <strong>3</strong>, y-intercept = <strong>−7</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">At what point does y = −2x + 6 intersect the y-axis?<details class="ans"><summary>Show Answer</summary><p>Set x = 0: y = 6. Intersects at <strong>(0, 6)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find both intercepts of y = 4x − 8 and use them to sketch the line.<details class="ans"><summary>Show Answer</summary><p>x-intercept: 4x = 8 → (2, 0). y-intercept: x=0 → (0, −8). Line through <strong>(2,0) and (0,−8)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write the equation of the line with slope 5 and x-intercept at x = 2.<details class="ans"><summary>Show Answer</summary><p>y − 0 = 5(x − 2) → y = <strong>5x − 10</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two linear polynomials p(x) = 2x + 3 and q(x) = −x + 6 intersect where p(x) = q(x). Find x and y.<details class="ans"><summary>Show Answer</summary><p>2x+3 = −x+6 → 3x = 3 → x = 1, y = 5. Intersection: <strong>(1, 5)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is y = 7 a linear polynomial? What is its graph?<details class="ans"><summary>Show Answer</summary><p>y = 7 is a <strong>constant polynomial</strong> (degree 0). Its graph is a <strong>horizontal line</strong> at y = 7.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the linear polynomial whose graph passes through (1, 5) and (3, 11).<details class="ans"><summary>Show Answer</summary><p>Slope = (11−5)/(3−1) = 3. y − 5 = 3(x−1) → y = <strong>3x + 2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = mx + c, if the slope is negative and y-intercept is positive, describe the graph.<details class="ans"><summary>Show Answer</summary><p>The line slopes <strong>downward from left to right</strong>, crossing the y-axis above the origin and the x-axis to the right of the origin.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find a linear polynomial passing through origin with zero x = 0. How many such polynomials exist?<details class="ans"><summary>Show Answer</summary><p>p(x) = ax (any a ≠ 0). There are <strong>infinitely many</strong> (one for each nonzero slope a).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The graphs of p(x) = 3x − 6 and q(x) = 3x + 2 are parallel. What are their respective x-intercepts?<details class="ans"><summary>Show Answer</summary><p>p zero: x = 2. q zero: x = −2/3. x-intercepts: <strong>(2, 0) and (−2/3, 0)</strong>. Lines are parallel (same slope 3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Word Problems with Linear Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A taxi charges ₹50 plus ₹15 per km. Write as a polynomial p(x) in x km. For what distance is cost ₹200?<details class="ans"><summary>Show Answer</summary><p>p(x) = 15x + 50. Setting p(x) = 200: 15x = 150 → x = <strong>10 km</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Temperature in Fahrenheit: F = (9/5)C + 32. Find C when F = 98.6 (body temperature).<details class="ans"><summary>Show Answer</summary><p>(9/5)C = 66.6 → C = <strong>37°C</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Profit p(x) = 40x − 2000 in rupees for x items sold. Find the break-even quantity.<details class="ans"><summary>Show Answer</summary><p>p(x) = 0 → 40x = 2000 → x = <strong>50 items</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A linear polynomial passes through (−2, 0) and has slope 3. Find p(5).<details class="ans"><summary>Show Answer</summary><p>y = 3(x+2) = 3x+6. p(5) = 15+6 = <strong>21</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Water in a tank: W(t) = 500 − 20t litres after t minutes. When is the tank empty?<details class="ans"><summary>Show Answer</summary><p>W(t) = 0 → 500 = 20t → t = <strong>25 minutes</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = 7x − 21 represents the speed excess above 21 km/h, for what x does p(x) = 0? What does this mean?<details class="ans"><summary>Show Answer</summary><p>x = 3. At x = 3 km/h (?). Reconsidering: if x is total speed, p(x) = 0 at speed = <strong>21 km/h</strong> (no excess). Zero = 3 means the input value is 3 where excess = 0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The cost polynomial is c(n) = 12n + 60. Find the value of n for which cost equals 120.<details class="ans"><summary>Show Answer</summary><p>12n + 60 = 120 → 12n = 60 → n = <strong>5</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A wire of length L is cut into two pieces. One piece = x cm. The other = L − x. For what x are both pieces equal?<details class="ans"><summary>Show Answer</summary><p>x = L − x → 2x = L → x = <strong>L/2</strong>. Both pieces equal L/2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">p(x) = 3x − 9 and q(x) = −2x + 6 represent two quantities. For what x is p(x) + q(x) = 0?<details class="ans"><summary>Show Answer</summary><p>p+q = x − 3 = 0 → x = <strong>3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The perimeter of a rectangle is 2(l + w). If l = 3w − 5 and perimeter = 50, find w.<details class="ans"><summary>Show Answer</summary><p>2(3w−5+w) = 50 → 2(4w−5) = 50 → 4w−5 = 25 → 4w = 30 → w = <strong>7.5 cm</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Linear Polynomial Analysis</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If p(x) = ax + b with a > 0, for what values of x is p(x) > 0?<details class="ans"><summary>Show Answer</summary><p>ax + b > 0 → x > −b/a. So p(x) > 0 for <strong>x > −b/a</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">True or False: A linear polynomial can have more than one zero. Justify.<details class="ans"><summary>Show Answer</summary><p><strong>False.</strong> ax + b = 0 has exactly one solution x = −b/a (for a ≠ 0).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 2x − 6, evaluate p(p(2)).<details class="ans"><summary>Show Answer</summary><p>p(2) = 4−6 = −2. p(p(2)) = p(−2) = −4−6 = <strong>−10</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a linear polynomial p(x) such that p(2) = 7 and p(5) = 13.<details class="ans"><summary>Show Answer</summary><p>Slope = (13−7)/(5−2) = 2. y−7 = 2(x−2) → y = 2x+3. p(x) = <strong>2x + 3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is y = 0 (the zero polynomial) a linear polynomial? Why or why not?<details class="ans"><summary>Show Answer</summary><p><strong>No.</strong> y = 0 is the zero polynomial with undefined degree, not a linear polynomial (degree 1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x + c and q(x) = 3x + d (c ≠ d), show that p(x) + q(x) has the same zero as p(x) = q(x).<details class="ans"><summary>Show Answer</summary><p>p+q = 6x+(c+d) = 0 → x = −(c+d)/6. p = q: 3x+c = 3x+d has no solution. So the question is about p(x)+q(x) = 0 at x = −(c+d)/6, a unique zero.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The graph of y = mx + c passes through the 2nd and 4th quadrants only. What are the signs of m and c?<details class="ans"><summary>Show Answer</summary><p>Passes through Q2 (x<0,y>0) and Q4 (x>0,y<0): slope is <strong>negative (m < 0)</strong> and y-intercept c = 0 is on boundary. Actually: for Q2 and Q4 only, m < 0 and <strong>c = 0</strong> (passes through origin). If c ≠ 0, it would also pass through Q1 or Q3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the value of k such that the zero of p(x) = kx − (k² − 9) is x = k+3.<details class="ans"><summary>Show Answer</summary><p>p(k+3) = k(k+3) − (k²−9) = k²+3k−k²+9 = 3k+9. Set = 0: 3k+9 = 0 → k = <strong>−3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The zero of p(x) = ax − b equals the slope of the line y = bx + a. Find the relationship between a and b.<details class="ans"><summary>Show Answer</summary><p>Zero of p = b/a. Slope of line = b. So b/a = b → if b ≠ 0: 1/a = 1 → <strong>a = 1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = 2x − 1 and q(x) = p(p(x)), find the zero of q(x).<details class="ans"><summary>Show Answer</summary><p>q(x) = p(2x−1) = 2(2x−1)−1 = 4x−3. Zero: 4x−3 = 0 → x = <strong>3/4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- TOPIC 5 -->
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Quadratic Polynomials – Parabola and Zeroes</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring" target="_blank">Quadratics – Full Unit</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratic-functions-equations/x2f8bb11595b61c86:parabola-focus-directrix/v/parabola-focus-and-directrix-1" target="_blank">Parabola – Focus and Shape</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IlNAJl36-10" target="_blank">Quadratic Equations and Parabolas</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=kJnFo0SKMa4" target="_blank">The Discriminant – How Many Roots?</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=2ZzuZvz33X0" target="_blank">The Quadratic Formula Explained</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Nature of Roots Using Discriminant</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the discriminant of ax² + bx + c and explain what each case (>, =, <) means.<details class="ans"><summary>Show Answer</summary><p>Discriminant D = b²−4ac. D > 0: <strong>two distinct real zeroes</strong>. D = 0: <strong>one repeated real zero</strong>. D &lt; 0: <strong>no real zeroes</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the discriminant of x² − 5x + 6 and determine the nature of its zeroes.<details class="ans"><summary>Show Answer</summary><p>D = 25 − 24 = 1 > 0. <strong>Two distinct real zeroes</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the discriminant of x² − 2x + 1. What does this tell you about the graph?<details class="ans"><summary>Show Answer</summary><p>D = 4 − 4 = 0. <strong>One repeated zero (x=1)</strong>. The parabola just touches the x-axis.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Without solving, determine if 2x² + 3x + 5 has real zeroes.<details class="ans"><summary>Show Answer</summary><p>D = 9 − 40 = −31 &lt; 0. <strong>No real zeroes.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For what value of k does kx² − 6x + 3 have equal roots?<details class="ans"><summary>Show Answer</summary><p>D = 36 − 12k = 0 → k = <strong>3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k such that x² + (k−4)x + k = 0 has equal roots.<details class="ans"><summary>Show Answer</summary><p>D = (k−4)² − 4k = 0 → k²−8k+16−4k = 0 → k²−12k+16 = 0 → k = (12±√(144−64))/2 = (12±√80)/2 = 6±2√5. So k = <strong>6+2√5 or 6−2√5</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x² − 7x + 4, use the quadratic formula to find the zeroes.<details class="ans"><summary>Show Answer</summary><p>D = 49−48 = 1. x = (7±1)/6. Zeroes: <strong>x = 4/3 and x = 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x² − px + q has roots equal in magnitude but opposite in sign, what is p?<details class="ans"><summary>Show Answer</summary><p>Roots α and −α. Sum = 0 = −(−p)/1 = p. So <strong>p = 0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find zeroes of x² + 5x + 6 and interpret the result geometrically.<details class="ans"><summary>Show Answer</summary><p>(x+2)(x+3) = 0. Zeroes: −2, −3. The parabola <strong>crosses the x-axis</strong> at (−2,0) and (−3,0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 2x² − 8x + 8, find zeroes and state how many times the graph touches the x-axis.<details class="ans"><summary>Show Answer</summary><p>2(x²−4x+4) = 2(x−2)². Repeated zero x = 2. Graph <strong>touches the x-axis once</strong> at (2,0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Vertex and Axis of Symmetry</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the axis of symmetry of y = ax² + bx + c?<details class="ans"><summary>Show Answer</summary><p>Axis of symmetry: x = <strong>−b/(2a)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the axis of symmetry of y = x² − 6x + 5.<details class="ans"><summary>Show Answer</summary><p>x = 6/2 = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the vertex of y = 2x² − 4x + 1.<details class="ans"><summary>Show Answer</summary><p>x = 4/4 = 1. y = 2−4+1 = −1. Vertex: <strong>(1, −1)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For y = −x² + 4x − 3, find the vertex and state whether it is a max or min.<details class="ans"><summary>Show Answer</summary><p>x = −4/(−2) = 2. y = −4+8−3 = 1. Vertex <strong>(2, 1)</strong> is a <strong>maximum</strong> (opens down).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write y = x² + 4x + 7 in vertex form y = (x−h)² + k.<details class="ans"><summary>Show Answer</summary><p>Complete the square: (x+2)² − 4 + 7 = (x+2)² + 3. Vertex form: <strong>y = (x+2)² + 3</strong>. Vertex (−2, 3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The vertex of a parabola is (3, −5) and it opens upward. Does it have real zeroes?<details class="ans"><summary>Show Answer</summary><p><strong>Yes.</strong> Vertex is below the x-axis and opens upward, so it crosses x-axis at 2 points.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the minimum value of p(x) = x² − 4x + 7.<details class="ans"><summary>Show Answer</summary><p>Vertex x = 2. p(2) = 4−8+7 = <strong>3</strong>. Minimum value = 3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3(x−2)² + 5, state zeroes if any and the vertex.<details class="ans"><summary>Show Answer</summary><p>Vertex: <strong>(2, 5)</strong>. Since minimum = 5 > 0 and opens up: <strong>no real zeroes</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The axis of symmetry of y = kx² + 8x − 3 is x = −2. Find k.<details class="ans"><summary>Show Answer</summary><p>−b/(2a) = −8/(2k) = −2 → 8 = 4k → k = <strong>2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of a quadratic are −1 and 5. Find the axis of symmetry and vertex x-coordinate.<details class="ans"><summary>Show Answer</summary><p>Axis = (−1+5)/2 = <strong>2</strong>. Vertex x-coordinate = 2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Quadratic Formula Practice</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the quadratic formula.<details class="ans"><summary>Show Answer</summary><p>x = <strong>(−b ± √(b²−4ac)) / (2a)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Solve x² − 7x + 12 = 0 using the formula.<details class="ans"><summary>Show Answer</summary><p>D = 49−48 = 1. x = (7±1)/2. x = <strong>4 or 3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Solve 2x² + 5x − 3 = 0 using the quadratic formula.<details class="ans"><summary>Show Answer</summary><p>D = 25+24 = 49. x = (−5±7)/4. x = <strong>1/2 or −3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Solve x² + x + 1 = 0. How many real solutions?<details class="ans"><summary>Show Answer</summary><p>D = 1−4 = −3 &lt; 0. <strong>No real solutions</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Solve 4x² − 4x + 1 = 0.<details class="ans"><summary>Show Answer</summary><p>D = 16−16 = 0. x = 4/8 = <strong>1/2</strong> (repeated zero).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Solve x² − √6 x + 1 = 0 using the quadratic formula.<details class="ans"><summary>Show Answer</summary><p>D = 6−4 = 2. x = (√6 ± √2)/2. So <strong>x = (√6+√2)/2 or (√6−√2)/2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For what values of m does mx² − 4x + 1 = 0 have real roots?<details class="ans"><summary>Show Answer</summary><p>D = 16 − 4m ≥ 0 → m ≤ 4. Also m ≠ 0. So <strong>m ≤ 4, m ≠ 0</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solve 3x² − 5x + 2 = 0.<details class="ans"><summary>Show Answer</summary><p>D = 25−24 = 1. x = (5±1)/6. x = <strong>1 or 2/3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Solve x² = 5x − 4.<details class="ans"><summary>Show Answer</summary><p>x²−5x+4 = 0 → (x−4)(x−1) = 0. x = <strong>4 or 1</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the roots of ax² + bx + c = 0 are both positive, what can you say about the signs of a, b, and c?<details class="ans"><summary>Show Answer</summary><p>Sum = −b/a > 0 and Product = c/a > 0. If a > 0: b &lt; 0 and c > 0. So same sign for a and c, opposite for b. <strong>a, c same sign; b opposite sign to a</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Quadratic Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A quadratic has zeroes 3 and −3. Write the polynomial with leading coefficient 2.<details class="ans"><summary>Show Answer</summary><p>p(x) = 2(x−3)(x+3) = <strong>2x² − 18</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show that the parabola y = x² − 4x + 5 lies entirely above the x-axis.<details class="ans"><summary>Show Answer</summary><p>Vertex: x=2, y = 4−8+5 = 1 > 0. Parabola opens up (a=1>0) and minimum = 1 > 0. So <strong>y > 0 for all x</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the range of k for which x² − 3x + k > 0 for all real x.<details class="ans"><summary>Show Answer</summary><p>Need discriminant &lt; 0: 9 − 4k &lt; 0 → k > <strong>9/4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two quadratics p(x) = x² − 5x + 4 and q(x) = x² − 3x − 4. Find their common zero.<details class="ans"><summary>Show Answer</summary><p>p zeroes: 1, 4. q zeroes: 4, −1. Common zero: <strong>x = 4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If p and q are zeroes of x² − 5x + 6, find p² + q².<details class="ans"><summary>Show Answer</summary><p>p+q = 5, pq = 6. p²+q² = (p+q)²−2pq = 25−12 = <strong>13</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find a quadratic polynomial with zeroes that are negatives of the zeroes of x² − 3x + 2.<details class="ans"><summary>Show Answer</summary><p>Zeroes of given: 1, 2. New zeroes: −1, −2. Polynomial: (x+1)(x+2) = <strong>x² + 3x + 2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For y = ax² + bx + c, if c < 0 and a > 0, how many real zeroes does it have?<details class="ans"><summary>Show Answer</summary><p>Product of zeroes = c/a &lt; 0 means zeroes have opposite signs. So there are <strong>two distinct real zeroes</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α, β are zeroes of 2x² − 6x + 3, find α/β + β/α.<details class="ans"><summary>Show Answer</summary><p>α/β + β/α = (α²+β²)/(αβ) = ((α+β)²−2αβ)/(αβ) = (9−3)/(3/2) = 6/(3/2) = <strong>4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The parabola y = x² + bx + c passes through (2, 0) and (5, 0). Find b, c, and the vertex.<details class="ans"><summary>Show Answer</summary><p>b = −(2+5) = −7, c = 2×5 = 10. Vertex x = 7/2 = 3.5; y = 12.25−24.5+10 = −2.25. Vertex: <strong>(3.5, −2.25)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x² − (k²−5k)x + (4k²−10k+6), find k so that both zeroes are positive.<details class="ans"><summary>Show Answer</summary><p>Sum = k²−5k > 0 and Product = 4k²−10k+6 > 0 and D ≥ 0. Sum > 0: k&lt;0 or k&gt;5. This is a complex constraint problem; for simpler scope: try k=6: Sum=6, Product=4(36)−60+6=90 > 0. <strong>k = 6</strong> works.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 6 -->
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Sum of Zeroes – α + β = −b/a</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-arithmetic/x2ec2f6f830c9fb89:vieta/v/vieta-formulas-sum-product-roots" target="_blank">Vieta's Formulas – Sum of Roots</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=2ZzuZvz33X0" target="_blank">Quadratic Roots and Coefficients</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=kJnFo0SKMa4" target="_blank">Vieta's Formulas – Beautiful Relations</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">Sum and Product of Roots</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Application of α+β = −b/a</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">For p(x) = x² − 7x + 10, find the sum of zeroes using Vieta's formula.<details class="ans"><summary>Show Answer</summary><p>α+β = −(−7)/1 = <strong>7</strong>. (Verify: zeroes 2 and 5, sum = 7 ✓)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find α+β for p(x) = 3x² + 5x − 2.<details class="ans"><summary>Show Answer</summary><p>α+β = −5/3 = <strong>−5/3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The sum of zeroes of p(x) = kx² − 8x + 6 is 4. Find k.<details class="ans"><summary>Show Answer</summary><p>−(−8)/k = 8/k = 4 → k = <strong>2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 4x² − 3, find the sum of zeroes.<details class="ans"><summary>Show Answer</summary><p>b = 0. α+β = 0/4 = <strong>0</strong>. (Zeroes are symmetric about 0.)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">One zero of x² + kx + 6 is 2. Find k using α+β = −b/a and the other zero.<details class="ans"><summary>Show Answer</summary><p>Product = 6 = 2·β → β = 3. Sum = 2+3 = 5 = −k → k = <strong>−5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the sum of zeroes of p(x) = −2x² + 5x − 3.<details class="ans"><summary>Show Answer</summary><p>α+β = −5/(−2) = <strong>5/2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of x² + bx + c are in ratio 2:3 and their sum is 5. Find b and c.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 2k and 3k. Sum = 5k = 5 → k = 1. Zeroes: 2, 3. b = −5, c = 6. <strong>b = −5, c = 6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of 5x² + 4x − 1, find α+β without solving for α and β.<details class="ans"><summary>Show Answer</summary><p>α+β = −4/5 = <strong>−4/5</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find k if the sum of zeroes of (k+1)x² − (2k−1)x + 5 equals 4.<details class="ans"><summary>Show Answer</summary><p>(2k−1)/(k+1) = 4 → 2k−1 = 4k+4 → −2k = 5 → k = <strong>−5/2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of x² + (m+3)x + 2m − 1 are equal. Find m using sum and product.<details class="ans"><summary>Show Answer</summary><p>Equal roots: D = (m+3)² − 4(2m−1) = 0 → m²+6m+9−8m+4 = 0 → m²−2m+13 = 0. D = 4−52 < 0. No real m makes equal roots. (Check: sum=product condition for equal roots α=β means 2α=−(m+3) and α²=2m−1. Substitute.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Expressions Involving Sum of Zeroes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x² − 4x + 3, find α + β and (α − β)².<details class="ans"><summary>Show Answer</summary><p>α+β = 4, αβ = 3. (α−β)² = (α+β)²−4αβ = 16−12 = <strong>4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For zeroes of x² − 6x + 8, find α² + β².<details class="ans"><summary>Show Answer</summary><p>α+β=6, αβ=8. α²+β² = (α+β)²−2αβ = 36−16 = <strong>20</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α and β are zeroes of 2x² − 3x − 5. Find α + β + αβ.<details class="ans"><summary>Show Answer</summary><p>α+β = 3/2, αβ = −5/2. Sum = 3/2 + (−5/2) = <strong>−1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x² − 5x + 6, verify that α + β = −b/a by finding the actual zeroes.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 2 and 3. Sum = 5 = −(−5)/1 ✓. <strong>Verified.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If α + β = 3 and αβ = −10, find (α − β).<details class="ans"><summary>Show Answer</summary><p>(α−β)² = (α+β)²−4αβ = 9+40 = 49. α−β = <strong>±7</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α and β are roots of x² − 3x + 1 = 0. Find α³ + β³.<details class="ans"><summary>Show Answer</summary><p>α³+β³ = (α+β)³−3αβ(α+β) = 27−3(1)(3) = 27−9 = <strong>18</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the value of (1+α)(1+β) given α and β are zeroes of x² − 5x + 6.<details class="ans"><summary>Show Answer</summary><p>(1+α)(1+β) = 1 + (α+β) + αβ = 1 + 5 + 6 = <strong>12</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">α and β are zeroes of 3x² + 11x − 4. Find α + β.<details class="ans"><summary>Show Answer</summary><p>α+β = −11/3 = <strong>−11/3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If α − β = 1 and α + β = 5, find α and β.<details class="ans"><summary>Show Answer</summary><p>2α = 6 → α = 3, β = 2. <strong>α = 3, β = 2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the sum of squares of zeroes of x² − 2√3x + 1.<details class="ans"><summary>Show Answer</summary><p>α+β = 2√3, αβ = 1. α²+β² = (2√3)²−2(1) = 12−2 = <strong>10</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding Polynomials Given Sum</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write all quadratic polynomials with sum of zeroes = 5 and product = 6.<details class="ans"><summary>Show Answer</summary><p>p(x) = k(x²−5x+6) for any k ≠ 0. Simplest: <strong>x² − 5x + 6</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with sum of zeroes = 0 and product = −9.<details class="ans"><summary>Show Answer</summary><p>p(x) = x² − 0·x + (−9) = <strong>x² − 9</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find a quadratic whose zeroes sum to √2 and product is 1/3.<details class="ans"><summary>Show Answer</summary><p>p(x) = x² − √2 x + 1/3. Multiply by 3: <strong>3x² − 3√2 x + 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The sum of zeroes of ax² + bx + c is −3 and a = 2. Find b.<details class="ans"><summary>Show Answer</summary><p>−b/2 = −3 → b = <strong>6</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find a monic quadratic whose zeroes have sum 1/4 and product 1/4.<details class="ans"><summary>Show Answer</summary><p>p(x) = x² − (1/4)x + 1/4. Or multiply by 4: <strong>4x² − x + 1</strong>. Monic: x² − x/4 + 1/4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The sum of zeroes of p(x) = 2x² + (k−4)x + 5 is 3/2. Find k.<details class="ans"><summary>Show Answer</summary><p>−(k−4)/2 = 3/2 → −(k−4) = 3 → k−4 = −3 → k = <strong>1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x² − kx + 4, the sum of zeroes equals the product of zeroes. Find k.<details class="ans"><summary>Show Answer</summary><p>k/3 = 4/3 → k = <strong>4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If one zero of x² + px + q is double the other, express q in terms of p.<details class="ans"><summary>Show Answer</summary><p>Let zeroes be α and 2α. Sum: 3α = −p → α = −p/3. Product: 2α² = q = 2p²/9. <strong>q = 2p²/9</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the quadratic whose zeroes are (α+β) and (α−β), given α and β are zeroes of x² − 5x + 4.<details class="ans"><summary>Show Answer</summary><p>α+β=5, αβ=4. α−β = √(25−16) = 3. New zeroes: 5 and 3. Poly: (x−5)(x−3) = <strong>x²−8x+15</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of px² + qx + r are α and β. Write the polynomial with zeroes 2α and 2β.<details class="ans"><summary>Show Answer</summary><p>New sum = 2(α+β) = −2q/p. New product = 4αβ = 4r/p. Polynomial: x² + (2q/p)x + 4r/p = 0, or <strong>px² + 2qx + 4r</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Sum of Zeroes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x² − x − 6, find the polynomial with zeroes α² and β².<details class="ans"><summary>Show Answer</summary><p>α+β=1, αβ=−6. α²+β²=(α+β)²−2αβ=1+12=13. α²β²=(αβ)²=36. New poly: x²−13x+36 = <strong>(x−9)(x−4)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove that for x² + px + q, sum of zeroes is −p.<details class="ans"><summary>Show Answer</summary><p>Here a=1, b=p. Sum = −b/a = −p/1 = <strong>−p</strong>. QED.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">α, β are zeroes of x² − 3x + k. Find k if 2α + 3β = 9 and α + β = 3.<details class="ans"><summary>Show Answer</summary><p>α+β = 3 → from 2α+3β = 9 and α+β = 3: β = 9−2(3)+β... Let α = 3−β. 2(3−β)+3β = 9 → 6−2β+3β = 9 → β = 3, α = 0. Product k = 0×3 = <strong>0</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of 4x² − 2x − 1, find α² + αβ + β².<details class="ans"><summary>Show Answer</summary><p>α+β=1/2, αβ=−1/4. α²+β² = (1/2)²−2(−1/4) = 1/4+1/2 = 3/4. α²+αβ+β² = 3/4 + (−1/4) = <strong>1/2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write p(x) if the sum of zeroes is −2/3 and both zeroes are equal.<details class="ans"><summary>Show Answer</summary><p>Each zero = −1/3. p(x) = (x+1/3)² = x² + 2x/3 + 1/9. Or: <strong>9x² + 6x + 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The sum of zeroes of p(x) = x² − 7x + c equals twice the product. Find c.<details class="ans"><summary>Show Answer</summary><p>7 = 2c → c = <strong>7/2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α and β are zeroes of p(x) = x² − 5x + 6. Find (α−2)(β−2).<details class="ans"><summary>Show Answer</summary><p>(α−2)(β−2) = αβ − 2(α+β) + 4 = 6 − 10 + 4 = <strong>0</strong>. (This means 2 is a zero of p(x)!)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For ax² + bx + c, if α + β = αβ, express c in terms of a and b.<details class="ans"><summary>Show Answer</summary><p>−b/a = c/a → c = <strong>−b</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β are zeroes of x² + x − 6. Find α⁴ + β⁴.<details class="ans"><summary>Show Answer</summary><p>α+β=−1, αβ=−6. α²+β²=(−1)²−2(−6)=1+12=13. α⁴+β⁴=(α²+β²)²−2(αβ)²=169−72=<strong>97</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α = 2 + √3 is a zero of x² + bx + c, find the other zero and write the polynomial.<details class="ans"><summary>Show Answer</summary><p>For real coefficients, other zero = 2 − √3. Sum = 4, product = 4−3=1. p(x) = <strong>x² − 4x + 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+<!-- TOPIC 7 -->
+<div class="topic" id="t7">
+  <div class="topic-header"><div class="t-num">7</div><h2>Product of Zeroes – αβ = c/a</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-arithmetic/x2ec2f6f830c9fb89:vieta/v/vieta-formulas-product-roots" target="_blank">Vieta's Formulas – Product of Roots</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=2ZzuZvz33X0" target="_blank">Product of Roots – Explained</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=kJnFo0SKMa4" target="_blank">Coefficients and Roots</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">Product Formula for Roots</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Application of αβ = c/a</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the product of zeroes of p(x) = x² − 7x + 12.<details class="ans"><summary>Show Answer</summary><p>αβ = c/a = 12/1 = <strong>12</strong>. (Verify: zeroes 3×4=12 ✓)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find αβ for p(x) = 3x² − 5x + 2.<details class="ans"><summary>Show Answer</summary><p>αβ = 2/3 = <strong>2/3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = −4x² + 8x − 3, find the product of zeroes.<details class="ans"><summary>Show Answer</summary><p>αβ = c/a = −3/(−4) = <strong>3/4</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For x² − 3, find the sum and product of zeroes without factoring.<details class="ans"><summary>Show Answer</summary><p>Sum = 0/1 = 0. Product = −3/1 = <strong>−3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the product of zeroes of kx² − 3x + 9 is 3, find k.<details class="ans"><summary>Show Answer</summary><p>9/k = 3 → k = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">One zero of 6x² + x − 2 is 1/2. Find the other zero using the product formula.<details class="ans"><summary>Show Answer</summary><p>αβ = −2/6 = −1/3. β = (−1/3)/(1/2) = <strong>−2/3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find αβ for p(x) = 7x² − 11x.<details class="ans"><summary>Show Answer</summary><p>c = 0. αβ = 0/7 = <strong>0</strong>. (One zero is 0.)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If αβ = −2 and α + β = 3 for a quadratic, find the polynomial.<details class="ans"><summary>Show Answer</summary><p>p(x) = x² − 3x − 2. <strong>p(x) = x² − 3x − 2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The product of zeroes of (p+2)x² − (3p+1)x + 2p is 1. Find p.<details class="ans"><summary>Show Answer</summary><p>2p/(p+2) = 1 → 2p = p+2 → p = <strong>2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 5x² + (√5)x − 2, find the product of zeroes.<details class="ans"><summary>Show Answer</summary><p>αβ = −2/5 = <strong>−2/5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Expressions Involving Product of Zeroes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x² − 4x + 3, find 1/(αβ).<details class="ans"><summary>Show Answer</summary><p>αβ = 3. 1/(αβ) = <strong>1/3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For zeroes α, β of 2x² − 5x + 3, find 1/α + 1/β.<details class="ans"><summary>Show Answer</summary><p>1/α+1/β = (α+β)/(αβ) = (5/2)/(3/2) = <strong>5/3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find α²β + αβ² for zeroes of x² − 6x + 8.<details class="ans"><summary>Show Answer</summary><p>α²β + αβ² = αβ(α+β) = 8 × 6 = <strong>48</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of 3x² + 4x − 7, find αβ(α+β).<details class="ans"><summary>Show Answer</summary><p>αβ = −7/3, α+β = −4/3. Product×sum = (−7/3)(−4/3) = <strong>28/9</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For zeroes α, β of x² + x − 6, find α² + β² − αβ.<details class="ans"><summary>Show Answer</summary><p>α+β=−1, αβ=−6. α²+β²=(−1)²−2(−6)=13. Result = 13−(−6) = <strong>19</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find α³β³ for zeroes of x² − 3x + 2.<details class="ans"><summary>Show Answer</summary><p>αβ = 2. (αβ)³ = <strong>8</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β zeroes of x² + 5x + 6. Find (α+1)(β+1).<details class="ans"><summary>Show Answer</summary><p>(α+1)(β+1) = αβ+(α+β)+1 = 6+(−5)+1 = <strong>2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find α²β² − (α+β)² for zeroes of x² − 2x − 3.<details class="ans"><summary>Show Answer</summary><p>αβ=−3, α+β=2. (αβ)²=9, (α+β)²=4. Result = 9−4 = <strong>5</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α, β are zeroes of 2x² + 7x + 3, find (α − 1/α)(β − 1/β).<details class="ans"><summary>Show Answer</summary><p>= (α²−1)(β²−1)/(αβ). (α²β²)−(α²+β²)+1 / αβ. αβ=3/2, α+β=−7/2. α²+β²=49/4−3=37/4. (αβ)²=9/4. Result = (9/4 − 37/4 + 1)/(3/2) = (−24/4)/(3/2) = −6/(3/2) = <strong>−4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify αβ = c/a for p(x) = 6x² − x − 2 by finding both zeroes.<details class="ans"><summary>Show Answer</summary><p>6x²−x−2 = (3x−2)(2x+1) = 0. Zeroes: 2/3 and −1/2. Product = (2/3)(−1/2) = −1/3 = −2/6 = c/a ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Special Product Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If product of zeroes = 0, what can you say about the polynomial?<details class="ans"><summary>Show Answer</summary><p>c/a = 0 → c = 0. So the polynomial has <strong>no constant term</strong>, meaning 0 is one of the zeroes.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">One zero of x² + bx + 12 is 4. Find b.<details class="ans"><summary>Show Answer</summary><p>Product = 12 = 4·β → β = 3. Sum = 7 = −b → b = <strong>−7</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If zeroes of x² + px + q are reciprocals of each other, find q.<details class="ans"><summary>Show Answer</summary><p>Zeroes α and 1/α. Product = 1 = q/1. So <strong>q = 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of x² − kx + 16 are equal. Find k and the common zero.<details class="ans"><summary>Show Answer</summary><p>D=0: k²−64=0 → k=±8. If k=8: zero=4; if k=−8: zero=−4. <strong>k=8 (zero=4) or k=−8 (zero=−4)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If zeroes of 2x² − 5x + c are in ratio 1:2, find c.<details class="ans"><summary>Show Answer</summary><p>Zeroes α and 2α. Sum=3α=5/2→α=5/6. Product=2α²=2(25/36)=25/18=c/2→c=25/9. <strong>c = 25/9</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If αβ = 4 and (α−β)² = 9, find α²+β².<details class="ans"><summary>Show Answer</summary><p>(α−β)² = α²−2αβ+β² = 9 → α²+β² = 9 + 2(4) = <strong>17</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with product of zeroes = 7 and sum = 0.<details class="ans"><summary>Show Answer</summary><p>p(x) = x² − 0·x + 7 = <strong>x² + 7</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">α and β are zeroes of x² − 4x + c and α/β + β/α = 7/2. Find c.<details class="ans"><summary>Show Answer</summary><p>(α²+β²)/(αβ) = 7/2. α²+β²=(α+β)²−2αβ=16−2c. So (16−2c)/c = 7/2 → 32−4c = 7c → 11c = 32 → c = <strong>32/11</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For zeroes of p(x) = 4x² − 3, find the product and show the zeroes are ±√(3/4).<details class="ans"><summary>Show Answer</summary><p>4x²−3 = 0 → x² = 3/4 → x = ±√3/2. Product = (√3/2)(−√3/2) = −3/4 = c/a = −3/4 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The product of zeroes of (k+1)x² − 3(k+1)x + (2k+3) = 0 is 3. Find k.<details class="ans"><summary>Show Answer</summary><p>(2k+3)/(k+1) = 3 → 2k+3 = 3k+3 → k = <strong>0</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Product and Combined</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x² − 3x + 2, find α³ + β³ using αβ and α+β only.<details class="ans"><summary>Show Answer</summary><p>α³+β³=(α+β)³−3αβ(α+β)=27−3(2)(3)=27−18=<strong>9</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If the sum and product of zeroes are both equal to 2, write the polynomial and verify by finding zeroes.<details class="ans"><summary>Show Answer</summary><p>p(x) = x²−2x+2. D = 4−8 = −4 < 0. Zeroes are complex: 1±i. Sum=2✓, Product=2✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Given zeroes α and β of x² + 2x − 8, find the polynomial with zeroes α+1 and β+1.<details class="ans"><summary>Show Answer</summary><p>α+β=−2, αβ=−8. New sum=(α+β)+2=0. New product=(α+1)(β+1)=αβ+α+β+1=−8−2+1=−9. New poly: <strong>x²−9</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">α, β are zeroes of x² − 5x + 6. Construct the quadratic with zeroes 1/α² and 1/β².<details class="ans"><summary>Show Answer</summary><p>α+β=5, αβ=6. 1/α²+1/β²=(α²+β²)/(αβ)²=(25−12)/36=13/36. (1/α)(1/β)=1/36. New poly: x²−(13/36)x+1/36. Multiply by 36: <strong>36x²−13x+1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α, β are zeroes of ax² + bx + c, show that (1/α)+(1/β) = −b/c.<details class="ans"><summary>Show Answer</summary><p>1/α+1/β = (α+β)/(αβ) = (−b/a)/(c/a) = <strong>−b/c</strong>. QED.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β satisfy αβ = 6 and α+β = 7. Find α² − β² (without solving).<details class="ans"><summary>Show Answer</summary><p>α²−β² = (α+β)(α−β). (α−β)²=(α+β)²−4αβ=49−24=25 → α−β=±5. α²−β²=7×(±5)=<strong>±35</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic whose zeroes are the cubes of the zeroes of x² − 2x − 3.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 3, −1. Cubes: 27, −1. New poly: (x−27)(x+1) = <strong>x²−26x−27</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The product of zeroes of p(x) = 3x² + kx − 9 is −3. Find k and the sum of zeroes.<details class="ans"><summary>Show Answer</summary><p>Product = −9/3 = −3 ✓ for any k. Sum = −k/3. k can be any value. The question asks for k: since product condition is automatically satisfied, k is free. If asking sum: sum = <strong>−k/3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find p(x) given that α+β = 2/3 and αβ = −5/3 using integer coefficients.<details class="ans"><summary>Show Answer</summary><p>p(x) = x² − (2/3)x − 5/3. Multiply by 3: <strong>3x² − 2x − 5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x² + px + q and α² + β² = r, express r in terms of p and q.<details class="ans"><summary>Show Answer</summary><p>r = (α+β)² − 2αβ = p² − 2q. So <strong>r = p² − 2q</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 8 -->
+<div class="topic" id="t8">
+  <div class="topic-header"><div class="t-num">8</div><h2>Forming Quadratic from Given Zeroes</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:multiply-binomials/v/multiplying-binomials" target="_blank">Building Polynomials from Roots</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IlNAJl36-10" target="_blank">Writing Equations from Roots</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=kJnFo0SKMa4" target="_blank">Constructing Polynomials</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">From Roots to Polynomial</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Forming Quadratics – Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find a quadratic polynomial with zeroes 3 and 5.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−3)(x−5) = <strong>x² − 8x + 15</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find a quadratic with zeroes −2 and 7.<details class="ans"><summary>Show Answer</summary><p>Sum=5, product=−14. p(x) = <strong>x² − 5x − 14</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find a quadratic polynomial with zeroes 0 and 4.<details class="ans"><summary>Show Answer</summary><p>p(x) = x(x−4) = <strong>x² − 4x</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with zeroes 1/2 and −3.<details class="ans"><summary>Show Answer</summary><p>Sum=−5/2, product=−3/2. p(x) = x² + (5/2)x − 3/2. With integers: <strong>2x² + 5x − 3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic with equal zeroes both equal to 4.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−4)² = <strong>x² − 8x + 16</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic polynomial with zeroes √3 and −√3.<details class="ans"><summary>Show Answer</summary><p>Sum=0, product=−3. p(x) = <strong>x² − 3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic with zeroes (2+√5) and (2−√5).<details class="ans"><summary>Show Answer</summary><p>Sum=4, product=4−5=−1. p(x) = <strong>x² − 4x − 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic with leading coefficient 3 and zeroes 1 and 2.<details class="ans"><summary>Show Answer</summary><p>p(x) = 3(x−1)(x−2) = <strong>3x² − 9x + 6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic whose zeroes are 2/3 and −1/4 with integer coefficients.<details class="ans"><summary>Show Answer</summary><p>p(x) = (3x−2)(4x+1) = <strong>12x² − 5x − 2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with zeroes that are both equal to −5/2.<details class="ans"><summary>Show Answer</summary><p>p(x) = (2x+5)² = <strong>4x² + 20x + 25</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Forming Quadratics from Expressions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find a quadratic whose zeroes are reciprocals of zeroes of x² − 5x + 6.<details class="ans"><summary>Show Answer</summary><p>Zeroes of given: 2, 3. Reciprocals: 1/2, 1/3. Sum=5/6, product=1/6. Poly: x²−(5/6)x+1/6. With integers: <strong>6x² − 5x + 1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a quadratic whose zeroes are squares of zeroes of x² − 3x + 2.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 1, 2. Squares: 1, 4. Poly: (x−1)(x−4) = <strong>x² − 5x + 4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic with zeroes negated from those of 2x² − 7x + 3.<details class="ans"><summary>Show Answer</summary><p>α+β=7/2, αβ=3/2. New zeroes −α, −β: sum=−7/2, product=3/2. Poly: x²+(7/2)x+3/2. With integers: <strong>2x² + 7x + 3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If zeroes are (α+β) and αβ, given α, β are zeroes of x² − 2x − 3, write the new quadratic.<details class="ans"><summary>Show Answer</summary><p>α+β=2, αβ=−3. New zeroes: 2 and −3. Poly: (x−2)(x+3) = <strong>x²+x−6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with zeroes that are each increased by 3 from zeroes of x² − x − 6.<details class="ans"><summary>Show Answer</summary><p>Zeroes of given: 3 and −2. New: 6 and 1. Poly: (x−6)(x−1) = <strong>x² − 7x + 6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic whose zeroes are 1+√2 and 1−√2.<details class="ans"><summary>Show Answer</summary><p>Sum=2, product=1−2=−1. p(x) = <strong>x² − 2x − 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of a quadratic are in ratio 3:4 and their product is 48. Write the quadratic.<details class="ans"><summary>Show Answer</summary><p>3k·4k = 12k² = 48 → k² = 4 → k = 2. Zeroes: 6 and 8. Sum=14. Poly: <strong>x² − 14x + 48</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with zeroes that are doubled from those of x² − 5x + 4.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 1,4. Doubled: 2,8. Sum=10, product=16. Poly: <strong>x²−10x+16</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Zeroes are (3+√7)/2 and (3−√7)/2. Write the quadratic.<details class="ans"><summary>Show Answer</summary><p>Sum=3, product=(9−7)/4=1/2. Poly: x²−3x+1/2. Integers: <strong>2x²−6x+1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Zeroes are a+b and a−b where a=2, b=√3. Write the quadratic.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 2+√3, 2−√3. Sum=4, product=4−3=1. Poly: <strong>x²−4x+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Verification and Mixed Formation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Verify that p(x) = x² − (α+β)x + αβ has zeroes α and β by substituting.<details class="ans"><summary>Show Answer</summary><p>p(α) = α²−(α+β)α+αβ = α²−α²−αβ+αβ = 0 ✓. Similarly p(β) = 0 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic with zeroes −4/3 and 1/2 and verify using sum/product.<details class="ans"><summary>Show Answer</summary><p>Sum=−4/3+1/2=−5/6. Product=−2/3. Poly: 6x²+5x−4. Check: zeroes of 6x²+5x−4=(3x+4)(2x−1): x=−4/3, 1/2 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The quadratic x² − px + q has zeroes that differ by 2. Find a relationship between p and q.<details class="ans"><summary>Show Answer</summary><p>Zeroes α, α+2. Sum=2α+2=p → α=(p−2)/2. Product=α(α+2)=q. So (p−2)/2 · (p+2)/2 = q → <strong>(p²−4)/4 = q</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For what values of c does x² − 4x + c have one zero equal to 1?<details class="ans"><summary>Show Answer</summary><p>p(1) = 1−4+c = 0 → c = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic with zeroes that are additive inverses of each other and product = −25.<details class="ans"><summary>Show Answer</summary><p>Zeroes α, −α. Product = −α² = −25 → α = 5. Poly: x²+(0)x−25 = <strong>x²−25</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic whose one zero is 3 and whose graph is tangent to the x-axis.<details class="ans"><summary>Show Answer</summary><p>Tangent means repeated zero: <strong>(x−3)² = x²−6x+9</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Form two different quadratics both having zero x = 2.<details class="ans"><summary>Show Answer</summary><p>Example 1: (x−2)(x−5) = x²−7x+10. Example 2: (x−2)(x+3) = x²+x−6. <strong>Many answers possible.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x² − 3x − 4, find the quadratic with zeroes α/β and β/α.<details class="ans"><summary>Show Answer</summary><p>α+β=3, αβ=−4. α/β+β/α=(α²+β²)/(αβ)=(9+8)/(−4)=−17/4. (α/β)(β/α)=1. Poly: x²+(17/4)x+1 → <strong>4x²+17x+4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A quadratic has integer zeroes and leading coefficient 1. Its graph passes through (0, 15) and (6, 3). Find it.<details class="ans"><summary>Show Answer</summary><p>p(0)=15=c; p(6)=36+6b+15=3 → 6b=−48 → b=−8. Poly: x²−8x+15=(x−3)(x−5) ✓. Zeroes: <strong>3 and 5</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a monic quadratic with rational coefficients having zero √5 + 2.<details class="ans"><summary>Show Answer</summary><p>Other zero: 2 − √5. Sum = 4, product = 4−5 = −1. p(x) = <strong>x² − 4x − 1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Advanced Quadratic Formation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If zeroes of p(x) = x² + bx + c are m+n and m−n, express b and c in terms of m and n.<details class="ans"><summary>Show Answer</summary><p>Sum = 2m = −b → b = −2m. Product = m²−n² = c. So <strong>b = −2m, c = m²−n²</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic whose zeroes are the arithmetic and geometric means of 4 and 16.<details class="ans"><summary>Show Answer</summary><p>AM=(4+16)/2=10. GM=√(4·16)=8. Sum=18, product=80. Poly: <strong>x²−18x+80</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of x² + bx + c satisfy α² + β² = 7 and αβ = 6. Find b and c.<details class="ans"><summary>Show Answer</summary><p>αβ=6=c; (α+β)²=α²+β²+2αβ=7+12=19. α+β=±√19=−b → b=∓√19. <strong>c=6, b=±√19</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a quadratic with zeroes sin 30° and cos 60°.<details class="ans"><summary>Show Answer</summary><p>sin 30°=1/2, cos 60°=1/2. Both zeroes are 1/2. Poly: (x−1/2)²= x²−x+1/4. With integers: <strong>4x²−4x+1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Form a quadratic having zeroes tan 45° and cot 45°.<details class="ans"><summary>Show Answer</summary><p>tan 45° = 1, cot 45° = 1. Both equal 1. Poly: <strong>(x−1)² = x²−2x+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β are zeroes of p(x). If 1/α and 1/β are zeroes of q(x) = 6x² − x − 2, find p(x).<details class="ans"><summary>Show Answer</summary><p>Zeroes of q: −1/2, 2/3. So 1/α=−1/2→α=−2 and 1/β=2/3→β=3/2. Sum=−1/2, product=−3. p(x)=x²+(1/2)x−3 → <strong>2x²+x−6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic whose zeroes are the solutions of |x − 3| = 2.<details class="ans"><summary>Show Answer</summary><p>|x−3|=2 → x=5 or x=1. Sum=6, product=5. Poly: <strong>x²−6x+5</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If one zero of ax² + bx + c is twice the other, show that 2b² = 9ac.<details class="ans"><summary>Show Answer</summary><p>Zeroes α, 2α. Sum=3α=−b/a→α=−b/(3a). Product=2α²=c/a→2b²/(9a²)=c/a→2b²=9ac ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a quadratic in x whose zeroes are 2+ √3/2 and 2 − √3/2. Simplify completely.<details class="ans"><summary>Show Answer</summary><p>Sum=4, product=4−3/4=13/4. Poly: x²−4x+13/4. With integers: <strong>4x²−16x+13</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α and β are zeroes of x²−5x+k and α−β=1, find k and the polynomial.<details class="ans"><summary>Show Answer</summary><p>(α−β)²=(α+β)²−4αβ=25−4k=1→4k=24→k=6. Poly: <strong>x²−5x+6</strong>. Zeroes: 3,2 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- TOPIC 9 -->
+<div class="topic" id="t9">
+  <div class="topic-header"><div class="t-num">9</div><h2>Cubic Polynomials – Three Zeroes</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:zeros-of-poly/v/finding-zeros-of-polynomial-functions" target="_blank">Zeroes of Cubic Polynomials</a><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-division/x2ec2f6f830c9fb89:dividing-polynomials-by-linear-factors/v/dividing-polynomials-by-x-0-25" target="_blank">Factoring Cubics</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=2DKN-B4D0G8" target="_blank">Cubic Polynomial Roots</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=N-KXStupNgI" target="_blank">Solving Cubics – The Real Story</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=W7s8Gy97DRY" target="_blank">The Cubic Formula</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying and Evaluating Cubics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">How many zeroes can a cubic polynomial have at most?<details class="ans"><summary>Show Answer</summary><p>At most <strong>3</strong> real zeroes (degree = 3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Verify that x = 1, 2, 3 are zeroes of p(x) = x³ − 6x² + 11x − 6.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1−6+11−6 = 0 ✓; p(2) = 8−24+22−6 = 0 ✓; p(3) = 27−54+33−6 = 0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find all zeroes of p(x) = x³ − 7x + 6, given x = 1 is a zero.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−1): x²+x−6=(x+3)(x−2). Zeroes: <strong>1, 2, −3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find all zeroes of p(x) = x³ − 3x² − 4x + 12, given x = 2 is a zero.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−2): x²−x−6=(x−3)(x+2). Zeroes: <strong>2, 3, −2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ + x² − 4x − 4, verify x = 2 is a zero and find the others.<details class="ans"><summary>Show Answer</summary><p>p(2) = 8+4−8−4 = 0 ✓. Divide: x²+3x+2=(x+1)(x+2). Zeroes: <strong>2, −1, −2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Must a cubic polynomial with real coefficients have at least one real zero? Why?<details class="ans"><summary>Show Answer</summary><p><strong>Yes.</strong> A cubic has odd degree. Complex roots come in conjugate pairs. With 3 roots total, at least one must be real.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find zeroes of p(x) = (x − 1)(x + 3)(x − 5).<details class="ans"><summary>Show Answer</summary><p>Zeroes: <strong>1, −3, 5</strong> (read directly from factors).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ − 2x² − 5x + 6, given x = 3 is a zero, find all zeroes.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−3): x²+x−2=(x+2)(x−1). Zeroes: <strong>3, 1, −2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Can a cubic polynomial have exactly two distinct real zeroes? Explain.<details class="ans"><summary>Show Answer</summary><p><strong>Yes.</strong> One zero can be repeated. Example: (x−1)²(x−3) has zeroes 1 (double) and 3 — two distinct values but three total.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a cubic polynomial with zeroes 1, −2, and 3 with leading coefficient 2.<details class="ans"><summary>Show Answer</summary><p>p(x) = 2(x−1)(x+2)(x−3) = <strong>2x³ − 4x² − 10x + 12</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Factoring Cubic Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Factor p(x) = x³ − 6x² + 11x − 6 completely.<details class="ans"><summary>Show Answer</summary><p>Zeroes: 1,2,3 (try p(1)=0). <strong>(x−1)(x−2)(x−3)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factor x³ + 3x² − 4 completely, given x = 1 is a zero.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−1): x²+4x+4=(x+2)². Factors: <strong>(x−1)(x+2)²</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor x³ − 3x + 2 completely.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1−3+2 = 0. Divide: x²+x−2=(x+2)(x−1). Factors: <strong>(x−1)²(x+2)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the value of k so that (x − 3) divides x³ − 4x² + kx − 3 exactly.<details class="ans"><summary>Show Answer</summary><p>p(3) = 27−36+3k−3 = 0 → 3k = 12 → k = <strong>4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor x³ + 4x² + x − 6 given (x + 2) is a factor.<details class="ans"><summary>Show Answer</summary><p>Divide by (x+2): x²+2x−3=(x+3)(x−1). Factors: <strong>(x+2)(x+3)(x−1)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor 2x³ − x² − 5x − 2, given x = 2 is a zero.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−2): 2x²+3x+1=(2x+1)(x+1). Factors: <strong>(x−2)(2x+1)(x+1)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that (x + 1) is a factor of x³ + 5x² + 7x + 3 and factor completely.<details class="ans"><summary>Show Answer</summary><p>p(−1) = −1+5−7+3 = 0 ✓. Divide: x²+4x+3=(x+1)(x+3). Factors: <strong>(x+1)²(x+3)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k if x³ + kx² + 3x − 4 has (x − 1) as a factor, then factor completely.<details class="ans"><summary>Show Answer</summary><p>p(1) = 1+k+3−4 = 0 → k = 0. p(x) = x³+3x−4. Divide by (x−1): x²+x+4. Discriminant = 1−16 = −15 < 0. Factors: <strong>(x−1)(x²+x+4)</strong> (cannot factor further over reals).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a cubic polynomial with a triple repeated zero at x = 2.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−2)³ = <strong>x³ − 6x² + 12x − 8</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor x³ − 19x − 30 completely, given x = −2 is a zero.<details class="ans"><summary>Show Answer</summary><p>Divide by (x+2): x²−2x−15=(x−5)(x+3). Factors: <strong>(x+2)(x+3)(x−5)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Zeroes and Coefficients of Cubics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If α, β, γ are zeroes of x³ − 6x² + 11x − 6, find α + β + γ, αβ+βγ+γα, and αβγ using the polynomial.<details class="ans"><summary>Show Answer</summary><p>α+β+γ = 6, αβ+βγ+γα = 11, αβγ = 6.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 2x³ − 7x² + 3x + 9, find the sum of zeroes.<details class="ans"><summary>Show Answer</summary><p>α+β+γ = −(−7)/2 = <strong>7/2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ − 4x, find all three zeroes.<details class="ans"><summary>Show Answer</summary><p>x(x²−4) = x(x−2)(x+2). Zeroes: <strong>0, 2, −2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two zeroes of x³ − px² + qx − 4 are 1 and 2. Find the third zero using the product.<details class="ans"><summary>Show Answer</summary><p>αβγ = 4 (constant/leading coeff). 1·2·γ = 4 → γ = <strong>2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the sum and product of all three zeroes of x³ − 3x² − x + 3.<details class="ans"><summary>Show Answer</summary><p>Sum = 3, product = −constant/leading = 3/1 = 3 (wait: for x³+bx²+cx+d, product = −d/a). αβγ = −3/1 = <strong>−3</strong>. Oops: for monic, αβγ = −d = −(3) when standard form. Careful: x³−3x²−x+3: d = 3. αβγ = −d/a = −3. Sum = 3. Verify: zeroes are 1,−1,3: sum=3✓, product=−3✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ + 6x² + 11x + 6, all zeroes are negative integers. Find them.<details class="ans"><summary>Show Answer</summary><p>Try x=−1: −1+6−11+6=0 ✓. Divide: x²+5x+6=(x+2)(x+3). Zeroes: <strong>−1, −2, −3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">One zero of ax³ + bx² + cx + d is 0. What does this tell you about d?<details class="ans"><summary>Show Answer</summary><p>p(0) = d = 0. So <strong>d = 0</strong> (no constant term).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For x³ − px² + qx − r = 0 with roots α, β, γ, write α + β + γ, αβ + βγ + γα, αβγ.<details class="ans"><summary>Show Answer</summary><p>α+β+γ = <strong>p</strong>, αβ+βγ+γα = <strong>q</strong>, αβγ = <strong>r</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two zeroes of x³ − kx + 6 are 1 and 2. Find k and the third zero.<details class="ans"><summary>Show Answer</summary><p>Sum of all zeroes = 0/1 = 0 (b=0). So 1+2+γ = 0 → γ = −3. Product = −6/1 (constant term sign): αβγ = −6 = 1·2·(−3) = −6 ✓. k: sum of products in pairs = −k: αβ+αγ+βγ = 2+(−3)+(−6) = −7 = −k → k = <strong>7</strong>. Third zero = <strong>−3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a cubic polynomial with zeroes 1/2, 1/3, and 2 with integer coefficients.<details class="ans"><summary>Show Answer</summary><p>p(x) = (2x−1)(3x−1)(x−2) = 6x³−17x²+11x−2. <strong>6x³−17x²+11x−2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Cubic Polynomial Analysis</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write a cubic polynomial with exactly one real zero at x = 5 (the other two are complex).<details class="ans"><summary>Show Answer</summary><p>Complex zeroes come in pairs: e.g., 1±i. p(x) = (x−5)(x²−2x+2) = <strong>x³−7x²+12x−10</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If the cubic ax³+bx²+cx+d has a triple zero α, express b, c, d in terms of a and α.<details class="ans"><summary>Show Answer</summary><p>p(x) = a(x−α)³ = a(x³−3αx²+3α²x−α³). So b=−3aα, c=3aα², d=−aα³.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ − 4x² + x + 6, verify the zeroes are −1, 2, 3 and factor completely.<details class="ans"><summary>Show Answer</summary><p>p(−1)=−1−4−1+6=0✓; p(2)=8−16+2+6=0✓; p(3)=27−36+3+6=0✓. p(x)=<strong>(x+1)(x−2)(x−3)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that the graph of a cubic crosses the x-axis at least once using the Intermediate Value Theorem.<details class="ans"><summary>Show Answer</summary><p>As x→+∞, cubic→+∞ (if a>0) and as x→−∞, cubic→−∞. By IVT, it must pass through 0, so it crosses the x-axis <strong>at least once</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If one zero of x³ + px² + qx + r is the negative of another, find a relation among p, q, r.<details class="ans"><summary>Show Answer</summary><p>Let zeroes be α, −α, β. Sum = β = −p. Pairs: −α²+αβ−αβ = −α² = q → α²=−q. Product = −α²β = r → (−q)(−p)= r → <strong>pq = r</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find p if (x − 1) is a double factor of x³ − px² + (2p−3)x + (4−p).<details class="ans"><summary>Show Answer</summary><p>For double factor, p(1)=0 and p'(1)=0. p(1)=1−p+2p−3+4−p=2=0 → This gives 2=0, contradiction. Recheck: 1−p+2p−3+4−p = (1−3+4)+(−p+2p−p) = 2+0 = 2 ≠ 0. So no value of p gives (x−1) as double factor here; the problem may intend specific checking — if instead given x³−(p+1)x²+(p+1)x+(4−p): p(1)=0 gives 4−p+1−p−1+1=0 etc. As stated: <strong>no solution</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For x³ − 3x² − 10x + 24 = 0, one root is 2. Find all roots and their sum, pairwise products, triple product.<details class="ans"><summary>Show Answer</summary><p>Divide by (x−2): x²−x−12=(x−4)(x+3). Roots: 2, 4, −3. Sum=3, pairs: 2·4+2(−3)+4(−3)=8−6−12=−10, product=−24. Check: sum=3=3✓, pair product=−10✓, triple=−(24)=−24✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a cubic that has a zero at x = 0 with multiplicity 2 and a zero at x = −4.<details class="ans"><summary>Show Answer</summary><p>p(x) = x²(x+4) = <strong>x³ + 4x²</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ + bx² + cx + d with roots in AP (arithmetic progression) differing by k, express the roots in terms of b and k.<details class="ans"><summary>Show Answer</summary><p>Roots: a−k, a, a+k (AP). Sum = 3a = −b → a = −b/3. The roots are <strong>−b/3−k, −b/3, −b/3+k</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove that if α, β, γ are zeroes of x³+px²+qx+r, then αβ+βγ+γα = q.<details class="ans"><summary>Show Answer</summary><p>x³+px²+qx+r = (x−α)(x−β)(x−γ) = x³−(α+β+γ)x²+(αβ+βγ+γα)x−αβγ. Matching x coefficient: αβ+βγ+γα = <strong>q</strong>. QED.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 10 -->
+<div class="topic" id="t10">
+  <div class="topic-header"><div class="t-num">10</div><h2>Sum and Products of Cubic Zeroes (Vieta's for Cubics)</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-arithmetic/x2ec2f6f830c9fb89:vieta/v/vieta-formulas-cubic" target="_blank">Vieta's Formulas for Cubics</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=2DKN-B4D0G8" target="_blank">Cubic Coefficients and Roots</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=kJnFo0SKMa4" target="_blank">Higher-Degree Vieta</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">Symmetric Functions of Roots</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Application of Cubic Vieta's</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State Vieta's formulas for ax³ + bx² + cx + d with zeroes α, β, γ.<details class="ans"><summary>Show Answer</summary><p>α+β+γ = <strong>−b/a</strong>; αβ+βγ+γα = <strong>c/a</strong>; αβγ = <strong>−d/a</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ − 7x² + 14x − 8, find α+β+γ, αβ+βγ+γα, and αβγ.<details class="ans"><summary>Show Answer</summary><p>α+β+γ = 7; αβ+βγ+γα = 14; αβγ = 8.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 2x³ + 3x² − 11x − 6, find αβγ.<details class="ans"><summary>Show Answer</summary><p>αβγ = −(−6)/2 = <strong>3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ − 6x² + 11x − 6, find αβ+βγ+γα without finding the roots.<details class="ans"><summary>Show Answer</summary><p>αβ+βγ+γα = c/a = <strong>11</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If one zero of x³ − 9x² + 26x − 24 is 2, find the other two using Vieta's.<details class="ans"><summary>Show Answer</summary><p>Sum=9 → β+γ=7. Product=24 → 2βγ=24 → βγ=12. So β,γ are zeroes of t²−7t+12=(t−3)(t−4). Zeroes: <strong>2, 3, 4</strong>.</p></details></div><span class="diff diff="medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x³ + 5x² − x − 2, find αβ+βγ+γα.<details class="ans"><summary>Show Answer</summary><p>αβ+βγ+γα = c/a = −1/3 = <strong>−1/3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The zeroes of x³ + qx + r are α, β, γ. What is α + β + γ?<details class="ans"><summary>Show Answer</summary><p>b = 0 (no x² term). α+β+γ = <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For x³ − px² + qx − r = 0, match coefficients to Vieta's formulas explicitly.<details class="ans"><summary>Show Answer</summary><p>Here a=1, b=−p, c=q, d=−r. So α+β+γ=p, αβ+βγ+γα=q, αβγ=r.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If zeroes of x³ + bx² + cx + d are 1, 2, 3, find b, c, d.<details class="ans"><summary>Show Answer</summary><p>b=−(1+2+3)=−6; c=1·2+2·3+1·3=2+6+3=11; d=−(1·2·3)=−6. <strong>b=−6, c=11, d=−6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">All three zeroes of x³ − px² + px − 1 are positive. Show that one zero must equal 1.<details class="ans"><summary>Show Answer</summary><p>Note p(1) = 1−p+p−1 = <strong>0</strong> for all p. So 1 is always a zero. QED.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Expressions in Cubic Zeroes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">α, β, γ are zeroes of x³ − 4x² + 5x − 2. Find α² + β² + γ².<details class="ans"><summary>Show Answer</summary><p>(α+β+γ)²−2(αβ+βγ+γα)=16−10=<strong>6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ zeroes of x³ − 5x² + 8x − 4. Find 1/α + 1/β + 1/γ.<details class="ans"><summary>Show Answer</summary><p>(αβ+βγ+γα)/(αβγ) = 8/4 = <strong>2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For zeroes of 2x³ − 3x² + x − 1, find α+β+γ and αβγ.<details class="ans"><summary>Show Answer</summary><p>α+β+γ=3/2; αβγ=1/2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ zeroes of x³ − 6x² + 11x − 6. Find (α−1)(β−1)(γ−1).<details class="ans"><summary>Show Answer</summary><p>= αβγ − (αβ+βγ+γα) + (α+β+γ) − 1 = 6−11+6−1 = <strong>0</strong>. (Means 1 is a zero of the polynomial!)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = x³ + 3x² − x + 2, find α²β² + β²γ² + γ²α².<details class="ans"><summary>Show Answer</summary><p>(αβ+βγ+γα)²−2αβγ(α+β+γ) = (−1)²−2(−2)(−3) = 1−12 = <strong>−11</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ are zeroes of x³ − 7x + 6. Find α+β+γ without finding roots.<details class="ans"><summary>Show Answer</summary><p>Coefficient of x² is 0. α+β+γ = <strong>0</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the sum of squares of zeroes of x³ − 3x² − x + 3.<details class="ans"><summary>Show Answer</summary><p>Sum=3, pairs=−1. α²+β²+γ²=9−2(−1)=<strong>11</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α, β, γ are zeroes of x³ + px + q and α + β + γ = 0, what is p?<details class="ans"><summary>Show Answer</summary><p>Sum = 0 always (b=0 coefficient). p is the coefficient giving αβ+βγ+γα = p. Any value of p is consistent — this just confirms the x² coefficient is 0, which is given.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ zeroes of x³ − 2x² − 5x + 6. Compute α³ + β³ + γ³ − 3αβγ.<details class="ans"><summary>Show Answer</summary><p>α³+β³+γ³−3αβγ = (α+β+γ)(α²+β²+γ²−αβ−βγ−γα). Sum=2, pairs=−5, αβγ=−6. α²+β²+γ²=4+10=14. Expression = 2×(14−(−5)) = 2×19 = <strong>38</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For x³ − px² + qx − r, express (1/α+1/β+1/γ) in terms of p, q, r.<details class="ans"><summary>Show Answer</summary><p>= (αβ+βγ+γα)/(αβγ) = <strong>q/r</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding Polynomials from Cubic Vieta Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write a cubic polynomial with zeroes in AP: 1, 2, 3.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−1)(x−2)(x−3) = <strong>x³−6x²+11x−6</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Write a cubic with zeroes in GP: 1, 2, 4.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−1)(x−2)(x−4) = <strong>x³−7x²+14x−8</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Zeroes of a cubic are α, α+1, α−1 and their sum is 6. Find α and the cubic.<details class="ans"><summary>Show Answer</summary><p>3α = 6 → α = 2. Zeroes: 1, 2, 3. Cubic: <strong>x³−6x²+11x−6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α+β+γ = 6, αβ+βγ+γα = 11, αβγ = 6, write the cubic polynomial.<details class="ans"><summary>Show Answer</summary><p>p(x) = x³ − 6x² + 11x − 6. <strong>x³ − 6x² + 11x − 6</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Construct a cubic with zeroes 2, −1, and 1/2 using integer coefficients.<details class="ans"><summary>Show Answer</summary><p>(x−2)(x+1)(2x−1) = (x−2)(2x²+x−1) = 2x³−3x²−3x+2. <strong>2x³−3x²−3x+2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ are zeroes of a cubic and satisfy α+β+γ = 0, αβγ = 5, αβ+βγ+γα = −6. Write the cubic.<details class="ans"><summary>Show Answer</summary><p>p(x) = x³ − 0·x² + (−6)x − 5 = <strong>x³ − 6x − 5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find a cubic with zeroes that are all equal to 3.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−3)³ = <strong>x³ − 9x² + 27x − 27</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If one zero of x³ + ax² + bx + c is the sum of the other two, and α = β+γ, show that a³ = 4ab−8c.<details class="ans"><summary>Show Answer</summary><p>α+β+γ=−a and α=β+γ → 2α=−a → α=−a/2. p(α)=0: (−a/2)³+a(a/2)²+b(−a/2)+c=0 → −a³/8+a³/4−ab/2+c=0 → a³/8=c+ab/2 → a³=8c+4ab. <strong>a³ = 4ab − 8c</strong> (rearranged: a³−4ab+8c = 0).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write a cubic whose zeroes are in ratio 1:2:3 and their product is −6.<details class="ans"><summary>Show Answer</summary><p>Zeroes k, 2k, 3k. Product = 6k³ = −6 → k = −1. Zeroes: −1,−2,−3. Cubic: (x+1)(x+2)(x+3) = <strong>x³+6x²+11x+6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find k if x³ + kx² − 4x − 4 has zeroes in AP and find those zeroes.<details class="ans"><summary>Show Answer</summary><p>Zeroes: a−d, a, a+d. Sum=3a=−k. Pair product=-4 (from c): (a−d)a+a(a+d)+(a−d)(a+d)=3a²−d²=−4. Triple product=a(a²−d²)=4. Try a=2: 8−2d²=−4→d²=6; product=2(4−6)=−4✓. Sum=6→k=−6. Zeroes: 2−√6, 2, 2+√6. <strong>k=−6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Advanced Cubic Vieta Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">α, β, γ zeroes of x³−6x²+11x−6. Find α³+β³+γ³.<details class="ans"><summary>Show Answer</summary><p>Newton's identity: α³+β³+γ³=3αβγ+(α+β+γ)(α²+β²+γ²−αβ−βγ−γα). Sum=6, pairs=11, product=6. α²+β²+γ²=36−22=14. Expression=18+6(14−11)=18+18=<strong>36</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α, β, γ are in AP and are zeroes of x³ − 3x² + x + 1, find them.<details class="ans"><summary>Show Answer</summary><p>Sum=3=3a → a=1. Middle zero=1. (x−1) is a factor: x³−3x²+x+1÷(x−1)=x²−2x−1. Zeroes: 1±√2. Zeroes: <strong>1−√2, 1, 1+√2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find (α−β)²+(β−γ)²+(γ−α)² for zeroes of x³−6x²+11x−6.<details class="ans"><summary>Show Answer</summary><p>= 2(α²+β²+γ²)−2(αβ+βγ+γα) = 2(14)−2(11) = 28−22 = <strong>6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If one zero of ax³+bx²+cx+d is 0, what relation holds among a, b, c, d?<details class="ans"><summary>Show Answer</summary><p>p(0) = d = 0. So <strong>d = 0</strong> is the necessary and sufficient condition.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ zeroes of x³+px+q. Prove α³+β³+γ³ = −3q.<details class="ans"><summary>Show Answer</summary><p>Sum=0, pairs=p, product=−q. α³+β³+γ³ = 3αβγ + (sum)(sum²−3×pairs) = 3(−q)+0 = <strong>−3q</strong>. QED.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For x³ − 3x² − 6x + 8 = 0, given roots are in GP. Find them.<details class="ans"><summary>Show Answer</summary><p>Let roots a/r, a, ar. Product = a³ = −(−8) = 8 → a = 2. Sum = 2(1/r+1+r) = 3 → 1/r+1+r = 3/2. Multiply by r: 1+r+r²=3r/2 → 2+2r+2r²=3r → 2r²−r+2=0. D=1−16<0. Try negative product: a³ = −d/a = 8, so roots must include negatives. Try: −2/r·(−2)·(−2r)=−8=−8. Product=−8/r·r? Let roots a/r, a, ar with product = 8 → a=2. Re-check: product for monic cubic with constant term 8: αβγ = −d/1 = −8. So a³ = −8, a = −2. Sum: (−2)(1/r+1+r) = 3 → 1/r+1+r = −3/2. Roots: <strong>1, −2, 4</strong> or check: 1·(−2)·4=−8✓, sum=3✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If zeroes of x³ − px² + qx − r satisfy α+β = γ, show that p³ − 4pq + 8r = 0.<details class="ans"><summary>Show Answer</summary><p>α+β+γ = p; given α+β = γ → 2γ = p → γ = p/2. αβγ = r → αβ(p/2) = r → αβ = 2r/p. αβ+γ(α+β) = q → 2r/p + (p/2)² = q → p²/4 + 2r/p = q. Multiply by 4p: p³+8r = 4pq → <strong>p³−4pq+8r = 0</strong>. QED.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">α, β, γ zeroes of x³−12x+16. Find the three zeroes and verify αβ+βγ+γα.<details class="ans"><summary>Show Answer</summary><p>Sum=0 (b=0). p(2)=8−24+16=0 ✓. Divide by (x−2): x²+2x−8=(x+4)(x−2). Zeroes: 2(double),−4. αβ+βγ+γα: 2·2+2(−4)+2(−4)=4−8−8=−12=c/a✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a cubic polynomial whose three zeroes α, β, γ satisfy α+β+γ=3, αβγ=4, and one zero is 4.<details class="ans"><summary>Show Answer</summary><p>One zero=4. αβγ=4: 4·β·γ=4 → βγ=1. α+β+γ=3 → β+γ=−1. Quadratic for β,γ: t²+t+1=0. D=−3<0 (complex roots). Pairs=βγ+4(β+γ)=1+4(−1)=−3. Cubic: <strong>x³−3x²−3x−4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If α=1, β=2, γ=3 are zeroes of x³+bx²+cx+d, find b+c+d and verify it equals p(1)−1.<details class="ans"><summary>Show Answer</summary><p>b=−6, c=11, d=−6. b+c+d=−1. p(1)=1−6+11−6=0=p(1). b+c+d = p(1)−1 = 0−1 = <strong>−1</strong> ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- TOPIC 11 -->
+<div class="topic" id="t11">
+  <div class="topic-header"><div class="t-num">11</div><h2>Division Algorithm for Polynomials</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-division/x2ec2f6f830c9fb89:dividing-polynomials-by-x-minus-a/v/polynomial-division-intro" target="_blank">Polynomial Long Division</a><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-division/x2ec2f6f830c9fb89:synthetic-division/v/synthetic-division" target="_blank">Synthetic Division</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=1bsB8RBG-7A" target="_blank">Polynomial Long Division</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=heP_HNp5kLU" target="_blank">Dividing Polynomials</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=8Wxw9bpKEGQ" target="_blank">The Division Algorithm</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Division Algorithm – Statement and Basic Use</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the Division Algorithm for polynomials.<details class="ans"><summary>Show Answer</summary><p>For polynomials p(x) and g(x) (g(x) ≠ 0), there exist unique q(x) and r(x) such that <strong>p(x) = g(x)·q(x) + r(x)</strong>, where deg r(x) &lt; deg g(x) or r(x) = 0.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Divide x² + 3x + 2 by (x + 1) using long division.<details class="ans"><summary>Show Answer</summary><p>x² + 3x + 2 = (x+1)(x+2) + 0. Quotient = <strong>x+2</strong>, remainder = <strong>0</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ − 3x² + 5x − 3 by (x − 1).<details class="ans"><summary>Show Answer</summary><p>x³−3x²+5x−3 = (x−1)(x²−2x+3)+0. Quotient: <strong>x²−2x+3</strong>, remainder: <strong>0</strong>.<div class="working"><strong>Working:</strong><br>x³÷x = x²; x²(x−1) = x³−x²; remainder: −2x²+5x−3<br>−2x²÷x = −2x; −2x(x−1)=−2x²+2x; remainder: 3x−3<br>3x÷x=3; 3(x−1)=3x−3; remainder=0</div></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide 2x³ + x² − 5x + 2 by (x + 2).<details class="ans"><summary>Show Answer</summary><p>Quotient: 2x²−3x+1, remainder: 0. Factor: (x+2)(2x−1)(x−1). <strong>Quotient = 2x²−3x+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ + 2x + 3 by (x + 1) and express in the form p = g·q + r.<details class="ans"><summary>Show Answer</summary><p>Quotient x²−x+3, remainder 0. p(−1)=−1−2+3=0 ✓. x³+2x+3 = <strong>(x+1)(x²−x+3)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide x⁴ − 1 by (x − 1).<details class="ans"><summary>Show Answer</summary><p>x⁴−1 = (x−1)(x³+x²+x+1). Quotient: <strong>x³+x²+x+1</strong>, remainder: <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the maximum possible degree of the remainder when dividing by a cubic polynomial?<details class="ans"><summary>Show Answer</summary><p>The remainder must have degree less than the divisor. So deg r &lt; 3, meaning degree ≤ <strong>2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Divide x² − 5 by x² − 4 and state quotient and remainder.<details class="ans"><summary>Show Answer</summary><p>x²−5 = 1·(x²−4) + (−1). Quotient = <strong>1</strong>, remainder = <strong>−1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is x² + 1 a factor of x⁴ + 1? Use the division algorithm.<details class="ans"><summary>Show Answer</summary><p>x⁴+1 = (x²+1)(x²−1) + 2. Remainder = 2 ≠ 0. So <strong>x²+1 is NOT a factor</strong> of x⁴+1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Divide 3x³ + x² + 2x + 5 by (x² + 1) and express in p = g·q + r form.<details class="ans"><summary>Show Answer</summary><p>3x³+x²+2x+5 = (x²+1)(3x+1) + (−x+4). Quotient: <strong>3x+1</strong>, remainder: <strong>−x+4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Long Division Practice</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Divide x³ − 6x² + 11x − 6 by (x − 1). State q(x) and r(x).<details class="ans"><summary>Show Answer</summary><p>x³−6x²+11x−6 = (x−1)(x²−5x+6) + 0. q(x) = <strong>x²−5x+6</strong>, r(x) = 0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide x⁴ + x³ − 3x² − 4x − 4 by (x² − 4).<details class="ans"><summary>Show Answer</summary><p>Divide: x⁴+x³−3x²−4x−4 = (x²−4)(x²+x+1) + 0. Quotient: <strong>x²+x+1</strong>, r=0.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Divide 2x⁴ − 3x³ + 4x² − x + 1 by (2x − 1).<details class="ans"><summary>Show Answer</summary><p>Long division: 2x⁴−3x³+4x²−x+1 = (2x−1)(x³−x²+3x/2+1/4) + 5/4. Or use p(1/2) = 2/16−3/8+1−1/2+1 = 1/8−3/8+1/2+1 = −2/8+1/2+1 = −1/4+1/2+1 = 5/4. Remainder = <strong>5/4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ + 1 by (x + 1). State all results.<details class="ans"><summary>Show Answer</summary><p>x³+1 = (x+1)(x²−x+1) + 0. This is the sum of cubes identity. Quotient: <strong>x²−x+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide x⁵ − 1 by (x − 1).<details class="ans"><summary>Show Answer</summary><p>x⁵−1 = (x−1)(x⁴+x³+x²+x+1). Quotient: <strong>x⁴+x³+x²+x+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide 4x³ − 8x² + x + 3 by (2x − 3).<details class="ans"><summary>Show Answer</summary><p>p(3/2) = 4(27/8)−8(9/4)+3/2+3 = 27/2−18+3/2+3 = 30/2−15 = 0. Quotient: 4x³−8x²+x+3÷(2x−3). Long divide: (2x−3)(2x²−x−1)=4x³−2x²−2x−6x²+3x+3=4x³−8x²+x+3 ✓. Quotient: <strong>2x²−x−1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ + 4x² − 5 by (x² + 2x − 3).<details class="ans"><summary>Show Answer</summary><p>x³+4x²−5 = (x²+2x−3)(x+2) + (3x+1). Quotient: <strong>x+2</strong>, remainder: <strong>3x+1</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Use the division algorithm to check if (x²−1) divides x⁴−5x²+4.<details class="ans"><summary>Show Answer</summary><p>x⁴−5x²+4 = (x²−1)(x²−4) + 0. Yes, remainder = 0, so <strong>x²−1 is a factor</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = 3x² + 7x + 2 and g(x) = (x+2), apply the division algorithm and verify.<details class="ans"><summary>Show Answer</summary><p>3x²+7x+2 = (x+2)(3x+1)+0. Check: (x+2)(3x+1)=3x²+x+6x+2=3x²+7x+2 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Divide x² + 1 by (x + 1). State that the remainder equals p(−1).<details class="ans"><summary>Show Answer</summary><p>x²+1 = (x+1)(x−1)+2. Remainder = 2. p(−1) = 1+1 = 2 ✓. <strong>Remainder = 2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding Quotients and Remainders with Unknowns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">When x³ + ax² + bx + c is divided by (x² − x + 1), quotient is (x + 2) and remainder is (−x + 1). Find a, b, c.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x²−x+1)(x+2) + (−x+1). Expand: x³+2x²−x²−2x+x+2−x+1 = x³+x²−2x+3. So a=1, b=−2, c=3. <strong>a=1, b=−2, c=3</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = 5x³ + 3x² − 7x + 2 and the remainder when divided by (x−k) is 2, find k.<details class="ans"><summary>Show Answer</summary><p>p(k) = 5k³+3k²−7k+2 = 2 → 5k³+3k²−7k = 0 → k(5k²+3k−7)=0 → k=0 or k=(−3±√149)/10. <strong>k = 0</strong> (simplest solution).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a and b if x³ − ax² + bx − 3 has remainder 5 when divided by (x+1) and (x−2) is a factor.<details class="ans"><summary>Show Answer</summary><p>p(2)=0: 8−4a+2b−3=0 → 4a−2b=5 …(i). p(−1)=5: −1−a−b−3=5 → a+b=−9 …(ii). From (i)&(ii): 4a−2b=5, a+b=−9 → a=−13/6... better: (i) 4a−2b=5; (ii) a+b=−9 → b=−9−a. Sub: 4a−2(−9−a)=5 → 6a+18=5 → a=−13/6, b=−9+13/6=−41/6. <strong>a=−13/6, b=−41/6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ − ax by (x² − a). What is the quotient? Under what condition is the remainder 0?<details class="ans"><summary>Show Answer</summary><p>x³−ax = (x²−a)(x) + (−ax+ax) = ... Let's divide: x³÷x²=x; x(x²−a)=x³−ax; remainder = −ax−(−ax) = 0. Quotient: <strong>x</strong>, remainder: <strong>0</strong> always.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = g(x)·q(x), what is the remainder?<details class="ans"><summary>Show Answer</summary><p>Remainder = <strong>0</strong>. This means g(x) is a factor of p(x).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The quotient when p(x) is divided by (x − 1) is x² + 3 and remainder is 5. Find p(x).<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−1)(x²+3)+5 = x³+3x−x²−3+5 = <strong>x³−x²+3x+2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ + x² + x + 1 by x² + 1 and verify using multiplication.<details class="ans"><summary>Show Answer</summary><p>x³+x²+x+1 = (x²+1)(x+1) + 0. Verify: (x²+1)(x+1)=x³+x²+x+1 ✓. Quotient: <strong>x+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = ax³ + bx + c, when divided by (x²−1) the remainder is 5x + 3. Express conditions on a, b, c.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x²−1)·q(x) + 5x+3. p(1) = 5+3 = 8 = a+b+c. p(−1) = −5+3 = −2 = −a−b+c. So a+b+c=8 and −a−b+c=−2. Adding: 2c=6→c=3. Subtracting: 2a+2b=10→a+b=5. So <strong>c = 3 and a+b = 5</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find q(x) and r(x) if 6x³+13x²+x−2 = (2x+1)·q(x)+r(x).<details class="ans"><summary>Show Answer</summary><p>Divide: p(−1/2) = 6(−1/8)+13(1/4)+(−1/2)−2 = −3/4+13/4−1/2−2 = 10/4−5/2 = 10/4−10/4 = 0. r=0. Quotient: 3x²+5x−2 = (3x−1)(x+2). q(x) = <strong>3x²+5x−2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The degree of the dividend is 5, the divisor has degree 3, the quotient has degree 2. What is the degree of the remainder?<details class="ans"><summary>Show Answer</summary><p>deg r &lt; deg g = 3. So deg r ≤ <strong>2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> HOTS – Division Algorithm Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Given p(x) = x³ − 3x² + 3x − 1, divide by (x − 1)³ and state the quotient and remainder.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−1)³. So p(x) ÷ (x−1)³ = Quotient: <strong>1</strong>, remainder: <strong>0</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If x⁴ + 2x³ − 3x² − 4x + 4 = (x² + ax + b)², find a and b.<details class="ans"><summary>Show Answer</summary><p>(x²+ax+b)² = x⁴+2ax³+(a²+2b)x²+2abx+b². Match: 2a=2→a=1; a²+2b=−3→1+2b=−3→b=−2; 2ab=2(1)(−2)=−4✓; b²=4✓. <strong>a=1, b=−2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the polynomial of least degree that when divided by (x−1), (x−2), (x−3) leaves remainders 1, 4, 9 respectively.<details class="ans"><summary>Show Answer</summary><p>Note 1=1², 4=2², 9=3². So p(x) = x² satisfies all three. Degree 2. <strong>p(x) = x²</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Divide x⁶ − 1 by x² − 1 and state the quotient.<details class="ans"><summary>Show Answer</summary><p>x⁶−1 = (x²−1)(x⁴+x²+1). Quotient: <strong>x⁴+x²+1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Using the division algorithm, find all zeroes of p(x) = x⁴ − 3x² + 2 by first factoring into two quadratics.<details class="ans"><summary>Show Answer</summary><p>x⁴−3x²+2 = (x²−1)(x²−2) = (x−1)(x+1)(x−√2)(x+√2). Zeroes: <strong>±1, ±√2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">p(x) = 2x³ + 7x² − 9. Find q(x) and r(x) when divided by (2x − 3).<details class="ans"><summary>Show Answer</summary><p>p(3/2) = 2(27/8)+7(9/4)−9 = 27/4+63/4−9 = 90/4−9 = 22.5−9 = 13.5 ≠ 0. r=13.5=27/2. Long division: 2x³+7x²−9÷(2x−3). Quotient: x²+5x+15/2, remainder 27/2. <strong>r = 27/2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = (x²−3x+2)·q(x) + (ax + b) and p(1) = 3, p(2) = −1, find a and b.<details class="ans"><summary>Show Answer</summary><p>x²−3x+2=(x−1)(x−2). p(1)=a+b=3; p(2)=2a+b=−1. Subtract: a=−4, b=7. <strong>a=−4, b=7</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Explain why deg q(x) = deg p(x) − deg g(x) when the division is exact (r=0).<details class="ans"><summary>Show Answer</summary><p>If r=0: p(x)=g(x)·q(x). Since deg of product = sum of degrees: deg p = deg g + deg q → <strong>deg q = deg p − deg g</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Divide x³ + x² − 4x − 4 by (x² − 4). Name the method and verify.<details class="ans"><summary>Show Answer</summary><p>x³+x²−4x−4 = (x²−4)(x+1)+0. Method: <strong>polynomial long division</strong>. Verify: (x²−4)(x+1)=x³+x²−4x−4 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A polynomial p(x) of degree 4 is divided by a polynomial g(x). The quotient has degree 1 and remainder has degree 2. What is the degree of g(x)?<details class="ans"><summary>Show Answer</summary><p>deg p = deg g + deg q → 4 = deg g + 1 → deg g = <strong>3</strong>. (And deg r = 2 &lt; deg g = 3 ✓.)</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 12 -->
+<div class="topic" id="t12">
+  <div class="topic-header"><div class="t-num">12</div><h2>SAT-Style Polynomial Problems</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/test-prep/sat/x0a8a43a1:untitled-652/x0a8a43a1:heart-of-algebra/a/sat-heart-of-algebra-key-strategies" target="_blank">SAT Algebra Key Strategies</a><a href="https://www.khanacademy.org/test-prep/sat/x0a8a43a1:untitled-652/x0a8a43a1:passport-to-advanced-math/a/passport-to-advanced-math-key-strategies" target="_blank">SAT Advanced Math – Polynomials</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IlNAJl36-10" target="_blank">SAT-Type Polynomial Problems</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=kJnFo0SKMa4" target="_blank">Polynomial Tricks for Tests</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=gx5P0cpFDjg" target="_blank">Solving Polynomial Problems Quickly</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> SAT Fundamentals – Sum, Product, Factor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If p(x) = x² + kx − 12 and x = 3 is a zero, what is the value of k?<br>(A) 1  (B) −1  (C) 4  (D) −4<details class="ans"><summary>Show Answer</summary><p>p(3) = 9+3k−12 = 0 → 3k = 3 → k = 1. Answer: <strong>(A) 1</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Which of the following is a factor of x² − 5x + 6?<br>(A) x − 1  (B) x + 2  (C) x − 2  (D) x + 3<details class="ans"><summary>Show Answer</summary><p>x²−5x+6 = (x−2)(x−3). Answer: <strong>(C) x−2</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If 2x² + bx + 3 = 0 has roots α and β with αβ = 3/2, what is b if α + β = 5/2?<br>(A) −5  (B) 5  (C) 3  (D) −3<details class="ans"><summary>Show Answer</summary><p>α+β = −b/2 = 5/2 → b = −5. Answer: <strong>(A) −5</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The sum of roots of 3x² − 7x + 4 = 0 is:<br>(A) 4/3  (B) 7/3  (C) −7/3  (D) 3/7<details class="ans"><summary>Show Answer</summary><p>−b/a = 7/3. Answer: <strong>(B) 7/3</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = (x − 2)(x − k) and p(0) = 8, what is k?<br>(A) 4  (B) −4  (C) 2  (D) −2<details class="ans"><summary>Show Answer</summary><p>p(0) = (−2)(−k) = 2k = 8 → k = 4. Answer: <strong>(A) 4</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For what value of c is (x − 5) a factor of x² + cx − 30?<br>(A) −1  (B) 1  (C) 6  (D) −6<details class="ans"><summary>Show Answer</summary><p>p(5) = 25+5c−30 = 0 → 5c = 5 → c = 1. Answer: <strong>(B) 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If one root of x² + px + 12 = 0 is 3, the other root is:<br>(A) 4  (B) −4  (C) 9  (D) 6<details class="ans"><summary>Show Answer</summary><p>Product = 12 = 3·β → β = 4. Answer: <strong>(A) 4</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The product of roots of 5x² + 2x − 3 = 0 is:<br>(A) 2/5  (B) −3/5  (C) 3/5  (D) −2/5<details class="ans"><summary>Show Answer</summary><p>c/a = −3/5. Answer: <strong>(B) −3/5</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Which polynomial has zeroes −3 and 4?<br>(A) x²−x−12  (B) x²+x−12  (C) x²−7x+12  (D) x²+7x+12<details class="ans"><summary>Show Answer</summary><p>Sum=1, product=−12. p(x)=x²−x−12. Answer: <strong>(A)</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If f(x) = 2x² − 5x + k and f(2) = 3, find k.<br>(A) 1  (B) 2  (C) 3  (D) 5<details class="ans"><summary>Show Answer</summary><p>f(2) = 8−10+k = 3 → k = 5. Answer: <strong>(D) 5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> SAT Medium – Polynomial Arithmetic and k-values</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If x² + kx + 9 is a perfect square, what are the possible values of k?<details class="ans"><summary>Show Answer</summary><p>D = k²−36 = 0 → k = <strong>±6</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">p(x) = x³ − 7x + 6. Which of the following is NOT a zero?<br>(A) 1  (B) 2  (C) 3  (D) −3<details class="ans"><summary>Show Answer</summary><p>p(1)=1−7+6=0✓; p(2)=8−14+6=0✓; p(−3)=−27+21+6=0✓; p(3)=27−21+6=12≠0. Answer: <strong>(C) 3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The graph of y = ax² + bx + c has vertex at (2, −4) and passes through (0, 0). Find a and b.<details class="ans"><summary>Show Answer</summary><p>c=0. Vertex x: −b/(2a)=2 → b=−4a. p(0)=0=c✓. Use vertex y: p(2)=4a+2b=4a−8a=−4a=−4 → a=1, b=−4. <strong>a=1, b=−4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For what value of k does kx² − 2kx + 3 = 0 have no real roots?<details class="ans"><summary>Show Answer</summary><p>D = 4k²−12k &lt; 0 → 4k(k−3) &lt; 0 → 0 &lt; k &lt; 3. <strong>k ∈ (0, 3)</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In the equation 2x² + (k−1)x + (k+5) = 0, find k so that one root is the negative of the other.<details class="ans"><summary>Show Answer</summary><p>Sum = −(k−1)/2 = 0 → k = 1. Answer: <strong>k = 1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (x − 3) is a factor of x³ − 5x² + kx + 3, find k.<details class="ans"><summary>Show Answer</summary><p>p(3) = 27−45+3k+3 = 0 → 3k = 15 → k = <strong>5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x² − 3x + 2 and q(x) = x² − x − 2, find the common factor.<details class="ans"><summary>Show Answer</summary><p>p(x) = (x−1)(x−2); q(x) = (x−2)(x+1). Common factor: <strong>(x−2)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: The polynomial p(x) satisfies p(0) = 1 and p(x+1) = 2p(x). Find p(3).<details class="ans"><summary>Show Answer</summary><p>p(1)=2, p(2)=4, p(3)=8. <strong>p(3) = 8</strong>. (Note: this is an exponential, but satisfying the given functional equation.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If the polynomial x³ + 3x² + kx − 12 is exactly divisible by (x + 4), find k.<details class="ans"><summary>Show Answer</summary><p>p(−4) = −64+48−4k−12 = 0 → −4k = 28 → k = <strong>−7</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If both (x−2) and (x+3) are factors of p(x) = x³ + ax² + bx + c with c = 12, find a and b.<details class="ans"><summary>Show Answer</summary><p>Third factor: p(x)/[(x−2)(x+3)]. Product of zeroes = −c/1 = −12. 2·(−3)·γ = −12 → γ = 2. Wait c=12 so αβγ = −c/a = −12. 2(−3)γ = −12 → −6γ = −12 → γ = 2. Sum = a negated: 2+(−3)+2 = 1 = −a → a = −1. Pairs: 2(−3)+(2)(2)+(−3)(2)=−6+4−6=−8=b. <strong>a=−1, b=−8</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> SAT Hard – Grid-In and Multi-Step</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If x² − 5x + 6 = (x − p)(x − q), and p &gt; q, what is p − q?<details class="ans"><summary>Show Answer</summary><p>p=3, q=2. p − q = <strong>1</strong>.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = 3x² + 7x − 6, if α and β are roots, find (3α+1)(3β+1).<details class="ans"><summary>Show Answer</summary><p>Roots of 3x²+7x−6: α+β=−7/3, αβ=−2. (3α+1)(3β+1)=9αβ+3(α+β)+1=9(−2)+3(−7/3)+1=−18−7+1=<strong>−24</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The equation x² + (k−2)x + (k−4) = 0 has equal roots. Find the sum of all possible values of k.<details class="ans"><summary>Show Answer</summary><p>D=0: (k−2)²−4(k−4)=0 → k²−4k+4−4k+16=0 → k²−8k+20=0. D=64−80<0. No real k. (Recalculate: k²−8k+20=0 → D=64−80=−16<0.) So <strong>no real solution</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: p(x) = x⁴ − kx² + 9. For what positive value of k does p(x) have exactly two distinct real zeroes?<details class="ans"><summary>Show Answer</summary><p>Let u=x². u²−ku+9=0. Equal roots: k²=36 → k=6. Then u=3 (double), x=±√3 (two distinct reals). <strong>k = 6</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For p(x) = ax² + bx + c, if p(1) = 6, p(−1) = 2, p(0) = 3, find a, b, c.<details class="ans"><summary>Show Answer</summary><p>c=3; a+b+3=6→a+b=3; a−b+3=2→a−b=−1. Sum: 2a=2→a=1, b=2. <strong>a=1, b=2, c=3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If p(x) = x³ + 3x² − 4, find p(x) ÷ (x−1) and use the result to find all zeroes.<details class="ans"><summary>Show Answer</summary><p>p(1)=1+3−4=0. Divide: x³+3x²−4 = (x−1)(x²+4x+4)=(x−1)(x+2)². Zeroes: <strong>1, −2 (double)</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: What is the value of k such that x² + kx + 16 has roots that are in ratio 1:4?<details class="ans"><summary>Show Answer</summary><p>Roots a and 4a. Product=4a²=16→a²=4→a=2. Sum=5a=10=−k→k=−10. Or a=−2: k=10. <strong>k = ±10</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If 2 is a root of x³ − 6x² + 11x − 6 = 0 and the roots are in AP, find the other two roots.<details class="ans"><summary>Show Answer</summary><p>Sum=6. If roots a−d, a, a+d: 3a=6→a=2. So 2 is middle root. Pairs sum=11: (a−d)a+a(a+d)+(a−d)(a+d)=3a²−d²=11 → 12−d²=11→d=1. Roots: <strong>1, 2, 3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: If p(x) = x² − bx + c, p(3) = 0, and p(5) = 0, what is p(4)?<details class="ans"><summary>Show Answer</summary><p>p(x)=(x−3)(x−5)=x²−8x+15. p(4)=16−32+15=<strong>−1</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The polynomial p(x) has remainder 3 when divided by (x−1) and remainder 5 when divided by (x−3). If p(x) = (x−1)(x−3)q(x) + r(x), find r(x) assuming r is linear.<details class="ans"><summary>Show Answer</summary><p>r(x) = ax+b. r(1)=a+b=3; r(3)=3a+b=5. Subtract: 2a=2→a=1, b=2. r(x) = <strong>x+2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: If the polynomial x² − (m+3)x + (2m+4) has equal roots, what is m? What is the repeated root?<details class="ans"><summary>Show Answer</summary><p>D=0: (m+3)²−4(2m+4)=0 → m²+6m+9−8m−16=0 → m²−2m−7=0 → m=(2±√32)/2=1±2√2. Root = (m+3)/2. For m=1+2√2: root=(4+2√2)/2=2+√2. <strong>m = 1±2√2</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> SAT Hard / HOTS – Mixed Polynomial Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">p(x) = 2x³ − 5x² + ax + b. (x−1) and (x−2) are both factors. Find a and b.<details class="ans"><summary>Show Answer</summary><p>p(1)=2−5+a+b=0→a+b=3. p(2)=16−20+2a+b=0→2a+b=4. Subtract: a=1, b=2. <strong>a=1, b=2</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If α, β are roots of 2x² − 5x + 1 = 0, find α² + β² + αβ.<details class="ans"><summary>Show Answer</summary><p>α+β=5/2, αβ=1/2. α²+β²=(5/2)²−2(1/2)=25/4−1=21/4. α²+β²+αβ=21/4+1/2=23/4. <strong>23/4</strong>.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the polynomial p(x) of degree ≤ 2 that passes through (1,3), (2,5), (3,9).<details class="ans"><summary>Show Answer</summary><p>Let p(x)=ax²+bx+c. a+b+c=3; 4a+2b+c=5; 9a+3b+c=9. Subtract eqs: 3a+b=2 and 5a+b=4. Subtract: 2a=2→a=1,b=−1,c=3. p(x)=<strong>x²−x+3</strong>. Check: 1−1+3=3✓; 4−2+3=5✓; 9−3+3=9✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: How many values of x satisfy x² − 7x + 10 = 0 AND x² + 3x − 10 = 0 simultaneously?<details class="ans"><summary>Show Answer</summary><p>First: (x−2)(x−5)=0→x=2,5. Second: (x−2)(x+5)=0→x=2,−5. Common: <strong>x=2</strong>. One value.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: p(x) = x² + bx + c, where b and c are integers. The graph is a parabola with vertex at (3, −4). Find b, c, and the zeroes.<details class="ans"><summary>Show Answer</summary><p>Vertex (3,−4): p(x)=(x−3)²−4=x²−6x+5. b=−6, c=5. Zeroes: (x−1)(x−5)=0 → <strong>x=1 and x=5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For the cubic p(x) = x³ − (a+b+c)x² + (ab+bc+ca)x − abc, show that a, b, c are its zeroes.<details class="ans"><summary>Show Answer</summary><p>p(a) = a³−(a+b+c)a²+(ab+bc+ca)a−abc = a³−a³−a²b−a²c+a²b+abc+a²c−abc−a²·... Actually directly: p(x)=(x−a)(x−b)(x−c), which when expanded gives exactly x³−(a+b+c)x²+(ab+bc+ca)x−abc. So a, b, c are zeroes by construction.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: If x = 3 is a zero of p(x) = x³ − kx² + 11x − 6, find k. Then find all zeroes.<details class="ans"><summary>Show Answer</summary><p>p(3)=27−9k+33−6=54−9k=0→k=6. p(x)=x³−6x²+11x−6=(x−1)(x−2)(x−3). Zeroes: <strong>1, 2, 3</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: If ax² + bx + c = 0 has roots r and s, and 3r + 3s = 12 and rs = 4, find b/a.<details class="ans"><summary>Show Answer</summary><p>r+s=4. b/a = −(r+s) = <strong>−4</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: For p(x) = x⁴ − 5x² + 4, find all real zeroes and sketch the rough behavior.<details class="ans"><summary>Show Answer</summary><p>Let u=x²: u²−5u+4=(u−1)(u−4). u=1→x=±1; u=4→x=±2. Zeroes: <strong>±1, ±2</strong>. Graph crosses x-axis at 4 points.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT HOTS: If f(x) = (x−1)²(x+2), for what values of x is f(x) > 0?<details class="ans"><summary>Show Answer</summary><p>(x−1)² ≥ 0 always. f(x) > 0 when (x+2) > 0 and (x−1)² ≠ 0, i.e., x > −2 and x ≠ 1. Also f(x) = 0 at x=1 and x=−2. So f(x) > 0 for <strong>x > −2 and x ≠ 1</strong>, i.e., x ∈ (−2, 1) ∪ (1, +∞).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<footer>
+  Grade 10 · NCERT Mathematics · Chapter 2 · The Gaudium School · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

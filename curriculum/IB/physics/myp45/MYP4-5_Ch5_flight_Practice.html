@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHYSICS MYP4-5 Chapter 5 - Flight · Practice Sets</title>
+<style>
+:root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
+header h1 { font-size:2rem; }
+header p { margin-top:8px; opacity:.85; font-size:.95rem; }
+nav { background:var(--card); border-bottom:2px solid var(--border); padding:18px 28px; }
+nav h2 { font-size:.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+nav ol { padding-left:22px; columns:2; column-gap:40px; }
+nav li { margin:4px 0; font-size:.88rem; }
+nav a { color:var(--primary); text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+.topic { max-width:960px; margin:36px auto; padding:0 18px; }
+.topic-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.t-num { background:var(--accent); color:#fff; border-radius:50%; width:46px; height:46px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.topic-header h2 { font-size:1.4rem; color:var(--primary); }
+.set-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.set-card h3 { font-size:1rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.set-label { display:inline-block; background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 8px; margin-right:6px; }
+.q-list { counter-reset:q; }
+.q-item { counter-increment:q; display:flex; gap:10px; margin:10px 0; align-items:flex-start; }
+.q-item::before { content:"Q" counter(q); background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 6px; flex-shrink:0; margin-top:3px; }
+.q-text { flex:1; font-size:.91rem; }
+.diff { font-size:.72rem; border-radius:99px; padding:1px 8px; flex-shrink:0; margin-top:4px; white-space:nowrap; }
+.diff-easy { background:#dcfce7; color:#15803d; }
+.diff-medium { background:#fef9c3; color:#854d0e; }
+.diff-hard { background:#fee2e2; color:#991b1b; }
+details.ans { margin-top:4px; }
+details.ans summary { cursor:pointer; color:var(--green); font-size:.82rem; font-weight:600; }
+details.ans p { background:#f0faf5; border-left:3px solid var(--green); padding:8px 12px; margin-top:6px; border-radius:6px; font-size:.85rem; }
+footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; margin-top:20px; }
+.topic-videos { background:#fff8f5; border:1px solid #f5d8cc; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+.topic-videos h3 { font-size:.95rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.vid-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media(max-width:640px){ .vid-grid{ grid-template-columns:1fr; } }
+.vid-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; }
+.vid-box .ch-tag { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; display:block; }
+.vid-box.khan .ch-tag { color:#137333; }
+.vid-box.antics .ch-tag { color:#d93025; }
+.vid-box.nphile .ch-tag { color:#7b2cbf; }
+.vid-box.teded .ch-tag { color:#e8734a; }
+.vid-box a { display:block; color:var(--primary); font-size:.84rem; margin:4px 0; text-decoration:none; }
+.vid-box a:hover { text-decoration:underline; }
+.vid-box a::before { content:"\25B6 "; }
+@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+.print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
+.print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>PHYSICS MYP4-5 Chapter 5 - Flight</h1>
+  <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">Flight</a></li>
+  </ol>
+</nav>
+
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Flight</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Concept Lessons</span>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Flight+lesson" target="_blank">Core lesson videos</a>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Flight+explained" target="_blank">Explainer videos</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Practice Videos</span>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Flight+practice+questions" target="_blank">Practice question walkthroughs</a>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Flight+worked+examples" target="_blank">Worked examples</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">IB MYP Revision</span>
+        <a href="https://www.google.com/search?q=IB+MYP+Physics%20MYP4-5%20Flight+revision" target="_blank">Revision links</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">Extension</span>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Flight+real+life+applications" target="_blank">Real-life application videos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundation - Core Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Define lift in the context of Flight.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: lift means the upward force that opposes weight.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Define drag and state one unit if applicable.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: drag is the resistive force opposing motion through air.. Force unit: newton (N).</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">List two everyday examples related to Flight.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Airplane wings and paper gliders are valid examples.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">State one key difference between lift and drag.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Lift acts mainly upward; drag acts opposite to motion.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one labelled diagram you would draw for Flight.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A force diagram with lift, weight, thrust, and drag arrows is acceptable.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain one common misconception in Flight and correct it.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Planes do not fly because air is lighter above the wing only; angle and momentum change also matter.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Which variable should be controlled in a fair test about Flight?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Keep wing shape/material constant while changing one flight variable.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one if-then-because hypothesis for Flight.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: If wing angle increases moderately, then lift increases up to a limit because airflow deflection increases.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Why is repeated measurement useful in experiments about Flight?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: It improves reliability and reduces random error.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Give one safety rule while doing practical work for Flight.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Keep clear of propeller fans and launch zones during experiments.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Core Practice - Skills and Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A model plane travels 60 m in 12 s. Find average speed.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Speed = 60/12 = 5 m/s.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A drone uses 300 W for 0.5 h. Find energy in kWh.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Energy = 0.3 x 0.5 = 0.15 kWh.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A glider covers 24 m horizontally while dropping 6 m. Find glide ratio.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Glide ratio = 24:6 = 4:1.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Identify whether this statement is true or false: For steady level flight, lift approximately balances weight..</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: True.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain the role of thrust in Flight.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Thrust overcomes drag so aircraft can maintain or increase speed.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Suggest one way to improve accuracy in a Flight experiment.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Use consistent release height and angle for each trial.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Compare two methods to study Flight.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Paper glider testing is simple but less controlled than wind tunnel simulation.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Interpret this result briefly: A wider wing gave longer flight time than a narrow wing in repeated trials.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Larger effective lift and slower descent likely improved flight duration.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Design one 3-step mini investigation for Flight.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Vary wing angle in small steps, measure flight distance/time, and identify optimum.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one exam-style long answer: explain aircraft and drone design using lift, drag, and thrust.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Explain flight using balance of lift-weight and thrust-drag with examples.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application - Real-Life Contexts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Where do you observe Flight in transport?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Aircraft takeoff/landing operations.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Where do you observe Flight at home?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Paper plane experiments and fan-assisted models.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Where do you observe Flight in sports?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Aerodynamics in javelin, cycling, and ski jumping.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Give one career that uses Flight knowledge.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Aerospace engineer.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">How does Flight help in reducing risk?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Poor aerodynamic control can reduce stability and increase crash risk.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">How can data logging improve learning in Flight?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: It captures continuous measurements and supports better graph analysis.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one cause-effect chain involving Flight.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Wing angle changes lift and drag, which changes stability and range.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Give one limitation of a school-lab model for Flight.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Classroom airflow conditions are less uniform than real wind tunnels.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Propose one innovation idea connected to Flight.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Design a low-cost drone frame focused on better lift-to-drag ratio.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Evaluate whether this claim is reasonable: Heavier planes cannot fly.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Not reasonable. Heavy planes can fly when lift and thrust are sufficient.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge - Analysis and Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A student says: &quot;Drag is always harmful and should be zero&quot;. Critique this statement.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Incorrect. Some drag is unavoidable; controlled drag can improve stability and braking.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Create one multiple-choice question on Flight with four options and mark the correct one.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any valid MCQ with one unambiguous correct option is accepted.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Frame one HOTS question about Flight and answer it in 3 lines.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any coherent higher-order response with evidence is accepted.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one compare-and-contrast paragraph: lift vs drag.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Include at least two differences and one similarity between lift and drag.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Predict what happens if wing surface becomes rough due to damage.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Drag increases and flight efficiency usually decreases.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Construct an error-analysis table with 3 possible errors in Flight practical work.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Include inconsistent launch force, wind variation, and tape weight differences.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">How would results change if a control variable is not fixed? Use one example from Flight.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Uncontrolled variables can change outcome and make cause-effect conclusions unreliable.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write a 5-mark response on how Flight links science, society, and sustainability.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Discuss aviation benefits, fuel impact, and sustainable flight innovation.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Suggest one rubric (3 criteria) for assessing a project on Flight.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Use criteria such as concept accuracy, data quality, and reasoning clarity.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Reflect: what is the hardest concept in Flight for you, and what plan will you use to master it?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A valid reflection should name the concept and include a concrete practice plan.</b></p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<footer>Physics · MYP4-5 · Chapter 5 · Practice Worksheet</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'</title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'</style></head><body>'
+    +'<h1>'+chapTitle+'</h1><h2>'+setTitle+'</h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};</'+'script>'
+    +'</body></html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

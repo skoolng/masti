@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 6 – How Forces Affect Motion | Grade 9 Science</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>&#9889; Chapter 6 &#8211; How Forces Affect Motion</h1>
+  <p>Grade 9 &middot; Exploration Science &middot; IB MYP &middot; The Gaudium School &middot; 144 Practice Questions</p>
+</header>
+
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">Newton's First Law</a></li>
+    <li><a href="#t2">Newton's Second Law</a></li>
+    <li><a href="#t3">Newton's Third Law</a></li>
+    <li><a href="#t4">Free Body Diagrams</a></li>
+    <li><a href="#t5">Momentum</a></li>
+    <li><a href="#t6">Impulse</a></li>
+  </ol>
+</nav>
+
+<!-- TOPIC 1 -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Newton's First Law of Motion</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=CQYELiTtUs8" target="_blank">Newton's First Law &ndash; Inertia</a>
+        <a href="https://www.youtube.com/watch?v=qlT5e-bBaGA" target="_blank">Balanced and Unbalanced Forces</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course Physics</span>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Newton's Laws of Motion</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=OoTgLQmAFuA" target="_blank">Inertia and the Laws of Motion</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">NCERT / CBSE</span>
+        <a href="https://www.youtube.com/watch?v=4FiGIiPjNts" target="_blank">Newton's First Law &ndash; Class 9</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State Newton's First Law of Motion in your own words.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>An object at rest stays at rest, and an object in motion continues moving in a straight line at constant speed, <strong>unless acted on by a net external force</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">What is inertia? How does mass relate to inertia?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Inertia is the tendency of an object to <strong>resist any change in its state of motion</strong>. Greater mass = greater inertia. A heavier object is harder to start, stop, or change direction.</p></details>
+
+      <div class="q-item"><span class="q-text">Why do passengers lurch forward when a bus brakes suddenly?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Due to <strong>inertia</strong>. The bus decelerates but the passengers' bodies tend to continue forward at the original speed. They lurch forward until a seatbelt, seat, or friction decelerates them too.</p></details>
+
+      <div class="q-item"><span class="q-text">What is a net force? What happens to an object when net force is zero?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Net force is the <strong>vector sum of all forces</strong> on an object. When net force = 0, the object is in <strong>equilibrium</strong> — it stays at rest or moves at constant velocity.</p></details>
+
+      <div class="q-item"><span class="q-text">Give two everyday examples that demonstrate Newton's First Law.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1. A ball rolling on a smooth floor keeps rolling until friction stops it. 2. A book on a table stays still until pushed. Also: the tablecloth trick.</p></details>
+
+      <div class="q-item"><span class="q-text">Why is it important to wear a seatbelt in a car?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>In a collision, the car stops rapidly but, due to inertia, the passenger's body continues forward. Without a seatbelt, the passenger hits the windscreen. The seatbelt applies a braking force to decelerate the passenger with the car.</p></details>
+
+      <div class="q-item"><span class="q-text">If no forces acted on a moving football, what would happen?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>It would continue in a <strong>straight line at constant speed forever</strong> (Newton's First Law). In practice, gravity, air resistance, and friction cause it to slow and curve.</p></details>
+
+      <div class="q-item"><span class="q-text">What does it mean for forces to be "balanced"? Give an example.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Balanced forces are equal in magnitude and opposite in direction, giving net force = 0. Example: a book on a table — weight down equals normal force up.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Developing (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A car travels at 60 km/h with the engine off. Explain why it slows down, referencing Newton's First Law.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Newton's First Law predicts constant speed if no net force acts. However, <strong>friction</strong> and <strong>air resistance</strong> are unbalanced external forces opposing motion. These produce a net backward force, decelerating the car.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why astronauts in a spacecraft with no engine and negligible gravity move in a straight line at constant speed.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>With no significant external forces, net force = 0. By Newton's First Law, the spacecraft (and astronauts) maintain their current velocity indefinitely.</p></details>
+
+      <div class="q-item"><span class="q-text">A heavy truck and a bicycle both move at 30 km/h. Which is harder to stop? Explain using inertia.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The <strong>truck</strong> is harder to stop. Its far greater mass gives it much greater inertia. A greater force (or longer time) is required to change its state of motion.</p></details>
+
+      <div class="q-item"><span class="q-text">Distinguish between static inertia and dynamic inertia with one example each.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Static inertia</strong>: tendency of a stationary object to remain at rest (e.g., a heavy rock that needs a large push to move). <strong>Dynamic inertia</strong>: tendency of a moving object to keep moving (e.g., a satellite that continues orbiting without thrust).</p></details>
+
+      <div class="q-item"><span class="q-text">Explain the "tablecloth trick" using Newton's First Law.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>When the cloth is pulled very quickly, the contact time is extremely short. The frictional impulse on the dishes is negligible — they remain essentially at rest by inertia while the cloth slides away beneath them.</p></details>
+
+      <div class="q-item"><span class="q-text">Why do objects in a rotating space station feel "simulated gravity"? Is this real gravity?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Objects tend to move in a straight line (Newton's First Law). The station wall provides centripetal force inward, which feels like a push from the "floor." This is <strong>not real gravity</strong> — it is centripetal force from the rotating structure simulating the effect of weight.</p></details>
+
+      <div class="q-item"><span class="q-text">A 5 kg object is pushed with 20 N right and 20 N left simultaneously. What is net force and what happens?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Net force = 20 &minus; 20 = <strong>0 N</strong>. The object remains at rest (if stationary) or continues at constant velocity (if moving). No acceleration.</p></details>
+
+      <div class="q-item"><span class="q-text">Why must pilots fasten harnesses even when flying straight and level? Relate to Newton's First Law.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>If sudden turbulence or a direction change occurs, an unbalanced force acts on the aircraft. By inertia, the pilot's body would continue in its previous state of motion while the aircraft changes. The harness ensures the pilot accelerates/decelerates with the aircraft.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Aristotle believed a continuous force was needed to maintain motion. Galileo and Newton disagreed. Who was correct and why? Provide evidence.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Newton and Galileo were correct.</strong> Galileo's thought experiment: on a perfectly smooth surface, a ball neither speeds up nor slows down. Real evidence: a puck on a near-frictionless air table travels the full length at constant speed. Spacecraft maintain speed with engines off. Aristotle confused the force needed to overcome friction with a force needed to maintain motion.</p></details>
+
+      <div class="q-item"><span class="q-text">Analyse how car crumple zones relate to Newton's First Law and inertia.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>In a crash the car stops rapidly. Due to inertia, passengers continue forward. Crumple zones crush progressively, increasing the stopping time. By F = Δp/t, longer time reduces peak force on passengers. The crumple also absorbs kinetic energy as deformation, further protecting the passenger cabin.</p></details>
+
+      <div class="q-item"><span class="q-text">A coin sits on a card over a glass. The card is flicked quickly and the coin drops straight down. Explain using Newton's First Law and impulse.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Contact time between card and coin is extremely short, so the horizontal impulse (F&times;t) on the coin is negligible — the coin receives almost no horizontal velocity. By inertia it stays in its horizontal position. Gravity (vertical, always acting) pulls the coin straight down into the glass.</p></details>
+
+      <div class="q-item"><span class="q-text">Why do racing drivers wear HANS devices? Explain using Newton's First Law and inertia of the head.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>In a high-speed crash the car stops almost instantly. The harness restrains the body. But the head has inertia and continues forward — the neck must absorb this, risking basilar skull fracture. The HANS device transfers the head's inertial load from the neck to the harness/helmet, protecting the cervical spine.</p></details>
+
+      <div class="q-item"><span class="q-text">An object moves at constant velocity. Does this mean no forces act? Explain the distinction between "no forces" and "balanced forces."</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>No — it means <strong>net force is zero</strong> (forces are balanced). Multiple forces can act as long as they vector-sum to zero. A car at constant speed has engine thrust balanced by air resistance and friction. The state "no acceleration" is consistent with both "no forces" and "balanced forces."</p></details>
+
+      <div class="q-item"><span class="q-text">Why is a head-on collision between two cars at 50 km/h more dangerous than hitting a stationary wall at 50 km/h? Use relative velocity and Newton's First Law.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Hitting a stationary wall: your car decelerates from 50 to 0 km/h (change = 50 km/h). Head-on with another car also at 50 km/h: relative velocity = 100 km/h — each car decelerates as though hitting a wall at 100 km/h. The inertial force on passengers is roughly <strong>double</strong> that of the wall scenario.</p></details>
+
+      <div class="q-item"><span class="q-text">A ball thrown horizontally in a moving train travels straight to someone on the train but curved to an observer outside. Explain using Newton's First Law and reference frames.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Newton's First Law holds in inertial (non-accelerating) reference frames. The train at constant velocity is an inertial frame — inside, the ball goes straight. The outside observer sees the combined horizontal (train + throw) and vertical (gravity) motion — a parabola. Both observations are valid in their respective inertial frames; neither is "more correct."</p></details>
+
+      <div class="q-item"><span class="q-text">Design a simple experiment to demonstrate Newton's First Law. Describe what you observe and how results support the law.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Materials: marble, ruler channel, surfaces of decreasing friction (carpet, wood, polished tile, air track). Roll the marble and measure how far it travels before stopping on each surface. As friction decreases, the marble travels further. On the near-frictionless air track it travels the full length at nearly constant speed. Extrapolating to zero friction predicts infinite travel — supporting Newton's First Law: with no net force, the marble continues indefinitely.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 2 -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Newton's Second Law of Motion</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=CQYELiTtUs8" target="_blank">Newton's Second Law F=ma</a>
+        <a href="https://www.youtube.com/watch?v=qlT5e-bBaGA" target="_blank">Net Force and Acceleration</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course Physics</span>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Newton's Second Law</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=OoTgLQmAFuA" target="_blank">Force and Mass Explained</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">NCERT / CBSE</span>
+        <a href="https://www.youtube.com/watch?v=4FiGIiPjNts" target="_blank">Newton's Second Law &ndash; Class 9</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State Newton's Second Law as a formula and define each symbol.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = ma. F = net force (N), m = mass (kg), a = acceleration (m/s&sup2;). The net force equals mass multiplied by acceleration.</p></details>
+
+      <div class="q-item"><span class="q-text">A 10 kg object is pushed with a net force of 50 N. Calculate the acceleration.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = F/m = 50/10 = <strong>5 m/s&sup2;</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">What is the SI unit of force? What does 1 Newton represent?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The SI unit is the <strong>Newton (N)</strong>. 1 N is the force needed to accelerate 1 kg at 1 m/s&sup2;.</p></details>
+
+      <div class="q-item"><span class="q-text">If mass doubles but force stays the same, what happens to the acceleration?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = F/m. If m doubles, a = F/(2m) = half the original. Acceleration <strong>halves</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Calculate the force needed to accelerate a 25 kg trolley at 3 m/s&sup2;.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = ma = 25 &times; 3 = <strong>75 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">What is the mass of an object that accelerates at 8 m/s&sup2; when 40 N acts on it?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>m = F/a = 40/8 = <strong>5 kg</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">How does doubling the force on an object (mass unchanged) affect its acceleration?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Acceleration <strong>doubles</strong>. It is directly proportional to net force.</p></details>
+
+      <div class="q-item"><span class="q-text">Write the formula relating weight, mass, and gravitational field strength.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>W = mg</strong>. W = weight (N), m = mass (kg), g = 9.8 N/kg near Earth's surface. Weight acts vertically downward.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Developing (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 1200 kg car accelerates from rest to 20 m/s in 8 s. Calculate (a) acceleration and (b) net force.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) a = 20/8 = <strong>2.5 m/s&sup2;</strong>. (b) F = 1200 &times; 2.5 = <strong>3000 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A 70 kg person is in a lift accelerating upward at 2 m/s&sup2;. Calculate the normal force. (g = 10 m/s&sup2;)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>N &minus; W = ma. N = W + ma = 70&times;10 + 70&times;2 = 700 + 140 = <strong>840 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Two forces act on a 5 kg box: 30 N right, 10 N left. Find net force and acceleration.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Net F = 30 &minus; 10 = <strong>20 N right</strong>. a = 20/5 = <strong>4 m/s&sup2; right</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a small car accelerates faster than a large truck with the same engine force.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = F/m. The car has much smaller mass. Same force, smaller m &rarr; larger acceleration. Acceleration is inversely proportional to mass.</p></details>
+
+      <div class="q-item"><span class="q-text">A 500 kg rocket has 10,000 N thrust. Ignoring gravity and air resistance, calculate its acceleration.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = F/m = 10000/500 = <strong>20 m/s&sup2;</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A person weighs 600 N. What is their mass? (g = 10 m/s&sup2;)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>m = W/g = 600/10 = <strong>60 kg</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A braking force of 4000 N decelerates a 2000 kg car. Find deceleration and time to stop from 30 m/s.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 4000/2000 = 2 m/s&sup2;. t = 30/2 = <strong>15 s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain the difference between mass and weight. Why do they differ on the Moon?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Mass (kg) is the amount of matter — constant everywhere. Weight (N) = mg — depends on g. On the Moon g &asymp; 1.6 m/s&sup2;, so weight is about 1/6 of Earth weight, while mass is unchanged.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 1500 kg car has driving force 5000 N and friction 1200 N. Find (a) net force, (b) acceleration, (c) speed after 6 s from rest.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) F_net = 5000 &minus; 1200 = <strong>3800 N</strong>. (b) a = 3800/1500 = <strong>2.53 m/s&sup2;</strong>. (c) v = 0 + 2.53&times;6 = <strong>15.2 m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A 70 kg person is in a lift decelerating downward at 3 m/s&sup2;. Find the normal force. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Decelerating downward means acceleration is upward at 3 m/s&sup2;. N &minus; mg = ma &rarr; N = m(g+a) = 70&times;(10+3) = <strong>910 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Two blocks 3 kg and 5 kg are connected by a string, pulled by 16 N on a frictionless surface. Find (a) acceleration and (b) tension in the string.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) a = 16/8 = <strong>2 m/s&sup2;</strong>. (b) T = 3&times;2 = <strong>6 N</strong>. (Check: 16 &minus; T = 5&times;2 &rarr; T = 6 N &check;)</p></details>
+
+      <div class="q-item"><span class="q-text">Explain terminal velocity. What net force acts at that moment?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Terminal velocity is the constant maximum speed when <strong>air resistance equals weight</strong>. Net force = 0, so acceleration = 0. For a belly-to-earth skydiver this is about 55 m/s; for a head-down position about 90 m/s.</p></details>
+
+      <div class="q-item"><span class="q-text">A 2000 kg rocket has thrust 30,000 N and weight 19,600 N. Find the net force and upward acceleration.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Net F = 30000 &minus; 19600 = <strong>10,400 N upward</strong>. a = 10400/2000 = <strong>5.2 m/s&sup2;</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a heavier parachutist reaches a higher terminal velocity than a lighter one using the same parachute.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Terminal velocity requires drag = weight. The heavier parachutist has greater weight (mg), so more drag is needed. Drag increases with speed, so a higher speed is required before drag equals weight &rarr; higher terminal velocity.</p></details>
+
+      <div class="q-item"><span class="q-text">Derive the unit of force (Newton) from F = ma using SI base units.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = ma. Unit = kg &times; m/s&sup2; = <strong>kg&middot;m&middot;s&sup2;</strong>. This derived unit is named the Newton. 1 N = 1 kg&middot;m&middot;s&sup2;.</p></details>
+
+      <div class="q-item"><span class="q-text">A car engine gives 6000 N. Friction = 800 N, air resistance = 700 N. Find net force, acceleration, and state whether the car is speeding up or approaching constant speed.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Total resistance = 1500 N. F_net = 6000 &minus; 1500 = <strong>4500 N</strong>. a = 4500/1200 = <strong>3.75 m/s&sup2;</strong>. The car is <strong>speeding up</strong>. It will reach constant speed when resistance increases to 6000 N (net force = 0).</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 3 -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Newton's Third Law of Motion</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=By-ggTfeuJU" target="_blank">Newton's Third Law</a>
+        <a href="https://www.youtube.com/watch?v=qlT5e-bBaGA" target="_blank">Action-Reaction Pairs</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course Physics</span>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Newton's Third Law Examples</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=OoTgLQmAFuA" target="_blank">Rockets and Reaction Forces</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">NCERT / CBSE</span>
+        <a href="https://www.youtube.com/watch?v=4FiGIiPjNts" target="_blank">Newton's Third Law &ndash; Class 9</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State Newton's Third Law of Motion.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>For every action (force), there is an <strong>equal and opposite reaction</strong>. These forces act on <strong>different objects</strong>, are equal in magnitude, and opposite in direction.</p></details>
+
+      <div class="q-item"><span class="q-text">When you push against a wall the wall pushes back with equal force. Why don't these cancel out?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Action-reaction forces act on <strong>different objects</strong>. Your push acts on the wall; the wall's reaction acts on you. Forces only cancel when they act on the same object. These do not.</p></details>
+
+      <div class="q-item"><span class="q-text">Identify the action-reaction pair when a rocket ejects gas downward.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Action: rocket pushes gas <strong>downward</strong>. Reaction: gas pushes rocket <strong>upward</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">How does a swimmer push off a wall to move forward? Identify action and reaction.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Action: swimmer pushes wall <strong>backward</strong>. Reaction: wall pushes swimmer <strong>forward</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Give two examples of Newton's Third Law in everyday life (not rockets or swimming).</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1. <strong>Walking</strong>: foot pushes ground backward; ground pushes foot forward. 2. <strong>Gun recoil</strong>: gun pushes bullet forward; bullet pushes gun backward.</p></details>
+
+      <div class="q-item"><span class="q-text">A horse pulls a cart. The cart pulls the horse back with equal force. Why does the system still move forward?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The equal-and-opposite forces act on different objects. The horse's hooves push backward on the ground; ground pushes horse forward (friction). This external friction on the horse exceeds the cart's backward pull, producing a net forward force on the horse-cart system.</p></details>
+
+      <div class="q-item"><span class="q-text">In a collision between a truck and a small car, which experiences greater force and which has greater acceleration?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>By Newton's Third Law, both experience <strong>equal forces</strong>. By F = ma, the car (much smaller mass) experiences <strong>much greater acceleration</strong> and thus greater deceleration/injury risk.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a gun recoils when fired.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The gun pushes the bullet forward (action). The bullet pushes the gun backward with equal force (reaction). The gun recoils. Because the gun is much more massive, its recoil speed is much smaller than the bullet's speed.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Developing (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain how a jet engine produces thrust using Newton's Third Law.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The jet engine burns fuel and expels hot exhaust gases <strong>backward</strong>. By Newton's Third Law, the gases exert an equal force on the engine in the <strong>forward</strong> direction — this is thrust.</p></details>
+
+      <div class="q-item"><span class="q-text">A 60 kg person jumps off a 40 kg skateboard at 3 m/s. Using momentum conservation, find the skateboard's velocity.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>System initially at rest: total p = 0. p_person = 60&times;3 = 180 kg&middot;m/s forward. Skateboard: 40&times;v = 180 &rarr; v = <strong>4.5 m/s backward</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">An astronaut in space throws a 2 kg tool at 4 m/s. If the astronaut has mass 80 kg, what happens to the astronaut?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Conservation of momentum: 80&times;v = &minus;2&times;4 &rarr; v = &minus;8/80 = <strong>0.1 m/s backward</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain how birds fly using Newton's Third Law. What is the action and what is the reaction?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Action: wings push air <strong>downward and backward</strong>. Reaction: air pushes bird <strong>upward and forward</strong> — providing lift and thrust.</p></details>
+
+      <div class="q-item"><span class="q-text">A firefighter holds a hose ejecting 20 kg of water per second at 15 m/s. Calculate the reaction force on the firefighter.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Force = mass flow rate &times; velocity = 20 &times; 15 = <strong>300 N backward</strong> on the firefighter.</p></details>
+
+      <div class="q-item"><span class="q-text">Identify all Newton's Third Law force pairs when a book rests on a table.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Pair 1: Earth pulls book down (gravity on book); book pulls Earth up (gravity on Earth). Pair 2: table pushes book up (normal on book); book pushes table down (normal on table).</p></details>
+
+      <div class="q-item"><span class="q-text">Why do rockets work in space where there is no air? Explain using Newton's Third Law.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Rockets push against their own exhaust gases, not external air. Gas is ejected backward; gas pushes rocket forward. This works perfectly in vacuum — no external medium is needed.</p></details>
+
+      <div class="q-item"><span class="q-text">A 1200 kg car crashes into a wall with 48,000 N force. What is the force on the wall, and why doesn't the wall move?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>By Newton's Third Law, the wall experiences <strong>48,000 N</strong> from the car. The wall does not move because it is attached to the Earth. The Earth's enormous mass means a = F/m &asymp; 0.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain why Newton's Third Law pairs never cancel, and resolve the horse-cart paradox by considering each object separately.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Third Law pairs act on <strong>different objects</strong> — never included together in one net force calculation. Horse: forward friction from ground minus backward cart pull = net forward force. Cart: forward horse pull minus backward friction = net forward force. The external ground friction on the horse is the key driver, not the internal action-reaction pair between horse and cart.</p></details>
+
+      <div class="q-item"><span class="q-text">A 5 g bullet is fired from a 3 kg rifle at 600 m/s. Calculate the recoil velocity and explain why it is much smaller.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Conservation of momentum: 0 = 0.005&times;600 + 3&times;v &rarr; 3v = &minus;3 &rarr; v = <strong>&minus;1 m/s</strong> (1 m/s backward). Recoil is small because the rifle is 600&times; the mass of the bullet. Same force, much larger mass &rarr; much smaller acceleration and velocity.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain how a squid uses Newton's Third Law to propel itself. Describe the action, reaction, and forces.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The squid draws water into its mantle, then forcefully ejects it backward through a siphon (action). The water pushes the squid forward (reaction) — jet propulsion. Direction is controlled by angling the siphon. This works in water exactly as a rocket works in vacuum — no external medium needed to "push against."</p></details>
+
+      <div class="q-item"><span class="q-text">Two people on a frictionless surface push off each other from rest. Describe what happens using Newton's Second and Third Laws.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Person A pushes B forward (action); B pushes A backward with equal force (reaction). By F = ma: a_A = F/m_A (backward), a_B = F/m_B (forward). The lighter person moves faster. Total momentum remains zero (equal and opposite momenta). If equal masses, they move at equal speeds in opposite directions.</p></details>
+
+      <div class="q-item"><span class="q-text">Analyse all forces on a hovering helicopter using Newton's Third Law and Second Law.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Rotor blades push air <strong>downward</strong> (action). Air pushes helicopter <strong>upward</strong> (reaction = lift). Hovering: net force = 0 &rarr; lift = weight (mg). The rotor must spin fast enough to push sufficient air downward to generate lift exactly equal to the helicopter's weight.</p></details>
+
+      <div class="q-item"><span class="q-text">Two ice skaters (60 kg and 80 kg) push off from rest. The lighter moves at 4 m/s. Find the heavier skater's velocity.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Total p = 0: 60&times;4 + 80&times;v = 0 &rarr; v = &minus;240/80 = <strong>&minus;3 m/s</strong> (3 m/s in the opposite direction).</p></details>
+
+      <div class="q-item"><span class="q-text">Why do helicopters need a tail rotor? Use Newton's Third Law in your explanation.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The main rotor spins and generates a torque reaction by Newton's Third Law that would spin the fuselage in the opposite direction. The tail rotor generates a sideways thrust (anti-torque) that cancels this rotation, keeping the helicopter pointed in the desired direction. Without it, the fuselage would spin uncontrollably.</p></details>
+
+      <div class="q-item"><span class="q-text">Compare how propeller aircraft, jet aircraft, and rockets all rely on Newton's Third Law, noting what each pushes against.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Propeller</strong>: blades push ambient air backward &rarr; air pushes aircraft forward. Needs external air. <strong>Jet</strong>: compresses and heats ambient air with fuel combustion, ejects exhaust backward &rarr; reaction is forward thrust. Needs external air intake. <strong>Rocket</strong>: carries both fuel and oxidiser; ejects exhaust at very high speed &rarr; forward thrust. Self-contained; works in vacuum. All use Newton's Third Law; only rockets are independent of the surrounding medium.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 4 -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Free Body Diagrams</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Free Body Diagrams</a>
+        <a href="https://www.youtube.com/watch?v=qlT5e-bBaGA" target="_blank">Drawing FBDs Step by Step</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course Physics</span>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Forces and Free Body Diagrams</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Physics Online</span>
+        <a href="https://www.youtube.com/watch?v=oRKxmXwLvUU" target="_blank">FBD Tutorial</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">NCERT / CBSE</span>
+        <a href="https://www.youtube.com/watch?v=4FiGIiPjNts" target="_blank">Force Diagrams &ndash; Class 9</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What is a free body diagram? What does it show?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>A free body diagram isolates one object and shows <strong>all forces acting on it</strong> as labelled arrows showing direction and relative magnitude. The object is simplified to a dot or box.</p></details>
+
+      <div class="q-item"><span class="q-text">Name the four common forces on a free body diagram for an object on a surface.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1. <strong>Weight (W = mg)</strong> &mdash; downward. 2. <strong>Normal force (N)</strong> &mdash; perpendicular to surface, upward. 3. <strong>Friction (f)</strong> &mdash; opposing motion. 4. <strong>Applied force (F)</strong> &mdash; in direction of push/pull.</p></details>
+
+      <div class="q-item"><span class="q-text">Describe the FBD for a book resting on a table. State the directions and relative sizes of all forces.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Two equal and opposite forces: <strong>Weight W</strong> straight downward, <strong>Normal force N</strong> straight upward. At rest: N = W. No friction or applied force.</p></details>
+
+      <div class="q-item"><span class="q-text">What is the normal force, and why is it called "normal"?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The normal force is the contact force exerted by a surface on an object, <strong>perpendicular (normal in geometry) to the surface</strong>. It prevents objects from sinking into surfaces.</p></details>
+
+      <div class="q-item"><span class="q-text">What direction does friction always act in a free body diagram?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Friction always acts <strong>opposite to the direction of motion</strong> (or opposing the tendency of motion for static friction).</p></details>
+
+      <div class="q-item"><span class="q-text">A box is pushed to the right on a rough floor at constant velocity. Describe all forces and the net force.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Weight (down) = Normal (up); Applied force (right) = Friction (left). Constant velocity &rarr; net force = <strong>0</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">What does the length of an arrow represent on a free body diagram?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The length represents the <strong>magnitude (size) of the force</strong>. Longer arrow = larger force.</p></details>
+
+      <div class="q-item"><span class="q-text">Calculate the weight of a 15 kg object. In which direction does weight always act? (g = 10 m/s&sup2;)</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>W = mg = 15 &times; 10 = <strong>150 N</strong>, acting <strong>vertically downward</strong>.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Developing (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 10 kg block on a rough surface is pushed right with 60 N; friction = 25 N. Describe the FBD and calculate net force and acceleration. (g = 10 m/s&sup2;)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>W = 100 N down; N = 100 N up; F = 60 N right; f = 25 N left. Net F = 60 &minus; 25 = <strong>35 N right</strong>. a = 35/10 = <strong>3.5 m/s&sup2;</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Describe the FBD for a skydiver (a) just after jumping and (b) at terminal velocity. Compare forces.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) Weight &gt; drag &rarr; net downward force &rarr; accelerating. Arrow for weight longer than drag. (b) Weight = drag &rarr; net force = 0 &rarr; constant velocity. Both arrows equal length.</p></details>
+
+      <div class="q-item"><span class="q-text">Describe the FBD for a car at constant speed on flat road. Confirm net force = 0.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>W down = N up; engine thrust forward = air resistance + road friction backward. All balanced &rarr; net force = <strong>0</strong>. Constant velocity confirmed.</p></details>
+
+      <div class="q-item"><span class="q-text">A 5 kg block hangs from a rope at rest. Describe its FBD and calculate tension. (g = 10 m/s&sup2;)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>W = 5 &times; 10 = 50 N down; Tension T upward. At rest: T = W = <strong>50 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain the difference between static and kinetic friction in the context of FBDs. Which is larger?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Static friction</strong>: opposes tendency to slide (adjustable up to maximum). <strong>Kinetic friction</strong>: opposes sliding motion (constant value). Static friction is <strong>larger</strong> — harder to start sliding than to maintain it.</p></details>
+
+      <div class="q-item"><span class="q-text">Describe the forces (directions only) in the FBD for a 20 kg box on a rough 30&deg; incline.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Weight: vertically <strong>downward</strong>. Normal force: <strong>perpendicular to the incline</strong>, away from the surface. Friction: <strong>parallel to the incline, up the slope</strong> (opposing tendency to slide down).</p></details>
+
+      <div class="q-item"><span class="q-text">Describe the FBD of a person in a lift accelerating upward. Is N greater than, equal to, or less than weight?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>N up; W down. Accelerating upward: N &minus; W = ma &rarr; N = W + ma &gt; W. The normal force is <strong>greater than weight</strong>. The person feels heavier.</p></details>
+
+      <div class="q-item"><span class="q-text">What happens to the normal force on a person in a lift in free fall (cable snaps)? Calculate N for m = 60 kg. (g = 10 m/s&sup2;)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>In free fall, a = g. W &minus; N = mg &rarr; N = W &minus; mg = mg &minus; mg = <strong>0 N</strong>. The person feels weightless (apparent weight = 0). True weight still acts but the floor exerts no contact force.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 30 kg box is pulled up a frictionless 30&deg; incline by force F (parallel to incline) with acceleration 2 m/s&sup2; up. Calculate F. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Weight component down slope = mg sin30&deg; = 30&times;10&times;0.5 = 150 N. F &minus; 150 = ma = 30&times;2 = 60. F = <strong>210 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Blocks A (4 kg) and B (6 kg) are stacked vertically on a surface; A is on top of B. Draw and describe each block's FBD including all contact forces.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Block A: W_A = 40 N down; N_BA = 40 N up (B pushes A up). Block B: W_B = 60 N down; A pushes B down with 40 N; floor pushes B up with N = W_A + W_B = 100 N. By Newton's 3rd Law: B pushes A up 40 N &harr; A pushes B down 40 N.</p></details>
+
+      <div class="q-item"><span class="q-text">A 1200 kg car brakes from 25 m/s to rest in 5 s. Describe its FBD and calculate the braking force. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>FBD: W = 12,000 N down; N = 12,000 N up; braking friction backward; no driving force. a = 25/5 = 5 m/s&sup2;. Braking force = ma = 1200&times;5 = <strong>6,000 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain "apparent weight." Use FBDs to show when a person feels lighter, heavier, or normal in a lift.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Apparent weight = normal force N (what a scale reads). At rest/constant velocity: N = mg (normal). Accelerating up: N = m(g+a) &gt; mg (heavier). Accelerating down: N = m(g&minus;a) &lt; mg (lighter). Free fall: N = 0 (weightless). True weight mg is constant; only N changes with acceleration.</p></details>
+
+      <div class="q-item"><span class="q-text">A 5 kg block hangs from two ropes at different angles. Explain qualitatively which rope carries more tension and why.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The more <strong>inclined (angled) rope</strong> carries greater tension. Only the vertical component of each tension contributes to supporting the weight. For an angled rope, T_vertical = T cos&theta; &lt; T. To provide the same vertical force as a vertical rope, a greater magnitude T is required. The more angled the rope, the higher its tension for the same vertical load.</p></details>
+
+      <div class="q-item"><span class="q-text">An aircraft at constant altitude and speed has four main forces. Identify them, their directions, and write the two equilibrium conditions.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Forces: (1) Weight W &mdash; vertically down. (2) Lift L &mdash; vertically up. (3) Thrust T &mdash; horizontally forward. (4) Drag D &mdash; horizontally backward. Equilibrium: Vertical: <strong>L = W</strong>. Horizontal: <strong>T = D</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A 10 kg box rests on a 40&deg; rough incline (&mu; = 0.4). Does it slide? Use FBD analysis to find the net force. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>W_parallel (down slope) = mg sin40&deg; = 64.3 N. N = mg cos40&deg; = 76.6 N. f_max = &mu;N = 0.4&times;76.6 = 30.6 N. Since 64.3 N &gt; 30.6 N, the box <strong>slides</strong>. Net force down slope = 64.3 &minus; 30.6 = <strong>33.7 N</strong>. a = 33.7/10 = 3.37 m/s&sup2;.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why free body diagrams are "free" &mdash; i.e., why the object is removed from its surroundings.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>"Free" means the object is <strong>isolated from its environment</strong>. This clearly identifies every force the environment exerts on the object, without confusing them with forces the object exerts on others (Newton's Third Law pairs). Only forces acting on the chosen object are drawn, forming the correct input for F_net = ma applied to that single object.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 5 -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Momentum</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=XFhntPxow0U" target="_blank">Introduction to Momentum</a>
+        <a href="https://www.youtube.com/watch?v=syBmQXaWtyw" target="_blank">Conservation of Momentum</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course Physics</span>
+        <a href="https://www.youtube.com/watch?v=jyMV3RCOGGI" target="_blank">Momentum and Collisions</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=OoTgLQmAFuA" target="_blank">Momentum in Everyday Life</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">NCERT / CBSE</span>
+        <a href="https://www.youtube.com/watch?v=4FiGIiPjNts" target="_blank">Momentum &ndash; Class 9 Forces</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define momentum. State its formula and SI unit.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = mv. SI unit: <strong>kg&middot;m/s</strong>. It is a vector quantity (has direction).</p></details>
+
+      <div class="q-item"><span class="q-text">Calculate the momentum of a 5 kg ball moving at 8 m/s.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = 5 &times; 8 = <strong>40 kg&middot;m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A 1500 kg car moves at 20 m/s. What is its momentum?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = 1500 &times; 20 = <strong>30,000 kg&middot;m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">State the Law of Conservation of Momentum.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>In a closed system (no net external forces), the <strong>total momentum before a collision equals total momentum after</strong>. Total momentum is conserved.</p></details>
+
+      <div class="q-item"><span class="q-text">Is momentum a scalar or vector? Why does this matter?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Momentum is a <strong>vector</strong>. Direction matters &mdash; objects moving in opposite directions have momenta that can cancel. This is essential for correct application of conservation of momentum.</p></details>
+
+      <div class="q-item"><span class="q-text">A 2 kg object has momentum 14 kg&middot;m/s. What is its velocity?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>v = p/m = 14/2 = <strong>7 m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Two identical balls move at the same speed in opposite directions. What is total momentum?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p_total = +mv + (&minus;mv) = <strong>0 kg&middot;m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">What is the momentum of a stationary object?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = m &times; 0 = <strong>0 kg&middot;m/s</strong>, regardless of mass.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Developing (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 3 kg ball at 6 m/s east hits a stationary 5 kg ball; they stick together. Find the combined velocity after.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p_before = 3&times;6 = 18 kg&middot;m/s. (3+5)v = 18 &rarr; v = <strong>2.25 m/s east</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Distinguish between elastic and inelastic collisions in terms of momentum and kinetic energy.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Both conserve <strong>momentum</strong>. <strong>Elastic</strong>: KE also conserved (billiard balls, ideal gas molecules). <strong>Inelastic</strong>: KE not conserved &mdash; some lost to heat/sound/deformation (car crash, clay balls). A perfectly inelastic collision is one where objects stick together.</p></details>
+
+      <div class="q-item"><span class="q-text">A 1000 kg car at 15 m/s hits a stationary 1500 kg car and they stick. Find post-collision velocity.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = 1000&times;15 = 15000 kg&middot;m/s. (1000+1500)v = 15000 &rarr; v = <strong>6 m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Ball A (2 kg, 5 m/s right) hits Ball B (3 kg, 2 m/s left). After, A moves at 1 m/s left. Find B's final velocity.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Right = positive. p_before = 10 &minus; 6 = 4. p_after = 2(&minus;1) + 3v_B = 4 &rarr; 3v_B = 6 &rarr; v_B = <strong>2 m/s right</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a large ship takes a long time to stop after engines are cut.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Enormous mass and speed give the ship very large momentum (p = mv). The only decelerating force is water resistance &mdash; small relative to the ship's momentum. By a = F/m, with huge m and small F, deceleration is tiny &rarr; very long stopping time and distance.</p></details>
+
+      <div class="q-item"><span class="q-text">A 0.05 kg bullet at 800 m/s embeds in a 4.95 kg stationary block. Find the block+bullet velocity after impact.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = 0.05&times;800 = 40. 5v = 40 &rarr; v = <strong>8 m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why conservation of momentum applies to an explosion.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Before explosion, total momentum = 0. All forces are internal &mdash; Newton's Third Law ensures they cancel in the total. Fragments fly out with momenta that vector-sum to zero. Conservation holds as long as no external force acts.</p></details>
+
+      <div class="q-item"><span class="q-text">Is kinetic energy conserved in Q3 above? Show by calculation.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>KE_before = &frac12;&times;1000&times;225 = 112,500 J. KE_after = &frac12;&times;2500&times;36 = 45,000 J. 112,500 &ne; 45,000. KE is <strong>not conserved</strong> (inelastic collision). 67,500 J lost to deformation, heat, sound.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Head-on collision: A (4 kg, 6 m/s right) and B (6 kg, 4 m/s left). After, A moves at 2 m/s left. Find B's velocity. Is this elastic?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p_before = 24 &minus; 24 = 0. p_after = &minus;8 + 6v_B = 0 &rarr; v_B = <strong>4/3 &asymp; 1.33 m/s right</strong>. KE_before = 72+48 = 120 J. KE_after = 8 + &frac12;&times;6&times;(16/9) = 8+5.33 = 13.3 J &ne; 120 J &rarr; <strong>inelastic</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why conservation of momentum is a fundamental law. What condition must a system satisfy?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>It follows directly from Newton's Third Law (internal forces cancel) and Second Law (&Sigma;F_ext = &Delta;p/&Delta;t &rarr; if &Sigma;F_ext = 0, p is constant). It applies from subatomic to galactic scales. Condition: the system must be <strong>closed (isolated)</strong> &mdash; no net external force.</p></details>
+
+      <div class="q-item"><span class="q-text">A 10,000 kg spacecraft fires its 500 kg stage at 200 m/s relative to the spacecraft (initially at rest). Find the spacecraft's recoil velocity.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Initial p = 0. 500&times;(&minus;200) + 9500&times;v = 0 &rarr; 9500v = 100,000 &rarr; v = <strong>10.5 m/s</strong> (opposite to ejected stage).</p></details>
+
+      <div class="q-item"><span class="q-text">Derive the expression for the velocity after a perfectly inelastic collision starting from conservation of momentum.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>m&#8321;u&#8321; + m&#8322;u&#8322; = (m&#8321; + m&#8322;)v. Solving: <strong>v = (m&#8321;u&#8321; + m&#8322;u&#8322;) / (m&#8321; + m&#8322;)</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Ballistic pendulum: a 10 g bullet hits a 990 g block; they swing to height 0.2 m. Find the bullet's initial velocity. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Step 1 (KE &rarr; PE): v_block = &radic;(2gh) = &radic;(4) = 2 m/s. Step 2 (momentum): 0.01&times;u = 1&times;2 &rarr; u = <strong>200 m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why momentum is a better measure of "difficulty to stop" than kinetic energy alone. Use a numerical example.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Truck: 5000 kg, 2 m/s. p = 10,000 kg&middot;m/s; KE = 10,000 J. Car: 500 kg, 20 m/s. p = 10,000 kg&middot;m/s; KE = 100,000 J. Same impulse (F&times;t = 10,000 N&middot;s) is needed to stop either. But the car has 10&times; more KE to absorb structurally. Momentum determines required braking impulse; KE determines energy absorption. Both matter: momentum for stopping force&times;time, KE for structural damage.</p></details>
+
+      <div class="q-item"><span class="q-text">Two equal-mass billiard balls collide elastically head-on: A at 3 m/s, B stationary. Prove A stops and B moves at 3 m/s.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Momentum: 3 = v_A + v_B &hellip;(1). KE (elastic): 9 = v_A&sup2; + v_B&sup2; &hellip;(2). From (1): v_B = 3&minus;v_A. Substitute in (2): 9 = v_A&sup2; + (3&minus;v_A)&sup2; = 2v_A&sup2;&minus;6v_A+9 &rarr; 2v_A(v_A&minus;3) = 0 &rarr; v_A = 0 or 3. v_A = 3 means no collision, so <strong>v_A = 0</strong> and <strong>v_B = 3 m/s</strong>. Proven.</p></details>
+
+      <div class="q-item"><span class="q-text">A uranium-235 nucleus at rest fissions into fragments of 90 u and 144 u. If the 90 u fragment moves at 1.5&times;10&sup7; m/s, find the velocity of the 144 u fragment.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Initial p = 0. 90&times;(1.5&times;10&sup7;) + 144&times;v = 0 &rarr; 144v = &minus;1.35&times;10&sup9; &rarr; v = <strong>&minus;9.375&times;10&sup6; m/s</strong> (opposite direction, speed &asymp; 9.4&times;10&sup6; m/s).</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 6 -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Impulse</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=XFhntPxow0U" target="_blank">Impulse and Momentum Theorem</a>
+        <a href="https://www.youtube.com/watch?v=syBmQXaWtyw" target="_blank">Impulse in Collisions</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course Physics</span>
+        <a href="https://www.youtube.com/watch?v=jyMV3RCOGGI" target="_blank">Impulse-Momentum Theorem</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=OoTgLQmAFuA" target="_blank">Airbags and Impulse</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">NCERT / CBSE</span>
+        <a href="https://www.youtube.com/watch?v=4FiGIiPjNts" target="_blank">Impulse &ndash; Class 9 Physics</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define impulse. Write the formula in two ways.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Impulse = F &times; t = &Delta;p = m(v&minus;u). SI unit: N&middot;s or kg&middot;m/s.</p></details>
+
+      <div class="q-item"><span class="q-text">State the impulse-momentum theorem.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>F &times; t = m(v &minus; u) = &Delta;p</strong>. The impulse equals the change in momentum.</p></details>
+
+      <div class="q-item"><span class="q-text">A force of 200 N acts on a ball for 0.05 s. Calculate the impulse.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Impulse = 200 &times; 0.05 = <strong>10 N&middot;s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A 0.5 kg ball changes velocity from 4 m/s to 12 m/s. Calculate the change in momentum.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>&Delta;p = 0.5 &times; (12 &minus; 4) = <strong>4 kg&middot;m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Why do crash helmets protect cyclists? Explain using impulse.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The foam crushes on impact, <strong>increasing contact time</strong>. Since F = &Delta;p/t and &Delta;p is fixed, larger t &rarr; smaller F. Peak force on the skull is reduced, preventing injury.</p></details>
+
+      <div class="q-item"><span class="q-text">A 70 kg person running at 5 m/s stops in 2 s. Calculate the average stopping force.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = &Delta;p/t = (70&times;5)/2 = <strong>175 N</strong> opposing motion.</p></details>
+
+      <div class="q-item"><span class="q-text">Show that N&middot;s is equivalent to kg&middot;m/s.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>N&middot;s = (kg&middot;m/s&sup2;) &times; s = <strong>kg&middot;m/s</strong>. Both are units of impulse and momentum, confirming the theorem.</p></details>
+
+      <div class="q-item"><span class="q-text">Give two examples where increasing collision time reduces injury.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1. <strong>Airbags</strong>: inflate during crash, extending deceleration time &rarr; reduces peak force on face/chest. 2. <strong>Crash mats</strong> in gymnastics: compress over longer time &rarr; smaller force on landing.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Developing (Medium)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 1200 kg car at 15 m/s crashes and stops in 0.3 s. Find (a) change in momentum and (b) average force.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) &Delta;p = 1200&times;15 = <strong>18,000 kg&middot;m/s</strong>. (b) F = 18000/0.3 = <strong>60,000 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">The same crash with an airbag extends the stop time to 1.2 s. Calculate the new force. Comment on the safety benefit.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = 18000/1.2 = <strong>15,000 N</strong>. Force reduced to one quarter of without airbag. This greatly reduces the risk of chest and head injury.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a cricket batsman "follows through" when hitting, in terms of impulse.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Following through extends contact time. Impulse = F&times;t &rarr; longer t &rarr; greater impulse &rarr; greater change in momentum &rarr; higher ball speed. The bat imparts maximum impulse to the ball.</p></details>
+
+      <div class="q-item"><span class="q-text">A 0.15 kg cricket ball bowled at 30 m/s is hit back at 40 m/s. Contact time = 0.02 s. Find (a) change in momentum and (b) average force.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Taking return direction as positive: &Delta;p = 0.15&times;(40&minus;(&minus;30)) = 0.15&times;70 = <strong>10.5 kg&middot;m/s</strong>. F = 10.5/0.02 = <strong>525 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain how continuous impulse from rocket exhaust produces acceleration using the impulse-momentum theorem.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Each small mass &Delta;m ejected at v_exhaust imparts momentum &Delta;m&times;v_exhaust to the rocket forward (Newton's Third Law). Continuous ejection gives continuous impulse &rarr; continuous momentum change &rarr; acceleration. Thrust = &Delta;m/&Delta;t &times; v_exhaust.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a long-jump athlete bends their knees on landing. Relate to impulse and joint forces.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Bending the knees increases the stopping time (body continues downward as knees flex). F = &Delta;p/t &rarr; larger t &rarr; smaller peak force on knees and joints, preventing injury.</p></details>
+
+      <div class="q-item"><span class="q-text">A force-time graph shows a triangle: peak 600 N, duration 0.04 s. Calculate the impulse.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Impulse = area of triangle = &frac12;&times;0.04&times;600 = <strong>12 N&middot;s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">A goalkeeper catches a 0.45 kg ball at 20 m/s in 0.1 s. Find force. What if caught in 0.3 s?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>&Delta;p = 0.45&times;20 = 9 kg&middot;m/s. F = 9/0.1 = <strong>90 N</strong>. If t = 0.3 s: F = 9/0.3 = <strong>30 N</strong> (one third). "Giving" with the ball reduces the sting.</p></details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended (Hard)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive F = &Delta;p/&Delta;t from Newton's Second Law F = ma. Show the steps clearly.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = ma = m&times;&Delta;v/&Delta;t = (m&times;&Delta;v)/&Delta;t = &Delta;(mv)/&Delta;t = <strong>&Delta;p/&Delta;t</strong>. Newton's Second Law is equivalently the rate of change of momentum.</p></details>
+
+      <div class="q-item"><span class="q-text">A 60 kg bungee jumper decelerates from 25 m/s to 0 over 2 s. Find (a) impulse, (b) net force, (c) cord tension. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) &Delta;p = 60&times;25 = <strong>1500 N&middot;s upward</strong>. (b) F_net = 1500/2 = <strong>750 N upward</strong>. (c) T &minus; W = 750 &rarr; T = 750 + 600 = <strong>1350 N</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Car A (800 kg) rebounds off a wall at the same speed (15 m/s). Car B (800 kg) hits the same wall and stops. Which experienced greater impulse?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Car A: &Delta;p = 800&times;(15&minus;(&minus;15)) = <strong>24,000 N&middot;s</strong>. Car B: &Delta;p = 800&times;15 = <strong>12,000 N&middot;s</strong>. Car A has <strong>twice the impulse</strong>. Rebounding reverses momentum, doubling the change.</p></details>
+
+      <div class="q-item"><span class="q-text">Analyse how crumple zones, airbags, and seatbelts each use the impulse principle and how they complement each other.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Crumple zones</strong>: deform progressively, increasing the time the car takes to stop &rarr; F = &Delta;p/t &rarr; lower peak deceleration force on occupants. <strong>Seatbelts</strong>: keep occupant moving with the car; load limiters let belt stretch slightly &rarr; extends stopping time for the torso &rarr; spreads impulse over stronger chest/pelvis. <strong>Airbags</strong>: cushion head/chest in the final stage of deceleration &rarr; extends contact time &rarr; reduces peak force on skull. Together: layered impulse extension at every stage of the crash event.</p></details>
+
+      <div class="q-item"><span class="q-text">A 0.1 kg rubber ball hits a floor at 8 m/s and bounces back at 6 m/s; contact time = 0.01 s. Find (a) &Delta;p, (b) average floor force, (c) net force. (g = 10 m/s&sup2;)</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Upward = positive. (a) &Delta;p = 0.1&times;(6&minus;(&minus;8)) = 0.1&times;14 = <strong>1.4 kg&middot;m/s upward</strong>. (b) F_floor = 1.4/0.01 = <strong>140 N upward</strong>. (c) Net = 140 &minus; 0.1&times;10 = 140 &minus; 1 = <strong>139 N upward</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why a karate expert breaks a brick with a quick strike rather than pressing slowly. Use impulse and force concepts.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = &Delta;p/t. A quick strike has very short contact time t &rarr; enormous force (F = &Delta;p/t is very large). This exceeds the brick's fracture strength. A slow press distributes the same impulse over a long time &rarr; small force &rarr; well below fracture threshold. Maximum force through minimum time is the key, not maximum energy.</p></details>
+
+      <div class="q-item"><span class="q-text">A force-time graph shows a rectangle: 500 N constant for 0.06 s, then drops to 0. Find (a) impulse, (b) velocity change for a 2 kg object, (c) final velocity if initial was 3 m/s.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a) Impulse = 500&times;0.06 = <strong>30 N&middot;s</strong>. (b) &Delta;v = 30/2 = <strong>15 m/s</strong>. (c) v_final = 3 + 15 = <strong>18 m/s</strong>.</p></details>
+
+      <div class="q-item"><span class="q-text">Explain why F = &Delta;p/&Delta;t is more general than F = ma. Give an example where F = ma fails but F = &Delta;p/&Delta;t still holds.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>F = ma assumes constant mass. F = &Delta;p/&Delta;t = d(mv)/dt handles variable mass: F = m(dv/dt) + v(dm/dt). Example: a rocket burns fuel and its mass decreases continuously. F = ma (with fixed m) gives the wrong answer. F = &Delta;p/&Delta;t correctly accounts for both the velocity change and the mass change, and is the basis of the Tsiolkovsky rocket equation. Also applies to conveyor belts, water jets, and relativistic motion.</p></details>
+    </div>
+  </div>
+</div>
+
+<footer>Grade 9 &middot; Exploration Science &middot; Chapter 6 &middot; The Gaudium School &middot; IB MYP &middot; 2026&ndash;27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

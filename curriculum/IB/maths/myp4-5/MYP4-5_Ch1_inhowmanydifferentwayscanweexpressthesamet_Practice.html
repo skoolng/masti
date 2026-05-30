@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATHS MYP4-5 Chapter 1 - In how many different ways can we express the same thing? · Practice Sets</title>
+<style>
+
+:root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
+header h1 { font-size:2rem; }
+header p { margin-top:8px; opacity:.85; font-size:.95rem; }
+nav { background:var(--card); border-bottom:2px solid var(--border); padding:18px 28px; }
+nav h2 { font-size:.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+nav ol { padding-left:22px; columns:2; column-gap:40px; }
+nav li { margin:4px 0; font-size:.88rem; }
+nav a { color:var(--primary); text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+.topic { max-width:960px; margin:36px auto; padding:0 18px; }
+.topic-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.t-num { background:var(--accent); color:#fff; border-radius:50%; width:46px; height:46px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.topic-header h2 { font-size:1.4rem; color:var(--primary); }
+.set-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.set-card h3 { font-size:1rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.set-label { display:inline-block; background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 8px; margin-right:6px; }
+.q-list { counter-reset:q; }
+.q-item { counter-increment:q; display:flex; gap:10px; margin:10px 0; align-items:flex-start; }
+.q-item::before { content:"Q" counter(q); background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 6px; flex-shrink:0; margin-top:3px; }
+.q-text { flex:1; font-size:.91rem; }
+.diff { font-size:.72rem; border-radius:99px; padding:1px 8px; flex-shrink:0; margin-top:4px; white-space:nowrap; }
+.diff-easy { background:#dcfce7; color:#15803d; }
+.diff-medium { background:#fef9c3; color:#854d0e; }
+.diff-hard { background:#fee2e2; color:#991b1b; }
+details.ans { margin-top:4px; }
+details.ans summary { cursor:pointer; color:var(--green); font-size:.82rem; font-weight:600; }
+details.ans p { background:#f0faf5; border-left:3px solid var(--green); padding:8px 12px; margin-top:6px; border-radius:6px; font-size:.85rem; }
+footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; margin-top:20px; }
+.topic-videos { background:#fff8f5; border:1px solid #f5d8cc; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+.topic-videos h3 { font-size:.95rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.vid-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media(max-width:640px){ .vid-grid{ grid-template-columns:1fr; } }
+.vid-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; }
+.vid-box .ch-tag { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; display:block; }
+.vid-box.khan .ch-tag { color:#137333; }
+.vid-box.antics .ch-tag { color:#d93025; }
+.vid-box.nphile .ch-tag { color:#7b2cbf; }
+.vid-box.teded .ch-tag { color:#e8734a; }
+.vid-box a { display:block; color:var(--primary); font-size:.84rem; margin:4px 0; text-decoration:none; }
+.vid-box a:hover { text-decoration:underline; }
+.vid-box a::before { content:"▶ "; }
+.working { background:#eef2ff; border-left:4px solid var(--primary); padding:10px 14px; margin-top:8px; border-radius:0 6px 6px 0; font-size:.84rem; line-height:1.9; }
+.working strong { color:var(--primary); }
+@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+.print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
+.print-set-btn:hover { background: #dce5ff; }
+
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 MATHS MYP4-5 Chapter 1 - In how many different ways can we express the same thing?</h1>
+  <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">In how many different ways can we express the same thing?</a></li>
+  </ol>
+</nav>
+
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>In how many different ways can we express the same thing?</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.google.com/search?q=maths+In+how+many+different+ways+can+we+express+the+same+thing%3F+Khan+Academy" target="_blank">Khan Academy lesson links</a>
+        <a href="https://www.khanacademy.org/" target="_blank">Khan Academy home</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">YouTube Lessons</span>
+        <a href="https://www.youtube.com/results?search_query=maths+In+how+many+different+ways+can+we+express+the+same+thing%3F+explained" target="_blank">Chapter lesson videos</a>
+        <a href="https://www.youtube.com/results?search_query=maths+In+how+many+different+ways+can+we+express+the+same+thing%3F+real+world+problems" target="_blank">Application/problem videos</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Concept Deep Dives</span>
+        <a href="https://www.google.com/search?q=IB+MYP+maths+In+how+many+different+ways+can+we+express+the+same+thing%3F+revision" target="_blank">IB-aligned revision videos</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">Extension</span>
+        <a href="https://www.youtube.com/results?search_query=In+how+many+different+ways+can+we+express+the+same+thing%3F+TED-Ed" target="_blank">TED-Ed/topic extension videos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundation - Basic Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Write 0.375 as a fraction in simplest form.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 0.375 = 375/1000 = 3/8.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Convert 45% to decimal and fraction form.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 45% = 0.45 = 9/20.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Arrange in ascending order: -1.2, 3/5, -2/3, 0.08.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Ascending: -1.2, -2/3, 0.08, 3/5.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Evaluate: 2^5 - 3^2 + 18/3.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 32 - 9 + 6 = 29.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find 12% of 850.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 12% of 850 = 0.12 x 850 = 102.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Round 89.764 to 1 decimal place.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 89.764 rounded to 1 d.p. is 89.8.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write 7,500,000 in standard form.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 7,500,000 = 7.5 x 10^6.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find the percentage increase from 200 to 260.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Increase is 60, so (60/200)x100 = 30%.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A value decreases by 20% from 450. Find the new value.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 20% of 450 is 90; new value = 360.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find the original number if 125% of it is 500.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Original = 500/1.25 = 400.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Core Practice - Skill Building</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Simplify the ratio 84:126.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Divide by 42: ratio = 2:3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Express 3.2 : 0.8 as a whole-number ratio.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Multiply by 10: 32:8 = 4:1.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Temperature rose from -7°C to 11°C. Find total rise.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Rise = 11 - (-7) = 18°C.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find 35% of 640 and 65% of 640.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 35% = 224 and 65% = 416.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A map scale is 1:25,000. Map distance is 6 cm. Real distance?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Real distance = 6 x 25,000 cm = 150,000 cm = 1.5 km.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Convert 0.00056 to standard form.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 0.00056 = 5.6 x 10^-4.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A price is ₹2400 after a 20% discount. Find original price.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Original = 2400/0.8 = ₹3000.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Population increased from 48,000 to 52,800. Find growth %.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Increase is 4,800; growth = 10%.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find smallest number to add to 987 so it is divisible by 12.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 987 mod 12 = 3, so add 9 -&gt; 996.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A quantity triples in 2 steps. Find one-step growth factor.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: If factor is r, r^2=3 so r=sqrt(3).</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application - Context and Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A family spends 40% rent, 25% food, 15% transport, rest savings. If rent is ₹18,000, find savings.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Total budget = 18,000/0.4 = 45,000; savings = 20% = ₹9,000.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A phone plan costs ₹299 + ₹1.8 per minute. Cost for 125 minutes?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Cost = 299 + 1.8x125 = ₹524.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A town has 12,500 people. 56% are adults. Find adults and non-adults.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Adults = 7,000; non-adults = 5,500.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A car uses 7.2 L fuel per 100 km. Fuel for 350 km?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Fuel = 7.2 x 3.5 = 25.2 L.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A number is increased by 15% then decreased by 15%. Net change %?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Net factor = 1.15x0.85=0.9775 -&gt; 2.25% decrease.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Compare 2.4x10^5 and 0.36x10^6.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Both equal 240,000 and 360,000; second is larger.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A budget grows 8% yearly from ₹95,000. Value after 3 years (approx)?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 95,000x1.08^3 approx ₹119,676.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find mean of 12, 15, 20, 18, 10.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Mean = 75/5 = 15.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Estimate 19.8 x 49.7 using rounding.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Approx 20x50 = 1000.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find exact value of 19.8 x 49.7.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 19.8x49.7 = 984.06.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge - Complex and Extended</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Find smallest positive integer n such that 72n is a perfect square.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 72 = 2^3 x 3^2, multiply by 2 -&gt; n=2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Two successive discounts are 10% and 20%. Find single equivalent discount.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Equivalent factor 0.9x0.8=0.72 -&gt; 28% discount.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A value doubles every 4 hours. Starting at 150, value after 20 hours?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 20/4=5 doublings; value = 150x2^5 = 4800.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Create an equation for total taxi fare with base ₹90 and ₹16 per km, then find 22 km fare.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Model C=90+16k; for k=22, C=₹442.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A salary rises 12% then 8%. Net increase %?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Factor 1.12x1.08=1.2096 -&gt; 20.96% increase.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A bank gives 6% annual simple interest on ₹24,000 for 3 years. Total amount?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Interest=24000x0.06x3=4320; total=₹28,320.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">If 0.3x = 7.5, find x and verify.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: x=25; 0.3x25=7.5 verified.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A school has 840 students; boys:girls = 5:7. Find each.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 12 parts; each=70; boys=350 girls=490.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A project budget is cut by 18% from ₹6,50,000. New budget?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Cut=117,000; new budget = ₹5,33,000.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain with numbers why rounding too early can change final decision.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Using rounded intermediate values introduces cumulative error; e.g., 19.8x49.7 exact 984.06 vs rounded 1000.</b></p>
+      </details>
+
+    </div>
+  </div>
+</div>
+<footer>Maths · MYP4-5 · Chapter 1 · Practice Worksheet</footer>
+<script>
+
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'</title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'</style></head><body>'
+    +'<h1>'+chapTitle+'</h1><h2>'+setTitle+'</h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};</'+'script>'
+    +'</body></html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+
+</script>
+</body>
+</html>

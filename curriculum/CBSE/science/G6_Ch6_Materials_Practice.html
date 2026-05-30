@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G6 Ch6 – Materials Around Us | The Gaudium School</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚗️ Chapter 6 – Materials Around Us</h1>
+  <p>6 Topics · 3 Sets · 8 Questions Each · Chemistry</p>
+</header>
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">States of Matter</a></li>
+    <li><a href="#t2">Particle Model</a></li>
+    <li><a href="#t3">Physical Properties</a></li>
+    <li><a href="#t4">Natural vs Synthetic Materials</a></li>
+    <li><a href="#t5">Selecting Materials</a></li>
+    <li><a href="#t6">Sustainable Materials</a></li>
+  </ol>
+</nav>
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>States of Matter</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:states-of-matter/x1baed5db7346abe2:states-of-matter-and-phase-changes/v/states-of-matter" target="_blank">States of Matter</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:states-of-matter/x1baed5db7346abe2:states-of-matter-and-phase-changes/v/changes-of-state" target="_blank">Changes of State</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=9Sl_tmECsrc" target="_blank">What Is Matter?</a>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">States of Matter Explained</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">States of Matter – CrashCourse Chemistry</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Phase Changes and Energy</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Water in Three States</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Plasma – The Fourth State</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – States of Matter</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Name the three common states of matter.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The three common states of matter are solid, liquid, and gas. A fourth state — plasma — exists at extremely high temperatures but is not commonly encountered in everyday life.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the shape and volume of a solid?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A solid has a fixed (definite) shape and a fixed volume. Its particles are tightly packed and cannot move freely, only vibrating in place.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the shape and volume of a liquid?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A liquid has no fixed shape (it takes the shape of its container) but has a fixed volume. Particles can flow past each other but remain in contact.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the shape and volume of a gas?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A gas has no fixed shape and no fixed volume — it expands to fill any container. Gas particles move rapidly and are far apart from each other.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Can a solid be compressed easily? Explain.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. In a solid, particles are already tightly packed together. There is very little space between them, so the solid cannot be compressed further.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Give two examples each of solids, liquids, and gases at room temperature.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Solids: iron, wood. Liquids: water, mercury. Gases: oxygen, carbon dioxide. These examples are all at standard room temperature (approximately 25°C).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What happens to the volume of a gas when it is moved to a larger container?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A gas expands to fill the entire volume of its new container. Gas particles move freely in all directions and spread out until they are uniformly distributed throughout the available space.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Which state of matter has the highest energy? Explain.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gas. Gas particles have the most kinetic energy — they move fastest and most freely. This is why they can spread out and fill any container, unlike solids and liquids.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – States of Matter</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why liquid water takes the shape of its container but a block of ice does not.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ice (solid) has a rigid lattice of particles that hold their fixed positions, maintaining a definite shape regardless of container. Liquid water's particles can slide past each other freely, allowing the liquid to flow and conform to the shape of any container while maintaining a fixed total volume.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student blows air into a balloon. The balloon expands. Which property of gases explains this?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gases have no fixed volume and expand to fill available space. The air molecules inside the balloon move in all directions, exerting pressure on the balloon walls. As more air is added, more molecules exert greater outward pressure, expanding the balloon until the rubber's elastic tension balances the gas pressure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Steam (water vapour) burns more severely than boiling water at the same temperature (100°C). Explain why, using knowledge of states of matter.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Steam has more energy than liquid water at 100°C because it carries the latent heat of vaporisation — the energy used to change state from liquid to gas. When steam contacts skin, it releases this extra energy as it condenses back to liquid water, causing more severe burns than liquid water at the same temperature.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is it possible to pour sand into any shape (like a liquid) even though sand is made of solid particles?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sand is made of individual solid grains that can slide past each other due to gravity. This gives it some properties similar to a liquid (pourable), but each grain is still a solid with fixed shape and volume. Sand is not a true liquid — it cannot flow upward or fill a sealed container.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why gases can be compressed but liquids and solids cannot (or only very slightly).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>In gases, particles are far apart with large empty spaces between them. Compression pushes the particles closer together into these spaces. In liquids and solids, particles are already in contact with very little space between them, so very little further compression is possible without extremely high pressure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A perfume bottle is opened in one corner of a room. Soon the scent is detected across the room. Which property of gases explains this?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gases expand and fill their container — the room. Perfume molecules (in gaseous form) move rapidly in random directions (random motion/diffusion), spreading throughout the room until they are uniformly distributed. This process is called diffusion and is evidence that gas particles are in constant rapid motion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does water remain as a liquid at room temperature while oxygen is a gas?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The state of a substance at room temperature depends on the forces between its particles and the energy of the particles. Water molecules have strong intermolecular forces (hydrogen bonds), keeping them as a liquid at room temperature. Oxygen molecules have very weak intermolecular forces, so their particles have enough energy to escape as a gas at room temperature.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student claims that a gas has more mass than a solid because it fills more space. Evaluate this claim.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The claim is false. Mass depends on the number and type of particles, not the volume they occupy. A gas expands to fill space because its particles move far apart, but the total mass of the gas remains the same. Equal masses of solid and gas contain the same number of atoms — the gas just takes up much more volume.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – States of Matter <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to demonstrate that water can change state in both directions (solid→liquid→gas and reverse). Identify energy changes at each step.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Start with ice in a beaker on a hot plate; record temperature and observe changes. Solid→liquid (melting): temperature stays at 0°C while ice melts (latent heat of fusion absorbed). Liquid→gas (evaporation/boiling): temperature rises to 100°C then stays constant while boiling (latent heat of vaporisation absorbed). Reverse: collect steam in a cold beaker — condenses to liquid (energy released). Place in freezer — freezes to solid (energy released). Energy absorbed during heating; energy released during cooling — demonstrating reversibility and conservation of energy.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate the limitations of classifying all matter as solid, liquid, or gas. What substances are difficult to classify?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Limitations: many substances do not fit neatly into three categories. Examples: Non-Newtonian fluids (cornstarch + water — solid-like under impact, liquid-like when still), gels (have fixed shape like solids but high water content), foams (gas trapped in liquid), liquid crystals (used in LCD screens — between solid and liquid order). Plasma is a fourth state. The three-state model is a useful simplification but does not capture the full range of matter's behaviour.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse what happens at the particle level when water is heated from 20°C to 120°C (steam). Describe each phase change and the energy involved.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>20°C→100°C (liquid): particles gain kinetic energy, vibrate and move faster, temperature rises. At 100°C (boiling): temperature stops rising; energy (latent heat of vaporisation = 2260 J/g) is used to overcome intermolecular forces, converting liquid to gas — not to raise temperature. 100°C→120°C (gas): steam particles gain kinetic energy again, temperature rises. Total energy = energy to heat liquid (m×c×ΔT) + latent heat + energy to heat steam.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student observes that a glass of ice water stays at 0°C until all the ice melts, even though heat is being applied. Explain this observation and its practical applications.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>The heat energy is being used as latent heat of fusion — energy needed to break the lattice bonds in ice and change the state from solid to liquid, not to raise the temperature. The temperature remains at 0°C (the melting point) until all ice is melted. Practical application: this is how ice is used to keep food cold in coolers — the large amount of latent heat absorbed keeps the temperature stable at 0°C for a long time.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the compressibility of air in a bicycle pump with the near-incompressibility of water in a hydraulic braking system. Analyse why engineers choose each for their specific applications.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Air (gas): large spaces between particles allow significant compression — perfect for bicycle pumps where storing energy by compression and releasing it is the goal. Water (liquid): virtually incompressible because particles are already in contact — perfect for hydraulic brakes where pressing the pedal must immediately and reliably transmit force through the fluid without losing any motion to compression. Compressible fluids would make brake response delayed and inconsistent — dangerous in safety-critical systems.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Investigate (theoretically) how the behaviour of matter in the states of solid, liquid, and gas changes on the Moon (1/6 of Earth's gravity). Predict which properties change and which remain the same.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Properties that do NOT change with gravity: melting/boiling points (determined by intermolecular forces and temperature, not gravity), particle speed, density of a given substance, intermolecular forces. Properties that DO change: the behaviour of liquids — without strong gravity, liquids form spherical droplets due to surface tension rather than pooling flat. Gases would still expand to fill containers. The Moon has no atmosphere because its gravity is too weak to retain gas molecules — light molecules escape into space. On Earth, gravity helps retain the atmosphere.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the scientific and practical significance of the discovery of plasma as the fourth state of matter. Where is plasma found and why is it important?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Plasma is an ionised gas where electrons are separated from nuclei — occurring at very high energies. Found in: the Sun and stars (fusion reactions), lightning, neon signs, and plasma TVs. Scientific significance: plasma makes up 99% of visible matter in the universe. Practical importance: fusion reactors (e.g. ITER) aim to use plasma for clean, nearly unlimited energy. Understanding plasma behaviour is essential for space travel (spacecraft re-entry plasma sheath) and materials processing (plasma etching in semiconductor manufacture).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student designs an investigation to find the melting point of wax by slowly heating it and recording temperature vs. time. Predict the shape of the temperature–time graph, identify what happens at the plateau, and explain what information this gives about the material.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Graph shape: rising straight line (solid wax heating), then horizontal plateau (melting — temperature constant despite continued heating), then rising line again (liquid wax heating). The plateau represents the melting point — where supplied heat goes entirely into latent heat of fusion (breaking crystal lattice bonds), not into raising temperature. This gives: (1) the exact melting point of the wax; (2) the purity (impurities lower and broaden the melting point range); (3) the latent heat can be calculated from the plateau duration and power input.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Particle Model</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:states-of-matter/x1baed5db7346abe2:states-of-matter-and-phase-changes/v/introduction-to-the-particle-model" target="_blank">The Particle Model of Matter</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:states-of-matter/x1baed5db7346abe2:states-of-matter-and-phase-changes/v/kinetic-molecular-theory" target="_blank">Kinetic Theory of Matter</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">What Are Atoms?</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Kinetic Theory Explained Simply</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Kinetic Molecular Theory – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Particle Model and Diffusion</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">World of the Atom</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Molecular Motion – Invisible World</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Particle Model</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe the arrangement of particles in a solid.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>In a solid, particles are tightly packed in a regular, ordered arrangement (lattice). They vibrate in fixed positions but cannot move freely — this gives solids their definite shape and volume.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe the arrangement of particles in a liquid.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>In a liquid, particles are close together but in a random, irregular arrangement. They can slide past each other, allowing liquids to flow and take the shape of their container.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe the arrangement of particles in a gas.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>In a gas, particles are far apart, moving rapidly in random directions. They are much more spread out than in a solid or liquid, which is why gases can expand to fill any container.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What type of particle motion occurs in a solid?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Particles in a solid vibrate about fixed positions. They have low kinetic energy compared to liquids and gases, and cannot change their average position.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does increasing temperature affect particle motion?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Increasing temperature gives particles more kinetic energy, causing them to move faster. In solids, vibrations become more vigorous; in liquids, particles move faster; in gases, particles move faster and hit container walls with greater force.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why can gases be compressed while solids cannot?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gas particles are far apart with large empty spaces between them — compression moves particles closer into these spaces. Solid particles are already tightly packed with virtually no space between them, leaving no room for compression.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is diffusion and which states of matter show it?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Diffusion is the spreading of particles from a region of high concentration to low concentration due to random particle motion. It occurs in both gases and liquids. Gases diffuse faster than liquids because their particles move more rapidly.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name the scientist whose observation of pollen grains provided the first indirect evidence for the particle model.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Robert Brown (1827) observed random motion of pollen grains in water (Brownian motion). This provided the first observational evidence that water consists of tiny, invisibly fast-moving particles.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Particle Model</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Use the particle model to explain why a solid block of ice melts when placed in a warm room.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The warm air in the room transfers thermal energy to the ice particles, increasing their kinetic energy (vibrations). When the energy is sufficient to overcome the forces holding particles in the lattice, the ice melts — particles gain enough energy to slide past each other as a liquid.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why a gas exerts pressure on the walls of its container, using the particle model.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gas particles move rapidly in random directions. When they collide with container walls, they exert a tiny force on the wall. The combined effect of billions of such collisions per second creates the measurable gas pressure. Increasing temperature increases particle speed and collision frequency, raising pressure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student drops a small amount of food colouring into still water. Slowly, the colour spreads throughout the water. Explain this using the particle model.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Diffusion explains this. The coloured dye particles and water particles are both in random motion, constantly moving in all directions. Dye particles gradually spread from where they are concentrated (the drop) to areas of lower concentration throughout the water — driven by random particle movement, not a directed force.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does a gas fill its container uniformly rather than sinking to the bottom (unlike a liquid)?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gas particles have much higher kinetic energy than liquid particles and move rapidly in all directions. Gravity affects them, but their kinetic energy is so large that they constantly bounce off each other and the walls, spreading uniformly. Only at very low temperatures do gas molecules settle — at room temperature, thermal energy far exceeds gravitational potential energy differences.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Use the particle model to explain why smell travels faster on a hot day than a cold day.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>On a hot day, odour molecules (gas) have more kinetic energy and move faster. Diffusion rate is proportional to particle speed. Faster-moving particles spread through the air more quickly, reaching your nose in less time. On a cold day, lower kinetic energy means slower movement and slower diffusion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why cooking oil and water do not mix, using knowledge of particle interactions.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Water molecules are polar (have slightly positive and negative ends) and strongly attract other water molecules (hydrogen bonding). Oil molecules are non-polar and attract other oil molecules through weaker forces. When mixed, water molecules preferentially attract each other and exclude the oil, which groups together — this is why oil and water separate into distinct layers.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A bicycle tyre feels hard even though it is filled with gas. Explain using the particle model.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gas molecules inside the tyre are in constant rapid motion. They collide with the inner wall of the tyre continuously, exerting outward pressure. The pressure from many billions of collisions per second creates the firm feeling of the inflated tyre. The tyre wall provides inward elastic force balancing the outward gas pressure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Use the particle model to explain the difference in density between a solid and a gas of the same material.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Density = mass ÷ volume. In a solid, particles are tightly packed — the same number of particles occupy a very small volume, giving high density. In a gas, the same particles are spread far apart — they occupy a much larger volume, giving low density. The mass is the same; the difference is entirely in the volume the particles occupy.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Particle Model <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to demonstrate diffusion of two gases (e.g., ammonia and hydrochloric acid) meeting in a glass tube. Predict where the product forms and explain using the particle model.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Soak one cotton wool plug in ammonia solution and another in hydrochloric acid solution. Simultaneously plug each end of a long glass tube. Observe where white smoke (ammonium chloride) forms. Prediction: white smoke forms closer to the HCl end because ammonia (NH₃, lighter, smaller molecule) diffuses faster than HCl (heavier). Particle model explanation: lighter particles have higher average speed at the same temperature (kinetic theory: KE = ½mv², so smaller m → higher v for same KE). The ring of white smoke marks where equal numbers of both molecules meet.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate the particle model of matter as a scientific model. What does it explain well and what are its limitations?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Explains well: states of matter, diffusion, gas pressure, Brownian motion, thermal expansion, and state changes. Limitations: treats all particles as identical hard spheres — ignores different molecular shapes (e.g., H₂O's bent shape that gives it unusual properties), intermolecular force complexity, quantum effects at atomic scale, and cannot account for non-Newtonian fluids or liquid crystal behaviour. The model is a useful simplification — powerful for Grade 6-10 chemistry but must be refined at higher levels (molecular orbital theory, quantum mechanics).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student investigates diffusion rate of food colouring in hot vs. cold water. Describe a fair test, what to measure, and expected results with particle-level explanation.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Fair test: same volume of water (100 mL), same amount of food colouring (1 drop), same container size. Variables: independent = water temperature (10°C, 20°C, 40°C, 60°C); dependent = time for colour to spread uniformly (or radius of colour spread after a fixed time). Expected: higher temperature → faster diffusion. Particle explanation: higher temperature → greater kinetic energy → faster particle motion → faster spreading of dye particles from high to low concentration regions.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how the particle model explains why a balloon inflated outdoors in winter shrinks when brought indoors in summer (and vice versa). What variables are involved?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Actually, a balloon brought from cold outdoor (winter) air to warm indoor air would expand, not shrink — because warmer indoor air warms the gas inside, increasing particle kinetic energy and thus pressure, expanding the balloon. If the reverse (hot outdoor summer to cold air-conditioned indoors): balloon shrinks because gas particles slow down, reducing pressure and volume. Variables: temperature (directly affects kinetic energy), volume (balloon is flexible so pressure stays roughly constant — Charles's Law: V ∝ T at constant pressure), and external air pressure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to determine the size of an oil molecule using the oil drop experiment. Describe the method, assumptions, and calculation.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Place one drop of oleic acid in ethanol (known volume, e.g. 1 mm³ of diluted solution). Drop onto water surface dusted with lycopodium powder. Measure diameter of oil patch (d). Calculation: Volume of oil = known amount from dilution. Assume the oil spreads to a monolayer (one molecule thick). Thickness = volume ÷ area = volume ÷ (π(d/2)²). Assumption: oil forms a perfectly flat circular monolayer one molecule thick. Result: approximately 10⁻¹⁰ m (1 nm) — the order of magnitude of a molecule. Limitations: oil patch not perfectly circular, powder may interfere.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the evidence that led scientists to develop the particle model of matter. List at least three key experimental observations and explain what each revealed.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>1) Brownian motion (Robert Brown, 1827): random movement of visible particles in fluid showed invisible particles in constant random motion — evidence for particle nature of fluids. 2) Diffusion: spreading of gases/liquids without stirring showed particles self-move from high to low concentration. 3) Compression of gases: gases can be compressed significantly, showing large empty spaces between gas particles. 4) Thermal expansion: solids, liquids, and gases expand when heated, showing particles move further apart as energy increases. 5) Definite melting/boiling points: show particles require a specific energy to change the nature of their interactions. Together, these observations converged on the particle model as the most consistent explanation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare and contrast the kinetic theory explanations for gas pressure and osmotic pressure in liquids. What is fundamentally different about these two pressures despite both arising from particle motion?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gas pressure: caused by kinetic impacts of gas molecules on container walls — direct momentum transfer. Depends on temperature and number of molecules per unit volume. Osmotic pressure: arises from diffusion of solvent (water) molecules through a semipermeable membrane from low to high solute concentration, driven by concentration gradients. Water molecules pass through the membrane more easily than solute molecules. While both ultimately arise from random particle motion, gas pressure is about collision force, while osmotic pressure is about net movement direction due to concentration difference — a thermodynamic driving force toward equilibrium.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Using the particle model, analyse why solid carbon dioxide (dry ice) sublimates directly to gas without becoming liquid at atmospheric pressure, while water melts to liquid before boiling.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sublimation in dry ice occurs because at atmospheric pressure, the intermolecular forces between CO₂ molecules are weak — not strong enough to maintain the liquid state. The energy needed to go directly from solid to gas (sublimation energy) is less than the energy needed to maintain the liquid phase at this pressure. Water has much stronger intermolecular forces (hydrogen bonds), which are strong enough to hold molecules in the liquid state at atmospheric pressure over a 100°C range. The difference is entirely in the relative strengths of intermolecular forces and how they interact with thermal energy at atmospheric pressure.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Physical Properties</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/physical-and-chemical-properties-of-matter" target="_blank">Physical vs Chemical Properties</a>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/examples-of-physical-and-chemical-properties" target="_blank">Properties of Materials</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">What Makes Materials Special?</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">The Science of Materials</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Physical Properties of Matter</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Materials and Their Properties</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">How Material Properties Shape Our World</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Hardness and the Mohs Scale</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Physical Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is hardness as a property of a material?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hardness is a material's resistance to being scratched or dented. The Mohs scale rates hardness from 1 (talc, softest) to 10 (diamond, hardest). A harder material scratches a softer one.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is lustre?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Lustre describes how well a material reflects light — how shiny it appears. Metals like gold, silver, and copper have high lustre. Non-metals are generally dull (no lustre).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does solubility mean?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Solubility is the ability of a substance (solute) to dissolve in a solvent (usually water). Sugar and salt are highly soluble in water; sand and oil are not soluble in water.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is thermal conductivity?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Thermal conductivity is a material's ability to conduct (transfer) heat. Metals like copper and aluminium are good thermal conductors. Non-metals like wood and plastic are poor conductors (insulators).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is electrical conductivity?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electrical conductivity is a material's ability to allow electric current to flow through it. Metals are good electrical conductors. Non-metals (rubber, plastic, wood) are poor conductors (insulators).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is transparency in materials?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Transparency (or optical transmittance) is how well a material allows light to pass through it. Glass and clear plastic are transparent. Wood and metal are opaque. Frosted glass is translucent (partially transparent).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is flexibility/elasticity in a material?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Flexibility is the ability to bend without breaking. Elasticity is the ability to return to original shape after being stretched or compressed. Rubber is both flexible and elastic; glass is rigid and brittle.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name one material with high hardness and one with low hardness.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Diamond has the highest hardness (10 on Mohs scale). Talc has the lowest hardness (1 on Mohs scale) — it can be scratched with a fingernail.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Physical Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student needs to choose a material for a frying pan handle. Which property is most important and why?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Low thermal conductivity (insulating property) is most important. The handle must not transfer heat from the hot pan to the hand. Wood or plastic handles are used because they are poor heat conductors — metals would be dangerous as they transfer heat rapidly to the user's hand.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why glass is used for windows and not wood or metal.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Glass is transparent, allowing light to pass through and illuminate the room while providing a physical barrier against wind and rain. Wood and metal are opaque — they would block light entirely. Glass also has adequate strength and hardness for this application.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A scientist needs to test the hardness of two unknown minerals. Describe how they could use the scratch test to compare them.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Attempt to scratch Mineral A's surface with Mineral B, then vice versa. Whichever mineral scratches the other is harder. If Mineral A scratches B but B does not scratch A, then A is harder. If neither scratches the other, they have equal hardness. This is the basis of the Mohs hardness scale.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Copper is used for electrical wiring. Name the two key properties that make it suitable and explain why no other property in this list matters as much.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>High electrical conductivity (allows current to flow with minimal resistance) and flexibility (can be bent and formed into wires without breaking). Properties like lustre, hardness, and transparency are irrelevant because the wire is insulated and hidden. Conductivity and formability directly determine function.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why salt dissolves in water but sand does not, using knowledge of particle interactions.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Salt (NaCl) is an ionic compound. Water is a polar molecule. The positive water molecules attract chloride ions and the negative parts attract sodium ions, pulling the lattice apart — this is dissolution. Sand (SiO₂) has very strong covalent bonds in a giant lattice structure that water molecules cannot break apart. The interaction between water and sand is too weak to separate the sand particles.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A material is described as 'translucent'. How does this differ from transparent and opaque? Give one example of each.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Transparent: light passes through clearly with no scattering (e.g. clear glass — objects behind are clearly visible). Translucent: light passes through but is scattered, making objects behind blurry (e.g. frosted glass or baking paper). Opaque: no light passes through at all (e.g. wood or metal). The difference lies in how much light scattering occurs within the material.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is rubber used for tyres rather than glass, even though glass might be harder?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rubber has high flexibility and elasticity — it deforms under impact and springs back, absorbing shocks and maintaining grip on road surfaces. Glass is rigid and brittle — it would shatter on impact. For tyres, flexibility, friction (grip), and durability under repeated deformation are the key properties, not hardness.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student tests four substances for solubility in water: sugar, sand, oil, and copper sulfate. Predict the results and explain each.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sugar: soluble — its molecules interact with polar water molecules, breaking apart and dispersing. Sand: insoluble — giant covalent structure with bonds too strong for water to break. Oil: insoluble — non-polar oil molecules are not attracted to polar water molecules. Copper sulfate: soluble — ionic compound, water molecules attract its ions and pull them from the crystal lattice.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Physical Properties <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an investigation to rank five unknown materials by hardness using only the materials themselves and a copper coin (hardness ~3 Mohs). State your method, variables, and how you would construct a hardness ranking.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Attempt to scratch each material with the copper coin; record whether it scratches. Then use harder materials to scratch softer ones in a round-robin comparison. Variables: independent = material being tested; dependent = scratch result (yes/no); controlled = same force applied, same area of scratch, same observer. Construct ranking by: if A scratches B, A is harder than B. Use transitivity (if A>B and B>C, then A>C). Coin at hardness 3 splits materials into >3 (coin cannot scratch) and <3 (coin scratches). Limitations: pressure variation between scratches, surface contaminants.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate whether electrical conductivity is a fixed property of a material or whether it can be changed. Use examples to support your answer.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Conductivity can change with: temperature (metal conductivity decreases as temperature rises — more thermal vibrations scatter electrons; semiconductor conductivity increases with temperature); doping (adding impurities to silicon dramatically increases its conductivity — basis of all transistors); state of matter (mercury: liquid at room temp, conducts; many non-conductors become conductors when dissolved as ions in water — e.g. salt solution). Therefore electrical conductivity is not a fixed intrinsic property but depends on temperature, composition, and physical state. This is exploited in electronics (transistors, sensors) and industry (electrolytes in batteries).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An engineer needs a material for an aeroplane wing that must be: strong, lightweight, slightly flexible (to absorb turbulence), non-corrosive, and thermally stable. Analyse how modern composite materials (e.g. carbon fibre reinforced polymer) meet these requirements better than aluminium.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Aluminium: strong, lightweight, conductive, slightly flexible, resists corrosion with oxide layer. Limitation: still heavier than ideal; fatigue cracking over time. Carbon fibre (CFRP): stronger than steel by weight, lighter than aluminium, very stiff, does not corrode, thermally stable to high temperatures. The polymer matrix provides slight flexibility to absorb shocks. CFRP has a higher strength-to-weight ratio than any metal, reduces fuel consumption, and does not suffer fatigue in the same way as metals. Limitation: more expensive to manufacture and harder to repair. Used in Boeing 787 and Airbus A350.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to determine which of five liquids (water, ethanol, vegetable oil, salt solution, vinegar) has the highest and lowest surface tension. Describe your method, measurements, and expected ranking.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Use a dropper to place carefully sized drops on a hydrophobic surface. More surface tension → drop forms a more spherical shape with larger contact angle (height to width ratio). Measure drop height and width with ruler; calculate h/w ratio. Alternatively: count drops from a dropper until 1 mL is reached — more drops = smaller drops = higher surface tension. Expected ranking (highest to lowest surface tension): water > salt solution (ions increase surface tension) > vinegar > ethanol > vegetable oil. Controlled variables: same dropper tip, same volume dispensed, same surface, room temperature.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse the relationship between a material's lustre and its electrical conductivity. Is there a pattern? Explain the reason using atomic structure.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Yes, there is a strong pattern: materials with high lustre (metals — gold, silver, copper, aluminium) are also excellent electrical conductors. The reason lies in their atomic structure: metals have delocalised electrons (a 'sea' of free electrons). These free electrons: (1) reflect light efficiently → giving lustre; (2) carry electrical charge freely when a voltage is applied → giving conductivity. Non-metals lack delocalised electrons — their electrons are tightly bound in bonds, so they neither reflect light well (dull) nor conduct electricity well (insulators). The same electron structure causes both properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design an experiment to investigate whether temperature affects the rate at which sugar dissolves in water. Include a hypothesis, method, variables, and safety considerations.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hypothesis: Higher temperature increases dissolution rate because particles have more kinetic energy, collide more frequently with solute, and break it apart faster. Method: Measure 50 mL water at temperatures 10°C, 20°C, 30°C, 40°C, 50°C. Add exactly 5 g sugar to each. Time how long until fully dissolved (no visible crystals), stirring at the same rate. Variables: independent = temperature; dependent = time to dissolve; controlled = volume of water, mass of sugar, same stirring rate and method. Safety: hot water safety, use tongs for hot containers, thermometer care. Expected: dissolution time decreases as temperature increases (inverse relationship).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A new synthetic material claims to have the following properties: hardness 8 Mohs, transparent, electrically conductive, flexible, and soluble in water. Critically evaluate whether this set of properties is scientifically plausible. Identify any contradictions.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Several contradictions: (1) Hardness 8 + flexible: high-hardness materials are typically brittle (e.g. diamonds, corundum) — combining extreme hardness with flexibility is very unusual (though graphene has unique properties). (2) Transparent + electrically conductive: most transparent materials are non-conductors (glass, plastic). Conducting materials like metals are opaque. Indium tin oxide (ITO) is a rare exception (used in touchscreens) but is brittle, not flexible. (3) Soluble in water + hard: highly soluble materials (salts) are typically low-hardness ionic crystals. A Mohs 8 soluble material would be unprecedented. Verdict: while individual combinations exist in special materials, this combination of all five properties together is not currently plausible with known materials.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the social and scientific impact of the discovery of superconductivity (zero electrical resistance below a critical temperature). What are the current limitations and future potential?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Discovery: Heike Kamerlingh Onnes (1911) found mercury has zero resistance below 4.2 K (−269°C). Scientific impact: fundamentally changed understanding of electron behaviour in materials; led to BCS theory (Nobel Prize). Current applications: MRI scanner superconducting magnets, maglev trains (Japan's SCMaglev), particle accelerators (LHC at CERN). Limitations: require extreme cooling (liquid helium or nitrogen), making them expensive and bulky. Room-temperature superconductors remain elusive despite promising recent claims (not yet reproducibly confirmed). Future potential: lossless electricity transmission (power grids waste ~5–10% as heat in resistance), ultra-fast computers with quantum processors, and ultra-efficient motors — potentially transforming global energy use.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Natural vs Synthetic Materials</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/natural-vs-synthetic" target="_blank">Natural and Synthetic Materials</a>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/polymers-and-plastics" target="_blank">How Plastics Are Made</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=RS7IzU2VJIQ" target="_blank">Plastic Pollution – A Huge Problem</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How Nylon Changed Fashion</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Natural vs Synthetic Materials</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Polymers – CrashCourse Chemistry</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">The Plastic Age</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Natural Fibres of the World</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Natural vs Synthetic Materials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is a natural material? Give two examples.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A natural material is obtained directly from nature without significant chemical processing. Examples: cotton (from cotton plant), wool (from sheep), wood (from trees), natural rubber (from rubber tree sap).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is a synthetic material? Give two examples.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A synthetic material is made by humans through chemical processes, usually from petroleum or other raw materials. Examples: nylon, polyester, plastic, synthetic rubber (neoprene).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">From which plant is cotton obtained?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Cotton is obtained from the seed pods (bolls) of the cotton plant (Gossypium species). The white fibres surrounding the seeds are harvested and spun into cotton thread and fabric.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is nylon and how is it classified?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Nylon is a synthetic polymer (plastic) made from petrochemicals through a chemical process called polymerisation. It is classified as a synthetic material — it does not occur naturally.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name two natural materials used to make clothing.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Cotton and wool are natural materials used to make clothing. Silk (from silkworms) and linen (from flax plant) are also natural fibres used in clothing.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is polyester and what is it made from?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Polyester is a synthetic plastic polymer made from petroleum-derived chemicals through polymerisation. It is used in clothing (fleece, sportswear), bottles (PET), and packaging.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name one natural rubber and one synthetic rubber.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Natural rubber is obtained from the latex sap of the rubber tree (Hevea brasiliensis). Neoprene (polychloroprene) is a synthetic rubber produced chemically — used in wetsuits and gloves.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Is glass a natural or synthetic material?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Glass is generally considered a synthetic material because it requires manufacturing (melting sand, soda ash, and limestone at high temperatures). However, obsidian is natural volcanic glass. The glass used in windows, bottles, and lenses is human-manufactured.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Natural vs Synthetic Materials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain one advantage and one disadvantage of synthetic fibres (like polyester) compared to natural fibres (like cotton) for clothing.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Advantage: polyester is cheaper, stronger, dries faster, and is more resistant to stretching and shrinking than cotton — better for sportswear. Disadvantage: polyester is not breathable (traps moisture), less comfortable in hot weather, and does not biodegrade — it persists in the environment for hundreds of years, releasing microplastics when washed.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why did the development of synthetic rubber during World War II become strategically important?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Most natural rubber came from Southeast Asian rubber trees. During WWII, Japan occupied these regions, cutting off Allied rubber supplies. Tyres, seals, and gaskets were critical for vehicles and aircraft. Synthetic rubber (neoprene, Buna rubber) was rapidly developed to replace natural rubber, showing how materials science can have major military and economic consequences.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student has two unmarked fabric samples — one cotton, one polyester. Describe a simple experiment to identify which is which.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Burn test: carefully burn a small thread from each fabric. Cotton (natural): burns quickly with a yellow flame, smells like burning paper, leaves a soft grey ash that crumbles. Polyester (synthetic): melts and forms a hard bead, burns with a black sooty flame, smells like burning plastic. The different burning behaviour distinguishes natural from synthetic fibres because synthetic polymers melt (thermoplastic behaviour) while natural cellulose fibres combust cleanly.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why natural materials like wood and cotton are described as 'renewable' while most synthetic materials are 'non-renewable.'<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Wood and cotton come from plants that can regrow within years or decades — they are renewable resources. Most synthetic materials (nylon, polyester, plastic) are derived from petroleum (crude oil), which takes millions of years to form and cannot be replenished on a human timescale — they are non-renewable. This distinction drives the push for bio-based synthetic alternatives.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is natural rubber no longer sufficient to meet global rubber demand and what role has synthetic rubber played in addressing this?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Global demand for rubber (from cars, industry, medical equipment) far exceeds what rubber tree plantations can supply — trees take 7 years to mature and are geographically limited to tropical regions. Synthetic rubber (from petroleum) can be produced in factories anywhere, in any quantity, and can be engineered with specific properties (e.g. oil-resistance in nitrile rubber). About 60–70% of global rubber today is synthetic.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the environmental impact of disposing of a cotton T-shirt versus a polyester T-shirt at end of life.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Cotton (natural, cellulose): biodegrades in weeks to months in landfill, returning nutrients to soil. Can be composted. Polyester (synthetic polymer): does not biodegrade for hundreds of years. Releases microplastics when washed and when it slowly breaks down in the environment. However, polyester can be recycled (made from recycled PET bottles). The environmental impact of cotton also includes large water usage and pesticide use during cultivation — both materials have significant but different environmental footprints.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Wood has been used for thousands of years as a building material. Identify three properties of wood that make it suitable and one limitation.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Suitable properties: (1) relatively strong under compression and tension — used for beams and frames; (2) good thermal insulator — walls and roofing provide warmth; (3) readily available, renewable, and workable with simple tools. Limitation: flammable — wood catches fire easily, requiring fire-retardant treatments in modern buildings. Also susceptible to rot and insect damage if untreated.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student claims that synthetic materials are always superior to natural ones because they can be designed to any specification. Evaluate this claim.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The claim is an oversimplification. Synthetic materials have advantages: customisable properties, mass production, consistency. However, natural materials have advantages: biodegradability, renewability, lower embodied energy in some cases, and health benefits (e.g. natural fibres are more breathable). Some natural materials (diamond, silk, spider silk) have properties still unmatched by synthetics. The best choice depends on the application — neither category is universally superior.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Natural vs Synthetic Materials <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an investigation to compare the water absorption of cotton and polyester fabric samples. Include method, variables, results table, and expected outcome with explanation.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Cut identical 10 cm × 10 cm squares of cotton and polyester. Weigh each dry (mass A). Submerge in 100 mL water for 2 minutes. Remove, blot to remove surface water, reweigh (mass B). Water absorbed = B − A. Repeat 3 times each. Variables: independent = fabric type; dependent = water absorbed (g); controlled = sample size, water volume, submersion time, blotting method. Expected: cotton absorbs significantly more water (hydrophilic cellulose fibres); polyester absorbs very little (hydrophobic polymer). This explains why cotton is comfortable in heat (absorbs sweat) but slow-drying, while polyester dries fast.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the life cycle of a polyester jacket (from petroleum extraction to disposal) in terms of environmental impact. Compare with a wool jacket.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Polyester jacket: petroleum extraction (fossil fuel use, habitat disruption), refining (energy intensive, CO₂ emissions), polymerisation (chemical processing), manufacturing (energy use), washing in use (microplastic release — 500,000 microplastic fibres per wash), disposal (landfill for hundreds of years, or incineration releasing CO₂). Wool jacket: sheep farming (land use, methane from sheep, water), shearing and processing (relatively low energy), washing in use (biodegrades well, no microplastics), disposal (biodegrades in months). Verdict: wool has a smaller long-term environmental footprint, particularly regarding microplastics and biodegradability, but sheep farming has its own emissions. Recycled polyester is a middle ground.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to test whether a natural material (cotton fabric) or a synthetic material (polyester fabric) provides better thermal insulation. Describe the method, variables, and how you would analyse results.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Wrap identical beakers of hot water (measured temperature) in equal thicknesses of cotton and polyester fabric. Record temperature every 2 minutes for 20 minutes. Plot temperature vs. time for each. The fabric that maintains temperature longer (shallower slope) provides better insulation. Variables: independent = fabric type; dependent = temperature over time (°C); controlled = initial water temperature, beaker size, fabric thickness and area, room temperature. Expected: cotton provides slightly better insulation due to air trapped in its natural fibres; polyester may allow faster heat loss. Repeat 3 times and average.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically analyse the statement: 'Replacing all plastics with natural materials would solve the environmental crisis.' Is this fully correct?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Partially correct but oversimplified. Plastics cause severe pollution (microplastics, ocean waste, 500 years to degrade) — reducing plastic use is essential. However, simply replacing all plastics with natural materials would create new problems: cotton requires enormous water (10,000 L per kg of cotton), pesticides, and land. Deforestation for wood and rubber. Glass and metal replacements are heavier, increasing transport energy. The real solution is: reduce overall consumption, redesign products for durability, develop biodegradable bio-based plastics, invest in recycling infrastructure, and use the right material for each specific application — not blanket replacement.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse the ethical and economic issues surrounding the use of natural rubber from Southeast Asia in global manufacturing. Consider sustainability, labour conditions, and geopolitical risks.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sustainability: rubber trees are renewable and carbon-absorbing, but monoculture plantations reduce biodiversity. Deforestation for new plantations is a serious issue. Labour: many rubber tappers in Malaysia, Indonesia, and Thailand work long hours in difficult conditions for low wages — exploitation is documented in supply chains. Geopolitical risk: reliance on a limited geographic area creates supply chain vulnerability (demonstrated in WWII). Solutions: fair-trade rubber certification, sustainable plantation standards, developing domestic synthetic rubber alternatives, and diversifying supply chains across multiple countries and sources.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Bio-based plastics (e.g. PLA made from corn starch) are marketed as 'eco-friendly' alternatives to petroleum-based plastics. Evaluate this claim critically.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Partial truth: PLA is made from renewable plant material (not petroleum) and can be industrially composted in controlled conditions (55–70°C). However: (1) PLA does NOT biodegrade in household compost or the ocean — requires industrial composting facilities, which are rare in most countries. (2) Corn cultivation for PLA uses land, water, and pesticides — competing with food crops. (3) Manufacturing PLA still uses energy and chemicals. (4) PLA cannot be recycled with conventional plastics — contaminates the recycling stream. Verdict: bio-based plastics are a step in the right direction but are not a complete solution without proper composting infrastructure. 'Eco-friendly' claims require careful qualification.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design a study to determine whether students at your school can correctly identify natural vs synthetic materials by sight and touch alone. Describe the experimental design, data collection, and what the results might tell us about materials literacy.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Prepare 10 labelled boxes containing fabric samples (cotton, silk, wool, linen, polyester, nylon, rayon, acrylic, synthetic fleece, faux leather) without labels visible. Students (n=30) touch and examine each sample, classify as natural or synthetic, and record their answers. Data: percentage correct identification for each material; comparison by material type (natural vs synthetic); comparison between students who have studied materials vs those who have not. Analysis: calculate accuracy rates; identify which materials are most frequently misidentified; use chi-square test to check if science-studied students perform better. Materials literacy finding: if most students cannot identify materials by touch, this highlights a gap in practical science education and the need for hands-on materials investigation in the curriculum.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Investigate how the development of new synthetic biomaterials (e.g. Gore-Tex, Kevlar) has changed specific industries. Choose two industries and analyse the before-and-after impact.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>1) Outdoor clothing industry (Gore-Tex, 1969): Before: wool/cotton outdoor clothing absorbed water, became heavy and cold when wet, offering poor weather protection. After: Gore-Tex (microporous PTFE membrane) is waterproof yet breathable — water droplets cannot pass in but water vapour molecules can escape. This enabled lightweight, warm, dry outdoor activity in extreme conditions, transforming mountaineering, hiking, and military gear. 2) Personal protection/defence (Kevlar, 1965): Before: metal or ceramic body armour was heavy, rigid, and impractical for infantry movement. After: Kevlar (aromatic polyamide) is 5× stronger than steel by weight, flexible enough to wear as soft body armour, and light enough for police and military routine use. Has saved thousands of lives. Both examples show how engineered synthetic materials, designed by understanding molecular structure, created step-changes in industry capability.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Selecting Materials</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/materials-selection" target="_blank">Choosing the Right Material</a>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/uses-of-materials" target="_blank">Properties and Uses of Materials</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Engineering Impossible Things</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How We Design New Materials</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Materials Science – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">How We Choose Materials for Engineering</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">How Bridges Are Engineered</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Materials of the Future</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Selecting Materials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Why is steel used in building bridges?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Steel has very high tensile strength and compressive strength, allowing it to support enormous loads. It is also flexible enough to expand and contract with temperature changes without cracking, and can be shaped into beams and cables.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is copper used for electrical wiring?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Copper has very high electrical conductivity (second only to silver among practical metals), allowing current to flow with very low resistance. It is also flexible (can be drawn into thin wires), relatively affordable, and resistant to corrosion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is glass used for windows?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Glass is transparent, allowing light to pass through while providing a solid barrier against wind, rain, and temperature. It is also hard (scratch resistant), easy to clean, and can be made in large flat sheets.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is rubber used for tyres?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rubber is highly flexible and elastic — it deforms on contact with the road (improving grip) and springs back. It is tough enough to resist wear, provides good friction against road surfaces, and is airtight for holding air in pneumatic tyres.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is wood used for furniture?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Wood is strong, slightly flexible, workable (can be cut, shaped, joined), aesthetically pleasing, and a good thermal and acoustic insulator. It is also renewable and has moderate density — not too heavy for everyday furniture.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is aluminium used in aircraft bodies?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Aluminium has a very high strength-to-weight ratio — it is strong but much lighter than steel. It also naturally forms a thin oxide layer that resists corrosion, which is critical for aircraft operating at altitude and in variable humidity.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is ceramic used for cooking pots and tiles?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ceramics can withstand very high temperatures without melting or deforming. They are chemically inert (do not react with food or cleaning agents), hard, scratch-resistant, and poor heat conductors, making them useful for both cooking surfaces and floor tiles.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is PVC (plastic) used for water pipes?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>PVC is chemically resistant to water and many chemicals, does not corrode or rust, is lightweight, strong, inexpensive, and easy to join using adhesives or heat. Unlike metal pipes, it does not corrode internally and does not affect water quality.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Selecting Materials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">An engineer must choose a material for a submarine hull. List the key properties required and suggest the most suitable material.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Required properties: very high strength (to withstand water pressure at depth), non-corrosive in seawater, slightly flexible, and manufacturable in large sheets. Best material: high-strength steel alloy (HY-80 or HY-100) — it has all these properties. Titanium is used in some deep-diving submarines for its strength-to-weight ratio and excellent corrosion resistance, but it is very expensive.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why a saucepan might have a metal body but a plastic or wooden handle. What property is matched to each component?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Metal body (usually stainless steel or aluminium): high thermal conductivity — efficiently transfers heat from the flame to the food. Plastic/wooden handle: very low thermal conductivity (insulating) — does not conduct heat from the pan to the user's hand, preventing burns. Each material is chosen to match its specific function within the same object.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student wants to make a model boat that is: lightweight, waterproof, and strong. Which material combination would work best?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A fibreglass (glass-reinforced polymer) or foam-core with fibreglass skin combination would work best. Fibreglass is lightweight, waterproof, and strong. Alternatively, a balsa wood core covered in waterproof sealant would also work — balsa is the lightest structural wood. Pure plastic sheet (ABS or PVC) is another option: waterproof, mouldable, moderately strong, and lightweight.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Gold is used for electrical contacts in computers rather than the much cheaper copper. Explain why, using the relevant properties of each material.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gold is used because it does not oxidise (corrode) at all, even after years of use — maintaining perfect electrical contact. Copper, while an excellent conductor, gradually oxidises on its surface, forming a layer of copper oxide that increases resistance and reduces conductivity over time. For high-reliability computer connections, gold's corrosion resistance outweighs its much higher cost.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Carbon fibre composite is replacing steel in high-performance sports cars. Analyse the trade-offs involved in this material substitution.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Carbon fibre advantages: much lighter than steel (same strength at 1/5th the weight), extremely high tensile strength, does not rust. Disadvantages: much more expensive, difficult and costly to repair (damaged carbon fibre panels must be replaced entirely), more brittle under sudden impact (it shatters rather than deforming like steel). In high-performance cars, the weight saving justifies the cost and repair difficulty. In everyday cars, steel's repairability and lower cost make it preferable.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why must a material used for a hospital scalpel blade satisfy multiple, sometimes competing, property requirements? Identify the properties and explain any tensions between them.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Required: extreme hardness and sharpness (to cut precisely), high strength (to not break during use), corrosion resistance (sterilisation with chemicals and heat), biocompatibility (non-toxic to body). Tension: hardness and brittleness often go together — very hard materials may chip. Solution: high-carbon stainless steel balances hardness, toughness, and corrosion resistance. Ceramic scalpel blades offer sharper, longer-lasting edges but are more brittle. The choice depends on the specific surgical application.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate why Styrofoam (expanded polystyrene) is used for takeaway food containers despite environmental concerns.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Properties that make it suitable: exceptional thermal insulation (trapped air in foam structure keeps food hot or cold), lightweight (does not add weight to food), waterproof, cheap to manufacture, rigid enough to hold shape. Environmental problems: does not biodegrade, cannot be recycled easily in most areas, breaks into small beads that pollute waterways and are ingested by marine animals. Despite environmental concerns, its technical performance (insulation, cost, weight) is hard to match — driving the search for biodegradable alternatives like moulded paper pulp, bagasse (sugarcane fibre), and PLA foam.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A civil engineer needs to choose a roofing material for a school in a hot, rainy tropical climate. Compare three possible materials and recommend the best choice with justification.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>1) Clay tiles: excellent thermal mass (stay cool), waterproof, long-lasting (100+ years), but heavy (requires strong roof structure) and expensive to install. 2) Galvanised steel sheets: lightweight, strong, cheap, easy to install, but conducts heat (makes building hot), noisy in rain, and can rust if coating is damaged. 3) Concrete (flat roof): durable, insulating if thick, can have a rooftop garden, but very heavy and expensive. Recommendation: clay tiles — for a school in a hot climate, thermal comfort is essential for learning. Clay's thermal mass keeps the interior cool. Despite higher upfront cost, the 100+ year lifespan and no maintenance make it the most cost-effective long-term choice.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Selecting Materials <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an investigation to test the tensile strength (resistance to pulling apart) of three different types of string (cotton, nylon, and wire). Describe the method, variables, safety, and how to compare results.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Tie each string between two fixed points. Hang increasing masses from the middle of each string (or use a calibrated force gauge to pull it). Record the maximum force (in N) at which each string breaks. Repeat 5 times and average. Variables: independent = string type; dependent = breaking force (N); controlled = same length of string, same thickness (measure diameter with calliper), same attachment method. Safety: wear safety goggles (broken string can snap back), stand clear of the breaking zone. Comparison: plot breaking force (y) vs. string type (x) bar chart. Expected: wire > nylon > cotton for equal cross-sectional area.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Materials engineers use a property chart (Ashby chart) that plots two properties (e.g. strength vs. density) for hundreds of materials. Analyse what such a chart reveals about material selection and why it is more useful than a single-property list.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>An Ashby chart instantly shows the trade-off between two properties for all materials simultaneously. For aerospace (light AND strong), you look at the top-left region (high strength, low density) — this is where carbon fibre, titanium, and aluminium alloys cluster. Single-property lists only tell you who is strongest or lightest separately — they cannot show which material is optimal for a combination of requirements. Ashby charts also reveal material family clustering (metals, ceramics, polymers, composites) and show where gaps exist — regions of property space no current material occupies, guiding research into new materials.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A team of materials scientists wants to develop a new biodegradable packaging material to replace polystyrene. Propose the key properties it must have, suggest possible natural-based sources, and identify challenges in development.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Required properties: thermal insulation, moisture resistance, structural rigidity under load, biodegradable in home or industrial compost, food-safe, scalable manufacture. Possible sources: mushroom mycelium (grown in agricultural waste — produces excellent insulating foam, fully compostable, already commercially available as Ecovative); moulded bagasse (sugarcane fibre — strong, heat-resistant, compostable, used for food boxes); seaweed-based foam (experimental — abundant raw material, biodegrades quickly). Challenges: moisture resistance vs. biodegradability tension (most biodegradable materials absorb moisture — weakening them in humid environments), cost of production vs. cheap polystyrene, consumer acceptance, industrial composting infrastructure needed for some options.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate the selection of concrete as the primary building material of the 20th century. Consider its properties, environmental impact, and whether better alternatives now exist.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Properties: high compressive strength, mouldable into any shape, fireproof, low cost, local availability, durable (100+ years if maintained). Limitations: poor tensile strength (requires steel reinforcement), heavy, and its production causes ~8% of global CO₂ emissions (cement calcination releases CO₂ irreversibly). Alternatives: mass timber (cross-laminated timber — strong, carbon-storing, renewable, but fire and moisture risks), hempcrete (hemp+lime — carbon-negative, insulating, but weaker and slower to set), geopolymer cement (replaces Portland cement, 80% less CO₂). Verdict: concrete's unmatched combination of properties made it dominant, but its climate impact demands urgent reform — supplementary materials (fly ash, slag) and alternative cements are being adopted to reduce the footprint without sacrificing performance.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose a materials selection investigation for designing the most appropriate material for a reusable water bottle, considering safety, durability, weight, thermal properties, and environmental impact. Evaluate at least three candidate materials.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Candidates: 1) Stainless steel: durable, non-reactive, safe, good insulation (double-walled), heavy, high manufacturing energy but lasts 10+ years. 2) Polypropylene (PP) plastic: lightweight, BPA-free, cheap, shatter-resistant, but not insulating and has limited reusability lifespan before microplastic leaching risk. 3) Borosilicate glass: chemically inert, taste-neutral, transparent, but heavy and fragile. Investigation: test each for (a) insulation (temperature retention test), (b) durability (drop test, scratch test), (c) weight (balance), (d) leaching (chemical test of water stored in each). Environmental: lifecycle assessment (embodied energy, end-of-life). Recommended: stainless steel — best overall for durability, safety, insulation, and long-term environmental footprint when used for 5+ years.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how the development of smart materials (e.g. shape memory alloys, self-healing polymers, piezoelectric materials) challenges the traditional concept of material properties being fixed.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Traditional view: material properties (hardness, conductivity, shape) are fixed once manufactured. Smart materials challenge this: Shape memory alloys (Nitinol): 'remember' a programmed shape and return to it when heated — properties change reversibly with temperature. Used in medical stents and eyeglass frames. Self-healing polymers: contain microcapsules of healing agent that rupture when cracked, filling the crack — the material repairs itself. Extends product lifetime. Piezoelectric materials: generate electricity when mechanically stressed (and deform when electrically stimulated) — e.g. quartz in watches. Properties actively respond to stimuli. This challenges static property models and opens engineering possibilities: structures that self-repair, adapt to loads, generate power from vibration, or change shape on demand — fundamental shift in materials engineering philosophy.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the ethical considerations in selecting materials for medical implants (e.g. hip replacements, dental implants). What properties are non-negotiable and what trade-offs must be made?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Non-negotiable properties: biocompatibility (non-toxic, non-allergenic — no immune reaction); corrosion resistance in body fluids (must not degrade and release harmful ions); sufficient strength to withstand decades of mechanical loading; sterilisable without degradation. Materials used: titanium alloy (Ti-6Al-4V) — biocompatible, strong, lightweight, osseointegrates (bone grows onto it); ultra-high molecular weight polyethylene (UHMWPE) for bearing surfaces — low friction, tough; ceramic (alumina/zirconia) — very hard, low wear, biocompatible but brittle. Trade-offs: hardest materials are brittle (ceramic fracture risk); softer materials (UHMWPE) produce wear particles over decades that cause inflammation. Ethical dimensions: implant lifetime (40-year-old patient may need two replacements — each with surgical risk); supply chain ethics (cobalt in some alloys mined in conflict regions with child labour); access equity (titanium implants cost more than many patients in developing countries can afford).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare ceramic and metallic biomaterials for dental implants. Which performs better over a 20-year lifespan and why?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ceramic (zirconia): excellent aesthetics (tooth-coloured), highly biocompatible, no metal ion release, very hard and wear-resistant, good osseointegration. Limitation: more brittle than titanium — higher fracture risk under heavy biting forces. Titanium alloy: proven 95%+ 20-year success rate, tough and resilient under cyclic loading, osseointegrates excellently, but grey colour can show through thin gum tissue. For a 20-year lifespan under normal biting forces, titanium alloy has the stronger evidence base for durability; zirconia is preferred where aesthetics are critical (front teeth) and biting forces are moderate. The choice depends on location in the mouth and patient anatomy.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Sustainable Materials</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/sustainability-of-materials" target="_blank">Sustainability and Materials</a>
+        <a href="https://www.khanacademy.org/science/ms-chemistry/x3f39a5b3:matter/x3f39a5b3:physical-and-chemical-properties/v/recycling" target="_blank">Recycling and the Circular Economy</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=RS7IzU2VJIQ" target="_blank">Plastic Pollution – What Can We Do?</a>
+        <a href="https://www.youtube.com/watch?v=wbR-5mHi6Nk" target="_blank">Is It Too Late to Stop Climate Change?</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Sustainable Materials – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Circular Economy Explained</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">How Jute Is Saving the Planet</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">The Problem With Single-Use Plastics</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Sustainable Materials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is jute and why is it considered a sustainable material?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Jute is a natural plant fibre grown mainly in Bangladesh and India. It is sustainable because it grows quickly (harvested in 4–6 months), biodegrades completely, requires little pesticide, and absorbs CO₂ during growth. It is used for bags, rope, and packaging.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the main environmental problem with single-use plastic?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Single-use plastic (bags, bottles, straws) persists in the environment for 400–1000 years without biodegrading. It breaks into microplastics that pollute oceans, soil, and water, harming wildlife and entering the food chain. Globally, only 9% of plastic is recycled.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is recycling?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Recycling is the process of collecting used materials (glass, paper, plastic, metal) and reprocessing them into new products. It reduces the need for extracting raw materials, saves energy, and reduces landfill waste.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the circular economy?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A circular economy aims to keep materials in use as long as possible — reducing waste through reuse, repair, remanufacture, and recycling. It contrasts with the traditional linear economy (make → use → dispose). The goal is zero waste.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name one advantage of jute bags over plastic bags.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Jute bags are biodegradable — they break down naturally within weeks to months after disposal. Plastic bags persist for hundreds of years. Jute bags are also reusable multiple times and are made from a renewable resource.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does 'biodegradable' mean?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A biodegradable material can be broken down naturally by bacteria, fungi, or other living organisms into simple compounds (water, CO₂, biomass). Natural materials like cotton, wood, and jute are biodegradable. Synthetic plastics generally are not.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is recycling aluminium more efficient than producing new aluminium?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Producing aluminium from bauxite ore (primary production) requires enormous amounts of electricity (about 15 kWh per kg). Recycling aluminium uses only about 5% of that energy — a 95% energy saving. This makes aluminium recycling highly cost-effective and environmentally beneficial.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does the term 'carbon footprint' mean in relation to materials?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The carbon footprint of a material is the total amount of CO₂ (and equivalent greenhouse gases) emitted throughout its life cycle — from raw material extraction and processing to manufacture, use, and disposal. Lower carbon footprint = less impact on climate change.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Sustainable Materials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why switching from plastic carrier bags to jute bags is a sustainable choice. Consider properties, lifecycle, and environmental impact.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Jute bags are made from a fast-growing, renewable plant that absorbs CO₂ during growth. They are biodegradable, strong enough for repeated use, and require no petrochemicals to produce. Plastic bags are made from non-renewable petroleum, persist for hundreds of years in the environment, break into microplastics, and are rarely recycled. The lifecycle of jute is almost entirely circular — used, discarded, and naturally decomposed. This makes jute a much more sustainable choice for everyday carrying.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A school canteen produces 200 kg of food waste per week. Explain how composting this waste represents a more sustainable approach than sending it to landfill.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Composting converts food waste into nutrient-rich compost that can fertilise gardens or school grounds — keeping materials in a circular loop. Landfill buries waste, taking up space and producing methane (a potent greenhouse gas) as food decomposes anaerobically. Composting produces CO₂ (far less potent than methane) and creates a useful product — two advantages over landfill. It also reduces transport energy for waste collection.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the environmental impact of a glass bottle and a plastic bottle for soft drinks, considering production, use, and end-of-life.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Glass bottle: production energy is high (melting sand at 1500°C); heavy (more transport energy); but reusable many times (if returned) and infinitely recyclable without quality loss. Plastic bottle: production uses less energy; lightweight (lower transport emissions per bottle); but single-use plastic is rarely recycled effectively, persists for hundreds of years, and is made from non-renewable petroleum. If a glass bottle is reused 20+ times, it has a lower overall environmental footprint than a single-use plastic bottle.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why 'upcycling' is generally considered more sustainable than conventional recycling.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Conventional recycling often 'downcycles' — the material is reprocessed into lower-quality products (e.g. mixed plastic recycled into park benches cannot be made into clear bottles again). Upcycling transforms waste into higher-value or equal-quality products without energy-intensive reprocessing (e.g. old denim jeans made into insulation, wine bottles made into glasses). Upcycling keeps the material's embodied value and saves the energy that would be needed for melting and reprocessing in conventional recycling.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Some countries have banned single-use plastics. Using evidence, evaluate whether this ban alone is sufficient to address the global plastic pollution crisis.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The ban is necessary but not sufficient alone. Benefits: reduces production of most persistent plastics, forces adoption of alternatives, raises public awareness. Limitations: bans in some countries are ineffective if plastic-intensive goods are still imported; switching to biodegradable alternatives (e.g. PLA) only works with proper industrial composting infrastructure; plastic already in the environment (microplastics) is not removed by a production ban; developing countries with less infrastructure still struggle with plastic management. A complete solution requires: production bans + collection infrastructure + composting facilities + extended producer responsibility + international agreements.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe the concept of 'extended producer responsibility' (EPR) and explain how it could reduce waste from materials like electronics and packaging.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>EPR is a policy where manufacturers are legally responsible for the end-of-life management of their products and packaging. Under EPR, companies must fund collection and recycling systems, design products for easy disassembly, and meet take-back requirements. This incentivises designing products that use less material, are easier to recycle, and last longer. For electronics (e-waste): manufacturers pay for collection and proper recycling of rare earth metals and hazardous components. For packaging: producers fund recycling infrastructure and are incentivised to reduce packaging weight and complexity.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does the circular economy model differ from the linear 'take-make-dispose' model? Give one example from the textile industry.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Linear economy: extract raw material → make product → dispose after use (landfill/incineration). Resources used once and discarded. Circular economy: design for reuse, repair, remade, and recycle — keeping materials in use as long as possible, extracting maximum value, with minimal waste. Textile example: H&M's garment collection scheme — used clothes are collected in stores, sorted, resold as second-hand, repurposed as industrial rags, or shredded into insulation fibre. The circular design extends material life and reduces demand for new cotton and synthetic fibre production.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse why recycling rates for plastics are much lower than for metals like aluminium and steel. What properties of each material explain this difference?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Metals: can be melted and recast with no loss of quality (aluminium recycled 95%+ energy savings; steel 74% savings). Recycled metal is identical to virgin metal — easy to sell. Plastic: there are 7+ different types (PET, HDPE, PVC, etc.) that cannot be mixed. Sorting is labour-intensive. Recycled plastic is often lower quality than virgin plastic (downcycling). Some plastics (PVC, polystyrene) release toxins when heated for recycling. Contamination (food residue) degrades quality. Result: only PET bottles and HDPE containers are widely recycled; most other plastics go to landfill or incineration despite collection. Solution: design all plastics for recyclability (mono-material, no mixed polymers, easy to clean).</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Sustainable Materials <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an investigation to compare the biodegradation rate of four materials (cotton cloth, plastic bag, newspaper, jute bag) buried in soil. Describe method, measurements, timeline, and expected results.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Cut identical 5 cm × 5 cm squares of each material. Weigh each (initial mass). Bury at 10 cm depth in identical soil conditions (same pot, same soil, same watering). Exhume samples at 2-week intervals for 12 weeks. Rinse, dry, reweigh. Calculate mass loss (%) at each interval. Variables: independent = material type; dependent = % mass loss; controlled = soil type, burial depth, temperature, moisture level, sample size. Expected results: newspaper fastest (cellulose + chemical treatment breaks down in weeks); cotton next (natural cellulose fibres, months); jute (months to 1 year); plastic essentially unchanged at 12 weeks (centuries in real environment). Plot mass retained (%) vs. time for each material.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate the environmental trade-offs of three packaging options for delivering food: polystyrene, PLA bioplastic, and recycled cardboard. Consider production, use, and end-of-life for each.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Polystyrene: excellent insulation, lightweight, cheap. Production: from petrochemicals (non-renewable). End-of-life: virtually non-biodegradable, difficult to recycle, ocean pollutant. PLA bioplastic: made from corn starch (renewable). Production: land use, water, pesticides, energy for fermentation and polymerisation. End-of-life: only biodegrades in industrial composters at 55–70°C, NOT in home compost or natural environments — often ends up in landfill as standard plastic. Recycled cardboard: renewable, widely recyclable, home-compostable. Production: if from virgin pulp, requires tree cutting; recycled cardboard uses much less energy and water. Limitation: poor moisture resistance. Verdict: recycled cardboard has the most genuinely sustainable lifecycle when properly recycled or composted, but insulation performance is lower than polystyrene. PLA's 'biodegradable' marketing can be misleading without composting infrastructure.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose and justify a school waste audit investigation to determine the main types of waste produced and recommend a sustainable waste management strategy. Describe method, data collection, and analysis.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: Collect all waste from school canteen and classrooms for 5 school days in separate, labelled bags. Sort into categories: food waste, paper, plastic, glass/metal, e-waste, other. Weigh each category daily and record in a data table. Calculate percentage of total waste for each category and average daily production. Analysis: identify the top two waste streams by mass. Recommendations based on results: if food waste is largest → introduce composting system and food waste reduction campaign. If plastic is second → introduce refillable bottle station and ban single-use plastic. If paper is large → promote digital submission and double-sided printing. Present data as a pie chart and bar graph for visual impact to school management.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse the life cycle of a smartphone in terms of materials sustainability. Identify the key environmental challenges at each stage.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Raw material extraction: cobalt (Democratic Republic of Congo — child labour, habitat destruction), lithium (Chile/Argentina — water-intensive mining in desert), rare earth elements (toxic processing waste in China). Manufacturing: high energy use, chemical solvents, greenhouse gas emissions, short production cycle (new model every year). Use phase: electricity consumption, planned obsolescence (software updates making older models slow). End of life: only 20% of e-waste is formally recycled globally. The other 80% is dumped, often in developing countries (Ghana, Nigeria) where it is informally burned or acid-leached, releasing toxic heavy metals (lead, mercury, cadmium) into soil and water. Solutions: design for repairability (modular phones like Fairphone), mandatory e-waste collection, longer software support, and stricter supply chain ethics standards.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the potential of mycelium-based composites (grown from fungi on agricultural waste) as a sustainable replacement for polystyrene packaging. Consider properties, production, scale-up challenges, and environmental impact.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Properties: mycelium composites can be grown in any mould shape, are lightweight, have comparable thermal insulation to polystyrene (R-value similar), good compressive strength, fully home-compostable in 45 days, fire-resistant, and non-toxic. Production: agricultural waste (hemp shiv, cotton hulls) inoculated with fungus, grown in 5–7 days at room temperature, then heat-treated to stop growth. Very low energy input — no petroleum, no high-temperature processing. Scale-up challenges: production is slower than injection-moulded polystyrene (days vs. seconds), product lifetime is shorter if exposed to moisture, currently higher cost per unit (though improving). Environmental impact: carbon-negative if agricultural waste is used (captures carbon in the mycelium mass). Fully circular: end-of-life composting returns nutrients to soil. Verdict: highly promising — already commercially available (Ecovative Design, used by Dell and IKEA) but requires scale-up investment to compete with polystyrene pricing.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically analyse whether 'green washing' in materials marketing (e.g. calling a product 'eco-friendly' or 'sustainable') undermines genuine sustainability efforts. Give three examples and propose how consumers and regulators could address this.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Examples of greenwashing: 1) PLA bioplastic bags labelled 'biodegradable' — only in industrial composters, not in nature or home compost. 2) 'Recyclable' packaging — technically recyclable but no local recycling facility accepts it. 3) 'Organic cotton' clothing from brands that use toxic dyes, ship from overseas, and have short product lifespans — partially negating the sustainability of the cotton. Impact: greenwashing erodes consumer trust, gives a false sense of progress, and allows companies to profit from sustainability branding without genuine change. Addressing this: Consumer level — check third-party certifications (e.g. Cradle-to-Cradle, Global Organic Textile Standard). Regulatory level — mandate full lifecycle disclosure on labels; fine companies for false environmental claims (EU Green Claims Directive 2023 is a step in this direction); require third-party verification before 'eco-friendly' labelling is permitted.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the environmental impact of building a house in wood (timber frame) versus reinforced concrete in terms of embodied carbon, operational energy, end-of-life, and long-term sustainability.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Embodied carbon (production): Concrete production = ~0.2 kg CO₂ per kg; reinforced concrete house ≈ 50–80 tonnes CO₂. Timber house: trees absorb CO₂ during growth; a timber house stores ~50 tonnes CO₂ in its structure, and manufacturing adds ~5–10 tonnes CO₂. Net carbon: timber house can be carbon-negative at the construction stage. Operational energy: timber frame provides better natural insulation, reducing heating/cooling energy over building lifetime. End-of-life: concrete is difficult to recycle (downcycled into road fill at best); timber can be reused, recycled, composted, or burned for energy. Long-term sustainability: sustainable forestry (FSC certification) ensures trees regrow. Concrete uses finite limestone and sand. Verdict: life cycle analysis consistently shows timber has 30–60% lower carbon footprint than concrete. Countries like Norway and Finland are building multi-storey timber buildings (mass timber/CLT) to reduce construction sector emissions.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design and justify a sustainability scoring system (rubric) to compare and rank materials for use in a school's new outdoor furniture. Include at least five sustainability criteria, explain how you would weight each, and apply your rubric to compare wood, recycled plastic lumber, and steel.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Criteria and weightings: (1) Carbon footprint of production (25%) — lower is better. (2) End-of-life recyclability/biodegradability (20%) — circular options score higher. (3) Durability/longevity (20%) — longer lasting = fewer replacements = less resource use. (4) Use of renewable or recycled content (20%) — renewable/recycled sources score higher. (5) Maintenance requirements (15%) — low maintenance reduces chemical use and labour over time. Scoring (1–5 scale, 5=best): Wood (FSC certified): C-footprint 4, end-of-life 5 (composts/reuses), durability 3 (needs treatment), renewable 5, maintenance 3. Score = 4(25)+5(20)+3(20)+5(20)+3(15) = 100+100+60+100+45 = 405/500. Recycled plastic lumber: C-footprint 4 (from waste), end-of-life 3 (recyclable if sorted), durability 5 (lasts 50 years), renewable 3 (recycled but from fossil base), maintenance 5 (no treatment). Score = 4(25)+3(20)+5(20)+3(20)+5(15) = 100+60+100+60+75 = 395/500. Steel: C-footprint 2 (high emissions), end-of-life 5 (100% recyclable), durability 5, renewable 2 (mining), maintenance 3 (needs painting). Score = 2(25)+5(20)+5(20)+2(20)+3(15) = 50+100+100+40+45 = 335/500. Recommendation: FSC wood wins slightly due to biodegradability and renewability, but recycled plastic lumber is a close second if durability is prioritised for outdoor use.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<footer>
+  Grade 6 · Curiosity Science · Chapter 6 · The Gaudium School · IB MYP · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

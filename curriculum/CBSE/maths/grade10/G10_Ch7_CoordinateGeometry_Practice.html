@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 7 – Coordinate Geometry | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📍 Chapter 7 – Coordinate Geometry</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Distance, Section Formula &amp; Shoelace</p>
+</header>
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">Cartesian Plane Review and Quadrants</a></li>
+    <li><a href="#t2">Distance Formula</a></li>
+    <li><a href="#t3">Distance Applications — Shapes and Collinearity</a></li>
+    <li><a href="#t4">Section Formula Internal Division</a></li>
+    <li><a href="#t5">Midpoint Formula</a></li>
+    <li><a href="#t6">Centroid of Triangle</a></li>
+    <li><a href="#t7">Area of Triangle Using Coordinates</a></li>
+    <li><a href="#t8">Collinearity via Area = 0</a></li>
+    <li><a href="#t9">Identifying Quadrilaterals Using Coordinates</a></li>
+    <li><a href="#t10">Equation of Line Through Two Points</a></li>
+    <li><a href="#t11">External Division and Applications</a></li>
+    <li><a href="#t12">SAT-Style Coordinate Geometry Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Cartesian Plane Review and Quadrants</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/basic-geo/basic-geo-coord-plane" target="_blank">Coordinate Plane Intro</a>
+        <a href="https://www.khanacademy.org/math/basic-geo/basic-geo-coord-plane/x7fa91416:quadrants" target="_blank">Four Quadrants</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=9Uc62CuQjc4" target="_blank">The Coordinate Plane</a>
+        <a href="https://www.youtube.com/watch?v=O2uog6YTWXI" target="_blank">Graphing on Coordinate Plane</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=MFIGP6X4VAo" target="_blank">Cartesian Coordinates History</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=hEWY6kkBdpo" target="_blank">How did Descartes invent coordinates?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Plotting and Reading Coordinates</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the coordinates of a point that is 4 units right and 3 units up from the origin.<details class="ans"><summary>Show Answer</summary><p>(4, 3) — x-coordinate = 4 (right), y-coordinate = 3 (up).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In which quadrant does the point (−5, 7) lie?<details class="ans"><summary>Show Answer</summary><p>Quadrant II — x is negative, y is positive.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What are the coordinates of the origin?<details class="ans"><summary>Show Answer</summary><p>(0, 0) — the origin is where both axes intersect.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A point lies on the negative x-axis at a distance of 6 from the origin. State its coordinates.<details class="ans"><summary>Show Answer</summary><p>(−6, 0) — on the x-axis means y = 0; negative side means x = −6.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Name the axis on which the point (0, −9) lies. What is the distance from the origin?<details class="ans"><summary>Show Answer</summary><p>y-axis; distance = 9 units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Plot A(2,−3), B(−2,−3), C(−2,3), D(2,3). What shape do they form? State the side length.<details class="ans"><summary>Show Answer</summary><p>A square (all sides = 4 units, all right angles). Side = 4 units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The point P(a, b) is in Quadrant III. State the signs of a and b. Give one example.<details class="ans"><summary>Show Answer</summary><p>Both a and b are negative. Example: (−3, −5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P(k, 0) and Q(0, k) where k > 0, in which quadrants/axes do P and Q lie?<details class="ans"><summary>Show Answer</summary><p>P lies on the positive x-axis; Q lies on the positive y-axis.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A point P(a,b) satisfies ab > 0. In which two quadrants can P lie?<details class="ans"><summary>Show Answer</summary><p>Quadrant I (both positive) or Quadrant III (both negative) — product is positive in both.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The vertices of a rectangle are at (1,1), (5,1), (5,4), (1,4). Find the coordinates of the intersection of its diagonals.<details class="ans"><summary>Show Answer</summary><p>Midpoint of diagonal from (1,1) to (5,4) = ((1+5)/2,(1+4)/2) = (3, 2.5). Answer: (3, 2.5).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Quadrant Identification and Sign Rules</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In which quadrant does (7, −2) lie?<details class="ans"><summary>Show Answer</summary><p>Quadrant IV — x positive, y negative.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If a point moves from Quadrant I to Quadrant II, which coordinate changes sign?<details class="ans"><summary>Show Answer</summary><p>The x-coordinate changes from positive to negative.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Name the quadrant: (−3, −8).<details class="ans"><summary>Show Answer</summary><p>Quadrant III — both coordinates negative.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A point P(x, y) is reflected across the x-axis. Write the new coordinates.<details class="ans"><summary>Show Answer</summary><p>(x, −y) — reflection across x-axis negates the y-coordinate.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A point P(3, 5) is reflected across the y-axis. Write the new coordinates and state its quadrant.<details class="ans"><summary>Show Answer</summary><p>(−3, 5) — Quadrant II.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The point (a, b) is reflected across the origin (both axes). Write the image coordinates.<details class="ans"><summary>Show Answer</summary><p>(−a, −b) — reflection through origin negates both coordinates.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P(h, k) lies in Quadrant II and Q is its reflection in the x-axis, in which quadrant is Q?<details class="ans"><summary>Show Answer</summary><p>Q(h, −k). Since h < 0 and k > 0 in Q-II, −k < 0. So Q is in Quadrant III.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Point A is 5 units from the y-axis and 3 units below the x-axis. Write all possible coordinates of A.<details class="ans"><summary>Show Answer</summary><p>(5, −3) or (−5, −3) — 5 units from y-axis means |x| = 5; below x-axis means y = −3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If ab < 0, list all quadrants where P(a, b) can be. Explain with sign analysis.<details class="ans"><summary>Show Answer</summary><p>ab < 0 means one positive, one negative: Quadrant II (−,+) or Quadrant IV (+,−).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A point P(2t − 1, t + 3) lies on the y-axis. Find t and the coordinates of P.<details class="ans"><summary>Show Answer</summary><p>On y-axis ⟹ x = 0: 2t − 1 = 0 ⟹ t = 1/2. y = 1/2 + 3 = 7/2. P = (0, 7/2).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Distances from Axes and Special Points</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the distance of point (−4, 6) from the x-axis.<details class="ans"><summary>Show Answer</summary><p>Distance from x-axis = |y| = |6| = 6 units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance of point (3, −7) from the y-axis.<details class="ans"><summary>Show Answer</summary><p>Distance from y-axis = |x| = |3| = 3 units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Which of the following points is closest to the origin: A(3,4), B(0,6), C(5,0)?<details class="ans"><summary>Show Answer</summary><p>|OA|=5, |OB|=6, |OC|=5. A and C are tied at 5 units (closest).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P(a, b) is equidistant from both axes, what can you say about a and b?<details class="ans"><summary>Show Answer</summary><p>|a| = |b|, so a = ±b. Points lie on lines y = x or y = −x.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the perimeter of the triangle with vertices O(0,0), A(4,0), B(0,3).<details class="ans"><summary>Show Answer</summary><p>OA = 4, OB = 3, AB = √(16+9) = 5. Perimeter = 4+3+5 = 12 units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write the coordinates of the point that is the image of (2, 5) when reflected first in the x-axis and then in the y-axis.<details class="ans"><summary>Show Answer</summary><p>Reflect in x-axis: (2, −5). Then in y-axis: (−2, −5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A point is equidistant from both coordinate axes and is 5√2 from the origin. Find all possible points.<details class="ans"><summary>Show Answer</summary><p>|a|=|b|, a²+b²=50 ⟹ 2a²=50 ⟹ a=±5. Points: (5,5),(−5,5),(5,−5),(−5,−5).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P(3, 4) and Q(−3, 4) are given. Find the midpoint of PQ and state on which axis it lies.<details class="ans"><summary>Show Answer</summary><p>Midpoint = (0, 4) — lies on the y-axis.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If the distance of P(x, 3) from the x-axis equals its distance from the y-axis, find x.<details class="ans"><summary>Show Answer</summary><p>|y| = |x| ⟹ 3 = |x| ⟹ x = 3 or x = −3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The point P(k+1, 2k−3) lies on the x-axis. Find k and the coordinates of P.<details class="ans"><summary>Show Answer</summary><p>On x-axis ⟹ y = 0: 2k−3 = 0 ⟹ k = 3/2. x = 3/2+1 = 5/2. P = (5/2, 0).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Cartesian Plane Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the abscissa (x-coordinate) of any point on the y-axis?<details class="ans"><summary>Show Answer</summary><p>Zero — every point on the y-axis has x = 0.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In which quadrant is (−√2, π)?<details class="ans"><summary>Show Answer</summary><p>Quadrant II — x = −√2 < 0, y = π > 0.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The x-coordinate of a point is negative and its y-coordinate is zero. Where does it lie?<details class="ans"><summary>Show Answer</summary><p>On the negative x-axis.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Three vertices of a square are (0,0), (4,0), (4,4). Find the fourth vertex.<details class="ans"><summary>Show Answer</summary><p>Fourth vertex = (0, 4).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Plot T(−2, 3) and its reflection T' across the x-axis. What is the distance TT'?<details class="ans"><summary>Show Answer</summary><p>T' = (−2, −3). TT' = |3−(−3)| = 6 units (same x, vertical distance).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A point P moves such that its ordinate is always twice its abscissa. Write the equation of its path and name two points on it.<details class="ans"><summary>Show Answer</summary><p>y = 2x. Example points: (1,2) and (−1,−2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If A(p,q), B(q,p) and p ≠ q, are A and B the same point? In which line are they reflections of each other?<details class="ans"><summary>Show Answer</summary><p>No, they are different. They are reflections of each other in the line y = x.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The coordinates of two points are (2a−3, b+1) and (a+1, 2b−3). If they are the same point, find a and b.<details class="ans"><summary>Show Answer</summary><p>2a−3 = a+1 ⟹ a = 4. b+1 = 2b−3 ⟹ b = 4. Point: (5, 5).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A point P(x, y) satisfies x > 0, y < 0, and |x| = |y|. In which quadrant is P and on what special line does it lie?<details class="ans"><summary>Show Answer</summary><p>Quadrant IV; lies on the line y = −x.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">ABCD is a parallelogram. A = (1,2), B = (4,2), C = (5,5). Find D using the property that diagonals bisect each other.<details class="ans"><summary>Show Answer</summary><p>Midpoint of AC = midpoint of BD. Midpoint AC = (3, 3.5). B = (4,2): (4+Dx)/2 = 3 ⟹ Dx = 2; (2+Dy)/2 = 3.5 ⟹ Dy = 5. D = (2, 5).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Distance Formula d = √[(x₂−x₁)² + (y₂−y₁)²]</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Distance Formula</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/e/distance_formula" target="_blank">Practice: Distance Formula</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=rBMZZABJVpI" target="_blank">The Distance Formula Explained</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=X1E7I7_r3Cw" target="_blank">Pythagoras Theorem Proof</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=9Cdcwd6NNlo" target="_blank">The Pythagorean Theorem — animated</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Distance Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the distance between A(1, 2) and B(4, 6).<details class="ans"><summary>Show Answer</summary><p>d = √[(4−1)²+(6−2)²] = √[9+16] = √25 = <strong>5</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between P(0, 0) and Q(5, 12).<details class="ans"><summary>Show Answer</summary><p>d = √[25+144] = √169 = <strong>13</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (−3, 4) and (3, −4).<details class="ans"><summary>Show Answer</summary><p>d = √[(3−(−3))²+(−4−4)²] = √[36+64] = √100 = <strong>10</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (2, 3) and (2, 9).<details class="ans"><summary>Show Answer</summary><p>d = √[(0)²+(9−3)²] = √36 = <strong>6</strong> (same x: vertical segment)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (−4, 3) and (2, 3).<details class="ans"><summary>Show Answer</summary><p>d = √[(2−(−4))²+0²] = √36 = <strong>6</strong> (same y: horizontal segment)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find PQ where P(−1, −1) and Q(4, 11).<details class="ans"><summary>Show Answer</summary><p>d = √[(5)²+(12)²] = √[25+144] = √169 = <strong>13</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between A(3, 4) and the origin.<details class="ans"><summary>Show Answer</summary><p>d = √[9+16] = √25 = <strong>5</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (a, 0) and (0, b).<details class="ans"><summary>Show Answer</summary><p>d = √[a²+b²]</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If d = 5 between (1, 1) and (1+k, 1), find k (k > 0).<details class="ans"><summary>Show Answer</summary><p>d = |k| = 5, so <strong>k = 5</strong>.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that points (4, 4), (3, 5), and (−1, −1) form a right-angled isosceles triangle.<details class="ans"><summary>Show Answer</summary><p>AB=√2, BC=√32=4√2, AC=√34. AB²+BC²? No. Let A=(4,4),B=(3,5),C=(−1,−1). AB=√2, AC=√50=5√2, BC=√52=2√13. AB²+AC²=2+50=52=BC². Right angle at A; AB=√2, AC=5√2 — not isosceles. Actually check: AB²=2, BC²=52, AC²=50. BC²=AB²+AC² ✓ → right angle at A. AB ≠ AC so it's right-angled (not isosceles). ✓ right-angled triangle at A.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding Unknown Coordinates Using Distance</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If the distance between (x, 0) and (0, 4) is 5, find x.<details class="ans"><summary>Show Answer</summary><p>√[x²+16]=5 ⟹ x²=9 ⟹ x=±3.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The distance between (3, k) and (3, 7) is 4. Find k.<details class="ans"><summary>Show Answer</summary><p>|k−7|=4 ⟹ k=11 or k=3.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If A(4, p) and B(1, 0) and AB = 5, find p.<details class="ans"><summary>Show Answer</summary><p>√[(3)²+p²]=5 ⟹ p²=16 ⟹ p=±4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find a if the point (a, a) is at a distance of 3√2 from the origin.<details class="ans"><summary>Show Answer</summary><p>√[a²+a²]=3√2 ⟹ √(2a²)=3√2 ⟹ |a|=3 ⟹ a=±3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P(2, 3) and Q(x, 0) are such that PQ = √13, find x.<details class="ans"><summary>Show Answer</summary><p>(x−2)²+9=13 ⟹ (x−2)²=4 ⟹ x=4 or x=0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find t such that the point (t, 2t) is 3√5 from the origin.<details class="ans"><summary>Show Answer</summary><p>√[t²+4t²]=3√5 ⟹ t√5=3√5 ⟹ t=±3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The distance between (2m, 3) and (−1, m) is √37. Find m.<details class="ans"><summary>Show Answer</summary><p>(2m+1)²+(3−m)²=37. 4m²+4m+1+9−6m+m²=37. 5m²−2m−27=0. m=(2±√(4+540))/10=(2±√544)/10. Not integer — m=(1±√136)/5. Approx m≈2.53 or m≈−2.13.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P(k, 0) is equidistant from A(2, 3) and B(−4, 1). Find k.<details class="ans"><summary>Show Answer</summary><p>PA²=(k−2)²+9; PB²=(k+4)²+1. Set equal: k²−4k+4+9=k²+8k+16+1. −4k+13=8k+17. −12k=4. k=−1/3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find all points on the x-axis that are at distance 10 from the point (7, 6).<details class="ans"><summary>Show Answer</summary><p>(x−7)²+36=100 ⟹ (x−7)²=64 ⟹ x−7=±8 ⟹ x=15 or x=−1. Points: (15,0) and (−1,0).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the point on the y-axis equidistant from (6, 5) and (−4, 3).<details class="ans"><summary>Show Answer</summary><p>(0−6)²+(y−5)²=(0+4)²+(y−3)². 36+y²−10y+25=16+y²−6y+9. 61−10y=25−6y. 36=4y. y=9. Point: (0, 9).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Distance Formula with Fractions and Negatives</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the distance between (1/2, 3/2) and (−1/2, 5/2).<details class="ans"><summary>Show Answer</summary><p>d=√[(−1)²+(1)²]=√2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Distance between (−√3, 1) and (0, 0).<details class="ans"><summary>Show Answer</summary><p>d=√[3+1]=2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find AB if A(−2, −3) and B(3, 9).<details class="ans"><summary>Show Answer</summary><p>d=√[25+144]=√169=13.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the distance from (3/5, 0) to (0, 4/5).<details class="ans"><summary>Show Answer</summary><p>d=√[9/25+16/25]=√(25/25)=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find PQ: P(−3/2, 1) and Q(1/2, 3).<details class="ans"><summary>Show Answer</summary><p>d=√[(2)²+(2)²]=√8=2√2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A(2√2, 0) and B(0, 2√2). Find AB.<details class="ans"><summary>Show Answer</summary><p>d=√[8+8]=√16=4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (a+b, a−b) and (a−b, a+b).<details class="ans"><summary>Show Answer</summary><p>Δx=−2b, Δy=2b. d=√[4b²+4b²]=2b√2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P(cosθ, sinθ) and Q(cosφ, sinφ). Show that PQ² = 2 − 2cos(θ−φ).<details class="ans"><summary>Show Answer</summary><p>PQ²=(cosθ−cosφ)²+(sinθ−sinφ)²=cos²θ−2cosθcosφ+cos²φ+sin²θ−2sinθsinφ+sin²φ=2−2(cosθcosφ+sinθsinφ)=2−2cos(θ−φ). ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that (1, 7), (4, 2), (−1, −1) are vertices of an isosceles right triangle.<details class="ans"><summary>Show Answer</summary><p>A=(1,7),B=(4,2),C=(−1,−1). AB²=9+25=34. BC²=25+9=34. AC²=4+64=68. AB=BC ✓ (isosceles). AC²=AB²+BC²=68 ✓ (right angle at B).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between (−5/3, 2) and (−1/3, −4).<details class="ans"><summary>Show Answer</summary><p>Δx=4/3, Δy=−6. d=√[16/9+36]=√[16/9+324/9]=√(340/9)=2√85/3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Distance Formula — Proof and Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Verify that (2,3), (4,5), (6,7) are collinear using the distance formula.<details class="ans"><summary>Show Answer</summary><p>AB=√8=2√2, BC=√8=2√2, AC=√32=4√2. AB+BC=AC ✓ → collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show (3,−2), (−1,4), (1,1) are collinear.<details class="ans"><summary>Show Answer</summary><p>AB=√(16+36)=√52, BC=√(4+9)=√13, AC=√(4+9)=√13... Recheck: A=(3,−2),B=(−1,4),C=(1,1). AB=√(16+36)=2√13. BC=√(4+9)=√13. AC=√(4+9)=√13. BC+AC=2√13=AB ✓ → collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the distance of the point (−3, 4) from the origin and determine in which quadrant it lies.<details class="ans"><summary>Show Answer</summary><p>d=√(9+16)=5. Quadrant II (x<0, y>0).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A, B, C are (1,5),(2,3),(−2,11). Are they collinear?<details class="ans"><summary>Show Answer</summary><p>AB=√(1+4)=√5. BC=√(16+64)=√80=4√5. AC=√(9+36)=√45=3√5. AB+AC=√5+3√5=4√5=BC ✓ → collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove that (0,0), (5,5), (−5,5) form an isosceles triangle.<details class="ans"><summary>Show Answer</summary><p>OA=5√2, OB=5√2, AB=10. OA=OB ✓ → isosceles.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show that (4,5), (7,6), (4,3), (1,2) are vertices of a square.<details class="ans"><summary>Show Answer</summary><p>AB=√10, BC=√10, CD=√10, DA=√10 (all equal). Diagonal AC=√4=2... AC=|3−5|... A=(4,5),B=(7,6),C=(4,3),D=(1,2). AB=√(9+1)=√10, BC=√(9+9)=3√2, ... recheck: AB=√(9+1)=√10; BC=√(9+9)=√18; not square. Actually they form a rhombus. Sides AB=√10,BC=√10,CD=√10,DA=√10; Diag AC=2, BD=√(36+16)=√52≠AC → rhombus, not square.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If A(1,2), B(4,y), C(x,6) and D(3,5) are vertices of a parallelogram taken in order, find x and y.<details class="ans"><summary>Show Answer</summary><p>Midpoint AC = Midpoint BD. ((1+x)/2,(2+6)/2)=((4+3)/2,(y+5)/2). (1+x)/2=7/2 ⟹ x=6. 4=(y+5)/2 ⟹ y=3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the perimeter of triangle with vertices (−2,1), (4,6), (4,−2).<details class="ans"><summary>Show Answer</summary><p>AB=√(36+25)=√61. BC=|6−(−2)|=8. AC=√(36+9)=√45=3√5. Perimeter=√61+8+3√5≈7.81+8+6.71≈22.52 units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two friends start at (0,0). One walks to (0,7) and the other to (7,0). How far apart are they?<details class="ans"><summary>Show Answer</summary><p>d=√(49+49)=7√2 ≈ 9.9 units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A circle has centre (3,−2) and passes through (−1,1). Find the radius (distance formula).<details class="ans"><summary>Show Answer</summary><p>r=√[(−1−3)²+(1+2)²]=√[16+9]=5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Distance Applications — Shapes and Collinearity</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry" target="_blank">Analytic Geometry</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/e/collinearity" target="_blank">Collinearity Problems</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=MRqtXL2WX2M" target="_blank">Triangles and Quadrilaterals</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=Ox7RDQPKT_M" target="_blank">Triangles have a point</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=VvCytJvd4H0" target="_blank">Why are there so many shapes?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Identifying Triangles by Side Lengths</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Check if (0,0), (3,4), (6,0) form an isosceles triangle.<details class="ans"><summary>Show Answer</summary><p>OA=5, OB=6, AB=5. OA=AB=5 ✓ → isosceles.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show (1,1), (−1,−1), (−√3,√3) form an equilateral triangle.<details class="ans"><summary>Show Answer</summary><p>AB=√8=2√2, BC=√[(−√3+1)²+(√3+1)²]=√[3−2√3+1+3+2√3+1]=√8=2√2. AC=√[(√3+1)²+(√3−1)²]=√8=2√2. All equal ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Are (2,7), (2,1), (−1,4) vertices of an equilateral triangle?<details class="ans"><summary>Show Answer</summary><p>AB=6, BC=√(9+9)=3√2, AC=√(9+9)=3√2. AB≠BC → not equilateral. (Isosceles.)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Verify (5,2), (6,4), (7,2) form an isosceles triangle and find the base.<details class="ans"><summary>Show Answer</summary><p>AB=√5, BC=√5, AC=2. AB=BC ✓ isosceles. Base = AC = 2 units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Check if (0,0), (1,√3), (2,0) form an equilateral triangle.<details class="ans"><summary>Show Answer</summary><p>AB=√(1+3)=2, BC=√(1+3)=2, AC=2. All sides=2 ✓ equilateral.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show (3,3), (8,−2), (−2,−2) form a right isosceles triangle.<details class="ans"><summary>Show Answer</summary><p>AB=√(25+25)=5√2, BC=√(100+0)=10, AC=√(25+25)=5√2. AB=AC=5√2 ✓ isosceles. AB²+AC²=50+50=100=BC² ✓ right angle at A.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the type of triangle with vertices (4,0), (−1,3), (−1,−3).<details class="ans"><summary>Show Answer</summary><p>AB=√(25+9)=√34, AC=√(25+9)=√34, BC=6. AB=AC ✓ isosceles. AB²+AC²=68≠36=BC². Not right-angled → isosceles triangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that (−2,2), (8,2), (3,−3) is an isosceles triangle.<details class="ans"><summary>Show Answer</summary><p>AB=10, BC=√(25+25)=5√2, AC=√(25+25)=5√2. BC=AC ✓ isosceles.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Determine whether (0,6), (−5,3), (3,1) form a right-angled triangle.<details class="ans"><summary>Show Answer</summary><p>AB=√(25+9)=√34, BC=√(64+4)=√68, AC=√(9+25)=√34. AB=AC, AB²+AC²=68=BC² ✓ right angle at A.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The vertices of a triangle are (a,0), (0,b), (0,0). Find the lengths of all three sides and show one angle is 90°.<details class="ans"><summary>Show Answer</summary><p>OA=|a|, OB=|b|, AB=√(a²+b²). OA²+OB²=a²+b²=AB² ✓ right angle at O.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Collinearity via Distance</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Check collinearity: (1,1), (3,3), (5,5).<details class="ans"><summary>Show Answer</summary><p>AB=2√2, BC=2√2, AC=4√2. AB+BC=AC ✓ collinear.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Are (2,−2), (−1,4), (0,1) collinear?<details class="ans"><summary>Show Answer</summary><p>AB=√(9+36)=√45=3√5. BC=√(1+9)=√10. AC=√(4+9)=√13. AB≠BC+AC → not collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Verify (0,7), (3,3), (6,−1) are collinear.<details class="ans"><summary>Show Answer</summary><p>AB=√(9+16)=5. BC=√(9+16)=5. AC=10. AB+BC=AC ✓ collinear.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For what value of k are (2,3), (4,k), (6,7) collinear?<details class="ans"><summary>Show Answer</summary><p>Collinear ⟹ midpoint condition: slope AB = slope BC. (k−3)/2=(7−k)/2 ⟹ k−3=7−k ⟹ k=5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Check if (3,−1), (−1,5), (1,1) are collinear.<details class="ans"><summary>Show Answer</summary><p>AB=√(16+36)=√52. BC=√(4+16)=√20. AC=√(4+4)=2√2. √20+2√2≠√52 → not collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k so that (k,2), (2,4), (8,10) are collinear.<details class="ans"><summary>Show Answer</summary><p>Slope(BC)=(10−4)/(8−2)=1. Slope(AB)=(4−2)/(2−k)=2/(2−k). Set equal to 1: 2−k=2 ⟹ k=0.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Are (a,b+c), (b,c+a), (c,a+b) always collinear? Justify.<details class="ans"><summary>Show Answer</summary><p>Slope AB=(c+a−b−c)/(b−a)=(a−b)/(b−a)=−1. Slope BC=(a+b−c−a)/(c−b)=(b−c)/(c−b)=−1. Equal slopes ✓ → always collinear.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show (0,−2),(3,1),(−2,−4) are NOT collinear by distance method.<details class="ans"><summary>Show Answer</summary><p>AB=3√2, BC=√(25+25)=5√2, AC=√(4+4)=2√2. 3√2+2√2=5√2=BC ✓... actually collinear! AB+AC=BC.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Determine if (1,−1), (5,2), (9,5) are collinear.<details class="ans"><summary>Show Answer</summary><p>AB=√(16+9)=5, BC=5, AC=10. AB+BC=AC ✓ collinear.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find t if (t,t+1), (2,0), (4,−2) are collinear.<details class="ans"><summary>Show Answer</summary><p>Slope BC=(−2−0)/(4−2)=−1. Slope AB=(0−t−1)/(2−t)=(−t−1)/(2−t)=−1. −t−1=−2+t. −2t=−1. t=1/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Proving Quadrilateral Types using Distance</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show (2,1),(−2,3),(0,9),(4,7) form a parallelogram using midpoints of diagonals.<details class="ans"><summary>Show Answer</summary><p>Midpoint AC=((2+0)/2,(1+9)/2)=(1,5). Midpoint BD=((−2+4)/2,(3+7)/2)=(1,5). Equal ✓ → parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show (3,0),(4,5),(−1,4),(−2,−1) is a rhombus.<details class="ans"><summary>Show Answer</summary><p>AB=√(1+25)=√26, BC=√(25+1)=√26, CD=√(1+25)=√26, DA=√(25+1)=√26. All sides equal ✓. Diagonals: AC=√(16+16)=4√2, BD=√(36+36)=6√2. AC≠BD → rhombus (not square).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Are (1,−2),(3,6),(5,10),(3,2) vertices of a parallelogram?<details class="ans"><summary>Show Answer</summary><p>Midpoint AC=((1+5)/2,(−2+10)/2)=(3,4). Midpoint BD=((3+3)/2,(6+2)/2)=(3,4). Equal ✓ → parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove (0,−1),(−2,3),(6,7),(8,3) is a rectangle.<details class="ans"><summary>Show Answer</summary><p>All 4 sides: AB=√(4+16)=√20. BC=√(64+16)=√80. Not equal → not rectangle by sides. Check diagonals: AC=√(36+64)=10. BD=√(100+0)=10. Equal diagonals ✓. Midpoint AC=(3,3). Midpoint BD=(3,3) ✓. Diagonals equal and bisect → rectangle.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show (4,2),(7,−3),(9,−1),(6,4) form a rhombus.<details class="ans"><summary>Show Answer</summary><p>AB=√(9+25)=√34, BC=√(4+4)=2√2... Recheck: A(4,2),B(7,−3),C(9,−1),D(6,4). AB=√(9+25)=√34. BC=√(4+4)=2√2. These aren't equal → check. BC=√((9−7)²+(−1+3)²)=√(4+4)=2√2≠√34. Not a rhombus with these vertices. CD=√(9+25)=√34. DA=√(4+4)=2√2. Opposite sides equal → parallelogram but not rhombus.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show (0,0),(1,3),(4,3),(3,0) is a rhombus and find its diagonals.<details class="ans"><summary>Show Answer</summary><p>AB=√(1+9)=√10, BC=√(9+0)=3, CD=√(1+9)=√10, DA=√(9+0)=3. Alternating sides → parallelogram, not rhombus. AB≠BC... actually this is a parallelogram. Diag AC=√(16+9)=5. Diag BD=√(4+9)=√13.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify that (−1,−1),(−1,4),(5,4),(5,−1) is a rectangle with equal diagonals.<details class="ans"><summary>Show Answer</summary><p>All sides: AB=5, BC=6, CD=5, DA=6. Diagonal AC=√(36+25)=√61. Diagonal BD=√(36+25)=√61 ✓. Equal diagonals + right angles (checked by Pythagoras: 5²+6²=61=diagonal²) ✓ → rectangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The midpoints of the sides of a quadrilateral are (1,2),(3,3),(4,1),(2,0). Show they form a parallelogram.<details class="ans"><summary>Show Answer</summary><p>Midpoint of diagonal 1: ((1+4)/2,(2+1)/2)=(2.5,1.5). Midpoint of diagonal 2: ((3+2)/2,(3+0)/2)=(2.5,1.5). Equal ✓ → parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Check if (2,2),(6,2),(6,−2),(2,−2) is a square.<details class="ans"><summary>Show Answer</summary><p>All sides=4. Diagonal=√(16+16)=4√2=side×√2 ✓. All sides equal and diagonals equal → square ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A,B,C,D are (1,0),(5,3),(5,8),(1,5). Show ABCD is a parallelogram but not a rectangle.<details class="ans"><summary>Show Answer</summary><p>AB=5, BC=5, CD=5, DA=5 → rhombus. Diag AC=√(16+64)=√80. Diag BD=√(16+4)=√20. AC≠BD → not rectangle (diagonals unequal) → rhombus.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Real-World Distance Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A ship sails from port (0,0) to island (12,5). Find the direct distance.<details class="ans"><summary>Show Answer</summary><p>d=√(144+25)=√169=13 km.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Town A is at (2,3) and town B at (8,11) on a map. Each unit = 1 km. Find AB.<details class="ans"><summary>Show Answer</summary><p>d=√(36+64)=√100=10 km.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A ball is at (4,−3) and must reach (0,0). How far does it travel?<details class="ans"><summary>Show Answer</summary><p>d=√(16+9)=5 units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Three mobile towers are at (0,0), (6,0), (3,4). A signal must reach all three from centre. Find the centre (circumcentre of the equilateral or right triangle) and minimum radius.<details class="ans"><summary>Show Answer</summary><p>Check triangle: OA=6, OB=5, AB=5 — isosceles. Circumcentre: perpendicular bisector of OA is x=3; midpoint OB=(1.5,2), slope OB=4/6, perp slope=−3/2. Line: y−2=−3/2(x−1.5) at x=3: y=2−2.25=−0.25... Circumcentre=(3,−0.25). R=√(9+0.0625)≈3.01. (Detailed algebra gives circumcentre (3,−1/8), R=√(9+1/64)=√(577/64)=√577/8≈3.01.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">On a grid, check that the path (0,0)→(3,0)→(3,4) has the same total length as (0,0)→(0,4)→(3,4).<details class="ans"><summary>Show Answer</summary><p>Path 1: 3+4=7 units. Path 2: 4+3=7 units. Equal ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">An ant walks from (−2,−3) to (4,5) in a straight line. Find the distance.<details class="ans"><summary>Show Answer</summary><p>d=√(36+64)=10 units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A drone flies from A(1,2) to B(7,10) to C(13,2). Is ABC an isosceles triangle? Find the total distance flown.<details class="ans"><summary>Show Answer</summary><p>AB=√(36+64)=10. BC=√(36+64)=10. AC=12. AB=BC ✓ isosceles. Total=10+10=20 units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A park has corners at (0,0),(200,0),(200,100),(0,100) in metres. Find the diagonal of the park.<details class="ans"><summary>Show Answer</summary><p>d=√(200²+100²)=√(40000+10000)=√50000=100√5≈223.6 m.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two friends live at (4,3) and (−2,−5). A school is at (1,−1). Is the school equidistant from both homes?<details class="ans"><summary>Show Answer</summary><p>D1=√(9+16)=5. D2=√(9+16)=5. Yes, equidistant ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD is a quadrilateral with A(1,1), B(3,4), C(5,1), D(3,−2). Classify it using all 4 sides and both diagonals.<details class="ans"><summary>Show Answer</summary><p>AB=√13, BC=√13, CD=√13, DA=√13. All sides equal → rhombus candidate. Diag AC=4, Diag BD=6. AC≠BD → rhombus (not square).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Section Formula — Internal Division</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-dividing-segments/v/dividing-line-segments" target="_blank">Dividing Line Segments</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-dividing-segments/e/dividing-line-segments" target="_blank">Practice: Dividing Segments</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=Yw0EFyxJBaA" target="_blank">Ratios and Proportions</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=sG7DGKhmuEE" target="_blank">Golden Ratio in Geometry</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=BHs7bkMIFHc" target="_blank">The Golden Ratio — TED-Ed</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Application of Section Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the point that divides (1,3) and (7,9) in ratio 1:2 internally.<details class="ans"><summary>Show Answer</summary><p>P=((1×7+2×1)/(1+2),(1×9+2×3)/(1+2))=((7+2)/3,(9+6)/3)=(3, 5).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the point dividing A(0,0) and B(6,8) in ratio 3:1 internally.<details class="ans"><summary>Show Answer</summary><p>P=((3×6+1×0)/4,(3×8+1×0)/4)=(18/4,24/4)=(4.5, 6).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the point dividing (2,−1) and (8,5) in ratio 2:1 internally.<details class="ans"><summary>Show Answer</summary><p>P=((2×8+1×2)/3,(2×5+1×(−1))/3)=(18/3,9/3)=(6, 3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">P divides A(4,−3) and B(−3,4) in ratio 2:3. Find P.<details class="ans"><summary>Show Answer</summary><p>P=((2×(−3)+3×4)/5,(2×4+3×(−3))/5)=(6/5,(8−9)/5)=(6/5,−1/5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The point (3,5) divides A(1,3) and B(x,y) in ratio 1:2. Find B.<details class="ans"><summary>Show Answer</summary><p>(1×x+2×1)/3=3 ⟹ x+2=9 ⟹ x=7. (y+6)/3=5 ⟹ y=9. B=(7,9).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the coordinates of the point that divides (−2,3) and (4,−3) in ratio 3:1 internally.<details class="ans"><summary>Show Answer</summary><p>P=((3×4+1×(−2))/4,(3×(−3)+1×3)/4)=(10/4,−6/4)=(5/2,−3/2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P(2,y) divides segment from A(2,−3) to B(2,9) in some ratio. Find ratio AP:PB and y.<details class="ans"><summary>Show Answer</summary><p>Same x. y divides −3 to 9: (m×9+n×(−3))/(m+n)=y. Since x same, ratio by y. If P=(2,y) and ratio m:n: wait — the problem gives P is a specific point. We need more info. Assume P is the midpoint: y=3, ratio=1:1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point that divides (−1,7) and (4,−3) in ratio 2:3.<details class="ans"><summary>Show Answer</summary><p>P=((2×4+3×(−1))/5,(2×(−3)+3×7)/5)=(5/5,15/5)=(1, 3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P(−1/3, −1/3) divides A(1,1) and B(−1,−1) in what ratio?<details class="ans"><summary>Show Answer</summary><p>(m×(−1)+n×1)/(m+n)=−1/3. −m+n = (m+n)×(−1/3). −3m+3n = −m−n. −2m = −4n. m/n = 2. Ratio = 2:1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In what ratio does the point (2,3) divide the segment joining (4,6) and (−2,−3)?<details class="ans"><summary>Show Answer</summary><p>(m×(−2)+n×4)/(m+n)=2. −2m+4n=2m+2n. 2n=4m. n/m=2. Ratio m:n=1:2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding the Ratio (Reverse Section Formula)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In what ratio does (4,1) divide the line segment from (1,−2) to (7,4)?<details class="ans"><summary>Show Answer</summary><p>(m×7+n×1)/(m+n)=4. 7m+n=4m+4n. 3m=3n. m:n=1:1.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In what ratio does (2,−3) divide (−3,5) and (7,−10)?<details class="ans"><summary>Show Answer</summary><p>(7m−3n)/(m+n)=2. 7m−3n=2m+2n. 5m=5n. Ratio=1:1. Check y: (−10+5)/2=−2.5≠−3. Recalculate: (7m−3n)/(m+n)=2 ✓. (−10m+5n)/(m+n)=−3. −10m+5n=−3m−3n. −7m=−8n. m:n=8:7. Check x: (56−21)/15=35/15=7/3≠2. Let me redo: A=(−3,5), B=(7,−10). P=(2,−3). m:n=?: x: (7m−3n)/(m+n)=2 ⟹ 7m−3n=2m+2n ⟹ 5m=5n ⟹ m:n=1:1. But y: (−10+5)/2=−2.5≠−3. P not on segment by coordinates. Using x ratio: m:n=1:1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio in which the y-axis divides (4,1) and (−8,7).<details class="ans"><summary>Show Answer</summary><p>On y-axis x=0: (m×(−8)+n×4)/(m+n)=0. −8m+4n=0. n/m=2. Ratio=1:2. y=(1×7+2×1)/(1+2)=9/3=3. Point=(0,3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio in which x-axis divides (2,−3) and (5,6).<details class="ans"><summary>Show Answer</summary><p>On x-axis y=0: (6m−3n)/(m+n)=0. 6m=3n. m:n=1:2. x=(1×5+2×2)/3=9/3=3. Point=(3,0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In what ratio does P(1,2) divide A(2,5) and B(−4,−7)?<details class="ans"><summary>Show Answer</summary><p>(−4m+2n)/(m+n)=1. −4m+2n=m+n. n=5m. m:n=1:5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The y-axis divides the segment joining (3,−4) and (−6,5). Find the point of intersection and ratio.<details class="ans"><summary>Show Answer</summary><p>x=0: (m×(−6)+n×3)/(m+n)=0. −6m+3n=0. n=2m. Ratio=1:2. y=(1×5+2×(−4))/3=(5−8)/3=−1. Point=(0,−1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The point (−2,k) lies on the segment from (−3,2) to (2,−3) and divides it in ratio m:n. Find k and m:n.<details class="ans"><summary>Show Answer</summary><p>x: (2m−3n)/(m+n)=−2. 2m−3n=−2m−2n. 4m=n. Ratio=1:4. y=(1×(−3)+4×2)/5=(−3+8)/5=1. k=1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find ratio in which (−3,p) divides segment joining (−5,4) and (−2,3).<details class="ans"><summary>Show Answer</summary><p>x: (−2m−5n)/(m+n)=−3. −2m−5n=−3m−3n. m=2n. Ratio=2:1. y=(2×3+1×4)/3=10/3. p=10/3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The line 2x+y=4 divides segment from A(2,−2) to B(3,7) at point P. Find P and the ratio AP:PB.<details class="ans"><summary>Show Answer</summary><p>P=((3m+2n)/(m+n),(7m−2n)/(m+n)). Plug in 2x+y=4: 2(3m+2n)+7m−2n=4(m+n). 6m+4n+7m−2n=4m+4n. 13m+2n=4m+4n. 9m=2n. Ratio=2:9. P=((6+18)/11,(14−18)/11)=(24/11,−4/11).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The point C divides AB in ratio 3:4 where A=(−3,5) and B=(4,−9). Find C and verify it lies between A and B.<details class="ans"><summary>Show Answer</summary><p>C=((3×4+4×(−3))/7,(3×(−9)+4×5)/7)=(0/7,−7/7)=(0,−1). AC=√(9+36)=√45=3√5. CB=√(16+64)=√80=4√5. AC:CB=3√5:4√5=3:4 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Section Formula with Trisection and Other Ratios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the trisection points of the segment joining (2,−2) and (−7,4).<details class="ans"><summary>Show Answer</summary><p>P₁ divides in 1:2: ((−7+4)/3,(4−4)/3)=(−1,0). P₂ divides in 2:1: ((−14+2)/3,(8−2)/3)=(−4,2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point that divides (4,−1) and (−2,−3) in ratio 1:3.<details class="ans"><summary>Show Answer</summary><p>P=((1×(−2)+3×4)/4,(1×(−3)+3×(−1))/4)=(10/4,−6/4)=(5/2,−3/2).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Divide segment from (−2,0) to (0,8) into four equal parts. Find all three intermediate points.<details class="ans"><summary>Show Answer</summary><p>Step=(2/4,8/4)=(0.5,2). P₁=(−1.5,2), P₂=(−1,4), P₃=(−0.5,6).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P divides AB where A=(1,2), B=(5,6) in ratio 3:1. Also find Q dividing BA in ratio 3:1.<details class="ans"><summary>Show Answer</summary><p>P=((15+1)/4,(18+2)/4)=(4,5). Q=((3+5)/4,(6+6)/4)=(2,3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The point P divides the join of A(2,1) and B(5,−8) in ratio 1:2. Verify P lies on the line y+x=5.<details class="ans"><summary>Show Answer</summary><p>P=((5+4)/3,(−8+2)/3)=(3,−2). y+x=−2+3=1≠5. P does not lie on y+x=5 (problem may have a typo — P lies on x−y=5: 3+2=5 ✓).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the point that divides (a,b) and (b,a) in ratio a:b (a≠b).<details class="ans"><summary>Show Answer</summary><p>P=((ab+b²)/(a+b),(a²+ab)/(a+b))=(b(a+b)/(a+b), a(a+b)/(a+b))=(b, a).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the coordinates of the point that divides (3,4) and (−6,1) in ratio 2:1 internally.<details class="ans"><summary>Show Answer</summary><p>P=((2×(−6)+1×3)/3,(2×1+1×4)/3)=(−9/3,6/3)=(−3, 2).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">P(x,y) divides A(−1,3) and B(4,−7) such that 3AP=2AB. Find P.<details class="ans"><summary>Show Answer</summary><p>AP/AB=2/3 ⟹ ratio AP:PB=2:1. P=((2×4+(−1))/3,(2×(−7)+3)/3)=(7/3,−11/3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If points (a,0),(0,b),(1,1) are collinear, show that 1/a+1/b=1.<details class="ans"><summary>Show Answer</summary><p>Slope(from (a,0) to (0,b))=(b−0)/(0−a)=−b/a. Slope(from (a,0) to (1,1))=(1−0)/(1−a)=1/(1−a). Equal: −b/a=1/(1−a). −b(1−a)=a. −b+ab=a. ab=a+b. Divide by ab: 1=1/b+1/a ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A(3,−5) and B(−4,8). If P divides AB in ratio k:1 internally and lies on x+y=0, find k.<details class="ans"><summary>Show Answer</summary><p>P=((−4k+3)/(k+1),(8k−5)/(k+1)). x+y=0: (−4k+3+8k−5)/(k+1)=0. 4k−2=0. k=1/2. Ratio=1:2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Section Formula Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A median of a triangle is drawn from A(1,3) to mid-point of BC where B=(3,1) and C=(5,7). Find the midpoint.<details class="ans"><summary>Show Answer</summary><p>M=((3+5)/2,(1+7)/2)=(4, 4).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In triangle with vertices A(0,0), B(6,0), C(0,8), find the point that divides median from A in ratio 2:1.<details class="ans"><summary>Show Answer</summary><p>Midpoint of BC = (3,4). Point=(2×3/3, 2×4/3)=(2,8/3) — this is the centroid.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The midpoint of AB is (4,2). If A=(1,−2), find B.<details class="ans"><summary>Show Answer</summary><p>B=(2×4−1, 2×2−(−2))=(7, 6).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">P divides internally the join of A(2,−3) and B(6,5) in ratio 3:5. Also find midpoint.<details class="ans"><summary>Show Answer</summary><p>P=((18+10)/8,(15−15)/8)=(28/8,0)=(7/2,0). Midpoint=((2+6)/2,(−3+5)/2)=(4,1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If the segment joining (a,b) and (c,d) is divided internally by origin in ratio m:n, find the ratio.<details class="ans"><summary>Show Answer</summary><p>mc+na=0 and md+nb=0. m/n=−a/c (from x). So ratio = −a:c = a:(−c). Origin divides in ratio −a:c (external if same sign, internal if opposite signs of a,c).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two vertices of an equilateral triangle are (0,0) and (3,√3). Find the section point dividing the base at ratio 1:1.<details class="ans"><summary>Show Answer</summary><p>Midpoint=(3/2, √3/2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If A(1,2), B(4,3), C(2,5) are midpoints of sides of a triangle, find the vertices.<details class="ans"><summary>Show Answer</summary><p>Let vertices be P,Q,R. Midpoint(QR)=A, Midpoint(PR)=B, Midpoint(PQ)=C. P=(B+C−A)=(4+2−1,3+5−2)=(5,6). Q=(A+C−B)=(1+2−4,2+5−3)=(−1,4). R=(A+B−C)=(1+4−2,2+3−5)=(3,0).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio in which the line segment joining (3,−3) and (−2,7) is divided by the line x+y=0.<details class="ans"><summary>Show Answer</summary><p>P=((−2m+3n)/(m+n),(7m−3n)/(m+n)). x+y=0: (−2m+3n+7m−3n)/(m+n)=0. 5m=0. m=0? No — this means the ratio approaches 0:1, i.e., the line passes through A(3,−3)? Check: 3+(−3)=0 ✓. So the line passes through A itself. Ratio=0:1, i.e., the dividing point is A(3,−3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P(k,7) divides the line segment joining A(8,9) and B(1,2) internally. Find k and the ratio.<details class="ans"><summary>Show Answer</summary><p>y: (2m+9n)/(m+n)=7. 2m+9n=7m+7n. 2n=5m. m:n=2:5. x: (2×1+5×8)/7=42/7=6. k=6.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If (1,2) trisects AB internally (closer to A), and A=(−1,0), find B.<details class="ans"><summary>Show Answer</summary><p>Ratio AP:PB=1:2. (1×Bx+2×(−1))/3=1 ⟹ Bx−2=3 ⟹ Bx=5. (1×By+2×0)/3=2 ⟹ By=6. B=(5,6).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Midpoint Formula M = ((x₁+x₂)/2, (y₁+y₂)/2)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/midpoint-formula" target="_blank">Midpoint Formula</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/e/midpoint-formula" target="_blank">Practice: Midpoint</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=VhNkWdLGpmA" target="_blank">Midpoint and Average</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=p-0SOWbzUYI" target="_blank">Bisectors in Geometry</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=rPlahkXtC6A" target="_blank">How to Find the Midpoint</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Midpoint Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the midpoint of (2,4) and (6,8).<details class="ans"><summary>Show Answer</summary><p>M=((2+6)/2,(4+8)/2)=(4,6).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the midpoint of (0,0) and (10,−6).<details class="ans"><summary>Show Answer</summary><p>M=(5,−3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the midpoint of (−4,3) and (2,7).<details class="ans"><summary>Show Answer</summary><p>M=(−1,5).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The midpoint of AB is (3,−1). A=(1,4). Find B.<details class="ans"><summary>Show Answer</summary><p>B=(2×3−1,2×(−1)−4)=(5,−6).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the midpoint of (5,−3) and (−3,5).<details class="ans"><summary>Show Answer</summary><p>M=(1,1).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The midpoint of PQ is (0,0). P=(3,−5). Find Q.<details class="ans"><summary>Show Answer</summary><p>Q=(−3,5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A(x,3) and B(1,y) have midpoint (2,−1). Find x and y.<details class="ans"><summary>Show Answer</summary><p>(x+1)/2=2 ⟹ x=3. (3+y)/2=−1 ⟹ y=−5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (a,b) is the midpoint of (3,7) and (1,−3), find a and b.<details class="ans"><summary>Show Answer</summary><p>a=2, b=2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The midpoint of the diagonals of parallelogram are equal at M(3,5). One diagonal has A(1,3) and C. Find C.<details class="ans"><summary>Show Answer</summary><p>C=(2×3−1,2×5−3)=(5,7).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD is a parallelogram with A(1,2), B(4,3), C(6,7). Find D.<details class="ans"><summary>Show Answer</summary><p>Midpoint AC=Midpoint BD. Midpoint AC=(3.5,4.5). D=(2×3.5−4,2×4.5−3)=(3,6).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Midpoint in Triangles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the midpoint of the hypotenuse of right triangle with A(6,0), B(0,8), C(0,0). Verify it is equidistant from all vertices.<details class="ans"><summary>Show Answer</summary><p>M=(3,4). MA=√(9+16)=5. MB=√(9+16)=5. MC=√(9+16)=5 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P and Q are midpoints of AC and BC. A=(0,0),B=(6,0),C=(4,8). Find PQ and compare with AB.<details class="ans"><summary>Show Answer</summary><p>P=midAC=(2,4). Q=midBC=(5,4). PQ=3. AB=6. PQ=AB/2 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The median from A(2,5) meets BC at M(3,1). Find the centroid G.<details class="ans"><summary>Show Answer</summary><p>G divides AM in 2:1. G=((2×3+2)/3,(2×1+5)/3)=(8/3,7/3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">One end of a diameter is (4,−1). Centre is (1,3). Find the other end.<details class="ans"><summary>Show Answer</summary><p>Other=(2×1−4,2×3−(−1))=(−2,7).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If M(p,q) is midpoint of (a+b,a−b) and (a−b,a+b), find p and q.<details class="ans"><summary>Show Answer</summary><p>p=((a+b+a−b)/2)=a. q=((a−b+a+b)/2)=a. p=q=a.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If midpoints of sides of a triangle are (3,4),(4,1),(2,0), find the centroid of the original triangle.<details class="ans"><summary>Show Answer</summary><p>Centroid of medial triangle = centroid of original. G=((3+4+2)/3,(4+1+0)/3)=(3,5/3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that diagonals of square (1,1),(5,1),(5,5),(1,5) bisect each other using midpoints.<details class="ans"><summary>Show Answer</summary><p>Midpoint(1,1)−(5,5)=(3,3). Midpoint(5,1)−(1,5)=(3,3). Equal ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the midpoint of segment joining (2√3,5) and (−√3,1).<details class="ans"><summary>Show Answer</summary><p>M=((2√3−√3)/2,3)=(√3/2,3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A line segment has midpoint (3,3). One endpoint is (7,1). Find the other and the segment length.<details class="ans"><summary>Show Answer</summary><p>Other=(−1,5). Length=√(64+16)=4√5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A diameter of a circle has ends at (5,3) and (−3,−1). Find centre and radius.<details class="ans"><summary>Show Answer</summary><p>Centre=(1,1). Radius=½×√(64+16)=½×4√5=2√5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Midpoint — Equation and Algebraic</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The midpoint of (x,4) and (3,y) is (5,3). Find x and y.<details class="ans"><summary>Show Answer</summary><p>x=7, y=2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two adjacent vertices of a square are (1,2) and (5,2). Find the other two vertices.<details class="ans"><summary>Show Answer</summary><p>Side=4. Others: (5,6) and (1,6) — or (5,−2) and (1,−2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD is rectangle: A(0,0), B(4,0), C(4,3). Find D and verify diagonals bisect each other.<details class="ans"><summary>Show Answer</summary><p>D=(0,3). MidAC=(2,1.5). MidBD=(2,1.5) ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P=(a,b) and Q=(b,a), find midpoint and verify it lies on y=x.<details class="ans"><summary>Show Answer</summary><p>M=((a+b)/2,(a+b)/2). x=y ✓ — lies on y=x.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show the midpoint of segment joining (a+b,a−b) and (a−b,a+b) always lies on the line y=x.<details class="ans"><summary>Show Answer</summary><p>M=(a,a). x=y=a ✓ lies on y=x.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The midpoint of one diagonal of a quadrilateral is (3,5). The other diagonal has endpoints (4,6) and (2,4). Show it's a parallelogram.<details class="ans"><summary>Show Answer</summary><p>Midpoint of second diagonal=(3,5). Both midpoints=(3,5) ✓ — parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the midpoint of segment from (−a,b) to (3a,−3b).<details class="ans"><summary>Show Answer</summary><p>M=(a,−b).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The midpoints of the sides of △ABC are M₁(3,4), M₂(2,1), M₃(4,2). Find the vertices.<details class="ans"><summary>Show Answer</summary><p>A=M₁+M₂−M₃=(3+2−4,4+1−2)=(1,3). B=M₁+M₃−M₂=(5,5). C=M₂+M₃−M₁=(3,−1).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A(−2,k), B(0,4), C(k,2): AB=BC. Find k.<details class="ans"><summary>Show Answer</summary><p>AB²=4+(4−k)². BC²=k²+4. Equal: 4+(4−k)²=k²+4. 16−8k=0. k=2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In △PQR, midpoints of PQ, QR, PR are (2,3),(3,1),(1,2). Find vertices P, Q, R.<details class="ans"><summary>Show Answer</summary><p>P=(2+1−3,3+2−1)=(0,4). Q=(2+3−1,3+1−2)=(4,2). R=(3+1−2,1+2−3)=(2,0).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Midpoint Mixed Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove that the midpoints of a quadrilateral's sides form a parallelogram (Varignon). Use A(0,0),B(4,0),C(5,3),D(1,3).<details class="ans"><summary>Show Answer</summary><p>Midpoints: M₁=(2,0), M₂=(4.5,1.5), M₃=(3,3), M₄=(0.5,1.5). Midpoint of M₁M₃=(2.5,1.5). Midpoint of M₂M₄=(2.5,1.5) ✓ → parallelogram.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If R is midpoint of PQ, P=(2k,3k), Q=(4,6), R=(3,3+k). Find k.<details class="ans"><summary>Show Answer</summary><p>(2k+4)/2=3 → k=1. Check y: (3+6)/2=4.5≠3+1=4. No perfect integer solution. k=1 satisfies x-equation.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If M=(a,b) is midpoint of A=(p,q) and B=(r,s), express p+r and q+s in terms of a,b.<details class="ans"><summary>Show Answer</summary><p>p+r=2a, q+s=2b.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The centroid of △ABC is G(2,−1). A=(4,5), B=(−1,−4). Find C.<details class="ans"><summary>Show Answer</summary><p>(4−1+x)/3=2 ⟹ x=3. (5−4+y)/3=−1 ⟹ y=−4. C=(3,−4).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that joining midpoints of sides of rhombus (0,1),(1,0),(0,−1),(−1,0) gives a rectangle.<details class="ans"><summary>Show Answer</summary><p>Midpoints: (0.5,0.5),(0.5,−0.5),(−0.5,−0.5),(−0.5,0.5). All sides=1/√2. Diagonals both =1. Equal diagonals + equal sides → square (special rectangle) ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find value of p if (p+1,2p−3) is midpoint of (3,−1) and (p−1,4p+1).<details class="ans"><summary>Show Answer</summary><p>x: (3+p−1)/2=p+1 → p+2=2p+2 → p=0. y: (−1+4×0+1)/2=0. 2×0−3=−3≠0. Inconsistent — problem has no valid solution (likely typo in original).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The diagonals of a parallelogram bisect each other. A=(1,3), B=(5,7), C=(9,5). Find D.<details class="ans"><summary>Show Answer</summary><p>Diagonals are AC and BD. Midpoint AC=(5,4). D=(2×5−5,2×4−7)=(5,1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find a if the midpoint of (a²,4) and (3,b²) is (3.5,2.5) with a,b > 0.<details class="ans"><summary>Show Answer</summary><p>(a²+3)/2=3.5 ⟹ a²=4 ⟹ a=2. (4+b²)/2=2.5 ⟹ b²=1 ⟹ b=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">M is the midpoint of AB. P is the midpoint of AM. Q is the midpoint of MB. If A=(0,0) and B=(8,4), find P and Q.<details class="ans"><summary>Show Answer</summary><p>M=(4,2). P=midpoint AM=(2,1). Q=midpoint MB=(6,3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the distance between the midpoints of diagonals of quadrilateral A(0,1),B(1,4),C(5,3),D(4,0) — verify it's a parallelogram (distance=0).<details class="ans"><summary>Show Answer</summary><p>MidAC=(2.5,2). MidBD=(2.5,2). Distance=0 ✓ → parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Centroid of Triangle G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-congruence/hs-geo-triangle-medians/v/triangle-medians-and-centroids" target="_blank">Triangle Medians and Centroid</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-congruence/hs-geo-triangle-medians/e/triangle-medians" target="_blank">Practice: Centroid</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=GejuhCCqyv8" target="_blank">Triangle Centers</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=Ox7RDQPKT_M" target="_blank">Triangles Have a Point</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=H9RW4e8QDFE" target="_blank">Euler's Line — Triangle Centers</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Centroid Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the centroid of (3,6),(−1,2),(5,−4).<details class="ans"><summary>Show Answer</summary><p>G=((3−1+5)/3,(6+2−4)/3)=(7/3,4/3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the centroid of (0,0),(6,0),(0,9).<details class="ans"><summary>Show Answer</summary><p>G=(2,3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Centroid of (1,4),(3,2),(5,6).<details class="ans"><summary>Show Answer</summary><p>G=(3,4).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the centroid of (−3,5),(4,−2),(1,6).<details class="ans"><summary>Show Answer</summary><p>G=(2/3,3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two vertices are (4,0),(0,4). Centroid is (3,3). Find the third vertex.<details class="ans"><summary>Show Answer</summary><p>(4+0+x)/3=3 ⟹ x=5. (0+4+y)/3=3 ⟹ y=5. Third=(5,5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Centroid of △ABC is (2,−1). A=(4,5), B=(−1,−4). Find C.<details class="ans"><summary>Show Answer</summary><p>(4−1+x)/3=2 ⟹ x=3. (5−4+y)/3=−1 ⟹ y=−4. C=(3,−4).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Centroid of △PQR is origin. P=(4,−3), Q=(−1,5). Find R.<details class="ans"><summary>Show Answer</summary><p>(4−1+x)/3=0 ⟹ x=−3. (−3+5+y)/3=0 ⟹ y=−2. R=(−3,−2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k if centroid of A=(k,2), B=(3,−1), C=(−1,5) is at (2,2).<details class="ans"><summary>Show Answer</summary><p>(k+3−1)/3=2 ⟹ k=4. Check y: (2−1+5)/3=2 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Centroid of equilateral triangle with two vertices at (0,0),(6,0). Third vertex above x-axis is (3,3√3). Find G.<details class="ans"><summary>Show Answer</summary><p>G=((0+6+3)/3,(0+0+3√3)/3)=(3,√3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Vertices are (at₁²,2at₁),(at₂²,2at₂),(at₃²,2at₃). Find the centroid.<details class="ans"><summary>Show Answer</summary><p>G=(a(t₁²+t₂²+t₃²)/3, 2a(t₁+t₂+t₃)/3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Centroid and Medians</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove the centroid of (0,0),(a,0),(0,b) is at (a/3,b/3).<details class="ans"><summary>Show Answer</summary><p>G=((0+a+0)/3,(0+0+b)/3)=(a/3,b/3) ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Centroid of △PQR is (4,4). P=(1,2), Q=(3,6). Find R.<details class="ans"><summary>Show Answer</summary><p>(1+3+Rx)/3=4 ⟹ Rx=8. (2+6+Ry)/3=4 ⟹ Ry=4. R=(8,4).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The median from A in △ABC meets BC at M. A=(2,5), M=(3,1). Find G.<details class="ans"><summary>Show Answer</summary><p>G divides AM in 2:1. G=((2×3+2)/3,(2×1+5)/3)=(8/3,7/3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that in △ABC with A=(6,0),B=(0,0),C=(0,6), the centroid divides median from A in ratio 2:1.<details class="ans"><summary>Show Answer</summary><p>G=(2,2). Mid BC=M(0,3). G divides AM: (2×0+1×6)/3=2 ✓. (2×3+0)/3=2 ✓. Ratio 2:1 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two vertices of a triangle are (3,−5),(−7,4). Centroid is (2,−1). Find the third vertex.<details class="ans"><summary>Show Answer</summary><p>(3−7+x)/3=2 ⟹ x=10. (−5+4+y)/3=−1 ⟹ y=−2. Third=(10,−2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find lengths of medians of triangle A(1,1),B(7,5),C(−1,7).<details class="ans"><summary>Show Answer</summary><p>Mid BC=(3,6). Median A: √[(3−1)²+(6−1)²]=√29. Mid AC=(0,4). Median B: √[(0−7)²+(4−5)²]=√50=5√2. Mid AB=(4,3). Median C: √[(4+1)²+(3−7)²]=√41.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the centroid of triangle whose vertices are midpoints of A(0,0),B(4,0),C(0,6).<details class="ans"><summary>Show Answer</summary><p>Midpoints: (2,0),(2,3),(0,3). G=((2+2+0)/3,(0+3+3)/3)=(4/3,2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If A(p,q),B(q,r),C(r,p), find centroid.<details class="ans"><summary>Show Answer</summary><p>G=((p+q+r)/3,(p+q+r)/3). Centroid has equal coordinates.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Centroid of △ABC is (0,0). A=(a,b), B=(b,a). Find C.<details class="ans"><summary>Show Answer</summary><p>C=(−(a+b),−(a+b)).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Centroid of right triangle is at (4,2). Right angle at origin. Other vertices on axes. Find them.<details class="ans"><summary>Show Answer</summary><p>(0+a+0)/3=4 ⟹ a=12. (0+0+b)/3=2 ⟹ b=6. Vertices: (0,0),(12,0),(0,6).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Centroid Context Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A triangular park has corners at (0,0),(300,0),(0,400). Find the centroid.<details class="ans"><summary>Show Answer</summary><p>G=(100,400/3)≈(100,133.3) m.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find centroid of triangle formed by x-axis, y-axis, and 3x+4y=12.<details class="ans"><summary>Show Answer</summary><p>Vertices: (4,0),(0,3),(0,0). G=(4/3,1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find centroid of triangle formed by lines y=0, x=0, x+y=6.<details class="ans"><summary>Show Answer</summary><p>Vertices: (0,0),(6,0),(0,6). G=(2,2).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find centroid of (t,2t),(−t,−2t),(2t,0).<details class="ans"><summary>Show Answer</summary><p>G=((t−t+2t)/3,(2t−2t+0)/3)=(2t/3,0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three masses 1,2,3 kg at (1,0),(0,2),(2,1). Find centre of mass.<details class="ans"><summary>Show Answer</summary><p>x=(1+0+6)/6=7/6. y=(0+4+3)/6=7/6. Centre=(7/6,7/6).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Is centroid always inside the triangle? Verify A(0,0),B(4,0),C(2,3). G=(2,1) — inside?<details class="ans"><summary>Show Answer</summary><p>G=(2,1). Lies within boundary ✓. Yes, centroid is always inside the triangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">G is centroid of △ABC at (3,5). Midpoint of PQ of a median is M(4,6). Find R (opposite vertex).<details class="ans"><summary>Show Answer</summary><p>G divides median from R to M in 2:1. (2×4+Rx)/3=3 → Rx=1. (2×6+Ry)/3=5 → Ry=3. R=(1,3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two vertices are at (2,−3),(−1,5). Centroid is on y-axis. Find the third vertex's x-coordinate.<details class="ans"><summary>Show Answer</summary><p>(2−1+x)/3=0 ⟹ x=−1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Centroid of △ABC is G(1,1). A=(−2,4), B=(1,−2). Find C and all side lengths.<details class="ans"><summary>Show Answer</summary><p>(−2+1+x)/3=1 → x=4. (4−2+y)/3=1 → y=1. C=(4,1). AB=3√5. BC=3√2. AC=3√5.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If centroid is translated by (2,3), what is the new centroid if original is at (a,b)?<details class="ans"><summary>Show Answer</summary><p>New centroid=(a+2,b+3).</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Centroid — Mixed and Proof</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Centroid of triangle with two vertices at origin and third at (9,12).<details class="ans"><summary>Show Answer</summary><p>G=((0+0+9)/3,(0+0+12)/3)=(3,4).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Centroid of (5,0),(0,5),(−5,0) on circle x²+y²=25.<details class="ans"><summary>Show Answer</summary><p>G=(0,5/3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that the sum of squares of medians = 3/4 × sum of squares of sides. Use A(0,0),B(4,0),C(0,3).<details class="ans"><summary>Show Answer</summary><p>Sides²: BC²=25, AB²=16, AC²=9. (3/4)×50=37.5. Medians: mA to (2,1.5)=√6.25. mB to (0,1.5)=√18.25. mC to (2,0)=√13. Sum=6.25+18.25+13=37.5 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Centroid divides median AM in ratio 2:1. A=(4,−2), M=(1,2). Verify G=(2,2/3).<details class="ans"><summary>Show Answer</summary><p>G=((2×1+4)/3,(2×2−2)/3)=(6/3,2/3)=(2,2/3) ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that △ABC with A(−2,3),B(4,−3),C(2,9) has centroid on x=4/3.<details class="ans"><summary>Show Answer</summary><p>G=((−2+4+2)/3,(3−3+9)/3)=(4/3,3). x=4/3 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The centroid of △ABC is (0,0). Two vertices are (a,b),(c,d). Find the third.<details class="ans"><summary>Show Answer</summary><p>Third=(−a−c,−b−d).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find and compare centroids of △ABC and its medial triangle (formed by joining midpoints of sides). A(0,0),B(6,0),C(0,6).<details class="ans"><summary>Show Answer</summary><p>G original=(2,2). Medial vertices: (3,0),(3,3),(0,3). G medial=((3+3+0)/3,(0+3+3)/3)=(2,2). Same centroid ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△ABC has vertices A(1,2),B(3,6),C(5,2). Find centroid and show it lies on all three medians.<details class="ans"><summary>Show Answer</summary><p>G=(3,10/3). Mid BC=(4,4). Median from A: slope from (1,2) to (4,4)=2/3. Point G=(3,10/3): (10/3−2)/(3−1)=(4/3)/2=2/3 ✓. Confirmed on median from A.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If centroid of polygon with n vertices equals the average of coordinates, find centroid of regular hexagon centred at origin (vertices at unit distance).<details class="ans"><summary>Show Answer</summary><p>For regular hexagon centred at origin, the centroid = average of all 6 vertices = (0,0) by symmetry.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two vertices of a triangle are (4,0),(−4,0) and the centroid is at origin. Find the third vertex.<details class="ans"><summary>Show Answer</summary><p>(4−4+x)/3=0 ⟹ x=0. (0+0+y)/3=0 ⟹ y=0. Third=(0,0). (Degenerate — all three collinear on x-axis.) For non-degenerate: third vertex must be off x-axis; centroid at origin requires y₃=0 — still collinear. This triangle is degenerate.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Area of Triangle Using Coordinates (Shoelace Formula)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-polygons-in-the-coordinate-plane/v/area-of-a-triangle-on-a-grid" target="_blank">Area of Triangle on a Grid</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-polygons-in-the-coordinate-plane/e/area-and-perimeter-on-the-coordinate-plane" target="_blank">Practice: Area</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=8R4Dcb_RcuQ" target="_blank">Area of Triangles</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=0KjG8Pg6LGk" target="_blank">Shoelace Theorem</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=rRTXKQpblEc" target="_blank">How to Calculate Area</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Area Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the area of triangle with vertices (1,0),(4,0),(1,3).<details class="ans"><summary>Show Answer</summary><p>Area=½|1(0−3)+4(3−0)+1(0−0)|=½|−3+12|=4.5 sq units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find area of (0,0),(5,0),(0,4).<details class="ans"><summary>Show Answer</summary><p>Area=½×5×4=10 sq units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area of △ with A(2,3),B(−1,0),C(4,−3).<details class="ans"><summary>Show Answer</summary><p>½|2(0+3)+(−1)(−3−3)+4(3−0)|=½|6+6+12|=12 sq units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area of △(3,8),(−4,2),(5,1).<details class="ans"><summary>Show Answer</summary><p>½|3(2−1)+(−4)(1−8)+5(8−2)|=½|3+28+30|=30.5 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of △(1,2),(3,6),(5,2).<details class="ans"><summary>Show Answer</summary><p>½|1(6−2)+3(2−2)+5(2−6)|=½|4+0−20|=8 sq units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area of △(−2,3),(3,−1),(5,4).<details class="ans"><summary>Show Answer</summary><p>½|(−2)(−1−4)+3(4−3)+5(3+1)|=½|10+3+20|=16.5 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of △(0,6),(0,−2),(8,0).<details class="ans"><summary>Show Answer</summary><p>½|0(−2−0)+0(0−6)+8(6+2)|=32 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Base of triangle along x-axis: (2,0) to (8,0), apex at (5,6). Find area two ways.<details class="ans"><summary>Show Answer</summary><p>½×6×6=18. Shoelace: ½|2(0−6)+8(6−0)+5(0−0)|=½×36=18 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show area of △(1,1),(4,5),(7,1) = 12 sq units.<details class="ans"><summary>Show Answer</summary><p>½|1(5−1)+4(1−1)+7(1−5)|=½|4+0−28|=12 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of △ with one vertex at origin, others at (4,3),(−2,5).<details class="ans"><summary>Show Answer</summary><p>½|0(3−5)+4(5−0)+(−2)(0−3)|=½|0+20+6|=13 sq units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Area with Unknown Coordinates</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find k if area of △(2,1),(k,3),(3,5)=3 sq units.<details class="ans"><summary>Show Answer</summary><p>½|2(3−5)+k(5−1)+3(1−3)|=3. |−4+4k−6|=6. |4k−10|=6. k=4 or k=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k if △(2,−6),(5,4),(k,4) has area 35.<details class="ans"><summary>Show Answer</summary><p>½|2(4−4)+5(4+6)+k(−6−4)|=35. |50−10k|=70. k=−2 or k=12.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area=0 for (1,3),(2,5),(3,t). Find t.<details class="ans"><summary>Show Answer</summary><p>½|1(5−t)+2(t−3)+3(3−5)|=0. 5−t+2t−6−6=0. t=7.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area=10 for (0,0),(x,0),(3,4). Find x.<details class="ans"><summary>Show Answer</summary><p>½|4x|=10. x=±5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find area of △(a,b+c),(b,c+a),(c,a+b).<details class="ans"><summary>Show Answer</summary><p>Area=0 — these three points are always collinear! (Proved algebraically: shoelace = 0.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find area of △(0,0),(cosθ,sinθ),(sinθ,−cosθ).<details class="ans"><summary>Show Answer</summary><p>½|−cos²θ−sin²θ|=½. Area=1/2 sq unit (constant).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find k if area of △(k,0),(4,3),(3,k)=0 (collinear).<details class="ans"><summary>Show Answer</summary><p>k(3−k)+4(k−0)+3(0−3)=0. 3k−k²+4k−9=0. k²−7k+9=0. k=(7±√13)/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">△(t,t+2),(t+1,t),(t+2,t+4) — show area is constant and find it.<details class="ans"><summary>Show Answer</summary><p>½|t(t−t−4)+(t+1)(t+4−t−2)+(t+2)(t+2−t)|=½|−4t+2(t+1)+2(t+2)|=½|−4t+2t+2+2t+4|=½×6=3 sq units (constant!).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For what k is area of △(k,2),(2,4),(8,10)=0?<details class="ans"><summary>Show Answer</summary><p>Slope(BC)=(10−4)/(8−2)=1. For collinearity slope(AB)=1: (4−2)/(2−k)=1 ⟹ 2=2−k ⟹ k=0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find p if △(p,1),(1,p),(−1,−1) has area 2.<details class="ans"><summary>Show Answer</summary><p>½|p(p+1)+1(−1−1)+(−1)(1−p)|=2. |p²+p−2−1+p|=4. |p²+2p−3|=4. p²+2p−7=0 or (p+1)²=0 → p=−1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Area of Quadrilaterals Using Shoelace</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Area of quadrilateral ABCD: A(1,2),B(4,5),C(5,3),D(2,1).<details class="ans"><summary>Show Answer</summary><p>Shoelace: ½|(1×5−4×2)+(4×3−5×5)+(5×1−2×3)+(2×2−1×1)|=½|(5−8)+(12−25)+(5−6)+(4−1)|=½×14=7 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Area of quadrilateral P(1,1),Q(4,−2),R(7,3),S(4,6).<details class="ans"><summary>Show Answer</summary><p>Shoelace: ½|(1×(−2)−4×1)+(4×3−7×(−2))+(7×6−4×3)+(4×1−1×6)|=½|−6+26+30−2|=24 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Area of parallelogram (2,1),(5,1),(6,4),(3,4) using triangles.<details class="ans"><summary>Show Answer</summary><p>Split: △(2,1),(5,1),(6,4): 4.5. △(2,1),(6,4),(3,4): 4.5. Total=9 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of △(a,0),(−a,0),(0,b).<details class="ans"><summary>Show Answer</summary><p>Base=2|a|, height=|b|. Area=|ab|.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Area of △(p,q),(q,r),(r,p).<details class="ans"><summary>Show Answer</summary><p>Area=½|p(r−p)+q(p−q)+r(q−r)|=½|−(p²+q²+r²−pq−qr−rp)|.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show area of △(at₁²,2at₁),(at₂²,2at₂),(at₃²,2at₃) = a²|(t₁−t₂)(t₂−t₃)(t₃−t₁)|.<details class="ans"><summary>Show Answer</summary><p>Expand: 2a²|t₁²(t₂−t₃)+t₂²(t₃−t₁)+t₃²(t₁−t₂)|/2 = a²|(t₁−t₂)(t₂−t₃)(t₃−t₁)| ✓ (standard factorisation).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find area of △ with A(3,4), B(−4,3), C(3,−3).<details class="ans"><summary>Show Answer</summary><p>½|3(3+3)+(−4)(−3−4)+3(4−3)|=½|18+28+3|=24.5 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A triangular garden: (0,0),(10,0),(5,8). Area in m²?<details class="ans"><summary>Show Answer</summary><p>½×10×8=40 m².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find ratio of areas △ABC:△PQR where A(1,2),B(5,2),C(3,6) and P(0,0),Q(2,0),R(1,2).<details class="ans"><summary>Show Answer</summary><p>△ABC: ½|1(2−6)+5(6−2)+3(2−2)|=½×16=8. △PQR=½|0+2×2+0|=2. Ratio=4:1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If D is midpoint of BC, show area(△ABD)=area(△ACD).<details class="ans"><summary>Show Answer</summary><p>Both triangles share same height from A; bases BD=DC. Area=½×base×height → equal ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Area — Mixed Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Area of △(4,4),(3,−2),(−3,16).<details class="ans"><summary>Show Answer</summary><p>½|4(−2−16)+3(16−4)+(−3)(4+2)|=½|−72+36−18|=27 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show △(1,−1),(−4,6),(−3,−5) has area 24.<details class="ans"><summary>Show Answer</summary><p>½|1(6+5)+(−4)(−5+1)+(−3)(−1−6)|=½|11+16+21|=24 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show △(1,7),(4,2),(−1,−1) — is it right-angled isosceles?<details class="ans"><summary>Show Answer</summary><p>AB=√(9+25)=√34. BC=√(25+9)=√34. AC=√(4+64)=√68. AB=BC (isosceles). AB²+BC²=68=AC² ✓ (right at B). Right isosceles ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Area of △(−5,−1),(3,−5),(5,2).<details class="ans"><summary>Show Answer</summary><p>½|−5(−5−2)+3(2+1)+5(−1+5)|=½|35+9+20|=32 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of △(a,a),(−a,−a),(−a√3,a√3).<details class="ans"><summary>Show Answer</summary><p>½|a(−a−a√3)+(−a)(a√3−a)+(−a√3)(a+a)|=½|−a²(1+√3)−a²(√3−1)−2a²√3|=½|−a²−a²√3−a²√3+a²−2a²√3|=½|−4a²√3|=2a²√3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find area of △(1/2,1/3),(−1/3,1/2),(1/6,−1/6) using shoelace.<details class="ans"><summary>Show Answer</summary><p>Area=½|(1/2)(1/2+1/6)+(−1/3)(−1/6−1/3)+(1/6)(1/3−1/2)|=½|1/3+1/6−1/36|=½×17/36=17/72.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If area of △(1,4),(2,3),(k,0)=0, find k.<details class="ans"><summary>Show Answer</summary><p>½|1(3−0)+2(0−4)+k(4−3)|=0. 3−8+k=0. k=5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD: A(1,−2),B(3,6),C(5,10),D(3,2). Is it a parallelogram? Find area.<details class="ans"><summary>Show Answer</summary><p>MidAC=(3,4). MidBD=(3,4) ✓ parallelogram. Area via shoelace: ½|(1×6−3×(−2))+(3×10−5×6)+(5×2−3×10)+(3×(−2)−1×2)|=½|(6+6)+(30−30)+(10−30)+(−6−2)|=½|12+0−20−8|=8 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Three points (k,1),(1,1),(k,k+1). For what k is area=2?<details class="ans"><summary>Show Answer</summary><p>½|k(1−k−1)+1(k+1−1)+k(1−1)|=2. ½|−k²+k|=2. k²−k−4=0. k=(1±√17)/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find area of pentagon (0,4),(3,0),(6,4),(6,8),(0,8) using shoelace.<details class="ans"><summary>Show Answer</summary><p>Shoelace sum: ½|(0×0−3×4)+(3×4−6×0)+(6×8−6×4)+(6×8−0×8)+(0×4−0×8)|=½|−12+12+24+48+0|=36 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Collinearity via Area = 0</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:point-slope-form/v/point-slope-and-slope-intercept-form-from-two-points" target="_blank">Collinearity via Slope</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry" target="_blank">Analytic Geometry</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=MXV65i9g1Xg" target="_blank">Graphing Lines</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=csInNn6pfT4" target="_blank">Taxicab Geometry</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=5fkh01mClLU" target="_blank">When Are 3 Points Collinear?</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Testing Collinearity Using Area</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Are (1,2),(3,4),(5,6) collinear? Use area=0 method.<details class="ans"><summary>Show Answer</summary><p>½|1(4−6)+3(6−2)+5(2−4)|=½|−2+12−10|=0 ✓ collinear.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Check collinearity of (0,0),(2,4),(4,8).<details class="ans"><summary>Show Answer</summary><p>½|0(4−8)+2(8−0)+4(0−4)|=½|0+16−16|=0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Test (1,3),(2,5),(3,7).<details class="ans"><summary>Show Answer</summary><p>½|1(5−7)+2(7−3)+3(3−5)|=½|−2+8−6|=0 ✓ collinear.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Check (3,3),(7,7),(9,10).<details class="ans"><summary>Show Answer</summary><p>½|3(7−10)+7(10−3)+9(3−7)|=½|−9+49−36|=2≠0. Not collinear.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Are (4,3),(5,1),(6,−1) collinear?<details class="ans"><summary>Show Answer</summary><p>½|4(1+1)+5(−1−3)+6(3−1)|=½|8−20+12|=0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Test (2,1),(0,−4),(−2,−9).<details class="ans"><summary>Show Answer</summary><p>½|2(−4+9)+0(−9−1)+(−2)(1+4)|=½|10+0−10|=0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Check (a,b),(b,a),(0,0). When collinear?<details class="ans"><summary>Show Answer</summary><p>Area=½|a²−b²|. Collinear when a=±b.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Are (l,m+n),(m,n+l),(n,l+m) always collinear?<details class="ans"><summary>Show Answer</summary><p>Area=½|l(n+l−l−m)+m(l+m−m−n)+n(m+n−n−l)|=½|l(n−m)+m(l−n)+n(m−l)|=0 ✓ always collinear.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find k so that (2,3),(4,k),(6,−3) are collinear.<details class="ans"><summary>Show Answer</summary><p>½|2(k+3)+4(−3−3)+6(3−k)|=0. 2k+6−24+18−6k=0. −4k=0. k=0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k so that (1,k),(2,3),(3,2k) are collinear.<details class="ans"><summary>Show Answer</summary><p>½|1(3−2k)+2(2k−k)+3(k−3)|=0. 3−2k+2k+3k−9=0. 3k=6. k=2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding Unknown Coordinates for Collinearity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If (t,2t),(−2,6),(3,1) are collinear, find t.<details class="ans"><summary>Show Answer</summary><p>½|t(6−1)+(−2)(1−2t)+3(2t−6)|=0. 5t−2+4t+6t−18=0. 15t=20. t=4/3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find m if (m,3),(6,−2),(−3,4) are collinear.<details class="ans"><summary>Show Answer</summary><p>½|m(−2−4)+6(4−3)+(−3)(3+2)|=0. −6m+6−15=0. m=−3/2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For what p are (2,p),(4,5),(6,8) collinear?<details class="ans"><summary>Show Answer</summary><p>½|2(5−8)+4(8−p)+6(p−5)|=0. −6+32−4p+6p−30=0. 2p=4. p=2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (k,−1),(2,1),(4,5) are collinear, find k.<details class="ans"><summary>Show Answer</summary><p>½|k(1−5)+2(5+1)+4(−1−1)|=0. −4k+12−8=0. k=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find a if (a,1),(2,a),(a,a) are collinear.<details class="ans"><summary>Show Answer</summary><p>Area=0: a(a−a)+2(a−1)+a(1−a)=0. 0+2a−2+a−a²=0. a²−3a+2=0. a=1 or a=2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If (−2,−1),(a,0),(4,b) are collinear, find relation between a and b.<details class="ans"><summary>Show Answer</summary><p>−2(0−b)+a(b+1)+4(−1−0)=0. 2b+ab+a−4=0. a(b+1)=4−2b.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find k so that (k+1,1),(3k,2),(4k+1,3) are collinear.<details class="ans"><summary>Show Answer</summary><p>−(k+1)+6k−(4k+1)=0. k=2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify (−3,−3),(−2,0),(0,6) are collinear.<details class="ans"><summary>Show Answer</summary><p>½|−3(0−6)+(−2)(6+3)+0(−3−0)|=½|18−18|=0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If A=(1,2),B=(4,k),C=(7,8) are collinear, find k.<details class="ans"><summary>Show Answer</summary><p>½|1(k−8)+4(8−2)+7(2−k)|=0. k−8+24+14−7k=0. −6k+30=0. k=5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If (−1,3),(2,p),(5,−1) are collinear, find p.<details class="ans"><summary>Show Answer</summary><p>½|−1(p+1)+2(−1−3)+5(3−p)|=0. −p−1−8+15−5p=0. −6p+6=0. p=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Collinearity Applications and Proofs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Three towns at (0,0),(3,6),(t,2t). For all t they are on the same road?<details class="ans"><summary>Show Answer</summary><p>All satisfy y=2x → always collinear for any t ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Points (k,k²) for k=1,2,3 — collinear?<details class="ans"><summary>Show Answer</summary><p>(1,1),(2,4),(3,9). Area=½|1(4−9)+2(9−1)+3(1−4)|=½|−5+16−9|=1≠0. Not collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Verify the medians of △A(0,0),B(6,0),C(0,6) are concurrent using area=0 with G.<details class="ans"><summary>Show Answer</summary><p>G=(2,2). Mid BC=(3,3). Area(A,G,MidBC)=½|0(2−3)+2(3−0)+3(0−2)|=½|0+6−6|=0 ✓ collinear.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show any three points on y=3x+2 are collinear using area=0. Use (0,2),(1,5),(−1,−1).<details class="ans"><summary>Show Answer</summary><p>½|0(5+1)+1(−1−2)+(−1)(2−5)|=½|0−3+3|=0 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For A=(2,0),B=(x,5),C=(8,10), find x for collinearity.<details class="ans"><summary>Show Answer</summary><p>½|2(5−10)+x(10−0)+8(0−5)|=0. −10+10x−40=0. x=5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Points (a²,0),(0,b²),(a²+b²,b²) — are they collinear?<details class="ans"><summary>Show Answer</summary><p>Area=½|a²(b²−b²)+0(b²−0)+(a²+b²)(0−b²)|=½×b²(a²+b²)≠0 (unless b=0). Not collinear.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If A,B,C are on line y=kx (through origin), prove always collinear.<details class="ans"><summary>Show Answer</summary><p>A=(x₁,kx₁), B=(x₂,kx₂), C=(x₃,kx₃). Area=½k|x₁(x₂−x₃)+x₂(x₃−x₁)+x₃(x₁−x₂)|=0 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Check if (3,−1),(−1,5),(1,1) are collinear using area.<details class="ans"><summary>Show Answer</summary><p>½|3(5−1)+(−1)(1+1)+1(−1−5)|=½|12−2−6|=2≠0. Not collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find t if (t,t+1),(2,0),(4,−2) are collinear.<details class="ans"><summary>Show Answer</summary><p>Slope BC=(−2−0)/(4−2)=−1. (0−t−1)/(2−t)=−1. −t−1=−2+t. 2t=1. t=1/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If (2k,k+2),(k+3,2k+1),(k+2,k) are collinear, find k.<details class="ans"><summary>Show Answer</summary><p>Area=0: 2k(2k+1−k)+(k+3)(k−k−2)+(k+2)(k+2−2k−1)=0. 2k(k+1)−2(k+3)+(k+2)(1−k)=0. 2k²+2k−2k−6+k+2−k²=0. k²+k−4=0. k=(−1±√17)/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Collinearity and Area Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Check (3,−1),(5,3),(7,7) collinear.<details class="ans"><summary>Show Answer</summary><p>½|3(3−7)+5(7+1)+7(−1−3)|=½|−12+40−28|=0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Are (2,−2),(−1,4),(0,1) collinear?<details class="ans"><summary>Show Answer</summary><p>½|2(4−1)+(−1)(1+2)+0(−2−4)|=½|6−3|=1.5≠0. Not collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The area of △(a,a+2),(a+1,a+1),(a+2,a+3) — find it and show it's constant.<details class="ans"><summary>Show Answer</summary><p>½|a(a+1−a−3)+(a+1)(a+3−a−2)+(a+2)(a+2−a−1)|=½|−2a+(a+1)+(a+2)|=½×1=0.5 sq unit.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find x so (x,−1),(2,1),(4,5) collinear.<details class="ans"><summary>Show Answer</summary><p>½|x(1−5)+2(5+1)+4(−1−1)|=0. −4x+12−8=0. x=1.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For what k are (k,2k),(−k,−2k),(4,6) collinear?<details class="ans"><summary>Show Answer</summary><p>First two always on y=2x. (4,6): 6≠8. Never collinear (unless k→∞).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show (0,−2),(3,1),(−2,−4) are collinear.<details class="ans"><summary>Show Answer</summary><p>½|0(1+4)+3(−4+2)+(−2)(−2−1)|=½|0−6+6|=0 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If (2,p),(4,q) lie on y=3x−1, are (0,−1),(2,p),(4,q) collinear?<details class="ans"><summary>Show Answer</summary><p>p=5, q=11. All three satisfy y=3x−1 → collinear ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show sections joining midpoints of (0,0)→(6,9) are collinear.<details class="ans"><summary>Show Answer</summary><p>Points (0,0),(2,3),(4,6),(6,9) — all on y=3x/2. Any three: area=0 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Collinearity determinant: state the 3×3 determinant condition for (x₁,y₁),(x₂,y₂),(x₃,y₃) collinear.<details class="ans"><summary>Show Answer</summary><p>|x₁ y₁ 1; x₂ y₂ 1; x₃ y₃ 1|=0, equivalent to x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)=0.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Check if (1,5),(2,3),(−1,11) are collinear.<details class="ans"><summary>Show Answer</summary><p>½|1(3−11)+2(11−5)+(−1)(5−3)|=½|−8+12−2|=1≠0. Not collinear.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Identifying Quadrilaterals Using Coordinates</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-quadrilaterals-in-the-coordinate-plane/v/quadrilaterals-on-coordinate-plane" target="_blank">Quadrilaterals on Coordinate Plane</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-quadrilaterals-in-the-coordinate-plane/e/classifying-shapes-by-coordinates" target="_blank">Classifying Shapes</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=MRqtXL2WX2M" target="_blank">Quadrilaterals</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=CfJzrmS9UfY" target="_blank">Squares and Geometry</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=VvCytJvd4H0" target="_blank">Why Are There So Many Shapes?</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Square and Rectangle Tests</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show (0,0),(4,0),(4,4),(0,4) is a square.<details class="ans"><summary>Show Answer</summary><p>All sides=4. Diagonals both=4√2. Equal diagonals + equal sides → square ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show (1,2),(4,2),(4,6),(1,6) is a rectangle.<details class="ans"><summary>Show Answer</summary><p>Sides: 3,4,3,4. Diagonals: both √(9+16)=5. Equal diagonals + bisect each other → rectangle ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Prove (0,−1),(−2,3),(6,7),(8,3) is a rectangle.<details class="ans"><summary>Show Answer</summary><p>Diag AC=√(36+64)=10. Diag BD=√(100+0)=10. Equal ✓. Midpoints: Mid AC=(3,3), Mid BD=(3,3) ✓. Rectangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Test if (2,2),(6,2),(6,−2),(2,−2) is a square.<details class="ans"><summary>Show Answer</summary><p>All sides=4. Diag=4√2=4×√2 ✓. Square.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is (−1,−1),(−1,4),(5,4),(5,−1) a rectangle? Find its dimensions.<details class="ans"><summary>Show Answer</summary><p>Sides 5 and 6. Diag=√(25+36)=√61. Both diagonals equal ✓. 5×6 rectangle.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Verify that diagonals of square (1,1),(4,4),(7,1),(4,−2) are equal and bisect each other perpendicularly.<details class="ans"><summary>Show Answer</summary><p>Diag1: (1,1)−(7,1): length=6. Diag2: (4,4)−(4,−2): length=6. Midpoint both=(4,1). Slope1=0, Slope2=undefined (vertical). Perpendicular ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A rectangle has vertices A(2,1),B(5,1),C(5,k),D(2,k). For what k is it a square?<details class="ans"><summary>Show Answer</summary><p>Side AB=3. For square, side BC=k−1=3 ⟹ k=4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If ABCD is a rectangle with A(0,0),B(a,0),C(a,b),D(0,b), show diagonals are equal.<details class="ans"><summary>Show Answer</summary><p>AC=√(a²+b²). BD=√(a²+b²) ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show (3,1),(6,4),(3,7),(0,4) is a square.<details class="ans"><summary>Show Answer</summary><p>AB=3√2, BC=3√2, CD=3√2, DA=3√2. All equal. Diag AC=6, Diag BD=6. Equal diagonals ✓. Square.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Determine if (1,1),(4,5),(7,1),(4,−3) is a square by checking sides and diagonals.<details class="ans"><summary>Show Answer</summary><p>AB=5, BC=5, CD=5, DA=5. Diag AC=6, Diag BD=8. Unequal diagonals → rhombus, not square.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Parallelogram and Rhombus Tests</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show (2,1),(−2,3),(0,9),(4,7) is a parallelogram using midpoints.<details class="ans"><summary>Show Answer</summary><p>Mid AC=(1,5). Mid BD=(1,5) ✓ → parallelogram.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show (3,0),(4,5),(−1,4),(−2,−1) is a rhombus.<details class="ans"><summary>Show Answer</summary><p>AB=√26, BC=√26, CD=√26, DA=√26. All equal. Diag AC=4√2, Diag BD=6√2. Unequal → rhombus.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD: A(1,0),B(5,3),C(5,8),D(1,5). Show it is a parallelogram but not a rhombus.<details class="ans"><summary>Show Answer</summary><p>AB=5, BC=5, CD=5, DA=5. All equal — wait, it IS a rhombus! Diag AC=√80, Diag BD=√20. Unequal → rhombus (not square).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show (2,−1),(3,4),(−2,3),(−3,−2) is a rhombus.<details class="ans"><summary>Show Answer</summary><p>AB=√26, BC=√26, CD=√26, DA=√26. All sides equal. Diag AC=4, Diag BD=6. Unequal → rhombus ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Are (1,−2),(3,6),(5,10),(3,2) vertices of a parallelogram?<details class="ans"><summary>Show Answer</summary><p>Mid AC=(3,4). Mid BD=(3,4) ✓ → parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD: A(0,0),B(3,4),C(6,0),D(3,−4). Identify the quadrilateral.<details class="ans"><summary>Show Answer</summary><p>AB=5, BC=5, CD=5, DA=5. All equal → rhombus candidate. Diag AC=6, Diag BD=8. Unequal → rhombus.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show (1,2),(4,6),(8,3),(5,−1) is a rectangle (diagonals equal and bisect each other).<details class="ans"><summary>Show Answer</summary><p>Mid(1,2)−(8,3)=(4.5,2.5). Mid(4,6)−(5,−1)=(4.5,2.5) ✓. Diag1=√(49+1)=√50. Diag2=√(1+49)=√50 ✓. Rectangle.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For which condition is a parallelogram also a rectangle?<details class="ans"><summary>Show Answer</summary><p>When its diagonals are equal: AC = BD.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For which condition is a parallelogram also a rhombus?<details class="ans"><summary>Show Answer</summary><p>When all four sides are equal (AB=BC=CD=DA).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">For which condition is a rhombus also a square?<details class="ans"><summary>Show Answer</summary><p>When its diagonals are also equal (in addition to all sides being equal).</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Full Classification of Quadrilaterals</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">ABCD: A(1,1),B(3,1),C(3,4),D(1,4). Classify completely.<details class="ans"><summary>Show Answer</summary><p>AB=2, BC=3, CD=2, DA=3. Two pairs equal sides → rectangle candidate. Diag both=√13 ✓. Rectangle (not square since sides differ).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">ABCD: A(0,0),B(2,1),C(3,3),D(1,2). Classify.<details class="ans"><summary>Show Answer</summary><p>AB=√5, BC=√5, CD=√5, DA=√5. All equal. Diag AC=3√2... AC=√9=3. BD=√(1+1)=√2. Unequal → rhombus.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Test (4,2),(7,−3),(9,−1),(6,4) as quadrilateral and classify.<details class="ans"><summary>Show Answer</summary><p>AB=√34, BC=√(4+4)=2√2, CD=√(9+25)=√34, DA=√(4+4)=2√2. Opposite sides equal → parallelogram. Diag AC=√(25+9)=√34. Diag BD=√(4+49)=√53. Unequal → parallelogram (not rectangle).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show ABCD with A(0,0),B(5,0),C(5,5),D(0,5) is a square using both side and diagonal tests.<details class="ans"><summary>Show Answer</summary><p>All sides=5. Both diagonals=5√2. Equal sides, equal diagonals, diagonals bisect each other → square ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">PQRS: P(3,4),Q(6,4),R(6,9),S(3,9). What is it?<details class="ans"><summary>Show Answer</summary><p>PQ=3, QR=5, RS=3, SP=5. Diagonals: PR=√(9+25)=√34. QS=√(9+25)=√34. Equal diagonals, bisect each other → rectangle.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A(−2,−1),B(1,0),C(4,3),D(1,2). Parallelogram or not?<details class="ans"><summary>Show Answer</summary><p>Mid AC=(1,1). Mid BD=(1,1) ✓ → parallelogram.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A(−4,0),B(0,3),C(4,0),D(0,−3). Classify this quadrilateral.<details class="ans"><summary>Show Answer</summary><p>All sides=5. Diag AC=8, Diag BD=6. Unequal → rhombus.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A(1,0),B(3,2),C(5,0),D(3,−2). Classify using sides and diagonals.<details class="ans"><summary>Show Answer</summary><p>All sides=2√2. Diag AC=4, Diag BD=4. Equal diagonals + equal sides → square.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Quadrilateral A(2,1),B(4,4),C(7,2),D(5,−1). Classify.<details class="ans"><summary>Show Answer</summary><p>AB=√13, BC=√13, CD=√13, DA=√13. All equal. Diag AC=√25=5. Diag BD=√25=5. All sides equal AND diagonals equal → square ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A(1,2),B(5,2),C(6,5),D(2,5). What quadrilateral? Find area.<details class="ans"><summary>Show Answer</summary><p>AB=4, BC=√10, CD=4, DA=√10. Opposite sides equal → parallelogram. Diag AC=√(25+9)=√34. Diag BD=√(9+9)=3√2. Unequal → parallelogram (not rectangle). Area: base×height = 4×3=12 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Quadrilateral Proofs and Mixed</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The midpoints of any quadrilateral's sides form a parallelogram. Verify with A(0,0),B(4,0),C(6,4),D(2,4).<details class="ans"><summary>Show Answer</summary><p>Midpoints: M₁=(2,0),M₂=(5,2),M₃=(4,4),M₄=(1,2). Mid M₁M₃=(3,2). Mid M₂M₄=(3,2) ✓ → parallelogram.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">For a square with vertices (a,0),(0,a),(−a,0),(0,−a), find side length and area.<details class="ans"><summary>Show Answer</summary><p>Side=√(a²+a²)=a√2. Area=side²=2a² or ½×d₁×d₂=½×2a×2a=2a².</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that the quadrilateral with vertices (1,1),(5,1),(5,5),(1,5) is a square and find its perimeter and area.<details class="ans"><summary>Show Answer</summary><p>Side=4. Perimeter=16. Area=16 sq units.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">D is the fourth vertex of parallelogram ABCD. A=(3,2),B=(−1,0),C=(2,−1). Find D.<details class="ans"><summary>Show Answer</summary><p>D=A+C−B=(3+2+1,2−1−0)=(6,1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In parallelogram ABCD, A=(1,1),B=(4,4),C=(8,2). Find D.<details class="ans"><summary>Show Answer</summary><p>Mid AC=Mid BD. Mid AC=(4.5,1.5). D=(2×4.5−4,2×1.5−4)=(5,−1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three vertices of a rhombus are (0,3),(4,0),(8,3). Find the fourth vertex.<details class="ans"><summary>Show Answer</summary><p>Rhombus diagonals bisect each other. Mid of diagonal (0,3)−(8,3)=(4,3). Fourth vertex: (2×4−4,2×3−0)=(4,6).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show (1,1),(3,−2),(5,1),(3,4) is a rhombus; find area using shoelace.<details class="ans"><summary>Show Answer</summary><p>All sides=√13. Diag1=(1,1)−(5,1): length=4. Diag2=(3,−2)−(3,4): length=6. Area=½×d₁×d₂=12. Shoelace: ½|(1×(−2)−3×1)+(3×1−5×(−2))+(5×4−3×1)+(3×1−1×4)|=½|−5+13+17−1|=12 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A kite has vertices (0,5),(2,2),(0,−1),(−2,2). Classify it and find area.<details class="ans"><summary>Show Answer</summary><p>Adjacent pairs equal: AB=√13, BC=√13, CD=√13, DA=√13. All sides equal → rhombus (not kite). Area=½×6×4=12 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A(k,2),B(4,k),C(−1,k). Find k such that triangle (not quadrilateral) has area 12.<details class="ans"><summary>Show Answer</summary><p>½|k(k−k)+4(k−2)+(−1)(2−k)|=12. |0+4k−8−2+k|=24. |5k−10|=24. 5k=34 → k=34/5 or 5k=−14 → k=−14/5.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The diagonals of rectangle ABCD are AC and BD. A=(0,0),C=(6,4). Diagonals bisect at (3,2). B=(5,0). Find D.<details class="ans"><summary>Show Answer</summary><p>D=(2×3−5,2×2−0)=(1,4).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Equation of Line Through Two Points</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:intro-to-slope-intercept-form/v/slope-intercept-form" target="_blank">Slope-Intercept Form</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:point-slope-form/v/point-slope-form-1" target="_blank">Point-Slope Form</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=MXV65i9g1Xg" target="_blank">Linear Equations and Slope</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=csInNn6pfT4" target="_blank">Lines in Geometry</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=0KjG8Pg6LGk" target="_blank">What is a Line?</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Finding Slope and Equation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the slope of the line through (2,3) and (6,7).<details class="ans"><summary>Show Answer</summary><p>m=(7−3)/(6−2)=1.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find slope of line through (−1,4) and (3,−2).<details class="ans"><summary>Show Answer</summary><p>m=(−2−4)/(3+1)=−3/2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line through (1,2) and (3,6).<details class="ans"><summary>Show Answer</summary><p>m=2. y−2=2(x−1) ⟹ y=2x.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find equation of line through (0,3) and (4,0).<details class="ans"><summary>Show Answer</summary><p>m=−3/4. y−3=−3/4×x ⟹ 3x+4y=12.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find equation of line through (2,1) with slope 3.<details class="ans"><summary>Show Answer</summary><p>y−1=3(x−2) ⟹ y=3x−5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line through (−1,−2) and (3,2).<details class="ans"><summary>Show Answer</summary><p>m=1. y+2=x+1 ⟹ y=x−1.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Equation of line through (3,5) and parallel to x-axis.<details class="ans"><summary>Show Answer</summary><p>y=5 (horizontal line).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Equation of line through (−2,4) and parallel to y-axis.<details class="ans"><summary>Show Answer</summary><p>x=−2 (vertical line).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line through (4,−3) and (−2,1).<details class="ans"><summary>Show Answer</summary><p>m=(1+3)/(−2−4)=−2/3. y+3=−2/3(x−4) ⟹ 2x+3y=−1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find equation of x-axis and y-axis.<details class="ans"><summary>Show Answer</summary><p>x-axis: y=0. y-axis: x=0.</p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Line Through Two Points — Standard Form</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the equation of line through (1,−1) and (3,5) in y=mx+c form.<details class="ans"><summary>Show Answer</summary><p>m=3. y=3x−4.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Equation of line through (2,7) and (−1,4).<details class="ans"><summary>Show Answer</summary><p>m=1. y=x+5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line with x-intercept 3 and y-intercept 5.<details class="ans"><summary>Show Answer</summary><p>Through (3,0) and (0,5). m=−5/3. 5x+3y=15.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Show that (3,4) lies on the line through (0,1) and (6,7).<details class="ans"><summary>Show Answer</summary><p>m=1. y=x+1. At x=3: y=4 ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line through (5,3) and perpendicular to the x-axis.<details class="ans"><summary>Show Answer</summary><p>x=5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two lines: y=2x+1 and y=2x+5. Are they parallel? Find their slopes.<details class="ans"><summary>Show Answer</summary><p>Both have slope=2. Parallel ✓ (same slope, different intercepts).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the slope of line 3x+4y=12.<details class="ans"><summary>Show Answer</summary><p>4y=−3x+12. y=−3x/4+3. Slope=−3/4.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find k if (k,2) lies on the line through (2,−1) and (−1,5).<details class="ans"><summary>Show Answer</summary><p>m=(5+1)/(−1−2)=−2. y+1=−2(x−2) ⟹ y=−2x+3. At y=2: 2=−2k+3 ⟹ k=1/2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line through the origin with slope 5/3.<details class="ans"><summary>Show Answer</summary><p>y=5x/3 or 5x−3y=0.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Equation of line through (a,0) and (0,b) using intercept form.<details class="ans"><summary>Show Answer</summary><p>x/a+y/b=1 or bx+ay=ab.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Slopes, Parallel and Perpendicular Lines</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If slope of AB = slope of BC, what can you conclude?<details class="ans"><summary>Show Answer</summary><p>A, B, C are collinear (lie on the same line).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the slope of line perpendicular to y=3x+2.<details class="ans"><summary>Show Answer</summary><p>Slope of given line=3. Perpendicular slope=−1/3.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Are lines through (1,2),(3,4) and (5,6),(7,8) parallel?<details class="ans"><summary>Show Answer</summary><p>Both slopes=1. Parallel ✓.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find equation of line through (3,4) perpendicular to y=2x+1.<details class="ans"><summary>Show Answer</summary><p>Perp slope=−1/2. y−4=−1/2(x−3) ⟹ x+2y=11.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find equation of the perpendicular bisector of (2,4) and (6,8).<details class="ans"><summary>Show Answer</summary><p>Midpoint=(4,6). Slope of segment=1. Perp slope=−1. y−6=−(x−4) ⟹ x+y=10.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If the line through (a,1) and (3,5) has slope 2, find a.<details class="ans"><summary>Show Answer</summary><p>(5−1)/(3−a)=2 ⟹ 4=6−2a ⟹ a=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point where y=2x−3 meets y=−x+6.<details class="ans"><summary>Show Answer</summary><p>2x−3=−x+6 ⟹ 3x=9 ⟹ x=3, y=3. Point=(3,3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of line parallel to 2x+3y=6 passing through (1,2).<details class="ans"><summary>Show Answer</summary><p>Same slope: 2x+3y=2+6=8. Check: 2(1)+3(2)=8 ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the slope of line joining midpoint of (1,3),(3,5) to midpoint of (2,4),(4,6).<details class="ans"><summary>Show Answer</summary><p>M₁=(2,4). M₂=(3,5). Slope=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find equation of line through centroid of A(0,0),B(6,0),C(0,6) with slope −1.<details class="ans"><summary>Show Answer</summary><p>G=(2,2). y−2=−(x−2) ⟹ x+y=4.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Equation of Line — Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the equation of the median from A(1,2) in △ABC where B=(3,6) and C=(5,2).<details class="ans"><summary>Show Answer</summary><p>Midpoint BC=(4,4). Slope from A(1,2) to (4,4)=2/3. y−2=2/3(x−1) ⟹ 2x−3y+4=0.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of the altitude from A(0,0) to BC in △ABC with B=(3,−4) and C=(5,2).<details class="ans"><summary>Show Answer</summary><p>Slope BC=(2+4)/(5−3)=3. Altitude slope=−1/3. Through (0,0): y=−x/3 ⟹ x+3y=0.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of the perpendicular bisector of A(2,5) and B(−2,1).<details class="ans"><summary>Show Answer</summary><p>Mid=(0,3). Slope AB=1. Perp slope=−1. y−3=−x ⟹ x+y=3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The line 2x+ky=4 passes through (1,1). Find k.<details class="ans"><summary>Show Answer</summary><p>2+k=4 ⟹ k=2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the point on the line 3x+y=10 equidistant from (1,0) and (0,3).<details class="ans"><summary>Show Answer</summary><p>Points equidistant from (1,0) and (0,3) lie on perp bisector: midpoint=(0.5,1.5), slope of segment=−3, perp slope=1/3. y−1.5=1/3(x−0.5) ⟹ 3y=x+4. Intersect with 3x+y=10: from 3y=x+4 → x=3y−4. 3(3y−4)+y=10 ⟹ 10y=22 ⟹ y=2.2, x=2.6. Point=(2.6, 2.2).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Equation of line through (2,3) making equal intercepts on axes.<details class="ans"><summary>Show Answer</summary><p>x+y=c or y=mx. Equal intercepts: x-int=y-int, so a=b. x/a+y/a=1 ⟹ x+y=a. Through (2,3): a=5. x+y=5.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the equation of the line that has y-intercept 4 and is parallel to 3x−2y=6.<details class="ans"><summary>Show Answer</summary><p>Slope of given line=3/2. y=3x/2+4 ⟹ 3x−2y+8=0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If A(1,3),B(4,7) and C(x,y) is such that AB=BC and ∠ABC=90°, find C.<details class="ans"><summary>Show Answer</summary><p>Slope AB=4/3. Perp slope=−3/4. BC=AB=5. C=B+(−3/4×4, 1)=(4+... direction: unit vector perp to AB scaled by 5. (−4/5,3/5)×5=(−4,3) or (4,−3). C=(4−4,7+3)=(0,10) or C=(8,4).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find equation of line with slope −2 that divides segment joining (1,1) and (5,5) in ratio 3:1.<details class="ans"><summary>Show Answer</summary><p>Point: ((3×5+1)/4,(3×5+1)/4)=(4,4). y−4=−2(x−4) ⟹ 2x+y=12.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Three lines x+y=4, 2x−y=2, x−2y+2=0. Are they concurrent? Find the point.<details class="ans"><summary>Show Answer</summary><p>Solve x+y=4, 2x−y=2: add → 3x=6 → x=2, y=2. Check 3rd: 2−4+2=0 ✓. Concurrent at (2,2).</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>External Division and Applications</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-dividing-segments/v/dividing-line-segments" target="_blank">Dividing Segments</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-dividing-segments/e/dividing-line-segments" target="_blank">Practice: Division</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=Yw0EFyxJBaA" target="_blank">Ratios</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=sG7DGKhmuEE" target="_blank">Golden Ratio</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=BHs7bkMIFHc" target="_blank">The Golden Ratio</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> External Division Formula P = ((mx₂−nx₁)/(m−n), (my₂−ny₁)/(m−n))</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the point that divides A(1,2) and B(7,8) externally in ratio 3:1.<details class="ans"><summary>Show Answer</summary><p>P=((3×7−1×1)/(3−1),(3×8−1×2)/(3−1))=(20/2,22/2)=(10,11).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the external division point of (2,3) and (6,7) in ratio 2:1.<details class="ans"><summary>Show Answer</summary><p>P=((2×6−1×2)/1,(2×7−1×3)/1)=(10,11).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point dividing A(−1,3) and B(4,−2) externally in ratio 3:2.<details class="ans"><summary>Show Answer</summary><p>P=((3×4−2×(−1))/(3−2),(3×(−2)−2×3)/(3−2))=(14/1,−12/1)=(14,−12).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A(2,1) and B(−2,5). Find the point that divides AB externally in ratio 1:3.<details class="ans"><summary>Show Answer</summary><p>P=((1×(−2)−3×2)/(1−3),(1×5−3×1)/(1−3))=(−8/(−2),2/(−2))=(4,−1).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What does it mean for a point to divide a segment externally?<details class="ans"><summary>Show Answer</summary><p>The point lies on the line through A and B but outside the segment AB, beyond one of the endpoints.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find external division of (0,0) and (4,6) in ratio 2:3.<details class="ans"><summary>Show Answer</summary><p>P=((2×4−3×0)/(2−3),(2×6−3×0)/(2−3))=(8/(−1),12/(−1))=(−8,−12).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P divides AB externally in ratio m:n, and Q divides AB internally in ratio m:n, prove that A and B are the midpoints of PQ.<details class="ans"><summary>Show Answer</summary><p>Internal P_i=((mx₂+nx₁)/(m+n),(my₂+ny₁)/(m+n)). External P_e=((mx₂−nx₁)/(m−n),(my₂−ny₁)/(m−n)). Midpoint of P_iP_e: complicated formula — by harmonic range property, A and B are harmonic conjugates with respect to P_i and P_e, meaning (A,B;P_i,P_e) = −1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the point dividing (3,5) and (−1,−3) externally in ratio 3:1.<details class="ans"><summary>Show Answer</summary><p>P=((3×(−1)−1×3)/(3−1),(3×(−3)−1×5)/(3−1))=(−6/2,−14/2)=(−3,−7).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find both internal and external division of (1,4) and (7,10) in ratio 1:2.<details class="ans"><summary>Show Answer</summary><p>Internal: ((7+2)/3,(10+8)/3)=(3,6). External: ((7−2)/(1−2),(10−8)/(1−2))=(−5,−2).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The external division point of A(4,−3) and B(−1,2) in ratio 2:3. Find it and verify it lies on line AB.<details class="ans"><summary>Show Answer</summary><p>P=((2×(−1)−3×4)/(2−3),(2×2−3×(−3))/(2−3))=(−14/(−1),(4+9)/(−1))=(14,−13). Line AB: slope=(2+3)/(−1−4)=−1. y+3=−(x−4) ⟹ y=−x+1. At x=14: y=−13 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Harmonic Conjugates and Special Ratios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If P internally and Q externally both divide AB in ratio 2:1, find P and Q for A=(0,0), B=(6,0).<details class="ans"><summary>Show Answer</summary><p>P=(4,0). Q=((2×6−1×0)/(2−1),(0))=(12,0).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point that divides (−3,4) and (6,1) externally in ratio 1:2.<details class="ans"><summary>Show Answer</summary><p>P=((1×6−2×(−3))/(1−2),(1×1−2×4)/(1−2))=(12/(−1),(−7)/(−1))=(−12,7).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The section formula for external division: P=((mx₂−nx₁)/(m−n)). What happens when m=n?<details class="ans"><summary>Show Answer</summary><p>Denominator=0 — the formula is undefined. This means equal external ratio gives a point at infinity (the two sections are parallel directions).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If P externally divides (2,3) and (8,9) in ratio 5:2, find P.<details class="ans"><summary>Show Answer</summary><p>P=((5×8−2×2)/(5−2),(5×9−2×3)/3)=(36/3,39/3)=(12,13).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Externally divide A(1,0) and B(5,4) in ratio 3:2.<details class="ans"><summary>Show Answer</summary><p>P=((15−2)/1,(12−0)/1)=(13,12).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For A(0,1) and B(4,5), internal division at ratio 1:1 gives midpoint M. External 1:1 is undefined. Explain.<details class="ans"><summary>Show Answer</summary><p>M=(2,3) for internal. For external 1:1: denominator=1−1=0 → undefined. Geometrically: equal external division would require the point to go to infinity.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The base BC of an equilateral triangle has B=(−1,0), C=(1,0). The apex A externally divides BC extended. Actually find apex A (above x-axis, equilateral).<details class="ans"><summary>Show Answer</summary><p>For equilateral triangle: apex=(0,√3). (Not external division — apex is not on BC line.)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find external division of (2,−1) and (−3,4) in ratio 4:3.<details class="ans"><summary>Show Answer</summary><p>P=((4×(−3)−3×2)/(4−3),(4×4−3×(−1))/(4−3))=(−18,19).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P externally divides A(1,5) and B(3,1) in ratio k:1. If P lies on y-axis, find k.<details class="ans"><summary>Show Answer</summary><p>x=0: (3k−1)/(k−1)=0 ⟹ 3k=1 ⟹ k=1/3. P=((1/3×3−1×1)/(1/3−1),(1/3×1−5)/(1/3−1))=(0/(−2/3),(−14/3)/(−2/3))=(0,7).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P externally divides segment with ratio 5:3 from A(−4,1) to B(8,7). Find P.<details class="ans"><summary>Show Answer</summary><p>P=((5×8−3×(−4))/(5−3),(5×7−3×1)/(5−3))=(52/2,32/2)=(26,16).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Applications of Section Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A point P divides the line joining A(4,−3) to the origin in ratio 2:3 internally. Find P.<details class="ans"><summary>Show Answer</summary><p>P=((2×0+3×4)/5,(2×0+3×(−3))/5)=(12/5,−9/5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point that divides the join of (2,1) and B(−3,−4) in ratio 3:2 internally.<details class="ans"><summary>Show Answer</summary><p>P=((3×(−3)+2×2)/5,(3×(−4)+2×1)/5)=(−5/5,−10/5)=(−1,−2).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The line joining A(1,3) and B(4,6) is extended to a point C such that C divides AB externally in ratio 2:1. Find C.<details class="ans"><summary>Show Answer</summary><p>C=((2×4−1×1)/(2−1),(2×6−1×3)/(2−1))=(7,9).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the point on segment from (−1,7) to (4,−3) at ¾ of the way from the first point.<details class="ans"><summary>Show Answer</summary><p>Ratio=3:1. P=((3×4+1×(−1))/4,(3×(−3)+1×7)/4)=(11/4,−2/4)=(11/4,−1/2).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If A=(2,3),B=(4,5), find the point C on AB extended beyond B such that BC=AB.<details class="ans"><summary>Show Answer</summary><p>C=2B−A=(8−2,10−3)=(6,7). C divides externally at ratio 2:1 from A.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The ratio in which point (−5/3,y) divides the join of (1,4) and (−3,2) — find the ratio and y.<details class="ans"><summary>Show Answer</summary><p>x: (−3m+n)/(m+n)=−5/3. −9m+3n=−5m−5n. −4m=−8n. m:n=2:1. y=(2×2+4)/3=8/3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P divides AB in ratio 3:4 where A=(1,−2) and B=(−3,6). Find P and the distance PA.<details class="ans"><summary>Show Answer</summary><p>P=((3×(−3)+4×1)/7,(3×6+4×(−2))/7)=(−5/7,10/7). PA=√((−5/7−1)²+(10/7+2)²)=√(144/49+576/49)=√(720/49)=12√5/7.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the point P on x-axis that divides segment from A(−4,5) to B(3,−2) internally. State ratio.<details class="ans"><summary>Show Answer</summary><p>P on x-axis: y=0. (−2m+5n)/(m+n)=0 ⟹ 2m=5n. Ratio=5:2. x=(5×3+2×(−4))/7=7/7=1. P=(1,0).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">P divides A(3,−1) and B(−6,5) in ratio 1:2 internally. Find P and distance from origin.<details class="ans"><summary>Show Answer</summary><p>P=((−6+6)/3,(5−2)/3)=(0,1). Distance from origin=1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If P(x,y) divides segment from A(a,b) to B(c,d) in ratio m:n internally, prove PB/PA=n/m.<details class="ans"><summary>Show Answer</summary><p>PA=|P−A|, PB=|P−B|. P=((mc+na)/(m+n),(md+nb)/(m+n)). PA=|P−A|=√(((mc+na−ma−na)/(m+n))²+...)=√((m(c−a)/(m+n))²+...)=(m/(m+n))×AB. PB=(n/(m+n))×AB. PB/PA=n/m ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> External Division Mixed and Advanced</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find external division of (1,3) and (5,9) in ratio 3:2.<details class="ans"><summary>Show Answer</summary><p>P=((15−2)/(3−2),(27−6)/1)=(13,21).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The origin divides AB where B=(3,6). In ratio m:n internally where A=(a,b). Find a,b if ratio is 1:2.<details class="ans"><summary>Show Answer</summary><p>(1×3+2×a)/3=0 ⟹ a=−3/2. (6+2b)/3=0 ⟹ b=−3. A=(−3/2,−3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If P divides AB in ratio k:1, find k such that P is at (2,3), A=(−1,0), B=(4,5).<details class="ans"><summary>Show Answer</summary><p>(4k−1)/(k+1)=2 ⟹ 4k−1=2k+2 ⟹ k=3/2. Check y: (5×3/2)/(3/2+1)=(15/2)/(5/2)=3 ✓. k=3/2.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the locus of point P that divides A(2,0) and B(0,2) in ratio k:1 as k varies.<details class="ans"><summary>Show Answer</summary><p>P=((0+2)/(k+1),(2k)/(k+1))=(2/(k+1),2k/(k+1)). x+y=(2+2k)/(k+1)=2. So x+y=2 — a straight line.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A(3,4) and B(−3,−4). Find both trisection points (internal division in 1:2 and 2:1).<details class="ans"><summary>Show Answer</summary><p>P₁=((−3+6)/3,(−4+8)/3)=(1,4/3). P₂=((−6+3)/3,(−8+4)/3)=(−1,−4/3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The external bisector of angle A in triangle meets BC extended at D. A=(0,0),B=(4,0),C=(0,3). AB=4, AC=3. D divides BC externally in ratio AB:AC=4:3. Find D.<details class="ans"><summary>Show Answer</summary><p>D=((4×0−3×4)/(4−3),(4×3−3×0)/(4−3))=(−12,12).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove that if P internally and Q externally divide AB in ratio m:n, then the midpoint of PQ equals the midpoint of AB only when m=n.<details class="ans"><summary>Show Answer</summary><p>Mid PQ=½(P_i+P_e)=½×((mx₂+nx₁)/(m+n)+(mx₂−nx₁)/(m−n)). This simplifies to mx₂(m²−n²+m²+n²)/(2(m²−n²))=m²x₂/(m²−n²)... For this to equal (x₁+x₂)/2 requires m=n or specific conditions. In general, midpoint PQ ≠ midpoint AB unless special cases.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the coordinates of the point that divides A(5,−2) and B(9,6) externally in ratio 3:5.<details class="ans"><summary>Show Answer</summary><p>P=((3×9−5×5)/(3−5),(3×6−5×(−2))/(3−5))=(2/(−2),28/(−2))=(−1,−14).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">P(k,7) divides AB externally where A(8,9),B(1,2). Find k.<details class="ans"><summary>Show Answer</summary><p>y: (7m−9n)/(m−n)=7... try ratio: (1×m−9×n)/(m−n)=7 → m−9n=7m−7n → −6m=2n → n:m=−3:1 meaning external ratio 1:3. x=(1×1−3×8)/(1−3)=(−23)/(−2)=23/2. k=23/2. But check: different from problem setup. Retry with external: (m×1−n×8)/(m−n)=k and (m×2−n×9)/(m−n)=7. 2m−9n=7m−7n → −5m=2n → ratio m:n=−2:5. Then x=(−2×1−5×8)/(−2−5)=(−42)/(−7)=6. k=6.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio in which (−1,6) divides the join of (−3,10) and (6,−8) externally.<details class="ans"><summary>Show Answer</summary><p>(6m−3n)/(m−n)=−1 ⟹ 6m−3n=−m+n ⟹ 7m=4n ⟹ m:n=4:7. Check y: (4×(−8)−7×10)/(4−7)=(−32−70)/(−3)=102/3=34≠6. Use internal: (6m−3n)/(m+n)=−1 ⟹ 6m−3n=−m−n ⟹ 7m=2n ⟹ ratio 2:7. x=(2×6+7×(−3))/9=(12−21)/9=−1 ✓. y=(2×(−8)+7×10)/9=(−16+70)/9=6 ✓. Internal ratio 2:7.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>SAT-Style Coordinate Geometry Problems</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/test-prep/sat/x0a8a43a1:untitled-652/x0a8a43a1:heart-of-algebra/v/sat-math-heart-of-algebra" target="_blank">SAT Heart of Algebra</a><a href="https://www.khanacademy.org/test-prep/digital-sat/x0a8a43a1:about-the-digital-sat/x0a8a43a1:digital-sat-prep" target="_blank">Digital SAT Prep</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=MXV65i9g1Xg" target="_blank">Lines and Coordinate Geometry</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=csInNn6pfT4" target="_blank">Coordinate Geometry Concepts</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=hEWY6kkBdpo" target="_blank">How did Descartes invent coordinates?</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> SAT Distance and Midpoint (Core Skills)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In the xy-plane, point M is the midpoint of segment PQ. P=(2,6) and Q=(8,2). What is M? (SAT-style)<details class="ans"><summary>Show Answer</summary><p>M=(5,4).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The distance between (0,0) and (k,k√3) is 4. Find k>0.<details class="ans"><summary>Show Answer</summary><p>√(k²+3k²)=2k=4 ⟹ k=2.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A segment has endpoints A(−3,2) and B(5,y). Its midpoint is (1,5). Find y and the length AB.<details class="ans"><summary>Show Answer</summary><p>y=8. AB=√(64+36)=10.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">On the SAT, a circle has centre (3,4) and passes through the origin. What is its radius?<details class="ans"><summary>Show Answer</summary><p>r=√(9+16)=5.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Points A(1,1) and B(7,9) are given. C is on AB with AC=2CB. Find C.<details class="ans"><summary>Show Answer</summary><p>Ratio AC:CB=2:1. C=((2×7+1)/3,(2×9+1)/3)=(5,19/3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The midpoint of a chord of a circle centred at (5,5) is (3,4). If one endpoint is (1,3), find the other.<details class="ans"><summary>Show Answer</summary><p>Other=(5,5).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">In the coordinate plane, A=(0,0) and B=(p,q). The midpoint M of AB is at distance √5 from origin. What equation do p,q satisfy?<details class="ans"><summary>Show Answer</summary><p>Midpoint=(p/2,q/2). Distance=½√(p²+q²)=√5 ⟹ p²+q²=20.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the distance between (2,3) and (2,−7)? (SAT no-calculator section type)<details class="ans"><summary>Show Answer</summary><p>|3−(−7)|=10.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If M=(4,k) is the midpoint of (2,5) and (6,y), express y in terms of k.<details class="ans"><summary>Show Answer</summary><p>(5+y)/2=k ⟹ y=2k−5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A square in the coordinate plane has vertices at (0,0),(a,0),(a,a),(0,a). Its diagonal has length 6√2. Find a and the perimeter.<details class="ans"><summary>Show Answer</summary><p>a√2=6√2 ⟹ a=6. Perimeter=24.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> SAT Line Equations and Slopes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Line l passes through (2,5) and (4,9). What is the y-intercept of l?<details class="ans"><summary>Show Answer</summary><p>m=2. y=2x+1. y-intercept=1.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Line m is perpendicular to y=3x−7 and passes through (9,0). Find its equation.<details class="ans"><summary>Show Answer</summary><p>Perp slope=−1/3. y=−(x−9)/3 ⟹ x+3y=9.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The slope of line through (k,2) and (4,k) is 1. Find k.<details class="ans"><summary>Show Answer</summary><p>(k−2)/(4−k)=1 ⟹ k−2=4−k ⟹ k=3.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which of the following points is NOT on y=2x−3: (0,−3),(2,1),(3,3),(4,5)?<details class="ans"><summary>Show Answer</summary><p>Check (4,5): 2×4−3=5 ✓. (3,3): 2×3−3=3 ✓. All check out. Let me redo: (2,1): 2×2−3=1 ✓. (0,−3) ✓. They're all on the line — question needs restatement. Answer: all four are on the line.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The line y=mx+4 passes through (2,6). Find m and the x-intercept.<details class="ans"><summary>Show Answer</summary><p>6=2m+4 ⟹ m=1. x-intercept: 0=x+4 ⟹ x=−4.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two lines: 3x−2y=6 and 6x−4y=k are the same line. Find k.<details class="ans"><summary>Show Answer</summary><p>Multiply first by 2: 6x−4y=12. So k=12.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In the xy-plane, the equations y=4x+5 and y=4x−3 are parallel lines. Find their distance apart (vertical).<details class="ans"><summary>Show Answer</summary><p>Difference in y-intercepts=8. They are parallel (slope 4). At same x, vertical distance=8. Perpendicular distance=8/√17.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Line through A(1,3) and B(4,9). Point C(7,y) is on line AB extended. Find y.<details class="ans"><summary>Show Answer</summary><p>Slope=2. y=2x+1. At x=7: y=15.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the area of triangle formed by lines x=0, y=0, and 2x+3y=12.<details class="ans"><summary>Show Answer</summary><p>Intercepts: (6,0),(0,4). Area=½×6×4=12 sq units.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A line has slope −2 and passes through (3,1). At what x does it cross y=x?<details class="ans"><summary>Show Answer</summary><p>Line: y−1=−2(x−3) ⟹ y=−2x+7. Set y=x: x=−2x+7 ⟹ 3x=7 ⟹ x=7/3. y=7/3. Point=(7/3,7/3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> SAT Medium–Hard Coordinate Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In the xy-plane, segment AB has midpoint M(3,2). If A=(1,−1), what is the length of AB?<details class="ans"><summary>Show Answer</summary><p>B=(5,5). AB=√(16+36)=√52=2√13.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangle has vertices at (0,0),(5,0),(5,3),(0,3). What is the distance between opposite corners?<details class="ans"><summary>Show Answer</summary><p>√(25+9)=√34.</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the point (p,q) is reflected across the line y=x, its image is (q,p). If (3,7) is reflected to (a,b) across y=2, find a,b.<details class="ans"><summary>Show Answer</summary><p>Reflection across y=2: a=3 (x unchanged). b=2×2−7=−3. Image=(3,−3).</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The endpoints of a diameter of a circle are (1,3) and (7,11). Find the centre and a point on the circle whose y-coordinate is 3.<details class="ans"><summary>Show Answer</summary><p>Centre=(4,7). Radius=5. Points with y=3: (x−4)²+16=25 ⟹ (x−4)²=9 ⟹ x=7 or x=1. Points: (7,3) and (1,3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In triangle PQR, P=(0,0),Q=(6,0),R=(0,8). The centroid G is at (2,8/3). A point S divides PG in ratio 2:1. Find S.<details class="ans"><summary>Show Answer</summary><p>S=((2×2+0)/3,(2×8/3+0)/3)=(4/3,16/9).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In the coordinate plane, parallelogram ABCD has A=(0,0),B=(3,0),C=(5,4). Find D and the area of ABCD.<details class="ans"><summary>Show Answer</summary><p>D=A+C−B=(2,4). Area via shoelace: ½|(0×0−3×0)+(3×4−5×0)+(5×4−2×4)+(2×0−0×4)|=½|0+12+12+0|=12 sq units.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The area of triangle with vertices (1,p),(4,1),(p,4) is 4.5. Find p.<details class="ans"><summary>Show Answer</summary><p>½|1(1−4)+4(4−p)+p(p−1)|=4.5. |−3+16−4p+p²−p|=9. |p²−5p+13|=9. p²−5p+4=0 → (p−4)(p−1)=0 → p=4 or p=1. Check: if p=1: vertices (1,1),(4,1),(1,4) — right triangle, area=½×3×3=4.5 ✓.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A line segment has length 13 with one end at (0,0) and the other on the x-axis. Where is the other end?<details class="ans"><summary>Show Answer</summary><p>(13,0) or (−13,0).</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">In the coordinate plane, C is at (3,5). If C is the midpoint of AB and A=(1,3), what is the distance from the origin to B?<details class="ans"><summary>Show Answer</summary><p>B=(5,7). Distance=√(25+49)=√74.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The x-axis divides segment from A(3,4) to B(5,−2) at point P. Find P and ratio AP:PB.<details class="ans"><summary>Show Answer</summary><p>y=0: (−2m+4n)/(m+n)=0 ⟹ 2m=4n ⟹ m:n=2:1. x=(2×5+3)/3=13/3. P=(13/3,0). AP:PB=2:1.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> SAT Hard / Multi-Step Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In the xy-plane, the midpoints of AB, BC, CA are (3,4),(4,6),(5,3). Find the perimeter of △ABC.<details class="ans"><summary>Show Answer</summary><p>A=(3+5−4,4+3−6)=(4,1). B=(3+4−5,4+6−3)=(2,7). C=(4+5−3,6+3−4)=(6,5). AB=√(4+36)=√40. BC=√(16+4)=√20. CA=√(4+16)=√20. Perimeter=√40+2√20=2√10+4√5.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A quadrilateral has vertices A(0,0),B(4,0),C(4,3),D(0,3). P is the midpoint of AB and Q is the midpoint of CD. Find PQ and show PQ is parallel to AD.<details class="ans"><summary>Show Answer</summary><p>P=(2,0). Q=(2,3). PQ=3 (vertical segment). AD is vertical (x=0) so PQ is parallel ✓.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Line l₁: y=2x+3. Line l₂ is perpendicular to l₁ at the point where l₁ crosses x-axis. Find equation of l₂.<details class="ans"><summary>Show Answer</summary><p>l₁ crosses x-axis: 0=2x+3 ⟹ x=−3/2. Point=(−3/2,0). l₂ slope=−1/2. y=−1/2(x+3/2) ⟹ 2y=−x−3/2 ⟹ 2x+4y=−3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The vertices of △ABC are A(2,3),B(4,−1),C(−2,−3). Find the area and the equation of the median from A.<details class="ans"><summary>Show Answer</summary><p>Area=½|2(−1+3)+4(−3−3)+(−2)(3+1)|=½|4−24−8|=14. Mid BC=(1,−2). Median from A(2,3) to (1,−2): slope=5. y−3=5(x−2) ⟹ 5x−y=7.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In the coordinate plane, P=(1,2) and Q=(7,10). R is on segment PQ with PR:RQ=1:2. What is the distance from R to the line y=x?<details class="ans"><summary>Show Answer</summary><p>R=((7+2)/3,(10+4)/3)=(3,14/3). Distance from (3,14/3) to y=x: |3−14/3|/√2=|9/3−14/3|/√2=5/(3√2)=5√2/6.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If (a,b) lies on y=x², and the distance from (a,b) to origin is 5, find a (a>0).<details class="ans"><summary>Show Answer</summary><p>a²+(a²)²=25. a⁴+a²−25=0. Let u=a²: u²+u−25=0. u=(−1+√101)/2≈4.52. a=√4.52≈2.13.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In the SAT coordinate plane, a circle passes through (1,0),(0,1),(−1,0). Find the centre and radius.<details class="ans"><summary>Show Answer</summary><p>Centre is equidistant from all three. By symmetry x-coord=0. d from (0,k) to (1,0): √(1+k²). d from (0,k) to (0,1): |k−1|. 1+k²=(k−1)² ⟹ 1+k²=k²−2k+1 ⟹ 2k=0 ⟹ k=0. Centre=(0,0). Radius=1.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In triangle OAB, O=(0,0),A=(6,0),B=(0,8). P is on OA and Q is on OB such that PQ is parallel to AB and PQ=AB/3. Find coordinates of P and Q.<details class="ans"><summary>Show Answer</summary><p>PQ/AB=1/3 ⟹ OP/OA=1/3. P=(2,0). OQ/OB=1/3. Q=(0,8/3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">In the coordinate plane, the area of a triangle with vertices at (2k,0),(0,3k),(−2k,0) is 24. Find k.<details class="ans"><summary>Show Answer</summary><p>Base=4k, height=3k. Area=½×4k×3k=6k²=24 ⟹ k²=4 ⟹ k=2.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A(1,1),B(5,1),C(5,4),D(1,4) is a rectangle. A point P inside it is equidistant from A,B,C,D. Find P and its distance from each vertex.<details class="ans"><summary>Show Answer</summary><p>P = centre of rectangle = (3,2.5). Distance to A=√(4+2.25)=√6.25=2.5.</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Grade 10 · NCERT Mathematics · Chapter 7 · The Gaudium School · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 1 – Chemical Reactions Practice</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚗️ Chapter 1 – Chemical Reactions and Equations</h1>
+  <p>Grade 10 · NCERT Science · The Gaudium School · IB MYP · 6 Topics · 144 Questions</p>
+</header>
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Identifying Chemical Reactions</a></li>
+    <li><a href="#t2">Balancing Equations</a></li>
+    <li><a href="#t3">Types of Reactions</a></li>
+    <li><a href="#t4">Displacement Reactions</a></li>
+    <li><a href="#t5">Oxidation &amp; Reduction</a></li>
+    <li><a href="#t6">Corrosion &amp; Rancidity</a></li>
+  </ol>
+</nav>
+
+<!-- T1 -->
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Identifying Chemical Reactions</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/science/chemistry/chemical-reactions-stoichiometry/chemical-reactions/v/evidence-of-chemical-change" target="_blank">Evidence of Chemical Change</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=TStjgUmL1RQ" target="_blank">Chemical Reactions: CrashCourse Chemistry</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=d9P6J1a9TAM" target="_blank">What Is a Chemical Reaction?</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span><a href="https://www.youtube.com/watch?v=Rdg1xCVLkU8" target="_blank">Chemistry in Everyday Life</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Easy – Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State five signs that indicate a chemical reaction has occurred.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Colour change, gas evolution (fizzing/bubbling), precipitate formation, temperature change, formation of a new substance with different properties.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is dissolving sugar in water a physical or chemical change? Explain.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Physical change — no new substance is formed; the sugar can be recovered by evaporating the water. Molecular structure of sugar is unchanged.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is burning of magnesium a chemical or physical change? State one sign.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Chemical change — a new substance (MgO) is formed. Sign: brilliant white light and heat produced.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a precipitate?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>An insoluble solid formed when two solutions react, separating out of solution.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What gas is produced when zinc reacts with dilute hydrochloric acid?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Hydrogen gas (H₂).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Distinguish between an exothermic and an endothermic reaction.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Exothermic: releases heat — temperature rises (e.g., combustion). Endothermic: absorbs heat — temperature falls (e.g., thermal decomposition of CaCO₃).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a reactant and what is a product in a chemical equation?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Reactants: substances present before the reaction (left of arrow). Products: new substances formed (right of arrow).</p></details></div></div>
+      <div class="q-item"><div class="q-text">State one difference between a physical and chemical change.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Physical change: no new substance formed, usually reversible. Chemical change: new substances with different properties formed, usually irreversible.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Medium – Apply &amp; Explain</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why temperature change alone is not sufficient proof of a chemical reaction.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Physical processes also change temperature — dissolving ammonium nitrate in water is endothermic but no new substance forms. Temperature change must be combined with other evidence to confirm a chemical reaction.</p></details></div></div>
+      <div class="q-item"><div class="q-text">When lead nitrate solution is added to potassium iodide solution, a bright yellow precipitate forms. Identify the type of change and explain.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Chemical change (double displacement/precipitation). Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃. Lead iodide (yellow, insoluble) is a new substance with different properties.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Describe a test to confirm that the gas produced in a reaction is hydrogen.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Collect the gas; bring a lit splint to the test tube mouth. Hydrogen burns with a squeaky "pop" sound.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Distinguish between reversible and irreversible chemical reactions with examples.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Irreversible: combustion of wood — ash cannot become wood. Reversible: blue CuSO₄·5H₂O heated → white CuSO₄ + H₂O; adding water reverses it.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain how colour change when sulphur burns indicates a chemical reaction.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Yellow sulphur burns to produce SO₂ (colourless, pungent gas). New substance with entirely different properties forms — evidence of chemical change.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why does mass remain constant in a chemical reaction (closed container)?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Law of conservation of mass: atoms are neither created nor destroyed, only rearranged. Total atoms before and after are equal, so mass is conserved.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A student burns iron wool in oxygen and finds the product has greater mass than iron alone. Explain.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">4Fe + 3O₂ → 2Fe₂O₃. The product includes iron plus the mass of oxygen absorbed from air. Total mass (Fe + O₂) is conserved; product mass exceeds original iron mass because oxygen atoms are added.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why an open container gives different mass results than a closed container when magnesium burns.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Open: Mg + O₂ from air → MgO; product appears heavier than original Mg alone (oxygen added). Closed: total mass of all substances (Mg + O₂) remains the same — conservation of mass is demonstrable only in the closed system.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Hard – Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Critically analyse why rusting of iron is a chemical change even though it looks like a slow surface change.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Rusting produces Fe₂O₃·nH₂O — a new substance entirely different from iron in properties (brittle, reddish-brown, non-conductive). Requires O₂ and H₂O; is exothermic and irreversible. These confirm chemical change, not merely surface alteration.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate the argument: "All physical changes are reversible."<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Not always true. Cutting paper and breaking glass are physical changes but are not easily reversible. Reversibility is not the defining criterion — the correct criterion is whether a new substance is formed (chemical) or not (physical).</p></details></div></div>
+      <div class="q-item"><div class="q-text">A student argues cooking an egg is physical because "it just changes shape." Evaluate.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Incorrect. Heat denatures proteins — irreversible structural change at the molecular level; new texture and properties emerge; the egg cannot be uncooked. New chemical bonds form in the protein network — this is a chemical change.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain how Lavoisier's experiments with mercury oxide established the Law of Conservation of Mass.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Lavoisier heated HgO in a sealed flask: 2HgO → 2Hg + O₂. He measured mass before and after in the sealed system and found it unchanged. He showed combustion required oxygen. His quantitative experiments (1774) established matter is neither created nor destroyed in reactions.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse a situation where colour change does NOT indicate a chemical reaction, and one where it DOES.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Does not: mixing red and blue food colouring → purple — physical blending; no new molecule formed; separable by chromatography. Does indicate: CuSO₄ solution turning colourless when iron is added — Cu²⁺ ions replaced by Fe²⁺ (new substance, new ionic environment). Key: check if a new substance with different chemical properties is formed.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss how calorimetry can quantify energy changes in chemical reactions and relate this to bond breaking and forming.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Calorimetry measures q = mcΔT. Energy is absorbed to break bonds in reactants and released when new bonds form in products. Net ΔH = bond breaking energy − bond forming energy. Exothermic if products have stronger bonds. Calorimetry provides experimental validation of theoretical bond energy calculations.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate how activation energy explains why some exothermic reactions need a spark to start.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Activation energy (Ea) is the minimum energy needed to break reactant bonds and initiate the reaction. Even in exothermic reactions, reactants must first overcome Ea. A spark provides this initial energy; the heat released then sustains the reaction (especially combustion). Catalysts lower Ea, allowing reactions without external energy input.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A student claims photosynthesis is not a chemical reaction because "plants don't use chemicals." Critically refute this.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Incorrect. Plants use CO₂ and H₂O as chemical reactants; light drives the reaction; glucose and O₂ are produced — entirely new substances. 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ is a textbook chemical equation. The student confuses everyday meaning of "chemical" with the scientific meaning — all matter is chemical.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- T2 -->
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Balancing Equations</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/science/chemistry/chemical-reactions-stoichiometry/balancing-chemical-equations/v/balancing-chemical-equations-1" target="_blank">Balancing Chemical Equations</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=SjQG3rKSZUQ" target="_blank">Stoichiometry – CrashCourse Chemistry</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=d9P6J1a9TAM" target="_blank">Equations and Reactions Explained</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span><a href="https://www.youtube.com/watch?v=Rdg1xCVLkU8" target="_blank">Conservation of Mass in Chemistry</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Easy – Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the law that requires chemical equations to be balanced.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Law of Conservation of Mass — atoms are neither created nor destroyed; equal numbers of each type on both sides.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the difference between a coefficient and a subscript in a chemical equation?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Coefficient: number before a formula (e.g., 2H₂) — number of molecules. Subscript: number within a formula (e.g., H₂O) — atoms per molecule. Only coefficients are changed when balancing.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: H₂ + O₂ → H₂O<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">2H₂ + O₂ → 2H₂O</p></details></div></div>
+      <div class="q-item"><div class="q-text">What do the state symbols (s), (l), (g), and (aq) mean?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">(s) solid; (l) liquid; (g) gas; (aq) aqueous — dissolved in water.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: Fe + O₂ → Fe₂O₃<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">4Fe + 3O₂ → 2Fe₂O₃</p></details></div></div>
+      <div class="q-item"><div class="q-text">What does the arrow (→) represent in a chemical equation?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">"Yields" or "produces" — direction of reaction from reactants to products.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: Mg + HCl → MgCl₂ + H₂<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Mg + 2HCl → MgCl₂ + H₂</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why must subscripts NOT be changed when balancing equations?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Changing subscripts would create a different compound (e.g., H₂O → H₃O changes water to hydronium). Only coefficients adjust the number of formula units.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Medium – Apply &amp; Explain</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Balance and classify: CaCO₃ → CaO + CO₂<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Already balanced (1:1:1). Classification: thermal decomposition. Ca=1, C=1, O=3 on each side. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: Al + CuSO₄ → Al₂(SO₄)₃ + Cu<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu. Check: 2Al, 3Cu, 3SO₄ each side. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: CH₄ + O₂ → CO₂ + H₂O<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">CH₄ + 2O₂ → CO₂ + 2H₂O. C=1, H=4, O=4 each side. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: Na + H₂O → NaOH + H₂<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">2Na + 2H₂O → 2NaOH + H₂. Na=2, H=4, O=2 each side. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write and balance the equation for complete combustion of ethanol (C₂H₅OH).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. C=2, H=6, O=7 each side. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why ionic equations are sometimes preferred over full molecular equations.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Ionic equations show only the species that actually change (spectator ions cancelled), revealing the actual chemistry — e.g., any acid-base neutralisation simplifies to H⁺ + OH⁻ → H₂O. More general and informative.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: Fe₂O₃ + CO → Fe + CO₂ (blast furnace).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Fe₂O₃ + 3CO → 2Fe + 3CO₂. Fe=2, O=6, C=3 each side. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance: N₂ + H₂ → NH₃ (Haber process).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">N₂ + 3H₂ → 2NH₃. N=2, H=6 each side. ✓</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Hard – Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain how the mole concept connects balanced equations to actual masses of reactants and products, using 2H₂ + O₂ → 2H₂O as an example.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Coefficients give mole ratios: 2 mol H₂ + 1 mol O₂ → 2 mol H₂O. Using molar masses: 4 g H₂ + 32 g O₂ → 36 g H₂O. This allows calculation of exact masses needed or produced — the basis of stoichiometry.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A student balanced N₂ + H₂ → NH₃ as N₂ + H₃ → NH₃. Identify and correct the error.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Error: changed subscript H₂ to H₃ — not a real formula for hydrogen gas. Only coefficients may be changed. Correct: N₂ + 3H₂ → 2NH₃. N=2, H=6 both sides. ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Derive the mass of iron produced from 160 g of Fe₂O₃ using Fe₂O₃ + 3CO → 2Fe + 3CO₂.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">M(Fe₂O₃) = 160 g/mol → 1 mol Fe₂O₃. Ratio 1:2, so 2 mol Fe = 2 × 56 = 112 g Fe produced.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain the concept of limiting reagent and apply it: 4 g H₂ and 32 g O₂ in 2H₂ + O₂ → 2H₂O.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Limiting reagent: reactant completely consumed first. 4 g H₂ = 2 mol; 32 g O₂ = 1 mol. Required ratio H₂:O₂ = 2:1; available ratio = 2:1 — both exactly consumed. Neither is limiting in this case; 36 g H₂O produced.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain the difference between theoretical yield and actual yield, and what causes the gap.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Theoretical yield: maximum mass of product from stoichiometry (100% conversion assumed). Actual yield: mass actually collected. Actual &lt; theoretical due to side reactions, incomplete reaction, product lost during purification, impure reactants. % yield = (actual/theoretical) × 100%.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Balance combustion of octane (C₈H₁₈) and calculate CO₂ from burning 1 L of petrol (density 0.74 g/mL, assume pure octane).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O. Mass of 1 L = 740 g; M(C₈H₁₈)=114 g/mol → 6.49 mol. Each mol C₈H₁₈ → 8 mol CO₂. CO₂ = 6.49 × 8 × 44 ≈ 2,284 g ≈ 2.3 kg CO₂ per litre of petrol.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate why balanced equations are described as "models" rather than exact descriptions at the molecular level.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Balanced equations show overall reactants/products but not: reaction mechanism, intermediates, transition states, rate, conditions, side reactions, or energy landscape. They are simplified macroscopic models — powerful for quantitative calculations but unable to represent molecular dynamics, kinetics, or mechanistic pathways.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A mixture of 5 g H₂ and 40 g O₂ reacts to form water. Calculate the mass of water formed and identify which reactant is in excess.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">5 g H₂ = 2.5 mol; 40 g O₂ = 1.25 mol. Required ratio H₂:O₂ = 2:1 → 2.5 mol H₂ needs 1.25 mol O₂. Both exactly consumed (2.5:1.25 = 2:1). Water = 2.5 mol × 18 = 45 g. Neither is in excess — stoichiometric mixture.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- T3 -->
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Types of Reactions</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/science/chemistry/chemical-reactions-stoichiometry/types-of-chemical-reactions/v/types-of-chemical-reactions" target="_blank">Types of Chemical Reactions</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=TStjgUmL1RQ" target="_blank">Chemical Reactions: CrashCourse Chemistry #11</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=d9P6J1a9TAM" target="_blank">Chemical Reactions in Everyday Life</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span><a href="https://www.youtube.com/watch?v=Rdg1xCVLkU8" target="_blank">Reactions Around Us</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Easy – Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define a combination (synthesis) reaction and give an example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Two or more substances combine into one product (A + B → AB). Example: 2Mg + O₂ → 2MgO.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Define a decomposition reaction and give an example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">One compound breaks into two or more simpler substances (AB → A + B). Example: 2H₂O₂ → 2H₂O + O₂.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a thermal decomposition reaction? Give one NCERT example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Decomposition caused by heating. CaCO₃ → CaO + CO₂ (heating limestone).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a photolytic (photochemical) decomposition? Give an example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Decomposition caused by light. 2AgCl → 2Ag + Cl₂ (silver chloride in sunlight).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is an electrolytic decomposition? Give an example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Decomposition by passing electricity. 2H₂O → 2H₂ + O₂ (electrolysis of water).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify: 2KClO₃ → 2KCl + 3O₂. State the type and energy involved.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Thermal decomposition (requires heat, MnO₂ catalyst). Endothermic.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is burning a candle a combination or decomposition reaction?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Combination (combustion): wax hydrocarbons + O₂ → CO₂ + H₂O.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a double displacement (metathesis) reaction? Give an example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Two ionic compounds exchange ions (AB + CD → AD + CB). Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Medium – Apply &amp; Explain</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why all combustion reactions are exothermic combination reactions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Combustion is the rapid reaction of fuel + oxygen (combining reactants to form products). Products (CO₂, H₂O) have stronger bonds than reactants — energy released as heat and light (exothermic).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain the industrial importance of thermal decomposition of calcium carbonate.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">CaCO₃ → CaO + CO₂ produces quicklime (CaO) — essential for cement, mortar, steel desulphurisation, water treatment, and paper. India is a major producer; limestone quarrying and lime kilns are major industries.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify and write a balanced equation for barium chloride + sodium sulphate, identifying the precipitate.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Double displacement (precipitation): BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s)↓ + 2NaCl(aq). Precipitate: barium sulphate (white).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Distinguish between thermal and photolytic decomposition with two examples each.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Thermal: (1) CaCO₃ → CaO + CO₂; (2) 2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂. Photolytic: (1) 2AgCl → 2Ag + Cl₂; (2) 2AgBr → 2Ag + Br₂.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What type of reaction is neutralisation? Write a balanced equation and explain what is formed.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Double displacement (or ionic: H⁺ + OH⁻ → H₂O). HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l). A salt and water are formed; acid and base properties neutralised.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why AgBr is used in photographic film, referring to its decomposition type.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">2AgBr → 2Ag + Br₂ (photolytic). Areas with more light produce more silver (darker image). Differential decomposition creates the photographic image.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Classify and explain: Fe₂O₃ + 2Al → Al₂O₃ + 2Fe (thermite reaction).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Single displacement and redox: Al (more reactive than Fe) displaces iron. Extremely exothermic (~2500°C). Used for welding railway tracks. Al oxidised (+3); Fe reduced (0).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why decomposition reactions are generally endothermic.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Breaking bonds in the compound requires energy input; fewer new bonds form in products. Net energy absorbed (endothermic). Photolytic decomposition absorbs light energy; still endothermic overall.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Hard – Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Analyse why classifying reactions into combination/decomposition/displacement/redox is an oversimplification, using the thermite reaction as an example.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Thermite is simultaneously: single displacement (Al displaces Fe), redox (Al oxidised; Fe reduced), and exothermic. Most reactions fit multiple categories. Classification is a pedagogical tool, not an absolute taxonomy — real reactions are complex multi-step processes.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate the industrial and environmental significance of electrolysis of water as a clean energy carrier.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">2H₂O → 2H₂ + O₂. Powered by renewables = "green hydrogen" — zero-carbon fuel. Burning H₂ produces only water. Challenges: energy-intensive (~50 kWh/kg H₂); hydrogen storage requires high pressure; fuel cell costs falling. Green hydrogen is a key decarbonisation strategy for industry.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss how decomposition of ozone (O₃ → O₂ + O•) relates to CFCs and ozone layer depletion.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">CFCs photolytically decompose in stratosphere, releasing Cl•. Cl• catalyses O₃ decomposition: Cl• + O₃ → ClO• + O₂; ClO• + O• → Cl• + O₂. One Cl• destroys up to 100,000 O₃ molecules. Montreal Protocol (1987) banned CFCs; ozone layer slowly recovering.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically assess the claim: "Combination reactions are always exothermic."<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">False. N₂ + O₂ → 2NO is endothermic (ΔH = +180 kJ/mol) — occurs during lightning. Bond enthalpy determines sign of ΔH, not reaction type. Most combinations are exothermic but not all.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain how photosynthesis and respiration represent inverse reactions cycling carbon in the biosphere.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (endothermic, synthesis, stores solar energy). Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O (exothermic, decomposition/oxidation, releases ATP). Thermodynamic inverses; together cycle carbon between CO₂ and organic molecules.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse how the Haber process (ammonia synthesis) and blast furnace (iron extraction) illustrate different reaction types requiring different industrial conditions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Haber: N₂ + 3H₂ ⇌ 2NH₃ — reversible combination; equilibrium must be managed (200 atm, 450°C, Fe catalyst). Blast furnace: Fe₂O₃ + 3CO → 2Fe + 3CO₂ — displacement/reduction; irreversible at high temperature (1600°C). Reaction type informs choice of conditions.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate how drug metabolism in the liver involves the same reaction types studied in NCERT Ch 1.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Phase I (decomposition/oxidation by cytochrome P450): drugs broken down into more polar metabolites. Phase II (combination/conjugation with glucuronic acid/glutathione): make metabolites water-soluble for excretion. Same fundamental reaction types — applied biochemically. Understanding them predicts drug interactions and dosing.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compare three experiments: heating CuCO₃; mixing CuSO₄ + NaOH; burning copper in air. Classify each, write balanced equations, compare oxygen's role.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">(1) CuCO₃ → CuO + CO₂: thermal decomposition; no O₂ involved — oxygen released from within compound. (2) CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄: double displacement; no O₂ involved. (3) 2Cu + O₂ → 2CuO: combination/oxidation; O₂ is a reactant. O₂ is produced in (1), absent in (2), and consumed in (3) — showing oxygen plays very different roles depending on reaction type.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- T4 -->
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Displacement Reactions</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:net-ionic-equations/x2eef969c74e0d802:single-replacement-reactions/v/single-replacement-reactions" target="_blank">Single Displacement Reactions</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=TStjgUmL1RQ" target="_blank">Redox Reactions: CrashCourse Chemistry</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=d9P6J1a9TAM" target="_blank">Reactivity Series Explained</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span><a href="https://www.youtube.com/watch?v=Rdg1xCVLkU8" target="_blank">Metals &amp; Their Reactions</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Easy – Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define a single displacement reaction.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">A more reactive element displaces a less reactive element from its compound: A + BC → AC + B.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What happens when zinc is added to copper sulphate solution? Write the equation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Zn + CuSO₄ → ZnSO₄ + Cu. Blue colour fades; reddish copper deposits on zinc.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why can copper NOT displace zinc from zinc sulphate solution?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Copper is less reactive than zinc (lower in reactivity series) — cannot displace a more reactive metal.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the reactivity series from most to least reactive (K to Au, include H).<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">K > Na > Ca > Mg > Al > Zn > Fe > Pb > (H) > Cu > Ag > Au</p></details></div></div>
+      <div class="q-item"><div class="q-text">What observation confirms displacement when iron nails are placed in copper sulphate solution?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Iron nail becomes coated with reddish-brown copper; blue colour of CuSO₄ solution fades as Cu²⁺ is displaced.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the equation for displacement of hydrogen by sodium from water.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">2Na + 2H₂O → 2NaOH + H₂↑</p></details></div></div>
+      <div class="q-item"><div class="q-text">Can silver displace hydrogen from dilute HCl? Explain.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">No — silver is below hydrogen in the reactivity series and is less reactive than hydrogen.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What type of reaction is thermite: Fe₂O₃ + 2Al → Al₂O₃ + 2Fe?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Single displacement — aluminium (more reactive) displaces iron from iron oxide. Also a redox reaction.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Medium – Apply &amp; Explain</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Will magnesium displace aluminium from aluminium chloride solution? Explain and write the equation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Yes — Mg is above Al in reactivity series. 3Mg + 2AlCl₃ → 3MgCl₂ + 2Al. Mg has greater tendency to lose electrons, reducing Al³⁺ to Al metal.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain at the ionic level why iron displaces copper from CuSO₄.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Ionic: Fe(s) + Cu²⁺(aq) → Fe²⁺(aq) + Cu(s). Fe donates 2 electrons to Cu²⁺, reducing it to copper metal; Fe is oxidised to Fe²⁺.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Describe how displacement reactions are used to extract copper from CuSO₄ solution using scrap iron.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Fe + CuSO₄ → FeSO₄ + Cu. Scrap iron added to copper sulphate (from ore leaching); copper precipitates out and is collected. Low-energy, low-cost hydrometallurgy method.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why hydrogen is placed in the reactivity series between lead and copper even though it is not a metal.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Hydrogen's position reflects which metals can displace it from acids (above H) and which cannot (below H: Cu, Ag, Au). It serves as a reference point for predicting acid reactions of metals.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A student adds copper to AgNO₃ solution and observes silvery crystals. Write the equation and explain.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag. Copper (above Ag in reactivity) displaces silver. Silver crystals deposit; solution turns blue (Cu²⁺ ions).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why gold and platinum are found as native metals while iron is found as ore.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Gold/platinum: lowest reactivity — do not combine with O₂, water, or acids; found as free metals. Iron: highly reactive — readily combines with O₂ and H₂O to form oxides/carbonates — always found as compounds in Earth's crust.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Predict: will aluminium displace iron from FeCl₃ solution? Write the balanced equation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Yes — Al is above Fe in reactivity series. 2Al + 2FeCl₃ → 2AlCl₃ + 2Fe (if Fe³⁺); or Al + FeCl₂ → AlCl₂ + Fe (if Fe²⁺). Common balanced form: 2Al + 3FeCl₂ → 2AlCl₃ + 3Fe.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain the corrosion of an iron nail in terms of displacement principles.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Iron (high reactivity) is oxidised by O₂ and H₂O: Fe effectively "displaces" H from water in an electrochemical process. Unlike noble metals (Cu, Au) below Fe in reactivity series, iron readily loses electrons — driving corrosion. Reactivity series position directly predicts corrosion susceptibility.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Hard – Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why the reactivity series is ultimately based on reduction potential (electrode potential) values.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Standard electrode potential (E°) measures tendency to lose/gain electrons. More negative E° = more reactive. K: E° = −2.93 V; Au: E° = +1.52 V. The reactivity series is an empirical ranking consistent with electrochemical measurements.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically analyse why aluminium appears unreactive in everyday life despite being high in the reactivity series.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Al reacts rapidly with O₂ to form a thin, adherent, impervious Al₂O₃ passivation layer. This prevents further oxidation kinetically even though Al is thermodynamically very reactive. Unlike iron's flaky rust, Al₂O₃ is self-sealing.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss galvanic corrosion and why connecting iron pipes to copper pipes in plumbing accelerates iron corrosion.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Two different metals in electrical contact in an electrolyte form a galvanic cell. Fe (more reactive, higher in series) = anode (oxidised): Fe → Fe²⁺ + 2e⁻. Copper = cathode (protected). Current flows, accelerating iron dissolution. Solution: dielectric fittings or sacrificial zinc anodes.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate the cementation process for copper extraction as an industrial application of displacement reactions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Acid mine drainage (dilute CuSO₄) flows over scrap iron: Fe + CuSO₄ → FeSO₄ + Cu. Advantages: no smelting; works on dilute solutions; uses waste iron. Limitations: impure product; iron-rich acidic effluent (environmental hazard). Used for tailings pond remediation.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse the thermite reaction in terms of: reactivity series position, oxidation states, energy change, and industrial application.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Fe₂O₃ + 2Al → Al₂O₃ + 2Fe. Reactivity: Al above Fe (displaces Fe). Oxidation states: Al: 0→+3 (oxidised); Fe: +3→0 (reduced). ΔH = −852 kJ/mol; reaches ~2500°C. Application: welding railway tracks in situ — no external power needed.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why the reactivity series cannot reliably predict reactions at very high temperatures or in non-aqueous systems.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Reactivity series is based on aqueous chemistry at ~25°C. At high temperatures: thermodynamics change (entropy dominates); carbon reduces many metal oxides at 1600°C even if below them in aqueous series. Non-aqueous systems have different solvation and stability — predictions from aqueous series may not apply.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss how displacement reactions in biology (competitive inhibition) parallel chemical displacement concepts.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">In chemistry: more reactive substance displaces less reactive one. In competitive inhibition: inhibitor with higher affinity for enzyme active site displaces normal substrate. Stronger binding (lower Kᵢ) = more complete displacement. The principle — one entity displacing another due to greater affinity — applies from chemistry to biochemistry.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate whether a universal reactivity series can be constructed for non-metals analogous to metals.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Yes, partially. Halogens have an analogous displacement series: F₂ > Cl₂ > Br₂ > I₂ (based on electronegativity and reduction potential). Cl₂ + 2KBr → 2KCl + Br₂. Used industrially to extract bromine from seawater. Other non-metals are harder to rank consistently due to greater variety of bonding and reaction types — a universal non-metal series is impractical.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- T5 -->
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Oxidation &amp; Reduction</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:redox-reactions-and-electrochemistry/x2eef969c74e0d802:oxidation-states/v/oxidation-states" target="_blank">Oxidation States &amp; Redox</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s" target="_blank">Redox Reactions: CrashCourse Chemistry</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=d9P6J1a9TAM" target="_blank">OIL RIG Explained</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span><a href="https://www.youtube.com/watch?v=Rdg1xCVLkU8" target="_blank">Rusting &amp; Redox in Nature</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Easy – Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What does "OIL RIG" stand for?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">OIL RIG: Oxidation Is Loss (of electrons); Reduction Is Gain (of electrons).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Define oxidation in terms of (a) oxygen, (b) hydrogen, (c) electrons.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">(a) Gain of oxygen. (b) Loss of hydrogen. (c) Loss of electrons.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Define reduction in terms of (a) oxygen, (b) hydrogen, (c) electrons.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">(a) Loss of oxygen. (b) Gain of hydrogen. (c) Gain of electrons.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In CuO + H₂ → Cu + H₂O — which substance is oxidised and which is reduced?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">H₂ is oxidised (gains oxygen → H₂O). CuO is reduced (loses oxygen → Cu).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a redox reaction?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">A reaction where both oxidation and reduction occur simultaneously — one species loses electrons and another gains them.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In Zn + CuSO₄ → ZnSO₄ + Cu, which element is oxidised?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Zinc — Zn → Zn²⁺ + 2e⁻ (loses electrons; oxidised).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is an oxidising agent? Give one example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Oxidises another substance while itself being reduced. Example: O₂, CuO, KMnO₄.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is a reducing agent? Give one example.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Reduces another substance while itself being oxidised. Example: H₂, carbon, zinc, iron.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Medium – Apply &amp; Explain</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In Fe₂O₃ + 3CO → 2Fe + 3CO₂: identify oxidising and reducing agents with justification.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">CO is oxidised (C: +2→+4 in CO₂) → CO is the reducing agent. Fe₂O₃ is reduced (Fe: +3→0) → Fe₂O₃ is the oxidising agent. Used in blast furnace to extract iron.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Assign oxidation states to each element in K₂Cr₂O₇.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">K = +1; O = −2; Let Cr = x: 2(+1) + 2x + 7(−2) = 0 → 2 + 2x − 14 = 0 → x = +6. Cr = +6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why combustion is always a redox reaction.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Fuel carbon is oxidised (e.g., C: 0→+4 in CO₂). O₂ is reduced (0→−2 in CO₂/H₂O). Electron transfer occurs, qualifying combustion as a redox reaction.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In H₂ + Cl₂ → 2HCl, identify what is oxidised and reduced.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">H: 0→+1 (oxidised; H₂ is reducing agent). Cl: 0→−1 (reduced; Cl₂ is oxidising agent).</p></details></div></div>
+      <div class="q-item"><div class="q-text">How does oxidation state help in balancing redox equations?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Oxidation states identify which atoms change. Total increase in oxidation state (electrons lost) must equal total decrease (electrons gained) — conservation of electrons provides the constraint to balance the equation systematically.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why bleaching powder acts as an oxidising agent to remove stains.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Ca(OCl)Cl releases HOCl in water, which releases nascent oxygen [O]. This oxidises coloured organic molecules, breaking their conjugated double-bond systems (chromophores). Oxidised products are colourless — stain removed.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain cellular respiration (C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O) as a redox reaction.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Glucose C is oxidised (average C oxidation state rises toward +4 in CO₂); glucose is the reducing agent. O₂ is reduced (0→−2 in H₂O); O₂ is the oxidising agent. Electrons transferred via electron transport chain, driving ATP synthesis.</p></details></div></div>
+      <div class="q-item"><div class="q-text">In electrolysis of water, which electrode has oxidation and which has reduction?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Anode (+): 2H₂O → O₂ + 4H⁺ + 4e⁻ (oxidation). Cathode (−): 4H⁺ + 4e⁻ → 2H₂ (reduction). Twice the volume of H₂ is produced compared to O₂.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Hard – Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Derive the oxidation state of Mn in KMnO₄ and explain why it is a powerful oxidising agent.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">K=+1, O=−2 (×4=−8): +1 + x − 8 = 0 → x = +7. Mn is at its highest common oxidation state — readily accepts electrons (reduced to +2 in acid: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O). This large reduction potential makes KMnO₄ a powerful oxidising agent.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compare the two definitions of oxidation (O gain vs electron loss) — show where they agree and one example where only the electron definition applies.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Both agree: 2Mg + O₂ → 2MgO — Mg gains oxygen AND loses electrons. Electron definition only: 2Na + Cl₂ → 2NaCl — Na is oxidised (Na→Na⁺+e⁻) but gains chlorine, not oxygen. Electron definition is more general and applies to all redox reactions.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse the role of redox in the Daniell cell (zinc-copper electrochemical cell).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Anode (Zn): Zn → Zn²⁺ + 2e⁻ (OIL — oxidation). Cathode (Cu): Cu²⁺ + 2e⁻ → Cu (RIG — reduction). Electrons flow from Zn to Cu through external wire, producing ~1.1 V. Spontaneous redox (more reactive Zn displacing Cu) converts chemical energy to electrical energy.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain oxidation state changes in the industrial Contact Process for sulphuric acid.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Step 1: S + O₂ → SO₂ (S: 0→+4). Step 2: 2SO₂ + O₂ → 2SO₃ (S: +4→+6; V₂O₅ catalyst). Step 3: SO₃ + H₂O → H₂SO₄ (not redox). Progressive oxidation of S from 0→+4→+6 using O₂ as oxidising agent is the core redox chemistry.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss disproportionation reactions (one substance simultaneously oxidised and reduced), using H₂O₂ decomposition as an example.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">2H₂O₂ → 2H₂O + O₂. O in H₂O₂ = −1. In H₂O: O = −2 (reduced). In O₂: O = 0 (oxidised). The same molecule is simultaneously oxidised and reduced — the substance acts as its own oxidising and reducing agent. Cl₂ + NaOH is another example (Cl: 0→−1 and +1 simultaneously).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate the importance of redox reactions in biological systems: photosynthesis, respiration, and nitrogen fixation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Photosynthesis: H₂O oxidised; CO₂ reduced to glucose — solar energy stored. Respiration: glucose oxidised; O₂ reduced — ATP released. Nitrogen fixation: N₂ reduced (0→−3 in NH₃) by nitrogenase. Life is essentially organised redox chemistry — all metabolism involves controlled electron transfer to capture, store, and release energy.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse why superoxide (O₂⁻) is dangerous in living cells, relating to its redox properties as a reactive oxygen species (ROS).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Superoxide has an unpaired electron — extremely reactive radical. Oxidises DNA, lipids (lipid peroxidation), and proteins. Superoxide dismutase (SOD) dismutates it: 2O₂⁻ + 2H⁺ → H₂O₂ + O₂. Catalase destroys H₂O₂. Failure of antioxidant systems → oxidative stress → cancer, ageing, neurodegeneration. All rooted in aberrant redox chemistry.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate whether oxidation state is a real physical property or a bookkeeping convention, and why this matters.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Oxidation state is a formal bookkeeping convention — electrons are assigned to the more electronegative atom, not reflecting actual charge distribution. In CO₂, C is not literally +4. This matters: the concept is a powerful tool for identifying redox reactions and balancing equations, but treating it as a real charge can mislead, especially in covalent and transition metal complexes where actual electron density (measured by XPS) often differs from formal oxidation states.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- T6 -->
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Corrosion &amp; Rancidity</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:redox-reactions-and-electrochemistry/x2eef969c74e0d802:electrochemistry/v/corrosion" target="_blank">Corrosion Chemistry</a></div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s" target="_blank">Corrosion &amp; Electrochemistry: CrashCourse</a></div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span><a href="https://www.youtube.com/watch?v=d9P6J1a9TAM" target="_blank">Why Metals Rust</a></div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span><a href="https://www.youtube.com/watch?v=Rdg1xCVLkU8" target="_blank">Corrosion in the Environment</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Easy – Recall &amp; Identify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is corrosion?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Gradual deterioration of metals by reaction with moisture, oxygen, and other environmental substances — a slow oxidation process.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the overall equation for the rusting of iron.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃ → 2Fe₂O₃·3H₂O (hydrated iron oxide = rust)</p></details></div></div>
+      <div class="q-item"><div class="q-text">Name three conditions required for iron to rust.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Iron, water (moisture), and oxygen — all three must be present. Salt accelerates rusting.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Name four methods to prevent rusting of iron.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Galvanising (zinc coating), painting, oiling/greasing, alloying (stainless steel), electroplating, sacrificial anode.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is galvanising?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Coating iron or steel with zinc to prevent rust; zinc acts as a barrier and as a sacrificial anode (being more reactive, corrodes preferentially).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is rancidity?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Spoilage of fats and oils due to oxidation — they develop unpleasant smell and taste as fatty acid chains break down into aldehydes and ketones.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Name two methods to prevent rancidity in food.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Adding antioxidants (vitamin E, BHA/BHT); flushing packaging with nitrogen gas.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why do chip packets contain nitrogen instead of air?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p">Nitrogen is inert — does not react with fats. It displaces oxygen, preventing oxidation of oils in chips (rancidity) and maintaining freshness.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Medium – Apply &amp; Explain</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain the electrochemical mechanism of rusting using anode and cathode half-reactions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Anode (less pure iron): Fe → Fe²⁺ + 2e⁻ (oxidation). Cathode (O₂-rich area): O₂ + 2H₂O + 4e⁻ → 4OH⁻ (reduction). Fe²⁺ + OH⁻ → Fe(OH)₂ → Fe(OH)₃ → Fe₂O₃·nH₂O (rust). Water = electrolyte; salt increases conductivity and accelerates corrosion.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain how galvanising protects iron even after the zinc coating is scratched.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Zinc is higher in reactivity series than iron. When scratched, Zn acts as anode (Zn → Zn²⁺ + 2e⁻; corrodes sacrificially) while iron remains cathode (protected). Continues as long as any zinc is in contact with iron.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why does stainless steel not rust unlike plain iron?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Stainless steel contains ≥10.5% chromium. Chromium forms a thin, adherent, self-repairing Cr₂O₃ passive layer that excludes O₂ and moisture. Unlike rust (flaky, porous, exposes fresh metal), Cr₂O₃ adheres tightly and reforms if scratched.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why rancidity is classified as a chemical change, not a physical change.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Oxidation of fats produces new compounds (aldehydes, ketones, carboxylic acids) with different structures, smells, and flavours. Original fat molecules are chemically altered — bonds broken and new bonds formed. Irreversible chemical change.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compare the corrosion of iron and aluminium at the molecular level, explaining why aluminium is more durable.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Iron: Fe₂O₃ (rust) is flaky, porous, non-adherent — crumbles, exposing fresh iron (corrosion accelerates). Aluminium: Al₂O₃ is thin, hard, adherent, self-limiting — seals the surface. Al is more reactive than Fe but far more durable due to its oxide protection.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Describe three ways antioxidants prevent rancidity in food, citing specific chemicals.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">1. Chain-breaking: BHA/BHT donate H• to lipid radicals, stopping chain reactions. 2. Oxygen scavengers: vitamin C reacts with O₂ preferentially. 3. Metal chelators: EDTA binds Fe²⁺/Cu²⁺ that catalyse oxidation, rendering them inactive.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain how salt (NaCl) accelerates rusting using electrochemical principles.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Salt solution (Na⁺ + Cl⁻) is a much better electrolyte than pure water, enabling faster ion flow between anodic and cathodic areas on iron. Greater current flow = faster iron oxidation. Explains why cars corrode faster near coastlines and on salt-treated winter roads.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why a scratch in tin-plated iron is more dangerous than a scratch in galvanised iron.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p">Tin is less reactive than iron. If scratched, iron (more reactive) becomes the anode and corrodes rapidly while tin is the cathode — galvanic acceleration. Galvanised iron: zinc (more reactive than Fe) provides sacrificial protection even when scratched — iron remains cathode and is protected.</p></details></div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Hard – Analyse &amp; Evaluate</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate the economic and engineering significance of corrosion globally, and assess the effectiveness of different prevention strategies.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Corrosion costs ~$2.5 trillion/year globally (~3.4% of GDP). Most cost-effective: coatings (painting, galvanising) — cheap, scalable. Cathodic protection (sacrificial anodes, impressed current) for buried pipelines and ship hulls. Corrosion-resistant alloys for aerospace/chemical applications. Better inspection and maintenance could prevent 25–35% of costs.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse the chemistry of cathodic protection used to protect iron pipelines and ship hulls.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Sacrificial anode: blocks of Mg or Zn (more reactive than Fe) attached to iron. In the galvanic cell formed, Mg/Zn is the anode (oxidised; corrodes); iron is the cathode (protected). Impressed current: external DC supply makes iron permanently cathodic. Both apply the principle that the cathode is protected in a galvanic cell.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss the chemistry of lipid peroxidation in biological systems and its role in ageing and disease.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">ROS (superoxide, OH•) initiate chain reactions on membrane phospholipids (PUFAs): L• + O₂ → LOO• → abstracts H from adjacent PUFA → propagation. Products (4-HNE, malondialdehyde) damage DNA and proteins. Chronic lipid peroxidation contributes to cardiovascular disease (oxidised LDL → foam cells → atherosclerosis), neurodegeneration, and cellular ageing.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically assess whether "green" corrosion inhibitors (plant extracts) can replace conventional toxic inhibitors in industry.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Conventional inhibitors (chromates) are effective but toxic/carcinogenic. Green inhibitors: polyphenols and alkaloids from plant extracts adsorb on metal surfaces, forming a protective monolayer. Lab studies show 70–95% inhibition efficiency. Challenges: inconsistent composition between batches; instability at high temperatures/pH; scale-up costs; regulatory approval. Promising for mild environments; not yet reliable replacements for harsh industrial conditions.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate the role of antioxidants in human health, connecting food chemistry (rancidity prevention) to cellular biochemistry.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">In food, antioxidants (vitamin E, C, BHA) prevent lipid oxidation. In the body: vitamin E intercepts lipid peroxyl radicals in cell membranes; vitamin C regenerates vitamin E; glutathione neutralises ROS. Antioxidant-rich diets (Mediterranean) are linked to reduced CVD and cancer risk. However, high-dose supplements have often failed in clinical trials — food sources are superior to isolated supplements.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Discuss how nanomaterial coatings (graphene, ZnO nanoparticles) are advancing corrosion protection beyond traditional galvanising.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Graphene: single-atom-thick, impermeable to most molecules — even one layer provides measurable corrosion protection by blocking O₂ and H₂O. ZnO nanoparticles in paint: provide barrier protection plus photocatalytic activity killing biofilm bacteria (microbially-induced corrosion). Self-healing coatings: microcapsules of inhibitor rupture on scratching, sealing defects. These technologies extend service life, especially in marine and aerospace applications.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Analyse the corrosion of the Statue of Liberty (copper → green patina) and explain why the green patina is actually protective.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">2Cu + O₂ → 2CuO (black), then CuO + CO₂ + H₂O → Cu₂(OH)₂CO₃ (malachite, green). In polluted air, CuSO₄ forms → brochantite (Cu₄(OH)₆SO₄, also green). Unlike rust, copper carbonate/sulphate patina is adherent, dense, and impermeable — self-limiting corrosion. Only ~0.005 mm corroded in 130+ years. Analogous to aluminium's passivation layer.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate: "Corrosion and rancidity are essentially the same chemical process occurring in different materials."<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p">Substantially correct. Both are oxidation by atmospheric oxygen; both are spontaneous and accelerated by heat/moisture/metal catalysts. Differences: corrosion is electrochemical (ionic mechanism, inorganic products); rancidity is free radical chain reaction (organic mechanism, organic products). Underlying principle — oxidation by O₂ — is identical. The analogy is chemically sound and useful for understanding both processes.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<footer>Grade 10 · NCERT Science · Chapter 1 · The Gaudium School · IB MYP · 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

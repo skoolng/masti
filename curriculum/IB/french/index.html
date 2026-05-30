@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🇫🇷 French Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Home ── -->
+  <section id="homeScreen" class="screen active">
+    <header class="home-header">
+      <div class="flag-wrap">🇫🇷</div>
+      <h1>French Practice</h1>
+      <p class="tagline">Type · Speak · Listen · Learn</p>
+    </header>
+    <div class="topic-grid" id="topicGrid"></div>
+    <footer class="home-footer">
+      <p>Tip: Use the 🎤 mic to practise pronunciation. Click ▶ after each answer to hear it in French.</p>
+    </footer>
+  </section>
+
+  <!-- ── Practice ── -->
+  <section id="practiceScreen" class="screen">
+
+    <div class="prac-topbar">
+      <button type="button" id="exitBtn" class="icon-btn" aria-label="Exit">✕</button>
+      <div class="pbar-wrap">
+        <div class="pbar-fill" id="pbarFill"></div>
+      </div>
+      <span id="qCounter" class="q-counter">1/10</span>
+    </div>
+
+    <div class="question-card" id="questionCard">
+      <span class="q-label">Translate to French:</span>
+      <h2 class="q-text" id="qText">Loading…</h2>
+      <p class="q-hint" id="qHint"></p>
+    </div>
+
+    <!-- answer area -->
+    <div class="answer-area" id="answerArea">
+
+      <div class="input-row">
+        <input type="text" id="answerInput"
+               placeholder="Type your French answer…"
+               autocomplete="off" spellcheck="false"
+               aria-label="French answer">
+        <button type="button" id="clearInputBtn" class="icon-btn small" aria-label="Clear">✕</button>
+      </div>
+
+      <!-- accent helper -->
+      <div class="accent-bar" id="accentBar" aria-label="Accent characters"></div>
+
+      <!-- mic row -->
+      <div class="mic-row">
+        <button type="button" id="micBtn" class="mic-btn" aria-label="Speak in French">
+          <span class="mic-icon">🎤</span>
+          <span id="micLabel">Tap to speak</span>
+        </button>
+        <div class="speech-pill hidden" id="speechPill">
+          <span class="pill-label">You said:</span>
+          <span id="spokenText">—</span>
+        </div>
+      </div>
+
+      <button type="button" id="submitBtn" class="primary full-btn">Submit Answer</button>
+    </div>
+
+    <!-- feedback panel (shown after submit) -->
+    <div class="feedback-panel hidden" id="feedbackPanel">
+
+      <div class="result-grid">
+        <div class="result-cell" id="typingCell">
+          <div class="cell-icon" id="typingIcon"></div>
+          <div class="cell-body">
+            <span class="cell-title">Typing</span>
+            <span class="cell-pts" id="typingPts"></span>
+          </div>
+        </div>
+        <div class="result-cell" id="speakingCell">
+          <div class="cell-icon" id="speakingIcon"></div>
+          <div class="cell-body">
+            <span class="cell-title">Speaking</span>
+            <span class="cell-pts" id="speakingPts"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="correct-answer-box" id="correctAnswerBox">
+        <span class="ca-label">Correct answer:</span>
+        <strong class="ca-text" id="correctAnswer"></strong>
+        <button type="button" id="playBtn" class="play-btn" aria-label="Hear pronunciation" title="Hear correct pronunciation">
+          <span class="play-icon" id="playIcon">▶</span>
+          <span>Hear pronunciation</span>
+        </button>
+      </div>
+
+      <button type="button" id="nextBtn" class="primary full-btn">Next →</button>
+    </div>
+
+  </section>
+
+  <!-- ── Summary ── -->
+  <section id="summaryScreen" class="screen">
+    <div class="summary-card">
+      <div class="trophy-area" id="trophyArea">🏆</div>
+      <h2>Session Complete!</h2>
+      <div class="score-ring">
+        <span class="score-num" id="finalPct">0%</span>
+        <span class="score-sub" id="finalPts">0 / 0 pts</span>
+      </div>
+      <p class="score-msg" id="scoreMsg"></p>
+
+      <div class="review-list" id="reviewList"></div>
+
+      <div class="summary-btns">
+        <button type="button" id="retryBtn" class="primary">Try Again</button>
+        <button type="button" id="homeBtn" class="ghost">Home</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

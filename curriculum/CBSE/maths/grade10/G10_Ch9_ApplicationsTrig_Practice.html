@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 9 – Applications of Trigonometry | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏗️ Chapter 9 – Some Applications of Trigonometry</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Heights, Distances &amp; Angles</p>
+</header>
+<nav>
+  <h2>Topics at a Glance</h2>
+  <ol>
+    <li><a href="#t1">Angle of Elevation — Definition</a></li>
+    <li><a href="#t2">Angle of Depression — Definition</a></li>
+    <li><a href="#t3">Simple Height Problems</a></li>
+    <li><a href="#t4">Distance Problems Using tan θ</a></li>
+    <li><a href="#t5">Two-Observation — Same Level</a></li>
+    <li><a href="#t6">Two-Observation — Different Levels</a></li>
+    <li><a href="#t7">Two Triangles — Back-to-Back</a></li>
+    <li><a href="#t8">Shadow and Length Problems</a></li>
+    <li><a href="#t9">Flagpole, Tower and Building Problems</a></li>
+    <li><a href="#t10">Observer on Hill/Cliff Problems</a></li>
+    <li><a href="#t11">Problems with 30°, 45°, 60°</a></li>
+    <li><a href="#t12">SAT-Style Height &amp; Distance</a></li>
+  </ol>
+</nav>
+
+<!-- ───────────────────────── TOPIC 1 ───────────────────────── -->
+<section class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Angle of Elevation — Definition</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Helpful Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=T9lt6rE8_0k" target="_blank">Intro to angle of elevation</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=F21S9Wpi0y8" target="_blank">Trigonometry – angles of elevation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Conceptual &amp; Definition Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define angle of elevation. Draw a labelled diagram showing the line of sight, horizontal line, and the angle of elevation.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A person looks at the top of a building. The angle between the horizontal and his line of sight is 35°. Name this angle and state what it measures.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">True or False: The angle of elevation is always measured from the vertical. Justify your answer.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">State which trigonometric ratio connects the angle of elevation θ, the height h of an object, and the horizontal distance d from the observer.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If the angle of elevation increases, does the height of the object appear to increase or decrease, assuming the observer's distance stays constant? Explain.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">An observer is 50 m from the base of a tower. Write (but do not solve) the equation for the tower's height h if the angle of elevation is θ.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Distinguish between the angle of elevation and the angle of depression using a real-life example for each.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a right triangle formed by an elevation problem, identify: (a) which side is opposite to θ, (b) which side is adjacent, (c) what represents the hypotenuse.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If an observer's eye level is 1.6 m above the ground and they look up at a kite, explain how to correctly measure the angle of elevation in practice.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student says "The angle of elevation from A to B equals the angle of elevation from B to A." Is this correct? Why or why not?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Single-Step Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A tower is 30 m tall. An observer stands 30 m from its base. Find the angle of elevation of the top of the tower.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = 30/30 = 1 → θ = 45°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of elevation of the top of a tree is 60°. If the observer is 20 m away (horizontal), find the height of the tree.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 20 tan 60° = 20√3 ≈ 34.64 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">An observer 40 m from a building sees its top at 30°. Find the height of the building.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 40 tan 30° = 40/√3 = 40√3/3 ≈ 23.1 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A lamp post of height 8 m casts a shadow. The angle of elevation from the tip of the shadow to the top is 45°. Find the shadow length.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan 45° = 1 → shadow = height = 8 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of elevation of a kite from a point on the ground is 60°. The string (slant) is 100 m long. Find the height of the kite.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 100 sin 60° = 100 × (√3/2) = 50√3 ≈ 86.6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From a distance of 15 m, the angle of elevation of the top of a pole is 45°. Find the height of the pole.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 15 tan 45° = 15 × 1 = 15 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The top of a cliff is seen at an angle of elevation of 30° from a boat 120 m from the cliff's base. Find the height of the cliff.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 120 tan 30° = 120/√3 = 40√3 ≈ 69.3 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A building 50 m high subtends an angle of elevation of 60° from a point P on the ground. Find the distance of P from the base of the building.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 50/tan 60° = 50/√3 = 50√3/3 ≈ 28.87 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A child flies a kite at height 80 m. The string makes a 45° angle with the ground. How long is the string?</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>string = 80/sin 45° = 80/(√2/2) = 80√2 ≈ 113.1 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A surveyor measures the angle of elevation of a mountain peak as 60° from a point 500 m from the base. Find the height of the mountain peak.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 500 tan 60° = 500√3 ≈ 866 m</p></details>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Multi-Step &amp; Diagram-Based</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of a 7 m high building, the angle of elevation of a cable tower is 60° and the angle of depression of its foot is 45°. Find the height of the cable tower.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Let d = horizontal distance. tan 45° = 7/d → d = 7 m. Height above building = 7 tan 60° = 7√3. Total tower height = 7 + 7√3 = 7(1+√3) ≈ 19.12 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A person on level ground observes the top of a tower at 45°. Walking 20 m closer, the angle becomes 60°. Find the height of the tower.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Let h = height, d = original distance. h/d = tan 45° = 1 → h = d. h/(d−20) = tan 60° = √3. d/(d−20) = √3 → d = 20√3/(√3−1) = 10√3(√3+1) = 10(3+√3) ≈ 47.3 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">Draw a labelled diagram for: a boy standing 30 m from a flagpole looks at the top at elevation 45°. Label h, d, and θ. Calculate h.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 30 tan 45° = 30 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of elevation of the top of a tower from two points P and Q on the same side are 30° and 60° respectively. PQ = 48 m. Find the height of the tower.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Let h = height, x = distance of Q. h/x = √3, h/(x+48) = 1/√3. √3·x·(1/√3) = x+48−x → solving: x = 24, h = 24√3 ≈ 41.6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">Two poles of heights 6 m and 11 m stand on a plane. If the angle of elevation of the top of the taller pole from the foot of the shorter pole is 60°, find the distance between them.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan 60° = 11/d → d = 11/√3 = 11√3/3 ≈ 6.35 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A lighthouse is 80 m tall. From its top, an observer sees a boat at angle of depression 30°. Later the boat moves and the depression angle is 60°. How far did the boat move?</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 80/tan 30° = 80√3; d₂ = 80/tan 60° = 80/√3. Distance moved = 80√3 − 80/√3 = 80(3−1)/√3 = 160/√3 = 160√3/3 ≈ 92.4 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">Rohan stands at the base of a hill and observes its peak at 45°. He walks 100 m towards the hill and the angle becomes 60°. Find the height of the hill.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = d (from 45°); h/(d−100) = √3. d/(d−100) = √3 → d = 100√3/(√3−1) = 50√3(√3+1) = 50(3+√3). h ≈ 236.6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A vertical pole stands at the edge of a road. From a point 20 m along the road, the angle of elevation is 60°. From a point 30 m further, it is 30°. Verify both give the same pole height.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 20√3 from first point. From 50 m: 50 tan 30° = 50/√3 = 50√3/3 ≠ 20√3 — they don't match, showing the pole is not at the road edge in the stated way. Problem tests critical reading.</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A plane flies at height 1500 m. Its angle of elevation changes from 60° to 30° as it flies overhead. Find the distance covered.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 1500/√3 = 500√3; d₂ = 1500√3. Distance = 1500√3 − 500√3 = 1000√3 ≈ 1732 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 10 m rope is tied from the top of a pole to a peg in the ground. The rope makes a 60° angle with the ground. Find the height of the pole and the distance of the peg from the base.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Height = 10 sin 60° = 5√3 ≈ 8.66 m; Distance = 10 cos 60° = 5 m</p></details>
+      </div>
+    </div>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS &amp; Real-World Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A student uses a clinometer to measure the angle of elevation of a school building as 45° from 20 m away. She then walks closer and measures 60°. Write the system of equations and solve for the building height.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Google Maps uses satellite data. Explain mathematically how the height of the Qutub Minar (72.5 m) could be calculated using angle of elevation from a known horizontal distance.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">An aircraft is at a height of 3600 m. The angle of elevation from airport A is 60° and from airport B (on the same side) is 45°. Find the distance AB.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 1.8 m tall person stands 10 m from a 6 m wall. At what angle must they tilt their head to see the top of the wall? (Account for eye level = 1.8 m.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two observers on opposite sides of a tower each measure the angle of elevation as 45°. The distance between them is 200 m. Find the height of the tower.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A drone rises vertically from a point 30 m from an observer. At what height will the angle of elevation be exactly 60°? At what height will it be 30°?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A pilot at height h sees the landing strip at 30°. The horizontal distance to the strip is 4000 m. Find h. As the plane descends to h/2, find the new distance assuming angle stays 30°.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 15 m ladder leans against a wall. The base is 7.5 m from the wall. Find the angle of elevation of the top of the ladder. (Use exact values.)</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a video game, a character fires an arrow at 60° elevation with speed 50 m/s. Ignoring physics, using trig only: what is the initial vertical component? Horizontal component?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The shadow of a vertical pole of height h is √3h at noon. Find the angle of elevation of the sun at that time.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = h/(√3h) = 1/√3 → θ = 30°</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 2 ───────────────────────── -->
+<section class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Angle of Depression — Definition</h2>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Conceptual &amp; Definition Questions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define angle of depression. How does it differ from angle of elevation?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Draw a diagram showing an observer on top of a cliff looking at a boat. Label the angle of depression, horizontal line, and line of sight.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">True or False: The angle of depression of X from Y equals the angle of elevation of Y from X (alternate angles). Justify.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>True. The horizontal lines at both points are parallel (both horizontal), and the line of sight is a transversal. Alternate interior angles are equal.</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A person at the top of a 40 m lighthouse sees a ship. The angle of depression is 30°. Write the equation to find the horizontal distance to the ship.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why is the angle of depression measured from the horizontal downward, not from the vertical? Explain using a diagram sketch.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">An air traffic controller in a 30 m tower spots a plane on the runway at depression angle 45°. Find the distance of the plane from the base of the tower.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 30/tan 45° = 30 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A person on a 50 m building looks down at a car. Depression angle = 60°. Find the horizontal distance of the car from the base.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 50/tan 60° = 50/√3 = 50√3/3 ≈ 28.9 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From the top of a hill 120 m high, the angle of depression of a lake is 30°. Find the distance of the lake from the hill base.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 120/tan 30° = 120√3 ≈ 207.8 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A sailor in the crow's nest (25 m above sea level) sees a rock at depression angle 45°. How far is the rock from the ship's base?</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 25/tan 45° = 25 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">Compare: If the angle of depression from A to B is θ, what is the angle of elevation from B to A? State the theorem used.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Also θ. Alternate interior angles with parallel horizontal lines.</p></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Standard Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of a 60 m tower, the angle of depression of two cars on the road (same side) are 45° and 30°. Find the distance between the cars.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 60/tan 45° = 60 m; d₂ = 60/tan 30° = 60√3. Distance = 60√3 − 60 = 60(√3−1) ≈ 43.9 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A person on a cliff 100 m high sees two boats directly ahead at depression angles 60° and 30°. Find the distance between the boats.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 100/√3; d₂ = 100√3. Distance = 100√3 − 100/√3 = 200/√3 = 200√3/3 ≈ 115.5 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From a window 20 m above ground, a person sees the top of another building at elevation 30° and the base at depression 60°. Find the height of the second building.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 20/tan 60° = 20/√3. Height above window = (20/√3) tan 30° = (20/√3)(1/√3) = 20/3. Total height = 20 + 20/3 = 80/3 ≈ 26.7 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A helicopter hovers at 200 m. The pilot sees a landing pad at depression 45°. Find the direct distance (slant range) to the pad.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>slant = 200/sin 45° = 200√2 ≈ 282.8 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A bird on a tree 30 m high sees a worm on the ground at depression 60°. How far (ground distance) is the worm from the tree?</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 30/tan 60° = 30/√3 = 10√3 ≈ 17.3 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From the top of a 45 m building, the angles of depression of the top and bottom of another building are 30° and 60° respectively. Find the height of the second building.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 45/tan 60° = 45/√3 = 15√3. Height above second building top = 15√3 × tan 30° = 15√3/√3 = 15 m. Height of second = 45 − 15 = 30 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From an airplane at height 1000 m, the angle of depression of a town is 30°. Find how far the town is horizontally.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 1000/tan 30° = 1000√3 ≈ 1732 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">An observer at the top of a cliff 150 m above sea level sees a ship at 30° depression. As the ship approaches, the angle becomes 45°. How far did the ship travel?</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 150√3; d₂ = 150. Distance = 150√3 − 150 = 150(√3−1) ≈ 109.8 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A fire spotter in a 40 m tower sees smoke at depression 30° due north and at depression 45° due east. How far is each fire from the tower base?</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>North fire: 40/tan 30° = 40√3 ≈ 69.3 m. East fire: 40/tan 45° = 40 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From a lighthouse 80 m high, two ships are observed at depression angles 30° and 45° on the same side. Find the distance between ships.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 80√3; d₂ = 80. Gap = 80(√3−1) ≈ 58.6 m</p></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed &amp; Applied</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A CCTV camera is mounted 8 m above a road. It must cover 20 m of road ahead. Find the angle of depression needed.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = 8/20 = 0.4 → θ = tan⁻¹(0.4) ≈ 21.8°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From a window 15 m high, a girl sees a cat directly below her balcony railing (depression 90°) and a dog 15 m away (depression 45°). Find the distances of both from the building base.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A rescue helicopter at height h sees two survivors at depressions 45° and 30°, on opposite sides. The horizontal distance between survivors is 200 m. Find h.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>h/d₁ = 1, h/d₂ = 1/√3 → d₁ = h, d₂ = h√3. h + h√3 = 200 → h(1+√3) = 200 → h = 200/(1+√3) = 100(√3−1) ≈ 73.2 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of depression from a 120 m tall building to a point on the ground changes from 30° to 60° as an observer descends. How far down must the observer travel?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">An eagle on a 50 m cliff sees a rabbit at depression 30° and swoops in a straight line. Find the distance the eagle flies (slant distance) to reach the rabbit.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>slant = 50/sin 30° = 50/0.5 = 100 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">From the top of a 25 m pole, the depression angle to a ball is 60°. Find the ground distance. If the ball rolls 5 m closer, find the new depression angle.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A satellite at height 600 km above Earth observes a city at depression 30° (from nadir/vertical). Find the slant distance to the city.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A roof is 10 m high. A ball rolls off and is seen from a window 6 m high at depression angle θ. The ball lands 8 m from the building base. Find θ.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The window observer is 6 m above ground; ball at ground level 8 m away. tan θ = (6−0)/8 = 6/8 = 0.75 → θ = tan⁻¹(0.75) ≈ 36.9°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">Two windows are 8 m apart vertically in a building. From each, an observer sees the same car. Top window: depression 60°; lower window: depression 45°. Find the distance of the car.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a cinema, the screen bottom is at 2 m and top is at 8 m from ground. A viewer sits 10 m back with eyes at 1.2 m. Find the angles of depression from the screen top and bottom to the viewer's eyes.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS &amp; Real-World Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A coast guard in a 60 m tower sees two ships in opposite directions at depressions 30° and 45°. Find the total distance between the ships.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 60√3; d₂ = 60. Total = 60√3 + 60 = 60(√3+1) ≈ 163.9 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">An ISS (International Space Station) at 408 km altitude looks down at the Gaudium School campus. Assuming a flat Earth approximation, if the depression is 80°, find the horizontal distance.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A drone above a cricket field at height 30 m detects the batsman at depression 60° and fielder at depression 30° in the same direction. How far apart are the batsman and fielder?</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>d₁ = 30/√3 = 10√3; d₂ = 30√3. Gap = 30√3 − 10√3 = 20√3 ≈ 34.6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">An architect designs a window such that sunlight enters at a depression angle of 30° from outside. If the window sill is 1 m wide, how deep into the room does sunlight reach on the floor?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a bridge 25 m above a river, a person sees a boat upstream at 30° depression and downstream at 45° depression. What is the total river distance covered between the two boat positions?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A building inspector uses a drone at height h to check for cracks on the ground. If the drone's camera has a field of view from 45° to 60° depression, what is the width of the strip it can survey at any time?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From the observation deck of Hyderabad's 100 m Hussain Sagar viewing tower (hypothetical), you see a boat at depression 45°. Find the distance of the boat from the base.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Prove that if the angle of depression from a height h to a point at distance d is θ, then increasing h by k metres decreases θ only if the new angle satisfies tan θ' = (h+k)/d.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A ship captain at 20 m above sea level sees a reef at 30° depression. What minimum depth must the reef be below sea level if the slant distance to the reef top is 40 m?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A multi-story building has floors 4 m apart. From each floor's window, what is the depression angle to a point 20 m from the base, if the observer is at heights 4 m, 8 m, 12 m, 16 m? Tabulate and describe the pattern.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 3 ───────────────────────── -->
+<section class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Simple Height Problems (single right triangle)</h2>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A tree is 20 m tall. The angle of elevation of the top from a point on the ground is 45°. Find the horizontal distance from the point to the tree base.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 20/tan 45° = 20 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of elevation of a tower from 50 m away is 30°. Find the height of the tower.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 50 tan 30° = 50/√3 ≈ 28.87 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A pole casts a shadow 12 m long at noon. If the angle of elevation of the sun is 60°, find the height of the pole.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 12 tan 60° = 12√3 ≈ 20.78 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A ramp rises to a height of 3 m over a horizontal distance of 3√3 m. Find the angle the ramp makes with the ground.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = 3/(3√3) = 1/√3 → θ = 30°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A ladder 13 m long leans against a vertical wall. Its foot is 5 m from the wall. Find the angle of elevation of the top of the ladder.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Height = √(13²−5²) = √144 = 12 m. tan θ = 12/5 → θ ≈ 67.4°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of elevation of a cloud from a point 60 m above a lake is 30°. Find the height of the cloud above the lake.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Let d = horizontal dist, extra height = d tan 30° = d/√3. Need more info — standard version: cloud height above point = d/√3, so total = 60 + d/√3 (d given elsewhere).</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A building is 40 m tall. An observer sees the top at elevation 30°. How far is the observer from the base?</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 40/tan 30° = 40√3 ≈ 69.3 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">An escalator makes a 30° angle with the floor and rises 4 m vertically. Find the length of the escalator.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>L = 4/sin 30° = 4/0.5 = 8 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A person 1.8 m tall stands 12 m from a lamp post. The top of the lamp post and the top of the person's head are in line with a point on the ground 5 m in front of the person. Find the height of the lamp post.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A flagpole stands vertically on a building 20 m tall. From 30 m away, the angle of elevation of the top of the flag is 60°. Find the height of the flagpole.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Total height = 30 tan 60° = 30√3. Flag height = 30√3 − 20 ≈ 31.96 m</p></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Working Backwards</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A tower's shadow is 10 m when the sun's elevation is 60°. Find the tower's height.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 10 tan 60° = 10√3 ≈ 17.32 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">If tan θ = 3/4 for a height-distance problem where height = 6 m, find the horizontal distance.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 6/(3/4) = 8 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">An airplane's altimeter reads 800 m. The pilot uses a 30° glide slope. Find the horizontal distance from the runway at this point.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 800/tan 30° = 800√3 ≈ 1385.6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A kite is flying at 90 m. The kite string (100 m) makes angle θ with the ground. Find sin θ and hence θ.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>sin θ = 90/100 = 0.9 → θ ≈ 64°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A statue on top of a 10 m pedestal subtends an angle of 60° at a point 10 m from the pedestal base. Find the height of the statue.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Total height = 10 tan 60° = 10√3. Statue height = 10√3 − 10 = 10(√3−1) ≈ 7.32 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A ski slope descends 200 m vertically over 400 m horizontal. Find the angle of the slope with the horizontal.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = 200/400 = 0.5 → θ = tan⁻¹(0.5) ≈ 26.57°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A cone of height 12 cm has a slant height of 13 cm. Find the half-angle at the apex.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A guy wire from a 20 m pole makes a 60° angle with the ground. Find the wire's length and the distance from the pole base to the wire's anchor.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Wire = 20/sin 60° = 20/(√3/2) = 40/√3 = 40√3/3 ≈ 23.1 m. Anchor dist = 20/tan 60° = 20/√3 ≈ 11.55 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A right-angled triangle has one acute angle of 30°. The hypotenuse is 10 cm. Find all three sides.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Short leg = 5 cm, long leg = 5√3 cm, hypotenuse = 10 cm</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 5 m iron rod is placed against a wall. If it makes 60° with the wall, find the height it reaches on the wall and its distance from the wall's base.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Height = 5 cos 60° = 2.5 m; Base dist = 5 sin 60° = 5√3/2 ≈ 4.33 m</p></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two poles each 10 m tall are 10 m apart. A rope ties the tops of both. Find the length of the rope. (Hint: horizontal.)</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Rope length = 10 m (horizontal, same height)</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 10 m ladder reaches a window 8 m high. Find the angle the ladder makes with the ground and its foot's distance from the wall.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>sin θ = 8/10 = 0.8 → θ ≈ 53.13°. Base = √(100−64) = 6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 1.5 m child stands 2 m from a 5 m lamp post. Find the angle of elevation of the top of the post from the child's eyes.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Height difference = 5 − 1.5 = 3.5 m; tan θ = 3.5/2 = 1.75 → θ ≈ 60.3°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A park has a 15 m tall slide structure. A child at the bottom sees the top at 60°. How far is the child from the base of the structure?</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>d = 15/tan 60° = 15/√3 = 5√3 ≈ 8.66 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A road rises 1 m for every 8 m of horizontal distance. Find the angle of inclination of the road.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = 1/8 → θ = tan⁻¹(0.125) ≈ 7.1°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 6 m rope attached to the top of a vertical pole is pegged into the ground. The rope makes a 30° angle with the ground. Find the height of the pole.</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 6 sin 30° = 3 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The Gaudium School's main building is 15 m tall. Standing 15√3 m away from it, at what angle do you see the top?</span><span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>tan θ = 15/(15√3) = 1/√3 → θ = 30°</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A ramp for wheelchair access must not exceed a 30° angle. If the ramp rises 1.5 m, what is the minimum length of the ramp?</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>L = 1.5/sin 30° = 1.5/0.5 = 3 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A solar panel is tilted at 60° to the horizontal on a 4 m long support. Find the vertical height gained and horizontal reach.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Vertical = 4 sin 60° = 2√3 ≈ 3.46 m; Horizontal = 4 cos 60° = 2 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A scout walks 500 m up a hill inclined at 30°. How high above the starting point is the scout?</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Height = 500 sin 30° = 250 m</p></details>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A tree of height h is broken by the wind so that its top touches the ground at distance d from the base. The broken part makes angle θ with the ground. Write expressions for h and d in terms of the unbroken length L.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 15 m tree is broken at height 5 m from the ground. The broken top touches the ground. Find the distance from the trunk base to where the top touches and the angle it makes with ground.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Broken part = 10 m; cos θ = 5/10 = 0.5 → θ = 60°. Distance = 10 sin 60° = 5√3 ≈ 8.66 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">Two buildings are 50 m apart. From the roof of the shorter (30 m) one, the angle of elevation of the top of the taller is 60°. Find the height of the taller building.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Extra height = 50 tan 60° = 50√3. Total = 30 + 50√3 ≈ 116.6 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">If the angle of elevation of the sun decreases from 60° to 45° during an afternoon, by what factor does the shadow of a vertical pole change?</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Shadow at 60° = h/√3; at 45° = h. Ratio = h : h/√3 = √3 : 1. Shadow increases by factor √3.</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 10 m vertical pole is observed from the ground. As the observer moves away, the angle of elevation decreases. At what distance does the angle become half of what it was at 10 m? (Use tan⁻¹.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove that if the distance from the base doubles, the angle of elevation θ satisfies tan(new θ) = (tan θ)/2.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Old: tan θ = h/d. New distance = 2d. New: tan θ' = h/(2d) = (h/d)/2 = tan θ/2. QED.</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A 6 m post casts different shadows at 9 AM (elevation 30°) and noon (elevation 60°). Find both shadow lengths and the ratio of shadow lengths.</span><span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>9 AM shadow = 6/tan 30° = 6√3 ≈ 10.39 m. Noon = 6/tan 60° = 6/√3 = 2√3 ≈ 3.46 m. Ratio = 3:1</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A student draws a right triangle on paper: base 7 cm, height 7 cm. Calculate angle of elevation of the hypotenuse's top vertex. How does changing height to 14 cm affect the angle?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A church spire sits atop a 30 m building. The total elevation angle from 40 m away is 60°. Find the spire height.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Total height = 40 tan 60° = 40√3 ≈ 69.28 m. Spire = 40√3 − 30 ≈ 39.28 m</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">The angle of elevation of the top of a tower increases from 30° to 60° as an observer moves 40 m closer. Prove that the height of the tower is 20√3 m.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>h/d = tan 30° = 1/√3 → d = h√3. h/(d−40) = √3 → h = √3(h√3−40) = 3h − 40√3 → 2h = 40√3 → h = 20√3. QED.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 4 ───────────────────────── -->
+<section class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Distance Problems Using tan θ</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Use of tan θ</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A person stands 80 m from a tower. The angle of elevation is 30°. Using tan 30°, find the tower height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 80 tan 30° = 80/√3 ≈ 46.19 m</p></details></div>
+      <div class="q-item"><span class="q-text">A tower is 40 m high. The angle of elevation from P is 45°. Find the distance of P from the tower base using tan 45°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 40/tan 45° = 40 m</p></details></div>
+      <div class="q-item"><span class="q-text">tan θ = h/d. If h = 15 m and θ = 60°, find d.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 15/tan 60° = 15/√3 = 5√3 ≈ 8.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">A man is 100 m from a building. Using tan 60°, find the height of a building that gives 60° angle of elevation.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 100 tan 60° = 100√3 ≈ 173.2 m</p></details></div>
+      <div class="q-item"><span class="q-text">The ratio h/d = √3. What is the angle of elevation?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = √3 → θ = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">From point P, the angle of elevation of a 25 m pole is 30°. Find distance PQ where Q is the base.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 25/tan 30° = 25√3 ≈ 43.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">A mast 50 m high is on a ship. A coastguard sees the top at 45°. How far is the ship?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 50 m</p></details></div>
+      <div class="q-item"><span class="q-text">An observer is 200 m from a cliff. The angle of elevation is 60°. Find the cliff height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 200√3 ≈ 346.4 m</p></details></div>
+      <div class="q-item"><span class="q-text">If tan θ = 7/24, find θ approximately. In a triangle with opposite = 7 m, find the adjacent side.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ ≈ 16.3°. Adjacent = 24 m.</p></details></div>
+      <div class="q-item"><span class="q-text">Using tan 30° = 1/√3 and tan 60° = √3, explain why the distance triples (not halves) when the angle doubles from 30° to 60° for fixed height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₃₀ = h√3; d₆₀ = h/√3. Ratio = 3:1. tan is nonlinear, so doubling angle does not halve distance.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding Unknown Distances</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of a 30 m building, an observer sees a car at depression 45°. Find the horizontal distance of the car.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 30 m</p></details></div>
+      <div class="q-item"><span class="q-text">A ship is 500 m out to sea. A lighthouse sees it at elevation 30°. Find the lighthouse height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 500/√3 ≈ 288.7 m</p></details></div>
+      <div class="q-item"><span class="q-text">An observer on the ground sees a cliff top at 60°. The cliff is 120 m. Find the horizontal distance.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 120/√3 = 40√3 ≈ 69.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">A school is 2 km away. The elevation to the rooftop is 0.5° (tan 0.5° ≈ 0.00873). Find the roof height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 2000 × 0.00873 ≈ 17.46 m</p></details></div>
+      <div class="q-item"><span class="q-text">A bridge tower 60 m above the river is seen from a boat at 30° elevation. Find the boat's distance from directly below the tower.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 60√3 ≈ 103.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">Horizontal distance to a mountain base is 5 km. Its peak is at elevation 15° (tan 15° ≈ 0.268). Find the mountain's height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h ≈ 1340 m</p></details></div>
+      <div class="q-item"><span class="q-text">A radar detects an aircraft at slant range 10 km and elevation 30°. Find the aircraft altitude.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 10 sin 30° = 5 km</p></details></div>
+      <div class="q-item"><span class="q-text">A child 12 m from a pole sees its top at 60°. Find pole height. The child moves 6 m further. Find the new elevation angle.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 12√3. New angle: tan θ' = 12√3/18 = 2√3/3 → θ' ≈ 49.1°</p></details></div>
+      <div class="q-item"><span class="q-text">From a 20 m observation tower, a fire is seen at depression 30°. How far is the fire from the tower base?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 20√3 ≈ 34.64 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two ships are on either side of a 100 m lighthouse. Depressions are 30° and 60°. Find the total distance AB.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>dA = 100√3; dB = 100/√3. AB = 400√3/3 ≈ 230.9 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A river is 60 m wide. From one bank, the elevation to the cliff top on the other bank is 60°. Find the cliff height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 60√3 ≈ 103.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">From P, elevation is 30°. After driving 1 km towards the hill, angle is 60°. Find the hill height and final distance to base.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 500 m, h = 500√3 ≈ 866 m</p></details></div>
+      <div class="q-item"><span class="q-text">Horizontal distance between two buildings = 20 m. From the top of the shorter (10 m), elevation to the taller's top is 30°. Find the taller building's height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 10 + 20/√3 ≈ 21.55 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 30 m statue stands on a 20 m pedestal. From P, elevation to pedestal bottom is 30°. Find elevation angle to statue top.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 20√3. tan θ = 50/(20√3) = 5√3/6. θ ≈ 55.3°</p></details></div>
+      <div class="q-item"><span class="q-text">A straight road leads up a 30° hill. A stone is 100 m along the road. Find the stone's vertical height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 100 sin 30° = 50 m</p></details></div>
+      <div class="q-item"><span class="q-text">Find the horizontal distance to an 18 m flagpole when viewed at (a) 30°, (b) 45°, (c) 60°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(a) 18√3 ≈ 31.2 m; (b) 18 m; (c) 6√3 ≈ 10.4 m</p></details></div>
+      <div class="q-item"><span class="q-text">An engineer needs a road rising 50 m over 200 m horizontal. Find the angle of inclination. Is this practical (max ~12°)?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ ≈ 14°. Steeper than typical road max — not ideal.</p></details></div>
+      <div class="q-item"><span class="q-text">A person stands at the bank of a river. A tree on the opposite bank has elevation 60°. After moving 20 m along the bank (parallel), the elevation is 30°. Find the tree height and river width.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 30 m tall antenna is on a building of height H. From 40 m away, the elevation of the antenna top is 60°. Find H.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Total = 40√3. H = 40√3 − 30 ≈ 39.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">From the same point, the tops of two poles of heights 20 m and 30 m are seen at elevation 45° and 60° respectively. Find the horizontal distances to each pole.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 20/tan45° = 20 m; d₂ = 30/tan60° = 10√3 ≈ 17.3 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive: if from two points A and B (AB = d), elevations are α and β (A farther), then h = d tan α tan β/(tan β − tan α).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A wall casts a shadow at sun elevation 60° (shadow = 8/√3 m). Sun changes to 30°. How much longer is the new shadow?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 8 m. New shadow = 8√3. Increase = 8√3 − 8/√3 = 16/√3 ≈ 9.24 m</p></details></div>
+      <div class="q-item"><span class="q-text">A surveyor at 30° elevation moves 200 m and measures 45°. Verify the hill height is approximately 200/(√2−1/√3) — or compute the exact value.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two points give elevation 30° and 60° for the same tower, 20 m apart. Find height, and both distances using the two-point formula.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 10√3 ≈ 17.3 m; d₁ = 30 m, d₂ = 10 m</p></details></div>
+      <div class="q-item"><span class="q-text">GPS at 20,200 km altitude signals at 30° elevation. Find the slant range.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Slant = 20200/sin30° = 40,400 km</p></details></div>
+      <div class="q-item"><span class="q-text">Express d in terms of h for θ = 30°, 45°, 60°. Arrange in ascending order of d (fixed h). What does this tell us?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d₆₀ = h/√3 &lt; d₄₅ = h &lt; d₃₀ = h√3. As angle increases, you must be closer.</p></details></div>
+      <div class="q-item"><span class="q-text">A building height is measured at 45° elevation. Measured distance has 2% error. What is the resulting % error in height?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = d × 1 at 45°, so error in h = error in d = 2%.</p></details></div>
+      <div class="q-item"><span class="q-text">A 10 m ladder has foot 6 m from wall (reaches 8 m). A 15 m ladder reaches the same height — where is its foot?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Foot = √(225−64) = √161 ≈ 12.69 m from wall</p></details></div>
+      <div class="q-item"><span class="q-text">A plane at 1000 m altitude descends along a 3° glide slope (tan 3° ≈ 0.0524). Find the horizontal distance to touchdown.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 1000/0.0524 ≈ 19,084 m ≈ 19.1 km</p></details></div>
+      <div class="q-item"><span class="q-text">For a fixed height h, plot h/tan θ (distance) for θ from 10° to 80°. At what angle does the distance equal the height? What angle gives distance = 2h?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = h when tan θ = 1 → θ = 45°. d = 2h when tan θ = 0.5 → θ ≈ 26.6°.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 5 ───────────────────────── -->
+<section class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Two-Observation Problems — Same Level</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundational</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From A (elevation 30°) and B, 20 m closer (elevation 60°), find tower height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 10 m from B. h = 10√3 ≈ 17.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two points same side, 40 m apart, elevations 30° and 60°. Find tower height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 20√3 ≈ 34.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Elevations from two points 30 m apart are 45° and 60°. Find tower height and two distances.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 15(3+√3) ≈ 71 m (nearer to 60° side)</p></details></div>
+      <div class="q-item"><span class="q-text">Elevation from A = 45°, from B (10 m further) = 30°. Find tower height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 5(√3+1) ≈ 13.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">Tower 50 m, elevations 30° and 60° from P and Q. Find PQ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>PQ = 100√3/3 ≈ 57.7 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two observers 100 m apart on opposite sides, one at 60° and other at 30°. Find flagpole height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 25√3 ≈ 43.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two points same side of a tree, 50 m apart, elevations 30° and 45°. Find tree height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 25(√3+1) ≈ 68.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Points A and B, 60 m apart same side of cliff, elevations 45° and 30°. Find cliff height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 30(√3+1) ≈ 81.96 m</p></details></div>
+      <div class="q-item"><span class="q-text">Tower beyond the farther point. Points 80 m apart, elevations 60° (near) and 30° (far). Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 40√3 ≈ 69.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Elevations from two points are both 60°. What does this tell you about the two points?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Both points are equidistant from the tower base.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Standard NCERT-Level</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From foot of tower (elevation 30°) and top of tower (elevation 45°, tower 20 m). Find building height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h_B = 10(3+√3) ≈ 47.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Window bottom at elevation 30°, top at 60°, window 2 m tall. Find bottom height and horizontal distance.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = √3 m; h_bottom = 1 m</p></details></div>
+      <div class="q-item"><span class="q-text">Q is 20 m closer than P. Elevations: P = 45°, Q = 60°. Find tower height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 10(3+√3) ≈ 47.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Opposite sides of tower, both 45°, 80 m apart total. Find tower height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 40 m</p></details></div>
+      <div class="q-item"><span class="q-text">A walks from elevation 60° to 30°, covers 100 m. Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 50√3 ≈ 86.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">From roof of house (3 m), child sees ball at depression 30° and tree at elevation 60° (4 m away). Find tree height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Tree height = 3 + 4√3 ≈ 9.93 m</p></details></div>
+      <div class="q-item"><span class="q-text">Points P and Q same side, PQ = 50 m, elevations 60° (Q, near) and 45° (P, far). Find height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 25(3+√3) ≈ 118.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">From one side 20 m away elevation 60°; from other side 30 m elevation θ. Find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 20√3. tan θ = 20√3/30 → θ ≈ 49.1°</p></details></div>
+      <div class="q-item"><span class="q-text">Two points 30 m apart same side. tan α = 1/2, tan β = 1/3. Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 30 m</p></details></div>
+      <div class="q-item"><span class="q-text">From two points 150 m apart (same side) elevations 30° and 60°. Prove tower height = 75√3 m.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>dN = 75, h = 75√3. QED.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Challenging</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two observation posts A and B, 600 m apart (A farther). Elevations: A = 30°, B = 60°. Find mountain height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 300√3 ≈ 519.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Observer walks from elevation 60° to 30°, covering 40√3 m. Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 60 m</p></details></div>
+      <div class="q-item"><span class="q-text">Three collinear points A, B, C, one side of tower. Angle from A = 30°, B = 45°, C = 60°. AB = 40 m. Find BC.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>BC ≈ 23.1 m</p></details></div>
+      <div class="q-item"><span class="q-text">From hilltop (30 m above road), depressions of two cars (same side) are 60° and 45°. Find distance between cars.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Distance = 10(3−√3) ≈ 12.68 m</p></details></div>
+      <div class="q-item"><span class="q-text">Cliff 50 m; flagpole on top. From 50 m away, flag top at 60°. Find flagpole height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Flagpole = 50(√3−1) ≈ 36.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Show that h = d tan α tan β / (tan β − tan α) for same-side two-point observation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Using the formula, find h when α = 30°, β = 60°, d = 100 m.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 50√3 ≈ 86.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two points 20 m apart, both see top of tower at 45°, on opposite sides. Where is the tower and what is its height?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Tower at midpoint, 10 m from each. h = 10 m</p></details></div>
+      <div class="q-item"><span class="q-text">A balloon rises between two observers 500 m apart. Elevations 30° and 60°. Find the balloon's height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 250√3/2 ... h(1/√3 + √3)=500 → h(4/√3)=500 → h = 125√3 ≈ 216.5 m</p></details></div>
+      <div class="q-item"><span class="q-text">A drone above a field at height h is tracked from two ground stations 1 km apart. Elevations: 60° and 30° (drone between stations). Find h.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 250√3 ≈ 433 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two students measure the same tower. S1: 45° at 30 m. S2: 60° at 20 m. Are they measuring the same tower?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S1: h = 30 m. S2: h = 20√3 ≈ 34.6 m. Different — not the same tower.</p></details></div>
+      <div class="q-item"><span class="q-text">A lighthouse keeper records depressions: 60°, 45°, 30°, 20° (every hour). Lighthouse = 80 m. Find each ship's distance. Describe the pattern.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 60 m tower observed from two points both giving elevation 30°, on opposite sides. Find the distance between the two observation points.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Each is 60√3 m from base. Total = 120√3 ≈ 207.8 m</p></details></div>
+      <div class="q-item"><span class="q-text">Using cotangent form: h = d/(cot α − cot β). Verify it equals d tan α tan β/(tan β − tan α).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Class experiment: students at 5, 10, 15, 20 m from a 10 m wall. Predict elevation angles at each distance. Describe the trend.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>63.4°, 45°, 33.7°, 26.6°. Angle decreases as distance increases.</p></details></div>
+      <div class="q-item"><span class="q-text">If the angle of elevation from a height H window doubles (from θ to 2θ) when an object moves d m closer, express the object's distance in terms of H, θ.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tower 75 m between two towns 250 m apart. From town A, elevation 60°. Find exact position of tower along the line AB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>dA = 75/√3 = 25√3 ≈ 43.3 m from A</p></details></div>
+      <div class="q-item"><span class="q-text">Real-life: Estimate the height of The Gaudium School's main block if you can only use a protractor and measuring tape. Describe the method and calculations.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: if elevation angles from opposite ends are complementary (α + β = 90°), then h = √(d₁ · d₂).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Generalize: for n observers spaced d apart, what condition ensures all measurements are consistent with one tower height h?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 6 ───────────────────────── -->
+<section class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Two-Observation Problems — Different Levels</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Setup &amp; Structure</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of a 15 m building, elevation of tower top = 30°, depression of tower base = 45°. Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 15 m. Height = 15 + 15/√3 = 15(1+1/√3) ≈ 23.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">From window 12 m high, elevation to building top = 60°, depression of base = 30°. Find height and distance.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 12√3; total height = 48 m</p></details></div>
+      <div class="q-item"><span class="q-text">Observer 10 m above ground, elevation to mountain top = 45°, depression of mountain base = 30°. Find mountain height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 10(1+√3) ≈ 27.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">From 30 m height, elevation to tower top = 60°, depression to tower base = 30°. Both objects 20 m horizontally. Find tower total height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Tower top height = 30 + 20√3 ≈ 64.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">From 25 m school roof, elevation of water tank top = 45°, depression of tank building base = 60°. Find tank building height and distance.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 25/√3; height ≈ 39.4 m</p></details></div>
+      <div class="q-item"><span class="q-text">From top of cliff 80 m high, ship at depression 30° and a lighthouse (50 m tall) at elevation 15°. Find horizontal distances to each.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a window H m high, objects above and below at angles α (elevation) and β (depression). Write the equations for both distances.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a 10 m flagpole top, a boy sees the top of a 25 m building at elevation 45° and base at depression 60°. Find horizontal distance and verify.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a window at 20 m, top of a palm tree at elevation 30°, base at depression 60°. Find tree height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 20/√3; tree height = 20 + 20/3 = 80/3 ≈ 26.7 m</p></details></div>
+      <div class="q-item"><span class="q-text">A person at 15 m sees a flagpole top at 0° (same level) and base at depression 45°. Find horizontal distance and pole height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d = 15 m; pole height = 15 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> NCERT-Type Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From top of 50 m tower, depression to another tower's top = 30°, base = 60°. Find height and distance of second tower.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 50/√3; second tower = 100/3 ≈ 33.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">From top of 60 m building, elevation of tower top = 45°, depression of tower base = 60°. Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 60 + 20√3 ≈ 94.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Boy on 20 m tower, elevation to girl's tower top = 30°, depression of girl's tower base = 60°. Find girl's tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 80/3 ≈ 26.7 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two buildings 30 m wide street. From 20 m building top, other building top at elevation 30°. Find taller building's height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 20 + 10√3 ≈ 37.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Standing on cliff 100 m high, depressions of two boats (opposite sides) are 30° and 45°. Find total distance between boats.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Total = 100(√3+1) ≈ 273.2 m</p></details></div>
+      <div class="q-item"><span class="q-text">From 45 m observation deck, elevation to mountain top = 60°, depression to mountain base = 30°. Find mountain height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 45 + 135 = 180 m</p></details></div>
+      <div class="q-item"><span class="q-text">From hill 120 m above sea, depression to harbour = 30°, to ship = 60°. Which is closer and by how much?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Ship closer by 80√3 ≈ 138.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Lighthouse 50 m. Ship at depression 30°, heading in. After 10 min, depression = 60°. Find ship's speed.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Speed ≈ 5.77 m/min</p></details></div>
+      <div class="q-item"><span class="q-text">Tower A (40 m) and B (60 m) are 100 m apart. From A's top, find elevation to B's top and from B's top, find depression to A's top.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Both = tan⁻¹(20/100) = tan⁻¹(1/5) ≈ 11.3°</p></details></div>
+      <div class="q-item"><span class="q-text">From a 10 m tower, angles of elevation and depression to a hill top and hill base are 60° and 30°. Find hill height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 10 + 30 = 40 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A ladder 20 m long from 15 m building makes 30° with horizontal, reaching adjacent building. Find second building's roof height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 15 + 20 sin 30° = 25 m</p></details></div>
+      <div class="q-item"><span class="q-text">From hotel 5th floor (15 m), palm tree top at elevation 30°, base at depression 60°. Find palm height and distance.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 5√3; palm height = 20 m</p></details></div>
+      <div class="q-item"><span class="q-text">A person between two buildings sees A's top at 60° (A is 15 m away) and B's top at 30° (B is 30 m away). Find heights.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>hA = 15√3 ≈ 26 m; hB = 10√3 ≈ 17.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">From equidistant point (60 m from each of two towers), elevations are 45° and 60°. Find heights.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Tower 1: 60 m; Tower 2: 60√3 ≈ 103.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">From top of cliff (height h), depression to boat in river (100 m wide) = 30°, to far bank = 45°. Find h.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 50(√3+1) ≈ 136.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">A bird at top of 40 m tree sees two worms: one at depression 60° (closer), one at 30°. Find ground distances and gap between them.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 40/√3; d₂ = 40√3; gap = 80√3/3 ≈ 46.2 m</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: from height H, if elevation to top = α and depression to base = β, then object height = H(1 + tan α/tan β).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two observation towers A (40 m) and B (60 m), 100 m apart. Show elevation from A to B's top = depression from B to A's top = tan⁻¹(1/5).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a 30 m pole top, angles of elevation and depression to two targets are 60° and 30°. Both on same vertical. Find vertical gap between targets.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a vertical cliff dropping 200 m to sea, a ship at depression 30° is seen. From halfway up (100 m), find new depression to same ship.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d_ship = 200√3. New angle: tan θ = 100/(200√3) = 1/(2√3) → θ ≈ 16.1°</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove: from height H, elevation α, depression β → object height = H(tan α + tan β)/tan β. Use H=20, α=45°, β=60°.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two buildings H₁ and H₂, d apart (H₂>H₁). From shorter roof, elevation to taller top is θ. Express H₂.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>H₂ = H₁ + d tan θ</p></details></div>
+      <div class="q-item"><span class="q-text">Person on building observes lamp at depression 30° and car at depression 60°. Car is 10 m from lamp post base. Find observer's height.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From window at 20 m, observer sees tree reflection in a lake at depression 45° and tree top at elevation 30°. Find tree height.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Mountain observed from valley. From 2000 m away (ground), elevation 30°. From 1000 m closer (and 500 m higher terrain), elevation 45°. Find mountain height.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two stations at heights 50 m and 200 m measure 60° elevation to a rocket at horizontal distances 500 m and 800 m. Find rocket height from each. Are they consistent?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A webcam on 5 m stand records a 10 m wide road at 45° depression (near edge) and 60° depression (far edge). Find camera's horizontal position relative to road edges.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A cinema screen: bottom 2 m, top 8 m. Viewer 10 m back, eye 1.2 m height. Find angles of elevation to screen top and bottom.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two adjacent windows 5 m apart vertically see same distant tree at elevation 30° (lower) and 45° (upper). Using two equations, find tree height and distance.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Create a real problem using The Gaudium School's buildings as context, involving angles of elevation and depression from different floor windows. Solve it.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 7 ───────────────────────── -->
+<section class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Problems with Two Triangles — Back-to-Back</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Concept &amp; Setup</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Vertical pole between C and D on opposite sides. From C: elevation 45°; from D: elevation 60°. CD = 100 m. Find height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h(1 + 1/√3) = 100 → h = 100√3/(√3+1) = 50(3−√3) ≈ 58.3 m... Let dC = h (tan45°=1), dD = h/√3. h + h/√3 = 100 → h(1+1/√3) = 100 → h = 100√3/(√3+1) = 50√3(√3−1) = 50(3−√3) ≈ 31.7 m. Recheck: h+h/√3 = 100 → h(√3+1)/√3 = 100 → h = 100√3/(√3+1) = 50√3(√3−1)/1 after rationalization = 50(3−√3) ÷ (3−1) = 25(3−√3) ≈ 31.7 m</p></details></div>
+      <div class="q-item"><span class="q-text">Draw and explain a "back-to-back triangles" diagram with a pole between two observers.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Flagpole between two buildings, AB = 80 m. Elevation from A = 30°, from B = 60°. Find pole height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h(4/√3) = 80 → h = 20√3 ≈ 34.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Observer P is 30 m from tower, elevation 60°. Q on other side at 30°. Find height and Q's distance.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 30√3; BM = 90 m</p></details></div>
+      <div class="q-item"><span class="q-text">Tower at midpoint between two observers, 120 m apart, both observe at 45°. Find tower height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 60 m</p></details></div>
+      <div class="q-item"><span class="q-text">Elevations from due east and due west are 30° and 60°. Points are 150 m apart. Find tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 37.5√3 ≈ 64.95 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two cars on opposite sides of a 20 m building. Car A: elevation 30°; Car B: elevation 45°. Find distances CA and CB.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>CA = 20√3 ≈ 34.6 m; CB = 20 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two observers on opposite sides of a 50 m tower, total distance 100 m, both at equal elevation angles. Find the angle.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">Pole MN; A is 40 m from M, elevation 60°. B on other side at 30°. Find height and BM.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 40√3; BM = 120 m</p></details></div>
+      <div class="q-item"><span class="q-text">Observer P (60 m from tower) and Q (140 m from tower, other side). Tower 60 m. Find elevation angles from P and Q.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ_P = 45°; θ_Q = tan⁻¹(3/7) ≈ 23.2°</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Standard Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">30 m tree between two houses. House A: elevation 45°; House B (other side): elevation 60°. Find distance AB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>AB = 30 + 10√3 ≈ 47.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two temples face a pillar. Temple A: 50 m from pillar, elevation 30°. Temple B: elevation 45°. Find height and distance to B.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 50/√3; dB = 50/√3 ≈ 28.87 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two boats 300 m apart. Lighthouse between them: elevation 60° (boat A), 30° (boat B). Find lighthouse height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 75√3 ≈ 129.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two mountains on opposite sides of valley, 1200 m between observation points. Elevations: 30° and 60°. Find mountain height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 300√3 ≈ 519.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Pole between two houses 80 m apart. Elevation from house A = 45°, house B = 30°. Find pole height and distances to each house.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 40(√3−1) ≈ 29.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">TV tower between towns P and Q (PQ = 200 m). P: elevation 60°; Q: elevation 30°. Find tower height and distances from each town.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 50√3; dP = 50; dQ = 150 m</p></details></div>
+      <div class="q-item"><span class="q-text">Tree 60 m from house A (elevation 30°) and 80 m from house B (elevation θ). If tree is 40 m tall, find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = tan⁻¹(0.5) ≈ 26.6°</p></details></div>
+      <div class="q-item"><span class="q-text">Two observers on opposite sides of cliff (200 m) on a lake. A: elevation 60°; B: elevation 30°. Find width of lake between them.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Width = 800√3/3 ≈ 461.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">Flagpole between science block (elevation 30°) and arts block (elevation 60°), 200 m apart. Find flagpole height and position.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 50√3 ≈ 86.6 m; 150 m from science, 50 m from arts.</p></details></div>
+      <div class="q-item"><span class="q-text">40 m tower from two stations: A at 60°, B at 45° (opposite sides). Find distance between stations.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Distance = 40/√3 + 40 = 40(1+1/√3) ≈ 63.1 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Multi-Angle Scenarios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A, T (tower base), B are collinear. AT = 30 m, BT = 40 m, tower = 30 m. Find elevation angles from A and B.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ_A = 45°; θ_B = tan⁻¹(0.75) ≈ 36.9°</p></details></div>
+      <div class="q-item"><span class="q-text">Chimney between Factory A (100 m, elevation 30°) and Factory B (60 m from chimney, elevation θ). Find θ.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 100/√3; θ = tan⁻¹(5√3/9) ≈ 43.8°</p></details></div>
+      <div class="q-item"><span class="q-text">Pole of height h divides a segment L = a+b. Elevation from each end = 45°. Find the relationship.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a = b = h, L = 2h</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: if elevation angles from opposite ends are complementary, h = √(d₁ · d₂).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A tree between two houses. House left 60 m away, elevation θ₁. House right 80 m, elevation θ₂. Tree height = 40 m. Find θ₁ and θ₂.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ₁ = tan⁻¹(2/3) ≈ 33.7°; θ₂ ≈ 26.6°</p></details></div>
+      <div class="q-item"><span class="q-text">Show that for two back-to-back triangles: h² = d₁ · d₂ · tan α · tan β.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three collinear points A, B, C (B between), same side of tower. A=30°, B=45°, C=60°. AB=40 m. Find BC.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 20(√3+1); BC ≈ 23.1 m</p></details></div>
+      <div class="q-item"><span class="q-text">From hilltop 30 m above road, depressions of two cars (same side) are 60° and 45°. Find distance between cars.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Distance = 10(3−√3) ≈ 12.68 m</p></details></div>
+      <div class="q-item"><span class="q-text">A river flows between two towers (40 m and 60 m). Depression from taller tower to base of shorter = 30°. Find river width.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d = 60/tan30° = 60√3 ≈ 103.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">Create your own back-to-back problem using a Hyderabad landmark. Solve it.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two mountains across a valley. Peak A (3000 m): depression to valley = 30°. Peak B (2000 m): depression to valley = 45°. Find valley width.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A balloon rises between two observers 500 m apart. At height h, elevations are 30° and 60°. Balloon rises 100 m more. Find new angles.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two friends on opposite sides of flagpole. First is twice as far as second. First sees 30°, second sees 60°. Show the data is inconsistent.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁=2d₂. h=d₁/√3=2d₂/√3; h=d₂√3. 2/√3=√3 → 2=3. Contradiction.</p></details></div>
+      <div class="q-item"><span class="q-text">Using cotangent: h = d/(cot α − cot β). For opposite sides: h = d/(cot α + cot β). Derive and verify with a numerical example.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 75 m radio mast between two listener points A and B (AB = 250 m). From A, elevation = 60°. Find exact position of mast along AB.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>dA = 75/√3 = 25√3 ≈ 43.3 m from A</p></details></div>
+      <div class="q-item"><span class="q-text">A vertical stick casts shadows on two sides of a slope. Explain why simple tan formula may not apply on a slope and what correction is needed.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Prove: for back-to-back equal elevations (both θ), the pole stands at the midpoint and h = (L/2) tan θ where L = total distance.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 40 m tower is observed from two stations on opposite sides. Station A gives 60°, station B gives 45°. Find distance between stations.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Distance ≈ 63.1 m</p></details></div>
+      <div class="q-item"><span class="q-text">A school flagpole is between the science block and arts block. Describe a real-world measurement procedure to find the flagpole height using only a measuring tape and protractor.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a symmetrical valley, two equally tall mountains have their peaks at 45° elevation from the valley floor point P at the centre. The valley floor width is 400 m. Find the mountain height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Each mountain is 200 m from P. h = 200 tan 45° = 200 m</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 8 ───────────────────────── -->
+<section class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Shadow and Length Problems</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Shadow Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A pole 6 m tall casts a 6 m shadow. Find the sun's angle of elevation.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = 1 → θ = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">Shadow of a 10 m tree is 10√3 m. Find sun's elevation.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 30°</p></details></div>
+      <div class="q-item"><span class="q-text">Sun elevation = 60°. Building casts 20 m shadow. Find building height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 20√3 ≈ 34.64 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 5 m and a 10 m pole — what is the ratio of their shadow lengths at the same time?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1:2 (shadow ∝ height for same sun angle)</p></details></div>
+      <div class="q-item"><span class="q-text">Tree casts 15 m shadow at sun elevation 30°. Find tree height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 5√3 ≈ 8.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 2 m stick casts shadow 2/√3 m. Find sun elevation and shadow of a 6 m wall at same time.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = 60°; shadow of 6 m wall = 2√3 ≈ 3.46 m</p></details></div>
+      <div class="q-item"><span class="q-text">Shadow length = √3 times height. Find sun's elevation.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 30°</p></details></div>
+      <div class="q-item"><span class="q-text">A 1.5 m girl has 3 m shadow. A building has 40 m shadow. Find building height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 20 m</p></details></div>
+      <div class="q-item"><span class="q-text">At noon, 12 m pole has 4√3 m shadow. Find sun elevation.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>θ = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">Shadow increases from 5 m to 5√3 m. Calculate both sun angles. Is sun rising or setting?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>45° to 30°. Sun going lower (setting).</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Intermediate Shadow Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">10 m pole: shadow at 3 PM (elevation 45°) and 5 PM (elevation 30°). Find both shadow lengths.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3 PM: 10 m; 5 PM: 10√3 ≈ 17.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Shadow of a building at 60° is 30 m. Sun moves to 45°. Find new shadow length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>New shadow = 30√3 ≈ 51.96 m</p></details></div>
+      <div class="q-item"><span class="q-text">Person (1.8 m) shadow 2.4 m; lamppost shadow 8 m. Find lamppost height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 6 m</p></details></div>
+      <div class="q-item"><span class="q-text">Vertical rod shadow 4 m, hypotenuse (rod tip to shadow tip) 8 m. Find rod height and sun elevation.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 4√3 m; θ = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">Sun elevation 75° (tan75° ≈ 3.73). Chimney 30 m. Find shadow length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Shadow ≈ 8.04 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 20 m tower and 10 m pole, 15 m apart. At what sun elevation does the tower's shadow exactly cover the pole's base?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>θ = tan⁻¹(4/3) ≈ 53.1°</p></details></div>
+      <div class="q-item"><span class="q-text">A telegraph pole 10 m: shadow at 3 PM = 10 m, at 5 PM = 10√3 m. Calculate both sun elevations and describe what changed.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3 PM: 45°; 5 PM: 30°. Sun elevation decreased.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: shadow of a pole of height h is shortest at 90° elevation and longest (infinite) at 0° elevation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two lampposts 8 m and 12 m, 20 m apart. They cast shadows in opposite directions. Sun elevation = 45°. Find each shadow length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>8 m and 12 m respectively.</p></details></div>
+      <div class="q-item"><span class="q-text">The shadow of a 15 m tree equals the shadow of a 10 m pole at different times. Explain when this happens and write the condition.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Length &amp; Combined Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A 20 m tree is broken. Top touches ground making 60° with ground. Find height of standing part.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h ≈ 9.28 m (see working above)</p></details></div>
+      <div class="q-item"><span class="q-text">16 m tree broke. Top touches ground 8 m from base. Find break height and angle with ground.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 6 m; θ ≈ 36.9°</p></details></div>
+      <div class="q-item"><span class="q-text">Pole: shadow at 10 AM (elevation 30°) = 15 m. Find shadow at 12 PM (60°) and 2 PM (45°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 5√3. At 60°: 5 m; at 45°: 5√3 ≈ 8.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">Electric tower 80 m: shadow = 80/√3 m. Find sun angle. At same time, find shadow of 20√3 m tree.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = 60°; tree shadow = 20 m</p></details></div>
+      <div class="q-item"><span class="q-text">2 m stick vertical, shadow 2 m. Sun angle? Then find shadow of 72.5 m Qutub Minar at same time.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = 45°; shadow = 72.5 m</p></details></div>
+      <div class="q-item"><span class="q-text">A tree broke with top hitting ground 6 m from trunk. Angle at break = 60° (from vertical). Find original tree height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Standing = 6√3 m; fallen part = 12 m. Original = 6√3 + 12 ≈ 22.39 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 6 m pole: shadow at 9 AM = 6√3 m. Find sun elevation. How does shadow change by noon (elevation 60°)?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>9 AM: θ = 30°. At noon: shadow = 6/√3 = 2√3 ≈ 3.46 m. Shadow decreases by 6√3 − 2√3 = 4√3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two poles 5 m and 8 m, 10 m apart. Wire connects their tops. Find wire length and angle with horizontal.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Wire = √109 ≈ 10.44 m; angle ≈ 16.7°</p></details></div>
+      <div class="q-item"><span class="q-text">A 15 m tree broke. Top lands 9 m from trunk. Find break height and angle with ground.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 4.8 m; θ ≈ 28.1°</p></details></div>
+      <div class="q-item"><span class="q-text">A photographer wants to shoot a 40 m building fully. Camera has maximum 60° elevation from ground. Find minimum distance needed.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d = 40/tan60° ≈ 23.1 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">At what time of year would a building cast its shortest shadow in Hyderabad (≈17°N)? Explain using sun elevation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Derive a formula for shadow length on a slope inclined at angle α when sun shines at elevation β.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Sketch shadow length vs sun elevation (0° to 90°) for a 10 m pole. Explain the curve shape.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A statue 2 m on a 3 m pedestal. Observer 5 m from pedestal base. Find angle subtended by the statue alone.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>θ_top = 45°; θ_bottom = tan⁻¹(3/5) ≈ 30.96°. Subtended angle ≈ 14°</p></details></div>
+      <div class="q-item"><span class="q-text">Sundial: 30 cm gnomon. Tabulate shadow lengths for sun elevations 15°, 30°, 45°, 60°, 75°. Explain its use as a clock.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">3D shadow: pole at origin, sun at 45° from north and elevation 60°. Describe shadow direction and length (pole 10 m).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Tree (height H) broken by wind. Top touches ground at distance d, broken part makes angle θ with ground. Derive formula: H = d(tan θ + 1/cos θ).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two friends in Hyderabad and Mumbai have 1 m sticks. Shadows differ at noon on same day. Explain why using sun elevation and what this shows about Earth's curvature (Eratosthenes' method).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The shadow of a pole of height h is kh for some constant k. Express k in terms of sun elevation θ. For what θ is k = 1, k = √3, k = 1/√3?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>k = 1/tan θ. k=1: θ=45°; k=√3: θ=30°; k=1/√3: θ=60°</p></details></div>
+      <div class="q-item"><span class="q-text">An architect designs an overhang. If the overhang is 2 m deep and sun elevation at noon in summer is 70°, how much of the window (height h) below is in shadow?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ───────────────────────── TOPIC 9 ───────────────────────── -->
+<section class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Flagpole, Tower and Building Problems</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Flagpole Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A flagpole 10 m tall stands on a building 20 m high. Find the angle subtended by the flagpole at a point 20 m from the building base.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Angle to building top = tan⁻¹(20/20) = 45°. Angle to flagpole top = tan⁻¹(30/20) = tan⁻¹(1.5) ≈ 56.3°. Angle subtended by flag = 56.3° − 45° ≈ 11.3°</p></details></div>
+      <div class="q-item"><span class="q-text">From 30 m away, the angle of elevation of the top of a flag on a building is 60° and the building top is 45°. Find the height of the flagpole.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Building height = 30 tan 45° = 30 m. Flag top = 30 tan 60° = 30√3. Flag height = 30√3 − 30 = 30(√3−1) ≈ 21.96 m</p></details></div>
+      <div class="q-item"><span class="q-text">A flagpole stands at the edge of a cliff. From a boat 100 m from the cliff, the elevation of the flagpole's top is 60° and base (cliff top) is 45°. Find the flagpole height and cliff height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Cliff = 100 tan 45° = 100 m. Flag top = 100 tan 60° = 100√3. Flag = 100√3 − 100 = 100(√3−1) ≈ 73.2 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 6 m flagpole is mounted on a 10 m pole. From a point on the ground, the total elevation is 60°. Find the horizontal distance.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d = 16/tan 60° = 16/√3 ≈ 9.24 m</p></details></div>
+      <div class="q-item"><span class="q-text">A flag is raised to the top of a 20 m pole. An observer 20 m away sees the flag at 45°. If the flag itself is 2 m long, what angle does the flag's length subtend at the observer?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The angle of elevation of the top of a flagpole standing on a building is 60° from a distance of 20 m. The building is 10 m tall. Find the height of the flagpole.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Total height = 20 tan 60° = 20√3. Flag = 20√3 − 10 ≈ 24.64 m</p></details></div>
+      <div class="q-item"><span class="q-text">An Indian flag (3 m × 2 m) is hoisted on a 15 m pole. From 15 m away, find the angles of elevation of the top and bottom of the flag.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Angle to bottom of flag (top of pole = 15 m): tan θ₁ = 15/15 = 1 → 45°. Angle to flag top (18 m): tan θ₂ = 18/15 = 1.2 → θ₂ ≈ 50.2°. Angle subtended by flag ≈ 5.2°</p></details></div>
+      <div class="q-item"><span class="q-text">A flagpole of height f stands on a building of height b. From a point d metres away, the flag and building together subtend an angle θ at the ground. Write the equation to find f.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From two points P (elevation 30° to flagpole top) and Q (elevation 60°, 40 m closer), find the flagpole height if P is at ground level and the pole is on flat ground.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 20√3 ≈ 34.6 m (using standard two-point formula with d=40)</p></details></div>
+      <div class="q-item"><span class="q-text">On India's Republic Day, the National Flag is hoisted at Red Fort (flag height = 3 m, pole = 27 m). If you stand 30 m away, find elevation angles to the flag base and top.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ_base = tan⁻¹(27/30) ≈ 42°; θ_top = tan⁻¹(30/30) = 45°</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Tower Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A transmission tower 30 m high stands on a building 20 m high. From 30 m away, find the angle of elevation of the tower top.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan θ = 50/30 = 5/3 → θ ≈ 59°</p></details></div>
+      <div class="q-item"><span class="q-text">From 40 m away, the angle of elevation of a TV tower is 60°. The tower stands on a 10 m building. Find the tower height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Total = 40√3. Tower = 40√3 − 10 ≈ 59.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">A water tank is on a tower 20 m tall. From 20 m away on the ground, find the angle of elevation of the tank top if the tank is 5 m tall.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Total height = 25 m. tan θ = 25/20 = 1.25 → θ ≈ 51.3°</p></details></div>
+      <div class="q-item"><span class="q-text">The Eiffel Tower is 330 m tall. From 330 m away, what is the angle of elevation of the top?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = 1 → θ = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">A mobile tower is visible from a point on the ground at elevation 60°. The distance is 50 m. If the tower base is at the same level as the observer, find the tower height.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 50√3 ≈ 86.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">From the top of a 30 m tall tower, the angle of depression to the bottom of a nearby building is 45° and to the top is 30°. Find the building height and horizontal distance.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 30/tan45° = 30. Top of building = 30 − 30 tan30° = 30 − 10√3 ≈ 12.68 m</p></details></div>
+      <div class="q-item"><span class="q-text">A broadcast tower 100 m high casts a shadow 100/√3 m long. Find the sun elevation and the length of the shadow at sun elevation 45°.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = 60°. Shadow at 45° = 100 m</p></details></div>
+      <div class="q-item"><span class="q-text">From points A and B (on the same side, AB = 30 m) a tower's top is seen at elevations 45° and 60°. Find the tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 15(3+√3) ≈ 71 m</p></details></div>
+      <div class="q-item"><span class="q-text">A radio tower stands on a hill. From the base of the hill (400 m away), the tower top is at 60° elevation and the hill top (tower base) at 30°. Find the tower height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Hill = 400 tan30° = 400/√3. Tower top = 400 tan60° = 400√3. Tower = 400√3 − 400/√3 = 400(3−1)/√3 = 800/√3 ≈ 462 m</p></details></div>
+      <div class="q-item"><span class="q-text">Find the height of the Qutub Minar (72.5 m). At what distance must you stand to see the top at (a) 45°, (b) 60°, (c) 30°?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(a) 72.5 m; (b) 72.5/√3 ≈ 41.8 m; (c) 72.5√3 ≈ 125.6 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Building Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The angle of elevation of the top of a building from a point on the ground is 30°. After walking 30 m towards the building, the angle is 60°. Find the building height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 15√3 ≈ 25.98 m</p></details></div>
+      <div class="q-item"><span class="q-text">From the top of a 20 m building, the angles of elevation and depression to a taller building's top and base are 45° and 60°. Find the taller building's height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 20/√3. Extra height = (20/√3) × 1 = 20/√3. Total = 20 + 20/√3 ≈ 31.55 m</p></details></div>
+      <div class="q-item"><span class="q-text">Two buildings face each other. From the ground between them, Building A's top is at 45° and Building B's top at 30°. The observer is 20 m from A and 30 m from B. Find both heights.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>hA = 20 m; hB = 30/√3 = 10√3 ≈ 17.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">A multi-story building has floors 3 m apart. From 30 m away, find elevation angles to the 1st, 2nd, 3rd, 5th, and 10th floor tops.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Hyderabad's Charminar is approximately 56 m tall. From Laad Bazaar (100 m away), find the elevation angle to the top of a minaret.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = tan⁻¹(56/100) ≈ 29.3°</p></details></div>
+      <div class="q-item"><span class="q-text">From the top of a hill 150 m high, the angles of depression of two buildings in the valley are 30° and 45°. The buildings are on the same side. Find the distance between the buildings.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 150; d₂ = 150√3. Distance = 150(√3−1) ≈ 109.8 m</p></details></div>
+      <div class="q-item"><span class="q-text">A building's architect wants the angle of elevation from the front gate (15 m from the building) to the rooftop not to exceed 60°. Find the maximum allowed building height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Max h = 15 tan60° = 15√3 ≈ 25.98 m</p></details></div>
+      <div class="q-item"><span class="q-text">From a tall building A, the angle of depression to the base of building B is 45° and to the top of B is 30°. A is 60 m tall. Find B's height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 60 m. Top of B = 60 − 60 tan30° = 60 − 20√3 ≈ 25.36 m</p></details></div>
+      <div class="q-item"><span class="q-text">A 40 m building stands between two observation points A and B, 100 m apart (A and B on opposite sides). Find elevation angles from A (60 m from building) and B.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ_A = tan⁻¹(40/60) = tan⁻¹(2/3) ≈ 33.7°. θ_B = tan⁻¹(40/40) = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">A school wants to build a 20 m tall building. Safety regulations say the angle of elevation from the school gate must be at most 45°. How far must the gate be from the building?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>At 45°: d = h = 20 m. Gate must be at least 20 m from the building.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The angle of elevation of the top of a flagpole changes from 45° to 60° as an observer moves 10 m towards it. Write and solve the system of equations.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = d₂√3; h = d₂+10. d₂(√3−1)=10. d₂=5(√3+1). h=5√3(√3+1)=5(3+√3)≈23.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">In Hyderabad, propose a method to find the height of the Hussain Sagar Buddha statue (18 m on a 17 m island) using only a clinometer and measuring tape. Write the calculation.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A cell tower is to be built. It must be visible at 30° elevation from a point 500 m away and at 60° elevation from a point 200 m away on the other side. Is there a consistent tower height? Find it.</span><span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>h = 500 tan30° = 500/√3 ≈ 288.7 m. Check: h = 200 tan60° = 200√3 ≈ 346.4 m. Inconsistent — no single height satisfies both unless tower base is elevated.</p></details>
+      </div>
+      <div class="q-item"><span class="q-text">A building has a 5 m wide decorative ledge at 15 m height. From ground level 20 m away, find the angles of elevation to the bottom and top of the ledge.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ_bottom = tan⁻¹(15/20) ≈ 36.9°; θ_top = tan⁻¹(20/20) = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">Earthquake simulation: if a 30 m building tilts 5° from vertical, find the height of its top above the original ground point at its base and its new horizontal displacement.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A student wants to measure their school building height using a mirror on the ground. Explain the similar triangles method and write the trig equivalent formula.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From the roof of a 10-story building (each floor 3 m), determine the angle of depression to a person 50 m from the building base at: ground floor, 3rd floor, 5th floor, 10th floor.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two flagpoles of heights 12 m and 18 m are 24 m apart. A rope connects their tops. Find the angle the rope makes with the horizontal and the rope length.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Height diff = 6 m, horizontal = 24 m. Angle = tan⁻¹(6/24) = tan⁻¹(0.25) ≈ 14.04°. Rope = √(36+576) = √612 = 6√17 ≈ 24.74 m</p></details></div>
+      <div class="q-item"><span class="q-text">A building throws a shadow on an adjacent building's wall. If the building is 20 m tall and 10 m from the wall, and sun elevation is 60°, find how high up the wall the shadow reaches.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Design an optimum position for a CCTV camera (height and angle) to monitor a 30 m long corridor with no blind spots. State your assumptions and calculations.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 10 ───────────────────────── -->
+<section class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Observer on a Hill/Cliff Problems</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Cliff-Based Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of a cliff 50 m above sea level, the angle of depression of a fishing boat is 30°. Find the horizontal distance of the boat from the cliff.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 50/tan30° = 50√3 ≈ 86.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">A lighthouse keeper on a 75 m cliff sees two ships at depression angles 45° and 30°. Both are on the same side. Find the distance between the ships.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 75; d₂ = 75√3. Distance = 75(√3−1) ≈ 54.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">From the top of a 100 m cliff, a swimmer is seen at depression 45°. Find how far the swimmer is from the base of the cliff.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 100 m</p></details></div>
+      <div class="q-item"><span class="q-text">An observer at the top of a 200 m hill sees a car at depression 30° and a bus (further away) at depression 15° (tan 15° ≈ 0.268). Find both distances and the gap between vehicles.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Car: 200√3 ≈ 346.4 m; Bus: 200/0.268 ≈ 746.3 m. Gap ≈ 399.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">From a cliff 80 m above a river, the angles of depression of two boats (on opposite banks) are 30° and 45°. Find the total river width.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 80√3; d₂ = 80. Width = 80(√3+1) ≈ 218.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">A person on a cliff sees the top of a tree (at sea level) at elevation 30° and the tree base at depression 60°. Find the tree height and its distance from the cliff.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let h_cliff = H, d = horizontal. H/d = tan60° → d = H/√3. Tree top = H + d·tan30° = H + H/3 = 4H/3. Tree height = 4H/3 − 0... wait, the tree top is above sea level and base is at sea level. If cliff height = H: d = H/tan60° = H/√3. Height of tree = d·tan30° + H... no: elevation 30° from cliff top means tree top is above cliff top = d tan30° + H. Hmm, re-read: tree top at elevation 30° means angle looking UP from cliff top. So tree top is ABOVE cliff top. Height of tree top above cliff top = d tan30°. Tree height = depth of cliff to sea + d tan30°. If cliff top is H above sea, d = H/√3 (from depression 60°). Tree height (above sea) = H + (H/√3)(1/√3) = H + H/3 = 4H/3. Tree height = 4H/3.</p></details></div>
+      <div class="q-item"><span class="q-text">Standing on a hill 120 m above a road, an observer sees a milestone at depression 30°. Find the distance of the milestone along the road from the hill base.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 120√3 ≈ 207.8 m</p></details></div>
+      <div class="q-item"><span class="q-text">From the top of a 60 m hill, the angle of depression of the near end of a bridge is 45° and the far end is 30°. Find the length of the bridge.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d_near = 60; d_far = 60√3. Bridge = 60(√3−1) ≈ 43.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">A rescue helicopter hovers 500 m above a hill's peak. From the helicopter, a stranded hiker is at depression 30°. The hill is 200 m high. Find the hiker's straight-line distance from the hill base.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Helicopter at 700 m. Hiker at 0 m (ground). Horizontal distance = 700/tan30° = 700√3 ≈ 1212 m</p></details></div>
+      <div class="q-item"><span class="q-text">From an observation post on a 45 m hill, a soldier sees enemy positions at depression 60° (near) and 30° (far). Find the distance between the enemy positions.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d_near = 45/√3 = 15√3; d_far = 45√3. Distance = 45√3 − 15√3 = 30√3 ≈ 51.96 m</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Mixed Hill &amp; Cliff</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of a 300 m hill, the angle of depression of a town 300 m away (horizontal) is found. What is the angle?</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = 300/300 = 1 → θ = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">A cliff rises 50 m above a beach. From the cliff edge, the angle of depression to a surfer is 30°. Find the slant distance from the cliff edge to the surfer.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>slant = 50/sin30° = 100 m</p></details></div>
+      <div class="q-item"><span class="q-text">An eagle on a 90 m cliff sees fish at depressions 60° and 45° in the sea below. Find the straight-line distances from the cliff edge to each fish.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>At 60°: slant = 90/sin60° = 60√2... wait: slant = 90/sin60° = 180/√3 = 60√3 ≈ 103.9 m. At 45°: slant = 90/sin45° = 90√2 ≈ 127.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">From the top of a 120 m hill, an observer looks at a lake. The near shore is at depression 60° and the far shore at 30°. Find the lake's width.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d_near = 120/√3 = 40√3; d_far = 120√3. Width = 120√3 − 40√3 = 80√3 ≈ 138.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">A paraglider is 800 m above sea level at the edge of a cliff (cliff top). From the ground below, the angle of elevation is 60°. Find the horizontal distance from the base of the cliff to the ground observation point.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d = 800/tan60° = 800/√3 ≈ 461.9 m</p></details></div>
+      <div class="q-item"><span class="q-text">From a hilltop A (height H) and a valley point B, the angle of elevation of a mountain peak C is the same (60°). If B is at the foot of the hill and BC = 500 m, find the height of the mountain peak above the valley.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two people stand on opposite sides of a hill, 500 m apart at valley level. Both look up at a peak and see it at 30° elevation. If the peak is exactly above the midpoint, find the hill height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Midpoint is 250 m from each. h = 250 tan30° = 250/√3 ≈ 144.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">An observer on a cliff 100 m high uses a periscope to look at the sea. The periscope adds 2 m to effective observer height. Find the depression angle to a boat 200 m away (horizontal).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Effective height = 102 m. tan θ = 102/200 = 0.51 → θ ≈ 27°</p></details></div>
+      <div class="q-item"><span class="q-text">From the summit of a mountain, the angle of depression to a base camp 1500 m horizontally is 30°. Find the mountain's height above the base camp.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 1500 tan30° = 1500/√3 = 500√3 ≈ 866 m</p></details></div>
+      <div class="q-item"><span class="q-text">A bird on a cliff (45 m high) sees a worm at depression 60° and a flower at elevation 30°. Both are on the same horizontal line 30 m from the cliff base. Verify using distances if this is consistent.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Extended Scenarios</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From the top of Nandi Hills (1480 m above sea level) near Bangalore, on a clear day you can see cities below. If the depression to a town (at 600 m elevation) is 30°, find the horizontal distance.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Height diff = 1480 − 600 = 880 m. d = 880/tan30° = 880√3 ≈ 1524 m</p></details></div>
+      <div class="q-item"><span class="q-text">A cliff overhangs the sea by 5 m horizontally. The cliff top is 40 m above sea. A swimmer is 60 m from the point directly below the cliff edge. Find the depression angle from the cliff edge to the swimmer.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From the top of a hill 60 m high, the angle of elevation of a balloon is 60° and the angle of depression of a building is 45°. Both are 40 m horizontally from the hill. Find heights of the balloon and building.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Balloon above hill top = 40 tan60° = 40√3. Balloon height = 60 + 40√3 ≈ 129.3 m. Building height = 60 − 40 tan45° = 60 − 40 = 20 m</p></details></div>
+      <div class="q-item"><span class="q-text">From a 200 m cliff, two boats are on opposite sides. Depressions: 45° and 30°. Find total distance between boats.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 200; d₂ = 200√3. Total = 200(1+√3) ≈ 546.4 m</p></details></div>
+      <div class="q-item"><span class="q-text">A trekker is at 1200 m on a mountain. He sees a valley village at depression 45° and a higher peak at elevation 30°. Both are 800 m horizontally. Find village height and higher peak height.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Village = 1200 − 800 tan45° = 400 m. Peak = 1200 + 800 tan30° = 1200 + 800/√3 ≈ 1662 m</p></details></div>
+      <div class="q-item"><span class="q-text">A drone at 500 m altitude hovers over a hill peak. From a valley 1000 m horizontally from the peak, find the elevation angle to the drone.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a cliff top, an observer sees a boat's mast (15 m above boat's hull) at elevation 30° and the hull at depression 45°. Find the cliff height.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two cliffs face each other across a valley. Cliff A is 80 m; cliff B is 60 m. From the top of A, the angle of depression to the base of B is 30°. Find the valley width.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Height diff from A's top to B's base = 80 m. d = 80/tan30° = 80√3 ≈ 138.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">A mountaineer at 3000 m altitude takes readings to establish positions. She sees a glacier at depression 30° and a peak at elevation 45°. The peak is 1200 m horizontally. Find the glacier's position and the peak's height.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a 90 m cliff, the sea surface is at depression 30°. A wave 5 m tall approaches. When the crest of the wave is below the observer, what is the new depression to the wave trough? (Assume observer is at cliff edge.)</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From a cliff top, the angle of depression to an object increases as the object comes closer. If the object moves at constant speed, does the angle increase at a constant rate? Explain using tan.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A cliff of height H faces the sea. The horizontal distance to the horizon (ignoring Earth curvature) where depression = 0.5° is found using tan 0.5° ≈ 0.00873. Find this distance for H = 100 m.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 100/0.00873 ≈ 11,455 m ≈ 11.5 km</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: if the angle of depression from height H increases from θ₁ to θ₂ as an object moves closer by d, then H = d/(cot θ₁ − cot θ₂).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A person on a cliff 150 m high sees a boat. As the boat moves from depression 30° to 60°, find the distance it has travelled and the time taken if speed = 20 m/min.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>From 30°: 150√3; from 60°: 150/√3 = 50√3. Distance = 150√3−50√3 = 100√3 ≈ 173.2 m. Time = 173.2/20 ≈ 8.66 min</p></details></div>
+      <div class="q-item"><span class="q-text">A ship is approaching a cliff at 5 m/s. From the 60 m cliff top, the depression increases from 30° to 45°. How long does this take?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 60√3; d₂ = 60. Distance = 60√3−60 = 60(√3−1) ≈ 43.9 m. Time = 43.9/5 ≈ 8.78 s</p></details></div>
+      <div class="q-item"><span class="q-text">From a hilltop H m high, an object on the ground at distance d has depression θ. If H increases by 50% and d remains the same, find the new depression angle in terms of the original θ.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A coastguard on a 100 m cliff uses a rangefinder. He measures depression 40° to a boat. Use tan 40° ≈ 0.839. Find the boat's distance and the slant range.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 100/0.839 ≈ 119.2 m. Slant = √(10000 + 14209) = √24209 ≈ 155.6 m</p></details></div>
+      <div class="q-item"><span class="q-text">You are standing on Deccan Plateau (~500 m) looking at the Bay of Bengal (~0 m, 500 km away). What depression angle would you theoretically measure to the sea? Use tan θ = 500/500000. What does this tell you?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A lookout tower on a 100 m hill has itself a 20 m structure. Find the combined elevation angle from 300 m away and compare with the 100 m hill alone elevation angle.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hill alone: tan θ₁ = 100/300 = 1/3 → θ₁ ≈ 18.4°. With tower: tan θ₂ = 120/300 = 2/5 → θ₂ ≈ 21.8°. Difference ≈ 3.4°</p></details></div>
+      <div class="q-item"><span class="q-text">Design a realistic observation problem: a geologist on a 400 m cliff in the Deccan Traps studies lava formations. Write and solve a problem using two depression angles.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 11 ───────────────────────── -->
+<section class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Problems Involving 30°, 45°, 60°</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Standard Angle Drill</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">List the exact values: sin, cos, tan for 30°, 45°, 60°.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>30°: sin=1/2, cos=√3/2, tan=1/√3. 45°: sin=cos=1/√2, tan=1. 60°: sin=√3/2, cos=1/2, tan=√3</p></details></div>
+      <div class="q-item"><span class="q-text">A tower of height 30 m — find horizontal distance for each of 30°, 45°, 60° elevation angles. Tabulate.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>30°: 30√3; 45°: 30; 60°: 30/√3 = 10√3</p></details></div>
+      <div class="q-item"><span class="q-text">From 20 m distance, find heights subtended by 30°, 45°, and 60° angles of elevation.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>30°: 20/√3; 45°: 20; 60°: 20√3</p></details></div>
+      <div class="q-item"><span class="q-text">A 10 m string from the top of a pole to the ground — find the pole height for angles 30°, 45°, 60° with the ground.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>30°: 5 m; 45°: 5√2 ≈ 7.07 m; 60°: 5√3 ≈ 8.66 m</p></details></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has side 10 cm. Find the angle of elevation of the apex from the midpoint of the base.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Height = 10(√3/2) = 5√3; base = 5. tan θ = 5√3/5 = √3 → θ = 60°</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan 30° × tan 60° = 1. What does this mean geometrically in a height-distance problem?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan30° × tan60° = (1/√3) × √3 = 1. Geometrically, if d₃₀ and d₆₀ are distances for the same height: d₃₀ × d₆₀ = h². Product of distances equals height squared.</p></details></div>
+      <div class="q-item"><span class="q-text">From a point, a 45° elevation gives height h = d. The observer moves until the angle is 60°. Express the new distance in terms of the original d.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>At 45°: h = d. At 60°: new_d = h/√3 = d/√3</p></details></div>
+      <div class="q-item"><span class="q-text">A right isosceles triangle (45°-45°-90°). If the legs are each 10 m, find all angles of elevation from one end of the hypotenuse to the right angle vertex.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Show that in a 30°-60°-90° triangle, the side opposite 60° is √3 times the side opposite 30°. Apply this to a height-distance problem.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">At what angle of elevation is the height equal to: (a) half the distance, (b) twice the distance? Give exact values.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(a) tan θ = h/d = 1/2 → θ = tan⁻¹(0.5) ≈ 26.6°. (b) tan θ = 2 → θ = tan⁻¹(2) ≈ 63.4°. Neither is a standard angle.</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Problems Using Exact Values</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The angle of elevation of a tower from 10√3 m away is 30°. Find the tower height using exact values.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 10√3 × (1/√3) = 10 m</p></details></div>
+      <div class="q-item"><span class="q-text">A kite string 20√2 m long makes 45° with the ground. Find the kite height using exact values.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 20√2 × sin45° = 20√2 × (1/√2) = 20 m</p></details></div>
+      <div class="q-item"><span class="q-text">From two points 40√3 m apart, elevation angles are 30° and 60°. Find the tower height using exact values only.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 30√3 m</p></details></div>
+      <div class="q-item"><span class="q-text">The sun elevation is 30°. Express the shadow length of a h-metre pole exactly. Then rationalize your answer.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Shadow = h/tan30° = h√3</p></details></div>
+      <div class="q-item"><span class="q-text">From a point, the elevation of a tower top is 60°. If the observer moves √3 times farther away, what is the new angle? Use exact values to verify.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>New distance = √3 d. New tan = h/(√3d) = (h/d)/√3 = tan60°/√3 = √3/√3 = 1 → θ = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">Two poles of height 10 m and 10√3 m are observed from a single point at elevation angles 45° and 60° respectively. Find the distances to each pole.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Pole 1: d = 10/tan45° = 10 m. Pole 2: d = 10√3/√3 = 10 m. Both are 10 m away!</p></details></div>
+      <div class="q-item"><span class="q-text">A 30-60-90 triangle has its shortest side = 5 m. Use trig ratios only (not Pythagoras) to find all three sides.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Short leg = 5; long leg = 5√3; hypotenuse = 10 (using sin30° = 5/h → h=10, tan30° = 5/l → l=5√3)</p></details></div>
+      <div class="q-item"><span class="q-text">A 45-45-90 triangle has hypotenuse 10 m. Find the legs using exact trig values.</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Legs = 10 sin45° = 10/√2 = 5√2 m each</p></details></div>
+      <div class="q-item"><span class="q-text">From a point at the same level, the elevation of the top of a building changes from 45° to 60° when the observer moves 20 m closer. Find the building height using only 30°-60°-45° exact values.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = d₂√3; h = d₂+20. (√3−1)d₂=20. d₂=20/(√3−1)=10(√3+1). h=10√3(√3+1)=10(3+√3)≈47.3 m</p></details></div>
+      <div class="q-item"><span class="q-text">Simplify: (tan 30°)(tan 60°) + (sin 45°)² + (cos 30°)(cos 60°).</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>= 1 + 1/2 + (√3/2)(1/2) = 1 + 1/2 + √3/4 = 3/2 + √3/4</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application &amp; Proof</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A tower AB and a pole PQ are on the same horizontal level. AB = 10 m, PQ = 5 m. From B, P is at elevation 30°. From the base of PQ, B is at elevation 60°. Find the horizontal distance BP.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 60° isosceles triangle (apex = 60°) has equal sides 12 m. Find the angle of elevation of the apex from the midpoint of the base.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From opposite ends of a 50 m bridge, angles of elevation to a helicopter are 30° and 60°. Find the helicopter's height and its horizontal position.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h(1/√3 + √3)=50 → h(4/√3)=50 → h=12.5√3. d from 60° end = 12.5√3/√3=12.5 m; d from 30° end = 12.5√3 × √3 = 37.5 m. Position: 12.5 m from one end.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: tan A − tan B = sin(A−B)/(cos A cos B). Use this to simplify an expression arising from a two-point elevation problem where α = 60° and β = 30°.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three observers at 30°, 45°, 60° elevation angles see the same tower of height 60 m. Find their distances and the pattern.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d₃₀ = 60√3; d₄₅ = 60; d₆₀ = 20√3. As angle doubles-ish, distance roughly triples.</p></details></div>
+      <div class="q-item"><span class="q-text">An observer at elevation 45° to a tower walks until elevation is 60°. She covers distance d. Find the tower height in terms of d, using exact values and rationalized form.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = d√3/(√3−1) = d√3(√3+1)/2 = d(3+√3)/2</p></details></div>
+      <div class="q-item"><span class="q-text">Show that in any height-distance problem using standard angles, if the elevation doubles from 30° to 60°, the distance to the tower reduces by a factor of 3 (not 2).</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₃₀ = h√3; d₆₀ = h/√3. Ratio = h√3 : h/√3 = 3 : 1. Distance reduces to 1/3, i.e., a factor of 3. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">A flagpole casts a shadow. At 60° sun elevation, the shadow is x. At 45°, it is y. Express y in terms of x using exact values.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>At 60°: x = h/√3; at 45°: y = h. h = x√3, so y = x√3</p></details></div>
+      <div class="q-item"><span class="q-text">The diagonal of a square field makes a 45° angle with the side. If the field is 50 m per side, find the height a flag at one corner subtends at an observer at the opposite corner.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two light beams shine from a tower top at depression angles 30° and 60°. The tower is 40 m. Find the two circles of light on the ground (their radii) and the area between them.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r₁ = 40√3 (from 30°); r₂ = 40/√3 (from 60°). Area = π(r₁² − r₂²) = π(4800 − 1600/3) = π(12800/3) ≈ 13404 m²</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A problem requires tan 15°. Since 15° = 45° − 30°, compute tan 15° exactly using the subtraction formula.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>tan15° = (tan45°−tan30°)/(1+tan45°tan30°) = (1−1/√3)/(1+1/√3) = (√3−1)/(√3+1) = (√3−1)²/2 = (4−2√3)/2 = 2−√3</p></details></div>
+      <div class="q-item"><span class="q-text">Using only 30°, 45°, 60° — create a problem where the height is 20(√3+1) m. Describe the setup (two-point observation).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Compare: for a fixed observer position at distance d, as angle of elevation increases from 30° to 45° to 60°, by what additive amounts does the height increase?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h₃₀ = d/√3; h₄₅ = d; h₆₀ = d√3. Increase 30°→45° = d(1−1/√3) = d(√3−1)/√3. Increase 45°→60° = d(√3−1). The second increase is bigger. Increases are not equal.</p></details></div>
+      <div class="q-item"><span class="q-text">Prove: the geometric mean of the distances at 30° and 60° from the same tower equals the distance at 45°, i.e., √(d₃₀ × d₆₀) = d₄₅. (h = constant.)</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₃₀ = h√3; d₆₀ = h/√3. √(d₃₀·d₆₀) = √(h²) = h = d₄₅. QED.</p></details></div>
+      <div class="q-item"><span class="q-text">A square field has a tower at the centre. From each corner, the elevation is θ. If the side = 100 m, find the tower height in terms of θ. Then compute for θ = 30°, 45°, 60°.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Corner is 50√2 m from centre. h = 50√2 tan θ. At 30°: 50√2/√3=50√6/3≈40.8 m. At 45°: 50√2 m. At 60°: 50√6≈122.5 m</p></details></div>
+      <div class="q-item"><span class="q-text">A helicopter pilot needs to maintain a 30° angle of elevation to the control tower (100 m) at all times. Describe the locus of valid positions for the helicopter at a fixed altitude of 500 m.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A triangle ABC has angles 30°, 60°, 90°. The longest side = 20 cm. Using trig only, find all sides and all angles. Then find the area.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Hyp = 20. Side opp 30° = 10. Side opp 60° = 10√3. Area = (1/2)(10)(10√3) = 50√3 ≈ 86.6 cm²</p></details></div>
+      <div class="q-item"><span class="q-text">In IB MYP criterion D, you are asked to evaluate whether a 60° angle of elevation is realistic for a school building 10 m from the observer. Discuss limitations and suggest a better measurement method.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A 1 m ruler is held vertically. At what distance must you stand so it subtends exactly 30°, 45°, and 60° at your eye (at ground level)?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>At 30°: d = 1/tan30° = √3 ≈ 1.73 m. At 45°: d = 1 m. At 60°: d = 1/√3 ≈ 0.577 m</p></details></div>
+      <div class="q-item"><span class="q-text">Derive the formula for the area of a triangle with a known height h and base angle θ at one end. Apply for θ = 30°, 45°, 60° with h = 10 m.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── TOPIC 12 ───────────────────────── -->
+<section class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>SAT-Style Height and Distance Problems</h2>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> SAT Format — Multiple Choices &amp; Grid-In</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">[SAT] A vertical pole casts a 12 m shadow when the sun is at 30° elevation. What is the pole height? (A) 4√3 m (B) 6√3 m (C) 12√3 m (D) 4 m</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(A) No — (A): 4√3≈6.93. h = 12 tan30° = 12/√3 = 4√3 ≈ 6.93 m. Answer: (A)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] From a point 50 m from a building, the elevation angle is 45°. If you move 25 m closer, the new angle is closest to: (A) 60° (B) 54° (C) 56.3° (D) 63.4°</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 50 m. New distance = 25 m. tan θ = 50/25 = 2. θ = tan⁻¹(2) ≈ 63.4°. Answer: (D)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] The angle of elevation of the top of a tower is 60° from 20 m away. Which is the height? (A) 20 m (B) 10√3 m (C) 20√3 m (D) 40 m</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 20 tan60° = 20√3. Answer: (C)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] From the top of a 30 m building, the depression to a car is 45°. The car is: (A) 30 m away (B) 15 m away (C) 30√3 m away (D) 45 m away</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>d = 30/tan45° = 30 m. Answer: (A)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT Grid-In] A tower and its shadow form a right triangle. Shadow = 20 m, elevation angle = 60°. Find the tower height to nearest integer.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 20 tan60° = 20√3 ≈ 34.64 → 35 m</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] Two points, 30 m apart, give elevation angles of 30° and 60° to the same tower top (same side). The tower height is: (A) 10√3 (B) 15√3 (C) 20 (D) 30</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 15√3. Answer: (B)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] A 10 m rope from the top of a pole to the ground makes 30° with the ground. The pole height is: (A) 5 m (B) 5√3 m (C) 10 m (D) 10/√3 m</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>h = 10 sin30° = 5 m. Answer: (A)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] The shadow of a h-metre pole is h√3 m long. The sun's elevation is: (A) 30° (B) 45° (C) 60° (D) 90°</span><span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>tan θ = h/(h√3) = 1/√3 → θ = 30°. Answer: (A)</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT Grid-In] From the top of a 60 m tower, two ships at depression 30° and 45° (same side). Find the distance between ships to the nearest whole number.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁=60; d₂=60√3≈103.9. Gap≈43.9≈44 m</p></details></div>
+      <div class="q-item"><span class="q-text">[SAT] If tan α = 3/4 and tan β = 4/3 in two elevation triangles, which angle is larger? (A) α (B) β (C) Equal (D) Cannot tell</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan β = 4/3 > 3/4 = tan α → β > α. Answer: (B)</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Word-Problem SAT Style</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A student stands x metres from a flagpole and measures elevation angle 45°. She walks 5 m closer and measures 60°. Write an equation for x and solve it.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = x (from 45°); h = (x−5)√3 (from 60°). x = √3x − 5√3. x(√3−1) = 5√3. x = 5√3/(√3−1) = 5√3(√3+1)/2 = 5(3+√3)/2 ≈ 11.83 m</p></details></div>
+      <div class="q-item"><span class="q-text">A boat moves at constant speed towards a lighthouse 80 m high. The depression changes from 30° to 60° in 4 minutes. Find the boat's speed in m/min.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d₁ = 80√3; d₂ = 80/√3. Dist = 80(√3−1/√3) = 80×2/√3 = 160/√3 ≈ 92.4 m. Speed ≈ 23.1 m/min</p></details></div>
+      <div class="q-item"><span class="q-text">The angle of elevation from the roof of a 15 m school building to a telephone tower 45 m tall is θ. If the horizontal distance is 30 m, find tan θ exactly.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Height diff = 45 − 15 = 30 m. tan θ = 30/30 = 1 → θ = 45°</p></details></div>
+      <div class="q-item"><span class="q-text">A 6 m pole and a 10 m pole stand 8 m apart on level ground. What is the angle that the line joining their tops makes with the horizontal?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Height diff = 4 m, horizontal = 8 m. tan θ = 4/8 = 0.5 → θ ≈ 26.6°</p></details></div>
+      <div class="q-item"><span class="q-text">A plane at height h is at horizontal distance d from an airport. If the elevation from the airport is 30° and h = 1000 m, find d. If the plane then descends to 500 m maintaining the same horizontal, find the new elevation angle.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d = 1000√3. New angle: tan θ = 500/(1000√3) = 1/(2√3) = √3/6. θ = tan⁻¹(√3/6) ≈ 16.1°</p></details></div>
+      <div class="q-item"><span class="q-text">In a right triangle, one acute angle is 30° and the hypotenuse = 2k. Express all sides in terms of k. If this represents a height-distance problem, what are h and d?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Side opp 30° = k (height h = k); adjacent = k√3 (distance d = k√3). h = k, d = k√3.</p></details></div>
+      <div class="q-item"><span class="q-text">A ramp for disabled access must not exceed 5° angle (tan 5° ≈ 0.0875). If the ramp rises 0.5 m, find minimum ramp length and horizontal run.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Length = 0.5/sin5° ≈ 0.5/0.0872 ≈ 5.74 m. Horizontal = 0.5/0.0875 ≈ 5.71 m</p></details></div>
+      <div class="q-item"><span class="q-text">A mast on a ship is 20 m above sea. A coastguard in a 30 m tower sees the mast top at elevation 10° (tan 10° ≈ 0.176). Find the ship's distance from the tower base.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Height diff (mast above tower) = 20 − 30 = −10 m (mast below). Angle to mast top from tower top is actually depression. tan θ = 10/d. d = 10/0.176 ≈ 56.8 m</p></details></div>
+      <div class="q-item"><span class="q-text">A cell phone tower is visible from two points on a straight road. From A, the elevation is 60° (A is 100 m from tower). From B on the other side, elevation is 30°. Find the tower height and position.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 100√3. dB = h/tan30° = 100√3 × √3 = 300 m. Tower is 100 m from A, 300 m from B.</p></details></div>
+      <div class="q-item"><span class="q-text">In a basketball court, the hoop is 3.05 m high and 6 m from the free-throw line. At what angle must a player release the ball (ignoring arc) to hit the hoop straight-on?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>tan θ = 3.05/6 ≈ 0.508 → θ ≈ 26.9°</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Reasoning &amp; Evaluation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A student says: "If the angle of elevation doubles, the height also doubles for the same distance." Is this correct? Give a counterexample.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Incorrect. h = d tan θ. h₃₀ = d/√3; h₆₀ = d√3. Ratio = 3, not 2. Counter: at 30° h=d/√3; at 60° h=d√3 (triples, not doubles).</p></details></div>
+      <div class="q-item"><span class="q-text">Can the angle of elevation of an object ever exceed 90°? What does it mean physically if it did?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>No, not as traditionally defined (0–90°). At exactly 90° the object is directly above. Above 90° would mean looking behind and up — not standard angle of elevation.</p></details></div>
+      <div class="q-item"><span class="q-text">A problem states: "From 50 m away, the elevation is 90°." What must be true about the object's position? Is this physically realistic?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>The object is directly above the observer (the 90° line goes straight up). This is only possible if the object is at 50 m horizontal and infinite height — not realistic; or if the observer is directly below the object (horizontal = 0).</p></details></div>
+      <div class="q-item"><span class="q-text">Identify the error: "The angle of elevation from P is 60° and the tower is 20 m away. Height = 20 × sin 60° = 10√3." Correct it.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Error: should use tan, not sin. 20 m is horizontal distance. h = 20 tan 60° = 20√3. If 20 m were the slant distance, then h = 20 sin 60° = 10√3. The error is misidentifying whether 20 m is horizontal or slant.</p></details></div>
+      <div class="q-item"><span class="q-text">In a real measurement, what are four sources of error when measuring angle of elevation with a clinometer? How would you minimize each?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A cliff is 100 m. An anchor point for a zip line must be 30 m from the cliff base. The line must not exceed a 45° angle. What is the maximum allowable height for the anchor?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>At 45°: h = d = 30 m. Anchor max height = 30 m.</p></details></div>
+      <div class="q-item"><span class="q-text">An architect claims: "Doubling the building height doubles the elevation angle." Disprove with a specific example using exact trig values.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>At d=10: h=10 gives θ=45°. h=20 gives tan θ=2 → θ≈63.4°. Not double of 45°=90°. Claim disproved.</p></details></div>
+      <div class="q-item"><span class="q-text">A navigation app shows a hill at bearing 030° and elevation 20° (tan 20° ≈ 0.364). You are 5 km from the hill. Find the hill height.</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h = 5000 × 0.364 = 1820 m</p></details></div>
+      <div class="q-item"><span class="q-text">For a fixed tower, sketch the graph of elevation angle vs. distance. Describe the shape. At what distance is the elevation angle 45°?</span><span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>θ = tan⁻¹(h/d). As d→0, θ→90°; as d→∞, θ→0°. It's a decreasing curve (inverse tangent shape). θ = 45° when d = h.</p></details></div>
+      <div class="q-item"><span class="q-text">Two students measure the same tower. One gets 45° at 20 m, another gets 30° at 35 m. Are their measurements consistent? If not, what might explain the discrepancy?</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S1: h = 20 m. S2: h = 35/√3 ≈ 20.2 m. Very close — measurements are approximately consistent (within measurement error).</p></details></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> HOTS &amp; Interdisciplinary</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A physics student calculates the optimal angle for maximum projectile range as 45°. Explain the connection between this and the 45° in trig elevation problems. Are they the same concept?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In geography, the angle of elevation of the sun determines the intensity of sunlight (sin θ gives the component). In trig problems we use tan θ. Explain when each is used and why.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">ISRO's Chandrayaan lands on the Moon. The lander's camera measures the elevation of a distant crater rim at 10°. The horizontal distance is 50 km. Find the crater rim's height above the lander.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h = 50 × tan10° ≈ 50 × 0.1763 ≈ 8.82 km</p></details></div>
+      <div class="q-item"><span class="q-text">Ancient Egyptians built the Great Pyramid with sides at 51.5° angle to horizontal. If the base side = 230 m, find the height using tan 51.5° ≈ 1.2539.</span><span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Half base = 115 m. h = 115 × tan51.5° ≈ 115 × 1.2539 ≈ 144.2 m (actual ≈ 138.5 m)</p></details></div>
+      <div class="q-item"><span class="q-text">A student measures the elevation of the North Star (Polaris) at 17° (latitude of Hyderabad). How does this connect to the city's latitude? What does this tell you about the relationship between latitude and star elevation?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Write and solve a complete height-and-distance problem based on a real landmark in Hyderabad. Include: diagram, all given data, clear solution steps, and an IB MYP reflection on reasonableness of the answer.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A radar gun measures a speeding car at 200 m distance and 20° elevation. If the road is flat, find the car's actual height above the ground level and why this seems odd. What is the real use case for angle in radar measurement?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Design a challenge: using only a smartphone's compass, camera, and stopwatch (and knowing your walking speed), how would you estimate the height of the school's water tank? Write the mathematical procedure.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">The IB Global Context "Scientific and Technical Innovation" — write a short paragraph describing how trigonometry's height and distance methods are used in three different modern technologies.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Final Challenge: Create an original problem combining angles of elevation and depression, shadow, and the standard angles 30°, 45°, 60°. It must require at least 3 steps to solve. Solve it completely.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Grade 10 · NCERT Mathematics · Chapter 9 · The Gaudium School · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

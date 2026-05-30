@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G9 Ch7 – The Mathematics of Maybe: Introduction to Probability</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎲 Chapter 7 – The Mathematics of Maybe: Introduction to Probability</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Basic Probability Theory</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">Experiment, Outcome and Sample Space</a></li>
+    <li><a href="#t2">Events — Types and Notation</a></li>
+    <li><a href="#t3">Classical Probability P(E)=n(E)/n(S)</a></li>
+    <li><a href="#t4">Probability Scale (0 to 1)</a></li>
+    <li><a href="#t5">Complementary Events P(E')=1−P(E)</a></li>
+    <li><a href="#t6">Mutually Exclusive Events</a></li>
+    <li><a href="#t7">Addition Rule P(A or B)</a></li>
+    <li><a href="#t8">Independent Events P(A and B)</a></li>
+    <li><a href="#t9">Probability from Tables and Venn Diagrams</a></li>
+    <li><a href="#t10">Experimental vs Theoretical Probability</a></li>
+    <li><a href="#t11">Expected Outcomes</a></li>
+    <li><a href="#t12">Real-World Probability Applications</a></li>
+  </ol>
+</nav>
+
+<!-- ============================================================ TOPIC 1 -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Experiment, Outcome and Sample Space</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/basic-probability" target="_blank">Basic Probability &amp; Sample Spaces</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/sample-spaces" target="_blank">Sample Spaces Introduction</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=uzkc-qNVoOk" target="_blank">What is Random?</a>
+        <a href="https://www.youtube.com/watch?v=KtT_cgMzHx8" target="_blank">The Birthday Paradox Explained</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Basic Probability</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=px9Zqo3bA6Q" target="_blank">Randomness is Random</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Experiments and Outcomes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define a random experiment. Give two examples from daily life.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed once. List all possible outcomes.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A single die is rolled. Write the sample space S.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two coins are tossed simultaneously. Write the complete sample space.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag contains balls numbered 1 to 8. One ball is drawn at random. Write the sample space and state n(S).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Distinguish between a deterministic experiment and a random experiment with one example each.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A spinner has 5 equal sectors labelled A, B, C, D, E. Write the sample space and n(S).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a standard deck of 52 cards. How many outcomes are in the sample space?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled together. How many outcomes are in the sample space? List five of them.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A letter is chosen at random from the word PROBABILITY. Write the sample space (distinct letters only) and n(S).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Constructing Sample Spaces</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A coin is tossed three times. List the complete sample space using H and T.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled and a coin is tossed together. Write the complete sample space.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two spinners each have three equal sectors: Red, Blue, Green. List the sample space for spinning both.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student randomly picks one subject from {Maths, Science, English} and one time slot from {Morning, Evening}. Write the sample space.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Cards numbered 1–5 are placed face down. Two cards are drawn one after the other without replacement. Write the sample space as ordered pairs.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A bag has one Red and one Blue ball. Another bag has one Green and one Yellow ball. One ball is drawn from each bag. List the sample space.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three children each independently choose one of two flavours: Chocolate or Vanilla. List all outcomes in the sample space.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled twice. How many outcomes are in the sample space? Write all outcomes where the first roll is 4.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number is chosen from {2, 3, 5, 7, 11}. Write the sample space. Is the outcome "4" possible? Explain.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed and a card is drawn from cards labelled 1, 2, 3. Write the complete sample space as ordered pairs (coin result, card number).</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Counting Outcomes and Equally Likely Outcomes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A bag has 3 red, 4 blue, and 2 green balls. Are all outcomes equally likely if one ball is drawn? Explain.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A fair die is rolled. Explain why all 6 outcomes are equally likely.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A spinner has sectors of sizes 60°, 120°, 180°. Are the outcomes equally likely? Justify.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Using the multiplication principle, find the number of outcomes when 4 coins are tossed simultaneously.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A restaurant offers 3 starters, 4 mains, and 2 desserts. How many different meal combinations (one of each) are possible?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. How many outcomes give a sum of 7? List them all.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number from 1–10 is chosen at random. How many outcomes are even numbers?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A letter is chosen from the English alphabet. How many outcomes are vowels? How many are consonants?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">When two dice are rolled, how many outcomes give the same number on both dice? List them.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A class has 15 boys and 10 girls. One student is chosen at random. How many total outcomes are there? How many outcomes are girls?</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed and Applied Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A coin is biased such that heads appears twice as often as tails. Is this a random experiment? Can we list outcomes? Are they equally likely?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A student says "Rolling two dice gives 11 outcomes: sums 2 through 12." Is this a valid sample space? Explain the error.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In an experiment, a die is rolled until a 6 appears. Can we list all possible outcomes? What does this tell us about sample spaces?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two cards are drawn from {A, B, C, D} without replacement. Write the sample space and n(S).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number between 1 and 100 (inclusive) is chosen at random. What is n(S)? How many outcomes are multiples of 5?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a cricket match, the possible outcomes for one delivery are: 0, 1, 2, 3, 4, 6, Wide, No-ball, Wicket. Write the sample space and n(S).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the difference between an outcome and an event using the example of rolling a die.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed 4 times. How many elements are in the sample space? How many outcomes have exactly 2 heads?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A box contains 3 white, 2 black, and 1 red ball. A ball is drawn, its colour noted, and replaced. Then another ball is drawn. How many outcomes are in the sample space?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A fair coin is tossed and a fair die is rolled. Write two different events that can be defined on this sample space and state which outcomes each contains.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 2 -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Events — Types and Notation</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/events-and-outcomes" target="_blank">Events and Outcomes</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/simple-probability" target="_blank">Simple Events</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">How to Think About Probability</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Probability Intro: Events</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e3rCjgs0Koc" target="_blank">Probability and Events</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Defining and Identifying Events</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define an event in probability. How is it related to the sample space S?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Write the event E: "getting an even number" as a set of outcomes.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Define the event F: "getting a number greater than 4". Write F as a subset of S.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From a deck of 52 cards, one card is drawn. What is the event "getting a king"? How many outcomes does it contain?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Define a simple event (elementary event). Give two examples using a die.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Define a compound event. Give an example from tossing two coins.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A bag has balls numbered 1–10. Write the event A: "ball number is a multiple of 3" as a set.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is a sure event? Write it using set notation. Give an example.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is an impossible event? Write it using set notation. Give an example when rolling a die.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From cards numbered 1–20, one card is drawn. Write event E: "prime number" and event F: "perfect square" as sets. Find n(E) and n(F).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Types of Events</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Classify each event as simple or compound: (a) Getting H when a coin is tossed (b) Getting an odd number when a die is rolled (c) Getting HH when two coins are tossed.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a die, write an event that is both simple and elementary. Explain why.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Events: A = {2,4,6}, B = {1,3,5}. Are A and B mutually exclusive? Are they exhaustive?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain what "exhaustive events" means. Give an example with a coin toss.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For a die, define events A = {1,2,3} and B = {3,4,5}. Are they mutually exclusive? Find A∩B and A∪B.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What is a favourable outcome? When rolling a die, for event E = "number less than 3", list the favourable outcomes.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two coins are tossed. Define event A = "at least one head". Write A as a set and find n(A).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a standard deck. Define event A = "red card" and B = "face card". Find n(A), n(B), and the cards that are both red and face cards.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Distinguish between mutually exclusive events and independent events with one example each.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A number 1–12 is chosen at random. Define event P = "prime", Q = "even". Write P, Q as sets. Is P∩Q empty?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Set Notation in Probability</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">For events A and B on the same sample space, explain the meaning of: (a) A∪B (b) A∩B (c) A'</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. S = {1,2,3,4,5,6}. A = {1,3,5}. Write A' (the complement of A).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–10, A = {multiples of 2}, B = {multiples of 3}. Find: (a) A∪B (b) A∩B (c) A' (d) B'</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If S = {1,2,3,4,5,6,7,8} and A = {2,4,6,8}, B = {1,2,3,4}, find: A∩B, A∪B, A∩B', and (A∪B)'.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">What does A⊆S mean in the context of probability? Must every event be a subset of S?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">For events A and B, verify using a die example that (A∪B)' = A'∩B' (De Morgan's Law).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A letter is chosen from MATHEMATICS. Define A = "vowel" and B = "letter appears more than once". Write A and B as sets. Find A∩B.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">What does n(E) denote? If n(S)=50 and n(E)=15, find n(E').</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled twice. Define event A: "both rolls show the same number". Write the first three elements of A and find n(A).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–20, define A = "odd number" and B = "greater than 15". Are A and B mutually exclusive? Find A∩B.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed and Advanced Event Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two dice are rolled. Define event A: "sum is 8". List all outcomes in A and find n(A).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from 52 cards. Define: A = "ace", B = "spade". List all outcomes in A∩B. Is it possible to get an outcome in both A and B?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In rolling two dice, event A: "first die shows 3" and event B: "sum is 9". Find A∩B. Are A and B mutually exclusive?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A bag has 5 red, 3 blue, 2 white balls. If one ball is drawn, write three different events. Classify each as simple or compound.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Events A and B are such that A∩B = {} and A∪B = S. What special name do we give to A and B?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From the word STATISTICS, a letter is chosen. Write event A = "letter T" as a set. Is it a simple or compound event?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student randomly selects a number from 1–50. Write events: A = "divisible by 4", B = "divisible by 6". Find A∩B and interpret it.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain why φ (empty set) is an event (the impossible event). What is P(φ)?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three students stand in a row. Define event A: "Arjun is first". List favourable outcomes if the students are Arjun, Bhavna, Chetan.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed 3 times. Define events: A = "first toss is H", B = "exactly two tails", C = "all same". Write A, B, C as sets. Find A∩C and B∩C.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 3 -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Classical Probability P(E) = n(E) / n(S)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/basic-probability" target="_blank">Classical Probability Formula</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/probability-1-module-examples" target="_blank">Probability Examples</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Probability with Fractions</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Counting for Probability</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=7LbknlEvaD4" target="_blank">Dice Probabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Basic Formula Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the classical definition of probability. What conditions must be met for it to apply?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A fair die is rolled. Find P(getting a 4).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>n(S) = 6, n(E) = 1</strong><br>P(4) = 1/6</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A fair coin is tossed. Find P(getting Heads).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>n(S) = 2, n(E) = 1</strong><br>P(H) = 1/2</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has 4 red and 6 blue balls. One ball is drawn at random. Find P(red ball).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>n(S) = 10, n(red) = 4</strong><br>P(red) = 4/10 = 2/5</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(getting an even number).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Even = {2,4,6}, n(E) = 3, n(S) = 6</strong><br>P(even) = 3/6 = 1/2</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Cards numbered 1–20 are placed in a box. Find P(drawing a multiple of 4).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Multiples of 4 up to 20: {4,8,12,16,20} → n(E) = 5, n(S) = 20</strong><br>P = 5/20 = 1/4</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has 3 white, 5 black balls. Find P(black ball).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>n(S) = 8, n(black) = 5</strong><br>P(black) = 5/8</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two coins are tossed. Find P(both heads).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>S = {HH, HT, TH, TT}, n(S) = 4</strong><br>E = {HH}, n(E) = 1 → P = 1/4</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(number greater than 2).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>E = {3,4,5,6}, n(E) = 4, n(S) = 6</strong><br>P = 4/6 = 2/3</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a standard deck of 52 cards. Find P(drawing an ace).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>n(aces) = 4, n(S) = 52</strong><br>P(ace) = 4/52 = 1/13</p></details></span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Intermediate Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A card is drawn from a standard 52-card deck. Find P(drawing a face card).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Face cards = Jack, Queen, King in 4 suits → n(face) = 12, n(S) = 52</strong><br>P = 12/52 = 3/13</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(getting a prime number).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Primes on a die: {2,3,5} → n(E) = 3, n(S) = 6</strong><br>P = 3/6 = 1/2</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(sum = 5).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Outcomes giving sum 5: (1,4),(4,1),(2,3),(3,2) → n(E) = 4, n(S) = 36</strong><br>P = 4/36 = 1/9</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From cards numbered 1–25, find P(drawing a perfect square).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Perfect squares ≤ 25: {1,4,9,16,25} → n(E) = 5, n(S) = 25</strong><br>P = 5/25 = 1/5</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A bag has 5 red, 3 blue, 2 green balls. Find P(not blue).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Not blue = red + green = 7, n(S) = 10</strong><br>P(not blue) = 7/10</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a standard deck, find P(drawing a red king).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Red kings: King of Hearts, King of Diamonds → n(E) = 2, n(S) = 52</strong><br>P = 2/52 = 1/26</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three coins are tossed. Find P(exactly two heads).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>S = {HHH,HHT,HTH,THH,HTT,THT,TTH,TTT}, n(S) = 8</strong><br>Two heads: {HHT,HTH,THH} → n(E) = 3<br>P = 3/8</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number is chosen from 1–30. Find P(it is divisible by 3 or 5).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>Div by 3: 10 numbers; Div by 5: 6 numbers; Div by 15 (both): 2 numbers</strong><br>By inclusion-exclusion: 10+6−2 = 14<br>P = 14/30 = 7/15</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a deck, find P(card is a spade or a face card).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>P(spade) = 13/52, P(face) = 12/52, P(spade and face) = 3/52</strong><br>P = 13/52 + 12/52 − 3/52 = 22/52 = 11/26</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(at least one die shows a 6).<br>
+        <details class="ans"><summary>Show Answer</summary><p class="working"><strong>P(no 6 on either) = (5/6)×(5/6) = 25/36</strong><br>P(at least one 6) = 1 − 25/36 = 11/36</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Cards, Dice, and Coins</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From a standard deck, find P(drawing a black card).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(number is less than 7). What type of event is this?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed twice. Find P(at least one tail).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a deck, find: (a) P(heart) (b) P(queen of hearts) (c) P(red ace)</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(both dice show odd numbers).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A bag has 2 red, 3 blue, 5 yellow balls. Find P(yellow or blue ball).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Cards 1–52 are shuffled. Find P(drawing a multiple of 7).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three coins are tossed. Find P(all tails).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled twice. Find P(product of the two numbers is 6).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a deck, a card is drawn. Find P(neither a heart nor a face card).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Word Problems and Mixed</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A class of 40 students includes 16 who play cricket, 14 who play football, and 10 who play neither. One student is chosen. Find P(plays at least one sport).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The letters of TRIANGLE are written on cards, one per card, and shuffled. Find P(drawing a vowel).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number from 1–100 is selected at random. Find P(it is a perfect cube).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(difference of the two numbers is exactly 2).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A bag has 6 red and some blue balls. If P(red) = 3/8, find the total number of balls in the bag.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three coins are tossed. Find P(more heads than tails).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a standard deck, two cards are red queens. Find P(drawing a queen that is not red).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number is chosen from 1–50. Find P(the number is both a perfect square and an odd number).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(number divisible by 2 or 3). Show work using the formula and verify by listing outcomes.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Priya has 5 maths books, 3 science books, 2 english books on a shelf. She picks one at random. Find P(not a maths book).</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 4 -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Probability Scale (0 to 1)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/probability-basics" target="_blank">Probability Scale 0 to 1</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/probability-scale" target="_blank">Placing Events on a Number Line</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Certainty vs Impossibility</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Probability as a Number</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=pNe6fsaCVtI" target="_blank">What Does Probability Mean?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Understanding the Scale</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State two key properties of probability: the range it must lie in and what must be true of the sum of all probabilities of outcomes in S.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the probability of a certain event? Give one example.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">What is the probability of an impossible event? Give one example from tossing a coin.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Place these events on a probability scale from 0 to 1: (a) Getting heads on a fair coin (b) Rolling a 7 on a standard die (c) Drawing a card from a standard deck.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A student says P(E) = 1.2 for some event. What is wrong with this statement?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A student says P(E) = −0.3. Is this valid? Explain in terms of the probability scale.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">For a fair die, verify that the sum of probabilities of all elementary events equals 1.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">An event has probability 0.75. Place it on the probability scale and describe it in words (likely, unlikely, etc.).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Describe in words the likelihood of an event with probability: (a) 0 (b) 0.1 (c) 0.5 (d) 0.9 (e) 1</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Is it possible for P(E) = 0 even if E is not the empty set? Discuss with an example.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Verifying Probability Values</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Which of these cannot be probabilities? (a) 3/4 (b) 5/4 (c) 0 (d) −1/3 (e) 0.99</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has 5 balls. P(red)=2/5, P(blue)=1/5, P(green)=1/5. Can there be a fourth colour? If so, what must its probability be?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three events A, B, C are exhaustive and mutually exclusive. P(A)=0.3, P(B)=0.45. Find P(C).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Events A and B are mutually exclusive. P(A)=0.4, P(B)=0.35. Is it possible that A and B are exhaustive? Find P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A spinner has 4 sectors. Three have probabilities 0.2, 0.3, 0.25. What must be the probability of the fourth sector?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which values could be probabilities of an event? Justify each: (a) 7/8 (b) 8/7 (c) 0.001 (d) 100% (e) −0.01</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For a random experiment, the outcomes have probabilities: x, 2x, 3x, and 4x. Find x and all four probabilities.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">An experiment has 5 equally likely outcomes. What is the probability of each outcome? Is it possible for each to be 0.25?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">For a biased coin, P(H) = 0.6. What is P(T)? Justify using the probability scale.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has red, blue, and green balls. P(red) = 1/3, P(blue) = 1/2. Find P(green). Is this a valid probability?</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Ordering and Comparing Probabilities</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Order these events from least likely to most likely: P(A)=0.7, P(B)=1/4, P(C)=3/5, P(D)=0.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">An event E has probability 0.65. Which is more likely: E happening or E not happening? Explain.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two events: A has probability 5/12 and B has probability 7/12. Which is more likely? What is P(A) + P(B)?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Order these events from least to most likely: (a) getting a 6, (b) getting an odd number, (c) getting a number > 1, (d) getting a 7.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A weather forecast says 40% chance of rain. Is it more likely to rain or not? Express 40% as a probability between 0 and 1.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Which is more likely: drawing a red card from a deck (P=1/2) or rolling a 5 or 6 on a die (P=1/3)? By how much more likely?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(India winning a cricket match) = 0.72. Describe this probability on the scale and state whether India is likely to win or lose.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three friends estimate P(rain tomorrow) as 0.3, 0.55, and 0.72. Their estimates are all valid. What does the range tell you?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If P(E) = 3k/8 and E is neither certain nor impossible, find the valid range for k.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">An experiment has outcomes with these probabilities: 1/6, 1/6, 1/6, 1/6, 1/6, 1/6. Verify this is a valid probability distribution and name the experiment.</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Applied and Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A medical test for a disease is correct 95% of the time. Express P(correct result) and P(incorrect result) on the probability scale.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In an IPL match, P(Mumbai Indians wins) = 0.55. Is a draw possible in cricket? What can you say about P(opponent wins)?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student randomly answers a true/false question. What is P(correct answer)? Where does this fall on the probability scale?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">An event is described as "almost certain". Give a probability value consistent with this. Is it possible for this event to not happen?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(event E) = (2n−1)/(3n+2). For what positive integer n does this lie strictly between 0 and 1?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Rohan says "P(drawing a club from a deck) = 0.25 and P(drawing a spade) = 0.25, so P(drawing a club or spade) = 0.5." Check if this is correct and explain.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For a biased die, the probability of getting a 6 is twice that of any other number. Find P(6) and verify all probabilities sum to 1.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A bag has red and blue balls. P(red) = k where k is a probability. What are the constraints on k? If 3 red balls are added to 12 balls total, find P(red).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Two students take a test. P(A passes) = 0.8, P(B passes) = 0.65. Without further information, can you find P(both pass)? What assumption would you need?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If the probability of a sunny day in June is 0.6, what is the probability of a non-sunny day? Over 30 days of June, on how many days would you expect sunshine?</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 5 -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Complementary Events P(E') = 1 − P(E)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/complementary-events" target="_blank">Complementary Events</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/complement-rule" target="_blank">The Complement Rule</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Probability Complements</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Probability: Not Events</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=pNe6fsaCVtI" target="_blank">Complementary Thinking in Probability</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Applying the Complement Rule</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the complement rule. If P(E) = 0.4, find P(E').</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(it rains tomorrow) = 3/7. Find P(it does not rain).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(no rain) = 1 − 3/7 = 4/7</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. P(getting a 6) = 1/6. Find P(not getting a 6).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(not 6) = 1 − 1/6 = 5/6</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From a bag of 10 balls (4 red, 6 blue), find P(not red).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(red) = 4/10 = 2/5; P(not red) = 1 − 2/5 = 3/5</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(winning a lottery) = 0.001. Find P(not winning).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(a student passes an exam) = 4/5. Find P(failing).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck. Find P(not an ace).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(ace) = 4/52 = 1/13; P(not ace) = 1 − 1/13 = 12/13</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(E') = 0.72. Find P(E).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(not getting a prime number).<br><details class="ans"><summary>Show Answer</summary><p class="working">Primes = {2,3,5}; P(prime) = 3/6 = 1/2; P(not prime) = 1/2</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–20, P(drawing a multiple of 3) = 6/20. Find P(not a multiple of 3).</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Using Complements Strategically</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two coins are tossed. Use the complement to find P(at least one head).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(no heads) = P(TT) = 1/4; P(at least one H) = 1 − 1/4 = 3/4</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three coins are tossed. Use the complement to find P(at least one tail).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Use the complement to find P(sum is not 12).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(sum = 12) = 1/36 (only (6,6)); P(not 12) = 35/36</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a standard deck, use the complement to find P(card is not a heart).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(team A wins) = 0.45, P(draw) = 0.25. Find P(team A does not win).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A bag has 3 red, 4 blue, 5 green balls. Find P(not green) using complements.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From numbers 1–50, find P(not a perfect square) using complements.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Use complements to find P(at least one die shows a number > 4).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(neither > 4) = P(both ≤ 4) = (4/6)×(4/6) = 16/36; P(at least one > 4) = 1 − 16/36 = 20/36 = 5/9</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(E) = 5k − 2 and P(E') = 3k + 1. Find k using the complement rule.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A student takes two tests. P(failing test 1) = 0.2, P(failing test 2) = 0.3. Find P(passing test 1) and P(passing test 2). Can you find P(passing both) without further info?</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding P(E) Given P(E')</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">P(not drawing a club) = 3/4. Find P(drawing a club).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(bus is late) = 0.15. What is P(bus is on time)?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If P(E') = 7/10, how many times would you expect E to occur in 200 trials?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(not winning) = 11/12. Express P(winning) as a fraction and as a percentage.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In a class of 30, P(a student wears glasses) = 2/5. How many students do not wear glasses?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(E) = 2x/5 and P(E') = (3x+2)/10. Find x and both probabilities.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck. P(not a face card) = ? Find and verify using direct counting.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A bag has r red and (20−r) blue balls. If P(not red) = 3/5, find r.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(drawing a vowel from a set of letter cards) = 5/26. Find P(not a vowel) and verify using knowledge of the alphabet.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Events E and E' are defined on S. Show that P(E) + P(E') = 1 using the definition of probability and the fact that E∪E' = S and E∩E' = φ.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Complement Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Three dice are rolled. Use complements to find P(at least one 5). (Hint: find P(no 5 on any die) first.)</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a group, P(person speaks Hindi) = 0.6, P(speaks Tamil) = 0.35, P(speaks both) = 0.2. Find P(speaks neither).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(a randomly chosen number from 1–n is even) = 1/2. Is this true for all n? For what values of n?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed 4 times. Use complements to find P(at least one head).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(all tails) = (1/2)^4 = 1/16; P(at least one H) = 1 − 1/16 = 15/16</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(sum of two dice ≤ 4) = ? Find using direct count, then verify using the complement P(sum > 4).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A student randomly selects one answer from 4 choices. P(correct) = 1/4. Find P(incorrect). Over 20 questions, how many are expected to be wrong?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain when using the complement is more efficient than direct calculation. Give a problem where this is the case.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(E) = 3/(n+2) for some integer n > 0. For the complement to be valid, what condition must 3/(n+2) satisfy?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a group of 40 people, 25 like tea, 20 like coffee, and 10 like both. A person is selected at random. Find P(likes neither tea nor coffee) using complements.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A bag has red, blue, and green balls in ratio 2:3:5. Find P(not red) and P(not green).</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 6 -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Mutually Exclusive Events</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/mutually-exclusive-events" target="_blank">Mutually Exclusive Events</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/addition-rule-probability" target="_blank">Addition Rule for Mutually Exclusive</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">When Events Can't Both Happen</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Exclusive vs Inclusive Events</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e3rCjgs0Koc" target="_blank">Mutually Exclusive in Real Life</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Mutually Exclusive Events</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define mutually exclusive events. What does it mean in terms of A∩B?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Are A = {1,2,3} and B = {4,5,6} mutually exclusive? Verify using A∩B.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Are A = "even" and B = "multiple of 3" mutually exclusive? Explain.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck. Are "drawing a club" and "drawing a heart" mutually exclusive?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Identify which pairs are mutually exclusive: (a) Getting heads and tails on one coin toss (b) Rolling an even and a prime on a die (c) Drawing a red card and drawing a spade.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Events A and B are mutually exclusive with P(A)=0.3 and P(B)=0.5. Find P(A∪B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">If A and B are mutually exclusive, can P(A) + P(B) > 1? Explain.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For a single die roll, are "getting a 1" and "getting a 6" mutually exclusive? Are they exhaustive?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Give an example from real life of two mutually exclusive events.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Events A, B, C partition sample space S and are mutually exclusive. P(A)=1/3, P(B)=1/4. Find P(C).</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Calculating Probabilities for ME Events</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A die is rolled. Events A = {2,4} and B = {1,3,5}. Are they mutually exclusive? Find P(A) and P(B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has 3 red, 5 blue, 2 green balls. One ball drawn. Find P(red or green) using ME rule.<br><details class="ans"><summary>Show Answer</summary><p class="working">Red and green are ME; P(red) = 3/10, P(green) = 2/10<br>P(red or green) = 3/10 + 2/10 = 5/10 = 1/2</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 1/4, P(B) = 1/3, A and B mutually exclusive. Find P(A or B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck. Find P(king or queen) using the ME addition rule.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Events A: "sum = 3" and B: "sum = 7". Are they mutually exclusive? Find P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A)=0.2, P(B)=0.4, P(C)=0.3. A, B, C are mutually exclusive. Find P(A or B or C).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–10, find P(multiple of 2 or multiple of 5). Are these events mutually exclusive?<br><details class="ans"><summary>Show Answer</summary><p class="working">Multiples of 2: {2,4,6,8,10}; Multiples of 5: {5,10}; Overlap: {10}<br>Not ME! P(2 or 5) = 5/10 + 2/10 − 1/10 = 6/10 = 3/5</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Find P(getting 1 or 2 or 3 or 4 or 5 or 6). What does this tell you?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.7, P(A) = 0.4, A and B are mutually exclusive. Find P(B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Three cards — one red, one blue, one yellow — are placed face down. One is picked. Show that "picking red", "picking blue", "picking yellow" are mutually exclusive and exhaustive.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Not Mutually Exclusive</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A die is rolled. A = "even number", B = "prime number". Are they mutually exclusive? Find A∩B.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–20, A = "divisible by 4", B = "divisible by 6". Find A∩B and hence P(A or B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck. A = "red card", B = "face card". Find P(A∩B), then P(A∪B) using the general formula.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.6, P(B) = 0.5, P(A∩B) = 0.3. Are A and B mutually exclusive? Find P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a class of 30: 18 like cricket, 15 like football, 8 like both. If one student is chosen, find P(likes at least one sport).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.8, P(A∩B) = 0.2, P(A) = 0.5. Find P(B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain in words why P(A∪B) = P(A) + P(B) − P(A∩B). Why must we subtract P(A∩B)?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number 1–12 is chosen. A = "even", B = "divisible by 3". Show these are not mutually exclusive and find P(A or B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">For events A and B where P(A) = 2/5 and P(B) = 1/3, what is the maximum possible value of P(A∪B)? What is the minimum?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a group, P(speaks English) = 0.7, P(speaks French) = 0.4, P(speaks both) = 0.2. Find P(speaks at least one of the two languages).</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Are complementary events always mutually exclusive? Are mutually exclusive events always complementary? Explain with examples.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled. Events: A = "less than 3", B = "greater than 4", C = "equal to 3". Are any two of A, B, C mutually exclusive?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.35, P(B) = 0.45, P(neither A nor B) = 0.3. Find P(A∩B).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a survey: 40% prefer tea, 35% prefer coffee, 15% prefer both. What percent prefer neither?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 1/3, P(B) = 1/4, P(A∪B) = 1/2. Find P(A∩B). Are A and B mutually exclusive?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a standard deck, events A = "heart" and B = "spade". Confirm they are ME, then find P(heart or spade).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Events A and B are mutually exclusive. P(A') = 0.6 and P(B) = 0.25. Find P(A∪B) and P((A∪B)').</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three mutually exclusive events have probabilities in the ratio 1:2:3. Find each probability.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A student randomly chooses one school club from: Sports, Debate, Music, Art. If P(Sports) = 0.3, P(Debate) = 0.2, P(Music) = 0.25, find P(Art).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A traffic light shows Red, Yellow, Green at different times. In 100 observations, Red showed 45 times, Yellow 10 times. Find P(Green) and P(Red or Green) assuming ME.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 7 -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Addition Rule P(A or B)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/addition-rule-lib/v/addition-rule-for-probability" target="_blank">Addition Rule for Probability</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/addition-rule-lib/v/addition-rule-probability" target="_blank">Probability: A or B (Worked Examples)</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Adding Probabilities</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Union of Events</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e3rCjgs0Koc" target="_blank">When to Add Probabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> The Addition Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the general addition rule for P(A∪B). When does it simplify to P(A) + P(B)?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.5, P(B) = 0.4, P(A∩B) = 0.2. Find P(A∪B).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(A∪B) = 0.5 + 0.4 − 0.2 = 0.7</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 1/3, P(B) = 1/4, A and B are mutually exclusive. Find P(A or B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.6, P(B) = 0.5, P(A∪B) = 0.8. Find P(A∩B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.45, P(B) = 0.35, P(A∩B) = 0.15. Find P(A∪B) and P((A∪B)').</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a die, A = "number ≤ 3" and B = "number is even". Find P(A∪B).<br><details class="ans"><summary>Show Answer</summary><p class="working">A = {1,2,3}, B = {2,4,6}, A∩B = {2}<br>P(A) = 1/2, P(B) = 1/2, P(A∩B) = 1/6<br>P(A∪B) = 1/2 + 1/2 − 1/6 = 5/6</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a class, P(likes maths) = 0.6, P(likes science) = 0.55, P(likes both) = 0.3. Find P(likes maths or science).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.75, P(A) = 0.5, P(B) = 0.4. Find P(A∩B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 2/5, P(B) = 3/8, P(A∩B) = 1/10. Find P(A or B) in simplest fraction form.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = P(B) = 0.4 and P(A∩B) = 0.16. Find P(A∪B). What can you infer about the relationship between A and B?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Applied Addition Rule</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">From cards 1–20, find P(multiple of 3 or multiple of 4).<br><details class="ans"><summary>Show Answer</summary><p class="working">Mult 3: {3,6,9,12,15,18} → 6; Mult 4: {4,8,12,16,20} → 5; Both: {12} → 1<br>P = 6/20 + 5/20 − 1/20 = 10/20 = 1/2</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a standard deck, find P(red card or king).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(red)=26/52, P(king)=4/52, P(red king)=2/52<br>P(red or king) = 26/52 + 4/52 − 2/52 = 28/52 = 7/13</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(sum is even or sum is a multiple of 3).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 3/7, P(B) = 2/7. If A and B are mutually exclusive, find P(A or B). If P(A∩B) = 1/7, find P(A or B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a group of 50 students: 30 play chess, 20 play carrom, 8 play both. Find P(plays chess or carrom).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A number 1–30 is chosen. Find P(divisible by 2 or divisible by 5).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A or B) = 0.8, P(A and B) = 0.1, P(A) = 0.5. Find P(B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From 1–15, find P(odd number or a multiple of 5).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.4, P(B) = 0.5, P(A∪B) = 0.6. Are A and B mutually exclusive? Find P(A∩B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(first die = 4 or second die = 4).<br><details class="ans"><summary>Show Answer</summary><p class="working">P(first=4) = 6/36, P(second=4) = 6/36, P(both=4) = 1/36<br>P = 6/36 + 6/36 − 1/36 = 11/36</p></details></span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finding Missing Values</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.9, P(A) = 0.6, P(A∩B) = 0.1. Find P(B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = P(B) = x, P(A∩B) = 0.1, P(A∪B) = 0.7. Find x.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 2k, P(B) = 3k, P(A∩B) = k, P(A∪B) = 0.8. Find k.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If P(A∪B) = P(A) + P(B), what must be true about A and B?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 3/8, P(B) = 1/4, P(A or B) = 1/2. Find P(A and B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 5/6, P(A'∩B') = 1/6. Verify these are consistent.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.4, P(B) = 0.3. What are the possible range of values for P(A∪B)?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A only) = 0.3, P(B only) = 0.25, P(A and B) = 0.15. Find P(A∪B) and P(A) and P(B).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.65, P(A) = 0.35, P(B) = 0.45. Find P(A∩B). Are A and B mutually exclusive?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(neither A nor B) = 0.25, P(A) = 0.4, P(B) = 0.5. Find P(A and B).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Venn Diagram and Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A survey of 100 students: 60 like Science, 55 like Maths, 30 like both. A student is chosen randomly. Find P(likes Science or Maths) and P(likes neither).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a deck: A = "king", B = "black card". Use the addition rule to find P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.45, P(B) = 0.35, and A and B are mutually exclusive. Is it possible that P(A) + P(B) + P(C) = 1 for some event C? Find P(C).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice: event A = "sum > 9", event B = "at least one 6". Find n(A), n(B), n(A∩B), and P(A∪B).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Extend the addition rule to 3 events: state P(A∪B∪C) = P(A)+P(B)+P(C) − P(A∩B) − P(B∩C) − P(A∩C) + P(A∩B∩C). Verify with a simple example.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–20: find P(prime or perfect square).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.3, P(B) = 0.4, P(C) = 0.2, all mutually exclusive. Find P(A or B or C) and P(none of them occur).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a class of 40: 20 play guitar, 15 play tabla, 5 play both. One student chosen randomly. Find P(plays at least one instrument).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.7, P(A∩B) = 0.2, P(A) = P(B). Find P(A) and P(B).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A survey: P(watches news) = 0.45, P(watches sports) = 0.6, P(watches both) = 0.3. Find P(watches at least one) and P(watches only news).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 8 -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Independent Events P(A and B)</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/multiplication-rule-independent/v/independent-events-rule" target="_blank">Independent Events</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/multiplication-rule-independent/v/probability-multiplication-rule" target="_blank">Multiplication Rule for Independent Events</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Multiplying Probabilities</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Independent Probability in Real Life</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=7LbknlEvaD4" target="_blank">Independence and Randomness</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recognising and Using Independence</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define independent events. State the multiplication rule for P(A∩B) when A and B are independent.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed and a die is rolled. Find P(H and 6).<br><details class="ans"><summary>Show Answer</summary><p class="working">Events are independent.<br>P(H) = 1/2, P(6) = 1/6<br>P(H and 6) = 1/2 × 1/6 = 1/12</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two coins are tossed. Find P(both heads) using independence.<br><details class="ans"><summary>Show Answer</summary><p class="working">P(H) = 1/2 for each coin; independent<br>P(HH) = 1/2 × 1/2 = 1/4</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(both show 5).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.4 and P(B) = 0.3. If A and B are independent, find P(A∩B).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(student passes maths) = 0.7, P(student passes science) = 0.8. If results are independent, find P(passes both).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed 3 times. Find P(all three heads).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 1/3, P(B) = 1/4, A and B independent. Find P(A and B) and P(A or B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.5, P(B) = 0.6, P(A∩B) = 0.3. Are A and B independent? Show your reasoning.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Give two examples of independent events and two examples of events that are not independent.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Multiplication Rule Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two dice are rolled. Find P(first shows even AND second shows odd).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has 5 red and 3 blue balls. One ball drawn, replaced, and another drawn. Find P(both red).<br><details class="ans"><summary>Show Answer</summary><p class="working">With replacement → independent<br>P(red) = 5/8 each time<br>P(both red) = 5/8 × 5/8 = 25/64</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A passes exam) = 3/4, P(B passes exam) = 2/3. Find P(both pass) and P(neither passes), assuming independence.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A machine produces parts. P(defective) = 0.05. Three parts are selected. Find P(all three are defective), assuming independence.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A coin is tossed 4 times. Find P(all four tails).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 1/2, P(B) = 1/3, P(C) = 1/4. A, B, C are independent. Find P(all three occur).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student answers two MCQs randomly, each with 4 options. Find P(both correct).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck, replaced, and another is drawn. Find P(both cards are aces).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three independent machines operate. P(machine 1 works) = 0.9, P(machine 2 works) = 0.95, P(machine 3 works) = 0.8. Find P(all three work).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.6, P(B) = 0.5, A and B independent. Find P(A but not B) = P(A∩B').</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Testing for Independence</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">P(A) = 1/2, P(B) = 1/3, P(A∩B) = 1/6. Are A and B independent?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.4, P(B) = 0.5, P(A∩B) = 0.25. Are A and B independent?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled and a coin is tossed. Let A = "die shows 3" and B = "coin shows H". Test independence.<br><details class="ans"><summary>Show Answer</summary><p class="working">P(A) = 1/6, P(B) = 1/2, P(A∩B) = 1/12<br>P(A)×P(B) = 1/6 × 1/2 = 1/12 = P(A∩B) ✓ Independent</p></details></span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two cards drawn without replacement from a deck. Are the events "first is a king" and "second is a king" independent? Explain.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled twice. Are "first roll is 2" and "sum of both rolls is 5" independent?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If A and B are independent, show that A' and B' are also independent.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 0.3, P(B) = 0.4, P(A∪B) = 0.58. Are A and B independent?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Can two events be both mutually exclusive and independent (assuming both have non-zero probability)? Explain mathematically.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From two dice, A = "first die is even" and B = "sum is 7". Find P(A), P(B), P(A∩B) and test independence.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 2/5, P(B) = 3/4, P(A∩B) = 3/10. Are A and B independent?</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Advanced and Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find P(at least one head) when a coin is tossed 4 times, using independence and complements.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(team wins at home) = 0.7, P(team wins away) = 0.4. If the two games are independent, find P(wins both) and P(wins at least one).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A machine produces items, 10% of which are defective. If 2 items are selected with replacement, find P(exactly one is defective).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A) = 1/3, P(B) = 1/4, A and B independent. Find P(A∪B) using both the addition rule and the multiplication rule for independence.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A cricket player has P(scoring a boundary per ball) = 0.15. For 3 consecutive balls, find P(boundary on all 3) and P(no boundary on any).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A∩B) = 0.12, P(A) = 0.4. If A and B are independent, find P(B). Then find P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A system has two components in parallel. The system works if at least one component works. P(C1 works) = 0.9, P(C2 works) = 0.85. Find P(system works).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(A) = p, P(B) = q, independent. Express P(exactly one of A or B occurs) in terms of p and q.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Three students independently solve a problem. P(each solves it) = 1/2, 1/3, 1/4 respectively. Find P(problem is solved by at least one student).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A fair coin is tossed until Heads appears for the first time. Why is this different from a fixed-trial experiment? What is P(first H on the 3rd toss)?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 9 -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Probability from Tables and Venn Diagrams</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/venn-diagrams-and-probability" target="_blank">Venn Diagrams and Probability</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/two-way-tables-probability" target="_blank">Two-Way Tables and Probability</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Reading Probability Tables</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">Organising Probability Data</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e3rCjgs0Koc" target="_blank">Venn Diagrams in Probability</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Reading Two-Way Tables</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A survey of 100 students was recorded in the table below:<br>
+      <table style="border-collapse:collapse;margin:8px 0;font-size:.85rem"><tr><th style="border:1px solid #ccc;padding:4px 10px"></th><th style="border:1px solid #ccc;padding:4px 10px">Plays Sport</th><th style="border:1px solid #ccc;padding:4px 10px">Does Not</th><th style="border:1px solid #ccc;padding:4px 10px">Total</th></tr><tr><td style="border:1px solid #ccc;padding:4px 10px">Boys</td><td style="border:1px solid #ccc;padding:4px 10px">35</td><td style="border:1px solid #ccc;padding:4px 10px">15</td><td style="border:1px solid #ccc;padding:4px 10px">50</td></tr><tr><td style="border:1px solid #ccc;padding:4px 10px">Girls</td><td style="border:1px solid #ccc;padding:4px 10px">25</td><td style="border:1px solid #ccc;padding:4px 10px">25</td><td style="border:1px solid #ccc;padding:4px 10px">50</td></tr><tr><td style="border:1px solid #ccc;padding:4px 10px">Total</td><td style="border:1px solid #ccc;padding:4px 10px">60</td><td style="border:1px solid #ccc;padding:4px 10px">40</td><td style="border:1px solid #ccc;padding:4px 10px">100</td></tr></table>
+      Find: (a) P(randomly chosen student is a boy who plays sport) (b) P(student is a girl) (c) P(student plays sport)</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Using the table above, find: (a) P(student does not play sport) (b) P(student is a boy given they play sport — out of sport players) (c) P(girl who does not play sport)</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A class of 40 students was categorised by hair colour and whether they wear glasses. 10 have dark hair and glasses, 15 have dark hair without glasses, 8 have light hair and glasses, 7 have light hair without glasses. Construct a two-way table and find P(selected student has glasses).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a two-way table: 200 people surveyed. 120 are adults, 80 are children. 90 adults and 50 children prefer Action movies. Find P(randomly chosen person prefers Action).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In a school of 300, 180 play cricket, 140 play kabaddi, 80 play both. Construct a Venn diagram and find P(plays only cricket).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a frequency table for rolling a die 60 times: 1→8, 2→11, 3→9, 4→10, 5→12, 6→10. Find the experimental P(even number).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram shows: n(A only)=12, n(B only)=18, n(A∩B)=8, n(neither)=22. Total = 60. Find P(A), P(B), P(A∩B), P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Using a two-way table for two dice outcomes (36 total), find P(sum > 10) by identifying outcomes in the table.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a Venn diagram: P(A) = 0.5, P(B) = 0.4, P(A∩B) = 0.2. Find P(only A), P(only B), P(neither).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A two-way table for 500 vehicles shows: 300 are cars (200 red, 100 blue) and 200 are trucks (50 red, 150 blue). One vehicle is chosen. Find P(red) and P(car or red).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Venn Diagram Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In a class of 50: 30 like Mathematics, 25 like English, 10 like both. Draw a Venn diagram and find: P(likes Maths only), P(likes English only), P(likes neither).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a Venn diagram with S=40: A has 16 elements, B has 20 elements, A∩B has 6 elements. Find P(A'), P(B'), P(A∪B)'.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A∪B) = 0.75, P(A) = 0.4, P(B) = 0.5. Draw a Venn diagram with these values and find P(only A), P(only B), P(A∩B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Three events A, B, C in S=100: n(A only)=15, n(B only)=20, n(C only)=10, n(A∩B only)=8, n(B∩C only)=6, n(A∩C only)=5, n(A∩B∩C)=3, n(none)=33. Verify and find P(A∪B∪C).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a Venn diagram showing S=60: A has 25 elements, B has 30 elements, A∩B has 10 elements. Find all four regions and their probabilities.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A group of 80 students: 45 study Hindi, 35 study French, 20 study both. One student is randomly chosen. Find P(studies exactly one language).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram shows P(A only)=0.2, P(B only)=0.3, P(A∩B)=0.1, P(neither)=0.4. Verify this is a valid probability distribution.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In a survey of 200: 100 use apps for music, 80 use apps for videos, 40 use both. Find P(uses apps for music but not videos).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(A)=0.6, P(B)=0.5, P(A∩B)=0.3. Using a Venn diagram, find P(A but not B) and P(B but not A).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a Venn diagram: n(only A)=x, n(only B)=2x, n(A∩B)=x, n(neither)=3x, total = 70. Find x and all probabilities.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Reading Complex Tables and Diagrams</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The table shows outcomes for two dice summed:<br>Using the full 6×6 grid of 36 outcomes, find P(sum is a prime number).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram shows three overlapping circles for Tea (T), Coffee (C), Juice (J) with n(S)=100. Given n(T)=50, n(C)=40, n(J)=30, n(T∩C)=15, n(C∩J)=10, n(T∩J)=12, n(T∩C∩J)=5. Find n(none) and P(at least one beverage).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A frequency table for 200 school days: Sunny=80, Cloudy=60, Rainy=40, Foggy=20. Find P(not rainy) and P(sunny or foggy).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two dice outcomes are recorded in a 6×6 table. Shade the cells where the product is even. How many such cells are there? Find P(product is even).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A table of 1000 people surveyed: prefer comedy→400, action→350, drama→250. Find P(not action) and P(comedy or drama).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Venn diagram: two events A and B. Only A region = 2k, only B region = 3k, A∩B = k, neither = 4k. Find k if total = 100. Then find P(A), P(B), P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A two-way frequency table for 300 people by age (under 30 / 30 and over) and exercise (regular/irregular). From the table: under 30 regular=80, under 30 irregular=70, over 30 regular=60, over 30 irregular=90. Find P(over 30 and regular).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From the two-way table in Q7 above, find P(regular exercise | over 30) and P(under 30 | irregular exercise).</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram for a die (S={1,2,3,4,5,6}): A={primes}, B={odd numbers}. Fill in all four regions and find P(A∩B'), P(A'∩B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a school of 500: 250 play outdoor sports, 200 play indoor sports, 80 play both. Construct a Venn diagram, fill in all regions, and find P(plays exactly one type of sport).</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed and Applied Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A sample of 200 items from a factory: 30 are defective. Of the defective, 20 are from Machine A and 10 from Machine B. Find P(defective from Machine A).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From a Venn diagram: P(only A)=0.25, P(only B)=0.35, P(A∩B)=0.15. One outcome is chosen. Find P(at least one of A or B) and P(exactly one of A or B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A table shows Grade 9 students' favourite subject: Maths=45, Science=30, English=20, Others=5, Total=100. Find P(Maths or Science).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram: n(A)=25, n(B)=35, n(A∩B)=10, n(S)=60. Find P(A'∩B') and verify using P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From a two-way table of 80 students by gender and whether they submitted homework: boys-submitted=28, boys-not=12, girls-submitted=30, girls-not=10. Find P(submitted homework) and P(girl who submitted).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram has three regions: A only, B only, and A∩B. If P(A only)=x, P(B only)=2x, P(A∩B)=x, and P(neither)=0.3, find x.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a survey, P(A)=0.45, P(B)=0.38, P(A∩B)=0.12. Draw a Venn diagram and interpret each region in context (make up a suitable context).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">100 people surveyed: 60 read newspapers, 45 read magazines, 20 read both. Find P(reads only newspapers), P(reads only magazines), and P(reads at least one).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A Venn diagram with three circles A, B, C: all three circles overlap. List all eight distinct regions of the Venn diagram and describe what each represents.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">From a two-way table: 400 people by age (young/old) and whether they use smartphones (yes/no). Young-yes=160, Young-no=40, Old-yes=80, Old-no=120. Find P(young or uses smartphone).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 10 -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Experimental vs Theoretical Probability</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/experimental-probability-lib/v/experimental-probability" target="_blank">Experimental Probability</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/experimental-probability-lib/v/theoretical-vs-experimental-probability" target="_blank">Theoretical vs Experimental</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Running Experiments</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AYnJv68T3MM" target="_blank">The Law of Large Numbers</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=pNe6fsaCVtI" target="_blank">Coin Flipping and Large Numbers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Definitions and Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define experimental (empirical) probability. How is it calculated?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Define theoretical probability. What assumptions are required?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A coin was tossed 40 times and heads appeared 22 times. Find the experimental P(heads). How does it compare to the theoretical value?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die was rolled 60 times. Number 4 appeared 8 times. Find experimental P(4) and theoretical P(4). Comment on the difference.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">State the Law of Large Numbers in the context of probability. How does it relate experimental and theoretical probability?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A spinner has 4 equal sectors. After 80 spins: Sector 1 → 18, Sector 2 → 22, Sector 3 → 20, Sector 4 → 20. Find the experimental probability for each sector. What is the theoretical probability?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Why might experimental probability differ from theoretical probability for small numbers of trials?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">If an experiment is repeated 1000 times, will experimental probability always equal theoretical probability? Explain.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student throws a thumbtack 50 times. It lands point-up 30 times. Find the experimental P(point-up). Can theoretical probability be found here? Why or why not?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain why experimental probability is important when we don't know the theoretical probability of an event.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Calculating from Frequency Data</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A bag is known to have red and blue balls but the ratio is unknown. In 100 draws with replacement, 43 were red. Estimate P(red ball).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled 120 times. Results: 1→18, 2→22, 3→19, 4→21, 5→20, 6→20. Find experimental P(odd) and compare to theoretical P(odd).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A weather station recorded 200 days: 80 sunny, 60 cloudy, 40 rainy, 20 stormy. Find experimental P(sunny) and P(rainy or stormy).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In a class test, 24 out of 30 students scored above 60%. Find experimental P(above 60%) for the next student (from the same class).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A biased coin shows heads 60 times out of 100 tosses. What does this suggest about the coin? Find experimental P(T) and P(H).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A plant grows or doesn't based on soil type. Experiment: 50 seeds planted, 35 germinate. Find P(germination) experimentally. If 200 seeds are planted, how many are expected to germinate?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From 500 trials of a random experiment: A occurred 200 times, B occurred 150 times, both occurred 80 times. Find experimental P(A), P(B), P(A∩B), and P(A∪B).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Compare: theoretical P(sum = 7) from two dice vs an experiment where two dice were rolled 360 times and sum was 7 in 55 trials. Comment.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In cricket, a batsman faces 200 balls and scores a boundary on 25 of them. Find his experimental P(boundary) per ball.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A factory tests 500 light bulbs. 470 pass quality control. Find experimental P(passing) and P(failing).</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Comparing and Analysing</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The theoretical P(even number on a die) = 1/2. In an experiment of 30 rolls, even appeared 17 times. Is the die fair? How confident can we be?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In 10 tosses of a coin, heads appeared 8 times. In 100 tosses, heads appeared 55 times. In 1000 tosses, heads appeared 507 times. Describe the trend in experimental probability.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the difference between relative frequency and probability. When can relative frequency be used as an estimate of probability?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck 52 times (with replacement). Theoretically, each card should appear once. In an experiment, the Ace of Spades appeared 3 times. Is this unusual? Discuss.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">If experimental P(E) after n trials is 0.42, and the true P(E) = 0.4, calculate the absolute difference. As n increases, what happens to this difference?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a game, P(winning) theoretically = 1/4. A player plays 80 games and wins 25. Find experimental P(win). Is this consistent with theory?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Why is the experimental probability of a medical treatment's success more useful than a theoretical model? Discuss.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A biased die is suspected if P(6) > 1/4. After 200 rolls, 6 appeared 60 times. Is the die biased? Use experimental probability to justify.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Design an experiment to estimate P(drawing a red card from a shuffled deck). How many trials would give a reliable estimate?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two students conduct the same experiment (tossing a coin) — one tosses 10 times, another 500 times. Both find experimental probability. Whose result is more reliable? Why?</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed and Real-World</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In 200 cricket matches between two teams, Team A won 120, Team B won 60, 20 were draws. Find experimental P(A wins), P(B wins), P(draw).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A shop sells umbrellas. On 30 rainy days, umbrellas were sold; on 120 non-rainy days, none were sold. Total days observed = 200. Find P(rain) experimentally and P(umbrella sold).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A student surveys 50 classmates on their birthday month. 6 are born in January. Estimate P(a student from this class is born in January). How does it compare to theoretical P(1/12)?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Records show that 15 of 100 patients with a certain symptom test positive for a disease. Find experimental P(positive test) and use it to predict how many of 400 patients would test positive.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A quality control test: 500 products checked, 20 defective. Find experimental P(defective). If 5000 products are made, how many defects are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Compare experimental and theoretical probability for tossing 2 coins (getting HH). Design an experiment with 40 trials, list expected frequencies, and explain how results might differ.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In IPL 2024, Virat Kohli faced 400 balls and scored a six on 20 of them. Find P(six per ball) experimentally. In 50 future balls, how many sixes are expected?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A dice is rolled 300 times. Expected frequency of each number = 50. Actual results show number 6 appeared 70 times. Is the die likely biased? Justify using probability.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Using the concept of experimental probability, explain why insurance companies use large data sets to set premium rates.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Create a frequency table for 60 trial results (you may use a simulated die). Calculate experimental probability for each outcome and compare with theoretical probability. Compute the absolute error for each.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 11 -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Expected Outcomes</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/expected-value/v/expected-value" target="_blank">Expected Value</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/expected-value/v/law-of-large-numbers" target="_blank">Expected Outcomes and Large Numbers</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Expected Frequency</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AYnJv68T3MM" target="_blank">What to Expect from Probability</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=7LbknlEvaD4" target="_blank">Expected Value in Games</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Basic Expected Frequency</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the formula for expected number of occurrences of event E in n trials. Define each term.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A fair coin is tossed 200 times. How many times would you expect to get heads?<br><details class="ans"><summary>Show Answer</summary><p class="working">P(H) = 1/2; Expected = 200 × 1/2 = 100 times</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A fair die is rolled 300 times. How many times is a 5 expected to appear?<br><details class="ans"><summary>Show Answer</summary><p class="working">P(5) = 1/6; Expected = 300 × 1/6 = 50 times</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has 4 red and 6 blue balls. A ball is drawn and replaced, 50 times. How many times is a red ball expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A spinner has 5 equal sectors. If spun 150 times, how many times would each sector be expected to appear?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled 360 times. Find the expected frequency of: (a) getting 6 (b) getting an even number (c) getting a prime number.<br><details class="ans"><summary>Show Answer</summary><p class="working">(a) 360×1/6 = 60 (b) 360×1/2 = 180 (c) 360×1/2 = 180</p></details></span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(winning a prize) = 0.02. If 500 people buy tickets, how many are expected to win?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A card is drawn from a deck and replaced, repeated 520 times. How many times is a heart expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Two coins are tossed 80 times. How many times are both heads expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(defective item) = 0.05. If 1000 items are produced, how many defective items are expected?</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Setting up Expected Frequency Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A fair die is rolled 180 times. Find the expected frequency of numbers that are: (a) less than 3 (b) greater than 4 (c) equal to 3 or 6.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(sunny day in April) = 0.6. In 30 days of April, how many sunny days are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A factory machine produces 1 defective item per 25 on average. If 500 items are produced per day, how many defects are expected per day?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Two dice are rolled 180 times. Find the expected number of times the sum is 7.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(a student brings lunch) = 3/5. In a class of 40 students over 25 school days, how many student-days are expected where a student brings lunch?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A cricket player has P(scoring a six per over) = 1/4. Over 40 overs in a match, how many sixes are expected?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A spinner has sectors: 1/4 red, 1/3 blue, 5/12 green. If spun 240 times, find expected frequency for each colour.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A game gives prize A with P=0.1, prize B with P=0.2, no prize with P=0.7. In 300 games, find expected number of each prize.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(head on biased coin) = 0.6. If tossed 500 times, find expected: (a) heads (b) tails (c) difference between heads and tails.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">From cards 1–20, P(prime number) = 8/20. If 60 cards are drawn with replacement, how many are expected to be prime?</span><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Working Backwards from Expected Frequency</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A coin was expected to show heads 60 times. If n = 120, find P(heads).</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In n trials, an event with P(E) = 1/5 is expected to occur 40 times. Find n.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A die is rolled n times. Number 3 is expected 25 times. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In 200 trials, event E is expected to occur 50 times. Find P(E). What is P(E')?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bag has red and blue balls. Drawing a red ball is expected 18 times in 45 draws (with replacement). Find P(red) and the ratio of red to blue balls if there are 30 balls total.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">P(E) = k/10. In 300 trials, E is expected to occur 90 times. Find k.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">An event is expected to occur 12 times in 48 trials. Find P(event). Is P(event') > P(event)?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(winning) = 0.25. How many games must be played to expect 15 wins?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A machine is expected to produce 20 defective items in every 400 made. Find P(defective). For the defect count to be expected at 35, how many items should be made?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In 5n trials of an experiment, event E occurs 2n times. Find P(E).</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Applied Expected Outcome Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">P(India wins a cricket match) = 0.65. In a series of 10 matches, how many wins are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A student guesses on 20 true/false questions. How many correct answers are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(rain on any day in June) = 0.4. Over June (30 days), how many rainy days are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">An archer hits the target with P = 3/4. In 40 shots, how many hits are expected? In how many shots would you expect 60 hits?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A vaccine is 90% effective. In a group of 500 vaccinated people exposed to a disease, how many are expected to be protected?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A biased die has P(6) = 1/4. In a game played 48 times, how many sixes are expected? Compare to a fair die.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a multiple choice test with 4 options per question (25 questions), a student guesses all. Expected correct answers = ? Expected wrong answers = ?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">From historical data, P(stock price rises on a given day) = 0.55. Over 200 trading days, how many days is the price expected to rise?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(a flight is delayed) = 0.08. An airline runs 250 flights per day. How many delays are expected per day? Per week?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a game, you roll a die and win ₹10 if you get a 6, lose ₹2 otherwise. In 60 games, find the expected number of wins and losses, and the expected net amount won or lost.</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TOPIC 12 -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>Real-World Probability Applications</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library" target="_blank">Probability in Real Life</a>
+        <a href="https://www.khanacademy.org/math/statistics-probability/probability-library/basic-theoretical-probability/v/probability-applications" target="_blank">Applied Probability</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OyddY7DlV58" target="_blank">How Probability Rules Our Lives</a>
+        <a href="https://www.youtube.com/watch?v=vBX3-fgUKLQ" target="_blank">The Gambler's Fallacy</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=px9Zqo3bA6Q" target="_blank">Probability in Sports</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=KzfWUEJjG18" target="_blank">Real Life Probability</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Cricket and Sports Probability</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In cricket, a batsman has scored boundaries (4s or 6s) on 30 out of 200 balls faced. Find P(boundary) per ball for this batsman.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A bowler has taken a wicket on 25 out of 300 balls bowled. Find P(wicket per ball). In 60 balls of an innings, how many wickets are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A cricket team wins 14 out of 20 matches at home and 6 out of 15 away. Find P(win at home) and P(win away). Which venue is better?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A football team scores a goal with P = 0.35 per match attempt (they take 10 attempts per match). How many goals are expected per match?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a kabaddi match, a raider successfully scores on 60% of raids. In 20 raids, how many successes are expected? What is P(success on exactly the first 3 raids) if raids are independent?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A basketball player's free-throw success rate is 75%. She takes 8 free throws in a game. How many are expected to go in?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">In IPL, historical data shows P(Mumbai Indians wins) = 0.60 and P(Chennai Super Kings wins) = 0.58 in their head-to-head matches (ignoring draws). Discuss any issue with these probabilities summing to more than 1.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a tennis match, a player serves an ace with P = 0.15. Over 100 serves, how many aces are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">Toss-winning probability in a cricket match is 1/2. India has won 55 out of 100 tosses observed. Is the toss fair? Discuss.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A team wins, draws, or loses with probabilities 0.5, 0.2, 0.3. In a 38-match season, find the expected number of wins, draws, and losses. What is the expected points total if win=3 pts, draw=1 pt, loss=0?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Weather, Medicine, and Daily Life</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A weather app says there is a 70% chance of rain tomorrow. Write this as a probability. What is P(no rain)?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A medical test for a disease has a 95% accuracy rate. If 1000 people are tested, how many correct results are expected?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A drug is effective in 80% of patients. If 500 patients take the drug, how many are expected to benefit?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A traffic signal is red for 45 seconds and green for 75 seconds out of every 2 minutes. Find P(arriving at a green signal).</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a city, P(accident at a particular intersection per day) = 0.04. Over a year (365 days), how many accidents are expected?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">P(a randomly chosen person has a certain blood type O+) = 0.38. In a random group of 200 people, how many are expected to be O+?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A fire alarm goes off unnecessarily (false alarm) with P = 0.03 per day. In a year, how many false alarms are expected in a school?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A bridge has P(needing repair in any given year) = 0.12. Over 25 years, how many repair years are expected?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">The probability that a patient recovers without treatment = 0.4 and with treatment = 0.85. If 200 patients receive treatment and 50 do not, find the expected recoveries in each group.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Explain how probability is used in insurance pricing. Why do insurance companies prefer large numbers of clients?</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Games, Puzzles, and Decisions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A game: roll a die, win ₹30 if you get a 6, lose ₹6 otherwise. Find the expected outcome per game. Is this game fair?<br><details class="ans"><summary>Show Answer</summary><p class="working">P(win)=1/6: gain ₹30; P(lose)=5/6: lose ₹6<br>Expected = (1/6)×30 + (5/6)×(−6) = 5 − 5 = ₹0 → Fair game!</p></details></span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A lottery ticket costs ₹10. Prizes: ₹1000 with P=0.001, ₹100 with P=0.01, ₹10 with P=0.05. Is this lottery worth buying? Find the expected value of a ticket.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In "Rock, Paper, Scissors" between two equally matched players, find P(Player A wins), P(draw), P(Player B wins). Are these equally likely?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A game board has 36 squares. You roll two dice and move forward. What is the probability you land on square 7 in one move from the start?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain the Gambler's Fallacy using the example of tossing a coin. Why is "after 5 heads, tails is due" a misconception?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">In a quiz, there are 4 rounds each with 5 true/false questions. A student guesses all. Expected correct answers per round = ? Expected total = ?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A charity raffle has 500 tickets. 1 first prize, 5 second prizes, 20 third prizes. Find the probability of winning any prize if you buy 1 ticket.</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A card game: a player draws one card. If it's an ace, they get ₹50; if it's a face card, ₹20; otherwise, they pay ₹5. Find the expected earnings per game.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a multiple-choice exam, there is a penalty: +4 for correct, −1 for wrong, 0 for unanswered. Each question has 4 options. Should a student guess if they can eliminate 2 options? Calculate using expected value.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A restaurant has 5 starters, 8 mains, 4 desserts. A customer randomly picks one of each. What is the sample space size? If 2 starters are vegetarian, 5 mains are vegetarian, and 3 desserts are vegetarian, find P(completely vegetarian meal).</span><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Real-World Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In a school election, 3 candidates run. Based on surveys, P(A wins)=0.45, P(B wins)=0.35, P(C wins)=0.20. Find the probability that neither A nor B wins.</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A smartphone has a 5% chance of developing a fault within one year. A shop sells 200 phones per month. How many faulty phones are expected per month?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">P(a student passes their driving test first time) = 0.65. In a batch of 40 students, how many are expected to pass first time?</span><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><span class="q-text">A new website has P(visitor makes a purchase) = 0.08. If 2500 visitors visit the site daily, how many purchases are expected per day?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">Explain how a manufacturing company might use probability to decide whether to recall a product batch. What probability threshold might trigger a recall?</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">In a social media study, P(post going viral) = 0.002. If a company posts 500 times per year, how many viral posts are expected?</span><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><span class="q-text">A city has two hospitals A and B. Hospital A correctly diagnoses 9 out of 10 cases; Hospital B correctly diagnoses 8 out of 10. If you go to a randomly chosen hospital, find P(correct diagnosis), assuming each hospital is equally likely to be chosen.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">A seed packet claims 90% germination rate. A gardener plants 50 seeds. How many are expected to germinate? If only 38 germinate, should the gardener complain to the manufacturer? Use probability to argue both sides.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Discuss a situation in daily school life where probability helps make a better decision. Formulate a specific probability problem from that situation and solve it.</span><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><span class="q-text">Write a short paragraph explaining to a friend who hasn't studied probability why a 50% chance of rain does NOT mean it will rain for exactly half of the day.</span><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Grade 9 &nbsp;·&nbsp; Ganita Manjari &nbsp;·&nbsp; Chapter 7 &nbsp;·&nbsp; The Gaudium School &nbsp;·&nbsp; 2026–27
+</footer>
+
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

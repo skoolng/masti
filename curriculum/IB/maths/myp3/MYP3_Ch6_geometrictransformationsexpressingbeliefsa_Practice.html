@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATHS MYP3 Chapter 6 - Geometric transformations: expressing beliefs and values · Practice Sets</title>
+<style>
+
+:root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
+header h1 { font-size:2rem; }
+header p { margin-top:8px; opacity:.85; font-size:.95rem; }
+nav { background:var(--card); border-bottom:2px solid var(--border); padding:18px 28px; }
+nav h2 { font-size:.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+nav ol { padding-left:22px; columns:2; column-gap:40px; }
+nav li { margin:4px 0; font-size:.88rem; }
+nav a { color:var(--primary); text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+.topic { max-width:960px; margin:36px auto; padding:0 18px; }
+.topic-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.t-num { background:var(--accent); color:#fff; border-radius:50%; width:46px; height:46px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.topic-header h2 { font-size:1.4rem; color:var(--primary); }
+.set-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.set-card h3 { font-size:1rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.set-label { display:inline-block; background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 8px; margin-right:6px; }
+.q-list { counter-reset:q; }
+.q-item { counter-increment:q; display:flex; gap:10px; margin:10px 0; align-items:flex-start; }
+.q-item::before { content:"Q" counter(q); background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 6px; flex-shrink:0; margin-top:3px; }
+.q-text { flex:1; font-size:.91rem; }
+.diff { font-size:.72rem; border-radius:99px; padding:1px 8px; flex-shrink:0; margin-top:4px; white-space:nowrap; }
+.diff-easy { background:#dcfce7; color:#15803d; }
+.diff-medium { background:#fef9c3; color:#854d0e; }
+.diff-hard { background:#fee2e2; color:#991b1b; }
+details.ans { margin-top:4px; }
+details.ans summary { cursor:pointer; color:var(--green); font-size:.82rem; font-weight:600; }
+details.ans p { background:#f0faf5; border-left:3px solid var(--green); padding:8px 12px; margin-top:6px; border-radius:6px; font-size:.85rem; }
+footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; margin-top:20px; }
+.topic-videos { background:#fff8f5; border:1px solid #f5d8cc; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+.topic-videos h3 { font-size:.95rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.vid-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media(max-width:640px){ .vid-grid{ grid-template-columns:1fr; } }
+.vid-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; }
+.vid-box .ch-tag { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; display:block; }
+.vid-box.khan .ch-tag { color:#137333; }
+.vid-box.antics .ch-tag { color:#d93025; }
+.vid-box.nphile .ch-tag { color:#7b2cbf; }
+.vid-box.teded .ch-tag { color:#e8734a; }
+.vid-box a { display:block; color:var(--primary); font-size:.84rem; margin:4px 0; text-decoration:none; }
+.vid-box a:hover { text-decoration:underline; }
+.vid-box a::before { content:"▶ "; }
+.working { background:#eef2ff; border-left:4px solid var(--primary); padding:10px 14px; margin-top:8px; border-radius:0 6px 6px 0; font-size:.84rem; line-height:1.9; }
+.working strong { color:var(--primary); }
+@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+.print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
+.print-set-btn:hover { background: #dce5ff; }
+
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 MATHS MYP3 Chapter 6 - Geometric transformations: expressing beliefs and values</h1>
+  <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">Geometric transformations: expressing beliefs and values</a></li>
+  </ol>
+</nav>
+
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Geometric transformations: expressing beliefs and values</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Khan Academy</span>
+        <a href="https://www.google.com/search?q=maths+Geometric+transformations%3A+expressing+beliefs+and+values+Khan+Academy" target="_blank">Khan Academy lesson links</a>
+        <a href="https://www.khanacademy.org/" target="_blank">Khan Academy home</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">YouTube Lessons</span>
+        <a href="https://www.youtube.com/results?search_query=maths+Geometric+transformations%3A+expressing+beliefs+and+values+explained" target="_blank">Chapter lesson videos</a>
+        <a href="https://www.youtube.com/results?search_query=maths+Geometric+transformations%3A+expressing+beliefs+and+values+real+world+problems" target="_blank">Application/problem videos</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">Concept Deep Dives</span>
+        <a href="https://www.google.com/search?q=IB+MYP+maths+Geometric+transformations%3A+expressing+beliefs+and+values+revision" target="_blank">IB-aligned revision videos</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">Extension</span>
+        <a href="https://www.youtube.com/results?search_query=Geometric+transformations%3A+expressing+beliefs+and+values+TED-Ed" target="_blank">TED-Ed/topic extension videos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundation - Basic Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Find perimeter of rectangle 12 cm by 7 cm.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Perimeter = 2(12+7) = 38 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find area of rectangle 15 cm by 9 cm.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area = 15x9 = 135 cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find area of triangle with base 10 cm and height 8 cm.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area = 1/2 x 10 x 8 = 40 cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find volume of cuboid 8 cm x 5 cm x 4 cm.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume = 160 cm^3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A circle has radius 7 cm. Find circumference (pi=22/7).</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Circumference = 2pi r = 44 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find area of same circle.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area = pi r^2 = 154 cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find diagonal of rectangle 9 cm by 12 cm.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Diagonal = sqrt(9^2+12^2)=15 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">In an isosceles triangle, equal sides 10 cm, base 12 cm, find height.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Half-base 6; height=sqrt(10^2-6^2)=8 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A cone has r=3 cm, h=4 cm. Find slant height.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: l = sqrt(3^2+4^2)=5 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find TSA of cuboid 6 cm x 4 cm x 3 cm.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: TSA=2(lw+lh+wh)=108 cm^2.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Core Practice - Skill Building</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">In triangle ABC, angles are 2x, 3x, 4x. Find x.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: 2x+3x+4x=180 -&gt; x=20.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find all angles from previous question.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Angles are 40°, 60°, 80°.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Scale drawing 1:200 has length 8 cm. Actual length?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Actual = 1600 cm = 16 m.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A sector has angle 60° and radius 12 cm. Arc length?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Arc = (60/360)x2pi x12 = 4pi cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find area of the same sector.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area=(60/360)pi(12^2)=24pi cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A cylinder r=4 cm, h=10 cm. Find volume.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume=pi r^2 h=160pi cm^3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A right triangle has hypotenuse 13 cm and one leg 5 cm. Find other leg.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Other leg = 12 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A ladder 10 m reaches wall with base 6 m from wall. Height reached?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Height = 8 m.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find CSA of cone with r=5 cm and l=13 cm.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: CSA = pi r l = 65pi cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Volume of sphere r=3 cm (use 4/3 pi r^3).</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume = 36pi cm^3.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application - Context and Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Room floor 5 m x 4 m uses 25 cm square tiles. Number of tiles?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area floor 20 m^2 = 200,000 cm^2; tile 625 cm^2; tiles=320.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A tank is cylinder r=1.5 m, h=2 m. Capacity in liters?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume=4.5pi m^3=4500pi L ≈ 14137 L.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A garden area is 96 m^2 with integer sides. Give dimensions with minimum perimeter.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Closest factors 8 and 12 -&gt; minimum perimeter 40 m.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A drone moves 90 m east, 120 m north. Direct distance?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Distance = 150 m.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A box 20x10x8 cm, open-top vs closed-top area difference?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Difference is top area 200 cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A semicircle has diameter 14 cm. Find perimeter.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Perimeter = pi r + 2r = 22 + 14 = 36 cm.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Find area of trapezium with parallel sides 9 cm, 15 cm and height 6 cm.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area=1/2(9+15)6 = 72 cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A cuboid is doubled in all dimensions. How many times volume changes?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume scales by 2^3 = 8 times.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Radius of circle increased by 10%. Area increases by what %?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area factor 1.1^2=1.21 -&gt; 21% increase.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A prism has triangular base area 24 cm^2 and length 10 cm. Volume?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume = 240 cm^3.</b></p>
+      </details>
+
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge - Complex and Extended</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A frustum has radii 6 cm and 3 cm, height 8 cm. Volume?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: V=(1/3)pi h(R^2+r^2+Rr)=168pi cm^3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Prove angle in semicircle is 90° (state theorem).</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: By Thales theorem, angle subtended by diameter at circumference is right angle.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A cone and cylinder have same r=4 cm and h=9 cm. Compare volumes.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Cone volume is one-third of cylinder volume.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A cube side 6 cm is melted into smaller cubes side 2 cm. Number of cubes?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: (6/2)^3=27.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Scale factor from model to object is 1:50. If model area 18 cm^2, object area?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Area scales by 50^2 so 18x2500 = 45,000 cm^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Two circles with radii 7 cm and 14 cm. Compare circumferences and areas.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Circumference ratio 1:2, area ratio 1:4.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A right prism has base area 35 cm^2 and height 11 cm. Volume?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume=385 cm^3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A square plot has area 12,544 m^2. Find side length.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Side = sqrt(12544) = 112 m.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A cylindrical pipe inner radius 5 cm outer radius 6 cm length 100 cm. Metal volume?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Volume=pi(6^2-5^2)100=1100pi cm^3.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain one limitation of using rounded pi=3.14 in engineering estimates.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: It introduces approximation error, which can accumulate in large designs.</b></p>
+      </details>
+
+    </div>
+  </div>
+</div>
+<footer>Maths · MYP3 · Chapter 6 · Practice Worksheet</footer>
+<script>
+
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'</title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'</style></head><body>'
+    +'<h1>'+chapTitle+'</h1><h2>'+setTitle+'</h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};</'+'script>'
+    +'</body></html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+
+</script>
+</body>
+</html>

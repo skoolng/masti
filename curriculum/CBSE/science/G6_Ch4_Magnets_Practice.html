@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G6 Ch4 – Exploring Magnets | The Gaudium School</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🧲 Chapter 4 – Exploring Magnets</h1>
+  <p>6 Topics · 3 Sets · 8 Questions Each · Physics</p>
+</header>
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">Magnet Properties</a></li>
+    <li><a href="#t2">Magnetic Field &amp; Field Lines</a></li>
+    <li><a href="#t3">Earth as a Magnet</a></li>
+    <li><a href="#t4">Making &amp; Storing Magnets</a></li>
+    <li><a href="#t5">Electromagnets</a></li>
+    <li><a href="#t6">Uses of Magnets</a></li>
+  </ol>
+</nav>
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Magnet Properties</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/introduction-to-magnetism" target="_blank">Introduction to Magnetism</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/magnetic-force-on-a-charge" target="_blank">Magnetic Materials Overview</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">How Magnets Work – Quantum Perspective</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Fields and Forces Explained</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=8Y4JSp5U82I" target="_blank">Magnetism – CrashCourse Physics #32</a>
+        <a href="https://www.youtube.com/watch?v=kB3B5dkGdRc" target="_blank">Magnetic Force: Crash Course</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Magnetic Poles Explained</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Magnets and Magnetic Materials</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Magnet Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What happens when two north poles of magnets are brought near each other?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Like poles repel each other. Two north poles push away because magnetic forces between identical poles are repulsive.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name three magnetic materials.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron, steel, and nickel are magnetic. Cobalt is also magnetic. These materials are attracted to magnets because of their atomic structure (alignable magnetic domains).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Is copper a magnetic material? Give a reason.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Copper is not attracted to a magnet because its atomic structure does not allow magnetic domains to align. Copper is a non-magnetic metal.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What happens when a north pole and a south pole are brought close together?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Unlike poles attract each other. The north and south poles pull toward each other with a magnetic attractive force.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Where is the magnetic force of a bar magnet strongest?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnetic force is strongest at the two poles (north and south ends) of a bar magnet, where field lines are most concentrated.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">List two non-magnetic materials.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Wood and plastic are non-magnetic. Others include rubber, glass, aluminium, and copper — none are attracted to a magnet.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Does a magnet attract all metals?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. A magnet only attracts certain metals like iron, steel, nickel, and cobalt. Metals such as aluminium, copper, and gold are not attracted to magnets.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How many poles does every magnet have?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Every magnet has two poles: a north pole and a south pole. If a magnet is cut in half, each piece still has both a north and a south pole.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Magnet Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student has two identical-looking rods — one is a magnet, one is unmagnetised iron. How can they identify which is which without any other instrument?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Place one rod near the middle of the other. A magnet attracts iron most strongly at its poles and weakly at its centre. If one rod shows no attraction when the other rod's centre touches it, the attracting rod is the magnet — an unmagnetised iron bar would show no pole effect, only the magnet has a weak mid-section.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does a magnet attract a nail even though the nail is not a magnet?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnet induces temporary magnetism in the iron nail by aligning its magnetic domains. The nail becomes a temporary magnet with the opposite pole facing the original magnet, causing attraction.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A paperclip is hanging from a bar magnet. Explain why the paperclip itself can attract another paperclip below it.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The bar magnet induces magnetism in the first paperclip, turning it into a temporary magnet. This induced magnetism then induces magnetism in the second paperclip below, allowing a chain of attraction.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why a wooden plank does not stick to a magnet but a steel screw does.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Steel contains iron with magnetic domains that can be aligned by the magnet, allowing attraction. Wood has no magnetic domains — it is a non-magnetic material not affected by magnetic force.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If you break a bar magnet in half, what will you observe about the two pieces?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Each piece becomes a complete magnet with its own north and south pole. Magnetic monopoles do not exist — every magnet always has both poles, no matter how small.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student says iron and aluminium are both metals so both should be attracted to a magnet. Is this correct?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Incorrect. Only iron (and a few metals like nickel and cobalt) are magnetic. Aluminium's atoms do not form alignable magnetic domains — it is a non-magnetic metal despite being metallic.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two identical bar magnets repel each other when held end to end. What does this tell you about those ends?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Both ends must be the same pole (both north or both south). Like poles repel — the repulsion confirms the facing poles are identical in polarity.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why are magnets used in the latches of cupboard doors?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnet in the latch attracts the steel strike plate on the door frame. The attractive magnetic force between unlike poles (or between the magnet and magnetic material) holds the door shut without a mechanical lock.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Magnet Properties <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to test whether the magnetic force of a bar magnet is the same along its entire length. Identify dependent, independent, and controlled variables.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Independent variable: position along the magnet (centre, quarter-way, pole). Dependent variable: number of iron filings / paper clips attracted at each position. Controlled variables: same magnet, same iron filings size, same distance from surface. Expected result: poles attract most; centre attracts least — confirming force varies along the magnet's length.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the limitations of using iron filings to map a magnetic field. Suggest a more precise method.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron filings only show a static 2D pattern and can clump, masking true field direction. A more precise method is a Hall probe sensor, which measures field strength and direction digitally at specific points — giving quantitative, reproducible data without physically interfering with the field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student claims a stronger magnet will attract a non-magnetic material like plastic. Critically evaluate this claim.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>The claim is false regardless of field strength. Magnetic attraction requires domains that can align. Plastic has no magnetic domains. A stronger field still cannot act on materials with no magnetic domains — attraction is a property of the material, not just the field strength.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse why a magnet can attract a nail through a sheet of paper but not through a thick iron plate. Link to magnetic shielding.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Paper has no magnetic domains and does not redirect field lines — the field passes through and still acts on the nail. A thick iron plate diverts field lines through itself (magnetic shielding), drastically reducing field strength on the other side so it cannot attract the nail.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare permanent magnets and temporary magnets. In what real-world application would each be more appropriate?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Permanent magnets (e.g. neodymium) retain magnetism without power — suitable for compass needles or fridge magnets. Temporary magnets (induced in soft iron) lose magnetism when the field is removed — suitable for electromagnet cranes where on/off control is essential for safe lifting and release.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student breaks a bar magnet repeatedly into smaller pieces. Predict what happens and explain what this reveals about magnetism at the atomic level.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>At every stage, each piece retains both a north and south pole — you cannot isolate a single pole. This reveals magnetism arises from aligned magnetic domains (groups of atomic magnets). Even a single atom behaves as a tiny dipole, so no piece is ever a monopole.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose a fair test to determine whether distance between a magnet and an iron object affects the attraction force. Sketch a results table and predict the pattern.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Independent variable: distance (1–5 cm). Dependent variable: force (measured by spring balance). Controlled: same magnet, same iron object, same surface. Results table: Distance (cm) | Force (N). Predicted pattern: force decreases rapidly as distance increases (inverse-square relationship).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Using the concept of magnetic domains, explain why heating a magnet causes it to lose its magnetism. Link to disorder at the particle level.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>In a magnet, domains are aligned in one direction, creating a net field. Heating increases kinetic energy of atoms, causing random vibrations that disrupt domain alignment. Above the Curie temperature, domains become randomly oriented, cancelling the net field — a direct example of thermal disorder increasing at the particle level.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Magnetic Field and Field Lines</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/magnetic-field-lines" target="_blank">Magnetic Field Lines</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/what-is-a-magnetic-field" target="_blank">What Is a Magnetic Field?</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">How Magnets Work at the Atomic Level</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Visualising Magnetic Fields</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=8Y4JSp5U82I" target="_blank">Magnetic Fields and Field Lines</a>
+        <a href="https://www.youtube.com/watch?v=kB3B5dkGdRc" target="_blank">Magnetic Fields – Crash Course</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Visualising Invisible Forces</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Mapping Magnetic Fields</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Magnetic Field and Field Lines</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is a magnetic field?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A magnetic field is an invisible region of force surrounding a magnet where magnetic materials experience a force. It is represented by field lines.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">In which direction do magnetic field lines travel outside a magnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Outside the magnet, field lines travel from the north pole to the south pole. Inside the magnet, they travel from south to north, forming continuous closed loops.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does the spacing of field lines tell us about field strength?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Closely spaced (dense) field lines indicate a strong magnetic field. Widely spaced lines indicate a weaker field. Density of field lines directly represents field strength.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Can magnetic field lines ever cross each other?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Field lines never cross because at any point the field can only have one direction. Crossing lines would imply two directions at the same point, which is impossible.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name one instrument used to detect the direction of a magnetic field.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A compass (plotting compass) detects the direction. Its needle aligns with field lines, pointing from south to north of the external field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Where is the magnetic field of a bar magnet weakest?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The field is weakest at the centre of the bar magnet, between the two poles, where field lines are most spread out.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What material is commonly used to visualise magnetic field lines in a classroom?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron filings. They align along field lines when sprinkled on paper over a magnet, making the invisible field pattern visible.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Are magnetic field lines real physical objects?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Magnetic field lines are a scientific model representing direction and strength of a field. The field itself is real, but the lines are a visual tool.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Magnetic Field and Field Lines</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student places a compass near the north pole of a bar magnet. Which direction will the compass needle point?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The compass needle's north end will point away from the magnet's north pole (repulsion). The needle aligns along the field line, which points away from the north pole outward.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe how iron filings would arrange between two like poles (N–N) facing each other.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The filings form lines that curve outward away from the gap. A neutral point forms between the poles where the two fields cancel — filings show a weak or no-alignment region in the centre.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does a compass needle deflect when placed near a current-carrying wire?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A current-carrying wire produces its own magnetic field. The compass detects this field and aligns with it, deflecting from magnetic north — showing that electric currents produce magnetic fields.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How would the field line pattern change if you used a stronger magnet?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A stronger magnet produces denser (more closely packed) field lines, especially near the poles. The field also extends further from the magnet, and iron filings would show a more spread-out but denser pattern.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Field lines are close near the poles but spread out toward the middle of a bar magnet. What conclusion can be drawn?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnetic force is strongest at the poles (where lines are dense) and weakest in the middle (where lines spread). Field line density directly represents field strength.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does placing an iron bar near a magnet affect the field pattern?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron becomes temporarily magnetised and attracts field lines through itself. Lines distort and concentrate through the iron bar, altering the surrounding field pattern by diverting flux.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why magnetic field lines are drawn as continuous closed loops, not just external arcs.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic poles always come in pairs (no monopoles). Inside the magnet the field runs from south to north; outside from north to south — forming unbroken loops. The field has no start or end point.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two magnets are placed with unlike poles facing. Describe the combined field pattern between them.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Field lines run from the north pole of one magnet straight across to the south pole of the other, forming a dense, nearly parallel set of lines between them — representing a strong, relatively uniform field in that region.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Magnetic Field and Field Lines <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to map the complete field of a horseshoe magnet using a plotting compass. State the method, variables, and how you would record results.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Place paper under the horseshoe magnet. Mark one pole with a dot. Place compass next to it, mark where needle points, move compass to new position, repeat until returning to the other pole. Connect dots to form field lines with arrows. Variables: magnet and compass are controlled; the plotted point positions are the measured output. Record as a drawn field map with arrows indicating direction.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student argues that because a compass shows the same reading from two different magnets at the same position, the magnets must have identical fields. Is this valid?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Not valid. A compass only shows field direction, not magnitude. Two magnets could produce fields pointing the same way at that point but with very different strengths. To compare strength, you need a Hall probe or measure field line density at multiple positions.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student wants to investigate how field strength varies with distance. Critically assess whether iron filings are reliable for this, and suggest improvements.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron filings are unreliable for quantitative measurement — they clump inconsistently and give no numerical values. A more reliable approach: use a Hall probe connected to a datalogger, measure field strength (Tesla) at measured distances from the pole, repeat three times and average — giving precise, reproducible quantitative data.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse the field pattern between two like poles (N–N). Identify the neutral point and explain its significance for a compass placed there.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Between two north poles, a neutral point midway has net field = zero (two equal, opposite fields cancel exactly). A compass placed there experiences equal forces from both sides — the needle does not align in any definite direction and may spin or oscillate freely.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Discuss the strengths and limitations of the magnetic field line model in representing the actual field around a bar magnet.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Strengths: clearly shows direction, relative strength (density), and pattern of the invisible field — easy to visualise and predict forces. Limitations: real field is 3D and continuous; drawn lines are 2D and discrete. The number of lines is arbitrary (no physical quantity). The model can mislead students into thinking lines are real physical objects.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does the field line pattern inside a solenoid compare to outside it? Explain the significance for practical applications.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Inside a solenoid: field lines are parallel, evenly spaced, running along the axis — indicating a strong, uniform field. Outside: lines spread out like a bar magnet. This uniform interior field allows solenoids to act as reliable electromagnets for MRI machines and particle accelerators, where a consistent field direction is critical.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to test whether a magnetic field can pass through different materials (paper, plastic, aluminium, iron). Write a prediction, method, and expected results table.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Prediction: iron will redirect the field (shielding); others will allow it through. Method: place a compass a fixed distance from a magnet. Insert each material between them; record compass deflection angle. Results table: Paper: ~same angle, field transmitted. Plastic: ~same, transmitted. Aluminium: slightly reduced. Iron: significant reduction (magnetic shielding).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A scientist observes field lines between two unlike poles are denser in the centre than at the edges. Formulate a hypothesis about field uniformity and suggest how to test it quantitatively.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hypothesis: the field between unlike poles is strongest at the centre and weakens toward the edges, making the field non-uniform. Quantitative test: use a Hall probe at a grid of positions between the poles; record field strength (T) at each point; plot a contour map of field intensity to confirm the variation pattern.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Earth as a Magnet</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/earths-magnetic-field" target="_blank">Earth's Magnetic Field</a>
+        <a href="https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-lesson/earth-title/v/plate-tectonics" target="_blank">Compass Navigation</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Earth's Magnetic Shield</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">What If Earth Lost Its Magnetic Field?</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=8Y4JSp5U82I" target="_blank">Earth's Magnetic Field Explained</a>
+        <a href="https://www.youtube.com/watch?v=kB3B5dkGdRc" target="_blank">Geomagnetism – CrashCourse</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Earth's Invisible Magnetic Shield</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Auroras and Earth's Magnetism</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Earth as a Magnet</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the geographic North Pole of Earth in terms of magnetism?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The geographic North Pole is actually a magnetic south pole. This is why the north-seeking pole of a compass points toward it — unlike poles attract.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does a compass needle always point roughly north?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The compass needle's north end is attracted toward Earth's geographic north (which is Earth's magnetic south). The needle aligns with Earth's magnetic field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name the region around Earth influenced by its magnetic field.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnetosphere. It extends thousands of kilometres into space and protects Earth from solar wind charged particles.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is thought to cause Earth's magnetic field?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Movement of molten iron and nickel in Earth's outer core. This moving liquid metal acts like a giant electrical current generating a magnetic field through the dynamo effect.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What are auroras and how are they related to Earth's magnetic field?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Auroras (Northern/Southern Lights) are colourful light displays near the poles. Charged solar particles guided by Earth's magnetic field into the atmosphere collide with gas molecules and emit light.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Does a compass point to true geographic north or magnetic north?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A compass points to magnetic north, which is slightly different from true geographic north. The angle between them is called magnetic declination and varies by location.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name one animal that uses Earth's magnetic field for navigation.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Migratory birds such as homing pigeons use Earth's magnetic field. Sea turtles and salmon also use magnetoreception for long-distance migration.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Which layer of Earth generates the magnetic field?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The outer core — consisting of liquid iron and nickel whose circulation generates electric currents that produce Earth's magnetic field through the dynamo effect.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Earth as a Magnet</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why it is misleading to say that Earth's geographic north is a 'north magnetic pole.'<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The north pole of a compass is attracted to Earth's geographic north. Since opposite poles attract, the geographic north must actually be a magnetic south pole. Calling it a north magnetic pole is geographically conventional but magnetically incorrect.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A pilot is navigating with a compass over northern Canada. Explain one potential source of error in their reading.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic declination — the magnetic north pole is not at the same location as geographic north. Near the poles, declination can be very large, making compass readings significantly different from true north.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does Earth's magnetic field protect living things from solar wind?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Earth's magnetosphere deflects most high-energy charged particles in solar wind around Earth. Without this shield, these particles would strip away the atmosphere and damage DNA, making life on Earth's surface unsustainable.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why would a compass become unreliable if placed directly on top of a large iron ore deposit?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Large iron ore deposits create their own local magnetic field. The compass needle is affected by both Earth's field and the ore's field, giving an incorrect reading — it cannot distinguish between the two sources.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Scientists have found evidence that Earth's magnetic poles have reversed many times in history. What rock evidence supports this?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>When volcanic rock solidifies, iron-rich minerals align with Earth's current field, recording its direction. Alternating bands of normal and reversed magnetism on either side of mid-ocean ridges show the history of polarity reversals.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If Earth's magnetic field suddenly disappeared, list two immediate consequences for technology and two for living organisms.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Technology: GPS compasses would fail; power grids could be damaged by unshielded solar particles. Living organisms: migratory birds and sea turtles would lose navigation; humans would face increased radiation exposure, raising cancer risk.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why might a compass be unreliable near the equator compared to in Europe?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Near the equator, Earth's magnetic field lines are nearly horizontal, making the compass more susceptible to local disturbances. Magnetic declination differences also mean the compass may not align precisely with geographic north.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How did ancient sailors use the magnetic compass before GPS, and what were the limitations?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sailors floated or pivoted a magnetised needle to find north, then used charts to navigate. Limitations: magnetic declination, interference from iron in the ship, inability to give exact position, and unreliability during magnetic storms.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Earth as a Magnet <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to find the angle of magnetic declination at your school using a compass and a map.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Use a topographic map to identify true geographic north from a known landmark. Point compass at the landmark and record its bearing. Compare compass bearing (magnetic north) to map's true north bearing. Declination = difference. Repeat at several locations and average. Data: map bearing and compass bearing at each point; calculated angle of difference.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate the claim that 'Earth's magnetic field is constant and unchanging.' Use scientific evidence.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>False. Palaeomagnetic evidence from seafloor rocks shows ~170 polarity reversals in 76 million years. The magnetic north pole currently moves ~50 km/year toward Siberia. Field strength has declined ~9% since 1840. All three lines of evidence confirm the field is continuously changing.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student models Earth as a magnet using a bar magnet inside a glass sphere. Identify what the model represents accurately, its limitations, and propose an improvement.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Accurate: shows dipole nature, field exiting near one pole and entering near the other, field extending into space. Limitations: a bar magnet is solid and permanent while Earth's field is generated by fluid convection — constantly changing. Improvement: use an electromagnetic coil around a spinning iron core to model the dynamo effect.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how the magnetosphere differs on the sunward vs. night side of Earth. Why does this asymmetry occur and what are its consequences?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sunward side: compressed by solar wind pressure to ~10 Earth radii. Nightside: stretched into a long magnetotail extending hundreds of Earth radii. Cause: solar wind pressure compresses the dayside. Consequence: auroras are most intense when solar wind penetrates the compressed dayside; geomagnetic storms occur when the magnetotail releases stored energy.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How do geologists use preserved magnetism in ancient rocks to reconstruct continental drift? Why is this strong evidence for plate tectonics?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>As lava cools, iron minerals align with Earth's field, recording its direction. Symmetric striped patterns of normal and reversed magnetism on both sides of mid-ocean ridges show the seafloor spreading away from the ridge over time. This provides independent evidence for plate tectonics from magnetic data alone.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design an investigation to test whether migratory birds use Earth's magnetic field for navigation. Include a control group, manipulation, and ethical considerations.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hypothesis: birds use Earth's magnetic field to navigate. Manipulation: attach small magnets to some pigeons' heads (experimental group) vs. brass weights (control group, equal mass). Release both at a distant location. Measure homing success rate. Expected: birds with magnets navigate less accurately. Ethical considerations: minimise stress, use non-harmful weights, monitor bird health, follow animal ethics guidelines, limit trial numbers.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">During a geomagnetic reversal, poles swap. Predict consequences for navigation, ecosystems, and radiation levels during the transition period.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Navigation: compasses reverse direction; GPS (satellite-based) still functions but all compass charts need recalibration. Ecosystems: animals using magnetoreception (birds, sea turtles) could lose navigation ability, disrupting migrations. Radiation: during reversal the field weakens significantly, increasing cosmic radiation reaching Earth's surface — potentially raising mutation rates, though past reversals show no clear associated mass extinctions.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate why seismological data is needed to support the dynamo theory, rather than magnetic measurements alone being sufficient.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic measurements only show the external field pattern — they cannot confirm the internal generator. Seismological data from earthquake P and S waves reveals Earth's layered structure, specifically that the outer core is liquid (S waves do not pass through it). Without seismology confirming a fluid iron outer core, dynamo theory has no physical mechanism. Magnetic data alone is consistent with many possible sources; seismology confirms the structure that makes the dynamo mechanically possible.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Making and Storing Magnets</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/how-to-make-a-magnet" target="_blank">How to Make a Magnet</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/demagnetization" target="_blank">Demagnetisation Methods</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Magnetic Domains Explained</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Why Heat Destroys Magnets</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=8Y4JSp5U82I" target="_blank">Making and Losing Magnetism</a>
+        <a href="https://www.youtube.com/watch?v=kB3B5dkGdRc" target="_blank">Permanent vs Temporary Magnets</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">History of Magnets and Compasses</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Industrial Magnet Making</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Making and Storing Magnets</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Describe the stroke method of making a magnet.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A permanent magnet is stroked along an iron bar repeatedly in the same direction, always lifting it at the end before returning. This progressively aligns the magnetic domains in the iron bar, turning it into a magnet.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name two ways a magnet can be demagnetised.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A magnet can be demagnetised by heating it strongly (above its Curie temperature) or by hammering it repeatedly. Both methods cause magnetic domains to become randomly oriented, eliminating the net magnetic field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why should magnets be stored using keepers (soft iron bars)?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Keepers complete the magnetic circuit between the poles, reducing the demagnetising effect of each pole on the other. This preserves domain alignment and prevents gradual loss of strength.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the electrical method of making a magnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>An iron bar is placed inside a solenoid (coil of wire) carrying direct current. The field from the current aligns the iron's domains, magnetising it. More turns or higher current produces a stronger magnet.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does dropping a magnet repeatedly cause it to lose its magnetism?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Dropping causes mechanical shocks and vibrations that give energy to magnetic domains, disrupting their alignment. Randomised domains mean no net magnetic field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the difference between a permanent magnet and a temporary magnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A permanent magnet retains magnetism for a long time without external influence. A temporary magnet only shows magnetism in the presence of a magnetic field and loses it when the field is removed.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What materials are best for making permanent magnets?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hard magnetic materials such as steel, alnico alloys, and neodymium (rare earth alloys) are best — they resist demagnetisation and retain domain alignment long-term.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What material is best for temporary (soft) magnets and why?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Soft iron — its domains align easily when in a field (easy to magnetise) and randomise easily when the field is removed (easy to demagnetise), allowing precise on/off control.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Making and Storing Magnets</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student strokes a steel nail in random directions with a magnet. Will the nail become magnetised? Explain.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Random strokes align domains in different directions each time, cancelling out. For effective magnetisation, the magnet must always stroke in the same direction so domains progressively align together.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why placing two bar magnets with like poles together during storage weakens them over time.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>When like poles face each other, their opposing fields exert a demagnetising force on each other's domains. Over time, this disrupts domain alignment at the poles, gradually weakening both magnets. They should be stored with unlike poles together or with keepers.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is the electrical method generally more effective than the stroke method for making strong magnets?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The electrical method applies a strong, controllable magnetic field throughout the entire bar simultaneously via a solenoid. The stroke method only aligns surface domains. Electrical magnetisation can be adjusted for strength and produces more consistent, deeper magnetisation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A factory accidentally magnetises its steel tools by storing them near a large electromagnet. How could the factory demagnetise them?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Heat the tools above their Curie temperature, hammer them repeatedly, or pass them through an AC degaussing coil that continually reverses and reduces the field until domains randomise completely.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the suitability of steel and soft iron for a permanent fridge magnet versus an electromagnet core.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Steel is better for a fridge magnet — it retains domain alignment long-term (hard magnetic material). Soft iron is better for an electromagnet core — it quickly magnetises when current flows and quickly demagnetises when current stops, allowing easy on/off control.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">If you stroke an iron nail with the north end of a magnet from left to right, which end of the nail becomes north?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The end where the north pole finishes (right end) becomes the south pole of the induced magnet — the last contact from the north pole induces the opposite pole at that end. The left end becomes north.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why would storing a magnet in a hot environment (e.g. near a furnace) be harmful to it?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Heat increases atomic vibration, disrupting domain alignment. If the temperature exceeds the Curie temperature, domains randomise completely, causing total loss of magnetism. Even below this temperature, prolonged heat causes gradual weakening.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student says that enough strokes in the stroke method will produce a magnet as strong as one made electrically. Evaluate this claim.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Unlikely to be true. The stroke method magnetises mainly surface domains. Electrical magnetisation applies the field throughout the entire bar volume simultaneously. Stroke saturation is harder to achieve than electrical saturation at high current. While many strokes improve alignment, the electrical method produces stronger, more uniform magnetisation.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Making and Storing Magnets <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to compare magnets made by stroke method (5, 10, 20, 40 strokes) vs. electrical method (different current values). State what to measure and how to ensure a fair test.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Measure strength by counting paper clips held at pole. Fair test: identical iron bars, same stroking magnet type, same stroke length, same solenoid dimensions. Independent variable: number of strokes / current. Dependent variable: paper clips held. Controlled: bar material and size, paper clip type. Repeat 3× each condition, average. Expected: electrical method produces stronger magnets at equivalent time investment.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically assess why the Curie temperature is important for engineers designing high-temperature equipment containing magnets.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Above the Curie temperature, a material loses permanent magnetism entirely due to thermal disruption of domain alignment. Engineers must ensure magnets in motors, generators, and sensors always operate below this temperature. Neodymium magnets have a relatively low Curie temperature (~310°C) — unsuitable for high-temperature applications without special alloys or active cooling. Ignoring this could cause equipment failure in hot environments.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse the energy transformations when an iron bar is magnetised electrically and then demagnetised by heating.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetising: electrical energy (from current) → magnetic energy stored in aligned domains. Demagnetising by heat: thermal energy → kinetic energy of atomic vibrations → work done against domain alignment → domains become disordered, magnetic energy dissipated as random thermal energy. Net result: electrical energy has been converted to heat energy.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student's stroke-method results plateau after 30 strokes. Explain using magnetic saturation and suggest a further investigation.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic saturation: all available domains are already aligned. Additional strokes cannot increase magnetisation because no more domains remain to align. Further investigation: test whether a stronger stroking magnet increases the saturation level, or compare saturation points for different materials (soft iron vs. steel) to study material-dependent domain behaviour.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate environmental and practical advantages/disadvantages of neodymium permanent magnets versus electromagnets in electric vehicle motors.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neodymium: advantages: no energy to maintain field, lightweight, very strong. Disadvantages: rare earth mining is environmentally damaging (toxic waste), low Curie temperature limits high-temperature use. Electromagnets: advantages: adjustable field strength, no rare earth mining needed, can be switched off. Disadvantages: require continuous electrical power, add weight and heat management challenges. Most current EVs use neodymium for efficiency, but supply chain concerns are driving research into magnet-free motor designs.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design a controlled experiment to determine whether direction of stroking (one-direction vs. alternating) affects the final magnetism of an iron nail.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Prediction: one-direction strokes produce a stronger magnet; alternating strokes cancel alignment. Method: 20 strokes each, identical nails. Group A: all strokes same direction. Group B: alternating direction each stroke. Measure strength by paper clips held. Expected: Group A holds significantly more clips, confirming directional consistency is essential for effective magnetisation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">An engineer needs a storage solution for high-strength neodymium disc magnets that minimises demagnetisation, prevents accidents, and is practical. Design and justify the system.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Store magnets in attracting pairs (unlike poles) separated by thin plastic spacers — completing the magnetic circuit reduces demagnetising stray fields. Encase in a wooden or plastic box to prevent external metal attraction. Store away from heat and vibration-producing machinery. Label poles clearly to prevent accidental like-pole repulsion (which can chip brittle neodymium). Science basis: completing flux circuit reduces domain disruption; plastic prevents collision; heat and vibration are the main causes of domain randomisation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare and critically evaluate three demagnetisation methods (heating, hammering, AC degaussing) in terms of effectiveness, practicality, and effect on material structure.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Heating: very effective above Curie temperature — all domains randomise. But permanently changes metallurgical properties (recrystallisation, hardness loss) — impractical for precision tools. Hammering: partially effective — mechanical shock randomises surface domains more than internal ones; can deform or crack the material. AC Degaussing: most practical and precise — alternating field cycles domains through progressively smaller loops until they settle randomly; no physical damage; suitable for sensitive electronics/tools. Best choice depends on application: degaussing for tools, heating for industrial metal recycling.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Electromagnets</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/what-is-an-electromagnet" target="_blank">What Is an Electromagnet?</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/electromagnet-strength" target="_blank">Factors Affecting Electromagnet Strength</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Electricity and Magnetism Connection</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Electromagnets and Their Uses</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=8Y4JSp5U82I" target="_blank">Electromagnets – CrashCourse Physics</a>
+        <a href="https://www.youtube.com/watch?v=kB3B5dkGdRc" target="_blank">How Electric Motors Work</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Maglev Trains and Electromagnets</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">MRI Machines Explained</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Electromagnets</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is an electromagnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>An electromagnet is a magnet created by passing electric current through a coil of wire (solenoid), usually wrapped around a soft iron core. It can be turned on and off by switching the current.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name three ways to increase the strength of an electromagnet.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Increase the number of coil turns, (2) increase the electric current, (3) use a soft iron core instead of air or a non-magnetic core.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is a soft iron core used in an electromagnet rather than a steel core?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Soft iron magnetises and demagnetises quickly, allowing the electromagnet to be easily switched on and off. Steel retains magnetism after current is switched off, making it difficult to control.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What happens to an electromagnet when the current is switched off?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The soft iron core loses its magnetism almost immediately. The electromagnet stops attracting magnetic materials as there is no longer a current-produced field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the basic structure of an electromagnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A coil of insulated wire (solenoid) wrapped around a soft iron core, connected to a DC power source. Number of turns and current determine strength.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name the scientist who first discovered that an electric current produces a magnetic field.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hans Christian Ørsted (1820) discovered that a compass needle deflects near a current-carrying wire, proving electric currents produce magnetic fields.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does reversing current direction affect an electromagnet's poles?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Reversing the current reverses the poles — north becomes south and vice versa. The right-hand rule determines pole direction from current direction.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Does an electromagnet need a core to work?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. A wire coil alone produces a magnetic field when current flows. However, a soft iron core greatly amplifies the field by concentrating magnetic flux, making it far more practical.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Electromagnets</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student builds two electromagnets — 20 turns and 40 turns, same current and core. Which is stronger and why?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The 40-turn electromagnet is stronger. Each loop contributes to the total field — doubling the turns roughly doubles the field strength around the core.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why AC (alternating current) is not ideal for a lifting electromagnet in a scrapyard.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>AC constantly reverses direction (50–60 times/second), rapidly reversing the electromagnet's poles and creating a vibrating field that reduces effective lifting force. DC provides a constant-direction field for reliable, strong, steady lifting.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A doorbell uses an electromagnet. Describe how it causes the bell to ring when the button is pressed.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Pressing the button completes the circuit; current flows through the coil, creating a magnetic field that attracts a metal striker toward the bell. The striker hits the bell (ringing sound). In some designs, striking breaks the circuit, releasing the striker and repeating — creating continuous ringing.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Predict what would happen if you replaced the soft iron core with a wooden rod.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Wood is non-magnetic with no domains. The coil still produces a field but without an iron core to amplify and concentrate the flux, the electromagnet is significantly weaker — equivalent to an air-core solenoid.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does an electromagnet in an MRI scanner differ from one used in a scrapyard crane?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>MRI electromagnets are superconducting (liquid helium cooled), producing extremely strong and uniform fields (1–3 Tesla) with precision stability. Scrapyard electromagnets use standard copper coils, are much weaker, and only need simple on/off control. MRI requires precision; scrapyard requires heavy lifting.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is insulated (coated) wire used in an electromagnet coil rather than bare copper wire?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Bare wire would short-circuit between adjacent touching turns — current would flow between turns instead of completing all loops. Insulation ensures current flows through every turn, maximising the field.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student wants to sort magnetic from non-magnetic materials on a conveyor belt. Design a simple electromagnet-based system.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Place a large electromagnet above the conveyor at the end. As materials pass by, the electromagnet lifts magnetic items (iron, steel, nickel) into one bin while non-magnetic items continue to a second bin. Switching the electromagnet off releases magnetic items safely.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What advantage does an electromagnet have over a permanent magnet when used in a speaker?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>In speakers, the electromagnet's field changes with the audio signal (varying current), vibrating the cone at different frequencies to produce different sounds. A permanent magnet cannot change its field in response to an electrical signal, so it cannot produce varying sound output on its own.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Electromagnets <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design a fair test to investigate how the number of coil turns affects electromagnet strength. Identify all variables and predict the graph shape.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Independent variable: number of turns (10, 20, 30, 40, 50). Dependent variable: paper clips attracted at pole. Controlled: same current (ammeter), same iron core, same wire gauge, same paper clips. Repeat 3×, average. Predicted graph: straight line through origin (linear) up to saturation point, then levels off as the iron core becomes magnetically saturated.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate using paper clips to measure electromagnet strength. Propose a more reliable technique.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Paper clips are inconsistent (varying size, shape, mass; can interlock giving falsely high readings) and qualitative (count, not force). More reliable: use a calibrated spring balance to measure the maximum force to detach a standard iron block from the electromagnet's face — gives repeatable, quantitative force values in Newtons for proper graphing.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student's results show doubling current more than doubles electromagnet strength. Analyse possible explanations and identify sources of error.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Scientific explanation: at low currents, increasing current both increases solenoid field and better aligns iron core domains (multiplicative effect). Sources of error: inaccurate ammeter, inconsistent paper clip counting, wire heating changing resistance, iron core not fully saturating at lower currents. Using a datalogger and Hall probe would reduce these errors and give more reliable results.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Engineers designing a maglev train need a powerful, rapidly switchable electromagnet. Analyse the trade-offs between strength, heat generation, and controllability.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Increasing current increases field strength but also generates heat (P = I²R), requiring cooling — adding mass and complexity. More turns increase strength but also resistance, limiting maximum current. Solution in high-speed maglev: superconducting electromagnets (cooled with liquid helium) carry high current with zero resistance — extreme strength, no heat generation, but maintaining cryogenic temperatures is the engineering challenge.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How could you design an electromagnet that can rapidly attract and then repel a metal object? Describe the circuit modifications and the science behind them.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>To attract: DC current in one direction creates a north pole facing the object — attraction occurs. To create repulsion: briefly touch the object to the electromagnet to induce magnetism in it (same pole faces the electromagnet). Then reverse the current direction using a double-pole double-throw switch — the reversed pole now faces the same pole as the (temporarily magnetised) object, causing repulsion. Science: reversing current reverses poles; like poles repel.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the energy efficiency of a permanent magnet versus an electromagnet for a 24-hour holding application (e.g. keeping a steel door shut).<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Permanent magnet: zero energy input once installed; no heat loss; completely reliable for steady holding. Electromagnet: requires continuous current → constant energy (P = I²R); generates heat (energy waste); requires power supply; if power fails, door opens. Conclusion: for constant long-term holding, a permanent magnet is far more energy-efficient. Electromagnets are preferable only when controllable release is essential (e.g. fire doors that must open when power fails).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose and justify a design for a small classroom electromagnet that could pick up 50 g of iron filings. Specify turns, current, core material, and wire type.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Core: soft iron (fast magnetisation/demagnetisation). Turns: ~100–200 turns (sufficient field at moderate current). Current: 1–2 A DC (safe for classroom; copper has low resistance). Wire: 26-gauge insulated copper (good conductor; insulation prevents short circuits). Justification: each turn adds to field; soft iron amplifies flux; copper minimises resistance; insulation ensures all turns contribute. At 1.5 A with 150 turns and soft iron core, this design should comfortably lift 50 g.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse ethical and environmental considerations of large-scale superconducting electromagnets in hospital MRI scanners.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Environmental: liquid helium is scarce and non-renewable; MRI machines consume significant electricity. Patient ethics: very strong field (1.5–3 T) can move implanted metal devices dangerously — patients with pacemakers or metal implants cannot use MRI; scanning is loud and requires stillness, potentially distressing vulnerable patients. Access equity: MRI scanners cost tens of millions of rupees, making them unavailable in low-resource settings. Solutions: helium recycling systems, helium-free MRI prototypes, and weight-based screening improve sustainability and equity.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Uses of Magnets</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/uses-of-magnets" target="_blank">Uses of Magnets in Everyday Life</a>
+        <a href="https://www.khanacademy.org/science/ms-physics/x1baed5db7346abe2:forces-and-motion/x1baed5db7346abe2:magnetism/v/electric-motors" target="_blank">How Electric Motors Work</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Maglev Trains of the Future</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How MRI Machines See Inside You</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=8Y4JSp5U82I" target="_blank">Applications of Electromagnetism</a>
+        <a href="https://www.youtube.com/watch?v=kB3B5dkGdRc" target="_blank">Hard Drives and Magnetic Storage</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Japan's Maglev: World's Fastest Train</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Inside an MRI Machine</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Uses of Magnets</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Name four everyday uses of magnets.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>MRI scanners, maglev trains, electric motors/generators, and loudspeakers. Also: hard drives, fridge magnets, compass needles, and scrapyard cranes.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does a scrapyard crane use an electromagnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A large electromagnet suspended from the crane is switched on to attract and lift iron and steel scrap. Switching it off releases the metal, allowing precise placement.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What principle allows a maglev train to float above the track?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Repulsion between like magnetic poles. Electromagnets in the train and track repel each other, lifting the train above the rail — eliminating friction and allowing very high speeds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does magnetism produce sound in a loudspeaker?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A varying audio current flows through a coil attached to the speaker cone. The coil is surrounded by a permanent magnet. The changing current changes the coil's magnetic force, vibrating the cone to produce sound waves.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does an MRI machine use magnetism to create body images?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Very strong magnetic fields align hydrogen atoms in the body. Radio waves knock them out of alignment; as they realign they emit signals that a computer processes into detailed 3D images of soft tissue.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does a computer hard drive use magnetism to store data?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Tiny magnetised regions on a spinning disc each have north or south orientation representing binary 1 or 0. A read/write head detects (reads) or sets (writes) these orientations.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name the type of magnet used in most electric motors.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electric motors use electromagnets (coils carrying current) that interact with permanent magnets or other electromagnets to produce rotational motion through attraction and repulsion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is magnetism important in recycling centres?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electromagnets on conveyor belts separate magnetic metals (iron and steel) from non-magnetic materials (plastic, aluminium, glass) — enabling efficient automated sorting without manual labour.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Uses of Magnets</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain why maglev trains are faster and quieter than conventional trains using the concept of friction.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Maglev trains float above the track — eliminating wheel-rail friction that limits conventional train speed and generates noise. Without this contact friction, there is no mechanical noise from wheels or bearings. Air resistance becomes the main limiting force, allowing speeds exceeding 600 km/h.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why can't we use a permanent magnet in a scrapyard instead of an electromagnet?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A permanent magnet cannot be switched off. After lifting scrap metal, it would continue attracting the metal indefinitely, making it impossible to deposit the load in a specific location. Electromagnet's on/off control is essential for safe, precise operation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Patients with iron-based surgical implants cannot have MRI scans. Explain the danger using your knowledge of magnets.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>MRI machines produce extremely strong fields (1.5–3 T). An iron or steel implant would experience a powerful attractive force, potentially being pulled or twisted inside the body — causing serious internal injury or dislodging the implant from its surgical position.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does reversing current in an electric motor cause it to spin in the opposite direction?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Reversing current reverses the electromagnet coil's poles. What was attracting the permanent magnet's pole now repels it, and vice versa — forcing the coil to rotate in the opposite direction to realign the new pole arrangement.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why data stored on a hard drive can be erased by placing a strong magnet near it.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hard drive data is stored as tiny magnetised regions with specific north/south orientations. A strong external magnet randomly realigns these regions, destroying the specific pattern that represents the stored binary data — effectively erasing it.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does electromagnetic induction in a generator convert mechanical energy to electricity?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A coil of wire rotates within a magnetic field. As the coil cuts through field lines, the changing magnetic flux induces an electric current in the coil. Mechanical energy (rotation) is converted to electrical energy — the reverse process of an electric motor.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A bank card's magnetic strip stores account information. Explain how a strong magnet at a security gate could damage the card.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnetic strip contains tiny magnetised iron particles arranged to encode data. A strong external magnet randomises these particles' orientations, destroying the encoded pattern. The card reader can no longer detect the correct sequence — making the card unreadable.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How has the development of neodymium magnets changed the design of electric vehicles?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Neodymium magnets are far stronger than conventional magnets for their size and weight. In EV motors, they enable compact, lightweight, high-torque motors with high energy efficiency — allowing smaller motor designs, reduced vehicle weight, and longer battery range.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Uses of Magnets <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design a model loudspeaker using an electromagnet and cardboard. Describe the components, how they interact, and how you would test whether it produces sound.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Components: small electromagnet (coil around iron core), permanent ring magnet, cardboard cone attached to the coil. The coil sits inside the ring magnet. Connect coil to an audio signal source. Varying audio current changes magnetic force between coil and permanent magnet, vibrating the cone. Test: hold near ear while playing a tone — audible vibrations confirm function. Connect to oscilloscope to verify cone vibration frequency matches input frequency.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the environmental impact of maglev trains versus conventional diesel trains. Consider energy use, emissions, and land use.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Maglev: uses electricity (potentially renewable), no combustion emissions at point of use, no wheel wear (reduced particulate pollution). However, dedicated specialised tracks require major land use and materials. Diesel trains: direct CO₂ and NOₓ emissions; wheel/track friction produces particulates; but existing rail infrastructure can be reused. Conclusion: maglev is environmentally cleaner in operation if powered by renewables, but has higher infrastructure embodied carbon. Net benefit depends heavily on electricity source.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how digital music streaming has reduced dependence on magnetic storage. Discuss whether this represents genuine sustainability progress.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Streaming replaces physical magnetic media (tapes, hard drives), eliminating magnetic tape degradation and hard drive mechanical failure. However, sustainability is complex: streaming requires massive data centres consuming enormous electricity globally (~3–4% of world energy). Magnetic storage has lower ongoing energy cost per GB stored. Streaming reduces physical media waste but increases energy demand and e-waste from constantly upgraded server infrastructure — the net environmental benefit is debated.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to compare lifting strength of five magnet types (neodymium, ferrite, alnico, electromagnet, fridge magnet) of equal physical size. Identify variables and justify measurement method.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Independent variable: magnet type (5 types, same volume). Dependent variable: maximum lifting force (N). Controlled: same iron test block (50 g), same contact area, room temperature, same instrument. Method: attach magnet to force gauge; attach test block to pole face; pull block away; record detachment force. Repeat 5×, average. Justification: force gauge gives quantitative, reproducible, comparable data. Expected order: neodymium > alnico > electromagnet (moderate current) > ferrite > fridge magnet.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate: 'As we move to fully digital and wireless technology, magnets will become obsolete.' Use specific examples to support your analysis.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>False. Magnets remain central to modern technology and are becoming more critical. EV motors, wind turbines, and wireless charging coils all require magnets. MRI cannot function without superconducting magnets. Even wireless speakers use permanent magnets. Emerging uses: magnetic refrigeration (solid-state cooling), quantum computing (magnetic states), magnetic drug targeting in medicine. Far from obsolete, magnets underpin the electrified, low-carbon future.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design a system using magnets to automatically sort recyclable materials (aluminium cans, steel cans, glass bottles, plastic bottles) on a conveyor belt. Justify each separation stage.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Stage 1: Electromagnet above conveyor — lifts steel cans (ferromagnetic) into Steel bin; aluminium, glass, and plastic continue. Stage 2: Eddy-current separator (rapidly alternating magnetic field below conveyor) — induces eddy currents in aluminium (non-magnetic but conductive), creating a repulsive force that flicks aluminium into Aluminium bin. Stage 3: Optical/density sorter separates remaining glass and plastic. Science: steel is ferromagnetic; aluminium is non-magnetic but conducts, so changing fields induce repulsive eddy currents (Faraday induction); glass and plastic have no relevant magnetic or conductive properties.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How might magnetic drug delivery systems work in future cancer treatment? Describe the principles and evaluate benefits and risks versus chemotherapy.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Principle: attach cancer drug molecules to magnetic nanoparticles (iron oxide). Inject into bloodstream. Apply external magnetic field focused on the tumour — nanoparticles concentrate at the tumour site and release the drug locally. Benefits vs. chemotherapy: targeted delivery reduces damage to healthy cells; lower systemic drug doses; potentially fewer side effects (hair loss, nausea). Risks: nanoparticle toxicity not fully understood; strong localised fields may heat surrounding tissue; precise field targeting is technically challenging; nanoparticles may accumulate in liver/spleen. Currently in clinical trials — promising but not yet standard treatment.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the social, economic, and scientific impact of the invention of the electromagnet (William Sturgeon, 1824) on modern society across medicine, transport, and communication.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Medicine: MRI scanners (non-invasive soft tissue imaging), pacemaker design/testing, and magnetic drug delivery all depend on electromagnet principles. Transport: electric motors in trains, cars, aircraft; maglev trains represent the ultimate application. Communication: telegraph (first long-distance electronic communication), telephone earpieces, radio transmitters, and hard drives all use electromagnetic principles. Economic impact: global electric motor market is worth trillions of dollars, supporting manufacturing, transport, and energy sectors. Social impact: MRI transformed disease diagnosis; electric vehicles are reducing urban air pollution. The electromagnet arguably underpins the electrification of modern civilisation — one of the most consequential inventions in history.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<footer>
+  Grade 6 · Curiosity Science · Chapter 4 · The Gaudium School · IB MYP · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

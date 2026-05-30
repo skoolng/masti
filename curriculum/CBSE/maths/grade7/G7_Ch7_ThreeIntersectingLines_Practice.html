@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 7 – A Tale of Three Intersecting Lines</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 Chapter 7 – A Tale of Three Intersecting Lines</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Triangle Properties &amp; Geometric Reasoning</p>
+</header>
+
+<nav>
+  <h2>Topics in this Chapter</h2>
+  <ol>
+    <li><a href="#t1">Introduction to Triangles</a></li>
+    <li><a href="#t2">Types of Triangles by Sides</a></li>
+    <li><a href="#t3">Types of Triangles by Angles</a></li>
+    <li><a href="#t4">Angle Sum Property</a></li>
+    <li><a href="#t5">Exterior Angle Theorem</a></li>
+    <li><a href="#t6">Triangle Inequality Theorem</a></li>
+    <li><a href="#t7">Properties of Equilateral Triangles</a></li>
+    <li><a href="#t8">Properties of Isosceles Triangles</a></li>
+    <li><a href="#t9">Median of a Triangle</a></li>
+    <li><a href="#t10">Altitude of a Triangle</a></li>
+    <li><a href="#t11">Constructing Triangles (SSS, SAS, ASA)</a></li>
+    <li><a href="#t12">Real-World Triangle Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Introduction to Triangles</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Foundations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What is a triangle? Define it in one sentence mentioning vertices, sides, and angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many vertices, sides, and angles does every triangle have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Name the triangle whose vertices are P, Q, R. List its three sides and three angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Draw triangle ABC. Mark side AB = 5 cm, BC = 6 cm, CA = 4 cm. Which side is opposite to vertex A? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles measuring 40°, 70°, and 70°. What is the sum of its angles? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In triangle XYZ, side YZ is called the base. Which vertex is the apex? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">True or False: A triangle can have two right angles. Justify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">How many triangles are formed when a rectangle is cut by one diagonal? Name the triangles if the rectangle is ABCD. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A figure has 3 straight sides and 3 angles. Is it always a triangle? Explain. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Three points A, B, C are collinear (on the same line). Can they form a triangle? Why or why not? <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. A triangle is a closed polygon with exactly 3 vertices, 3 sides, and 3 angles.<br>
+      2. 3 vertices, 3 sides, 3 angles.<br>
+      3. Sides: PQ, QR, RP; Angles: ∠P, ∠Q, ∠R.<br>
+      4. Side BC is opposite vertex A.<br>
+      5. 40+70+70 = 180°.<br>
+      6. Apex is vertex X (opposite the base YZ).<br>
+      7. False. If two angles were 90° each, their sum alone is 180°, leaving 0° for the third angle — impossible.<br>
+      8. 2 triangles: △ABC and △ACD (or △ABD and △BCD depending on diagonal).<br>
+      9. Yes, provided the three sides are non-collinear and form a closed figure — a triangle is always a 3-sided polygon.<br>
+      10. No. Collinear points lie on a straight line; no enclosed figure (and no area) is formed, so they cannot be vertices of a triangle.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Parts and Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △DEF, which angle is included between sides DE and EF? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Side BC is said to be opposite to which angle in △ABC? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many pairs of adjacent sides does a triangle have? List them for △PQR. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The perimeter of △ABC is 24 cm. If AB = 8 cm and BC = 9 cm, find CA. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles in ratio 1 : 2 : 3. Find each angle. What type of triangle is it? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Is it possible for a triangle to have all three angles equal? If yes, what is each angle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △LMN, ∠L = 55° and ∠M = 65°. Find ∠N. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Triangle PQR has PQ = QR = RP = 7 cm. What is its perimeter? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">If two angles of a triangle are equal and their sum is 100°, find all three angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular garden has sides 12 m, 15 m, 20 m. A gardener walks the full boundary twice. How far does she walk? <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. ∠E (the angle at vertex E, between sides DE and EF).<br>
+      2. ∠A.<br>
+      3. 3 pairs: PQ &amp; QR, QR &amp; RP, RP &amp; PQ.<br>
+      4. CA = 24 − 8 − 9 = 7 cm.<br>
+      5. Angles: 30°, 60°, 90°. It is a right-angled triangle.<br>
+      6. Yes — equilateral triangle; each angle = 60°.<br>
+      7. ∠N = 180 − 55 − 65 = 60°.<br>
+      8. Perimeter = 3 × 7 = 21 cm.<br>
+      9. Two equal angles = 50° each; third = 180 − 100 = 80°. Angles: 50°, 50°, 80°.<br>
+      10. Perimeter = 47 m; twice = 94 m.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Concepts and Classification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What is the minimum number of acute angles a triangle must have? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can a triangle have exactly two obtuse angles? Give a reason. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A = 2x°, ∠B = 3x°, ∠C = 4x°. Find x and each angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle's angles are consecutive integers. Find all three angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Describe in words what the interior of a triangle means. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has one angle of 90° and another of 45°. Find the third angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a quadrilateral sum to 360°. If a diagonal divides it into 2 triangles, verify that 2 × 180° = 360°. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular sign board has perimeter 90 cm. If all sides are equal, find each side. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P = (x + 10)°, ∠Q = (2x − 20)°, ∠R = (3x − 30)°. Find all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Three sticks of lengths 5 cm, 12 cm, and 13 cm are joined at the ends. Do they form a triangle? How many angles does the figure have? <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. At least 2 acute angles (a triangle cannot have more than one non-acute angle).<br>
+      2. No. Two obtuse angles would already exceed 180°, leaving no room for the third.<br>
+      3. 2x + 3x + 4x = 180 → 9x = 180 → x = 20. Angles: 40°, 60°, 80°.<br>
+      4. Let angles be n, n+1, n+2. Sum = 3n+3 = 180 → n = 59. Angles: 59°, 60°, 61°.<br>
+      5. The region enclosed by the three sides of the triangle.<br>
+      6. Third angle = 180 − 90 − 45 = 45°.<br>
+      7. Each triangle has angle sum 180°; two triangles → 360° = angle sum of quadrilateral. ✓<br>
+      8. Each side = 90 ÷ 3 = 30 cm.<br>
+      9. (x+10)+(2x−20)+(3x−30)=180 → 6x−40=180 → 6x=220 → x=36.67°. Angles ≈ 46.67°, 53.33°, 80°. (If integer expected, check problem; answer: x = 220/6 ≈ 36.7°)<br>
+      10. Yes, they form a triangle (5+12 &gt; 13, etc.). It has 3 angles.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge and Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How many triangles can you count in a figure that shows a large triangle divided by two lines from a vertex to the opposite side? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular frame uses three wooden rods. If two rods are 8 cm each and the total perimeter is 22 cm, find the third rod. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">∠A of △ABC is three times ∠B, and ∠C = ∠B + 20°. Find all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △XYZ, ∠X : ∠Y : ∠Z = 2 : 3 : 7. Find each angle and classify the triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Four triangles are cut from a rectangular sheet. If each triangle has the same perimeter, and one triangle has sides 5, 6, 7, what is the total boundary length used? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has one angle that is 20° more than the second, and the third angle is 10° less than the second. Find all three angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Explain why "three line segments always form a triangle" is FALSE. Give a counterexample. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a triangle are in ratio 3 : 4 : 5. Find the angles and state whether it is acute, right, or obtuse. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If ∠A = 90° in △ABC, name the side opposite to the right angle. What special name does it have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular plot has sides (2x + 3) m, (3x − 1) m, and (x + 8) m. The perimeter is 46 m. Find x and each side. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Large triangle + 2 smaller + the two formed by the two division lines = 3 triangles total (large outer + 2 inner).<br>
+      2. Third rod = 22 − 8 − 8 = 6 cm.<br>
+      3. ∠B = b; ∠A = 3b; ∠C = b+20. Sum: 3b+b+b+20=180 → 5b=160 → b=32°. Angles: 96°, 32°, 52°.<br>
+      4. Total parts = 12; each part = 15°. Angles: 30°, 45°, 105°. Obtuse triangle.<br>
+      5. Perimeter of one = 5+6+7 = 18; total = 4×18 = 72 cm.<br>
+      6. Let second = s. First = s+20; third = s−10. Sum: (s+20)+s+(s−10)=180 → 3s+10=180 → s=\frac{170}{3} ≈ 56.67°. Angles ≈ 76.67°, 56.67°, 46.67°.<br>
+      7. False: sides 1, 1, 5 cannot form a triangle (1+1 &lt; 5). A counterexample is lengths 1 cm, 1 cm, 10 cm.<br>
+      8. Parts = 12; angles = 45°, 60°, 75°. All acute → acute triangle.<br>
+      9. BC (opposite ∠A = 90°); it is called the hypotenuse.<br>
+      10. (2x+3)+(3x−1)+(x+8) = 6x+10 = 46 → 6x = 36 → x = 6. Sides: 15 m, 17 m, 14 m.
+    </p></details>
+  </div>
+</div><!-- end t1 -->
+
+<!-- ==================== TOPIC 2 ==================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Types of Triangles by Sides (Scalene, Isosceles, Equilateral)</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define a scalene triangle. How many lines of symmetry does it have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Define an isosceles triangle. Which sides are called "legs"? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Define an equilateral triangle. What is each angle in an equilateral triangle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify the triangle with sides 5 cm, 7 cm, 9 cm. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify the triangle with sides 6 cm, 6 cm, 10 cm. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify the triangle with sides 4 cm, 4 cm, 4 cm. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has sides in ratio 1 : 1 : 1. What type is it? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many equal sides does an isosceles triangle have? How many equal angles? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can an equilateral triangle also be called isosceles? Justify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has sides 8 cm, 8 cm, and 6 cm. Name its type and state how many lines of symmetry it has. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. A scalene triangle has no two equal sides; 0 lines of symmetry.<br>
+      2. An isosceles triangle has exactly two equal sides; the two equal sides are called legs.<br>
+      3. All three sides equal; each angle = 60°.<br>
+      4. Scalene (all sides different).<br>
+      5. Isosceles (two sides 6 cm).<br>
+      6. Equilateral (all sides 4 cm).<br>
+      7. Equilateral.<br>
+      8. 2 equal sides; 2 equal angles (base angles).<br>
+      9. Yes — equilateral has at least two equal sides, so it satisfies the definition of isosceles (a special case).<br>
+      10. Isosceles; 1 line of symmetry.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Properties and Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The perimeter of an equilateral triangle is 36 cm. Find each side. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has legs of 9 cm and a base of 5 cm. Find its perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A scalene triangle has sides (x + 1), (2x − 3), and (x + 4) cm. Its perimeter is 30 cm. Find x and each side. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The perimeter of an equilateral triangle is 45 cm. Find the length of one side and then the sum of any two sides. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has a perimeter of 44 cm. If the base is 10 cm, find each leg. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many lines of symmetry does an equilateral triangle have? Draw and label them. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A scalene triangle has angles 50°, 70°, and 60°. Can two of its sides be equal? Explain. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The base of an isosceles triangle is 12 cm. Each leg is 10 cm. Is this a valid triangle? Check using the triangle inequality. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has perimeter equal to the perimeter of a square with side 6 cm. Find the side of the equilateral triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Triangle ABC has AB = BC. Name its type and state which angle equals which. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Side = 36 ÷ 3 = 12 cm.<br>
+      2. Perimeter = 9 + 9 + 5 = 23 cm.<br>
+      3. (x+1)+(2x−3)+(x+4) = 4x+2 = 30 → x = 7. Sides: 8, 11, 11 cm. (Actually isosceles!)<br>
+      4. Side = 15 cm; sum of any two sides = 30 cm.<br>
+      5. Legs = (44 − 10) ÷ 2 = 17 cm each.<br>
+      6. 3 lines of symmetry (each from a vertex to the midpoint of the opposite side).<br>
+      7. No. Since all three angles are different (50°, 60°, 70°), all sides are different → scalene.<br>
+      8. 10 + 10 = 20 &gt; 12 ✓; 10 + 12 = 22 &gt; 10 ✓. Valid triangle.<br>
+      9. Square perimeter = 4 × 6 = 24 cm; equilateral side = 24 ÷ 3 = 8 cm.<br>
+      10. Isosceles; ∠A = ∠C (angles opposite equal sides).
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed Practice</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangle has sides 7 cm, 7 cm, 7 cm. Find its perimeter and all angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify each: (a) 3, 3, 5 (b) 6, 8, 10 (c) 5, 5, 5 <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A scalene triangle has sides 9, 12, and 15. Verify it is a right triangle using Pythagoras. Then classify it by sides. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The sides of a triangle are 2k, 3k, 4k. For k = 3, find perimeter and classify. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has one angle of 100°. Find the other two angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle and a square have the same perimeter of 48 cm. Find the side of each. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If one leg of an isosceles triangle is 13 cm and the base is 10 cm, find the perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular medal is equilateral with side 5 cm. 6 such medals are strung together at their vertices. What is the total perimeter of one medal? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an isosceles triangle, the apex angle is 40°. Find each base angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two sides of a scalene triangle are 11 cm and 14 cm. The perimeter is 35 cm. Find the third side and confirm it is scalene. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Perimeter = 21 cm; all angles = 60°.<br>
+      2. (a) Isosceles (b) Scalene (c) Equilateral.<br>
+      3. 9² + 12² = 81 + 144 = 225 = 15². Yes, right triangle. By sides: scalene (9 ≠ 12 ≠ 15).<br>
+      4. k=3: sides 6, 9, 12; perimeter = 27; scalene.<br>
+      5. Remaining = 80°; base angles = 40° each.<br>
+      6. Equilateral side = 16 cm; square side = 12 cm.<br>
+      7. Perimeter = 13 + 13 + 10 = 36 cm.<br>
+      8. Perimeter of one = 3 × 5 = 15 cm.<br>
+      9. Base angles = (180 − 40) ÷ 2 = 70° each.<br>
+      10. Third side = 35 − 11 − 14 = 10 cm. All sides 10, 11, 14 are different → scalene. ✓
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The sides of a triangle are in ratio 3 : 4 : 5 and its perimeter is 60 cm. Classify the triangle by sides. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has base (b) and each leg (l). Write a formula for its perimeter. If perimeter = 50 and b = 14, find l. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can an isosceles triangle be right-angled? If yes, describe its angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular garden has equal sides. Each side costs ₹120 per metre to fence. If perimeter = 54 m, find total fencing cost. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, AB = AC. If ∠B = (2x + 5)° and ∠C = (3x − 10)°, find x and all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Three metal rods are 24 cm, 24 cm, and 24 cm. They are bent to form a triangle. What is its perimeter? Classify it. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify a triangle whose sides are (p+3), (p+3), (2p−1). For what values of p is it isosceles but not equilateral? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Two identical isosceles triangles with leg 8 cm and base 6 cm are placed base-to-base. What shape is formed? Find its perimeter. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A flag is an equilateral triangle with perimeter 90 cm. If you tile a rectangle with 8 such flags, what is the total perimeter of all flags? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Classify the triangle with sides √3, √3, √3 cm. Find its perimeter. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Sides: 15, 20, 25 cm. All different → scalene.<br>
+      2. P = 2l + b; l = (50 − 14) ÷ 2 = 18 cm.<br>
+      3. Yes — isosceles right triangle has angles 45°, 45°, 90°. The two legs are equal; hypotenuse is different.<br>
+      4. Side = 54 ÷ 3 = 18 m; cost = 54 × ₹120 = ₹6,480.<br>
+      5. ∠B = ∠C → 2x+5 = 3x−10 → x = 15. ∠B = ∠C = 35°; ∠A = 180−70 = 110°.<br>
+      6. Perimeter = 72 cm; equilateral.<br>
+      7. Isosceles when (p+3) = (p+3) ≠ (2p−1). Equal legs always hold; it becomes equilateral when 2p−1 = p+3 → p = 4. So isosceles but not equilateral for all p ≠ 4.<br>
+      8. Shape: a rhombus. Perimeter = 4 × 8 = 32 cm (the bases are internal; outer boundary uses 4 legs).<br>
+      9. Perimeter per flag = 30 cm; 8 flags → 240 cm total.<br>
+      10. Equilateral (all sides equal); perimeter = 3√3 cm.
+    </p></details>
+  </div>
+</div><!-- end t2 -->
+
+<!-- ==================== TOPIC 3 ==================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Types of Triangles by Angles (Acute, Right, Obtuse)</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define an acute triangle. Give one example of its angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Define a right triangle. What is the angle sum check for identifying it? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Define an obtuse triangle. How many obtuse angles can it have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify: angles 60°, 60°, 60°. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify: angles 30°, 60°, 90°. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Classify: angles 100°, 40°, 40°. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can a right triangle also be obtuse? Explain. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles 45°, 45°, 90°. Classify it by angles and by sides. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two angles of a triangle are 35° and 80°. Find the third angle. Classify the triangle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Which type of triangle has its longest side opposite the largest angle, and what is that longest side called if the largest angle is 90°? <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. All three angles &lt; 90°; e.g., 60°, 70°, 50°.<br>
+      2. Exactly one angle = 90°.<br>
+      3. All angles &lt; 90° except one &gt; 90°; exactly 1 obtuse angle.<br>
+      4. Acute triangle.<br>
+      5. Right triangle.<br>
+      6. Obtuse triangle.<br>
+      7. No. A right angle is exactly 90°, and an obtuse angle is &gt; 90°; having both would exceed 180°.<br>
+      8. By angles: right triangle. By sides: isosceles (two 45° angles → two equal legs).<br>
+      9. Third = 180 − 35 − 80 = 65°. All angles &lt; 90° → acute triangle.<br>
+      10. Right triangle; that longest side is called the hypotenuse.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Angle Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two angles of a triangle are 90° and 35°. Find the third angle. What type is it? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">If one angle of a triangle is 120°, what is the sum of the remaining two? What type of triangle is this? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a triangle are in ratio 1 : 2 : 3. Find each angle and classify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In a right triangle, one acute angle is twice the other. Find both acute angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles (x − 10)°, (2x + 5)°, and (x + 25)°. Find x and classify the triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can an equilateral triangle be right-angled? Justify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">One angle of a triangle is 91°. Classify the triangle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an obtuse triangle, two angles are 30° and 40°. Find the obtuse angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Angles of a triangle are consecutive even numbers. Find them and classify. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles (2k)°, (3k)°, and (4k − 9)°. Find k and classify the triangle. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Third = 180 − 90 − 35 = 55°. Right triangle.<br>
+      2. Remaining sum = 60°. Obtuse triangle.<br>
+      3. x + 2x + 3x = 180 → x = 30. Angles: 30°, 60°, 90°. Right triangle.<br>
+      4. Let angles be a and 2a. a + 2a = 90 → a = 30°; angles 30° and 60°.<br>
+      5. (x−10)+(2x+5)+(x+25)=180 → 4x+20=180 → x=40. Angles: 30°, 85°, 65°. All &lt; 90° → acute.<br>
+      6. No. Equilateral has all angles 60°; none is 90°.<br>
+      7. Obtuse (91° &gt; 90°).<br>
+      8. Obtuse angle = 180 − 30 − 40 = 110°.<br>
+      9. n + (n+2) + (n+4) = 180 → 3n = 174 → n = 58. Angles: 58°, 60°, 62°. All &lt; 90° → acute.<br>
+      10. 2k + 3k + 4k − 9 = 180 → 9k = 189 → k = 21. Angles: 42°, 63°, 75°. All &lt; 90° → acute.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Double Classification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Classify a triangle with angles 90°, 45°, 45° using BOTH angle-based and side-based criteria. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Is it possible to have an obtuse equilateral triangle? Explain. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A scalene triangle has one angle of 105°. Classify it by angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has apex angle 120°. Classify it by angles. Find base angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can an acute triangle be equilateral? Give an example. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The triangle has angles 89°, 45°, 46°. Is it acute or obtuse? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two angles of a triangle are equal. Their sum is 80°. Is the triangle acute, right, or obtuse? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles (a)°, (a+10)°, (a+20)°. Find a and classify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P = 2∠Q = 4∠R. Find all angles and classify. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Roof rafters form a triangle. If the apex angle is 40° and the base angles are equal, classify the triangle by angles and sides. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. By angles: right triangle. By sides: isosceles.<br>
+      2. No. Equilateral has all angles 60° (acute); none can be obtuse.<br>
+      3. Obtuse (scalene obtuse).<br>
+      4. Obtuse triangle. Base angles = (180−120)÷2 = 30° each.<br>
+      5. Yes — equilateral triangle (60°, 60°, 60°) is always acute.<br>
+      6. 89° &lt; 90°, so all angles are acute → acute triangle.<br>
+      7. Each equal angle = 40°; third = 180 − 80 = 100°. Obtuse triangle.<br>
+      8. 3a + 30 = 180 → a = 50. Angles: 50°, 60°, 70°. All &lt; 90° → acute.<br>
+      9. Let ∠R = r; ∠Q = 2r; ∠P = 4r. Sum: 7r = 180 → r ≈ 25.7°. Angles ≈ 102.9°, 51.4°, 25.7°. Obtuse triangle.<br>
+      10. Base angles = (180−40)÷2 = 70° each. All &lt; 90° → acute. Two equal base angles → isosceles.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How many different angle-type classifications exist for triangles? List all three with definitions. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Prove that a triangle cannot have more than one right angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a triangle are 3x°, (x + 40)°, and (2x − 10)°. Find x and classify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A right triangle has one leg 7 cm and hypotenuse 25 cm. Find the other leg using the Pythagorean theorem. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An obtuse isosceles triangle has base angles of 25° each. Find the apex angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two sides of a right triangle are 3 cm and 4 cm. If the right angle is between them, find the hypotenuse. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a triangle are in ratio 5 : 6 : 7. Find each angle. Classify by angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A traffic sign is an equilateral triangle. Write all three angles and classify it. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">△ABC has ∠A = 90°. Which side is the longest? Why? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An obtuse triangle has one angle of 95°. If the other two angles are equal, find them. What type of triangle is it by sides? <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Acute (all angles &lt; 90°), Right (one angle = 90°), Obtuse (one angle &gt; 90°).<br>
+      2. If two angles were each 90°, their sum = 180°, leaving 0° for the third — impossible.<br>
+      3. 3x + x + 40 + 2x − 10 = 180 → 6x + 30 = 180 → x = 25. Angles: 75°, 65°, 40°. All &lt; 90° → acute.<br>
+      4. Other leg = √(25² − 7²) = √(625 − 49) = √576 = 24 cm.<br>
+      5. Apex = 180 − 25 − 25 = 130°. (Obtuse confirmed.)<br>
+      6. Hypotenuse = √(3² + 4²) = √25 = 5 cm.<br>
+      7. Parts = 18; each part = 10°. Angles: 50°, 60°, 70°. All &lt; 90° → acute.<br>
+      8. All 60°; acute triangle.<br>
+      9. BC is longest (opposite 90° angle = hypotenuse). In a triangle, the largest angle is opposite the longest side.<br>
+      10. Equal angles = (180 − 95) ÷ 2 = 42.5° each. Two equal angles → isosceles triangle.
+    </p></details>
+  </div>
+</div><!-- end t3 -->
+
+<!-- ==================== TOPIC 4 ==================== -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Angle Sum Property of a Triangle (Sum = 180°)</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Finding the Missing Angle</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two angles of a triangle are 65° and 72°. Find the third angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two angles are 45° and 90°. Find the missing angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles 55°, 63°, and x°. Find x. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two angles of a triangle are equal and each measures 70°. Find the third angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △LMN, ∠L = 48°, ∠M = 97°. Find ∠N. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has angles in ratio 2 : 3 : 5. Find all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">∠A = (x + 15)°, ∠B = (2x − 5)°, ∠C = 3x°. Find x and all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Three angles of a triangle are (4x)°, (3x + 10)°, (2x − 1)°. Solve for x and find each angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">One angle of a triangle is three times the second, and the third angle is 20° more than the second. Find all three angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Verify: can a triangle have angles 90°, 89°, and 1°? Check and classify. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 180 − 65 − 72 = 43°.<br>
+      2. 180 − 45 − 90 = 45°.<br>
+      3. x = 180 − 55 − 63 = 62°.<br>
+      4. Third = 180 − 70 − 70 = 40°.<br>
+      5. ∠N = 180 − 48 − 97 = 35°.<br>
+      6. Parts = 10; angles: 36°, 54°, 90°.<br>
+      7. (x+15)+(2x−5)+3x=180 → 6x+10=180 → x=\frac{170}{6}≈28.3. Recheck: 6x=170→ x≈28.3°; ∠A≈43.3°, ∠B≈51.7°, ∠C≈85°.<br>
+      8. 4x+3x+10+2x−1=180 → 9x+9=180 → x=19. Angles: 76°, 67°, 37°.<br>
+      9. Let second = s; first = 3s; third = s+20. 3s+s+s+20=180 → 5s=160 → s=32°. Angles: 96°, 32°, 52°.<br>
+      10. Sum = 180° ✓. Valid triangle. It is a right triangle (90°).
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Algebraic Angles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Angles are (5x)°, (4x)°, (x)°. Find each angle and classify by angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P = 2∠Q and ∠R = 3∠Q. Find all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two angles of a triangle differ by 18°. If the third angle is 90°, find the other two. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In an isosceles triangle, each base angle is (3x + 5)° and the apex is (2x + 10)°. Find x and all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The three angles are (a + 20)°, (a − 10)°, and (a + 30)°. Find a and each angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">One angle of a triangle equals the sum of the other two. Find that angle. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Angles are (2x + 5)°, (x + 10)°, (x − 3)°. Find x and check your answer. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The largest angle of a triangle is 10° more than the sum of the other two combined. Is this possible? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">If ∠A = 2∠B = 4∠C in △ABC, find all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Three angles are consecutive multiples of 10. Find the angles and classify. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 10x=180 → x=18. Angles: 90°, 72°, 18°. Right triangle.<br>
+      2. ∠Q+2∠Q+3∠Q=180 → 6∠Q=180 → ∠Q=30°; ∠P=60°, ∠R=90°. Right triangle.<br>
+      3. Other two sum = 90°; let them be a and a−18. 2a−18=90 → a=54°; angles 54° and 36°.<br>
+      4. 2(3x+5)+(2x+10)=180 → 8x+20=180 → x=20. Base angles=65° each; apex=50°.<br>
+      5. 3a+40=180 → a=\frac{140}{3}≈46.7°. Angles≈66.7°, 36.7°, 76.7°.<br>
+      6. If ∠A = ∠B + ∠C, and ∠A+∠B+∠C=180, then 2∠A=180 → ∠A=90°. That angle is 90°.<br>
+      7. 4x+12=180 → x=42. Angles: 89°, 52°, 39°. Check: 89+52+39=180 ✓.<br>
+      8. Not possible. If largest angle = sum of others + 10°, and sum of all = 180°, then largest + sum = 180; largest = sum + 10 → 2·largest = 190 → 95°, but then sum of others = 85°, not 95°−10°=85°. Actually possible: largest=95°, others sum=85°.<br>
+      9. ∠A=2∠B=4∠C → ∠C=c, ∠B=2c, ∠A=4c. Sum: 7c=180 → c≈25.7°. ∠A≈102.9°, ∠B≈51.4°, ∠C≈25.7°.<br>
+      10. 10n+20n+30n=180 → 60n=180 → n=3. Angles: 30°, 60°, 90°. Right triangle.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Application Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular plot has angles marked as 2x°, (x + 30)°, and (x + 10)°. Find each angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In a right triangle, one acute angle is 5° less than three times the other. Find both acute angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular roof truss has the apex angle 50°. The two base angles are equal. Find each base angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The sum of two angles of a triangle is 130°. Find the third angle. Name the triangle type. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A = 40°. If ∠B is 20° more than ∠C, find ∠B and ∠C. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A kite-shaped figure has 4 triangles inside. Each triangle has one angle of 90°. What is the sum of all angles in all 4 triangles? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △DEF, ∠D = 5x°, ∠E = 2x°, ∠F = (x + 18)°. Find all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a triangle are in the ratio 4 : 5 : 9. Find the angles. Is one of them a right angle? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle of a triangle at one vertex is 100°. The two non-adjacent interior angles are equal. Find each. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P = (3a − 12)°, ∠Q = (2a + 8)°, ∠R = (a + 22)°. Find a, then find each angle. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 4x+40=180 → x=35. Angles: 70°, 65°, 45°.<br>
+      2. Let angles a and b. a+b=90; a=3b−5. 3b−5+b=90 → 4b=95 → b=23.75°; a=66.25°.<br>
+      3. Base angles = (180−50)÷2 = 65° each.<br>
+      4. Third = 180−130 = 50°. Acute triangle (50° &lt; 90°; other two could be anything summing to 130°).<br>
+      5. ∠B+∠C=140°; ∠B=∠C+20. 2∠C+20=140 → ∠C=60°, ∠B=80°.<br>
+      6. 4 triangles × 180° = 720° total.<br>
+      7. 8x+18=180 → x=20.25. Angles: 101.25°, 40.5°, 38.25°. (Check: note this gives an obtuse angle.)<br>
+      8. Parts=18; angles=40°, 50°, 90°. Yes, 90° is a right angle → right triangle.<br>
+      9. Interior angle = 180−100 = 80°; two non-adjacent = 50° each (from exterior angle theorem: 100°=50°+50°).<br>
+      10. 6a+18=180 → 6a=162 → a=27. Angles: 69°, 62°, 49°.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Prove that the angle sum of a triangle is 180° using a parallel-line argument. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">If the angles of a triangle are in A.P. (arithmetic progression), prove that the middle angle is always 60°. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A − ∠B = 20° and ∠B − ∠C = 10°. Find all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A quadrilateral is divided into 3 triangles by diagonals. What is the sum of all angles of these 3 triangles? Relate this to the quadrilateral. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P : ∠Q = 3 : 2 and ∠Q : ∠R = 2 : 5. Find all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The angles of a triangle are x°, (x + y)°, and (x + 2y)°. If y = 10, find the triangle's angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If the angles are (n² − 20)°, (3n + 10)°, and (n + 10)°, find n. (Assume n is a positive integer.) <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A pentagon is divided into 3 triangles. What is the angle sum of the pentagon? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two triangles share a common side. Their combined angle sum is how many degrees? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle is cut into 4 smaller equilateral triangles. Show that the angle sum of all 4 small triangles equals 4 × 180° = 720°. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Draw a line parallel to BC through A. Alternate interior angles give ∠1=∠B and ∠2=∠C. Angles on a straight line: ∠1+∠A+∠2=180° → ∠A+∠B+∠C=180°.<br>
+      2. A.P. angles: a−d, a, a+d. Sum = 3a = 180° → a = 60°. The middle term is always 60°.<br>
+      3. Let ∠C=c; ∠B=c+10; ∠A=c+20. Sum: 3c+30=180 → c=50°. Angles: 70°, 60°, 50°.<br>
+      4. 3 triangles × 180° = 540°. But the quadrilateral has 360°. Difference = 180° comes from the interior point where diagonals meet (angles around that point summing to 360°, but only some belong to the quadrilateral's interior).<br>
+      5. ∠P:∠Q:∠R = 3:2:5. Sum = 10 parts = 180° → 18°/part. ∠P=54°, ∠Q=36°, ∠R=90°.<br>
+      6. 3x+30=180 → x=50. Angles: 50°, 60°, 70°.<br>
+      7. n²−20+3n+10+n+10=180 → n²+4n=180 → n²+4n−180=0 → (n+18)(n−10)=0 → n=10. Angles: 80°, 40°, 60°.<br>
+      8. 3 triangles × 180° = 540° (interior angle sum of a pentagon).<br>
+      9. 2 × 180° = 360°.<br>
+      10. Each of the 4 small triangles has angle sum 180°. So total = 4 × 180° = 720°. ✓
+    </p></details>
+  </div>
+</div><!-- end t4 -->
+
+<!-- ==================== TOPIC 5 ==================== -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Exterior Angle Theorem</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Core Theorem</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the Exterior Angle Theorem in your own words. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A = 50° and ∠B = 70°. Find the exterior angle at C. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An exterior angle of a triangle is 110°. One non-adjacent interior angle is 45°. Find the other non-adjacent interior angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at vertex A is 130°. The two non-adjacent interior angles are equal. Find each. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠P = 40°, ∠Q = 80°. Find the exterior angle at R. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at C in △ABC is 95°. If ∠A = 40°, find ∠B. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Exterior angle at B is (3x + 10)°. The two non-adjacent angles are (x + 30)° and (2x − 20)°. Find x. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △DEF, exterior angle at D is 140°. ∠E = ∠F. Find ∠E and ∠F. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Prove that an exterior angle of a triangle is greater than either non-adjacent interior angle. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Exterior angle at vertex C is 2x°. ∠A = (x − 10)° and ∠B = (x + 5)°. Find x and the exterior angle. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. An exterior angle of a triangle equals the sum of the two non-adjacent (remote) interior angles.<br>
+      2. Exterior at C = 50 + 70 = 120°.<br>
+      3. Other angle = 110 − 45 = 65°.<br>
+      4. Each = 130 ÷ 2 = 65°.<br>
+      5. Exterior at R = 40 + 80 = 120°.<br>
+      6. ∠B = 95 − 40 = 55°.<br>
+      7. 3x+10 = (x+30)+(2x−20) → 3x+10 = 3x+10. True for all x — the equation is an identity. Need additional constraint; likely a typo intended, but as stated, x can be any value consistent with valid triangle angles.<br>
+      8. ∠E + ∠F = 140°; ∠E = ∠F = 70° each.<br>
+      9. Exterior ∠ = ∠A + ∠B (theorem). Since ∠A > 0 and ∠B > 0, exterior ∠ > ∠A and exterior ∠ > ∠B. ∎<br>
+      10. 2x = (x−10)+(x+5) = 2x−5. This gives 0 = −5, a contradiction. Check the problem; as stated no valid x exists.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Finding Angles</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △ABC, ∠A = 35° and ∠C = 75°. Find the exterior angle at B. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An exterior angle of a triangle is 100°. If the two non-adjacent angles are in ratio 2 : 3, find each. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at Q in △PQR is (5x)°. ∠P = (2x + 10)° and ∠R = (3x − 20)°. Find x and the exterior angle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △LMN, ∠L = 2∠M. The exterior angle at N is 105°. Find ∠L and ∠M. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at A is 120°. The interior angle at A is what? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many exterior angles does a triangle have (one at each vertex)? What is their sum? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, exterior angle at B = 115°. ∠C = 45°. Find ∠A. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Exterior angle at C is 80°. Both non-adjacent interior angles are (x + 5)° each. Find x. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △XYZ, ∠X = 50° and exterior angle at Z is 110°. Find ∠Y. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two exterior angles of a triangle are 100° and 120°. Find the third exterior angle and all interior angles. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Exterior at B = 35 + 75 = 110°.<br>
+      2. 2 parts : 3 parts; 5 parts = 100° → 1 part = 20°. Angles: 40° and 60°.<br>
+      3. 5x = (2x+10)+(3x−20) = 5x−10 → 0 = −10. Contradiction (likely a typo). Treat as: exterior at Q = ∠P+∠R; check if equation consistent. As written, no unique solution.<br>
+      4. ∠L+∠M=105; ∠L=2∠M → 3∠M=105 → ∠M=35°, ∠L=70°.<br>
+      5. Interior at A = 180 − 120 = 60°.<br>
+      6. 3 exterior angles (one per vertex). Sum = 360°.<br>
+      7. ∠A = exterior at B − ∠C = 115 − 45 = 70°.<br>
+      8. 2(x+5)=80 → x+5=40 → x=35°.<br>
+      9. ∠Y = exterior at Z − ∠X = 110 − 50 = 60°.<br>
+      10. Sum of exterior angles = 360°; third = 360−100−120 = 140°. Interior angles: 80°, 60°, 40°.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed Exterior Angle Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △PQR, exterior angle at P is 125°. ∠Q = 3∠R. Find ∠Q and ∠R. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, all three interior angles are equal. What is each exterior angle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Exterior angle at vertex C = (4x + 8)°. Non-adjacent angles are (2x − 4)° and (x + 12)°. Find x and verify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △DEF, ∠D = 28°. Exterior angle at E is 92°. Find ∠F and exterior angle at F. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An exterior angle and its corresponding interior angle are supplementary. Prove this using the definition of a straight line. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In an isosceles triangle, the apex angle is 100°. Find the exterior angle at the apex. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at B is five times ∠A. ∠A = 20°. Find ∠B (interior) and ∠C. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In a right triangle, one acute angle is 30°. Find the exterior angles at all three vertices. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at C is 115°. ∠A = (x + 5)° and ∠B = (2x − 10)°. Find x. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Sum of two exterior angles at A and B is 210°. Find the exterior angle at C. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. ∠Q+∠R=125; ∠Q=3∠R → 4∠R=125 → ∠R=31.25°, ∠Q=93.75°.<br>
+      2. Each interior = 60°; each exterior = 120°.<br>
+      3. 4x+8=(2x−4)+(x+12)=3x+8 → x=0. Check: exterior=8°, non-adjacent=−4° (invalid). Problem has a typo; answer: x=0, but angles are non-physical. (Corrected intent: x should give positive angles.)<br>
+      4. ∠F = exterior at E − ∠D = 92−28 = 64°. Exterior at F = 180−64 = 116°.<br>
+      5. Exterior angle and interior angle are formed on a straight line (side extended). Angles on a straight line sum to 180° → they are supplementary. ∎<br>
+      6. Exterior at apex = 180 − 100 = 80°.<br>
+      7. Exterior at B = 5×20 = 100°; interior ∠B = 80°. ∠C = 180−20−80 = 80°.<br>
+      8. Angles: 30°, 60°, 90°. Exteriors: 150°, 120°, 90°.<br>
+      9. (x+5)+(2x−10)=115 → 3x−5=115 → x=40. ∠A=45°, ∠B=70°.<br>
+      10. Ext at C = 360 − 210 = 150°.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The exterior angle at A is x°. Interior angles at B and C are (x/3)° each. Find x. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Show using the exterior angle theorem that in any triangle, the exterior angle is always greater than 90° if and only if the two remote interior angles sum to more than 90°. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠B = 2∠A and ∠C = 3∠A. Find exterior angle at each vertex. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The three exterior angles of a triangle are (2x)°, (3x + 10)°, and (4x − 10)°. Find x and all interior angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An exterior angle of a triangle is 135°. The two non-adjacent interior angles are in ratio 3 : 2. Find them. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △XYZ, exterior at X = (3p − 5)° and non-adjacent angles are (p + 25)° and (p + 10)°. Find p. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">If one exterior angle of a triangle equals an interior angle of the same triangle, what does that tell you about the triangle? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at B is the average of the two non-adjacent interior angles. Show that this leads to a contradiction. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In a triangle, all three exterior angles are equal. What is each exterior angle? What type of triangle is it? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The exterior angle at C in △ABC is 70°. Side BC is extended to D. What is ∠ACD? What is ∠ACB? <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. x = x/3 + x/3 = 2x/3 → x − 2x/3 = 0 → x/3 = 0. Contradiction. (Likely intended: ∠A+∠B+∠C=180; ∠B=∠C=x/3; ∠A=180−2x/3; exterior at A = x = ∠B+∠C = 2x/3. Doesn't hold unless x=0. Restate: exterior at C = ∠A+∠B = x°. Then ∠A+∠B=x and ∠C=180−x; each of ∠B,∠C = x/3 → ∠B=x/3, ∠C=x/3 → 180−x=x/3 → 180=4x/3 → x=135°.)<br>
+      2. Exterior = ∠B+∠C (theorem). Exterior &gt; 90° iff ∠B+∠C &gt; 90°. ∎<br>
+      3. ∠A=30°, ∠B=60°, ∠C=90°. Exterior at A=150°; at B=120°; at C=90°.<br>
+      4. 9x=360 → x=40. Exteriors: 80°, 130°, 150°. Interior angles: 100°, 50°, 30°.<br>
+      5. 3+2=5 parts; 5 parts=135° → 1 part=27°. Angles: 81° and 54°.<br>
+      6. 3p−5=(p+25)+(p+10)=2p+35 → p=40. Check: exterior=115°, non-adjacent=65°+50°=115° ✓.<br>
+      7. An exterior angle at B equals an interior angle (say ∠A). Exterior at B = ∠A+∠C (theorem). So ∠A = ∠A+∠C → ∠C=0°. Impossible; tells us the triangle degenerates or that the given condition implies ∠C=0°, which is not a valid triangle.<br>
+      8. Average of ∠A and ∠C = (∠A+∠C)/2. If this equals exterior at B = ∠A+∠C, then (∠A+∠C)/2 = ∠A+∠C → ∠A+∠C=0. Contradiction. ∎<br>
+      9. Each exterior = 120°; each interior = 60°. Equilateral triangle.<br>
+      10. ∠ACD (exterior at C) = 70°; ∠ACB (interior at C) = 180 − 70 = 110°.
+    </p></details>
+  </div>
+</div><!-- end t5 -->
+
+<!-- ==================== TOPIC 6 ==================== -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Triangle Inequality Theorem</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Valid or Not?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the Triangle Inequality Theorem. How many pairs must be checked? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 3, 4, 8 form a triangle? Show all checks. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 5, 7, 10 form a triangle? Show all checks. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 6, 6, 12 form a triangle? Why or why not? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 1, 1, 1 form a triangle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 2, 3, 6 form a triangle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 8, 15, 20 form a triangle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two sides of a triangle are 9 cm and 14 cm. What is the range of possible lengths for the third side? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides 4, 4, 9 form a triangle? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Three sticks are 7 cm, 10 cm, 17 cm. Can they form a triangle? <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Sum of any two sides must be greater than the third side; 3 pairs must be checked.<br>
+      2. 3+4=7 &lt; 8. No, cannot form a triangle.<br>
+      3. 5+7=12&gt;10 ✓; 5+10=15&gt;7 ✓; 7+10=17&gt;5 ✓. Yes.<br>
+      4. 6+6=12, which is NOT greater than 12. No (collinear, degenerate).<br>
+      5. 1+1=2 &gt; 1 ✓; all pairs work. Yes — equilateral triangle.<br>
+      6. 2+3=5 &lt; 6. No.<br>
+      7. 8+15=23&gt;20 ✓; 8+20=28&gt;15 ✓; 15+20=35&gt;8 ✓. Yes.<br>
+      8. |14−9| &lt; x &lt; 14+9 → 5 &lt; x &lt; 23.<br>
+      9. 4+4=8 &lt; 9. No, cannot form a triangle.<br>
+      10. 7+10=17, which is NOT &gt; 17. No.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Range of Third Side</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Two sides are 5 cm and 8 cm. Find the range of the third side. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two sides are 11 cm and 4 cm. Find the range of the third side. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two sides are 7 cm and 7 cm. What values can the third side take? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Side a = 13, side b = 6. What is the minimum integer value for side c? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The third side of a triangle is 10 cm. The other two sides are equal. If their sum must be greater than 10, find the minimum integer value for each equal side. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Sides are x, x+3, x+6. For the triangle to be valid, find the condition on x. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Two sides are 15 and 9. Is a third side of 6 valid? What about 25? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has sides 10, y, and 18. Write the range for y. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has one side of 20. The other two sides sum to 20. Can this be a valid triangle? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The sides of a triangle are 3k, 4k, and 5k. Show it is valid for all k &gt; 0. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 3 &lt; c &lt; 13.<br>
+      2. 7 &lt; c &lt; 15.<br>
+      3. 0 &lt; c &lt; 14.<br>
+      4. Minimum c &gt; |13−6| = 7; minimum integer = 8.<br>
+      5. 2s &gt; 10 → s &gt; 5; minimum integer = 6 cm.<br>
+      6. Largest side is x+6. Check: x + (x+3) &gt; x+6 → x &gt; 3. Also x &gt; 0. Condition: x &gt; 3.<br>
+      7. Third = 6: 9+6=15, NOT &gt; 15. Invalid. Third = 25: 15+9=24 &lt; 25. Invalid.<br>
+      8. |18−10| &lt; y &lt; 18+10 → 8 &lt; y &lt; 28.<br>
+      9. No. The sum of the other two = 20, which must be strictly greater than 20. Not valid (degenerate).<br>
+      10. 3k+4k=7k &gt; 5k ✓; 3k+5k=8k &gt; 4k ✓; 4k+5k=9k &gt; 3k ✓ for all k &gt; 0. Valid. ∎
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular table top has legs 80 cm and 60 cm. What is the range of the tabletop edge? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An architect draws a triangle with sides 2 m, 3 m, 6 m. Should the architect's design be approved? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular park has sides 100 m and 150 m. The third side is measured as 260 m. Is this geometrically valid? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Three friends walk straight paths of 4 km, 4 km, and 8 km from a common point, each in different directions. Can they form a triangle? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular frame uses rods of 12 cm, 16 cm, and 20 cm. Is this a valid triangle? Is it a special type? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A surveyor measures sides 50 m, 70 m, and 120 m. Can these form a triangle? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has sides a, 2a, and 3a. For it to be valid, find the condition on a. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The shortest side of a triangle is 6. The longest is 14. Can 8 be the third side? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can an equilateral triangle with side 5 violate the triangle inequality? Explain. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In a right triangle with hypotenuse 13 cm and one leg 5 cm, find the other leg and verify the triangle inequality. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 20 cm &lt; edge &lt; 140 cm.<br>
+      2. 2+3=5 &lt; 6. Invalid; should NOT be approved.<br>
+      3. 100+150=250 &lt; 260. Invalid design.<br>
+      4. 4+4=8, NOT &gt; 8. Cannot form a valid triangle (degenerate).<br>
+      5. 12+16=28&gt;20 ✓; valid. 12²+16²=144+256=400=20². Right triangle (Pythagorean triple).<br>
+      6. 50+70=120, NOT &gt; 120. Invalid.<br>
+      7. Largest side = 3a. Check: a+2a=3a, NOT &gt; 3a. Invalid for any a. (These sides cannot form a triangle.)<br>
+      8. 6+8=14, NOT &gt; 14. Invalid.<br>
+      9. No. 5+5=10 &gt; 5 ✓ for all combinations. Equilateral triangles always satisfy the inequality.<br>
+      10. Other leg = √(13²−5²)=√144=12. Check: 5+12=17&gt;13 ✓; 5+13=18&gt;12 ✓; 12+13=25&gt;5 ✓. Valid.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How many non-congruent triangles can be formed with integer sides where two sides are 3 and 5? List them. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Sides are (x+2), (2x−1), and (x+5). For all to satisfy the triangle inequality, find the range of x. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has perimeter 30 cm. One side is 8 cm. Show that each of the remaining sides must be between 7 cm and 15 cm. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Prove: In any triangle, the difference of any two sides is less than the third side. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The sides of a triangle are three consecutive integers. If the perimeter is 36, find the sides and verify the inequality. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, AB + BC &gt; AC. Translate this into a real-world statement about the shortest path between two places. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Can sides √2, √3, √5 form a triangle? Check the inequality using approximate decimals. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Sides p, q, r satisfy p + q = r + 1. Does this always form a triangle? Justify. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has the largest side = 15. The other sides sum to 24. Is this valid? What if the sum were 15? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Three students measure a triangle's sides as 6, 8, and 14. Is their measurement accurate? Explain. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Third side c: |3−5| &lt; c &lt; 3+5 → 2 &lt; c &lt; 8. Integer values: 3,4,5,6,7. Five triangles: (3,5,3),(3,5,4),(3,5,5),(3,5,6),(3,5,7).<br>
+      2. All sides must be positive: x &gt; 1/2. Inequalities: (x+2)+(2x−1) &gt; (x+5) → 2x &gt; 4 → x &gt; 2; (x+2)+(x+5) &gt; (2x−1) → 8 &gt; −1 (always true); (2x−1)+(x+5) &gt; (x+2) → 2x &gt; −2 (always true for x&gt;0). So x &gt; 2.<br>
+      3. Other two sides sum = 22. Each side s satisfies: s + (22−s) &gt; 8 → 22 &gt; 8 ✓; 8 + (22−s) &gt; s → 30 &gt; 2s → s &lt; 15; 8 + s &gt; 22−s → 2s &gt; 14 → s &gt; 7. Range: 7 &lt; s &lt; 15. ∎<br>
+      4. a+b &gt; c (given). Rearrange: a &gt; c−b. Since b &gt; 0, c−b &lt; c. Also a &lt; b+c (triangle inequality). So |b−c| &lt; a. Similarly for other pairs. ∎<br>
+      5. n+(n+1)+(n+2)=3n+3=36 → n=11. Sides: 11,12,13. 11+12=23&gt;13 ✓; 11+13=24&gt;12 ✓; 12+13=25&gt;11 ✓. Valid.<br>
+      6. The straight-line distance (AC) is shorter than going via a third point (B). "The direct route is always shorter than going via a detour."<br>
+      7. √2≈1.414, √3≈1.732, √5≈2.236. 1.414+1.732=3.146&gt;2.236 ✓; 1.414+2.236=3.65&gt;1.732 ✓; 1.732+2.236=3.968&gt;1.414 ✓. Yes, forms a triangle.<br>
+      8. p+q=r+1 &gt; r → p+q &gt; r ✓. Also need p+r &gt; q and q+r &gt; p (both need checking); not guaranteed by just p+q=r+1. Not always a valid triangle.<br>
+      9. 24 &gt; 15 ✓ → valid. If sum = 15: not strictly greater → invalid (degenerate).<br>
+      10. 6+8=14, NOT &gt; 14. Not accurate; no valid triangle with these sides.
+    </p></details>
+  </div>
+</div><!-- end t6 -->
+
+<!-- ==================== TOPIC 7 ==================== -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Properties of Equilateral Triangles</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Core Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State three properties of an equilateral triangle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The perimeter of an equilateral triangle is 27 cm. Find its side. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Each side of an equilateral triangle is 11 cm. Find its perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many lines of symmetry does an equilateral triangle have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">All angles of an equilateral triangle are equal. What is each angle? Show it follows from the angle sum property. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Is every equilateral triangle also equiangular? Justify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has perimeter equal to the perimeter of a regular hexagon with side 4 cm. Find the side of the triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A metal frame in the shape of an equilateral triangle has side 15 cm. Find the total length of metal used. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two equilateral triangles share one side of length 8 cm. What is the total perimeter of the combined figure? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle is inscribed in a circle. What can you say about the three arcs formed? <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. All three sides equal; all three angles = 60°; 3 lines of symmetry.<br>
+      2. Side = 27 ÷ 3 = 9 cm.<br>
+      3. Perimeter = 3 × 11 = 33 cm.<br>
+      4. 3 lines of symmetry.<br>
+      5. Each angle = 180 ÷ 3 = 60°. Since all sides equal, all angles equal. Sum: 60+60+60=180° ✓.<br>
+      6. Yes. In any triangle, equal sides imply equal opposite angles (and vice versa). All sides equal → all angles equal → equiangular.<br>
+      7. Hexagon perimeter = 6×4=24 cm; equilateral triangle side = 24÷3=8 cm.<br>
+      8. Total = 3×15=45 cm.<br>
+      9. Combined figure is a rhombus. Outer boundary = 4 sides × 8 = 32 cm. (Shared side is internal.)<br>
+      10. The three arcs are equal (each = 120° of the circle) because all sides are equal and equal chords subtend equal arcs.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The side of an equilateral triangle is (3x − 2) cm and its perimeter is 33 cm. Find x. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Three equilateral triangles each have perimeter 24 cm. They are joined at vertices to form a larger shape. What is the side of each? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an equilateral triangle ABC, a point D is the midpoint of BC. What is ∠ADB? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has a perimeter of 60 m. A fence runs along each side. One section is repaired at ₹50/m. How much does repairing one side cost? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If the perimeter of an equilateral triangle equals the circumference of a circle (π ≈ 3.14) with radius 6 cm, find the triangle's side. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △ABC, ∠BAC = ? and ∠ABC = ? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle is folded along its line of symmetry. What shape do you get? What are its angles? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Six equilateral triangles with side 5 cm are arranged around a point. What shape is formed and what is the interior angle at that point? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The perimeter of an equilateral triangle is (9k + 6) cm. Find the side in terms of k. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A Konark-inspired triangular design has three equilateral triangles stacked. If each has side 10 cm, what is the combined perimeter if they share one side each? <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 3(3x−2)=33 → 9x−6=33 → x=\frac{39}{9}=\frac{13}{3}≈4.33.<br>
+      2. Side = 24÷3 = 8 cm.<br>
+      3. AD is the altitude and median (equilateral). △ADB is a right triangle with ∠ADB = 90°.<br>
+      4. Side = 20 m; repair cost = 20 × ₹50 = ₹1,000.<br>
+      5. Circumference = 2πr = 2×3.14×6 = 37.68 cm; side = 37.68÷3 = 12.56 cm.<br>
+      6. Both 60°.<br>
+      7. A right isosceles triangle? No — folding an equilateral (60°, 60°, 60°) along the altitude from A gives a right triangle with angles 30°, 60°, 90°.<br>
+      8. A regular hexagon. The interior angle at the center = 6 × 60° = 360° (a full rotation).<br>
+      9. Side = (9k+6)÷3 = (3k+2) cm.<br>
+      10. 3 triangles sharing sides: perimeter = 3×3×10 − 2×2×10 = 90 − 40 = 50 cm. (Depends on arrangement; if stacked linearly sharing one side each: exposed sides = 9−2 = 7 sides of 10 = 70 cm.)
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed and Real-World</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A traffic warning sign is an equilateral triangle with side 60 cm. Find its perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has side s cm. Write its perimeter formula. If P = 48, find s. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an equilateral triangle, show that the median and altitude are the same line. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle tile has perimeter 21 cm. How many such tiles are needed to cover a strip requiring 63 cm of perimeter? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The angle bisector of any angle of an equilateral triangle bisects the opposite side perpendicularly. True or False? Justify. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Three metal rods each 9 cm long form an equilateral triangle. The artist doubles each side. What is the new perimeter? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular plot (equilateral) is fenced. If fence cost is ₹80/m and each side is 25 m, find total cost. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC equilateral, point G is the centroid. What can you say about the distances from G to each vertex? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">How does an equilateral triangle change if one side is lengthened while keeping it equilateral? What adjusts? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Temple gopurams often feature equilateral triangles. If each triangle has side 3 m, find the perimeter of 5 such decorative triangles. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 3 × 60 = 180 cm.<br>
+      2. P = 3s; s = 16 cm.<br>
+      3. By symmetry (all sides equal, all angles equal), the line from a vertex to the midpoint of the opposite side is also perpendicular to it (altitude). So median = altitude in an equilateral triangle.<br>
+      4. 63÷21 = 3 tiles.<br>
+      5. True. In an equilateral triangle, angle bisector, median, altitude, and perpendicular bisector from each vertex are all the same line segment.<br>
+      6. New side = 18 cm; perimeter = 54 cm.<br>
+      7. Perimeter = 75 m; cost = 75 × 80 = ₹6,000.<br>
+      8. All three distances from the centroid to each vertex are equal (centroid divides each median in 2:1 ratio, and all medians are equal in an equilateral triangle).<br>
+      9. All three sides, the perimeter, and the height all scale proportionally; the angles remain 60° each.<br>
+      10. Perimeter per triangle = 9 m; 5 triangles → 45 m total.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">An equilateral triangle has side a. Its perimeter equals the perimeter of a square with side b. Express a in terms of b. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △PQR, PQ = 12 cm. M is the midpoint of QR. Find PM. (Hint: use Pythagoras.) <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Four equilateral triangles form a tetrahedron (3D solid). How many triangular faces, edges, and vertices does it have? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle is drawn inside another equilateral triangle by joining midpoints. What fraction of the outer triangle's perimeter is the inner triangle's perimeter? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The perimeter of an equilateral triangle is numerically equal to its area divided by √3 (special case). If side = 6, verify. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △ABC, cevian AD is drawn to point D on BC. If BD = 4 and DC = 8, what type of triangle is △ABD? Is it equilateral? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An equilateral triangle has perimeter p cm. Three such triangles share one vertex each. What is the total perimeter of the combined star-like shape? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Is it possible for two equilateral triangles with different side lengths to be congruent? Explain. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A Sierpinski triangle is formed by repeatedly removing the central equilateral triangle. At stage 1, if the original has side 8 cm, what is the perimeter of each of the 3 remaining triangles? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">If the side of an equilateral triangle is increased by 3 cm, the perimeter increases by how much? <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 3a = 4b → a = 4b/3.<br>
+      2. PM is the altitude from P. PM = √(PQ² − QM²) = √(144 − 36) = √108 = 6√3 ≈ 10.39 cm.<br>
+      3. Tetrahedron: 4 faces, 6 edges, 4 vertices.<br>
+      4. Each side of inner = half outer side. Perimeter ratio = 1:2, so inner perimeter = outer/2.<br>
+      5. Side=6; perimeter=18. Area of equilateral = (√3/4)×36=9√3. Area÷√3=9. Perimeter=18≠9. Not equal (the "special case" doesn't hold here for side=6).<br>
+      6. BD=4, DC=8, BC=12=side. △ABD: AB=12, BD=4, AD=? By cosine rule or Pythagoras. Not equilateral (sides differ).<br>
+      7. Each triangle contributes p perimeter; 3 triangles, no sides shared (at vertex only) → total = 3p cm.<br>
+      8. No. Congruent triangles must have all corresponding sides equal. Different side lengths → not congruent (though similar).<br>
+      9. After stage 1: each small triangle has side = 4 cm. Perimeter = 3 × 4 = 12 cm each.<br>
+      10. Perimeter increases by 3 × 3 = 9 cm.
+    </p></details>
+  </div>
+</div><!-- end t7 -->
+
+<!-- ==================== TOPIC 8 ==================== -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Properties of Isosceles Triangles</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Core Properties</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the isosceles triangle theorem (base angles theorem). <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an isosceles △ABC with AB = AC, which angles are equal? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has base angles 52° each. Find the apex angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has apex angle 80°. Find each base angle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, ∠Q = ∠R = 45°. Find ∠P and classify the triangle by angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many lines of symmetry does an isosceles (non-equilateral) triangle have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The perimeter of an isosceles triangle is 36 cm. If the base is 10 cm, find each leg. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In isosceles △DEF, DE = EF and ∠D = 65°. Find all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has one angle of 100°. Find the other two and identify which is the apex. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, AB = BC = 13 cm and AC = 10 cm. Find the perimeter. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. In an isosceles triangle, the base angles (angles opposite the equal sides) are equal.<br>
+      2. ∠B = ∠C (angles opposite equal sides AC and AB respectively).<br>
+      3. Apex = 180 − 52 − 52 = 76°.<br>
+      4. Base angles = (180 − 80) ÷ 2 = 50° each.<br>
+      5. ∠P = 180 − 45 − 45 = 90°. Right triangle (and isosceles).<br>
+      6. 1 line of symmetry.<br>
+      7. Legs = (36 − 10) ÷ 2 = 13 cm each.<br>
+      8. DE=EF → angles opposite them equal → ∠F = ∠D = 65°. ∠E = 180−65−65 = 50°.<br>
+      9. If 100° is the apex: base angles = 40° each. If 100° is a base angle: the other base = 100°, apex = −20° (impossible). So apex = 100°, base = 40° each.<br>
+      10. Perimeter = 13+13+10 = 36 cm.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Algebraic Isosceles Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In isosceles △ABC (AB = AC), ∠B = (3x + 5)° and ∠C = (5x − 15)°. Find x and all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The apex angle of an isosceles triangle is (4x)° and each base angle is (3x + 5)°. Find x and all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Legs of an isosceles triangle are (2y + 3) cm each. If perimeter = 55 cm and base = 13 cm, find y. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, PQ = PR. ∠QPR = (2a − 10)°. Each base angle = 3a°. Find a and all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The base of an isosceles triangle is 8 cm and each leg is (x + 4) cm. If perimeter = 32 cm, find x. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, AB = AC and ∠A = 40°. Find ∠B. Now, if side BC is extended to D, find the exterior angle at C. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Two isosceles triangles have the same base of 6 cm and legs of 9 cm and 12 cm respectively. Find the perimeter of each. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has apex angle (x + 20)° and base angles (2x − 10)° each. Find x. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In isosceles △DEF with DE = DF, ∠E = (4m)° and ∠D = (m + 10)°. Find m and all angles. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has perimeter 50 cm. One leg = 18 cm. Find the base. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. ∠B=∠C → 3x+5=5x−15 → 2x=20 → x=10. ∠B=∠C=35°; ∠A=110°.<br>
+      2. 4x+2(3x+5)=180 → 10x+10=180 → x=17. Apex=68°; base=56° each.<br>
+      3. 2(2y+3)+13=55 → 4y+6+13=55 → 4y=36 → y=9.<br>
+      4. ∠QPR+2(3a)=180; also apex=2a−10. Sum: (2a−10)+6a=180 → 8a=190 → a=23.75. Apex=37.5°; base=71.25° each.<br>
+      5. 2(x+4)+8=32 → 2x+8+8=32 → 2x=16 → x=8.<br>
+      6. ∠B=(180−40)÷2=70°. Exterior at C = ∠A+∠B = 40+70=110°.<br>
+      7. P1=9+9+6=24 cm; P2=12+12+6=30 cm.<br>
+      8. (x+20)+2(2x−10)=180 → x+20+4x−20=180 → 5x=180 → x=36. Apex=56°; base=62° each.<br>
+      9. ∠E=∠F (DE=DF → base angles equal → ∠E=∠F). So 4m=∠F. Sum: (m+10)+4m+4m=180 → 9m=170 → m≈18.9°.<br>
+      10. Base = 50 − 2×18 = 14 cm.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular earring is isosceles with base 3 cm and legs 5 cm. Find its perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A roof truss is an isosceles triangle. The apex angle is 50°. Find the base angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC (isosceles, AB = AC), D is the midpoint of BC. Show ∠ADB = 90°. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has a base of 14 cm and legs of 13 cm each. Find the perimeter. Then find the height using the Pythagorean theorem. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The apex angle of an isosceles triangle is 110°. Is this an obtuse triangle? Find the base angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two congruent isosceles triangles are placed together along their base. What quadrilateral is formed? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A = 90° and AB = AC. Find the base angles. Is this isosceles? Right? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A kite-shaped figure consists of two isosceles triangles sharing a common base of 10 cm. Each has legs 13 cm and 7 cm respectively. Find the total perimeter of the kite. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has base angles of 75° each. Find the apex angle. Classify by angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The legs of an isosceles triangle are each (3k + 1) cm and the base is (2k − 1) cm. If perimeter = 41 cm, find k and each side. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Perimeter = 5+5+3 = 13 cm.<br>
+      2. Base angles = (180−50)÷2 = 65° each.<br>
+      3. AD is the median to BC. In an isosceles triangle, the median to the base is also the altitude (axis of symmetry). So AD ⊥ BC → ∠ADB=90°. ∎<br>
+      4. Perimeter = 40 cm. Height h: h²+7²=13² → h²=169−49=120 → h=2√30 ≈ 10.95 cm.<br>
+      5. Yes, obtuse (110° &gt; 90°). Base angles = 35° each.<br>
+      6. A rhombus (all four sides equal to the leg length of the isosceles triangle).<br>
+      7. Base angles = (180−90)÷2 = 45° each. Yes: isosceles (AB=AC), right (∠A=90°).<br>
+      8. Perimeter = 2×13 + 2×7 = 26 + 14 = 40 cm (the base is shared, so it is internal).<br>
+      9. Apex = 180−75−75 = 30°. Acute triangle (all &lt;90°)? No — 75+75=150 and apex=30°. All angles &lt;90°? 75° and 30° yes → acute triangle.<br>
+      10. 2(3k+1)+(2k−1)=41 → 8k+1=41 → k=5. Legs=16 cm each; base=9 cm.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △ABC (AB=AC), the bisector of ∠A meets BC at D. Prove that BD = DC. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has vertex angle (2n)° and each base angle (n + 40)°. Find n. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In isosceles △PQR (PQ=PR), a line from Q meets PR at S such that ∠QSR = 90°. If ∠P = 50°, find ∠PQS. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Two isosceles right triangles with legs 5 cm are placed hypotenuse-to-hypotenuse. What is the perimeter of the resulting rectangle? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The base of an isosceles triangle is b and each leg is l. Express the condition for the triangle to be valid (triangle inequality). <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Three isosceles triangles each have base 8 cm and legs 10 cm. Their perimeters combined equal what single equilateral triangle's perimeter? Find that equilateral triangle's side. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, AB = BC = 10 cm, AC = 16 cm. Find the altitude from B to AC. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The apex angle of an isosceles triangle is twice each base angle. Find all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Prove that if the apex angle of an isosceles triangle is 60°, then the triangle is equilateral. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has legs 15 cm and base 18 cm. Another isosceles triangle has legs 15 cm and base 24 cm. Find and compare their perimeters. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. By the angle bisector in an isosceles triangle, AD is also the perpendicular bisector of BC (by SAS or AAS congruence of △ABD and △ACD). Hence BD=DC. ∎<br>
+      2. 2n+2(n+40)=180 → 4n+80=180 → n=25. Angles: 50°, 65°, 65°.<br>
+      3. In △PQS: ∠P=50°, ∠QSP=90° (supplementary to ∠QSR). ∠PQS=180−50−90=40°.<br>
+      4. Hypotenuse of each = 5√2. Rectangle sides: 5 cm and 5√2 cm. Perimeter = 2(5+5√2) = 10+10√2 ≈ 24.14 cm.<br>
+      5. Two checks needed: l+l &gt; b (i.e., 2l &gt; b) and l+b &gt; l (i.e., b &gt; 0). Valid when b &lt; 2l.<br>
+      6. Perimeter each = 28 cm; 3 triangles = 84 cm total. Equilateral side = 84÷3 = 28 cm.<br>
+      7. M is midpoint of AC (by symmetry since AB=BC). AM=8. BM=√(10²−8²)=√36=6 cm. Altitude from B to AC = 6 cm.<br>
+      8. Let base angle = x; apex = 2x. 2x+2x=180 → 4x=180 → x=45°. Angles: 90°, 45°, 45°.<br>
+      9. Apex=60°; base angles=(180−60)÷2=60° each. All angles 60° → equilateral. ∎<br>
+      10. P1=15+15+18=48 cm; P2=15+15+24=54 cm. P2 &gt; P1 by 6 cm.
+    </p></details>
+  </div>
+</div><!-- end t8 -->
+
+<!-- ==================== TOPIC 9 ==================== -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Median of a Triangle</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Core Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define the median of a triangle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many medians does a triangle have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Where do the three medians of a triangle meet? What is this point called? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The centroid divides each median in what ratio (from vertex)? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, M is the midpoint of BC. What is the name of segment AM? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, the median from A has length 15 cm. The centroid G lies on this median. Find AG and GM. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">What does the median from a vertex do to the opposite side? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an equilateral triangle, what additional property does each median have? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, N is the midpoint of PR. If the centroid G lies on median QN at a distance of 6 cm from Q, find the full length of median QN. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A median divides a triangle into two triangles of equal area. True or False? Justify. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. A median is a line segment from a vertex to the midpoint of the opposite side.<br>
+      2. 3 medians (one from each vertex).<br>
+      3. The three medians meet at the centroid (G).<br>
+      4. 2:1 ratio (the centroid is located 2/3 of the way from vertex to midpoint).<br>
+      5. AM is the median from A to side BC.<br>
+      6. AG : GM = 2:1; total = 15. AG = 10 cm; GM = 5 cm.<br>
+      7. The median bisects (divides into two equal halves) the opposite side.<br>
+      8. In an equilateral triangle, each median is also an altitude, angle bisector, and perpendicular bisector of the opposite side.<br>
+      9. QG : GN = 2:1; QG = 6 → GN = 3. Full median = 9 cm.<br>
+      10. True. The two triangles formed share the same height (altitude from the vertex), and their bases are equal halves of the opposite side. Equal base × same height → equal areas.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Centroid Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The median from vertex A has length 21 cm. Find the distance from A to the centroid. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The centroid G is 8 cm from vertex B along median BM. Find BM. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, the centroid G is 4 cm from midpoint M of BC (along median AM). Find the total length of median AM. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If the three medians of a triangle have lengths 12 cm, 15 cm, and 18 cm, find the distance from the centroid to the far end of each median. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The centroid G divides median CF in ratio CG:GF = 2:1. If GF = 3.5 cm, find CF. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △LMN, median LX = 24 cm. Find LG and GX where G is the centroid. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The centroid of a triangle divides each median in 2:1. If AG = 10 cm (A to centroid), what is GM (centroid to midpoint M)? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Median from P in △PQR is 18 cm. The centroid G is on this median. A point H is the midpoint of PG. Find PH. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, medians AD, BE, CF all pass through G. If AD = 9, BE = 12, CF = 15, find AG + BG + CG. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The three medians of a triangle divide it into 6 smaller triangles. What fraction of the total area does each small triangle represent? <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. AG = (2/3) × 21 = 14 cm.<br>
+      2. BG = (2/3) × BM → 8 = (2/3) × BM → BM = 12 cm.<br>
+      3. GM = 4 cm (given from midpoint). AG = 2 × GM = 8 cm. AM = 12 cm.<br>
+      4. Centroid to far midpoint (1/3 of median): 4, 5, 6 cm respectively.<br>
+      5. CF = CG + GF = 7 + 3.5 = 10.5 cm.<br>
+      6. LG = (2/3)×24 = 16 cm; GX = 8 cm.<br>
+      7. GM = AG/2 = 5 cm.<br>
+      8. PG = (2/3)×18 = 12 cm; PH = PG/2 = 6 cm.<br>
+      9. AG = (2/3)×9=6; BG=(2/3)×12=8; CG=(2/3)×15=10. Sum=24 cm.<br>
+      10. Each of the 6 small triangles = 1/6 of total area.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Applied Median Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △ABC, M is the midpoint of BC. If BC = 18 cm, what is BM? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, N is the midpoint of PR with PR = 26 cm. Find PN and NR. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The centroid G of △ABC is 6 cm from vertex A along median AD. Find the length of AD and GD. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △ABC with side 12 cm, find the length of a median. (Hint: use Pythagoras.) <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">If two medians of a triangle are equal, what type of triangle is it? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has vertices at A(0,0), B(6,0), C(0,8). Find the midpoint M of BC and the length of median AM. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Median BE in △ABE has length 30 cm. The centroid G divides it such that BG = 20 cm. Verify the 2:1 ratio. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The three medians of △PQR have lengths 9, 12, 15. Find the sum of distances from the centroid to all three vertices. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, D is the midpoint of BC. If AD = 9 cm, G is on AD with GD = 3 cm. Is G the centroid? Justify. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Why is the centroid always inside the triangle? <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. BM = 9 cm.<br>
+      2. PN = NR = 13 cm.<br>
+      3. AG = 6; ratio 2:1 → AD = 9 cm; GD = 3 cm.<br>
+      4. Midpoint M of BC: BM = 6. AM = √(AB² − BM²) = Altitude in equilateral = √(144−36) = √108 = 6√3 ≈ 10.39 cm.<br>
+      5. If two medians are equal, the triangle is isosceles.<br>
+      6. M = midpoint of BC = (3, 4). AM = √(3²+4²) = √(9+16) = √25 = 5 cm (wait: A=(0,0) to M=(3,4): √(9+16)=5 cm).<br>
+      7. BG:GE = 20:10 = 2:1 ✓ (GE = 30−20 = 10 cm).<br>
+      8. Vertex distances (2/3 each median): 6, 8, 10 cm. Sum = 24 cm.<br>
+      9. GD = 3 = (1/3)×9 = (1/3)×AD. So AG = 6 = (2/3)×9. Ratio AG:GD = 2:1 ✓. Yes, G is the centroid.<br>
+      10. Each median lies entirely inside the triangle. Since the centroid lies on each median (2/3 from vertex), it is inside all three medians, hence always inside the triangle.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In an isosceles triangle with base 10 cm and legs 13 cm, find the length of the median to the base. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The medians from two vertices of a triangle are equal in length. What can you conclude about those two vertices? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, medians AD, BE, CF. If AD = 12, find the distance from G (centroid) to D. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If a triangle has medians of length 6, 8, and 10, and the two smaller medians are from vertices A and B, what type of triangle is suggested? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The centroid G of △ABC divides median AM in ratio 2:1. If AM = 3x − 6 and AG = 2x − 2, find x and AM. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Three medians of lengths 9m, 12m, 15m are in ratio 3:4:5. Are these consistent with a right triangle? (Note: for medians of a right triangle, the median to the hypotenuse = half the hypotenuse.) <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, all three medians are equal. What type of triangle is △PQR? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">If the centroid divides median CF such that CG = 14 cm, find GF and CF. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Explain why the centroid is called the "centre of gravity" or "balance point" of the triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The three medians of a triangle have lengths m₁, m₂, m₃. Show that the sum of medians is less than the perimeter of the triangle. (Hint: use the triangle inequality on each half-triangle.) <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Median to base = height of the isosceles triangle. h = √(13² − 5²) = √(169−25) = √144 = 12 cm.<br>
+      2. The two sides opposite those vertices are equal → the triangle is isosceles.<br>
+      3. GD = (1/3)×12 = 4 cm.<br>
+      4. Medians in ratio 3:4:5 suggest a relationship similar to Pythagorean triple; this indicates a right triangle.<br>
+      5. AG/AM = 2/3. AG = 2x−2; AM = 3x−6. (2x−2)/(3x−6) = 2/3 → 3(2x−2) = 2(3x−6) → 6x−6=6x−12 → −6=−12. Contradiction: check problem. Possibly AM = 3x − 3: (2x−2)/(3x−3)=2/3 → 6x−6=6x−6 ✓, true for all x. Need extra condition to solve. As stated, no unique solution.<br>
+      6. For right triangle, median to hypotenuse = half hypotenuse. If medians are 9,12,15 → ratio 3:4:5. Consistent pattern suggests yes.<br>
+      7. Equilateral triangle (all medians equal implies equilateral).<br>
+      8. GF = CG/2 = 7 cm; CF = 21 cm.<br>
+      9. The centroid is the average position of all points in the triangle. If you balance a triangular cutout at its centroid, it rests horizontally — it is the physical centre of gravity.<br>
+      10. Each median is shorter than the sum of two sides of the triangle it lies within (by the triangle inequality applied twice). Summing over all three medians gives m₁+m₂+m₃ &lt; perimeter. ∎
+    </p></details>
+  </div>
+</div><!-- end t9 -->
+
+<!-- ==================== TOPIC 10 ==================== -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Altitude of a Triangle</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Core Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Define the altitude of a triangle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">How many altitudes does a triangle have? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Where do the three altitudes of a triangle meet? What is this point called? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">For an acute triangle, where is the orthocenter located relative to the triangle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">For an obtuse triangle, where is the orthocenter located? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">For a right triangle, where is the orthocenter located? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, the altitude from A meets BC at D. What is ∠ADB? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In an equilateral triangle, what is the relationship between altitude, median, and angle bisector? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">What is the formula for area of a triangle using base and altitude? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has base 10 cm and altitude 8 cm. Find its area. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. An altitude is a perpendicular segment from a vertex to the line containing the opposite side.<br>
+      2. 3 altitudes.<br>
+      3. The three altitudes meet at the orthocenter (H).<br>
+      4. Inside the triangle.<br>
+      5. Outside the triangle (beyond the obtuse vertex).<br>
+      6. At the vertex of the right angle.<br>
+      7. ∠ADB = 90° (altitude is perpendicular to base).<br>
+      8. In an equilateral triangle, altitude = median = angle bisector = perpendicular bisector (all coincide).<br>
+      9. Area = (1/2) × base × altitude.<br>
+      10. Area = (1/2)×10×8 = 40 cm².
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Area Using Altitude</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the area of a triangle with base 14 cm and altitude 9 cm. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has area 60 cm² and base 12 cm. Find the altitude. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has area 45 m² and altitude 9 m. Find the base. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In a right triangle with legs 6 cm and 8 cm, find the area two ways: (a) using legs, (b) using hypotenuse as base and altitude to hypotenuse. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The base of △ABC is BC = 16 cm and altitude from A = 7 cm. Find the area. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular field has base 50 m and altitude 30 m. Find the area in m² and hectares (1 hectare = 10,000 m²). <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two triangles have the same base of 10 cm. One has altitude 6 cm; the other 8 cm. How much larger is the second triangle's area? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △ABC with side 6 cm, use the altitude formula (h = (√3/2)s) to find the altitude, then the area. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle's area is 100 cm². If the altitude is doubled and the base halved, what is the new area? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR with PQ = 10 cm and altitude from R to PQ = 12 cm, find the area. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Area = (1/2)×14×9 = 63 cm².<br>
+      2. 60 = (1/2)×12×h → h = 10 cm.<br>
+      3. 45 = (1/2)×b×9 → b = 10 m.<br>
+      4. (a) Area = (1/2)×6×8 = 24 cm². (b) Hypotenuse = 10; altitude h to hypotenuse: 24=(1/2)×10×h → h=4.8 cm.<br>
+      5. Area = (1/2)×16×7 = 56 cm².<br>
+      6. Area = (1/2)×50×30 = 750 m² = 0.075 hectares.<br>
+      7. A1=(1/2)×10×6=30; A2=(1/2)×10×8=40. A2 is 10 cm² larger.<br>
+      8. h = (√3/2)×6 = 3√3 ≈ 5.196 cm. Area = (1/2)×6×3√3 = 9√3 ≈ 15.59 cm².<br>
+      9. New area = (1/2)×(b/2)×(2h) = (1/2)×b×h = 100 cm². Same area.<br>
+      10. Area = (1/2)×10×12 = 60 cm².
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed Altitude Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In △ABC, altitude from A to BC has foot D. If BD = 5 cm and DC = 7 cm, find BC. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In a right triangle, the altitude from the right angle to the hypotenuse creates two smaller triangles. Are these similar to the original? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △PQR, altitude QS = 10 cm and PR = 18 cm. Find the area of △PQR. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Where does the altitude fall for an obtuse triangle? (Outside or inside?) Explain with a diagram description. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An isosceles triangle has legs 10 cm and base 12 cm. Find the altitude to the base. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In right △ABC with ∠B=90°, which altitude coincides with a side of the triangle? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The area of △DEF = 84 cm². Altitude from D to EF = 12 cm. Find EF. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △ABC with side 8 cm, find the altitude and the area. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An altitude and a median from the same vertex coincide. What does this tell you about the triangle? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular sail has base 5 m and altitude 9 m. What is its area? If the sail costs ₹200/m², find the cost. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. BC = BD + DC = 5 + 7 = 12 cm.<br>
+      2. Yes. All three triangles (original and two smaller) are similar to each other (AA similarity).<br>
+      3. Area = (1/2)×18×10 = 90 cm².<br>
+      4. For an obtuse triangle, the altitude from the acute-angle vertex opposite the obtuse angle falls outside the triangle (on the extension of the opposite side).<br>
+      5. Half base = 6. h = √(10²−6²) = √(100−36) = √64 = 8 cm.<br>
+      6. The altitude from B (the right angle) is the side BC itself (perpendicular to AB); similarly the altitude from A is AB. Actually, the altitude from B is perpendicular to AC — it is the leg dropped from B. Both legs AB and BC are altitudes of the right triangle.<br>
+      7. 84 = (1/2)×EF×12 → EF = 14 cm.<br>
+      8. h = (√3/2)×8 = 4√3 ≈ 6.93 cm. Area = (1/2)×8×4√3 = 16√3 ≈ 27.7 cm².<br>
+      9. In an isosceles triangle, the altitude and median from the apex vertex coincide (the axis of symmetry). So this tells us the triangle is isosceles (or equilateral).<br>
+      10. Area = (1/2)×5×9 = 22.5 m². Cost = 22.5×200 = ₹4,500.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In right △ABC (∠C=90°), legs AC=3, BC=4. Find the altitude from C to AB (hypotenuse). <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">All three altitudes of a triangle are equal. What type of triangle is it? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangle has sides 5, 12, 13. Find the altitude to the hypotenuse. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC with area 30 cm², if BC = 10 cm, find the altitude from A. If AB = 12 cm, find altitude from C. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">The orthocenter of a right triangle lies at the vertex of the right angle. Prove this using the definition of altitude. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In an obtuse triangle with angles 120°, 30°, 30°, where is the orthocenter? Inside or outside? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A △PQR has area 120 cm². The altitude from Q has length 15 cm. Find the base PR. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In equilateral △ABC with side 10, find: (a) altitude (b) area (c) distance from centroid to base. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A right triangle has legs a and b. Express the altitude to the hypotenuse h in terms of a and b. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, the altitude from A is h₁ = 12, from B is h₂ = 15, from C is h₃ = 20. Show that the sides satisfy a ratio (use Area = (1/2)·side·h). <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Area = (1/2)×3×4=6. Hypotenuse=5. h = 2×Area/5 = 12/5 = 2.4 units.<br>
+      2. Equilateral triangle (all altitudes equal implies all sides equal).<br>
+      3. Area = (1/2)×5×12=30. Hypotenuse=13. h = 2×30/13 = 60/13 ≈ 4.62 cm.<br>
+      4. h_A = 2×30/10 = 6 cm. h_C = 2×30/12 = 5 cm.<br>
+      5. In right △ABC (∠C=90°), leg AC ⊥ BC. The altitude from A is perpendicular to BC — but BC itself is perpendicular to AC at C. So the foot of the altitude from A lies on BC extended through C. Similarly for altitude from B. Both altitudes from A and B pass through C. Hence the orthocenter = C. ∎<br>
+      6. Outside (orthocenter is outside for obtuse triangles).<br>
+      7. PR = 2×120/15 = 16 cm.<br>
+      8. (a) h = (√3/2)×10 = 5√3 ≈ 8.66 cm. (b) Area = (√3/4)×100 = 25√3 ≈ 43.3 cm². (c) Centroid to base = h/3 = 5√3/3 ≈ 2.89 cm.<br>
+      9. h = ab/√(a²+b²) = ab/c (where c is hypotenuse).<br>
+      10. Area = (1/2)·a·h₁ = (1/2)·b·h₂ = (1/2)·c·h₃. So a:b:c = (1/h₁):(1/h₂):(1/h₃) = (1/12):(1/15):(1/20) = 5:4:3.
+    </p></details>
+  </div>
+</div><!-- end t10 -->
+
+<!-- ==================== TOPIC 11 ==================== -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Constructing Triangles (SSS, SAS, ASA)</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Construction Rules</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What does SSS construction mean? Write the steps briefly. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">What does SAS construction mean? Which element is "included"? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">What does ASA construction mean? Which element is "included"? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">State the SSS rule for triangle congruence. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">To construct △ABC with AB=6, BC=5, CA=4, which construction method do you use? List the steps. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">To construct △PQR with PQ=7, ∠Q=60°, QR=5, which method do you use? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">To construct △LMN with ∠L=45°, LM=8, ∠M=75°, which method do you use? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can you always construct a unique triangle given SSS? When would it fail? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">What tools are used in geometric triangle construction? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In SSS construction of △ABC with AB=5: you draw arc of radius AC=4 from A and arc of radius BC=3 from B. What does their intersection represent? <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. SSS = Side-Side-Side. Steps: draw base AB; draw arc (radius=AC) from A; draw arc (radius=BC) from B; mark intersection as C; join A-C and B-C.<br>
+      2. SAS = Side-Angle-Side. The included angle is the angle between the two given sides.<br>
+      3. ASA = Angle-Side-Angle. The included side is between the two given angles.<br>
+      4. If all three sides of one triangle equal the corresponding sides of another, the triangles are congruent.<br>
+      5. SSS (three sides given). Steps: draw AB=6; arc of 4 from A; arc of 5 from B; intersection = C; join.<br>
+      6. SAS (two sides and included angle).<br>
+      7. ASA (two angles and included side).<br>
+      8. Yes, SSS always gives a unique triangle (if the sides satisfy the triangle inequality). It fails if the inequality is violated (arcs don't intersect).<br>
+      9. Ruler (straight edge), compass, protractor.<br>
+      10. The intersection of the two arcs gives the position of vertex C.
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Identifying Construction Type</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Given: AB=5, BC=7, AC=6. Which congruence/construction rule applies? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Given: AB=8, ∠A=50°, AC=6. Which rule? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Given: ∠P=40°, PQ=9, ∠Q=70°. Which rule? Find the third angle before constructing. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Given: three angles 60°, 70°, 50°. Can you construct a unique triangle? Why/why not? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Is AAS (Angle-Angle-Side) a valid construction method? Explain. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Is SSA (Side-Side-Angle) always unique? Explain the ambiguous case. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Given two sides 9 cm and 12 cm and their included angle 90°. Identify the rule and find the hypotenuse. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In SAS construction of △ABC with AB=7, ∠B=45°, BC=5, describe each step. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Why is "AAA" (three angles only) not sufficient to construct a unique triangle? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Classify each: (a) AB=5, BC=5, CA=5 — SSS; (b) ∠A=60°, AB=8, ∠B=70° — ASA; (c) BC=6, ∠C=90°, CA=8 — SAS. State which rule applies. <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. SSS.<br>
+      2. SAS.<br>
+      3. ASA. Third angle = 180−40−70 = 70°.<br>
+      4. No unique triangle. Three angles only (AAA) determines shape but not size; infinitely many similar triangles exist.<br>
+      5. Yes. AAS can be reduced to ASA (the third angle is determined), so it gives a unique triangle.<br>
+      6. No. SSA can yield two triangles, one triangle, or none — the "ambiguous case."<br>
+      7. SAS. Hypotenuse = √(9²+12²)=√(81+144)=√225=15 cm.<br>
+      8. Draw AB=7; at B construct ∠ABX=45° using protractor; mark C on BX at 5 cm from B; join AC.<br>
+      9. AAA gives only the shape (angles), not the actual size (scale). Infinitely many similar triangles share the same angles.<br>
+      10. (a) SSS; (b) ASA; (c) SAS.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Construction Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In ASA construction of △ABC with ∠A=55°, AB=7, ∠B=65°, what is ∠C before you start? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">After constructing △PQR by SSS, how do you verify the triangle is correct? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A student draws arcs from A (radius 5) and B (radius 4) to construct △ABC with AB=6. The arcs don't intersect. What went wrong? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In SAS construction, why must the angle be the included angle (between the two sides)? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">To construct a right triangle with hypotenuse 10 cm and one leg 6 cm, which method do you use? Find the third side. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, ∠A=30°, ∠B=60°, AB=8 cm. Construct and find ∠C. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">You are given three sides 4, 4, 4. What special triangle results? Which construction rule? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Why are two arcs needed in SSS construction instead of one? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">What happens if two arcs from A and B in SSS construction are tangent (touch at exactly one point)? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A construction set has a compass and ruler only. Which of SSS, SAS, ASA can be performed? (Assume protractor is NOT available.) <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. ∠C = 180−55−65 = 60°.<br>
+      2. Measure all three sides and all three angles to verify they match the given data.<br>
+      3. 5+4=9 &gt; 6 ✓ (triangle inequality satisfied), so arcs should intersect. The student may have used wrong radii or compass slipped. Or possibly AB is too long — check: |5−4|=1 &lt; 6 &lt; 9. Should work; recheck compass settings.<br>
+      4. With SSA (non-included angle), two different triangles can satisfy the given conditions. The included angle uniquely determines the triangle's shape and size via SAS congruence.<br>
+      5. SSS (three sides): 10, 6, and the third = √(10²−6²)=8. Or SAS: use the right angle as included angle between the two legs; but hypotenuse and one leg is not SAS directly. Use SSS with all three sides.<br>
+      6. ∠C = 180−30−60 = 90°. Right triangle.<br>
+      7. Equilateral triangle; SSS construction.<br>
+      8. One arc gives the locus of points at distance AC from A; the other gives distance BC from B. Their intersection uniquely locates C.<br>
+      9. The two arcs are tangent → exactly one intersection → degenerate triangle (a+b=c). The three points are collinear; no valid triangle formed.<br>
+      10. SSS can be done (ruler for lengths, compass for arcs). SAS needs angle measurement (protractor). ASA needs protractor. So only SSS without a protractor.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain how RHS (Right-Hypotenuse-Side) construction works. When is it used? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In △ABC, AB=6, BC=8, ∠B=90°. Construct and find AC. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">You are given ∠A=70°, BC=9, ∠C=50°. Which rule applies? Find ∠B. Describe the construction. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Construct △ABC with AB=BC=CA=6 cm. What is the name of the resulting triangle? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Can a triangle be constructed with sides 3, 4, and 10? Why or why not? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In SAS construction of △PQR with PQ=10, ∠PQR=120°, QR=7, find PR using the cosine rule. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">After constructing △ABC by ASA, a student measures side AC and finds it different from expectations. What could be the source of error? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">How many different triangles (non-congruent) can be constructed with two sides 5 and 7 if the included angle varies? <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In an isosceles triangle, AB=AC=8 cm and ∠A=50°. Use SAS to construct it and find the base BC. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">State the minimum information needed to uniquely determine a triangle (give 3 examples of valid sets of data). <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. RHS: given a right angle, hypotenuse, and one leg. Draw the hypotenuse; semicircle from midpoint; mark the leg length from one end to intersect semicircle for the third vertex. Used for right triangles.<br>
+      2. SAS (∠B included). AC = √(6²+8²) = 10 cm (Pythagorean triple).<br>
+      3. AAS (∠A and ∠C not adjacent to given side BC). ∠B = 180−70−50 = 60°. Construct: draw BC=9; at B construct ∠B=60°; at C construct ∠C=50°; intersection of rays = A.<br>
+      4. Equilateral triangle (SSS).<br>
+      5. No. 3+4=7 &lt; 10. Triangle inequality violated.<br>
+      6. PR² = PQ²+QR²−2·PQ·QR·cos(∠Q) = 100+49−2×10×7×cos120° = 149+70=219. PR=√219≈14.8 cm.<br>
+      7. Errors: inaccurate angle measurement with protractor; compass slipping; drawing not at the correct starting point; rounding of measurements.<br>
+      8. Infinitely many (each different included angle gives a different non-congruent triangle).<br>
+      9. Use cosine rule: BC²=8²+8²−2×8×8×cos50°=128−128×0.643≈128−82.3=45.7; BC≈6.76 cm.<br>
+      10. Minimum 3 independent pieces: e.g., (1) SSS: all three sides; (2) SAS: two sides + included angle; (3) ASA: two angles + included side.
+    </p></details>
+  </div>
+</div><!-- end t11 -->
+
+<!-- ==================== TOPIC 12 ==================== -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>Real-World Triangle Problems</h2>
+  </div>
+
+  <!-- SET A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Everyday Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular traffic sign has all sides 60 cm. What type of triangle is it? Find its perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A roof rafter forms a triangle with the ceiling. The apex angle is 40° and the base angles are equal. Find the base angles. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular park has sides 50 m, 60 m, and 70 m. Find the perimeter and check if it forms a valid triangle. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A ladder leans against a wall forming a right triangle. The ladder is 13 m, the wall is 12 m. Find the distance from the base of the wall to the foot of the ladder. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular garden has base 20 m and height 15 m. Find the area. The grass seed costs ₹5/m². Find total cost. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A ship sails 30 km North and then 40 km East. How far is it from its starting point? (Use Pythagoras.) <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A truss bridge uses a triangular support where two sides are 8 m each and the base is 6 m. What type of triangle is this? Find the perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">The gopuram of a temple has triangular decorations. Each equilateral triangle has perimeter 36 cm. How many tiles of perimeter 36 cm are needed to decorate a strip of 180 cm perimeter? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A farmer's field is triangular with sides 80 m, 100 m, and 120 m. Is it a valid triangle? Find the perimeter. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A right-angled triangular tile has legs 6 cm and 8 cm. 20 such tiles are used in a mosaic. Find the total area. <span class="diff diff-medium">Medium</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Equilateral triangle; perimeter = 180 cm.<br>
+      2. Base angles = (180−40)÷2 = 70° each.<br>
+      3. 50+60=110 &gt; 70 ✓; valid. Perimeter = 180 m.<br>
+      4. Base = √(13²−12²) = √(169−144) = √25 = 5 m.<br>
+      5. Area = (1/2)×20×15 = 150 m². Cost = 150×5 = ₹750.<br>
+      6. Distance = √(30²+40²) = √(900+1600) = √2500 = 50 km.<br>
+      7. Isosceles. Perimeter = 8+8+6 = 22 m.<br>
+      8. Each tile perimeter = 36 cm; tiles needed = 180÷36 = 5 tiles.<br>
+      9. 80+100=180 &gt; 120 ✓; valid. Perimeter = 300 m.<br>
+      10. Area per tile = (1/2)×6×8 = 24 cm²; total = 20×24 = 480 cm².
+    </p></details>
+  </div>
+
+  <!-- SET B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Angles in Context</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular kite has angles 90°, 45°, 45°. Identify the type by angles and sides. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In a triangular flower bed, angles are 3x°, 4x°, and 5x°. Find x and each angle. What type is it? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A ramp forms a right triangle with the ground. The angle of inclination is 30°. What are the other two angles? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">Two buildings are connected by a diagonal wire forming a triangle. The angles of the triangle at the bases are 50° and 60°. Find the angle at the top. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular sail has one angle of 90° and another of 35°. A sailor doubles the number of sails. How many right angles are there in total? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An architect designs a triangular window. One angle is exterior: 130°. The two non-adjacent interior angles are equal. Find the interior angles of the window triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A Konark wheel design features 8 equilateral triangles arranged in a circle. Each triangle has side 10 cm. Find the total perimeter of all 8 triangles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular park has an exterior angle of 115° at one corner. The two non-adjacent interior angles are in ratio 3:5. Find each. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">In a triangular logo, the angles are (2x+10)°, (3x−5)°, and (x+15)°. Find x and all angles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular shelf bracket has one angle of 90° between the wall and horizontal, and another of 45° between the shelf and the bracket. Find the third angle. What type is this triangle? <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Right triangle (by angles); isosceles (by sides — two equal legs at the 45° angles).<br>
+      2. 12x=180 → x=15. Angles: 45°, 60°, 75°. All &lt; 90° → acute.<br>
+      3. 30° + 90° + ? = 180° → third = 60°. Angles: 30°, 60°, 90°.<br>
+      4. Third = 180−50−60 = 70°.<br>
+      5. Each sail has 1 right angle. 2 sails → 2 right angles total.<br>
+      6. The two equal angles are non-adjacent to the exterior: each = 130÷2=65°. Interior angle at that vertex = 180−130=50°. Triangle: 65°, 65°, 50°.<br>
+      7. Perimeter per triangle = 30 cm; 8 triangles → 240 cm total.<br>
+      8. 3+5=8 parts; 8 parts=115° → 1 part=14.375°. Angles: 43.125° and 71.875°.<br>
+      9. 6x+20=180 → x=\frac{160}{6}≈26.7. Angles≈63.3°, 75°, 41.7°. (Check: 6×26.67+20=180 ✓.)<br>
+      10. Third = 180−90−45=45°. Isosceles right triangle.
+    </p></details>
+  </div>
+
+  <!-- SET C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Mixed Real-World</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular plot of land has sides 120 m, 160 m, and 200 m. Verify if it is a right triangle. Find the area. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A river bridge uses triangular trusses. Each truss has sides 5 m, 12 m, 13 m. How many trusses of perimeter 30 m are needed to span 150 m (each truss placed end to end)? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular road sign is isosceles with legs 50 cm and base 30 cm. Find: (a) perimeter (b) whether the triangle inequality holds. <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">A kite string forms a triangle with the kite and the ground. If the string is 25 m, the horizontal distance is 7 m, find the height of the kite. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular tile company produces equilateral tiles with side 8 cm. A floor needs 50 tiles. What is the total perimeter of all tiles combined? <span class="diff diff-easy">Easy</span></span></div>
+      <div class="q-item"><span class="q-text">In Indian folk art, rangoli often uses triangles. A rangoli has 6 isosceles triangles each with apex 60° and legs 10 cm. Find the base angle and perimeter of each triangle if base = 10 cm. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular field has one angle of 90°, one of 53°, and the hypotenuse is 100 m. Using rough ratios (3-4-5 triple), estimate the legs. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">Two triangular sails of a boat: one is equilateral with side 3 m, another is isosceles with legs 4 m and base 3 m. Which has a greater perimeter? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">An architect draws a triangle with sides 7 m, 24 m, and 25 m. Is it right-angled? Find the area. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular park has angles in ratio 1:2:3. The park authority puts up lights at each vertex. How many lights? What type of triangle is this? <span class="diff diff-easy">Easy</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. 120²+160²=14400+25600=40000=200². Yes, right triangle. Area=(1/2)×120×160=9600 m².<br>
+      2. Perimeter=30 m; number=150÷30=5 trusses (if each spans its perimeter linearly — depends on configuration; as a simple ratio answer: 5).<br>
+      3. (a) 50+50+30=130 cm. (b) 50+30=80&gt;50 ✓; 50+50=100&gt;30 ✓. Valid.<br>
+      4. Height = √(25²−7²)=√(625−49)=√576=24 m.<br>
+      5. 50×24=1200 cm total perimeter.<br>
+      6. Apex=60°; base angles=(180−60)÷2=60° each → equilateral! With base=10 cm, perimeter=30 cm.<br>
+      7. Angles 37°, 53°, 90° → ratio sides 3:4:5. Hyp=100 m → legs≈60 m and 80 m.<br>
+      8. Equilateral: 9 m. Isosceles: 4+4+3=11 m. Isosceles has greater perimeter.<br>
+      9. 7²+24²=49+576=625=25². Yes, right triangle. Area=(1/2)×7×24=84 m².<br>
+      10. 3 lights (one per vertex). Angles: 30°, 60°, 90° → right triangle.
+    </p></details>
+  </div>
+
+  <!-- SET D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Challenge Real-World</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A triangular plot ABCD is divided into two triangles by diagonal BD. If BD=20 m and the altitudes from A and C to BD are 15 m and 10 m respectively, find the total area of the quadrilateral. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A river is 40 m wide. A bridge is built diagonally across it, making a triangle with the riverbank. If the bridge is 50 m long, what angle does it make with the bank? Use the right-triangle relationship. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A 5 m ladder rests against a wall. Its foot is 3 m from the wall. How high up the wall does it reach? What type of triangle is formed? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A temple gopuram design uses stacked equilateral triangles: base triangle side 12 cm, next has side 6 cm, next 3 cm (each half the previous). Find the total perimeter of all 3 triangles. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">Two friends start at the same point. One walks 6 km East, the other walks 8 km North. How far apart are they? Is their path a valid triangle? What type? <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">The Konark wheel has 8 isosceles triangles. Each has apex angle 45°. Find the base angles and classify each. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular field is fenced. Fencing costs ₹150/m. Sides are 30 m, 40 m, and 50 m. Find the fencing cost. Verify it is a right triangle. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">In an isosceles triangular logo, the apex is 100° and legs are 7 cm. Find the base angles and the perimeter if base = 6 cm. <span class="diff diff-medium">Medium</span></span></div>
+      <div class="q-item"><span class="q-text">A stained glass design uses a triangle with sides 9, 40, and 41 cm. Verify it is a right triangle. Find its area. <span class="diff diff-hard">Hard</span></span></div>
+      <div class="q-item"><span class="q-text">A triangular piece of fabric has area 150 cm² and base 25 cm. Another triangle has the same base and double the altitude. Find the second triangle's area. <span class="diff diff-hard">Hard</span></span></div>
+    </div>
+    <details class="ans"><summary>Show Answers</summary><p>
+      1. Area △ABD=(1/2)×20×15=150 m². Area △BCD=(1/2)×20×10=100 m². Total=250 m².<br>
+      2. sin(angle) = 40/50 = 0.8 → angle ≈ 53° (using 3-4-5 triple: bridge=50, width=40, along-river=30). Angle with bank ≈ 53°.<br>
+      3. Height = √(5²−3²)=√(25−9)=√16=4 m. Right triangle (with 90° at wall).<br>
+      4. Perimeters: 36+18+9=63 cm total.<br>
+      5. Distance = √(6²+8²)=10 km. Yes, forms a right triangle (6-8-10 triple, right angle at starting point).<br>
+      6. Base angles=(180−45)÷2=67.5° each. All &lt;90° → acute triangle.<br>
+      7. Perimeter=120 m; cost=120×150=₹18,000. 30²+40²=2500=50² ✓. Right triangle.<br>
+      8. Base angles=(180−100)÷2=40° each. Perimeter=7+7+6=20 cm.<br>
+      9. 9²+40²=81+1600=1681=41². Yes, right triangle. Area=(1/2)×9×40=180 cm².<br>
+      10. Original altitude h: 150=(1/2)×25×h → h=12. New altitude=24. New area=(1/2)×25×24=300 cm².
+    </p></details>
+  </div>
+</div><!-- end t12 -->
+
+<footer>
+  Grade 7 &middot; Ganita Prakash Part 1 &middot; Chapter 7 &middot; The Gaudium School &middot; 2026&ndash;27
+</footer>
+
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

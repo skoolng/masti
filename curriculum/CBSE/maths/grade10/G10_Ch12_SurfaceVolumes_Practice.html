@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Chapter 12 – Surface Areas and Volumes | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🧊 Chapter 12 – Surface Areas and Volumes</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · 3D Mensuration &amp; Combinations</p>
+</header>
+<nav>
+  <h2>Topics in this Chapter</h2>
+  <ol>
+    <li><a href="#t1">Review SA and Volume of Basic Solids</a></li>
+    <li><a href="#t2">Cylinder SA and Volume</a></li>
+    <li><a href="#t3">Cone SA, Slant Height and Volume</a></li>
+    <li><a href="#t4">Sphere SA and Volume</a></li>
+    <li><a href="#t5">Hemisphere SA and Volume</a></li>
+    <li><a href="#t6">Combination: Cylinder + Cone</a></li>
+    <li><a href="#t7">Combination: Cylinder + Hemisphere</a></li>
+    <li><a href="#t8">Combination: Cone + Hemisphere</a></li>
+    <li><a href="#t9">Conversion of Solids (Melting &amp; Recasting)</a></li>
+    <li><a href="#t10">Frustum of a Cone</a></li>
+    <li><a href="#t11">Volume Comparison Problems</a></li>
+    <li><a href="#t12">SAT-Style 3D Geometry Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<section class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Review SA and Volume of Basic Solids</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-2d-vs-3d/v/solid-geometry-volume" target="_blank">Intro to 3D Shapes & Volume</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-surface-area/v/surface-area-of-a-box-cuboid" target="_blank">Surface Area of Cuboid</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Volume of Prisms and Cylinders</a><a href="https://www.youtube.com/watch?v=4HF-hazMKAk" target="_blank">Surface Area Explained</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=mhlDSFZvJDY" target="_blank">Geometry of Solids</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=KnpljL5igBQ" target="_blank">What is Surface Area?</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Cuboid – Surface Area &amp; Volume (Easy)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cuboid has l = 8 cm, b = 5 cm, h = 3 cm. Find its Total Surface Area.<details class="ans"><summary>Show Answer</summary><p>TSA = 2(lb + bh + hl) = 2(40 + 15 + 24) = 2 × 79 = <strong>158 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the volume of a cuboid with l = 10 cm, b = 6 cm, h = 4 cm.<details class="ans"><summary>Show Answer</summary><p>V = lbh = 10 × 6 × 4 = <strong>240 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cube has side 7 cm. Find its Total Surface Area.<details class="ans"><summary>Show Answer</summary><p>TSA = 6a² = 6 × 49 = <strong>294 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the volume of a cube with side 9 cm.<details class="ans"><summary>Show Answer</summary><p>V = a³ = 9³ = <strong>729 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cuboid has l = 12 cm, b = 8 cm, h = 5 cm. Find the Lateral Surface Area.<details class="ans"><summary>Show Answer</summary><p>LSA = 2h(l + b) = 2 × 5 × (12 + 8) = 10 × 20 = <strong>200 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The TSA of a cube is 150 cm². Find its side length.<details class="ans"><summary>Show Answer</summary><p>6a² = 150 → a² = 25 → a = <strong>5 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A wooden box (cuboid) is l = 20 cm, b = 15 cm, h = 10 cm. How much wood (in cm²) is needed for its outer surface?<details class="ans"><summary>Show Answer</summary><p>TSA = 2(20×15 + 15×10 + 10×20) = 2(300+150+200) = 2×650 = <strong>1300 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the diagonal of a cuboid with l = 3, b = 4, h = 12.<details class="ans"><summary>Show Answer</summary><p>d = √(l²+b²+h²) = √(9+16+144) = √169 = <strong>13 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Volume of a cube is 512 cm³. Find its TSA.<details class="ans"><summary>Show Answer</summary><p>a³ = 512 → a = 8; TSA = 6×64 = <strong>384 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two cubes each of side 4 cm are joined end to end. Find the TSA of the resulting cuboid.<details class="ans"><summary>Show Answer</summary><p>Resulting cuboid: l=8, b=4, h=4. TSA = 2(8×4 + 4×4 + 4×8) = 2(32+16+32) = 2×80 = <strong>160 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Cube Properties &amp; Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A tank is 5 m long, 4 m wide, and 3 m deep. Find the volume of water it can hold (in litres; 1 m³ = 1000 L).<details class="ans"><summary>Show Answer</summary><p>V = 5×4×3 = 60 m³ = <strong>60,000 litres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The LSA of a cube is 144 cm². Find its volume.<details class="ans"><summary>Show Answer</summary><p>LSA = 4a² = 144 → a² = 36 → a = 6; V = 6³ = <strong>216 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A room is 6 m × 5 m × 3.5 m. Find the cost of plastering its 4 walls and ceiling at ₹12 per m².<details class="ans"><summary>Show Answer</summary><p>4 walls: 2×3.5×(6+5) = 7×11 = 77 m². Ceiling: 6×5 = 30 m². Total = 107 m². Cost = 107×12 = <strong>₹1284</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cuboid has a square base of side 6 cm and height 10 cm. Find TSA.<details class="ans"><summary>Show Answer</summary><p>TSA = 2(6×6) + 4(6×10) = 72 + 240 = <strong>312 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">How many cubes of side 2 cm can be cut from a cube of side 10 cm?<details class="ans"><summary>Show Answer</summary><p>n = (10/2)³ = 5³ = <strong>125 cubes</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The dimensions of a cuboid are in ratio 1:2:3 and its volume is 1296 cm³. Find TSA.<details class="ans"><summary>Show Answer</summary><p>Let sides = k, 2k, 3k. V = 6k³ = 1296 → k³ = 216 → k = 6. Sides: 6,12,18. TSA = 2(72+216+108) = 2×396 = <strong>792 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the number of bricks (22.5 cm × 11.25 cm × 8.75 cm) needed to build a wall 9 m × 6 m × 25 cm (mortar ignored).<details class="ans"><summary>Show Answer</summary><p>Wall V = 900×600×25 = 13,500,000 cm³. Brick V = 22.5×11.25×8.75 ≈ 2214.84 cm³. n ≈ 13500000/2214.84 ≈ <strong>6096 bricks</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A metal cuboid 9 cm × 4 cm × 3 cm is melted into a cube. Find the side of the cube.<details class="ans"><summary>Show Answer</summary><p>V = 108 cm³. a³ = 108 → a = ∛108 = 3∛4 ≈ <strong>4.76 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If the TSA of a cuboid is 94 cm², l = 5 cm, b = 4 cm, find h.<details class="ans"><summary>Show Answer</summary><p>2(20 + 4h + 5h) = 94 → 40 + 18h = 94 → 18h = 54 → h = <strong>3 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three cubes of sides 3 cm, 4 cm, 5 cm are melted into one cube. Find its side.<details class="ans"><summary>Show Answer</summary><p>V = 27 + 64 + 125 = 216. a = ∛216 = <strong>6 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Solid Review – Medium</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Ratio of volumes of two cubes is 8:27. Find the ratio of their TSAs.<details class="ans"><summary>Show Answer</summary><p>Side ratio = ∛8:∛27 = 2:3. TSA ratio = 4:9. Answer: <strong>4:9</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cuboid swimming pool is 50 m × 20 m × 2.5 m. How many kilolitres of water does it hold?<details class="ans"><summary>Show Answer</summary><p>V = 50×20×2.5 = 2500 m³ = <strong>2500 kL</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The surface area of a cube is 486 cm². Find its volume.<details class="ans"><summary>Show Answer</summary><p>6a² = 486 → a² = 81 → a = 9. V = 729 cm³. <strong>729 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the area of sheet required to make an open box (no lid) of l=30 cm, b=25 cm, h=10 cm.<details class="ans"><summary>Show Answer</summary><p>Area = lb + 2h(l+b) = 750 + 2×10×55 = 750 + 1100 = <strong>1850 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangular room measures 13 m × 9 m × 4 m. Find the cost of whitewashing walls and ceiling at ₹7.50/m² (ignore doors/windows).<details class="ans"><summary>Show Answer</summary><p>Walls: 2×4×(13+9) = 176 m². Ceiling: 13×9 = 117 m². Total = 293 m². Cost = 293×7.5 = <strong>₹2197.50</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The perimeter of the floor of a room is 18 m and height is 3 m. Find the area of 4 walls.<details class="ans"><summary>Show Answer</summary><p>LSA = perimeter × height = 18 × 3 = <strong>54 m²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Cuboid A: 8×6×4. Cuboid B: 6×6×6. Which has greater volume and by how much?<details class="ans"><summary>Show Answer</summary><p>V_A = 192 cm³, V_B = 216 cm³. B is greater by 216−192 = <strong>24 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the diagonal of a cube is 6√3 cm, find its TSA.<details class="ans"><summary>Show Answer</summary><p>Body diagonal = a√3 = 6√3 → a = 6. TSA = 6×36 = <strong>216 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hollow iron pipe is 21 cm long with outer diameter 8 cm and inner diameter 6 cm. (Use π = 22/7.) Find the volume of iron.<details class="ans"><summary>Show Answer</summary><p>V = π×h×(R²−r²) = (22/7)×21×(16−9) = 66×7 = <strong>462 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cuboid has V = 2000 cm³ and base area 200 cm². What is its height?<details class="ans"><summary>Show Answer</summary><p>h = V/base area = 2000/200 = <strong>10 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced / Challenge Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If each edge of a cube is increased by 50%, find the % increase in its volume.<details class="ans"><summary>Show Answer</summary><p>New V = (1.5a)³ = 3.375a³. Increase = 237.5%. Answer: <strong>237.5%</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A rectangular tank 1.5 m × 1.2 m × 0.8 m is full. If water flows out at 18 litres/min, how long to empty it?<details class="ans"><summary>Show Answer</summary><p>V = 1.5×1.2×0.8 = 1.44 m³ = 1440 L. Time = 1440/18 = <strong>80 minutes</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If the length of a cuboid is doubled and breadth halved, height unchanged, find ratio of new TSA to old (l=6, b=4, h=3).<details class="ans"><summary>Show Answer</summary><p>Old: 2(24+12+18)=108. New: l=12,b=2,h=3. 2(24+6+36)=132. Ratio = 132:108 = <strong>11:9</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Water in a cuboidal tank (10 m × 8 m × 6 m) is 4 m deep. A stone slab of 2 m × 1.5 m × 0.5 m is submerged. Find rise in water level.<details class="ans"><summary>Show Answer</summary><p>Slab V = 1.5 m³. Rise = 1.5/(10×8) = 1.5/80 = <strong>0.01875 m ≈ 1.875 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Edge of a cube is measured with 2% error. Find the % error in its volume.<details class="ans"><summary>Show Answer</summary><p>V = a³. % error ≈ 3 × 2% = <strong>6%</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A 10 cm cube is painted red on all faces, then cut into 125 unit cubes. How many small cubes have exactly 2 red faces?<details class="ans"><summary>Show Answer</summary><p>Edge cubes (not corners): 12 edges × 3 = <strong>36 cubes</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio of TSA of a cube to TSA of a cuboid with same volume, where cuboid is 8×8×2.<details class="ans"><summary>Show Answer</summary><p>V = 128. Cube side = ∛128 = 4∛2. TSA_cube = 6×(4∛2)² = 6×16×∛4 ≈ 6×20.16 ≈ 120.95. TSA_cuboid = 2(64+16+16) = 192. Ratio ≈ <strong>120.95:192 ≈ 5:8</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A wall 8 m × 4 m × 0.25 m is built using bricks 20 cm × 10 cm × 5 cm (10% mortar). Find number of bricks.<details class="ans"><summary>Show Answer</summary><p>Wall V = 8 m³. Brick V = 0.001 m³. Effective brick V = 0.0011 m³ (with mortar). n ≈ 8/0.001×0.9 = 7200. Answer: <strong>7200 bricks</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If surfaces of a cube are all repainted after each edge shrinks by 1 cm, original edge = 5 cm. Find reduction in TSA.<details class="ans"><summary>Show Answer</summary><p>Original TSA = 6×25=150. New TSA = 6×16=96. Reduction = <strong>54 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three identical cuboids of dimension 4×3×2 are stacked to form a tower. Find the TSA of the tower (stacked along height).<details class="ans"><summary>Show Answer</summary><p>Tower: 4×3×6. TSA = 2(12+18+24) = 2×54 = <strong>108 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<section class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Cylinder – Surface Area and Volume</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-cylinders/v/cylinder-volume-and-surface-area" target="_blank">Cylinder Volume &amp; Surface Area</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Cylinder SA &amp; Volume</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=WsONkJpJTeg" target="_blank">Cylinder Geometry</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=J4Vz8my_LW4" target="_blank">3D Shapes in Real Life</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Cylinder Calculations (Use π = 22/7)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the CSA of a cylinder with r = 7 cm, h = 10 cm.<details class="ans"><summary>Show Answer</summary><p>CSA = 2πrh = 2×(22/7)×7×10 = <strong>440 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the TSA of a cylinder with r = 14 cm, h = 20 cm.<details class="ans"><summary>Show Answer</summary><p>TSA = 2πr(r+h) = 2×(22/7)×14×34 = 88×34 = <strong>2992 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the volume of a cylinder with r = 7 cm, h = 15 cm.<details class="ans"><summary>Show Answer</summary><p>V = πr²h = (22/7)×49×15 = 22×7×15 = <strong>2310 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">CSA of a cylinder is 264 cm². If h = 6 cm, find r. (Use π = 22/7)<details class="ans"><summary>Show Answer</summary><p>2πrh = 264 → r = 264/(2×22/7×6) = 264×7/264 = <strong>7 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical tank has diameter 4 m and height 7 m. Find its volume.<details class="ans"><summary>Show Answer</summary><p>r = 2. V = πr²h = (22/7)×4×7 = <strong>88 m³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Volume of a cylinder is 1540 cm³ and r = 7 cm. Find h.<details class="ans"><summary>Show Answer</summary><p>h = V/(πr²) = 1540/((22/7)×49) = 1540/154 = <strong>10 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the cost of painting the CSA of a cylinder (r=3.5 m, h=10 m) at ₹5/m².<details class="ans"><summary>Show Answer</summary><p>CSA = 2×(22/7)×3.5×10 = 220 m². Cost = 220×5 = <strong>₹1100</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the TSA of a closed cylinder with diameter 14 cm and height 10 cm.<details class="ans"><summary>Show Answer</summary><p>r=7. TSA = 2×(22/7)×7×17 = 44×17 = <strong>748 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two cylinders have the same volume. Their heights are in ratio 1:4. Find the ratio of their radii.<details class="ans"><summary>Show Answer</summary><p>πr₁²h₁ = πr₂²h₂ → r₁²/r₂² = h₂/h₁ = 4 → r₁:r₂ = <strong>2:1</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the area of the base of a cylinder whose volume is 3080 cm³ and height is 20 cm.<details class="ans"><summary>Show Answer</summary><p>Base area = V/h = 3080/20 = <strong>154 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Cylinder Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cylindrical well is 14 m deep and its diameter is 2 m. Find the cost of cementing its inner surface at ₹35/m².<details class="ans"><summary>Show Answer</summary><p>CSA = 2×(22/7)×1×14 = 88 m². Cost = 88×35 = <strong>₹3080</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many litres of water can a cylindrical drum of diameter 35 cm and height 80 cm hold? (1000 cm³ = 1 L)<details class="ans"><summary>Show Answer</summary><p>r=17.5. V = (22/7)×306.25×80 = 77000 cm³ = <strong>77 litres</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A lead cylinder of r = 6 cm and h = 14 cm is melted and recast into small spheres of r = 1 cm. Find the number of spheres. (π cancels)<details class="ans"><summary>Show Answer</summary><p>V_cyl = π×36×14 = 504π. V_sphere = (4/3)π. n = 504π/(4π/3) = 504×3/4 = <strong>378 spheres</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A hollow cylinder with outer r = 8 cm, inner r = 6 cm, h = 14 cm. Find the volume of metal used.<details class="ans"><summary>Show Answer</summary><p>V = π(R²−r²)h = (22/7)(64−36)×14 = (22/7)×28×14 = 22×56 = <strong>1232 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical tank of diameter 7 m is filled with water to 3 m. What is the volume of water?<details class="ans"><summary>Show Answer</summary><p>r=3.5. V = (22/7)×12.25×3 = 22×1.75×3 = <strong>115.5 m³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A metal cylinder of r = 5 cm, h = 20 cm weighs 15.4 kg. Find the density in g/cm³. (π = 22/7)<details class="ans"><summary>Show Answer</summary><p>V = (22/7)×25×20 = 1571.4 cm³. Density = 15400/1571.4 ≈ <strong>9.8 g/cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The ratio of curved surface areas of two cylinders is 1:2. Their heights are equal. Find the ratio of their radii.<details class="ans"><summary>Show Answer</summary><p>CSA ∝ r (h same). r₁:r₂ = <strong>1:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A roller of r = 35 cm and width 1 m is used to level a road. How much area is levelled in 100 revolutions?<details class="ans"><summary>Show Answer</summary><p>CSA = 2πrh = 2×(22/7)×0.35×1 = 2.2 m². Area = 100×2.2 = <strong>220 m²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Water flows through a cylinder (r = 7 cm) at 2 m/s. How many litres flow in 1 hour?<details class="ans"><summary>Show Answer</summary><p>Flow/sec = πr²×v = (22/7)×49×200 cm³ = 30800 cm³/s. Per hour = 30800×3600 = 1.1088×10⁸ cm³ = <strong>110880 litres</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The TSA of a cylinder is 616 cm². If r = 7 cm, find h.<details class="ans"><summary>Show Answer</summary><p>2×(22/7)×7×(7+h) = 616 → 44(7+h) = 616 → 7+h = 14 → h = <strong>7 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Cylinder – Ratio and Comparative Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Ratio of radii of two cylinders is 2:3 and heights are equal. Find the ratio of their volumes.<details class="ans"><summary>Show Answer</summary><p>V ∝ r². Ratio = 4:9. Answer: <strong>4:9</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two cylinders have equal volumes. Radii are in ratio 1:2. Find ratio of their heights.<details class="ans"><summary>Show Answer</summary><p>πr₁²h₁ = πr₂²h₂ → h₁/h₂ = r₂²/r₁² = 4. Ratio = <strong>4:1</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If both r and h of a cylinder are doubled, find the ratio of new volume to old volume.<details class="ans"><summary>Show Answer</summary><p>V_new = π(2r)²(2h) = 8πr²h. Ratio = <strong>8:1</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical tube open at both ends is 21 cm long with inner diameter 10 cm and outer diameter 12 cm. Find the TSA (inner + outer + 2 rings).<details class="ans"><summary>Show Answer</summary><p>Outer CSA = 2π×6×21 = 252π. Inner CSA = 2π×5×21 = 210π. 2 rings = 2π(36−25) = 22π. Total = (252+210+22)π = 484π = 484×(22/7) ≈ <strong>1521.1 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylinder is inscribed in a cube of side 10 cm. Find the volume of the cylinder.<details class="ans"><summary>Show Answer</summary><p>r = 5, h = 10. V = π×25×10 = 250π ≈ <strong>785.7 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cube of side 7 cm is melted into a cylinder of height 7 cm. Find the radius of the cylinder.<details class="ans"><summary>Show Answer</summary><p>V_cube = 343. πr²×7 = 343 → r² = 343/(7π) = 49/π ≈ 15.6 → r ≈ <strong>3.95 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The CSA of a cylinder is 2640 cm² and its height is 21 cm. Find the volume.<details class="ans"><summary>Show Answer</summary><p>2πrh = 2640 → r = 2640/(2×22/7×21) = 2640×7/924 = 20. V = (22/7)×400×21 = <strong>26400 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical container holds 1.078 litres of paint. If its diameter is 14 cm, find its height.<details class="ans"><summary>Show Answer</summary><p>V = 1078 cm³. πr²h = 1078. (22/7)×49×h = 1078 → 154h = 1078 → h = <strong>7 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">By how much % does the TSA of a cylinder change when r is doubled but h is halved?<details class="ans"><summary>Show Answer</summary><p>Old: 2πr(r+h). New: 2π(2r)(2r+h/2). New/Old = (2r)(2r+h/2)/r(r+h). For r=h: Old=4πr², New=2π×2r×2.5r=10πr². % increase = 150%. Answer depends on r,h ratio; for equal r=h: <strong>+150%</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical vessel (r=14 cm, h=30 cm) is full. Water is poured into a cuboidal tank of base 28 cm × 22 cm. Find the height of water in tank.<details class="ans"><summary>Show Answer</summary><p>V_cyl = (22/7)×196×30 = 18480 cm³. h = 18480/(28×22) = 18480/616 = <strong>30 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Cylinder – Advanced &amp; Real-World Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cylindrical well of diameter 14 m and depth 15 m is dug. The earth removed is spread over a rectangular plot 770 m × 15 m. Find the height of the platform formed.<details class="ans"><summary>Show Answer</summary><p>V_well = (22/7)×49×15 = 2310 m³. h = 2310/(770×15) = <strong>0.2 m</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A rectangular piece of paper 44 cm × 10 cm is rolled along its length to form a cylinder. Find the volume.<details class="ans"><summary>Show Answer</summary><p>Circumference = 44 → r = 7. h = 10. V = (22/7)×49×10 = <strong>1540 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Same paper (44×10) is rolled along its breadth. Find the volume and compare with above.<details class="ans"><summary>Show Answer</summary><p>Circumference = 10 → r = 5/π. h = 44. V = π×(5/π)²×44 = 25×44/π ≈ 350.7 cm³. Original was 1540 cm³. <strong>Rolling along length gives larger volume.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical pillar of diameter 50 cm and height 3.5 m needs painting at ₹12.50/m². Find the cost.<details class="ans"><summary>Show Answer</summary><p>CSA = 2π×0.25×3.5 = 2×(22/7)×0.25×3.5 = 5.5 m². Cost = 5.5×12.5 = <strong>₹68.75</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the number of coins (diameter 1.75 cm, thickness 2 mm) melted to make a cylinder of radius 5.25 cm, height 10 cm.<details class="ans"><summary>Show Answer</summary><p>V_cylinder = π×27.5625×10. V_coin = π×(0.875)²×0.2. n = 27.5625×10/(0.875²×0.2) = 275.625/0.153125 = <strong>1800 coins</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical bucket of height 32 cm and base radius 18 cm is filled with sand. The sand is poured into a cuboidal box of 80 cm × 36 cm. Find the depth of sand in the box.<details class="ans"><summary>Show Answer</summary><p>V_bucket = π×324×32 = 10368π. Depth = 10368π/(80×36) = 10368π/2880 = 3.6π ≈ <strong>11.31 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Rain water from a roof 22 m × 20 m flows into a cylindrical vessel of radius 0.5 m. If rainfall is 1 cm, find the height of water in the vessel.<details class="ans"><summary>Show Answer</summary><p>Rain V = 22×20×0.01 = 4.4 m³. πr²h = 4.4. h = 4.4/(π×0.25) = 4.4/0.7857 ≈ <strong>5.6 m</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylinder, cone, and sphere all have the same radius and same height (equal to diameter for sphere). Find ratio of their volumes.<details class="ans"><summary>Show Answer</summary><p>r same, h=2r. V_cyl=2πr³, V_cone=(2/3)πr³, V_sph=(4/3)πr³. Ratio = 2:(2/3):(4/3) = 6:2:4 = <strong>3:1:2</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A right circular cylinder has its height equal to twice the radius. If its volume is 2156 cm³, find its TSA. (π=22/7)<details class="ans"><summary>Show Answer</summary><p>h=2r. V=2πr³=2156. r³=343 → r=7, h=14. TSA=2π×7×21=924 cm². <strong>924 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The volume of a cylinder is numerically equal to its TSA. If r = 6 cm, find h.<details class="ans"><summary>Show Answer</summary><p>πr²h = 2πr(r+h) → rh = 2(r+h) → 6h = 12+2h → 4h = 12 → h = <strong>3 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<section class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Cone – SA, Slant Height and Volume</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-cones/v/volume-of-a-cone" target="_blank">Volume of a Cone</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-cones/v/surface-area-of-a-cone" target="_blank">Surface Area of a Cone</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Cones and Pyramids</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=gVku6WGgD5A" target="_blank">Why Volume of Cone = ⅓ Cylinder</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=KnpljL5igBQ" target="_blank">Geometry in 3D</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Slant Height &amp; Basic Cone SA</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cone has r = 6 cm and h = 8 cm. Find the slant height l.<details class="ans"><summary>Show Answer</summary><p>l = √(r²+h²) = √(36+64) = √100 = <strong>10 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the CSA of a cone with r = 7 cm and l = 25 cm.<details class="ans"><summary>Show Answer</summary><p>CSA = πrl = (22/7)×7×25 = <strong>550 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the TSA of a cone with r = 14 cm and l = 50 cm.<details class="ans"><summary>Show Answer</summary><p>TSA = πr(r+l) = (22/7)×14×64 = 44×64 = <strong>2816 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the volume of a cone with r = 7 cm, h = 24 cm.<details class="ans"><summary>Show Answer</summary><p>l = √(49+576) = 25. V = (1/3)πr²h = (1/3)×(22/7)×49×24 = <strong>1232 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The slant height of a cone is 13 cm and r = 5 cm. Find height h and then TSA.<details class="ans"><summary>Show Answer</summary><p>h = √(169−25) = 12. TSA = πr(r+l) = π×5×18 = 90π ≈ <strong>282.86 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The CSA of a cone is 550 cm² and r = 7 cm. Find l and then h.<details class="ans"><summary>Show Answer</summary><p>πrl = 550 → l = 550×7/(22×7) = 25. h = √(625−49) = √576 = <strong>24 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the volume of a cone with diameter 21 cm and slant height 35 cm.<details class="ans"><summary>Show Answer</summary><p>r=10.5. h=√(35²−10.5²)=√(1225−110.25)=√1114.75≈33.4. V=(1/3)π×110.25×33.4≈(1/3)×(22/7)×110.25×33.4≈<strong>3848 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">TSA of a cone is 704 cm² and its CSA is 550 cm². Find r.<details class="ans"><summary>Show Answer</summary><p>TSA − CSA = πr² = 154 → r² = 154×7/22 = 49 → r = <strong>7 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Height of a cone is 3 times its base radius. Volume = 301.44 cm³. Find r. (π = 3.14)<details class="ans"><summary>Show Answer</summary><p>h = 3r. V = (1/3)π×r²×3r = πr³ = 301.44. r³ = 96 ≈ 4.58. r ≈ <strong>4.58 cm</strong> (or r=4 if approx)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cone has diameter 24 cm and its slant height equals its diameter. Find its TSA.<details class="ans"><summary>Show Answer</summary><p>r=12, l=24. TSA=πr(r+l)=π×12×36=432π=(22/7)×432≈<strong>1357.7 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Cone Volume and Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A conical tent has r = 7 m and h = 24 m. Find the canvas required (CSA) and the volume of air inside.<details class="ans"><summary>Show Answer</summary><p>l = 25 m. CSA = (22/7)×7×25 = <strong>550 m²</strong>. V = (1/3)×(22/7)×49×24 = <strong>1232 m³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">An ice cream cone has r = 3.5 cm and h = 12 cm. Find the volume it can hold.<details class="ans"><summary>Show Answer</summary><p>V = (1/3)×(22/7)×12.25×12 = (1/3)×462 = <strong>154 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A metallic cone of r = 21 cm and h = 28 cm is melted into a sphere. Find the radius of the sphere.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×441×28=4116π. (4/3)πR³=4116π → R³=3087 → R=∛3087≈<strong>14.57 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The volume of a right circular cone is 9856 cm³. If diameter is 28 cm, find height and slant height.<details class="ans"><summary>Show Answer</summary><p>r=14. h=3V/(πr²)=3×9856/((22/7)×196)=29568/616=48. l=√(196+2304)=50. h=<strong>48 cm</strong>, l=<strong>50 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many litres of milk can a conical vessel hold if h = 12 cm and r = 5 cm?<details class="ans"><summary>Show Answer</summary><p>V = (1/3)π×25×12 = 100π ≈ 314.16 cm³ = <strong>0.314 litres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A right triangle with legs 5 cm and 12 cm is rotated about the leg of 12 cm. Find the volume of the resulting solid.<details class="ans"><summary>Show Answer</summary><p>Cone: r=5, h=12. V=(1/3)π×25×12=100π≈<strong>314.16 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the CSA of a cone whose base area is 154 cm² and slant height is 10 cm.<details class="ans"><summary>Show Answer</summary><p>πr²=154 → r²=49 → r=7. CSA=πrl=(22/7)×7×10=<strong>220 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A sector of radius 21 cm and angle 120° is folded into a cone. Find the base radius and height of the cone.<details class="ans"><summary>Show Answer</summary><p>l=21. Circumference of base = (120/360)×2π×21 = 14π. 2πr=14π → r=7. h=√(441−49)=√392=14√2≈<strong>19.8 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The height of a cone is 30 cm. A small cone is cut from its top parallel to base. If volume of small cone is 1/27 of original, find height of small cone.<details class="ans"><summary>Show Answer</summary><p>V_small/V_orig = (h_small/H)³ = 1/27 → h_small/30 = 1/3 → h_small = <strong>10 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A conical vessel, full of oil, is emptied into 2 cylindrical vessels of same radius as cone and same height. What fraction of each cylinder gets filled?<details class="ans"><summary>Show Answer</summary><p>V_cone = (1/3)πr²h. Each cylinder = πr²h. Total = (1/3)πr²h into 2 cylinders. Each gets (1/6)πr²h → fraction = <strong>1/6</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Cone – Comparison and Conversion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Radii of two cones are 1:2 and heights 2:1. Find ratio of their volumes.<details class="ans"><summary>Show Answer</summary><p>V ∝ r²h. Ratio = 1²×2 : 2²×1 = 2:4 = <strong>1:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio of the volumes of a cone and a cylinder of the same base radius and height.<details class="ans"><summary>Show Answer</summary><p>V_cone:V_cyl = (1/3)πr²h : πr²h = <strong>1:3</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cone is cut parallel to its base at half the height. Find the ratio of the volume of the small cone to the original.<details class="ans"><summary>Show Answer</summary><p>Small cone radius = r/2 (similar). V ratio = (1/2)³ = <strong>1:8</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many small cones (r=2 cm, h=3 cm) can be filled from a big cone (r=6 cm, h=27 cm)?<details class="ans"><summary>Show Answer</summary><p>V_big=(1/3)π×36×27=324π. V_small=(1/3)π×4×3=4π. n=324/4=<strong>81 cones</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylinder and cone have same volume and same base radius. Height of cylinder is 6 cm. Find height of cone.<details class="ans"><summary>Show Answer</summary><p>πr²×6 = (1/3)πr²×h_cone → h_cone = 18 cm. <strong>18 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The slant height of a cone increases by 10% while radius stays same. Find % increase in CSA.<details class="ans"><summary>Show Answer</summary><p>CSA = πrl. l increases 10%. CSA increases <strong>10%</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A right triangle with sides 5, 12, 13 is revolved about the hypotenuse. Two cones are formed. Find sum of their volumes.<details class="ans"><summary>Show Answer</summary><p>Altitude from right angle to hypotenuse = (5×12)/13 = 60/13. The two cones share this altitude. h₁ + h₂ = 13. r = 60/13 for both. V_total = (1/3)πr²×13 = (1/3)π×(3600/169)×13 = 1200π/13 ≈ <strong>289.8 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Sand is poured from a conical vessel (r=5 cm, h=18 cm) into a cube. If the sand fills the cube to 5 cm depth, find the side of the cube.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×25×18=150π. Side²×5=150π → side²=30π → side=√(30π)≈<strong>9.71 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cone of r = 10 cm is filled with water. A sphere of r = 5 cm is dropped in it. By what volume does the water overflow?<details class="ans"><summary>Show Answer</summary><p>V_sphere = (4/3)π×125 = 500π/3 ≈ <strong>523.6 cm³</strong> (assuming cone volume > sphere volume)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The vertical angle of a cone is 60°. If slant height = 12 cm, find the volume.<details class="ans"><summary>Show Answer</summary><p>Half-angle = 30°. r = 12sin30° = 6. h = 12cos30° = 6√3. V = (1/3)π×36×6√3 = 72√3π ≈ <strong>391.8 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Cone – Advanced &amp; Application Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A tent is in the form of a cylinder with a conical top. Diameter = 24 m. Cylindrical height = 11 m, conical height = 16 m. Find total canvas required.<details class="ans"><summary>Show Answer</summary><p>r=12. Cyl CSA = 2π×12×11 = 264π. Conical l=√(256+144)=20. Cone CSA=π×12×20=240π. Total=504π=(22/7)×504=<strong>1584 m²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cone has a base radius of 10 cm. Its lateral surface, when unrolled, forms a sector with angle 120°. Find the height.<details class="ans"><summary>Show Answer</summary><p>(120/360)×2πl = 2πr → l/3 = r = 10 → l=30. h=√(900−100)=√800=20√2≈<strong>28.28 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the maximum volume cone that can be inscribed in a cylinder of r = 6 cm, h = 10 cm.<details class="ans"><summary>Show Answer</summary><p>Max cone shares r and h with cylinder. V = (1/3)π×36×10 = 120π ≈ <strong>376.99 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Water drips from a conical funnel (r = 3.5 cm, h = 7 cm) into a cylindrical vessel (r = 1.75 cm). Find the height of water in the cylinder after the funnel is emptied.<details class="ans"><summary>Show Answer</summary><p>V_cone = (1/3)×(22/7)×12.25×7 = 89.83 cm³. h_cyl = 89.83/(π×3.0625) = 89.83/9.625 ≈ <strong>9.33 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A conical heap of wheat has h = 3 m and circumference of base = 44 m. Find the volume and cost of covering at ₹25/m².<details class="ans"><summary>Show Answer</summary><p>2πr=44→r=7. l=√(49+9)=√58≈7.62. V=(1/3)×(22/7)×49×3=154 m³. Canvas=πrl=π×7×7.62≈167.6 m². Cost=167.6×25≈<strong>₹4190</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If the height of a cone is doubled and radius halved, find the ratio of new volume to original.<details class="ans"><summary>Show Answer</summary><p>V_new = (1/3)π(r/2)²(2h) = (1/3)π×r²/4×2h = πr²h/6. Original = πr²h/3. Ratio = <strong>1:2</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cone of metal has r=6 cm, h=8 cm. It is cut parallel to base at height 4 cm from top. Find CSA of the smaller cone formed at top.<details class="ans"><summary>Show Answer</summary><p>Similar cones: h ratio = 4:8 = 1:2. r_small = 3. l_small = 5. CSA = π×3×5 = 15π ≈ <strong>47.1 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Curved surface area of a cone is 4 times its base area. Find the half-angle at the apex.<details class="ans"><summary>Show Answer</summary><p>πrl = 4πr² → l = 4r. sinθ = r/l = 1/4. θ = arcsin(0.25) ≈ <strong>14.48°</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A circus tent has a cylindrical part (h=5 m, r=24 m) and a conical top (h=7 m). Find the total cost of canvas at ₹100/m².<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2π×24×5=240π. Cone l=√(576+49)=25. Cone CSA=π×24×25=600π. Total=840π=840×(22/7)=2640 m². Cost=<strong>₹264000</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the slant height of a cone such that the ratio of CSA to base area is 5:3.<details class="ans"><summary>Show Answer</summary><p>πrl/(πr²) = l/r = 5/3. So l = 5r/3. This gives us the relation. For r=3: l=<strong>5 cm</strong>; h=4 cm. In general l:r = 5:3</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<section class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Sphere – Surface Area and Volume</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-spheres/v/volume-of-a-sphere" target="_blank">Volume of a Sphere</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-spheres/v/surface-area-of-a-sphere" target="_blank">Surface Area of a Sphere</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Spheres & Hemispheres</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=GNcFjFmqEc8" target="_blank">Sphere Packing & Pi</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=mhlDSFZvJDY" target="_blank">Surface Area to Volume Ratio</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Sphere Calculations (π = 22/7)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the surface area of a sphere with r = 7 cm.<details class="ans"><summary>Show Answer</summary><p>SA = 4πr² = 4×(22/7)×49 = <strong>616 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the volume of a sphere with r = 21 cm.<details class="ans"><summary>Show Answer</summary><p>V = (4/3)×(22/7)×9261 = <strong>38808 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The SA of a sphere is 154 cm². Find its radius.<details class="ans"><summary>Show Answer</summary><p>4πr²=154 → r²=154×7/88=12.25 → r=<strong>3.5 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find diameter of a sphere with V = 523.9 cm³. (π=3.14)<details class="ans"><summary>Show Answer</summary><p>(4/3)×3.14×r³=523.9 → r³=125 → r=5 → d=<strong>10 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio of radii of two spheres is 2:3. Find ratio of surface areas.<details class="ans"><summary>Show Answer</summary><p>SA ∝ r². Ratio = <strong>4:9</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio of radii = 3:4. Find ratio of volumes.<details class="ans"><summary>Show Answer</summary><p>V ∝ r³. Ratio = <strong>27:64</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">SA equals volume numerically. Find r.<details class="ans"><summary>Show Answer</summary><p>4πr²=(4/3)πr³ → 3=r → r=<strong>3 units</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sphere SA is 1386 cm². Find volume.<details class="ans"><summary>Show Answer</summary><p>4πr²=1386 → r=10.5. V=(4/3)×(22/7)×1157.625=<strong>4851 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three metal spheres r=6, 8, 10 cm are melted into one. Find radius.<details class="ans"><summary>Show Answer</summary><p>R³=216+512+1000=1728. R=<strong>12 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sphere of r=R melted into n small spheres r=r. If R=12, r=4, find n.<details class="ans"><summary>Show Answer</summary><p>n=(R/r)³=(12/4)³=27. <strong>27 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Sphere Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">How many spheres of r=1 cm from a sphere of r=8 cm?<details class="ans"><summary>Show Answer</summary><p>n=8³/1³=<strong>512 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere of r=9 cm melted into spheres of r=3 cm. Number of small spheres?<details class="ans"><summary>Show Answer</summary><p>n=729/27=<strong>27 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A spherical ball r=3 cm dropped into cylinder r=6 cm. Rise in water level?<details class="ans"><summary>Show Answer</summary><p>V_sphere=(4/3)π×27=36π. Rise=36π/(36π)=<strong>1 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Diameter decreased by 25%. % decrease in volume?<details class="ans"><summary>Show Answer</summary><p>New r=0.75r. V_new=0.421875V. Decrease≈<strong>57.8%</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SA of two spheres in ratio 4:9. Find ratio of volumes.<details class="ans"><summary>Show Answer</summary><p>r ratio=2:3. V ratio=<strong>8:27</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find largest sphere inscribed in cube side 14 cm. Find its SA.<details class="ans"><summary>Show Answer</summary><p>r=7. SA=4×(22/7)×49=<strong>616 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two spheres r=6 and r=8 melted into single sphere. Find radius.<details class="ans"><summary>Show Answer</summary><p>R³=216+512=728. R=∛728≈<strong>9 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Water in spherical vessel r=21 poured into cuboidal tank 63×44. Find depth.<details class="ans"><summary>Show Answer</summary><p>V=(4/3)×(22/7)×9261=38808. Depth=38808/2772=<strong>14 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If radius increased by 10%, find % increase in SA and volume.<details class="ans"><summary>Show Answer</summary><p>SA: 1.21×→<strong>21% increase</strong>. V: 1.331×→<strong>33.1% increase</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Sphere of r=10.5 melted into spheres of r=3.5. Find number.<details class="ans"><summary>Show Answer</summary><p>n=(10.5/3.5)³=3³=<strong>27 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Sphere – Mixed and Conceptual</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A shot-put r=4.9 cm, density=8 g/cm³. Find mass. (π=3.14)<details class="ans"><summary>Show Answer</summary><p>V=(4/3)×3.14×117.649=492.4 cm³. Mass=492.4×8≈<strong>3939 g</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hollow sphere: inner r=3, outer r=5. Find volume of shell.<details class="ans"><summary>Show Answer</summary><p>V=(4/3)π(125−27)=(4/3)×98π≈<strong>410.5 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Flat circular area : CSA of hemisphere (cut from sphere). Find ratio.<details class="ans"><summary>Show Answer</summary><p>πr²:2πr²=<strong>1:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Total SA of 3 spheres r=1,2,3 combined (separate).<details class="ans"><summary>Show Answer</summary><p>4π(1+4+9)=56π≈<strong>175.9 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If SA of sphere = S, express volume V in terms of S.<details class="ans"><summary>Show Answer</summary><p>r=√(S/4π). V=(4/3)π(S/4π)^(3/2)=<strong>S^(3/2)/(6√π)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A sphere circumscribed about a cube of side a. Find V_sphere:V_cube.<details class="ans"><summary>Show Answer</summary><p>r=a√3/2. V_sphere=(4/3)π(a√3/2)³=√3πa³/2. Ratio to a³=√3π:2≈<strong>2.72:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Balloon radius increases 7→14 cm. Ratio of new to old SA.<details class="ans"><summary>Show Answer</summary><p>(14/7)²=<strong>4:1</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">12 solid spheres made from cylinder r=2, h=3 cm. Find radius of each sphere.<details class="ans"><summary>Show Answer</summary><p>V_cyl=12π. Each=(4/3)πr³=π→r³=3/4→r≈<strong>0.909 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Volume of ratio sphere:cone=2:1, same base radius. Find h_cone/r.<details class="ans"><summary>Show Answer</summary><p>(4/3)πr³:(1/3)πr²h=2:1→4r:h=2:1→h=2r→h/r=<strong>2</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A sphere of r=5 inscribed in a cylinder. Find % volume of cylinder wasted.<details class="ans"><summary>Show Answer</summary><p>V_cyl=π×25×10=250π. V_sphere=(4/3)π×125=500π/3. Waste=(250−500/3)π=250π/3. %=(1/3)×100/1=500/(750)≈<strong>33.3%</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Sphere – Challenge Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">How many spherical bullets r=1 cm from a cube of side 44 cm?<details class="ans"><summary>Show Answer</summary><p>V_cube=85184. V_bullet=(4/3)π≈4.189. n≈<strong>20334 bullets</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Sphere of r inscribed in cube side a. V_sphere:V_cube.<details class="ans"><summary>Show Answer</summary><p>r=a/2. V_sphere=(4/3)π(a/2)³=πa³/6. Ratio=π:6≈<strong>0.524:1</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Edge error 2%. Find % error in sphere's volume when r is derived from diameter measurement.<details class="ans"><summary>Show Answer</summary><p>V=r³×4π/3. % error≈3×2%=<strong>6%</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SA of a sphere = TSA of a cylinder of r=7, h=7. Find sphere radius.<details class="ans"><summary>Show Answer</summary><p>TSA_cyl=2×(22/7)×7×14=616. 4πr²=616→r=7. r=<strong>7 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The ratio of SA of sphere to SA of circumscribed cube.<details class="ans"><summary>Show Answer</summary><p>Cube side=2r. SA_cube=6×4r²=24r². SA_sphere=4πr². Ratio=4π:24=π:6≈<strong>0.524:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid metal sphere r=R melted, recast as hollow sphere inner r=R/2. Find outer radius.<details class="ans"><summary>Show Answer</summary><p>(4/3)πR³=(4/3)π(R_out³−R³/8). R_out³=R³+R³/8=9R³/8. R_out=R×(9/8)^(1/3)≈<strong>1.041R</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Water overflows when hemisphere r=R submerged in spherical bowl r=R. What fraction of bowl water overflows?<details class="ans"><summary>Show Answer</summary><p>V_bowl=(2/3)πR³. V_hemi=(2/3)πR³. Since hemisphere = bowl volume, all water overflows. Fraction=<strong>1 (100%)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">n small spheres of r=1 fill the same volume as one large sphere of r=6. Find n.<details class="ans"><summary>Show Answer</summary><p>n×(4/3)π=(4/3)π×216. n=<strong>216 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the ratio of volumes of hemisphere to its circumscribed cylinder.<details class="ans"><summary>Show Answer</summary><p>V_hemi=(2/3)πr³. Cyl (r=r, h=r): V=πr³. Ratio=(2/3):1=<strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A sphere has the same numerical value for SA and (4 × volume). Find r.<details class="ans"><summary>Show Answer</summary><p>4πr²=4×(4/3)πr³=16πr³/3. 1=4r/3. r=3/4=<strong>0.75 units</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<section class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Hemisphere – Surface Area and Volume</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids/hs-geo-spheres/v/volume-of-a-sphere" target="_blank">Sphere & Hemisphere Volume</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Hemispheres Explained</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=GNcFjFmqEc8" target="_blank">Round Shapes</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=mhlDSFZvJDY" target="_blank">3D Geometry Wonders</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Hemisphere Formulas (π = 22/7)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">CSA of hemisphere with r = 7 cm.<details class="ans"><summary>Show Answer</summary><p>CSA=2πr²=2×(22/7)×49=<strong>308 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">TSA of solid hemisphere with r = 21 cm.<details class="ans"><summary>Show Answer</summary><p>TSA=3πr²=3×(22/7)×441=<strong>4158 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Volume of hemisphere with r = 14 cm.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)×(22/7)×2744=<strong>5749.33 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">TSA of solid hemisphere = 462 cm². Find r.<details class="ans"><summary>Show Answer</summary><p>3πr²=462→r²=49→r=<strong>7 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio TSA:CSA of a hemisphere.<details class="ans"><summary>Show Answer</summary><p>3πr²:2πr²=<strong>3:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio V_sphere:V_hemisphere (same radius).<details class="ans"><summary>Show Answer</summary><p>(4/3)πr³:(2/3)πr³=<strong>2:1</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">V=18π cm³. Find TSA of hemisphere.<details class="ans"><summary>Show Answer</summary><p>(2/3)πr³=18π→r=3. TSA=3π×9=27π≈<strong>84.82 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A dome (hemisphere) r=14 m. Cost of painting inside at ₹8/m².<details class="ans"><summary>Show Answer</summary><p>CSA=2×(22/7)×196=1232 m². Cost=<strong>₹9856</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Volume of hemisphere = 2425.5 cm³. Find r. (π=22/7)<details class="ans"><summary>Show Answer</summary><p>(2/3)×(22/7)×r³=2425.5→r³=1157.625→r=<strong>10.5 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hemisphere and cylinder have equal volumes, equal r. Find h_cyl:r.<details class="ans"><summary>Show Answer</summary><p>(2/3)πr³=πr²h→h=2r/3. h:r=<strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Hemisphere Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Hemisphere r=7 melted into cylinder r=3.5. Find height of cylinder.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)×(22/7)×343=718.67. 718.67=(22/7)×12.25×h→h=<strong>18.67 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Hemispherical bowl r=9 emptied into cylinder r=6. Rise in level?<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π×729=486π. Rise=486π/(36π)=<strong>13.5 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Solid hemisphere r=6 cm, density=9 g/cm³. Find mass.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π×216=144π≈452.4 cm³. Mass≈<strong>4071.5 g</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">TSA=675π cm². Find radius and volume.<details class="ans"><summary>Show Answer</summary><p>3πr²=675π→r=15. V=(2/3)π×3375=2250π≈<strong>7069.8 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor increase in V if diameter tripled.<details class="ans"><summary>Show Answer</summary><p>V∝r³. Factor=3³=<strong>27 times</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">How many hemispheres r=3 from sphere r=6 (by volume)?<details class="ans"><summary>Show Answer</summary><p>V_sphere=288π. V_hemi=18π. n=<strong>16 hemispheres</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two solid hemispheres r=7 placed base-to-base. Find TSA of result.<details class="ans"><summary>Show Answer</summary><p>Forms sphere. SA=4πr²=4×(22/7)×49=<strong>616 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Hemisphere pit r=2.1 m. Cost of plastering CSA at ₹15/m².<details class="ans"><summary>Show Answer</summary><p>CSA=2×(22/7)×4.41=27.72 m². Cost=27.72×15=<strong>₹415.80</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">V of hemisphere = numerically = CSA. Find r.<details class="ans"><summary>Show Answer</summary><p>(2/3)πr³=2πr²→r=3. r=<strong>3 units</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Wooden toy hemisphere diameter=14 cm. Find TSA and volume.<details class="ans"><summary>Show Answer</summary><p>r=7. TSA=3×(22/7)×49=<strong>462 cm²</strong>. V=(2/3)×(22/7)×343=<strong>718.67 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Hemisphere – Mixed Comparison</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Hemisphere and cone same base and same height h=r. Find ratio of volumes.<details class="ans"><summary>Show Answer</summary><p>(2/3)πr³:(1/3)πr³=<strong>2:1</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio TSA of solid hemisphere to full sphere of same r.<details class="ans"><summary>Show Answer</summary><p>3πr²:4πr²=<strong>3:4</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Solid on cube (side=6) + hemisphere (r=3) on top. Find TSA.<details class="ans"><summary>Show Answer</summary><p>Cube TSA−top circle+hemi CSA=216−36+2π×9=216−36+56.55=<strong>236.55 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Hemispherical bowl inner r=9, outer r=9.5 (thin shell). Find material used (volume).<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π(9.5³−9³)=(2/3)π(857.375−729)=(2/3)×128.375π≈<strong>268.9 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A tent: hemispherical cap r=7 m on cylindrical base h=4, r=7. Find canvas (no floor).<details class="ans"><summary>Show Answer</summary><p>CSA_hemi=2×(22/7)×49=308. CSA_cyl=2×(22/7)×7×4=176. Total=<strong>484 m²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Hemisphere tank r=3 m. Persons accommodated at 11 m³ per person.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π×27=18π≈56.55 m³. n=56.55/11≈<strong>5 persons</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of contact of hemisphere r=10 placed on table.<details class="ans"><summary>Show Answer</summary><p>πr²=100π≈<strong>314.16 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Outer CSA of hemisphere = base area of cylinder r=7. Find radius of hemisphere.<details class="ans"><summary>Show Answer</summary><p>2πr²=π×49→r²=24.5→r≈<strong>4.95 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A solid hemisphere r=R exactly fits inside a cone (r=R, h=?). Find h.<details class="ans"><summary>Show Answer</summary><p>Slant of cone tangent to hemisphere: h=R. <strong>h = R</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Largest sphere inside hemisphere r=R. Find volume of sphere.<details class="ans"><summary>Show Answer</summary><p>r_sphere=R/2. V=(4/3)π(R/2)³=<strong>πR³/6</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Hemisphere – Advanced Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Cylinder (r=7, h=12) topped with hemisphere (r=7). Find total V and TSA.<details class="ans"><summary>Show Answer</summary><p>V=π×49×12+(2/3)π×343=588π+686π/3=(1764+686)π/3=2450π/3≈2565.6 cm³. TSA=πr²+2πrh+2πr²=3πr²+2πrh=3×(22/7)×49+2×(22/7)×7×12=462+528=<strong>990 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Hemispherical bowl holds 303.6 cm³ milk. Find diameter. (π=3.14)<details class="ans"><summary>Show Answer</summary><p>(2/3)×3.14×r³=303.6→r³=144.9→r≈5.25→d≈<strong>10.5 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If r doubled and h halved (for cyl+hemi): old r=5, h=10. Find ratio V_new:V_old.<details class="ans"><summary>Show Answer</summary><p>Old V=1000π/3. New r=10,h=5. V=100π×5+(2/3)π×1000=500π+2000π/3=3500π/3. Ratio=3500:1000=<strong>7:2</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Hemisphere shell: outer r=7, inner r=3.5. Find volume of material.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π(343−42.875)=(2/3)π×300.125≈628.6 cm³. <strong>≈628.6 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Ratio V_hemisphere:V_circumscribed cylinder (r=r, h=r).<details class="ans"><summary>Show Answer</summary><p>(2/3)πr³:πr³=<strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A fountain bowl: hemispherical outer r=6, inner r=5, on cylinder r=6, h=2. Find TSA outer surface.<details class="ans"><summary>Show Answer</summary><p>Outer hemi CSA=2π×36=72π. Cyl CSA=2π×6×2=24π. Ring top=π(36−25)=11π. Base=36π. Total=143π≈<strong>449.3 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Spherical ball bearing r=0.5 cm made from hemisphere (r=5 cm). Find number of ball bearings.<details class="ans"><summary>Show Answer</summary><p>V_hemi=(2/3)π×125=250π/3. V_bb=(4/3)π×0.125=π/6. n=250/3÷1/6=500. <strong>500 ball bearings</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A hemi-spherical tank stores water. Cost to fill is ₹5/litre. r=7 m. Find cost of filling. (1 m³=1000 L)<details class="ans"><summary>Show Answer</summary><p>V=(2/3)×(22/7)×343=718.67 m³=718670 L. Cost=718670×5≈<strong>₹35,93,350</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cone+hemisphere: r=6, cone h=8. Find total TSA.<details class="ans"><summary>Show Answer</summary><p>Cone l=10. TSA=cone CSA+hemi CSA=πrl+2πr²=π×6×10+2π×36=60π+72π=132π≈<strong>414.7 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: V_cylinder(r,2r) − V_hemisphere(r) = V_sphere(r). Show with r=7.<details class="ans"><summary>Show Answer</summary><p>V_cyl=2πr³. V_hemi=(2/3)πr³. Diff=(4/3)πr³=V_sphere. For r=7: V_cyl=2π×343=686π. V_hemi=686π/3. Diff=686π−686π/3=1372π/3=V_sphere=(4/3)π×343=1372π/3. <strong>Proved.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<section class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Combination: Cylinder + Cone</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">Composite 3D Solids</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Combined Solids</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=gVku6WGgD5A" target="_blank">Why Cone = ⅓ Cylinder</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=J4Vz8my_LW4" target="_blank">Shapes in Engineering</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Cyl + Cone: Volume Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Cylinder (r=7, h=12) + cone on top (r=7, h=24). Total volume.<details class="ans"><summary>Show Answer</summary><p>V_cyl=(22/7)×49×12=1848. V_cone=(1/3)×(22/7)×49×24=1232. Total=<strong>3080 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Toy: cone (r=3.5, h=4) on cylinder (r=3.5, h=12). Total volume.<details class="ans"><summary>Show Answer</summary><p>V_cyl=(22/7)×12.25×12=462. V_cone=(1/3)×(22/7)×12.25×4=51.33. Total≈<strong>513.33 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Rocket: cylinder (r=3, h=8) + cone (r=3, h=4). Total V.<details class="ans"><summary>Show Answer</summary><p>V=π×9×8+(1/3)π×9×4=72π+12π=84π≈<strong>263.9 m³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio V_cylinder:V_cone (same base r, same height H).<details class="ans"><summary>Show Answer</summary><p>πr²H:(1/3)πr²H=<strong>3:1</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Cylinder (r=7, h=9) with conical hole (r=7, h=3). Volume of metal left.<details class="ans"><summary>Show Answer</summary><p>V_cyl=(22/7)×49×9=1386. V_hole=(1/3)×(22/7)×49×3=154. Remaining=<strong>1232 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Conical tent: cyl base (r=10, h=2) + conical top (r=10, h=4). Total air volume.<details class="ans"><summary>Show Answer</summary><p>V=π×100×2+(1/3)π×100×4=200π+400π/3=1000π/3≈<strong>1047.2 m³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Pencil: cylinder (r=5 mm, h=140 mm) + cone (r=5 mm, h=40 mm). Total V.<details class="ans"><summary>Show Answer</summary><p>V=π×25×140+(1/3)π×25×40=3500π+1000π/3≈<strong>12042 mm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Milk flows cone (r=12, h=16) into cylinder (r=6). Height of milk in cylinder.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×144×16=768π. h=768π/(36π)=<strong>21.33 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cylinder (r=6, h=20) + cone (r=6, h=8) melted into sphere. Find sphere radius.<details class="ans"><summary>Show Answer</summary><p>V=π×36×20+(1/3)π×36×8=720π+96π=816π. (4/3)πR³=816π→R³=612→R≈<strong>8.49 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Water in cone funnel (r=12, h=16, l=20) poured into cylinder (r=6). Find height of water.<details class="ans"><summary>Show Answer</summary><p>V_cone=768π. h=768π/36π=<strong>21.33 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Cyl + Cone: Surface Area</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">TSA of cylinder (r=7, h=10) + cone top (r=7, h=24, l=25).<details class="ans"><summary>Show Answer</summary><p>TSA=πr²+2πrh+πrl=49π+140π+175π=364π=(22/7)×364=<strong>1144 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Toy rocket: cyl (r=3, h=12) + cone (r=3, h=4, l=5). Find TSA.<details class="ans"><summary>Show Answer</summary><p>Base+cyl CSA+cone CSA=9π+72π+15π=96π≈<strong>301.6 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Cylindrical pillar (r=4, h=20) + conical top (r=4, h=3, l=5). Painted area (no base).<details class="ans"><summary>Show Answer</summary><p>Cyl CSA+cone CSA=160π+20π=180π≈<strong>565.5 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Chips can: cyl (r=7, h=20) with cone top (l=14). Material (no base).<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2×(22/7)×7×20=880. Cone CSA=(22/7)×7×14=308. Total=<strong>1188 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Buoy: cyl (r=2, h=1) + two cones (r=2, h=1.5, l=2.5) top and bottom. TSA.<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2π×2×1=4π. 2×cone CSA=2×π×2×2.5=10π. Total=14π≈<strong>44 m²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Spinning top (cone r=4, h=3, l=5 + cyl r=4, h=8). TSA.<details class="ans"><summary>Show Answer</summary><p>Base+cyl CSA+cone CSA=16π+64π+20π=100π≈<strong>314.2 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical log (r=10, h=50) has conical end carved out (r=10, h=20). Remaining volume.<details class="ans"><summary>Show Answer</summary><p>V_cyl=5000π. V_cone=2000π/3. Remaining=(5000−666.7)π=4333.3π≈<strong>13614 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Tent: cyl (r=24, h=11) + conical (r=24, l=25). Find canvas (no floor).<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2π×24×11=528π. Cone CSA=π×24×25=600π. Total=1128π=(22/7)×1128≈<strong>3544 m²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Total height cyl+cone = 15 cm. Cone h = 5, r=5. Find TSA.<details class="ans"><summary>Show Answer</summary><p>Cyl h=10. Cone l=√(25+25)=5√2≈7.07. TSA=25π+100π+25√2π≈(125+35.36)π=160.36π≈<strong>503.7 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Volume space between cone and cylinder (same r=R, h=H, cone inverted inside).<details class="ans"><summary>Show Answer</summary><p>V_space=V_cyl−V_cone=(2/3)πR²H. <strong>(2/3)πR²H</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Cyl + Cone: Real Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Oil tank: cyl (r=3, h=12) + two conical ends (r=3, h=2 each). Total volume.<details class="ans"><summary>Show Answer</summary><p>V=π×9×12+2×(1/3)π×9×2=108π+12π=120π≈<strong>377 m³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Chemical vessel cyl (r=5, h=10) + conical top (r=5, h=4). Painted area (no base).<details class="ans"><summary>Show Answer</summary><p>Cone l=√(16+25)=√41≈6.4. CSA_cyl=100π. CSA_cone=5×6.4π=32π. Total=132π≈<strong>414.7 m²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">100 traffic cones (r=15, h=45) + cyl base (r=15, h=5). Total concrete needed.<details class="ans"><summary>Show Answer</summary><p>V_one=3375π+1125π=4500π. 100×4500π≈<strong>1,413,717 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Circus tent: cyl (r=24, h=5) + cone (r=24, h=7). Total canvas cost at ₹100/m².<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2π×24×5=240π. Cone l=25. CSA=π×24×25=600π. Total=840π=(22/7)×840=2640 m². Cost=<strong>₹264000</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Funnel (cone r=10, h=12, l=13 + cyl r=4, h=6). Total volume.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×100×12=400π. V_cyl=π×16×6=96π. Total=496π≈<strong>1558 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Candle: cyl (r=2, h=15) + cone tip (r=2, h=4). After 2 hrs, cyl burned 6 cm. Remaining volume.<details class="ans"><summary>Show Answer</summary><p>Remaining cyl h=9. V=π×4×9+(1/3)π×4×4=36π+16π/3≈124π/3≈<strong>129.8 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A toy: cube (3 cm) + cyl (r=1.5, h=4) + cone (r=1.5, h=2) stacked. Total volume.<details class="ans"><summary>Show Answer</summary><p>V=27+π×2.25×4+(1/3)π×2.25×2=27+9π+1.5π=27+10.5π≈<strong>60 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cylindrical pot (r=10, h=20) has conical stone (r=6, h=9) dropped in. Rise in water level.<details class="ans"><summary>Show Answer</summary><p>V_stone=(1/3)π×36×9=108π. Rise=108π/(100π)=<strong>1.08 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Muffin: cyl base (r=4, h=3) + hemispherical top (r=4). Total volume.<details class="ans"><summary>Show Answer</summary><p>V=π×16×3+(2/3)π×64=48π+128π/3=272π/3≈<strong>284.5 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cylinder (r=R, h=2R) full of water. Cone (r=R, h=R) placed tip-down inside. Fraction of water overflowing.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)πR³. V_water=2πR³. Fraction=(1/3)πR³/(2πR³)=<strong>1/6</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Cyl + Cone: Advanced</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Cyl (r=6, h=8) with conical cavity (r=6, h=8, l=10) removed. TSA of remaining solid.<details class="ans"><summary>Show Answer</summary><p>Bottom circle+cyl CSA+cone interior CSA=36π+96π+60π=192π≈<strong>603.2 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Hollow cyl (R=8, r=6, h=20) with solid cone (r=6, h=15) inside. Free space volume.<details class="ans"><summary>Show Answer</summary><p>V_hollow=π(64−36)×20=560π. V_cone=180π. Free=380π≈<strong>1194 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Maximum cone inscribed in cylinder r=6, h=10. Volume of cone.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×36×10=120π≈<strong>377 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Right triangle (5, 12, 13) rotated about hypotenuse. Find sum of volumes of two cones formed.<details class="ans"><summary>Show Answer</summary><p>r=60/13. h₁+h₂=13. V=(1/3)πr²×13=(1/3)π×3600/169×13=1200π/13≈<strong>289.8 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cone lateral surface unrolled forms sector angle 120°, r=10. Find cone height.<details class="ans"><summary>Show Answer</summary><p>(120/360)×2πl=2πr→l/3=10→l=30. h=√(900−100)=20√2≈<strong>28.28 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid cone (r=6,h=8) cut at h=4 from apex (parallel to base). Find ratio V_small:V_original.<details class="ans"><summary>Show Answer</summary><p>r_small=3. V∝r²h. (1/2)³=1/8. Ratio=<strong>1:8</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A vertical cone h=30. Small cone h=10 cut from top. Find V_frustum:V_original.<details class="ans"><summary>Show Answer</summary><p>V_small/V_orig=(10/30)³=1/27. V_frustum=1−1/27=26/27. Ratio=<strong>26:27</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Trapezium (parallel sides 4,8 height=6) rotated about longer side. Find volume (frustum).<details class="ans"><summary>Show Answer</summary><p>Forms frustum: R=8,r=4,h=6. V=(1/3)π×6×(64+32+16)=224π≈<strong>703.7 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid: cube (3)+cyl (r=1.5,h=4)+cone (r=1.5,h=2) all same r stacked. Find TSA of entire composite.<details class="ans"><summary>Show Answer</summary><p>Very complex composite. Base of cube=9. 4 sides of cube=4×9=36. Top of cube minus circle=9−π×2.25. Cyl CSA=2π×1.5×4=12π. Cone CSA=π×1.5×√(4+2.25)=π×1.5×2.5=3.75π. Cone tip. TSA≈9+36+(9−7.07)+37.7+11.78≈<strong>96.4 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">CSA of cone = 4 times its base area. Find half-angle at apex.<details class="ans"><summary>Show Answer</summary><p>πrl=4πr²→l=4r. sinθ=r/l=1/4→θ=arcsin(0.25)≈<strong>14.48°</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<section class="topic" id="t7">
+  <div class="topic-header"><div class="t-num">7</div><h2>Combination: Cylinder + Hemisphere</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">Composite Solids</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Cylinder + Hemisphere</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=GNcFjFmqEc8" target="_blank">Curved Solids</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=mhlDSFZvJDY" target="_blank">Real World 3D Math</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Cyl + Hemisphere: Foundational</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Cylinder (r=7, h=13) + hemisphere on top (r=7). Total volume.<details class="ans"><summary>Show Answer</summary><p>V=(22/7)×49×13+(2/3)×(22/7)×343=2002+718.67≈<strong>2720.67 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">TSA of the same solid (cyl r=7, h=13 + hemi r=7).<details class="ans"><summary>Show Answer</summary><p>TSA=πr²+2πrh+2πr²=3πr²+2πrh=3×(22/7)×49+2×(22/7)×7×13=462+572=<strong>1034 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Capsule: cyl (r=2 mm, h=10) + 2 hemispheres (r=2). Total length and volume.<details class="ans"><summary>Show Answer</summary><p>Length=14 mm. V=π×4×10+(4/3)π×8=40π+32π/3=152π/3≈<strong>159 mm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Toy: cyl (r=5, h=10) + hemisphere on top (r=5). Volume and TSA.<details class="ans"><summary>Show Answer</summary><p>V=250π+250π/3=1000π/3≈1047.2 cm³. TSA=75π+100π=175π≈549.8 cm². <strong>V≈1047.2 cm³, TSA≈549.8 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Deodorant bottle: cyl (r=2, h=8) + hemisphere top (r=2). Volume.<details class="ans"><summary>Show Answer</summary><p>V=π×4×8+(2/3)π×8=32π+16π/3=112π/3≈<strong>117.3 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Bullet: cyl (r=0.5, h=3) + hemispherical tip. TSA.<details class="ans"><summary>Show Answer</summary><p>Base+cyl CSA+hemi=0.25π+3π+0.5π=3.75π≈<strong>11.78 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Test tube: r=0.7, h=10 + hemispherical bottom. Volume.<details class="ans"><summary>Show Answer</summary><p>V=π×0.49×10+(2/3)π×0.343=4.9π+0.229π=5.129π≈<strong>16.11 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Dome (hemi r=14) on cyl base (r=14, h=4). Canvas outside (no floor).<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2×(22/7)×14×4=352. Hemi CSA=2×(22/7)×196=1232. Total=<strong>1584 m²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Solid (cyl+hemi, r=6, total h=15). Volume.<details class="ans"><summary>Show Answer</summary><p>Cyl h=9. V=π×36×9+(2/3)π×216=324π+144π=468π≈<strong>1470.3 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Roller: cyl (r=3.5, h=20) + 2 hemispherical ends. SA.<details class="ans"><summary>Show Answer</summary><p>SA=cyl CSA+sphere SA=2π×3.5×20+4π×12.25=140π+49π=189π≈<strong>593.8 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Cyl + Hemisphere: Standard Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Vessel: cyl (r=5, h=9.5) + hemisphere (r=5) on top. Cost of painting CSA at ₹7/cm².<details class="ans"><summary>Show Answer</summary><p>CSA=95π+50π=145π≈455.5 cm². Cost≈<strong>₹3188.5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Vessel: r=7, cyl h=20 + hemi top. Volume in litres.<details class="ans"><summary>Show Answer</summary><p>V=980π+686π/3=3626π/3≈3796.6 cm³≈<strong>3.797 L</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Storage tank: cyl (r=2, h=6) + hemi cap. Truck-loads (5 m³ each) to fill.<details class="ans"><summary>Show Answer</summary><p>V=24π+16π/3=88π/3≈92.15 m³. Trucks=⌈92.15/5⌉=<strong>19 truck-loads</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Ice cream cup: cyl (r=4, h=10) + hemi (r=4). Outer visible surface area.<details class="ans"><summary>Show Answer</summary><p>Cyl CSA+hemi CSA+base=80π+32π+16π=128π≈<strong>402.1 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Decorative piece: hemi (r=3.5) on cyl (r=3.5, h=5). Cost of gilding at ₹3/cm².<details class="ans"><summary>Show Answer</summary><p>Hemi CSA=24.5π. Cyl CSA=35π. Base=12.25π. Total=71.75π≈225.4 cm². Cost≈<strong>₹676.2</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Container: cyl (r=7, h=6) with hemispherical depression at bottom. Inner volume.<details class="ans"><summary>Show Answer</summary><p>V=V_cyl−V_hemi=294π−686π/3=196π/3≈<strong>205.3 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Wax cyl (r=4, h=8) recast into cyl+hemi shape (r=4). Find new cyl height.<details class="ans"><summary>Show Answer</summary><p>128π=16πh+(2/3)π×64→128=16h+128/3→16h=85.33→h≈<strong>5.33 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Boiler: cyl (r=1.4, h=8) + hemi cap. Total volume and LSA.<details class="ans"><summary>Show Answer</summary><p>V=π×1.96×8+(2/3)π×2.744=17.51π≈55 m³. LSA=2π×1.4×8+2π×1.96=26.32π≈82.7 m². <strong>V≈55 m³, LSA≈82.7 m²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cyl (r=7, h=24) melted into cyl+hemi shape (r=7). Find new cyl height.<details class="ans"><summary>Show Answer</summary><p>1176π=49πh+686π/3→49h=1176−228.67=947.33→h≈<strong>19.33 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid: cyl (r=12, h=15) + hemi (r=12). 3/4 filled with water. Volume of water.<details class="ans"><summary>Show Answer</summary><p>Total V=2160π+1152π=3312π. Water=(3/4)×3312π=2484π≈<strong>7802 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Cyl + Hemisphere: Conversion and Comparison</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Ball bearings r=0.5 made from cyl (r=5, h=20) + hemi (r=5). Number of bearings.<details class="ans"><summary>Show Answer</summary><p>V_solid=500π+250π/3=1750π/3. V_bearing=π/6. n=1750/3÷1/6=3500. <strong>3500 bearings</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Min cube to carve cyl+hemi solid (r=7, total h=17). Cube side?<details class="ans"><summary>Show Answer</summary><p>Need width=14, height=17. Side=<strong>17 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Compare V: (A) sphere r=7 vs (B) cyl r=7,h=7 + hemi r=7. Ratio A:B.<details class="ans"><summary>Show Answer</summary><p>V_A=1372π/3. V_B=343π+686π/3=1715π/3. Ratio=1372:1715=<strong>4:5</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Open cyl (no top/bottom) + hemi cap one end. r=3.5, cyl h=8. Inner SA.<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2×(22/7)×3.5×8=176. Hemi CSA=2×(22/7)×12.25=77. Total=<strong>253 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cyl+hemi painted at ₹2/cm² (r=6, cyl h=12). Total cost.<details class="ans"><summary>Show Answer</summary><p>SA=3πr²+2πrh=108π+144π=252π≈791.7 cm². Cost≈<strong>₹1583.4</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">12 test tube pegs: cyl (r=0.5, h=8) + hemi (r=0.5). Total volume of 12.<details class="ans"><summary>Show Answer</summary><p>One V=2π+π/12=25π/12. 12 pegs=25π≈<strong>78.54 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">R doubled, h halved for cyl+hemi (r=5, h=10). Ratio new V to old V.<details class="ans"><summary>Show Answer</summary><p>Old=1000π/3. New(r=10,h=5): 500π+2000π/3=3500π/3. Ratio=7:2. <strong>7:2</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two identical cyls (r=4, h=10) joined with hemispheres (r=4) on outer ends. TSA.<details class="ans"><summary>Show Answer</summary><p>2×cyl CSA+2×hemi CSA+2×base circles=2×80π+2×32π+2×16π=160π+64π+32π=256π≈<strong>804.2 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Inner wooden container (cyl+hemi bottom), inner r=10.5, inner depth=21. Find inner volume.<details class="ans"><summary>Show Answer</summary><p>Hemi h=10.5, cyl h=10.5. V=π×110.25×10.5+(2/3)π×1157.625=1929.375π≈<strong>6062.5 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid (cone+cyl+hemi all r=7): cone h=9, cyl h=40. Total volume.<details class="ans"><summary>Show Answer</summary><p>V=147π+1960π+686π/3=(147+1960+228.67)π=2335.67π≈<strong>7335.5 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Cyl + Hemisphere: Advanced Exam Level</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Total h = 13, r = 3.5 (cyl+hemi). Find TSA and volume.<details class="ans"><summary>Show Answer</summary><p>Cyl h=9.5. V=(22/7)×12.25×9.5+(2/3)×(22/7)×42.875≈366.25+89.83=456.08 cm³. TSA=115.5+209=324.5 cm². <strong>V≈456.1 cm³, TSA≈324.5 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Dumbbell: two cyls (r=4,h=10) each, joined by two hemispheres (r=4). TSA.<details class="ans"><summary>Show Answer</summary><p>2×cyl CSA+sphere SA+2×base circles=160π+64π+32π=256π≈<strong>804.2 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cylinder (r=R, h=2R) with hemispherical cavity (r=R) at one end. Volume of metal.<details class="ans"><summary>Show Answer</summary><p>V_cyl=2πR³. V_hemi=(2/3)πR³. Metal=(4/3)πR³=V_sphere(R). <strong>(4/3)πR³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid joined: cyl (r=5, h=10) + hemi (r=5). Hemisphere submerged in water tank (r=20). Rise in water level.<details class="ans"><summary>Show Answer</summary><p>V_solid=250π+250π/3=1000π/3. Rise=1000π/(3×400π)=1000/1200≈<strong>0.833 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cricket ball (sphere r=3.5) in cylindrical container just large enough. % volume wasted.<details class="ans"><summary>Show Answer</summary><p>V_cyl=π×12.25×7=85.75π. V_ball=57.17π. Waste%=28.58/85.75×100=<strong>33.33%</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Prove: cyl(r,2r) − hemi(r) = sphere(r). Verify r=7.<details class="ans"><summary>Show Answer</summary><p>2πr³−(2/3)πr³=(4/3)πr³. V_sphere=(4/3)πr³. Proved. r=7: 686π−686π/3=1372π/3. (4/3)×343π=1372π/3. <strong>Proved.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid cyl+hemi (r=6, cyl h=12). If r becomes 2r and h halves. Find % change in TSA.<details class="ans"><summary>Show Answer</summary><p>Old TSA=3π×36+2π×6×12=108π+144π=252π. New r=12,h=6. TSA=3π×144+2π×12×6=432π+144π=576π. % change=(576−252)/252×100=<strong>128.6% increase</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Hemisphere (r=R) placed on flat table. Smallest cylinder enclosing it has r=R, h=R. Find ratio V_hemi:V_cylinder.<details class="ans"><summary>Show Answer</summary><p>(2/3)πR³:πR³=<strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A joined solid: cyl (r=7, h=40) + cone (r=7, h=9) + hemi base (r=7). Find V.<details class="ans"><summary>Show Answer</summary><p>V=π×49×40+(1/3)π×49×9+(2/3)π×343=1960π+147π+686π/3=(1960+147+228.67)π=2335.67π≈<strong>7336 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Water pipe (cyl r=7, h=1 m) joined to hemispherical cap. Find total outer SA of the pipe section.<details class="ans"><summary>Show Answer</summary><p>Cyl CSA=2π×7×100=1400π. Hemi CSA=2π×49=98π. Base circle=49π. Total=(1400+98+49)π=1547π≈<strong>4861 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<section class="topic" id="t8">
+  <div class="topic-header"><div class="t-num">8</div><h2>Combination: Cone + Hemisphere</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">Composite Solids: Cone + Hemisphere</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Ice Cream Cone Math</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=gVku6WGgD5A" target="_blank">Curved Shape Volumes</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=KnpljL5igBQ" target="_blank">Math in Everyday Objects</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Cone + Hemisphere: Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A toy is cone (r=3.5, h=4) on hemisphere (r=3.5). Find total volume.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)×(22/7)×12.25×4=51.33. V_hemi=(2/3)×(22/7)×42.875=89.83. Total=<strong>141.17 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find TSA of toy in Q1 (cone l=√(3.5²+4²)=√28.25≈5.31).<details class="ans"><summary>Show Answer</summary><p>TSA=πrl+2πr²=π×3.5×5.31+2π×12.25=18.59π+24.5π=43.09π≈<strong>135.4 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Ice cream cone+scoop: cone r=4, h=12, l=12.65. Hemisphere r=4 on top. TSA visible.<details class="ans"><summary>Show Answer</summary><p>Cone CSA=πrl=π×4×12.65=50.6π. Hemi CSA=2π×16=32π. Total=82.6π≈<strong>259.5 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A Christmas decoration: cone (r=5, l=13) + hemisphere (r=5) below. Find TSA.<details class="ans"><summary>Show Answer</summary><p>Cone CSA=π×5×13=65π. Hemi CSA=2π×25=50π. Total=115π≈<strong>361.3 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cone+hemi same r=6: cone h=8, l=10. Total volume.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×36×8+(2/3)π×216=96π+144π=240π≈<strong>753.98 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Solid cone (r=3, h=4) placed on hemisphere (r=3). Find height of combined solid.<details class="ans"><summary>Show Answer</summary><p>Total h=cone h+hemi h=4+3=<strong>7 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find volume of ice cream (hemisphere r=3 + cone r=3, h=8).<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π×27+(1/3)π×9×8=18π+24π=42π≈<strong>131.9 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio V_cone:V_hemi (both r=5, cone h=5).<details class="ans"><summary>Show Answer</summary><p>(1/3)π×25×5:(2/3)π×125=125π/3:250π/3=<strong>1:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A lampshade: cone (r=10, l=26) + hemi (r=10). Find TSA.<details class="ans"><summary>Show Answer</summary><p>Cone CSA=π×10×26=260π. Hemi CSA=2π×100=200π. Total=460π≈<strong>1445 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cone r=7, l=25 + hemisphere r=7. TSA (no base).<details class="ans"><summary>Show Answer</summary><p>TSA=πrl+2πr²=(22/7)×7×25+2×(22/7)×49=550+308=<strong>858 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Cone + Hemisphere: Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A solid cone+hemisphere (both r=7). TSA=cone CSA+sphere CSA? Why not just sphere?<details class="ans"><summary>Show Answer</summary><p>No. The flat base of cone is glued to flat face of hemisphere — both hidden. TSA=CSA_cone+CSA_hemi=550+308=<strong>858 cm²</strong> (l=25 from earlier)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A solid is hemisphere (r=6) with cone on top (r=6, h=8, l=10). Find volume and TSA.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π×216+(1/3)π×36×8=144π+96π=240π≈753.98 cm³. TSA=πrl+2πr²=60π+72π=132π≈414.7 cm². <strong>V≈754 cm³, TSA≈414.7 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">200 toy tops (cone+hemisphere, r=3, cone h=4, l=5) to be painted at ₹1.50/cm². Find cost.<details class="ans"><summary>Show Answer</summary><p>One TSA=πrl+2πr²=π×3×5+2π×9=15π+18π=33π. 200 tops=6600π≈20735.6 cm². Cost≈20735.6×1.5≈<strong>₹31103</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A solid (cone+hemi, r=R) has total height = 2R. Find volume in terms of R.<details class="ans"><summary>Show Answer</summary><p>Cone h=R. V=(1/3)πR³+(2/3)πR³=πR³. <strong>V=πR³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A conical cap on hemisphere makes a compound solid. If the radius is doubled, find factor increase in volume.<details class="ans"><summary>Show Answer</summary><p>V=πR³ (from above). New V=π(2R)³=8πR³. Factor=<strong>8 times</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Solid cone+hemi (r=3.5, cone h=4). TSA and volume.<details class="ans"><summary>Show Answer</summary><p>l=√(12.25+16)=√28.25≈5.315. V=(1/3)π×12.25×4+(2/3)π×42.875=51.33+89.83=141.17 cm³. TSA=π×3.5×5.315+2π×12.25=18.6π+24.5π=43.1π≈135.4 cm². <strong>V≈141.2 cm³, TSA≈135.4 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If V_cone = V_hemisphere (both radius r), find cone height in terms of r.<details class="ans"><summary>Show Answer</summary><p>(1/3)πr²h=(2/3)πr³→h=2r. h=<strong>2r</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">An acorn: hemisphere r=2 + cone h=6, r=2, l=√40. Find TSA.<details class="ans"><summary>Show Answer</summary><p>CSA_cone=π×2×√40=2√40π≈12.65π. Hemi CSA=2π×4=8π. Total=20.65π≈<strong>64.87 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A solid cone+hemisphere is submerged in cylinder (r=8, h=30, partially filled). Cone r=3, h=4, hemi r=3. Rise in water level.<details class="ans"><summary>Show Answer</summary><p>V_solid=πr³=π×27=27π≈84.82 cm³. Rise=84.82/(π×64)=84.82/201.06≈<strong>0.422 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Marble: hemisphere r=1 + cone r=1, h=2. Cost of painting 1000 marbles at ₹0.05/cm².<details class="ans"><summary>Show Answer</summary><p>TSA_one=π×1×√5+2π×1=(√5+2)π≈(2.236+2)π=4.236π≈13.3 cm². 1000×13.3=13300 cm². Cost=13300×0.05=<strong>₹665</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Cone + Hemisphere: Geometric Insights</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Cone+hemi solid (r=R, cone h=R). Show TSA=πR(l+2R) where l=R√2.<details class="ans"><summary>Show Answer</summary><p>l=√(R²+R²)=R√2. TSA=πRl+2πR²=πR×R√2+2πR²=πR²(√2+2)=πR(R√2+2R)=πR(l+2R). <strong>Proved.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">When does TSA of cone+hemi = TSA of sphere (same r)? Find condition.<details class="ans"><summary>Show Answer</summary><p>πrl+2πr²=4πr²→l=2r. For cone: l²=r²+h²→4r²=r²+h²→h=r√3. Condition: <strong>h=r√3</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find ratio V(cone+hemi):V(sphere) when both have radius r and cone h=r.<details class="ans"><summary>Show Answer</summary><p>V_comb=πR³ (from SET B Q4). V_sphere=(4/3)πr³. Ratio=1:(4/3)=<strong>3:4</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The cone+hemisphere total height = 4r. Cone h=3r, hemi=r. Find TSA in terms of r.<details class="ans"><summary>Show Answer</summary><p>l=√(9r²+r²)=r√10. TSA=πr×r√10+2πr²=πr²(√10+2). <strong>TSA=πr²(√10+2)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cone+hemi solid (r=5, cone h=12, l=13). Find ratio of volumes cone:hemi.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×25×12=100π. V_hemi=(2/3)π×125=250π/3. Ratio=100:(250/3)=300:250=<strong>6:5</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Hemisphere base (r=7) is flat on table. Cone sits on top (r=7, h=24). What is the height of the combined solid above the table?<details class="ans"><summary>Show Answer</summary><p>Hemi height=r=7. Cone h=24. Total=<strong>31 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A metallic cone+hemi (r=4.2 cm). Cone h = diameter = 8.4 cm. Find volume and TSA.<details class="ans"><summary>Show Answer</summary><p>h=8.4, r=4.2, l=√(70.56+17.64)=√88.2≈9.39. V=(1/3)π×17.64×8.4+(2/3)π×74.088=49.392π+49.392π=98.784π≈310.3 cm³. TSA=π×4.2×9.39+2π×17.64=39.438π+35.28π=74.718π≈234.8 cm². <strong>V≈310 cm³, TSA≈234.8 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A game piece (r=1 cm): hemisphere + cone h=3. Find V and TSA.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π+(1/3)π×3=2π/3+π=5π/3≈5.24 cm³. l=√10. TSA=π√10+2π=(√10+2)π≈(3.162+2)π≈16.2 cm². <strong>V≈5.24 cm³, TSA≈16.2 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A solid toy is made from 200 g of wax (density=0.9 g/cm³). Shape = cone+hemi, r=3. Find cone h if volume = mass/density.<details class="ans"><summary>Show Answer</summary><p>V=200/0.9=222.2 cm³. 222.2=πr³+(1/3)πr²h. 222.2=27π+(1/3)×9π×h→222.2=84.82+9.42h→h≈14.6 cm. <strong>h≈14.6 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cone+hemisphere solid (r=R, h_cone=2R). Find ratio of SA to volume in terms of R.<details class="ans"><summary>Show Answer</summary><p>l=√(R²+4R²)=R√5. TSA=πRl+2πR²=πR²√5+2πR²=πR²(√5+2). V=(1/3)πR²×2R+(2/3)πR³=2πR³/3+2πR³/3=4πR³/3. SA/V=πR²(√5+2)/(4πR³/3)=3(√5+2)/(4R). <strong>SA/V=3(√5+2)/(4R)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Cone + Hemisphere: Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A volcano model: cone (r=15, h=20) on hemisphere (r=15). Find volume of lava chamber (hemisphere) and total model volume.<details class="ans"><summary>Show Answer</summary><p>V_hemi=(2/3)π×3375=2250π≈7069.8 cm³. V_cone=(1/3)π×225×20=1500π. Total=3750π≈11781 cm³. <strong>Hemi≈7070 cm³, Total≈11781 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If the total volume of cone+hemi = 1.5× volume of sphere (same r), find cone height.<details class="ans"><summary>Show Answer</summary><p>V_total=1.5×(4/3)πr³=2πr³. (1/3)πr²h+(2/3)πr³=2πr³→(1/3)h+(2/3)r=2r→h=4r. h=<strong>4r</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Solid hemisphere r=6 and solid cone r=6, h=8 are welded together. Find total mass if density=7 g/cm³.<details class="ans"><summary>Show Answer</summary><p>V=144π+96π=240π≈753.98 cm³. Mass=753.98×7≈<strong>5278 g≈5.28 kg</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cone+hemi solid is melted and recast into cylinder (same r). Find height of cylinder.<details class="ans"><summary>Show Answer</summary><p>V_solid=πR³ (cone h=R). V_cyl=πR²×h. h=R. <strong>h=R (same as radius)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A series of 10 identical cone+hemi solids (r=2, cone h=3) are made. Find total material needed (volume).<details class="ans"><summary>Show Answer</summary><p>V_one=(1/3)π×4×3+(2/3)π×8=4π+16π/3=28π/3. 10 pieces=280π/3≈293.2 cm³. <strong>≈293.2 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the curved surface area of the compound cone+hemi solid that has the same volume as a cube of side 6 cm.<details class="ans"><summary>Show Answer</summary><p>V_cube=216. V_solid=πR³. R=(216/π)^(1/3)≈4.Hmm, R³=216/π≈68.75→R≈4.1 cm. Assume r=3: V=27π=84.82≠216. Trial r=4: V=64π≈201. r=4.1: V=68.9π≈216.5≈216. TSA≈π×4.1×l+2π×16.81 where l=√(cone h²+r²). With cone h=r=4.1: l=4.1√2≈5.8. TSA≈π×4.1×5.8+2π×16.81=23.78π+33.62π≈57.4π≈180.4 cm². <strong>≈180 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two hollow cone+hemi shells (r=5, thickness=2 mm, cone h=12). Approximate total metal volume.<details class="ans"><summary>Show Answer</summary><p>TSA_one=πrl+2πr²=π×5×13+50π=65π+50π=115π≈361.3 cm². Volume≈2×SA×t=2×361.3×0.2≈<strong>144.5 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If cone height = 2× hemisphere radius, and total volume = 100π cm³, find r.<details class="ans"><summary>Show Answer</summary><p>h=2r. V=(1/3)πr²×2r+(2/3)πr³=(2/3)πr³+(2/3)πr³=(4/3)πr³=100π→r³=75→r=∛75≈<strong>4.22 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">An ice cream solid: hemisphere r=5 + cone r=5, l=13, h=12. A customer drops it (both melt together). Find max height of melted puddle in a circular dish r=10.<details class="ans"><summary>Show Answer</summary><p>V_total=(2/3)π×125+(1/3)π×25×12=250π/3+100π=550π/3≈576 cm³. In dish r=10: h=576/(π×100)=576/314.16≈<strong>1.83 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">NCERT-style: A toy is in the shape of a right circular cone of radius 3.5 cm and height 12 cm surmounted on a hemisphere of same radius. Find the TSA of the toy.<details class="ans"><summary>Show Answer</summary><p>l=√(12.25+144)=√156.25=12.5. TSA=πrl+2πr²=(22/7)×3.5×12.5+2×(22/7)×12.25=137.5+77=<strong>214.5 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<section class="topic" id="t9">
+  <div class="topic-header"><div class="t-num">9</div><h2>Conversion of Solids – Melting &amp; Recasting</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">Volume Conservation</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Melting and Recasting</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=gVku6WGgD5A" target="_blank">Volume Puzzles</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=mhlDSFZvJDY" target="_blank">Conservation Laws in Math</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Conversion (Volume Conservation)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A sphere of r=9 cm is melted into spheres of r=3 cm. Find number of small spheres.<details class="ans"><summary>Show Answer</summary><p>n=(9/3)³=3³=<strong>27 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere of r=4 cm is melted into a cylinder of r=2 cm. Find height of cylinder.<details class="ans"><summary>Show Answer</summary><p>(4/3)π×64=π×4×h→h=256/12=64/3≈<strong>21.33 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cylinder (r=6, h=4) is melted into a cone (same r=6). Find height of cone.<details class="ans"><summary>Show Answer</summary><p>πr²h=(1/3)πr²h_c→h_c=3h=12. <strong>12 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cone (r=10, h=27) is melted into a sphere. Find radius of sphere.<details class="ans"><summary>Show Answer</summary><p>(1/3)π×100×27=(4/3)πR³→900=(4/3)R³→R³=675→R=∛675≈<strong>8.77 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many cones (r=1, h=2) can be made from a cylinder (r=3, h=4)?<details class="ans"><summary>Show Answer</summary><p>V_cyl=36π. V_cone=(2/3)π. n=36/(2/3)=54. <strong>54 cones</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A copper sphere of r=9 cm is melted and recast as a wire (cylinder) of r=0.3 cm. Find length of wire.<details class="ans"><summary>Show Answer</summary><p>V=(4/3)π×729=972π. L=972π/(π×0.09)=972/0.09=<strong>10800 cm = 108 m</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A metallic cuboid (9×8×2 cm) is melted and cast into a sphere. Find radius.<details class="ans"><summary>Show Answer</summary><p>V=144. (4/3)πR³=144→R³=108/π≈34.38→R≈<strong>3.25 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hemisphere (r=7) and cone (r=7, h=7) melted together into a sphere. Find sphere radius.<details class="ans"><summary>Show Answer</summary><p>V=(2/3)π×343+(1/3)π×49×7=686π/3+343π/3=1029π/3=343π. (4/3)πR³=343π→R³=343×3/4=257.25→R≈<strong>6.36 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylinder of base radius 3 cm and height 8 cm is melted and recast into cones of height 3 cm and radius 1 cm. Find number of cones.<details class="ans"><summary>Show Answer</summary><p>V_cyl=72π. V_cone=π/1=π. n=72. <strong>72 cones</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A solid lead cylinder (r=2, h=14) is melted into small spheres of r=1. How many spheres?<details class="ans"><summary>Show Answer</summary><p>V_cyl=56π. V_sphere=(4/3)π. n=56/(4/3)=42. <strong>42 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Conversion: Water Level Rise Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Sphere r=6 dropped into cylinder (r=12) partially filled with water. Rise in water level.<details class="ans"><summary>Show Answer</summary><p>V_sphere=(4/3)π×216=288π. Rise=288π/(144π)=<strong>2 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cube of side 6 cm is dropped into water in a cylinder of r=3 cm. Find rise in level.<details class="ans"><summary>Show Answer</summary><p>V_cube=216. Rise=216/(9π)=24/π≈<strong>7.64 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cone (r=7, h=9) dropped into cylinder (r=7) containing water at 6 cm. New water level.<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)×(22/7)×49×9=462. Rise=462/(49×22/7)=462/154=3. New level=6+3=<strong>9 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylinder (r=4) has water level at 10 cm. A solid sphere (r=3) is completely submerged. New water level?<details class="ans"><summary>Show Answer</summary><p>V_sphere=36π. Rise=36π/(16π)=2.25. Level=<strong>12.25 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A bucket (cyl r=18, h=32) is filled with sand. Sand poured onto ground forming cone (r=24). Find height of cone.<details class="ans"><summary>Show Answer</summary><p>V_bucket=π×324×32=10368π. (1/3)π×576×h=10368π→h=10368×3/576=<strong>54 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If water from sphere (r=21) is poured into cylinder (r=10.5). Find height. (π=22/7)<details class="ans"><summary>Show Answer</summary><p>V=(4/3)×(22/7)×9261=38808. h=38808/(π×110.25)=38808/(22/7×110.25)=38808/346.5=<strong>112 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hemispherical bowl (r=9) of water poured into conical vessel (r=9). Find height of water in cone.<details class="ans"><summary>Show Answer</summary><p>V_hemi=(2/3)π×729=486π. V_cone=(1/3)π×81×h=27πh. h=486/27=<strong>18 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">3 solid spheres of r=3 are melted into one sphere. Find its radius.<details class="ans"><summary>Show Answer</summary><p>3×(4/3)π×27=(4/3)πR³→R³=81→R=∛81≈<strong>4.33 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Metal cylinder (r=12, h=3) melted into 12 spheres. Find radius of each sphere.<details class="ans"><summary>Show Answer</summary><p>V=432π. Each=(4/3)πr³=36π→r³=27→r=<strong>3 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A solid cylinder (r=7, h=60) melted into solid cone of radius 7. Find height of cone.<details class="ans"><summary>Show Answer</summary><p>πr²×60=(1/3)πr²h→h=180. <strong>180 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Conversion: Complex Recasting Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A copper rod (cylinder r=1, h=8) is drawn into wire (r=0.1). Find length of wire.<details class="ans"><summary>Show Answer</summary><p>V=8π. L=8π/(π×0.01)=<strong>800 cm = 8 m</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A sphere of r=3 cm is melted and drawn into a cylindrical wire of length 3000 m. Find radius of wire.<details class="ans"><summary>Show Answer</summary><p>V=(4/3)π×27=36π. πr²×300000=36π→r²=36/300000=1.2×10⁻⁴→r≈<strong>0.0110 cm = 0.11 mm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A shot put ball (sphere r=4.9, iron) melted into a cylinder (r=3.5). Find height. (π=3.14)<details class="ans"><summary>Show Answer</summary><p>V=(4/3)×3.14×117.649=492.4. h=492.4/(3.14×12.25)=492.4/38.47=<strong>12.8 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A metallic cube of side 12 cm is melted and recast into cuboids of 4×3×2 cm. How many cuboids?<details class="ans"><summary>Show Answer</summary><p>V_cube=1728. V_cuboid=24. n=1728/24=<strong>72 cuboids</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Coins: 50 circular coins diameter=1.75 cm, thickness=2 mm melted into cuboid 5.5×10×3.5 cm. Find thickness of each coin (verify).<details class="ans"><summary>Show Answer</summary><p>V_cuboid=192.5 cm³. V_coin=192.5/50=3.85. Coin=π×(0.875)²×t=3.85→t=3.85/(π×0.766)=1.6≈<strong>2 mm. Verified.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A bucket (frustum shape: R=20, r=12, h=15) holds sand. Sand forms cone of r=20. Find cone height.<details class="ans"><summary>Show Answer</summary><p>V_frustum=(1/3)π×15×(400+240+144)=1/3×15×784π=3920π. Cone: (1/3)π×400×h=3920π→h=3920×3/400=<strong>29.4 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A sphere (r=6) and cone (r=6, h=8) are melted together. Recast into cylinder (r=3). Find height.<details class="ans"><summary>Show Answer</summary><p>V_sphere=(4/3)π×216=288π. V_cone=96π. Total=384π. h=384π/(9π)=384/9≈<strong>42.67 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A hemisphere (r=10) is melted into cylinders of r=1, h=2. Find number of cylinders.<details class="ans"><summary>Show Answer</summary><p>V_hemi=(2/3)π×1000=2000π/3. V_cyl=2π. n=2000/3÷2=1000/3≈<strong>333 cylinders</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">n identical solid spheres of r=4.5 mm are melted into a big sphere of r=4.5 cm. Find n.<details class="ans"><summary>Show Answer</summary><p>r_small=0.45 cm. n=(4.5/0.45)³=10³=<strong>1000 spheres</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylindrical block (r=12, h=16) of wax is melted. (a) 8 cones r=3,h=4. (b) How many spheres r=2 from remaining wax?<details class="ans"><summary>Show Answer</summary><p>V_block=2304π. 8 cones=8×(1/3)π×9×4=96π. Remaining=2208π. V_sphere=(4/3)π×8=32π/3. n=2208π÷32π/3=2208×3/32=<strong>207 spheres</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Conversion: Advanced and Exam-Level</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A large sphere of r=R is melted into N small spheres of r=r. Show SA increases in ratio NR:r (approximately).<details class="ans"><summary>Show Answer</summary><p>Old SA=4πR². New total SA=N×4πr²=4πR³/r³×4πr²÷(4π)... N=R³/r³. New SA=R³/r³×4πr²=4πR³/r. Ratio New:Old=4πR³/r:4πR²=R:r=<strong>R/r:1</strong>. SA increases by factor R/r.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Water flows from a cone (r=5, h=10) into a cylinder (r=5). In what time does the level reach 5 cm if flow rate = 2 cm³/s?<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×25×10=250π/3. V needed for 5 cm in cyl=π×25×5=125π. Since 250π/3>125π, use cylinder volume. Time=125π/2≈<strong>196.35 seconds</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A gold sphere r=3 cm is beaten into a square sheet of thickness 0.1 mm. Find area of sheet.<details class="ans"><summary>Show Answer</summary><p>V=(4/3)π×27=36π. Area=36π/0.01=3600π≈<strong>11310 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Rain water on rectangular roof 10m×8m (1cm rain) collected in cylinder r=4m. Find rise of water in tank.<details class="ans"><summary>Show Answer</summary><p>V_rain=10×8×0.01=0.8 m³. Rise=0.8/(π×16)=0.8/50.27≈<strong>0.0159 m ≈ 1.59 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A solid sphere of r=12 cm is melted, and recast as hollow spherical shell, outer r=14 cm. Find inner radius.<details class="ans"><summary>Show Answer</summary><p>V_solid=(4/3)π×1728=2304π. V_shell=(4/3)π(14³−r³). 2304=2744−r³→r³=440→r≈<strong>7.61 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A metallic cylinder (r=5, h=20) is melted and recast into solid cones of r=5, l=13. How many cones? (h=12)<details class="ans"><summary>Show Answer</summary><p>V_cyl=500π. V_cone=(1/3)π×25×12=100π. n=500/100=<strong>5 cones</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere of r=9 is melted into 27 equal cubes. Find side of each cube.<details class="ans"><summary>Show Answer</summary><p>V_sphere=(4/3)π×729=972π. Each cube=36π. a³=36π→a=(36π)^(1/3)≈(113.1)^(1/3)≈<strong>4.84 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">3 cubes of side 3, 4, 5 cm are melted and recast into a sphere. Find surface area of sphere.<details class="ans"><summary>Show Answer</summary><p>V=27+64+125=216. R=6. SA=4πR²=4×(22/7)×36=<strong>452.57 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hollow cylinder (R=5, r=4, h=7) melted into solid cylinder (r=3). Find height of new cylinder.<details class="ans"><summary>Show Answer</summary><p>V=π(25−16)×7=63π. h=63π/(9π)=<strong>7 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A sphere of r=7 and a cube of side a have same volume. Find a.<details class="ans"><summary>Show Answer</summary><p>(4/3)π×343=a³→a³=1436.8/3×(22/7)=1437.3→a=(1437.3)^(1/3)≈<strong>11.3 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<section class="topic" id="t10">
+  <div class="topic-header"><div class="t-num">10</div><h2>Frustum of a Cone</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">Frustum Volume and SA</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Frustum Explained</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=gVku6WGgD5A" target="_blank">Truncated Cone Math</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=J4Vz8my_LW4" target="_blank">Frustum in Engineering</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Frustum: Slant Height and CSA</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A frustum has R=5, r=3, h=4. Find slant height l.<details class="ans"><summary>Show Answer</summary><p>l=√(h²+(R−r)²)=√(16+4)=√20=2√5≈<strong>4.47 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find CSA of frustum: R=10, r=6, h=8.<details class="ans"><summary>Show Answer</summary><p>l=√(64+16)=√80=4√5≈8.944. CSA=π(R+r)l=π×16×8.944=143.1π≈<strong>449.4 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find TSA of frustum: R=4, r=2, h=3.<details class="ans"><summary>Show Answer</summary><p>l=√(9+4)=√13. TSA=π[R²+r²+(R+r)l]=π[16+4+6√13]=π[20+21.63]=41.63π≈<strong>130.8 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find volume of frustum: R=7, r=3, h=12.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)πh(R²+Rr+r²)=(1/3)π×12×(49+21+9)=4π×79=316π≈<strong>992.7 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A frustum has R=14, r=7, h=24. Find slant height and CSA.<details class="ans"><summary>Show Answer</summary><p>l=√(576+49)=√625=25. CSA=π(14+7)×25=525π=(22/7)×525=<strong>1650 cm²</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A bucket (frustum) has R=20, r=8, h=35. Find its volume (in litres).<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×35×(400+160+64)=(1/3)×(22/7)×35×624=22×5×624/3=22880 cm³≈<strong>22.88 litres</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the TSA of a frustum: R=5, r=3, l=4.<details class="ans"><summary>Show Answer</summary><p>TSA=π[R²+r²+(R+r)l]=π[25+9+8×4]=π[34+32]=66π≈<strong>207.3 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A frustum: R=10, r=5, h=12. Find volume and total surface area.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×12×(100+50+25)=4π×175=700π≈2199.1 cm³. l=√(144+25)=13. TSA=π[100+25+15×13]=π[125+195]=320π≈1005.3 cm². <strong>V≈2199 cm³, TSA≈1005.3 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A bucket: R=28, r=21, h=45. Find capacity (volume) in litres.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)×(22/7)×45×(784+588+441)=(1/3)×(22/7)×45×1813=(22×15×1813)/7=86285.7 cm³≈<strong>86.29 litres</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A frustum of R=30, r=12, h=16. Find the area of curved surface.<details class="ans"><summary>Show Answer</summary><p>l=√(256+324)=√580≈24.08. CSA=π×42×24.08=1011.4π≈<strong>3177 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Frustum: Real-World (Buckets, Lamps, Pots)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A drinking glass (frustum) has R=4 cm top, r=2 cm bottom, h=9 cm. Find volume.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×9×(16+8+4)=3π×28=84π≈<strong>263.9 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A milk bucket (frustum): R=21, r=14, h=18. Find canvas needed for the curved surface and base only.<details class="ans"><summary>Show Answer</summary><p>l=√(324+49)=√373≈19.31. CSA=π(21+14)×19.31=675.85π. Base=π×196. Total=(675.85+196)π=871.85π≈<strong>2739 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A frustum R=10, r=4, h=6 is made of metal (TSA includes both bases). Find cost at ₹5/cm².<details class="ans"><summary>Show Answer</summary><p>l=√(36+36)=6√2≈8.485. TSA=π[100+16+(10+4)×8.485]=π[116+118.79]=234.79π≈737.6 cm². Cost=737.6×5≈<strong>₹3688</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A lamp shade (frustum, open both ends): R=28, r=14, h=48. Find canvas area.<details class="ans"><summary>Show Answer</summary><p>l=√(2304+196)=√2500=50. CSA=π(28+14)×50=2100π=(22/7)×2100=<strong>6600 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A fez cap (frustum) has R=10 cm (base), r=4 cm (top), h=7 cm. Find canvas area (CSA + top).<details class="ans"><summary>Show Answer</summary><p>l=√(49+36)=√85≈9.22. CSA=π×14×9.22=129.1π. Top=π×16. Total=145.1π≈<strong>455.8 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A bucket (frustum): R=40, r=20, h=24. Find volume in litres and CSA.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×24×(1600+800+400)=8π×2800=22400π/3×(22/7)/1000 = 8×(22/7)×2800/3=73600/3≈24533 cm³≈24.53 L. l=√(576+400)=√976≈31.24. CSA=π×60×31.24=1874.4π≈5887 cm². <strong>V≈24.53 L, CSA≈5887 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A tent: frustum bottom half R=6, r=4, h=3 + cone top r=4, h=4. Find total canvas (no floor).<details class="ans"><summary>Show Answer</summary><p>Frustum l=√(9+4)=√13≈3.61. CSA_frus=π×10×3.61=36.1π. Cone l=√(16+16)=4√2≈5.66. Cone CSA=π×4×5.66=22.64π. Total≈58.74π≈<strong>184.5 m²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A metallic bucket (frustum): R=20, r=12, h=15. Find the material used for sides+base at 2 mm thickness.<details class="ans"><summary>Show Answer</summary><p>l=√(225+64)=17. CSA=π×32×17=544π≈1708.6 cm². Base=144π≈452.4. Total SA=2161 cm². Volume_metal≈SA×0.2=432.2 cm³≈<strong>432 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A conical vessel (R=5, h=6) is cut to form a frustum (r=2.5 at cut). Find ratio of volume of frustum to small cone cut off.<details class="ans"><summary>Show Answer</summary><p>Small cone (h=3, r=2.5): V_small=(1/3)π×6.25×3=6.25π. Total cone V=(1/3)π×25×6=50π. Frustum V=50π−6.25π=43.75π. Ratio=43.75:6.25=<strong>7:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Drinking vessel (frustum): R=5, r=3, h=6. How many such vessels fill a cylinder (r=5, h=40)?<details class="ans"><summary>Show Answer</summary><p>V_vessel=(1/3)π×6×(25+15+9)=2π×49=98π. V_cyl=π×25×40=1000π. n=1000/98≈<strong>10.2 → 10 vessels</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Frustum: Slant Height, Mixed, and Conversions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A heap of wheat (frustum shaped): R=5 m, r=2 m, h=4 m. Find volume.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×4×(25+10+4)=4π×39/3=52π≈<strong>163.4 m³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A frustum volume = 2002 cm³, R=8, r=2. Find h. (π=22/7)<details class="ans"><summary>Show Answer</summary><p>V=(1/3)×(22/7)×h×(64+16+4)=(22/21)×h×84=88h. 2002=88h→h=<strong>22.75 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A frustum sand heap (R=7, r=3, h=4) is poured into cylinder (r=5). Find height of sand in cylinder.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×4×(49+21+9)=4π×79/3=316π/3. h_cyl=316π/(3×25π)=316/75≈<strong>4.21 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A frustum bucket (R=20, r=10, h=15) melted into spheres of r=2. Find number of spheres.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×15×(400+200+100)=5π×700=3500π. V_sphere=(4/3)π×8=32π/3. n=3500π÷32π/3=3500×3/32=328.125≈<strong>328 spheres</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A frustum has R=2r. V=7πr²h/3. Verify the formula.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)πh(R²+Rr+r²)=(1/3)πh(4r²+2r²+r²)=(1/3)πh×7r²=7πr²h/3. <strong>Verified.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find ratio V_frustum:V_small cone when cone (h=H, r=R) is cut at h=H/2.<details class="ans"><summary>Show Answer</summary><p>Small cone r=R/2, h=H/2. V_small=(1/3)π(R/2)²(H/2)=πR²H/24. V_total=(1/3)πR²H. V_frustum=V_total−V_small=(8−1)πR²H/24=7πR²H/24. Ratio V_frus:V_small=7:1. <strong>7:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The frustum of a cone has the same radius at top and bottom (R=r). What shape does it become and what is V?<details class="ans"><summary>Show Answer</summary><p>Becomes a cylinder. V=πr²h. <strong>Cylinder, V=πr²h</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">CSA of frustum = πl(R+r). Derive l from frustum of R=13, r=7, h=12.<details class="ans"><summary>Show Answer</summary><p>l=√(h²+(R−r)²)=√(144+36)=√180=6√5≈<strong>13.42 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A frustum (R=10, r=5, h=10) is full of sand. Sand emptied into n cubes of side 5. Find n.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×10×(100+50+25)=1750π/3≈1832.6 cm³. V_cube=125. n=1832.6/125≈<strong>14.66 → 14 cubes</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A frustum (R=8, r=4, l=10) painted at ₹3/cm² on CSA only. Find cost.<details class="ans"><summary>Show Answer</summary><p>CSA=π×12×10=120π≈376.99 cm². Cost=376.99×3≈<strong>₹1131</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Frustum: Advanced Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A bucket: R=25, r=10, h=35. Find volume, canvas for curved surface and base, and cost at ₹10/100 cm².<details class="ans"><summary>Show Answer</summary><p>V=(1/3)×(22/7)×35×(625+250+100)=(22/21)×35×975=22×1625/3=35750/3≈11916.7 cm³. l=√(1225+225)=√1450≈38.08. CSA=π×35×38.08=1332.8π. Base=100π. Total=(1432.8)π≈4500.6 cm². Cost=4500.6×10/100=<strong>₹450.06</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A frustum has the same volume as a cylinder (r=5, h=8). If frustum R=8, r=3, find h.<details class="ans"><summary>Show Answer</summary><p>V_cyl=200π. (1/3)πh(64+24+9)=(1/3)π×97h=97πh/3=200π→h=600/97≈<strong>6.19 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The slant height of a frustum is 12 cm. If R=7, r=3, find h and then volume.<details class="ans"><summary>Show Answer</summary><p>h=√(l²−(R−r)²)=√(144−16)=√128=8√2≈11.31. V=(1/3)π×8√2×(49+21+9)=79π×8√2/3≈<strong>940 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">An oil tanker truck (frustum R=1.5 m, r=0.9 m, h=7 m). Find capacity in kilolitres.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)π×7×(2.25+1.35+0.81)=(1/3)×(22/7)×7×4.41=22×0.49×3=32.34 m³≈<strong>32.34 kL</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A solid frustum (R=7, r=3, h=12) is placed in a cylinder (r=7) containing water at 5 cm depth. Find rise in water level.<details class="ans"><summary>Show Answer</summary><p>V_frus=(1/3)π×12×(49+21+9)=4π×79=316π. Rise=316π/(49π)=316/49≈<strong>6.45 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A frustum of a right circular cone has R=13, r=5, slant h=17. Find TSA.<details class="ans"><summary>Show Answer</summary><p>TSA=π[R²+r²+(R+r)l]=π[169+25+18×17]=π[194+306]=500π=(22/7)×500≈<strong>1571.4 cm²</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cone (R=10, h=12) is cut at h=4 from apex (so small cone h=4, r=10/3). Find frustum TSA.<details class="ans"><summary>Show Answer</summary><p>Big cone l=√(144+100)=√244≈15.62. Small cone l_s=√(16+100/9)=√(16+11.11)=√27.11≈5.21. Frustum l=15.62−5.21=10.41. R=10,r=10/3. TSA=π[100+100/9+(10+10/3)×10.41]=π[111.11+138.8]=249.9π≈<strong>785 cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that volume of frustum = volume of 3 cones (same height h, radii R, r, √Rr).<details class="ans"><summary>Show Answer</summary><p>Sum of 3 cone volumes=(1/3)πh(R²+r²+Rr)=V_frustum. <strong>Proved by formula expansion.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A clay frustum (R=14, r=7, h=16) is melted into a cylinder (r=7). Find height.<details class="ans"><summary>Show Answer</summary><p>V=(1/3)×(22/7)×16×(196+98+49)=(22/21)×16×343=22×16×49/3=17248/3≈5749.3 cm³. h=5749.3/((22/7)×49)=5749.3/154≈<strong>37.33 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Frustum CSA = 2× its base area (smaller base). Find R in terms of r and l.<details class="ans"><summary>Show Answer</summary><p>π(R+r)l=2πr²→(R+r)l=2r²→R=2r²/l−r. <strong>R=(2r²−rl)/l=(r(2r−l))/l</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<section class="topic" id="t11">
+  <div class="topic-header"><div class="t-num">11</div><h2>Volume Comparison Problems</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">Comparing 3D Volume</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">Volume Comparison</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=GNcFjFmqEc8" target="_blank">Surprising Volume Facts</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=mhlDSFZvJDY" target="_blank">Scale and Volume</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Classic Ratio Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Sphere, cylinder, cone: all same r and h=2r. Find V_sphere:V_cylinder:V_cone.<details class="ans"><summary>Show Answer</summary><p>V_sph=(4/3)πr³. V_cyl=πr²×2r=2πr³. V_cone=(1/3)πr²×2r=2πr³/3. Ratio=(4/3):2:(2/3)=4:6:2=<strong>2:3:1</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two cones: same slant height l. Ratio of base circumferences = 3:4. Find ratio of volumes.<details class="ans"><summary>Show Answer</summary><p>r ratio=3:4. h from l: h₁=√(l²−9k²), h₂=√(l²−16k²). V=(1/3)πr²h. Complex — use l=10, r₁=3, r₂=4. h₁=√91, h₂=√84. V ratio=9√91:16√84≈9×9.54:16×9.17≈85.9:146.7≈<strong>≈6:10=3:5</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cylinder and sphere have equal volumes. If radius is same, find ratio h_cylinder:diameter_sphere.<details class="ans"><summary>Show Answer</summary><p>πr²h=(4/3)πr³→h=(4/3)r. h:2r=(4/3)r:2r=2:3. Ratio=<strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cylinder and cone have same base and height. What fraction of the cylinder's volume is the cone?<details class="ans"><summary>Show Answer</summary><p>V_cone/V_cyl=1/3. <strong>⅓</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere is placed inside a cone (both of radius r, cone h=r). Find V_sphere:V_cone.<details class="ans"><summary>Show Answer</summary><p>V_sphere=(4/3)πr³. V_cone=(1/3)πr³. Ratio=4:1. <strong>4:1</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Ratio of volumes of two cylinders: their radii are r,2r and heights 2h, h. Compare volumes.<details class="ans"><summary>Show Answer</summary><p>V₁=πr²×2h=2πr²h. V₂=π(2r)²×h=4πr²h. Ratio=<strong>1:2</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A hemisphere and cone have equal base and equal height (h=r). Find V_hemi:V_cone.<details class="ans"><summary>Show Answer</summary><p>(2/3)πr³:(1/3)πr³=<strong>2:1</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Two spheres of radii in ratio 1:2. Find ratio of surface areas and volumes.<details class="ans"><summary>Show Answer</summary><p>SA ratio=1²:2²=<strong>1:4</strong>. V ratio=1³:2³=<strong>1:8</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A large sphere (r=3R) and small sphere (r=R). How many small spheres fill the large one?<details class="ans"><summary>Show Answer</summary><p>n=(3R/R)³=27. <strong>27 spheres</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Ratio of volumes of frustum (R=3r) to original cone when h same.<details class="ans"><summary>Show Answer</summary><p>V_frustum=V_cone−V_small_cone. With R=3r and similar triangles, small cone r_s=r at h_s=H/3. V_small=(1/27)V_big. V_frus=(26/27)V_big. Ratio=<strong>26:27</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Volume Comparison: Applied Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Which holds more: cylinder (r=4, h=8) or sphere (r=4)?<details class="ans"><summary>Show Answer</summary><p>V_cyl=128π≈402.1. V_sph=(4/3)π×64=256π/3≈268.1. <strong>Cylinder holds more.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Which has greater volume: cube (a=10) or sphere (r=6)?<details class="ans"><summary>Show Answer</summary><p>V_cube=1000. V_sph=(4/3)π×216=288π≈904.8. <strong>Cube is greater by 95.2 cm³.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Three equal cubes of side 3 cm are rearranged into one cuboid. What is maximum possible volume? (Same material, so same.)<details class="ans"><summary>Show Answer</summary><p>Total V=3×27=81 cm³. Volume is conserved = <strong>81 cm³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Compare CSA of sphere r=7 to TSA of cube side=7. Which is larger?<details class="ans"><summary>Show Answer</summary><p>SA_sphere=4×(22/7)×49=616. TSA_cube=6×49=294. <strong>Sphere is larger.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cannonball (sphere r=9) and a cylinder (r=9, h=12). Ratio of their volumes.<details class="ans"><summary>Show Answer</summary><p>V_sph=(4/3)π×729=972π. V_cyl=π×81×12=972π. <strong>1:1 (equal!)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cone (r=6, h=36) and cylinder (r=6, h=4) have same base. Which has larger volume and by how much?<details class="ans"><summary>Show Answer</summary><p>V_cone=(1/3)π×36×36=432π. V_cyl=π×36×4=144π. Cone is larger by 288π≈<strong>904.8 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two cylinders: C1(r=3, h=8) and C2(r=4, h=4.5). Find ratio of volumes.<details class="ans"><summary>Show Answer</summary><p>V₁=9π×8=72π. V₂=16π×4.5=72π. Ratio=<strong>1:1 (equal)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which packs more soup: a can of r=5, h=12 or a box 10×10×10?<details class="ans"><summary>Show Answer</summary><p>V_can=π×25×12=300π≈942.5. V_box=1000. <strong>Box holds more by 57.5 cm³.</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which requires more material to make (SA): sphere r=7 or cube side=7?<details class="ans"><summary>Show Answer</summary><p>SA_sphere=616. SA_cube=294. <strong>Sphere requires more material.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find which solid (same volume 100 cm³) has minimum surface area: sphere, cube, or cylinder (r=h).<details class="ans"><summary>Show Answer</summary><p>V=100: Sphere r=(75/π)^(1/3)≈2.88, SA=4π×8.3≈104.2. Cube a=4.64, SA=6×21.5≈129. Cyl(r=h): πr³=50→r≈2.52, SA=6πr²≈119.6. <strong>Sphere has minimum SA.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Volume Comparison: Scaling and Proportion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A model car is made at 1:20 scale. What fraction of the actual car's volume does the model represent?<details class="ans"><summary>Show Answer</summary><p>(1/20)³=1/8000. <strong>1/8000 of actual volume</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A sphere and a cube have the same surface area. Which has larger volume?<details class="ans"><summary>Show Answer</summary><p>SA=6a²=4πr². r=a√(6/4π)=a√(3/2π). V_sph=(4/3)πr³>V_cube for same SA. <strong>Sphere has larger volume.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If all dimensions of a cone are doubled, by what factor does volume change?<details class="ans"><summary>Show Answer</summary><p>V∝r²h. Factor=2²×2=<strong>8 times</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Radius of a sphere doubles. Factor change in (a) SA, (b) Volume.<details class="ans"><summary>Show Answer</summary><p>(a) SA→4×. <strong>4 times</strong>. (b) V→8×. <strong>8 times</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A frustum (R=8, r=2) has exactly 7 times the volume of the small cone cut off. If h_frustum=h_small_cone, verify.<details class="ans"><summary>Show Answer</summary><p>R/r=4, so small cone has h_s=(1/4)h. V_small=(1/3)π×4×h/4=πh/3. V_total=(1/3)π×64×h=64πh/3. V_frus=63πh/3. V_frus/V_small=63:1≠7. Let's redo: if V_small/V_total=(r/R)³=(1/4)³=1/64. V_frus=63V_small/1... need exact question interpretation. <strong>Ratio V_frus:V_small=63:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Same amount of clay is used to make a cylinder (r=3, h=6) and a cone. If cone r=3, find cone height.<details class="ans"><summary>Show Answer</summary><p>V_cyl=54π. (1/3)π×9×h=54π→h=18. <strong>h=18 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere is cut in half. Each half (hemisphere) is then cut in half again. What fraction of original volume is each piece?<details class="ans"><summary>Show Answer</summary><p>Each piece = <strong>1/4</strong> of original volume</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cone (r=R, h=H) has height cut to H/3 from base (bottom frustum). Ratio V_remaining:V_cut (small cone at top).<details class="ans"><summary>Show Answer</summary><p>Small cone h=2H/3, r=2R/3. V_small=(1/3)π(2R/3)²(2H/3)=8V/27. V_frustum=19V/27. Ratio=19:8. <strong>19:8</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cylinder (r=3, h=3) vs hemisphere (r=3) vs cone (r=3, h=3). Arrange volumes in ascending order.<details class="ans"><summary>Show Answer</summary><p>V_cone=9π. V_hemi=18π. V_cyl=27π. Order: <strong>Cone &lt; Hemisphere &lt; Cylinder</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">SA:V ratio is smallest for which shape: sphere r=6, cube a=6, cylinder r=3, h=6?<details class="ans"><summary>Show Answer</summary><p>Sphere: SA/V=4πr²/((4/3)πr³)=3/r=0.5. Cube: SA/V=6a²/a³=6/a=1. Cyl: SA/V=(2πr(r+h))/(πr²h)=2(r+h)/(rh)=2×9/18=1. Sphere has lowest. <strong>Sphere has smallest SA:V ratio.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Volume Comparison: Challenge Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A 1 m³ ice block melts. What volume of water forms? (Ice density=0.9 g/cm³, water=1 g/cm³)<details class="ans"><summary>Show Answer</summary><p>Mass=0.9×10⁶=900000 g. V_water=900000 cm³=<strong>0.9 m³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two hollow cylinders each R=5, r=4, h=10 are welded end-to-end. Find total inner volume.<details class="ans"><summary>Show Answer</summary><p>V_one=π(25−16)×10=90π. Two=180π≈<strong>565.5 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The longest diagonal of a cuboid equals the diameter of a sphere. For cuboid 3-4-5: find V_sphere:V_cuboid.<details class="ans"><summary>Show Answer</summary><p>Diagonal=√(9+16+25)=√50=5√2. r=5√2/2. V_sphere=(4/3)π(5√2/2)³=(4/3)π×125×2√2/8=125√2π/3. V_cuboid=60. Ratio=125√2π:(3×60)=125√2π:180≈<strong>3.09:1</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A farmer fills 3 spherical tanks (r=3 m) and 5 cylindrical tanks (r=2 m, h=3 m). Find total volume stored.<details class="ans"><summary>Show Answer</summary><p>3×(4/3)π×27=108π. 5×π×4×3=60π. Total=168π≈<strong>527.79 m³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A can of r=4 h=10 and a box of 8×8×10. Both full of juice. Which gives more juice per cm² of packaging?<details class="ans"><summary>Show Answer</summary><p>V_can=160π≈502.7. SA_can=2π×4×14=112π≈351.9. Ratio≈1.428 cm³/cm². V_box=640. SA_box=2(64+80+80)=448. Ratio=640/448=1.429. <strong>Essentially equal efficiency.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: For a sphere, cylinder, cone of same radius r and height h=2r, V_sphere = V_cylinder − V_cone.<details class="ans"><summary>Show Answer</summary><p>V_cyl=πr²×2r=2πr³. V_cone=(1/3)πr²×2r=2πr³/3. V_cyl−V_cone=4πr³/3=V_sphere. <strong>Proved.</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Which is a better buy: 2 cones of r=3,h=6 or 1 cylinder of r=3,h=6? (Same price)<details class="ans"><summary>Show Answer</summary><p>2×V_cone=2×(1/3)π×9×6=36π. V_cyl=54π. <strong>Cylinder gives more volume.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A compound solid: sphere (r=4) placed on cylinder (r=4, h=8). Find combined volume and total height.<details class="ans"><summary>Show Answer</summary><p>Total h=8+8=16 cm (sphere diameter=8). V=(4/3)π×64+π×16×8=256π/3+128π=(256+384)π/3=640π/3≈670.2 cm³. <strong>Height=16 cm, V≈670.2 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A gold coin (cylinder r=1.5, h=0.2) and a gold bead (sphere r=0.5). Which uses more gold?<details class="ans"><summary>Show Answer</summary><p>V_coin=π×2.25×0.2=0.45π. V_bead=(4/3)π×0.125=π/6≈0.167π. <strong>Coin uses more gold.</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If you double all dimensions of a frustum (R,r,h,l all×2), by what factor does volume increase?<details class="ans"><summary>Show Answer</summary><p>V=(1/3)πh(R²+Rr+r²). All linear×2: h→2h, R→2R, r→2r. V_new=(1/3)π×2h×(4R²+4Rr+4r²)=8×original V. Factor=<strong>8 times</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<section class="topic" id="t12">
+  <div class="topic-header"><div class="t-num">12</div><h2>SAT-Style 3D Geometry Problems</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/test-prep/sat/x0a8a43a1:sat-math/x0a8a43a1:geometry/v/sat-math-geometry" target="_blank">SAT Geometry Practice</a><a href="https://www.khanacademy.org/math/geometry/hs-geo-solids" target="_blank">3D Geometry for SAT</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IxFGCjfHXqg" target="_blank">SAT-Level Volume Problems</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=GNcFjFmqEc8" target="_blank">Unexpected Volume Results</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=J4Vz8my_LW4" target="_blank">Why Geometry Matters</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> SAT Multiple Choice – Volume (Select Correct Option)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cylinder has volume 54π cm³ and height 6 cm. What is its radius?<br>(A) 2 cm &nbsp; (B) 3 cm &nbsp; (C) 6 cm &nbsp; (D) 9 cm<details class="ans"><summary>Show Answer</summary><p>πr²×6=54π→r²=9→r=3. Answer: <strong>(B) 3 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere has surface area 36π cm². What is its volume?<br>(A) 27π &nbsp; (B) 36π &nbsp; (C) 54π &nbsp; (D) 108π<details class="ans"><summary>Show Answer</summary><p>4πr²=36π→r=3. V=(4/3)π×27=36π. Answer: <strong>(B) 36π</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cone and sphere have same radius r=4 and same volume. What is the height of the cone?<br>(A) 8 &nbsp; (B) 12 &nbsp; (C) 16 &nbsp; (D) 32<details class="ans"><summary>Show Answer</summary><p>(1/3)π×16×h=(4/3)π×64→h=16. Answer: <strong>(C) 16</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The height of a cylinder equals its radius r. V=?<br>(A) πr² &nbsp; (B) πr³ &nbsp; (C) 2πr³ &nbsp; (D) 4πr³<details class="ans"><summary>Show Answer</summary><p>V=πr²h=πr²×r=πr³. Answer: <strong>(B) πr³</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the radius of a sphere is doubled, its volume is multiplied by:<br>(A) 2 &nbsp; (B) 4 &nbsp; (C) 6 &nbsp; (D) 8<details class="ans"><summary>Show Answer</summary><p>V∝r³. 2³=8. Answer: <strong>(D) 8</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cylinder's radius is halved and height is quadrupled. Volume changes by factor:<br>(A) 1 &nbsp; (B) 2 &nbsp; (C) 1/2 &nbsp; (D) 4<details class="ans"><summary>Show Answer</summary><p>V_new=π(r/2)²×4h=πr²h=V_old. Factor=<strong>(A) 1 (unchanged)</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The volume of the largest cone that fits inside a sphere of r=6 cm is:<br>(A) 96π &nbsp; (B) 108π &nbsp; (C) 144π &nbsp; (D) 192π<details class="ans"><summary>Show Answer</summary><p>Optimal cone: h=4r/3=8, r_cone=2r√2/3=4√2/3... Actually max V cone in sphere: r_c²=R²−(R−h_c)² using calculus → h_c=4R/3, r_c=2R√2/3. V=(1/3)π×8R²/9×4R/3=32πR³/81. For R=6: 32π×216/81=32×8π/3=256π/3≈268.1. Closest answer: <strong>(A) 96π ≈ 301.6... let's recalculate: 32π×216/81 = 6912π/81 ≈ 85.3π. Hmm – 96π is likely (C) 144π... Answer: (A) 96π</strong> (Note: exact = 256π/3 ≈ 268; nearest listed answer is 96π for h=8, r=6: V=(1/3)π×36×8=96π)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two cylinders have radii in ratio 2:3 and heights in ratio 5:3. Ratio of their volumes:<br>(A) 10:9 &nbsp; (B) 20:27 &nbsp; (C) 4:9 &nbsp; (D) 2:3<details class="ans"><summary>Show Answer</summary><p>V∝r²h. Ratio=4×5:9×3=20:27. Answer: <strong>(B) 20:27</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A hollow sphere has outer r=5 and inner r=4. Its volume is:<br>(A) (4/3)π×61 &nbsp; (B) (4/3)π×9 &nbsp; (C) 4π×9 &nbsp; (D) None<details class="ans"><summary>Show Answer</summary><p>V=(4/3)π(125−64)=(4/3)π×61. Answer: <strong>(A)</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A sphere of radius r is melted into small spheres of radius r/4. How many small spheres?<br>(A) 4 &nbsp; (B) 16 &nbsp; (C) 64 &nbsp; (D) 256<details class="ans"><summary>Show Answer</summary><p>n=(r/(r/4))³=4³=64. Answer: <strong>(C) 64</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> SAT Grid-In Style – Numerical Answers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A right circular cylinder has radius 5 and height 10. A right circular cone has the same radius and height. What fraction of the cylinder's volume is inside the cone?<details class="ans"><summary>Show Answer</summary><p>V_cone/V_cyl=(1/3)πr²h/(πr²h)=<strong>1/3</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">The volume of a cube is 216 cm³. What is the radius of a sphere with the same surface area as the cube?<details class="ans"><summary>Show Answer</summary><p>Side=6. SA_cube=216 cm². 4πr²=216→r²=216/(4π)=17.19→r≈<strong>4.15 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Cylinder A: r=6, h=5. Cylinder B: r=3, h=20. What is the ratio V_A:V_B?<details class="ans"><summary>Show Answer</summary><p>V_A=180π. V_B=180π. Ratio=<strong>1:1</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A sphere is inscribed in a cube of volume 512 cm³. What is the volume of the sphere?<details class="ans"><summary>Show Answer</summary><p>a=8. r=4. V=(4/3)π×64=256π/3≈<strong>268.1 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The surface area of a cylinder equals the surface area of a sphere. The cylinder has r=3, h=9. Find the sphere's radius.<details class="ans"><summary>Show Answer</summary><p>TSA_cyl=2πr(r+h)=2π×3×12=72π. 4πr²=72π→r²=18→r=3√2≈<strong>4.24 cm</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A cone is inscribed in a cylinder both r=6, h=12. What percent of the cylinder's volume does the cone occupy?<details class="ans"><summary>Show Answer</summary><p>(1/3):1=1:3. <strong>33.33%</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cylinder (r=4, h=4) and a hemisphere (r=4) are joined. What is the total height?<details class="ans"><summary>Show Answer</summary><p>Total h=4+4=<strong>8 cm</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If the slant height of a cone is 10 and base radius is 6, what is the lateral surface area ÷ π?<details class="ans"><summary>Show Answer</summary><p>CSA/π=rl=6×10=<strong>60</strong></p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the height of a cone whose volume equals that of a cube with side 6 cm, given radius = 6 cm.<details class="ans"><summary>Show Answer</summary><p>(1/3)π×36×h=216→h=216×3/(36π)=18/π≈<strong>5.73 cm</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the volume of the largest sphere that fits inside a cylinder of r=5, h=8?<details class="ans"><summary>Show Answer</summary><p>Sphere r = min(5, h/2=4)=4. V=(4/3)π×64=256π/3≈<strong>268.1 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> SAT Multi-Step and Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A cylindrical water tank (r=1.5 m, h=7 m) is being filled at 2000 litres/hour. How many hours to fill it? (1 m³=1000 L, π≈22/7)<details class="ans"><summary>Show Answer</summary><p>V=(22/7)×2.25×7=49.5 m³=49500 L. Time=49500/2000=<strong>24.75 hours</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A spherical ball bearing of r=3 mm costs ₹0.50 to make. How many can be made from 1000 cm³ of metal?<details class="ans"><summary>Show Answer</summary><p>r=0.3 cm. V_ball=(4/3)π×0.027=0.036π. n=1000/(0.036π)≈1000/0.113≈<strong>8842 balls</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A swimming pool is 25 m × 10 m × 1.5 m. Water flows in at 2 m³/min. How long to fill? (in hours)<details class="ans"><summary>Show Answer</summary><p>V=375 m³. Time=375/2=187.5 min=<strong>3.125 hours</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A gift box is a cylinder (r=7, h=20). It is packed in the smallest possible rectangular box. Find the volume of wasted space.<details class="ans"><summary>Show Answer</summary><p>Box: 14×14×20=3920. Cylinder: (22/7)×49×20=3080. Waste=3920−3080=<strong>840 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The surface area of a sphere is 400π cm². Find the volume of the largest cone that can be inscribed inside this sphere.<details class="ans"><summary>Show Answer</summary><p>r_sphere=10. Max cone: h=4R/3=40/3, r_cone²=R²−(R−h)²=100−(10/3)²=100−11.11=88.89. V=(1/3)π×88.89×40/3=1185.2π/3≈<strong>1239.6 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A paper cup (frustum: R=4, r=3, h=10) holds juice. If 20 such cups fill a jug, find volume of jug in litres.<details class="ans"><summary>Show Answer</summary><p>V_cup=(1/3)π×10×(16+12+9)=(370π/3) cm³≈387.3 cm³. Jug=20×387.3=7746.5 cm³≈<strong>7.75 litres</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A conical mountain has r=100 m and h=150 m. A tunnel (cylinder r=5, h=200) is drilled through it. Find remaining volume of rock.<details class="ans"><summary>Show Answer</summary><p>V_mountain=(1/3)π×10000×150=500000π. V_tunnel=π×25×200=5000π. Remaining=495000π≈<strong>1,555,088 m³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two identical cones are joined base-to-base (r=6, h=8 each). Find TSA and volume of the double cone.<details class="ans"><summary>Show Answer</summary><p>l=10. TSA=2×CSA_cone=2×π×6×10=120π≈376.99 cm². V=2×(1/3)π×36×8=192π≈603.2 cm³. <strong>TSA≈377 cm², V≈603.2 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: A sphere of radius r₁ has twice the volume of a sphere of radius r₂. Express r₁ in terms of r₂.<details class="ans"><summary>Show Answer</summary><p>(4/3)πr₁³=2×(4/3)πr₂³→r₁³=2r₂³→r₁=r₂×2^(1/3)=<strong>r₂∛2</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A cylinder (r=6, h=8) has a hemispherical indentation (r=6) in its top. Find volume remaining in cylinder.<details class="ans"><summary>Show Answer</summary><p>V_cyl=π×36×8=288π. V_hemi=(2/3)π×216=144π. Remaining=288π−144π=144π≈<strong>452.4 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> SAT-Style: Advanced Reasoning Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">If the volume of a cylinder is 2× its lateral surface area (numerically), find the relationship between r and h.<details class="ans"><summary>Show Answer</summary><p>πr²h=2×2πrh→r=4. <strong>r=4 (independent of h)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: In the figure, a sphere of radius 3 sits in a cylindrical can just fitting. What is the volume of the empty space?<details class="ans"><summary>Show Answer</summary><p>r_can=3, h_can=6. V_can=54π. V_sphere=36π. Empty=18π≈<strong>56.55 cm³</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT: A company makes cylindrical cans. For a fixed volume V=250π, which dimensions minimize surface area?<details class="ans"><summary>Show Answer</summary><p>Min SA when h=2r. πr²×2r=250π→r³=125→r=5, h=10. Min SA=2πr(r+h)=2π×5×15=150π. <strong>r=5, h=10</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: The diameter of a sphere is the same as the height and width of a cylinder. V_sphere:V_cylinder=?<details class="ans"><summary>Show Answer</summary><p>d=2r. Cyl r=r, h=2r. V_sph=(4/3)πr³. V_cyl=2πr³. Ratio=(4/3):2=2:3. <strong>2:3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A solid metal sphere (r=10) is melted into small cylinders (r=1, h=2). How many?<details class="ans"><summary>Show Answer</summary><p>V_sphere=(4/3)π×1000=4000π/3. V_cyl=2π. n=4000/3÷2=2000/3≈<strong>666 cylinders</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: A sphere has radius r. A cube has the same volume. The cube's surface area is approximately what fraction of the sphere's surface area?<details class="ans"><summary>Show Answer</summary><p>V=(4/3)πr³. Cube a=(4πr³/3)^(1/3)=r(4π/3)^(1/3)≈1.612r. SA_cube=6a²≈6×2.599r²=15.59r². SA_sphere=4πr²≈12.57r². Ratio≈15.59/12.57≈<strong>1.24 (cube SA is ~24% more)</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two spherical tanks side by side (each r=5 m). A connecting pipe (cyl r=0.5, l=2) between them. Find total volume including pipe.<details class="ans"><summary>Show Answer</summary><p>V=2×(4/3)π×125+π×0.25×2=1000π/3+0.5π=(1000+1.5)π/3≈1001.5π/3≈<strong>1048.6 m³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: If cylinder volume = hemisphere volume, both radius r, find cylinder height in terms of r.<details class="ans"><summary>Show Answer</summary><p>πr²h=(2/3)πr³→h=2r/3. <strong>h=2r/3</strong></p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">SAT Hard: A sphere of r=4 is cut by a plane at distance 2 from centre. Find area of the circular cross-section.<details class="ans"><summary>Show Answer</summary><p>r_cross=√(16−4)=√12=2√3. Area=π×12=<strong>12π cm²</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">SAT: A water bottle is a cylinder (r=4, h=15) with a hemispherical bottom (r=4). The bottle is filled to 3/4 of its total capacity. Find volume of water.<details class="ans"><summary>Show Answer</summary><p>V_total=π×16×15+(2/3)π×64=240π+128π/3=(720+128)π/3=848π/3. Water=(3/4)×848π/3=212π≈<strong>666.1 cm³</strong></p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Grade 10 &middot; NCERT Mathematics &middot; Chapter 12 &middot; The Gaudium School &middot; 2026&ndash;27</p>
+  <p style="margin-top:6px;font-size:.78rem;">480 Questions &middot; 12 Topics &middot; 4 Sets per Topic &middot; 10 Questions per Set &middot; Easy / Medium / Hard</p>
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G6 Ch5 – Measurement of Length and Motion | The Gaudium School</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📏 Chapter 5 – Measurement of Length and Motion</h1>
+  <p>6 Topics · 3 Sets · 8 Questions Each · Physics</p>
+</header>
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">SI Units and Measurement</a></li>
+    <li><a href="#t2">Errors in Measurement</a></li>
+    <li><a href="#t3">Types of Motion</a></li>
+    <li><a href="#t4">Speed Formula</a></li>
+    <li><a href="#t5">Distance–Time Graphs</a></li>
+    <li><a href="#t6">Relative Motion</a></li>
+  </ol>
+</nav>
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>SI Units and Measurement</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-factors-and-multiples/cc-6th-scientific-notation/v/scientific-notation" target="_blank">SI Units and Prefixes</a>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-position-and-displacement/v/introduction-to-vectors-and-scalars" target="_blank">Length Measurement Techniques</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=9Sl_tmECsrc" target="_blank">The Metric System Explained</a>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">How We Measure the Universe</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Measurement – CrashCourse Physics</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Units and Scientific Notation</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">How Scientists Measure Precisely</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">History of the Metre</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – SI Units and Measurement</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the SI unit of length?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The SI unit of length is the metre (m). It is the base unit in the International System of Units used by scientists worldwide for consistency.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How many centimetres are in 1 metre?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>There are 100 centimetres in 1 metre. The prefix 'centi-' means one-hundredth, so 1 cm = 0.01 m.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Convert 3.5 km into metres.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>3.5 km = 3.5 × 1000 = 3500 m. The prefix 'kilo-' means one thousand, so multiply by 1000.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Name two instruments used to measure length.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A ruler and a measuring tape are used to measure length. A vernier calliper is used for more precise small-object measurements.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does the prefix 'milli-' mean in millimetre?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>'Milli-' means one-thousandth. So 1 mm = 0.001 m, and there are 1000 mm in 1 metre.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do scientists use the SI system of units?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The SI system provides a universal, standardised set of units allowing scientists worldwide to communicate measurements accurately without confusion from different local systems.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Convert 250 cm into metres.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>250 cm ÷ 100 = 2.5 m. Since 1 m = 100 cm, divide by 100.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Which instrument measures the diameter of a coin most precisely?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A vernier calliper — it reads to 0.1 mm precision, far better than a ruler's 1 mm precision.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – SI Units and Measurement</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student measures a table as 120 cm. Express this in metres and millimetres.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>120 cm = 1.20 m and 1200 mm. Conversions: ÷100 for metres, ×10 for millimetres.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why a tape measure is more suitable than a ruler for measuring a curved path.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A tape measure is flexible and follows the curve, giving the actual curved length. A rigid ruler can only measure straight-line distances and cannot conform to curves without repeated repositioning.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student needs to measure the thickness of one page of a book using only a ruler. Describe the method.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Measure total thickness of 100 pages (e.g. 10 mm), then divide by 100 = 0.1 mm per page. This averaging bypasses the ruler's 1 mm precision limit.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why might a scientist use millimetres rather than centimetres for small specimens?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Millimetres avoid decimal points (e.g. 3 mm vs 0.3 cm), reducing recording errors. Using the smallest practical unit improves precision and readability.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A marathon is 42.195 km. Convert to metres and to centimetres.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>42.195 × 1000 = 42,195 m. Then × 100 = 4,219,500 cm. Convert km→m (×1000), m→cm (×100).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A ruler is placed from 2 cm to measure a pencil which ends at 14 cm. What is the pencil's length?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Length = 14 − 2 = 12 cm. Always subtract the starting mark from the end mark when a ruler is not placed from zero.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why the choice of measuring instrument depends on both the size of the object and precision required.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A ruler (1 mm) suits large objects; a vernier calliper (0.1 mm) suits small ones. Matching precision to context avoids wasted effort and ensures data quality.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A pencil measures 14.5 cm with a ruler and 14.52 cm with a vernier calliper. Which is more precise and why?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The vernier calliper (14.52 cm) is more precise — it reads to 0.01 cm vs the ruler's 0.1 cm. Precision is how small a difference the instrument can detect.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – SI Units and Measurement <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to find the average thickness of one sheet of paper using only a ruler. Identify sources of uncertainty and how to minimise them.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Count 100 pages, measure total thickness (e.g. 10 mm), divide by 100 = 0.1 mm per page. Uncertainties: cover thickness included (remove covers), uneven compression (apply consistent pressure), parallax error (read at eye level). Minimise: repeat 5 times and average.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically analyse why the international community adopted the metre over local units (feet, cubits). What scientific and social benefits resulted?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Local units varied by region and were based on human body parts, making international trade and science inconsistent. The metre is reproducible and universal. Scientific benefit: consistent global data sharing. Social benefit: standardised engineering parts, fair trade, aviation safety.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student argues digital devices are always more accurate than analogue ones. Evaluate this claim with examples.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Not always true — accuracy depends on calibration, not display type. A miscalibrated digital ruler is wrong despite showing decimals. A well-calibrated vernier calliper can outperform a cheap digital device. Digital devices reduce parallax error and improve repeatability, but do not guarantee accuracy without calibration.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">The metre definition has changed three times (1791: Earth meridian; 1889: platinum bar; 1983: speed of light). Analyse why scientists keep redefining fundamental units.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Each redefinition improves reproducibility. The meridian was imprecise. The platinum bar could change dimensionally. Defining the metre via the speed of light (a universal constant) means any laboratory can reproduce the standard without a physical artefact — reflecting science's drive toward the most stable, universal foundation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design an investigation to compare accuracy and precision of three students each measuring the same 30 cm object five times. Explain how you would use mean and range.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Each student measures 5 times. Mean closest to 30 cm = most accurate. Smallest range = most precise. A student can be precise but inaccurate (consistent but wrong) or vice versa. Compare all three students' means and ranges in a summary table.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate limitations of using a metre ruler to measure the circumference of a cylinder. Propose an improved method.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>A rigid ruler cannot wrap around a cylinder; measuring diameter then using d×π introduces compound error. Improved method: wrap a strip of paper around the circumference, mark the overlap, then measure the paper strip — direct measurement of circumference with only one source of error.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A spacecraft travels at 7,800 m/s. Express in km/h and mm/s. Which unit is most appropriate for the public and why?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>7,800 × 3.6 = 28,080 km/h. In mm/s: 7,800,000 mm/s. For public communication, km/h is best — familiar from road speeds, making 28,080 km/h intuitively comprehensible. mm/s produces an unwieldy large number with no added clarity.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose a method to measure the length of a curved coastline on a map using a ruler and string. Discuss sources of error and how scale affects the result.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Lay string along the coastline following all curves; measure string length with ruler; multiply by map scale factor. Sources of error: string may skip fine details, scale distorts at map edges, string may stretch. Scale impact: a larger-scale map shows more detail, giving a longer measured coastline — the coastline paradox.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Errors in Measurement</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/statistics-probability/describing-relationships-in-quantitative-data/introduction-to-trend-lines/v/fitting-a-line-to-data" target="_blank">Measurement Error and Uncertainty</a>
+        <a href="https://www.khanacademy.org/science/ap-chemistry/ap-atomic-structure-and-properties/ap-sig-figs/v/significant-figures" target="_blank">Significant Figures and Precision</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Why Nothing Is Perfect – Measurement</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Human Error in Science</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Accuracy vs Precision – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Experimental Error Explained</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">How Measurement Errors Cost Millions</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">NASA Mars Orbiter – Unit Error Disaster</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Errors in Measurement</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is parallax error?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Parallax error occurs when the observer's eye is not directly in line with the measurement scale and object. The reading appears different depending on the viewing angle.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How can parallax error be avoided when using a ruler?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Position your eye directly above (perpendicular to) the ruler's scale at the point of measurement. Reading at an angle shifts the reading left or right.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is zero error in a measuring instrument?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Zero error occurs when an instrument does not read zero when it should. All readings will be offset by this constant amount and must be corrected.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the difference between a systematic error and a random error?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Systematic error consistently shifts all readings in the same direction by the same amount (e.g. zero error). Random error causes readings to vary unpredictably and can be reduced by averaging multiple measurements.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why do scientists take repeated measurements?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Repeated measurements reduce the effect of random errors. Calculating the mean of several readings gives a result closer to the true value than a single measurement.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is an anomalous result?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>An anomalous result (outlier) is a measurement significantly different from the others. It usually results from a procedural error and is excluded when calculating a mean.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does 'precision' mean in measurement?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Precision is how consistently close repeated measurements are to each other, regardless of whether they match the true value. High precision means readings cluster tightly together.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does 'accuracy' mean in measurement?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Accuracy is how close a measurement is to the true or accepted value. An accurate result is near the real value even if individual readings vary.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Errors in Measurement</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A student measures a 10 cm rod five times: 10.2, 10.2, 10.3, 10.2, 10.2 cm. Are the results precise? Accurate?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Precise (range = 0.1 cm, tightly clustered) but not fully accurate (mean ≈ 10.22 cm, above true 10 cm). This suggests a systematic error such as zero error in the ruler.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain how a zero error in a ruler affects every measurement made with it.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A zero error adds a constant offset to every measurement. If the ruler starts at 0.3 cm, all readings are 0.3 cm too high. This systematic error cannot be removed by repetition — every result must be corrected by subtracting the zero error value.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student reads a thermometer from below the mercury level. What type of error is this and what effect does it have?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Parallax error. Looking from below makes the mercury appear higher, giving a reading larger than the true temperature. The student should read at eye level, perpendicular to the scale.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Pendulum readings: 1.8, 1.9, 1.8, 2.5, 1.8 s. Identify the anomaly, explain what to do, and calculate the best estimate of period.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>2.5 s is the anomaly — far from others, likely a timing error. Exclude it. Mean = (1.8+1.9+1.8+1.8) ÷ 4 = 7.3 ÷ 4 = 1.825 ≈ 1.83 s.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does taking 20 measurements and averaging reduce random error more than taking just 3?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Random errors vary above and below the true value. With more measurements, positive and negative deviations cancel more effectively. Standard error decreases as 1/√n, so 20 readings give a mean approximately 2.6× more reliable than 3.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A measuring tape has stretched over time. Classify the type of error and explain its effect on a room's measured length.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A systematic error — every measurement reads smaller than the true length because scale markings are too far apart. The room appears shorter than it actually is. Replacing or recalibrating the tape is required; repeating measurements will not fix it.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why is it important to know whether a systematic error is positive or negative when correcting data?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A positive systematic error (all readings too high) requires subtracting a correction; a negative one requires adding. Applying the wrong sign would worsen the data — understanding the error's direction is essential for accurate correction.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">In 1999 NASA's Mars Climate Orbiter was lost due to teams using metric vs imperial units. What type of error was this and how could it be prevented?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A systematic error from a consistent unit conversion mistake that skewed all trajectory calculations. Prevention: standardise all teams to SI units; implement software checks flagging unit inconsistencies; conduct independent peer review of navigational calculations.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Errors in Measurement <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to investigate parallax error: students read the same scale at 0°, 30°, and 60° from vertical. Predict results and describe how to quantify error at each angle.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Fix a ruler vertically with a pointer at 15 cm. Students read from 0° (perpendicular), 30°, and 60°. Error = |reading − 15.0 cm|. Predicted result: error increases with angle, largest at 60°. Plot angle vs. error to show the non-linear increase and demonstrate why perpendicular reading is essential.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student claims random errors can never be fully eliminated, only reduced. Evaluate using statistical reasoning and suggest the practical limit.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Correct. Standard error = σ/√n, approaching zero as n→∞ but never reaching it for finite n. Practically, beyond ~20–30 measurements the improvement per additional reading diminishes sharply. Physical sources of random error (thermal noise, human reaction time) also have irreducible floors.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate why scientists report measurements with uncertainty (e.g. 14.5 ± 0.1 cm) rather than a single number.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>A single number implies false certainty. The ± value conveys the range within which the true value almost certainly lies. Two results of 14.5 ± 0.1 and 14.6 ± 0.1 overlap — their difference may not be significant. Without uncertainty, it is impossible to fairly compare results or determine if data supports a hypothesis.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how random and systematic errors could affect an experiment measuring the speed of sound using echoes. Propose strategies to minimise each.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Random: human reaction time causes variable stopwatch readings — minimise by repeating 10+ times and averaging, or using electronic timing. Systematic: stretched measuring tape or consistent start/stop delay — minimise by calibrating tape and using a two-clap electronic method. Report speed with uncertainty from standard deviation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose a quality control investigation for a factory making 10 cm bolts. How would you use sampling, mean, and error range to accept or reject a batch?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sample 30 bolts randomly. Measure each with a vernier calliper. Calculate mean and standard deviation. Acceptance criterion: mean = 10.0 ± 0.05 cm. If mean is outside range → systematic production error, reject and recalibrate. If mean is within range but std dev is large (>0.05 cm) → excessive random variation, reject and inspect process.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Distinguish between instrument precision and measurement result precision. Can a result be more precise than the instrument? Justify with an example.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Instrument precision: smallest readable division (ruler = 1 mm). Result precision: repeatability characterised by standard deviation. Yes — averaging 100 page thicknesses with a ruler gives 0.1 mm per page, 10× more precise than the 1 mm instrument limit. Random errors partly cancel when averaged, but this cannot beat the instrument's resolution for a single reading.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the impact of human error vs instrument error in a typical school experiment. Which is usually larger and what does this imply for experimental design?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Human error (reaction time ~0.2–0.3 s, parallax, inconsistent technique) typically exceeds instrument error (stopwatch ±0.01 s, ruler ±0.5 mm). Design implication: standardise procedures, use electronic triggers, and repeat measurements. Light gates eliminating reaction time yield the biggest accuracy improvement for least cost.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student gets 9.5 ± 0.3 m/s for the speed of sound; the accepted value is 343 m/s. Analyse the quality of this experiment and identify likely error types.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>The accepted value (343) is far outside the measured range (9.2–9.8), off by a factor of ~36. Small uncertainty (±0.3) means high precision but catastrophically poor accuracy — pointing to a large systematic error, not random. Likely cause: distance measured in cm instead of m (100× scale error). Repeating the flawed procedure will not help; the systematic source must be identified and fixed.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Types of Motion</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/introduction-to-physics/v/introduction-to-physics" target="_blank">Types of Motion Overview</a>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-position-and-displacement/v/introduction-to-vectors-and-scalars" target="_blank">Linear and Circular Motion</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Brownian Motion Explained</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Oscillations and Waves</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Motion and Its Types – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Pendulums and Oscillatory Motion</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Motion in Nature</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Random Motion of Gas Molecules</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Types of Motion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Name the four types of motion studied in this chapter.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The four types are: (1) linear motion — straight line, (2) circular motion — circular path, (3) oscillatory motion — back and forth about a fixed point, and (4) random motion — irregular unpredictable paths.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Give one example of linear motion.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A train moving along a straight track. Other examples: a ball rolling straight, a car on a straight road.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What type of motion does a fan blade exhibit?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Circular motion. Each point on the blade moves along a circular path at constant distance from the central axis.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Describe oscillatory motion and give one example.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Oscillatory motion is repetitive back-and-forth movement about a fixed central position. Examples: a pendulum swinging, a guitar string vibrating, a child on a swing.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is Brownian motion? Name one example.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Random unpredictable movement of small particles in a fluid, caused by collisions from surrounding molecules. Examples: smoke particles in air, pollen grains in water.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Is the motion of the Earth around the Sun linear, circular, or oscillatory?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Approximately circular (actually elliptical). Earth moves along a nearly circular orbit at roughly constant distance from the Sun.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the difference between oscillatory and random motion?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Oscillatory motion is regular and repeating about a fixed point (predictable). Random motion is completely irregular with no pattern — unpredictable direction changes, as seen in gas molecules.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Is a spinning top an example of circular or oscillatory motion?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Primarily circular (rotational) motion — each point rotates around the vertical axis. If it wobbles as it slows (precession), it also shows oscillatory features, but the primary motion is circular.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Types of Motion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A car travels along a winding road. Is this purely linear motion? Explain.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Linear motion requires a straight path. A car on a winding road continuously changes direction — it is not purely linear but a combination of curves.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain how a washing machine drum during spin demonstrates circular motion and not linear or oscillatory.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Each drum point moves continuously around a fixed central axis in a circular path at constant radius — defining circular motion. It does not travel in a straight line and does not reverse direction, so it is neither linear nor oscillatory.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What causes Brownian motion in pollen grains observed in water?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Pollen grains are bombarded from all sides by invisible, fast-moving water molecules. At any instant, collision forces are unequal, pushing the grain in a random direction. This constantly changing unequal bombardment produces the observed random zig-zag motion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">One student says a pendulum shows oscillatory motion; another says linear motion in an arc. Who is correct and why?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The first student is correct. The defining feature of oscillatory motion is the repetitive reversal of direction about a central rest position — not the straightness of the path. The arc is the path, but the back-and-forth reversal makes it oscillatory.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Give one example of an object exhibiting two different types of motion simultaneously.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A rolling ball on a straight path: its centre of mass undergoes linear motion while each point on its surface undergoes circular (rotational) motion about the centre.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does Brownian motion provide evidence for the particle model of matter?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Brownian motion shows an invisible force randomly pushing visible particles. The particle model explains this: matter consists of tiny, constantly moving molecules. Unequal molecular bombardment from different sides causes the observed random motion — direct observational evidence of the particle nature of fluids.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How is the motion of a satellite orbiting Earth different from that of a ball thrown horizontally?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>A satellite maintains circular orbit because it moves so fast that as it falls, Earth's surface curves away beneath it — gravity provides exactly the centripetal force needed. A thrown ball follows a parabolic path and hits the ground because it is too slow for Earth's curvature to compensate for its fall.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A child on a swing completes 20 full oscillations in 40 seconds. What is the period?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Period = 40 s ÷ 20 = 2 s per oscillation. The period is the time for one complete back-and-forth cycle.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Types of Motion <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to investigate whether pendulum length affects its period. Identify all variables, method, and sketch a results table.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Independent variable: pendulum length (10, 20, 30, 40, 50 cm). Dependent variable: period. Controlled: same bob mass, small amplitude (<15°), same location. Method: time 10 oscillations, divide by 10. Repeat 3 times, average. Results table: Length (cm) | Trial 1 | Trial 2 | Trial 3 | Mean period (s). Expected: longer pendulum → longer period (T ∝ √L).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate the use of a simple pendulum to keep time in a clock compared to a digital quartz clock.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Pendulum advantages: simple, no batteries, period nearly amplitude-independent for small angles. Limitations: affected by temperature (rod expands changing length and period), gravity variation at different latitudes, air resistance, cannot be miniaturised. Quartz advantages: tiny, temperature-resistant, accurate to seconds per year, portable. Verdict: pendulums are historically significant but impractical for modern precision timekeeping.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student finds adding mass to a pendulum bob does not change the period. Analyse using the physics of gravitational acceleration.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Period T = 2π√(L/g) contains no mass term — period depends only on length and g. Gravitational force and inertia are both proportional to mass, so they cancel exactly. Just as all objects fall at the same rate regardless of mass (Galileo), the pendulum period is mass-independent.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to verify that Brownian motion increases when a liquid is heated. Describe observations, measurements, and links to the particle model.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Prepare dilute milk at 10°C, 20°C, 30°C, 40°C. Observe under microscope for 1 minute each; count globules making significant movements per 30 s (or track paths on video). Expected: more vigorous motion at higher temperatures. Particle model link: higher temperature → greater kinetic energy of water molecules → harder, more frequent collisions with fat globules → increased random motion. Macroscopic observation directly supports particle-level explanation.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate whether 'random motion' is truly random or could be perfectly predicted with complete knowledge of all particle positions and velocities.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Classical (Newtonian) physics is deterministic — perfect knowledge of all molecular positions and velocities would allow prediction of all future Brownian paths. 'Randomness' reflects ignorance rather than true indeterminacy. However, quantum mechanics (Heisenberg's uncertainty principle) introduces genuine irreducible uncertainty at the sub-atomic level. For macroscopic Brownian motion, quantum effects are negligible, so it is technically deterministic but practically unpredictable due to ~10²³ interacting molecules.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare the energy changes in a pendulum throughout one complete cycle. Link to conservation of energy.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>At maximum displacement: all energy is gravitational potential energy (GPE), KE = 0. At the lowest point: all GPE converted to KE (maximum). Going back up: KE converts back to GPE. In an ideal pendulum, total mechanical energy (KE + GPE) is constant throughout (conservation of energy). In reality, air resistance and pivot friction convert some energy to heat, causing amplitude to gradually decrease.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Design a model to demonstrate all four motion types to a Grade 6 class using everyday materials. Justify why each represents its type clearly.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Linear: roll a ball along a straight ruler guide. Circular: spin a coin on a flat surface. Oscillatory: suspend a weight from a rubber band — bobs up and down about equilibrium. Random: half-fill a clear bottle with water and glitter, shake it. Justification: each is designed to eliminate ambiguity — the ruler prevents curving; the coin's axis stays fixed; the oscillation has a clear equilibrium; glitter cannot follow a predicted path.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how engineers use knowledge of oscillatory motion to design earthquake-resistant buildings.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Earthquakes cause ground oscillation at 0.1–10 Hz. If this matches a building's natural resonant frequency, oscillations amplify and the building can collapse. Engineers use: (1) tuned mass dampers — large pendulums oscillating in opposite phase to cancel building vibration; (2) base isolators — rubber pads absorbing oscillations; (3) flexible frames that deform without breaking. Key properties: resonant frequency, amplitude, damping coefficient, and material flexibility.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Speed Formula</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-position-and-displacement/v/introduction-to-vectors-and-scalars" target="_blank">Speed, Velocity, and Acceleration</a>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-average-velocity/v/average-velocity-for-constant-acceleration" target="_blank">Speed = Distance ÷ Time</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Speed of Light – How Fast Is Fast?</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How We Measure Speed</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Speed and Velocity – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Kinematics and the Speed Formula</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Fastest Animals and Their Speeds</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">Speed Records – Land, Air, Water</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Speed Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the formula for speed.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed = Distance ÷ Time, written as v = d/t. It tells us how much distance is covered per unit of time.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the SI unit of speed?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Metres per second (m/s). Derived from the SI unit of distance (metres) divided by the SI unit of time (seconds).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Convert 10 m/s to km/h.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>10 × 3.6 = 36 km/h. Multiply by 3.6 since 1 m/s = 3600 m/h = 3.6 km/h.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A car travels 150 m in 10 seconds. What is its speed?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed = 150 ÷ 10 = 15 m/s. The car covers 15 metres every second.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is the difference between speed and velocity?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed is a scalar — it tells how fast, with no direction. Velocity is a vector — it gives both speed and direction (e.g. 10 m/s northward).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How do you convert km/h to m/s?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Divide by 3.6. Example: 72 km/h ÷ 3.6 = 20 m/s. This is because 1 km/h = 1000 m ÷ 3600 s = 1/3.6 m/s.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A cyclist travels at 5 m/s for 20 seconds. How far does she travel?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Distance = speed × time = 5 × 20 = 100 m. Rearranging v = d/t gives d = v × t.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A runner covers 400 m in 50 seconds. Calculate speed in m/s and km/h.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed = 400 ÷ 50 = 8 m/s. In km/h: 8 × 3.6 = 28.8 km/h.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Speed Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A train travels at 90 km/h. How long does it take to travel 270 km? Give answer in hours and minutes.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Time = 270 ÷ 90 = 3 hours = 180 minutes. Rearranging v = d/t gives t = d/v.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A sound wave travels at 343 m/s. How far does it travel in 2.5 seconds?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Distance = 343 × 2.5 = 857.5 m ≈ 0.86 km. Sound travels nearly 1 km in 2.5 seconds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student jogs 3 km in 20 minutes. Calculate speed in m/s.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Convert: 3 km = 3000 m; 20 min = 1200 s. Speed = 3000 ÷ 1200 = 2.5 m/s. Always convert to SI units before applying the formula.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two cars start simultaneously. Car A at 20 m/s, Car B at 15 m/s. How far apart after 30 seconds?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Car A: 20×30 = 600 m. Car B: 15×30 = 450 m. Gap = 600 − 450 = 150 m.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A cheetah runs at 30 m/s. Convert to km/h and compare to a car at 100 km/h.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>30 × 3.6 = 108 km/h. The cheetah (108 km/h) is faster than the car (100 km/h) — it exceeds typical motorway speeds over short sprints.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student walked 2 km in 25 min and ran 1 km home in 5 min. Calculate average speed for the whole journey.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Total distance = 3 km = 3000 m. Total time = 30 min = 1800 s. Average speed = 3000 ÷ 1800 = 1.67 m/s. Average speed uses total distance and total time, not the average of individual speeds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A bullet travels at 900 m/s. How long to travel 1 km? Express in milliseconds.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Time = 1000 ÷ 900 = 1.11 s = 1110 ms. The bullet crosses 1 km in just over one second.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why 'average speed' might not reflect how fast you were going at any particular moment during a journey.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Average speed = total distance ÷ total time, smoothing out all variation. During a journey you may stop at traffic lights or accelerate on a highway. The average gives one number for the whole trip, while instantaneous speed is constantly changing and differs from the average at most points.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Speed Formula <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to measure average speed of a toy car on a ramp. Identify variables, equipment, and how to improve accuracy.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Equipment: ramp, toy car, ruler, stopwatch or light gates. Method: set ramp at fixed angle; measure distance d; release car, time journey t; calculate v = d/t. Repeat 5 times, average t. Improve accuracy: use light gates (eliminates reaction time); use same release point and surface each time. Variables: independent = ramp angle; dependent = speed; controlled = car, surface, distance.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student times a 100 m sprint at 12.3 s using a stopwatch (±0.5 s). Calculate speed and estimate uncertainty. What does this tell us about reliability?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed = 100 ÷ 12.3 = 8.13 m/s. Max: 100 ÷ 11.8 = 8.47; Min: 100 ÷ 12.8 = 7.81. Speed = 8.13 ± ~0.33 m/s (±4%). Reliable enough for performance classification but not world record verification (which needs electronic timing to ±0.001 s). The stopwatch uncertainty dominates the result.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate why average speed is less useful than a speed–time graph for analysing an athlete's 400 m performance.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Average speed gives one value for the entire race, hiding acceleration, top speed, deceleration in the final stretch, and corner vs. straight effects. A speed–time graph shows speed at every instant; its gradient gives acceleration; its area gives total distance. For coaching, a speed–time graph is far more informative. Average speed is only useful for a quick comparison.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Light travels at 3×10⁸ m/s. How long to travel from Sun to Earth (1.5×10¹¹ m)? Express in minutes and seconds and analyse the implication.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Time = (1.5×10¹¹) ÷ (3×10⁸) = 500 s = 8 min 20 s. We always see the Sun as it was 8.3 minutes ago. If it disappeared, we would not know for 8 min 20 s. All astronomical observations are observations of the past — the further the object, the further back in time we see.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A speed camera takes two photos 0.5 s apart; the car appears 15 m further ahead in the second photo. Speed limit is 30 m/s. Was the driver speeding? Show all working.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed = 15 ÷ 0.5 = 30 m/s exactly — at the limit, not over it. If the distance were 15.1 m, speed = 30.2 m/s, which would be speeding. This demonstrates the critical importance of precise measurement in legal applications of physics.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose a full investigation to find whether ramp angle affects average speed of a rolling ball. Write method, variable list, results table, and graph prediction.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Independent variable: ramp angle (10°–50°). Dependent: average speed (m/s). Controlled: same ball, surface, distance (1 m). Method: time with light gates at base; v = 1/t; repeat 3×, average. Results table: Angle | Time 1 | Time 2 | Time 3 | Mean time | Speed. Predicted graph: non-linear increase — steeper ramp → greater gravitational component → greater acceleration → higher speed.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A criminal's car travels at 40 m/s. A police car starts from rest 500 m behind, accelerating at 5 m/s². When does the police car catch up?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Criminal position: 500 + 40t. Police position: ½×5×t² = 2.5t². Set equal: 2.5t² − 40t − 500 = 0. Using the quadratic formula: t = [40 + √(1600 + 5000)] ÷ 5 = [40 + √6600] ÷ 5 ≈ [40 + 81.2] ÷ 5 ≈ 24.2 s. The police car catches up in approximately 24 seconds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Evaluate ethical and social implications of average speed cameras vs. instantaneous speed cameras. Which is fairer and safer?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Average speed cameras enforce speed over a distance — drivers cannot slow at the camera and speed up between. More representative of sustained driving behaviour and have stronger evidence of reducing accidents. Instantaneous cameras detect momentary speeding but can penalise careful drivers for brief lapses. Evaluation: average speed systems are generally fairer and reduce the dangerous 'brake-then-accelerate' pattern around point cameras.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Distance–Time Graphs</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-average-velocity/v/introduction-to-average-velocity" target="_blank">Distance–Time Graphs</a>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-average-velocity/v/average-velocity-for-constant-acceleration" target="_blank">Reading Gradients on Graphs</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Motion Graphs Explained</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Acceleration and Graphs</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Graphing Motion – CrashCourse</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Distance, Velocity, Acceleration Graphs</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Using Data to Track Animal Migration</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">GPS Tracking and Motion Graphs</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Distance–Time Graphs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What does the gradient (slope) of a distance–time graph represent?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The gradient represents the speed of the object. Steeper gradient = greater speed; shallower gradient = lower speed.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does a horizontal (flat) line on a distance–time graph mean?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The object is stationary — distance is not changing with time, so speed = 0.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does a straight steep gradient indicate on a distance–time graph?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The object is moving at a high, constant speed — it covers a large distance in a short time.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What does a curve on a distance–time graph represent?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Changing speed. If the curve gets steeper, the object is accelerating. If it flattens, the object is decelerating.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">On which axis is distance plotted in a distance–time graph?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Distance is plotted on the y-axis (vertical) and time on the x-axis (horizontal).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How do you calculate speed from a distance–time graph?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed = gradient = Δd ÷ Δt. Choose two clear points on the straight line, read their coordinates, and divide the change in distance by the change in time.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Which line is faster: gradient 5 m/s or gradient 2 m/s?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Gradient 5 m/s is faster — higher gradient means more distance covered per second.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Can the distance–time graph ever have a negative (downward) gradient?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. Distance (total path length) can only stay the same or increase — it never decreases. A displacement–time graph CAN have a negative gradient, but not a distance–time graph.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Distance–Time Graphs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A graph shows: (0,0) → (10 s, 50 m), then horizontal to (20 s, 50 m). Describe the motion and calculate speed in the first section.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>First section (0–10 s): constant speed = 50 ÷ 10 = 5 m/s. Second section (10–20 s): stationary (distance unchanged). The object moved at 5 m/s then stopped for 10 seconds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two cars are on the same distance–time graph. Car A has a steeper line than Car B. What can you conclude?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Car A is faster — steeper gradient = greater speed. If the lines cross, both cars are at the same location at that moment in time.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A graph starts steeply then gradually flattens. What motion does this describe?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The object is decelerating — slowing down. Decreasing gradient means speed is falling over time. The object still moves forward (distance still increases) but covers less distance per second.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">From a graph: (0,0m), (4s,20m), (8s,20m), (12s,50m). Calculate speed in each section.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Section 1 (0–4s): 20÷4 = 5 m/s. Section 2 (4–8s): 0÷4 = 0 m/s (stationary). Section 3 (8–12s): 30÷4 = 7.5 m/s.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A student cycles to a park (2 km in 10 min), rests 5 min, cycles home (2 km in 8 min). Describe the graph and calculate average speed to the park.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Graph: rising line (0–10 min), horizontal (10–15 min), rising line (15–23 min, reaching 4 km total distance). Average speed to park: 2000 m ÷ 600 s = 3.33 m/s.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why the distance–time graph cannot have a negative gradient if plotting distance (not displacement).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Distance is total path length — it can only stay the same or grow. A negative gradient would imply distance decreasing, which is impossible for a scalar distance quantity.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A distance–time curve gets steeper over time. What does this tell us about the object's acceleration?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The object is accelerating — increasing gradient means increasing speed. More distance is being covered per second as time progresses.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Student A's line is a straight diagonal; Student B's line curves (starts flat, ends steep) over the same 100 m. What can you conclude about each student's motion?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Student A walked at constant speed throughout. Student B started slowly and accelerated, walking much faster toward the end. If they finish at the same time, Student B's speed increased significantly during the journey.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Distance–Time Graphs <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment to collect data for a distance–time graph of a toy car at different ramp angles. Describe data collection and predict graph patterns.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Method: set ramp at fixed angle; record distance at t = 0.5, 1.0, 1.5, 2.0, 2.5 s using motion sensor or marks on ramp. Plot d (y) vs. t (x). Repeat for multiple angles. Predicted pattern: all produce upward curves (acceleration). Steeper ramp → sharper curve (faster acceleration). Very gentle ramp → nearly straight line.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate the limitations of a distance–time graph compared to a speed–time graph for analysing a sprinter's 100 m race.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>A d–t graph shows position at each moment; gradient gives speed. To find acceleration requires gradient of gradient — difficult visually. A speed–time graph directly shows speed at every instant, gradient gives acceleration, and area under graph gives total distance. For coaching analysis, the speed–time graph is far more informative. The d–t graph is simpler but less analytically powerful.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare using a motion sensor vs. manual stopwatch-and-ruler for collecting distance–time data. Advantages and disadvantages of each.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Sensor: samples at precise intervals, eliminates reaction time, produces smooth continuous graphs, enables digital analysis. Disadvantages: requires calibration; students learn less if fully automated. Manual: develops measurement skills, cheap and simple. Disadvantages: reaction time error, limited data points, cannot capture fast motion. For scientific precision, sensors are superior; for learning, manual is more educational.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A bus journey graph: (0,0), (5 min, 2 km), (8 min, 2 km), (13 min, 5.5 km), (15 min, 5.5 km). Calculate speed in each moving section, total distance, and overall average speed. Identify each stop.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Section 1 (0–5 min): 2000 m ÷ 300 s = 6.67 m/s. Stop 1 (5–8 min): stationary. Section 2 (8–13 min): 3500 m ÷ 300 s = 11.67 m/s. Stop 2 (13–15 min): stationary. Total distance = 5.5 km = 5500 m. Total time = 900 s. Average speed = 5500 ÷ 900 = 6.11 m/s.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse how GPS technology uses distance–time graph principles to calculate a vehicle's real-time speed.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>GPS satellites transmit precise time signals; the receiver calculates its exact position by triangulation. By recording position at frequent intervals (e.g. every 0.1 s), speed = Δposition/Δtime — the instantaneous gradient of a real-time d–t graph. The GPS speed display is a rolling average of many such calculations per second.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Compare a distance–time graph and a displacement–time graph for a car that drives 5 km north, then 3 km south, then stops.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Distance–time: rises 0→5 km, continues rising to 8 km total (southward 3 km adds to total distance), then horizontal at 8 km. Displacement–time: rises to +5 km, decreases to +2 km (net 3 km south), then horizontal at +2 km. Key difference: distance is always non-decreasing; displacement can decrease. Displacement graph gradient gives velocity (with direction); distance graph gradient gives speed (magnitude only).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to compare the motion of two students walking at normal vs. fast pace using a distance–time graph. Describe a fair comparison and explain how the graphs would differ.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Mark a 20 m course with cones every 2 m. Record time when each student reaches each mark. Plot d vs. t for both on the same axes. Fair comparison: same course, same start signal, same timer, same measurement points. Fast walker's graph has a steeper gradient throughout. Both should be approximately straight lines if speeds are constant — gradient difference directly quantifies the speed difference.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A seismograph's d–t graph shows P-waves arriving 200 s before S-waves at a distant station. What does this tell scientists about the waves and Earth's interior?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>P-waves (compressional) travel faster than S-waves (shear). The 200-second gap, combined with known wave speeds, allows calculation of the earthquake epicentre distance using the S–P time gap method. Since S-waves cannot pass through liquid, if a station on the far side receives P-waves but no S-waves, this proves the outer core is liquid. Seismic wave d–t relationships thus map Earth's interior structure non-invasively.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Relative Motion</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-position-and-displacement/v/introduction-to-vectors-and-scalars" target="_blank">Relative Motion Explained</a>
+        <a href="https://www.khanacademy.org/science/ap-physics-1/ap-one-dimensional-motion/ap-average-velocity/v/average-velocity-for-constant-acceleration" target="_blank">Reference Frames in Physics</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=pTn6Ewhb27k" target="_blank">Einstein's Relativity Simply Explained</a>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Reference Frames and Motion</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">CrashCourse</span>
+        <a href="https://www.youtube.com/watch?v=hQpQ0hxVNTg" target="_blank">Relative Motion – CrashCourse Physics</a>
+        <a href="https://www.youtube.com/watch?v=ZM8ECpBuQYE" target="_blank">Frames of Reference</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=DgQCgVNSJwg" target="_blank">Relative Motion in Space Exploration</a>
+        <a href="https://www.youtube.com/watch?v=MO_Q_f1WgQI" target="_blank">How Pilots Account for Wind Speed</a>
+      </div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Recall – Relative Motion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is relative motion?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Relative motion is the motion of an object as observed from a particular reference point. The same object can appear to move differently depending on the observer's own state of motion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A passenger sits in a moving train. What does the passenger see when they look at the platform?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The passenger sees the platform moving in the opposite direction to the train. From the passenger's reference frame, the platform appears to be moving backward — this is relative motion.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">What is a reference point (frame of reference)?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A reference point is a fixed position from which motion is measured. The same object's motion looks different depending on which reference point is chosen.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two cars move in the same direction at 60 km/h and 40 km/h. What is their relative speed?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Relative speed = 60 − 40 = 20 km/h. When two objects move in the same direction, relative speed is the difference of their speeds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two trains approach each other at 50 km/h each. What is their relative speed?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Relative speed = 50 + 50 = 100 km/h. When objects move toward each other (opposite directions), relative speed is the sum of their individual speeds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Is the Earth moving? Justify with reference to a chosen reference point.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Depends on the reference point. Relative to the Sun, Earth orbits at ~30 km/s. Relative to a person standing on Earth, the ground appears stationary. Motion is always relative to a chosen frame.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">You are in a car at 80 km/h. A lorry passes at 95 km/h in the same direction. How fast does the lorry appear to move relative to you?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Relative speed = 95 − 80 = 15 km/h. The lorry slowly drifts past at 15 km/h from your perspective.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Why does a passenger in one stationary train sometimes feel they are moving backward when the adjacent train moves forward?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>This is a relative motion illusion. The brain uses the adjacent train as reference. When that train moves forward, the passenger perceives themselves as moving backward relative to it — even though their own train is stationary.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Apply – Relative Motion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A boat moves east at 8 m/s relative to water. The river current flows east at 3 m/s. What is the boat's speed relative to the riverbank?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Both move east: speed relative to bank = 8 + 3 = 11 m/s east. The current adds to the boat's speed from a fixed observer's perspective.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A swimmer swims at 1.5 m/s in still water. She swims against a 0.5 m/s current. What is her speed relative to the riverbank?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Speed relative to bank = 1.5 − 0.5 = 1.0 m/s. The opposing current reduces her effective speed seen from the bank.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A person walks toward the front of a train at 2 m/s. The train moves at 20 m/s. What is the person's speed relative to the ground?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Both in the same direction: 20 + 2 = 22 m/s relative to ground.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Explain why astronauts in the ISS feel weightless even though gravity still acts on them.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The ISS and astronauts are all in free fall together. Since everything (including the floor) falls at the same rate, there is no normal force between astronaut and floor — weightlessness results. Gravity keeps them in orbit, but in their reference frame it appears to be zero.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two cars approach each other: Car A at 25 m/s, Car B at 15 m/s. They are 400 m apart. When do they meet?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Relative speed = 25 + 15 = 40 m/s. Time to meet = 400 ÷ 40 = 10 s. After 10 s, the combined distance covered equals the 400 m gap.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A pilot wants to fly due north at 200 km/h (airspeed). A crosswind blows east at 50 km/h. What must the pilot do to compensate?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Without correction the wind pushes the plane northeast. The pilot must angle slightly west of north so the westward component of airspeed exactly cancels the eastward wind, resulting in a net northward ground track. This technique is called wind correction (crabbing).</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A child on a merry-go-round throws a ball straight ahead. Describe the ball's path as seen by a ground observer.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>From the stationary ground frame, the ball travels in a straight line after release (no horizontal force — Newton's first law). However, from the child's rotating frame, the ball appears to curve away (Coriolis effect) because the child rotates underneath the ball's straight path.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How does a sailor use relative motion to understand apparent wind versus true wind?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>True wind is measured relative to the ground. Apparent wind is what the sailor feels — the vector combination of true wind and the wind created by the boat's own forward motion. A moving boat makes apparent wind feel stronger and from a different angle; sailors must set sails for apparent wind to maximise propulsion.</p></details>
+      </div></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Investigate – Relative Motion <em style="font-size:.8rem;color:var(--muted)">(MYP Criteria B &amp; D)</em></h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Design an experiment using toy cars to demonstrate relative motion. Describe what observers at different positions (on a moving car vs. stationary) would measure and how results differ.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Two toy cars on a straight track. Measure each car's speed with light gates (stationary observer). Mount a camera on Car A recording Car B. Stationary observer records vA and vB independently. Camera records Car B's relative speed = vB − vA (same direction) or vB + vA (opposite). Comparing both demonstrates that speed is frame-dependent and Galilean velocity addition applies at everyday speeds.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Analyse why Einstein's Special Relativity challenged classical Galilean relative motion. What experiment forced scientists to reconsider?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Galilean relativity says velocities add: if you move at v and throw a ball at u, the ball moves at u+v. Einstein showed this fails near the speed of light. The Michelson–Morley experiment (1887) found that light speed is the same for all observers regardless of their motion — directly contradicting Galilean addition. Einstein's solution: c is a universal constant; space and time stretch/compress so light always measures c, leading to experimentally confirmed time dilation and length contraction.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">A river is 100 m wide. A boat travels at 5 m/s; current flows at 3 m/s south. The boat heads directly east. Calculate the actual path taken and time to cross.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Time to cross = 100 ÷ 5 = 20 s. Current drift south = 3 × 20 = 60 m. Actual displacement = √(100² + 60²) = √13600 ≈ 116.6 m at an angle south of east. The boat lands 60 m south of its intended landing point. To land directly east, the pilot would need to aim northwest to cancel the southward current component.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Critically evaluate: 'There is no such thing as absolute rest — everything is moving relative to something.' Use at least three reference frames.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Frame 1 (Earth surface): a building appears stationary. Frame 2 (Sun): Earth orbits at ~30 km/s — building moves at 30 km/s. Frame 3 (Milky Way centre): Sun orbits at ~220 km/s — building moves at ~220 km/s. Frame 4 (cosmic microwave background): Earth moves at ~370 km/s. Conclusion: no universally privileged 'stationary' frame exists. Einstein's Principle of Relativity confirms that physics laws are identical in all inertial frames — absolute rest does not exist.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">How do spacecraft navigation teams account for relative motion between Earth, spacecraft, and target planets? What physics principles are applied?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>At launch, the spacecraft inherits Earth's orbital velocity (~30 km/s). Teams aim where the target planet will be when the craft arrives months later. Hohmann transfer orbits (minimum energy paths) are calculated in a heliocentric frame using Newton's laws and vector addition of relative velocities. The Deep Space Network measures Doppler shift of radio signals to determine real-time spacecraft velocity relative to Earth.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">GPS satellites must correct for both special and general relativistic effects. Explain why both are needed and what would happen without them.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Special relativity: satellites move at ~14,000 km/h — clocks tick slower, losing ~7 μs/day. General relativity: satellites in weaker gravity — clocks tick faster, gaining ~45 μs/day. Net: +38 μs/day without correction. At the speed of light, 38 μs = ~11 km position error per day. Without both relativistic corrections GPS would give positions wrong by over 10 km daily — useless for navigation. This is a real-world confirmation of Einstein's theories.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Propose an investigation to demonstrate the Coriolis effect using a rotating turntable and marbles. Describe observations from stationary vs. rotating frames.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Spin a turntable at constant speed. Roll a marble straight across it (stationary observer: marble travels straight). Mount a camera on the turntable to record from the rotating frame. Camera observation: marble appears to curve (Coriolis effect). Physics: in a rotating reference frame, an apparent force acts perpendicular to velocity — no actual force causes the curve, it is a consequence of the rotating frame. The same effect causes weather systems to rotate anticlockwise in the Northern Hemisphere.</p></details>
+      </div></div>
+      <div class="q-item"><div class="q-text">Two spacecraft are in parallel orbits 1000 m apart, both at 7800 m/s relative to Earth. What is their relative velocity? Discuss implications for docking.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Relative velocity = 7800 − 7800 = 0 m/s (near zero). From Spacecraft A, Spacecraft B appears nearly stationary — this is why astronauts can 'float' beside the ISS despite travelling at 7.8 km/s relative to Earth. For docking, small thruster burns change relative velocity by only a few m/s, making docking manageable. Without this near-zero relative speed, closing the gap would require enormous fuel. Precise orbital matching before docking is therefore essential.</p></details>
+      </div></div>
+    </div>
+  </div>
+</div>
+<footer>
+  Grade 6 · Curiosity Science · Chapter 5 · The Gaudium School · IB MYP · 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

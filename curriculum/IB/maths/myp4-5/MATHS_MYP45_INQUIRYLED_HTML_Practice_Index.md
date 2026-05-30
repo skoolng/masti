@@ -1,0 +1,22 @@
+# Maths MYP4-5 Inquiry-led HTML Practice Index
+
+- `maths/myp4-5/MYP45INQ_Ch1_year3review_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch2_year3extension_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch3_relationsandfunctions_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch4_linearfunctions_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch5_systemsofequations_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch6_matrices_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch7_quadraticfunctionsandequations_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch8_similarity_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch9_congruency_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch10_coordinategeometry_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch11_circlegeometry_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch12_trigonometry_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch13_inversefunctionsexponentialsandlogarithms_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch14_3dgeometry_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch15_trigonometricequationsandapplications_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch16_rationalandirrationalexpressionsandfunctions_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch17_sequencesandseries_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch18_probability_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch19_statistics_Practice.html`
+- `maths/myp4-5/MYP45INQ_Ch20_discretemathematics_Practice.html`

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATHS MYP4-5 EXTENDED Chapter 7 - Quadratic Functions and Equations · Practice Sets</title>
+<style>
+:root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
+header h1 { font-size:2rem; }
+header p { margin-top:8px; opacity:.85; font-size:.95rem; }
+nav { background:var(--card); border-bottom:2px solid var(--border); padding:18px 28px; }
+nav h2 { font-size:.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+nav ol { padding-left:22px; columns:2; column-gap:40px; }
+nav li { margin:4px 0; font-size:.88rem; }
+nav a { color:var(--primary); text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+.topic { max-width:960px; margin:36px auto; padding:0 18px; }
+.topic-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.t-num { background:var(--accent); color:#fff; border-radius:50%; width:46px; height:46px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.topic-header h2 { font-size:1.4rem; color:var(--primary); }
+.set-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.set-card h3 { font-size:1rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.set-label { display:inline-block; background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 8px; margin-right:6px; }
+.q-list { counter-reset:q; }
+.q-item { counter-increment:q; display:flex; gap:10px; margin:10px 0; align-items:flex-start; }
+.q-item::before { content:"Q" counter(q); background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 6px; flex-shrink:0; margin-top:3px; }
+.q-text { flex:1; font-size:.91rem; }
+.diff { font-size:.72rem; border-radius:99px; padding:1px 8px; flex-shrink:0; margin-top:4px; white-space:nowrap; }
+.diff-easy { background:#dcfce7; color:#15803d; }
+.diff-medium { background:#fef9c3; color:#854d0e; }
+.diff-hard { background:#fee2e2; color:#991b1b; }
+details.ans { margin-top:4px; }
+details.ans summary { cursor:pointer; color:var(--green); font-size:.82rem; font-weight:600; }
+details.ans p { background:#f0faf5; border-left:3px solid var(--green); padding:8px 12px; margin-top:6px; border-radius:6px; font-size:.85rem; }
+footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; margin-top:20px; }
+.topic-videos { background:#fff8f5; border:1px solid #f5d8cc; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+.topic-videos h3 { font-size:.95rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.vid-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media(max-width:640px){ .vid-grid{ grid-template-columns:1fr; } }
+.vid-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; }
+.vid-box .ch-tag { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; display:block; }
+.vid-box.khan .ch-tag { color:#137333; }
+.vid-box.antics .ch-tag { color:#d93025; }
+.vid-box.nphile .ch-tag { color:#7b2cbf; }
+.vid-box.teded .ch-tag { color:#e8734a; }
+.vid-box a { display:block; color:var(--primary); font-size:.84rem; margin:4px 0; text-decoration:none; }
+.vid-box a:hover { text-decoration:underline; }
+.vid-box a::before { content:"\25B6 "; }
+@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+.print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
+.print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>MATHS MYP4-5 EXTENDED Chapter 7 - Quadratic Functions and Equations</h1>
+  <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">Quadratic Functions and Equations</a></li>
+  </ol>
+</nav>
+
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Quadratic Functions and Equations</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Concept Lessons</span>
+        <a href="https://www.youtube.com/results?search_query=Maths%20MYP4-5%20Extended%20Quadratic%20Functions%20and%20Equations+lesson" target="_blank">Core lesson videos</a>
+        <a href="https://www.youtube.com/results?search_query=Maths%20MYP4-5%20Extended%20Quadratic%20Functions%20and%20Equations+explained" target="_blank">Explainer videos</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Practice Videos</span>
+        <a href="https://www.youtube.com/results?search_query=Maths%20MYP4-5%20Extended%20Quadratic%20Functions%20and%20Equations+practice+questions" target="_blank">Practice question walkthroughs</a>
+        <a href="https://www.youtube.com/results?search_query=Maths%20MYP4-5%20Extended%20Quadratic%20Functions%20and%20Equations+worked+examples" target="_blank">Worked examples</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">IB MYP Revision</span>
+        <a href="https://www.google.com/search?q=IB+MYP+Maths%20MYP4-5%20Extended%20Quadratic%20Functions%20and%20Equations+revision" target="_blank">Revision links</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">Extension</span>
+        <a href="https://www.youtube.com/results?search_query=Maths%20MYP4-5%20Extended%20Quadratic%20Functions%20and%20Equations+applications" target="_blank">Application videos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundation - Concepts and Basics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Define the key idea of Quadratic Functions and Equations in one sentence.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A valid definition should identify the central concept of Quadratic Functions and Equations.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">List two symbols/terms commonly used in Quadratic Functions and Equations.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any two relevant terms with correct usage are accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">State one rule or property from Quadratic Functions and Equations.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any standard rule/property correctly stated is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write one simple example related to Quadratic Functions and Equations.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A correct worked example linked to Quadratic Functions and Equations is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Identify one common mistake students make in Quadratic Functions and Equations.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any realistic misconception with correction is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Explain why that mistake is incorrect.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Reason should refer to the correct rule or definition.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Create one true/false question on Quadratic Functions and Equations and answer it.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any valid T/F with correct justification is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write one step-by-step method to solve a basic Quadratic Functions and Equations problem.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Method should show ordered logical steps.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">How would you check your answer in a Quadratic Functions and Equations question?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Use substitution, inverse operation, or estimation as appropriate.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write one reflection sentence: what part of Quadratic Functions and Equations feels easiest?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any clear self-reflection is accepted.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Core Practice - Skills and Procedures</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Solve a basic numeric/algebraic problem from Quadratic Functions and Equations.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any correct computation following topic rules is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Convert one representation to another in Quadratic Functions and Equations (table/graph/form).</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Conversion should preserve mathematical meaning.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Simplify an expression or value linked to Quadratic Functions and Equations.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any correctly simplified result is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Find an unknown value in a one-step Quadratic Functions and Equations problem.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Unknown should be solved correctly with shown method.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Solve a two-step problem from Quadratic Functions and Equations.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Answer should include intermediate step and final result.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Compare two methods to solve a Quadratic Functions and Equations question.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Provide one similarity and one difference between methods.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Interpret a small data/diagram result in Quadratic Functions and Equations.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Interpretation should match given values/diagram.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Construct one exam-style short answer question from Quadratic Functions and Equations.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Question should be clear and solvable.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write one error-analysis note for a wrong solution in Quadratic Functions and Equations.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Identify exactly where reasoning breaks.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Create one mixed-difficulty mini problem set (3 items) for Quadratic Functions and Equations.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Items should progress from simple to complex.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application - Real-World Modeling</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Give one real-life use of Quadratic Functions and Equations in finance.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any relevant finance context is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Give one real-life use of Quadratic Functions and Equations in science or technology.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any valid STEM context is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Give one real-life use of Quadratic Functions and Equations in design/architecture.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any practical geometry/data/modeling link is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Model a simple word problem using Quadratic Functions and Equations.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Equation/representation should match the scenario.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Solve your modeled problem and state units.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Computation and units should be correct.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Explain one assumption used in your model.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Assumption should be realistic and explicit.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">How could measurement/data error affect results in Quadratic Functions and Equations?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Explain direction/size of possible impact.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Suggest one way to improve model accuracy for Quadratic Functions and Equations.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any clear improvement step is accepted.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write one short criterion-D style investigation idea for Quadratic Functions and Equations.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Include question, method, and expected output.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">State one ethical/societal consideration when applying Quadratic Functions and Equations.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any relevant and reasoned point is accepted.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge - Reasoning and Communication</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Create one higher-order question on Quadratic Functions and Equations and solve it.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: HOTS question should require reasoning beyond routine procedure.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Show two different valid solution paths for the same Quadratic Functions and Equations problem.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Both paths should reach same correct result.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write a claim about Quadratic Functions and Equations and support it with one proof/example.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Claim must be mathematically sound.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Critique this statement: &quot;Quadratic Functions and Equations is only useful in exams.&quot;</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Response should include at least one real-world counterexample.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Design one peer-teaching explanation for a difficult Quadratic Functions and Equations idea.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Explanation should be concise and learner-friendly.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Build one concept map linking Quadratic Functions and Equations to two other units.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Map should show meaningful connections.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Write one 5-mark extended response prompt on Quadratic Functions and Equations.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Prompt should test explanation plus calculation/justification.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Draft a marking rubric (3 criteria) for that 5-mark prompt.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Criteria can include method, accuracy, and communication.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Reflect on one past error in Quadratic Functions and Equations and how to avoid it next time.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Reflection should include a concrete correction strategy.</b></p>
+      </details>
+      <div class="q-item">
+        <div class="q-text">Set one personal target for mastering Quadratic Functions and Equations this week.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Target should be specific and measurable.</b></p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<footer>Maths · MYP4-5 Extended · Chapter 7 · Practice Worksheet</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'</title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'</style></head><body>'
+    +'<h1>'+chapTitle+'</h1><h2>'+setTitle+'</h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};</'+'script>'
+    +'</body></html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

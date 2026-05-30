@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 6 – We Distribute, Yet Things Multiply</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>✖️ Chapter 6 – We Distribute, Yet Things Multiply</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Algebraic Expressions &amp; Identities</p>
+</header>
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Review Algebraic Expressions</a></li>
+    <li><a href="#t2">Multiplying Monomials</a></li>
+    <li><a href="#t3">Monomial × Polynomial</a></li>
+    <li><a href="#t4">Multiplying Two Binomials (FOIL)</a></li>
+    <li><a href="#t5">Multiplying Two Polynomials</a></li>
+    <li><a href="#t6">Identity I: (a+b)²</a></li>
+    <li><a href="#t7">Identity II: (a−b)²</a></li>
+    <li><a href="#t8">Identity III: (a+b)(a−b)</a></li>
+    <li><a href="#t9">Identity IV: (x+a)(x+b)</a></li>
+    <li><a href="#t10">Quick Calculations Using Identities</a></li>
+    <li><a href="#t11">Factorisation Using Identities</a></li>
+    <li><a href="#t12">Real-World Applications</a></li>
+  </ol>
+</nav>
+
+<!-- ===================== TOPIC 1 ===================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Review Algebraic Expressions</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:intro-variables/v/what-is-a-variable" target="_blank">What is a variable?</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:algebraic-expressions/v/expression-vs-equation" target="_blank">Expressions vs Equations</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=NybHckSEQBI" target="_blank">Algebra Basics – What is Algebra?</a><a href="https://www.youtube.com/watch?v=Xt8UAvwuiGo" target="_blank">Combining Like Terms</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=mTbQjD1KBiM" target="_blank">Algebra and Patterns</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=MqXlmgGBWZA" target="_blank">Why do we use letters in algebra?</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Identifying Parts of Expressions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Identify the number of terms in: 3x² + 5x − 7<details class="ans"><summary>Show Answer</summary><p>3 terms: 3x², 5x, −7</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the coefficient of x² in 4x² − 3x + 2?<details class="ans"><summary>Show Answer</summary><p>Coefficient of x² = 4</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Name the constant term in 7a³ − 2a + 9<details class="ans"><summary>Show Answer</summary><p>Constant term = 9</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Classify: 5x²y³ — how many variables, what is the degree?<details class="ans"><summary>Show Answer</summary><p>2 variables (x and y); degree = 2+3 = 5</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which are like terms? 3x², 5xy, −2x², 7y², 4x²<details class="ans"><summary>Show Answer</summary><p>Like terms: 3x², −2x², 4x² (all have x²)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Add: (3x + 2y) + (5x − 4y)<details class="ans"><summary>Show Answer</summary><p>= (3+5)x + (2−4)y = 8x − 2y</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Subtract: (6a² − 3a + 1) − (2a² + a − 4)<details class="ans"><summary>Show Answer</summary><p>= 6a²−3a+1−2a²−a+4 = 4a²−4a+5</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What is the degree of the polynomial 2x⁴ − 3x²y + 7?<details class="ans"><summary>Show Answer</summary><p>Highest degree term is 2x⁴, so degree = 4</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate 3x² − 4x + 1 when x = 2<details class="ans"><summary>Show Answer</summary><p>= 3(4) − 4(2) + 1 = 12 − 8 + 1 = 5</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write a polynomial with 3 terms, degree 3, in variable m.<details class="ans"><summary>Show Answer</summary><p>Example: 2m³ − 5m + 7 (answers may vary)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Classifying Polynomials</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Classify 4x as: monomial, binomial, or trinomial?<details class="ans"><summary>Show Answer</summary><p>Monomial (1 term)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Classify 3a + 7b.<details class="ans"><summary>Show Answer</summary><p>Binomial (2 terms)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Classify x² − 2x + 1.<details class="ans"><summary>Show Answer</summary><p>Trinomial (3 terms)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is 7 a polynomial? What is its degree?<details class="ans"><summary>Show Answer</summary><p>Yes, it is a monomial (constant polynomial). Degree = 0.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">What type of polynomial is 5x³ − 2?<details class="ans"><summary>Show Answer</summary><p>Binomial, degree 3</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Add the polynomials (x² + 3x − 2) and (−x² + x + 5).<details class="ans"><summary>Show Answer</summary><p>= 0x² + 4x + 3 = 4x + 3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: 4p³ − 2p + 3p³ + 6p − 1<details class="ans"><summary>Show Answer</summary><p>= 7p³ + 4p − 1</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the value of 2a − 3b + ab when a = 1, b = −1.<details class="ans"><summary>Show Answer</summary><p>= 2(1) − 3(−1) + (1)(−1) = 2 + 3 − 1 = 4</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">How many terms does (3x + 2)(x − 1) have before expansion?<details class="ans"><summary>Show Answer</summary><p>Each factor has 2 terms (both are binomials). After expansion it has up to 4 terms (combined to 3).</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Write the standard form of: −5 + 4x − x³ + 2x²<details class="ans"><summary>Show Answer</summary><p>−x³ + 2x² + 4x − 5</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Operations on Expressions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 5x + 3 − 2x + 7<details class="ans"><summary>Show Answer</summary><p>= 3x + 10</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Simplify: 3a²b − 2ab² + 5a²b − ab²<details class="ans"><summary>Show Answer</summary><p>= 8a²b − 3ab²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Subtract (2m² − 3m + 1) from (5m² + m − 2).<details class="ans"><summary>Show Answer</summary><p>= (5m²+m−2) − (2m²−3m+1) = 3m² + 4m − 3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate 4x² − x + 3 for x = −1.<details class="ans"><summary>Show Answer</summary><p>= 4(1) − (−1) + 3 = 4 + 1 + 3 = 8</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the perimeter of a rectangle with length (3x + 2) and width (x − 1).<details class="ans"><summary>Show Answer</summary><p>P = 2[(3x+2)+(x−1)] = 2[4x+1] = 8x + 2</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (2x − 3y) − (4x + y) + (x + 2y)<details class="ans"><summary>Show Answer</summary><p>= 2x−3y−4x−y+x+2y = −x − 2y</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Which expression equals 0 when x = 3? (a) x−3 (b) x+3 (c) 3x<details class="ans"><summary>Show Answer</summary><p>(a) x − 3 = 3 − 3 = 0 ✓</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">If P = 3x + 2 and Q = x − 4, find 2P − Q.<details class="ans"><summary>Show Answer</summary><p>2P − Q = 2(3x+2) − (x−4) = 6x+4−x+4 = 5x + 8</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Add: (a³−2a²+a) + (−a³+3a²−2a+1)<details class="ans"><summary>Show Answer</summary><p>= a² − a + 1</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A student simplifies 3x − (2 − x) as 3x − 2 − x = 2x − 2. Is this correct? Fix if wrong.<details class="ans"><summary>Show Answer</summary><p>Wrong. 3x − (2−x) = 3x − 2 + x = 4x − 2</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Review Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What is the sum of coefficients in 4x² − 3x + 5?<details class="ans"><summary>Show Answer</summary><p>4 + (−3) + 5 = 6</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate 2x² − 3xy + y² when x = 2, y = 1.<details class="ans"><summary>Show Answer</summary><p>= 2(4) − 3(2)(1) + 1 = 8 − 6 + 1 = 3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the degree of: 3x²y³ − 2x⁴ + 7xy<details class="ans"><summary>Show Answer</summary><p>Degrees: 5, 4, 2. Highest = 5</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Write an expression for "5 more than twice a number n".<details class="ans"><summary>Show Answer</summary><p>2n + 5</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">What is the value of the expression 3 − 2(x − 1) at x = 0?<details class="ans"><summary>Show Answer</summary><p>= 3 − 2(−1) = 3 + 2 = 5</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Identify: Is 4x⁻² a polynomial term? Why?<details class="ans"><summary>Show Answer</summary><p>No. Polynomial terms require non-negative integer exponents. x⁻² is not allowed.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify and find the value at x=1: (3x+2) + (x−5) − (2x−1)<details class="ans"><summary>Show Answer</summary><p>= 3x+2+x−5−2x+1 = 2x−2; at x=1: 2(1)−2 = 0</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If A = 2x − 1 and B = x + 3, find A² − B² (do not expand, just set up).<details class="ans"><summary>Show Answer</summary><p>= (A+B)(A−B) = (3x+2)(x−4)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">How many terms does 4x³ − 0·x² + 2x − 0 simplify to?<details class="ans"><summary>Show Answer</summary><p>= 4x³ + 2x → 2 terms</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">True/False: Two monomials can always be added to give a monomial.<details class="ans"><summary>Show Answer</summary><p>False. Only if they are like terms (e.g. 3x + 5x = 8x). Unlike terms: 3x + 2y cannot be combined.</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 2 ===================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Multiplying Monomials</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:exponent-properties/v/exponent-properties-involving-products" target="_blank">Multiplying monomials &amp; exponents</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:exponent-properties/v/multiplying-monomials" target="_blank">Monomial multiplication</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=UVoEeAzSmUE" target="_blank">Exponents &amp; Square Roots</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=BLRUiygqO4U" target="_blank">Powers and why they matter</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=3e8_GWCDp5o" target="_blank">The power of powers</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Basic Monomial Multiplication</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Multiply: 3x × 4x<details class="ans"><summary>Show Answer</summary><p>= 3×4 × x×x = 12x²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 2a × 5a²<details class="ans"><summary>Show Answer</summary><p>= 10a³</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (−3x) × (4x)<details class="ans"><summary>Show Answer</summary><p>= −12x²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 5m² × 3m³<details class="ans"><summary>Show Answer</summary><p>= 15m⁵</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (−2a²) × (−3a³)<details class="ans"><summary>Show Answer</summary><p>= 6a⁵ (negative × negative = positive)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 4xy × 3x²y<details class="ans"><summary>Show Answer</summary><p>= 12x³y²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 7p²q × 2pq²<details class="ans"><summary>Show Answer</summary><p>= 14p³q³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (−5a) × (2b) × (−ab)<details class="ans"><summary>Show Answer</summary><p>= (−5×2×−1) × a×a × b×b = 10a²b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (3x²y) × (4xy²) × (2y)<details class="ans"><summary>Show Answer</summary><p>= 24x³y⁴</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (½ a²) × (4ab) × (2b²)<details class="ans"><summary>Show Answer</summary><p>= ½ × 4 × 2 × a³b³ = 4a³b³</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Laws of Exponents</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: x³ × x⁵<details class="ans"><summary>Show Answer</summary><p>= x⁸ (add exponents: 3+5)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (a⁴b²) × (a²b³)<details class="ans"><summary>Show Answer</summary><p>= a⁶b⁵</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (2x)³<details class="ans"><summary>Show Answer</summary><p>= 8x³</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (3a²)² × a<details class="ans"><summary>Show Answer</summary><p>= 9a⁴ × a = 9a⁵</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (−2xy)³<details class="ans"><summary>Show Answer</summary><p>= −8x³y³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (5m²n)² ÷ 5m<details class="ans"><summary>Show Answer</summary><p>= 25m⁴n² ÷ 5m = 5m³n²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If a = 2 and b = 3, find (2a²) × (3b).<details class="ans"><summary>Show Answer</summary><p>= 2(4) × 3(3) = 8 × 9 = 72</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (x²y³)² × (xy)³<details class="ans"><summary>Show Answer</summary><p>= x⁴y⁶ × x³y³ = x⁷y⁹</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find k if 3xᵏ × 4x³ = 12x⁷.<details class="ans"><summary>Show Answer</summary><p>k + 3 = 7 → k = 4</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (2a²b)³ × (3ab²)²<details class="ans"><summary>Show Answer</summary><p>= 8a⁶b³ × 9a²b⁴ = 72a⁸b⁷</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Products with Negative &amp; Fractional Coefficients</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Multiply: (¼x²) × (8x)<details class="ans"><summary>Show Answer</summary><p>= 2x³</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (−⅔a³) × (6a²)<details class="ans"><summary>Show Answer</summary><p>= −4a⁵</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (1.2x) × (2.5x²)<details class="ans"><summary>Show Answer</summary><p>= 3x³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (−3p²) × (−4p) × (p²)<details class="ans"><summary>Show Answer</summary><p>= 12p⁵</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (⅓x²y) × (9xy³)<details class="ans"><summary>Show Answer</summary><p>= 3x³y⁴</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of a rectangle with sides 4x²y and 3xy². Find the area.<details class="ans"><summary>Show Answer</summary><p>Area = 4x²y × 3xy² = 12x³y³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Volume of a cube with side 2ab. Find the volume.<details class="ans"><summary>Show Answer</summary><p>= (2ab)³ = 8a³b³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (−2x²)(3xy)(−4y²)<details class="ans"><summary>Show Answer</summary><p>= (−2)(3)(−4) × x³y³ = 24x³y³</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If the product of two monomials is 30x⁵y³, and one is 6x²y, find the other.<details class="ans"><summary>Show Answer</summary><p>Other = 30x⁵y³ ÷ 6x²y = 5x³y²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (0.5m²n) × (−4mn²) × (2m)<details class="ans"><summary>Show Answer</summary><p>= 0.5×(−4)×2 × m⁴n³ = −4m⁴n³</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Word Problems &amp; Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square has side 3x². Write its area as a monomial.<details class="ans"><summary>Show Answer</summary><p>Area = (3x²)² = 9x⁴</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A cuboid has dimensions 2x, 3x, and x. Find its volume.<details class="ans"><summary>Show Answer</summary><p>= 2x × 3x × x = 6x³</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Speed = 5x² m/s; time = 4x s. Find distance.<details class="ans"><summary>Show Answer</summary><p>d = s×t = 5x² × 4x = 20x³ m</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Force = 3a² N; area = 2a m². Find pressure (Force/Area).<details class="ans"><summary>Show Answer</summary><p>P = 3a²/2a = (3/2)a N/m²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Cost of 1 item = 2x rupees; number of items = 5x². Total cost?<details class="ans"><summary>Show Answer</summary><p>= 10x³ rupees</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A garden is 4ab m long and 3a²b m wide. Find its area.<details class="ans"><summary>Show Answer</summary><p>= 12a³b² m²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A bacterium doubles every hour. After n hours there are 2ⁿ bacteria. If initially there are 3x², how many after 3 hours (multiply by 2³)?<details class="ans"><summary>Show Answer</summary><p>= 3x² × 8 = 24x²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A rectangular field is (3x²y) m × (2xy²) m. Fencing costs 5 units/m. Find total fencing cost if fencing = area here.<details class="ans"><summary>Show Answer</summary><p>Area = 6x³y³ m²; cost = 5 × 6x³y³ = 30x³y³ units</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify and state the degree: (2x²)(3x³) + (4x)(x⁴)<details class="ans"><summary>Show Answer</summary><p>= 6x⁵ + 4x⁵ = 10x⁵; degree = 5</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If A = 3x²y and B = 2xy², show that A×B = B×A (commutativity).<details class="ans"><summary>Show Answer</summary><p>A×B = 6x³y³; B×A = 2xy² × 3x²y = 6x³y³ ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 3 ===================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Monomial × Polynomial</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:multiplying-polynomials/v/multiplying-monomials-by-polynomials" target="_blank">Multiplying monomials by polynomials</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=uMc8t3RNWWI" target="_blank">Distributive Property</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=mTbQjD1KBiM" target="_blank">Algebra Basics</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=GiSpV3NKzMU" target="_blank">Distributive Law explained</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Distributing a Monomial</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Multiply: 3(x + 4)<details class="ans"><summary>Show Answer</summary><p>= 3x + 12</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 2x(3x + 5)<details class="ans"><summary>Show Answer</summary><p>= 6x² + 10x</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: −4a(2a − 3)<details class="ans"><summary>Show Answer</summary><p>= −8a² + 12a</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 5x²(x − 2)<details class="ans"><summary>Show Answer</summary><p>= 5x³ − 10x²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 3ab(2a + b)<details class="ans"><summary>Show Answer</summary><p>= 6a²b + 3ab²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 2x(x² − 3x + 4)<details class="ans"><summary>Show Answer</summary><p>= 2x³ − 6x² + 8x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: −3m²(m² − 2m + 1)<details class="ans"><summary>Show Answer</summary><p>= −3m⁴ + 6m³ − 3m²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 4xy(2x² − xy + 3y²)<details class="ans"><summary>Show Answer</summary><p>= 8x³y − 4x²y² + 12xy³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (½x²)(4x³ − 6x + 8)<details class="ans"><summary>Show Answer</summary><p>= 2x⁵ − 3x³ + 4x²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Multiply: −2a²b(3a²b − ab² + 4b³)<details class="ans"><summary>Show Answer</summary><p>= −6a⁴b² + 2a³b³ − 8a²b⁴</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Distributing then Simplifying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand and simplify: 2(x + 3) + 3(x − 1)<details class="ans"><summary>Show Answer</summary><p>= 2x+6+3x−3 = 5x + 3</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: 4a(a + 2) − 2a(2a − 1)<details class="ans"><summary>Show Answer</summary><p>= 4a²+8a−4a²+2a = 10a</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: 3x(x+2) + 2x(x−3)<details class="ans"><summary>Show Answer</summary><p>= 3x²+6x+2x²−6x = 5x²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: x²(x+1) − x(x²−2)<details class="ans"><summary>Show Answer</summary><p>= x³+x²−x³+2x = x²+2x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: 2ab(a+b) − ab(2a−3b)<details class="ans"><summary>Show Answer</summary><p>= 2a²b+2ab²−2a²b+3ab² = 5ab²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand and simplify: 5x(x²−2x+1) − x(4x²−x)<details class="ans"><summary>Show Answer</summary><p>= 5x³−10x²+5x−4x³+x² = x³−9x²+5x</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If p = 2x+1, find 3x·p.<details class="ans"><summary>Show Answer</summary><p>= 3x(2x+1) = 6x²+3x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: a²(3a−2) + a(a²+5a−4)<details class="ans"><summary>Show Answer</summary><p>= 3a³−2a²+a³+5a²−4a = 4a³+3a²−4a</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Show that 2x(3x−4) = 6x²−8x by verifying at x=2.<details class="ans"><summary>Show Answer</summary><p>LHS: 2(2)(3(2)−4)=4×2=8; RHS: 6(4)−8(2)=24−16=8 ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: −xy(x² − 2xy + y²)<details class="ans"><summary>Show Answer</summary><p>= −x³y + 2x²y² − xy³</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Geometric &amp; Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the area of a rectangle with width 3x and length (2x + 5).<details class="ans"><summary>Show Answer</summary><p>= 3x(2x+5) = 6x²+15x</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A triangle has base 4a and height (3a−2). Find its area.<details class="ans"><summary>Show Answer</summary><p>Area = ½ × 4a × (3a−2) = 2a(3a−2) = 6a²−4a</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Perimeter of a square is 4(3x+2). Find the perimeter expression.<details class="ans"><summary>Show Answer</summary><p>= 12x + 8</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Total cost = price × quantity = 5x² × (3x − 4). Expand.<details class="ans"><summary>Show Answer</summary><p>= 15x³ − 20x²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A trapezium has parallel sides 3x and (5x+2), height 2x. Find its area.<details class="ans"><summary>Show Answer</summary><p>Area = ½ × 2x × (3x+5x+2) = x(8x+2) = 8x²+2x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Volume of a cuboid with dimensions x, (x+1), (x+2): Set up as x×(x+1)×(x+2). Expand the last two first.<details class="ans"><summary>Show Answer</summary><p>= x(x²+3x+2) = x³+3x²+2x</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Speed = (4x+3) m/s; time = 2x s. Find distance.<details class="ans"><summary>Show Answer</summary><p>d = 2x(4x+3) = 8x²+6x m</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Interest earned = P × r × t = 2x² × (x+1) × 1. Expand.<details class="ans"><summary>Show Answer</summary><p>= 2x²(x+1) = 2x³+2x²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If a square's side is increased from x to (x+3), its new area minus old area is: expand and simplify.<details class="ans"><summary>Show Answer</summary><p>= (x+3)² − x² = x²+6x+9−x² = 6x+9 (anticipates identity)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Number of tiles needed = 3ab(2a+b−1). Expand.<details class="ans"><summary>Show Answer</summary><p>= 6a²b + 3ab² − 3ab</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Monomial × Polynomial</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Multiply: 7(2a − 3b + c)<details class="ans"><summary>Show Answer</summary><p>= 14a − 21b + 7c</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Multiply: 3x²y(x + y − 2)<details class="ans"><summary>Show Answer</summary><p>= 3x³y + 3x²y² − 6x²y</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (−4p)(3p² − 2pq + q²)<details class="ans"><summary>Show Answer</summary><p>= −12p³ + 8p²q − 4pq²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: ¾x(4x² − 8x + 12)<details class="ans"><summary>Show Answer</summary><p>= 3x³ − 6x² + 9x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: 6mn(m² − 2mn + n²)<details class="ans"><summary>Show Answer</summary><p>= 6m³n − 12m²n² + 6mn³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand and simplify: 2y(y²−3) + 3y²(y+1) − y(y²+y)<details class="ans"><summary>Show Answer</summary><p>= 2y³−6y+3y³+3y²−y³−y² = 4y³+2y²−6y</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the missing monomial M if M(2x−3) = 6x²−9x.<details class="ans"><summary>Show Answer</summary><p>M = 6x²−9x ÷ (2x−3) = 3x</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (−abc)(a² − b² + c²)<details class="ans"><summary>Show Answer</summary><p>= −a³bc + ab³c − abc³</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: 5x²(x³ − 2x² + x − 1)<details class="ans"><summary>Show Answer</summary><p>= 5x⁵ − 10x⁴ + 5x³ − 5x²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factor out the GCF from: 6x³ − 9x² + 3x (reverse of distribution)<details class="ans"><summary>Show Answer</summary><p>= 3x(2x² − 3x + 1)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TOPIC 4 ===================== -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Multiplying Two Binomials (FOIL)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:multiplying-polynomials/v/multiplying-binomials" target="_blank">Multiplying binomials</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:multiplying-polynomials/v/more-examples-of-multiplying-binomials" target="_blank">More binomial examples</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Multiplying Polynomials</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=sckKSPT4XEQ" target="_blank">FOIL method visualised</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=3ei_UoGDPgY" target="_blank">Polynomial multiplication</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Basic FOIL</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x + 2)(x + 3)<details class="ans"><summary>Show Answer</summary><p>F: x²; O: 3x; I: 2x; L: 6 → x² + 5x + 6</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x + 5)(x − 2)<details class="ans"><summary>Show Answer</summary><p>= x² − 2x + 5x − 10 = x² + 3x − 10</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x − 3)(x − 4)<details class="ans"><summary>Show Answer</summary><p>= x² − 4x − 3x + 12 = x² − 7x + 12</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x + 1)(x + 3)<details class="ans"><summary>Show Answer</summary><p>= 2x²+6x+x+3 = 2x² + 7x + 3</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3a + 2)(a − 1)<details class="ans"><summary>Show Answer</summary><p>= 3a²−3a+2a−2 = 3a² − a − 2</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x + 3)(x − 4)<details class="ans"><summary>Show Answer</summary><p>= 2x²−8x+3x−12 = 2x² − 5x − 12</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (4m − 1)(2m + 3)<details class="ans"><summary>Show Answer</summary><p>= 8m²+12m−2m−3 = 8m² + 10m − 3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3x − 2)(3x + 2)<details class="ans"><summary>Show Answer</summary><p>= 9x²+6x−6x−4 = 9x² − 4</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (5p + q)(p − 3q)<details class="ans"><summary>Show Answer</summary><p>= 5p²−15pq+pq−3q² = 5p² − 14pq − 3q²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x − 5)(3x − 7)<details class="ans"><summary>Show Answer</summary><p>= 6x²−14x−15x+35 = 6x² − 29x + 35</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> FOIL with Larger Coefficients &amp; Fractions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x + ½)(x + ½)<details class="ans"><summary>Show Answer</summary><p>= x² + ½x + ½x + ¼ = x² + x + ¼</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2a + 3b)(a − 2b)<details class="ans"><summary>Show Answer</summary><p>= 2a²−4ab+3ab−6b² = 2a² − ab − 6b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3x + 4)(3x − 4)<details class="ans"><summary>Show Answer</summary><p>= 9x² − 16</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2m + n)(3m − 2n)<details class="ans"><summary>Show Answer</summary><p>= 6m²−4mn+3mn−2n² = 6m² − mn − 2n²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x + 2)(x + 2) using FOIL.<details class="ans"><summary>Show Answer</summary><p>= x²+2x+2x+4 = x² + 4x + 4</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (4a − 3b)(2a + 5b)<details class="ans"><summary>Show Answer</summary><p>= 8a²+20ab−6ab−15b² = 8a² + 14ab − 15b²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x² + 1)(x² − 3)<details class="ans"><summary>Show Answer</summary><p>= x⁴−3x²+x²−3 = x⁴ − 2x² − 3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (√2 x + 1)(√2 x − 1)<details class="ans"><summary>Show Answer</summary><p>= 2x² − 1</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (½x + 3)(2x − 4)<details class="ans"><summary>Show Answer</summary><p>= x²−2x+6x−12 = x² + 4x − 12</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand and collect: (2x−1)(x+3) − (x+2)(x−1)<details class="ans"><summary>Show Answer</summary><p>= (2x²+6x−x−3) − (x²−x+2x−2) = 2x²+5x−3−x²−x+2 = x²+4x−1</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Verify &amp; Identify Pattern</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Is (x+3)(x−3) always less than (x+3)²? Explain using expansion.<details class="ans"><summary>Show Answer</summary><p>(x+3)(x−3)=x²−9; (x+3)²=x²+6x+9. Difference = 6x+18. Yes, for x>−3.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand (a+b)(a+b) and recognise the identity.<details class="ans"><summary>Show Answer</summary><p>= a²+2ab+b² — this is Identity I: (a+b)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Verify: (2x+3)(x−4) = 2x²−5x−12 when x=1.<details class="ans"><summary>Show Answer</summary><p>LHS: (5)(−3)=−15; RHS: 2−5−12=−15 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (y + 7)(y − 7). What identity does this match?<details class="ans"><summary>Show Answer</summary><p>= y²−49. Identity III: (a+b)(a−b)=a²−b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">For what value of k is (x+k)(x−3) = x²+2x−15?<details class="ans"><summary>Show Answer</summary><p>Sum of roots k+(−3) = 2, so k = 5</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3 + x)(3 − x) and state its value when x=2.<details class="ans"><summary>Show Answer</summary><p>= 9 − x²; at x=2: 9−4 = 5</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand (2a + b)(2a − b).<details class="ans"><summary>Show Answer</summary><p>= 4a² − b²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand (m + 2n)(m + 2n).<details class="ans"><summary>Show Answer</summary><p>= m²+4mn+4n²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find c if (x+c)(x+3) = x²+7x+12.<details class="ans"><summary>Show Answer</summary><p>c+3=7 → c=4</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand and simplify: (x+1)² + (x−1)²<details class="ans"><summary>Show Answer</summary><p>= x²+2x+1 + x²−2x+1 = 2x²+2</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Real-World FOIL</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A rectangle's sides are (2x+1) and (x+3). Find its area.<details class="ans"><summary>Show Answer</summary><p>= 2x²+6x+x+3 = 2x²+7x+3</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A photo frame has outer dims (x+6)×(x+4) and inner dims x×(x-1). Frame area = outer − inner.<details class="ans"><summary>Show Answer</summary><p>Outer: x²+10x+24; Inner: x²−x; Frame = 11x+24</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Revenue = (price)(units sold) = (2x+5)(x+2). Expand.<details class="ans"><summary>Show Answer</summary><p>= 2x²+4x+5x+10 = 2x²+9x+10</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Area of trapezium = ½(sum of parallel sides)(height) = ½(x+3+x+5)(x−1). Expand half the bracket first.<details class="ans"><summary>Show Answer</summary><p>= ½(2x+8)(x−1) = (x+4)(x−1) = x²+3x−4</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Product of two consecutive integers n and (n+1). Expand.<details class="ans"><summary>Show Answer</summary><p>= n²+n</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand (x+a)(x+b) and identify the sum and product pattern.<details class="ans"><summary>Show Answer</summary><p>= x²+(a+b)x+ab (Identity IV pattern)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A swimming pool is (3m+2) by (m−1). Find the area.<details class="ans"><summary>Show Answer</summary><p>= 3m²−3m+2m−2 = 3m²−m−2</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand and simplify (using FOIL): (2n−3)(2n+3)<details class="ans"><summary>Show Answer</summary><p>= 4n²−9</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Total cost = (no. of kg)(price/kg) = (3x−1)(2x+5). Expand.<details class="ans"><summary>Show Answer</summary><p>= 6x²+15x−2x−5 = 6x²+13x−5</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the area of a square with side (4x−3). What identity does this illustrate?<details class="ans"><summary>Show Answer</summary><p>= (4x−3)² = 16x²−24x+9; Identity II: (a−b)²</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 5 ===================== -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Multiplying Two Polynomials</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:multiplying-polynomials/v/multiplying-polynomials" target="_blank">Multiplying polynomials</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Polynomial Multiplication</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=sckKSPT4XEQ" target="_blank">Polynomial identities</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=3ei_UoGDPgY" target="_blank">Polynomial multiplication patterns</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Trinomial × Binomial</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x² + x + 1)(x + 1)<details class="ans"><summary>Show Answer</summary><p>= x³+x²+x²+x+x+1 = x³+2x²+2x+1</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x² − 2x + 3)(x + 2)<details class="ans"><summary>Show Answer</summary><p>= x³+2x²−2x²−4x+3x+6 = x³−x+6</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2a² + 3a − 1)(a − 2)<details class="ans"><summary>Show Answer</summary><p>= 2a³−4a²+3a²−6a−a+2 = 2a³−a²−7a+2</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x² + 2x − 4)(x − 1)<details class="ans"><summary>Show Answer</summary><p>= x³−x²+2x²−2x−4x+4 = x³+x²−6x+4</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3m² − m + 2)(2m + 1)<details class="ans"><summary>Show Answer</summary><p>= 6m³+3m²−2m²−m+4m+2 = 6m³+m²+3m+2</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (y² − 3y + 9)(y + 3)<details class="ans"><summary>Show Answer</summary><p>= y³+3y²−3y²−9y+9y+27 = y³+27</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x² + xy + y²)(x − y)<details class="ans"><summary>Show Answer</summary><p>= x³−x²y+x²y−xy²+xy²−y³ = x³−y³</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a² − 2ab + b²)(a + b)<details class="ans"><summary>Show Answer</summary><p>= a³+a²b−2a²b−2ab²+ab²+b³ = a³−a²b−ab²+b³</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (4x² + 2x + 1)(x − 1)<details class="ans"><summary>Show Answer</summary><p>= 4x³−4x²+2x²−2x+x−1 = 4x³−2x²−x−1</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x² − x + 3)(3x − 2)<details class="ans"><summary>Show Answer</summary><p>= 6x³−4x²−3x²+2x+9x−6 = 6x³−7x²+11x−6</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Trinomial × Trinomial</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x + 1)(x² + x + 1) — same as Set A Q1<details class="ans"><summary>Show Answer</summary><p>= x³+2x²+2x+1</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x + 2)(x² − 2x + 4)<details class="ans"><summary>Show Answer</summary><p>= x³−2x²+4x+2x²−4x+8 = x³+8</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a − b)(a² + ab + b²)<details class="ans"><summary>Show Answer</summary><p>= a³+a²b+ab²−a²b−ab²−b³ = a³−b³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x + 1)(x² − x + 1)<details class="ans"><summary>Show Answer</summary><p>= 2x³−2x²+2x+x²−x+1 = 2x³−x²+x+1</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (1 + x + x²)(1 − x)<details class="ans"><summary>Show Answer</summary><p>= 1−x+x−x²+x²−x³ = 1−x³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x² + 2x + 3)(x² − 2x + 1)<details class="ans"><summary>Show Answer</summary><p>= x⁴−2x³+x²+2x³−4x²+2x+3x²−6x+3 = x⁴+0x³+0x²−4x+3 = x⁴−4x+3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a + b + c)(a − b)<details class="ans"><summary>Show Answer</summary><p>= a²−ab+ab−b²+ac−bc = a²−b²+ac−bc</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x+1)(x+2)(x+3) — expand first two first.<details class="ans"><summary>Show Answer</summary><p>(x+1)(x+2)=x²+3x+2; × (x+3) = x³+3x²+3x²+9x+2x+6 = x³+6x²+11x+6</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x−1)(x−2)(x−3).<details class="ans"><summary>Show Answer</summary><p>(x−1)(x−2)=x²−3x+2; ×(x−3): x³−3x²−3x²+9x+2x−6 = x³−6x²+11x−6</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify (a+b)³ = a³+3a²b+3ab²+b³ by expanding (a+b)(a+b)².<details class="ans"><summary>Show Answer</summary><p>(a+b)² = a²+2ab+b²; ×(a+b): a³+2a²b+ab²+a²b+2ab²+b³ = a³+3a²b+3ab²+b³ ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Organising Multiplication by Column Method</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Using column method, multiply (x² + 3x + 2) by (x + 1).<details class="ans"><summary>Show Answer</summary><p>= x³+x²+3x²+3x+2x+2 = x³+4x²+5x+2</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply (2x² − x + 4) by (x − 2).<details class="ans"><summary>Show Answer</summary><p>= 2x³−4x²−x²+2x+4x−8 = 2x³−5x²+6x−8</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply (3a² + 2a − 1)(2a + 3).<details class="ans"><summary>Show Answer</summary><p>= 6a³+9a²+4a²+6a−2a−3 = 6a³+13a²+4a−3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply (x³ − x + 2)(x − 1).<details class="ans"><summary>Show Answer</summary><p>= x⁴−x³−x²+x+2x−2 = x⁴−x³−x²+3x−2</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify: (x+1)(x²−x+1) = x³+1 at x = 2.<details class="ans"><summary>Show Answer</summary><p>LHS: (3)(3)=9; RHS: 8+1=9 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply (p + q − r)(p − q + r).<details class="ans"><summary>Show Answer</summary><p>= p²−pq+pr+pq−q²+qr−pr+qr−r² = p²−q²−r²+2qr</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (1 + x)(1 + x²)(1 + x) — group the two (1+x) first.<details class="ans"><summary>Show Answer</summary><p>(1+x)²(1+x²) = (1+2x+x²)(1+x²) = 1+x²+2x+2x³+x²+x⁴ = x⁴+2x³+2x²+2x+1</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">What is the degree of the product of a degree-3 and degree-2 polynomial?<details class="ans"><summary>Show Answer</summary><p>Degree = 3+2 = 5</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">How many terms does (a+b+c)(x+y) expand to before collecting?<details class="ans"><summary>Show Answer</summary><p>3 × 2 = 6 terms before collecting (may reduce after)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand (x+y+z)² by writing as (x+y+z)(x+y+z).<details class="ans"><summary>Show Answer</summary><p>= x²+xy+xz+xy+y²+yz+xz+yz+z² = x²+y²+z²+2xy+2yz+2xz</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Polynomial Multiplication</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Multiply: (5x−3)(x²+2x−1)<details class="ans"><summary>Show Answer</summary><p>= 5x³+10x²−5x−3x²−6x+3 = 5x³+7x²−11x+3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (x+y)(x²−xy+y²)<details class="ans"><summary>Show Answer</summary><p>= x³−x²y+xy²+x²y−xy²+y³ = x³+y³</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (2a+b)(4a²−2ab+b²)<details class="ans"><summary>Show Answer</summary><p>= 8a³−4a²b+2ab²+4a²b−2ab²+b³ = 8a³+b³</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (x−3)(x+3)(x²+9)<details class="ans"><summary>Show Answer</summary><p>= (x²−9)(x²+9) = x⁴−81</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the product (x+1)(x−1)(x²+1).<details class="ans"><summary>Show Answer</summary><p>= (x²−1)(x²+1) = x⁴−1</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Multiply: (3m+2n)(9m²−6mn+4n²)<details class="ans"><summary>Show Answer</summary><p>= 27m³+8n³ (sum of cubes pattern)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify: product of (x²+1)(x²−2) at x=1.<details class="ans"><summary>Show Answer</summary><p>LHS: (2)(−1)=−2; RHS: x⁴−x²−2 = 1−1−2=−2 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (x+a)(x²+bx+c) = x³+5x²+7x+3, find a, b, c.<details class="ans"><summary>Show Answer</summary><p>a=1 (constant×constant=3→c=3); b: coefficient of x² is a+b=5→b=4; check x: ab+c=4+3=7 ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x+1)³ using (2x+1)(2x+1)² method.<details class="ans"><summary>Show Answer</summary><p>(2x+1)²=4x²+4x+1; ×(2x+1)=8x³+8x²+2x+4x²+4x+1=8x³+12x²+6x+1</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">True/False: (a+b)(c+d) = ac+bd only. Justify.<details class="ans"><summary>Show Answer</summary><p>False. (a+b)(c+d)=ac+ad+bc+bd (4 terms, not 2)</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 6 ===================== -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Identity I: (a+b)² = a²+2ab+b²</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:special-products/v/square-of-sum" target="_blank">Square of a sum</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Special products in algebra</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=mTbQjD1KBiM" target="_blank">Why algebra identities work</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=MqXlmgGBWZA" target="_blank">Geometry of algebraic identities</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Apply Identity I Directly</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand using Identity I: (x + 4)²<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity I:</strong> (a+b)² = a²+2ab+b²<br>a=x, b=4<br>= x² + 2(x)(4) + 4²<br>= x² + 8x + 16</div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a + 7)²<details class="ans"><summary>Show Answer</summary><p>= a² + 14a + 49</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x + 1)²<details class="ans"><summary>Show Answer</summary><p>= x² + 2x + 1</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x + 3)²<details class="ans"><summary>Show Answer</summary><p>a=2x, b=3: (2x)²+2(2x)(3)+9 = 4x²+12x+9</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3a + 2b)²<details class="ans"><summary>Show Answer</summary><p>= 9a²+12ab+4b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (5x + 1)²<details class="ans"><summary>Show Answer</summary><p>= 25x²+10x+1</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (4m + 3n)²<details class="ans"><summary>Show Answer</summary><p>= 16m²+24mn+9n²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2p + 5q)²<details class="ans"><summary>Show Answer</summary><p>= 4p²+20pq+25q²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x² + 3)²<details class="ans"><summary>Show Answer</summary><p>= x⁴+6x²+9</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3a² + 2b²)²<details class="ans"><summary>Show Answer</summary><p>= 9a⁴+12a²b²+4b⁴</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Numerical Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 101² using (100+1)²<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity I:</strong> (100+1)² = 100²+2(100)(1)+1² = 10000+200+1 = <strong>10201</strong></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 103² using (100+3)²<details class="ans"><summary>Show Answer</summary><p>= 10000+600+9 = 10609</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 105² using identity.<details class="ans"><summary>Show Answer</summary><p>= (100+5)² = 10000+1000+25 = 11025</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 52² using (50+2)²<details class="ans"><summary>Show Answer</summary><p>= 2500+200+4 = 2704</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 204² using identity.<details class="ans"><summary>Show Answer</summary><p>= (200+4)² = 40000+1600+16 = 41616</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 1002² using identity.<details class="ans"><summary>Show Answer</summary><p>= (1000+2)² = 1000000+4000+4 = 1004004</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 35² using (30+5)²<details class="ans"><summary>Show Answer</summary><p>= 900+300+25 = 1225</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If a=2.5 and b=1.5, find (a+b)² using identity.<details class="ans"><summary>Show Answer</summary><p>= (2.5+1.5)² = 4² = 16; or: 6.25+7.5+2.25 = 16 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find (√3 + 1)² without using a calculator.<details class="ans"><summary>Show Answer</summary><p>= 3+2√3+1 = 4+2√3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Evaluate (x+y)² − 2xy given x+y = 7.<details class="ans"><summary>Show Answer</summary><p>= x²+2xy+y²−2xy = x²+y² = 49−2xy (need xy to finish, but shows x²+y²=(x+y)²−2xy)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Geometric Proof &amp; Deeper Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square has side (x+3). Find its area using Identity I.<details class="ans"><summary>Show Answer</summary><p>= (x+3)² = x²+6x+9</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show geometrically: (a+b)² consists of one a² square, one b² square, and two rectangles ab.<details class="ans"><summary>Show Answer</summary><p>The big square (a+b)² is divided into: one a×a, two a×b, one b×b = a²+2ab+b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (x+y)² = 49 and xy = 10, find x²+y².<details class="ans"><summary>Show Answer</summary><p>x²+y² = (x+y)²−2xy = 49−20 = 29</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand (a+b+c)² using [(a+b)+c]².<details class="ans"><summary>Show Answer</summary><p>= (a+b)²+2(a+b)c+c² = a²+2ab+b²+2ac+2bc+c²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find x²+y² if x+y=6 and xy=5.<details class="ans"><summary>Show Answer</summary><p>= 36−10 = 26</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If x + 1/x = 5, find x² + 1/x².<details class="ans"><summary>Show Answer</summary><p>= (x+1/x)² − 2 = 25−2 = 23</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand (2a + b + c)².<details class="ans"><summary>Show Answer</summary><p>= 4a²+b²+c²+4ab+4ac+2bc</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A square tile of side (3x+2) cm. Find its area.<details class="ans"><summary>Show Answer</summary><p>= 9x²+12x+4 cm²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x/2 + y/3)²<details class="ans"><summary>Show Answer</summary><p>= x²/4 + xy/3 + y²/9</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If a²+b² = 25 and ab = 12, find (a+b)².<details class="ans"><summary>Show Answer</summary><p>= a²+2ab+b² = 25+24 = 49, so a+b = 7</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Identity I Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (x+2)² − (x+2) − 6<details class="ans"><summary>Show Answer</summary><p>= x²+4x+4−x−2−6 = x²+3x−4</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2x+1)² when x=3.<details class="ans"><summary>Show Answer</summary><p>= 4(9)+12+1 = 36+12+1 = 49</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (a+b)² + (a−b)²<details class="ans"><summary>Show Answer</summary><p>= a²+2ab+b²+a²−2ab+b² = 2a²+2b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the value of (x+3)² − (x−3)².<details class="ans"><summary>Show Answer</summary><p>= (x²+6x+9)−(x²−6x+9) = 12x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (p + 2q + 3r)² (hint: use extended identity).<details class="ans"><summary>Show Answer</summary><p>= p²+4q²+9r²+4pq+6pr+12qr</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Use (a+b)²=a²+2ab+b² to find 11.5².<details class="ans"><summary>Show Answer</summary><p>= (11+0.5)² = 121+11+0.25 = 132.25</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (3x+2)² = 9x²+12x+k, find k.<details class="ans"><summary>Show Answer</summary><p>k = 2² = 4</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand and simplify: 3(x+2)² − 2(x+1)²<details class="ans"><summary>Show Answer</summary><p>= 3(x²+4x+4) − 2(x²+2x+1) = 3x²+12x+12−2x²−4x−2 = x²+8x+10</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find a if (ax+3)² = 4x²+12x+9.<details class="ans"><summary>Show Answer</summary><p>a²x² → a²=4 → a=2</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The perimeter of a square is 4(2x+5). Find the area using Identity I.<details class="ans"><summary>Show Answer</summary><p>Side = (2x+5); Area = (2x+5)² = 4x²+20x+25</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TOPIC 7 ===================== -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Identity II: (a−b)² = a²−2ab+b²</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:special-products/v/square-of-difference" target="_blank">Square of a difference</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Special products</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=mTbQjD1KBiM" target="_blank">Algebra identities</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=MqXlmgGBWZA" target="_blank">Geometric proof of identities</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Apply Identity II Directly</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x − 3)²<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity II:</strong> (a−b)² = a²−2ab+b²<br>a=x, b=3<br>= x² − 6x + 9</div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a − 5)²<details class="ans"><summary>Show Answer</summary><p>= a² − 10a + 25</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x − 1)²<details class="ans"><summary>Show Answer</summary><p>= 4x² − 4x + 1</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3m − 2)²<details class="ans"><summary>Show Answer</summary><p>= 9m² − 12m + 4</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (5a − 3b)²<details class="ans"><summary>Show Answer</summary><p>= 25a² − 30ab + 9b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (4x − y)²<details class="ans"><summary>Show Answer</summary><p>= 16x² − 8xy + y²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (7 − 3x)²<details class="ans"><summary>Show Answer</summary><p>a=7, b=3x: 49 − 42x + 9x²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2a² − 3b)²<details class="ans"><summary>Show Answer</summary><p>= 4a⁴ − 12a²b + 9b²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x/2 − 3)²<details class="ans"><summary>Show Answer</summary><p>= x²/4 − 3x + 9</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3p − 4q)²<details class="ans"><summary>Show Answer</summary><p>= 9p² − 24pq + 16q²</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Numerical Use of Identity II</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 99² using (100−1)²<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity II:</strong> (100−1)² = 100²−2(100)(1)+1² = 10000−200+1 = <strong>9801</strong></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 98² using (100−2)²<details class="ans"><summary>Show Answer</summary><p>= 10000−400+4 = 9604</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 97² using identity.<details class="ans"><summary>Show Answer</summary><p>= (100−3)² = 10000−600+9 = 9409</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 48² using (50−2)²<details class="ans"><summary>Show Answer</summary><p>= 2500−200+4 = 2304</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 195² using (200−5)²<details class="ans"><summary>Show Answer</summary><p>= 40000−2000+25 = 38025</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 998² using identity.<details class="ans"><summary>Show Answer</summary><p>= (1000−2)² = 1000000−4000+4 = 996004</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 4.9² using (5−0.1)²<details class="ans"><summary>Show Answer</summary><p>= 25−1+0.01 = 24.01</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 79² using (80−1)²<details class="ans"><summary>Show Answer</summary><p>= 6400−160+1 = 6241</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate (√5 − 1)² without calculator.<details class="ans"><summary>Show Answer</summary><p>= 5 − 2√5 + 1 = 6 − 2√5</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find (2√3 − √2)².<details class="ans"><summary>Show Answer</summary><p>= 12 − 2(2√3)(√2) + 2 = 14 − 4√6</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Comparing &amp; Connecting Identity I and II</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show that (a−b)² = (b−a)².<details class="ans"><summary>Show Answer</summary><p>(b−a)² = b²−2ba+a² = a²−2ab+b² = (a−b)² ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (x+3)² − (x−3)²<details class="ans"><summary>Show Answer</summary><p>= (x²+6x+9)−(x²−6x+9) = 12x</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (p−q)² + 4pq<details class="ans"><summary>Show Answer</summary><p>= p²−2pq+q²+4pq = p²+2pq+q² = (p+q)²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If x−y=4 and xy=3, find x²+y².<details class="ans"><summary>Show Answer</summary><p>x²+y² = (x−y)²+2xy = 16+6 = 22</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (a+b)² + (a−b)²<details class="ans"><summary>Show Answer</summary><p>= 2a²+2b²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If x−1/x = 3, find x²+1/x².<details class="ans"><summary>Show Answer</summary><p>= (x−1/x)²+2 = 9+2 = 11</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand (2m−3n)² and evaluate at m=2, n=1.<details class="ans"><summary>Show Answer</summary><p>= 4m²−12mn+9n²; at (2,1): 16−24+9 = 1</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If (x−y)² = 25 and x+y = 9, find xy.<details class="ans"><summary>Show Answer</summary><p>(x+y)²−4xy = (x−y)²? No: (x+y)²−4xy=(x−y)²: 81−4xy=25 → 4xy=56 → xy=14</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">True/False: (a−b)² = a²−b² for all a, b.<details class="ans"><summary>Show Answer</summary><p>False. (a−b)² = a²−2ab+b², not a²−b².</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x − y − z)² using [(x−y)−z]².<details class="ans"><summary>Show Answer</summary><p>= x²+y²+z²−2xy+2yz−2xz</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Identity II Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (3x−5)² and evaluate at x=2.<details class="ans"><summary>Show Answer</summary><p>= 9x²−30x+25; at x=2: 36−60+25 = 1</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If a²+b²=29 and ab=10, find (a−b)².<details class="ans"><summary>Show Answer</summary><p>= a²−2ab+b² = 29−20 = 9</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the missing term: (4x−?)² = 16x²−40x+25<details class="ans"><summary>Show Answer</summary><p>b²=25→b=5; check 2(4x)(5)=40x ✓; answer: (4x−5)²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand and simplify: (x−2)² + (x+2)² − 2x²<details class="ans"><summary>Show Answer</summary><p>= x²−4x+4+x²+4x+4−2x² = 8</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 2025² − 2024 × 2026 using identity (hint: let a=2025, b=1).<details class="ans"><summary>Show Answer</summary><p>a²−(a−1)(a+1) = a²−(a²−1) = 1</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Use (a−b)² to find 9.8²<details class="ans"><summary>Show Answer</summary><p>= (10−0.2)² = 100−4+0.04 = 96.04</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x²−2y)² <details class="ans"><summary>Show Answer</summary><p>= x⁴−4x²y+4y²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2x−3)² when x = ½<details class="ans"><summary>Show Answer</summary><p>= 4(¼)−12(½)+9 = 1−6+9 = 4</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find k if (kx−2)² = 9x²−12x+4.<details class="ans"><summary>Show Answer</summary><p>k²=9 → k=3; check: 2(3x)(2)=12x ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (a−b)² − (a+b)²<details class="ans"><summary>Show Answer</summary><p>= (a²−2ab+b²) − (a²+2ab+b²) = −4ab</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 8 ===================== -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Identity III: (a+b)(a−b) = a²−b²</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:special-products/v/difference-of-squares" target="_blank">Difference of squares</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Difference of squares</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=mTbQjD1KBiM" target="_blank">Why (a+b)(a-b) works</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=MqXlmgGBWZA" target="_blank">Difference of squares visualised</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Expand Using Identity III</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x+3)(x−3)<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity III:</strong> (a+b)(a−b) = a²−b²<br>a=x, b=3<br>= x² − 9</div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x+5)(2x−5)<details class="ans"><summary>Show Answer</summary><p>= (2x)²−25 = 4x²−25</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a+b)(a−b)<details class="ans"><summary>Show Answer</summary><p>= a²−b²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (3m+4)(3m−4)<details class="ans"><summary>Show Answer</summary><p>= 9m²−16</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (5x+2y)(5x−2y)<details class="ans"><summary>Show Answer</summary><p>= 25x²−4y²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (7+3a)(7−3a)<details class="ans"><summary>Show Answer</summary><p>= 49−9a²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x²+1)(x²−1)<details class="ans"><summary>Show Answer</summary><p>= x⁴−1</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (4ab+3)(4ab−3)<details class="ans"><summary>Show Answer</summary><p>= 16a²b²−9</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x + √3)(x − √3)<details class="ans"><summary>Show Answer</summary><p>= x²−3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2x² + 3y)(2x² − 3y)<details class="ans"><summary>Show Answer</summary><p>= 4x⁴−9y²</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Numerical Use of Identity III</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 103×97 using identity.<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity III:</strong> (100+3)(100−3) = 100²−3² = 10000−9 = <strong>9991</strong></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 105×95 using identity.<details class="ans"><summary>Show Answer</summary><p>= (100+5)(100−5) = 10000−25 = 9975</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 52×48 using identity.<details class="ans"><summary>Show Answer</summary><p>= (50+2)(50−2) = 2500−4 = 2496</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 999×1001 using identity.<details class="ans"><summary>Show Answer</summary><p>= (1000−1)(1000+1) = 1000000−1 = 999999</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 84×76 using identity.<details class="ans"><summary>Show Answer</summary><p>= (80+4)(80−4) = 6400−16 = 6384</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 201×199 using identity.<details class="ans"><summary>Show Answer</summary><p>= (200+1)(200−1) = 40000−1 = 39999</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 3.5×4.5 using (4−0.5)(4+0.5).<details class="ans"><summary>Show Answer</summary><p>= 16−0.25 = 15.75</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 8.7×9.3 using (9−0.3)(9+0.3).<details class="ans"><summary>Show Answer</summary><p>= 81−0.09 = 80.91</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Evaluate 1009×991 using identity.<details class="ans"><summary>Show Answer</summary><p>= (1000+9)(1000−9) = 1000000−81 = 999919</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 2025²−2024² using difference of squares.<details class="ans"><summary>Show Answer</summary><p>= (2025+2024)(2025−2024) = 4049×1 = 4049</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Factorisation Using Identity III</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Factorise: x²−25<details class="ans"><summary>Show Answer</summary><p>= (x+5)(x−5)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 4a²−9<details class="ans"><summary>Show Answer</summary><p>= (2a+3)(2a−3)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 49m²−16n²<details class="ans"><summary>Show Answer</summary><p>= (7m+4n)(7m−4n)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x⁴−81<details class="ans"><summary>Show Answer</summary><p>= (x²+9)(x²−9) = (x²+9)(x+3)(x−3)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 100−y²<details class="ans"><summary>Show Answer</summary><p>= (10+y)(10−y)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 16x²−1<details class="ans"><summary>Show Answer</summary><p>= (4x+1)(4x−1)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 9a²b²−25c²<details class="ans"><summary>Show Answer</summary><p>= (3ab+5c)(3ab−5c)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x² − 1/9<details class="ans"><summary>Show Answer</summary><p>= (x+1/3)(x−1/3)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: (a+b)²−c²<details class="ans"><summary>Show Answer</summary><p>= [(a+b)+c][(a+b)−c] = (a+b+c)(a+b−c)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: a²−(b−c)²<details class="ans"><summary>Show Answer</summary><p>= [a+(b−c)][a−(b−c)] = (a+b−c)(a−b+c)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Identity III Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate x²−y² when x=15, y=5 using identity.<details class="ans"><summary>Show Answer</summary><p>= (x+y)(x−y) = 20×10 = 200</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">If a+b=12 and a−b=4, find a²−b².<details class="ans"><summary>Show Answer</summary><p>= (a+b)(a−b) = 12×4 = 48</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 56²−44² without full squaring.<details class="ans"><summary>Show Answer</summary><p>= (56+44)(56−44) = 100×12 = 1200</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is 45×55 = 2475? Verify using identity.<details class="ans"><summary>Show Answer</summary><p>= (50+5)(50−5) = 2500−25 = 2475 ✓</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (2x+3y)²−(2x−3y)²<details class="ans"><summary>Show Answer</summary><p>= [(2x+3y)+(2x−3y)][(2x+3y)−(2x−3y)] = 4x×6y = 24xy</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find: 999²−998² using difference of squares.<details class="ans"><summary>Show Answer</summary><p>= (999+998)(999−998) = 1997×1 = 1997</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Area of a ring: outer radius (R+r), inner radius (R−r). Area = π[(R+r)²−(R−r)²]. Simplify.<details class="ans"><summary>Show Answer</summary><p>= π[(R+r+R−r)(R+r−R+r)] = π[2R][2r] = 4πRr</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The product (x+y)(x−y) = 7. If x+y = 7/3, find x−y.<details class="ans"><summary>Show Answer</summary><p>x−y = 7 ÷ (7/3) = 3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify: (a²+b²)(a+b)(a−b)<details class="ans"><summary>Show Answer</summary><p>= (a²+b²)(a²−b²) = a⁴−b⁴</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise completely: 2x² − 50<details class="ans"><summary>Show Answer</summary><p>= 2(x²−25) = 2(x+5)(x−5)</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TOPIC 9 ===================== -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Identity IV: (x+a)(x+b) = x²+(a+b)x+ab</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:multiplying-polynomials/v/multiplying-binomials" target="_blank">Multiplying binomials with Identity IV</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Factoring and FOIL</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=sckKSPT4XEQ" target="_blank">Polynomials and their roots</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=3ei_UoGDPgY" target="_blank">Factoring trinomials visually</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Apply Identity IV Directly</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand using Identity IV: (x+2)(x+5)<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Identity IV:</strong> (x+a)(x+b) = x²+(a+b)x+ab<br>a=2, b=5<br>= x² + 7x + 10</div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x+3)(x+4)<details class="ans"><summary>Show Answer</summary><p>= x²+7x+12</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x−2)(x−3)<details class="ans"><summary>Show Answer</summary><p>a=−2, b=−3: x²+(−5)x+6 = x²−5x+6</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x+5)(x−3)<details class="ans"><summary>Show Answer</summary><p>a=5, b=−3: x²+2x−15</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x−7)(x+2)<details class="ans"><summary>Show Answer</summary><p>a=−7, b=2: x²−5x−14</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x+6)(x+1)<details class="ans"><summary>Show Answer</summary><p>= x²+7x+6</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Expand: (y−4)(y−6)<details class="ans"><summary>Show Answer</summary><p>= y²−10y+24</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (x+10)(x−1)<details class="ans"><summary>Show Answer</summary><p>= x²+9x−10</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (m+8)(m−5)<details class="ans"><summary>Show Answer</summary><p>= m²+3m−40</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (a−9)(a−4)<details class="ans"><summary>Show Answer</summary><p>= a²−13a+36</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Find a+b and ab from the Trinomial</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Which identity applies to x²+7x+10? Find a and b.<details class="ans"><summary>Show Answer</summary><p>Identity IV; a+b=7, ab=10 → a=2, b=5 → (x+2)(x+5)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²+9x+20<details class="ans"><summary>Show Answer</summary><p>a+b=9, ab=20 → 4,5 → (x+4)(x+5)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²−8x+12<details class="ans"><summary>Show Answer</summary><p>a+b=−8, ab=12 → −2,−6 → (x−2)(x−6)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²+x−12<details class="ans"><summary>Show Answer</summary><p>a+b=1, ab=−12 → 4,−3 → (x+4)(x−3)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²−3x−28<details class="ans"><summary>Show Answer</summary><p>a+b=−3, ab=−28 → 4,−7 → (x+4)(x−7)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²+2x−35<details class="ans"><summary>Show Answer</summary><p>a+b=2, ab=−35 → 7,−5 → (x+7)(x−5)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factor: y²−11y+30<details class="ans"><summary>Show Answer</summary><p>a+b=−11, ab=30 → −5,−6 → (y−5)(y−6)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factor: p²+4p−21<details class="ans"><summary>Show Answer</summary><p>a+b=4, ab=−21 → 7,−3 → (p+7)(p−3)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²−18x+81<details class="ans"><summary>Show Answer</summary><p>a=b=−9: (x−9)² — perfect square</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²+13x+40<details class="ans"><summary>Show Answer</summary><p>a+b=13, ab=40 → 8,5 → (x+8)(x+5)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Numerical &amp; Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 102×104 using Identity IV with x=100, a=2, b=4.<details class="ans"><summary>Show Answer</summary><p>= 100²+(2+4)×100+2×4 = 10000+600+8 = 10608</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 97×95 using identity (x=100, a=−3, b=−5).<details class="ans"><summary>Show Answer</summary><p>= 10000+(−8)×100+15 = 10000−800+15 = 9215</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 53×57 using (x=55, a=−2, b=2 → difference of squares) OR (x=50, a=3, b=7).<details class="ans"><summary>Show Answer</summary><p>(50+3)(50+7) = 2500+(10)50+21 = 2500+500+21=3021</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 32×28 using Identity IV.<details class="ans"><summary>Show Answer</summary><p>(30+2)(30−2) = 900−4 = 896 (Identity III simpler here)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangular room is (x+3) m by (x+5) m. Write its area as a trinomial.<details class="ans"><summary>Show Answer</summary><p>= x²+8x+15 m²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find the area of a rectangle with sides (m+6) and (m−4).<details class="ans"><summary>Show Answer</summary><p>= m²+2m−24</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">The product of two consecutive integers starting from n: (n)(n+1). Expand using Identity IV.<details class="ans"><summary>Show Answer</summary><p>= n²+n</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Is x²+6x+8 = (x+2)(x+4)? Verify at x=3.<details class="ans"><summary>Show Answer</summary><p>LHS: 9+18+8=35; RHS: 5×7=35 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand (x+a)(x−a) using Identity IV. What identity does this give?<details class="ans"><summary>Show Answer</summary><p>a+b=0, ab=−a² → x²−a² (Identity III)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Express x²−x−20 as a product using Identity IV.<details class="ans"><summary>Show Answer</summary><p>a+b=−1, ab=−20 → 4, −5 → (x+4)(x−5)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Identity IV Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (x+0.5)(x+1.5)<details class="ans"><summary>Show Answer</summary><p>= x²+2x+0.75</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find c if (x+3)(x+c) = x²+7x+12.<details class="ans"><summary>Show Answer</summary><p>3+c=7 → c=4; check: 3c=12 ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand: (y+a)(y+b)(y+c) — expand first two then multiply by third (y+c) with a=1, b=2, c=3.<details class="ans"><summary>Show Answer</summary><p>(y+1)(y+2)=y²+3y+2; ×(y+3)=y³+6y²+11y+6</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">If (x+5)(x+k) = x²+8x+15, find k.<details class="ans"><summary>Show Answer</summary><p>5+k=8 → k=3</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factor and evaluate x²+5x+6 at x=2.<details class="ans"><summary>Show Answer</summary><p>= (x+2)(x+3); at x=2: 4×5=20</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Expand: (2y+3)(2y+5) [let x=2y, a=3, b=5]<details class="ans"><summary>Show Answer</summary><p>= 4y²+16y+15</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 108×112 using Identity IV with x=110.<details class="ans"><summary>Show Answer</summary><p>(110−2)(110+2) = 110²−4 = 12100−4 = 12096</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factor: x²+bx+6. For what integer values of b can it be factored?<details class="ans"><summary>Show Answer</summary><p>ab=6: (1,6)→b=7; (2,3)→b=5; (−1,−6)→b=−7; (−2,−3)→b=−5</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Expand (x−½)(x−¾) using Identity IV.<details class="ans"><summary>Show Answer</summary><p>a+b=−5/4, ab=3/8: x²−(5/4)x+3/8</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Use Identity IV to find 11×13. Show steps.<details class="ans"><summary>Show Answer</summary><p>= (12−1)(12+1) = 144−1=143 OR x=10: (10+1)(10+3)=100+40+3=143 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 10 ===================== -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Quick Calculations Using Identities</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:special-products/v/special-products-of-polynomials" target="_blank">Special products &amp; shortcuts</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=ZMLFfTX615w" target="_blank">Mental Math Tricks</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=Mfk_L4Nx2ZI" target="_blank">Vedic Mathematics Speed Tricks</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=M4vqr3_ROIk" target="_blank">Faster arithmetic with algebra</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Squares Near Round Numbers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 99² using (100−1)²<details class="ans"><summary>Show Answer</summary><div class="working">= 10000 − 200 + 1 = <strong>9801</strong></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 101² using (100+1)²<details class="ans"><summary>Show Answer</summary><p>= 10000+200+1 = 10201</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 105² using (100+5)²<details class="ans"><summary>Show Answer</summary><p>= 10000+1000+25 = 11025</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 95² using (100−5)²<details class="ans"><summary>Show Answer</summary><p>= 10000−1000+25 = 9025</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 1001² using (1000+1)²<details class="ans"><summary>Show Answer</summary><p>= 1000000+2000+1 = 1002001</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 51² using identity.<details class="ans"><summary>Show Answer</summary><p>= (50+1)² = 2500+100+1 = 2601</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 49² using (50−1)²<details class="ans"><summary>Show Answer</summary><p>= 2500−100+1 = 2401</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 201² using identity.<details class="ans"><summary>Show Answer</summary><p>= (200+1)² = 40000+400+1 = 40401</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 998² using identity.<details class="ans"><summary>Show Answer</summary><p>= (1000−2)² = 1000000−4000+4 = 996004</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 12.5² using (12+0.5)² or (13−0.5)²<details class="ans"><summary>Show Answer</summary><p>= (12.5)²: note 12+0.5: 144+12+0.25 = 156.25</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Products Using Identity III</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 103×97<details class="ans"><summary>Show Answer</summary><div class="working">= (100+3)(100−3) = 10000−9 = <strong>9991</strong></div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 99×101<details class="ans"><summary>Show Answer</summary><p>= (100−1)(100+1) = 10000−1 = 9999</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 48×52<details class="ans"><summary>Show Answer</summary><p>= (50−2)(50+2) = 2500−4 = 2496</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 72×68<details class="ans"><summary>Show Answer</summary><p>= (70+2)(70−2) = 4900−4 = 4896</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 997×1003<details class="ans"><summary>Show Answer</summary><p>= (1000−3)(1000+3) = 1000000−9 = 999991</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 36×44<details class="ans"><summary>Show Answer</summary><p>= (40−4)(40+4) = 1600−16 = 1584</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 193×207<details class="ans"><summary>Show Answer</summary><p>= (200−7)(200+7) = 40000−49 = 39951</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 8.5×9.5<details class="ans"><summary>Show Answer</summary><p>= (9−0.5)(9+0.5) = 81−0.25 = 80.75</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 33×27<details class="ans"><summary>Show Answer</summary><p>= (30+3)(30−3) = 900−9 = 891</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate: 2025 × 1975<details class="ans"><summary>Show Answer</summary><p>= (2000+25)(2000−25) = 4000000−625 = 3999375</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Choosing the Right Identity</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Which identity best finds 205²?<details class="ans"><summary>Show Answer</summary><p>Identity I: (200+5)² = 40000+2000+25 = 42025</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Which identity best finds 302×298?<details class="ans"><summary>Show Answer</summary><p>Identity III: (300+2)(300−2) = 90000−4 = 89996</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Use the most efficient identity to find 5005×4995.<details class="ans"><summary>Show Answer</summary><p>Identity III: (5000+5)(5000−5) = 25000000−25 = 24999975</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 83² + 83×34 using factoring (not identity directly).<details class="ans"><summary>Show Answer</summary><p>= 83(83+34) = 83×117 = 83×117; or use identities to get 9711</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 1.03² using identity.<details class="ans"><summary>Show Answer</summary><p>= (1+0.03)² = 1+0.06+0.0009 = 1.0609</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the value of 72² + 28² + 2(72)(28) using identity.<details class="ans"><summary>Show Answer</summary><p>= (72+28)² = 100² = 10000</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 37² − 2(37)(7) + 49 using identity.<details class="ans"><summary>Show Answer</summary><p>= (37−7)² = 30² = 900</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Simplify: 54² − 46² using difference of squares.<details class="ans"><summary>Show Answer</summary><p>= (54+46)(54−46) = 100×8 = 800</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 65² − 35²<details class="ans"><summary>Show Answer</summary><p>= (65+35)(65−35) = 100×30 = 3000</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Explain why 500²−499² = 999 without full calculation.<details class="ans"><summary>Show Answer</summary><p>= (500+499)(500−499) = 999×1 = 999</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Quick Calculation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 104² − 4²<details class="ans"><summary>Show Answer</summary><p>= (104+4)(104−4) = 108×100 = 10800</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find 34²+66²+2×34×66<details class="ans"><summary>Show Answer</summary><p>= (34+66)² = 10000</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 2.1²<details class="ans"><summary>Show Answer</summary><p>= (2+0.1)² = 4+0.4+0.01 = 4.41</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 9.9²<details class="ans"><summary>Show Answer</summary><p>= (10−0.1)² = 100−2+0.01 = 98.01</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 55² using (50+5)²<details class="ans"><summary>Show Answer</summary><p>= 2500+500+25 = 3025</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Find 45² using (50−5)²<details class="ans"><summary>Show Answer</summary><p>= 2500−500+25 = 2025</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Calculate 23×27 using Identity IV (x=25, a=−2, b=2) or III.<details class="ans"><summary>Show Answer</summary><p>= (25−2)(25+2) = 625−4 = 621</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find 1.2 × 0.8<details class="ans"><summary>Show Answer</summary><p>= (1+0.2)(1−0.2) = 1−0.04 = 0.96</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Evaluate 83² − 17² using difference of squares.<details class="ans"><summary>Show Answer</summary><p>= (83+17)(83−17) = 100×66 = 6600</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Find the value of (255)²−(245)² without calculator.<details class="ans"><summary>Show Answer</summary><p>= (255+245)(255−245) = 500×10 = 5000</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TOPIC 11 ===================== -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Factorisation Using Identities</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:factoring-quadratics/v/factoring-sum-of-squares" target="_blank">Factoring using special patterns</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:factoring-quadratics/v/factoring-perfect-square-trinomials" target="_blank">Factoring perfect square trinomials</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=8c7B-UaKl0U" target="_blank">Factoring with GCF</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=sckKSPT4XEQ" target="_blank">Why factoring matters</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=r3SEkdpAaEE" target="_blank">What does factoring mean?</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recognise and Apply Factorisation Patterns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Factorise: x²−25<details class="ans"><summary>Show Answer</summary><div class="working"><strong>Pattern:</strong> a²−b² = (a+b)(a−b)<br>= (x+5)(x−5)</div></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²+6x+9<details class="ans"><summary>Show Answer</summary><p>= (x+3)² [perfect square: a=x, b=3]</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²−10x+25<details class="ans"><summary>Show Answer</summary><p>= (x−5)²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 4x²+12x+9<details class="ans"><summary>Show Answer</summary><p>= (2x+3)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 9a²−16b²<details class="ans"><summary>Show Answer</summary><p>= (3a+4b)(3a−4b)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 25m²−40mn+16n²<details class="ans"><summary>Show Answer</summary><p>= (5m−4n)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 49x²+42xy+9y²<details class="ans"><summary>Show Answer</summary><p>= (7x+3y)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 16a⁴−b⁴<details class="ans"><summary>Show Answer</summary><p>= (4a²+b²)(4a²−b²) = (4a²+b²)(2a+b)(2a−b)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²y²−z²<details class="ans"><summary>Show Answer</summary><p>= (xy+z)(xy−z)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: (a+b)²−(a−b)²<details class="ans"><summary>Show Answer</summary><p>= [(a+b)+(a−b)][(a+b)−(a−b)] = 2a × 2b = 4ab</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Factorise Trinomials Using Identity IV</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Factorise: x²+7x+12<details class="ans"><summary>Show Answer</summary><p>= (x+3)(x+4)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²−9x+20<details class="ans"><summary>Show Answer</summary><p>= (x−4)(x−5)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²+3x−18<details class="ans"><summary>Show Answer</summary><p>= (x+6)(x−3)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²−x−12<details class="ans"><summary>Show Answer</summary><p>= (x−4)(x+3)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²+11x+30<details class="ans"><summary>Show Answer</summary><p>= (x+5)(x+6)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²−13x+36<details class="ans"><summary>Show Answer</summary><p>= (x−9)(x−4)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: y²+2y−48<details class="ans"><summary>Show Answer</summary><p>= (y+8)(y−6)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: m²−3m−40<details class="ans"><summary>Show Answer</summary><p>= (m−8)(m+5)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: a²−16a+63<details class="ans"><summary>Show Answer</summary><p>= (a−9)(a−7)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: n²+15n+56<details class="ans"><summary>Show Answer</summary><p>= (n+7)(n+8)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Factorisation with GCF First</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Factorise: 2x²−18<details class="ans"><summary>Show Answer</summary><p>= 2(x²−9) = 2(x+3)(x−3)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 3a²+12a+12<details class="ans"><summary>Show Answer</summary><p>= 3(a²+4a+4) = 3(a+2)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 5x²−80<details class="ans"><summary>Show Answer</summary><p>= 5(x²−16) = 5(x+4)(x−4)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 4y²−36y+81<details class="ans"><summary>Show Answer</summary><p>= (2y−9)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 8m²+24mn+18n²<details class="ans"><summary>Show Answer</summary><p>= 2(4m²+12mn+9n²) = 2(2m+3n)²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 12x²y−75y<details class="ans"><summary>Show Answer</summary><p>= 3y(4x²−25) = 3y(2x+5)(2x−5)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x³−x<details class="ans"><summary>Show Answer</summary><p>= x(x²−1) = x(x+1)(x−1)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 2a²b−2b<details class="ans"><summary>Show Answer</summary><p>= 2b(a²−1) = 2b(a+1)(a−1)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 50a²−72b²<details class="ans"><summary>Show Answer</summary><p>= 2(25a²−36b²) = 2(5a+6b)(5a−6b)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: a⁴−16<details class="ans"><summary>Show Answer</summary><p>= (a²+4)(a²−4) = (a²+4)(a+2)(a−2)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Factorisation Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Identify which identity: x²+4x+4 = ?<details class="ans"><summary>Show Answer</summary><p>= (x+2)² → Identity I</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 64x²−48xy+9y²<details class="ans"><summary>Show Answer</summary><p>= (8x−3y)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 121−m²<details class="ans"><summary>Show Answer</summary><p>= (11+m)(11−m)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise completely: 4x⁴−100y²<details class="ans"><summary>Show Answer</summary><p>= 4(x⁴−25y²) = 4(x²+5y)(x²−5y)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: x²+bx+9 given it is a perfect square. Find b.<details class="ans"><summary>Show Answer</summary><p>b = 2×1×3 = 6; expression = (x+3)²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Factorise: p⁴−q⁴<details class="ans"><summary>Show Answer</summary><p>= (p²+q²)(p²−q²) = (p²+q²)(p+q)(p−q)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Verify that x²−6x+9 = (x−3)² by expanding (x−3)².<details class="ans"><summary>Show Answer</summary><p>= x²−6x+9 ✓</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Factorise: 36a²+60ab+25b²<details class="ans"><summary>Show Answer</summary><p>= (6a+5b)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Is 9x²+6x+1 a perfect square? Factor it.<details class="ans"><summary>Show Answer</summary><p>Yes: (3x+1)²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Factorise: (x+y)²−25<details class="ans"><summary>Show Answer</summary><p>= [(x+y)+5][(x+y)−5] = (x+y+5)(x+y−5)</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+<!-- ===================== TOPIC 12 ===================== -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>Real-World Applications</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:algebra-word-problems/v/word-problem-using-algebra" target="_blank">Algebra word problems</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=l3XzepN03KQ" target="_blank">Algebra applications</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=XFDM1ip5HdU" target="_blank">Math in everyday life</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=X1E7I7_r3Cw" target="_blank">Real uses of algebra</a></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Geometry &amp; Area Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square garden has side x m. It is expanded by 5 m on each side. Find the increase in area using Identity I.<details class="ans"><summary>Show Answer</summary><p>New area = (x+5)² = x²+10x+25; Increase = 10x+25 m²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangular plot is (3x+2) m × (3x−2) m. Find its area using Identity III.<details class="ans"><summary>Show Answer</summary><p>= 9x²−4 m²</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A square room of side (2a+1) m is tiled. Find the number of 1 m² tiles needed.<details class="ans"><summary>Show Answer</summary><p>= (2a+1)² = 4a²+4a+1 tiles</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Two squares have sides x and y. Find the difference of areas if x+y=10 and x−y=4.<details class="ans"><summary>Show Answer</summary><p>x²−y² = (x+y)(x−y) = 10×4 = 40 m²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangle has perimeter 4x+8 and width (x+1). Find its area.<details class="ans"><summary>Show Answer</summary><p>P=2(l+w): 4x+8=2(l+x+1)→l=x+3; Area=(x+3)(x+1)=x²+4x+3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A path of width 2 m surrounds a rectangular garden (a+3) × (a+1). Find the area of path only.<details class="ans"><summary>Show Answer</summary><p>Outer: (a+7)(a+5)=a²+12a+35; Inner: (a+3)(a+1)=a²+4a+3; Path area=8a+32</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Side of a square increases from n to (n+2). Show area increases by 4n+4.<details class="ans"><summary>Show Answer</summary><p>(n+2)²−n² = n²+4n+4−n² = 4n+4 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A triangle has base (2x+4) and height (x−1). Find its area.<details class="ans"><summary>Show Answer</summary><p>= ½(2x+4)(x−1) = (x+2)(x−1) = x²+x−2</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A circular ring has inner radius r and outer radius (r+h). Area = π(outer²−inner²). Simplify.<details class="ans"><summary>Show Answer</summary><p>= π[(r+h)²−r²] = π[2rh+h²] = πh(2r+h)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A 3D box has dims (x+1), (x+2), (x+3). Find the volume as a polynomial.<details class="ans"><summary>Show Answer</summary><p>= (x+1)(x+2)(x+3) = x³+6x²+11x+6</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Number &amp; Pattern Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The product of two consecutive even numbers n, n+2. Expand and evaluate for n=8.<details class="ans"><summary>Show Answer</summary><p>= n²+2n; at n=8: 64+16 = 80 (check: 8×10=80 ✓)</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">Show that n²−1 = (n+1)(n−1) for n=7.<details class="ans"><summary>Show Answer</summary><p>LHS: 49−1=48; RHS: 8×6=48 ✓</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A number is 3 more than another. If their product is 54, set up and factor: n(n+3)=54 → n²+3n−54=0.<details class="ans"><summary>Show Answer</summary><p>= (n+9)(n−6)=0 → n=6 (positive). Numbers: 6 and 9.</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Two numbers sum to 20. Their product is 96. Find them using (x+a)(x+b) pattern.<details class="ans"><summary>Show Answer</summary><p>a+b=20, ab=96 → 8 and 12</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Prove: difference of squares of two consecutive numbers equals their sum.<details class="ans"><summary>Show Answer</summary><p>(n+1)²−n² = (n+1+n)(n+1−n) = 2n+1 = sum of consecutive numbers ✓</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Sum of squares of two numbers = 40. Their product = 12. Find (a+b)².<details class="ans"><summary>Show Answer</summary><p>(a+b)² = a²+2ab+b² = 40+24 = 64 → a+b=8</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Age problem: Rama is x years. His father is (x+25). In 5 years, product of ages = (x+5)(x+30). Expand.<details class="ans"><summary>Show Answer</summary><p>= x²+35x+150</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Pythagorean triple check: Is (3,4,5) a triple? Use a²+b²=c² where a=x, b=x+1, c=x+2 concept.<details class="ans"><summary>Show Answer</summary><p>9+16=25=25 ✓ Yes it is.</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Odd×odd pattern: (2n−1)(2n+1)=4n²−1. Show the product of two consecutive odds n=5: 9×11=?<details class="ans"><summary>Show Answer</summary><p>= 4(25)−1 = 99; check: 9×11=99 ✓</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Find the value of a⁴+b⁴ if a²+b²=25 and ab=6.<details class="ans"><summary>Show Answer</summary><p>(a²+b²)²=a⁴+2a²b²+b⁴; 625=a⁴+b⁴+2(36); a⁴+b⁴=625−72=553</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Finance, Science &amp; Everyday Algebra</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A ball is thrown up. Height h = −5t² + 20t. Find h at t = 2 seconds.<details class="ans"><summary>Show Answer</summary><p>= −5(4)+40 = −20+40 = 20 m</p></details></div><span class="diff diff-easy">Easy</span></div>
+      <div class="q-item"><div class="q-text">A car's distance = (2t+3)(t−1). Expand and find distance at t=4.<details class="ans"><summary>Show Answer</summary><p>= 2t²+t−3; at t=4: 32+4−3=33 km</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Compound interest formula shortcut: if amount = P(1+r)², expand for P=1000, r=0.1.<details class="ans"><summary>Show Answer</summary><p>(1+0.1)²=1.21; Amount=1210</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">An item costs (x+5) rupees. If you buy (x+3) items, total = (x+5)(x+3). Expand and find total for x=10.<details class="ans"><summary>Show Answer</summary><p>= x²+8x+15; at x=10: 100+80+15=195 rupees</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Electric power P = I²R. If I = (a+b) and R = (a−b), find P.<details class="ans"><summary>Show Answer</summary><p>P = (a+b)²(a−b); simplified: (a+b)(a²−b²) = (a+b)(a+b)(a−b)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The kinetic energy KE = ½mv². If v = (2x+1), find KE with m=1.<details class="ans"><summary>Show Answer</summary><p>KE = ½(2x+1)² = ½(4x²+4x+1) = 2x²+2x+½</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Profit = Revenue − Cost = (x+3)(x+2) − (x²+2x) = ?<details class="ans"><summary>Show Answer</summary><p>= x²+5x+6−x²−2x = 3x+6 = 3(x+2)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A wire of length 4(x+2) is bent into a rectangle with width (x+1). Find length and area.<details class="ans"><summary>Show Answer</summary><p>P=4x+8=2(l+x+1)→l=x+3; Area=(x+3)(x+1)=x²+4x+3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Speed = distance/time. If d = (x²−9) and t = (x−3), find speed.<details class="ans"><summary>Show Answer</summary><p>s = (x²−9)/(x−3) = (x+3)(x−3)/(x−3) = x+3</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">GST calculation: Price = (100+t)% × base cost. If base = 200 and t = 18%, find final price.<details class="ans"><summary>Show Answer</summary><p>= 200×(118/100) = 200×1.18 = 236</p></details></div><span class="diff diff-medium">Medium</span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Integrative Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square is cut from a larger square. Outer side (x+4), inner side (x). Remaining area?<details class="ans"><summary>Show Answer</summary><p>= (x+4)²−x² = 8x+16</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A rectangular swimming pool (30+x) m by (30−x) m. Write area and find maximum (when x=0).<details class="ans"><summary>Show Answer</summary><p>= 900−x²; max when x=0: 900 m²</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Riya has a square field of side (3a+2b). Find the area. For a=2, b=1, compute the area.<details class="ans"><summary>Show Answer</summary><p>= (3a+2b)²=9a²+12ab+4b²; a=2,b=1: 36+24+4=64</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A ball bearing has radius (r+0.1). Find how much its volume (4/3πr³ concept, but approximate as sphere area = 4πr²) increases. Set up the expression for surface area change.<details class="ans"><summary>Show Answer</summary><p>New SA = 4π(r+0.1)² = 4π(r²+0.2r+0.01); Increase = 4π(0.2r+0.01)</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">The sum of first n odd numbers = n². Find the sum of first 20 odd numbers without adding them.<details class="ans"><summary>Show Answer</summary><p>= 20² = 400</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A photo has area (x²+6x+8). Find its dimensions using factorisation.<details class="ans"><summary>Show Answer</summary><p>= (x+2)(x+4) → width (x+2), length (x+4)</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">Three friends invest amounts a, b, c. Total = a+b+c = 10. Total squared = (a+b+c)²=100. If ab+bc+ca=27, find a²+b²+c².<details class="ans"><summary>Show Answer</summary><p>= (a+b+c)²−2(ab+bc+ca) = 100−54 = 46</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">A school buys (2n+3) notebooks at (2n−3) rupees each. Total cost uses Identity III. Find cost for n=10.<details class="ans"><summary>Show Answer</summary><p>= (2n+3)(2n−3) = 4n²−9; at n=10: 400−9=391 rupees</p></details></div><span class="diff diff-medium">Medium</span></div>
+      <div class="q-item"><div class="q-text">A farmer's land (2x+5)² m². He sells a strip of area (2x+5)(2x−5). What is the remaining area?<details class="ans"><summary>Show Answer</summary><p>(2x+5)²−(2x+5)(2x−5) = (2x+5)[(2x+5)−(2x−5)] = (2x+5)(10) = 20x+50 m²</p></details></div><span class="diff diff-hard">Hard</span></div>
+      <div class="q-item"><div class="q-text">Telescope mirror has diameter (d+2). Its area = π(radius)². Find the area as a polynomial (radius = (d+2)/2).<details class="ans"><summary>Show Answer</summary><p>r=(d+2)/2; Area=π·r²=π(d+2)²/4 = π(d²+4d+4)/4</p></details></div><span class="diff diff-hard">Hard</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>Grade 8 · Ganita Prakash Part 1 · Chapter 6 · The Gaudium School · 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

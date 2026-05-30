@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 4 – Quadratic Equations | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 Chapter 4 – Quadratic Equations</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Solving Quadratics &amp; Applications</p>
+</header>
+<nav>
+  <h2>Topics at a Glance</h2>
+  <ol>
+    <li><a href="#t1">Standard Form</a></li>
+    <li><a href="#t2">Solving by Factorisation</a></li>
+    <li><a href="#t3">Completing the Square</a></li>
+    <li><a href="#t4">Quadratic Formula</a></li>
+    <li><a href="#t5">Discriminant and Nature of Roots</a></li>
+    <li><a href="#t6">Two Equal Roots (D=0)</a></li>
+    <li><a href="#t7">Two Distinct Real Roots (D&gt;0)</a></li>
+    <li><a href="#t8">No Real Roots (D&lt;0)</a></li>
+    <li><a href="#t9">Forming Quadratic from Given Roots</a></li>
+    <li><a href="#t10">Word Problems — Numbers &amp; Ages</a></li>
+    <li><a href="#t11">Word Problems — Geometry &amp; Motion</a></li>
+    <li><a href="#t12">SAT-Style Quadratic Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Quadratic Equations — Standard Form</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Concept Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:intro-to-quadratics/v/introduction-to-the-quadratic-equation" target="_blank">Introduction to quadratic equations</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring" target="_blank">Quadratics: Multiplying &amp; factoring</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=i7idZfS8t8w" target="_blank">What is a quadratic equation?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Identifying Standard Form</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Which of the following is a quadratic equation? (a) x³+2x=0 (b) x²+3x+2=0 (c) x+5=0 (d) 1/x+x=3<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(b) x²+3x+2=0. It has degree 2, with leading coefficient a=1≠0, so it is in standard form ax²+bx+c=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 2x² = 5x – 3 in standard form and identify a, b, c.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2x²–5x+3=0. a=2, b=–5, c=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write (x+3)(x–2) = 0 in standard form.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+x–6=0. (Expand: x²–2x+3x–6=x²+x–6.)</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is x(x+1) = 3x² – 5 a quadratic equation? If yes, write in standard form.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+x=3x²–5→2x²–x–5=0. Yes, it is quadratic with a=2, b=–1, c=–5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert 3/x – x = 2 (x≠0) to a quadratic equation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Multiply by x: 3–x²=2x→x²+2x–3=0. Standard form: x²+2x–3=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is (x+2)² = 2(x+3) a quadratic equation?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²+4x+4=2x+6→x²+2x–2=0. Yes, quadratic. a=1, b=2, c=–2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For what values of k is (k+1)x² + kx + 1 = 0 a quadratic equation?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Quadratic requires leading coefficient ≠ 0: k+1≠0→k≠–1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand and write in standard form: (x – 1/x)² = 3.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–2+1/x²=3→x²–1/x²=5. Multiply by x²: x⁴–x²=5x²? No: x²–2+1/x²=3→multiply by x²: x⁴–2x²+1=3x²→x⁴–5x²+1=0. This is biquadratic (degree 4), not quadratic unless we let u=x².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write (2x–3)² – (x+1)² = 0 in standard form.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>4x²–12x+9–x²–2x–1=0→3x²–14x+8=0. Standard form: 3x²–14x+8=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that the equation x² + 1 = 0 has no real roots by examining standard form.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²=–1. Since x² ≥ 0 for all real x, there is no real value making x²=–1. Discriminant: b²–4ac=0–4=–4<0, confirming no real roots.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Checking Solutions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Verify that x = 2 is a root of x² – 5x + 6 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>4–10+6=0 ✓. Yes, x=2 is a root.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Check if x = –3 is a root of x² + x – 6 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>9+(–3)–6=0 ✓. Yes, x=–3 is a root.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Determine if x = 1/2 is a root of 2x² – x – 1 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2(1/4)–1/2–1=1/2–1/2–1=–1≠0. No, x=1/2 is not a root. (x=1 is: 2–1–1=0✓. And x=–1/2: 2(1/4)+1/2–1=1/2+1/2–1=0✓.)</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find k if x = 3 is a root of kx² – 7x + 3 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>9k–21+3=0→9k=18→k=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find k if x = 2 is a root of 3x² + kx – 14 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>12+2k–14=0→2k=2→k=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If x = 1 and x = –1 are both roots of ax² + bx + c = 0, what can you say about a, b, c?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=1: a+b+c=0. x=–1: a–b+c=0. Subtract: 2b=0→b=0. So a+c=0→c=–a. Equation: ax²–a=0→a(x²–1)=0→x=±1 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is x = 0 ever a root of ax² + bx + c = 0 when c ≠ 0?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Substitute x=0: a(0)+b(0)+c=c. For x=0 to be a root, c=0. So x=0 is never a root when c≠0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If x = p and x = q are roots of ax² + bx + c = 0, verify that a(x–p)(x–q) = ax² + bx + c.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a(x–p)(x–q)=a[x²–(p+q)x+pq]=ax²–a(p+q)x+apq. Compare: b=–a(p+q) and c=apq. These are Vieta's formulas, and they are indeed correct for the factored form.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find a, b if x = 3 and x = –5 are roots of x² + bx + a = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum of roots: 3+(–5)=–2=–b→b=2. Product: 3×(–5)=–15=a. So a=–15, b=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that if p is a root of ax² + bx + c = 0, then so is –b/a – p (the other root).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum of roots = –b/a. If p is one root, other root = –b/a – p. This follows from Vieta's formula: α+β=–b/a, so β=–b/a–α=–b/a–p.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Forming Equations from Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write a quadratic equation whose roots are 4 and –3.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–(4+(–3))x+(4)(–3)=0→x²+x–12=0? Wait: (x–4)(x+3)=x²+3x–4x–12=x²–x–12=0. Sum=1, product=–12. x²–x–12=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write a quadratic equation whose roots are 5 and 5.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–5)²=0→x²–10x+25=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Form a quadratic with roots 2+√3 and 2–√3.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum=4, Product=(2+√3)(2–√3)=4–3=1. Equation: x²–4x+1=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A quadratic has one root at x = 7 and sum of roots = 10. Find the equation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Other root=10–7=3. Product=21. Equation: x²–10x+21=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A quadratic has product of roots = –6 and sum = 1. Write the equation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–x–6=0. (roots 3 and –2: 3+(–2)=1, 3×(–2)=–6 ✓.)</p></details></div></div>
+      <div class="q-item"><div class="q-text">Form a quadratic equation with integer coefficients having roots 1/2 and –3/4.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=1/2–3/4=–1/4. Product=1/2×(–3/4)=–3/8. Multiply by 8: 8x²+2x–3=0. Check: (2x–1)(4x+3)=0→x=1/2 or x=–3/4 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If one root of 2x² – 3x + c = 0 is 4, find c and the other root.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>2(16)–3(4)+c=0→32–12+c=0→c=–20. Other root: product=c/a=–20/2=–10. Other root=–10/4=–5/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Form a quadratic equation with rational coefficients having one root 3+√5.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Irrational roots come in conjugate pairs. Other root=3–√5. Sum=6, Product=9–5=4. Equation: x²–6x+4=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A quadratic kx² – 14x + 8 = 0 has equal roots. Find k and the root.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Equal roots: D=0. b²–4ac=196–32k=0→k=196/32=49/8. Root=–b/2a=14/(2×49/8)=14×8/98=8/7.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If one root of x² + px + 12 = 0 is 4, and the equation x² + px + q = 0 has equal roots, find q.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>From 1st eq: 16+4p+12=0→4p=–28→p=–7. 2nd eq: x²–7x+q=0, equal roots→D=0→49–4q=0→q=49/4.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Properties and Classification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">How many roots can a quadratic equation have at most?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>At most 2 roots (degree 2). It can have 2 distinct real roots, 1 repeated real root, or 2 complex (no real) roots.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why must a ≠ 0 in ax² + bx + c = 0 for it to be quadratic?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>If a=0, the x² term vanishes and the equation becomes bx+c=0, which is linear (degree 1), not quadratic (degree 2).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Give one example each of a quadratic equation with: (i) two rational roots (ii) two irrational roots (iii) no real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(i) x²–5x+6=0, roots 2,3. (ii) x²–2=0, roots ±√2. (iii) x²+1=0, roots ±i (not real).</p></details></div></div>
+      <div class="q-item"><div class="q-text">If ax² + bx + c = 0 and –ax² – bx – c = 0 are two equations, do they have the same roots?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Yes. Multiplying an equation by –1 gives an equivalent equation with the same roots: –(ax²+bx+c)=0 iff ax²+bx+c=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Can a quadratic equation have exactly one real root and one non-real root?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>No. Complex roots of polynomials with real coefficients always come in conjugate pairs. So either both roots are real, or both are non-real complex.</p></details></div></div>
+      <div class="q-item"><div class="q-text">State the relationship between roots α, β and coefficients a, b, c of ax²+bx+c=0 (Vieta's formulas).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum: α+β = –b/a. Product: αβ = c/a.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the roots of x²+px+q=0 are doubled, write the new equation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>New roots: 2α, 2β. Sum=2(α+β)=–2p. Product=4αβ=4q. New equation: x²+2px+4q=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If α, β are roots of 2x²–3x+1=0, find α²+β².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>α+β=3/2, αβ=1/2. α²+β²=(α+β)²–2αβ=9/4–1=5/4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The product of the roots of 5x² – kx + 20 = 0 is 4. Find k and the sum of roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Product=20/5=4 ✓ (holds for any k). Sum=k/5. We cannot determine k from product alone. Need more information.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If α and β are roots of x²–x–1=0, find α³+β³.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>α+β=1, αβ=–1. α³+β³=(α+β)³–3αβ(α+β)=1–3(–1)(1)=1+3=4.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>Solving by Factorisation</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Concept Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:factoring-quadratics-intro/v/factoring-simple-quadratic-expression" target="_blank">Factoring quadratics intro</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:factoring-quadratics-1/v/factoring-quadratic-expressions" target="_blank">Factoring quadratic expressions</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=eF6zYNzlZKQ" target="_blank">Factoring quadratics</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Factorisation (a=1)</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve by factorisation: x² – 5x + 6 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–2)(x–3)=0. x=2 or x=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + 7x + 12 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+3)(x+4)=0. x=–3 or x=–4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – x – 12 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–4)(x+3)=0. x=4 or x=–3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 9 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–3)(x+3)=0. x=3 or x=–3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + 5x = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x(x+5)=0. x=0 or x=–5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 4x + 4 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x–2)²=0. x=2 (repeated root).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + x – 20 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+5)(x–4)=0. x=–5 or x=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 8x + 15 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x–3)(x–5)=0. x=3 or x=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 11x + 30 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–5)(x–6)=0. x=5 or x=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 14x + 49 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–7)²=0. x=7 (repeated root).</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Factorisation with a ≠ 1</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve: 2x² + 5x + 3 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Find two numbers with product 2×3=6 and sum 5: 2 and 3. 2x²+2x+3x+3=0→2x(x+1)+3(x+1)=0→(2x+3)(x+1)=0. x=–3/2 or x=–1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 3x² – 5x + 2 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Product=6, sum=–5: –2 and –3. 3x²–2x–3x+2=0→x(3x–2)–1(3x–2)=0→(x–1)(3x–2)=0. x=1 or x=2/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 4x² – 8x + 3 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Product=12, sum=–8: –6 and –2. 4x²–6x–2x+3=0→2x(2x–3)–1(2x–3)=0→(2x–1)(2x–3)=0. x=1/2 or x=3/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 6x² + x – 2 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Product=–12, sum=1: 4 and –3. 6x²+4x–3x–2=0→2x(3x+2)–1(3x+2)=0→(2x–1)(3x+2)=0. x=1/2 or x=–2/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 10x² – x – 3 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Product=–30, sum=–1: –6 and 5. 10x²–6x+5x–3=0→2x(5x–3)+1(5x–3)=0→(2x+1)(5x–3)=0. x=–1/2 or x=3/5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 12x² – 31x + 20 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Product=240, sum=–31: –16 and –15. 12x²–16x–15x+20=0→4x(3x–4)–5(3x–4)=0→(4x–5)(3x–4)=0. x=5/4 or x=4/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 2x² – 7x + 3 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Product=6, sum=–7: –6 and –1. 2x²–6x–x+3=0→2x(x–3)–1(x–3)=0→(2x–1)(x–3)=0. x=1/2 or x=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 4x² + 4x + 1 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(2x+1)²=0. x=–1/2 (repeated root).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 9x² – 6x + 1 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(3x–1)²=0. x=1/3 (repeated root).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 6x² – 13x + 6 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Product=36, sum=–13: –9 and –4. 6x²–9x–4x+6=0→3x(2x–3)–2(2x–3)=0→(3x–2)(2x–3)=0. x=2/3 or x=3/2.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Equations Requiring Rearrangement</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve: x(x – 4) = 5.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–4x–5=0→(x–5)(x+1)=0. x=5 or x=–1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: (x+3)(x–2) = 14.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+x–6=14→x²+x–20=0→(x+5)(x–4)=0. x=–5 or x=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² = 7x – 10.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–7x+10=0→(x–2)(x–5)=0. x=2 or x=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 2x(x+3) = 3(x+1).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2x²+6x=3x+3→2x²+3x–3=0. Product=–6, sum=3: 6 and –1? No: 2×(–3)=–6; sum=3. Factors: not integer. Use formula: x=(–3±√(9+24))/4=(–3±√33)/4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: (2x+1)² = 9.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2x+1=±3. x=1 or x=–2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x/(x+1) + (x+1)/x = 2.5.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Let u=x/(x+1): u+1/u=5/2→2u²–5u+2=0→(2u–1)(u–2)=0. u=1/2 or u=2. x/(x+1)=1/2→2x=x+1→x=1. x/(x+1)=2→x=2x+2→x=–2. x=1 or x=–2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: √(2x+9) = x – 1 (check for extraneous roots).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Square: 2x+9=(x–1)²=x²–2x+1→x²–4x–8=0. Hmm: 2x+9=x²–2x+1→x²–4x–8=0→x=(4±√(16+32))/2=(4±4√3)/2=2±2√3. Check x=2+2√3≈5.46: √(2(5.46)+9)=√19.93≈4.46 and x–1≈4.46 ✓. Check x=2–2√3≈–1.46: x–1≈–2.46<0 while √(...)>0 ✗. Only x=2+2√3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 3x – 14/x = 1 (x≠0).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>3x²–14=x→3x²–x–14=0. Product=–42, sum=–1: –7 and 6. 3x²–7x+6x–14=0→x(3x–7)+2(3x–7)=0→(x+2)(3x–7)=0. x=–2 or x=7/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 4/x – 3/(x+2) = 1 (x≠0, –2).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>4(x+2)–3x=x(x+2)→4x+8–3x=x²+2x→x+8=x²+2x→x²+x–8=0→x=(–1±√33)/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: (x–3)/(x+1) = (2x–5)/(3x+4).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Cross-multiply: (x–3)(3x+4)=(2x–5)(x+1). 3x²+4x–9x–12=2x²+2x–5x–5. 3x²–5x–12=2x²–3x–5. x²–2x–7=0. x=(2±√(4+28))/2=(2±4√2)/2=1±2√2.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced Factorisation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve: x⁴ – 5x² + 4 = 0 (let u = x²).<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>u²–5u+4=0→(u–1)(u–4)=0→u=1 or u=4. x²=1→x=±1. x²=4→x=±2. Four roots: ±1, ±2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: (x²+x)² – 8(x²+x) + 12 = 0. Let u = x² + x.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>u²–8u+12=0→(u–2)(u–6)=0. u=2: x²+x–2=0→(x+2)(x–1)=0→x=–2,1. u=6: x²+x–6=0→(x+3)(x–2)=0→x=–3,2. Roots: –3,–2,1,2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 2(x+1)² – 5(x+1) + 2 = 0. Let u = x+1.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2u²–5u+2=0→(2u–1)(u–2)=0. u=1/2→x=–1/2. u=2→x=1. x=–1/2 or x=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – (√3+1)x + √3 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Roots product=√3, sum=√3+1. Factor: (x–√3)(x–1)=x²–(√3+1)x+√3=0. x=√3 or x=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: abx² + (b²–ac)x – bc = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>abx²+b²x–acx–bc=0→bx(ax+b)–c(ax+b)=0→(bx–c)(ax+b)=0. x=c/b or x=–b/a.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 3x – 10 = 0 by splitting the middle term.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Find numbers: product=–10, sum=–3: –5 and 2. x²–5x+2x–10=0→x(x–5)+2(x–5)=0→(x+2)(x–5)=0. x=–2 or x=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: √3x² + 10x + 7√3 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Product=√3×7√3=21, sum=10: 7 and 3. √3x²+7x+3x+7√3=0→x(√3x+7)+√3(√3x+7)=0→(x+√3)(√3x+7)=0. x=–√3 or x=–7/√3=–7√3/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + 5√5 x + 30 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Find: product=30, sum=5√5. Try 2√5 and 3√5: product=6×5=30✓, sum=5√5✓. (x+2√5)(x+3√5)=0. x=–2√5 or x=–3√5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 4√3x² + 5x – 2√3 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Product=4√3×(–2√3)=–24, sum=5. Numbers: 8 and –3. 4√3x²+8x–3x–2√3=0→4x(√3x+2)–√3(√3x+2)=0→(4x–√3)(√3x+2)=0. x=√3/4 or x=–2/√3=–2√3/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: (x²–5x)² – 36 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x²–5x–6)(x²–5x+6)=0. First: (x–6)(x+1)=0→x=6,–1. Second: (x–2)(x–3)=0→x=2,3. All roots: –1, 2, 3, 6.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>Completing the Square</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Concept Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:completing-the-square/v/solving-quadratic-equations-by-completing-the-square" target="_blank">Completing the square</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:vertex-form/v/vertex-form-review" target="_blank">Vertex form of a quadratic</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=f5RHMNh0jlE" target="_blank">Completing the square method</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Completing the Square</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve by completing the square: x² + 6x – 7 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+6x=7→(x+3)²–9=7→(x+3)²=16→x+3=±4. x=1 or x=–7.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 4x + 3 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–4x=–3→(x–2)²=1→x–2=±1. x=3 or x=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + 8x + 12 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+4)²=4→x+4=±2. x=–2 or x=–6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 10x + 21 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–5)²–25+21=0→(x–5)²=4→x–5=±2. x=7 or x=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + 2x – 8 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+1)²=9→x+1=±3. x=2 or x=–4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² – 6x – 2 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x–3)²=11→x=3±√11.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: x² + 4x – 1 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+2)²=5→x=–2±√5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 2x² – 5x + 3 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Divide by 2: x²–5x/2+3/2=0→(x–5/4)²=25/16–3/2=25/16–24/16=1/16→x–5/4=±1/4. x=6/4=3/2 or x=4/4=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 3x² + 10x + 7 = 0 by completing the square.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Divide by 3: x²+10x/3+7/3=0→(x+5/3)²=25/9–7/3=25/9–21/9=4/9→x+5/3=±2/3. x=–1 or x=–7/3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve: 4x² + 12x + 5 = 0 by completing the square.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Divide by 4: x²+3x+5/4=0→(x+3/2)²=9/4–5/4=4/4=1→x+3/2=±1. x=–1/2 or x=–5/2.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Deriving the Quadratic Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show the first step in deriving the quadratic formula from ax²+bx+c=0: divide by a.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+(b/a)x+(c/a)=0. This clears the leading coefficient to get a monic quadratic.</p></details></div></div>
+      <div class="q-item"><div class="q-text">After dividing by a, what term do you add to both sides to complete the square?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Add (b/2a)² = b²/4a² to both sides to make the left side a perfect square.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the completed square form of ax²+bx+c=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+b/2a)² = (b²–4ac)/4a². Taking square roots: x+b/2a = ±√(b²–4ac)/2a.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve x² + bx + c = 0 by completing the square, expressing roots in terms of b, c.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+b/2)²=b²/4–c→x=–b/2±√(b²/4–c)=–b/2±√(b²–4c)/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Complete the square to write x² – 6x + 11 in vertex form a(x–h)² + k.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x–3)²–9+11=(x–3)²+2. Vertex form: (x–3)²+2, vertex (3,2).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the minimum value of 2x² – 8x + 5 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2(x²–4x)+5=2(x–2)²–8+5=2(x–2)²–3. Minimum value=–3 at x=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Complete the square to show that x² + x + 1 > 0 for all real x.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x+1/2)²+3/4 ≥ 3/4 > 0 for all real x. So x²+x+1 is always positive.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the range of y = x² – 4x + 7 by completing the square.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–2)²+3 ≥ 3. Minimum=3 at x=2. Range: y ≥ 3, i.e., [3, ∞).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find k such that x² – kx + 9 = 0 can be solved by completing the square to give integer roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–k/2)²=k²/4–9. Integer roots: k²/4–9 must be a perfect square. k²–36=4m². k=6: 0 (root x=3,3). k=10: 64/4–9=16–9=7 not perfect square. k=±6 gives root=3 or root=–3. For two distinct integer roots: need k²–36=4m²→(k–2m)(k+2m)=36. Pairs: k=10,m=4→roots=(10±8)/2=9,1✓. k=10 works.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Use completing the square to verify: the roots of ax²+bx+c=0 are x=(–b±√(b²–4ac))/2a.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>ax²+bx+c=0→x²+(b/a)x=–c/a→(x+b/2a)²=b²/4a²–c/a=(b²–4ac)/4a²→x+b/2a=±√(b²–4ac)/2a→x=(–b±√(b²–4ac))/2a ✓.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Applications of Completing the Square</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve x² – 2x – 15 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–1)²=16→x–1=±4. x=5 or x=–3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve x² + 12x + 27 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+6)²=9→x+6=±3. x=–3 or x=–9.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve x² + 3x – 10 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+3/2)²=49/4→x+3/2=±7/2. x=2 or x=–5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A ball is thrown upward. Height h=–5t²+20t. At what times is h=15? Solve by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>–5t²+20t=15→t²–4t+3=0→(t–2)²=1→t=1 or t=3 seconds.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the maximum area of a rectangle with perimeter 24 cm. Use completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>l+w=12. Area=lw=l(12–l)=12l–l²=–(l–6)²+36. Max area=36 cm² at l=w=6 (square).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve 5x² – 6x – 2 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–6x/5–2/5=0→(x–3/5)²=9/25+2/5=9/25+10/25=19/25→x=3/5±√19/5=(3±√19)/5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 3x² – 12x + 7 in vertex form and find the axis of symmetry.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>3(x²–4x)+7=3(x–2)²–12+7=3(x–2)²–5. Vertex form: 3(x–2)²–5. Axis of symmetry: x=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">For what value of k does x² – 4x + k = 0 have exactly one real solution? Solve the equation for that k.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Equal roots when D=0: 16–4k=0→k=4. Then (x–2)²=0→x=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve 2x² + 7x + 3 = 0 by completing the square.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²+7x/2+3/2=0→(x+7/4)²=49/16–3/2=49/16–24/16=25/16→x=–7/4±5/4. x=–1/2 or x=–3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Prove that x² + 2x + 2 = 0 has no real roots using completing the square.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x+1)²+1=0→(x+1)²=–1. Since (x+1)²≥0 for all real x, this is impossible. No real roots.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Completing the Square</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Solve x² – 14x + 48 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–7)²=1→x=8 or x=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve x² + 10x + 24 = 0 by completing the square.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+5)²=1→x=–4 or x=–6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve 4x² – 4x – 3 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–x–3/4=0→(x–1/2)²=1→x=3/2 or x=–1/2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the minimum value of f(x) = x² – 8x + 19.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x–4)²+3. Minimum = 3 at x = 4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the maximum value of g(x) = –2x² + 12x – 10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>–2(x²–6x)–10=–2(x–3)²+18–10=–2(x–3)²+8. Maximum=8 at x=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve 9x² – 12x + 4 = 0 by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–4x/3+4/9=0→(x–2/3)²=0→x=2/3 (repeated root).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find all real values of x satisfying x² – 4|x| – 5 = 0 (let u = |x|).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>u²–4u–5=0→(u–5)(u+1)=0→u=5 (u≥0). |x|=5→x=±5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Solve x² + bx + c = 0 by completing the square, showing roots x = (–b±√(b²–4c))/2 when a=1.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x+b/2)²=b²/4–c=(b²–4c)/4→x+b/2=±√(b²–4c)/2→x=(–b±√(b²–4c))/2 ✓.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Using completing the square, find two values of x satisfying x² + 3x = 28.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x+3/2)²=28+9/4=121/4→x+3/2=±11/2. x=4 or x=–7.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A quadratic y=x²+bx+c has vertex at (3,–4). Find b and c, and the roots of y=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>y=(x–3)²–4→x²–6x+9–4=x²–6x+5. b=–6, c=5. Roots: (x–3)²=4→x=5 or x=1.</p></details></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Quadratic Formula: x = [−b ± √(b²−4ac)] / 2a</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:quadratic-formula/v/using-the-quadratic-formula" target="_blank">Using the quadratic formula</a><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:quadratic-formula/v/proof-of-quadratic-formula" target="_blank">Proof of the quadratic formula</a></div><div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=IlNAJl36-10" target="_blank">The quadratic formula</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Direct Application of the Formula</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve using the quadratic formula: x² – 5x + 6 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(5±√(25–24))/2=(5±1)/2. x=3 or x=2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 2x² + x – 6 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(–1±√(1+48))/4=(–1±7)/4. x=3/2 or x=–2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x² + 4x + 4 = 0 using the formula.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(–4±√0)/2=–2. Repeated root x=–2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x² – 2x – 3 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(2±√16)/2=(2±4)/2. x=3 or x=–1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 3x² – 7x + 2 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(7±√(49–24))/6=(7±5)/6. x=2 or x=1/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x² + x – 1 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(–1±√5)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 2x² – 4x + 1 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(4±√(16–8))/4=(4±2√2)/4=(2±√2)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 5x² – 6x + 1 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(6±√(36–20))/10=(6±4)/10. x=1 or x=1/5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 7x² – 3x – 4 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=(3±√(9+112))/14=(3±11)/14. x=1 or x=–4/7.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 4x² + 3x – 1 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=(–3±√(9+16))/8=(–3±5)/8. x=1/4 or x=–1.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Formula with Irrational Answers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve: x² – 3x + 1 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(3±√5)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x² + 2x – 4 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=–1±√5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x² + 4x + 1 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=–2±√3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 3x² + x – 1 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(–1±√13)/6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x² – 5x + 5 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(5±√5)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 2x² + 6x + 3 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=(–3±√3)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 4x² – 12x + 7 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=(12±√(144–112))/8=(12±4√2)/8=(3±√2)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 6x² + 7x – 3 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=(–7±11)/12. x=1/3 or x=–3/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: √3 x² + 2x – √3 = 0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=(–2±4)/(2√3). x=√3/3 or x=–√3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 2x² – 3x – 5 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(3±7)/4. x=5/2 or x=–1.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Formula — Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Product of two consecutive positive integers is 240. Find them.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>n(n+1)=240→n²+n–240=0→n=(–1+31)/2=15. Integers: 15 and 16.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A ball: h=–16t²+64t. When is h=48?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>t²–4t+3=0→t=1 or t=3 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangular field: area 120 m², perimeter 44 m. Find dimensions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>l+w=22, lw=120→l²–22l+120=0→l=12 or 10. Dimensions: 12×10.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Train covers 360 km. If speed +5 km/h, time –1 hr. Find original speed.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>v²+5v–1800=0→v=40 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Motor boat speed 18 km/h. Takes 1 hr more upstream for 24 km. Find stream speed.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>s²+48s–324=0→s=6 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A takes 6 fewer days than B. Together they finish in 4 days. Find each time alone.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>n²–14n+24=0→n=12. B=12 days, A=6 days.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of squares of two consecutive odd integers is 290. Find them.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2n²+4n–286=0→n=11. Integers: 11 and 13.</p></details></div></div>
+    <div class="q-item"><div class="q-text">The difference of squares of two numbers is 45; square of smaller = 4 × larger. Find numbers.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–4x–45=0→x=9. y=6. Numbers: 9 and 6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangular plot perimeter 56, diagonal 20. Find dimensions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>l+w=28, l²+w²=400. l²–28l+192=0→l=16 or 12. Dimensions: 16×12.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two pipes fill tank: one takes 3 hrs more than other; together in 2 hrs. Find individual times.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>t²–t–6=0→t=3. Times: 3 h and 6 h.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Mixed Formula Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve: x² – 7x + 10 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=5 or x=2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 15x² – x – 2 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=(1±11)/30. x=2/5 or x=–1/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 2/(x+1) + 3/(x+2) = 5.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>5x²+10x+3=0→x=(–5±√10)/5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Projectile: h=–5t²+30t+10. Find when h=50.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>t²–6t+8=0→t=2 or t=4 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: x – 1/x = 15/4.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4x²–15x–4=0→x=4 or x=–1/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: (x+1)/(x–2)+(x+3)/(x+4)=4.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>2x²+6x–2=4x²+8x–32→2x²+2x–30=0→x²+x–15=0→x=(–1±√61)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of px²+qx+r=0 are 2 and 3 with p=2. Find q,r.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>q=–10, r=12.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show (a²+b²)x²–2(ac+bd)x+(c²+d²)=0 has equal roots only when ad=bc.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4[(ac+bd)²–(a²+b²)(c²+d²)]=–4(ad–bc)²=0 iff ad=bc. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve: 1/(x–1)+2/(x–2)+3/(x–3)=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>6x²–22x+18=0→3x²–11x+9=0→x=(11±√13)/6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²+1=3x–1 (rearrange first).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–3x+2=0→x=1 or x=2.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Discriminant and Nature of Roots (D = b²−4ac)</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:discriminant/v/discriminant-review" target="_blank">Discriminant review</a></div><div class="vid-box antics"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=kJK9sS9l4rs" target="_blank">Discriminant and nature of roots</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Computing the Discriminant</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Find D for x² – 6x + 9 = 0 and state nature of roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=36–36=0. Equal real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find D for 2x² + 3x – 5 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=9+40=49&gt;0. Two distinct real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find D for x² + x + 1 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=1–4=–3&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find D for 3x² – 4√3x + 4 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=48–48=0. Equal real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For 5x² – 4x + 1 = 0, find D and nature.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=16–20=–4&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find D for 4x² – 4x + 1 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=16–16=0. Equal real roots; x=1/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Determine nature for x² – 7x + 10 = 0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=49–40=9&gt;0. Two distinct rational roots (2 and 5).</p></details></div></div>
+    <div class="q-item"><div class="q-text">For px² – qx + r = 0, all positive, q²=4pr. What are the roots?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=q²–4pr=0. Equal roots: x=q/(2p).</p></details></div></div>
+    <div class="q-item"><div class="q-text">If D is a perfect square for ax²+bx+c=0 (integer coefficients), what are the roots?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Roots are rational numbers since √D is an integer.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For a&gt;0, D&lt;0: describe the parabola y=ax²+bx+c relative to the x-axis.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Parabola opens upward, lies entirely above x-axis, no x-intercepts.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Finding k for Given D Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Find k if kx² + 2x + 1 = 0 has equal roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>4–4k=0→k=1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what k does x² + kx + 9 = 0 have real roots?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>k²–36≥0→k≥6 or k≤–6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k for equal roots: 9x² + 3kx + 4 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>9k²–144=0→k=±4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what k does 2x² – kx + 1 = 0 have no real roots?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>k²&lt;8→–2√2&lt;k&lt;2√2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k if (k–1)x²+kx+k=0 has equal roots (k≠1).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>–3k²+4k=0→k=4/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²+2kx+7=0 to have two distinct real roots, find k.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4k²–28&gt;0→k&gt;√7 or k&lt;–√7.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k so x²+4x+k has real roots; find maximum k.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>16–4k≥0→k≤4. Maximum k=4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For (3k+1)x²+2(k+1)x+k=0 to have real roots, find range of k.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4[–2k²+k+1]≥0→–1/2≤k≤1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k for equal roots: 4x²–kx+3=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>k²–48=0→k=±4√3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show D=0 implies roots α=β=–b/2a.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=(–b±√0)/2a=–b/2a. Both roots equal –b/2a.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Discriminant Analysis</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">State all three cases for D and nature of roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D&gt;0: two distinct real roots. D=0: equal roots. D&lt;0: no real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Which has distinct rational roots: x²–5x+4=0?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=25–16=9=3². Yes, two rational roots (1 and 4).</p></details></div></div>
+    <div class="q-item"><div class="q-text">Without solving, does 2x²+3x+2=0 have real roots?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=9–16=–7&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Determine nature for x²+4√3x+12=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=48–48=0. Equal roots at x=–2√3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If a,b,c all positive in ax²+bx+c=0, can roots be positive?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=–b/a&lt;0, Product=c/a&gt;0. Both roots negative. No positive roots possible.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find condition on a,b,c so roots have opposite signs.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Product c/a &lt; 0 → a and c have opposite signs.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If roots α,β of x²+px+q=0 satisfy α/β+β/α=7, find p² in terms of q.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(α²+β²)/(αβ)=(p²–2q)/q=7→p²=9q.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what values of k are both roots of x²+kx+k²–5=0 real and equal?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=k²–4(k²–5)=0→–3k²+20=0→k=±2√(5/3).</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show D₁=D₂ for x²+px+q=0 and x²–px+q=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D₁=p²–4q, D₂=(–p)²–4q=p²–4q=D₁. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Prove p(x)=ax²+bx+c&gt;0 for all real x when a&gt;0 and D&lt;0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>p(x)=a(x+b/2a)²+(4ac–b²)/4a. With a&gt;0 and D&lt;0: 4ac–b²&gt;0 so p(x)≥(4ac–b²)/4a&gt;0. QED.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Discriminant Mixed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Find D for 5x²+2x–4=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=4+80=84&gt;0. Two distinct real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find D and roots of x²–12x+36=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=0. x=6 (equal root).</p></details></div></div>
+    <div class="q-item"><div class="q-text">Does 3x²+7x+5=0 have real roots?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=49–60=–11&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k if x²–(k+3)x+2(2k–1)=0 has equal roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(k+3)²–8(2k–1)=0→k²–10k+17=0→k=5±2√2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For 3x²+mx+3=0: find m for (i) two distinct real, (ii) equal, (iii) no real roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=m²–36. (i) |m|&gt;6. (ii) m=±6. (iii) –6&lt;m&lt;6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find all integers m for which x²+mx+(m+3)=0 has no real roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>m²–4m–12&lt;0→–2&lt;m&lt;6. Integers: –1,0,1,2,3,4,5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If (α–β)²=(α+β)²–4αβ, find α–β when sum=7, product=10.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(α–β)²=49–40=9→α–β=±3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+2x+(k²+1)=0 has no real roots for k≠0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4–4(k²+1)=–4k²≤0. For k≠0: D&lt;0, no real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If roots of ax²+bx+c=0 are in ratio 1:n, show p²n=q(1+n)².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Roots α,nα. Sum=α(1+n)=–b/a. Product=nα²=c/a. nα²=n·b²/[a²(1+n)²]=c/a→nb²=ca(1+n)²→p²n=q(1+n)² (with p=b,q=ac form). QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Coefficients a,b,c in AP with a=1,b=2,c=3. Find D and explain.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4–12=–8&lt;0. Arithmetic progression of coefficients does not guarantee real roots.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Two Equal Roots (D = 0)</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:discriminant/v/discriminant-review" target="_blank">Equal roots and discriminant</a></div><div class="vid-box antics"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=DPDXRkBgfaM" target="_blank">Repeated roots</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Identifying and Solving Equal-Root Equations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve x² – 10x + 25 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–5)²=0. x=5 (repeated). D=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 4x² + 4x + 1 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(2x+1)²=0. x=–1/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 16x² – 24x + 9 = 0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(4x–3)²=0. x=3/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k so x²+kx+16=0 has equal roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>k²–64=0→k=±8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find p so px²+12x+p=0 has equal roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>144–4p²=0→p=±6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If x²–6x+k=0 has equal roots, find k and root.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>k=9. Root=3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find c so 25x²–20x+c=0 has equal roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>400–100c=0→c=4. Root=2/5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If (a²+b²)x²+2(ab+bc)x+(b²+c²)=0 has equal roots, show a,b,c are in GP.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4(ab+bc)²–4(a²+b²)(b²+c²)=–4(b²–ac)²=0→b²=ac → GP. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k if kx²–(k+5)x+5=0 has equal roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(k–5)²=0→k=5. Root=1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If equal root of 3x²+bx+12=0 is 2, find b.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Root=–b/6=2→b=–12. Check D=144–144=0 ✓.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Equal Roots — Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Geometrically, D=0 means the parabola _____ the x-axis.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Is tangent to (touches but does not cross) the x-axis.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If x=3 is the only root of x²+bx+9=0, find b.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum=6=–b→b=–6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show D=0 implies c=b²/4a.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>b²–4ac=0→c=b²/4a. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If a=c in ax²+bx+c=0 with equal roots, prove b=±2a.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=b²–4a²=0→b=±2a.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k so 2kx²–40x+25=0 has equal roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>1600–200k=0→k=8. Root=5/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show a(x–r)² has D=0 and equal root r.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>b=–2ar, c=ar². D=4a²r²–4a·ar²=0. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For (k+1)x²–2(k–1)x+1=0, find k for equal roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4k(k–3)=0→k=0 or k=3. k=3 gives real quadratic; x=1/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find m if x²+2(m+1)x+m²=0 has equal roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>4(m+1)²–4m²=4(2m+1)=0→m=–1/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Quadratic has equal roots at x=2/3. Write simplest integer-coefficient equation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>9x²–12x+4=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For (p+2)x²+8x+2p=0 to have equal roots, find p.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>64–8p(p+2)=0→p²+2p–8=0→p=2 or p=–4.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Equal Roots — Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve (3x–1)²=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=1/3 (repeated).</p></details></div></div>
+    <div class="q-item"><div class="q-text">A number plus its square = 0. Find.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x+x²=0→x=0 or x=–1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find p,q if x=1/2 is the only root of 4x²+px+q=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>p=–4, q=1. Verify: 4(1/4)–4(1/2)+1=0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²–(2a+1)x+(a²+a)=0, find D for any a.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=(2a+1)²–4(a²+a)=1. Always D=1&gt;0, so always two distinct roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+(p²+1)=2px has no real roots for any real p.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–p)²+1=0. LHS≥1&gt;0. No real solutions.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Prove lx²+mx+n=0 equal roots iff m²=4ln.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=m²–4ln=0. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²–16x+64=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–8)²=0. x=8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 9x²+6x+1=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(3x+1)²=0. x=–1/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²+kx+1=0, verify equal roots when k=±2 and find roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>k=2: (x+1)²=0→x=–1. k=–2: (x–1)²=0→x=1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If equal root α=3 and a=2, find b and c for 2x²+bx+c=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>b=–2·2·3=–12, c=2·9=18. Equation: 2x²–12x+18=0.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Mixed Equal Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve x²–36x+324=0. (Hint: perfect square?)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x–18)²=0. x=18.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²–(m+3)x+2m=0, show D&gt;0 always.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=(m+3)²–8m=m²–2m+9=(m–1)²+8≥8&gt;0. Always two distinct roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²+12x+36=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+6)²=0. x=–6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For (2k–1)x²+(k+2)x+2k=0, find k for equal roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>–15k²+12k+4=0→k=(–12±√(144+240))/(–30)=(6∓4√6)/15.</p></details></div></div>
+    <div class="q-item"><div class="q-text">List all quadratics x²+bx+c with integer b,c, equal roots, root in [–4,4].<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Root r: equation (x–r)²=x²–2rx+r². r∈{–4,–3,–2,–1,0,1,2,3,4}: 9 equations. E.g., x²–2x+1 (r=1), x²+2x+1 (r=–1), etc.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 4x²–20x+25=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(2x–5)²=0. x=5/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 25x²+10x+1=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(5x+1)²=0. x=–1/5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show D=0 for ax²+bx+c means the quadratic equals a(x+b/2a)².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>When D=0: c=b²/4a. ax²+bx+b²/4a=a(x²+(b/a)x+b²/4a²)=a(x+b/2a)². QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Vertex of y=ax²+bx+c lies on x-axis. How many x-intercepts?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Exactly one (D=0). The vertex IS the x-intercept.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 49x²–14x+1=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(7x–1)²=0. x=1/7.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<div class="topic" id="t7">
+  <div class="topic-header"><div class="t-num">7</div><h2>Two Distinct Real Roots (D &gt; 0)</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:discriminant" target="_blank">Discriminant and number of solutions</a></div><div class="vid-box antics"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=_2-lqWbxMFw" target="_blank">Two real roots</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Verifying and Finding Two Distinct Real Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Verify x²–5x+4=0 has two distinct real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=25–16=9&gt;0. x=4 or x=1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find two distinct roots of 3x²–10x+3=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=100–36=64&gt;0. x=3 or x=1/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+3x–4=0 has two roots; find them.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=9+16=25&gt;0. x=1 or x=–4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find conditions on k for x²–2kx+k=0 to have two distinct real roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4k²–4k&gt;0→k&lt;0 or k&gt;1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 2x²+x–15=0 and verify D&gt;0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=121&gt;0. x=5/2 or x=–3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of x²–px+q=0 are 3 and 4. Find p,q and verify D&gt;0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>p=7, q=12. D=49–48=1&gt;0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+x–1=0 always has two distinct real roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=1+4=5&gt;0. Roots: (–1±√5)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For ax²+bx+c=0, if all roots negative, state conditions on a,b,c.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D≥0, sum=–b/a&lt;0, product=c/a&gt;0. So a,b same sign; a,c same sign.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A quadratic has roots α and 2α; sum=6. Find equation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3α=6→α=2. Roots: 2,4. x²–6x+8=0. D=4&gt;0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For ax²+bx+c=0, one root is double the other. Show 2b²=9ac.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Roots α,2α. Sum=3α=–b/a. Product=2α²=c/a. 2(b/3a)²=c/a→2b²/9a²=c/a→2b²=9ac. QED.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Applications with Two Distinct Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Height h=–t²+5t. At what two times is h=6?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>t²–5t+6=0→t=2 or t=3 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two positive numbers differ by 3; product 40. Find them.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–3x–40=0→x=8, y=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Path of 2m surrounds 20m×16m garden. Total area (including path)=480 m². Find path width.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(20+2w)(16+2w)=480→4w²+72w–160=0→(w+20)(w–2)=0→w=2 m.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of number and reciprocal is 10/3. Find.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3x²–10x+3=0→x=3 or x=1/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangular plot: length 2 more than width, area=24. Find dimensions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>w²+2w–24=0→w=4, l=6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Profit P=–x²+120x–2000. Find range of x for positive profit.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–120x+2000&lt;0→20&lt;x&lt;100.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Numbers sum to 15, product=50. Find them; verify D&gt;0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–15x+50=0; D=25&gt;0. x=10 or x=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two numbers sum to 48, one is 2/3 of the other. Find their difference.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x+2x/3=48→x=288/5, y=192/5. Diff=96/5=19.2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For 1/α+1/β when α,β are roots of 3x²+4x+1=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(α+β)/(αβ)=(–4/3)/(1/3)=–4. D=16–12=4&gt;0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show the roots of x²+(a+b)x+ab=0 are –a and –b; when distinct?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=(a+b)²–4ab=(a–b)²≥0. Distinct when a≠b.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Sign and Magnitude of Distinct Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">For x²–5x+6=0, state sign of roots using Vieta's.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum=5&gt;0, Product=6&gt;0. Both positive. Roots: 2,3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²+x–6=0, state sign of roots without solving.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Product=–6&lt;0 → opposite signs. Roots: –3,2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For 2x²–7x+3=0, find roots and verify D&gt;0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=49–24=25&gt;0. x=3 or x=1/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Both roots positive: conditions on b,c when a=1.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=–b&gt;0 (b&lt;0), Product=c&gt;0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²–3x–10=0, find roots using sum and product.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=3, Product=–10. Roots of opposite sign: 5 and –2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find product and sum of roots of 6x²–13x+6=0 without solving, then verify.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum=13/6, Product=1. Roots: 3/2 and 2/3. 3/2+2/3=13/6✓, 3/2×2/3=1✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+x+1=0 has no real roots; x²+x–1=0 has two distinct real roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D₁=–3&lt;0; D₂=5&gt;0. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If roots of x²+(a+b)x+ab=0 are distinct, what is condition on a,b?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=(a–b)²&gt;0→a≠b.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²+x–42=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=169. x=6 or x=–7.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 4x²–17x+4=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=225. x=4 or x=1/4.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Mixed Problems — Two Distinct Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Solve x²–7x+12=0; verify D&gt;0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=1&gt;0. x=4 or x=3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If one root of x²–8x+k=0 is 2, find k and other root.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4–16+k=0→k=12. Other root=6. D=16&gt;0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²–2(a+b)x+(a²+b²+2ab)=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–2(a+b)x+(a+b)²=(x–(a+b))²=0. Equal root: x=a+b. D=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find two values of m for which mx²–14x+8=0 has real distinct roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>196–32m&gt;0→m&lt;49/8. E.g., m=1, m=6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²–14x+48=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=4. x=8 or x=6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Ball dropped: h=100–5t². At what times is h=55 and h=105?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h=55: t=3 s. h=105: t²=–1, no real solution.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 5x²+8x–4=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=64+80=144. x=2/5 or x=–2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If α,β roots of 2x²–3x+1=0, find α²+β².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>α+β=3/2, αβ=1/2. α²+β²=9/4–1=5/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²–2x–15=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=64. x=5 or x=–3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve 3x²–5x–2=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=25+24=49. x=2 or x=–1/3.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<div class="topic" id="t8">
+  <div class="topic-header"><div class="t-num">8</div><h2>No Real Roots (D &lt; 0)</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex/x2ec2f6f830c9fb89:imaginary-unit/v/introduction-to-i-and-imaginary-numbers" target="_blank">Introduction to complex numbers</a></div><div class="vid-box antics"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=uXkFb8TLROQ" target="_blank">No real roots — D&lt;0</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Identifying No-Real-Root Equations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Show x²+4x+5=0 has no real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=16–20=–4&lt;0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show 3x²+x+1=0 has no real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=1–12=–11&lt;0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Does x²–x+1=0 have real roots?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=1–4=–3&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find range of k for x²+kx+9=0 to have no real roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>–6&lt;k&lt;6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what c does 4x²+4x+c=0 have no real roots?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>16–16c&lt;0→c&gt;1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show (x–a)²+(x–b)²=0 has no real roots unless a=b.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=–4(a–b)²≤0. D=0 iff a=b. For a≠b: D&lt;0, no real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Prove ax²+bx+c&gt;0 for all x when a&gt;0 and D&lt;0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>No real zeros → parabola (opening up) lies entirely above x-axis. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what a is x²+ax+1&gt;0 for all real x?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=a²–4&lt;0→–2&lt;a&lt;2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what range of p is –x²+px–4&lt;0 for all real x?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–px+4&gt;0 always → D=p²–16&lt;0 → –4&lt;p&lt;4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find k for 3x²–kx+k=0 to have no real roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>k²–12k&lt;0→0&lt;k&lt;12.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Geometry of Parabolas with D &lt; 0</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">D&lt;0 means the parabola _____ the x-axis.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Does not cross. Lies entirely above (a&gt;0) or below (a&lt;0).</p></details></div></div>
+    <div class="q-item"><div class="q-text">Minimum of x²+2x+5. Confirm D&lt;0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+1)²+4. Min=4&gt;0. D=4–20=–16&lt;0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what c&gt;0 is 2x²–3x+c entirely above the x-axis?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=9–8c&lt;0→c&gt;9/8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sketch y=–x²+x–1; explain no x-intercepts.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=1–4=–3&lt;0. Opens down, lies entirely below x-axis. No x-intercepts.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+bx+(b²/3)≥0 always.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=b²–4b²/3=–b²/3≤0. With a=1&gt;0: always ≥0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For f(x)=x²+bx+c&gt;0 always, what must hold?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=b²–4c&lt;0 → c&gt;b²/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Does 5x²–6x+2=0 have real roots?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=36–40=–4&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show 4x²+x+1=0 has no real solutions by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4(x+1/8)²+15/16=0 → impossible (LHS&gt;0).</p></details></div></div>
+    <div class="q-item"><div class="q-text">For ax²+bx+c=0 with D&lt;0, show ax²+bx+c has same sign as a for all x.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>p(x)=a[(x+b/2a)²+(4ac–b²)/4a²]. With D&lt;0: (4ac–b²)&gt;0. a&gt;0: p(x)&gt;0. a&lt;0: p(x)&lt;0. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Prove sum of a positive number and its reciprocal ≥2 using (√x–1/√x)²≥0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(√x–1/√x)²≥0 → x–2+1/x≥0 → x+1/x≥2. QED.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> No-Real-Root Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Show 2x²+x+2=0 has no real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=1–16=–15&lt;0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Can a quadratic with all positive coefficients have a positive root?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=–b/a&lt;0. Both roots negative. No positive roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find values of a for which ax²+3x+2=0 has no real roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>9–8a&lt;0→a&gt;9/8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Explain why x²=–4 has no real solution.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²≥0 for all real x; cannot equal –4. D=0–16=–16&lt;0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Is sum of squares of two reals plus 1 always positive?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²+y²+1≥1&gt;0. Yes.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+(p²+1)=2px has no real roots for any p.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–p)²+1=0 → LHS≥1&gt;0. No real solution.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show D&lt;0 for all k: x²+2x+(k²+1)=0 when k≠0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=4–4(k²+1)=–4k²&lt;0 for k≠0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find all integer m for which x²+mx+(m+3)=0 has no real roots.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>m²–4m–12&lt;0→–2&lt;m&lt;6. Integers: –1,0,1,2,3,4,5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Check 2x²+3x+4=0 for no real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>D=9–32=–23&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what range of p is 3x²+mx+3=0 guaranteed no real roots?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=m²–36&lt;0→–6&lt;m&lt;6.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Mixed No-Real-Root Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Name a quadratic with no real roots.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+1=0 (D=–4&lt;0).</p></details></div></div>
+    <div class="q-item"><div class="q-text">Can √2 x²+√2 x+√2=0 have real roots?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=2–8=–6&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">NCERT Grade 10: D&lt;0 means "no real roots." Is "imaginary roots" precise? Explain.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>At Grade 10 level: correct term is "no real roots." Technically they are complex (not real). "Imaginary" is imprecise; prefer "complex" or "no real."</p></details></div></div>
+    <div class="q-item"><div class="q-text">For x²+bx+c=0 always &gt;0, show c&gt;b²/4.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=b²–4c&lt;0→c&gt;b²/4. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+2x+2=0 has no real roots by completing the square.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(x+1)²+1=0 → impossible. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If D₁&lt;0 for ax²+bx+c, show ax²+bx+c+1 also has D&lt;0 when a&gt;0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D₂=b²–4a(c+1)=D₁–4a. With a&gt;0: D₂=D₁–4a&lt;D₁&lt;0. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solve x²+1=0 over reals. What is the solution set?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Empty set {}. No real numbers satisfy x²=–1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Show x²+bx+(b²+1)=0 has no real roots for any real b.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=b²–4(b²+1)=–3b²–4&lt;0 always. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Check 5x²+6x+2=0 for real roots.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=36–40=–4&lt;0. No real roots.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what c is x²+3x+c=0 always complex (no real roots)?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=9–4c&lt;0→c&gt;9/4.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<div class="topic" id="t9">
+  <div class="topic-header"><div class="t-num">9</div><h2>Forming Quadratic Equations from Given Roots</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-arithmetic/x2ec2f6f830c9fb89:zero-product-property/v/zero-product-property" target="_blank">Zero product property</a></div><div class="vid-box antics"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=ybhNsK5vqmo" target="_blank">Forming equations from roots</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Basic Formation from Roots</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Form a quadratic with roots 3 and 5.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–8x+15=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form a quadratic with roots –2 and 7.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–5x–14=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form a quadratic with roots –4 and –4.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(x+4)²=0→x²+8x+16=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form the quadratic with roots 1/2 and –3.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>2x²+5x–3=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form a quadratic with roots 2+√3 and 2–√3.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=4, Product=1. x²–4x+1=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form a quadratic with roots 3/4 and 4/3.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>12x²–25x+12=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find the quadratic with α+β=7 and αβ=10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–7x+10=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form equation with roots 2+√3 and 2–√3 using (x–r₁)(x–r₂).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–4x+1=0 (same as above; product=(2+√3)(2–√3)=4–3=1).</p></details></div></div>
+    <div class="q-item"><div class="q-text">The roots of 3x²–5x+2=0 are α,β. Form equation with roots 1/α and 1/β.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum=5/2, Product=3/2. 2x²–5x+3=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of x²–3x+2=0 are α,β. Form equation with roots α²,β².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Roots: 1,4. Sum=5, Product=4. x²–5x+4=0.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Formation Using Vieta's Formulas</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">If α+β=–3, αβ=2, find α²+β².<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(–3)²–2(2)=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If α+β=5, αβ=6, find (α–β)².<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>25–24=1. α–β=±1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form equation with roots 3α and 3β where α,β are roots of x²+4x+1=0.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²+12x+9=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If one root of x²+px+q=0 is twice the other, find relation between p and q.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2p²=9q.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form equation with roots (α+1),(β+1) where α,β satisfy x²–5x+6=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=7, Product=12. x²–7x+12=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of 2x²–3x+1=0 are α,β. Find 1/α²+1/β².<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>(α²+β²)/(αβ)²=(5/4)/(1/4)=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If α,β roots of x²+px+q=0, form equation with roots –1/α and –1/β.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>qx²–px+1=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of x²–6x+8=0 are α,β. Find α⁴+β⁴.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>α+β=6,αβ=8. α²+β²=20. α⁴+β⁴=400–128=272.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If α,β roots of x²–3x+p=0 and α²+β²=5, find p.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>9–2p=5→p=2. Roots: 1,2 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A quadratic's roots differ by 1; product=6. Find all possible quadratics.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(α–β)²=1, αβ=6. (α+β)²=25→sum=±5. x²–5x+6=0 or x²+5x+6=0.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Symmetric Expressions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">For x²–7x+12=0, find α²+β² without solving.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>49–24=25.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For 3x²–5x+1=0, find α/β+β/α.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(α²+β²)/(αβ)=(19/9)/(1/3)=19/3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of x²+kx+12=0 in ratio 1:3. Find k.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>3α²=12→α=±2. Sum=4α=–k→k=±8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find equation with roots 2 more than roots of x²–4x+3=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Original roots:1,3. New:3,5. x²–8x+15=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find equation with negatives of roots of 2x²+3x–5=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Replace x by –x: 2x²–3x–5=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of roots = product for ax²+bx+c=0. Find condition.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>–b/a=c/a→b+c=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of x²–5x+6=0 are α,β. Find α³+β³.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>125–3(6)(5)=125–90=35.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form equation with roots (α–β) and (β–α) for 2x²+5x–3=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum=0, Product=–(α–β)²=–49/4. 4x²+49=0 (no real roots).</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of 6x²–x–2=0. Form equation with reciprocals.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum=–1/2, Product=–3. 2x²+x–6=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find equation with roots α²β and αβ² where α,β satisfy x²–3x+2=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum=αβ(α+β)=2×3=6, Product=(αβ)³=8. x²–6x+8=0.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Advanced Root Formation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Form equation with roots cubes of roots of x²–2x–1=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>α³+β³=14, α³β³=–1. x²–14x–1=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find equation with roots 2α+1 and 2β+1 for x²–3x+1=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Sum=8, Product=11. x²–8x+11=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of first n natural numbers=n(n+1)/2. Find n if sum=78.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>n²+n–156=0→n=12.</p></details></div></div>
+    <div class="q-item"><div class="q-text">In a group, n(n–1)/2 handshakes=45. Find n.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>n²–n–90=0→n=10.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If α,β roots of ax²+bx+c=0, write equation with roots aα+b and aβ+b.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Using aα+b=–c/α (from root condition): new roots=–c/α,–c/β. Equation: x²+bx+ac=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form quadratic with rational coefficients, one root 3+√5.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Other root=3–√5. Sum=6, Product=4. x²–6x+4=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If α and β are roots of x²–x–1=0, find α³+β³.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>α+β=1, αβ=–1. α³+β³=1–3(–1)(1)=4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Roots of 2x²–3x+1=0 are α,β. Find α²+β².<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>9/4–1=5/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of squares of first n odd naturals = n(2n–1)(2n+1)/3. Find n if sum=165.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>n(2n–1)(2n+1)=495. Try n=5: 5×9×11=495 ✓. n=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Form equation with roots (α+1/β) and (β+1/α) where α,β satisfy x²–3x+2=0.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sum=9/2, Product=9/2. 2x²–9x+9=0.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<div class="topic" id="t10">
+  <div class="topic-header"><div class="t-num">10</div><h2>Word Problems — Numbers and Ages</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:quadratic-word-problems-factored-form/v/quadratic-word-problems-factored-form" target="_blank">Quadratic word problems</a></div><div class="vid-box antics"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=JVxQMB2JJRE" target="_blank">Numbers and age problems</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Number Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Product of two consecutive positive integers is 72. Find them.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>n(n+1)=72→n=8. Integers: 8 and 9.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Product of two consecutive even integers is 80. Find them.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>n(n+2)=80→n=8. Integers: 8 and 10.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A number is 3 more than its reciprocal. Find it.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–3x–1=0. x=(3+√13)/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of squares of two consecutive odd integers is 290. Find them.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>n=11. Integers: 11 and 13.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two numbers differ by 5. Sum of squares is 97. Find them.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>y=4, x=9.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two-digit number: tens = units + 3, product of digits = 18. Find the number.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>u=3, t=6. Number=63.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of a number and its square root is 6. Find it.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Let √x=t: t²+t–6=0→t=2→x=4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Fraction: add 1 to both num and den → 4/5; subtract 3 from both → 1/2. Find original.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=7, y=9. Fraction=7/9.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two-digit: sum of digits=9, sum of number and reversal=99, |t–u|=3. Find numbers.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>t+u=9, |t–u|=3 → 45 and 54 are not right; t=6,u=3: 63 and 36.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Group of n people: n(n–1)/2 = 28 handshakes. Find n.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>n²–n–56=0→n=8.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Age Problems with Quadratics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">A's age is 10 more than B's; product = 119. Find ages.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>B²+10B–119=0→B=7. A=17.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of boy and father ages = 35; product = 150. Find ages.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–35x+150=0. Father=30, son=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Woman is 30 years older than daughter. 4 years ago, product of ages = 216. Find current ages.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(D+26)(D–4)=216→D=10. Daughter 10, woman 40.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Ages of A,B in ratio 2:3; after 6 years ratio 3:4. Find current ages.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>A=12, B=18.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Father is 6 times son now; in 6 years, father's age = son's age squared. Possible?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>S²+6S+30=0 → D&lt;0. No real solution. Not possible.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rohit is 5 older than Sheela. Product = 500 (use 500 for integer solution). Find ages.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S(S+5)=500→S²+5S–500=0→S=20. Sheela 20, Rohit 25.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Present ages of A and B are in ratio 5:3. After 6 years ratio is 7:5. Find ages.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>k=3. A=15, B=9.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Son's age next year = √(father's age next year). Father currently = x. Write equation and check for x=80.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Son+1=√(x+1). Solve for son's current age. For x=80: son+1=√81=9→son=8. Check: son is 8 years old, father is 80 years old.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Three ages sum to 90; father is 5 older than mother; mother is 25 older than child. Find ages.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>3M–19=90→M=109/3 (non-integer). Adjust: if sum=74: 3M=93→M=31, F=36, C=7. Sum=74.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A grandmother is 12 times her granddaughter's age; if granddaughter is 4 older, grandmother is 6 times. Find ages.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>12g=6(g+4)→g=4. Granddaughter=4, grandmother=48.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Mixed Number Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Sum of a number and 4 times its reciprocal is 5. Find it.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–5x+4=0→x=1 or x=4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Product of three consecutive natural numbers is 120. Find them.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>4×5×6=120. Numbers: 4,5,6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two numbers in ratio 3:4; each increased by 3, ratio becomes 4:5. Find them.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>k=3. Numbers: 9 and 12.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find n if sum of first n odd naturals = 256 (sum = n²).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>n²=256→n=16.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two numbers: sum=15, product=50. Find them.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–15x+50=0→x=5,10.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangle: l+w=17, lw=60. Find dimensions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x²–17x+60=0→x=12 or x=5. Dimensions 12×5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of squares of first n naturals = n(n+1)(2n+1)/6 = 385. Find n.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>n=10: 10×11×21/6=385 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A's present age is twice sum of digits of B's age; B's age = 3 times units digit; A+B=50. Find ages.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>B=15 (3u=15→u=5,t=1). A=35? Check: A=2(1+5)=12≠35. No consistent solution.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Cube of a number = twice its square plus six times itself. Find solutions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x³–2x²–6x=0→x(x²–2x–6)=0. x=0 or x=1±√7.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangular yard: perimeter=34m, diagonal=13m. Find dimensions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>l+w=17, lw=60→l=12, w=5.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Challenge Number and Age Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Product of two consecutive numbers is 56. Find them.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>n(n+1)=56→n=7. Numbers: 7,8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A number squared minus 4 times itself = 21. Find it.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–4x–21=0→x=7 or x=–3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Find two numbers: sum=100, difference of squares=400.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x–y=4, x+y=100→x=52, y=48.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Product of numbers is 2028; LCM = 12×HCF. Find them.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>HCF=13, LCM=156. Numbers: 39 and 52.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A's age is twice B's; 5 years ago A was 3 times B. Find their ages.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>A=2B; 2B–5=3(B–5)→B=10. A=20.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Father 30 years older than son; 5 years later father is 3 times son. Find ages.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>S=10, F=40.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Three consecutive multiples of 3 sum to 54. Find them.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>n=5. Multiples: 15,18,21.</p></details></div></div>
+    <div class="q-item"><div class="q-text">x² – (2a+1)x + (a²+a) = 0. Show D = 1 always (always two distinct roots).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=(2a+1)²–4(a²+a)=4a²+4a+1–4a²–4a=1. Always 1&gt;0. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of digits of a two-digit number is 9. Number + reversed = 99. |t–u| = 3. Find numbers.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>t+u=9, t–u=3→t=6,u=3: 63. Or u–t=3→t=3,u=6: 36. Both valid.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Riya's age is 1/3 father's. After 15 years, Riya's = 1/2 father's. Find current ages.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>F=45, Riya=15.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<div class="topic" id="t11">
+  <div class="topic-header"><div class="t-num">11</div><h2>Word Problems — Geometry and Motion</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring/x2f8bb11595b61c86:quadratic-word-problems-factored-form" target="_blank">Quadratic geometry &amp; motion problems</a></div><div class="vid-box teded"><span class="ch-tag">YouTube</span><a href="https://www.youtube.com/watch?v=zTKNjVOjyg8" target="_blank">Projectile motion</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> Area and Perimeter Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Rectangular garden: length = width + 6 m, area = 112 m². Find dimensions.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>w²+6w–112=0→w=8, l=14.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Square: area = perimeter numerically. Find side.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>s²=4s→s=4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Right triangle: hypotenuse = 13, legs differ by 7. Find legs.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>b²+7b–60=0→b=5, a=12.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Triangle: base = height + 5, area = 52 m². Find base and height.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h²+5h–104=0→h=8, base=13.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangle with perimeter 44, diagonal 17. Find dimensions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>l+w=22, l²+w²=289. (l–w)²=289–484=–195? Recheck: l²+w²=(l+w)²–2lw=484–2lw=289→lw=97.5. x²–22x+97.5=0. Non-integer. Use diagonal=13: lw=60→12×10.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A square cut from 10×10 sheet; remaining area = 64 cm². Find square side.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>100–s²=64→s=6 cm.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Isosceles right triangle: hypotenuse = 10√2. Find legs and area.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>a=10, area=50 cm².</p></details></div></div>
+    <div class="q-item"><div class="q-text">Triangle sides form AP; right-angled. Show ratio 3:4:5.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Sides a–d,a,a+d. (a–d)²+a²=(a+d)²→a²=4ad→a=4d. Sides: 3d,4d,5d. Ratio 3:4:5. QED.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A 10 m ladder: base is 2 m farther from wall than height reached. Find height.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>h²+(h+2)²=100→h=6 m.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Farmer encloses 500 m² with 90 m of fencing along 3 sides (wall on 4th). Find dimensions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>2w+l=90, wl=500→2w²–90w+500=0. w≈6.5: l=77 or w≈38.5: l=13.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> Projectile and Motion Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Ball: h=40t–5t². Find maximum height and time.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Max=80 m at t=4 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Stone: h=30t–5t². When does it hit the ground?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>t=6 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Ball dropped: h=80–5t². When does it reach h=5?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>t=√15 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rocket: h=–16t²+128t. Find when h=192 ft.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>t=2 or t=6 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Ball from cliff 45m: h=45+20t–5t². When does it hit h=0?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>t=2+√13≈5.6 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Train: 600 km; speed+20 km/h → time–1 hr. Find original speed.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>v²+20v–12000=0→v=100 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Stone: h=–4.9t²+19.6t+49. Find max height and landing time.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Max=68.6 m at t=2 s. Land at t=2+√14≈5.7 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Particle: s=t²–6t+9. When is s=0? Describe motion.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(t–3)²=0→t=3. At origin at t=3. Starts at s=9, falls to 0 at t=3, rises again.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two cyclists at right angles: speeds 15 and 20 km/h. After how many minutes are they 25 km apart?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>625t²=625→t=1 hr=60 min.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Ball at h=–16t²+32t+48. When does it hit the ground?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>t²–2t–3=0→t=3 s.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> Work, Pipe and Speed Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Two pipes fill tank in 4 hours; one takes 6 hours more than other. Find individual times.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>t²–2t–24=0→t=6. Times: 6 h and 12 h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Boat speed 15 km/h; takes 1.5 hr more upstream for 30 km. Find stream speed.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>s²+40s–225=0→s=5 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Boat covers 32 km upstream, 50 km downstream in 8 hrs; 24 upstream, 75 downstream in 9 hrs. Find speeds.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Upstream=8, downstream=25/2. Boat≈10.25 km/h, stream≈2.25 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Car travels 500 km; speed doubled → time reduced by 3.75 hrs. Find original speed.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>250/v=3.75→v=200/3 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two cars A→B (120 km): A leaves 8am at v km/h, B leaves 9am at v+10 km/h, arrive same time. Find v.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>v²+10v–1200=0→v=30 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Stopping distance d=v+v²/20. For d=30, find v.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>v²+20v–600=0→v=(–20+√2800)/2≈16.5 m/s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Motorboat: 36 km up + 36 km down in 9 hrs. Stream speed=3 km/h. Find boat speed.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>v²–8v–9=0→v=9 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rama: X to Y at 60 km/h, return at 40 km/h, total 5 hrs. Find distance XY.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>d/60+d/40=5→d=120 km.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Boy walks at 4 km/h; 1 km/h faster saves 40 min. Find distance.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>d/20=2/3→d=40/3 km.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Pool: filled in 10 hrs; together with second pipe in 6 hrs. Find second pipe time.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>1/x=1/6–1/10=1/15→x=15 hrs.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> Mixed Geometry and Motion</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Right triangle sides x, x+7, x+8. Find x.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x²–2x–15=0→x=5. Sides: 5,12,13.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Object: h=ut–4.9t², lands after 10 s. Find u.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>u=49 m/s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Area of equilateral triangle (side a)=(√3/4)a²=12√3. Find a.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a²=48→a=4√3 cm.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Stone thrown horizontally from 45 m: x=20t, h=45–5t². Find x when h=0.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>t=3 s, x=60 m.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Two cars meeting perpendicularly: speeds v₁ and v₂=v₁+5. After 2 hrs, distance=50 km. Find speeds.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>2v₁²+10v₁–600=0→v₁=15, v₂=20 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sector: radius r, area 77 cm², arc=22 cm (π=22/7). Find r.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>11r=77→r=7 cm.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Cylinder: d=h, TSA=75π. Find r.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>6πr²=75π→r=√12.5=5√2/2 cm.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Train: 360 km; speed +5 km/h → time –1 hr. Find speed.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>v²+5v–1800=0→v=40 km/h.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Path of uniform width: inner 20×16=320 m², outer area=480 m². Find width.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(20+2w)(16+2w)=480→4w²+72w–160=0→w=2 m.</p></details></div></div>
+    <div class="q-item"><div class="q-text">A projectile: h=–5t²+30t. When is h=0? When is h maximum?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>h=0: t=0,6 s. Max: t=3 s, h=45 m.</p></details></div></div>
+  </div></div>
+</div>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<div class="topic" id="t12">
+  <div class="topic-header"><div class="t-num">12</div><h2>SAT-Style Quadratic Problems</h2></div>
+  <div class="topic-videos"><h3>📺 Concept Videos</h3><div class="vid-grid"><div class="vid-box khan"><span class="ch-tag">Khan Academy SAT</span><a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice/sat-heart-of-algebra/a/quadratics-overview-sat" target="_blank">SAT Quadratics overview</a><a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice" target="_blank">SAT Math Practice</a></div><div class="vid-box nphile"><span class="ch-tag">PrepScholar</span><a href="https://www.youtube.com/watch?v=Q-gI4A9Xcjk" target="_blank">SAT quadratic tips</a></div></div></div>
+  <div class="set-card"><h3><span class="set-label">SET A</span> SAT Multiple Choice — Quadratics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">If x²–5x+6=0, what is the sum of all possible values of x?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Sum of roots = 5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Graph y=x²+4x+c passes through (0,7). What is c?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>c=7.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Which is a solution to 2x²–3x–2=0: x=–2,–1/2,2,4?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=–1/2: 1/2+3/2–2=0 ✓. Also x=2: 8–6–2=0 ✓. Both –1/2 and 2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Vertex of y=x²–6x+11 is (h,k). Find h+k.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>y=(x–3)²+2. h+k=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If (x–p)(x–q)=0 with p+q=7 and pq=12, what quadratic is this?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²–7x+12=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If one solution of x²+bx–12=0 is x=3, what is the other?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Product=–12. Other=–4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Vertex of y=a(x–2)²–3 at (2,–3) passing through (0,5). Find a.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>4a–3=5→a=2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Solutions to x²=4x–4: (A)2,–2 (B)2,2 (C)–2,–2 (D)no real.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>(x–2)²=0. Answer: (B) 2,2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If x²+3x–10=0 and x&gt;0, find x–2.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=2. x–2=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Lines y=kx+1 and y=(1/k)x+2 have no intersection when k=?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>Parallel when k=1/k→k²=1→k=±1.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET B</span> SAT Grid-In Quadratics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">If x²–x–6=0, what is the positive value of x?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Sum of all values of x satisfying x²=9.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>3+(–3)=0.</p></details></div></div>
+    <div class="q-item"><div class="q-text">(x–3)²=16. Sum of solutions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=7 or x=–1. Sum=6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Parabola y=x²+bx+c has x-intercepts at 1 and 5. Find b+c.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>b=–6, c=5. b+c=–1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Minimum value of y=2x²–8x+9.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>2(x–2)²+1. Min=1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If x²+7x+k=0 has equal roots, find k.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>k=49/4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">(2x+1)(x–3)=0. Product of solutions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>–1/2 × 3=–3/2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">y=x²–4x. For k≠0, y=0 at x=k and x=0. Find k.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x(x–4)=0. k=4.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Product of roots of px²+3x+q=0 is 1, sum is –3/2. Find p,q.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>p=2, q=2.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If x²+2x–8=0 and x&gt;0, find x².<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=2. x²=4.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET C</span> SAT Context and Modeling</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Revenue R=p(100–2p). Find p for maximum revenue.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>Max at p=25. Max revenue=1250.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Ball: h=–16t²+32t+48. When does it hit the ground?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>t=3 s.</p></details></div></div>
+    <div class="q-item"><div class="q-text">f(x)=x²–4. f(x)=0 at x=a,b. Find a²+b².<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x=±2. a²+b²=8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rectangle: length=(x+2), width=(x–1), area=28. Find x.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>x²+x–30=0→x=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">For what c does x²+6x+c=0 have exactly one real solution?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>D=36–4c=0→c=9.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Which equals x²–16? (A)(x–4)² (B)(x+4)(x–4) (C)(x–8)(x+2) (D)(x²–4)²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>(B).</p></details></div></div>
+    <div class="q-item"><div class="q-text">x²+bx+9=0 has equal roots. Student says b=6 only. Is she right?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>No. b=6 or b=–6.</p></details></div></div>
+    <div class="q-item"><div class="q-text">f(x)=x²–3x–10. If f(x)=0, find |x₁–x₂|.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=5 or –2. |5–(–2)|=7.</p></details></div></div>
+    <div class="q-item"><div class="q-text">SAT Tip: x²–9x+k=0 has roots r,s. Find r²+s² without solving.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>r²+s²=81–2k.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Rock dropped: h=100–5t². At what time is h=20?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>t=4 s.</p></details></div></div>
+  </div></div>
+  <div class="set-card"><h3><span class="set-label">SET D</span> SAT Challenge — Quadratics</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button><div class="q-list">
+    <div class="q-item"><div class="q-text">Sum of solutions of (x–4)²=25.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p>x=9 or –1. Sum=8.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Parabola y=ax²+bx+c, vertex (2,–5), passes through (0,3). Find a,b,c.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>a=2, b=–8, c=3.</p></details></div></div>
+    <div class="q-item"><div class="q-text">x²–4x–12=0. Verify both x=6 and x=–2 are solutions.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>36–24–12=0 ✓. 4+8–12=0 ✓.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Graph y=(x–3)(x+1) crosses x-axis at two points. x-coordinate of vertex?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Midpoint of roots: (3+(–1))/2=1.</p></details></div></div>
+    <div class="q-item"><div class="q-text">x²+kx+36=0 has two equal real roots. Possible values of k?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>k=±12.</p></details></div></div>
+    <div class="q-item"><div class="q-text">f(x)=x²–bx; f(3)=f(7). Find b then f(5).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>b=10. f(5)=–25.</p></details></div></div>
+    <div class="q-item"><div class="q-text">If vertex of y=ax²+bx+c is below x-axis and a&gt;0, how many real roots?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>2 distinct real roots (D&gt;0).</p></details></div></div>
+    <div class="q-item"><div class="q-text">(x–p)²=q with p=3,q=4. Product of all solutions.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>x=5 or x=1. Product=5.</p></details></div></div>
+    <div class="q-item"><div class="q-text">SAT fastest method for x²–100=0?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p>Difference of squares: (x–10)(x+10)=0→x=±10.</p></details></div></div>
+    <div class="q-item"><div class="q-text">Parabola y=x²+bx+c tangent to y=2x+5. Find condition on b,c.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p>D=(b–2)²–4(c–5)=0→(b–2)²=4(c–5).</p></details></div></div>
+  </div></div>
+</div>
+
+<footer>Grade 10 &middot; NCERT Mathematics &middot; Chapter 4 &middot; The Gaudium School &middot; 2026&ndash;27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

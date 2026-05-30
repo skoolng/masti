@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 6 Math – Ganita Prakash Learning Plan</title>
+<style>
+  :root {
+    --primary: #4a6fa5;
+    --accent: #e8734a;
+    --green: #3aaa6e;
+    --bg: #f8f9fb;
+    --card: #ffffff;
+    --border: #dde3ee;
+    --text: #2d3748;
+    --muted: #6b7a99;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+
+  /* ── Header ── */
+  header { background: linear-gradient(135deg, #1a3a6e 0%, var(--primary) 60%, #6b4fa5 100%);
+    color: #fff; padding: 36px 24px 28px; text-align: center; }
+  header h1 { font-size: 2rem; letter-spacing: .5px; }
+  header p  { margin-top: 8px; opacity: .85; font-size: .95rem; }
+
+  /* ── TOC ── */
+  nav { background: var(--card); border-bottom: 2px solid var(--border); padding: 18px 28px; }
+  nav h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 10px; }
+  nav ol { padding-left: 22px; columns: 2; column-gap: 40px; }
+  nav li { margin: 4px 0; }
+  nav a  { color: var(--primary); text-decoration: none; font-size: .92rem; }
+  nav a:hover { text-decoration: underline; }
+
+  /* ── Chapter wrapper ── */
+  .chapter { max-width: 900px; margin: 36px auto; padding: 0 18px; }
+  .chapter-header { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+  .ch-num { background: var(--accent); color: #fff; border-radius: 50%; width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; flex-shrink: 0; }
+  .chapter-header h2 { font-size: 1.5rem; color: var(--primary); }
+
+  /* ── Cards ── */
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 22px 26px; margin-bottom: 22px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+  .card h3 { font-size: 1.05rem; color: var(--accent); margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px; }
+  .card h3 .icon { font-size: 1.2rem; }
+
+  /* ── Learning Plan ── */
+  .plan-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap: 12px; }
+  .plan-week { background: #f0f4ff; border-left: 4px solid var(--primary); border-radius: 8px; padding: 12px 16px; }
+  .plan-week strong { display: block; color: var(--primary); margin-bottom: 6px; font-size: .9rem; }
+  .plan-week ul { padding-left: 16px; font-size: .88rem; }
+  .plan-week li { margin: 3px 0; }
+
+  /* ── Practice tests ── */
+  .q-list { counter-reset: q; }
+  .q-item { counter-increment: q; display: flex; gap: 10px; margin: 10px 0; align-items: flex-start; }
+  .q-item::before { content: "Q" counter(q); background: var(--primary); color: #fff; border-radius: 6px;
+    font-size: .75rem; font-weight: 700; padding: 2px 6px; flex-shrink: 0; margin-top: 3px; }
+  .q-item .q-text { flex: 1; font-size: .91rem; }
+  .q-item .difficulty { font-size: .72rem; background: #f0f4ff; border-radius: 99px;
+    padding: 1px 8px; color: var(--muted); flex-shrink: 0; margin-top: 4px; white-space: nowrap; }
+  .ans-toggle { margin-top: 6px; }
+  .ans-toggle summary { cursor: pointer; color: var(--green); font-size: .82rem; font-weight: 600; }
+  .ans-toggle p { background: #f0faf5; border-left: 3px solid var(--green);
+    padding: 8px 12px; margin-top: 6px; border-radius: 6px; font-size: .85rem; }
+
+  /* ── Video links ── */
+  .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media(max-width:600px){ .video-grid{grid-template-columns:1fr;} nav ol{columns:1;} }
+  .video-card { background: #fff8f5; border: 1px solid #f5d8cc; border-radius: 10px; padding: 14px 16px; }
+  .video-card .source { font-size: .75rem; text-transform: uppercase; letter-spacing: 1px;
+    font-weight: 700; margin-bottom: 8px; }
+  .video-card.ma .source  { color: #d93025; }
+  .video-card.bj .source  { color: #7b2cbf; }
+  .video-card a { display: block; color: var(--primary); font-size: .85rem; margin: 4px 0; text-decoration: none; }
+  .video-card a:hover { text-decoration: underline; }
+  .video-card a::before { content: "▶ "; }
+
+  /* ── Tip box ── */
+  .tip { background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 8px;
+    padding: 12px 16px; font-size: .85rem; margin-top: 14px; }
+  .tip strong { color: #92400e; }
+
+  footer { text-align: center; padding: 30px; color: var(--muted); font-size: .82rem; margin-top: 20px; }
+
+  /* difficulty colours */
+  .diff-easy   { background: #dcfce7; color: #15803d; }
+  .diff-medium { background: #fef9c3; color: #854d0e; }
+  .diff-hard   { background: #fee2e2; color: #991b1b; }
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📐 Grade 6 Mathematics — Ganita Prakash</h1>
+  <p>Complete Learning Plans · 10 Practice Tests per Chapter · Math Antics & Byju's Videos</p>
+</header>
+
+<nav>
+  <h2>Chapters</h2>
+  <ol>
+    <li><a href="#ch1">Patterns in Mathematics</a></li>
+    <li><a href="#ch2">Lines and Angles</a></li>
+    <li><a href="#ch3">Number Play</a></li>
+    <li><a href="#ch4">Data Handling &amp; Presentation</a></li>
+    <li><a href="#ch5">Prime Time</a></li>
+    <li><a href="#ch6">Perimeter and Area</a></li>
+    <li><a href="#ch7">Fractions</a></li>
+    <li><a href="#ch8">Playing with Constructions</a></li>
+    <li><a href="#ch9">Symmetry</a></li>
+    <li><a href="#ch10">The Other Side of Zero</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 1
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch1">
+  <div class="chapter-header">
+    <div class="ch-num">1</div>
+    <h2>Patterns in Mathematics</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2–3 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – See &amp; Describe</strong>
+        <ul>
+          <li>Spot patterns in tiles, fabric, nature</li>
+          <li>Colour patterns (AB, ABB, ABC)</li>
+          <li>Shape sequences</li>
+          <li>Number sequences: even, odd, multiples</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Rules &amp; Formulas</strong>
+        <ul>
+          <li>Arithmetic sequences (common difference)</li>
+          <li>Triangular &amp; square numbers</li>
+          <li>Fibonacci sequence</li>
+          <li>Patterns in multiplication tables</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – Create &amp; Extend</strong>
+        <ul>
+          <li>Build your own sequence and share the rule</li>
+          <li>Dot/matchstick patterns</li>
+          <li>Finding the nth term</li>
+          <li>Mini-project: pattern in real life</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Keep a Pattern Journal — draw or describe one new pattern every day for a week.</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">What comes next? &nbsp; 2, 4, 6, 8, <u>___</u></div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>10 (add 2 each time)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Continue the pattern: A, B, A, B, A, <u>___</u></div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>B (repeating AB pattern)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the missing number: 5, 10, 15, <u>___</u>, 25</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>20 (multiples of 5)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">What are the next two triangular numbers? &nbsp; 1, 3, 6, 10, <u>___</u>, <u>___</u></div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>15 and 21 (add 5, then 6)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Identify the rule and find the next term: 3, 6, 12, 24, <u>___</u></div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>48 (each term is multiplied by 2)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">What are the next two numbers in the Fibonacci sequence? &nbsp; 1, 1, 2, 3, 5, 8, <u>___</u>, <u>___</u></div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>13 and 21 (add the previous two numbers)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Matchsticks are arranged as triangles in a row (△△△…). Triangle 1 needs 3 sticks, Triangle 2 needs 5 sticks total, Triangle 3 needs 7 sticks total. How many sticks for the 8th triangle?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Pattern: 2n + 1 → 2(8) + 1 = <strong>17 sticks</strong></p></details>
+
+      <div class="q-item">
+        <div class="q-text">The square numbers are 1, 4, 9, 16, 25 … What is the 12th square number? What is the difference between the 12th and 11th square numbers?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>12² = <strong>144</strong>; 11² = 121; difference = <strong>23</strong> (always an odd number)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A staircase pattern: Step 1 uses 1 block, Step 2 uses 3 blocks, Step 3 uses 6 blocks. These are triangular numbers. How many blocks are needed for Step 7? For Steps 1–7 in total?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Step 7 = 28 blocks; Total of Steps 1–7 = 1+3+6+10+15+21+28 = <strong>84 blocks</strong></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A farmer plants trees in an orchard in rows: Row 1 has 1 tree, Row 2 has 3, Row 3 has 5, Row 4 has 7 … (a) Write a rule for Row n. (b) How many trees in Row 15? (c) What is the total number of trees in 10 rows?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(a) Row n = 2n − 1 &nbsp; (b) 2(15)−1 = <strong>29 trees</strong> &nbsp; (c) Sum of first 10 odd numbers = 10² = <strong>100 trees</strong></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+number+patterns" target="_blank">Number Patterns</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+sequences+series" target="_blank">Sequences &amp; Series</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+fibonacci" target="_blank">Fibonacci Sequence</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+class+6+patterns+in+mathematics" target="_blank">Class 6 – Patterns in Maths</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+triangular+square+numbers" target="_blank">Triangular &amp; Square Numbers</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+fibonacci+sequence" target="_blank">Fibonacci for Kids</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 2
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch2">
+  <div class="chapter-header">
+    <div class="ch-num">2</div>
+    <h2>Lines and Angles</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2–3 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Basics</strong>
+        <ul>
+          <li>Point, line, line segment, ray</li>
+          <li>Types of lines (parallel, perpendicular, intersecting)</li>
+          <li>Identifying lines around us</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Angles</strong>
+        <ul>
+          <li>What is an angle? Arms &amp; vertex</li>
+          <li>Acute, right, obtuse, straight, reflex</li>
+          <li>Measuring angles with a protractor</li>
+          <li>Drawing angles</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – Pairs &amp; Problems</strong>
+        <ul>
+          <li>Complementary &amp; supplementary angles</li>
+          <li>Adjacent angles</li>
+          <li>Vertically opposite angles</li>
+          <li>Angles in a triangle (sum = 180°)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Use a clock to practise angles — the hands make different angles at different times!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">Name each: a point, a line, a ray, and a line segment. How are they different?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>A <b>point</b> has no dimension; a <b>line</b> goes forever in both directions; a <b>ray</b> starts at a point and goes forever in one direction; a <b>line segment</b> has two endpoints.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Classify each angle: (a) 45° &nbsp; (b) 90° &nbsp; (c) 135° &nbsp; (d) 180°</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(a) Acute &nbsp; (b) Right &nbsp; (c) Obtuse &nbsp; (d) Straight</p></details>
+
+      <div class="q-item">
+        <div class="q-text">What type of angle does a clock show at 3:00? At 6:00?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>3:00 → <b>Right angle</b> (90°); 6:00 → <b>Straight angle</b> (180°)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Two angles are complementary. One angle is 38°. Find the other.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>90° − 38° = <b>52°</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Two angles are supplementary. One angle is 73°. Find the other.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>180° − 73° = <b>107°</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Two lines intersect. One pair of vertically opposite angles is 65°. Find all four angles formed.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Vertically opposite angles are equal. The other pair = 180° − 65° = 115°. Angles: <b>65°, 115°, 65°, 115°</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A triangle has angles 55° and 75°. Find the third angle. What type of triangle is it?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>180° − 55° − 75° = <b>50°</b>. All angles are acute → <b>Acute triangle</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Angle AOB and angle BOC are adjacent angles on a straight line (i.e., AOC is a straight line). If ∠AOB = 3x° and ∠BOC = 2x°, find x and both angles.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>3x + 2x = 180° → 5x = 180° → x = 36°. ∠AOB = <b>108°</b>, ∠BOC = <b>72°</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Two parallel lines are cut by a transversal. The transversal makes an angle of 110° with the first line (obtuse side). List all eight angles formed and their measures.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Alternate interior angles are equal; corresponding angles are equal. Angles: 110°, 70°, 110°, 70° (at first line) and 110°, 70°, 110°, 70° (at second line — same pattern due to parallel lines)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">In a triangle PQR, the exterior angle at Q is 130°. The angle at P is 55°. Find the angle at R. (Use the exterior angle theorem.)</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Exterior angle = sum of two non-adjacent interior angles: ∠P + ∠R = 130° → 55° + ∠R = 130° → ∠R = <b>75°</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+angles" target="_blank">Angles</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+lines+angles+geometry" target="_blank">Geometry – Lines &amp; Angles</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+triangles" target="_blank">Triangles</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+class+6+lines+and+angles" target="_blank">Class 6 – Lines and Angles</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+types+of+angles+class+6" target="_blank">Types of Angles</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+complementary+supplementary+angles" target="_blank">Complementary &amp; Supplementary</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 3
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch3">
+  <div class="chapter-header">
+    <div class="ch-num">3</div>
+    <h2>Number Play</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Number Sense</strong>
+        <ul>
+          <li>Reading and writing large numbers</li>
+          <li>Place value (units to millions)</li>
+          <li>Comparing and ordering numbers</li>
+          <li>Rounding off numbers</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Divisibility &amp; Fun</strong>
+        <ul>
+          <li>Divisibility rules (2, 3, 4, 5, 6, 9, 10)</li>
+          <li>Number puzzles and magic squares</li>
+          <li>Palindromes and interesting numbers</li>
+          <li>Estimation in real life</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Play "Number Detectives" — pick a 3-digit number and test all divisibility rules on it.</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">Write the number 3,07,456 in words.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Three lakh seven thousand four hundred and fifty-six</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Arrange in ascending order: 4321, 4213, 4132, 4312</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>4132 &lt; 4213 &lt; 4312 &lt; 4321</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Round 6,748 to (a) the nearest 10, (b) the nearest 100, (c) the nearest 1000.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(a) 6,750 &nbsp; (b) 6,700 &nbsp; (c) 7,000</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Is 432 divisible by 3? Show using the divisibility rule.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>4 + 3 + 2 = 9; 9 is divisible by 3. So yes, <b>432 is divisible by 3</b>.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Check whether 756 is divisible by 2, 3, 4, 6, and 9.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>÷2: yes (ends in 6) · ÷3: yes (7+5+6=18) · ÷4: yes (56÷4=14) · ÷6: yes (both 2&amp;3) · ÷9: yes (18÷9=2)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Using the digits 3, 5, 7 (each exactly once), form (a) the greatest 3-digit number, (b) the smallest 3-digit number.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(a) <b>753</b> &nbsp; (b) <b>357</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A 3 × 3 magic square uses numbers 1–9, each once, so every row, column, and diagonal sums to 15. Fill in the missing numbers: the centre is 5, top-right is 2, bottom-left is 4.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Standard 3×3 magic square:<br>2 7 6<br>9 5 1<br>4 3 8</p></details>
+
+      <div class="q-item">
+        <div class="q-text">I am a 4-digit number. I am divisible by 5 and 9. My digits add to 18. I am between 3000 and 4000. What am I?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>3645</b> (3+6+4+5=18, ends in 5 so ÷5, digit sum 18 so ÷9, between 3000–4000)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A palindrome number reads the same forwards and backwards (e.g., 121). How many 3-digit palindromes are there? List them systematically.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Form: ABA where A ∈ {1…9} (9 choices) and B ∈ {0…9} (10 choices). Total = 9 × 10 = <b>90 palindromes</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Karim has ₹10,000. He buys 3 books at ₹485 each, 2 pens at ₹38 each, and a bag for ₹1,295. (a) Estimate the total cost by rounding to the nearest hundred. (b) Find the exact change he gets.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(a) 3×500 + 2×0 + 1300 = ≈ <b>₹2,800</b> (approx) &nbsp; (b) Exact: 3×485 + 2×38 + 1295 = 1455+76+1295 = 2826; Change = 10000−2826 = <b>₹7,174</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+place+value" target="_blank">Place Value</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+rounding+numbers" target="_blank">Rounding Numbers</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+divisibility+rules" target="_blank">Divisibility Rules</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+number+play+class+6+ncert" target="_blank">Number Play – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+divisibility+rules+class+6" target="_blank">Divisibility Rules</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+magic+square+maths" target="_blank">Magic Squares</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 4
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch4">
+  <div class="chapter-header">
+    <div class="ch-num">4</div>
+    <h2>Data Handling and Presentation</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Collect &amp; Organise</strong>
+        <ul>
+          <li>What is data? Primary vs secondary</li>
+          <li>Tally marks &amp; frequency tables</li>
+          <li>Pictographs (with scale)</li>
+          <li>Bar graphs (reading &amp; drawing)</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Analyse &amp; Interpret</strong>
+        <ul>
+          <li>Mean (average)</li>
+          <li>Median (middle value)</li>
+          <li>Mode (most frequent)</li>
+          <li>Double bar graphs</li>
+          <li>Drawing conclusions from data</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Collect real data — survey your classmates on their favourite sport. Create a bar graph and find the mode!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">Show the number 17 using tally marks.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>|||| |||| |||| || (three groups of 5 + 2)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A bar graph shows favourite colours: Red=12, Blue=18, Green=7, Yellow=10. Which colour is most popular? Least popular?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Most popular: <b>Blue (18)</b>; Least popular: <b>Green (7)</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the mean of: 8, 12, 15, 9, 11.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(8+12+15+9+11) ÷ 5 = 55 ÷ 5 = <b>11</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the median of: 3, 7, 1, 9, 5.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Arrange: 1, 3, 5, 7, 9. Middle value = <b>5</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Scores: 4, 7, 4, 9, 4, 8, 6. Find the mode.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>4</b> (appears 3 times)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Marks of 6 students: 72, 85, 90, 60, 72, 83. Find the mean, median, and mode.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Mean = (72+85+90+60+72+83)÷6 = 462÷6 = <b>77</b><br>Sorted: 60,72,72,83,85,90 → Median = (72+83)÷2 = <b>77.5</b><br>Mode = <b>72</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A pictograph uses ☀ = 5 students. Class A has 4 suns, Class B has 6 suns, Class C has 3 suns. How many students in total? Which class has the most?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>A=20, B=30, C=15. Total = <b>65 students</b>. Class B has the most.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A double bar graph compares scores of Boys and Girls in 3 subjects. Boys: Math 75, Science 80, English 65. Girls: Math 85, Science 70, English 90. In which subject do girls outperform boys by the most?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Math: 85−75=10; Science: 70−80=−10; English: 90−65=25. Girls outperform boys most in <b>English (by 25 marks)</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">The mean of 5 numbers is 20. Four of the numbers are 15, 22, 18, and 25. Find the fifth number.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Sum = 20 × 5 = 100. Known sum = 15+22+18+25 = 80. Fifth number = 100 − 80 = <b>20</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Weekly temperatures (°C): Mon 32, Tue 35, Wed 28, Thu 30, Fri 33, Sat 36, Sun 31. (a) Find mean, median, mode. (b) On how many days was the temperature above the mean?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Sum = 225; Mean = 225÷7 ≈ <b>32.1°C</b><br>Sorted: 28,30,31,32,33,35,36 → Median = <b>32°C</b>; Mode = <b>none</b> (all unique)<br>Above 32.1°C: Tue(35), Fri(33), Sat(36) → <b>3 days</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+mean+median+mode" target="_blank">Mean, Median &amp; Mode</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+bar+graphs" target="_blank">Bar Graphs</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+reading+graphs" target="_blank">Reading Graphs</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+data+handling+class+6+ncert" target="_blank">Data Handling – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+bar+graph+pictograph+class+6" target="_blank">Bar Graphs &amp; Pictographs</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+mean+median+mode+class+6" target="_blank">Mean Median Mode</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 5
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch5">
+  <div class="chapter-header">
+    <div class="ch-num">5</div>
+    <h2>Prime Time</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (3 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Factors &amp; Multiples</strong>
+        <ul>
+          <li>Factors of a number</li>
+          <li>Multiples of a number</li>
+          <li>Factor pairs</li>
+          <li>Common factors &amp; common multiples</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Primes &amp; Composites</strong>
+        <ul>
+          <li>Prime numbers (only 2 factors)</li>
+          <li>Composite numbers</li>
+          <li>Sieve of Eratosthenes</li>
+          <li>Prime factorisation (factor tree)</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – HCF &amp; LCM</strong>
+        <ul>
+          <li>HCF by listing &amp; prime factorisation</li>
+          <li>LCM by listing &amp; prime factorisation</li>
+          <li>Relationship: HCF × LCM = product</li>
+          <li>Word problems</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Build a Sieve of Eratosthenes on grid paper — circle all primes up to 100 by crossing out multiples!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">List all factors of 24.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>1, 2, 3, 4, 6, 8, 12, 24</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Is 37 prime or composite? How do you know?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>Prime</b> — its only factors are 1 and 37.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Write the first 5 multiples of 7.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>7, 14, 21, 28, 35</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the HCF of 18 and 24.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Factors of 18: 1,2,3,6,9,18 · Factors of 24: 1,2,3,4,6,8,12,24 · HCF = <b>6</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the LCM of 6 and 8 using prime factorisation.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>6 = 2×3; 8 = 2³. LCM = 2³×3 = <b>24</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Express 180 as a product of prime factors (draw a factor tree).</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>180 = 2² × 3² × 5</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the HCF and LCM of 36 and 48. Verify: HCF × LCM = 36 × 48.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>36=2²×3²; 48=2⁴×3. HCF=2²×3=<b>12</b>; LCM=2⁴×3²=<b>144</b>. Check: 12×144=1728; 36×48=1728 ✓</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Two bells ring at intervals of 12 minutes and 18 minutes. They ring together at 9:00 AM. When will they next ring together?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>LCM(12,18) = 36 minutes. Next together at <b>9:36 AM</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the smallest number divisible by 2, 3, 4, 5, and 6.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>LCM(2,3,4,5,6): 4=2²; 3; 5; 6=2×3. LCM = 2²×3×5 = <b>60</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A school has 60 boys and 48 girls. They are to be divided into teams of equal size (same number in each team, with no one left out, teams can be mixed). What is the largest possible team size? How many teams will there be?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>HCF(60,48) = <b>12</b> (largest team size). Total students = 108. Teams = 108÷12 = <b>9 teams</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+prime+composite+numbers" target="_blank">Prime &amp; Composite Numbers</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+least+common+multiple" target="_blank">Least Common Multiple (LCM)</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+greatest+common+factor" target="_blank">Greatest Common Factor (HCF)</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+prime+time+class+6+factors+multiples" target="_blank">Prime Time – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+hcf+lcm+class+6+ncert" target="_blank">HCF and LCM</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+sieve+of+eratosthenes" target="_blank">Sieve of Eratosthenes</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 6
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch6">
+  <div class="chapter-header">
+    <div class="ch-num">6</div>
+    <h2>Perimeter and Area</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2–3 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Perimeter</strong>
+        <ul>
+          <li>Concept: distance around a shape</li>
+          <li>Perimeter of rectangles &amp; squares</li>
+          <li>Perimeter of triangles &amp; polygons</li>
+          <li>Real-life: fencing, borders</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Area</strong>
+        <ul>
+          <li>Concept: space inside a shape</li>
+          <li>Area by counting squares</li>
+          <li>Area formulas: rectangle, square</li>
+          <li>Area of triangles</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – Applications</strong>
+        <ul>
+          <li>Same perimeter, different areas</li>
+          <li>Same area, different perimeters</li>
+          <li>Tiling/flooring problems</li>
+          <li>Composite shapes</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Measure your room with a ruler — calculate its perimeter and area. Compare with a classmate's room!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">Find the perimeter of a rectangle with length 8 cm and width 5 cm.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>P = 2(l+b) = 2(8+5) = 2×13 = <b>26 cm</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the area of a square with side 6 cm.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>A = s² = 6² = <b>36 cm²</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A garden has perimeter 36 m. If its length is 10 m, what is its width?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>2(10+b) = 36 → 10+b = 18 → b = <b>8 m</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Find the area of a triangle with base 12 cm and height 7 cm.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>A = ½ × base × height = ½ × 12 × 7 = <b>42 cm²</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A room is 9 m long and 6 m wide. How many square tiles of side 30 cm are needed to cover the floor?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Room area = 9×6 = 54 m². Tile area = 0.3×0.3 = 0.09 m². Tiles = 54÷0.09 = <b>600 tiles</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Two rectangles: Rectangle A is 12 cm × 4 cm; Rectangle B is 8 cm × 6 cm. Compare their perimeters and areas.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Perimeter A = 32 cm; Perimeter B = 28 cm. Area A = 48 cm²; Area B = 48 cm². <b>Same area, different perimeters!</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A wire of length 40 cm is bent into a rectangle. Find the dimensions that give the maximum area.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Perimeter = 40 cm → l+b = 20. Maximum area when l=b (square): 10×10 = <b>100 cm²</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">An L-shaped room: main rectangle 10m×8m, with a 3m×4m rectangular cut from one corner. Find the perimeter and area of the L-shape.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Area = 10×8 − 3×4 = 80−12 = <b>68 m²</b>. Perimeter = 10+8+3+4+7+4 = <b>36 m</b> (trace all edges)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A farmer has 120 m of fencing to enclose a rectangular field. One side is along a river (no fence needed). What dimensions give the largest area?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Three sides: l + 2b = 120. Area = lb = (120−2b)b = 120b−2b². Maximum when b = 30 m → l = 60 m. Max area = <b>1800 m²</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A rectangular park (50m × 40m) has a path of 2m width running inside along all four sides. Find the area of the path alone.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Outer area = 50×40 = 2000 m². Inner rectangle = (50−4)×(40−4) = 46×36 = 1656 m². Path area = 2000−1656 = <b>344 m²</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+perimeter" target="_blank">Perimeter</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+area" target="_blank">Area</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+area+of+triangles" target="_blank">Area of Triangles</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+perimeter+and+area+class+6+ncert" target="_blank">Perimeter &amp; Area – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+area+of+rectangle+square+class+6" target="_blank">Area of Rectangle &amp; Square</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+area+word+problems+class+6" target="_blank">Area Word Problems</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 7
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch7">
+  <div class="chapter-header">
+    <div class="ch-num">7</div>
+    <h2>Fractions</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (3–4 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – What Are Fractions?</strong>
+        <ul>
+          <li>Parts of a whole / parts of a set</li>
+          <li>Numerator and denominator</li>
+          <li>Proper, improper, mixed fractions</li>
+          <li>Fractions on a number line</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Equivalence &amp; Compare</strong>
+        <ul>
+          <li>Equivalent fractions</li>
+          <li>Simplest form (HCF method)</li>
+          <li>Comparing fractions (same denominator)</li>
+          <li>Comparing fractions (different denominator)</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – Add &amp; Subtract</strong>
+        <ul>
+          <li>Adding fractions (like denominators)</li>
+          <li>Adding fractions (unlike denominators)</li>
+          <li>Subtracting fractions</li>
+          <li>Mixed number operations</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 4 – Multiply &amp; Apply</strong>
+        <ul>
+          <li>Fraction of a whole number</li>
+          <li>Multiplying fractions</li>
+          <li>Word problems</li>
+          <li>Fractions in cooking/measurement</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Use a pizza or chocolate bar to visually understand fractions — sharing equally is fractions in action!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">A pizza is cut into 8 equal slices. If you eat 3 slices, what fraction did you eat?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>3/8</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Convert 11/4 to a mixed number.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>11 ÷ 4 = 2 remainder 3 → <b>2¾</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Are 2/3 and 8/12 equivalent? Show how.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>2/3 × 4/4 = 8/12 ✓ <b>Yes, they are equivalent.</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Which is greater: 3/5 or 5/8?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>LCM of 5,8 = 40. 3/5=24/40; 5/8=25/40. <b>5/8 is greater.</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Add: 2/7 + 3/7 + 5/7</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(2+3+5)/7 = 10/7 = <b>1 3/7</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Subtract: 5/6 − 3/8</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>LCM(6,8)=24. 20/24 − 9/24 = <b>11/24</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Multiply: 3/4 × 8/9. Simplify your answer.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(3×8)/(4×9) = 24/36 = <b>2/3</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Riya walked 2¾ km in the morning and 1½ km in the evening. How far did she walk in total? How much more did she walk in the morning?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Total: 2¾ + 1½ = 2¾ + 1 2/4 = 4¼ = <b>4.25 km</b>. Difference: 2¾ − 1½ = 1¼ = <b>1.25 km more in morning</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A recipe needs 2⅓ cups of flour. If you make 1½ times the recipe, how many cups of flour do you need?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>2⅓ × 3/2 = 7/3 × 3/2 = 7/2 = <b>3½ cups</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A tank is ¾ full. After adding 30 litres it is 9/10 full. What is the total capacity of the tank?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>9/10 − 3/4 = 18/20 − 15/20 = 3/20 of tank = 30 L. Total capacity = 30 ÷ (3/20) = 30 × 20/3 = <b>200 litres</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+what+are+fractions" target="_blank">What Are Fractions?</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+equivalent+fractions" target="_blank">Equivalent Fractions</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+adding+subtracting+fractions" target="_blank">Adding &amp; Subtracting Fractions</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+multiplying+fractions" target="_blank">Multiplying Fractions</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+fractions+class+6+ncert" target="_blank">Fractions – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+comparing+fractions+class+6" target="_blank">Comparing Fractions</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+addition+subtraction+fractions+class+6" target="_blank">Add &amp; Subtract Fractions</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 8
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch8">
+  <div class="chapter-header">
+    <div class="ch-num">8</div>
+    <h2>Playing with Constructions</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2–3 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Basic Tools</strong>
+        <ul>
+          <li>Parts of a compass and ruler</li>
+          <li>Drawing line segments of given length</li>
+          <li>Drawing circles</li>
+          <li>Copying a line segment</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Angles</strong>
+        <ul>
+          <li>Copying an angle using a compass</li>
+          <li>Constructing 60°, 90°, 120° angles</li>
+          <li>Bisecting an angle</li>
+          <li>Perpendicular bisector of a line</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – Triangles &amp; Shapes</strong>
+        <ul>
+          <li>Constructing triangles (SSS, SAS, ASA)</li>
+          <li>Equilateral triangle</li>
+          <li>Right-angled triangle (Pythagorean)</li>
+          <li>Drawing a rectangle with compass</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Always keep your pencil sharp for accurate constructions. Label every point you draw!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">Draw a line segment PQ of length 6.5 cm using a ruler.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Mark point P, measure 6.5 cm on ruler, mark Q. Draw line connecting P and Q. ✓</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Using a compass, draw a circle with radius 3 cm. Label the centre O and mark a point on the circumference as A.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Place compass at O with width 3 cm and draw the complete circle. ✓</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Draw a line segment AB = 8 cm. Construct its perpendicular bisector using a compass.</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>With compass &gt; 4 cm, draw arcs from A and B (both sides). Connect the two intersection points — this is the perpendicular bisector. ✓</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Construct an angle of 60° using only a compass and ruler (no protractor). Name the angle.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Draw ray OA. With same radius, mark arc from O (hits OA at B). Mark another arc from B with same radius to get C. ∠AOC = 60°</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Bisect an angle of 90° to construct an angle of 45°. Describe each step.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>First construct 90° using perpendicular. Then bisect it: draw arcs from both arms to find midpoint direction. The bisector makes <b>45°</b> with each arm.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Construct triangle ABC with AB = 5 cm, BC = 6 cm, AC = 7 cm. Measure and name each angle type.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Draw BC=6cm. Arc of 5cm from B and 7cm from C. Intersection = A. Measure angles — all should be acute (it's an acute scalene triangle).</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Construct an equilateral triangle with side 4 cm. What is each angle? Verify using a protractor.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Draw AB=4cm. Arcs of 4cm from A and B intersect at C. All sides = 4cm, all angles = <b>60°</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Construct a right-angled triangle with legs 3 cm and 4 cm. Measure the hypotenuse — does it equal 5 cm?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Draw a right angle. Mark one leg = 3cm, other = 4cm. Hypotenuse should measure exactly <b>5 cm</b> (3-4-5 Pythagorean triple ✓)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Construct triangle PQR where ∠P = 60°, ∠Q = 70°, and PQ = 5 cm. Find ∠R and verify.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>∠R = 180° − 60° − 70° = <b>50°</b>. Construct 60° at P and 70° at Q on segment PQ=5cm. The intersection gives R. Measure ∠R ≈ 50°.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Construct a rectangle ABCD with AB = 6 cm and BC = 4 cm using a compass and ruler only (no protractor). Show all construction marks.</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Draw AB=6cm. Construct perpendiculars at A and B. Mark D on perpendicular at A (4cm from A) and C on perpendicular at B (4cm from B). Join DC. Verify DC=6cm and diagonals are equal. ✓</p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+geometry+compass+constructions" target="_blank">Compass Constructions</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+constructing+triangles" target="_blank">Constructing Triangles</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+angle+bisector" target="_blank">Angle Bisector</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+playing+with+constructions+class+6" target="_blank">Playing with Constructions – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+how+to+construct+60+90+degree+angle" target="_blank">Construct 60° and 90° Angles</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+construction+of+triangles+class+6" target="_blank">Triangle Construction</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 9
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch9">
+  <div class="chapter-header">
+    <div class="ch-num">9</div>
+    <h2>Symmetry</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Line Symmetry</strong>
+        <ul>
+          <li>What is symmetry?</li>
+          <li>Lines of symmetry in shapes</li>
+          <li>Symmetry in alphabets</li>
+          <li>Drawing symmetric figures</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Rotational Symmetry</strong>
+        <ul>
+          <li>Rotation and centre of rotation</li>
+          <li>Order of rotational symmetry</li>
+          <li>Symmetry in regular polygons</li>
+          <li>Symmetry in art and nature (mandalas, snowflakes)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Fold a paper in half — any shape that matches perfectly has a line of symmetry along the fold!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">How many lines of symmetry does a square have?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>4</b> (2 across sides, 2 across diagonals)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Which capital letters have at least one line of symmetry? (Think: A, B, C, D, E, H, M, T, U, W)</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>A, B, C, D, E, H, M, T, U, W, V, Y (among others). H, I, O, X have both horizontal and vertical lines.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Does a rectangle have rotational symmetry? If so, what is its order?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Yes. Order = <b>2</b> (looks the same at 180° and 360°)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">What is the order of rotational symmetry for a regular hexagon?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Order = <b>6</b> (looks the same every 60°)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Draw the line(s) of symmetry for an equilateral triangle. How many are there?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>3 lines</b> — each goes from a vertex to the midpoint of the opposite side.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Complete the figure so that the dotted vertical line is its line of symmetry. (Given: left half of a star shape.)</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Mirror each point of the left half across the axis. The right half is an exact reflection. ✓</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A shape has rotational symmetry of order 4. What angles of rotation map it onto itself?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>360°÷4 = 90°. Rotations: <b>90°, 180°, 270°, 360°</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Name a shape that has rotational symmetry but NO line of symmetry. Explain.</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>A <b>parallelogram</b> (not a rhombus/rectangle). It has order-2 rotational symmetry but no line of symmetry.</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Create a design that has exactly 3 lines of symmetry. What is its order of rotational symmetry?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>An equilateral triangle or any regular 3-sided pattern has 3 lines of symmetry and <b>order 3</b> rotational symmetry (120° each time).</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A kaleidoscope creates a pattern with 8-fold rotational symmetry. (a) What angle separates each repeated unit? (b) How many lines of symmetry does the pattern have?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>(a) 360°÷8 = <b>45°</b> between each unit. (b) A pattern with order-8 rotational symmetry has <b>8 lines of symmetry</b>.</p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+symmetry" target="_blank">Symmetry</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+rotational+symmetry" target="_blank">Rotational Symmetry</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+lines+of+symmetry+shapes" target="_blank">Lines of Symmetry in Shapes</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+symmetry+class+6+ncert" target="_blank">Symmetry – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+line+symmetry+class+6" target="_blank">Line Symmetry</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+rotational+symmetry+class+6" target="_blank">Rotational Symmetry</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CHAPTER 10
+═══════════════════════════════════════════════════════════ -->
+<div class="chapter" id="ch10">
+  <div class="chapter-header">
+    <div class="ch-num">10</div>
+    <h2>The Other Side of Zero</h2>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🗓</span> Learning Plan (2–3 weeks)</h3>
+    <div class="plan-grid">
+      <div class="plan-week"><strong>Week 1 – Negative Numbers</strong>
+        <ul>
+          <li>Numbers below zero: temperature, floors, sea level</li>
+          <li>The number line: left is negative</li>
+          <li>Ordering integers</li>
+          <li>Absolute value (distance from zero)</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 2 – Add &amp; Subtract Integers</strong>
+        <ul>
+          <li>Adding a positive integer</li>
+          <li>Adding a negative integer</li>
+          <li>Subtracting integers</li>
+          <li>Brahmagupta's rules</li>
+        </ul>
+      </div>
+      <div class="plan-week"><strong>Week 3 – Real-Life &amp; Word Problems</strong>
+        <ul>
+          <li>Temperatures above/below zero</li>
+          <li>Heights above/below sea level</li>
+          <li>Bank credits and debits</li>
+          <li>Lift/elevator floor problems</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tip"><strong>Tip:</strong> Use a thermometer as a number line — above 0° is positive, below 0° is negative. Move up = add, move down = subtract!</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">✏️</span> Practice Tests (Simple → Complex)</h3>
+    <div class="q-list">
+
+      <div class="q-item">
+        <div class="q-text">Mark these on a number line: −4, −1, 0, 2, 5</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>←—(−4)—(−1)—(0)—(2)—(5)—→ in order from left to right. ✓</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Which is greater: −7 or −3?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>−3</b> is greater (it is further to the right on the number line)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">A lift starts at the ground floor (0). It goes up 5 floors, then down 8 floors. What floor is it on now?</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>0 + 5 − 8 = <b>−3</b> (3 floors below ground)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Add: (−4) + 9</div>
+        <div class="difficulty diff-easy">Easy</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>+5</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Calculate: (−6) + (−5)</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p><b>−11</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Subtract: 4 − (−7)</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>4 + 7 = <b>11</b> (subtracting a negative = adding)</p></details>
+
+      <div class="q-item">
+        <div class="q-text">Simplify: (−8) + 3 + (−5) + 12 + (−2)</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>Positives: 3+12=15. Negatives: −8−5−2=−15. Sum = 15+(−15) = <b>0</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Temperature in Shimla: Monday −3°C, Thursday +8°C. What is the rise in temperature from Monday to Thursday?</div>
+        <div class="difficulty diff-medium">Medium</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>8 − (−3) = 8 + 3 = <b>11°C rise</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">Fill in: ___ + (−9) = −2 and ___ − (−5) = 3</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>First: −2 − (−9) = −2+9 = <b>7</b>. Second: 3 − 5 = <b>−2</b></p></details>
+
+      <div class="q-item">
+        <div class="q-text">A submarine is at −80 m (80 m below sea level). It rises 35 m, then dives 50 m, then rises 20 m. (a) Where is it now? (b) How far from sea level? (c) If it needs to surface (reach 0 m), how much must it rise?</div>
+        <div class="difficulty diff-hard">Hard</div>
+      </div>
+      <details class="ans-toggle"><summary>Answer</summary><p>−80 + 35 − 50 + 20 = −80 + 55 − 50 = <b>−75 m</b><br>(b) <b>75 m below sea level</b><br>(c) Must rise <b>75 m</b></p></details>
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="icon">🎬</span> Video Resources</h3>
+    <div class="video-grid">
+      <div class="video-card ma">
+        <div class="source">Math Antics (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=math+antics+negative+numbers" target="_blank">Negative Numbers</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+adding+subtracting+integers" target="_blank">Adding &amp; Subtracting Integers</a>
+        <a href="https://www.youtube.com/results?search_query=math+antics+number+line+integers" target="_blank">Number Line &amp; Integers</a>
+      </div>
+      <div class="video-card bj">
+        <div class="source">Byju's (YouTube)</div>
+        <a href="https://www.youtube.com/results?search_query=byjus+negative+numbers+class+6+integers" target="_blank">Integers – Class 6</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+addition+subtraction+integers+class+6" target="_blank">Add &amp; Subtract Integers</a>
+        <a href="https://www.youtube.com/results?search_query=byjus+integers+word+problems+class+6" target="_blank">Integer Word Problems</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Grade 6 · Ganita Prakash (NCERT 2024) · Learning Plan &amp; Practice Tests</p>
+  <p style="margin-top:6px">Video links open YouTube search results for Math Antics and Byju's channels. For direct access, search <b>@mathantics</b> and <b>@byjusclasses</b> on YouTube.</p>
+</footer>
+
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

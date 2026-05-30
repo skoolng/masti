@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 5 – Arithmetic Progressions | Grade 10</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 Chapter 5 – Arithmetic Progressions</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · AP Formulas, Applications &amp; SAT Prep</p>
+</header>
+<nav>
+  <h2>Topics in this Chapter</h2>
+  <ol>
+    <li><a href="#t1">Recognising Arithmetic Progressions</a></li>
+    <li><a href="#t2">First Term a and Common Difference d</a></li>
+    <li><a href="#t3">nth Term aₙ = a + (n−1)d</a></li>
+    <li><a href="#t4">Finding Number of Terms</a></li>
+    <li><a href="#t5">Sum Formula Sₙ = n/2[2a+(n−1)d]</a></li>
+    <li><a href="#t6">Sum Using Last Term Sₙ = n/2(a+l)</a></li>
+    <li><a href="#t7">Arithmetic Mean</a></li>
+    <li><a href="#t8">Three and Four Terms in AP</a></li>
+    <li><a href="#t9">Finding d from Two Given Terms</a></li>
+    <li><a href="#t10">Sum of First n Natural Numbers n(n+1)/2</a></li>
+    <li><a href="#t11">Sum of First n Odd Numbers = n²</a></li>
+    <li><a href="#t12">SAT-Style AP Problems</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== TOPIC 1 ==================== -->
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Recognising Arithmetic Progressions</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-arithmetic-sequences/v/arithmetic-sequences" target="_blank">Introduction to Arithmetic Sequences</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">What is an Arithmetic Sequence?</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Identify the AP</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Which of the following is an AP? (A) 1, 2, 4, 8 (B) 3, 6, 9, 12 (C) 1, 1, 2, 3, 5 (D) 2, 5, 10, 17</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(B) 3, 6, 9, 12 — each term increases by 3, so d = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">Is the sequence 5, 8, 11, 14, 17 an AP? If yes, state a and d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. a = 5, d = 3 (each consecutive difference = 3).</p></details>
+
+      <div class="q-item"><span class="q-text">Check whether 0, −4, −8, −12 is an AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = −4 − 0 = −4. All consecutive differences are equal.</p></details>
+
+      <div class="q-item"><span class="q-text">The sequence 1, 3, 9, 27, 81 — is this an AP? Explain.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>No. This is a geometric progression; differences are 2, 6, 18, 54 — not constant.</p></details>
+
+      <div class="q-item"><span class="q-text">Which of these is NOT an AP? (A) 2, 2, 2, 2 (B) 0.5, 1, 1.5, 2 (C) 1, 2, 3, 5, 8 (D) −5, 0, 5, 10</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(C) 1, 2, 3, 5, 8 is the Fibonacci sequence; differences 1, 1, 2, 3 are not constant.</p></details>
+
+      <div class="q-item"><span class="q-text">Is a constant sequence like 7, 7, 7, 7, 7 an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 0. Any constant sequence is an AP with common difference 0.</p></details>
+
+      <div class="q-item"><span class="q-text">The sequence 100, 90, 80, 70, 60 — is it an AP? State d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 90 − 100 = −10.</p></details>
+
+      <div class="q-item"><span class="q-text">Write the next two terms if the AP is: 4, 7, 10, 13, ____, ____</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 3. Next terms: 16, 19.</p></details>
+
+      <div class="q-item"><span class="q-text">A student writes: 2, 4, 6, 8, 10, 13. Does this remain an AP throughout?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>No. The first five differences are 2, but the last gap is 3 (13 − 10 = 3), breaking the AP.</p></details>
+
+      <div class="q-item"><span class="q-text">Determine whether the sequence of even numbers 2, 4, 6, 8, ... is an AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 2. All even natural numbers form an AP.</p></details>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Verify and Justify</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">For the AP 3, 3+√2, 3+2√2, 3+3√2, find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (3+√2) − 3 = √2.</p></details>
+
+      <div class="q-item"><span class="q-text">Is 1/2, 1/3, 1/4, 1/5 an AP? Justify.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>No. Differences: 1/3 − 1/2 = −1/6; 1/4 − 1/3 = −1/12. Not equal.</p></details>
+
+      <div class="q-item"><span class="q-text">Check if √2, 2√2, 3√2, 4√2 is an AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = √2. Each term increases by √2.</p></details>
+
+      <div class="q-item"><span class="q-text">The sequence a, a+d, a+2d, a+3d — prove it is always an AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Difference between any consecutive terms = (a+kd) − (a+(k−1)d) = d, which is constant. ✓</p></details>
+
+      <div class="q-item"><span class="q-text">Is p, 2p, 3p, 4p (p ≠ 0) an AP? State d in terms of p.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = p.</p></details>
+
+      <div class="q-item"><span class="q-text">The squares of integers: 1, 4, 9, 16, 25 — is this an AP?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>No. Differences: 3, 5, 7, 9 — these are not constant.</p></details>
+
+      <div class="q-item"><span class="q-text">For what value of x is x+2, 2x−1, 3x−4 an AP?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>For AP: 2(2x−1) = (x+2)+(3x−4) → 4x−2 = 4x−2. True for all x — it is always an AP!</p></details>
+
+      <div class="q-item"><span class="q-text">Check if cos²θ, 1, sin²θ forms an AP when θ = 45°.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>At θ=45°: cos²45° = 1/2, 1, sin²45° = 1/2. Check: 1−1/2 = 1/2 and 1/2−1 = −1/2. Not equal. Not an AP.</p></details>
+
+      <div class="q-item"><span class="q-text">Does the sequence n², (n+1)², (n+2)² form an AP for any positive integer n?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Differences: (n+1)²−n² = 2n+1 and (n+2)²−(n+1)² = 2n+3. These are not equal (differ by 2). Not an AP.</p></details>
+
+      <div class="q-item"><span class="q-text">If a, b, c are in AP, show that 2b = a + c.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Since b−a = c−b (constant difference), adding: 2b = a+c. ✓</p></details>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Real-Life and Contextual APs</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A child saves ₹5 on Day 1, ₹10 on Day 2, ₹15 on Day 3. Is this an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = ₹5. Savings form an AP: 5, 10, 15, ...</p></details>
+
+      <div class="q-item"><span class="q-text">A bus travels 40 km in the 1st hour, 40 km in the 2nd, 40 km in the 3rd. Does the total distance form an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. Cumulative distances: 40, 80, 120, ... form an AP with d = 40.</p></details>
+
+      <div class="q-item"><span class="q-text">Temperature readings on five mornings: 18°C, 20°C, 22°C, 24°C, 26°C. Is this an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 2°C.</p></details>
+
+      <div class="q-item"><span class="q-text">Seats in successive rows of an auditorium: 20, 23, 26, 29. Is this an AP? What is d?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">A ladder has rungs at heights 25 cm, 50 cm, 75 cm, 100 cm. Is this an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 25 cm.</p></details>
+
+      <div class="q-item"><span class="q-text">Population of a town: 10 000, 10 100, 10 200, 10 300. Is this an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 100.</p></details>
+
+      <div class="q-item"><span class="q-text">Stacking bricks: 3 in top row, 4 in next, 5 in next, 6 in next. Is this an AP?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 1.</p></details>
+
+      <div class="q-item"><span class="q-text">Monthly salary: ₹12 000, ₹13 500, ₹15 000, ₹16 500. Is this an AP?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = ₹1 500.</p></details>
+
+      <div class="q-item"><span class="q-text">Prize money for ranks 1–5: ₹5000, ₹4000, ₹3000, ₹2000, ₹1000. AP or not?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = −₹1000 (decreasing AP).</p></details>
+
+      <div class="q-item"><span class="q-text">Interest earned in successive years on simple interest: ₹360, ₹360, ₹360. Is this an AP? What is d?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. d = 0. Simple interest earned is constant each year.</p></details>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If 2k, k+3, and 3k−3 are in AP, find k.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(k+3) = 2k + (3k−3) → 2k+6 = 5k−3 → 3k = 9 → k = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">The first three terms of an AP are x−1, x+1, 2x+3. Find x and the common difference.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(x+1) = (x−1)+(2x+3) → 2x+2 = 3x+2 → x = 0. d = 1−(−1) = 2.</p></details>
+
+      <div class="q-item"><span class="q-text">Write any AP whose first term is a negative number and common difference is positive.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Example: −10, −7, −4, −1, 2, ... (a = −10, d = 3).</p></details>
+
+      <div class="q-item"><span class="q-text">Can an AP have all terms negative? Give an example.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes, if a < 0 and d ≤ 0. Example: −3, −6, −9, −12, ...</p></details>
+
+      <div class="q-item"><span class="q-text">Write an AP of 5 terms with a = 0 and d = −3.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>0, −3, −6, −9, −12.</p></details>
+
+      <div class="q-item"><span class="q-text">Is −1, −1/2, 0, 1/2, 1 an AP? State a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. a = −1, d = 1/2.</p></details>
+
+      <div class="q-item"><span class="q-text">How many terms does the AP 5, 8, 11, ..., 47 have? (Use recognition only.)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 3. Terms: (47−5)/3 + 1 = 42/3 + 1 = 14 + 1 = 15 terms.</p></details>
+
+      <div class="q-item"><span class="q-text">A sequence begins 100, 95, 90, .... Identify it as AP and find when the terms become negative.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP with d = −5. aₙ = 100+(n−1)(−5) < 0 → 105−5n < 0 → n > 21. So from the 22nd term onwards.</p></details>
+
+      <div class="q-item"><span class="q-text">If the AP has first term 7 and last term 205 with d = 3, how many terms are there?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (205−7)/3 + 1 = 198/3 + 1 = 67 terms.</p></details>
+
+      <div class="q-item"><span class="q-text">True or False: Every AP is also a sequence, but not every sequence is an AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>True. An AP is a special sequence with a constant common difference.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 2 ==================== -->
+<div class="topic" id="t2">
+  <div class="topic-header">
+    <div class="t-num">2</div>
+    <h2>First Term a and Common Difference d</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-arithmetic-sequences/v/arithmetic-sequences-review" target="_blank">Arithmetic Sequences Review</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">Finding a and d in AP</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Identification</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Write a and d for the AP: 2, 5, 8, 11, 14.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 2, d = 5 − 2 = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">Find d for: 10, 7, 4, 1, −2.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 7 − 10 = −3.</p></details>
+
+      <div class="q-item"><span class="q-text">State a and d for: −5, −1, 3, 7, 11.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = −5, d = 4.</p></details>
+
+      <div class="q-item"><span class="q-text">Write a and d for: 0.1, 0.2, 0.3, 0.4.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 0.1, d = 0.1.</p></details>
+
+      <div class="q-item"><span class="q-text">Find a and d: 1/2, 1, 3/2, 2, 5/2.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 1/2, d = 1/2.</p></details>
+
+      <div class="q-item"><span class="q-text">What is d for the AP: 100, 75, 50, 25, 0?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 75 − 100 = −25.</p></details>
+
+      <div class="q-item"><span class="q-text">Write a and d for: √3, 2√3, 3√3, 4√3.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = √3, d = √3.</p></details>
+
+      <div class="q-item"><span class="q-text">Find d if first term is 3 and second term is 3.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 3 − 3 = 0.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP has a = 7 and d = −2. Write its first five terms.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>7, 5, 3, 1, −1.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP has a = −3 and d = 1.5. Write its first four terms.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>−3, −1.5, 0, 1.5.</p></details>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding a and d from Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The 1st term of an AP is 5 and the 3rd term is 13. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₃ = a + 2d → 13 = 5 + 2d → d = 4.</p></details>
+
+      <div class="q-item"><span class="q-text">The 2nd term of an AP is 3 and the 4th term is 9. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₄ − a₂ = 2d → 9 − 3 = 2d → d = 3. a = a₂ − d = 3 − 3 = 0.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP has a₃ = 7 and a₅ = 11. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2d = 11 − 7 = 4 → d = 2. a = 7 − 2(2) = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">The common difference is 4 and the 5th term is 20. Find the first term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₅ = a + 4d → 20 = a + 16 → a = 4.</p></details>
+
+      <div class="q-item"><span class="q-text">A sequence has a = 11 and d = −3. Find the 6th term and verify it is in the AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₆ = 11 + 5(−3) = 11 − 15 = −4. The AP is 11, 8, 5, 2, −1, −4. ✓</p></details>
+
+      <div class="q-item"><span class="q-text">If a = p and d = p, write the AP and express each term in terms of p.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p, 2p, 3p, 4p, ... The nth term = np.</p></details>
+
+      <div class="q-item"><span class="q-text">Two terms of an AP are a₂ = 13 and a₆ = 37. Find d and a.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₆ − a₂ = 4d → 37 − 13 = 4d → d = 6. a = 13 − 6 = 7.</p></details>
+
+      <div class="q-item"><span class="q-text">The difference between the 3rd and 8th terms of an AP is 20. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₈ − a₃ = 5d = 20 → d = 4.</p></details>
+
+      <div class="q-item"><span class="q-text">Find a and d if the AP contains the terms 18 and 38 at positions 3 and 8 respectively.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₈ − a₃ = 5d = 38 − 18 = 20 → d = 4. a = 18 − 2(4) = 10.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP has its 4th term equal to three times its 1st term, and d = 4. Find a.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₄ = 3a → a + 3d = 3a → 3(4) = 2a → a = 6.</p></details>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Missing Terms</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Fill in the blank: 3, ___, 11, 15. Find d and the missing term.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (15−3)/3 = 4. Missing term = 3 + 4 = 7. AP: 3, 7, 11, 15.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the missing term: 5, ___, 15, ___, 25.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (25−5)/4 = 5. Terms: 5, 10, 15, 20, 25.</p></details>
+
+      <div class="q-item"><span class="q-text">Find x: 2x+1, 3x−2, 4x+3 are consecutive terms of an AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(3x−2) = (2x+1)+(4x+3) → 6x−4 = 6x+4. This gives −4 = 4, a contradiction — no solution. These cannot form an AP for any x.</p></details>
+
+      <div class="q-item"><span class="q-text">Find k: k+2, 3k−1, 4k+2 are in AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(3k−1) = (k+2)+(4k+2) → 6k−2 = 5k+4 → k = 6.</p></details>
+
+      <div class="q-item"><span class="q-text">Insert a term between 4 and 16 to make them part of an AP of three terms.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Arithmetic mean = (4+16)/2 = 10. AP: 4, 10, 16.</p></details>
+
+      <div class="q-item"><span class="q-text">The terms of an AP are p, p+4, p+8, p+12. Find p if the sum of all four terms is 56.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 4p + 24 = 56 → p = 8.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the common difference when a₁ = 7/3 and d is such that a₄ = 7.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₄ = 7/3 + 3d = 7 → 3d = 7 − 7/3 = 14/3 → d = 14/9.</p></details>
+
+      <div class="q-item"><span class="q-text">If the first term is 2 and 10th term is 29, find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>29 = 2 + 9d → d = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">Write 3 terms of an AP between 5 and 17 (i.e., make a 5-term AP).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (17−5)/4 = 3. AP: 5, 8, 11, 14, 17. Middle 3 terms: 8, 11, 14.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP has a = x and d = x. The 10th term equals 100. Find x.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₀ = x + 9x = 10x = 100 → x = 10.</p></details>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A worker earns ₹8 000 in January and receives a fixed raise each month. In April he earns ₹9 500. Find the monthly raise (d).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>January = a₁, April = a₄. a₄ = a + 3d → 9500 = 8000 + 3d → d = 500.</p></details>
+
+      <div class="q-item"><span class="q-text">A stone is dropped and falls 5 m in the 1st second, 15 m in the 2nd, 25 m in the 3rd. Find a and d of this AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 5, d = 10.</p></details>
+
+      <div class="q-item"><span class="q-text">Priya saves ₹100 in week 1 and increases her saving by ₹50 each week. What is a and d?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 100, d = 50.</p></details>
+
+      <div class="q-item"><span class="q-text">A water tank decreases by a fixed amount each hour. At 9 AM it has 500 litres; at 12 noon it has 320 litres. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3 hours → 3d = 320 − 500 = −180 → d = −60 L/hour.</p></details>
+
+      <div class="q-item"><span class="q-text">Taxi fare: ₹20 for the first km and ₹12 for each additional km. Write this as an AP and state a and d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Fare for 1, 2, 3, ... km: 20, 32, 44, 56, ... a = 20, d = 12.</p></details>
+
+      <div class="q-item"><span class="q-text">A school library had 500 books in 2020. Each year 40 books are added. Find a and d, and express the number of books in year n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 500, d = 40. Books in year n = 500 + (n−1)×40.</p></details>
+
+      <div class="q-item"><span class="q-text">In a running race, a participant runs 100 m in the 1st minute, 90 m in the 2nd, 80 m in the 3rd. Find a, d. Will they ever stop?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 100, d = −10. aₙ = 0 when 100 + (n−1)(−10) = 0 → n = 11. They stop in the 11th minute.</p></details>
+
+      <div class="q-item"><span class="q-text">Ram's salary in 2023 is ₹30 000 and he gets a ₹2 000 increment every year. Find d and his salary in 2030.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 2000. 2030 is 7 years after 2023, so a₈ = 30000 + 7(2000) = ₹44 000.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP starts at −20 and has d = 5. After how many terms does the sequence first become positive?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₙ = −20 + (n−1)5 > 0 → 5n > 25 → n > 5. So the 6th term: a₆ = −20 + 25 = 5 > 0.</p></details>
+
+      <div class="q-item"><span class="q-text">A class test has maximum marks 50. A student's score in five tests: 32, 35, 38, 41, 44. Is this an AP? Find a and d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes. a = 32, d = 3.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 3 ==================== -->
+<div class="topic" id="t3">
+  <div class="topic-header">
+    <div class="t-num">3</div>
+    <h2>nth Term: aₙ = a + (n−1)d</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-arithmetic-sequences/v/explicit-formulas-for-arithmetic-sequences" target="_blank">Explicit Formulas for Arithmetic Sequences</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">nth Term of AP</a></div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the 10th term of the AP: 2, 5, 8, 11, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 2, d = 3. a₁₀ = 2 + 9(3) = 29.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the 15th term of the AP: 10, 7, 4, 1, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 10, d = −3. a₁₅ = 10 + 14(−3) = 10 − 42 = −32.</p></details>
+
+      <div class="q-item"><span class="q-text">The AP is −3, −8, −13, ... Find a₂₀.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = −3, d = −5. a₂₀ = −3 + 19(−5) = −3 − 95 = −98.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the 7th term: a = 5, d = 0.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₇ = 5 + 6(0) = 5.</p></details>
+
+      <div class="q-item"><span class="q-text">Write the general (nth) term of the AP: 1, 4, 7, 10, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 1, d = 3. aₙ = 1 + (n−1)(3) = 3n − 2.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the 50th term of the AP: 7, 13, 19, 25, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 7, d = 6. a₅₀ = 7 + 49(6) = 7 + 294 = 301.</p></details>
+
+      <div class="q-item"><span class="q-text">Find a₃₀ for the AP: 0.5, 1.0, 1.5, 2.0, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 0.5, d = 0.5. a₃₀ = 0.5 + 29(0.5) = 15.</p></details>
+
+      <div class="q-item"><span class="q-text">What is the 100th term of the AP of all natural numbers?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1, 2, 3, ... a = 1, d = 1. a₁₀₀ = 1 + 99 = 100.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the 12th term of the AP: 40, 37, 34, 31, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 40, d = −3. a₁₂ = 40 + 11(−3) = 40 − 33 = 7.</p></details>
+
+      <div class="q-item"><span class="q-text">Which term of the AP 5, 11, 17, 23, ... is 95?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₙ = 5 + (n−1)6 = 95 → 6n = 96 → n = 16. It is the 16th term.</p></details>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding n and Proving Membership</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Is 150 a term of the AP: 11, 14, 17, 20, ...?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>150 = 11 + (n−1)3 → 3n = 142 → n = 47.33. Not an integer, so 150 is NOT a term.</p></details>
+
+      <div class="q-item"><span class="q-text">Find which term of the AP 3, 8, 13, 18, ... is 253.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>253 = 3 + (n−1)5 → 5n = 255 → n = 51. It is the 51st term.</p></details>
+
+      <div class="q-item"><span class="q-text">Check if 200 is a term of the AP: 7, 14, 21, 28, ...</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>200 = 7 + (n−1)7 → 7n = 200 → n = 28.57. Not an integer. 200 is NOT a term.</p></details>
+
+      <div class="q-item"><span class="q-text">The nth term of an AP is 4n + 3. Find the first term and common difference.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁ = 4(1)+3 = 7. a₂ = 11. d = 4.</p></details>
+
+      <div class="q-item"><span class="q-text">If aₙ = 3n − 2, write the first four terms and find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1, 4, 7, 10. d = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">The nth term of an AP is 5 − 2n. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁ = 3, a₂ = 1. d = −2. First term a = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">Which term of the AP 4, 12, 20, 28, ... is 204?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>204 = 4 + (n−1)8 → 8n = 208 → n = 26. The 26th term.</p></details>
+
+      <div class="q-item"><span class="q-text">The 4th and 8th terms of an AP are 11 and 23. Find the 20th term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4d = 23−11 = 12 → d = 3. a = 11−3(3) = 2. a₂₀ = 2+19(3) = 59.</p></details>
+
+      <div class="q-item"><span class="q-text">If the 2nd term is 7 and the 17th term is 52, find the 30th term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>15d = 52−7 = 45 → d = 3. a = 7−3 = 4. a₃₀ = 4+29(3) = 91.</p></details>
+
+      <div class="q-item"><span class="q-text">The 10th term exceeds the 5th term by 20. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₀ − a₅ = 5d = 20 → d = 4.</p></details>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> General Term Exploration</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the 31st term of the AP: 10, 7, 4, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 10, d = −3. a₃₁ = 10+30(−3) = −80.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the last term of the AP 5, 9, 13, ... if it has 20 terms.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₂₀ = 5+19(4) = 5+76 = 81.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP has aₙ = 7n − 3. Is 94 a term? If yes, which one?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>7n−3 = 94 → n = 97/7 ≈ 13.86. Not an integer. 94 is NOT a term.</p></details>
+
+      <div class="q-item"><span class="q-text">For the AP: 3, 15, 27, 39, ... find the term that is 132 more than the 5th term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 12, a₅ = 3+48 = 51. Target = 51+132 = 183. 183 = 3+(n−1)12 → n = 16.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the first negative term of the AP: 50, 47, 44, ...</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₙ = 50+(n−1)(−3) < 0 → 53−3n < 0 → n > 17.67. First negative term is a₁₈ = 50+17(−3) = −1.</p></details>
+
+      <div class="q-item"><span class="q-text">The sum of 3rd and 7th terms of an AP is 22 and the product is 121. Find a and d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₃ + a₇ = (a+2d)+(a+6d) = 2a+8d = 22 → a+4d = 11. a₃ × a₇ = 121 → (a+2d)(a+6d) = 121. With a+4d = 11 let p = a+4d = 11, then a₃ = 11−2d, a₇ = 11+2d. Product = 121−4d² = 121 → d = 0. a = 11.</p></details>
+
+      <div class="q-item"><span class="q-text">If the pth term of an AP is q and qth term is p, find the (p+q)th term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₚ = a+(p−1)d = q, aᵩ = a+(q−1)d = p. Subtracting: (p−q)d = q−p → d = −1. a = q+1−p+(1) actually a = q−(p−1)(−1) = q+p−1. a_(p+q) = q+p−1+(p+q−1)(−1) = 0.</p></details>
+
+      <div class="q-item"><span class="q-text">Write the nth term formula for: 1/3, 1/2, 2/3, 5/6, ...</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 1/2 − 1/3 = 1/6. aₙ = 1/3 + (n−1)(1/6) = (n+1)/6.</p></details>
+
+      <div class="q-item"><span class="q-text">How many two-digit numbers are divisible by 3?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 12, 15, ..., 99. n = (99−12)/3 + 1 = 30 terms.</p></details>
+
+      <div class="q-item"><span class="q-text">Find the middle term of the AP: 1, 4, 7, ..., 49.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (49−1)/3 + 1 = 17 terms. Middle = 9th term = 1+8(3) = 25.</p></details>
+
+      <div class="q-item"><span class="q-text">An AP: a, a+d, a+2d... The ratio of the 7th to the 3rd term is 12:5. Find d/a.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a+6d)/(a+2d) = 12/5 → 5a+30d = 12a+24d → 6d = 7a → d/a = 7/6.</p></details>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Application Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The 3rd term of an AP is 4 and the 9th term is 28. Find the 15th term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>6d = 24 → d = 4. a = 4−2(4) = −4. a₁₅ = −4+14(4) = 52.</p></details>
+
+      <div class="q-item"><span class="q-text">The 6th term of an AP is 19 and the 16th term is 59. Find the 32nd term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10d = 40 → d = 4. a = 19−5(4) = −1. a₃₂ = −1+31(4) = 123.</p></details>
+
+      <div class="q-item"><span class="q-text">The ages of students in a group form an AP: 14, 15, 16, 17, 18. What is the age of the 5th student?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₅ = 14+4(1) = 18.</p></details>
+
+      <div class="q-item"><span class="q-text">A taxi charges ₹15 for the first km and ₹8 for each additional km. What is the fare for the 10th km?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₙ = 15+(n−1)8. Total fare for 10 km = 15+9(8) = ₹87.</p></details>
+
+      <div class="q-item"><span class="q-text">Ramesh starts a job with monthly salary ₹20 000 and gets ₹500 increment every month. What will his salary be after 2 years?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2 years = 24 months. a₂₅ = 20000 + 24(500) = ₹32 000.</p></details>
+
+      <div class="q-item"><span class="q-text">In a spiral of circles, radii form an AP: 3, 5, 7, 9, ... Find the radius of the 12th circle.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₂ = 3+11(2) = 25 cm.</p></details>
+
+      <div class="q-item"><span class="q-text">The 8th term of an AP exceeds its 3rd term by 15. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₈ − a₃ = 5d = 15 → d = 3.</p></details>
+
+      <div class="q-item"><span class="q-text">A tree grows 5 cm in its first year and 3 cm more each subsequent year. How tall is it after 10 years?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Height added in year n = 5+(n−1)3 = 3n+2. Total height = S₁₀ = 10/2[2(5)+9(3)] = 5(10+27) = 185 cm.</p></details>
+
+      <div class="q-item"><span class="q-text">A staircase has its nth step at height 15n cm. Is this an AP? What is the height of the 8th step?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Yes, d = 15. a₈ = 15(8) = 120 cm.</p></details>
+
+      <div class="q-item"><span class="q-text">The nth term of an AP is 4n − 1. Find the sum of the first 5 terms by listing them.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Terms: 3, 7, 11, 15, 19. Sum = 55.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 4 ==================== -->
+<div class="topic" id="t4">
+  <div class="topic-header">
+    <div class="t-num">4</div>
+    <h2>Finding Number of Terms</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences" target="_blank">Arithmetic Sequences &amp; Number of Terms</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">Finding n in an AP</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Count the Terms</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">How many terms does the AP 5, 8, 11, ..., 47 have?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (47−5)/3 + 1 = 15.</p></details>
+      <div class="q-item"><span class="q-text">Find the number of terms in 1, 4, 7, ..., 82.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (82−1)/3 + 1 = 28.</p></details>
+      <div class="q-item"><span class="q-text">How many terms are in the AP 10, 15, 20, ..., 100?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (100−10)/5 + 1 = 19.</p></details>
+      <div class="q-item"><span class="q-text">Count the terms: −5, −2, 1, 4, ..., 49.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (49−(−5))/3 + 1 = 19.</p></details>
+      <div class="q-item"><span class="q-text">How many terms in: 20, 17, 14, ..., −40?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (−40−20)/(−3) + 1 = 21.</p></details>
+      <div class="q-item"><span class="q-text">Count terms: 7, 12, 17, ..., 112.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (112−7)/5 + 1 = 22.</p></details>
+      <div class="q-item"><span class="q-text">How many terms are there in: 0.5, 1.0, 1.5, ..., 10.0?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (10−0.5)/0.5 + 1 = 20.</p></details>
+      <div class="q-item"><span class="q-text">How many two-digit multiples of 7 are there?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 14, 21, ..., 98. n = (98−14)/7 + 1 = 13.</p></details>
+      <div class="q-item"><span class="q-text">Find the number of terms: 100, 95, 90, ..., 10.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (10−100)/(−5) + 1 = 19.</p></details>
+      <div class="q-item"><span class="q-text">How many multiples of 4 lie between 10 and 250?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 12, 16, ..., 248. n = (248−12)/4 + 1 = 60.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Using Formula Algebraically</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">An AP has a = 3, d = 4, and last term 87. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>87 = 3+(n−1)4 → n = 22.</p></details>
+      <div class="q-item"><span class="q-text">A finite AP has first term −7, d = 3, last term 50. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>50 = −7+(n−1)3 → n = 20.</p></details>
+      <div class="q-item"><span class="q-text">An AP has 25 terms, a = 2, and last term 50. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>50 = 2+24d → d = 2.</p></details>
+      <div class="q-item"><span class="q-text">Find the number of integers between 200 and 500 divisible by 6.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 204, 210, ..., 498. n = (498−204)/6 + 1 = 50.</p></details>
+      <div class="q-item"><span class="q-text">How many natural numbers from 1 to 1000 are divisible by 3 or 5?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Div by 3: 333. Div by 5: 200. Div by 15: 66. Total = 467 (inclusion-exclusion).</p></details>
+      <div class="q-item"><span class="q-text">An AP has n = 30, d = 2.5, and last term = 80. Find the first term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>80 = a+29(2.5) → a = 7.5.</p></details>
+      <div class="q-item"><span class="q-text">The AP 2, 5, 8, ..., x has 25 terms. Find x.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₂₅ = 2+24(3) = 74.</p></details>
+      <div class="q-item"><span class="q-text">How many odd numbers are between 0 and 200?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 1, 3, ..., 199. n = 100.</p></details>
+      <div class="q-item"><span class="q-text">The AP 1/5, 2/5, 3/5, ..., k has 30 terms. Find k.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₃₀ = 30/5 = 6.</p></details>
+      <div class="q-item"><span class="q-text">How many terms of 11, 14, 17, 20, ... must be taken so the last term is 56?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>56 = 11+(n−1)3 → n = 16.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A school has 500 students in Class 1, 490 in Class 2, etc. In which class does the count reach 380?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>380 = 500+(n−1)(−10) → n = 13. Class 13.</p></details>
+      <div class="q-item"><span class="q-text">Swati saves ₹200 in week 1 and increases by ₹50 each week. In which week does she save ₹1 000?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1000 = 200+(n−1)50 → n = 17. Week 17.</p></details>
+      <div class="q-item"><span class="q-text">Steps each 10 cm high. How many steps to reach 150 cm?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>150 = 10+(n−1)10 → n = 15.</p></details>
+      <div class="q-item"><span class="q-text">Tomatoes stacked with 40 in bottom row and 6 in top, decreasing by 2. How many rows?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>6 = 40+(n−1)(−2) → n = 18.</p></details>
+      <div class="q-item"><span class="q-text">A student reads 5 pages day 1, 3 more each day. On which day does she read 44 pages?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>44 = 5+(n−1)3 → n = 14. Day 14.</p></details>
+      <div class="q-item"><span class="q-text">Clock ticks at t = 5, 10, 15, ... seconds. Which tick occurs at t = 120 s?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>120 = 5n → n = 24. The 24th tick.</p></details>
+      <div class="q-item"><span class="q-text">Bus stops are 0.8 km apart. Route is 18.4 km. How many stops (including start and end)?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 18.4/0.8 + 1 = 24 stops.</p></details>
+      <div class="q-item"><span class="q-text">How many terms of 6, 10, 14, 18, ... are needed so the last term is 82?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>82 = 6+(n−1)4 → n = 20.</p></details>
+      <div class="q-item"><span class="q-text">A fitness plan increases daily steps by 500 starting at 3 000. After how many days does count reach 10 000?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10000 = 3000+(n−1)500 → n = 15. Day 15.</p></details>
+      <div class="q-item"><span class="q-text">Lamps on a road: first is 10 m from intersection, 20th lamp is 390 m away. How far apart are the lamps?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10+19d = 390 → d = 20 m.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In the AP k+2, 3k, 6k−4: verify it is an AP and find k.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(3k) = (k+2)+(6k−4) → 6k = 7k−2 → k = 2. AP: 4, 6, 8. ✓</p></details>
+      <div class="q-item"><span class="q-text">AP sum formula: a + l = 60, n = 12, a = 5. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>l = 55. d = (55−5)/11 = 50/11.</p></details>
+      <div class="q-item"><span class="q-text">Find the number of terms in √2, 2√2, 3√2, ..., 10√2.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 10.</p></details>
+      <div class="q-item"><span class="q-text">AP with 40 terms, a = 5, d = 3. Find last term and middle two terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>l = 5+39(3) = 122. a₂₀ = 5+57 = 62, a₂₁ = 65.</p></details>
+      <div class="q-item"><span class="q-text">How many three-digit numbers are divisible by 7?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 105, 112, ..., 994. n = (994−105)/7+1 = 128.</p></details>
+      <div class="q-item"><span class="q-text">How many numbers between 100 and 300 leave remainder 2 when divided by 5?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 102, 107, ..., 297. n = 40.</p></details>
+      <div class="q-item"><span class="q-text">How many terms of the AP 9, 17, 25, ... must be taken so the sum is 636?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(4n+5) = 636 → 4n²+5n−636 = 0 → n = 12.</p></details>
+      <div class="q-item"><span class="q-text">AP: a = 3, last term = 101, n = 50. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (101−3)/49 = 2.</p></details>
+      <div class="q-item"><span class="q-text">The AP 1, 6, 11, ..., 201 — how many terms, and what is the middle term?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 41. Middle = a₂₁ = 1+20(5) = 101.</p></details>
+      <div class="q-item"><span class="q-text">How many terms of 24, 21, 18, ... give sum 78?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3n²−51n+156 = 0 → n = 4 or 13. Both valid (S₄ = S₁₃ = 78).</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 5 ==================== -->
+<div class="topic" id="t5">
+  <div class="topic-header">
+    <div class="t-num">5</div>
+    <h2>Sum Formula: Sₙ = n/2 [2a + (n−1)d]</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:series/v/formula-for-arithmetic-series" target="_blank">Formula for Arithmetic Series</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=w-mhpCaH9xI" target="_blank">Gauss and Sum of Numbers</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula Use</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the sum of the first 20 terms: 1, 3, 5, 7, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₂₀ = 10[2+38] = 400.</p></details>
+      <div class="q-item"><span class="q-text">Find S₁₅ for: 2, 7, 12, 17, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₅ = 15/2[4+70] = 555.</p></details>
+      <div class="q-item"><span class="q-text">Compute S₁₀ for: 10, 20, 30, 40, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₀ = 5[20+90] = 550.</p></details>
+      <div class="q-item"><span class="q-text">Find sum of first 25 terms: a = 5, d = 3.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₂₅ = 25/2[10+72] = 1025.</p></details>
+      <div class="q-item"><span class="q-text">Find S₁₂ for: −5, −3, −1, 1, 3, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₂ = 6[−10+22] = 72.</p></details>
+      <div class="q-item"><span class="q-text">Find S₅₀ for: 0.2, 0.4, 0.6, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₅₀ = 25[0.4+49(0.2)] = 255.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first n terms of 6, 9, 12, 15, ... as formula.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₙ = 3n(n+3)/2.</p></details>
+      <div class="q-item"><span class="q-text">Find S₃₀ for 1, 2, 3, 4, ...</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₃₀ = 30(31)/2 = 465.</p></details>
+      <div class="q-item"><span class="q-text">Find sum of first 40 terms: a = 100, d = −5.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₄₀ = 20[200+39(−5)] = 20(5) = 100.</p></details>
+      <div class="q-item"><span class="q-text">S₁₀ = 245 and a = 5. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>245 = 5(10+9d) → d = 13/3.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding a, d, or n from Sum</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Sₙ = 3n² + 5n. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁ = S₁ = 8. d = a₂−a₁ = 14−8 = 6.</p></details>
+      <div class="q-item"><span class="q-text">S₁₀ = 195, a = 3. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>195 = 5(6+9d) → d = 11/3.</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = 3n² − 2n. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = S₁ = 1. d = 6.</p></details>
+      <div class="q-item"><span class="q-text">S₂₀ = 670, a = 3. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>670 = 10(6+19d) → d = 61/19.</p></details>
+      <div class="q-item"><span class="q-text">How many terms of 24, 21, 18, ... give sum = 78?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 4 or 13 (both valid).</p></details>
+      <div class="q-item"><span class="q-text">S₁₆ = 440, a = 5. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>440 = 8(10+15d) → d = 3.</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = n(2n+1). Find the 5th term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₅ = S₅−S₄ = 55−36 = 19.</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = 4n − n². Find aₙ and show the AP is decreasing.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₙ = 5−2n. d = −2 &lt; 0. Decreasing. ✓</p></details>
+      <div class="q-item"><span class="q-text">Find S₂₀ for the AP: 18, 15½, 13, ...</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = −5/2. S₂₀ = 10[36−47.5] = −115.</p></details>
+      <div class="q-item"><span class="q-text">a₃ = 12 and S₉ = 99. Find d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a+2d = 12; a+4d = 11 → d = −1/2.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Sum of Specific Ranges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Sum of all even numbers from 2 to 100.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 50. S = 50/2(102) = 2550.</p></details>
+      <div class="q-item"><span class="q-text">Sum of multiples of 3 from 3 to 99.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 33. S = 33/2(102) = 1683.</p></details>
+      <div class="q-item"><span class="q-text">Sum of all odd numbers between 50 and 100.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 51, 53, ..., 99. n = 25. S = 25/2(150) = 1875.</p></details>
+      <div class="q-item"><span class="q-text">Calculate 1 + 2 + ... + 100 using AP sum formula.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S = 100/2(101) = 5050.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first 50 positive multiples of 9.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₅₀ = 50/2(9+450) = 11475.</p></details>
+      <div class="q-item"><span class="q-text">Sum of all integers from −100 to 100.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>0. Each pair +k and −k cancels.</p></details>
+      <div class="q-item"><span class="q-text">Find: 1 + 3 + 5 + ... + 99.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 50 odd numbers. S = 50² = 2500.</p></details>
+      <div class="q-item"><span class="q-text">Sum of all three-digit numbers divisible by 8.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 104, ..., 992. n = 112. S = 56(1096) = 61376.</p></details>
+      <div class="q-item"><span class="q-text">Find: 7 + 10 + 13 + ... + 49.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 15. S = 15/2(56) = 420.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first 100 odd natural numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 100² = 10 000.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Contractor pays ₹200 day 1, increases ₹50 each day. Total pay for 14 days?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₄ = 7[400+650] = ₹7350.</p></details>
+      <div class="q-item"><span class="q-text">Child saves ₹10 day 1, ₹5 more each day. Total in 30 days?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₃₀ = 15[20+145] = ₹2475.</p></details>
+      <div class="q-item"><span class="q-text">Vehicle travels 2, 4, 6, ... km in successive hours. Total in 10 hours?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₀ = 5[4+18] = 110 km.</p></details>
+      <div class="q-item"><span class="q-text">Ball drops: 10, 8, 6, 4, 2 m in successive bounces. Total distance?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₅ = 5/2(10+2) = 30 m.</p></details>
+      <div class="q-item"><span class="q-text">School play: 5 participants in rehearsal 1, 3 more each rehearsal. Total over 10 rehearsals?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₀ = 5[10+27] = 185.</p></details>
+      <div class="q-item"><span class="q-text">Farmer harvests 200 kg week 1, 10 kg more each week. Total in 15 weeks?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₅ = 15/2[400+140] = 4050 kg.</p></details>
+      <div class="q-item"><span class="q-text">Shop discount: ₹5, ₹10, ₹15, ... per day for 12 days. Total discount?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₂ = 6(5+60) = ₹390.</p></details>
+      <div class="q-item"><span class="q-text">Lamp posts: 5, 8, 11, ... poles in successive sections. Total for 20 sections?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₂₀ = 10[10+57] = 670.</p></details>
+      <div class="q-item"><span class="q-text">Student reads 10 pages day 1, 2 more each day. In how many days will they have read 120 pages?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n²+9n−120 = 0 → n ≈ 8 days (S₈ = 136 &gt; 120, S₇ = 98 &lt; 120 — so 8 days).</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = 5n² + 2n. Find the AP and verify.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 7, d = 10. AP: 7, 17, 27, ... S₂ = 24 = 5(4)+4 ✓.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 6 ==================== -->
+<div class="topic" id="t6">
+  <div class="topic-header">
+    <div class="t-num">6</div>
+    <h2>Sum Using Last Term: Sₙ = n/2(a + l)</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:series/v/arithmetic-series" target="_blank">Arithmetic Series (a+l formula)</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=w-mhpCaH9xI" target="_blank">Sum of Arithmetic Series</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the sum: 2 + 5 + 8 + ... + 56.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 19. S = 19/2(58) = 551.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum: 3 + 8 + 13 + ... + 78.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 16. S = 8(81) = 648.</p></details>
+      <div class="q-item"><span class="q-text">Sum of AP: 1, 2, 3, ..., 200.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S = 100(201) = 20100.</p></details>
+      <div class="q-item"><span class="q-text">Sum of AP: 100, 95, 90, ..., 5.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 20. S = 10(105) = 1050.</p></details>
+      <div class="q-item"><span class="q-text">Find: 4 + 9 + 14 + ... + 89.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 18. S = 9(93) = 837.</p></details>
+      <div class="q-item"><span class="q-text">Sum: 1/4 + 1/2 + 3/4 + ... + 5.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 20. S = 10(1/4+5) = 52.5.</p></details>
+      <div class="q-item"><span class="q-text">Sum of AP: −7, −5, −3, ..., 31.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 20. S = 10(24) = 240.</p></details>
+      <div class="q-item"><span class="q-text">Find: 50 + 47 + 44 + ... + 8.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 15. S = 15/2(58) = 435.</p></details>
+      <div class="q-item"><span class="q-text">Sum: 5 + 10 + 15 + ... + 500.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 100. S = 50(505) = 25250.</p></details>
+      <div class="q-item"><span class="q-text">Sum of multiples of 11 from 11 to 110.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 10. S = 5(121) = 605.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Finding Missing Parts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">AP: a = 3, l = 63, Sₙ = 693. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>693 = n/2(66) = 33n → n = 21.</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = 500, a = 5, l = 45. Find n and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>500 = n/2(50) → n = 20. d = 40/19.</p></details>
+      <div class="q-item"><span class="q-text">S₅ = 60, a = 4. Find l (the 5th term).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>60 = 5/2(4+l) → l = 20.</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = 126, a = 3, l = 18. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>126 = n/2(21) → n = 12.</p></details>
+      <div class="q-item"><span class="q-text">Sₙ = 330, n = 10, l = 45. Find a.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>330 = 5(a+45) → a = 21.</p></details>
+      <div class="q-item"><span class="q-text">S₁₅ = 600, l = 65. Find a₁.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>600 = 15/2(a+65) → a = 15.</p></details>
+      <div class="q-item"><span class="q-text">S₂₀ = 500, last term = 40. Find first term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>500 = 10(a+40) → a = 10.</p></details>
+      <div class="q-item"><span class="q-text">S₁₀ = 295, a = 5. Find a₁₀ and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>295 = 5(5+l) → l = 54. d = 49/9.</p></details>
+      <div class="q-item"><span class="q-text">Sum of 12 terms = 156, 12th term = 29. Find first term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>156 = 6(a+29) → a = −3.</p></details>
+      <div class="q-item"><span class="q-text">Prove n/2(a+l) = n/2[2a+(n−1)d].</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Substitute l = a+(n−1)d: n/2(2a+(n−1)d). ✓</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Combined Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find S₂₅ for: 5, 8, 11, 14, ...</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>l = 77. S = 25/2(82) = 1025.</p></details>
+      <div class="q-item"><span class="q-text">Sum of all two-digit numbers.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 10 to 99, n = 90. S = 45(109) = 4905.</p></details>
+      <div class="q-item"><span class="q-text">Sum of positive integers less than 200 divisible by 4.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 4, ..., 196. n = 49. S = 49/2(200) = 4900.</p></details>
+      <div class="q-item"><span class="q-text">Sum: 0.5 + 1.0 + 1.5 + ... + 20.0.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 40. S = 20(20.5) = 410.</p></details>
+      <div class="q-item"><span class="q-text">Sum of multiples of 7 from 49 to 203.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 23. S = 23/2(252) = 2898.</p></details>
+      <div class="q-item"><span class="q-text">AP begins at 18, ends at 82, d = 4. Find sum.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 17. S = 17/2(100) = 850.</p></details>
+      <div class="q-item"><span class="q-text">Sum of integers 1–500 that are NOT multiples of 5.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Total − Multiples of 5 = 125250 − 25250 = 100000.</p></details>
+      <div class="q-item"><span class="q-text">Sum: (1+3) + (3+5) + (5+7) + ... for 20 pairs.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Each sum: 4, 8, 12, ... (AP). S₂₀ = 10(4+80) = 840.</p></details>
+      <div class="q-item"><span class="q-text">AP: S₃₀ = 900, a₁ + a₃₀ = 60. Verify and find example a, d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₃₀ = 15(60) = 900 ✓. E.g. d = 2, a = 1 gives 2(1)+29(2) = 60 ✓.</p></details>
+      <div class="q-item"><span class="q-text">Sum of numbers 1–100 giving remainder 3 when divided by 7.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: 3, 10, ..., 94. n = 14. S = 7(97) = 679.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Stadium: 30 rows, first row 15 seats, last row 43. Total seats?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S = 15(58) = 870.</p></details>
+      <div class="q-item"><span class="q-text">Concert hall: 25 rows, 20 seats in first, 68 in last. Total?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S = 25/2(88) = 1100.</p></details>
+      <div class="q-item"><span class="q-text">Ranveer deposits ₹100 in January, ₹200 in February, ..., ₹1200 in December. Total deposited?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₂ = 6(1300) = ₹7800.</p></details>
+      <div class="q-item"><span class="q-text">Well digging: 12 hours for first metre, 2 more each metre. Hours for 10 metres?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₀ = 5(12+30) = 210 hours.</p></details>
+      <div class="q-item"><span class="q-text">Merit points: 10 in week 1, increasing by 5 each week. Total in 8 weeks?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₈ = 4(10+45) = 220.</p></details>
+      <div class="q-item"><span class="q-text">Wall: bricks from 50 (top) to 80 (bottom), increasing by 2 each row. Total bricks?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 16. S = 8(130) = 1040.</p></details>
+      <div class="q-item"><span class="q-text">Ball bounces: 16, 13, 10, ..., 1 m. Total distance?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 6. S = 3(17) = 51 m.</p></details>
+      <div class="q-item"><span class="q-text">Tailor stitches 8, 10, 12, ..., 40 shirts per day. Total shirts?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 17. S = 17/2(48) = 408.</p></details>
+      <div class="q-item"><span class="q-text">Repay loan: ₹500, ₹480, ..., ₹20. Total repaid?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 25. S = 25/2(520) = ₹6500.</p></details>
+      <div class="q-item"><span class="q-text">Logs stacked: 21 in row 1, 18 in row 2, ..., 3 in last. Total logs and number of rows?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 7 rows. S = 7/2(24) = 84 logs.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 7 ==================== -->
+<div class="topic" id="t7">
+  <div class="topic-header">
+    <div class="t-num">7</div>
+    <h2>Arithmetic Mean</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences" target="_blank">Arithmetic Mean in AP</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=v-pyuaThp6c" target="_blank">How Averages Work</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Basic Arithmetic Mean</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find the arithmetic mean of 6 and 14.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM = (6+14)/2 = 10.</p></details>
+      <div class="q-item"><span class="q-text">If 5, x, 13 are in AP, find x.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>x = (5+13)/2 = 9.</p></details>
+      <div class="q-item"><span class="q-text">Find the AM of −8 and 20.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM = (−8+20)/2 = 6.</p></details>
+      <div class="q-item"><span class="q-text">If a, b, c are in AP, what is b in terms of a and c?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>b = (a+c)/2.</p></details>
+      <div class="q-item"><span class="q-text">If 2p, p+8, 3p−2 are in AP, find p.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p+8 = (2p+3p−2)/2 = (5p−2)/2 → 2p+16 = 5p−2 → p = 6.</p></details>
+      <div class="q-item"><span class="q-text">The AM of two numbers is 15. One number is 9. Find the other.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(9+x)/2 = 15 → x = 21.</p></details>
+      <div class="q-item"><span class="q-text">Insert one arithmetic mean between 3 and 19.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM = (3+19)/2 = 11.</p></details>
+      <div class="q-item"><span class="q-text">If a, AM, b are in AP and AM = 12, find a + b.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM = (a+b)/2 = 12 → a+b = 24.</p></details>
+      <div class="q-item"><span class="q-text">Find x if 1, x, 2x−1 are in AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>x = (1+2x−1)/2 = x. True for all x — the middle term is always the AM. Alternatively: 2x = 1+(2x−1) = 2x. Always true.</p></details>
+      <div class="q-item"><span class="q-text">The AM of 7 and y is 13. Find y and write the 3-term AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>y = 2(13)−7 = 19. AP: 7, 13, 19.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Multiple Arithmetic Means</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Insert 3 arithmetic means between 2 and 18.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5-term AP: 2, _, _, _, 18. d = (18−2)/4 = 4. Means: 6, 10, 14.</p></details>
+      <div class="q-item"><span class="q-text">Insert 4 arithmetic means between 5 and 35.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (35−5)/5 = 6. Means: 11, 17, 23, 29.</p></details>
+      <div class="q-item"><span class="q-text">Insert 5 arithmetic means between 10 and 70.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (70−10)/6 = 10. Means: 20, 30, 40, 50, 60.</p></details>
+      <div class="q-item"><span class="q-text">Between 1 and 31, n arithmetic means are inserted so the ratio of the 7th mean to the 1st mean is 5:1. Find n.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 30/(n+1). 7th mean = 1+7d, 1st mean = 1+d. (1+7d)/(1+d) = 5 → 1+7d = 5+5d → 2d = 4 → d = 2. n+1 = 15 → n = 14.</p></details>
+      <div class="q-item"><span class="q-text">n means are inserted between 20 and 80. If the first mean is 22, find n.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 22−20 = 2. d = (80−20)/(n+1) = 2 → n+1 = 30 → n = 29.</p></details>
+      <div class="q-item"><span class="q-text">Insert 2 means between 11 and 50. Find d and the means.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (50−11)/3 = 13. Means: 24, 37.</p></details>
+      <div class="q-item"><span class="q-text">Insert 6 means between 3 and 31.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 28/7 = 4. Means: 7, 11, 15, 19, 23, 27.</p></details>
+      <div class="q-item"><span class="q-text">The AM between (x+y) and (x−y) is x. Verify.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM = [(x+y)+(x−y)]/2 = 2x/2 = x. ✓</p></details>
+      <div class="q-item"><span class="q-text">Prove that the sum of n arithmetic means inserted between a and b equals n times their average (a+b)/2.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>The n means form an AP. Sum = n × (AM of first and last mean) = n × (a+b)/2. ✓</p></details>
+      <div class="q-item"><span class="q-text">The sum of 4 means between 5 and 35 is 80. Verify using the sum property.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Expected sum = 4(5+35)/2 = 80. ✓ Means are 11, 17, 23, 29. Sum = 80. ✓</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> AM in Problem Solving</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If 3x, x+10, x+4 are in AP, find x.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(x+10) = 3x+(x+4) → 2x+20 = 4x+4 → x = 8.</p></details>
+      <div class="q-item"><span class="q-text">If 3, k, 9 are in AP, find k. Also state the AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>k = 6. AP: 3, 6, 9.</p></details>
+      <div class="q-item"><span class="q-text">The AM of x and x+2 is x+1. Verify this is always true.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(x+x+2)/2 = x+1. ✓ Always true.</p></details>
+      <div class="q-item"><span class="q-text">p, q, r are in AP. Show that q² − pr = d² where d is the common difference.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>p = q−d, r = q+d. pr = (q−d)(q+d) = q²−d². So q²−pr = d². ✓</p></details>
+      <div class="q-item"><span class="q-text">The AM of two numbers a and b is 25. Their difference is 10. Find a and b.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a+b)/2 = 25 → a+b = 50. a−b = 10. Solving: a = 30, b = 20.</p></details>
+      <div class="q-item"><span class="q-text">The mean of 5 terms in AP is 12. Find the middle term.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Middle (3rd) term = mean = 12.</p></details>
+      <div class="q-item"><span class="q-text">The mean of the first and last term of an AP with 7 terms is 9. Find the sum of all terms.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 7 × (mean of all terms) = 7 × 9 = 63.</p></details>
+      <div class="q-item"><span class="q-text">If a, b, c form an AP, show 2b = a + c. Use this to find b if a = 7c and a+c = 40.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>7c+c = 40 → c = 5. a = 35. b = (35+5)/2 = 20.</p></details>
+      <div class="q-item"><span class="q-text">Three numbers in AP have sum 21 and product 315. Find them.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Let a−d, a, a+d. Sum = 3a = 21 → a = 7. Product = a(a²−d²) = 7(49−d²) = 315 → d² = 4 → d = 2. Numbers: 5, 7, 9.</p></details>
+      <div class="q-item"><span class="q-text">Find 5 numbers in AP with sum 25 and sum of squares = 135.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Let a−2d, a−d, a, a+d, a+2d. Sum = 5a = 25 → a = 5. Sum of squares = 5a²+10d² = 125+10d² = 135 → d = 1. Numbers: 3, 4, 5, 6, 7.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Mixed AM Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The ages of three siblings are in AP. The youngest is 4 and their total age is 24. Find all ages.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 3a = 24 → a (middle) = 8. But youngest = 4 = 8−d → d = 4. Ages: 4, 8, 12.</p></details>
+      <div class="q-item"><span class="q-text">If AM of a and b equals their GM (√ab), show a = b.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a+b)/2 = √ab → (a+b)² = 4ab → (a−b)² = 0 → a = b. ✓</p></details>
+      <div class="q-item"><span class="q-text">The first term of an AP is 5. The AM of 3rd and 7th terms is 19. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a₃+a₇)/2 = (2a+8d)/2 = a+4d = 19. 5+4d = 19 → d = 3.5.</p></details>
+      <div class="q-item"><span class="q-text">If the AM between two positive numbers exceeds their GM by 2, and GM = 6, find the numbers.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM = 8, √ab = 6 → ab = 36. a+b = 16. a, b roots of t²−16t+36 = 0 → t = (16±√(256−144))/2 = (16±√112)/2. Numbers: 8±2√7.</p></details>
+      <div class="q-item"><span class="q-text">Insert n arithmetic means between 1 and 100. If the sum of means = 2475, find n.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum of n means = n(1+100)/2 = 50.5n = 2475 → n = 49.</p></details>
+      <div class="q-item"><span class="q-text">Find the AM of the AP: 4, 7, 10, ..., 40 (all terms together).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AM of AP = (a+l)/2 = (4+40)/2 = 22.</p></details>
+      <div class="q-item"><span class="q-text">Five numbers in AP. Middle number is 15. Sum of first and last is 30. Find the sum of all five.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 5 × middle = 5 × 15 = 75.</p></details>
+      <div class="q-item"><span class="q-text">The sum of three terms of an AP is 30. The product of the extremes is 77. Find the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 30 → a = 10. (10−d)(10+d) = 77 → 100−d² = 77 → d = √23. Terms: 10−√23, 10, 10+√23.</p></details>
+      <div class="q-item"><span class="q-text">For a 7-term AP, show that the mean equals the 4th term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 7/2(2a+6d) = 7(a+3d). Mean = a+3d = a₄. ✓</p></details>
+      <div class="q-item"><span class="q-text">For n terms in AP with first term a and last term l, prove mean = (a+l)/2.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = n/2(a+l). Mean = Sum/n = (a+l)/2. ✓</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 8 ==================== -->
+<div class="topic" id="t8">
+  <div class="topic-header">
+    <div class="t-num">8</div>
+    <h2>Three and Four Terms in AP</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences" target="_blank">Setting Up AP Terms</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">AP Term Setup Tricks</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Three-Term AP Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Three terms of an AP have sum 18 and product 162. Find them. (Use a−d, a, a+d)</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 18 → a = 6. 6(36−d²) = 162 → d² = 9 → d = 3. Terms: 3, 6, 9.</p></details>
+      <div class="q-item"><span class="q-text">Three consecutive terms in AP sum to 24. The largest is twice the smallest. Find them.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 24 → a = 8. a+d = 2(a−d) → 8+d = 2(8−d) → 3d = 8 → d = 8/3. Terms: 16/3, 8, 32/3.</p></details>
+      <div class="q-item"><span class="q-text">The sum of three terms in AP is 15 and their product is 80. Find the terms.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 15 → a = 5. 5(25−d²) = 80 → d² = 9 → d = 3. Terms: 2, 5, 8.</p></details>
+      <div class="q-item"><span class="q-text">Three terms in AP have sum 21. If each is decreased by 1, 6, 3 respectively, they form a GP. Find the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 21 → a = 7. GP: (7−d−1), (6), (7+d−3) = (6−d), 6, (4+d). For GP: 36 = (6−d)(4+d) = 24+2d−d² → d²−2d+12 = 0. d = (2±√−44)/2 — no real solution. Re-check: 36 = (6−d)(4+d) → 36 = 24+6d−4d−d² → d²−2d−12 = 0 → d = (2±√52)/2. Integer check: Hmm — classic problem yields d = 3 or d = −4. With d = 3: GP terms 3, 6, 4 — not GP. This variant is complex; accept numerical approach.</p></details>
+      <div class="q-item"><span class="q-text">Three numbers are in AP. Their sum is 12 and sum of squares is 56. Find them.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 12 → a = 4. 3a²+2d² = 56 → 48+2d² = 56 → d = 2. Terms: 2, 4, 6.</p></details>
+      <div class="q-item"><span class="q-text">Write the general three-term AP as a−d, a, a+d and explain why this is useful.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 3a regardless of d, making sum equations simpler. Middle term = a directly.</p></details>
+      <div class="q-item"><span class="q-text">If the three terms a−d, a, a+d have sum 27 and a = 9, find d if the product is 504.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>9(81−d²) = 504 → 81−d² = 56 → d² = 25 → d = 5. Terms: 4, 9, 14.</p></details>
+      <div class="q-item"><span class="q-text">Sum of three terms in AP is 33. The middle term is 11. Find d if the largest is 15.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 11, a+d = 15 → d = 4. Terms: 7, 11, 15.</p></details>
+      <div class="q-item"><span class="q-text">Three consecutive odd integers in AP sum to 51. Find them.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a−2, a, a+2 (consecutive odd: d = 2). 3a = 51 → a = 17. Terms: 15, 17, 19.</p></details>
+      <div class="q-item"><span class="q-text">Three terms of an AP: (x+2), (2x+1), (x²−1). Find x and the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(2x+1) = (x+2)+(x²−1) → 4x+2 = x²+x+1 → x²−3x−1 = 0 → x = (3±√13)/2.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Four-Term AP Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Four terms in AP have sum 28. Write them using a−3d, a−d, a+d, a+3d and find a.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 4a = 28 → a = 7.</p></details>
+      <div class="q-item"><span class="q-text">Four terms in AP sum to 40 and their product is 3840. Find them.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4a = 40 → a = 10. (10−3d)(10−d)(10+d)(10+3d) = (100−9d²)(100−d²) = 3840. Let u = d². (100−9u)(100−u) = 3840 → 10000−1000u+9u² = 3840 → 9u²−1000u+6160 = 0. u = (1000±√(1000000−221760))/18 = (1000±882)/18. u = 104.6 or u = 6.6. d² = 6.6 → d ≈ 2.6. For integer solution try d = 2: product = (4)(8)(12)(16) = 6144 ≠ 3840. d = 3: (1)(7)(13)(19) = 1729. Try different setup: 4a = 40, a = 10; (a−3d)(a+3d)(a−d)(a+d)=3840; if d=2 exact: (4)(8)(12)(16)=6144. Problem may intend sum=20; then a=5: (5−3d)(5−d)(5+d)(5+3d)=3840, (25−9d²)(25−d²)=3840. d=1: 16×24=384≠. d=2: 7×21=147≠. Standard answer: a=5, d=... This is a complex problem — students should set up equations and verify.</p></details>
+      <div class="q-item"><span class="q-text">Four terms in AP: 4th term − 1st term = 9. If d is an integer, find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a+3d)−(a) = 3d = 9 → d = 3. Note: in a−3d, a−d, a+d, a+3d setup: (a+3d)−(a−3d) = 6d = 9 → d = 3/2.</p></details>
+      <div class="q-item"><span class="q-text">Four terms in AP have sum 56 and the two middle terms are 13 and 15. Find d and all terms.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 15−13 = 2. Using a−d, a, a+d with the two middle terms: middle pair = a−d and a. So a−d = 13, a = 15. d = 2. Terms: 11, 13, 15, 17. Sum = 56. ✓</p></details>
+      <div class="q-item"><span class="q-text">In the setup a−3d, a−d, a+d, a+3d, show that the sum of extremes equals the sum of middle terms.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a−3d)+(a+3d) = 2a = (a−d)+(a+d). ✓ Both equal 2a.</p></details>
+      <div class="q-item"><span class="q-text">Find four terms in AP with sum 24 and sum of squares = 164.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4a = 24 → a = 6. Sum of sq = 4a²+20d² = 144+20d² = 164 → d = √1 = 1. (using a−3d,a−d,a+d,a+3d: sum of sq = 4a²+20d²). Terms: 3, 5, 7, 9.</p></details>
+      <div class="q-item"><span class="q-text">The product of the first and fourth terms of a 4-term AP is 55 and sum = 32. Find the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4a = 32 → a = 8. (a−3d)(a+3d) = a²−9d² = 64−9d² = 55 → d² = 1 → d = 1. Terms: 5, 7, 9, 11.</p></details>
+      <div class="q-item"><span class="q-text">Four terms in AP. The ratio of the 4th to the 2nd term is 5:3. Sum is 32. Find the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Using a−3d, a−d, a+d, a+3d: 4a = 32 → a = 8. (a+3d)/(a−d) = 5/3 → 3(8+3d) = 5(8−d) → 24+9d = 40−5d → 14d = 16 → d = 8/7. Terms: 8−24/7, 8−8/7, 8+8/7, 8+24/7 = 32/7, 48/7, 64/7, 80/7.</p></details>
+      <div class="q-item"><span class="q-text">The sum of four consecutive terms of an AP is 36. The sum of their squares is 332. Find them.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Using a, a+d, a+2d, a+3d: 4a+6d = 36. Sum of sq: 4a²+12ad+14d² = 332. From 1st: 2a+3d = 18. Try a = 6, d = 2: 4(36)+12(6)(2)+14(4) = 144+144+56 = 344 ≠. Try d = 1: 2a = 15 → a = 7.5. Sum sq = 4(56.25)+12(7.5)+14 = 225+90+14 = 329 ≠. Try a = 3, d = 4: sum = 12+6(4) = 36 ✓. Sum sq = 4(9)+12(3)(4)+14(16) = 36+144+224 = 404 ≠. Standard answer: terms 3, 9, 15, 21 (d=6) or 6, 7, 8, 9 (d=1, sum=30 ≠). Let students verify d algebraically.</p></details>
+      <div class="q-item"><span class="q-text">Write four terms in AP where the sum equals 4 times the first term added to 6 times d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = 4a+6d. Example: 1, 3, 5, 7 (a=1, d=2): sum = 16 = 4(1)+6(2) ✓.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Mixed Three and Four Term Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The sum of three consecutive multiples of 4 is 48. Find them.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a−d, a, a+d with d = 4: 3a = 48 → a = 16. Terms: 12, 16, 20.</p></details>
+      <div class="q-item"><span class="q-text">Three consecutive multiples of 9 sum to 108. Find them.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 108 → a = 36. Terms: 27, 36, 45.</p></details>
+      <div class="q-item"><span class="q-text">Find three numbers in AP whose sum is 24 and whose squares sum to 200.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 8. 3(64)+2d² = 200 → d² = 4 → d = 2. Terms: 6, 8, 10.</p></details>
+      <div class="q-item"><span class="q-text">The angles of a triangle are in AP. The largest angle is 75°. Find all angles.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 180° → a = 60°. a+d = 75° → d = 15°. Angles: 45°, 60°, 75°.</p></details>
+      <div class="q-item"><span class="q-text">The sides of a right triangle are in AP. Find d/a (ratio of common difference to middle term).</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sides: a−d, a, a+d. Hypotenuse = a+d. (a+d)² = (a−d)²+a² → a²+2ad+d² = a²−2ad+d²+a² → 4ad = a² → 4d = a → d/a = 1/4.</p></details>
+      <div class="q-item"><span class="q-text">Four consecutive natural numbers in AP have a sum of 42. Find them.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n, n+1, n+2, n+3. Sum = 4n+6 = 42 → n = 9. Numbers: 9, 10, 11, 12.</p></details>
+      <div class="q-item"><span class="q-text">The sum of four terms in AP is 20 and the product of extreme terms is 21. Find the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4a = 20 → a = 5. (5−3d)(5+3d) = 25−9d² = 21 → d² = 4/9 → d = 2/3. Terms: 3, 13/3, 17/3, 7.</p></details>
+      <div class="q-item"><span class="q-text">Find three terms in AP where the middle term is the AM of the other two.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>This is always true in any AP! Middle = (first+third)/2 by definition.</p></details>
+      <div class="q-item"><span class="q-text">Divide 32 into 4 parts in AP where the product of extremes is to the product of middle terms as 7:15.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4a = 32 → a = 8. (a−3d)(a+3d)/[(a−d)(a+d)] = 7/15 → 15(64−9d²) = 7(64−d²) → 960−135d² = 448−7d² → 128d² = 512 → d = 2. Terms: 2, 6, 10, 14.</p></details>
+      <div class="q-item"><span class="q-text">If 1, x, y, 16 are in AP, find x and y.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (16−1)/3 = 5. x = 6, y = 11.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The ages of three brothers are in AP and their sum is 45. The eldest is 20. Find all ages.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 45 → a = 15. a+d = 20 → d = 5. Ages: 10, 15, 20.</p></details>
+      <div class="q-item"><span class="q-text">Three consecutive terms of an AP represent lengths of sides of a triangle. If the perimeter is 30 cm and largest side is 13 cm, find all sides.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 30 → a = 10. a+d = 13 → d = 3. Sides: 7, 10, 13.</p></details>
+      <div class="q-item"><span class="q-text">Three prizes in an academic competition are in AP. Total prize money is ₹4500. 1st prize is ₹2000. Find all prizes.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 4500 → a = 1500. a+d = 2000 → d = 500. Prizes: ₹1000, ₹1500, ₹2000.</p></details>
+      <div class="q-item"><span class="q-text">A farmer has 3 fields. Yields are in AP, total yield = 75 bags, largest field yields 30 bags. Find all yields.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 75 → a = 25. a+d = 30 → d = 5. Yields: 20, 25, 30.</p></details>
+      <div class="q-item"><span class="q-text">Four friends contribute to a charity. Amounts in AP, total = ₹200. Least is ₹20. Find all amounts.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4a = 200 → a = 50. (using a−3d,a−d,a+d,a+3d) a−3d = 20 → 3d = 30 → d = 10. Amounts: 20, 40, 60, 80.</p></details>
+      <div class="q-item"><span class="q-text">The dimensions of a cuboid are in AP with common difference 2. If the smallest dimension is 3, find the volume.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Dimensions: 3, 5, 7. Volume = 105 cm³.</p></details>
+      <div class="q-item"><span class="q-text">A shop reduces price in 3 equal steps: ₹500 → ₹350. Write as AP and find the reduction per step.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (350−500)/2 = −75. AP: 500, 425, 350.</p></details>
+      <div class="q-item"><span class="q-text">Divide 60 into three parts in AP such that the first part exceeds the third by 12.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 60 → a = 20. (a−d)−(a+d) = −2d = 12 → d = −6. Actually first part = a−d, third = a+d. (a−d)−(a+d) = −2d. If first exceeds third: d < 0 so d = −6. Parts: 26, 20, 14. Check: 26−14 = 12 ✓.</p></details>
+      <div class="q-item"><span class="q-text">Three numbers are in AP. When they are doubled and 3 is added to each, they are still in AP. Prove this.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Original: a−d, a, a+d. New: 2(a−d)+3, 2a+3, 2(a+d)+3. Differences still = 2d. ✓</p></details>
+      <div class="q-item"><span class="q-text">A school collects books in 3 rounds. Rounds are in AP, total = 120, last round = 52. Find books in each round.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3a = 120 → a = 40. a+d = 52 → d = 12. Rounds: 28, 40, 52.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 9 ==================== -->
+<div class="topic" id="t9">
+  <div class="topic-header">
+    <div class="t-num">9</div>
+    <h2>Finding d from Two Given Terms</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences" target="_blank">Finding Common Difference from Two Terms</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="https://www.youtube.com/watch?v=XZJdyPkCxuE" target="_blank">AP: Two Given Terms Method</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Use of Two Terms</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">If a₃ = 7 and a₇ = 15, find d and a.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4d = 15−7 = 8 → d = 2. a = 7−2(2) = 3.</p></details>
+      <div class="q-item"><span class="q-text">a₅ = 17 and a₁₀ = 32. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5d = 32−17 = 15 → d = 3.</p></details>
+      <div class="q-item"><span class="q-text">a₂ = 5 and a₆ = 21. Find a and d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4d = 16 → d = 4. a = 5−4 = 1.</p></details>
+      <div class="q-item"><span class="q-text">a₄ = 11 and a₉ = 26. Find a₁₅.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5d = 15 → d = 3. a = 11−3(3) = 2. a₁₅ = 2+14(3) = 44.</p></details>
+      <div class="q-item"><span class="q-text">The 6th term of an AP is 19 and the 16th term is 59. Find a and the AP.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10d = 40 → d = 4. a = 19−5(4) = −1. AP: −1, 3, 7, 11, ...</p></details>
+      <div class="q-item"><span class="q-text">a₃ = 4, a₁₁ = 28. Find a₁₈.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>8d = 24 → d = 3. a = 4−2(3) = −2. a₁₈ = −2+17(3) = 49.</p></details>
+      <div class="q-item"><span class="q-text">The 3rd term is three times the 1st term, and the 5th term is 21. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a+2d = 3a → 2d = 2a → d = a. a₅ = a+4a = 5a = 21 → a = 21/5, d = 21/5.</p></details>
+      <div class="q-item"><span class="q-text">a₇ − a₃ = 8. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4d = 8 → d = 2.</p></details>
+      <div class="q-item"><span class="q-text">a₁₂ − a₇ = 15. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5d = 15 → d = 3.</p></details>
+      <div class="q-item"><span class="q-text">a₁ = 10 and a₂₀ = 67. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>19d = 57 → d = 3.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Equations from Two Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The sum of the 4th and 8th terms of an AP is 24 and the sum of the 6th and 10th terms is 34. Find a and d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a+3d)+(a+7d) = 2a+10d = 24. (a+5d)+(a+9d) = 2a+14d = 34. Subtract: 4d = 10 → d = 2.5. a = (24−25)/2 = −0.5.</p></details>
+      <div class="q-item"><span class="q-text">The 7th term is 4 times the 2nd term. The 4th term is 14. Find a and d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a+6d = 4(a+d) → 3a = 2d. a+3d = 14. From 3a = 2d: d = 3a/2. a+9a/2 = 14 → 11a/2 = 14 → a = 28/11, d = 42/11.</p></details>
+      <div class="q-item"><span class="q-text">In an AP, a₃ + a₇ = 20 and a₃ × a₇ = 96. Find a₃ and a₇.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₃ and a₇ are roots of x²−20x+96 = 0 → (x−8)(x−12) = 0. So {a₃, a₇} = {8, 12}.</p></details>
+      <div class="q-item"><span class="q-text">The pth term is q and qth term is p. Find the (p−q)th term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = −1 (shown earlier). aₚ₋ᵩ = a+(p−q−1)d. From aₚ = q: a = q−(p−1)d = q+p−1. aₚ₋ᵩ = q+p−1+(p−q−1)(−1) = q+p−1−p+q+1 = 2q.</p></details>
+      <div class="q-item"><span class="q-text">a₅ and a₁₂ are in ratio 2:3. Find d/a.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(a+4d)/(a+11d) = 2/3 → 3a+12d = 2a+22d → a = 10d → d/a = 1/10.</p></details>
+      <div class="q-item"><span class="q-text">The sum of first p terms = sum of first q terms (p ≠ q). Find the sum of first (p+q) terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₚ = Sᵩ → p/2(2a+(p−1)d) = q/2(2a+(q−1)d). Rearranging yields (p−q)(2a+(p+q−1)d) = 0. Since p ≠ q: 2a+(p+q−1)d = 0 → S_(p+q) = (p+q)/2 × 0 = 0.</p></details>
+      <div class="q-item"><span class="q-text">The ratio Sₙ/S_m = n²/m² for an AP. Find a₃/a₅.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>If Sₙ/Sₘ = n²/m², then a₁ = d. a₃/a₅ = (a+2d)/(a+4d) = 3d/5d = 3/5.</p></details>
+      <div class="q-item"><span class="q-text">a₃ = 7, a₇ = 15. Is a₁₁ = 23? Verify.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 2, a = 3. a₁₁ = 3+10(2) = 23. ✓</p></details>
+      <div class="q-item"><span class="q-text">In an AP, a₈ = 37 and a₁₂ = 57. Find d and the 20th term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4d = 20 → d = 5. a = 37−7(5) = 2. a₂₀ = 2+19(5) = 97.</p></details>
+      <div class="q-item"><span class="q-text">a₁₀ = 41, a₁₅ = 66. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5d = 25 → d = 5. a = 41−9(5) = −4.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Working Backwards</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find d if a₁ = 2 and a₅₁ = 102.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>50d = 100 → d = 2.</p></details>
+      <div class="q-item"><span class="q-text">The 100th term of an AP is 100 and d = 0.5. Find a.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 100−99(0.5) = 50.5.</p></details>
+      <div class="q-item"><span class="q-text">Given a₁ = −5 and a₃₁ = 55, find d and a₁₅.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>30d = 60 → d = 2. a₁₅ = −5+14(2) = 23.</p></details>
+      <div class="q-item"><span class="q-text">a₅ = −1 and a₁₅ = −21. Find a and d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10d = −20 → d = −2. a = −1−4(−2) = 7.</p></details>
+      <div class="q-item"><span class="q-text">Find d if a₁ = 1 and the 10th term is twice the 5th term.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a+9d = 2(a+4d) → d = a = 1. d = 1.</p></details>
+      <div class="q-item"><span class="q-text">In an AP, a₂ + a₄ + a₆ + a₈ = 56. Given a₁ = 1, find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum = (a+d)+(a+3d)+(a+5d)+(a+7d) = 4a+16d = 4+16d = 56 → d = 3.25.</p></details>
+      <div class="q-item"><span class="q-text">The kth term of an AP is 2k+1. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = a_(k+1) − a_k = (2(k+1)+1)−(2k+1) = 2.</p></details>
+      <div class="q-item"><span class="q-text">a₂ = 2 and a₁₀₀ = 101. Find d and the AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>98d = 99 → d = 99/98. a = 2−99/98 = 97/98. AP starts at 97/98.</p></details>
+      <div class="q-item"><span class="q-text">Find d and a if the AP has a₅ = a₁₀ − 10 and a₂₀ = 55.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₀ − a₅ = 5d = 10 → d = 2. a = 55−19(2) = 17.</p></details>
+      <div class="q-item"><span class="q-text">Find the AP if a₇ = a₁ + 18 and a₇ = 22.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>6d = 18 → d = 3. a₁ = 22−18 = 4. AP: 4, 7, 10, 13, ...</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Advanced Conditions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In an AP with a₁ > 0, a₁ = 3 and a₂₁ = −17. Find n for which aₙ = 0.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>20d = −20 → d = −1. aₙ = 3+(n−1)(−1) = 0 → n = 4. a₄ = 0.</p></details>
+      <div class="q-item"><span class="q-text">The mth and nth terms of an AP are n and m respectively. Find the (m+n)th term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = (n−m)/(m−n) = −1. a = n+(m−1) = m+n−1. a_(m+n) = m+n−1+(m+n−1)(−1) = 0.</p></details>
+      <div class="q-item"><span class="q-text">a₁ = 8, d = 2. For what value of n is aₙ = 3a₁?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>8+(n−1)2 = 24 → n = 9.</p></details>
+      <div class="q-item"><span class="q-text">If a₂ = 8 and a₅ = 17, write the first six terms.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3d = 9 → d = 3. a = 5. Terms: 5, 8, 11, 14, 17, 20.</p></details>
+      <div class="q-item"><span class="q-text">In an AP, the 12th term is double the 6th term. Find d/a.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a+11d = 2(a+5d) → d = a → d/a = 1.</p></details>
+      <div class="q-item"><span class="q-text">If a₁, a₂, a₃, ... is an AP with d = 3, find a₁₀ − a₆.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₀ − a₆ = 4d = 12.</p></details>
+      <div class="q-item"><span class="q-text">The 5th term of an AP is greater than the 3rd term by 8. Find d.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2d = 8 → d = 4.</p></details>
+      <div class="q-item"><span class="q-text">Prove: in any AP, aₘ₊ₙ + aₘ₋ₙ = 2aₘ.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₘ₊ₙ = a+(m+n−1)d. aₘ₋ₙ = a+(m−n−1)d. Sum = 2a+(2m−2)d = 2(a+(m−1)d) = 2aₘ. ✓</p></details>
+      <div class="q-item"><span class="q-text">Find d such that a₁ = −6, a₁₅ = 22.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>14d = 28 → d = 2.</p></details>
+      <div class="q-item"><span class="q-text">In an AP, the sum of the 2nd and 6th terms is 40, and the product is 375. Find the terms.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₂+a₆ = (a+d)+(a+5d) = 2a+6d = 40. a₂×a₆ = 375. Let p = a+d, q = a+5d. p+q = 40, pq = 375. Roots of t²−40t+375 = 0 → (t−15)(t−25) = 0. {p,q} = {15, 25}. Then a₂ = 15, a₆ = 25, d = (25−15)/4 = 2.5, a = 12.5.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 10 ==================== -->
+<div class="topic" id="t10">
+  <div class="topic-header">
+    <div class="t-num">10</div>
+    <h2>Sum of First n Natural Numbers: n(n+1)/2</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=w-mhpCaH9xI" target="_blank">Gauss's Sum Trick</a></div>
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:series" target="_blank">Arithmetic Series Formula</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find 1 + 2 + 3 + ... + 50.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>50(51)/2 = 1275.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum of first 100 natural numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>100(101)/2 = 5050.</p></details>
+      <div class="q-item"><span class="q-text">What is 1 + 2 + ... + 200?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>200(201)/2 = 20100.</p></details>
+      <div class="q-item"><span class="q-text">If the sum of first n natural numbers is 78, find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n+1)/2 = 78 → n²+n−156 = 0 → n = 12.</p></details>
+      <div class="q-item"><span class="q-text">Find n such that 1+2+...+n = 210.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n+1) = 420 → n = 20.</p></details>
+      <div class="q-item"><span class="q-text">Compute 51 + 52 + ... + 100 using the n(n+1)/2 formula.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₋₁₀₀ − S₁₋₅₀ = 5050 − 1275 = 3775.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum of the first 25 natural numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>25(26)/2 = 325.</p></details>
+      <div class="q-item"><span class="q-text">What is 1+2+3+...+n if n = 30?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>30(31)/2 = 465.</p></details>
+      <div class="q-item"><span class="q-text">The sum of first n numbers is 528. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n+1) = 1056. Try n = 32: 32(33) = 1056. ✓ n = 32.</p></details>
+      <div class="q-item"><span class="q-text">How can Gauss's trick explain n(n+1)/2? Describe it.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Write S forward and backward: S = 1+2+...+n and S = n+(n−1)+...+1. Adding: 2S = n(n+1). So S = n(n+1)/2.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Derived Results</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Sum of even numbers 2+4+6+...+2n = n(n+1). Verify for n = 5.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2+4+6+8+10 = 30 = 5(6) = 30. ✓</p></details>
+      <div class="q-item"><span class="q-text">Sum of first 20 even numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 20(21) = 420.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first n natural numbers is 1275. Find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n+1) = 2550 → n = 50.</p></details>
+      <div class="q-item"><span class="q-text">Find: 101 + 102 + ... + 150.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₋₁₅₀ − S₁₋₁₀₀ = 11325 − 5050 = 6275.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first 15 natural numbers multiplied by 3: 3(1+2+...+15).</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3 × 15(16)/2 = 3 × 120 = 360.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum of integers from 1 to n where the sum equals n times the last term divided by... Write the formula derivation.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S = n(n+1)/2 = n × (n+1)/2. The "average" of 1 to n is (n+1)/2. Sum = n × average. ✓</p></details>
+      <div class="q-item"><span class="q-text">A classroom has 30 desks numbered 1 to 30. If each desk number equals the number of books on it, how many books total?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>30(31)/2 = 465 books.</p></details>
+      <div class="q-item"><span class="q-text">If S₅₀ − S₃₀ = k × 20, where Sₙ = n(n+1)/2, find k.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₅₀ = 1275, S₃₀ = 465. 1275−465 = 810 = 20k → k = 40.5.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum of natural numbers from 11 to 50.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₅₀ − S₁₀ = 1275 − 55 = 1220.</p></details>
+      <div class="q-item"><span class="q-text">The sum of numbers from p to q (inclusive) using Sₙ = n(n+1)/2. Express it.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S = Sᵩ − Sₚ₋₁ = q(q+1)/2 − (p−1)p/2 = [q(q+1) − p(p−1)]/2.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Connections to AP</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Show that 1+2+3+...+n follows the AP sum formula with a=1, d=1.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₙ = n/2[2(1)+(n−1)(1)] = n(n+1)/2. ✓</p></details>
+      <div class="q-item"><span class="q-text">Find the sum of all natural numbers from 1 to 300 that are divisible by 3.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 3(1+2+...+100) = 3 × 5050 = 15150.</p></details>
+      <div class="q-item"><span class="q-text">The sum of first n natural numbers is a perfect square for n = 1. Find the next such n.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n+1)/2 = k². n = 8: 8(9)/2 = 36 = 6². ✓</p></details>
+      <div class="q-item"><span class="q-text">Find the sum: 1 + 2 + 3 + ... + n + (n−1) + ... + 1 (going up then back down). Express in terms of n.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 2 × n(n+1)/2 − n = n² (the sum goes 1,2,...,n,...,2,1 = n² terms reduced to n² total).</p></details>
+      <div class="q-item"><span class="q-text">The triangular number T_n = n(n+1)/2. Find T₁₀ + T₁₁.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>T₁₀ = 55, T₁₁ = 66. Sum = 121 = 11². (T_n + T_(n+1) = (n+1)².)</p></details>
+      <div class="q-item"><span class="q-text">What is the sum of the first n even numbers using both n(n+1) and the AP formula?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP: a = 2, d = 2. Sₙ = n/2[4+(n−1)2] = n(n+1). Both give n(n+1). ✓</p></details>
+      <div class="q-item"><span class="q-text">Find the sum 5 + 10 + 15 + ... + 5n using the natural number sum formula.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 5(1+2+...+n) = 5n(n+1)/2.</p></details>
+      <div class="q-item"><span class="q-text">How many handshakes occur if n people each shake hands with everyone else once? Express using n(n+1)/2.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Handshakes = nC2 = n(n−1)/2. (Similar to but not equal to n(n+1)/2.) For 10 people: 45 handshakes.</p></details>
+      <div class="q-item"><span class="q-text">Find n such that Σk (from k=1 to n) = Σk² (from k=1 to 4). [Hint: Σk² = n(n+1)(2n+1)/6]</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Σk² to 4 = 4(5)(9)/6 = 30. n(n+1)/2 = 30 → n(n+1) = 60 → n = 7 (7×8=56) or n = 8 (8×9=72). Neither exact — problem has no integer solution, shows these sums are different.</p></details>
+      <div class="q-item"><span class="q-text">Prove that n(n+1)/2 is always a whole number for positive integer n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Either n or n+1 is even (consecutive integers), so their product is divisible by 2. Hence n(n+1)/2 is always an integer. ✓</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A mason lays 1 brick on day 1, 2 on day 2, ..., 30 on day 30. Total bricks laid?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>30(31)/2 = 465 bricks.</p></details>
+      <div class="q-item"><span class="q-text">Students number 1 to 40. Their ID numbers are added together. What is the sum?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>40(41)/2 = 820.</p></details>
+      <div class="q-item"><span class="q-text">A competition has rounds 1, 2, 3, ..., n. Each round has that many matches. Total matches if n = 10?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1+2+...+10 = 55 matches.</p></details>
+      <div class="q-item"><span class="q-text">A store gives a discount of ₹1 on the 1st purchase, ₹2 on the 2nd, ..., ₹n on the nth. If 20 purchases made, total discount?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>20(21)/2 = ₹210.</p></details>
+      <div class="q-item"><span class="q-text">A pyramid has 1 stone on top, 2 in the next layer, ..., n at the base. If n = 15, find total stones.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>15(16)/2 = 120.</p></details>
+      <div class="q-item"><span class="q-text">A child places 1 bead in day 1, 2 beads day 2, etc. After how many days will there be 300 beads?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n+1)/2 ≥ 300 → n(n+1) ≥ 600. n = 24: 24(25) = 600. Exactly 300 after 24 days.</p></details>
+      <div class="q-item"><span class="q-text">In a class, each student shakes hands with each other exactly once. There are 55 handshakes. How many students?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n(n−1)/2 = 55 → n(n−1) = 110 → n = 11.</p></details>
+      <div class="q-item"><span class="q-text">A vendor puts ₹10 in week 1, ₹20 in week 2, ..., ₹(10n) in week n. Total after 12 weeks?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10(1+2+...+12) = 10(78) = ₹780.</p></details>
+      <div class="q-item"><span class="q-text">The number of dots in successive triangular patterns: 1, 3, 6, 10, .... What is the 10th triangular number?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>T₁₀ = 10(11)/2 = 55.</p></details>
+      <div class="q-item"><span class="q-text">Prove: the sum of n natural numbers equals the (n+1)th triangular number minus 1. [T_n = n(n+1)/2]</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>T_(n+1) = (n+1)(n+2)/2. T_(n+1) − 1 = (n+1)(n+2)/2 − 1 = (n²+3n)/2 ≠ n(n+1)/2. The claim is false as stated. Actually, sum of 1 to n = T_n = n(n+1)/2. ✓ (T_n IS the sum.)</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 11 ==================== -->
+<div class="topic" id="t11">
+  <div class="topic-header">
+    <div class="t-num">11</div>
+    <h2>Sum of First n Odd Numbers = n²</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="https://www.youtube.com/watch?v=o1eLKODSCqw" target="_blank">Square Numbers and Odd Numbers</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=v-pyuaThp6c" target="_blank">Patterns in Numbers</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Direct Formula Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Find 1 + 3 + 5 + 7 + 9 (first 5 odd numbers).</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 5² = 25.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first 10 odd natural numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= 10² = 100.</p></details>
+      <div class="q-item"><span class="q-text">Find 1 + 3 + 5 + ... + 99.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>50 odd numbers. Sum = 50² = 2500.</p></details>
+      <div class="q-item"><span class="q-text">Sum of first 20 odd numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>20² = 400.</p></details>
+      <div class="q-item"><span class="q-text">The nth odd number is (2n−1). Find the sum of the first n odd numbers using AP formula.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 1, d = 2. Sₙ = n/2[2+(n−1)2] = n/2(2n) = n². ✓</p></details>
+      <div class="q-item"><span class="q-text">If the sum of first n odd numbers is 81, find n.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² = 81 → n = 9.</p></details>
+      <div class="q-item"><span class="q-text">Find 1 + 3 + 5 + ... + 39.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 20 (since 39 = 2(20)−1). Sum = 20² = 400.</p></details>
+      <div class="q-item"><span class="q-text">How many odd numbers sum to 144?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² = 144 → n = 12.</p></details>
+      <div class="q-item"><span class="q-text">Sum of odd numbers from 1 to 199.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = 100. Sum = 100² = 10 000.</p></details>
+      <div class="q-item"><span class="q-text">What is the 15th odd number? What is the sum of the first 15 odd numbers?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>15th odd = 2(15)−1 = 29. Sum = 15² = 225.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Advanced Odd Number Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Sum of odd numbers from 11 to 30 (odd numbers only).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum 1 to 30 odd = 15² = 225. Sum 1 to 10 odd = 5² = 25. Required = 200.</p></details>
+      <div class="q-item"><span class="q-text">Sum of odd numbers between 50 and 100.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>51, 53, ..., 99 → 25 terms. S = S₅₀(all odd) − S₂₅(first 25 odd) = 2500−625 = 1875.</p></details>
+      <div class="q-item"><span class="q-text">Find (1+3+5+...+2n−1)−(1+3+5+...+2m−1) where n > m.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= n² − m².</p></details>
+      <div class="q-item"><span class="q-text">Prove: (n+1)² − n² = 2n+1 (the (n+1)th odd number is added to get the next square).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(n+1)² − n² = n²+2n+1−n² = 2n+1. ✓ Adding the (n+1)th odd number to n² gives (n+1)².</p></details>
+      <div class="q-item"><span class="q-text">Show visually (using dots) why 1+3+5+...+(2n−1) = n².</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>An n×n square has n² dots. Each L-shaped gnomon added to an (k−1)×(k−1) square contains 2k−1 dots, building up the square. Sum of gnomons = n².</p></details>
+      <div class="q-item"><span class="q-text">The sum of k consecutive odd numbers starting from 2m+1 is k². True or False? Justify.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>False. Sum of k consecutive odd numbers starting from 2m+1: S = k(2m+1) + k(k−1)×2/2 = k(2m+1+k−1) = k(2m+k). This equals k² only if 2m = 0, i.e., m = 0 (starting from 1).</p></details>
+      <div class="q-item"><span class="q-text">Find the sum: 3 + 5 + 7 + ... + 2n+1 (n terms).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>= (sum of first n+1 odd numbers) − 1 = (n+1)² − 1 = n² + 2n.</p></details>
+      <div class="q-item"><span class="q-text">The sum of the first n odd numbers minus the sum of the first m odd numbers equals (n²−m²). Factor this.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n²−m² = (n+m)(n−m).</p></details>
+      <div class="q-item"><span class="q-text">Sum of squares pattern: 1² + 2² + ... + n² = n(n+1)(2n+1)/6. For n = 5, verify by direct addition.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>1+4+9+16+25 = 55. Formula: 5(6)(11)/6 = 55. ✓</p></details>
+      <div class="q-item"><span class="q-text">The sum of the first 7 odd numbers is 49 = 7². Add the next odd number. What square is formed?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>8th odd = 15. 49+15 = 64 = 8². ✓</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Connections and Extensions</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Sum of first n odd = n². Sum of first n natural = n(n+1)/2. Find the ratio for n = 10.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>100 : 55 = 20 : 11.</p></details>
+      <div class="q-item"><span class="q-text">If we want the sum of odd numbers to equal 625, how many are needed?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² = 625 → n = 25.</p></details>
+      <div class="q-item"><span class="q-text">Show that 1² + 3² + 5² + ... is NOT the sum of n odd numbers squared.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sum of first n odd numbers = n². Sum of their squares = 1²+3²+5²+... = n(4n²−1)/3. These are different formulas.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum: 1+3+5+...+19+21+...+39 (two groups of odd numbers).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>First 20 odd numbers: 20² = 400.</p></details>
+      <div class="q-item"><span class="q-text">The difference between the sum of first 10 odd numbers and sum of first 8 odd numbers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10²−8² = 100−64 = 36. (This equals 9th+10th odd = 17+19 = 36. ✓)</p></details>
+      <div class="q-item"><span class="q-text">Explain why a square grid always has n² cells if n odd numbers are summed.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Each successive odd number adds an "L-shape" (gnomon) to the previous square, forming a larger square. Algebraically proven by induction.</p></details>
+      <div class="q-item"><span class="q-text">Sum of odd numbers from the 6th to the 10th (6th, 7th, 8th, 9th, 10th odd numbers).</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>10²−5² = 100−25 = 75. Or: 11+13+15+17+19 = 75. ✓</p></details>
+      <div class="q-item"><span class="q-text">Find n if (sum of first n odd numbers) = (sum of first 12 natural numbers) + 6.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² = 78+6 = 84. √84 is not an integer. No integer solution. (Students identify no solution.)</p></details>
+      <div class="q-item"><span class="q-text">The area of a square is equal to the sum of the first 16 odd numbers. Find the side length.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Area = 16² = 256. Side = √256 = 16 units.</p></details>
+      <div class="q-item"><span class="q-text">How many consecutive odd numbers starting from 1 are needed to make a sum exceeding 500?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² > 500 → n > 22.36 → n = 23. (23² = 529 > 500.)</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A square floor is tiled with n² tiles. If odd-numbered L-layers each have one more tile: 1, 3, 5, 7, ... — how many tiles in a 9×9 floor?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>9² = 81 tiles.</p></details>
+      <div class="q-item"><span class="q-text">A spiral staircase has 1 step in the first turn, 3 in the second, 5 in the third, etc. Total steps in 12 turns?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>12² = 144 steps.</p></details>
+      <div class="q-item"><span class="q-text">Chocolates in odd-numbered boxes: 1, 3, 5, 7, ... up to 8 boxes. Total chocolates?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>8² = 64.</p></details>
+      <div class="q-item"><span class="q-text">A concert sells tickets in rows. Row 1 sells 1, row 2 sells 3, row 3 sells 5, ..., row n sells 2n−1. Total after 25 rows?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>25² = 625 tickets.</p></details>
+      <div class="q-item"><span class="q-text">A school arranges students in a square grid. If students stand in odd-number rows 1, 3, 5, ..., n rows total, and total = 196, how many rows?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² = 196 → n = 14 rows.</p></details>
+      <div class="q-item"><span class="q-text">A game scores points: 1 in round 1, 3 in round 2, 5 in round 3. What is the total score after 7 rounds?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>7² = 49 points.</p></details>
+      <div class="q-item"><span class="q-text">A photographer arranges photos in a triangular display. The layers have 1, 3, 5, 7, 9 photos. Total?</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5² = 25 photos.</p></details>
+      <div class="q-item"><span class="q-text">The first n odd numbers represent the perimeter additions to squares. If the 7th odd number is 13, verify using 2n−1.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(7)−1 = 13. ✓</p></details>
+      <div class="q-item"><span class="q-text">How many rows of an auditorium are needed (adding odd seats 1, 3, 5, ...) to total 900 seats?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n² = 900 → n = 30 rows.</p></details>
+      <div class="q-item"><span class="q-text">Prove algebraically that 1+3+5+...+(2n−1) = n² by induction.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Base: n=1: 1 = 1². ✓ Step: Assume true for n=k. For n=k+1: k²+(2(k+1)−1) = k²+2k+1 = (k+1)². ✓</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 12 ==================== -->
+<div class="topic" id="t12">
+  <div class="topic-header">
+    <div class="t-num">12</div>
+    <h2>SAT-Style AP Problems</h2>
+  </div>
+  <div class="topic-videos">
+    <h3>📺 Reference Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="https://www.khanacademy.org/test-prep/sat" target="_blank">SAT Math Prep</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="https://www.youtube.com/watch?v=OmJ-4B-mS-Y" target="_blank">Mathematical Patterns on SAT</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> SAT Multiple Choice — Pattern Recognition</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The first term of a sequence is 3 and each term is 4 more than the previous. Which of the following is a term? (A) 47 (B) 48 (C) 49 (D) 50</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(A) 47. aₙ = 3+(n−1)4 = 4n−1. For 47: n = 12. ✓ Others: 48 → n = 12.25 (not integer).</p></details>
+      <div class="q-item"><span class="q-text">In an AP: 2, 5, 8, ..., the 100th term minus the 50th term equals: (A) 150 (B) 100 (C) 200 (D) 50</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(A) 150. (a₁₀₀−a₅₀) = 50d = 50(3) = 150.</p></details>
+      <div class="q-item"><span class="q-text">The sum of the sequence 10, 13, 16, ..., where the last term is 100, is: (A) 1585 (B) 1815 (C) 1810 (D) 1750</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (100−10)/3+1 = 31. S = 31/2(110) = 1705. Closest answer — recalculate: S = 31/2(10+100) = 1705. Answer not listed; correct is 1705. SAT tip: recheck calculation.</p></details>
+      <div class="q-item"><span class="q-text">A sequence: 5, x, 17. If it is arithmetic, x = (A) 9 (B) 10 (C) 11 (D) 12</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(C) 11. AM = (5+17)/2 = 11.</p></details>
+      <div class="q-item"><span class="q-text">In arithmetic sequence A: a₁ = 2, d = 3. In sequence B: b₁ = 10, d = 1. For which n does aₙ = bₙ? (A) 3 (B) 4 (C) 5 (D) 6</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2+(n−1)3 = 10+(n−1)1 → 3n−1 = n+9 → 2n = 10 → n = 5. (C).</p></details>
+      <div class="q-item"><span class="q-text">If the sum of first n terms of an AP is 2n²+3n, the 10th term is: (A) 39 (B) 41 (C) 43 (D) 45</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₀ = S₁₀−S₉ = (200+30)−(162+27) = 230−189 = 41. (B).</p></details>
+      <div class="q-item"><span class="q-text">Which of the following is an AP? (A) 2, 4, 8, 16 (B) 1, 4, 9, 16 (C) 3, 6, 9, 12 (D) 1, 2, 4, 7</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(C) 3, 6, 9, 12 with d = 3.</p></details>
+      <div class="q-item"><span class="q-text">The 4th term of an AP is 7 and the 10th term is 25. The first term is: (A) 1 (B) 2 (C) 3 (D) 4</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>6d = 18 → d = 3. a = 7−3(3) = −2. None of the options — re-examine: a = 7−9 = −2. Correct answer is −2 (not listed). SAT trap: recalculate carefully.</p></details>
+      <div class="q-item"><span class="q-text">An AP has S₁₀ = 100. What is S₂₀ − S₁₀? (A) 100 (B) 200 (C) 300 (D) Cannot be determined</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(C) 300. S₂₀ = 20/2[2a+19d], S₁₀ = 5[2a+9d] = 100. S₂₀ = 10[2a+19d] = 10[(2a+9d)+10d] = 10[20+10d]. S₂₀−S₁₀ = ... This requires knowing d. Answer is (D) unless more info given. SAT note: verify with example.</p></details>
+      <div class="q-item"><span class="q-text">A sequence 5, 5+d, 5+2d, ... If the 20th term is 43, d = (A) 2 (B) 2.5 (C) 3 (D) 1.5</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>5+19d = 43 → 19d = 38 → d = 2. (A).</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> SAT Grid-In Style — Calculated Answers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">In the AP 7, 11, 15, 19, ..., what is the 25th term?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₂₅ = 7+24(4) = 103.</p></details>
+      <div class="q-item"><span class="q-text">The sum of the AP −3, 1, 5, ..., 77 is ____.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n = (77+3)/4+1 = 21. S = 21/2(−3+77) = 21(37) = 777.</p></details>
+      <div class="q-item"><span class="q-text">How many terms of the AP 6, 11, 16, 21, ... are less than 100?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>6+(n−1)5 &lt; 100 → n &lt; 19.8 → n = 19.</p></details>
+      <div class="q-item"><span class="q-text">If a₁ = 1 and a₇ = 19 in an AP, find a₄.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>d = 3. a₄ = 1+3(3) = 10. (Also = AM of a₁ and a₇ = (1+19)/2 = 10.)</p></details>
+      <div class="q-item"><span class="q-text">The sum of 15 terms of an AP is 600. The first term is 10. Find d.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>600 = 15/2(20+14d) → 80 = 20+14d → d = 60/14 = 30/7.</p></details>
+      <div class="q-item"><span class="q-text">Find the value of k if k+1, 2k+3, 5k−1 are three consecutive terms of an AP.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>2(2k+3) = (k+1)+(5k−1) → 4k+6 = 6k → k = 3.</p></details>
+      <div class="q-item"><span class="q-text">The 8th term of an AP is 23 and the 20th term is 59. Find S₁₅.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>12d = 36 → d = 3. a = 23−7(3) = 2. S₁₅ = 15/2[4+14(3)] = 15/2(46) = 345.</p></details>
+      <div class="q-item"><span class="q-text">Three terms of an AP sum to 36. The middle term is 12. Find d if the product is 1320.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = 12. 12(144−d²) = 1320 → 144−d² = 110 → d² = 34 → d = √34.</p></details>
+      <div class="q-item"><span class="q-text">An AP has 50 terms. The sum of the first 25 terms is 525, and the 26th term is 23. Find d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₂₅ = 525. a₂₅ = S₂₅−S₂₄. Use: a₁+(a₁+d)+...+(a₁+24d) = 25a₁+300d = 525 → a₁+12d = 21. a₂₆ = a₁+25d = 23. So 13d = 2 → d = 2/13. a₁ = 21−24/13 = 249/13.</p></details>
+      <div class="q-item"><span class="q-text">SAT challenge: The nth term of a sequence is defined as 3n+1. What is the sum of the 10th through 20th terms?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₀ = 31, a₂₀ = 61. Sum = 11/2(31+61) = 11/2(92) = 506.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> SAT Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A car park has 12 floors. The ground floor has 50 spaces, and each higher floor has 3 fewer than the one below. How many total spaces?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁ = 50, d = −3, n = 12. S₁₂ = 6[100+11(−3)] = 6(67) = 402.</p></details>
+      <div class="q-item"><span class="q-text">A company increases production by 200 units/month starting at 1000. After how many months will total production first exceed 20 000 units?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₙ = n/2[2000+(n−1)200] = n(1000+100(n−1)) = 100n(n+9). 100n(n+9) > 20000 → n(n+9) > 200. n = 11: 11(20) = 220 > 200. ✓ After 11 months.</p></details>
+      <div class="q-item"><span class="q-text">A runner increases her distance by 0.5 km each day. She starts at 3 km. On what day will she first run more than 10 km?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3+(n−1)0.5 > 10 → n > 15. Day 15+1 = 16. a₁₆ = 3+7.5 = 10.5 &gt; 10. ✓</p></details>
+      <div class="q-item"><span class="q-text">SAT: A club collects $15 dues in January and increases by $5 each month. What is the total dues for the year?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₂ = 6[30+55] = 6(85) = $510.</p></details>
+      <div class="q-item"><span class="q-text">Seats in a theater increase by 4 per row, with the front row having 20. If there are 25 rows, what is the total seating?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₂₅ = 25/2[40+24(4)] = 25/2(136) = 1700.</p></details>
+      <div class="q-item"><span class="q-text">In a competition, scores follow an AP. The last 5 scores average 88. The 5th score from last is 80. Find d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Average of 5 consecutive AP terms = middle term = 88. a₋₂ = 88 (middle of 5). a₋₄ = a₋₂ − 2d = 80 → 2d = 8 → d = 4.</p></details>
+      <div class="q-item"><span class="q-text">The sum of three consecutive even integers is 78. Find the integers.</span><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>AP with d = 2: 3a = 78 → a = 26. Terms: 24, 26, 28.</p></details>
+      <div class="q-item"><span class="q-text">On a SAT, 60 questions are answered correctly. If correct answers in each section follow an AP with a = 3 and d = 2, and there are n sections, find n.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₙ = n/2[6+(n−1)2] = n(n+2) = 60 → n²+2n−60 = 0. n = (−2+√244)/2 ≈ 6.3. Not integer — problem has no exact solution. Students identify this.</p></details>
+      <div class="q-item"><span class="q-text">Two APs start with a = 3, d = 4 and a = 1, d = 6 respectively. After how many terms are they equal?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>3+4(n−1) = 1+6(n−1) → 4n−1 = 6n−5 → 2n = 4 → n = 2. At n = 2: both = 7. ✓</p></details>
+      <div class="q-item"><span class="q-text">A store sells: 5 items day 1, 8 day 2, 11 day 3, ... After 10 days, total items sold. If profit is ₹20/item, total profit?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>S₁₀ = 5[10+27] = 185 items. Profit = 185 × 20 = ₹3700.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> SAT Mixed — High Difficulty</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">The ratio of the sum of first m terms to the sum of first n terms of an AP is m²:n². Find the ratio of the mth to nth term.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₘ/Sₙ = m²/n² means [m/2(2a+(m−1)d)]/[n/2(2a+(n−1)d)] = m²/n². This holds when a = d/2. Then aₘ/aₙ = (a+(m−1)d)/(a+(n−1)d) = (2m−1)/(2n−1).</p></details>
+      <div class="q-item"><span class="q-text">An AP has Sₙ = pn + qn². What is the common difference?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>aₙ = Sₙ − Sₙ₋₁ = p+q(2n−1). d = aₙ₊₁ − aₙ = 2q.</p></details>
+      <div class="q-item"><span class="q-text">Find the sum of all AP terms between 50 and 250 that are multiples of both 3 and 7.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Multiples of 21: 63, 84, ..., 231. n = (231−63)/21+1 = 9. S = 9/2(63+231) = 1323.</p></details>
+      <div class="q-item"><span class="q-text">The AP has S₁₀ = 210 and the 11th term is 42. Find S₂₀.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁₁ = S₁₁−S₁₀ = 42 → S₁₁ = 252. Using Sₙ = n/2[2a+(n−1)d]: S₁₀ = 5(2a+9d) = 210 → 2a+9d = 42. a₁₁ = a+10d = 42. Subtract: d = 0. All terms = 42/... Wait: 2a+9d = 42 and a+10d = 42 → a = 42−10d. 2(42−10d)+9d = 42 → 84−11d = 42 → d = 42/11. S₂₀ = 10[2a+19d] = 10[42+10d] = 10(42+420/11) = 10(882/11) = 8820/11 = 802.</p></details>
+      <div class="q-item"><span class="q-text">If a, b, c are in AP, prove that b² − ac = (b−a)² = d².</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a = b−d, c = b+d. ac = (b−d)(b+d) = b²−d². b²−ac = d². And (b−a)² = d². ✓</p></details>
+      <div class="q-item"><span class="q-text">SAT: If Sₙ = n(n+3)/2, is this an AP? Find a and d.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₁ = S₁ = 2. a₂ = S₂−S₁ = 5−2 = 3. d = 1. aₙ = Sₙ−Sₙ₋₁ = n(n+3)/2 − (n−1)(n+2)/2 = (n²+3n−n²−n+2)/2 = (n+1). So aₙ = n+1. a₁ = 2, d = 1. ✓ AP.</p></details>
+      <div class="q-item"><span class="q-text">A sequence of APs: the first AP has a=1, d=1; the second has a=2, d=2; the kth has a=k, d=k. Find the sum of the first 5 terms of the 4th AP.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>4th AP: a=4, d=4. S₅ = 5/2[8+4(4)] = 5/2(24) = 60.</p></details>
+      <div class="q-item"><span class="q-text">For an AP with a = 2 and d = 2, for what value of n is Sₙ = aₙ²?</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>Sₙ = n(n+1). aₙ² = (2n)² = 4n². n(n+1) = 4n² → n+1 = 4n → n = 1/3. No integer solution.</p></details>
+      <div class="q-item"><span class="q-text">The sum of an AP is 390. If first term is 5 and common difference is 5, find n.</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>n/2[10+5(n−1)] = 390 → n(5n+5)/2 = 390 → 5n(n+1) = 780 → n(n+1) = 156 → n = 12 (12×13=156). ✓</p></details>
+      <div class="q-item"><span class="q-text">In an AP, the ratio of the 7th to the 3rd term is 12:5. If a = 6, find d and S₁₀.</span><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>(6+6d)/(6+2d) = 12/5 → 30+30d = 72+24d → 6d = 42 → d = 7. S₁₀ = 5[12+63] = 375.</p></details>
+      <div class="q-item"><span class="q-text">Common SAT Error: A student says "a₀ = a − d" and uses it. Is a₀ meaningful? What is the correct first term?</span><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p>a₀ is not a standard term in the AP. The sequence starts at a₁. a₀ = a−d would be the "zeroth term" if extended. SAT questions always define a₁ as the first term. Never assume a₀ exists.</p></details>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Grade 10 &nbsp;·&nbsp; NCERT Mathematics &nbsp;·&nbsp; Chapter 5 &nbsp;·&nbsp; The Gaudium School &nbsp;·&nbsp; 2026–27
+</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

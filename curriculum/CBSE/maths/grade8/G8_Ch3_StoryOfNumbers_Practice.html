@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G8 Ch3 – A Story of Numbers Practice</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📖 Chapter 3 – A Story of Numbers</h1>
+  <p>12 Topics · 4 Practice Sets per Topic · 10 Questions per Set · Rational, Irrational &amp; Real Numbers</p>
+</header>
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Rational Numbers — Review &amp; Properties</a></li>
+    <li><a href="#t2">Operations with Rational Numbers</a></li>
+    <li><a href="#t3">Representing Rationals on Number Line</a></li>
+    <li><a href="#t4">Introduction to Irrational Numbers</a></li>
+    <li><a href="#t5">√2, √3, √5 — Proof of Irrationality</a></li>
+    <li><a href="#t6">Decimal Expansions</a></li>
+    <li><a href="#t7">Converting Recurring Decimals to Fractions</a></li>
+    <li><a href="#t8">The Real Number Line</a></li>
+    <li><a href="#t9">Properties of Real Numbers</a></li>
+    <li><a href="#t10">Ordering Real Numbers</a></li>
+    <li><a href="#t11">Approximating Irrational Numbers</a></li>
+    <li><a href="#t12">Real-World Applications</a></li>
+  </ol>
+</nav>
+
+<!-- TOPIC 1 -->
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Rational Numbers — Review and Properties</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Introduction to rational numbers</a><a href="#">Identifying rational numbers</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">What are rational numbers?</a><a href="#">Rational number properties explained</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Fractions and rational numbers</a><a href="#">The density of rationals on number line</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">A brief history of rational numbers</a><a href="#">Why fractions matter in mathematics</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation — Identifying &amp; Defining Rational Numbers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define a rational number. Give three examples.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> A rational number is any number that can be written as p/q where p and q are integers and q ≠ 0.<br><div class="working"><strong>Examples:</strong> 3/4, −5/2, 7 (= 7/1)</div></p></details>
+      <div class="q-item"><div class="q-text">Is −7 a rational number? Justify.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes.<br><div class="working">−7 = −7/1, which is of the form p/q with q ≠ 0. <strong>Key Rule:</strong> Every integer is rational.</div></p></details>
+      <div class="q-item"><div class="q-text">Is 0 a rational number? Explain.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — 0 = 0/1.<br><div class="working"><strong>Key Rule:</strong> 0 is rational because it can be expressed as p/q with any non-zero q.</div></p></details>
+      <div class="q-item"><div class="q-text">Write two rational numbers between 1 and 2.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/2 and 5/4 (many answers possible).<br><div class="working">Between 1 = 4/4 and 2 = 8/4 → 5/4, 6/4, 7/4 all work.</div></p></details>
+      <div class="q-item"><div class="q-text">State whether 0.75 is rational and express it as p/q.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.75 = 75/100 = 3/4. Yes, rational.</p></details>
+      <div class="q-item"><div class="q-text">List all integers from −3 to 3 and express each as a rational number.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −3/1, −2/1, −1/1, 0/1, 1/1, 2/1, 3/1.</p></details>
+      <div class="q-item"><div class="q-text">Which of these are rational: 1/2, √4, √5, −3/7?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/2 ✓, √4 = 2 ✓, −3/7 ✓. √5 is irrational.</p></details>
+      <div class="q-item"><div class="q-text">Express 2.5 as a fraction in lowest terms.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2.5 = 25/10 = 5/2.</p></details>
+      <div class="q-item"><div class="q-text">How many rational numbers exist between 0 and 1?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Infinitely many. <br><div class="working"><strong>Key Rule:</strong> Between any two distinct rational numbers, infinitely many rationals exist.</div></p></details>
+      <div class="q-item"><div class="q-text">Is every fraction a rational number? Is every rational number a fraction?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Every fraction is rational. Every rational is expressible as a fraction (p/q form), so yes to both.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying — Properties of Rational Numbers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Show that the sum of two rational numbers is rational: 3/4 + 5/6.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9/12 + 10/12 = 19/12. Rational.<br><div class="working">LCM(4,6)=12. <strong>Key Rule:</strong> Rationals are closed under addition.</div></p></details>
+      <div class="q-item"><div class="q-text">Verify closure under multiplication: (−2/3) × (9/4).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −18/12 = −3/2. Rational ✓</p></details>
+      <div class="q-item"><div class="q-text">Is the set of rationals closed under division? Give a counterexample if not.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Closed except division by 0. 5 ÷ 0 is undefined — that's the only exception.</p></details>
+      <div class="q-item"><div class="q-text">State the commutative property for addition of rationals. Verify with 2/3 and 1/5.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> a/b + c/d = c/d + a/b.<br><div class="working">2/3 + 1/5 = 10/15 + 3/15 = 13/15. 1/5 + 2/3 = 13/15. ✓</div></p></details>
+      <div class="q-item"><div class="q-text">Find the additive inverse of −5/9 and verify.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Additive inverse = 5/9. Check: −5/9 + 5/9 = 0. ✓</p></details>
+      <div class="q-item"><div class="q-text">Find the multiplicative inverse of 7/3.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/7. Check: 7/3 × 3/7 = 1. ✓</p></details>
+      <div class="q-item"><div class="q-text">Apply the distributive property: 2/3 × (1/2 + 3/4).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2/3 × 5/4 = 10/12 = 5/6.<br><div class="working">Alternate: 2/3×1/2 + 2/3×3/4 = 1/3 + 1/2 = 5/6. ✓</div></p></details>
+      <div class="q-item"><div class="q-text">Which rational number is its own additive inverse?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0. Because 0 + 0 = 0.</p></details>
+      <div class="q-item"><div class="q-text">Show that rational numbers are dense: find a rational between 1/3 and 1/4.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Average = (1/3 + 1/4)/2 = (7/12)/2 = 7/24.<br><div class="working">Check: 1/4 = 6/24 &lt; 7/24 &lt; 8/24 = 1/3. ✓</div></p></details>
+      <div class="q-item"><div class="q-text">Is subtraction of rationals commutative? Justify with 3/5 − 1/5 vs 1/5 − 3/5.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No. 3/5 − 1/5 = 2/5; 1/5 − 3/5 = −2/5. Results differ.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge — Deeper Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove that the product of a non-zero rational and an irrational is irrational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let r = p/q (rational, ≠0), x irrational. Suppose rx = s (rational). Then x = s/r = sq/p — rational. Contradiction. So rx is irrational.</p></details>
+      <div class="q-item"><div class="q-text">Find five rational numbers between −1/2 and 1/3.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Convert: −3/6 and 2/6. Five rationals: −2/6, −1/6, 0, 1/6, 2/6 = −1/3, −1/6, 0, 1/6, 1/3.</p></details>
+      <div class="q-item"><div class="q-text">Show that between any two distinct rationals p/q and r/s, there is another rational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Their average (p/q + r/s)/2 = (ps + rq)/(2qs) is rational and lies strictly between them.</p></details>
+      <div class="q-item"><div class="q-text">Which property guarantees that 0 × (any rational) = 0?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Multiplication property of zero (zero-product property). It holds for all real numbers.</p></details>
+      <div class="q-item"><div class="q-text">If a/b = c/d, show that ad = bc (cross-multiplication).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Multiply both sides by bd: (a/b)×bd = (c/d)×bd → ad = bc. ✓</p></details>
+      <div class="q-item"><div class="q-text">A rational number equals its own reciprocal. What is it?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x = 1/x → x² = 1 → x = 1 or x = −1.</p></details>
+      <div class="q-item"><div class="q-text">Is the set of rationals closed under the operation a★b = a+b−ab? Test with 1/2 and 1/3.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/2 + 1/3 − (1/2)(1/3) = 5/6 − 1/6 = 4/6 = 2/3. Rational. Yes, closed (sum and product of rationals are rational).</p></details>
+      <div class="q-item"><div class="q-text">Simplify: (3/4 + 1/8) ÷ (5/6 − 1/3) and identify what property lets you regroup.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Numerator: 6/8+1/8=7/8. Denominator: 5/6−2/6=3/6=1/2. Result: 7/8 ÷ 1/2 = 7/4. Associativity allows regrouping.</p></details>
+      <div class="q-item"><div class="q-text">Explain why the set {p/q : p,q integers, q≠0} includes natural numbers, whole numbers, and integers.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Any natural n = n/1; whole 0 = 0/1; any integer m = m/1. All fit p/q form. So ℕ ⊂ ℤ ⊂ ℚ.</p></details>
+      <div class="q-item"><div class="q-text">Does the set of positive rationals form a group under multiplication? State all conditions.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. Closure ✓, Associativity ✓, Identity (1) ✓, Inverses (p/q has inverse q/p, positive) ✓.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A recipe needs 3/4 cup flour. You want to make 2/3 of the recipe. How much flour?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/4 × 2/3 = 6/12 = 1/2 cup.</p></details>
+      <div class="q-item"><div class="q-text">A tank is 5/8 full. After using 1/4 of its capacity, what fraction remains?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/8 − 1/4 = 5/8 − 2/8 = 3/8 remains.</p></details>
+      <div class="q-item"><div class="q-text">A runner completes 3/5 of a 10 km race. How many km completed?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/5 × 10 = 6 km.</p></details>
+      <div class="q-item"><div class="q-text">Share ₹450 among 3 people in ratio 1:2:3. How much does each get?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Parts: 1+2+3=6. Shares: ₹75, ₹150, ₹225.</p></details>
+      <div class="q-item"><div class="q-text">A temperature drops from 7/2°C to −3/2°C. What is the change?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Change = −3/2 − 7/2 = −10/2 = −5°C (dropped 5°C).</p></details>
+      <div class="q-item"><div class="q-text">A fraction of students passed: 24 out of 32. Express as rational in lowest terms.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 24/32 = 3/4.</p></details>
+      <div class="q-item"><div class="q-text">A wall is 9/2 m long. Tiles of width 3/4 m are placed end to end. How many tiles fit?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9/2 ÷ 3/4 = 9/2 × 4/3 = 36/6 = 6 tiles.</p></details>
+      <div class="q-item"><div class="q-text">A car uses 3/10 litre per km. For a 25 km trip, how many litres?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/10 × 25 = 75/10 = 7.5 litres.</p></details>
+      <div class="q-item"><div class="q-text">3/8 of a class of 40 are girls. How many boys?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Girls = 3/8 × 40 = 15. Boys = 40 − 15 = 25.</p></details>
+      <div class="q-item"><div class="q-text">A field's length-to-width ratio is 5:3. If the width is 12 m, find perimeter.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Length = 12 × 5/3 = 20 m. Perimeter = 2(20+12) = 64 m.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 2 -->
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Operations with Rational Numbers</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Adding and subtracting fractions</a><a href="#">Multiplying and dividing fractions</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Adding fractions with unlike denominators</a><a href="#">Dividing fractions — keep change flip</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">The beauty of fraction arithmetic</a><a href="#">Unexpected results with fractions</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">Why do we invert and multiply?</a><a href="#">Operations on the number line</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Add: 1/4 + 2/4.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/4.</p></details>
+      <div class="q-item"><div class="q-text">Subtract: 5/6 − 1/3.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/6 − 2/6 = 3/6 = 1/2.</p></details>
+      <div class="q-item"><div class="q-text">Multiply: 2/3 × 3/5.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 6/15 = 2/5.</p></details>
+      <div class="q-item"><div class="q-text">Divide: 4/5 ÷ 2/3.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4/5 × 3/2 = 12/10 = 6/5.</p></details>
+      <div class="q-item"><div class="q-text">Add: −3/4 + 1/2.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −3/4 + 2/4 = −1/4.</p></details>
+      <div class="q-item"><div class="q-text">Multiply: (−2/5) × (−3/4).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 6/20 = 3/10. (Negative × negative = positive.)</p></details>
+      <div class="q-item"><div class="q-text">Divide: −7/8 ÷ (−7/4).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −7/8 × −4/7 = 28/56 = 1/2.</p></details>
+      <div class="q-item"><div class="q-text">Simplify: 3/7 + 4/7 − 2/7.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (3+4−2)/7 = 5/7.</p></details>
+      <div class="q-item"><div class="q-text">Find: 0 ÷ (−5/9).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0. (0 divided by any non-zero number = 0.)</p></details>
+      <div class="q-item"><div class="q-text">Find: (−1/2) + (−1/3).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −3/6 + (−2/6) = −5/6.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 5/12 + 7/18.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> LCM(12,18)=36. 15/36 + 14/36 = 29/36.</p></details>
+      <div class="q-item"><div class="q-text">Simplify: 3/4 − 5/6 + 7/12.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> LCM=12. 9/12 − 10/12 + 7/12 = 6/12 = 1/2.</p></details>
+      <div class="q-item"><div class="q-text">Simplify: (2/3 × 9/4) ÷ (3/2).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2/3 × 9/4 = 18/12 = 3/2. Then 3/2 ÷ 3/2 = 1.</p></details>
+      <div class="q-item"><div class="q-text">Evaluate: (−3/5) × (10/9) + 1/3.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −30/45 + 1/3 = −2/3 + 1/3 = −1/3.</p></details>
+      <div class="q-item"><div class="q-text">Find x: x − 3/7 = 2/7.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x = 2/7 + 3/7 = 5/7.</p></details>
+      <div class="q-item"><div class="q-text">Find x: 2x/3 = 4/9.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x = (4/9) × (3/2) = 12/18 = 2/3.</p></details>
+      <div class="q-item"><div class="q-text">Simplify: (3/8 + 1/4) × (2/3 − 1/6).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (3/8+2/8) × (4/6−1/6) = 5/8 × 3/6 = 5/8 × 1/2 = 5/16.</p></details>
+      <div class="q-item"><div class="q-text">Verify: (1/2 + 1/3) + 1/4 = 1/2 + (1/3 + 1/4).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> LHS: 5/6 + 1/4 = 10/12+3/12=13/12. RHS: 1/2 + 7/12 = 6/12+7/12=13/12. ✓ Associative.</p></details>
+      <div class="q-item"><div class="q-text">If p = 2/3, q = −1/4, find p + q, p − q, pq.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> p+q = 8/12−3/12=5/12; p−q = 8/12+3/12=11/12; pq = −2/12=−1/6.</p></details>
+      <div class="q-item"><div class="q-text">Divide the sum of 1/2 and 1/3 by their product.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Sum=5/6; Product=1/6. 5/6 ÷ 1/6 = 5.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: [2/3 − (1/2 − 1/4)] ÷ [1 + 1/3 × 3/4].</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Numerator: 2/3−1/4=5/12. Denominator: 1+1/4=5/4. Result: 5/12 ÷ 5/4 = 5/12 × 4/5 = 4/12 = 1/3.</p></details>
+      <div class="q-item"><div class="q-text">Find three rational numbers between 2/5 and 3/5 without using the average method.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Convert to 10ths: 4/10 and 6/10. Between them: 5/10, or go to 50ths: 21/50, 22/50, 23/50.</p></details>
+      <div class="q-item"><div class="q-text">Solve: (x + 1/2)/(x − 1/3) = 2.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x + 1/2 = 2x − 2/3 → 1/2 + 2/3 = x → 3/6+4/6=7/6. x = 7/6.</p></details>
+      <div class="q-item"><div class="q-text">Show (a/b + c/d) × e/f = a/b × e/f + c/d × e/f for a=1,b=2,c=1,d=3,e=2,f=5.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> LHS: (1/2+1/3)×2/5=5/6×2/5=10/30=1/3. RHS: 2/10+2/15=1/5+2/15=3/15+2/15=5/15=1/3. ✓</p></details>
+      <div class="q-item"><div class="q-text">If a/b + 1/(a/b) = 10/3, find a/b (let it equal x; solve the quadratic).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x + 1/x = 10/3 → 3x²−10x+3=0 → (3x−1)(x−3)=0 → x=1/3 or x=3.</p></details>
+      <div class="q-item"><div class="q-text">Simplify: (1 − 1/2)(1 − 1/3)(1 − 1/4)…(1 − 1/10).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> = 1/2 × 2/3 × 3/4 × … × 9/10. Telescoping product = 1/10.</p></details>
+      <div class="q-item"><div class="q-text">Evaluate: 1/(1×2) + 1/(2×3) + 1/(3×4) + … + 1/(9×10).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Partial fractions: 1/(n(n+1))=1/n−1/(n+1). Sum = 1 − 1/10 = 9/10.</p></details>
+      <div class="q-item"><div class="q-text">The product of two rationals is 8/15. One is 4/5. Find the other and its reciprocal.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Other = 8/15 ÷ 4/5 = 8/15 × 5/4 = 40/60 = 2/3. Reciprocal = 3/2.</p></details>
+      <div class="q-item"><div class="q-text">For what value of k is (k/3 + 1/4)/(k/2 − 1/3) = 1?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> k/3+1/4 = k/2−1/3 → 1/4+1/3 = k/2−k/3 → 7/12 = k/6 → k = 7/2.</p></details>
+      <div class="q-item"><div class="q-text">If x = 1/(2+1/(3+1/4)), find x as a fraction.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Inner: 3+1/4=13/4. Middle: 2+4/13=30/13. x=13/30.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A pipe fills 1/4 of a tank per hour. Another fills 1/6 per hour. Together, how long to fill the tank?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Combined rate: 1/4+1/6=5/12 per hour. Time = 12/5 = 2.4 hours.</p></details>
+      <div class="q-item"><div class="q-text">A shopkeeper buys goods for ₹3/4 of the selling price. Profit fraction?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Profit = SP − CP = 1 − 3/4 = 1/4 of SP. Profit on CP = (1/4)/(3/4) = 1/3 ≈ 33.3%.</p></details>
+      <div class="q-item"><div class="q-text">You earn ₹480 and spend 3/8 on food, 1/4 on rent. What fraction is left?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Spent: 3/8+2/8=5/8. Left: 3/8. Amount = 3/8×480 = ₹180.</p></details>
+      <div class="q-item"><div class="q-text">A train travels 2/3 of its journey in 4 hours. Total journey time?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Speed = 2/3 journey in 4 h → full journey in 4 ÷ 2/3 = 6 hours.</p></details>
+      <div class="q-item"><div class="q-text">Mix 3/4 L orange juice with 2/3 L apple juice. Total and difference?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Total: 9/12+8/12=17/12 L. Difference: 1/12 L.</p></details>
+      <div class="q-item"><div class="q-text">Cloth costs ₹(7/4) per metre. Cost for 3(1/2) metres?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 7/4 × 7/2 = 49/8 = ₹6.125.</p></details>
+      <div class="q-item"><div class="q-text">A garden is 3/5 hectares. 2/3 of it is planted. Planted area?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/5 × 2/3 = 6/15 = 2/5 hectares.</p></details>
+      <div class="q-item"><div class="q-text">Three friends share a pizza: A takes 1/3, B takes 1/4. What fraction does C get?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> A+B = 4/12+3/12=7/12. C = 1−7/12=5/12.</p></details>
+      <div class="q-item"><div class="q-text">A student scored 7/10 in Maths and 4/5 in Science. Which score is higher?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 7/10 vs 8/10. Science (4/5) is higher.</p></details>
+      <div class="q-item"><div class="q-text">A tank loses 1/10 of remaining water each hour. After 2 hours, what fraction remains?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> After 1 hr: 9/10. After 2 hrs: 9/10 × 9/10 = 81/100.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 3 -->
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Representing Rational Numbers on the Number Line</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Placing fractions on the number line</a><a href="#">Negative fractions on number line</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">The number line explained</a><a href="#">Ordering fractions visually</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Gaps between rationals on number line</a><a href="#">Density of rational numbers</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">Visualising fractions geometrically</a><a href="#">The infinite number line</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Mark 1/2 on the number line between 0 and 1.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Divide segment [0,1] into 2 equal parts. 1/2 is the midpoint.</p></details>
+      <div class="q-item"><div class="q-text">Mark 3/4 on the number line.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Divide [0,1] into 4 equal parts. 3/4 is the 3rd mark.</p></details>
+      <div class="q-item"><div class="q-text">Where does −2/3 lie on the number line?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Divide [−1,0] into 3 equal parts. −2/3 is 2 parts to the left of 0.</p></details>
+      <div class="q-item"><div class="q-text">Which is to the right on number line: 2/3 or 3/4?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2/3=8/12, 3/4=9/12. So 3/4 is to the right.</p></details>
+      <div class="q-item"><div class="q-text">How many units apart are 1/4 and 3/4 on the number line?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/4 − 1/4 = 2/4 = 1/2 unit apart.</p></details>
+      <div class="q-item"><div class="q-text">Mark 7/3 on the number line by converting to mixed number.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 7/3 = 2⅓. Lies between 2 and 3, one-third of the way.</p></details>
+      <div class="q-item"><div class="q-text">Which is further from 0: −5/4 or 3/4?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> |−5/4|=5/4=1.25; |3/4|=0.75. So −5/4 is further from 0.</p></details>
+      <div class="q-item"><div class="q-text">What is the coordinate of the midpoint of 1/6 and 5/6?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (1/6+5/6)/2 = 6/6 ÷ 2 = 1/2.</p></details>
+      <div class="q-item"><div class="q-text">Arrange in order on the number line: 1/3, −1/2, 2/3, 0.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −1/2 &lt; 0 &lt; 1/3 &lt; 2/3.</p></details>
+      <div class="q-item"><div class="q-text">Is there a rational number between any two points on the number line?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — rationals are dense; infinitely many exist between any two distinct rationals.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 4 rational numbers between −1 and 0, and place them in order.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −4/5, −3/5, −2/5, −1/5 (divide [−1,0] into 5 parts).</p></details>
+      <div class="q-item"><div class="q-text">Using the number line, compare: 5/8 and 7/12.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/8=15/24; 7/12=14/24. So 5/8 &gt; 7/12.</p></details>
+      <div class="q-item"><div class="q-text">What is the distance between −3/5 and 4/5 on the number line?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4/5−(−3/5)=7/5=1.4 units.</p></details>
+      <div class="q-item"><div class="q-text">If A = 2/3 and B = 5/6 on a number line, find the midpoint AB.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (2/3+5/6)/2=(4/6+5/6)/2=9/12=3/4.</p></details>
+      <div class="q-item"><div class="q-text">How many integers lie between −7/3 and 11/4 on the number line?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −7/3≈−2.33, 11/4=2.75. Integers: −2,−1,0,1,2 → 5 integers.</p></details>
+      <div class="q-item"><div class="q-text">Mark −13/4 on the number line (convert to mixed number).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −13/4 = −3¼. Lies between −4 and −3, one-quarter from −3.</p></details>
+      <div class="q-item"><div class="q-text">A number is 3/5 units to the right of −1/5. What is the number?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −1/5 + 3/5 = 2/5.</p></details>
+      <div class="q-item"><div class="q-text">Find 3 rationals between 1/7 and 2/7.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Multiply by 4: 4/28 and 8/28. Between: 5/28, 6/28, 7/28.</p></details>
+      <div class="q-item"><div class="q-text">Which rational, when doubled, gives 5/6?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x = 5/12. On number line: between 0 and 1/2.</p></details>
+      <div class="q-item"><div class="q-text">If a number is equidistant from 1/4 and 3/4, what is it?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Midpoint = (1/4+3/4)/2 = 1/2.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find 5 rationals between 1/11 and 1/10 using the method of equivalent fractions.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Common denominator 110: 10/110 and 11/110. Between: no integers. Scale to 1100: 100/1100 to 110/1100. Five: 101,102,103,104,105 over 1100.</p></details>
+      <div class="q-item"><div class="q-text">Prove that between any two rationals a and b (a &lt; b), there are infinitely many rationals.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> The midpoint (a+b)/2 is rational and lies between them. Apply again to each subinterval — process never terminates → infinitely many.</p></details>
+      <div class="q-item"><div class="q-text">The sum of two rationals on the number line is 0 and their product is −9/16. Find them.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let x + y=0 → y=−x. −x²=−9/16 → x=±3/4. Numbers: 3/4 and −3/4.</p></details>
+      <div class="q-item"><div class="q-text">Three points A, B, C on the number line: A = −1/2, C = 5/6, B is 2/3 from A towards C. Find B.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> AC = 5/6−(−1/2)=5/6+3/6=8/6=4/3. B = −1/2 + 2/3×4/3 = −1/2+8/9 = −9/18+16/18 = 7/18.</p></details>
+      <div class="q-item"><div class="q-text">How does the number line show that rationals are "dense" but not "complete"?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Dense: between any two rationals lies another rational. Not complete: points like √2 exist on the line but are NOT rational — there are "gaps" in ℚ that irrationals fill.</p></details>
+      <div class="q-item"><div class="q-text">Find the rational number exactly halfway between 2/9 and 5/12.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (2/9+5/12)/2 = (8/36+15/36)/2 = 23/72.</p></details>
+      <div class="q-item"><div class="q-text">On a number line, mark −11/4. How far is it from 13/4?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 13/4−(−11/4)=24/4=6 units.</p></details>
+      <div class="q-item"><div class="q-text">If P = (2m−1)/3 and Q = (m+2)/4 represent the same point, find m.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4(2m−1)=3(m+2) → 8m−4=3m+6 → 5m=10 → m=2. Point = 3/3=1.</p></details>
+      <div class="q-item"><div class="q-text">Describe geometrically how to locate 5/7 on a number line using compass and ruler.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Draw a ray from 0. Mark 7 equal units on the ray. Draw line from 7th unit to 1 on number line. Draw parallels from 5th unit to number line — intersection is 5/7.</p></details>
+      <div class="q-item"><div class="q-text">Two numbers on a number line differ by 2/3 and their average is 1/6. Find both.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (x+y)/2=1/6 and x−y=2/3. x=1/6+1/3=1/2; y=1/6−1/3=−1/6.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A thermometer shows −3/2°C at 6 am and 7/2°C at noon. What is the rise?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 7/2−(−3/2)=10/2=5°C rise.</p></details>
+      <div class="q-item"><div class="q-text">A diver is at −5/2 m (below sea level). Rises 3/2 m. New position?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −5/2+3/2=−2/2=−1 m (still 1 m below sea level).</p></details>
+      <div class="q-item"><div class="q-text">On a map, points A and B are at 3/5 km and 9/5 km from origin. Distance AB?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9/5−3/5=6/5=1.2 km.</p></details>
+      <div class="q-item"><div class="q-text">A credit card statement shows −₹(7/4) lakh and −₹(3/4) lakh. Total debt?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −7/4+(−3/4)=−10/4=−5/2 lakh = −₹2.5 lakh.</p></details>
+      <div class="q-item"><div class="q-text">Heights above/below sea level: Town A at 3/4 km, Town B at −1/2 km. Difference?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/4−(−1/2)=3/4+2/4=5/4 km.</p></details>
+      <div class="q-item"><div class="q-text">A company's profit/loss over 3 months: +₹(5/4) L, −₹(3/4) L, +₹(1/2) L. Total?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/4−3/4+2/4=4/4=₹1 lakh profit.</p></details>
+      <div class="q-item"><div class="q-text">A road is marked every 1/5 km. How many marks between 0 and 2 km (including endpoints)?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2 ÷ 1/5 = 10 intervals → 11 marks.</p></details>
+      <div class="q-item"><div class="q-text">Timeline: event at −3/2 century (BCE) and event at 5/4 century (CE). Gap in centuries?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/4−(−3/2)=5/4+6/4=11/4=2¾ centuries.</p></details>
+      <div class="q-item"><div class="q-text">A stock starts at ₹(5/2) and gains ₹(3/4) daily for 4 days. Final value?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/2 + 4×3/4 = 5/2+3 = 5/2+6/2=11/2=₹5.50.</p></details>
+      <div class="q-item"><div class="q-text">Three cities on a straight highway at 0, 7/3 km, and 14/3 km. Are they equally spaced?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Gap 1: 7/3; Gap 2: 14/3−7/3=7/3. Yes, equally spaced at 7/3 km apart.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 4 -->
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Introduction to Irrational Numbers</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Introduction to irrational numbers</a><a href="#">Recognising irrational numbers</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">What makes a number irrational?</a><a href="#">Pi and irrational numbers</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Why is pi irrational?</a><a href="#">The square root of 2 and irrationality</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">The discovery of irrational numbers</a><a href="#">Ancient Greek crisis with irrationals</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Define irrational number. Give two examples.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> An irrational number cannot be expressed as p/q (integers, q≠0). Its decimal is non-terminating and non-repeating. Examples: √2, π.</p></details>
+      <div class="q-item"><div class="q-text">Is √9 rational or irrational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Rational — √9 = 3 = 3/1.</p></details>
+      <div class="q-item"><div class="q-text">Classify: √7, √16, √25, √3.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √7 irrational; √16=4 rational; √25=5 rational; √3 irrational.</p></details>
+      <div class="q-item"><div class="q-text">Why is 0.101001000100001… irrational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Non-terminating and non-repeating — cannot be expressed as p/q.</p></details>
+      <div class="q-item"><div class="q-text">Is π rational? What is its approximate value?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No, π is irrational. π ≈ 3.14159265… (non-terminating, non-repeating).</p></details>
+      <div class="q-item"><div class="q-text">What decimal property distinguishes irrationals from rationals?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrationals: non-terminating AND non-repeating. Rationals: either terminating or non-terminating repeating.</p></details>
+      <div class="q-item"><div class="q-text">Give an example of an irrational number between 2 and 3.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √5 ≈ 2.236 (or √6, √7, √8).</p></details>
+      <div class="q-item"><div class="q-text">Is 22/7 equal to π? Explain.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No — 22/7 = 3.142857… (repeating, rational). It is only an approximation of π.</p></details>
+      <div class="q-item"><div class="q-text">Which set is larger — rationals or irrationals? (Conceptual)</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrationals are "more numerous" — the set of irrationals is uncountably infinite, while rationals are countably infinite.</p></details>
+      <div class="q-item"><div class="q-text">Can the sum of two irrational numbers be rational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. Example: √2 + (−√2) = 0, which is rational.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Classify as rational or irrational: √2 + √2, √2 × √2, √2 + 3.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2+√2 = 2√2 (irrational); √2×√2 = 2 (rational); √2+3 (irrational).</p></details>
+      <div class="q-item"><div class="q-text">Is the product of two irrationals always irrational? Give example.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Not always. √2 × √2 = 2 (rational). But √2 × √3 = √6 (irrational).</p></details>
+      <div class="q-item"><div class="q-text">Identify irrational numbers in the list: 3.14, √4/9, π, 7/22, √11.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> π and √11 are irrational. 3.14 = 314/100 rational; √(4/9)=2/3 rational; 7/22 rational.</p></details>
+      <div class="q-item"><div class="q-text">Show √2 × √8 is rational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 × √8 = √16 = 4. Rational.</p></details>
+      <div class="q-item"><div class="q-text">Between which two consecutive integers does √20 lie?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4²=16, 5²=25. So 4 &lt; √20 &lt; 5.</p></details>
+      <div class="q-item"><div class="q-text">Explain why √(p/q) is irrational when p/q is not a perfect square ratio.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> If p and q have no common square factor such that both are perfect squares, then √(p/q) cannot be expressed as a ratio of integers.</p></details>
+      <div class="q-item"><div class="q-text">Create your own irrational number by writing a non-repeating, non-terminating decimal.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Example: 0.123456789101112… (concatenating natural numbers — Champernowne constant). Or any pattern that never repeats.</p></details>
+      <div class="q-item"><div class="q-text">Is √2 + √3 rational or irrational? Justify.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrational. Suppose √2+√3 = r (rational) → √3 = r−√2 → 3=(r−√2)²=r²−2r√2+2 → √2=(r²−1)/(2r), which would be rational — contradiction.</p></details>
+      <div class="q-item"><div class="q-text">What did the ancient Greeks call numbers that couldn't be expressed as ratios?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> "Alogon" (unspeakable/incommensurable). The discovery of √2 shocked the Pythagorean school.</p></details>
+      <div class="q-item"><div class="q-text">Is √2 + 1/√2 rational or irrational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 + 1/√2 = √2 + √2/2 = 3√2/2. Irrational.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove that √3 is irrational using the method of contradiction.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Assume √3 = p/q (lowest terms). Then 3q²=p² → 3|p² → 3|p. Let p=3k → 3q²=9k² → q²=3k² → 3|q. But then 3|gcd(p,q)=1. Contradiction. ∴ √3 irrational.</p></details>
+      <div class="q-item"><div class="q-text">Is (√2 − 1)(√2 + 1) rational or irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√2)²−1²=2−1=1. Rational. This uses the difference of squares identity.</p></details>
+      <div class="q-item"><div class="q-text">If x = 1 + √2 and y = 1 − √2, find x+y, xy, x²+y².</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x+y=2 (rational); xy=(1)²−(√2)²=−1 (rational); x²+y²=(x+y)²−2xy=4+2=6 (rational).</p></details>
+      <div class="q-item"><div class="q-text">Show that between any two rationals there is an irrational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let a &lt; b be rational. Then a + (b−a)/√2 lies between a and b and is irrational (since (b−a)/√2 is irrational and adding rational keeps it irrational).</p></details>
+      <div class="q-item"><div class="q-text">Classify: (√5 + √3)² − 2√15.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√5+√3)²=5+2√15+3=8+2√15. Subtract 2√15 → 8. Rational.</p></details>
+      <div class="q-item"><div class="q-text">If √n is irrational for all non-perfect-square n, why is √(49/4) rational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 49/4 = 7²/2², so √(49/4)=7/2. Both numerator and denominator are perfect squares.</p></details>
+      <div class="q-item"><div class="q-text">Is e (Euler's number ≈ 2.718...) rational or irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrational (and transcendental). Its decimal expansion is non-terminating, non-repeating.</p></details>
+      <div class="q-item"><div class="q-text">Find an irrational number between √2 and √3.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 ≈ 1.414, √3 ≈ 1.732. √(2.5) = √(5/2) ≈ 1.581 — irrational and lies between them.</p></details>
+      <div class="q-item"><div class="q-text">Can an irrational number raised to an irrational power be rational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes! (√2)^√2 is either rational or irrational. If rational, done. If irrational, let x=(√2)^√2; then x^√2=(√2)^2=2, rational. So yes — possible.</p></details>
+      <div class="q-item"><div class="q-text">The Hippasus story: why did the Pythagoreans find √2 so troubling?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Pythagoreans believed "all is number" (ratio of integers). √2 as diagonal of unit square proved a length existed that couldn't be expressed as p/q — shattering their worldview.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The diagonal of a 1 m × 1 m square. Is the length rational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Diagonal = √(1²+1²)=√2 ≈ 1.414 m. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">A circle has area 7 cm². Find the radius (leave in terms of √).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> πr²=7 → r=√(7/π) — irrational.</p></details>
+      <div class="q-item"><div class="q-text">Why do engineers use π ≈ 3.14159 rather than 22/7?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 22/7 ≈ 3.142857 — error ≈ 0.04%. π ≈ 3.14159 is more accurate. For precision engineering, better approximations reduce error.</p></details>
+      <div class="q-item"><div class="q-text">The period of a pendulum: T = 2π√(L/g). If L=1m, g=10 m/s². Is T rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> T = 2π√(0.1) = 2π/√10. Contains π — irrational.</p></details>
+      <div class="q-item"><div class="q-text">A TV screen has diagonal 40 inches and width 32 inches. Find height (exact form).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> h²=40²−32²=1600−1024=576. h=24 inches. (Rational here!)</p></details>
+      <div class="q-item"><div class="q-text">The speed of sound ≈ 343 m/s. Is this rational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 343 = 343/1. Rational. (Physical measurements are always rational approximations.)</p></details>
+      <div class="q-item"><div class="q-text">Side of a square with area 50 cm². Rational or irrational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Side = √50 = 5√2 ≈ 7.07 cm. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Why do computer programs store π as a finite decimal? What error results?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Computers use finite precision (e.g., 3.14159265358979). The truncation introduces rounding error — tiny but cumulative in long calculations.</p></details>
+      <div class="q-item"><div class="q-text">Architecture: A room is designed with a diagonal of 5 m and length 3 m. Is the width rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> w²=25−9=16 → w=4 m. Rational.</p></details>
+      <div class="q-item"><div class="q-text">The golden ratio φ = (1+√5)/2 ≈ 1.618. Is it irrational? Where does it appear?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrational (contains √5). Appears in art, architecture (Parthenon), flower petal counts (Fibonacci), and shell spirals.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 5 -->
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>√2, √3, √5 — Proof of Irrationality</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Proof that √2 is irrational</a><a href="#">Proof by contradiction technique</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Why √2 can't be a fraction</a><a href="#">Understanding proof by contradiction</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Visual proof √2 is irrational</a><a href="#">Infinite descent and irrationality</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">The most elegant proof in mathematics</a><a href="#">How do we know numbers are irrational?</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the proof strategy used to show √2 is irrational.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Proof by contradiction — assume √2 = p/q in lowest terms, derive that both p and q are even, contradicting "lowest terms."</p></details>
+      <div class="q-item"><div class="q-text">If √2 = p/q (lowest terms), what follows from squaring both sides?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2 = p²/q² → p² = 2q².</p></details>
+      <div class="q-item"><div class="q-text">If p² = 2q², why must p be even?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> p² is even (divisible by 2). If p were odd, p² would be odd. So p must be even.</p></details>
+      <div class="q-item"><div class="q-text">If p = 2k, substitute into p² = 2q² and find what this implies about q.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (2k)² = 2q² → 4k² = 2q² → q² = 2k² → q is also even.</p></details>
+      <div class="q-item"><div class="q-text">Why does "both p and q are even" give a contradiction?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> We assumed p/q is in lowest terms (gcd=1). But if both are even, gcd ≥ 2. Contradiction.</p></details>
+      <div class="q-item"><div class="q-text">What is the conclusion of the proof?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> The assumption that √2 is rational leads to a contradiction. Therefore √2 is irrational.</p></details>
+      <div class="q-item"><div class="q-text">What key lemma is used: "If p² is divisible by a prime p₀, then p is divisible by p₀"?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> This is a theorem about primes: if prime p₀ | p², then p₀ | p. (Used for p₀ = 2 in the √2 proof.)</p></details>
+      <div class="q-item"><div class="q-text">Between which two integers does √2 lie?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1² = 1 &lt; 2 &lt; 4 = 2², so 1 &lt; √2 &lt; 2.</p></details>
+      <div class="q-item"><div class="q-text">Is the proof for √3 irrationality similar to √2? Which prime is used?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes, same structure. Assume √3=p/q → p²=3q² → 3|p → p=3k → 3|q → contradiction. Prime used: 3.</p></details>
+      <div class="q-item"><div class="q-text">Why does this proof NOT work for √4?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √4 = 2, which IS rational. The proof requires us to reach a contradiction — but √4=2=2/1, so no contradiction arises.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write the full proof that √5 is irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Assume √5=p/q (lowest). Then p²=5q². So 5|p² → 5|p → p=5k → 25k²=5q² → q²=5k² → 5|q. Contradiction gcd=1. ∴ √5 irrational.</p></details>
+      <div class="q-item"><div class="q-text">Prove √6 is irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Assume √6=p/q → p²=6q²=2×3×q². Since 2|p² → 2|p, let p=2k → 4k²=6q² → 2k²=3q² → 2|3q² → 2|q. Contradiction. ∴ √6 irrational.</p></details>
+      <div class="q-item"><div class="q-text">Is √(p) irrational for every prime p? Justify briefly.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. If √p = a/b (lowest terms) → a²=pb² → p|a → a=pk → p²k²=pb² → pk²=b² → p|b. Contradiction. Same structure for every prime.</p></details>
+      <div class="q-item"><div class="q-text">Prove 3+√2 is irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Suppose 3+√2 = r (rational). Then √2 = r−3 = rational. But √2 is irrational — contradiction. ∴ 3+√2 irrational.</p></details>
+      <div class="q-item"><div class="q-text">Prove 5√3 is irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Suppose 5√3 = r (rational). Then √3 = r/5 = rational. But √3 irrational — contradiction. ∴ 5√3 irrational.</p></details>
+      <div class="q-item"><div class="q-text">Is √2 + √3 = √5? Verify numerically.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2≈1.414, √3≈1.732. Sum≈3.146. √5≈2.236. No, they are not equal.</p></details>
+      <div class="q-item"><div class="q-text">Show that √2/3 is irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Suppose √2/3 = r → √2 = 3r = rational. Contradiction. ∴ irrational.</p></details>
+      <div class="q-item"><div class="q-text">Why can't we apply the same proof to show √4 is irrational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> With √4=p/q → p²=4q². Let p=2k → 4k²=4q² → k=q. This gives p=2q meaning p/q=2/1. No contradiction — proof breaks down because 4 is a perfect square.</p></details>
+      <div class="q-item"><div class="q-text">The key step uses: "p² even implies p even." Prove this sub-result.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Contrapositive: if p is odd then p=2m+1 → p²=4m²+4m+1=2(2m²+2m)+1 = odd. So if p² even, p must be even. ✓</p></details>
+      <div class="q-item"><div class="q-text">Prove √2 × √3 = √6 and confirm √6 is irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 × √3 = √(2×3)=√6. By the prime argument above, √6 is irrational. Product of two irrationals is irrational here.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove √2 + √3 is irrational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let √2+√3=r. Then √3=r−√2 → 3=r²−2r√2+2 → √2=(r²−1)/(2r)=rational. But √2 irrational. Contradiction.</p></details>
+      <div class="q-item"><div class="q-text">Show that ∛2 is irrational (cube root of 2).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Assume ∛2=p/q → p³=2q³ → 2|p → p=2k → 8k³=2q³ → q³=4k³ → 2|q³ → 2|q. gcd(p,q)≥2. Contradiction.</p></details>
+      <div class="q-item"><div class="q-text">Prove: if n is a positive integer that is not a perfect square, then √n is irrational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Since n is not a perfect square, in the prime factorisation of n some prime appears to an odd power. Then √n would require that prime to appear to a half-integer power — impossible in ℚ. Formal proof uses Fundamental Theorem of Arithmetic.</p></details>
+      <div class="q-item"><div class="q-text">Prove 1/(√2−1) is irrational by rationalising.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Rationalise: 1/(√2−1) × (√2+1)/(√2+1) = (√2+1)/(2−1) = √2+1. If rational, √2 = rational−1 = rational. Contradiction. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Is log₂(3) rational or irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrational. Assume log₂3=p/q → 2^(p/q)=3 → 2^p=3^q. LHS is a power of 2, RHS of 3 — coprime. Only solution is p=q=0, impossible. So log₂3 irrational.</p></details>
+      <div class="q-item"><div class="q-text">The proof of √2's irrationality — what is the earliest known version?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Attributed to ancient Greeks (~5th century BCE), possibly Hippasus. Aristotle references it. The earliest written proof uses the parity argument essentially as described in Euclid's Elements Book X.</p></details>
+      <div class="q-item"><div class="q-text">If a and b are both irrational, is a/b necessarily irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No. √2/√2=1 (rational). √6/√3=√2 (irrational). Both cases possible.</p></details>
+      <div class="q-item"><div class="q-text">Prove that 1+√2 and 1−√2 are both irrational, then show their product is rational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Both irrational (adding rational to irrational). Product=(1+√2)(1−√2)=1−2=−1. Rational. Irrationals can have rational products.</p></details>
+      <div class="q-item"><div class="q-text">Prove that √p is irrational for prime p using the Fundamental Theorem of Arithmetic.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Assume √p=a/b → a²=pb². In prime factorisation, prime p appears to even power in a² and odd power on right. Contradicts uniqueness of factorisation (FTA). ∴ √p irrational.</p></details>
+      <div class="q-item"><div class="q-text">Construct a geometric proof that √2 is irrational using infinite descent.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Draw a right isosceles triangle with legs 1. If hypotenuse √2=p/q, construct smaller triangle of the same type with integer sides — process never stops (infinite descent), contradicting the well-ordering of natural numbers.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square tile has area 2 m². What is the side length? Can it be measured exactly with a ruler?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Side = √2 ≈ 1.414 m. Irrational — cannot be measured exactly with finite precision.</p></details>
+      <div class="q-item"><div class="q-text">A ladder of length √5 m leans against a wall. The base is 1 m from the wall. Height?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> h²=(√5)²−1²=5−1=4 → h=2 m. (Rational!)</p></details>
+      <div class="q-item"><div class="q-text">Music: frequency ratio 2^(1/12) per semitone (equal temperament). Is this rational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Irrational. 2^(1/12) is the 12th root of 2 — irrational (similar proof to √2). This is why equal-temperament tuning is mathematically "impure."</p></details>
+      <div class="q-item"><div class="q-text">A screen's aspect ratio is 16:9. Diagonal 50 cm. Find width and height (exact).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> w=16k, h=9k. (16k)²+(9k)²=2500 → 337k²=2500 → k=50/√337. Irrational dimensions.</p></details>
+      <div class="q-item"><div class="q-text">A standard A4 paper has area:width ratio equal to √2. Why is this useful?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Ratio long:short = √2. When folded in half, the smaller sheet maintains the same √2 ratio — so A4 folded = A5, same proportions. A clever irrational design.</p></details>
+      <div class="q-item"><div class="q-text">An equilateral triangle has side 2. Find the height. Rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Height = √(2²−1²)=√3 ≈ 1.732. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">GPS requires precision to nanoseconds. Why can't we use exact π in circle calculations?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> π is irrational — its exact value requires infinite digits. Computers must truncate, introducing unavoidable rounding errors. For GPS, π is computed to ~40 decimal places, sufficient for cm accuracy.</p></details>
+      <div class="q-item"><div class="q-text">Diagonal of a rectangle 3 m × 2 m. Rational or irrational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(9+4)=√13. Irrational (13 is prime).</p></details>
+      <div class="q-item"><div class="q-text">Speed: if distance = √5 km and time = √5 hours, is speed rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Speed = √5/√5 = 1 km/h. Rational!</p></details>
+      <div class="q-item"><div class="q-text">A square garden has perimeter 4√3 m. Is its area rational or irrational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Side = √3 m. Area = (√3)² = 3 m². Rational!</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 6 -->
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Decimal Expansions (Terminating and Non-terminating)</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Converting fractions to decimals</a><a href="#">Terminating and repeating decimals</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Understanding decimal expansions</a><a href="#">Why some decimals repeat</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">The pattern in repeating decimals</a><a href="#">1/7 and cyclic numbers</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">What happens when you divide by 7?</a><a href="#">The secret life of decimals</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Convert 3/8 to a decimal. Is it terminating?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/8 = 0.375. Yes, terminating (denominator 8=2³).</p></details>
+      <div class="q-item"><div class="q-text">Convert 1/3 to a decimal. Is it terminating?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/3 = 0.333… = 0.3̄. Non-terminating recurring.</p></details>
+      <div class="q-item"><div class="q-text">Which of these give terminating decimals: 1/4, 1/6, 1/8, 1/9?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/4=0.25 ✓ (4=2²); 1/8=0.125 ✓ (8=2³). 1/6 and 1/9 are non-terminating recurring.</p></details>
+      <div class="q-item"><div class="q-text">State the rule for when a fraction (in lowest terms) gives a terminating decimal.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> A fraction p/q (in lowest terms) terminates if and only if q has no prime factors other than 2 and 5.</p></details>
+      <div class="q-item"><div class="q-text">Does 7/25 terminate? Check using the rule.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 25 = 5². Only factor is 5. Yes, terminates. 7/25 = 0.28.</p></details>
+      <div class="q-item"><div class="q-text">Convert 5/6 to decimal. Identify the repeating block.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/6 = 0.8333… = 0.83̄. Repeating block: 3.</p></details>
+      <div class="q-item"><div class="q-text">Express 0.25 as a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.25 = 25/100 = 1/4.</p></details>
+      <div class="q-item"><div class="q-text">What type of decimal expansion does an irrational number have?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Non-terminating and non-repeating.</p></details>
+      <div class="q-item"><div class="q-text">Is 0.142857142857… rational? What fraction is it?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — it repeats (period 6). It equals 1/7.</p></details>
+      <div class="q-item"><div class="q-text">Convert 3/16 to decimal. Verify it terminates.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 16=2⁴ → terminates. 3/16=0.1875.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Without dividing, determine if 17/125 terminates. Then convert.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 125=5³ — only 5s. Terminates. 17/125=0.136.</p></details>
+      <div class="q-item"><div class="q-text">Predict the length of repeating block in 1/7. Verify.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> The repeating block length divides φ(7)=6. 1/7=0.142857̄ — block length 6.</p></details>
+      <div class="q-item"><div class="q-text">Which has a longer repeating block: 1/7 or 1/11? Convert both.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/7=0.142857̄ (6 digits). 1/11=0.09̄ (2 digits). 1/7 has longer block.</p></details>
+      <div class="q-item"><div class="q-text">Classify each: 0.25, 0.3̄, 0.1010010001…, 0.7̄2̄.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.25 — terminating rational; 0.3̄ — recurring rational; 0.1010010001… — irrational; 0.7̄2̄ — recurring rational.</p></details>
+      <div class="q-item"><div class="q-text">Convert 13/40 to decimal. State whether terminating.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 40=2³×5. Only 2s and 5s → terminates. 13/40=0.325.</p></details>
+      <div class="q-item"><div class="q-text">A decimal 0.abcabcabc… is what type? Express as fraction if a=1,b=4,c=2.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Recurring (period 3) → rational. 0.142̄ = 142/999.</p></details>
+      <div class="q-item"><div class="q-text">Write the decimal for 5/12. Identify non-terminating part.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/12=0.41666…=0.416̄. Repeating part: 6.</p></details>
+      <div class="q-item"><div class="q-text">Between 0.1 and 0.2, find one terminating and one recurring decimal.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Terminating: 0.15 (=3/20). Recurring: 0.1̄ …wait, 0.111…&lt;0.1? No: try 0.1666…=1/6. Both between 0.1 and 0.2. ✓</p></details>
+      <div class="q-item"><div class="q-text">Why does 1/3 give 0.333… but 1/30 gives 0.0333…?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/30=1/(2×3×5). The factors 2 and 5 cause the initial non-repeating "0.0" before the repeating block starts. Mixed: non-terminating with delayed repeat.</p></details>
+      <div class="q-item"><div class="q-text">Is 3.14 equal to π? What is the difference?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No. π≈3.14159… 3.14=314/100 (rational). Difference = π−3.14≈0.00159…</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove that a terminating decimal is always rational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> If x = 0.d₁d₂…dₙ (finite), multiply by 10ⁿ: 10ⁿx = integer N. So x = N/10ⁿ — ratio of integers. Rational.</p></details>
+      <div class="q-item"><div class="q-text">Prove a recurring decimal is rational. Use 0.abcabc…</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let x=0.abcabc…. Then 1000x=abc.abcabc… Subtract: 999x=abc (integer) → x=abc/999. Rational.</p></details>
+      <div class="q-item"><div class="q-text">What is the maximum possible period length of the decimal for 1/n?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> The period divides φ(n) (Euler's totient). For prime p, period divides p−1. Maximum period = n−1 (achieved by primes where 10 is a primitive root).</p></details>
+      <div class="q-item"><div class="q-text">Show that 0.9̄ = 1 (recurring nines equal one).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let x=0.999…. Then 10x=9.999…. Subtract: 9x=9 → x=1. So 0.9̄=1.</p></details>
+      <div class="q-item"><div class="q-text">Convert 2.13̄ to a fraction.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=2.1333… 10x=21.333…; 100x=213.333…. Subtract: 90x=192 → x=192/90=32/15.</p></details>
+      <div class="q-item"><div class="q-text">How many non-repeating digits before the repeating block in 1/12? Explain.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 12=4×3=2²×3. Non-repeating length = max(power of 2, power of 5) = max(2,0)=2. So 1/12=0.083̄ — 2 non-repeating digits.</p></details>
+      <div class="q-item"><div class="q-text">Write down the first 10 digits of √2 and explain why they can't repeat.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2=1.4142135623… If these digits eventually repeated, √2 would be expressible as p/q (recurring → rational). But √2 is irrational — contradiction. So no repetition.</p></details>
+      <div class="q-item"><div class="q-text">Find fractions with denominator &lt; 20 whose decimals have period exactly 6.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Period 6: denominators involving 7 (period 6) or 13 (period 6). Fractions: 1/7, 2/7, 3/7, 4/7, 5/6/7; 1/13, 2/13… all have period 6.</p></details>
+      <div class="q-item"><div class="q-text">Explain why the decimal for 1/(2^m × 5^n) has exactly max(m,n) decimal places.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Multiply numerator and denominator to make denominator 10^max(m,n): gives a fraction over power of 10 = finite decimal with max(m,n) places.</p></details>
+      <div class="q-item"><div class="q-text">Is 1/97 terminating or recurring? How long is the repeating block?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 97 is prime, not 2 or 5 → recurring. Period divides φ(97)=96. Actual period of 1/97 is 96 (10 is a primitive root mod 97).</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Price per unit: ₹10 for 3 items. Price per item in decimal?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 10/3 = ₹3.333… per item. Non-terminating recurring.</p></details>
+      <div class="q-item"><div class="q-text">Petrol costs ₹(1/8) per mL. Convert to decimal. Does it terminate?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/8=0.125. Yes, terminates (8=2³).</p></details>
+      <div class="q-item"><div class="q-text">A company divides ₹100 equally among 7 employees. Each gets how much (decimal)?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 100/7=14.285714285714… Non-terminating recurring. Each gets ≈₹14.29 (rounded to paise).</p></details>
+      <div class="q-item"><div class="q-text">A survey: 3 of 8 students prefer Math. Express as decimal. Terminating?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/8=0.375. Yes, terminates.</p></details>
+      <div class="q-item"><div class="q-text">Marathon: 42.195 km in 3 hours. Speed as decimal km/h. Terminating?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 42.195/3=14.065 km/h. Terminating.</p></details>
+      <div class="q-item"><div class="q-text">Annual interest rate 1/3%. Monthly rate? Express as recurring decimal.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Monthly = (1/3)/12 = 1/36 ≈ 0.02̄7̄ %. Non-terminating recurring.</p></details>
+      <div class="q-item"><div class="q-text">A recipe uses 2/3 cup sugar. If you triple the recipe, is the amount a terminating decimal?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3 × 2/3 = 2 cups exactly. Terminating (integer).</p></details>
+      <div class="q-item"><div class="q-text">Exchange rate: 1 USD = 83.33̄ INR. Express as fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 83.33̄ = 83 + 1/3 = 250/3. So 1 USD = 250/3 INR.</p></details>
+      <div class="q-item"><div class="q-text">A tape 1 m is cut into 6 equal pieces. Each piece in decimal. Recurring?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/6 = 0.1666… = 0.16̄. Yes, recurring.</p></details>
+      <div class="q-item"><div class="q-text">Computer memory: 1 byte = 1/1024 KB. Is this terminating? Convert.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1024=2¹⁰. Terminating. 1/1024=0.0009765625.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 7 -->
+<div class="topic" id="t7">
+  <div class="topic-header"><div class="t-num">7</div><h2>Converting Recurring Decimals to Fractions</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Converting repeating decimals to fractions</a><a href="#">Repeating decimals and algebra</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Turning repeating decimals into fractions</a><a href="#">The algebra trick for recurring decimals</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">The mystery of 0.999… = 1</a><a href="#">Repeating decimals and number theory</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">How to capture infinity in a fraction</a><a href="#">The surprising truth about repeating decimals</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Convert 0.3̄ to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.333…; 10x=3.333…; 9x=3; x=1/3.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.6̄ to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.666…; 10x=6.666…; 9x=6; x=2/3.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.7̄ to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9x=7; x=7/9.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.2̄7̄ (= 0.272727…) to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.272727…; 100x=27.272727…; 99x=27; x=27/99=3/11.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.1̄2̄3̄ (= 0.123123…) to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1000x=123.123123…; 999x=123; x=123/999=41/333.</p></details>
+      <div class="q-item"><div class="q-text">State the general method for converting a purely recurring decimal 0.abcabc… to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Place the repeating block over a number of 9s equal to the block length. E.g., 0.abc̄ = abc/999.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.5̄ to a fraction and verify by division.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9x=5; x=5/9. Verify: 5÷9=0.555… ✓</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.9̄ to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9x=9; x=1. So 0.9̄ = 1.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.4̄5̄ (= 0.454545…) to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 99x=45; x=45/99=5/11.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.0̄1̄ (= 0.010101…) to a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 99x=1; x=1/99.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Convert 0.13̄ (= 0.1333…) to a fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.1333…; 10x=1.333…; 100x=13.333…; 90x=12; x=12/90=2/15.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.41̄6̄ (= 0.41666…) to a fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.41666…; 10x=4.1666…; 100x=41.666…; 90x=37.5; x=37.5/90=75/180=5/12.</p></details>
+      <div class="q-item"><div class="q-text">Convert 2.3̄ to a fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=2.333…; 10x=23.333…; 9x=21; x=21/9=7/3.</p></details>
+      <div class="q-item"><div class="q-text">Convert 1.2̄7̄ (=1.272727…) to a fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=1.272727…; 100x=127.2727…; 99x=126; x=126/99=14/11.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.83̄ (=0.8333…) to a fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 10x=8.333…; 100x=83.333…; 90x=75; x=75/90=5/6.</p></details>
+      <div class="q-item"><div class="q-text">Convert 3.1̄4̄ (=3.141414…) to a fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=3.141414…; 100x=314.1414…; 99x=311; x=311/99.</p></details>
+      <div class="q-item"><div class="q-text">Show that 0.4̄ + 0.5̄ = 1 by converting to fractions.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.4̄=4/9; 0.5̄=5/9; Sum=9/9=1. ✓</p></details>
+      <div class="q-item"><div class="q-text">Express 5.3̄6̄ as a mixed number fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=5.3636…; 100x=536.3636…; 99x=531; x=531/99=59/11=5 4/11.</p></details>
+      <div class="q-item"><div class="q-text">Verify: 1/6 = 0.16̄ using the conversion method.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.1666…; 10x=1.666…; 100x=16.666…; 90x=15; x=15/90=1/6. ✓</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.3̄7̄2̄ (=0.372372…) to a fraction in lowest terms.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 999x=372; x=372/999=124/333.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Convert 0.321̄ (=0.3212121…) to a fraction.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.32121…; 100x=32.121…; 10000x=3212.121…; 9900x=3180; x=3180/9900=53/165.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.001̄ (=0.001111…) to a fraction.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.00111…; 100x=0.111…=1/9; x=1/900.</p></details>
+      <div class="q-item"><div class="q-text">Prove that every repeating decimal represents a rational number (general proof).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let x = a.b₁b₂…bₖc₁c₂…cₙc₁c₂…cₙ… where bᵢ are non-repeating and cᵢ repeating. Then 10^(k+n)x−10^k x is an integer. So x = integer/integer = rational.</p></details>
+      <div class="q-item"><div class="q-text">Show that 1.9̄ = 2.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=1.999…; 10x=19.999…; 9x=18; x=2. ✓</p></details>
+      <div class="q-item"><div class="q-text">What fraction equals 0.abcde̅ where the overline covers only e (i.e., 0.abcdeeeee…)?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=0.abcde…; 10000x=abcd.eee…; 100000x=abcde.eee…; 90000x=abcde−abcd; x=(abcde−abcd)/90000.</p></details>
+      <div class="q-item"><div class="q-text">Find two different fractions that equal 0.142̄8̄5̄7̄.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.142857̄=1/7. Also = 2/14 = 3/21 (equivalent fractions). Unique rational value.</p></details>
+      <div class="q-item"><div class="q-text">Convert 0.0̄1̄2̄3̄ (=0.012301230123…) to lowest terms.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9999x=123 (wait: 4-digit period). 9999x=123? No: 0.0123̄=123/9999. Wait: 0.0123̄ means period is 0123. But leading zero: 9999x=123. x=123/9999=41/3333.</p></details>
+      <div class="q-item"><div class="q-text">If 0.x̄ = 5/9, find x.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.x̄ = x/9 = 5/9 → x=5. So 0.5̄=5/9.</p></details>
+      <div class="q-item"><div class="q-text">Convert 12.3̄4̄5̄ (=12.345345345…) to a fraction.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x=12.345345…; 1000x=12345.345345…; 999x=12333; x=12333/999=4111/333.</p></details>
+      <div class="q-item"><div class="q-text">Is it possible for a non-repeating decimal to be expressible as a fraction? Explain.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Only if it terminates. A terminating decimal is technically non-repeating (or has repeating 0s). A truly non-repeating, non-terminating decimal is irrational and cannot be a fraction.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A measurement reads 0.3̄ m. Express as an exact fraction of a metre.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/3 m.</p></details>
+      <div class="q-item"><div class="q-text">A price is ₹2.3̄. Express as a fraction.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2.333…=7/3. So ₹7/3 per item.</p></details>
+      <div class="q-item"><div class="q-text">A speed of 0.16̄ km per minute — express as a fraction and find speed in km/h.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.16̄=1/6 km/min. Speed=1/6 × 60=10 km/h.</p></details>
+      <div class="q-item"><div class="q-text">Budget: 0.3̄ of salary on rent. If salary is ₹45,000, rent = ?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/3 × 45000 = ₹15,000.</p></details>
+      <div class="q-item"><div class="q-text">A population grows 0.0̄9̄ per year (fraction). Express and find growth on 1,000,000.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.0909…=9/99=1/11. Growth = 1,000,000/11 ≈ 90,909 people.</p></details>
+      <div class="q-item"><div class="q-text">Tax rate 0.08̄3̄ (=8.333…%). Express as fraction.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.0833̄ = 1/12. So tax rate is 1/12 = 8⅓%.</p></details>
+      <div class="q-item"><div class="q-text">A clock gains 0.0̄1̄ seconds per minute. How much in an hour?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.0101…=1/99 s/min. Per hour: 60/99=20/33 s ≈ 0.606 s.</p></details>
+      <div class="q-item"><div class="q-text">Efficiency of a machine is 0.8̄3̄. Express as fraction and find output for 120 units input.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.8333…=5/6. Output = 5/6 × 120 = 100 units.</p></details>
+      <div class="q-item"><div class="q-text">A recipe calls for 0.6̄ cups of an ingredient. Nearest exact measurement?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.6̄=2/3 cup. Use ⅔ cup measuring tool.</p></details>
+      <div class="q-item"><div class="q-text">Electricity tariff: ₹0.142̄8̄5̄7̄ per unit. What is this as a fraction?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0.142857̄=1/7. So ₹1/7 per unit.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 8 -->
+<div class="topic" id="t8">
+  <div class="topic-header"><div class="t-num">8</div><h2>The Real Number Line</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">The real number line explained</a><a href="#">Locating irrational numbers on number line</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Real numbers and the number line</a><a href="#">Filling the gaps with irrationals</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">The completeness of the real numbers</a><a href="#">Are there numbers between rationals?</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">The real number line — a complete picture</a><a href="#">Cantor and the sizes of infinity</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What are real numbers?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Real numbers are all rational numbers and all irrational numbers together. ℝ = ℚ ∪ (irrationals).</p></details>
+      <div class="q-item"><div class="q-text">Is every rational number a real number?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. ℚ ⊂ ℝ.</p></details>
+      <div class="q-item"><div class="q-text">Give an example of a real number that is not rational.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2, √3, π, e (any irrational number).</p></details>
+      <div class="q-item"><div class="q-text">What does it mean for the real number line to be "complete"?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Every point on the number line corresponds to exactly one real number — no gaps. Unlike ℚ, which has holes at irrational positions.</p></details>
+      <div class="q-item"><div class="q-text">Draw and label the hierarchy: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Natural numbers ⊂ Integers ⊂ Rationals ⊂ Reals. Each set contains all previous sets plus new elements.</p></details>
+      <div class="q-item"><div class="q-text">Locate √2 approximately on the number line.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 ≈ 1.414. It lies between 1 and 2, closer to 1.5.</p></details>
+      <div class="q-item"><div class="q-text">Is there a real number between every two real numbers?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — real numbers are also dense. Between any two reals lie infinitely many reals.</p></details>
+      <div class="q-item"><div class="q-text">What type of number is at position π on the number line?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> An irrational real number. π ≈ 3.14159…</p></details>
+      <div class="q-item"><div class="q-text">Are all real numbers either rational or irrational (never both)?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — the sets of rationals and irrationals are disjoint. Every real is exactly one type.</p></details>
+      <div class="q-item"><div class="q-text">List the subsets of real numbers from smallest to largest set.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Also: irrationals ⊂ ℝ but irrationals ⊄ ℚ.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Classify each as Natural, Integer, Rational, Irrational, Real: −5, 3/4, √7, 0, π.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −5: Integer, Rational, Real. 3/4: Rational, Real. √7: Irrational, Real. 0: Natural(debate)/Integer/Rational/Real. π: Irrational, Real.</p></details>
+      <div class="q-item"><div class="q-text">Locate √3 on the number line using the Pythagorean method.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Draw right triangle with legs 1 and √2 (itself from unit square diagonal). Hypotenuse = √(1+2)=√3. Swing arc to number line at √3 ≈ 1.732.</p></details>
+      <div class="q-item"><div class="q-text">Is there a real number that is both rational and irrational? Explain.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No — rational and irrational are complementary, mutually exclusive subsets of ℝ.</p></details>
+      <div class="q-item"><div class="q-text">How do you geometrically locate √5 on the number line?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Mark 2 on number line. Draw perpendicular of length 1. Hypotenuse = √(4+1)=√5. Swing to number line.</p></details>
+      <div class="q-item"><div class="q-text">Is the set of real numbers closed under addition? Give an example with an irrational.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. √2 + π is still real (irrational). All operations on reals give reals (except ÷0).</p></details>
+      <div class="q-item"><div class="q-text">Which is larger: √2 + 1 or √3? Verify numerically.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2+1≈2.414; √3≈1.732. So √2+1 is larger.</p></details>
+      <div class="q-item"><div class="q-text">Name three real numbers between √2 and √3.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2≈1.414, √3≈1.732. Examples: 1.5 (rational), √2.5 (irrational), 1.6 (rational).</p></details>
+      <div class="q-item"><div class="q-text">Explain why the rational number line has "holes" but the real number line does not.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> At positions like √2, there is no rational number — this is a "hole" in ℚ. In ℝ, every position has a corresponding real number (completeness axiom).</p></details>
+      <div class="q-item"><div class="q-text">If a real number x satisfies x² = 2, what is x? Is it rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x = ±√2. Irrational. But they exist as real numbers on the number line.</p></details>
+      <div class="q-item"><div class="q-text">Arrange on the real number line: √2, 1.4, 3/2, √3, π/2.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2≈1.414, 1.4&lt;√2, 3/2=1.5&gt;√2, √3≈1.732, π/2≈1.571. Order: 1.4 &lt; √2 &lt; 3/2 &lt; π/2 &lt; √3.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Explain Cantor's insight: irrationals are "more numerous" than rationals, even though both are infinite.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Rationals are countably infinite (can be listed). Irrationals are uncountably infinite — Cantor's diagonal argument shows no list can capture all irrationals. So |irrationals| &gt; |rationals| in cardinality.</p></details>
+      <div class="q-item"><div class="q-text">Locate √10 on the number line geometrically.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Draw right triangle with legs 3 and 1. Hypotenuse = √(9+1)=√10. Swing arc to number line at ≈3.162.</p></details>
+      <div class="q-item"><div class="q-text">Prove: between any two real numbers there is both a rational and an irrational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Rational: density of ℚ in ℝ guarantees a rational between any two reals. Irrational: adding irrational/rational to get irrational between them (as shown earlier).</p></details>
+      <div class="q-item"><div class="q-text">What is the Completeness Property of ℝ?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Every non-empty set of real numbers bounded above has a least upper bound (supremum) in ℝ. This property fails for ℚ — e.g., {x ∈ ℚ : x² &lt; 2} has no rational supremum.</p></details>
+      <div class="q-item"><div class="q-text">Is √2 + π rational or irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Almost certainly irrational (though proving this rigorously is an open problem). Numerically ≈ 4.556.</p></details>
+      <div class="q-item"><div class="q-text">Construct √n for n=2,3,4,5 on the same number line using the spiral of Theodorus.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Start with right triangle legs 1,1 → hyp=√2. New triangle: legs √2,1 → hyp=√3. Next: legs √3,1 → √4=2. Next: legs 2,1 → √5. Each step adds one right triangle building outward.</p></details>
+      <div class="q-item"><div class="q-text">Why is ℝ called a "field"?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> ℝ satisfies all field axioms: closure under +,×; commutativity; associativity; distributivity; additive identity (0); multiplicative identity (1); additive inverses; multiplicative inverses for non-zero elements.</p></details>
+      <div class="q-item"><div class="q-text">Give an example showing ℝ is closed under taking square roots (of non-negatives).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 ∈ ℝ (irrational). √(3/4)=√3/2 ∈ ℝ. ℝ is closed: √x ∈ ℝ for all x ≥ 0, x ∈ ℝ.</p></details>
+      <div class="q-item"><div class="q-text">Explain the difference between "dense" and "complete" for number systems.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Dense: between any two elements lies another (both ℚ and ℝ are dense). Complete: no gaps — every Cauchy sequence converges within the set. ℚ is dense but NOT complete; ℝ is both dense and complete.</p></details>
+      <div class="q-item"><div class="q-text">Is 2^π a real number? Is it rational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes, it is real (≈8.825). It is almost certainly irrational (transcendental), though this is not fully proved.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Temperature scale is continuous. What type of numbers represent all possible temperatures?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Real numbers — temperature can take any real value (rational or irrational).</p></details>
+      <div class="q-item"><div class="q-text">A measuring tape shows 1.414 m. What real number does this approximate?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 ≈ 1.41421356… The tape shows a rational approximation.</p></details>
+      <div class="q-item"><div class="q-text">GDP growth rate can be any real number. Give an example of a negative real number in context.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −3.5% GDP growth means contraction. −3.5 is a real number (negative rational).</p></details>
+      <div class="q-item"><div class="q-text">A computer stores "real" numbers as floating point. Why is this an approximation?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Computers use finite bits, so only finitely many values are representable. Irrationals (and many rationals) must be rounded to the nearest representable floating-point number.</p></details>
+      <div class="q-item"><div class="q-text">A physicist measures velocity as 3 × 10^8 m/s. What type of real number is this?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Rational (300,000,000 = integer). All measured values are rational approximations.</p></details>
+      <div class="q-item"><div class="q-text">Coordinate geometry: a point (√2, √3) in the plane. Are its coordinates real?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — both √2 and √3 are real numbers (irrational), valid coordinates.</p></details>
+      <div class="q-item"><div class="q-text">The number line models time continuously. Can time be irrational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Mathematically yes — time is modelled by ℝ. At t=√2 seconds, that is a valid real time (though unmeasurable exactly).</p></details>
+      <div class="q-item"><div class="q-text">Stock price: starts at ₹100, grows by factor √2 in one year. New price?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 100√2 ≈ ₹141.42. Irrational in theory, rounded to nearest paise in practice.</p></details>
+      <div class="q-item"><div class="q-text">Which is more precise: 22/7 or 3.14159? How do we know?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 22/7≈3.142857 (error≈0.00126). 3.14159 (error≈0.0000027). 3.14159 is more precise.</p></details>
+      <div class="q-item"><div class="q-text">A wave's amplitude follows the pattern Asin(√2 × t). Is the period rational or irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Period = 2π/√2 = π√2. Irrational (product of two irrationals). The wave has an irrational period.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 9 -->
+<div class="topic" id="t9">
+  <div class="topic-header"><div class="t-num">9</div><h2>Properties of Real Numbers</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Properties of real numbers</a><a href="#">Commutative, associative, distributive laws</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Algebraic properties of real numbers</a><a href="#">Distributive property in action</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Unexpected properties of real numbers</a><a href="#">When arithmetic rules break down</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">Why mathematical properties matter</a><a href="#">The axioms behind arithmetic</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">State the commutative property for addition of real numbers.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> a + b = b + a for all real numbers a, b.</p></details>
+      <div class="q-item"><div class="q-text">State the associative property for multiplication.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (a × b) × c = a × (b × c) for all real a, b, c.</p></details>
+      <div class="q-item"><div class="q-text">What is the additive identity in ℝ?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 0. Because a + 0 = a for every real number a.</p></details>
+      <div class="q-item"><div class="q-text">What is the multiplicative identity in ℝ?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1. Because a × 1 = a for every real number a.</p></details>
+      <div class="q-item"><div class="q-text">State the distributive property.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> a(b + c) = ab + ac for all real a, b, c.</p></details>
+      <div class="q-item"><div class="q-text">What is the additive inverse of √3?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −√3. Because √3 + (−√3) = 0.</p></details>
+      <div class="q-item"><div class="q-text">What is the multiplicative inverse of √2?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/√2 = √2/2. Because √2 × √2/2 = 2/2 = 1.</p></details>
+      <div class="q-item"><div class="q-text">Is division commutative over ℝ? Justify.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No. 6 ÷ 3 = 2 but 3 ÷ 6 = 1/2. Division is not commutative.</p></details>
+      <div class="q-item"><div class="q-text">Verify the distributive property: 3(√2 + 4).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3√2 + 12. (Distributed 3 to each term.)</p></details>
+      <div class="q-item"><div class="q-text">Does every non-zero real number have a multiplicative inverse?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. For any a ≠ 0 in ℝ, 1/a is also real and a × (1/a) = 1.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Use properties to simplify: √3(√3 + 2) + √3(√3 − 2).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> = √3[(√3+2)+(√3−2)] = √3 × 2√3 = 2×3=6.</p></details>
+      <div class="q-item"><div class="q-text">Verify commutativity of multiplication: (2+√5)(3) = 3(2+√5).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Both = 6+3√5. ✓</p></details>
+      <div class="q-item"><div class="q-text">Simplify using distributive property: (√2 + √3)² .</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√2)²+2√2√3+(√3)²=2+2√6+3=5+2√6.</p></details>
+      <div class="q-item"><div class="q-text">Show that real numbers are not closed under taking logarithm (base 10) of negative numbers.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> log(−1) is undefined in ℝ. So ℝ is not closed under log of negatives.</p></details>
+      <div class="q-item"><div class="q-text">Use the property a(b−c) = ab − ac to expand: 2√3(√3−√5).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2√3×√3 − 2√3×√5 = 2×3 − 2√15 = 6 − 2√15.</p></details>
+      <div class="q-item"><div class="q-text">Is ℝ closed under the operation: a★b = a²+b²? Justify.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes — a²+b² is the sum of squares of reals, which is real. ℝ closed under ★.</p></details>
+      <div class="q-item"><div class="q-text">Rationalise: 1/(√2+√3).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Multiply by (√3−√2)/(√3−√2): (√3−√2)/(3−2)=√3−√2.</p></details>
+      <div class="q-item"><div class="q-text">Simplify: (√5+2)(√5−2).</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√5)²−2²=5−4=1. Rational! Uses (a+b)(a−b)=a²−b².</p></details>
+      <div class="q-item"><div class="q-text">Show: (a+b)(a−b)=a²−b² for a=√7, b=2.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√7+2)(√7−2)=7−4=3. Direct: a²−b²=7−4=3. ✓</p></details>
+      <div class="q-item"><div class="q-text">What is the zero product property for real numbers?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> If ab=0, then a=0 or b=0 (or both). This holds for all real numbers.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Rationalise the denominator: 1/(√5+√3+√2).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Group: 1/((√5)+(√3+√2)). Multiply by (√5−(√3+√2))/(…): numerator=√5−√3−√2, denominator=5−(√3+√2)²=5−5−2√6=−2√6. Then rationalise again. Final: (√5−√3−√2)(−1/(2√6))×(√6/√6).</p></details>
+      <div class="q-item"><div class="q-text">Simplify: (√2+√3+√5)(√2+√3−√5).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let A=√2+√3. (A+√5)(A−√5)=A²−5=(√2+√3)²−5=2+2√6+3−5=2√6.</p></details>
+      <div class="q-item"><div class="q-text">Prove: (a+b)² = a² + 2ab + b² holds for irrationals a=√2, b=√3.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√2+√3)²=2+2√6+3=5+2√6. a²+2ab+b²=2+2√6+3=5+2√6. ✓</p></details>
+      <div class="q-item"><div class="q-text">For real a,b: if a²=b², must a=b?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> No. a²=b² → a=±b. Example: (−3)²=3²=9 but −3≠3.</p></details>
+      <div class="q-item"><div class="q-text">Show that √(a²) = |a| for all real a, not just a.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> If a=−3: a²=9, √9=3=|−3|. If a=3: √9=3=|3|. So √(a²)=|a|, not a (which could be negative).</p></details>
+      <div class="q-item"><div class="q-text">Simplify: 1/(2+√3) + 1/(2−√3).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Rationalise each: (2−√3)/(4−3)+(2+√3)/(4−3)=(2−√3+2+√3)/1=4.</p></details>
+      <div class="q-item"><div class="q-text">If x = 2+√3, find x + 1/x.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/x=1/(2+√3)=2−√3. x+1/x=(2+√3)+(2−√3)=4.</p></details>
+      <div class="q-item"><div class="q-text">Prove the Archimedean property: for any real x&gt;0, ∃ natural n with n&gt;x.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> This follows from the completeness of ℝ. If no such n existed, ℕ would be bounded above in ℝ, hence have a supremum s. But s−1 is not an upper bound, so ∃n&gt;s−1, making n+1&gt;s — contradiction.</p></details>
+      <div class="q-item"><div class="q-text">Find x if x − 1/x = 2√2 (x real positive).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x²−2√2x−1=0. x=(2√2±√(8+4))/2=(2√2±2√3)/2=√2±√3. Positive: x=√2+√3.</p></details>
+      <div class="q-item"><div class="q-text">Are real numbers totally ordered? What does this mean?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. For any a,b ∈ ℝ, exactly one holds: a&lt;b, a=b, or a&gt;b (trichotomy). This allows all real numbers to be placed in order on the number line.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Area of a rectangle = √3 × 5. Use commutative property to rewrite.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5 × √3 = 5√3. Same result — order doesn't matter for multiplication.</p></details>
+      <div class="q-item"><div class="q-text">Total cost = 3(√5 + 2) items at ₹1 each. Expand using distributive property.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3√5 + 6. (Distributive law applied to real numbers.)</p></details>
+      <div class="q-item"><div class="q-text">Perimeter of square with side √7 m. Simplify using multiplication properties.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4 × √7 = 4√7 m ≈ 10.58 m.</p></details>
+      <div class="q-item"><div class="q-text">A physics formula: KE = ½mv². For m=√2, v=√3, find KE. Rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> KE = ½ × √2 × 3 = 3√2/2 ≈ 2.12 J. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Profit = Revenue − Cost = (3+√5) − (1+√5). Find profit.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3+√5−1−√5=2. Rational! Irrationals cancel.</p></details>
+      <div class="q-item"><div class="q-text">In architecture, a column needs length √(a²+b²). For a=3, b=4. Is length rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(9+16)=√25=5. Rational — this is a 3-4-5 Pythagorean triple.</p></details>
+      <div class="q-item"><div class="q-text">Temperature: T = 20 − √2 × t. At t=√2, find T. Is it rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> T=20−√2×√2=20−2=18°C. Rational!</p></details>
+      <div class="q-item"><div class="q-text">Signal amplitude: A = (√3+1)(√3−1). Find A. Rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> A=3−1=2. Rational. Difference of squares makes irrationals disappear.</p></details>
+      <div class="q-item"><div class="q-text">Two electric charges: product (√5+√2)(√5−√2). Find the value.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5−2=3. Rational.</p></details>
+      <div class="q-item"><div class="q-text">Investment doubles every √2 years. After 2√2 years, how many times does it double?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2√2 ÷ √2 = 2 doublings. Final value = 4× original.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 10 -->
+<div class="topic" id="t10">
+  <div class="topic-header"><div class="t-num">10</div><h2>Ordering Real Numbers</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Comparing and ordering real numbers</a><a href="#">Ordering irrational numbers</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">How to compare irrational numbers</a><a href="#">Putting numbers in order on the line</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Surprising comparisons of irrationals</a><a href="#">Which is bigger: e or π?</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">Ordering the unorderable — irrationals</a><a href="#">Number comparisons that will surprise you</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Compare: √5 and 2. Which is greater?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √5≈2.236 &gt; 2. So √5 &gt; 2.</p></details>
+      <div class="q-item"><div class="q-text">Arrange in ascending order: √2, √3, √5, 2.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2≈1.414, √3≈1.732, 2=2, √5≈2.236. Order: √2 &lt; √3 &lt; 2 &lt; √5.</p></details>
+      <div class="q-item"><div class="q-text">Which is larger: 1/√2 or √2/2?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> They are equal: 1/√2 = √2/2 (rationalise). Same number.</p></details>
+      <div class="q-item"><div class="q-text">Is π &gt; 3.14? Justify.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Yes. π=3.14159… &gt; 3.14. The first three decimal places of π exceed 3.14.</p></details>
+      <div class="q-item"><div class="q-text">Which is greater: √9 or √8?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √9=3, √8≈2.83. So √9 &gt; √8. (Square root is an increasing function.)</p></details>
+      <div class="q-item"><div class="q-text">Compare 5/4 and √(25/16).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(25/16)=5/4. They are equal.</p></details>
+      <div class="q-item"><div class="q-text">Order: −√2, −1, −1/2, 0.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> −√2≈−1.414. Order: −√2 &lt; −1 &lt; −1/2 &lt; 0.</p></details>
+      <div class="q-item"><div class="q-text">Which is between 1.4 and 1.5: √2 or √3?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2≈1.414 ✓ (between 1.4 and 1.5). √3≈1.732 ✗. So √2.</p></details>
+      <div class="q-item"><div class="q-text">Is 2√2 &gt; √8?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2√2=√(4×2)=√8. They are equal.</p></details>
+      <div class="q-item"><div class="q-text">Compare 3√2 and 2√3.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3√2=√18≈4.24; 2√3=√12≈3.46. So 3√2 &gt; 2√3.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Arrange in descending order: π, √10, 3.1, 22/7.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> π≈3.14159, √10≈3.162, 3.1, 22/7≈3.14286. Order desc: √10 &gt; 22/7 &gt; π &gt; 3.1.</p></details>
+      <div class="q-item"><div class="q-text">Compare √(1/2) and 1/√2 and 0.7. Order them.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(1/2)=1/√2≈0.707. 0.7 &lt; 1/√2 = √(1/2). (The first two are equal.)</p></details>
+      <div class="q-item"><div class="q-text">Is 2+√3 &gt; 3+√2?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2+√3≈3.732; 3+√2≈4.414. So 2+√3 &lt; 3+√2.</p></details>
+      <div class="q-item"><div class="q-text">Order: 5/3, √(8/3), 1.65. Which is greatest?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/3≈1.667; √(8/3)=√2.667≈1.633; 1.65. Order: √(8/3)&lt;1.65&lt;5/3. Greatest: 5/3.</p></details>
+      <div class="q-item"><div class="q-text">Without calculator, determine if √6 &gt; √2 + 1.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Square both: 6 vs (√2+1)²=2+2√2+1=3+2√2≈5.83. Since 6&gt;5.83, √6&gt;√2+1. ✓</p></details>
+      <div class="q-item"><div class="q-text">Arrange: 2/√3, √(4/3), 1.16. Which is smallest?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2/√3=2√3/3≈1.155; √(4/3)≈1.155; 1.16. The first two equal ≈1.155 &lt; 1.16. Smallest: 2/√3=√(4/3).</p></details>
+      <div class="q-item"><div class="q-text">Which is bigger: π² or g (=9.8 m/s²)?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> π²≈9.8696. g=9.8. So π² &gt; g (very close!). Famous coincidence.</p></details>
+      <div class="q-item"><div class="q-text">Is √2 + √8 &gt; √18?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2+√8=√2+2√2=3√2=√18. They are equal!</p></details>
+      <div class="q-item"><div class="q-text">Between which two integers does 2√5 lie?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √5≈2.236 → 2√5≈4.472. Lies between 4 and 5.</p></details>
+      <div class="q-item"><div class="q-text">Compare √(3+√5) and √3+√√5. Which is greater?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(3+√5)≈√(3+2.236)=√5.236≈2.288. √3+5^(1/4)≈1.732+1.495=3.227. So √3+5^(1/4) &gt; √(3+√5).</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Without calculator, compare √7 + √11 and √5 + √13.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (√7+√11)²=18+2√77; (√5+√13)²=18+2√65. Since 77&gt;65, √77&gt;√65, so √7+√11 &gt; √5+√13.</p></details>
+      <div class="q-item"><div class="q-text">Prove: if 0&lt;a&lt;b, then √a &lt; √b (square root is order-preserving).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Suppose √a ≥ √b. Squaring (both positive): a ≥ b. Contradiction. ∴ √a &lt; √b.</p></details>
+      <div class="q-item"><div class="q-text">Find the integer closest to √2 + √3 + √5.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2≈1.414, √3≈1.732, √5≈2.236. Sum≈5.382. Closest integer: 5.</p></details>
+      <div class="q-item"><div class="q-text">Compare: e (≈2.718) and √(π²) = π ≈ 3.14. Order e, π, e², π².</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> e≈2.718, π≈3.14159, e²≈7.389, π²≈9.870. Order: e &lt; π &lt; e² &lt; π².</p></details>
+      <div class="q-item"><div class="q-text">Is 2^(√2) &gt; √2^2 = 2? Explain.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2^(√2) ≈ 2^1.414 ≈ 2.665. √2^2 = 2. So 2^√2 &gt; 2. ✓</p></details>
+      <div class="q-item"><div class="q-text">Arrange: ∛2, ∜3, √(√2), 2^(1/5). Which is largest?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> ∛2=2^(1/3)≈1.26; ∜3=3^(1/4)≈1.316; √(√2)=2^(1/4)≈1.189; 2^(1/5)≈1.149. Order: 2^(1/5)&lt;√√2&lt;∛2&lt;∜3. Largest: ∜3.</p></details>
+      <div class="q-item"><div class="q-text">Show that n &lt; √n(n+1) &lt; n+1 for any positive integer n.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> n²=n² &lt; n(n+1)=n²+n &lt; (n+1)²=n²+2n+1. Taking square roots (all positive): n &lt; √(n(n+1)) &lt; n+1. ✓</p></details>
+      <div class="q-item"><div class="q-text">Which is greater: 1000th root of 1000, or 100th root of 100?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1000^(1/1000) = e^(ln1000/1000) ≈ e^(6.9/1000); 100^(1/100)=e^(4.6/100). Since 6.9/1000&lt;4.6/100, 100^(1/100) is greater.</p></details>
+      <div class="q-item"><div class="q-text">Prove: √2 &lt; 3/2 without a calculator.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (3/2)²=9/4=2.25 &gt; 2. Since squaring is order-preserving for positives: 3/2 &gt; √2. ✓</p></details>
+      <div class="q-item"><div class="q-text">In competition maths: which is larger, 2^300 or 3^200?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Compare 2^3 vs 3^2: 8 vs 9. So 3^2&gt;2^3 → 3^200=(3^2)^100&gt;(2^3)^100=2^300? Wait: 3^200 vs 2^300. ln(3^200)=200ln3≈219.7; ln(2^300)=300ln2≈207.9. So 3^200 &gt; 2^300.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Heights: √10 m, 3 m, √8 m, 3.2 m. Rank shortest to tallest.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √8≈2.83 &lt; 3 &lt; √10≈3.16 &gt; 3.2. Order: √8 &lt; 3 &lt; 3.2 &lt; √10.</p></details>
+      <div class="q-item"><div class="q-text">Speed of light: c=3×10⁸ m/s. Speed of sound: 343 m/s. Ratio? Rational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Ratio=3×10⁸/343≈874,635. Rational (ratio of two rational numbers).</p></details>
+      <div class="q-item"><div class="q-text">Two routes: √50 km and 7 km. Which is shorter?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √50=5√2≈7.07 &gt; 7. The 7 km route is shorter.</p></details>
+      <div class="q-item"><div class="q-text">Speeds: 5√2 m/s and 7 m/s. Compare and state which is faster.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5√2≈7.07 &gt; 7. The 5√2 m/s speed is faster.</p></details>
+      <div class="q-item"><div class="q-text">Areas: square of side √3 m and rectangle of 1.7 m × 1.8 m. Which has greater area?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Square: (√3)²=3 m². Rectangle: 1.7×1.8=3.06 m². Rectangle is larger.</p></details>
+      <div class="q-item"><div class="q-text">Stock prices: ₹√50 and ₹7.1. Which is more expensive?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √50≈7.07 &lt; 7.1. So ₹7.1 is more expensive.</p></details>
+      <div class="q-item"><div class="q-text">A pendulum period T=2π√(L/g). For L=1: T≈2×3.14159×1/√10≈1.99 s. Compare to 2 s.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> T≈1.987 s &lt; 2 s. Slightly less than 2 seconds (for g=10 m/s²).</p></details>
+      <div class="q-item"><div class="q-text">Score comparison: 9/√2 and 6.5. Which is higher?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 9/√2≈6.364 &lt; 6.5. Score of 6.5 is higher.</p></details>
+      <div class="q-item"><div class="q-text">Compare diagonal of 2×2 square with perimeter of equilateral triangle of side 2. Which is larger?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Diagonal=2√2≈2.83. Perimeter=3×2=6. Perimeter is much larger.</p></details>
+      <div class="q-item"><div class="q-text">Exchange rates: ₹/$ = √8100 = 90. ₹/€ = √7225 = 85. Which currency is stronger vs rupee?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> $1=₹90, €1=₹85. Dollar is stronger relative to rupee.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 11 -->
+<div class="topic" id="t11">
+  <div class="topic-header"><div class="t-num">11</div><h2>Approximating Irrational Numbers</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Approximating square roots</a><a href="#">Estimating irrational numbers</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">How to estimate square roots</a><a href="#">Squeezing irrational numbers</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Computing digits of pi</a><a href="#">The Babylonian method for square roots</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">How Archimedes approximated pi</a><a href="#">Algorithms for computing square roots</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Between which two integers does √7 lie?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2²=4, 3²=9. So 2 &lt; √7 &lt; 3.</p></details>
+      <div class="q-item"><div class="q-text">Estimate √20 to one decimal place.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4²=16, 5²=25. 4.4²=19.36, 4.5²=20.25. √20≈4.5 (to 1 d.p.).</p></details>
+      <div class="q-item"><div class="q-text">Between which tenths does √5 lie?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2.2²=4.84, 2.3²=5.29. So 2.2 &lt; √5 &lt; 2.3.</p></details>
+      <div class="q-item"><div class="q-text">√3 ≈ ? (to 2 decimal places).</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1.73²=2.9929, 1.74²=3.0276. √3≈1.73.</p></details>
+      <div class="q-item"><div class="q-text">What is √2 correct to 3 decimal places?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √2 ≈ 1.414.</p></details>
+      <div class="q-item"><div class="q-text">Estimate √50. Which integer is it closest to?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √49=7, √50≈7.07. Closest integer: 7.</p></details>
+      <div class="q-item"><div class="q-text">Between which two integers does √(1/2) lie?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(1/2)=1/√2≈0.707. Lies between 0 and 1.</p></details>
+      <div class="q-item"><div class="q-text">Estimate: √(3) × √(3) = ?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Exactly 3 (no estimation needed). √3 × √3 = 3 by definition.</p></details>
+      <div class="q-item"><div class="q-text">Approximate √11 to the nearest integer.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3²=9, 4²=16. √11≈3.3. Nearest integer: 3.</p></details>
+      <div class="q-item"><div class="q-text">Is 1.41 a good approximation for √2? What is the error?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1.41²=1.9881. Error = 2−1.9881=0.0119. Close but not exact.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Use the Babylonian/Heron's method: refine √2 starting from x₀=1.5.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x₁=(1.5+2/1.5)/2=(1.5+1.333)/2=1.4167. x₂=(1.4167+2/1.4167)/2≈1.4142. Converges to √2.</p></details>
+      <div class="q-item"><div class="q-text">Approximate √30 to 2 decimal places by trial and improvement.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5²=25, 6²=36. 5.4²=29.16, 5.5²=30.25. 5.47²=29.92, 5.48²=30.03. √30≈5.48.</p></details>
+      <div class="q-item"><div class="q-text">Approximate π using the fraction 355/113. How accurate is it?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 355/113≈3.14159292. π≈3.14159265. Error≈2.7×10⁻⁷. Very accurate!</p></details>
+      <div class="q-item"><div class="q-text">Estimate √(2.5) by noting it lies between √2 and √3. Improve the estimate.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1.5²=2.25, 1.6²=2.56. 1.58²=2.4964, 1.59²=2.5281. √2.5≈1.58.</p></details>
+      <div class="q-item"><div class="q-text">The diagonal of a square with area 10 cm². Approximate to 1 decimal place.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Side=√10≈3.162. Diagonal=√10×√2=√20≈4.5 cm.</p></details>
+      <div class="q-item"><div class="q-text">Approximate 1/π to 4 decimal places.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1/π=1/3.14159≈0.3183.</p></details>
+      <div class="q-item"><div class="q-text">Between which two tenths does √17 lie?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 4.1²=16.81, 4.2²=17.64. So 4.1 &lt; √17 &lt; 4.2. More precisely: ≈4.12.</p></details>
+      <div class="q-item"><div class="q-text">Use linear interpolation to estimate √26. (Between √25=5 and √36=6.)</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Linear interpolation: 5 + (26−25)/(36−25) × 1 = 5 + 1/11 ≈ 5.09. Actual: √26≈5.099. Good estimate!</p></details>
+      <div class="q-item"><div class="q-text">Find √(0.09) exactly. Is it rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(0.09)=√(9/100)=3/10=0.3. Rational!</p></details>
+      <div class="q-item"><div class="q-text">Estimate 3√2 + 2√3 to 2 decimal places.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3×1.414+2×1.732=4.242+3.464=7.706≈7.71.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Use Newton's method (Heron's) to compute √7 to 4 decimal places.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> x₀=2.6; x₁=(2.6+7/2.6)/2=2.6481; x₂=(2.6481+7/2.6481)/2=2.6458; x₃≈2.6458. √7≈2.6458.</p></details>
+      <div class="q-item"><div class="q-text">Prove: for n not a perfect square, √n lies strictly between two consecutive integers.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Let k=⌊√n⌋. Then k²≤n&lt;(k+1)². Since n is not a perfect square, k²&lt;n&lt;(k+1)². Taking square roots: k&lt;√n&lt;k+1. ✓</p></details>
+      <div class="q-item"><div class="q-text">What is the best rational approximation of √2 with denominator ≤ 10?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Using continued fraction: √2=[1;2,2,2,…]. Convergents: 1,3/2,7/5,17/12,41/29,99/70. With denom ≤ 10: 7/5=1.4 (error 0.014) and 17/12≈1.4167 has denom 12&gt;10. Best is 7/5.</p></details>
+      <div class="q-item"><div class="q-text">How did Archimedes approximate π using 96-gon? What bounds did he find?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Inscribed and circumscribed 96-gons around a circle. Perimeters give: 3 10/71 &lt; π &lt; 3 1/7, i.e., 3.1408 &lt; π &lt; 3.1429.</p></details>
+      <div class="q-item"><div class="q-text">The continued fraction of √2 = [1;2,2,2,…]. Show the first 3 convergents.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> a₀=1: convergent 1/1. a₁=2: 1+1/2=3/2. a₂=2: 1+1/(2+1/2)=7/5. Each convergent gives a better rational approximation.</p></details>
+      <div class="q-item"><div class="q-text">Estimate √(n²+1) − n for large n using binomial approximation.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(n²+1)=n√(1+1/n²)≈n(1+1/(2n²))=n+1/(2n). So √(n²+1)−n ≈ 1/(2n), which → 0 as n→∞.</p></details>
+      <div class="q-item"><div class="q-text">Use the identity √(a+b)≈√a+b/(2√a) for small b. Estimate √(99).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(100−1)≈10−1/(2×10)=10−0.05=9.95. Actual:≈9.9499. Excellent!</p></details>
+      <div class="q-item"><div class="q-text">Show that 1.41421356 &lt; √2 &lt; 1.41421357.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 1.41421356²=1.99999999…&lt;2. 1.41421357²=2.00000001…&gt;2. Since squaring preserves order, the inequality holds.</p></details>
+      <div class="q-item"><div class="q-text">Rational approximation: using convergents, the error for pₙ/qₙ≈√2 is &lt; 1/(√2·qₙ²). Verify for 7/5.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> |7/5−√2|=|1.4−1.4142|=0.0142. 1/(√2×25)=1/35.36≈0.0283. 0.0142 &lt; 0.0283. ✓</p></details>
+      <div class="q-item"><div class="q-text">Can π be approximated by a square root? Find √n where √n ≈ π to 2 decimal places.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> π≈3.14159. π²≈9.8696. So √10≈3.1623 (error≈0.02). √(9.87) closer still. Best integer: n=10 gives √10≈3.162, close to π.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Real-World Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square garden has area 50 m². Approximate the side length to 1 decimal place.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √50=5√2≈7.1 m.</p></details>
+      <div class="q-item"><div class="q-text">Hypotenuse of a right triangle with legs 5 and 7 cm. Approximate.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(25+49)=√74≈8.6 cm.</p></details>
+      <div class="q-item"><div class="q-text">Period of a pendulum T=2π√(L/g). For L=2, g=9.8. Find T to 2 d.p.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> T=2π√(2/9.8)=2×3.14159×√0.2041=6.2832×0.4517≈2.84 s.</p></details>
+      <div class="q-item"><div class="q-text">Speed: √(v₁²+v₂²) where v₁=3, v₂=4. Exact and approximate.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(9+16)=√25=5 exactly. (3-4-5 right triangle!)</p></details>
+      <div class="q-item"><div class="q-text">Distance between points (0,0) and (3,√7). Approximate distance.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(9+7)=√16=4. Exactly 4 units. (Rational!)</p></details>
+      <div class="q-item"><div class="q-text">A circle has area 20π cm². Approximate its radius.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> πr²=20π → r²=20 → r=√20=2√5≈4.47 cm.</p></details>
+      <div class="q-item"><div class="q-text">An engineering tolerance requires: length accurate to ±0.01 m. Can √3 be used directly?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √3≈1.732. Use 1.73 (error=0.002&lt;0.01 ✓). Yes, 1.73 m is within tolerance.</p></details>
+      <div class="q-item"><div class="q-text">A ball dropped from height h=√5 m. Hits ground after t=√(2h/g) seconds. Approximate t for g=10.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> t=√(2√5/10)=√(√5/5)=5^(1/4)/√5=5^(1/4−1/2)=5^(−1/4)≈1/1.495≈0.669 s.</p></details>
+      <div class="q-item"><div class="q-text">GPS accuracy: position error ∝ √n where n = number of satellites. For n=16, error = ?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √16=4. Error factor = 4 (relative to n=1). More satellites reduce this via averaging.</p></details>
+      <div class="q-item"><div class="q-text">A ramp of length √200 m and height 10 m. Find the horizontal base and angle (tan = h/b).</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> b=√(200−100)=√100=10 m. tan(angle)=10/10=1 → angle=45°. Ramp = 10√2 m at 45°.</p></details>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC 12 -->
+<div class="topic" id="t12">
+  <div class="topic-header"><div class="t-num">12</div><h2>Real-World Applications</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span><a href="#">Real numbers in science and engineering</a><a href="#">Pythagorean theorem applications</a></div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span><a href="#">Using irrational numbers in real life</a><a href="#">Where do irrational numbers appear?</a></div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span><a href="#">Pi in real life applications</a><a href="#">The golden ratio in nature</a></div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span><a href="#">The unreasonable effectiveness of mathematics</a><a href="#">Irrational numbers hiding in everyday life</a></div>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span>Foundation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square field has area 169 m². What is the side length? Rational?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √169=13 m. Rational (perfect square).</p></details>
+      <div class="q-item"><div class="q-text">A square tile has area 2 cm². What is the perimeter?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Side=√2. Perimeter=4√2≈5.66 cm.</p></details>
+      <div class="q-item"><div class="q-text">Calculate the circumference of a wheel of radius 7 cm.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> C=2πr=14π≈43.98 cm. Irrational exact value.</p></details>
+      <div class="q-item"><div class="q-text">A recipe uses 2/3 cup and 3/4 cup of different ingredients. Total?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 2/3+3/4=8/12+9/12=17/12 cups = 1 5/12 cups.</p></details>
+      <div class="q-item"><div class="q-text">Distance between two towers: one at 3/4 km and other at 7/4 km from school. Distance?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 7/4−3/4=4/4=1 km.</p></details>
+      <div class="q-item"><div class="q-text">A fraction of students passed: 84 out of 120. Simplify as fraction and decimal.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 84/120=7/10=0.7=70%.</p></details>
+      <div class="q-item"><div class="q-text">√2 appears as diagonal of a unit square. Find diagonal of 3×3 square.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> d=√(9+9)=√18=3√2≈4.24 m.</p></details>
+      <div class="q-item"><div class="q-text">A round table has diameter 1.2 m. Find area using π≈3.14159.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> r=0.6 m. A=π×0.36≈1.131 m².</p></details>
+      <div class="q-item"><div class="q-text">Temperature: rational or irrational? The boiling point of water is 100°C. What type?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 100 = 100/1. Rational integer.</p></details>
+      <div class="q-item"><div class="q-text">A computer game uses √(x²+y²) to calculate distance. For x=6, y=8. Distance?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(36+64)=√100=10 units. Rational (6-8-10 = 2×(3-4-5) triple).</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span>Applying</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Speed of water waves: v=√(gd) where g=9.8, d=10 m. Find v.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> v=√(98)=7√2≈9.9 m/s.</p></details>
+      <div class="q-item"><div class="q-text">Spiral staircase: each step rises √3 m and spans 1 m. What is the slant length?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(1+3)=√4=2 m. Rational!</p></details>
+      <div class="q-item"><div class="q-text">Investment: ₹10,000 at 10% for 2 years (compound). Final amount? Rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 10000×(1.1)²=10000×1.21=₹12,100. Rational.</p></details>
+      <div class="q-item"><div class="q-text">A kite string of length 50 m makes angle 60° with ground. Height = 50sin60°. Find height.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Height=50×(√3/2)=25√3≈43.3 m. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Music: frequency doubles each octave. Starting at 440 Hz, find frequency 1.5 octaves up.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 440 × 2^1.5 = 440 × 2√2 ≈ 440 × 2.828 ≈ 1243.9 Hz. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">A triangular plot: sides 3 m, 4 m, 5 m. Is the area rational?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Right triangle (3-4-5). Area=½×3×4=6 m². Rational.</p></details>
+      <div class="q-item"><div class="q-text">The number of spirals in a sunflower is often a Fibonacci number. 34 and 55 spirals. Their ratio approaches golden ratio φ=(1+√5)/2. What is φ?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> φ=(1+√5)/2≈1.618. Irrational. 55/34≈1.6176 — close to φ.</p></details>
+      <div class="q-item"><div class="q-text">Cooking: recipe uses 5/8 of a 400g pack. How many grams?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 5/8×400=250g.</p></details>
+      <div class="q-item"><div class="q-text">Standard deviation formula involves √. If variance = 5, standard deviation = ?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> SD=√5≈2.236. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">A ramp for wheelchair access: horizontal=12 m, height=1 m. Length of ramp?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(144+1)=√145≈12.04 m. Irrational but very close to 12 m.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span>Challenge</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove that √2 is the ratio of diagonal to side in a square, for ANY square.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Square with side a: diagonal=√(a²+a²)=a√2. Ratio=a√2/a=√2. Independent of side length. ✓</p></details>
+      <div class="q-item"><div class="q-text">Show the golden ratio satisfies φ²=φ+1, making it irrational.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> φ=(1+√5)/2. φ²=(6+2√5)/4=(3+√5)/2=1+(1+√5)/2=1+φ. ✓ Since φ contains √5 (irrational), φ is irrational.</p></details>
+      <div class="q-item"><div class="q-text">The "Pythagoras tree" has branches of length (1/√2)^n at depth n. Sum of all lengths (geometric series)?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Geometric series: 1+1/√2+(1/√2)²+… = 1/(1−1/√2)=√2/(√2−1)=√2(√2+1)=2+√2. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Cellular signal: power ∝ 1/r². Signal at r=√3 m vs r=3 m. Ratio?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> P(√3)/P(3)=(1/3)/(1/9)=3. Signal at √3 m is 3 times stronger. Rational ratio.</p></details>
+      <div class="q-item"><div class="q-text">In music, why does equal temperament use 2^(1/12) per semitone?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 12 semitones per octave. Each must multiply to give factor 2 (one octave). So each step = 2^(1/12). This is irrational — every interval except octaves is slightly "out of tune" but the compromise allows all keys to sound equal.</p></details>
+      <div class="q-item"><div class="q-text">The Spiral of Theodorus: the nth triangle has hypotenuse √(n+1). Find the perimeter of the first 5 triangles combined.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Hypotenuses: √2,√3,√4=2,√5,√6. Legs (all 1): 5×1=5. Sum of hypotenuses=√2+√3+2+√5+√6≈1.414+1.732+2+2.236+2.449=9.831. Total perimeter components (but these share legs).</p></details>
+      <div class="q-item"><div class="q-text">Atomic radius of hydrogen is approximately 5.3×10⁻¹¹ m = √(28.09)×10⁻¹¹. Verify.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(28.09)≈5.3. 5.3²=28.09 ✓. So 5.3×10⁻¹¹=√(28.09)×10⁻¹¹. Irrational exact value.</p></details>
+      <div class="q-item"><div class="q-text">The diagonal of a regular hexagon (from vertex to vertex through centre) = 2r. Is this rational if r=√3?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Diagonal=2√3. Irrational. But if r=1, diagonal=2 (rational). Depends on r.</p></details>
+      <div class="q-item"><div class="q-text">Find the exact diagonal of a rectangular field (20/3) m × (15/4) m. Rational or irrational?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> d=√((20/3)²+(15/4)²)=√(400/9+225/16)=√((6400+2025)/144)=√(8425/144)=√8425/12. 8425=25×337. Not perfect square → irrational.</p></details>
+      <div class="q-item"><div class="q-text">GPS uses at least 4 satellites. Why does the number of satellites relate to the square root of error reduction?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> By law of large numbers, averaging n independent measurements reduces error by factor √n (standard error = σ/√n). More satellites → lower position error by √n factor.</p></details>
+    </div>
+  </div>
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span>Mixed Real-World Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A swimming pool is 25 m × 10 m. Find the diagonal.</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(625+100)=√725=5√29≈26.93 m. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Pizza ordered for 8 people; cost ₹(24/5) per person. Total?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 8×24/5=192/5=₹38.40.</p></details>
+      <div class="q-item"><div class="q-text">Light travels 3×10⁸ m/s. In 1/3 of a second, how far?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3×10⁸ × 1/3 = 10⁸ m = 100,000 km. Rational.</p></details>
+      <div class="q-item"><div class="q-text">A medicine dose is 3/4 tablet twice daily for 7 days. Total tablets?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> 3/4 × 2 × 7 = 21/2 = 10.5 tablets.</p></details>
+      <div class="q-item"><div class="q-text">A ball's speed = √(2gh) where g=9.8, h=5. Find speed.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> v=√(98)=7√2≈9.9 m/s. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Share 7/8 of a cake among 7 people equally. What fraction does each get?</div><span class="diff diff-easy">Easy</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> (7/8)/7=1/8 of the cake each.</p></details>
+      <div class="q-item"><div class="q-text">Screen resolution: 1920×1080 pixels. Diagonal in pixels?</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> √(1920²+1080²)=√(3686400+1166400)=√4852800≈2202.9 pixels. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">Find the side of a square whose perimeter equals the circumference of a circle of radius 7 cm.</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Circumference=14π. Side=14π/4=7π/2≈11 cm. Irrational.</p></details>
+      <div class="q-item"><div class="q-text">A park has 3/5 of its area as garden and 1/4 as parking. Rest is building. What fraction is building?</div><span class="diff diff-medium">Medium</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Garden+parking=3/5+1/4=12/20+5/20=17/20. Building=3/20.</p></details>
+      <div class="q-item"><div class="q-text">Irrational numbers in cooking: baking ratio 1:√2:√3 of flour:water:sugar. If flour=100g, find water and sugar.</div><span class="diff diff-hard">Hard</span></div>
+      <details class="ans"><summary>Show Answer</summary><p><strong>Answer:</strong> Water=100√2≈141.4g. Sugar=100√3≈173.2g. Irrational amounts (measured approximately).</p></details>
+    </div>
+  </div>
+</div>
+
+<footer>Grade 8 · Ganita Prakash Part 1 · Chapter 3 · The Gaudium School · 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

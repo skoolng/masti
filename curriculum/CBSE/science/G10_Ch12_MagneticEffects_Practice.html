@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 12 – Magnetic Effects of Electric Current | Grade 10 Science</title>
+<style>
+:root{--primary:#065f46;--accent:#10b981;--green:#16a34a;--bg:#f0fdf4;--card:#fff;--border:#a7f3d0;--text:#1f2937;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#022c22,#065f46,#047857);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--primary);margin-bottom:14px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.kurzg .ch-tag{color:#d93025}.vid-box.crash .ch-tag{color:#7b2cbf}.vid-box.natgeo .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}@media print{header,nav,footer,.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧲 Chapter 12 – Magnetic Effects of Electric Current</h1>
+  <p>Grade 10 · NCERT Science · The Gaudium School · IB MYP · 144 Practice Questions</p>
+</header>
+
+<nav>
+  <h2>Topics in this chapter</h2>
+  <ol>
+    <li><a href="#t1">Oersted's Discovery</a></li>
+    <li><a href="#t2">Solenoid and Electromagnet</a></li>
+    <li><a href="#t3">Force on a Conductor</a></li>
+    <li><a href="#t4">Electric Motor</a></li>
+    <li><a href="#t5">Electromagnetic Induction</a></li>
+    <li><a href="#t6">Generators and Transformers</a></li>
+  </ol>
+</nav>
+
+<!-- ═══════════════════════════ TOPIC 1 ═══════════════════════════ -->
+<div class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Oersted's Discovery</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=yt5SEykCw7A" target="_blank">Oersted's Experiment</a>
+        <a href="https://www.youtube.com/watch?v=pMC1oZJBB3k" target="_blank">Magnetic Field around a Wire</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Electromagnetism Explained</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course</span>
+        <a href="https://www.youtube.com/watch?v=aOfXTBIO-ks" target="_blank">Magnetic Force &amp; Field</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=sEN9LV4BGKM" target="_blank">Earth's Magnetic Field</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Easy — Oersted's Discovery</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What did Oersted discover in 1820?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hans Christian Oersted discovered that a current-carrying conductor produces a magnetic field around it. When current flowed through a wire near a compass needle, the needle deflected — showing electricity and magnetism are related (electromagnetism).</p></details></span></div>
+      <div class="q-item"><span class="q-text">State the right-hand thumb rule for a straight current-carrying conductor.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>If the right thumb points in the direction of current, the curled fingers show the direction of the magnetic field lines (circular loops around the wire).</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the shape of magnetic field lines around a straight current-carrying conductor?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Concentric circles centred on the wire, perpendicular to the current direction. The circles get larger (and field gets weaker) with increasing distance from the wire.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How does the magnetic field strength vary with distance from a long straight wire?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic field (B) is inversely proportional to distance (r) from the wire: B ∝ 1/r. The field decreases as distance increases. (Formula: B = μ₀I/2πr for an infinite straight wire.)</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the unit of magnetic field (B)?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Tesla (T). Also Gauss (1 T = 10,000 G). Earth's magnetic field ≈ 25–65 μT; MRI machine ≈ 1.5–3 T; bar magnet ≈ 0.1–1 T.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What would Oersted have observed if the compass needle was placed parallel to the wire?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Maximum deflection — the field circles are perpendicular to the wire, so a compass parallel to the wire is perpendicular to the field lines and deflects most when current flows. (When current is off, compass aligns with Earth's N-S.)</p></details></span></div>
+      <div class="q-item"><span class="q-text">Name the device used to detect and show direction of magnetic field lines around a wire.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A magnetic compass (or plotting compass). Iron filings can also show the pattern of field lines by sprinkling them on a card around the wire — they align with field lines when current flows.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What happens to the compass needle deflection if the current direction is reversed?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The compass needle deflects in the opposite direction. Reversing current reverses the magnetic field direction around the wire, so the north pole of the compass needle points the other way.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Medium — Oersted's Discovery</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain the significance of Oersted's discovery in the history of physics.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Before Oersted (1820), electricity and magnetism were considered separate forces. His discovery proved they are related — electricity creates magnetism. This led to Ampere's law, Faraday's induction (magnetism creates electricity), Maxwell's electromagnetic theory (1865), and ultimately to the entire foundation of modern electrical technology — motors, generators, telecommunications.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Derive the direction of magnetic field lines around an upward current (using right-hand rule) and describe the pattern.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Current upward (away from you): right thumb points up. Fingers curl counterclockwise (viewed from above) → field lines form counterclockwise circles around the wire when viewed from above. On the left of the wire: field points away from you (into the page). On the right: toward you (out of the page). The pattern is symmetric, concentric circles perpendicular to the wire.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How does increasing the current through a wire affect the magnetic field at a given distance?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>B ∝ I (from Biot-Savart or Ampere's law: B = μ₀I/2πr). Doubling current doubles the magnetic field at any given distance. The compass needle would deflect more. This is why strong electromagnets use large currents.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What does Oersted's experiment imply about the relationship between electric and magnetic fields? (In terms of Maxwell's equations.)<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Oersted's experiment is a demonstration of Ampere's law (one of Maxwell's four equations): ∮B·dl = μ₀I_enclosed. A current (moving charges) creates a magnetic field in surrounding space. This is one half of the electromagnetic unification — the other half is Faraday's law (changing B creates E). Together they show E and B fields are aspects of one electromagnetic field.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Using the right-hand thumb rule, determine the direction of the magnetic field at a point 5 cm to the east of a vertical wire carrying current upward.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Current up → right thumb up. Fingers at the east side of the wire curl from south to north (upward current, east side). At a point 5 cm east: the field is directed toward the south (tangent to the circular field line at that point, which goes counterclockwise viewed from above — so east side has field pointing south).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why does a compass needle near a current-carrying wire not point north?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>The compass aligns with the resultant of Earth's magnetic field AND the magnetic field produced by the current-carrying wire. If the wire's field is strong enough, it dominates, deflecting the needle away from geographic north toward the direction of the local field. The stronger the current or closer the wire, the greater the deflection.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What would happen in Oersted's experiment if the current were replaced with alternating current (AC) at 50 Hz?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>At 50 Hz, the current reverses 50 times per second. The magnetic field reverses direction 50 times/second. The compass needle, due to its inertia, cannot respond fast enough — it would remain roughly stationary (no net deflection), vibrating slightly. Oersted's classic experiment requires DC (steady current) to produce a steady deflection.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State the right-hand rule for a circular current loop — how does it determine the magnetic field direction inside the loop?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Curl the right hand such that the fingers curl in the direction of current flow around the loop. The extended thumb points in the direction of the magnetic field through the centre of the loop (which acts as the N-pole face). Alternatively: if current flows anticlockwise (viewed from a face), that face is the North pole (field emerging).</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Hard — Oersted's Discovery</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive the expression for the magnetic field at the centre of a circular loop of radius r carrying current I.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Using Biot-Savart Law: dB = (μ₀/4π)(Idl × r̂)/r². For a full circular loop at the centre, all dl elements are at distance r and perpendicular to r. The contributions add (all pointing in the same direction — along axis). B = ∮(μ₀I/4πr²)dl = (μ₀I/4πr²)(2πr) = μ₀I/2r. For N turns: B = μ₀NI/2r. ∎</p></details></span></div>
+      <div class="q-item"><span class="q-text">Two parallel wires carry currents in the same direction. Explain using Oersted's principle why they attract each other.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Wire 1 creates a magnetic field B₁ at the location of Wire 2 (right-hand rule). The field from Wire 1 at Wire 2's position points toward Wire 1. Wire 2 carries current in the same direction → force on Wire 2 = I₂L × B₁ (cross product). Direction (Fleming's Left-Hand Rule): force is toward Wire 1 → attraction. Opposite currents → repulsion. This is the basis of the SI definition of the ampere (force between two parallel wires).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why is Earth's core responsible for Earth's magnetic field, and how does this relate to Oersted's discovery?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Earth's outer core is liquid iron and nickel — a conducting fluid. Convection currents in the outer core, driven by temperature differences and Earth's rotation, create large-scale circular electric currents. By Oersted's principle (electric current → magnetic field), these convection currents generate Earth's magnetic field — the geodynamo. The principle is the same as Oersted's wire: moving charges (current) create magnetic fields. Earth's "wire" is the entire liquid outer core (~2900–5150 km depth).</p></details></span></div>
+      <div class="q-item"><span class="q-text">The magnetic field at 2 cm from a long wire is 10 μT. Find the current in the wire.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>B = μ₀I/2πr. I = B × 2πr / μ₀ = (10×10⁻⁶ × 2π × 0.02) / (4π×10⁻⁷) = (10⁻⁶ × 2π × 0.02) × 10⁷ / (4π) = (4π×10⁻⁷ × I) / (2π × 0.02) → I = (10×10⁻⁶ × 2π × 0.02)/(4π×10⁻⁷) = (10⁻⁶ × 0.04π)/(4π×10⁻⁷) = 10⁻⁶ × 0.04 / (4×10⁻⁷) = 4×10⁻⁸/4×10⁻⁷ = 0.1 × 10 = 1 A. Current = 1 A.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain Ampere's circuital law and how it generalises Oersted's observation mathematically.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Oersted: current creates a magnetic field around a wire. Ampere's law: ∮B·dl = μ₀I_enclosed. For any closed loop around a current, the line integral of B equals μ₀ times the enclosed current. For a circular loop at distance r from a long wire: B × 2πr = μ₀I → B = μ₀I/2πr. This mathematically quantifies Oersted's qualitative observation. Ampere's law is one of Maxwell's equations and applies to any current distribution — not just straight wires.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why does the magnetic field inside a hollow current-carrying cylinder equal zero while outside it follows B ∝ 1/r?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Using Ampere's law: choose a circular path of radius r inside the cylinder. I_enclosed = 0 (no current inside hollow cylinder). ∮B·dl = μ₀×0 = 0 → B = 0 inside. For r outside cylinder: I_enclosed = total current I. ∮B·dl = B×2πr = μ₀I → B = μ₀I/2πr ∝ 1/r. This is the magnetic analogue of the electric shell theorem — a cylindrical shell of current has no field inside it, just as a spherical shell of charge has no field inside.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How does the force between two parallel current-carrying conductors define the SI unit of current (ampere)?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Force per unit length between parallel wires: F/L = μ₀I₁I₂/2πd (where d = separation). For I₁ = I₂ = 1 A, d = 1 m: F/L = (4π×10⁻⁷ × 1 × 1)/(2π × 1) = 2×10⁻⁷ N/m. Old SI definition (pre-2019): 1 ampere = current in two parallel infinite conductors 1 m apart producing a force of 2×10⁻⁷ N per metre of length. New SI (2019): ampere defined by fixing e = 1.602176634×10⁻¹⁹ C. The old definition directly used Oersted's magnetic force principle.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Oersted performed his experiment in 1820. Describe a modern application of the same principle in everyday technology.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic stripe credit/debit cards: data encoded as magnetic domains on the stripe. Card readers use the Oersted principle in reverse — moving the magnetic stripe induces current in a coil (Faraday induction), reading the data. Also: non-contact current sensing (clamp meters) — a wire's magnetic field deflects a Hall sensor inside the clamp, measuring current without breaking the circuit. Both are direct descendants of Oersted's principle: current-field relationship and its converse.</p></details></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ TOPIC 2 ═══════════════════════════ -->
+<div class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Solenoid and Electromagnet</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=pMC1oZJBB3k" target="_blank">Solenoid Magnetic Field</a>
+        <a href="https://www.youtube.com/watch?v=yt5SEykCw7A" target="_blank">Electromagnets Explained</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How Electromagnets Work</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course</span>
+        <a href="https://www.youtube.com/watch?v=aOfXTBIO-ks" target="_blank">Solenoids &amp; Inductors</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=sEN9LV4BGKM" target="_blank">Magnets in Technology</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Easy — Solenoid and Electromagnet</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What is a solenoid?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A solenoid is a long coil of wire with many closely wound circular turns. When current flows, it behaves like a bar magnet — producing a uniform magnetic field along its axis, with north and south poles at the two ends.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How does the magnetic field inside a solenoid compare to that outside?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Inside: strong, uniform, parallel field lines (like a bar magnet's field along its axis). Outside: weak, diverging field (like the field around the ends of a bar magnet). Inside field much stronger than outside.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is an electromagnet?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>An electromagnet is a temporary magnet made by winding an insulated wire coil around a soft iron core. The magnet is active only when current flows and loses its magnetism when current is switched off.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State three ways to increase the strength of an electromagnet.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Increase the number of turns in the coil. (2) Increase the current. (3) Use a soft iron core instead of air. All three increase magnetic field strength B ∝ nI (and iron core increases permeability by ~1000×).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why is soft iron used as the core of an electromagnet rather than steel?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Soft iron is easily magnetised when current flows but quickly loses magnetism when current stops (low retentivity). Steel retains magnetism — would remain a permanent magnet after switching off, making it unsuitable for a temporary electromagnet.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Give two practical applications of electromagnets.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Electric bells and buzzers — electromagnet attracts a metal strip, creating a ringing sound. (2) Junkyard cranes — large electromagnets lift scrap metal; switching off releases the metal safely.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the formula for the magnetic field inside a solenoid?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>B = μ₀nI, where n = number of turns per unit length (N/L), I = current, μ₀ = 4π×10⁻⁷ T·m/A (permeability of free space). With iron core: B = μ₀μᵣnI (μᵣ = relative permeability of iron ≈ 1000-5000).</p></details></span></div>
+      <div class="q-item"><span class="q-text">How do you determine which end of a solenoid is the north pole?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Use the right-hand rule (clock/anticlockwise rule): if you curl the right hand with fingers pointing in the direction of current flow through the turns, the thumb points toward the North pole. Alternatively: viewing the end where current flows anticlockwise → North pole; clockwise → South pole.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Medium — Solenoid and Electromagnet</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A solenoid has 500 turns, length 25 cm, and carries 2 A. Find the magnetic field inside (μ₀ = 4π×10⁻⁷ T·m/A).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>n = N/L = 500/0.25 = 2000 turns/m. B = μ₀nI = 4π×10⁻⁷ × 2000 × 2 = 4π×10⁻⁷ × 4000 = 16π×10⁻⁴ ≈ 5.03×10⁻³ T ≈ 5 mT.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why a solenoid with iron core is 1000× stronger than one with air core.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron has relative permeability μᵣ ≈ 1000-5000 (much greater than 1 for air). B_iron = μ₀μᵣnI. The iron core becomes temporarily magnetised — its magnetic domains align with the solenoid field, adding their own strong magnetic field to the coil's field. The total field is amplified by the factor μᵣ. This is why electromagnets use iron cores for strong fields with modest currents.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Compare a permanent magnet and an electromagnet for industrial lifting applications.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Electromagnet: switchable (release load by turning off current), adjustable strength, can be very powerful. Disadvantage: needs continuous power supply. Permanent magnet: no power needed. Disadvantage: cannot be switched off easily — hard to release the load. Industrial cranes use electromagnets to pick up and release scrap metal by simply switching current on/off.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why is the magnetic field outside a long solenoid negligible?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>In an ideal infinite solenoid, the external fields from adjacent turns cancel out (adjacent turns carry current in opposite senses on the external surface — effectively cancelling). By symmetry and Ampere's law, the field outside an infinite solenoid = 0. In a real solenoid, the field is very small outside but not exactly zero, especially near the ends.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Describe how an electric bell uses the principle of an electromagnet.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>When the bell button is pressed: current flows → electromagnet magnetises → attracts the soft iron strip (armature) → hammer strikes the bell. Movement of armature breaks the circuit at the contact point → current stops → electromagnet demagnetises → spring restores armature → circuit closes again → repeat. This rapid make-break oscillation creates the ringing sound. Self-interrupting mechanism powered entirely by electromagnetism.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the difference between a solenoid (coil in air) and a toroid. Compare their field distributions.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Solenoid: straight coil — strong uniform field inside, weak field at ends, field outside not negligible near ends. Toroid: solenoid bent into a donut (torus) shape — field confined entirely inside the toroid ring; zero field outside and inside the hole. Toroid has no "ends" — flux leakage is eliminated. Used in inductors and transformers where field confinement is critical.</p></details></span></div>
+      <div class="q-item"><span class="q-text">An MRI machine uses a superconducting solenoid with B = 1.5 T. If n = 10,000 turns/m and μᵣ of core = 1 (air), find the current needed.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>B = μ₀nI → I = B/(μ₀n) = 1.5/(4π×10⁻⁷ × 10,000) = 1.5/(4π×10⁻³) = 1.5/(0.01257) ≈ 119.4 A. Very high current needed — this is why superconducting coils (zero resistance → no heating) are used in MRI machines.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the importance of having closely wound turns in a solenoid?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Closely wound turns maximise n (turns per unit length). Each turn's field adds to adjacent turns' fields (constructive superposition). The field inside approaches B = μ₀nI uniformly — the "uniform field" approximation holds better for tightly wound coils. Widely spaced turns would produce weaker, non-uniform field — individual loops, not a solenoid.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Hard — Solenoid and Electromagnet</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive B = μ₀nI inside an ideal solenoid using Ampere's circuital law.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Choose a rectangular Amperian loop with one side (length L) inside the solenoid parallel to the axis, and other side outside (B_out = 0 for ideal solenoid). ∮B·dl = B_inside × L + 0 + 0 + 0 = B × L. Enclosed current = n × L turns × I = nLI. By Ampere's law: BL = μ₀nLI → B = μ₀nI. ∎ This shows field depends only on n and I, not the solenoid's shape or size (for ideal case).</p></details></span></div>
+      <div class="q-item"><span class="q-text">A solenoid is doubled in length while keeping the same total number of turns and same current. How does B change?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>n = N/L. If L doubles with N constant: n' = N/2L = n/2. B' = μ₀n'I = μ₀(n/2)I = B/2. Field is halved. Note: if length doubles AND turns double (keeping n constant): B stays the same. The key factor is turns per unit length (n), not total turns or total length alone.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain magnetic hysteresis in iron — why is soft iron preferred for electromagnet cores while steel is used for permanent magnets?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hysteresis curve (B-H loop): soft iron has a narrow loop — low coercivity (small H needed to demagnetise), high permeability, low retentivity → easily magnetised and demagnetised. Area of hysteresis loop = energy lost per cycle as heat. Steel has a wide loop — high coercivity, high retentivity → hard to demagnetise (retains magnetism). For electromagnets: soft iron — responds quickly, efficient, temporary. For permanent magnets: steel/Alnico/NdFeB — retains strong field permanently. Energy loss per cycle in soft iron is minimal — efficient for AC electromagnets.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How does a maglev train use electromagnets, and what physical principles are involved?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Maglev (magnetic levitation) uses two phenomena: (1) Electromagnetic suspension (EMS) — Japanese SC Maglev: superconducting electromagnets on train attract ferromagnetic rail from below, controlled by feedback to maintain gap. (2) Electrodynamic suspension (EDS) — train moves → changing flux in guideway coils → induced currents (Faraday) → repulsive Lenz force lifts train. Propulsion: linear induction motor (alternating coils in guideway create moving magnetic field, Oersted force pushes train). Principles: Oersted (coils create field), Faraday (induction for EDS), Lenz (opposing forces for levitation).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Calculate the magnetic flux through the cross-section of a solenoid (n=1000/m, I=5A, cross-section=4 cm²).<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>B = μ₀nI = 4π×10⁻⁷ × 1000 × 5 = 20π×10⁻⁴ ≈ 6.28×10⁻³ T. A = 4×10⁻⁴ m². Φ = BA = 6.28×10⁻³ × 4×10⁻⁴ = 2.51×10⁻⁶ Wb = 2.51 μWb.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why the inductance (L = μ₀n²V) of a solenoid depends on n² and explain the physical significance.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Inductance L = μ₀n²(Volume) = μ₀n²Al. Physical significance of n²: flux Φ ∝ nI (field per turn × turns). EMF = N×dΦ/dt = nL × μ₀n(dI/dt) × A = μ₀n²LA × dI/dt. Since L (inductance) = NΦ/I = n × μ₀nI × A / I = μ₀n²A. Each factor of n contributes once to "making the field" (more turns → more field) and once to "sensing the flux" (more turns link the field) → n² dependence. Doubling turns per unit length quadruples inductance.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why can extremely strong magnetic fields (above ~20 T) not be achieved with conventional iron-core electromagnets?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Iron saturates magnetically above ~2.1 T — its domains are fully aligned and additional current produces no further increase in B from the core (μᵣ drops to ~1 at saturation). For B &gt; 2 T, the iron core contribution is negligible. Higher fields (10-45 T) require: (1) Resistive electromagnets with enormous currents (megawatts of power, water cooling). (2) Superconducting magnets (no resistance → large I possible → strong B; limited by critical field of superconductor). World record continuous: ~45 T (Florida National MagLab). Pulsed: ~100 T. The B = μ₀nI formula still applies, but n and I must be enormous.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Compare the magnetic fields produced by a bar magnet and a solenoid. Why is a solenoid called equivalent to a bar magnet?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Both produce: (1) A uniform strong field along the axis between poles. (2) Circular field lines from N to S externally. (3) Identical dipole field pattern far away (B ∝ 1/r³ on equatorial line). Inside: solenoid has uniform axial field; bar magnet has field from N-S domains. A solenoid with soft iron core is almost identical to a bar magnet in all external effects. Difference: solenoid is controllable (on/off, variable strength); bar magnet is permanent. The equivalent magnetic dipole moment of a solenoid = m = NIA (turns × current × area).</p></details></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ TOPIC 3 ═══════════════════════════ -->
+<div class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Force on a Current-Carrying Conductor</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=aOf2XTBio-kS" target="_blank">Force on a Current-Carrying Conductor</a>
+        <a href="https://www.youtube.com/watch?v=pMC1oZJBB3k" target="_blank">Fleming's Left-Hand Rule</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Magnetic Force</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course</span>
+        <a href="https://www.youtube.com/watch?v=aOfXTBIO-ks" target="_blank">Magnetic Force on Wires</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=sEN9LV4BGKM" target="_blank">Magnetic Forces in Technology</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Easy — Force on Conductor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">State the formula for force on a current-carrying conductor in a magnetic field.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>F = BIL sinθ, where B = magnetic field (T), I = current (A), L = length of conductor in field (m), θ = angle between current direction and B. Maximum force when θ = 90° (perpendicular); zero force when θ = 0° (parallel).</p></details></span></div>
+      <div class="q-item"><span class="q-text">State Fleming's Left-Hand Rule.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hold the left hand with the forefinger, middle finger, and thumb all mutually perpendicular. Forefinger: direction of magnetic field (B). Middle finger: direction of current (I). Thumb: direction of force (motion) on the conductor. Used to find the direction of force in a motor.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What happens to a current-carrying conductor placed parallel to a magnetic field?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No force acts on it. F = BIL sin0° = 0. Force is maximum when the conductor is perpendicular to the field (θ = 90°, F = BIL).</p></details></span></div>
+      <div class="q-item"><span class="q-text">A wire of 0.5 m carrying 4 A is placed perpendicular in a B = 0.3 T field. Find force.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>F = BIL = 0.3 × 4 × 0.5 = 0.6 N. (θ = 90°, so sinθ = 1.)</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why does a current-carrying conductor experience a force in a magnetic field?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Current = moving charges. Moving charges in a magnetic field experience a force (Lorentz force: F = qv × B). The conductor is made up of many moving electrons — each experiences a force. The sum of all individual forces on charge carriers produces a net force on the conductor.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Name the principle on which an electric motor works.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A current-carrying coil in a magnetic field experiences a force (torque) — the motor effect. Electrical energy is converted to mechanical (rotational) energy. This is the principle of the electric motor.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the direction of force on a horizontal wire carrying current to the east, placed in a magnetic field pointing north?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Using F = IL × B: I is East (î), B is North (ĵ). F = IL(î × ĵ) = ILk̂ (upward). The force is vertically upward. (Use Fleming's Left-Hand Rule: forefinger North = B, middle finger East = I, thumb = upward = force.)</p></details></span></div>
+      <div class="q-item"><span class="q-text">If the current in a conductor is doubled and the field is halved, how does the force change?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>F = BIL. New F' = (B/2)(2I)L = BIL = F. Force stays the same. The doubling of current and halving of field cancel each other exactly.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Medium — Force on Conductor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive the force on a current-carrying conductor F = BIL sinθ from the Lorentz force on individual charge carriers.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Force on one charge: f = qvBsinθ. Current I = nqvA (n=carrier density, q=charge, v=drift velocity, A=cross-section). Total charges in length L: N = nAL. Total force F = N × qvBsinθ = nAL × qvBsinθ = (nqvA)LBsinθ = ILBsinθ = BILsinθ. ∎</p></details></span></div>
+      <div class="q-item"><span class="q-text">A rectangular coil (L = 0.1 m, w = 0.05 m, N = 100 turns, I = 2 A) is in a field B = 0.5 T perpendicular to the coil plane. Find the torque.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Torque τ = NBIL × w = N × B × I × area = 100 × 0.5 × 2 × (0.1 × 0.05) = 100 × 0.5 × 2 × 0.005 = 0.5 N·m.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why the force on a current loop in a uniform magnetic field is zero but the torque is non-zero.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>In a uniform B, forces on opposite sides of the loop are equal but opposite (Newton's third law applied to I × B). Net translational force = 0. But these opposing forces act on different sides → they form a couple, producing a turning effect (torque). τ = NIAB sinθ. The loop rotates but doesn't translate — basis of electric motors.</p></details></span></div>
+      <div class="q-item"><span class="q-text">A straight wire 20 cm long carries 5 A at 30° to a field of 2 T. Find force.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>F = BIL sinθ = 2 × 5 × 0.20 × sin30° = 2 × 5 × 0.20 × 0.5 = 1 N.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How is Fleming's Left-Hand Rule different from the Right-Hand Rule? When is each used?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Left-Hand Rule (FBI rule): for force on a current-carrying conductor in a field (motor effect). Forefinger = B, Middle = I, Thumb = Force. Right-Hand Rule (or Right-Hand Thumb Rule): for direction of induced current or magnetic field (Oersted, generator effect). Left = motors (input: electrical → output: mechanical). Right = generators/Oersted (input: mechanical/current → output: field/EMF).</p></details></span></div>
+      <div class="q-item"><span class="q-text">A proton (charge +e) moves east at 3×10⁶ m/s in a B = 0.2 T field pointing north. Find the force magnitude and direction.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>F = qvB sinθ = 1.6×10⁻¹⁹ × 3×10⁶ × 0.2 × sin90° = 1.6×10⁻¹⁹ × 6×10⁵ = 9.6×10⁻¹⁴ N. Direction: v (east) × B (north) = downward (v×B = east×north = -vertical down by right-hand). For positive charge: force is downward.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why is a circular coil of N turns used in galvanometers rather than a single straight wire?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Torque on a coil τ = NIAB sinθ ∝ N. Multiple turns multiply the torque for the same current — making the instrument far more sensitive. A single wire has only one conductor, producing minimal torque. N turns increases sensitivity N-fold for the same coil area and current. Also, the coil is placed in a radial field (using curved pole pieces) to keep sinθ = 1 always for uniform scale deflection.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why the force on a current loop reverses as the coil rotates past 90°, causing a reversing torque.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Torque τ = NIAB sinθ (θ = angle between plane of coil and B). At 0°: sinθ = 0, τ = 0 (coil aligned with B). At 90°: sinθ = 1, maximum τ. As coil overshoots 90°, sinθ decreases and the torque direction reverses — it now opposes further rotation. Without a commutator, the coil would oscillate back and forth. A commutator reverses current at 90° to maintain the torque in the same direction, enabling continuous rotation.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Hard — Force on Conductor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A current loop of moment m = NIA is placed at angle θ to a field B. Derive the torque τ = mB sinθ.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Consider a rectangular loop (length a, width b). Force on side a (current ↑ in B): F = BIa (perpendicular). Moment arm = b sinθ/2 from centre (each side). Net torque from two long sides: τ = 2 × F × (b sinθ/2) = BIa × b sinθ = BI(ab) sinθ = BIA sinθ. For N turns: τ = NIAB sinθ = mB sinθ where m = NIA is magnetic moment. ∎</p></details></span></div>
+      <div class="q-item"><span class="q-text">A wire of length 1 m carrying 10 A is placed in a field B = 0.5 T at 60°. Find force. Then find the force if the wire is curved into a semicircle of same length and same current (same field direction).<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Straight wire: F = BIL sin60° = 0.5×10×1×(√3/2) ≈ 4.33 N. Semicircular wire: the net force on a curved wire = force on a straight wire joining its endpoints. The "effective length" of the semicircle in the field direction = diameter = 2r. If L = πr (semicircle), r = L/π = 1/π ≈ 0.318 m. Diameter = 2r ≈ 0.637 m. F_net = BI × 2r × sin90° = 0.5 × 10 × 0.637 = 3.18 N. Net force on semicircle ≠ force on the straight wire (different effective length).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the Hall Effect and derive the Hall voltage expression V_H = IB/nqt.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>A current I flows in x-direction through a conductor of thickness t in a B field (z-direction). Electrons drift in −x direction. Lorentz force F = qv × B pushes electrons toward one face (y-direction). Charge accumulates → Hall electric field E_H builds up. Equilibrium: qE_H = qvB → E_H = vB. V_H = E_H × t = vBt. Current I = nqvA = nqv(wt) → v = I/(nqwt). V_H = vBt = IBt/(nqwt) = IB/(nqw). (w = width.) In standard form with A = wt: V_H = IB/nqt. The Hall voltage identifies carrier type (sign of V_H) and density n. Hall sensors are used in current meters and speedometers.</p></details></span></div>
+      <div class="q-item"><span class="q-text">A charged particle enters a magnetic field and moves in a circle. Derive the radius of the circular path (r = mv/qB).<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnetic force provides centripetal acceleration: qvB = mv²/r. Solving: r = mv/qB. Implications: higher mass → larger radius; higher speed → larger radius; higher charge or field → smaller radius. This is the principle of the cyclotron and mass spectrometer. Cyclotron frequency ω = qB/m — independent of speed (in non-relativistic limit), enabling resonant acceleration.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why does a current-carrying conductor experience no force when placed along the magnetic field direction? Explain mathematically and physically.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Mathematically: F = BIL sinθ. When θ = 0°, sin0° = 0, F = 0. Cross-product form: F = IL × B; when L ∥ B, L × B = 0 (parallel vectors have zero cross-product). Physically: the magnetic force on a charge is perpendicular to its velocity. If electrons drift along B (parallel), the force qv×B = 0 (no perpendicular component). The force arises from the perpendicular component of electron motion relative to B — zero when motion and field are parallel.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Design a current balance experiment to accurately measure the force between two parallel current-carrying wires and describe how to determine μ₀ from it.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Two parallel horizontal wires, one fixed, one suspended from a balance. Both carry current I. Force per unit length: F/L = μ₀I²/2πd. Vary I and d; measure F using the balance. Plot F/L vs I²: slope = μ₀/2πd. From measured slope and known d: μ₀ = slope × 2πd. Graph should be linear (F ∝ I²) confirming the formula. Use Helmholtz coils for uniform field as an alternative. The 2019 SI revision fixed μ₀ = 4π×10⁻⁷ T·m/A exactly, so this experiment now serves as a calibration check for I and d measurements.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why a moving charged particle in a magnetic field follows a helical (spiral) path when entering at an angle to the field.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Decompose velocity: v_⊥ (perpendicular to B) and v_∥ (parallel to B). The magnetic force qv×B acts only on v_⊥ → causes circular motion in the plane perpendicular to B (radius r = mv_⊥/qB). v_∥ is unchanged (F = 0 for this component). Combined effect: circular motion in xy-plane + uniform translation along z (B direction) = helical (corkscrew) path. Pitch = v_∥ × period = v_∥ × 2πm/qB. This explains cosmic rays spiralling along Earth's magnetic field lines toward the poles — causing auroras.</p></details></span></div>
+      <div class="q-item"><span class="q-text">How does a mass spectrometer use the force on a moving charge to separate isotopes? Give a numerical example.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ions accelerated through voltage V gain KE: ½mv² = qV → v = √(2qV/m). In magnetic field B: circular path radius r = mv/qB = (1/B)√(2mV/q). Different isotopes (different m, same q) have different r → separate into distinct arcs. Numerical: ²³⁵U vs ²³⁸U (q = +e = 1.6×10⁻¹⁹ C, V = 1000 V, B = 1 T). r₂₃₅ = (1/1)√(2×235×1.66×10⁻²⁷×1000/1.6×10⁻¹⁹) = √(7.80×10⁻²²/1.6×10⁻¹⁹) = √(4.88×10⁻³) ≈ 0.0699 m = 6.99 cm. r₂₃₈ ≈ 7.04 cm. Difference Δr = 0.05 cm → measurable separation for uranium enrichment.</p></details></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ TOPIC 4 ═══════════════════════════ -->
+<div class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Electric Motor</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=CWulQ1ZSE3c" target="_blank">How an Electric Motor Works</a>
+        <a href="https://www.youtube.com/watch?v=pMC1oZJBB3k" target="_blank">DC Motor Explained</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">Electric Motors &amp; EVs</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course</span>
+        <a href="https://www.youtube.com/watch?v=aOfXTBIO-ks" target="_blank">Electric Motors</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=sEN9LV4BGKM" target="_blank">Electric Vehicles &amp; Motors</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Easy — Electric Motor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What energy conversion does an electric motor perform?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>An electric motor converts electrical energy into mechanical (rotational kinetic) energy.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Name the four main components of a simple DC electric motor.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Rectangular coil (armature) — wound on a soft iron core. (2) Strong permanent magnet (stator). (3) Commutator (split ring) — reverses current direction every half rotation. (4) Brushes (carbon) — maintain electrical contact with the rotating commutator.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the role of the commutator in an electric motor?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The split-ring commutator reverses the direction of current through the coil every half rotation. This ensures the force on the coil always acts in the same rotational direction, enabling continuous rotation rather than oscillation.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why is the armature coil wound around a soft iron core?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Soft iron increases the magnetic flux through the coil (high permeability → concentrates field). This increases the force (F = BIL) and hence torque on the coil, making the motor more powerful and efficient. Soft iron also ensures the core is not permanently magnetised.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State three uses of electric motors.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Electric fans. (2) Washing machines. (3) Electric vehicles (EVs). Also: refrigerator compressors, mixers, elevators, drills.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What principle (rule) gives the direction of rotation of the motor coil?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Fleming's Left-Hand Rule. Forefinger = direction of magnetic field (B), Middle finger = direction of current in conductor, Thumb = direction of force/motion. Applied to each side of the coil to find which way it rotates.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What happens if the current is increased in the motor coil?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Force F = BIL increases (F ∝ I). Greater torque acts on the coil → motor spins faster and/or can drive heavier loads. Also generates more heat in resistance of coil (P = I²R).</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is "back EMF" (back electromotive force) in a motor?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>When the motor coil rotates, it cuts magnetic field lines → induces an EMF (Faraday's law). This induced EMF opposes the supply voltage (Lenz's law) — hence "back" EMF. Net voltage = V_supply − V_back; limits current and prevents motor from overheating at full speed.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Medium — Electric Motor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Explain the step-by-step working of a simple DC motor through one complete rotation.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Current enters coil via brushes+commutator. (2) By Fleming's LHR: one side of coil forced down, opposite side up → torque causes rotation. (3) At 90°: coil is in plane of maximum flux; arms are momentarily parallel to field (no force but maximum torque). (4) At 180°: coil has rotated half-turn; commutator has reversed current direction → force on each arm reverses → torque continues in same rotational direction. (5) Full rotation completed → cycle repeats. Commutator is key: ensures current reversal every half-turn maintains unidirectional rotation.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why does a motor with more turns in the coil have greater torque?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Torque τ = NIAB sinθ. Torque is directly proportional to N (number of turns). Each turn contributes its own force arm. With N turns, total force is N times that of a single turn, proportionally increasing the torque. Commercial motors use thousands of turns for high torque.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is a radial magnetic field and why is it used in galvanometers?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Curved (concave) pole pieces create a radial field — the field always remains perpendicular to the coil at all angles of deflection. This ensures sinθ = 1 always → torque τ = NIAB = constant per unit current, giving a linear deflection scale (current proportional to deflection). Without radial field, deflection would be non-linear (sinθ varies with angle).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Compare an AC motor (induction motor) and DC motor in terms of construction and power supply.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>DC Motor: needs DC supply; uses commutator to reverse current; brushes cause wear; simple speed control (vary voltage). Used in: EVs, power tools, fans (with controller). AC Induction Motor: uses AC supply; no commutator/brushes → more reliable, less maintenance; rotating magnetic field from stator induces current in rotor automatically; speed determined by AC frequency. Used in: industrial machines, pumps, compressors, HVAC. AC motors are more common in fixed-speed industrial applications; DC/BLDC in variable-speed applications.</p></details></span></div>
+      <div class="q-item"><span class="q-text">A motor draws 5 A at 220 V and runs at 90% efficiency. Find the mechanical power output.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Input power P_in = VI = 220 × 5 = 1100 W. Mechanical output = efficiency × P_in = 0.90 × 1100 = 990 W. The remaining 10% (110 W) is lost as heat in the coil resistance and friction.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why the motor does not rotate if the coil starts exactly in the plane perpendicular to the field (θ = 0°).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>When the coil plane is perpendicular to B (coil axis parallel to B), the coil arms experience forces but these forces are along the axis of rotation — no torque is produced (F parallel to rotation axis). The motor stalls. In practice, the coil never starts exactly at this "dead point" due to slight misalignment, initial kick-start, or use of a second coil offset by 90° (two-phase or multi-coil motors avoid dead points).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why do electric vehicles (EVs) use AC induction motors or BLDC motors rather than conventional DC brush motors?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>BLDC (Brushless DC) / AC induction: no carbon brushes → no wear → lower maintenance, longer life → critical for a vehicle that needs minimal servicing. Higher efficiency (90-95% vs 75-85% for brush DC). Better heat management. Higher torque density. Electronic commutation (via inverter) allows precise speed/torque control. Regenerative braking possible. EVs like Tesla use AC induction or permanent magnet synchronous motors for these reasons.</p></details></span></div>
+      <div class="q-item"><span class="q-text">If the magnetic field in a motor is doubled and current is halved, how does the torque change?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>τ = NIAB sinθ. New τ' = NI'A(2B)sinθ = N(I/2)A(2B)sinθ = NIAB sinθ = τ. Torque remains the same. Doubling B and halving I produce the same torque — the trade-off is exact (τ ∝ BI).</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Hard — Electric Motor</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A DC motor has coil resistance 2 Ω, supply 24 V, and back EMF 20 V at full speed. Find (a) armature current, (b) power input, (c) mechanical power output, (d) efficiency.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>(a) I = (V − V_back)/R = (24−20)/2 = 2 A. (b) P_in = VI = 24×2 = 48 W. (c) P_mech = V_back × I = 20×2 = 40 W. (d) η = 40/48 = 83.3%. Heat dissipated in resistance = I²R = 4×2 = 8 W = P_in − P_mech ✓.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the torque-speed characteristic of a DC series motor and why it is used in traction (trains, electric vehicles starting from rest).<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Series motor: armature and field coils in series → same current through both. At start (speed=0, back EMF=0): high current → high field (B∝I) → torque τ ∝ BI ∝ I² → enormous starting torque. As speed increases, back EMF increases → current decreases → torque decreases. This "drooping" torque-speed curve is ideal for traction: huge starting torque (to accelerate heavy trains from rest), reduces to steady running torque at cruising speed. Self-regulating: if load increases, speed drops → back EMF drops → current increases → torque increases to handle load.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why a motor stalls (gets very hot) if it cannot rotate — using back EMF principles.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Normal operation: back EMF (V_b) ≈ V_supply − small drop. Net current I = (V − V_b)/R → small. Stall (rotor blocked): V_b = 0 (no rotation → no induced EMF). I_stall = V/R — limited only by coil resistance, which is typically very small. Current can be 10-50× normal. P = I²R → enormous heat generated in the coil → insulation melts → motor burns. This is why motors have thermal protection (bimetallic strip cutouts) and current-limiting starters (variable resistors at startup reduce inrush current).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Design improvements to a basic DC motor to increase its power output. Give three specific modifications with physical justification.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Increase N (turns): τ ∝ N. Use multi-layer winding with thin, insulated wire. (2) Use stronger permanent magnets (SmCo or NdFeB, B ≈ 1.2 T vs ferrite 0.4 T): τ ∝ B, P ∝ B. (3) Multiple coils offset by 120°: eliminates dead zones, smoother torque, higher average torque. (4) Iron laminations in core: reduces eddy current losses → less heat → more efficient. (5) Increase coil area A: τ ∝ A. Larger cross-section allows more force × moment arm. (6) Higher supply voltage (more current if R fixed → more torque).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Calculate the maximum torque on a 200-turn rectangular coil (10 cm × 5 cm) carrying 3 A in a field of 0.8 T. Also find the angular frequency if it takes 0.1 s per half-revolution.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>τ_max = NIAB (when sinθ=1) = 200 × 3 × 0.8 × (0.10 × 0.05) = 200 × 3 × 0.8 × 0.005 = 2.4 N·m. Half revolution (π radians) in 0.1 s → full revolution in 0.2 s. Angular frequency ω = 2π/T = 2π/0.2 = 10π ≈ 31.4 rad/s. Frequency f = 1/T = 5 Hz.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain regenerative braking in EVs — how does the motor act as a generator to recover energy?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>During braking, the driver releases the accelerator. The EV controller disconnects the battery from the motor and instead connects the motor to the charging circuit. The still-rotating wheels drive the motor as a generator (Faraday: rotation in B field → EMF). The generated current flows back to the battery, charging it. Simultaneously, the electromagnetic braking force (Lenz's law: induced current opposes rotation) slows the vehicle — replacing the friction brakes. Recovery efficiency: 15-25% of braking energy returned. In city driving (frequent stops), this significantly extends range — a key EV efficiency advantage.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the concept of "motor efficiency" (η = P_mech/P_electrical) and what losses reduce it below 100%.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>η = P_mech/P_in × 100%. Losses: (1) Copper losses (I²R in armature + field coils) — proportional to I². (2) Iron/core losses — eddy currents and hysteresis in the iron core (reduce by lamination, soft iron). (3) Mechanical losses — friction (bearings, brushes) and windage (air drag on rotating parts). (4) Stray losses — miscellaneous. Typical efficiencies: DC motors 80-90%; BLDC/PM motors 90-97%; induction motors 85-95%. No motor achieves 100% — always some heat generated. High-efficiency motors use: Neodymium magnets (strong B → more power per amp), laminated stator, precision bearings, optimised winding.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Comparing a DC motor and a DC generator, explain why the same machine can function as both, and what determines which role it performs.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>A DC motor and generator are identical in construction — coil, magnets, commutator, brushes. Thermodynamic reversibility of electromagnetic induction: Motor: electrical energy in → mechanical energy out (back EMF opposes supply). Generator: mechanical energy in → electrical energy out (induced EMF drives current). Which role: determined by whether external energy drives the shaft (generator mode) or external voltage drives the current (motor mode). In regenerative braking, the same EV motor switches roles — motor when accelerating, generator when braking. The physics is the same: changing flux → EMF (Faraday). The direction of energy flow is reversed by the external connection.</p></details></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ TOPIC 5 ═══════════════════════════ -->
+<div class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Electromagnetic Induction</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=kS25vitrZ6g" target="_blank">Electromagnetic Induction</a>
+        <a href="https://www.youtube.com/watch?v=ttRkOSMR9ic" target="_blank">Faraday's Law</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How Generators Work</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course</span>
+        <a href="https://www.youtube.com/watch?v=pktq_X4LoNI" target="_blank">Electromagnetic Induction</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=sEN9LV4BGKM" target="_blank">Power Generation</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Easy — Electromagnetic Induction</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Who discovered electromagnetic induction and when?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Michael Faraday (in England) and Joseph Henry (in America) independently discovered electromagnetic induction in 1831. Faraday published first and is credited with the discovery.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State Faraday's First Law of electromagnetic induction.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Whenever there is a change in the magnetic flux linked with a conductor (or coil), an electromotive force (EMF) is induced in it. The induced EMF lasts only as long as the flux is changing.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State Faraday's Second Law of electromagnetic induction.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The magnitude of the induced EMF is directly proportional to the rate of change of magnetic flux. EMF = −dΦ/dt (the negative sign is Lenz's law). Greater rate of change → greater induced EMF.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State Lenz's Law.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>The direction of the induced current is such that it opposes the change in magnetic flux that causes it. Lenz's law is a consequence of conservation of energy — it prevents perpetual motion.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Name two ways to increase the induced EMF in a coil.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Move the magnet faster (increase rate of change of flux). (2) Use a stronger magnet (increase B → more flux change). Also: use more turns (N) or use a coil with larger area.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is Fleming's Right-Hand Rule? (For generators.)<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Hold the right hand with thumb, forefinger, and middle finger mutually perpendicular. Forefinger: direction of magnetic field (B). Thumb: direction of motion of conductor. Middle finger: direction of induced current. Used to find induced current direction in a generator.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Define magnetic flux and give its unit.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Magnetic flux (Φ) = B × A × cosθ, where A is the area of the coil and θ is the angle between B and the normal to the coil. Unit: Weber (Wb) = T·m².</p></details></span></div>
+      <div class="q-item"><span class="q-text">Does a stationary magnet near a stationary coil induce current? Why?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>No. A stationary magnet creates constant flux in the coil. By Faraday's law, EMF = −dΦ/dt = 0 when Φ is constant. Only changing flux induces EMF. No change → no induction.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Medium — Electromagnetic Induction</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A coil of 100 turns has flux changing from 0.02 Wb to 0.05 Wb in 0.1 s. Find the induced EMF.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>EMF = −N × ΔΦ/Δt = −100 × (0.05−0.02)/0.1 = −100 × 0.3 = −30 V. Magnitude = 30 V. (Negative sign indicates opposition per Lenz's law.)</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain Lenz's law using the example of pushing a magnet into a coil.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Push N-pole toward coil: flux through coil increases. Lenz's law: induced current opposes increase → creates a magnetic field opposing the approaching N-pole → the near face of the coil becomes N-pole (repels incoming magnet). You must do work against this repulsion → the work done is converted to electrical energy in the coil. Lenz's law enforces conservation of energy — you cannot get electrical energy for free.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is mutual induction? Give one application.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Mutual induction: when current in one coil changes, it induces EMF in a nearby second coil (via changing flux linkage). Application: transformer — primary coil creates changing flux; secondary coil in the same core picks up that flux change and produces an output EMF. Also: wireless charging (qi charging), radio transmitter-receiver, induction coils.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is self-induction? Write the formula for self-induced EMF.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Self-induction: when current in a coil changes, it induces an EMF in the same coil opposing the change. Formula: EMF = −L(dI/dt), where L is inductance (Henry, H). A coil "resists" changes in its own current — like electrical inertia. Relevant in AC circuits, transformers, and electronic filters.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the eddy current phenomenon and give one harmful and one useful application.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Eddy currents: circulating induced currents in a bulk conductor when its flux changes. Harmful: heat loss in transformer cores (wasted energy) → minimised by laminating the core. Useful: (1) Induction cooktops — eddy currents in the cooking vessel (not the glass surface) generate heat directly in the pot. (2) Electromagnetic braking — eddy currents in train/roller coaster brake discs oppose motion → contactless, wear-free braking. (3) Metal detectors — eddy currents in metal objects alter the detector coil's inductance.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Derive the expression for the EMF induced in a coil rotating in a uniform magnetic field (E = NBA ω sinωt).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Flux: Φ = NBA cosωt (coil rotating at ω rad/s, starts perpendicular to B). EMF = −dΦ/dt = −NBA × (−ω sinωt) = NBAω sinωt. Peak EMF: E₀ = NBAω. EMF varies sinusoidally — this is how an AC generator produces a sinusoidal output.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why does Lenz's law represent conservation of energy?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>If induced current aided the flux change (instead of opposing it), the increased current would increase the flux further → even more induced current → runaway without any input energy — a perpetual motion machine. Lenz's law (opposition) ensures work must be done against the induced force to maintain the flux change. This work becomes the electrical energy of the induced current. Energy is conserved — no free energy generated.</p></details></span></div>
+      <div class="q-item"><span class="q-text">A straight conductor of length 0.5 m moves at 10 m/s perpendicular to a B = 0.4 T field. Find the induced EMF.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>EMF = BLv = 0.4 × 0.5 × 10 = 2 V. (Motional EMF: the conductor moving perpendicular to field with velocity v. This is equivalent to flux change dΦ/dt = BLv.)</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Hard — Electromagnetic Induction</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">Derive the motional EMF formula (E = BLv) from first principles using the Lorentz force on free electrons in a moving conductor.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Conductor of length L moves with velocity v perpendicular to field B. Free electrons in the conductor (velocity v) experience Lorentz force F = qv × B directed along the conductor (let's say toward one end). This force drives electrons to one end → charge separation → electric field E builds up. Equilibrium: qE = qvB → E = vB. EMF = E × L = vBL = BLv. ∎ This is equivalent to Faraday's law since dΦ/dt = B × L × v (rate of area swept per second × B).</p></details></span></div>
+      <div class="q-item"><span class="q-text">A 200-turn coil (A = 50 cm²) rotates at 50 Hz in a 0.1 T field. Find peak EMF and EMF at t = 5 ms.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>ω = 2πf = 2π×50 = 100π rad/s. E₀ = NBAω = 200×0.1×50×10⁻⁴×100π = 200×0.1×0.005×100π = 200×0.05π = 10π ≈ 31.4 V. At t=5ms: E = E₀ sin(ωt) = 31.4 × sin(100π×0.005) = 31.4 × sin(π/2) = 31.4 × 1 = 31.4 V (maximum at t=5ms).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the phenomenon of inductance using the analogy of mechanical inertia. Derive E = −L dI/dt.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Inertia (Newton's 2nd law): F = m dv/dt — mass resists change in velocity. Inductance: EMF = −L dI/dt — inductance resists change in current. Self-flux Φ = LI (total flux linkage ∝ current). By Faraday: EMF = −dΦ/dt = −L dI/dt. The negative sign: opposes the change causing it (like inertia opposes acceleration). Analogy: I ↔ v; L ↔ m; EMF ↔ force; charge ↔ displacement. An inductor stores energy E = ½LI² (like KE = ½mv²).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why Faraday's law and Lenz's law together rule out the possibility of a "magnetic perpetual motion machine."<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>A hypothetical magnetic PM machine would use induced current to increase flux → more induced current → grows indefinitely with no energy input. Faraday: EMF = −dΦ/dt (finite EMF for finite dΦ/dt). Lenz: induced current creates a field opposing the flux change. If induced current strengthened the flux (positive feedback), Lenz's law would be violated — implying the induced field equals and exceeds the source field. Energy balance: induced current creates an opposing force; mechanical work must be done against this force to maintain motion. No perpetual energy → impossible. Consistent with 1st and 2nd Laws of Thermodynamics.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Two coils are wound on the same iron core. Primary has 500 turns, secondary has 1000 turns. A changing current creates dΦ/dt = 0.05 Wb/s in the core. Find EMF in both coils.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>EMF_primary = N₁ × dΦ/dt = 500 × 0.05 = 25 V. EMF_secondary = N₂ × dΦ/dt = 1000 × 0.05 = 50 V. Ratio V₂/V₁ = N₂/N₁ = 1000/500 = 2 (step-up transformer). Each coil has the same dΦ/dt (shared core); EMF ∝ N.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the operation principle of a wireless charger (Qi standard) using mutual induction — at what frequency does it operate and why?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Qi charging: charger base contains a coil carrying AC at ~100-200 kHz. Alternating current → alternating B → alternating flux through phone's receiving coil → mutual induction → AC EMF induced in phone coil → rectified to DC for battery. Frequency 100-200 kHz chosen: higher than 50 Hz (more EMF per unit coil for same flux change — EMF ∝ f) but low enough to avoid significant radiation losses and skin effect. At 50 Hz: E = NdΦ/dt is too small for compact coils. At MHz: radiation and parasitic losses increase. 100-200 kHz is the optimum for compact wireless power transfer (separation ~5-10 mm, efficiency ~80-90%).</p></details></span></div>
+      <div class="q-item"><span class="q-text">A horizontal metal rod (L=0.5 m) falls freely from rest in a vertical B=0.8 T field (horizontal). Find induced EMF after 2 s.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>After 2 s free fall: v = gt = 10×2 = 20 m/s (downward). EMF = BLv = 0.8 × 0.5 × 20 = 8 V. (Rod falls vertically, B is horizontal perpendicular to rod → v ⊥ B → maximum EMF. The rod sweeps area = Lv per second, so dΦ/dt = BLv.) If the circuit is closed, induced current would create an upward force (Lenz) opposing the fall.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the phenomenon of electromagnetic induction in terms of Maxwell's equations — which specific equation governs it?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Faraday's law in Maxwell's form: ∮E·dl = −dΦ_B/dt (integral form), or ∇ × E = −∂B/∂t (differential form). This states: a time-varying magnetic field creates a circulating electric field (not requiring physical charges). In electromagnetic induction: changing B creates E → drives current in any nearby conductor. This is one of Maxwell's four equations — together with Gauss's law (E from charges), Ampere-Maxwell law (B from currents + changing E), and Gauss's law for B (no magnetic monopoles), they completely describe all classical electromagnetism and predict electromagnetic waves (light).</p></details></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ TOPIC 6 ═══════════════════════════ -->
+<div class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Generators and Transformers</h2></div>
+  <div class="topic-videos">
+    <h3>📺 Recommended Videos</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.youtube.com/watch?v=uk9n3bA2vr8" target="_blank">AC Generators</a>
+        <a href="https://www.youtube.com/watch?v=N7TZ4gm3aUg" target="_blank">Transformers Explained</a>
+      </div>
+      <div class="vid-box kurzg"><span class="ch-tag">Kurzgesagt</span>
+        <a href="https://www.youtube.com/watch?v=hFAOXdXZ5TM" target="_blank">How Power Grids Work</a>
+      </div>
+      <div class="vid-box crash"><span class="ch-tag">Crash Course</span>
+        <a href="https://www.youtube.com/watch?v=pktq_X4LoNI" target="_blank">AC Generators &amp; Transformers</a>
+      </div>
+      <div class="vid-box natgeo"><span class="ch-tag">National Geographic</span>
+        <a href="https://www.youtube.com/watch?v=sEN9LV4BGKM" target="_blank">Electricity Generation</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Easy — Generators and Transformers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">What energy conversion occurs in a generator?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A generator converts mechanical energy (rotation) into electrical energy (EMF) — the reverse of a motor. The primary energy source (water, steam, wind) turns the generator coil in a magnetic field, inducing current by electromagnetic induction.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is the difference between an AC generator and a DC generator?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>AC generator: uses slip rings to output alternating current (current reverses direction each half cycle). DC generator: uses a split-ring commutator to rectify the AC into direct current (current flows in one direction only). Internal mechanism is identical; the output connection differs.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State the transformer equation.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>V₁/V₂ = N₁/N₂ (for an ideal transformer), where V₁, N₁ are primary voltage and turns, V₂, N₂ are secondary voltage and turns. Also: V₁I₁ = V₂I₂ (power conservation in ideal transformer).</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is a step-up transformer?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A step-up transformer increases voltage (and decreases current proportionally). N₂ &gt; N₁ → V₂ &gt; V₁. Used in power transmission to step up voltage from generators (~11 kV) to high transmission voltages (~220 kV) to reduce power loss in cables.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Why do transformers only work with AC and not DC?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Transformers work by electromagnetic induction — changing flux induces EMF in secondary. AC constantly changes → changing B → changing flux → continuous induction. DC creates constant B after initial switch-on → no change → no induced EMF (except momentarily at switch-on/off).</p></details></span></div>
+      <div class="q-item"><span class="q-text">A transformer has primary 400 turns, secondary 100 turns, primary voltage 240 V. Find secondary voltage.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>V₂ = V₁ × N₂/N₁ = 240 × 100/400 = 60 V. This is a step-down transformer (N₂ &lt; N₁, V₂ &lt; V₁).</p></details></span></div>
+      <div class="q-item"><span class="q-text">What are slip rings and how do they differ from a commutator?<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>Slip rings: two separate continuous metal rings, each connected to one end of the coil. Brushes slide on them → output changes direction with coil rotation → AC output. Commutator: split ring (two halves, reversed). Brushes switch connections every half rotation → always positive output → DC. Slip rings maintain polarity; commutator reverses it to rectify.</p></details></span></div>
+      <div class="q-item"><span class="q-text">State the working principle of a generator in one sentence.<span class="diff diff-easy">Easy</span>
+        <details class="ans"><summary>Show Answer</summary><p>A generator works on electromagnetic induction — a coil rotated in a magnetic field experiences changing flux, which induces an alternating EMF according to Faraday's law.</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Medium — Generators and Transformers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A transformer has primary 1000 turns at 230 V. Secondary needs to output 11.5 V for a toy. How many secondary turns? If primary current is 0.1 A, find secondary current.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>N₂ = N₁ × V₂/V₁ = 1000 × 11.5/230 = 50 turns. For ideal transformer: I₂ = I₁ × V₁/V₂ = 0.1 × 230/11.5 = 2 A. Power: P = 230 × 0.1 = 23 W = 11.5 × 2 = 23 W ✓</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why power is transmitted at high voltage (e.g., 220 kV) over long distances.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Power loss in cables = I²R. For fixed power P = VI: higher V → lower I. Loss = (P/V)² × R = P²R/V². Loss ∝ 1/V². Doubling V reduces loss by 4×. Transmitting 1 MW at 1 kV: I=1000 A, loss = 10⁶×R W. At 100 kV: I=10 A, loss = 100×R W — 10,000 times less! Step-up transformers at power stations, step-down near consumers make this economically viable.</p></details></span></div>
+      <div class="q-item"><span class="q-text">A power station generates 10 MW at 11 kV. It is stepped up to 220 kV for transmission. Find the current in the transmission line (ignore losses).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>P = V × I → I = P/V = 10×10⁶ / 220×10³ = 10⁷/2.2×10⁵ = 45.5 A. The high voltage dramatically reduces the transmission current, minimising I²R heating in the cables.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What are the main energy losses in a real transformer and how are they minimised?<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>(1) Copper losses (I²R in windings): minimise by using thick copper wire. (2) Iron/core losses (eddy currents + hysteresis): minimise by laminating the core and using soft silicon steel (low hysteresis). (3) Flux leakage: minimised by tightly winding coils. (4) Dielectric losses (minimal). Real transformers achieve 95-99% efficiency. Large power transformers: &gt;99% efficient.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Compare the output of an AC generator to a DC generator using wave diagrams (describe the waveforms).<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>AC generator: sinusoidal output E = E₀sinωt — alternates between +E₀ and −E₀ smoothly. One complete sine wave per rotation. DC generator (simple): half-wave rectified — output always positive but pulsating (two humps per rotation). With more armature coils: smoother DC (ripple reduced). Full DC output achieved with smoothing capacitors. AC waveform: smoother, more useful for power transmission. DC waveform: unidirectional but not steady.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Describe the structure of an AC generator and explain how slip rings produce alternating output.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>Components: rotating coil (armature), permanent magnets or electromagnets (stator), two slip rings (one connected to each end of the coil), carbon brushes pressing on slip rings. As coil rotates: flux changes sinusoidally. One end of coil moves up then down relative to B → EMF direction reverses each half rotation. Slip rings: each brush always contacts the same ring (which is connected to the same coil end) → output follows the coil's actual EMF direction → AC. (Commutator would reverse it to give DC.)</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the working of an induction stove top using transformer/electromagnetic induction principles.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>An induction cooktop has a coil beneath the glass surface carrying high-frequency AC (20-100 kHz). The coil creates a rapidly alternating magnetic field (like a transformer primary). A ferromagnetic cooking vessel (iron or steel-bottomed pan) acts as the "secondary" — eddy currents induced in the pan's base heat the pan directly. Benefits: energy goes directly to the pan (>90% efficient); glass surface stays cool (no direct heat conduction); precise temperature control via current/frequency. Only ferromagnetic pans work (tested with a magnet — if it sticks, it works).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why current decreases when voltage is stepped up in a transformer, using conservation of energy.<span class="diff diff-medium">Medium</span>
+        <details class="ans"><summary>Show Answer</summary><p>For ideal transformer: P_in = P_out → V₁I₁ = V₂I₂. If V₂ &gt; V₁ (step-up), then I₂ = I₁V₁/V₂ &lt; I₁. Current decreases in the same ratio as voltage increases. Energy is conserved — power stays constant (neglecting losses). High-voltage, low-current transmission is the practical consequence: same power, much less heat (P_loss = I²R ∝ I² → much less when I is smaller).</p></details></span></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Hard — Generators and Transformers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><span class="q-text">A generator coil (N=200, A=300 cm², rotating at 50 Hz) in B=0.8 T. Find (a) peak EMF, (b) RMS EMF, (c) EMF at t=3 ms.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>ω = 2π×50 = 100π rad/s. E₀ = NBAω = 200×0.8×300×10⁻⁴×100π = 200×0.8×0.03×100π = 480π ≈ 1508 V. E_rms = E₀/√2 ≈ 1067 V. At t=3ms: E = E₀ sin(ωt) = 1508 × sin(100π×0.003) = 1508 × sin(0.3π) = 1508 × sin54° ≈ 1508 × 0.809 ≈ 1220 V.</p></details></span></div>
+      <div class="q-item"><span class="q-text">A step-down transformer has 90% efficiency. Primary: 2200 V, 1 A. Secondary: 220 V. Find secondary current and power lost.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>P_in = 2200 × 1 = 2200 W. P_out = η × P_in = 0.90 × 2200 = 1980 W. I₂ = P_out/V₂ = 1980/220 = 9 A. Power lost = 2200 − 1980 = 220 W (as heat in copper + iron losses).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Derive the transformer equation V₁/V₂ = N₁/N₂ from Faraday's law, assuming ideal (lossless) transformer.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Ideal transformer: all flux from primary links secondary (perfect flux linkage). For a time-varying flux Φ(t): Primary EMF: E₁ = −N₁ dΦ/dt. Secondary EMF: E₂ = −N₂ dΦ/dt. Dividing: E₁/E₂ = N₁/N₂ → V₁/V₂ = N₁/N₂. (For ideal transformer, input voltage = EMF, no resistance drop.) Power conservation: V₁I₁ = V₂I₂ → I₁/I₂ = N₂/N₁. ∎</p></details></span></div>
+      <div class="q-item"><span class="q-text">Compare HVDC (High Voltage Direct Current) transmission with HVAC — when is HVDC preferred and why?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>HVAC advantages: easy V transformation (transformers), self-extinguishing AC arcs, widely used infrastructure. Disadvantages at long distances: reactive power losses (inductive/capacitive reactance), skin effect, synchronisation issues between AC grids. HVDC preferred for: (1) Distances &gt;600 km (overhead): less line resistance loss per km; (2) Undersea cables: capacitive losses kill AC efficiency (&gt;50 km for cables), DC avoids this; (3) Connecting asynchronous grids (different frequencies/phases); (4) Offshore wind farms (cable distance). Cost: HVDC converter stations are expensive (offset by reduced line losses over long distances). India uses HVDC for Northeast-to-south transmission corridors (±800 kV, 6000 MW).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain the electrical grid: from generation to your home socket — name each transformation stage with voltages.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>Generation: power station turbine-generator → 11 kV (thermal/hydro) or 33 kV. Step-up transformer: 11 kV → 220 kV or 400 kV (national transmission grid). HVAC transmission lines: 220-400 kV over long distances (hundreds of km). Regional substation step-down: 220 kV → 33 kV or 66 kV (state grid). Distribution substation: 33 kV → 11 kV. Local transformer (pole/pad mounted): 11 kV → 433 V (3-phase) or 230 V (single-phase). Consumer socket: 230 V AC, 50 Hz. Each step-down uses transformers. About 5-15% of generated power is lost in transmission and distribution.</p></details></span></div>
+      <div class="q-item"><span class="q-text">What is a "no-load" vs "full-load" condition for a transformer? How does efficiency change between the two?<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>No-load: secondary open circuit (I₂=0). P_input = core losses only (eddy + hysteresis) — these are constant. Copper losses = I₁²R₁ ≈ 0 (I₁ very small). Apparent efficiency = 0 (no output power). Full-load: rated secondary current flows. Copper losses = I²R (significant). Core losses still the same. Efficiency η = P_out/(P_out + P_core + P_copper). Maximum efficiency occurs when P_copper = P_core (variable losses equal fixed losses) — this is the "maximum efficiency load" point. Typical power transformers have maximum efficiency at 50-70% of rated load (most of the time they operate near that point).</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain how a CT (Current Transformer) measures very high AC currents safely without breaking the circuit.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>CT principle: the high-current cable (N₁ = 1 turn, or just passes through the CT core) is the primary. A multi-turn secondary coil (N₂ = hundreds/thousands of turns) is wound on a toroidal core around the cable. By transformer equation: I₁/I₂ = N₂/N₁. For N₁=1, N₂=1000: a 1000 A primary gives I₂ = 1 A secondary — safely measurable by a 1 A meter. The CT secondary always has a low-impedance load (meter or short circuit) — NEVER open-circuit a CT under load (the full primary flux drives the secondary EMF to dangerous levels — V₂ → high voltage). CTs are used in meters, protection relays, and smart grid sensors.</p></details></span></div>
+      <div class="q-item"><span class="q-text">Explain why 50 Hz (not 100 Hz or 25 Hz) was chosen as the standard AC frequency for power distribution in India.<span class="diff diff-hard">Hard</span>
+        <details class="ans"><summary>Show Answer</summary><p>50 Hz is a compromise: Higher frequency (100 Hz): smaller, lighter transformers (core size ∝ 1/f); less flicker in AC lighting. But: higher iron losses in transformer cores (hysteresis ∝ f), higher skin effect in cables, more reactive (inductive) power loss. Lower frequency (25 Hz): used historically for traction (railways in India used 25 Hz DC/AC). But: heavy, bulky transformers; fluorescent light visible flicker (below ~40 Hz, human eye detects 50 Hz flicker margin). 50 Hz (Europe, India, Asia) vs 60 Hz (Americas, Japan): 60 Hz gives slightly smaller motors/transformers but more I²R loss at high frequencies. Neither is "correct" — historical adoption standardised them. India adopted 50 Hz following British standards.</p></details></span></div>
+    </div>
+  </div>
+</div>
+
+<footer>Grade 10 · NCERT Science · Chapter 12 · The Gaudium School · IB MYP · 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

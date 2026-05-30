@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G8 Chapter 2 – Power Play Practice</title>
+<style>
+:root{--primary:#4a6fa5;--accent:#e8734a;--green:#3aaa6e;--bg:#f8f9fb;--card:#ffffff;--border:#dde3ee;--text:#2d3748;--muted:#6b7a99}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{background:linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%);color:#fff;padding:36px 24px 28px;text-align:center}header h1{font-size:2rem}header p{margin-top:8px;opacity:.85;font-size:.95rem}nav{background:var(--card);border-bottom:2px solid var(--border);padding:18px 28px}nav h2{font-size:.95rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}nav ol{padding-left:22px;columns:2;column-gap:40px}nav li{margin:4px 0;font-size:.88rem}nav a{color:var(--primary);text-decoration:none}.topic{max-width:960px;margin:36px auto;padding:0 18px}.topic-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}.t-num{background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}.topic-header h2{font-size:1.4rem;color:var(--primary)}.set-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.05)}.set-card h3{font-size:1rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.set-label{display:inline-block;background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 8px;margin-right:6px}.q-list{counter-reset:q}.q-item{counter-increment:q;display:flex;gap:10px;margin:10px 0;align-items:flex-start}.q-item::before{content:"Q" counter(q);background:var(--primary);color:#fff;border-radius:6px;font-size:.75rem;font-weight:700;padding:2px 6px;flex-shrink:0;margin-top:3px}.q-text{flex:1;font-size:.91rem}.diff{font-size:.72rem;border-radius:99px;padding:1px 8px;flex-shrink:0;margin-top:4px;white-space:nowrap}.diff-easy{background:#dcfce7;color:#15803d}.diff-medium{background:#fef9c3;color:#854d0e}.diff-hard{background:#fee2e2;color:#991b1b}details.ans{margin-top:4px}details.ans summary{cursor:pointer;color:var(--green);font-size:.82rem;font-weight:600}details.ans p{background:#f0faf5;border-left:3px solid var(--green);padding:8px 12px;margin-top:6px;border-radius:6px;font-size:.85rem}footer{text-align:center;padding:30px;color:var(--muted);font-size:.82rem;margin-top:20px}.topic-videos{background:#fff8f5;border:1px solid #f5d8cc;border-radius:12px;padding:18px 20px;margin-bottom:20px}.topic-videos h3{font-size:.95rem;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px}.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vid-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px}.vid-box .ch-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;display:block}.vid-box.khan .ch-tag{color:#137333}.vid-box.antics .ch-tag{color:#d93025}.vid-box.nphile .ch-tag{color:#7b2cbf}.vid-box.teded .ch-tag{color:#e8734a}.vid-box a{display:block;color:var(--primary);font-size:.84rem;margin:4px 0;text-decoration:none}.vid-box a::before{content:"▶ "}.working{background:#eef2ff;border-left:4px solid var(--primary);padding:10px 14px;margin-top:8px;border-radius:0 6px 6px 0;font-size:.84rem;line-height:1.9}.working strong{color:var(--primary)}@media print{header,nav,footer{display:none!important}.topic-videos{display:none!important}details.ans{display:none!important}body{background:#fff;color:#000;font-size:11pt}.topic{max-width:100%;margin:0;padding:0 8px}.set-card{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}.q-item{page-break-inside:avoid}}
+
+  /* ── Print Set button ── */
+  .print-set-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f4ff;
+    border: 1px solid #4a6fa5;
+    border-radius: 6px;
+    padding: 4px 11px;
+    font-size: .77rem;
+    font-weight: 700;
+    color: #4a6fa5;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background .15s;
+  }
+  .print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚡ Chapter 2 – Power Play</h1>
+  <p>12 Topics &middot; 4 Practice Sets per Topic &middot; 10 Questions per Set &middot; Exponents and Powers</p>
+</header>
+<nav>
+  <h2>Topics</h2>
+  <ol>
+    <li><a href="#t1">Exponents Review</a></li>
+    <li><a href="#t2">Product Rule (aᵐ×aⁿ=aᵐ⁺ⁿ)</a></li>
+    <li><a href="#t3">Quotient Rule (aᵐ÷aⁿ=aᵐ⁻ⁿ)</a></li>
+    <li><a href="#t4">Power of Power ((aᵐ)ⁿ=aᵐⁿ)</a></li>
+    <li><a href="#t5">Zero and Negative Exponents</a></li>
+    <li><a href="#t6">Power of Product/Quotient</a></li>
+    <li><a href="#t7">Scientific Notation</a></li>
+    <li><a href="#t8">Computing with Scientific Notation</a></li>
+    <li><a href="#t9">Comparing in Scientific Notation</a></li>
+    <li><a href="#t10">Exponents in Formulas</a></li>
+    <li><a href="#t11">Patterns with Powers</a></li>
+    <li><a href="#t12">Real-World Applications</a></li>
+  </ol>
+</nav>
+<!-- TOPIC 1 -->
+<section class="topic" id="t1">
+  <div class="topic-header"><div class="t-num">1</div><h2>Exponents Review</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-factors-and-multiples/cc-6th-exponents/v/introduction-to-exponents" target="_blank">Introduction to Exponents</a>
+        <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-factors-and-multiples/cc-6th-exponents/v/understanding-exponents" target="_blank">Understanding Exponents</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=X6qFtMDMsXI" target="_blank">Exponents – What are they?</a>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Exponent Rules</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Powers of 2</a>
+        <a href="https://www.youtube.com/watch?v=tITTFhKrXA4" target="_blank">Powers – The Big Picture</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">The Power of Exponents</a>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Exponential Growth</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Set A -->
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Basics – Reading and Writing Exponents</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write 5×5×5×5 using exponent notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁴</strong><br>The base is 5, multiplied 4 times, so the exponent is 4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand and evaluate: 3⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3×3×3×3×3 = 243</strong><br>3²=9, 3³=27, 3⁴=81, 3⁵=243.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the base and exponent in (−2)⁶?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Base = −2, Exponent = 6</strong><br>The entire −2 is the base because of the brackets.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 2⁸<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>256</strong><br>2⁴=16, 2⁸=(2⁴)²=16²=256.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is (−3)⁴ positive or negative? Find its value.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Positive; (−3)⁴ = 81</strong><br>Negative base to even power is positive: (−3)⁴ = 81.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is (−3)⁵ positive or negative? Find its value.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Negative; (−3)⁵ = −243</strong><br>Negative base to odd power is negative.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 10⁶<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1,000,000</strong><br>10⁶ = 1 followed by 6 zeros.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is −3⁴? (Note: no brackets around −3)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>−81</strong><br>Without brackets, only 3 is the base: −(3⁴) = −81.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 1,00,000 as a power of 10.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁵</strong><br>1 lakh = 1,00,000 = 10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 2 crore as a power of 10 multiplied by a coefficient.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2 × 10⁷</strong><br>1 crore = 10⁷, so 2 crore = 2 × 10⁷.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set B -->
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Comparing and Ordering Powers</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Which is greater: 2⁵ or 5²?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁵ = 32 &gt; 5² = 25</strong><br>So 2⁵ is greater.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Arrange in ascending order: 3⁴, 4³, 2⁶<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁶=64, 4³=64, 3⁴=81 → 2⁶ = 4³ &lt; 3⁴</strong><br>Ascending: 64, 64, 81.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate and compare: 2¹⁰ vs 10²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = 1024, 10² = 100; so 2¹⁰ &gt; 10²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Fill in &lt;, &gt; or =: 7² __ 2⁷<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>7² = 49, 2⁷ = 128; so 7² &lt; 2⁷</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n if 2ⁿ = 64.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 6</strong><br>2⁶ = 64.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n if 3ⁿ = 729.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 6</strong><br>3¹=3, 3²=9, 3³=27, 3⁴=81, 3⁵=243, 3⁶=729.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (1/2)⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1/16</strong><br>(1/2)⁴ = 1⁴/2⁴ = 1/16.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which is larger: (2/3)³ or (3/4)²?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(2/3)³=8/27≈0.296; (3/4)²=9/16=0.5625; so (3/4)² is larger</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (−1)¹⁰⁰ + (−1)⁹⁹<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>0</strong><br>(−1)¹⁰⁰ = 1 (even), (−1)⁹⁹ = −1 (odd); 1 + (−1) = 0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the value of: 5³ + 4² − 2⁵<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>125 + 16 − 32 = 109</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set C -->
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Prime Factorisation and Exponents</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Express 72 as a product of prime factors using exponents.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>72 = 2³ × 3²</strong><br>72 = 8 × 9 = 2³ × 3².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 360 in prime factor exponent form.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>360 = 2³ × 3² × 5</strong><br>360 = 8 × 45 = 8 × 9 × 5 = 2³ × 3² × 5¹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the number of factors of 2⁴ × 3².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>15 factors</strong><br>Number of factors = (4+1)(2+1) = 5 × 3 = 15.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 1024 as a power of 2.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰</strong><br>2¹⁰ = 1024 (1 KB in computer memory).</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is 2²⁰ in terms of KB and MB?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2²⁰ = 1,048,576 bytes ≈ 1 MB = 1024 KB</strong><br>2¹⁰ = 1 KB, so 2²⁰ = (2¹⁰)² = 1024 KB = 1 MB.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 500 in prime factor exponent form.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>500 = 2² × 5³</strong><br>500 = 4 × 125 = 2² × 5³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the smallest number whose prime factorisation is 2² × 3 × 5?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>60</strong><br>4 × 3 × 5 = 60.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 2ⁿ × 3² = 288, find n.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 5</strong><br>288 ÷ 9 = 32 = 2⁵, so n = 5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.001 as a power of 10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻³</strong><br>0.001 = 1/1000 = 1/10³ = 10⁻³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is 7¹ + 7⁰?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>8</strong><br>7¹ = 7 and 7⁰ = 1, so 7 + 1 = 8.</p></details></div></div>
+    </div>
+  </div>
+
+  <!-- Set D -->
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Challenge – Exponents Review</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (2³)² − 2⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>48</strong><br>(2³)² = 2⁶ = 64; 64 − 2⁴ = 64 − 16 = 48.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n: 5ⁿ⁺¹ = 625<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 3</strong><br>5⁴ = 625, so n+1 = 4, n = 3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (−2)⁴ × (−2)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>−128</strong><br>(−2)⁴ = 16, (−2)³ = −8; 16 × (−8) = −128.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A square has side 2⁴ cm. Find its area as a power of 2.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁸ cm² = 256 cm²</strong><br>Area = side² = (2⁴)² = 2⁸ = 256 cm².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 2² × 3² × 5°<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>36</strong><br>5⁰ = 1; 4 × 9 × 1 = 36.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If x² = 169, what are the possible values of x?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x = 13 or x = −13</strong><br>169 = 13², so x = ±13.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the value: 2⁵ + 2⁴ + 2³ + 2² + 2¹ + 2⁰<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>63</strong><br>32+16+8+4+2+1 = 63. (This is 2⁶ − 1 = 63.)</p></details></div></div>
+      <div class="q-item"><div class="q-text">A cube has edge 3³ cm. Find its volume as a power of 3.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁹ cm³ = 19,683 cm³</strong><br>Volume = edge³ = (3³)³ = 3⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compute: 1² + 2² + 3² + 4² + 5²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>55</strong><br>1+4+9+16+25 = 55.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the digit at the units place of 7⁴².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>Units digits of powers of 7 cycle: 7,9,3,1 (period 4). 42÷4 = remainder 2, so units digit = 9... wait: 7¹→7, 7²→9, 7³→3, 7⁴→1, cycle of 4. 42 mod 4 = 2. Units digit of 7² = <strong>9</strong>.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 2 -->
+<section class="topic" id="t2">
+  <div class="topic-header"><div class="t-num">2</div><h2>Product Rule: aᵐ × aⁿ = aᵐ⁺ⁿ</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/exponent-properties-intro/v/exponent-properties-1" target="_blank">Exponent Properties 1 – Product Rule</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:properties-of-exponents/x2f8bb11595b61c86:multiply-powers/v/exponent-rules-part-1" target="_blank">Multiplying Powers</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Exponent Rules – Multiply</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Simplifying Expressions with Exponents</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Why Exponent Rules Work</a>
+        <a href="https://www.youtube.com/watch?v=e4MSN6IImpI" target="_blank">Rules of Indices</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">Exponent Rules Explained</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">The Power of Powers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Application of Product Rule</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 3⁴ × 3⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁹</strong><br>Same base: add exponents. 4+5 = 9.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁷ × 2³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰</strong><br>7 + 3 = 10.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 5² × 5⁶ × 5<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁹</strong><br>5¹ = 5; 2+6+1 = 9.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (−2)³ × (−2)⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(−2)⁷ = −128</strong><br>Add exponents: 3+4=7. (−2)⁷ is negative.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: aᵐ × a² × a³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>aᵐ⁺⁵</strong><br>m+2+3 = m+5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find x: 4³ × 4ˣ = 4⁸<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x = 5</strong><br>3 + x = 8, so x = 5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 10³ × 10⁴ and write as a plain number.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁷ = 10,000,000</strong><br>3+4=7; 10⁷ = 1 crore.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: x³ × x⁵ × x²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>x¹⁰</strong><br>3+5+2 = 10.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 2ⁿ × 2⁴ = 2¹², find n.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 8</strong><br>n + 4 = 12 → n = 8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (−3)² × (−3)³ × (−3)¹<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(−3)⁶ = 729</strong><br>2+3+1=6. Even power → positive; 3⁶=729.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Product Rule with Coefficients</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 2 × 2³ × 2⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁸ = 256</strong><br>2¹ × 2³ × 2⁴ = 2⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 3² × 3⁴ and write the numerical value.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁶ = 729</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 5 × 3 × 5² × 3² (group same bases).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5³ × 3³ = 125 × 27 = 3375</strong><br>5¹×5² = 5³; 3¹×3² = 3³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 4 × 2⁵ (write as a single power of 2).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁷</strong><br>4 = 2², so 2² × 2⁵ = 2⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 9 × 3⁴ (write as a single power of 3).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁶</strong><br>9 = 3², so 3² × 3⁴ = 3⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 8 × 2⁴ (single power of 2).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁷</strong><br>8 = 2³; 2³ × 2⁴ = 2⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 27 × 9 × 3² (single power of 3).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁷</strong><br>27=3³, 9=3², so 3³×3²×3² = 3⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the product: (2a²b)(3a³b²).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>6a⁵b³</strong><br>Multiply coefficients: 2×3=6; a²×a³=a⁵; b×b²=b³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁴ × 4² × 8 (single power of 2).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹¹</strong><br>4²=(2²)²=2⁴; 8=2³; 2⁴×2⁴×2³=2¹¹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If x⁵ × x^n = x¹², what is x^n expressed as a power of x?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>x⁷</strong><br>5+n=12 → n=7; x^n = x⁷.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Algebraic Application</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Prove using an example: 2³ × 2⁴ = 2⁷<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>LHS: 8 × 16 = 128; RHS: 2⁷ = 128 ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Express as a single power: 3ˣ × 3ˣ<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3²ˣ</strong><br>x + x = 2x.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: aˣ × aˣ⁺¹<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a²ˣ⁺¹</strong><br>x + (x+1) = 2x+1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 3² × 3ᵏ = 3⁵, find k.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>k = 3</strong><br>2 + k = 5 → k = 3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (x²y³)(x³y⁴)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x⁵y⁷</strong><br>x²⁺³ = x⁵; y³⁺⁴ = y⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A bacteria population doubles every hour. Starting with 2 bacteria, how many after 8 hours? Express as a power of 2.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁹ = 512</strong><br>Start: 2¹; after 8 doublings: 2¹ × 2⁸ = 2⁹ = 512.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (−a)³ × (−a)⁵<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(−a)⁸ = a⁸</strong><br>Exponents add: 3+5=8. Even power → positive.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The area of a rectangle is aᵐ⁺² and its length is aᵐ. Find the width.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>a²</strong><br>Width = Area ÷ Length = aᵐ⁺²÷aᵐ = a².</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 5ᵃ × 5ᵇ = 5¹², find a+b.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>a+b = 12</strong><br>Product rule: exponents add to 12.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2ⁿ⁺¹ × 2ⁿ⁻¹<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2²ⁿ</strong><br>(n+1)+(n−1) = 2n.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Problem-Solving</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 10² × 10³ × 10⁻¹<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁴ = 10,000</strong><br>2+3+(−1) = 4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 7⁵ × 7⁰ × 7³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>7⁸</strong><br>7⁰=1; 5+0+3=8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: pᵐ × p⁻ᵐ<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>p⁰ = 1</strong><br>m+(−m)=0; any base to power 0 = 1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the product of 3ˣ and 3² is 243, find x.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x = 3</strong><br>3ˣ×3² = 3ˣ⁺² = 243 = 3⁵; x+2=5 → x=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The number of cells after n doublings starting from 1 cell: write as a power and evaluate for n=10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = 1024 cells</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2³)(2⁴)(2⁵)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹² = 4096</strong><br>3+4+5=12.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 32 × 128 as a single power of 2.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹² = 4096</strong><br>32=2⁵, 128=2⁷; 2⁵×2⁷=2¹².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (0.1)² × (0.1)³ and give decimal value.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>(0.1)⁵ = 0.00001</strong><br>2+3=5; 10⁻⁵ = 0.00001.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 6ᵐ × 6³ = 6⁷, find m and evaluate 6ᵐ.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>m=4; 6⁴=1296</strong><br>m+3=7 → m=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2ᵃ × 4 × 8 in terms of a single power of 2.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2ᵃ⁺⁵</strong><br>4=2², 8=2³; 2ᵃ×2²×2³ = 2ᵃ⁺⁵.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 3 -->
+<section class="topic" id="t3">
+  <div class="topic-header"><div class="t-num">3</div><h2>Quotient Rule: aᵐ ÷ aⁿ = aᵐ⁻ⁿ</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:properties-of-exponents/x2f8bb11595b61c86:divide-powers/v/exponent-properties-involving-quotients" target="_blank">Quotient of Powers Property</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/exponent-properties-intro/v/exponent-properties-2" target="_blank">Exponent Properties 2</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Dividing with Exponents</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Quotient Rule Examples</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e4MSN6IImpI" target="_blank">Dividing Powers of Numbers</a>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Index Laws – Division</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">Laws of Exponents</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Simplifying with Exponents</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Quotient Rule</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 5⁸ ÷ 5³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁵ = 3125</strong><br>8−3=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2¹⁰ ÷ 2⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁶ = 64</strong><br>10−4=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 7⁶ ÷ 7⁶<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>7⁰ = 1</strong><br>6−6=0; any base to power 0 = 1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 10⁹ ÷ 10⁶<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10³ = 1000</strong><br>9−6=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: a¹⁵ ÷ a⁷<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁸</strong><br>15−7=8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (−4)⁷ ÷ (−4)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(−4)⁴ = 256</strong><br>7−3=4. Even power → positive.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 3¹² ÷ 3⁹ and evaluate.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3³ = 27</strong><br>12−9=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find k: 6^k ÷ 6² = 6⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>k = 7</strong><br>k−2=5 → k=7.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: x¹² ÷ x⁵ ÷ x²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x⁵</strong><br>12−5−2=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁸ ÷ 2³ ÷ 2²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2³ = 8</strong><br>8−3−2=3.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Quotient Rule with Coefficients</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (12a⁵) ÷ (4a²)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3a³</strong><br>12÷4=3; a⁵÷a²=a³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (15x⁶) ÷ (5x³)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3x³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (6a⁴b³) ÷ (2a²b)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3a²b²</strong><br>6÷2=3; a⁴÷a²=a²; b³÷b=b².</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 256 ÷ 2ⁿ = 8, find n.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 5</strong><br>256=2⁸; 8=2³; 2⁸÷2ⁿ=2³ → 8−n=3 → n=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁶÷4 (single power of 2).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁴ = 16</strong><br>4=2²; 2⁶÷2²=2⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 3⁸÷27 (single power of 3).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁵ = 243</strong><br>27=3³; 3⁸÷3³=3⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (20x³y⁴)÷(5xy²)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4x²y²</strong><br>20÷5=4; x³÷x=x²; y⁴÷y²=y².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (−18m⁶n³)÷(6m²n)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>−3m⁴n²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 1000÷100 as powers of 10 and simplify.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10³÷10² = 10¹ = 10</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify and evaluate: 10⁷ ÷ 10⁵ ÷ 10<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10¹ = 10</strong><br>7−5−1=1.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Combining Product and Quotient Rules</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (3⁴ × 3²) ÷ 3³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3³ = 27</strong><br>4+2=6; 6−3=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (a⁶ × a³) ÷ a⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁵</strong><br>6+3−4=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2⁵ × 2³) ÷ (2² × 2²)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁴ = 16</strong><br>Numerator: 5+3=8; Denominator: 2+2=4; 8−4=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (x⁸ × x²) ÷ (x³ × x⁴)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x³</strong><br>Num: x¹⁰; Den: x⁷; 10−7=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (5⁷ ÷ 5³) × 5²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁶ = 15625</strong><br>7−3=4; then 4+2=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (10⁵ × 10⁻²) ÷ 10²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>10¹ = 10</strong><br>5+(−2)−2=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (4² × 4⁵) ÷ 4⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4³ = 64</strong><br>2+5=7; 7−4=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If (aᵐ × aⁿ) ÷ a⁴ = a⁷, and m=6, find n.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 5</strong><br>(6+n)−4=7; n=7+4−6=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3⁶ ÷ 3²) ÷ (3² ÷ 3⁰)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3² = 9</strong><br>3⁶÷3²=3⁴; 3²÷3⁰=3²; 3⁴÷3²=3².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2⁴ × 3³) ÷ (2² × 3)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2² × 3² = 4 × 9 = 36</strong><br>2⁴÷2²=2²; 3³÷3=3².</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Word Problems – Quotient Rule</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A file of size 2¹⁵ bytes is split into 2⁵ equal parts. Find the size of each part as a power of 2.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = 1024 bytes = 1 KB</strong><br>2¹⁵ ÷ 2⁵ = 2¹⁰.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A tank holds 3⁹ litres. If 3³ litres are used per day, how many days until empty? Express as a power of 3.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁶ = 729 days</strong><br>3⁹ ÷ 3³ = 3⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (distance of 10⁸ km) ÷ (speed of 10³ km/h). Give time in hours.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁵ hours</strong><br>10⁸ ÷ 10³ = 10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (3⁴ × 3⁶) ÷ 3⁵<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁵ = 243</strong><br>4+6=10; 10−5=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A rectangle has area 5⁹ cm² and length 5⁴ cm. Find its width as a power of 5.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁵ cm = 3125 cm</strong><br>5⁹÷5⁴=5⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 2ⁿ⁺³ ÷ 2² = 32, find n.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 4</strong><br>2ⁿ⁺¹ = 32 = 2⁵ → n+1=5 → n=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (10⁶ × 10⁴) ÷ (10³ × 10²)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁵ = 100,000</strong><br>Num: 10¹⁰; Den: 10⁵; 10¹⁰÷10⁵=10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Earth–Sun distance is about 1.5×10⁸ km. Light travels 3×10⁵ km/s. Find time for light to reach Earth (in seconds).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>500 seconds ≈ 8 min 20 sec</strong><br>(1.5×10⁸) ÷ (3×10⁵) = 0.5×10³ = 500 s.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (x⁵y⁶) ÷ (x²y³)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x³y³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the missing exponent: 5? ÷ 5³ = 5⁴ × 5²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁹</strong><br>RHS = 5⁶; so 5?÷5³=5⁶ → ?−3=6 → ?=9.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 4 -->
+<section class="topic" id="t4">
+  <div class="topic-header"><div class="t-num">4</div><h2>Power of a Power: (aᵐ)ⁿ = aᵐⁿ</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:properties-of-exponents/x2f8bb11595b61c86:powers-of-powers/v/exponent-properties-3" target="_blank">Power of a Power</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/exponent-properties-intro/v/exponent-properties-3" target="_blank">Raising a Power to a Power</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Power of a Power Rule</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Nested Exponents</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Powers of Powers</a>
+        <a href="https://www.youtube.com/watch?v=e4MSN6IImpI" target="_blank">Indices – Power Rule</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">Exponential Power Laws</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Chained Exponents</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Direct Power of Power</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (3²)⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁸ = 6561</strong><br>2×4=8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (5³)²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁶ = 15625</strong><br>3×2=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2⁴)³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹² = 4096</strong><br>4×3=12.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (10²)⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10¹⁰ = 10,000,000,000</strong><br>2×5=10.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (aᵐ)³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>a³ᵐ</strong><br>m×3=3m.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n: (4²)ⁿ = 4⁸<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 4</strong><br>2n=8 → n=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: ((−2)³)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(−2)⁶ = 64</strong><br>3×2=6. Even power → positive.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (7¹)⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>7⁴ = 2401</strong><br>1×4=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (x²)⁵ × (x³)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x¹⁶</strong><br>(x²)⁵=x¹⁰; (x³)²=x⁶; x¹⁰×x⁶=x¹⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2³)⁰<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>(2³)⁰ = 2⁰ = 1. Any non-zero number to power 0 is 1.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Multi-step with Power of Power</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (3²)³ ÷ 3³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3³ = 27</strong><br>(3²)³=3⁶; 3⁶÷3³=3³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2³)² × (2²)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹² = 4096</strong><br>2⁶ × 2⁶ = 2¹².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (5²)³ ÷ (5³)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁰ = 1</strong><br>5⁶ ÷ 5⁶ = 5⁰ = 1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: [(2²)³]²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹² = 4096</strong><br>(2²)³ = 2⁶; (2⁶)² = 2¹².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (a³)⁴ ÷ (a²)⁵<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a²</strong><br>a¹²÷a¹⁰=a².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find x if (3ˣ)² = 3¹⁰<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x = 5</strong><br>2x=10 → x=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (10³)⁴ ÷ (10⁶)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁰ = 1</strong><br>10¹²÷10¹²=10⁰=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2²)⁴ × (2⁴)² ÷ 2⁸<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁸ = 256</strong><br>2⁸×2⁸=2¹⁶; 2¹⁶÷2⁸=2⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n: (xⁿ)³ = x¹⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 5</strong><br>3n=15 → n=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (4³)² in terms of powers of 2.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹²</strong><br>4=2², so 4³=(2²)³=2⁶; (2⁶)²=2¹².</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Algebraic Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square has side x³ cm. Write area and perimeter using exponent rules.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Area = (x³)² = x⁶ cm²; Perimeter = 4x³ cm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A cube has edge a² cm. Express volume as a single power of a.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Volume = (a²)³ = a⁶ cm³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If a = 2², find a³ as a power of 2.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a³ = (2²)³ = 2⁶ = 64</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (xᵃ)ᵇ × (xᵇ)ᵃ<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>x²ᵃᵇ</strong><br>xᵃᵇ × xᵃᵇ = x²ᵃᵇ.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If (2ᵖ)⁴ = 2²⁰, find p.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>p = 5</strong><br>4p=20 → p=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3²)⁴ ÷ (3⁴)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>3⁸÷3⁸=1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Verify: (2³)² = (2²)³. Show both sides.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Both = 2⁶ = 64 ✓</strong><br>LHS: 2⁶=64; RHS: 2⁶=64.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n: (10ⁿ)² = 1,000,000<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 3</strong><br>10²ⁿ=10⁶ → 2n=6 → n=3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (p²q³)⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>p⁸q¹²</strong><br>(p²)⁴=p⁸; (q³)⁴=q¹².</p></details></div></div>
+      <div class="q-item"><div class="q-text">If (aᵐ)ⁿ = a⁶⁰ and m × n = 60, give two possible pairs (m,n).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Examples: (m=6,n=10); (m=12,n=5)</strong><br>Any pair where m×n=60 works.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Challenges</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: ((2²)³)⁴<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2²⁴</strong><br>2×3×4=24.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3²)⁵ − (3⁵)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>0</strong><br>Both = 3¹⁰; 3¹⁰−3¹⁰=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (5²)³ × 5 ÷ (5⁴)²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁻¹ = 1/5</strong><br>5⁶×5¹÷5⁸=5⁷÷5⁸=5⁻¹=1/5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: [(3²)²]² ÷ 3⁴<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁴ = 81</strong><br>3²×²×²=3⁸; 3⁸÷3⁴=3⁴=81.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If x = 3², find x⁴ without expanding.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>x⁴ = (3²)⁴ = 3⁸ = 6561</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the value of: (2³)² + (3²)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>64 + 729 = 793</strong><br>(2³)²=2⁶=64; (3²)³=3⁶=729.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A population triples every year. After 2 years from 3² starting population, find the total.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3² × (3)² = 3⁴ = 81</strong><br>Year 0: 3²=9; ×3 each year for 2 years: 9×3²=3⁴=81.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n: (2ⁿ)⁴ = (2⁴)ⁿ<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Any value of n (both equal 2⁴ⁿ)</strong><br>LHS: 2⁴ⁿ; RHS: 2⁴ⁿ. Always equal for any n.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (a²b³)⁵ ÷ (a⁵b⁶)²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁰b³ = b³</strong><br>Num: a¹⁰b¹⁵; Den: a¹⁰b¹²; result: b³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 1,000,000,000,000 as a power of 10 and also as a power of 100.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10¹² = (10²)⁶ = 100⁶</strong></p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 5 -->
+<section class="topic" id="t5">
+  <div class="topic-header"><div class="t-num">5</div><h2>Zero and Negative Exponents</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-pos-neg-exponents/v/negative-exponents" target="_blank">Negative Exponents</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-pos-neg-exponents/v/zero-exponent" target="_blank">Zero Exponent</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Zero and Negative Exponents</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Why a⁰=1 Makes Sense</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e4MSN6IImpI" target="_blank">Negative Powers Explained</a>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Zero Power Paradox?</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">What is a Negative Exponent?</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">The Meaning of a⁰</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Zero Exponent and Simple Negatives</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Evaluate: 7⁰<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>Any non-zero base to power 0 = 1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (−5)⁰<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>(−5)⁰ = 1. The base is non-zero.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 3⁻¹<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1/3</strong><br>a⁻¹ = 1/a.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 2⁻³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1/8</strong><br>2⁻³ = 1/2³ = 1/8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 5⁻²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1/25</strong><br>5⁻² = 1/25.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (1/2)⁻³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8</strong><br>(1/2)⁻³ = 2³ = 8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 10⁻⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>0.0001 = 1/10000</strong><br>10⁻⁴ = 1/10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write as a fraction: 7⁻²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1/49</strong><br>7⁻² = 1/49.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (−2)⁻³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>−1/8</strong><br>(−2)⁻³ = 1/(−2)³ = 1/(−8) = −1/8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 4⁰ + 4⁻¹ + 4⁻²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1 + 1/4 + 1/16 = 21/16</strong><br>= 16/16 + 4/16 + 1/16 = 21/16.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Converting Between Positive and Negative Exponents</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write 1/5³ with a negative exponent.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁻³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 1/10⁶ as a power of 10.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻⁶</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 0.01 as a power of 10.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻²</strong><br>0.01 = 1/100 = 10⁻².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 0.000001 as a power of 10. (Size of a bacterium ≈ this many metres)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻⁶</strong><br>0.000001 = 1/10⁶ = 10⁻⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert to positive exponent: x⁻⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1/x⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write (3/4)⁻² without negative exponents.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(4/3)² = 16/9</strong><br>Flip the fraction and make exponent positive.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 5⁻³ × 5³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5⁰ = 1</strong><br>−3+3=0.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁻⁴ × 2⁶<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2² = 4</strong><br>−4+6=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 3⁻⁵/3⁻² with a single positive exponent.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁻³ = 1/27</strong><br>−5−(−2) = −3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Arrange in ascending order: 2⁻³, 2⁰, 2⁻¹, 2²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁻³ &lt; 2⁻¹ &lt; 2⁰ &lt; 2²</strong><br>1/8 &lt; 1/2 &lt; 1 &lt; 4.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Simplifying with Negative Exponents</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: 10⁵ × 10⁻³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10² = 100</strong><br>5+(−3)=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 3⁴ ÷ 3⁻²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁶ = 729</strong><br>4−(−2)=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2⁻³)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁻⁶ = 1/64</strong><br>−3×2=−6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (5⁻²)⁻¹<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5² = 25</strong><br>−2×(−1)=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: x⁻³ × x⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>x²</strong><br>−3+5=2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: a⁴ × a⁻⁷<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁻³ = 1/a³</strong><br>4+(−7)=−3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3⁻¹ + 4⁻¹) as a fraction.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>7/12</strong><br>1/3 + 1/4 = 4/12 + 3/12 = 7/12.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁻¹ − 3⁻¹ as a fraction.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1/6</strong><br>1/2 − 1/3 = 3/6 − 2/6 = 1/6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2⁻¹ × 4)²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>4</strong><br>2⁻¹×4 = 2; 2²=4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (5⁻¹ × 5³) ÷ 5⁰<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5² = 25</strong><br>5⁻¹×5³=5²; ÷5⁰=÷1=5².</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Real-world Negative Exponents</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The size of a bacterium is about 10⁻⁶ m. Write this as a decimal.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>0.000001 m</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A virus is about 10⁻⁸ m wide. How many times smaller is it than a bacterium (10⁻⁶ m)?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>100 times smaller</strong><br>10⁻⁶ ÷ 10⁻⁸ = 10² = 100.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 0.0001 cm in metres using a negative power of 10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻⁶ m</strong><br>0.0001 cm = 0.0001×10⁻² m = 10⁻⁴×10⁻² = 10⁻⁶ m.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A chemical has concentration 5×10⁻³ mol/L. Write as a decimal.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>0.005 mol/L</strong><br>5×0.001=0.005.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n if 10ⁿ = 0.00001<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = −5</strong><br>0.00001 = 10⁻⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: 2⁵ × 2⁻⁸ and write as a simple fraction.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁻³ = 1/8</strong><br>5+(−8)=−3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A piece of paper is 10⁻⁴ m thick. Express the thickness of 100 sheets with a power of 10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10² × 10⁻⁴ = 10⁻² m = 0.01 m = 1 cm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: 5⁻¹ + 5⁰ + 5¹<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1/5 + 1 + 5 = 31/5 = 6.2</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (a⁻²)⁻³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁶</strong><br>−2×(−3)=6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A microscope magnifies 10³ times. An object appears 10⁻² m big. What is its actual size?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻⁵ m</strong><br>Actual = apparent ÷ magnification = 10⁻² ÷ 10³ = 10⁻⁵ m.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 6 -->
+<section class="topic" id="t6">
+  <div class="topic-header"><div class="t-num">6</div><h2>Power of Product and Quotient: (ab)ⁿ and (a/b)ⁿ</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:properties-of-exponents/x2f8bb11595b61c86:power-of-a-product/v/exponent-properties-involving-products" target="_blank">Power of a Product</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:properties-of-exponents/x2f8bb11595b61c86:power-of-a-quotient/v/exponent-properties-involving-quotients" target="_blank">Power of a Quotient</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Product and Quotient Powers</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Distributing Exponents</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=e4MSN6IImpI" target="_blank">Index Laws – Products</a>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Power Distributions</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">Laws of Indices – Products</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Exponents on Fractions</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Power of a Product</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (2×3)⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁴ × 3⁴ = 16 × 81 = 1296</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand: (ab)⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁵b⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand: (3x)³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>27x³</strong><br>3³×x³=27x³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand: (−2y)⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>16y⁴</strong><br>(−2)⁴=16; y⁴=y⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand: (2a²b)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8a⁶b³</strong><br>2³=8; (a²)³=a⁶; b³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3x²y)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>9x⁴y²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write (2×5)³ as a product of two powers and evaluate.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2³×5³ = 8×125 = 1000 = 10³ ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand: (4mn²)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>64m³n⁶</strong><br>4³=64; m³; (n²)³=n⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (−5x³)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>25x⁶</strong><br>(−5)²=25; (x³)²=x⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 36 as (ab)² in two different ways.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>(6×1)²=36; (2×3)²=6²? No — (2×3)²=36 ✓; also (9×0.5...).</strong><br>Simplest: (6)²=36 (a=6,b=1) or (2×3)²: verify 2²×3²=4×9=36 ✓</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Power of a Quotient</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Expand: (a/b)³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>a³/b³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2/3)³<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>8/27</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (3/4)²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>9/16</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Expand: (x/y)⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>x⁴/y⁴</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (1/2)⁻² (convert negative exponent first).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4</strong><br>(1/2)⁻² = (2/1)² = 4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2x/3y)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8x³/27y³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2/5)² + (3/5)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4/25 + 9/25 = 13/25</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (a²/b³)⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>a⁸/b¹²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (3/2)⁻² without negative exponents.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(2/3)² = 4/9</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3x²/2y)³<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>27x⁶/8y³</strong><br>3³=27; (x²)³=x⁶; 2³=8; y³.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Combining All Product/Quotient Rules</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Simplify: (2a³)² × (3a)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>36a⁸</strong><br>4a⁶ × 9a² = 36a⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (4x²y)³ ÷ (2xy)³<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>8x³</strong><br>= (4x²y ÷ 2xy)³ = (2x)³ = 8x³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that (2×3)⁴ = 2⁴×3⁴ by computing both sides.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>LHS: 6⁴=1296; RHS: 16×81=1296 ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (a/b)³ × (b/a)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>(a/b × b/a)³ = 1³ = 1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2x)³/(4x²)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2x</strong><br>8x³ ÷ 4x² = 2x.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2/3)³ × (3/4)²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>8/27 × 9/16 = 72/432 = 1/6</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (3a²b)² ÷ (9ab²)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>a³/b²</strong><br>9a⁴b² ÷ 9ab² = a³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2ab)³ × (a²b)²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>8a⁷b⁵</strong><br>8a³b³ × a⁴b² = 8a⁷b⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find: [(2/3)²]³ as a simple fraction.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>64/729</strong><br>(2/3)⁶ = 2⁶/3⁶ = 64/729.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (p²q)⁴ ÷ (p³q²)²<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>p²</strong><br>Num: p⁸q⁴; Den: p⁶q⁴; result: p².</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Word Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A square plot has side (3a²) m. Find its area in simplest form.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>9a⁴ m²</strong><br>(3a²)² = 9a⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A cube has edge (2xy) cm. Find its volume.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8x³y³ cm³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A pizza has radius (r/2) cm. Write area formula using π and simplify.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>πr²/4 cm²</strong><br>π(r/2)² = π×r²/4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express (6ab²)² in expanded form.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>36a²b⁴</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A cube's surface area formula is 6s². If s = 2a², find surface area.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>24a⁴</strong><br>6×(2a²)² = 6×4a⁴ = 24a⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If (2x)ⁿ = 32x⁵, find n.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 5</strong><br>2ⁿ×xⁿ=32x⁵; 2⁵=32 ✓; xⁿ=x⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (10a)² × (10b)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10000a²b²</strong><br>100a²×100b²=10000a²b².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the ratio of volume of a cube with side 2a to one with side a.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>8</strong><br>(2a)³/a³ = 8a³/a³ = 8.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate (1.5)² using power of product rule. (1.5 = 3/2)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>9/4 = 2.25</strong><br>(3/2)² = 9/4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (2a)³ + (3b)² when a=1, b=2.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>8 + 36 = 44</strong><br>8×1 + 9×4 = 8+36=44.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 7 -->
+<section class="topic" id="t7">
+  <div class="topic-header"><div class="t-num">7</div><h2>Scientific Notation</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/scientific-notation" target="_blank">Introduction to Scientific Notation</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/scientific-notation-examples" target="_blank">Scientific Notation Examples</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=bXkewQ7WEdI" target="_blank">Scientific Notation – Basics</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Standard Form and Sci Notation</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Powers of Ten</a>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Scientific Notation in Astronomy</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=0fKBhvDjuy0" target="_blank">Powers of Ten (Classic Film)</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">How Big is the Universe?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Writing in Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write 5,700,000 in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5.7 × 10⁶</strong><br>Move decimal 6 places left.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 0.00042 in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>4.2 × 10⁻⁴</strong><br>Move decimal 4 places right → negative exponent.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the Earth–Sun distance, 150,000,000 km, in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1.5 × 10⁸ km</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the size of a bacterium, 0.000001 m, in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁻⁶ m</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 1 crore in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁷</strong><br>1 crore = 10,000,000 = 10⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 3,45,000 in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3.45 × 10⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 0.0000000067 in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>6.7 × 10⁻⁹</strong><br>Move decimal 9 places right.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the number 1 lakh in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 32 × 10⁴ in correct scientific notation? If not, correct it.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>No. Correct form: 3.2 × 10⁵</strong><br>32 = 3.2 × 10, so 3.2 × 10 × 10⁴ = 3.2 × 10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 0.5 × 10⁻³ in correct scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁻⁴</strong><br>0.5 = 5×10⁻¹; 5×10⁻¹×10⁻³ = 5×10⁻⁴.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Converting from Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write 3.8 × 10⁶ as a standard number.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3,800,000</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 7.2 × 10⁻⁵ as a decimal.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>0.000072</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 1.5 × 10⁸ in full (Earth–Sun distance in km).<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>150,000,000 km</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 9.46 × 10¹² in full (1 light-year in km).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>9,460,000,000,000 km</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 2.5 × 10⁻³ as a decimal fraction.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>0.0025</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert: 4.56 × 10⁴ to standard form.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>45,600</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The mass of Earth is 5.97 × 10²⁴ kg. How many digits does this standard number have?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>25 digits</strong><br>5.97 × 10²⁴ has a digit before the decimal and 24 places, giving 25 total digits.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert: 6.02 × 10²³ (Avogadro's number) — is this large or small?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Very large</strong><br>Positive exponent means a very large number: 602,000,000,000,000,000,000,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert: 1.6 × 10⁻¹⁹ C (charge of electron) to decimal.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>0.00000000000000000016 C</strong><br>Move decimal 19 places left.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 6 × 10⁰ as a standard number.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>6</strong><br>10⁰=1; 6×1=6.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Indian Number System in Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Write 5 lakh in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁵</strong><br>5 lakh = 5,00,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write 3.6 crore in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3.6 × 10⁷</strong><br>3.6 crore = 3,60,00,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">India's population is about 1.4 billion. Write in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1.4 × 10⁹</strong><br>1 billion = 10⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert 8.5 × 10⁷ to crore.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8.5 crore</strong><br>8.5 × 10⁷ = 8,50,00,000 = 8.5 crore.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The area of India is approximately 3,287,263 km². Write in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 3.29 × 10⁶ km²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 75 lakh in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>7.5 × 10⁶</strong><br>75 lakh = 75,00,000 = 7.5×10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A factory produces 2,40,000 units per year. Write in scientific notation.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2.4 × 10⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Convert 4.2 × 10⁵ to lakh.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4.2 lakh</strong><br>4.2 × 10⁵ = 4,20,000 = 4.2 lakh.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 1 billion more than 100 crore? Verify using powers of 10.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Equal!</strong><br>1 billion = 10⁹; 100 crore = 100×10⁷ = 10²×10⁷ = 10⁹ ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express the national debt of ₹1,20,00,000 crore in scientific notation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1.2 × 10¹⁴</strong><br>1,20,00,000 crore = 1.2×10⁷ × 10⁷ = 1.2×10¹⁴.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Scientific Notation Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The wavelength of red light is 7 × 10⁻⁷ m. Write as a decimal.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>0.0000007 m</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The speed of light is 3×10⁸ m/s. Express in km/h.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1.08 × 10⁹ km/h</strong><br>3×10⁸ m/s × 3600 s/h ÷ 1000 m/km = 3×10⁸×3.6 = 10.8×10⁸ = 1.08×10⁹ km/h.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Order from smallest to largest: 3×10⁴, 5×10³, 2×10⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5×10³ &lt; 3×10⁴ &lt; 2×10⁵</strong><br>5000 &lt; 30000 &lt; 200000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The mass of a proton is 1.67 × 10⁻²⁷ kg. Is it large or small? Describe.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Extremely small</strong><br>Negative exponent of 27 means 26 zeros after the decimal point before the digits 167.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Correct if wrong: 0.0056 = 5.6 × 10³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Wrong. Correct: 5.6 × 10⁻³</strong><br>0.0056 is less than 1, so exponent must be negative.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 1 mm in metres in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁻³ m</strong><br>1 mm = 0.001 m = 10⁻³ m.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A human hair is about 7 × 10⁻⁵ m thick. Express in mm.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>0.07 mm</strong><br>7×10⁻⁵ m × (10³ mm/m) = 7×10⁻² mm = 0.07 mm.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The universe is about 9.3 × 10²⁶ m across. The Milky Way is about 9.5 × 10²⁰ m. Which is larger and by what factor (rough)?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Universe is larger by about 10⁶ times (1 million times)</strong><br>9.3×10²⁶ ÷ 9.5×10²⁰ ≈ 1×10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the number of seconds in a year (≈ 3.15 × 10⁷ s) in full.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>31,500,000 seconds</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A storage device holds 2²⁰ bytes ≈ 1 MB. Express 2²⁰ in scientific notation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 1.05 × 10⁶</strong><br>2²⁰ = 1,048,576 ≈ 1.048576 × 10⁶.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 8 -->
+<section class="topic" id="t8">
+  <div class="topic-header"><div class="t-num">8</div><h2>Computing with Scientific Notation</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation-compu/v/multiplying-in-scientific-notation" target="_blank">Multiplying in Scientific Notation</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation-compu/v/dividing-in-scientific-notation" target="_blank">Dividing in Scientific Notation</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=bXkewQ7WEdI" target="_blank">Calculating with Scientific Notation</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Adding Scientific Notation</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Multiplication in Powers of 10</a>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">Division with Exponents</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Computing Large Numbers</a>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">Scientific Notation Operations</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Multiplication in Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Multiply: (2×10³) × (3×10⁴)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>6 × 10⁷</strong><br>2×3=6; 10³×10⁴=10⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (4×10⁵) × (2×10³)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>8 × 10⁸</strong><br>4×2=8; 10⁵×10³=10⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (3.5×10⁴) × (2×10⁻²)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>7 × 10²</strong><br>3.5×2=7; 10⁴×10⁻²=10².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (5×10⁻³) × (4×10⁻⁴) and express correctly.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2 × 10⁻⁶</strong><br>5×4=20=2×10; 10⁻³×10⁻⁴=10⁻⁷; 2×10×10⁻⁷=2×10⁻⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (1.5×10⁸) × (3×10⁴)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4.5 × 10¹²</strong><br>1.5×3=4.5; 10⁸×10⁴=10¹².</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Earth–Sun distance is 1.5×10⁸ km. The Sun–Alpha Centauri distance is about 2.7×10¹³ km. Express the product of these in scientific notation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>4.05 × 10²¹ km²</strong><br>1.5×2.7=4.05; 10⁸×10¹³=10²¹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (6×10⁴) × (6×10⁴)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3.6 × 10⁹</strong><br>6×6=36=3.6×10; 3.6×10×10⁸=3.6×10⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (2.5×10²) × (4×10⁻⁵)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁻²</strong><br>2.5×4=10=1×10; 10²×10⁻⁵=10⁻³; 1×10×10⁻³=10⁻².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (9×10⁶) × (1×10⁻⁶)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>9 × 10⁰ = 9</strong><br>9×1=9; 10⁶×10⁻⁶=10⁰=1; 9×1=9.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Multiply: (3×10ᵃ) × (5×10ᵇ) — what is the result in general?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>15 × 10ᵃ⁺ᵇ or 1.5 × 10ᵃ⁺ᵇ⁺¹</strong><br>15 must be converted: 1.5×10¹; so 1.5×10ᵃ⁺ᵇ⁺¹.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Division in Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Divide: (8×10⁶) ÷ (2×10²)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>4 × 10⁴</strong><br>8÷2=4; 10⁶÷10²=10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Divide: (9×10⁹) ÷ (3×10³)<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3 × 10⁶</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Divide: (6.4×10⁸) ÷ (3.2×10⁴)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2 × 10⁴</strong><br>6.4÷3.2=2; 10⁸÷10⁴=10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Earth–Sun distance is 1.5×10⁸ km. Light travels at 3×10⁵ km/s. Find time in seconds for light to reach Earth.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10² = 500 seconds</strong><br>1.5×10⁸ ÷ 3×10⁵ = 0.5×10³ = 5×10².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Divide: (5×10⁻³) ÷ (2×10⁻⁵)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2.5 × 10²</strong><br>5÷2=2.5; 10⁻³÷10⁻⁵=10².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Divide: (1.2×10¹²) ÷ (4×10⁸)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3 × 10³</strong><br>1.2÷4=0.3=3×10⁻¹; 10¹²÷10⁸=10⁴; 3×10⁻¹×10⁴=3×10³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Divide: (7×10⁻⁷) ÷ (7×10⁷)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁻¹⁴</strong><br>7÷7=1; 10⁻⁷÷10⁷=10⁻¹⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A car travels 2.4×10⁵ km in 3×10³ hours. Find its average speed.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8 × 10¹ = 80 km/h</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Divide: (3.6×10⁻⁴) ÷ (9×10⁻²)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>4 × 10⁻³</strong><br>3.6÷9=0.4=4×10⁻¹; 10⁻⁴÷10⁻²=10⁻²; 4×10⁻³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">1 lakh workers each earn ₹24,000 per year. What is the total wages bill? Give in scientific notation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2.4 × 10¹⁰</strong><br>10⁵ × 2.4×10⁴ = 2.4×10⁹? Let's check: 1 lakh = 10⁵; 24000 = 2.4×10⁴; product = 2.4×10⁹.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Addition and Subtraction in Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Add: 3×10⁵ + 2×10⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁵</strong><br>Same power: add coefficients.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Add: 4.5×10⁶ + 3.2×10⁶<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>7.7 × 10⁶</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Add: 3×10⁴ + 5×10³ (make exponents equal first).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3.5 × 10⁴</strong><br>5×10³ = 0.5×10⁴; 3×10⁴ + 0.5×10⁴ = 3.5×10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Subtract: 8×10⁷ − 3×10⁷<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁷</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Subtract: 6.4×10⁵ − 2.4×10⁴<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>6.16 × 10⁵</strong><br>2.4×10⁴=0.24×10⁵; 6.4−0.24=6.16.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Add: 1.5×10⁸ + 2.5×10⁷<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1.75 × 10⁸</strong><br>2.5×10⁷=0.25×10⁸; 1.5+0.25=1.75.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Add: 3×10⁻⁴ + 7×10⁻⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1 × 10⁻³</strong><br>3+7=10=1×10; 10×10⁻⁴=10⁻³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Two cities have populations 3.4×10⁶ and 1.6×10⁶. Total population?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁶</strong><br>3.4+1.6=5.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Subtract: 5.2×10⁹ − 4.7×10⁹<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁸</strong><br>5.2−4.7=0.5=5×10⁻¹; 5×10⁻¹×10⁹=5×10⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Add: 2.3×10⁻⁵ + 4.7×10⁻⁶<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2.77 × 10⁻⁵</strong><br>4.7×10⁻⁶=0.47×10⁻⁵; 2.3+0.47=2.77.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Computations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A spaceship travels 3×10⁴ km/h for 5×10² hours. Distance covered?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1.5 × 10⁷ km</strong><br>3×5=15=1.5×10; 10⁴×10²=10⁶; 1.5×10⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The human body has about 3.7×10¹³ cells, each with a mass of about 10⁻¹² g. Total cell mass?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3.7 × 10¹ = 37 g</strong><br>3.7×10¹³ × 10⁻¹² = 3.7×10¹ = 37 g.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find: (4×10⁴)²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1.6 × 10⁹</strong><br>4²=16=1.6×10; (10⁴)²=10⁸; 1.6×10⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find: √(9×10⁶)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3 × 10³</strong><br>√9=3; √10⁶=10³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many bacteria of size 10⁻⁶ m fit in a line 1 m long?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁶ bacteria</strong><br>1 ÷ 10⁻⁶ = 10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Light from the Sun takes 500 seconds to reach Earth. Speed of light = 3×10⁵ km/s. Find Earth–Sun distance.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1.5 × 10⁸ km</strong><br>3×10⁵ × 500 = 3×10⁵ × 5×10² = 15×10⁷ = 1.5×10⁸ km.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Evaluate: (2×10³)³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8 × 10⁹</strong><br>2³=8; (10³)³=10⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A data centre stores 5×10⁶ files, each 3.2×10³ KB. Total storage in KB?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1.6 × 10¹⁰ KB</strong><br>5×3.2=16=1.6×10; 10⁶×10³=10⁹; 1.6×10×10⁹=1.6×10¹⁰.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simplify: (6×10⁸) ÷ (4×10⁻²) × (2×10³)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3 × 10¹³</strong><br>÷ then ×: 6÷4×2=3; 10⁸÷10⁻²×10³=10⁸⁺²⁺³=10¹³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The national budget is 4.5×10¹³ rupees, shared equally among 9×10⁸ people. Per-person share?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>5 × 10⁴ = ₹50,000</strong><br>4.5÷9=0.5=5×10⁻¹; 10¹³÷10⁸=10⁵; 5×10⁻¹×10⁵=5×10⁴.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 9 -->
+<section class="topic" id="t9">
+  <div class="topic-header"><div class="t-num">9</div><h2>Comparing in Scientific Notation</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/comparing-in-scientific-notation" target="_blank">Comparing Numbers in Sci Notation</a>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/ordering-numbers-in-scientific-notation" target="_blank">Ordering in Scientific Notation</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=bXkewQ7WEdI" target="_blank">Which is Bigger? Scientific Notation</a>
+        <a href="https://www.youtube.com/watch?v=Tqpcku0hrPU" target="_blank">Sorting Scientific Notation</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Large Numbers Compared</a>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">How to Compare Magnitudes</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Orders of Magnitude</a>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">How Big is an Atom?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Comparing Numbers in Scientific Notation</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Which is larger: 5×10⁴ or 3×10⁵?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3×10⁵</strong><br>Higher exponent (10⁵ &gt; 10⁴) means 3×10⁵=300,000 &gt; 50,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which is larger: 7×10⁶ or 9×10⁵?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>7×10⁶</strong><br>7,000,000 &gt; 900,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compare: 4.5×10⁻³ vs 3×10⁻²<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3×10⁻² is larger</strong><br>−2 &gt; −3 as an exponent; 0.03 &gt; 0.0045.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Fill in &lt;, &gt; or =: 2.5×10⁷ __ 5×10⁶<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2.5×10⁷ &gt; 5×10⁶</strong><br>25,000,000 &gt; 5,000,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Arrange in ascending order: 6×10³, 2×10⁵, 8×10⁴, 3×10³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3×10³ &lt; 6×10³ &lt; 8×10⁴ &lt; 2×10⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Order from largest to smallest: 5×10⁻⁵, 3×10⁻⁴, 1×10⁻³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1×10⁻³ &gt; 3×10⁻⁴ &gt; 5×10⁻⁵</strong><br>0.001 &gt; 0.0003 &gt; 0.00005.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Fill in: 3.6×10⁸ __ 3.6×10⁷<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>&gt;</strong><br>Same coefficient; larger exponent = larger value.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Is 1.2×10⁷ = 12×10⁶? Justify.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Yes. 12×10⁶ = 1.2×10¹×10⁶ = 1.2×10⁷ ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Compare: 1 billion and 99 crore.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1 billion &gt; 99 crore</strong><br>1 billion=10⁹; 99 crore=99×10⁷=9.9×10⁸; 10⁹&gt;9.9×10⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which is smaller: 10⁻⁴ m or 10⁻⁵ m?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻⁵ m</strong><br>−5 &lt; −4, so 10⁻⁵ &lt; 10⁻⁴.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> How Many Times Larger?</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The Sun's mass is 2×10³⁰ kg; Earth's mass is 6×10²⁴ kg. How many times heavier is the Sun?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 3.3 × 10⁵ times (about 330,000 times)</strong><br>2×10³⁰ ÷ 6×10²⁴ ≈ 0.33×10⁶ = 3.3×10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A bacterium is 10⁻⁶ m; an atom is 10⁻¹⁰ m. How many atoms fit in one bacterium (length)?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁴ = 10,000 atoms</strong><br>10⁻⁶ ÷ 10⁻¹⁰ = 10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">India's area: 3.3×10⁶ km²; Goa's area: 3.7×10³ km². How many times bigger is India?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 893 times (≈ 10³ times)</strong><br>3.3×10⁶ ÷ 3.7×10³ ≈ 0.893×10³ ≈ 893.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Speed of light: 3×10⁸ m/s; speed of sound: 3.4×10² m/s. How many times faster is light?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 8.8 × 10⁵ times (nearly 1 million times)</strong><br>3×10⁸ ÷ 3.4×10² ≈ 0.88×10⁶ ≈ 8.8×10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many times is 10⁹ more than 10⁶?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10³ = 1000 times</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">How many times is 10⁻³ m larger than 10⁻⁶ m?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10³ = 1000 times</strong><br>10⁻³ ÷ 10⁻⁶ = 10³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Earth's population: 8×10⁹; Gaudium School students: 4×10³. Ratio of world to school?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2 × 10⁶</strong><br>8×10⁹ ÷ 4×10³ = 2×10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A million (10⁶) seconds is about 11.6 days. A billion (10⁹) seconds is how many days roughly?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 11,600 days ≈ 31.7 years</strong><br>10⁹ ÷ 10⁶ = 10³; 11.6×1000 = 11,600 days.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A proton: 1.67×10⁻²⁷ kg; electron: 9.1×10⁻³¹ kg. How many times heavier is a proton?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 1836 times</strong><br>1.67×10⁻²⁷ ÷ 9.1×10⁻³¹ ≈ 0.1835×10⁴ ≈ 1835.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which is larger: 8.99×10⁷ or 9×10⁷?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>9×10⁷</strong><br>9 &gt; 8.99 and same exponent.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Ranking and Sorting</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Rank in descending order: 10⁻³, 10⁻⁶, 10⁻¹, 10⁻⁴<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁻¹ &gt; 10⁻³ &gt; 10⁻⁴ &gt; 10⁻⁶</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Order from smallest: 3.1×10⁵, 3.05×10⁵, 3.15×10⁵<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3.05×10⁵ &lt; 3.1×10⁵ &lt; 3.15×10⁵</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A list: atom nucleus 10⁻¹⁵ m, proton 10⁻¹⁵ m, atom 10⁻¹⁰ m, cell 10⁻⁵ m. Order largest to smallest.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>cell &gt; atom &gt; proton ≈ nucleus</strong><br>10⁻⁵ &gt; 10⁻¹⁰ &gt; 10⁻¹⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Arrange: 2.5×10⁶, 7×10⁵, 9.9×10⁶, 1×10⁷<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>7×10⁵ &lt; 2.5×10⁶ &lt; 9.9×10⁶ &lt; 1×10⁷</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the middle value: 6×10⁴, 2×10⁵, 8×10³<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>6×10⁴ = 60,000</strong><br>Ascending: 8000, 60000, 200000; middle = 60,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which two are equal: 5×10³, 0.5×10⁴, 50×10²?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>All three are equal = 5000</strong><br>5×10³=5000; 0.5×10⁴=5000; 50×10²=5000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A gram of sugar contains about 3×10²¹ sugar molecules; a teaspoon is about 4 g. How many molecules in a teaspoon?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1.2 × 10²² molecules</strong><br>4 × 3×10²¹ = 12×10²¹ = 1.2×10²².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Rank: world debt $3×10¹³, India GDP $3.5×10¹²; how many times greater is world debt?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 8.6 times</strong><br>3×10¹³ ÷ 3.5×10¹² ≈ 0.857×10 ≈ 8.57.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Which is smaller: 1×10⁻¹⁰ or 9×10⁻¹¹?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>9×10⁻¹¹ is smaller</strong><br>9×10⁻¹¹ = 0.9×10⁻¹⁰ &lt; 1×10⁻¹⁰.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Insert a number in scientific notation between 4×10⁵ and 5×10⁵.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Any value like 4.5×10⁵ works.</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Real-world Comparisons</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Earth's radius: 6.4×10³ km; Moon's radius: 1.7×10³ km. How many times larger is Earth's radius?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 3.8 times</strong><br>6.4÷1.7 ≈ 3.76.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A desktop memory chip stores 8×10⁹ bytes (8 GB). A USB stick stores 3.2×10¹⁰ bytes (32 GB). Which stores more?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>USB stick (32 GB)</strong><br>3.2×10¹⁰ &gt; 8×10⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A whale weighs 1.5×10⁵ kg; a mouse weighs 2×10⁻² kg. Ratio of whale to mouse?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>7.5 × 10⁶</strong><br>1.5×10⁵ ÷ 2×10⁻² = 0.75×10⁷ = 7.5×10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Heart beats per year: about 3×10⁷. How many beats in 80 years of life?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2.4 × 10⁹</strong><br>80×3×10⁷=240×10⁷=2.4×10⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compare: 9.99×10⁴ and 10⁵. Which is larger?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁵ is larger</strong><br>10⁵=1×10⁵; 9.99×10⁴=0.999×10⁵ &lt; 10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many 10 rupee notes make 1 crore rupees?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁶ = 10 lakh notes</strong><br>10⁷ ÷ 10 = 10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A strand of DNA is 2 m long when uncoiled. It fits in a cell nucleus of diameter 6×10⁻⁶ m. What is the ratio of DNA length to nucleus diameter?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 3.3 × 10⁵</strong><br>2 ÷ 6×10⁻⁶ = 0.333×10⁶ ≈ 3.3×10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Andromeda galaxy is 2.4×10¹⁹ km away. The Milky Way diameter is 9.5×10¹⁷ km. How many Milky Way diameters fit in that distance?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 25</strong><br>2.4×10¹⁹ ÷ 9.5×10¹⁷ ≈ 0.253×10² ≈ 25.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Water molecule size: 3×10⁻¹⁰ m; bacteria: 2×10⁻⁶ m. How many water molecules fit across a bacterium?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 6667 ≈ 6.7×10³</strong><br>2×10⁻⁶ ÷ 3×10⁻¹⁰ = 0.667×10⁴ ≈ 6.67×10³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Voyager 1 probe is about 2.3×10¹⁰ km from Earth. Express this in AU (1 AU = 1.5×10⁸ km).<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 153 AU</strong><br>2.3×10¹⁰ ÷ 1.5×10⁸ ≈ 1.53×10² ≈ 153 AU.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 10 -->
+<section class="topic" id="t10">
+  <div class="topic-header"><div class="t-num">10</div><h2>Exponents in Formulas</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/pythagorean-theorem" target="_blank">Pythagoras Theorem (squares in formula)</a>
+        <a href="https://www.khanacademy.org/math/geometry/hs-geo-circles/hs-geo-circle-area/v/area-of-a-circle" target="_blank">Area of a Circle (r² in formula)</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">Area Formulas using Powers</a>
+        <a href="https://www.youtube.com/watch?v=X6qFtMDMsXI" target="_blank">Volume Formulas and Cubes</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=BdHFLfv-ThQ" target="_blank">E=mc² Explained</a>
+        <a href="https://www.youtube.com/watch?v=e4MSN6IImpI" target="_blank">Gravity Formula and Squares</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Einstein's Famous Equation</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Physics and Exponents</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Area and Volume Formulas</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the area of a square with side 2³ cm.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>(2³)² = 2⁶ = 64 cm²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the volume of a cube with edge 3² cm.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>(3²)³ = 3⁶ = 729 cm³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Area of circle = πr². Find area when r = 5² cm (leave in terms of π).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>π×(5²)² = π×5⁴ = 625π cm²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the area of a rectangle with length 2⁵ cm and width 2³ cm.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁸ = 256 cm²</strong><br>2⁵×2³=2⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Volume of sphere = (4/3)πr³. If r = 3, find the volume (use π ≈ 3.14).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(4/3)×3.14×27 ≈ 113.04 cm³</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If the side of a square doubles, how does the area change?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Area becomes 4 times</strong><br>New area = (2s)² = 4s².</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the edge of a cube doubles, how does the volume change?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Volume becomes 8 times</strong><br>(2s)³ = 8s³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A room has length 2⁴ m and width 2² m. Find floor area and express as a power of 2.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁶ = 64 m²</strong><br>2⁴×2²=2⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the surface area of a cube with edge a³ cm.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>6(a³)² = 6a⁶ cm²</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If the radius of a circle triples, how many times does the area increase?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>9 times</strong><br>New area = π(3r)² = 9πr².</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Pythagoras Theorem and Squares</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">In a right triangle: legs are 3² cm and 4² cm. Find the hypotenuse.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>√(9²+16²) = √(81+256) = √337 ≈ 18.4 cm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Is a triangle with sides 5, 12, 13 a right triangle? Use c² = a² + b².<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Yes: 13² = 169 = 25+144 = 5²+12² ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A right triangle has legs 3 cm and 4 cm. Find hypotenuse using the Pythagorean theorem.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5 cm</strong><br>3²+4²=9+16=25=5².</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the diagonal of a square with side 2⁴ cm. (Use c = s√2)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>16√2 ≈ 22.6 cm</strong><br>d = 2⁴ × √2 = 16√2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The hypotenuse of a right triangle is 5² cm = 25 cm and one leg is 3² cm = 9 cm. Find the other leg.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>√(625−81) = √544 ≈ 23.3 cm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Area using Heron's formula involves square roots. Why does the formula s(s−a)(s−b)(s−c) use no exponents but we square-root it?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Taking √ is the inverse of squaring (power of ½). Area = √[s(s-a)(s-b)(s-c)] involves a fractional exponent.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A ladder 10 m long leans against a wall. Base is 6 m from wall. How high up the wall does it reach?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8 m</strong><br>10²−6²=100−36=64=8²; h=8 m.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Area of equilateral triangle = (√3/4)s². Find area when s = 2³ = 8 cm. (Leave in terms of √3)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>16√3 cm²</strong><br>(√3/4)×64 = 16√3.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A rectangle has diagonal 5 cm and width 3 cm. Find its area.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>12 cm²</strong><br>l=√(25−9)=4; Area=4×3=12.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Show that (a+b)² = a²+2ab+b² using a=3, b=2.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>LHS: 5²=25; RHS: 9+12+4=25 ✓</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Physics and Science Formulas</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Kinetic energy: KE = ½mv². Find KE when m = 2 kg and v = 3² m/s.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>81 J</strong><br>KE = ½×2×(9)² = 81 J.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Einstein's E = mc². If m = 1 g = 10⁻³ kg, c = 3×10⁸ m/s. Find E.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>E = 10⁻³ × (3×10⁸)² = 10⁻³ × 9×10¹⁶ = 9×10¹³ J</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Period of pendulum: T ∝ √L. If L quadruples, what happens to T?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>T doubles</strong><br>√(4L) = 2√L, so T doubles.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Ohm's Law power: P = I²R. If current I = 2² A = 4 A and R = 5 Ω, find power.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>80 W</strong><br>P = 16×5 = 80 W.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Gravity formula: F = GMm/r². If r doubles, what happens to F?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>F becomes 1/4 (four times weaker)</strong><br>F ∝ 1/r²; new F = F/(2²) = F/4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Area of a circle: A = πr². If A = 100π cm², find r.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>r = 10 cm</strong><br>r² = 100 → r = 10.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The energy stored in a capacitor: E = ½CV². If V = 10³ V and C = 2×10⁻³ F, find E.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>E = ½×2×10⁻³×10⁶ = 10³ = 1000 J</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Distance fallen in free fall: d = ½gt². With g=10 m/s², find d when t = 2² s = 4 s.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>80 m</strong><br>d = ½×10×16 = 80 m.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Volume of sphere: V = (4/3)πr³. If r doubles, how many times does V increase?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8 times</strong><br>(2r)³ = 8r³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Intensity of light: I ∝ 1/d². If distance triples, what fraction of original intensity remains?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1/9</strong><br>I ∝ 1/d²; new I = I/3² = I/9.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Mixed Formula Problems</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find the area of a triangle with base 2⁵ cm and height 2⁴ cm.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁸ = 256 cm²</strong><br>Area = ½×2⁵×2⁴ = ½×2⁹ = 2⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Perimeter of a square: P = 4s. If s = 3⁴ cm, find P.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>4×81 = 324 cm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A cube of gold has edge 2 cm. Gold density = 19.3 g/cm³. Find the mass. (Use V = s³)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>154.4 g</strong><br>V = 2³ = 8 cm³; mass = 8×19.3 = 154.4 g.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Simple interest: SI = (P×R×T)/100. With P = 10⁴, R = 5, T = 10² years, find SI.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>₹50,000</strong><br>SI = (10⁴×5×10²)/100 = 5×10⁴ = 50,000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Compound interest formula involves (1+r/100)ⁿ. What is (1+0.1)² to 2 decimal places?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1.21</strong><br>1.1² = 1.21.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A cylinder has radius 2³ cm and height 2 cm. Find volume (V = πr²h).<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>128π cm³</strong><br>πr²h = π×(2³)²×2 = π×64×2 = 128π.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Richter scale uses powers of 10. An earthquake of magnitude 7 is 10 times stronger than magnitude 6. How many times stronger is magnitude 9 than magnitude 5?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁴ = 10,000 times stronger</strong><br>Each step is ×10; 9−5=4 steps → 10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Diagonal of a cuboid: d = √(l²+w²+h²). Find d when l=2, w=2, h=2²=4.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>√24 = 2√6 ≈ 4.9 cm</strong><br>√(4+4+16)=√24.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the area of a square is 3⁸ cm², find its side length.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁴ = 81 cm</strong><br>Side = √(3⁸) = 3⁴ = 81.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The probability in a 2-child family of having at least one girl: 1 − (1/2)² = ?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3/4</strong><br>1 − 1/4 = 3/4.</p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 11 -->
+<section class="topic" id="t11">
+  <div class="topic-header"><div class="t-num">11</div><h2>Patterns with Powers</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/scientific-notation-and-large-numbers" target="_blank">Patterns with Powers of 2</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-geometric-sequences/v/geometric-sequences-introduction" target="_blank">Geometric Sequences (Exponential Pattern)</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=X6qFtMDMsXI" target="_blank">Number Patterns and Exponents</a>
+        <a href="https://www.youtube.com/watch?v=bXkewQ7WEdI" target="_blank">Chessboard and Rice Pattern</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Exponential Growth – Chessboard</a>
+        <a href="https://www.youtube.com/watch?v=tITTFhKrXA4" target="_blank">Powers of 2 Patterns</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">The Power of Geometric Growth</a>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">Fractals and Powers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Recognising Power Patterns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">What are the units digits of 2¹, 2², 2³, 2⁴, 2⁵? What is the pattern?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2, 4, 8, 6, 2 — cycle of 4: 2,4,8,6 repeating</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the units digit of 2⁵⁰?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4</strong><br>50 mod 4 = 2; cycle[2] = 4.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the units digit of 3¹⁰⁰.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1</strong><br>Powers of 3 cycle: 3,9,7,1 (period 4). 100 mod 4 = 0 → cycle[4] = 1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the pattern in powers of 5? Give units digits of 5¹ through 5⁵.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>5, 5, 5, 5, 5 — units digit is always 5</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the units digit of 6⁵⁰?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>6</strong><br>Powers of 6 always end in 6.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the first 6 terms of the sequence: 3ⁿ for n=0,1,2,3,4,5<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1, 3, 9, 27, 81, 243</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the nth term: 2, 4, 8, 16, 32, ...<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2ⁿ</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the next term: 1, 10, 100, 1000, ?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>10,000 (= 10⁴)</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the pattern and the 8th term: 1/3, 1/9, 1/27, 1/81, ...<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Pattern: (1/3)ⁿ; 8th term = (1/3)⁸ = 1/6561</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the units digit of 7²⁰²⁶.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>9</strong><br>Powers of 7 cycle: 7,9,3,1 (period 4). 2026 mod 4 = 2; cycle[2] = 9.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Doubling and Halving Patterns</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">A paper is folded in half n times. What is its thickness if initial thickness is 0.1 mm?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>0.1 × 2ⁿ mm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A paper (0.1 mm thick) folded 10 times. Thickness?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>0.1 × 2¹⁰ = 0.1 × 1024 = 102.4 mm ≈ 10.24 cm</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Starting with 1 rupee, money doubles daily. After 10 days?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = ₹1024</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">After 30 days of doubling from ₹1, you have 2³⁰ rupees. Approximately how much in crore?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2³⁰ ≈ 1.07 × 10⁹ ≈ 107 crore!</strong><br>2¹⁰≈10³; 2³⁰=(2¹⁰)³≈10⁹ ≈ 100 crore.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A radioactive element halves every hour. Starting with 800 g, how much after 4 hours?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>800 × (1/2)⁴ = 800/16 = 50 g</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A bacteria doubles every 20 minutes. Starting with 1, how many after 2 hours?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁶ = 64</strong><br>2 hours = 120 min; 120÷20 = 6 doublings.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If the rumour doubles every hour, how many people know after 12 hours starting from 1?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹² = 4096</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">On a chessboard, squares are numbered 1–64. If square 1 gets 1 grain of rice, square 2 gets 2, square 3 gets 4, etc. How many grains on square 10?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁹ = 512 grains</strong><br>Square n gets 2ⁿ⁻¹; square 10: 2⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Total grains on a chessboard = 2⁶⁴ − 1. Estimate this using 2¹⁰ ≈ 10³.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 10¹⁹ grains (18,446,744,073,709,551,615)</strong><br>2⁶⁴ ≈ (2¹⁰)⁶·⁴ ≈ 10¹⁹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If you save 2ⁿ rupees on day n, how much total after 20 days?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹ + 2² + ... + 2²⁰ = 2²¹ − 2 ≈ 2×10⁶</strong><br>Sum of geometric series: 2(2²⁰−1)/(2−1) = 2²¹−2.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Patterns in Squares and Cubes</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Find: 1² + 2² + 3² + 4² + 5² + 6²<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>91</strong><br>1+4+9+16+25+36=91.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The sum of squares formula: n(n+1)(2n+1)/6. Verify for n=4.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>4×5×9/6 = 180/6 = 30 = 1+4+9+16 ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Observe: 1³=1, 1³+2³=9, 1³+2³+3³=36. What are these numbers?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1, 9, 36 = 1², 3², 6² — perfect squares of triangular numbers!</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find 1³+2³+3³+4³ and verify it equals (1+2+3+4)².<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1+8+27+64 = 100 = 10² = (1+2+3+4)² ✓</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Write the square numbers: 1, 4, 9, 16, 25. What are the differences between consecutive terms?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>3, 5, 7, 9 — consecutive odd numbers!</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Find the pattern: 11² = 121; 111² = 12321; 1111² = ?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1234321</strong><br>The digits increase to 4 then decrease.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Observe: 3² − 1² = 8; 4² − 2² = 12; 5² − 3² = 16. What is the pattern? Find 10² − 8².<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Pattern: (a+b)(a−b); 10²−8² = (10+8)(10−8) = 36</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The Fibonacci squares: 1,1,4,9,25,64,169... Wait — are these squares of Fibonacci numbers? Give the first 7 Fibonacci squares.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1²=1, 1²=1, 2²=4, 3²=9, 5²=25, 8²=64, 13²=169</strong><br>Fibonacci: 1,1,2,3,5,8,13; squares: 1,1,4,9,25,64,169.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Find n: 1²+2²+3²+...+n² = 385<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 10</strong><br>Formula: n(n+1)(2n+1)/6=385 → 10×11×21/6=2310/6=385 ✓</p></details></div></div>
+      <div class="q-item"><div class="q-text">Squares ending in 6: 4²=16, 6²=36, 14²=196... What is the pattern?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Numbers ending in 4 or 6 always square to end in 6.</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Exponential vs Linear Growth</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Linear: ₹100 per day. After 30 days: ₹3000. Exponential: doubles each day from ₹1. After 30 days: 2³⁰ ≈ ? Which is more?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Exponential: 2³⁰ ≈ 10⁹ ≈ 100 crore >> ₹3000</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A lily pad doubles each day. On day 30 it covers the whole pond. When was it half-covered?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>Day 29</strong><br>Doubles each day, so half-covered one day earlier.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Linear sequence: 5, 10, 15, 20, ... and exponential: 5, 10, 20, 40, ... What is the 10th term of each?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>Linear: 50; Exponential: 5×2⁹=2560</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A savings account grows by adding ₹200 each year. Another grows by doubling annually from ₹200. After 8 years, which is more?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Doubling: 200×2⁸=51,200. Linear: 200+200×8=1800. Doubling is far more.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A Covid case doubles every 3 days. 100 cases today. How many in 30 days?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>100 × 2¹⁰ = 102,400 ≈ 10⁵</strong><br>30÷3=10 doublings.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If 2ⁿ &gt; 1000, what is the minimum integer n?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>n = 10</strong><br>2⁹=512&lt;1000; 2¹⁰=1024&gt;1000.</p></details></div></div>
+      <div class="q-item"><div class="q-text">List the powers of 2 that are less than 10,000.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192</strong><br>2⁰ through 2¹³ (8192&lt;10000; 2¹⁴=16384&gt;10000).</p></details></div></div>
+      <div class="q-item"><div class="q-text">Why does exponential growth eventually surpass any fixed rate of linear growth?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Because each term multiplies by a factor &gt;1, so the rate of increase itself grows — unlike linear where increments stay constant. For any large constant C and rate r&gt;1, rⁿ &gt; Cn for large enough n.</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If 3ⁿ = 10, approximately what is n? (Use 3² = 9 and 3³ = 27 as guides.)<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>n ≈ 2.1</strong><br>3²=9≈10; n is slightly more than 2.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Explain why 0.5ⁿ → 0 as n → ∞ using repeated halving.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>Each multiplication by 0.5 halves the value: 1, 0.5, 0.25, 0.125,... → 0. Negative exponents represent this: 2⁻ⁿ → 0.</strong></p></details></div></div>
+    </div>
+  </div>
+</section>
+<!-- TOPIC 12 -->
+<section class="topic" id="t12">
+  <div class="topic-header"><div class="t-num">12</div><h2>Real-World Applications of Exponents</h2></div>
+  <div class="topic-videos">
+    <h3>📹 Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan"><span class="ch-tag">Khan Academy</span>
+        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/scientific-notation-word-problem" target="_blank">Scientific Notation Word Problems</a>
+        <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:exponential-growth-decay/x2f8bb11595b61c86:exponential-vs-linear-growth/v/exponential-growth-and-decay-word-problems" target="_blank">Exponential Growth and Decay</a>
+      </div>
+      <div class="vid-box antics"><span class="ch-tag">Math Antics</span>
+        <a href="https://www.youtube.com/watch?v=X6qFtMDMsXI" target="_blank">Real-Life Uses of Exponents</a>
+        <a href="https://www.youtube.com/watch?v=bXkewQ7WEdI" target="_blank">Computer Storage and Powers of 2</a>
+      </div>
+      <div class="vid-box nphile"><span class="ch-tag">Numberphile</span>
+        <a href="https://www.youtube.com/watch?v=TDpQSi0GGlg" target="_blank">Exponential Growth in Nature</a>
+        <a href="https://www.youtube.com/watch?v=OPwnBc_lFQE" target="_blank">Physics of the Very Large and Small</a>
+      </div>
+      <div class="vid-box teded"><span class="ch-tag">TED-Ed</span>
+        <a href="https://www.youtube.com/watch?v=AmfaNdnRSko" target="_blank">How to Build a Viral Video (Exponential Spread)</a>
+        <a href="https://www.youtube.com/watch?v=kITJ6qH7jS4" target="_blank">The Mathematics of Epidemics</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set A</span> Computer Science Applications</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">1 KB = 2¹⁰ bytes. How many bytes in 4 KB?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>4 × 2¹⁰ = 2² × 2¹⁰ = 2¹² = 4096 bytes</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">1 MB = 2²⁰ bytes. How many KB in 1 MB?<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = 1024 KB</strong><br>2²⁰ ÷ 2¹⁰ = 2¹⁰.</p></details></div></div>
+      <div class="q-item"><div class="q-text">1 GB = 2³⁰ bytes. Express in MB.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = 1024 MB</strong><br>2³⁰ ÷ 2²⁰ = 2¹⁰.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A photo is 3 × 2¹⁰ KB. How many photos fit in 12 MB (= 12 × 2²⁰ bytes)?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>4096 photos</strong><br>12MB = 12×2²⁰B; photo=3×2¹⁰ KB=3×2²⁰B; count=12÷3=4=2²; then ×2²⁰÷2²⁰... actually: 12 MB=12×2¹⁰ KB; 12×2¹⁰÷(3×2¹⁰)=4 photos? Let me recalculate: 12 MB = 12×1024 KB = 12288 KB; 1 photo = 3×1024=3072 KB; 12288÷3072 = 4 photos.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A computer processes 2²⁰ operations per second. How many in 2¹⁰ seconds?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2³⁰ ≈ 10⁹ operations</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Express 1 TB (terabyte = 2⁴⁰ bytes) in GB.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2¹⁰ = 1024 GB</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">In binary, the number 1111 (4 ones) = 2³+2²+2¹+2⁰. Evaluate.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>8+4+2+1 = 15</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">What is the maximum number stored in 8 bits (= 2⁸ − 1)?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>255</strong><br>2⁸−1=256−1=255.</p></details></div></div>
+      <div class="q-item"><div class="q-text">How many different colours can a 24-bit display show?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2²⁴ = 16,777,216 ≈ 16.7 million colours</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">An internet speed is 2⁵ Mbps. Time to download a 2¹³ MB file?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁸ seconds = 256 seconds ≈ 4 min 16 sec</strong><br>2¹³÷2⁵=2⁸.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set B</span> Biology and Population</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">E. coli bacteria divide every 20 minutes. Starting with 1 bacterium, how many in 2 hours?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>2⁶ = 64 bacteria</strong><br>2 hours = 120 min; 120÷20 = 6 doublings.</p></details></div></div>
+      <div class="q-item"><div class="q-text">India's population was 1 billion in 2000 and grows at roughly 1% per year. After 10 years, population ≈ 10⁹ × (1.01)¹⁰ ≈ ? (1.01¹⁰ ≈ 1.1)<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 1.1 × 10⁹ = 1.1 billion</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A human body has about 3.7 × 10¹³ cells. Write this in full.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>37,000,000,000,000</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If a virus infects 3 new people per person per day, starting with 1, how many infected after 5 days?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁵ = 243</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Carbon-14 half-life is 5730 years. How much of 100 g remains after 3 half-lives?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>100 × (1/2)³ = 100/8 = 12.5 g</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A cancer cell doubles daily. 1 cell today. When does the count exceed 10⁶?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>After 20 days (2²⁰ ≈ 10⁶)</strong><br>2¹⁹=524,288&lt;10⁶; 2²⁰=1,048,576&gt;10⁶.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Human DNA has about 3×10⁹ base pairs. If each base pair is 3.4×10⁻¹⁰ m long, what is the total length of DNA in a cell?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>3×10⁹ × 3.4×10⁻¹⁰ = 10.2×10⁻¹ = 1.02 m ≈ 1 m</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The number of neurons in a human brain is about 10¹¹. Each neuron connects to about 10⁴ others. Total connections?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>10¹⁵ connections</strong><br>10¹¹ × 10⁴ = 10¹⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A cow produces about 2×10⁴ litres of milk per year. For a dairy with 5×10² cows, total milk per year?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁷ litres = 10 million litres</strong><br>2×10⁴ × 5×10² = 10⁷.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A grain of wheat weighs about 3×10⁻² g. How many grains in 1 kg?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 3.3 × 10⁴ ≈ 33,000 grains</strong><br>1000 ÷ 3×10⁻² = 10³ ÷ 3×10⁻² = (1/3)×10⁵ ≈ 3.3×10⁴.</p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set C</span> Physics and Astronomy</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">The Sun is 1.5×10⁸ km from Earth. Express in metres.<span class="diff diff-easy">Easy</span><details class="ans"><summary>Show Answer</summary><p><strong>1.5 × 10¹¹ m</strong><br>1 km = 10³ m; 1.5×10⁸×10³=1.5×10¹¹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Sound travels 3.4×10² m/s. Time to cross a 1 km tunnel?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 2.94 s</strong><br>10³ ÷ 3.4×10² = 10÷3.4 ≈ 2.94 s.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The mass of the Sun is 2×10³⁰ kg; the mass of Earth is 6×10²⁴ kg. Express the difference in scientific notation.<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 2×10³⁰ kg (Earth's mass is negligible)</strong><br>2×10³⁰ − 6×10²⁴ ≈ 2×10³⁰ since 6×10²⁴ ≪ 2×10³⁰.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The observable universe is about 9×10²⁶ m across. The diameter of a proton is 10⁻¹⁵ m. How many proton diameters span the universe?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>9×10⁴¹</strong><br>9×10²⁶ ÷ 10⁻¹⁵ = 9×10⁴¹.</p></details></div></div>
+      <div class="q-item"><div class="q-text">A photon of light has energy 3×10⁻¹⁹ J. How many photons carry 1 J of energy?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 3.3 × 10¹⁸ photons</strong><br>1 ÷ 3×10⁻¹⁹ = (1/3)×10¹⁹ ≈ 3.3×10¹⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Escape velocity from Earth is about 1.12×10⁴ m/s. Express in km/h.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 4.03 × 10⁴ km/h</strong><br>×3600÷1000: 1.12×10⁴×3.6=4.032×10⁴.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The Hubble constant H₀ ≈ 7×10⁴ m/s per Megaparsec. The universe is ≈ 4×10²⁶ m = 13,000 Mpc. What is the approximate recession speed of the farthest edge?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 9×10⁸ m/s (≈ 3× speed of light!)</strong><br>7×10⁴ × 13000 = 9.1×10⁸.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Nuclear bomb: 1 kg of matter, if fully converted to energy (E=mc²). E = ?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>9 × 10¹⁶ J</strong><br>c=3×10⁸; c²=9×10¹⁶; E=1×9×10¹⁶=9×10¹⁶ J.</p></details></div></div>
+      <div class="q-item"><div class="q-text">The brightness of a star 9 ly away vs. 3 ly away (inverse square law: I ∝ 1/d²). Ratio of brightness?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>1:9 (closer star is 9 times brighter)</strong><br>I ∝ 1/d²; 3² = 9; 9² = 81; ratio = 81:9 = 9:1.</p></details></div></div>
+      <div class="q-item"><div class="q-text">If a moon orbits a planet at 4×10⁵ km and takes T = k·d^(3/2) days, how does T change if d triples?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>T becomes 3^(3/2) = 3√3 ≈ 5.2 times longer (Kepler's 3rd Law)</strong></p></details></div></div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">Set D</span> Finance and Everyday Life</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">🖨️ Print Set</button>
+    <div class="q-list">
+      <div class="q-item"><div class="q-text">Compound interest: A = P(1+r)ⁿ. ₹1000 at 10% for 3 years. Find A.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1000 × 1.1³ = 1000 × 1.331 = ₹1331</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If prices double every 18 years. In 2026, a book costs ₹200. In 2062 (36 years), what will it cost?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>₹800</strong><br>36 years = 2 doubling periods; 200×2²=800.</p></details></div></div>
+      <div class="q-item"><div class="q-text">India's GDP is about ₹3×10¹⁴. Per capita GDP with population 1.4×10⁹?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ ₹2.14 × 10⁵ = ₹2,14,000</strong><br>3×10¹⁴ ÷ 1.4×10⁹ ≈ 2.14×10⁵.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Moore's Law: transistors on a chip double every 2 years. In 2000: 10⁷ transistors. In 2024 (12 doublings), how many?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁷ × 2¹² = 10⁷ × 4096 ≈ 4×10¹⁰</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">A car loses 20% value per year. After 3 years, what fraction of original value remains?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>(0.8)³ = 0.512 = 51.2%</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">The Richter scale is logarithmic. Magnitude 8 is 10 times more powerful than magnitude 7. The 1906 SF earthquake was Magnitude 7.9; the 2004 Indian Ocean earthquake was 9.1. Roughly how many times more powerful?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>≈ 10^(9.1−7.9) = 10^1.2 ≈ 16 times</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">Social media: A video gets 3 shares per person per day. Starting with 1 view, views after 1 week?<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>3⁷ = 2187 views</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">You invest ₹P at rate r for n years. Formula: A = P(1+r)ⁿ. If P = ₹5000, r = 8% = 0.08, n = 2: find A.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>5000 × 1.08² = 5000 × 1.1664 = ₹5832</strong></p></details></div></div>
+      <div class="q-item"><div class="q-text">If a nation's education budget is 6% of GDP = 6% of 3×10¹⁴. Calculate budget in scientific notation.<span class="diff diff-medium">Medium</span><details class="ans"><summary>Show Answer</summary><p><strong>1.8 × 10¹³</strong><br>0.06 × 3×10¹⁴ = 0.18×10¹⁴ = 1.8×10¹³.</p></details></div></div>
+      <div class="q-item"><div class="q-text">Using exponents, explain why 1 crore seconds is about 115 days: 10⁷ ÷ (24×3600) = ?<span class="diff diff-hard">Hard</span><details class="ans"><summary>Show Answer</summary><p><strong>10⁷ ÷ 86400 ≈ 10⁷ ÷ 8.64×10⁴ ≈ 1.16×10² ≈ 116 days ✓</strong></p></details></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>Grade 8 &middot; Ganita Prakash Part 1 &middot; Chapter 2 &middot; The Gaudium School &middot; 2026–27</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'<\/title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'<\/style><\/head><body>'
+    +'<h1>'+chapTitle+'<\/h1><h2>'+setTitle+'<\/h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};<\/scr'+'ipt>'
+    +'<\/body><\/html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

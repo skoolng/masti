@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHYSICS MYP4-5 Chapter 3 - Motion and Car Safety · Practice Sets</title>
+<style>
+:root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
+header h1 { font-size:2rem; }
+header p { margin-top:8px; opacity:.85; font-size:.95rem; }
+nav { background:var(--card); border-bottom:2px solid var(--border); padding:18px 28px; }
+nav h2 { font-size:.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+nav ol { padding-left:22px; columns:2; column-gap:40px; }
+nav li { margin:4px 0; font-size:.88rem; }
+nav a { color:var(--primary); text-decoration:none; }
+nav a:hover { text-decoration:underline; }
+.topic { max-width:960px; margin:36px auto; padding:0 18px; }
+.topic-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.t-num { background:var(--accent); color:#fff; border-radius:50%; width:46px; height:46px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; font-weight:700; flex-shrink:0; }
+.topic-header h2 { font-size:1.4rem; color:var(--primary); }
+.set-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.set-card h3 { font-size:1rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.set-label { display:inline-block; background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 8px; margin-right:6px; }
+.q-list { counter-reset:q; }
+.q-item { counter-increment:q; display:flex; gap:10px; margin:10px 0; align-items:flex-start; }
+.q-item::before { content:"Q" counter(q); background:var(--primary); color:#fff; border-radius:6px; font-size:.75rem; font-weight:700; padding:2px 6px; flex-shrink:0; margin-top:3px; }
+.q-text { flex:1; font-size:.91rem; }
+.diff { font-size:.72rem; border-radius:99px; padding:1px 8px; flex-shrink:0; margin-top:4px; white-space:nowrap; }
+.diff-easy { background:#dcfce7; color:#15803d; }
+.diff-medium { background:#fef9c3; color:#854d0e; }
+.diff-hard { background:#fee2e2; color:#991b1b; }
+details.ans { margin-top:4px; }
+details.ans summary { cursor:pointer; color:var(--green); font-size:.82rem; font-weight:600; }
+details.ans p { background:#f0faf5; border-left:3px solid var(--green); padding:8px 12px; margin-top:6px; border-radius:6px; font-size:.85rem; }
+footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; margin-top:20px; }
+.topic-videos { background:#fff8f5; border:1px solid #f5d8cc; border-radius:12px; padding:18px 20px; margin-bottom:20px; }
+.topic-videos h3 { font-size:.95rem; color:var(--accent); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.vid-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media(max-width:640px){ .vid-grid{ grid-template-columns:1fr; } }
+.vid-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; }
+.vid-box .ch-tag { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; display:block; }
+.vid-box.khan .ch-tag { color:#137333; }
+.vid-box.antics .ch-tag { color:#d93025; }
+.vid-box.nphile .ch-tag { color:#7b2cbf; }
+.vid-box.teded .ch-tag { color:#e8734a; }
+.vid-box a { display:block; color:var(--primary); font-size:.84rem; margin:4px 0; text-decoration:none; }
+.vid-box a:hover { text-decoration:underline; }
+.vid-box a::before { content:"\25B6 "; }
+@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+.print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
+.print-set-btn:hover { background: #dce5ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>PHYSICS MYP4-5 Chapter 3 - Motion and Car Safety</h1>
+  <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
+</header>
+
+<nav>
+  <h2>Topics in This Chapter</h2>
+  <ol>
+    <li><a href="#t1">Motion and Car Safety</a></li>
+  </ol>
+</nav>
+
+<div class="topic" id="t1">
+  <div class="topic-header">
+    <div class="t-num">1</div>
+    <h2>Motion and Car Safety</h2>
+  </div>
+
+  <div class="topic-videos">
+    <h3>Video Resources</h3>
+    <div class="vid-grid">
+      <div class="vid-box khan">
+        <span class="ch-tag">Concept Lessons</span>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Motion%20and%20Car%20Safety+lesson" target="_blank">Core lesson videos</a>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Motion%20and%20Car%20Safety+explained" target="_blank">Explainer videos</a>
+      </div>
+      <div class="vid-box antics">
+        <span class="ch-tag">Practice Videos</span>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Motion%20and%20Car%20Safety+practice+questions" target="_blank">Practice question walkthroughs</a>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Motion%20and%20Car%20Safety+worked+examples" target="_blank">Worked examples</a>
+      </div>
+      <div class="vid-box nphile">
+        <span class="ch-tag">IB MYP Revision</span>
+        <a href="https://www.google.com/search?q=IB+MYP+Physics%20MYP4-5%20Motion%20and%20Car%20Safety+revision" target="_blank">Revision links</a>
+      </div>
+      <div class="vid-box teded">
+        <span class="ch-tag">Extension</span>
+        <a href="https://www.youtube.com/results?search_query=Physics%20MYP4-5%20Motion%20and%20Car%20Safety+real+life+applications" target="_blank">Real-life application videos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET A</span> Foundation - Core Concepts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Define speed in the context of Motion and Car Safety.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: speed means distance traveled per unit time.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Define acceleration and state one unit if applicable.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: acceleration is rate of change of velocity.. Unit: m/s^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">List two everyday examples related to Motion and Car Safety.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Braking car and seat belt action are valid examples.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">State one key difference between speed and acceleration.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Speed describes how fast; acceleration describes how speed/direction changes.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one labelled diagram you would draw for Motion and Car Safety.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A distance-time or speed-time graph with labelled axes is acceptable.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain one common misconception in Motion and Car Safety and correct it.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A moving object does not need continuous force to keep moving at constant velocity.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Which variable should be controlled in a fair test about Motion and Car Safety?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Keep mass or road surface constant when testing braking distance factors.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one if-then-because hypothesis for Motion and Car Safety.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: If speed increases, then braking distance increases because kinetic energy rises strongly with speed.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Why is repeated measurement useful in experiments about Motion and Car Safety?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: It improves reliability and reduces random error.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Give one safety rule while doing practical work for Motion and Car Safety.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Keep clear of moving carts/vehicles during practical demonstrations.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET B</span> Core Practice - Skills and Calculations</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A car covers 150 m in 10 s. Find average speed.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Speed = 150/10 = 15 m/s.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Velocity changes from 5 m/s to 17 m/s in 4 s. Find acceleration.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: a = (17-5)/4 = 3 m/s^2.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">A 1000 kg car moving at 20 m/s. Find momentum.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: p = mv = 1000 x 20 = 20000 kg m/s.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Identify whether this statement is true or false: On a speed-time graph, slope represents acceleration..</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: True.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Explain the role of momentum in Motion and Car Safety.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Momentum explains why larger mass or higher speed increases collision impact.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Suggest one way to improve accuracy in a Motion and Car Safety experiment.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Use repeated timing trials and average values.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Compare two methods to study Motion and Car Safety.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Seat belts increase stopping time; airbags spread force over larger area.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Interpret this result briefly: Speed-time graph shows speed dropping uniformly to zero in 5 seconds.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Uniform negative acceleration indicates steady braking.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Design one 3-step mini investigation for Motion and Car Safety.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Use toy car ramp, vary release height, measure stopping distance with same surface.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one exam-style long answer: explain road safety decisions using speed, acceleration, and momentum.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Connect speed, acceleration, and momentum to seat belts, airbags, and safe driving limits.</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET C</span> Application - Real-Life Contexts</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">Where do you observe Motion and Car Safety in transport?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Speed limits and braking systems.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Where do you observe Motion and Car Safety at home?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Cycling safety and helmet use.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Where do you observe Motion and Car Safety in sports?</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Sprint pacing and reaction timing.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Give one career that uses Motion and Car Safety knowledge.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Automotive safety engineer.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">How does Motion and Car Safety help in reducing risk?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Higher speed reduces reaction margin and increases stopping distance.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">How can data logging improve learning in Motion and Car Safety?</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: It captures continuous measurements and supports better graph analysis.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one cause-effect chain involving Motion and Car Safety.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Speed increase raises kinetic energy, which raises braking demand and collision risk.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Give one limitation of a school-lab model for Motion and Car Safety.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Toy models may not represent real tire-road friction accurately.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Propose one innovation idea connected to Motion and Car Safety.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Student-designed low-cost braking alert model using sensors.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Evaluate whether this claim is reasonable: If two cars stop, both experienced the same force regardless of mass.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Not always. Force depends on mass and deceleration (F = ma).</b></p>
+      </details>
+    </div>
+  </div>
+
+  <div class="set-card">
+    <h3><span class="set-label">SET D</span> Challenge - Analysis and Reasoning</h3>
+    <button class="print-set-btn" onclick="window._printSet(this)">Print Set</button>
+    <div class="q-list">
+      <div class="q-item">
+        <div class="q-text">A student says: &quot;Airbags replace seat belts completely&quot;. Critique this statement.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Incorrect. Airbags and seat belts are complementary safety systems.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Create one multiple-choice question on Motion and Car Safety with four options and mark the correct one.</div>
+        <div class="diff diff-easy">Easy</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any valid MCQ with one unambiguous correct option is accepted.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Frame one HOTS question about Motion and Car Safety and answer it in 3 lines.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Any coherent higher-order response with evidence is accepted.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write one compare-and-contrast paragraph: speed vs acceleration.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Include at least two differences and one similarity between speed and acceleration.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Predict what happens if reaction time increases due to distraction.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Total stopping distance increases significantly.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Construct an error-analysis table with 3 possible errors in Motion and Car Safety practical work.</div>
+        <div class="diff diff-medium">Medium</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Include delayed stopwatch start, uneven surface, and parallax reading errors.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">How would results change if a control variable is not fixed? Use one example from Motion and Car Safety.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Uncontrolled variables can change outcome and make cause-effect conclusions unreliable.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Write a 5-mark response on how Motion and Car Safety links science, society, and sustainability.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Discuss responsible driving behavior, policy, and injury prevention awareness.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Suggest one rubric (3 criteria) for assessing a project on Motion and Car Safety.</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: Use criteria such as concept accuracy, data quality, and reasoning clarity.</b></p>
+      </details>
+
+      <div class="q-item">
+        <div class="q-text">Reflect: what is the hardest concept in Motion and Car Safety for you, and what plan will you use to master it?</div>
+        <div class="diff diff-hard">Hard</div>
+      </div>
+      <details class="ans"><summary>Show Answer</summary>
+        <p><b>Answer: A valid reflection should name the concept and include a concrete practice plan.</b></p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<footer>Physics · MYP4-5 · Chapter 3 · Practice Worksheet</footer>
+
+<script>
+(function(){
+function printSet(btn){
+  var card=btn.closest('.set-card');
+  var h3=card.querySelector('h3');
+  var setTitle=h3?h3.textContent.replace(/\s+/g,' ').trim():'Practice Set';
+  var chEl=document.querySelector('header h1');
+  var chapTitle=chEl?chEl.textContent.trim():'';
+  var items=card.querySelectorAll('.q-item');
+  var qHtml='';
+  items.forEach(function(item,i){
+    var tEl=item.querySelector('.q-text');
+    var text=tEl?tEl.innerHTML:'';
+    var dEl=item.querySelector('.diff');
+    var diff=dEl?dEl.textContent.trim():'';
+    var badgeCls=dEl?(dEl.className.indexOf('easy')>-1?'easy':dEl.className.indexOf('medium')>-1?'medium':'hard'):'';
+    qHtml+='<div class="q-block"><div class="q-num">Q'+(i+1)+'<span class="badge '+badgeCls+'">'+diff+'</span></div><div class="q-body">'+text+'</div><div class="ans-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div></div>';
+  });
+  var w=window.open('','_blank','width=860,height=700');
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+chapTitle+' – '+setTitle+'</title><style>'
+    +'body{font-family:Segoe UI,Arial,sans-serif;padding:32px;max-width:760px;margin:0 auto;color:#2d3748;line-height:1.6}'
+    +'h1{font-size:.85rem;color:#6b7a99;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}'
+    +'h2{font-size:1.15rem;color:#4a6fa5;font-weight:800;margin-bottom:28px;padding-bottom:6px;border-bottom:2px solid #e8eef8}'
+    +'.q-block{margin-bottom:30px;page-break-inside:avoid}'
+    +'.q-num{font-size:.8rem;font-weight:700;color:#4a6fa5;margin-bottom:5px}'
+    +'.badge{margin-left:6px;border-radius:8px;padding:1px 7px;font-size:.7rem}'
+    +'.easy{background:#dcfce7;color:#15803d}.medium{background:#fef9c3;color:#854d0e}.hard{background:#fee2e2;color:#991b1b}'
+    +'.q-body{font-size:.93rem;line-height:1.65;margin-bottom:10px}'
+    +'.ans-lines{margin-top:6px}'
+    +'.line{border-bottom:1px solid #c5cde0;height:22px;margin-bottom:6px}'
+    +'@media print{body{padding:12px}.no-print{display:none}}'
+    +'</style></head><body>'
+    +'<h1>'+chapTitle+'</h1><h2>'+setTitle+'</h2>'
+    +qHtml
+    +'<script>window.print();window.onafterprint=function(){window.close()};</'+'script>'
+    +'</body></html>');
+  w.document.close();
+}
+window._printSet=printSet;
+})();
+</script>
+</body>
+</html>

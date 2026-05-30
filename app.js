@@ -1052,17 +1052,55 @@ const CURRICULUM_EXPLORER_SECTIONS = [
 
 const CBSE_GRADE_KEYS = ["grade6", "grade7", "grade8", "grade9", "grade10"];
 
+function createMultipartPdfEntries(subject, title, paths) {
+  return paths.map((path, index) => ({
+    subject,
+    title: `${title} (Part ${index + 1}/${paths.length})`,
+    path
+  }));
+}
+
 const PDF_LIBRARY = [
   { subject: "Maths (MYP)", title: "Maths MYP 1", path: "curriculum/IB/maths/myp1/maths1.pdf" },
+  ...createMultipartPdfEntries("Maths (MYP)", "Maths MYP 1 (Version 2)", [
+    "curriculum/IB/maths/myp1/maths1-1.part1of3.pdf",
+    "curriculum/IB/maths/myp1/maths1-1.part2of3.pdf",
+    "curriculum/IB/maths/myp1/maths1-1.part3of3.pdf"
+  ]),
   { subject: "Maths (MYP)", title: "Maths MYP 2", path: "curriculum/IB/maths/myp2/maths2.pdf" },
   { subject: "Maths (MYP)", title: "Maths MYP 2 (V2)", path: "curriculum/IB/maths/myp2/Maths-myp-2-v2.pdf" },
   { subject: "Maths (MYP)", title: "Maths MYP 3", path: "curriculum/IB/maths/myp3/maths3.pdf" },
+  ...createMultipartPdfEntries("Maths (MYP)", "Maths MYP 3 (Version 2)", [
+    "curriculum/IB/maths/myp3/maths3-1.part1of3.pdf",
+    "curriculum/IB/maths/myp3/maths3-1.part2of3.pdf",
+    "curriculum/IB/maths/myp3/maths3-1.part3of3.pdf"
+  ]),
   { subject: "Maths (MYP)", title: "Maths MYP 4-5", path: "curriculum/IB/maths/myp4-5/maths4-5.pdf" },
   { subject: "Maths (MYP)", title: "Maths MYP 4-5 (Inquiry-led)", path: "curriculum/IB/maths/myp4-5/maths-4-5-inquiryled.pdf" },
   { subject: "Maths (MYP)", title: "Maths MYP 4-5 (Extended)", path: "curriculum/IB/maths/myp4-5/maths-extended.pdf" },
+  ...createMultipartPdfEntries("Science (MYP)", "Science MYP 1", [
+    "curriculum/IB/science/myp-1/Sciences-1.part1of3.pdf",
+    "curriculum/IB/science/myp-1/Sciences-1.part2of3.pdf",
+    "curriculum/IB/science/myp-1/Sciences-1.part3of3.pdf"
+  ]),
+  ...createMultipartPdfEntries("Science (MYP)", "Science MYP 2", [
+    "curriculum/IB/science/myp-2/science-2.part1of3.pdf",
+    "curriculum/IB/science/myp-2/science-2.part2of3.pdf",
+    "curriculum/IB/science/myp-2/science-2.part3of3.pdf"
+  ]),
   { subject: "Science (MYP)", title: "Science MYP 3", path: "curriculum/IB/science/myp-3/science-3.pdf" },
   { subject: "English", title: "English MYP 1", path: "curriculum/IB/english/myp1/english1.pdf" },
   { subject: "English", title: "English Language Acquisition 1-3", path: "curriculum/IB/english/myp1/English-LanguageAcquisition1-3.pdf" },
+  ...createMultipartPdfEntries("English", "English MYP 2", [
+    "curriculum/IB/english/myp2/english-2.part1of3.pdf",
+    "curriculum/IB/english/myp2/english-2.part2of3.pdf",
+    "curriculum/IB/english/myp2/english-2.part3of3.pdf"
+  ]),
+  ...createMultipartPdfEntries("English", "English MYP 3", [
+    "curriculum/IB/english/myp3/english3.part1of3.pdf",
+    "curriculum/IB/english/myp3/english3.part2of3.pdf",
+    "curriculum/IB/english/myp3/english3.part3of3.pdf"
+  ]),
   { subject: "English", title: "English MYP 4-5", path: "curriculum/IB/english/myp4-5/english4-5.pdf" },
   { subject: "French", title: "French MYP 1-3", path: "curriculum/IB/french/french1-3.pdf" },
   { subject: "French", title: "French Extracted Version", path: "curriculum/IB/french/French_MYP1-3_Extracted_From_Heyzine.pdf" },

@@ -1,7 +1,6 @@
 .DS_Store
 .playwright-mcp/
 .tmp_pdf_pages/
-*.part*.pdf
 *.merged-check.pdf
 curriculum/IB/science/myp-2/science-2.pdf
 curriculum/IB/english/myp3/english3.pdf

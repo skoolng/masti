@@ -1,4 +1,4 @@
-const CACHE_NAME = "algbrox-v3";
+const CACHE_NAME = "algbrox-v4";
 const CORE_ASSETS = [
   "./",
   "./index.html",

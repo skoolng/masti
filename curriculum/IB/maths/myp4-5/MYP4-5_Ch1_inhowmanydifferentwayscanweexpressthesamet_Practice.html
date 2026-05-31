@@ -11,6 +11,16 @@
 html { height: 100%; overflow: hidden; }
 body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; height: 100%; min-height: 100%; overflow: hidden; }
 .page-scroll { position: fixed; inset: 0; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; background: var(--bg); }
+.remote-scroll-controls { position: fixed; right: 14px; bottom: 14px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+.remote-scroll-btn { min-width: 136px; border: 1px solid var(--primary); background: rgba(255,255,255,.97); color: var(--primary); border-radius: 12px; padding: 12px 14px; font-size: .92rem; font-weight: 700; box-shadow: 0 8px 22px rgba(0,0,0,.16); cursor: pointer; }
+.remote-scroll-btn:focus, .remote-scroll-btn:hover { outline: none; background: var(--primary); color: #fff; }
+.remote-scroll-hint { font-size: .74rem; color: var(--muted); text-align: right; max-width: 136px; text-shadow: 0 1px 0 rgba(255,255,255,.7); }
+@media(max-width:640px){ .remote-scroll-controls { right: 10px; bottom: 10px; } .remote-scroll-btn { min-width: 112px; padding: 10px 12px; font-size: .82rem; } .remote-scroll-hint { max-width: 112px; } }
+.remote-scroll-controls { position: fixed; right: 14px; bottom: 14px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+.remote-scroll-btn { min-width: 136px; border: 1px solid var(--primary); background: rgba(255,255,255,.97); color: var(--primary); border-radius: 12px; padding: 12px 14px; font-size: .92rem; font-weight: 700; box-shadow: 0 8px 22px rgba(0,0,0,.16); cursor: pointer; }
+.remote-scroll-btn:focus, .remote-scroll-btn:hover { outline: none; background: var(--primary); color: #fff; }
+.remote-scroll-hint { font-size: .74rem; color: var(--muted); text-align: right; max-width: 136px; text-shadow: 0 1px 0 rgba(255,255,255,.7); }
+@media(max-width:640px){ .remote-scroll-controls { right: 10px; bottom: 10px; } .remote-scroll-btn { min-width: 112px; padding: 10px 12px; font-size: .82rem; } .remote-scroll-hint { max-width: 112px; } }
 header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
 header h1 { font-size:2rem; }
 header p { margin-top:8px; opacity:.85; font-size:.95rem; }
@@ -467,26 +477,54 @@ footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; 
 (function(){
 var pageScroll = document.querySelector('.page-scroll');
 if (pageScroll) {
+  var remoteControls = document.createElement('div');
+  remoteControls.className = 'remote-scroll-controls';
+  remoteControls.innerHTML = '<button type="button" class="remote-scroll-btn" data-scroll-dir="up">Scroll Up</button><button type="button" class="remote-scroll-btn" data-scroll-dir="down">Scroll Down</button><div class="remote-scroll-hint">Remote friendly controls</div>';
+  document.body.appendChild(remoteControls);
+  function performScroll(delta, absoluteTarget) {
+    if (typeof absoluteTarget === 'number') {
+      pageScroll.scrollTo({ top: absoluteTarget, behavior: 'smooth' });
+      return;
+    }
+    pageScroll.scrollBy({ top: delta, behavior: 'smooth' });
+  }
   function scrollToTarget(target) {
     if (!target) return;
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  document.addEventListener('keydown', function(e){
+  remoteControls.addEventListener('click', function(e){
+    var btn = e.target.closest('.remote-scroll-btn');
+    if (!btn) return;
+    var bigStep = Math.max(260, Math.round(window.innerHeight * 0.82));
+    performScroll(btn.getAttribute('data-scroll-dir') === 'up' ? -bigStep : bigStep);
+  });
+  function getRemoteDelta(e) {
+    var key = e.key || '';
+    var code = e.code || '';
+    var keyCode = e.keyCode || e.which || 0;
+    if (key === 'ArrowDown' || code === 'ArrowDown' || keyCode === 40 || keyCode === 20) return 90;
+    if (key === 'ArrowUp' || code === 'ArrowUp' || keyCode === 38 || keyCode === 19) return -90;
+    if (key === 'PageDown' || code === 'PageDown' || keyCode === 34 || keyCode === 93 || (key === ' ' && !e.shiftKey)) return Math.max(240, Math.round(window.innerHeight * 0.85));
+    if (key === 'PageUp' || code === 'PageUp' || keyCode === 33 || keyCode === 92 || (key === ' ' && e.shiftKey)) return -Math.max(240, Math.round(window.innerHeight * 0.85));
+    return 0;
+  }
+  function handleRemoteKey(e){
     if (!pageScroll) return;
     var tag = document.activeElement && document.activeElement.tagName;
     if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
-    var delta = 0;
-    if (e.key === 'ArrowDown') delta = 90;
-    else if (e.key === 'ArrowUp') delta = -90;
-    else if (e.key === 'PageDown' || (e.key === ' ' && !e.shiftKey)) delta = Math.max(240, Math.round(window.innerHeight * 0.85));
-    else if (e.key === 'PageUp' || (e.key === ' ' && e.shiftKey)) delta = -Math.max(240, Math.round(window.innerHeight * 0.85));
-    else if (e.key === 'Home') { e.preventDefault(); pageScroll.scrollTo({ top: 0, behavior: 'smooth' }); return; }
-    else if (e.key === 'End') { e.preventDefault(); pageScroll.scrollTo({ top: pageScroll.scrollHeight, behavior: 'smooth' }); return; }
+    var key = e.key || '';
+    var code = e.code || '';
+    var keyCode = e.keyCode || e.which || 0;
+    var delta = getRemoteDelta(e);
+    if (key === 'Home' || code === 'Home' || keyCode === 36) { e.preventDefault(); performScroll(0, 0); return; }
+    if (key === 'End' || code === 'End' || keyCode === 35) { e.preventDefault(); performScroll(0, pageScroll.scrollHeight); return; }
     if (delta) {
       e.preventDefault();
-      pageScroll.scrollBy({ top: delta, behavior: 'smooth' });
+      performScroll(delta);
     }
-  }, { passive: false });
+  }
+  window.addEventListener('keydown', handleRemoteKey, { passive: false, capture: true });
+  document.addEventListener('keydown', handleRemoteKey, { passive: false, capture: true });
   document.querySelectorAll('a[href^="#"]').forEach(function(link){
     link.addEventListener('click', function(){
       var id = this.getAttribute('href');
@@ -502,6 +540,10 @@ if (pageScroll) {
       setTimeout(function(){ scrollToTarget(initialTarget); }, 60);
     }
   }
+  setTimeout(function(){
+    var downBtn = remoteControls.querySelector('[data-scroll-dir="down"]');
+    if (downBtn && typeof downBtn.focus === 'function') downBtn.focus();
+  }, 120);
 }
 function printSet(btn){
   var card=btn.closest('.set-card');

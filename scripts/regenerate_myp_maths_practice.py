@@ -2209,7 +2209,12 @@ def ensure_scroll_css(text: str) -> str:
         "body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); "
         "line-height: 1.65; height: 100%; min-height: 100%; overflow: hidden; }\n"
         ".page-scroll { position: fixed; inset: 0; overflow-x: hidden; overflow-y: auto; "
-        "-webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; background: var(--bg); }"
+        "-webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; background: var(--bg); }\n"
+        ".remote-scroll-controls { position: fixed; right: 14px; bottom: 14px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }\n"
+        ".remote-scroll-btn { min-width: 136px; border: 1px solid var(--primary); background: rgba(255,255,255,.97); color: var(--primary); border-radius: 12px; padding: 12px 14px; font-size: .92rem; font-weight: 700; box-shadow: 0 8px 22px rgba(0,0,0,.16); cursor: pointer; }\n"
+        ".remote-scroll-btn:focus, .remote-scroll-btn:hover { outline: none; background: var(--primary); color: #fff; }\n"
+        ".remote-scroll-hint { font-size: .74rem; color: var(--muted); text-align: right; max-width: 136px; text-shadow: 0 1px 0 rgba(255,255,255,.7); }\n"
+        "@media(max-width:640px){ .remote-scroll-controls { right: 10px; bottom: 10px; } .remote-scroll-btn { min-width: 112px; padding: 10px 12px; font-size: .82rem; } .remote-scroll-hint { max-width: 112px; } }"
     )
     text, count = re.subn(
         r"\* \{ box-sizing: border-box; margin: 0; padding: 0; \}\n(?:html \{.*?\}\n)?body \{.*?\}(?:\n\.page-scroll \{.*?\})?",
@@ -2220,7 +2225,7 @@ def ensure_scroll_css(text: str) -> str:
     )
     text = text.replace(
         "@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }",
-        "@media print { .page-scroll { position: static !important; inset: auto !important; overflow: visible !important; height: auto !important; } header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; height: auto !important; overflow: visible !important; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }",
+        "@media print { .remote-scroll-controls { display: none !important; } .page-scroll { position: static !important; inset: auto !important; overflow: visible !important; height: auto !important; } header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; height: auto !important; overflow: visible !important; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }",
     )
     if count == 1:
         return text
@@ -2243,10 +2248,15 @@ def ensure_scroll_shell(text: str) -> str:
 
 
 def ensure_scroll_script(text: str) -> str:
-    if "pageScroll = document.querySelector('.page-scroll')" in text:
+    if (
+        "remote-scroll-controls" in text
+        and 'data-scroll-dir="down"' in text
+        and "keyCode === 20" in text
+        and "pageScroll = document.querySelector('.page-scroll')" in text
+    ):
         return text
     old = "(function(){\nfunction printSet(btn){"
-    new = """(function(){
+    old_existing = """(function(){
 var pageScroll = document.querySelector('.page-scroll');
 if (pageScroll) {
   function scrollToTarget(target) {
@@ -2286,9 +2296,83 @@ if (pageScroll) {
   }
 }
 function printSet(btn){"""
-    if old not in text:
-        raise ValueError("Could not inject scroll script fallback")
-    return text.replace(old, new, 1)
+    new = """(function(){
+var pageScroll = document.querySelector('.page-scroll');
+if (pageScroll) {
+  var remoteControls = document.createElement('div');
+  remoteControls.className = 'remote-scroll-controls';
+  remoteControls.innerHTML = '<button type="button" class="remote-scroll-btn" data-scroll-dir="up">Scroll Up</button><button type="button" class="remote-scroll-btn" data-scroll-dir="down">Scroll Down</button><div class="remote-scroll-hint">Remote friendly controls</div>';
+  document.body.appendChild(remoteControls);
+  function performScroll(delta, absoluteTarget) {
+    if (typeof absoluteTarget === 'number') {
+      pageScroll.scrollTo({ top: absoluteTarget, behavior: 'smooth' });
+      return;
+    }
+    pageScroll.scrollBy({ top: delta, behavior: 'smooth' });
+  }
+  function scrollToTarget(target) {
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  remoteControls.addEventListener('click', function(e){
+    var btn = e.target.closest('.remote-scroll-btn');
+    if (!btn) return;
+    var bigStep = Math.max(260, Math.round(window.innerHeight * 0.82));
+    performScroll(btn.getAttribute('data-scroll-dir') === 'up' ? -bigStep : bigStep);
+  });
+  function getRemoteDelta(e) {
+    var key = e.key || '';
+    var code = e.code || '';
+    var keyCode = e.keyCode || e.which || 0;
+    if (key === 'ArrowDown' || code === 'ArrowDown' || keyCode === 40 || keyCode === 20) return 90;
+    if (key === 'ArrowUp' || code === 'ArrowUp' || keyCode === 38 || keyCode === 19) return -90;
+    if (key === 'PageDown' || code === 'PageDown' || keyCode === 34 || keyCode === 93 || (key === ' ' && !e.shiftKey)) return Math.max(240, Math.round(window.innerHeight * 0.85));
+    if (key === 'PageUp' || code === 'PageUp' || keyCode === 33 || keyCode === 92 || (key === ' ' && e.shiftKey)) return -Math.max(240, Math.round(window.innerHeight * 0.85));
+    return 0;
+  }
+  function handleRemoteKey(e){
+    if (!pageScroll) return;
+    var tag = document.activeElement && document.activeElement.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var key = e.key || '';
+    var code = e.code || '';
+    var keyCode = e.keyCode || e.which || 0;
+    var delta = getRemoteDelta(e);
+    if (key === 'Home' || code === 'Home' || keyCode === 36) { e.preventDefault(); performScroll(0, 0); return; }
+    if (key === 'End' || code === 'End' || keyCode === 35) { e.preventDefault(); performScroll(0, pageScroll.scrollHeight); return; }
+    if (delta) {
+      e.preventDefault();
+      performScroll(delta);
+    }
+  }
+  window.addEventListener('keydown', handleRemoteKey, { passive: false, capture: true });
+  document.addEventListener('keydown', handleRemoteKey, { passive: false, capture: true });
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var id = this.getAttribute('href');
+      var target = id ? document.querySelector(id) : null;
+      if (target) {
+        setTimeout(function(){ scrollToTarget(target); }, 0);
+      }
+    });
+  });
+  if (window.location.hash) {
+    var initialTarget = document.querySelector(window.location.hash);
+    if (initialTarget) {
+      setTimeout(function(){ scrollToTarget(initialTarget); }, 60);
+    }
+  }
+  setTimeout(function(){
+    var downBtn = remoteControls.querySelector('[data-scroll-dir="down"]');
+    if (downBtn && typeof downBtn.focus === 'function') downBtn.focus();
+  }, 120);
+}
+function printSet(btn){"""
+    if old in text:
+        return text.replace(old, new, 1)
+    if old_existing in text:
+        return text.replace(old_existing, new, 1)
+    raise ValueError("Could not inject scroll script fallback")
 
 
 def parse_markdown_chapters(path: Path) -> list[tuple[int, str]]:
@@ -2348,7 +2432,7 @@ def verify_output() -> None:
             raise ValueError(f"Missing summary block in {spec.path}")
         if "touch-action: pan-y;" not in text or "-webkit-overflow-scrolling: touch;" not in text or ".page-scroll { position: fixed;" not in text:
             raise ValueError(f"Missing scroll CSS hardening in {spec.path}")
-        if '<div class="page-scroll">' not in text or "pageScroll = document.querySelector('.page-scroll')" not in text:
+        if '<div class="page-scroll">' not in text or "pageScroll = document.querySelector('.page-scroll')" not in text or "remote-scroll-controls" not in text:
             raise ValueError(f"Missing scroll wrapper fallback in {spec.path}")
         questions = re.findall(r'<div class="q-text">(.*?)</div>', text)
         if len(questions) != 40:

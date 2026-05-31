@@ -7,9 +7,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 1: Numbers and number systems: civilizations and human interactions
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Numbers+and+number+systems%3A+civilizations+and+human+interactions)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Numbers+and+number+systems%3A+civilizations+and+human+interactions+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Numbers+and+number+systems%3A+civilizations+and+human+interactions+revision)
+- [Math Antics - Place Value](https://www.youtube.com/watch?v=T5Qf0qSSJFI)
+- [Khan Academy - Recognizing prime and composite numbers](https://www.youtube.com/watch?v=3h4UK62Qrbo)
+- [BYJU'S - Introduction Number Systems](https://www.youtube.com/watch?v=qjrRZYYWFeU)
+- [Math with Mr. J - Multiples vs. Factors](https://www.youtube.com/watch?v=1qPfLkOEuYY)
 
 ### Set A - Foundation
 1. Write 48,307 in expanded form.
@@ -44,9 +45,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 2: Percentages: inequality and difference
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Percentages%3A+inequality+and+difference)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Percentages%3A+inequality+and+difference+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Percentages%3A+inequality+and+difference+revision)
+- [Math Antics - What Are Percentages?](https://www.youtube.com/watch?v=JeVSmq1Nrpw)
+- [Khan Academy - Finding a percentage](https://www.youtube.com/watch?v=FaDtge_vkbg)
+- [BYJU'S - Comparing Quantities Class 7 Maths Chapter 8 in One Shot](https://www.youtube.com/watch?v=ko1L3N8TxCk)
+- [Math with Mr. J - Percent of Change](https://www.youtube.com/watch?v=jAcDJDjQk2g)
 
 ### Set A - Foundation
 1. Convert each to the other two forms: (a) 3/5 (b) 0.72 (c) 125%.
@@ -81,9 +83,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 3: Algebraic expressions and equations: patterns in nature
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Algebraic+expressions+and+equations%3A+patterns+in+nature)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Algebraic+expressions+and+equations%3A+patterns+in+nature+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Algebraic+expressions+and+equations%3A+patterns+in+nature+revision)
+- [Math Antics - What Is Algebra?](https://www.youtube.com/watch?v=NybHckSEQBI)
+- [Khan Academy - Variables, expressions, and equations](https://www.youtube.com/watch?v=vDqOoI-4Z6M)
+- [BYJU'S - Algebraic Expressions One Shot](https://www.youtube.com/watch?v=FfYq10ht1MM)
+- [Math with Mr. J - Intro to Evaluating Algebraic Expressions](https://www.youtube.com/watch?v=k-KiWkV81fQ)
 
 ### Set A - Foundation
 1. Simplify: 5x - 3(2x - 7) + 4.
@@ -118,9 +121,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 4: Geometric constructions: artistry and creativity
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Geometric+constructions%3A+artistry+and+creativity)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Geometric+constructions%3A+artistry+and+creativity+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Geometric+constructions%3A+artistry+and+creativity+revision)
+- [Math Antics - Angle Basics](https://www.youtube.com/watch?v=DGKwdHMiqCg)
+- [Khan Academy - Constructing an angle bisector using a compass and straightedge](https://www.youtube.com/watch?v=KNr52iFk7n4)
+- [BYJU'S - Visualizing Practical Geometry](https://www.youtube.com/watch?v=UKeveWXH3Do)
+- [1st Class Maths - Constructions](https://www.youtube.com/watch?v=3viWgGJmkFo)
 
 ### Set A - Foundation
 1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
@@ -155,9 +159,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 5: Fractions: human connections
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Fractions%3A+human+connections)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Fractions%3A+human+connections+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Fractions%3A+human+connections+revision)
+- [Math Antics - What Are Fractions?](https://www.youtube.com/watch?v=I1u3pM9g9o8)
+- [Khan Academy - Introduction to fractions](https://www.youtube.com/watch?v=kZzoVCmUyKg)
+- [BYJU'S - Fractions One Shot](https://www.youtube.com/watch?v=VB6fmr3GQ5k)
+- [Math with Mr. J - Solving Fraction Word Problems](https://www.youtube.com/watch?v=oYS44LIs-7I)
 
 ### Set A - Foundation
 1. Simplify 18/24.
@@ -192,9 +197,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 6: Data management: trends in communities
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Data+management%3A+trends+in+communities)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Data+management%3A+trends+in+communities+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Data+management%3A+trends+in+communities+revision)
+- [Math Antics - Data And Graphs](https://www.youtube.com/watch?v=hcgThf5mv38)
+- [Khan Academy - Finding mean, median, and mode](https://www.youtube.com/watch?v=k3aKKasOmIw)
+- [BYJU'S - Introduction To Data Handling](https://www.youtube.com/watch?v=l2RUYEZxAIs)
+- [Math with Mr. J - Mean, Median, Mode, and Range](https://www.youtube.com/watch?v=e3uY2LraXts)
 
 ### Set A - Foundation
 1. Find mean, median, and mode of: 8, 11, 9, 11, 14, 7, 10, 11.
@@ -229,9 +235,10 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 ## Chapter 7: Perimeter, area and volume: environmental impacts
 
 ### Video Resources
-- [Khan Academy search](https://www.google.com/search?q=Khan+Academy+maths+Perimeter%2C+area+and+volume%3A+environmental+impacts)
-- [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Perimeter%2C+area+and+volume%3A+environmental+impacts+lesson)
-- [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Perimeter%2C+area+and+volume%3A+environmental+impacts+revision)
+- [Math Antics - Area](https://www.youtube.com/watch?v=xCdxURXMdFY)
+- [Khan Academy - Perimeter and area: the basics](https://www.youtube.com/watch?v=LoaBd-sPzkU)
+- [BYJU'S - Perimeter and Area One Shot](https://www.youtube.com/watch?v=OnrhkmImroQ)
+- [Math with Mr. J - Perimeter, Area, and Volume Explained](https://www.youtube.com/watch?v=2UEUWC313QY)
 
 ### Set A - Foundation
 1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.

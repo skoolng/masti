@@ -12,32 +12,32 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Numbers+and+number+systems%3A+civilizations+and+human+interactions+revision)
 
 ### Set A - Foundation
-1. Simplify: 5x - 3(2x - 7) + 4.
-2. Factorize completely: 6x^2 - 15x.
-3. Solve: 3(2x - 5) = 4x + 9.
-4. If y = 4x - 3, find y when x = -2, 0, 5.
-5. Expand and simplify: (x + 4)(x - 7).
+1. Write 48,307 in expanded form.
+2. Arrange in ascending order: -6, 0, 4, -2, 9.
+3. List all factors of 36.
+4. State whether 31 is prime or composite.
+5. Convert 6.4 x 10^5 to ordinary form.
 
 ### Set B - Core Skills
-1. Solve the pair of equations: 2x + y = 11 and x - y = 1.
-2. A rectangle has length (x+3) and width (x-1). Form and simplify its area expression.
-3. For f(x)=x^2-4x+1, find f(0), f(2), f(-1).
-4. Rearrange the formula v = u + at to make t the subject.
-5. Find the slope of the line through (2,5) and (8,17).
+1. Prime factorize 84.
+2. Find the HCF of 24 and 36.
+3. Find the LCM of 12 and 18.
+4. Evaluate: -7 + 15 - 9.
+5. Round 97,846 to the nearest thousand.
 
 ### Set C - Application
-1. A cab fare is ₹80 fixed + ₹14 per km. Write a linear model and find fare for 18 km.
-2. A company’s profit p is modeled by p = -2x^2 + 40x - 96. Find profit at x=6 and x=10 and interpret.
-3. A tank has 500 L and leaks 12 L/hour while filling at 20 L/hour. Model volume after h hours and find when it reaches 700 L.
-4. Given two plans: A=₹399 + ₹2/message, B=₹699 + ₹1/message, find break-even point.
-5. Plot points for y = -x + 4 for x=-1,0,1,2,3 and identify intercepts.
+1. Temperature rises from -5 deg C to 12 deg C. Find the change.
+2. A stadium has 24 rows of 36 seats. How many seats are there in total?
+3. A warehouse packs 1,260 notebooks into boxes of 18. How many boxes are needed?
+4. Convert 2.3 x 10^6 meters to kilometers.
+5. Estimate 198 x 51 by rounding to friendly numbers.
 
 ### Set D - Challenge
-1. Solve and verify: (x-3)/(x+1) + (2x)/(x^2-1) = 1, where x != ±1.
-2. Find all integer solutions of 2x + 3y = 24 with x >= 0, y >= 0.
-3. A projectile path is h(t) = -5t^2 + 20t + 1. Find maximum height and the time it occurs.
-4. Show two different methods to solve x^2 - 9x + 20 = 0 and compare efficiency.
-5. Create and solve one system-of-equations word problem with integer answers.
+1. Find the smallest positive integer n such that 90n is a perfect square.
+2. Explain why no 4-digit number using 2, 5, 7, and 9 exactly once can be divisible by 3.
+3. Find the smallest multiple of 15 greater than 200.
+4. Compare 7.08 x 10^5 and 0.708 x 10^6.
+5. A number leaves remainder 5 when divided by 8. What remainder does that number + 11 leave when divided by 8?
 
 ---
 
@@ -49,32 +49,32 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Percentages%3A+inequality+and+difference+revision)
 
 ### Set A - Foundation
-1. Convert each to the other two forms: (a) 3/8 (b) 0.45 (c) 125%.
-2. Arrange in ascending order: -2.5, 3/4, -7/3, 0.2, 1.15.
-3. Evaluate: 4^3 - 2^5 + 36/9.
-4. Find 18% of 350 and then increase the result by 20%.
-5. Round 98.7654 to (a) 2 d.p. (b) 1 s.f. (c) nearest whole number.
+1. Convert each to the other two forms: (a) 3/5 (b) 0.72 (c) 125%.
+2. Find 25% of 360.
+3. Increase 450 by 12%.
+4. Decrease 800 by 15%.
+5. What percentage is 18 of 60?
 
 ### Set B - Core Skills
-1. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
-2. Simplify the ratio 84:126 and express it in the form 1:n.
-3. The temperature changed from -6°C to 9°C. Find the total rise.
-4. Express 0.00072 in standard form and compare it with 7.2 x 10^-5.
-5. A number is increased by 12% and becomes 448. Find the original number.
+1. A shirt costs ₹960 after a 20% discount. Find the original price.
+2. A student scores 45 out of 60. Express the score as a percentage.
+3. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
+4. Population grew from 48,000 to 54,720. Find the percentage growth.
+5. Find the simple interest on ₹5,000 at 8% per year for 2 years.
 
 ### Set C - Application
-1. A map scale is 1:50,000. If two towns are 7.6 cm apart on the map, find the real distance in km.
-2. A phone plan costs ₹299 plus ₹1.75 per minute. Write and use an expression for a 140-minute month.
-3. A family budget is split as 40% rent, 25% food, 15% transport, rest savings. If rent is ₹24,000, find total budget and savings.
-4. Population grew from 48,000 to 54,720 in one year. Find percentage growth.
-5. Design a 5-day expense table and compute mean, median, and range.
+1. A family budget is split as 40% rent, 25% food, 15% transport, and the rest savings. If rent is ₹24,000, find the total budget and savings.
+2. A laptop costs ₹50,000 before 18% GST. Find the final price.
+3. A school has 800 students and 760 are present. Find the attendance percentage.
+4. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount?
+5. In an election, 18,750 out of 25,000 eligible voters cast a vote. Find the turnout percentage.
 
 ### Set D - Challenge
-1. Find the smallest positive integer n such that 72n is a perfect square.
-2. A quantity doubles every 3 hours. If it starts at 120, model and find the amount after 15 hours.
-3. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount? Justify numerically.
-4. Create a real-life scenario where using rounded values changes the decision; show both exact and rounded calculations.
-5. A store marks up an item by 30% and later gives a 20% discount. Find net percentage change from original price.
+1. A store marks up an item by 30% and later gives a 20% discount. Find the net percentage change from the original price.
+2. A quantity grows by 6% each year from ₹80,000. Estimate its value after 3 years.
+3. Which offer is better: 25% off once, or 15% off followed by an extra 10% off? Justify.
+4. A number is increased by 12% and becomes 448. Find the original number.
+5. Create a real-life situation where rounding too early changes the final decision, and show both exact and rounded calculations.
 
 ---
 
@@ -160,32 +160,32 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Fractions%3A+human+connections+revision)
 
 ### Set A - Foundation
-1. Convert each to the other two forms: (a) 3/8 (b) 0.45 (c) 125%.
-2. Arrange in ascending order: -2.5, 3/4, -7/3, 0.2, 1.15.
-3. Evaluate: 4^3 - 2^5 + 36/9.
-4. Find 18% of 350 and then increase the result by 20%.
-5. Round 98.7654 to (a) 2 d.p. (b) 1 s.f. (c) nearest whole number.
+1. Simplify 18/24.
+2. Convert 2 3/5 to an improper fraction.
+3. Convert 17/4 to a mixed number.
+4. Add 1/6 + 1/3.
+5. Find 3/4 of 32.
 
 ### Set B - Core Skills
-1. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
-2. Simplify the ratio 84:126 and express it in the form 1:n.
-3. The temperature changed from -6°C to 9°C. Find the total rise.
-4. Express 0.00072 in standard form and compare it with 7.2 x 10^-5.
-5. A number is increased by 12% and becomes 448. Find the original number.
+1. Find 2/3 + 5/12.
+2. Find 7/8 - 5/16.
+3. Multiply 3/4 x 2/5.
+4. Divide 5/6 by 1/3.
+5. Compare 5/6 and 7/8.
 
 ### Set C - Application
-1. A map scale is 1:50,000. If two towns are 7.6 cm apart on the map, find the real distance in km.
-2. A phone plan costs ₹299 plus ₹1.75 per minute. Write and use an expression for a 140-minute month.
-3. A family budget is split as 40% rent, 25% food, 15% transport, rest savings. If rent is ₹24,000, find total budget and savings.
-4. Population grew from 48,000 to 54,720 in one year. Find percentage growth.
-5. Design a 5-day expense table and compute mean, median, and range.
+1. A ribbon is 5 1/2 m long. If 2 3/4 m is used, how much remains?
+2. In a class, 2/5 come by bus and 1/4 walk. What fraction comes by other means?
+3. A recipe needs 3/4 cup of flour per batch. How much flour is needed for 3 batches?
+4. A student reads 5/8 of a book on Saturday and 1/4 on Sunday. What fraction of the book is left?
+5. How many 1/4 kg bags can be filled from 2 1/2 kg of rice?
 
 ### Set D - Challenge
-1. Find the smallest positive integer n such that 72n is a perfect square.
-2. A quantity doubles every 3 hours. If it starts at 120, model and find the amount after 15 hours.
-3. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount? Justify numerically.
-4. Create a real-life scenario where using rounded values changes the decision; show both exact and rounded calculations.
-5. A store marks up an item by 30% and later gives a 20% discount. Find net percentage change from original price.
+1. Solve: x/3 + 1/6 = 5/6.
+2. Find one fraction between 3/7 and 1/2.
+3. If 3/5 of a class are girls and 2/3 of the girls play sport, what fraction of the whole class are girls who play sport?
+4. A coupon reduces a price by 1/4 and then by 1/10 of the remaining amount. What fraction of the original price is finally paid?
+5. A rope 8 2/5 m long is cut into pieces of length 3/5 m. How many full pieces can be made?
 
 ---
 

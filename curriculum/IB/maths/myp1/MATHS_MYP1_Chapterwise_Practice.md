@@ -12,36 +12,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Introduction Number Systems](https://www.youtube.com/watch?v=qjrRZYYWFeU)
 - [Math with Mr. J - Multiples vs. Factors](https://www.youtube.com/watch?v=1qPfLkOEuYY)
 
-### Set A - Foundation
-1. Write 48,307 in expanded form.
-2. Arrange in ascending order: -6, 0, 4, -2, 9.
-3. List all factors of 36.
-4. State whether 31 is prime or composite.
-5. Convert 6.4 x 10^5 to ordinary form.
 
-### Set B - Core Skills
-1. Prime factorize 84.
-2. Find the HCF of 24 and 36.
-3. Find the LCM of 12 and 18.
-4. Evaluate: -7 + 15 - 9.
-5. Round 97,846 to the nearest thousand.
+### Chapter Summary
+- classifying whole numbers, integers, fractions, decimals and simple percentages
+- comparing and ordering numbers using place value and number lines
+- using factors, multiples, primes and common divisors in simple contexts
+- rounding and estimating to check whether an answer is reasonable
+- connecting number skills to trade, counting and everyday measurement
+
+### Set A - Foundation
+1. Write 31,623 in expanded form.
+2. Arrange these numbers in ascending order: 962, 3310, 12, 320.
+3. Round 33998 to the nearest 100.
+4. Find the value of 2^4.
+5. Write 4/15 as a decimal.
+
+### Set B - Core Practice
+1. Use divisibility rules to decide whether 1863 is divisible by 3 and 9.
+2. Find the least common multiple of 16 and 24.
+3. Write 0.45 as a fraction in simplest form.
+4. Classify sqrt(5) as rational or irrational.
+5. Evaluate 2^0 and explain why the answer makes sense.
 
 ### Set C - Application
-1. Temperature rises from -5 deg C to 12 deg C. Find the change.
-2. A stadium has 24 rows of 36 seats. How many seats are there in total?
-3. A warehouse packs 1,260 notebooks into boxes of 18. How many boxes are needed?
-4. Convert 2.3 x 10^6 meters to kilometers.
-5. Estimate 198 x 51 by rounding to friendly numbers.
+1. Write a rule for finding the next term in 4, 7, 10, 13, ... and give the 10th term.
+2. Evaluate (6^2 - 5^2) / 1.
+3. A box holds 36 packets. 12 boxes arrive. Find the total number of packets.
+4. Explain why 0.4, 40% and 2/5 represent the same amount.
+5. Choose a real-life quantity that is easier to write in standard form and explain why.
 
 ### Set D - Challenge
-1. Find the smallest positive integer n such that 90n is a perfect square.
-2. Explain why no 4-digit number using 2, 5, 7, and 9 exactly once can be divisible by 3.
-3. Find the smallest multiple of 15 greater than 200.
-4. Compare 7.08 x 10^5 and 0.708 x 10^6.
-5. A number leaves remainder 5 when divided by 8. What remainder does that number + 11 leave when divided by 8?
+1. Use the chapter title 'Numbers and number systems: civilizations and human interactions' to write one sentence about how number forms can change the way information is communicated.
+2. Show two different ways to represent the number 9600.
+3. Evaluate sqrt(144) + 11.
+4. Identify which is larger without a calculator: 5^4 or 4^5.
+5. Find the missing number: 18, __, 30, 36 if the pattern adds the same amount each time.
 
 ---
-
 ## Chapter 2: Percentages: inequality and difference
 
 ### Video Resources
@@ -50,36 +57,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Comparing Quantities Class 7 Maths Chapter 8 in One Shot](https://www.youtube.com/watch?v=ko1L3N8TxCk)
 - [Math with Mr. J - Percent of Change](https://www.youtube.com/watch?v=jAcDJDjQk2g)
 
-### Set A - Foundation
-1. Convert each to the other two forms: (a) 3/5 (b) 0.72 (c) 125%.
-2. Find 25% of 360.
-3. Increase 450 by 12%.
-4. Decrease 800 by 15%.
-5. What percentage is 18 of 60?
 
-### Set B - Core Skills
-1. A shirt costs ₹960 after a 20% discount. Find the original price.
-2. A student scores 45 out of 60. Express the score as a percentage.
-3. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
-4. Population grew from 48,000 to 54,720. Find the percentage growth.
-5. Find the simple interest on ₹5,000 at 8% per year for 2 years.
+### Chapter Summary
+- converting between fractions, decimals and percentages
+- finding percentages of quantities in practical situations
+- working with percentage increase, decrease and percentage change
+- using reverse percentages to recover an original amount
+- interpreting discounts, tax, profit and comparison data through percentages
+
+### Set A - Foundation
+1. Write 10% as a fraction in simplest form.
+2. Write 10% as a decimal.
+3. Find 10% of 749.
+4. 749 students were surveyed and 10% preferred cycling. How many students is that?
+5. Increase 749 by 15%.
+
+### Set B - Core Practice
+1. Convert 9/25 to a percentage.
+2. A test score improved from 37 to 82. Find the percentage increase.
+3. VAT at 10% is added to an item costing Rs 749. Find the total price.
+4. A phone battery falls from 100% to 32%. What percentage has been used?
+5. In 'Percentages: inequality and difference', describe one situation where percentages help compare unlike totals fairly.
 
 ### Set C - Application
-1. A family budget is split as 40% rent, 25% food, 15% transport, and the rest savings. If rent is ₹24,000, find the total budget and savings.
-2. A laptop costs ₹50,000 before 18% GST. Find the final price.
-3. A school has 800 students and 760 are present. Find the attendance percentage.
-4. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount?
-5. In an election, 18,750 out of 25,000 eligible voters cast a vote. Find the turnout percentage.
+1. If 35% of a number is 149, find the number.
+2. Compare a 25% discount and a Rs 187 discount on an item costing Rs 749. Which is larger?
+3. Write one sentence explaining the meaning of a 10% probability or success rate.
+4. A charity spends 45% of its budget on food, 30% on transport and the rest on learning materials. What percentage remains for learning materials?
+5. An item is marked up by 15% and then sold for Rs 861.35. What was its original price?
 
 ### Set D - Challenge
-1. A store marks up an item by 30% and later gives a 20% discount. Find the net percentage change from the original price.
-2. A quantity grows by 6% each year from ₹80,000. Estimate its value after 3 years.
-3. Which offer is better: 25% off once, or 15% off followed by an extra 10% off? Justify.
-4. A number is increased by 12% and becomes 448. Find the original number.
-5. Create a real-life situation where rounding too early changes the final decision, and show both exact and rounded calculations.
+1. If a score of 749 rises by 12% and then by 8%, what is the final score?
+2. Write 0.375 as a percentage.
+3. A cafe serves 749 meals in a day. 10% are vegetarian. How many are not vegetarian?
+4. Explain how a bar model could help a learner solve a percentage-of-quantity problem.
+5. What is the percentage error if an estimate is 200 and the exact answer is 220?
 
 ---
-
 ## Chapter 3: Algebraic expressions and equations: patterns in nature
 
 ### Video Resources
@@ -88,36 +102,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Algebraic Expressions One Shot](https://www.youtube.com/watch?v=FfYq10ht1MM)
 - [Math with Mr. J - Intro to Evaluating Algebraic Expressions](https://www.youtube.com/watch?v=k-KiWkV81fQ)
 
-### Set A - Foundation
-1. Simplify: 5x - 3(2x - 7) + 4.
-2. Factorize completely: 6x^2 - 15x.
-3. Solve: 3(2x - 5) = 4x + 9.
-4. If y = 4x - 3, find y when x = -2, 0, 5.
-5. Expand and simplify: (x + 4)(x - 7).
 
-### Set B - Core Skills
-1. Solve the pair of equations: 2x + y = 11 and x - y = 1.
-2. A rectangle has length (x+3) and width (x-1). Form and simplify its area expression.
-3. For f(x)=x^2-4x+1, find f(0), f(2), f(-1).
-4. Rearrange the formula v = u + at to make t the subject.
-5. Find the slope of the line through (2,5) and (8,17).
+### Chapter Summary
+- writing algebraic expressions from words or patterns
+- collecting like terms and substituting values into expressions
+- expanding simple brackets and factorising simple expressions
+- solving one-step or two-step linear equations
+- using algebra to describe and generalise numerical patterns
+
+### Set A - Foundation
+1. Simplify 6x + 3x.
+2. Substitute x = 2 into 3x + 5.
+3. Expand 4(x + 6).
+4. Factorise 18x + 12.
+5. Solve 6x + 3 = 15.
+
+### Set B - Core Practice
+1. Solve 2x - 6 = 3.
+2. Expand and simplify (x + 6)(x + 3).
+3. Find the value of y when y = 6x - 3 and x = 2.
+4. Explain the difference between an expression and an equation.
+5. Rearrange y = 6x + 3 to make x the subject.
 
 ### Set C - Application
-1. A cab fare is ₹80 fixed + ₹14 per km. Write a linear model and find fare for 18 km.
-2. A company’s profit p is modeled by p = -2x^2 + 40x - 96. Find profit at x=6 and x=10 and interpret.
-3. A tank has 500 L and leaks 12 L/hour while filling at 20 L/hour. Model volume after h hours and find when it reaches 700 L.
-4. Given two plans: A=₹399 + ₹2/message, B=₹699 + ₹1/message, find break-even point.
-5. Plot points for y = -x + 4 for x=-1,0,1,2,3 and identify intercepts.
+1. Collect like terms in 6x + 4 - 2x + 3.
+2. Factorise x^2 + 9x + 18.
+3. Solve 6(x + 1) = 18.
+4. What does it mean for two expressions to be equivalent?
+5. Write a formula for the perimeter of a rectangle with length x + 6 and width x + 3.
 
 ### Set D - Challenge
-1. Solve and verify: (x-3)/(x+1) + (2x)/(x^2-1) = 1, where x != ±1.
-2. Find all integer solutions of 2x + 3y = 24 with x >= 0, y >= 0.
-3. A projectile path is h(t) = -5t^2 + 20t + 1. Find maximum height and the time it occurs.
-4. Show two different methods to solve x^2 - 9x + 20 = 0 and compare efficiency.
-5. Create and solve one system-of-equations word problem with integer answers.
+1. Write and solve an equation for 'three less than twice a number is 1'.
+2. State one difference between expanding and factorising.
+3. Find the gradient of the line y = 6x + 3.
+4. Evaluate 2a + 3b when a = 6 and b = 3.
+5. Explain why algebra is useful for proving that a pattern always works.
 
 ---
-
 ## Chapter 4: Geometric constructions: artistry and creativity
 
 ### Video Resources
@@ -126,36 +147,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Visualizing Practical Geometry](https://www.youtube.com/watch?v=UKeveWXH3Do)
 - [1st Class Maths - Constructions](https://www.youtube.com/watch?v=3viWgGJmkFo)
 
-### Set A - Foundation
-1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
-2. A triangle has sides 7 cm, 8 cm, 9 cm. Find its semi-perimeter and area (Heron’s formula).
-3. Find volume of a cylinder with radius 3.5 cm and height 12 cm (use pi = 22/7).
-4. Construct (with ruler/compass) a 60° angle and bisect it; report resulting angles.
-5. A cuboid is 10 cm x 6 cm x 4 cm. Find total surface area.
 
-### Set B - Core Skills
-1. In ΔABC, AB=AC and ∠B=52°. Find ∠A and ∠C.
-2. A map uses a 1:200 scale drawing of a park as 15 cm by 9 cm. Find actual dimensions.
-3. Find the length of the diagonal of a rectangle 9 cm by 12 cm.
-4. A sector has radius 10 cm and angle 72°. Find arc length and sector area.
-5. A cone has radius 5 cm and slant height 13 cm. Find curved surface area.
+### Chapter Summary
+- constructing lines, angles and bisectors accurately with ruler and compass
+- using geometric vocabulary such as perpendicular, parallel and bisect
+- checking whether a construction is mathematically precise
+- explaining the sequence of a construction step by step
+- connecting geometric construction to design and creativity
+
+### Set A - Foundation
+1. State the sum of angles on a straight line.
+2. State the sum of angles around a point.
+3. Define a perpendicular bisector.
+4. Explain what a compass and straightedge construction is meant to show.
+5. Name one pair of vertically opposite angles and state their relationship.
+
+### Set B - Core Practice
+1. What are complementary angles?
+2. What are supplementary angles?
+3. Explain the difference between a regular and an irregular polygon.
+4. State the interior angle sum of a triangle.
+5. Name one real-life object that shows parallel lines.
 
 ### Set C - Application
-1. A room is 5.2 m by 4.6 m. Tiles are 40 cm by 40 cm. How many tiles are needed (ignore wastage)?
-2. Design a rectangular garden of area 96 m² with integer dimensions and minimum perimeter.
-3. A water tank is a cylinder of radius 1.2 m and height 2.5 m. Find capacity in liters.
-4. A drone moves 120 m east then 50 m north. Find direct distance from start and bearing context statement.
-5. Model and compare material needed for open-top vs closed-top box of same dimensions.
+1. Name the different types of angle: acute, right, obtuse and reflex.
+2. Explain how a protractor differs from a compass in geometry work.
+3. What does it mean to bisect an angle?
+4. State one reason measuring alone is weaker than proving in geometry.
+5. Find the missing angle if vertically opposite angles are 72 deg and x.
 
 ### Set D - Challenge
-1. A frustum has radii 6 cm and 3 cm, height 8 cm. Find its volume.
-2. Prove that the angle in a semicircle is a right angle using a circle diagram and reasoning.
-3. A ladder 13 m long reaches a wall with foot 5 m from wall. Find height reached; then height if foot moves to 7 m.
-4. Create a net for a triangular prism and calculate total surface area for your chosen dimensions.
-5. Investigate how scaling side lengths by factor k changes area and volume; test with k=1.5 and k=3.
+1. State one reason learners should write reasons next to angle steps in a proof-style solution.
+2. Explain what a transversal is.
+3. Name a polygon with 8 sides.
+4. Describe one feature of a regular hexagon.
+5. State the sum of the interior angles of a quadrilateral.
 
 ---
-
 ## Chapter 5: Fractions: human connections
 
 ### Video Resources
@@ -164,36 +192,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Fractions One Shot](https://www.youtube.com/watch?v=VB6fmr3GQ5k)
 - [Math with Mr. J - Solving Fraction Word Problems](https://www.youtube.com/watch?v=oYS44LIs-7I)
 
-### Set A - Foundation
-1. Simplify 18/24.
-2. Convert 2 3/5 to an improper fraction.
-3. Convert 17/4 to a mixed number.
-4. Add 1/6 + 1/3.
-5. Find 3/4 of 32.
 
-### Set B - Core Skills
-1. Find 2/3 + 5/12.
-2. Find 7/8 - 5/16.
-3. Multiply 3/4 x 2/5.
-4. Divide 5/6 by 1/3.
-5. Compare 5/6 and 7/8.
+### Chapter Summary
+- simplifying fractions and generating equivalent fractions
+- moving between mixed numbers and improper fractions
+- adding, subtracting, multiplying and dividing fractions
+- finding a fraction of a quantity and comparing fractional amounts
+- using fraction reasoning in recipes, sharing and measurement tasks
+
+### Set A - Foundation
+1. Simplify 15/18.
+2. Write the improper fraction 3/2 as a mixed number if needed.
+3. Convert the mixed number 1 1/2 to an improper fraction.
+4. Calculate 5/6 + 4/7.
+5. Calculate 3/2 - 1/3.
+
+### Set B - Core Practice
+1. Write three fractions equivalent to 4/7.
+2. Arrange these in ascending order: 5/6, 4/7, 1/3.
+3. Find the fraction of a day represented by 6 hours.
+4. A recipe needs 5/6 cup of oil for one batch. How much is needed for 3 batches?
+5. Find the missing number: __ x 1/3 = 1.
 
 ### Set C - Application
-1. A ribbon is 5 1/2 m long. If 2 3/4 m is used, how much remains?
-2. In a class, 2/5 come by bus and 1/4 walk. What fraction comes by other means?
-3. A recipe needs 3/4 cup of flour per batch. How much flour is needed for 3 batches?
-4. A student reads 5/8 of a book on Saturday and 1/4 on Sunday. What fraction of the book is left?
-5. How many 1/4 kg bags can be filled from 2 1/2 kg of rice?
+1. Simplify 2/3.
+2. Find 3/5 of 29 and give the answer in simplest form.
+3. Calculate 5/6 + 1/2.
+4. Calculate 1 - 1/3.
+5. Explain the difference between a proper fraction and an improper fraction.
 
 ### Set D - Challenge
-1. Solve: x/3 + 1/6 = 5/6.
-2. Find one fraction between 3/7 and 1/2.
-3. If 3/5 of a class are girls and 2/3 of the girls play sport, what fraction of the whole class are girls who play sport?
-4. A coupon reduces a price by 1/4 and then by 1/10 of the remaining amount. What fraction of the original price is finally paid?
-5. A rope 8 2/5 m long is cut into pieces of length 3/5 m. How many full pieces can be made?
+1. Compare 3/4 and 5/8 using a common denominator.
+2. Find the reciprocal of 3/2.
+3. A ribbon of length 6 m is cut into pieces of length 3/4 m. How many full pieces can be made?
+4. Explain why 1/2 and 1/2 represent the same amount.
+5. Evaluate 5/6 - 1/4.
 
 ---
-
 ## Chapter 6: Data management: trends in communities
 
 ### Video Resources
@@ -202,36 +237,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Introduction To Data Handling](https://www.youtube.com/watch?v=l2RUYEZxAIs)
 - [Math with Mr. J - Mean, Median, Mode, and Range](https://www.youtube.com/watch?v=e3uY2LraXts)
 
-### Set A - Foundation
-1. Find mean, median, and mode of: 8, 11, 9, 11, 14, 7, 10, 11.
-2. A bag has 5 red, 3 blue, 2 green balls. Find P(red), P(not blue), and P(green or blue).
-3. Construct a frequency table for marks: 12,15,15,18,18,18,20,21,21,24.
-4. Find range and interquartile range for: 4,7,9,10,12,15,16,18,21.
-5. Convert this data to percentages: A=24, B=18, C=8 students.
 
-### Set B - Core Skills
-1. A spinner has sectors 90°, 120°, and 150°. Find probability of each outcome.
-2. From a class of 30, 18 like football, 12 like basketball, 7 like both. Draw Venn counts for each region.
-3. A die is rolled 120 times and ‘6’ appears 26 times. Find experimental probability and compare with theoretical.
-4. Given grouped data intervals 0-10, 10-20, 20-30 with frequencies 4,9,7, estimate mean using class midpoints.
-5. Interpret a line graph where values are 120, 132, 128, 140, 150 across five months; identify trend and anomaly.
+### Chapter Summary
+- collecting or organising data in tables and charts
+- calculating mean, median, mode and range
+- choosing a suitable graph for a data set
+- describing trends and simple comparisons from a display
+- using data to make basic claims and decisions
+
+### Set A - Foundation
+1. Find the mean of: 8, 10, 13, 17, 19, 27, 28, 29, 30.
+2. Find the median of: 8, 10, 13, 17, 19, 27, 28, 29, 30.
+3. Find the range of: 8, 10, 13, 17, 19, 27, 28, 29, 30.
+4. State one situation where a bar chart is more suitable than a line graph.
+5. Explain what an outlier is.
+
+### Set B - Core Practice
+1. What is the mode of 4, 6, 6, 8, 9, 9, 9, 12?
+2. A frequency table shows scores 1,2,3,4 with frequencies 2,5,4,1. How many results are there?
+3. Explain why the same mean can come from very different data sets.
+4. Suggest one question that would produce numerical data and one that would produce categorical data.
+5. A graph axis starts at 90 instead of 0. Why might that be misleading?
 
 ### Set C - Application
-1. Survey 20 students on daily screen-time categories; build a table and represent it as a bar graph.
-2. A weather report says 40% chance of rain for 5 independent days. Find probability of at least one rainy day.
-3. Choose two variables (e.g., study hours vs score) for 10 data points; sketch scatter plot and describe correlation.
-4. A shop tracks weekly sales for 8 weeks. Compute moving average (window=3) and comment on trend.
-5. Create a fair and an unfair game of chance and compute expected gain/loss per round.
+1. Find the mean of 12, 15, 18, 21, 24.
+2. A class of 24 learners has a median score of 16. Explain what that means.
+3. Choose which is better for showing change over time: bar chart or line graph. Explain.
+4. What is the total frequency if class intervals have frequencies 5, 8, 11 and 6?
+5. Write one conclusion that should not be made from a very small sample.
 
 ### Set D - Challenge
-1. Two hospitals report recovery rates: A=78/100, B=153/200. Which is higher and by how much? Discuss reliability.
-2. A coin is tossed 200 times with 118 heads. Use a suitable test/statistical argument to comment on fairness.
-3. Design a probability model for weather + transport delay and estimate risk of arriving late.
-4. Given data set with an outlier, compare mean vs median and justify which is better for reporting.
-5. Create and solve a criterion D task using real data from your school/community (minimum 2 representations).
+1. A data set has mean 12 and median 18. What might that suggest?
+2. Explain why grouped data only gives an estimate for the mean.
+3. What information does a scatter graph show?
+4. State one reason to keep raw data before making a graph.
+5. Name one ethical issue to consider when collecting human data.
 
 ---
-
 ## Chapter 7: Perimeter, area and volume: environmental impacts
 
 ### Video Resources
@@ -240,32 +282,40 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [BYJU'S - Perimeter and Area One Shot](https://www.youtube.com/watch?v=OnrhkmImroQ)
 - [Math with Mr. J - Perimeter, Area, and Volume Explained](https://www.youtube.com/watch?v=2UEUWC313QY)
 
-### Set A - Foundation
-1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
-2. A triangle has sides 7 cm, 8 cm, 9 cm. Find its semi-perimeter and area (Heron’s formula).
-3. Find volume of a cylinder with radius 3.5 cm and height 12 cm (use pi = 22/7).
-4. Construct (with ruler/compass) a 60° angle and bisect it; report resulting angles.
-5. A cuboid is 10 cm x 6 cm x 4 cm. Find total surface area.
 
-### Set B - Core Skills
-1. In ΔABC, AB=AC and ∠B=52°. Find ∠A and ∠C.
-2. A map uses a 1:200 scale drawing of a park as 15 cm by 9 cm. Find actual dimensions.
-3. Find the length of the diagonal of a rectangle 9 cm by 12 cm.
-4. A sector has radius 10 cm and angle 72°. Find arc length and sector area.
-5. A cone has radius 5 cm and slant height 13 cm. Find curved surface area.
+### Chapter Summary
+- calculating perimeter, area and volume of common shapes
+- using standard units and converting when needed
+- solving problems about capacity, covering or packing space
+- working with rectangles, triangles, prisms or cylinders in context
+- linking measurement decisions to environmental or design choices
+
+### Set A - Foundation
+1. Find the perimeter of a rectangle with length 14 cm and width 9 cm.
+2. Find the area of the same rectangle.
+3. Find the volume of a cuboid 8 cm by 5 cm by 4 cm.
+4. State one reason units matter in measurement.
+5. Convert 2.5 m to cm.
+
+### Set B - Core Practice
+1. Convert 1500 mL to litres.
+2. Find the area of a circle with radius 7 cm using pi = 22/7.
+3. State one difference between area and volume.
+4. Find the total surface area of a cube of side 5 cm.
+5. Explain why a net can help with surface-area reasoning.
 
 ### Set C - Application
-1. A room is 5.2 m by 4.6 m. Tiles are 40 cm by 40 cm. How many tiles are needed (ignore wastage)?
-2. Design a rectangular garden of area 96 m² with integer dimensions and minimum perimeter.
-3. A water tank is a cylinder of radius 1.2 m and height 2.5 m. Find capacity in liters.
-4. A drone moves 120 m east then 50 m north. Find direct distance from start and bearing context statement.
-5. Model and compare material needed for open-top vs closed-top box of same dimensions.
+1. Find the diagonal of a 3 by 4 rectangle.
+2. State one reason capacity and volume are closely related.
+3. A box measures 20 cm by 15 cm by 10 cm. Find its volume.
+4. Explain when a composite area method is needed.
+5. Find the area of a semicircle of radius 7 cm using pi = 22/7.
 
 ### Set D - Challenge
-1. A frustum has radii 6 cm and 3 cm, height 8 cm. Find its volume.
-2. Prove that the angle in a semicircle is a right angle using a circle diagram and reasoning.
-3. A ladder 13 m long reaches a wall with foot 5 m from wall. Find height reached; then height if foot moves to 7 m.
-4. Create a net for a triangular prism and calculate total surface area for your chosen dimensions.
-5. Investigate how scaling side lengths by factor k changes area and volume; test with k=1.5 and k=3.
+1. Find the area of a square of side 13 cm.
+2. Explain why scaling a shape by factor 2 changes area by factor 4.
+3. Find the perimeter of a semicircle of radius 7 cm using pi = 22/7.
+4. State one reason surface area matters in packaging.
+5. Convert 0.75 kg to grams.
 
 ---

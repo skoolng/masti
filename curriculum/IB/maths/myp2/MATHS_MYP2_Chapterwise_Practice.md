@@ -11,36 +11,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Ratios+and+proportions%3A+competition+and+cooperation+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Ratios+and+proportions%3A+competition+and+cooperation+revision)
 
-### Set A - Foundation
-1. Convert each to the other two forms: (a) 3/8 (b) 0.45 (c) 125%.
-2. Arrange in ascending order: -2.5, 3/4, -7/3, 0.2, 1.15.
-3. Evaluate: 4^3 - 2^5 + 36/9.
-4. Find 18% of 350 and then increase the result by 20%.
-5. Round 98.7654 to (a) 2 d.p. (b) 1 s.f. (c) nearest whole number.
 
-### Set B - Core Skills
-1. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
-2. Simplify the ratio 84:126 and express it in the form 1:n.
-3. The temperature changed from -6°C to 9°C. Find the total rise.
-4. Express 0.00072 in standard form and compare it with 7.2 x 10^-5.
-5. A number is increased by 12% and becomes 448. Find the original number.
+### Chapter Summary
+- simplifying and comparing ratios
+- sharing quantities in a given ratio
+- solving direct proportion and scale problems
+- using tables or multipliers to extend equivalent ratios
+- connecting ratio thinking to cooperation, competition and resource allocation
+
+### Set A - Foundation
+1. Simplify the ratio 24:24.
+2. Write 4:4 as a fraction in the form part/whole for the first part.
+3. Share 32 in the ratio 4:4.
+4. If pens and pencils are in the ratio 4:4 and there are 28 pens, how many pencils are there?
+5. A map scale is 1:25000. Explain what it means.
+
+### Set B - Core Practice
+1. Write the ratio 0.4:0.4 as a whole-number ratio.
+2. A recipe uses flour and sugar in the ratio 4:4. If flour is 200 g, how much sugar is needed?
+3. Which is the better buy: 750 mL for Rs 48 or 1 L for Rs 62?
+4. A train covers 157 km in 2.5 hours. Find the average speed.
+5. In 'Ratios and proportions: competition and cooperation', give one situation where a ratio communicates information better than a difference.
 
 ### Set C - Application
-1. A map scale is 1:50,000. If two towns are 7.6 cm apart on the map, find the real distance in km.
-2. A phone plan costs ₹299 plus ₹1.75 per minute. Write and use an expression for a 140-minute month.
-3. A family budget is split as 40% rent, 25% food, 15% transport, rest savings. If rent is ₹24,000, find total budget and savings.
-4. Population grew from 48,000 to 54,720 in one year. Find percentage growth.
-5. Design a 5-day expense table and compute mean, median, and range.
+1. Explain why 2:3 and 4:6 describe the same proportional relationship.
+2. A bike travels 83 km on 5 L of fuel. Find the fuel efficiency in km/L.
+3. A school club has money shared in the ratio 4:4:8. If the total is Rs 1769, describe how to find each share.
+4. If 5 notebooks cost Rs 135, what do 8 notebooks cost at the same rate?
+5. Write one reason cross-multiplication works in simple proportion equations.
 
 ### Set D - Challenge
-1. Find the smallest positive integer n such that 72n is a perfect square.
-2. A quantity doubles every 3 hours. If it starts at 120, model and find the amount after 15 hours.
-3. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount? Justify numerically.
-4. Create a real-life scenario where using rounded values changes the decision; show both exact and rounded calculations.
-5. A store marks up an item by 30% and later gives a 20% discount. Find net percentage change from original price.
+1. A scale drawing of a park is 7.5 cm long at a scale of 1:4000. Find the real length in metres.
+2. Explain the difference between a ratio and a rate using one example of each.
+3. If 12 workers complete a task in 15 days at the same rate, how many worker-days is the task?
+4. A juice mix uses concentrate:water = 1:4. How much water is needed for 750 mL of concentrate?
+5. Decide whether this is proportional: 4 pens cost Rs 24 and 9 pens cost Rs 51.
 
 ---
-
 ## Chapter 2: Probability: games and play
 
 ### Video Resources
@@ -48,36 +55,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Probability%3A+games+and+play+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Probability%3A+games+and+play+revision)
 
-### Set A - Foundation
-1. Find mean, median, and mode of: 8, 11, 9, 11, 14, 7, 10, 11.
-2. A bag has 5 red, 3 blue, 2 green balls. Find P(red), P(not blue), and P(green or blue).
-3. Construct a frequency table for marks: 12,15,15,18,18,18,20,21,21,24.
-4. Find range and interquartile range for: 4,7,9,10,12,15,16,18,21.
-5. Convert this data to percentages: A=24, B=18, C=8 students.
 
-### Set B - Core Skills
-1. A spinner has sectors 90°, 120°, and 150°. Find probability of each outcome.
-2. From a class of 30, 18 like football, 12 like basketball, 7 like both. Draw Venn counts for each region.
-3. A die is rolled 120 times and ‘6’ appears 26 times. Find experimental probability and compare with theoretical.
-4. Given grouped data intervals 0-10, 10-20, 20-30 with frequencies 4,9,7, estimate mean using class midpoints.
-5. Interpret a line graph where values are 120, 132, 128, 140, 150 across five months; identify trend and anomaly.
+### Chapter Summary
+- listing outcomes and describing sample spaces
+- finding theoretical probability of simple events
+- comparing theoretical and experimental probability
+- using complements and simple combined events
+- judging whether a game or experiment is fair from evidence
+
+### Set A - Foundation
+1. A bag has 5 red, 3 blue and 1 green counters. Find P(red).
+2. Using the same bag, find P(not blue).
+3. List the sample space for one toss of a coin and one roll of a die.
+4. What is the probability of rolling an even number on a fair die?
+5. Find the probability of getting at least one head when two fair coins are tossed.
+
+### Set B - Core Practice
+1. What is the complement of an event?
+2. If P(A) = 0.35, find P(not A).
+3. A card is chosen from numbers 1 to 12. Find the probability of a multiple of 3.
+4. Draw or describe a simple tree diagram for tossing a coin twice.
+5. A die is rolled twice. What is the probability of getting double six?
 
 ### Set C - Application
-1. Survey 20 students on daily screen-time categories; build a table and represent it as a bar graph.
-2. A weather report says 40% chance of rain for 5 independent days. Find probability of at least one rainy day.
-3. Choose two variables (e.g., study hours vs score) for 10 data points; sketch scatter plot and describe correlation.
-4. A shop tracks weekly sales for 8 weeks. Compute moving average (window=3) and comment on trend.
-5. Create a fair and an unfair game of chance and compute expected gain/loss per round.
+1. A spinner has red, yellow, yellow, blue sections of equal size. Find P(yellow).
+2. Two dice are rolled. What is the probability that the sum is 7?
+3. Explain why mutually exclusive events cannot happen at the same time.
+4. A bag contains only red and blue marbles. P(red)=3/5. If there are 25 marbles, how many are red?
+5. Give one example of an event with probability 0 and one with probability 1.
 
 ### Set D - Challenge
-1. Two hospitals report recovery rates: A=78/100, B=153/200. Which is higher and by how much? Discuss reliability.
-2. A coin is tossed 200 times with 118 heads. Use a suitable test/statistical argument to comment on fairness.
-3. Design a probability model for weather + transport delay and estimate risk of arriving late.
-4. Given data set with an outlier, compare mean vs median and justify which is better for reporting.
-5. Create and solve a criterion D task using real data from your school/community (minimum 2 representations).
+1. Explain why impossible, unlikely, even chance, likely and certain are useful verbal probability descriptors.
+2. A class survey found 18 of 30 learners walk to school. Estimate the probability a randomly chosen learner walks to school.
+3. Write one probability question of your own and solve it.
+4. If one card is chosen from a standard deck, what is the probability it is a red face card?
+5. State one limitation of using only past data to predict the next random event.
 
 ---
-
 ## Chapter 3: Integers: human explorations
 
 ### Video Resources
@@ -85,36 +99,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Integers%3A+human+explorations+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Integers%3A+human+explorations+revision)
 
-### Set A - Foundation
-1. Convert each to the other two forms: (a) 3/8 (b) 0.45 (c) 125%.
-2. Arrange in ascending order: -2.5, 3/4, -7/3, 0.2, 1.15.
-3. Evaluate: 4^3 - 2^5 + 36/9.
-4. Find 18% of 350 and then increase the result by 20%.
-5. Round 98.7654 to (a) 2 d.p. (b) 1 s.f. (c) nearest whole number.
 
-### Set B - Core Skills
-1. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
-2. Simplify the ratio 84:126 and express it in the form 1:n.
-3. The temperature changed from -6°C to 9°C. Find the total rise.
-4. Express 0.00072 in standard form and compare it with 7.2 x 10^-5.
-5. A number is increased by 12% and becomes 448. Find the original number.
+### Chapter Summary
+- locating positive and negative numbers on a number line
+- adding, subtracting, multiplying and dividing signed numbers
+- interpreting negative values in contexts such as temperature, elevation and finance
+- using brackets and order of operations with signed numbers
+- checking whether answers are sensible by thinking about direction and change
+
+### Set A - Foundation
+1. Calculate -14 + 7.
+2. Calculate 7 - (-14).
+3. Calculate -12 x 5.
+4. Calculate -12 / -5.
+5. Order these numbers from least to greatest: -14, 7, -12, -5.
+
+### Set B - Core Practice
+1. Calculate -3^2 and (-3)^2 and explain the difference.
+2. Evaluate -14 + -12 - (-5).
+3. A bank balance changes from Rs 1400 in debt to Rs 700 in credit. What is the total change?
+4. Write two integers whose sum is 8 and whose product is negative.
+5. Find the value of -(-12) + -14.
 
 ### Set C - Application
-1. A map scale is 1:50,000. If two towns are 7.6 cm apart on the map, find the real distance in km.
-2. A phone plan costs ₹299 plus ₹1.75 per minute. Write and use an expression for a 140-minute month.
-3. A family budget is split as 40% rent, 25% food, 15% transport, rest savings. If rent is ₹24,000, find total budget and savings.
-4. Population grew from 48,000 to 54,720 in one year. Find percentage growth.
-5. Design a 5-day expense table and compute mean, median, and range.
+1. Find the missing number: __ + -14 = -12.
+2. Evaluate (-14)(-5) + 7.
+3. Compare -7 and -14. Which is greater?
+4. Write the opposite of -12.
+5. A submarine drops from 7 m to -14 m. How far did it descend?
 
 ### Set D - Challenge
-1. Find the smallest positive integer n such that 72n is a perfect square.
-2. A quantity doubles every 3 hours. If it starts at 120, model and find the amount after 15 hours.
-3. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount? Justify numerically.
-4. Create a real-life scenario where using rounded values changes the decision; show both exact and rounded calculations.
-5. A store marks up an item by 30% and later gives a 20% discount. Find net percentage change from original price.
+1. Write one checking strategy you could use after solving a signed-number word problem.
+2. A game score changes by -14, then 7, then -12. What is the final change?
+3. Calculate (-12 - -14) / 5.
+4. Find an integer that is greater than -14 but less than -12.
+5. Simplify -(-(-14)).
 
 ---
-
 ## Chapter 4: Algebraic expressions and equations: puzzles and tricks
 
 ### Video Resources
@@ -122,36 +143,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Algebraic+expressions+and+equations%3A+puzzles+and+tricks+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Algebraic+expressions+and+equations%3A+puzzles+and+tricks+revision)
 
-### Set A - Foundation
-1. Simplify: 5x - 3(2x - 7) + 4.
-2. Factorize completely: 6x^2 - 15x.
-3. Solve: 3(2x - 5) = 4x + 9.
-4. If y = 4x - 3, find y when x = -2, 0, 5.
-5. Expand and simplify: (x + 4)(x - 7).
 
-### Set B - Core Skills
-1. Solve the pair of equations: 2x + y = 11 and x - y = 1.
-2. A rectangle has length (x+3) and width (x-1). Form and simplify its area expression.
-3. For f(x)=x^2-4x+1, find f(0), f(2), f(-1).
-4. Rearrange the formula v = u + at to make t the subject.
-5. Find the slope of the line through (2,5) and (8,17).
+### Chapter Summary
+- simplifying, expanding and factorising algebraic expressions
+- solving linear equations from straightforward and contextual tasks
+- forming expressions or formulas to represent situations
+- substituting into formulas and evaluating expressions accurately
+- using algebra to reveal patterns, tricks and general rules
+
+### Set A - Foundation
+1. Simplify 4x + 4x.
+2. Substitute x = -3 into 3x + 5.
+3. Expand 4(x + 4).
+4. Factorise 16x + 8.
+5. Solve 4x + 4 = -8.
+
+### Set B - Core Practice
+1. Solve 2x - 4 = 4.
+2. Expand and simplify (x + 4)(x + 4).
+3. Find the value of y when y = 4x - 4 and x = -3.
+4. Explain the difference between an expression and an equation.
+5. Rearrange v = u + 4t to make t the subject.
 
 ### Set C - Application
-1. A cab fare is ₹80 fixed + ₹14 per km. Write a linear model and find fare for 18 km.
-2. A company’s profit p is modeled by p = -2x^2 + 40x - 96. Find profit at x=6 and x=10 and interpret.
-3. A tank has 500 L and leaks 12 L/hour while filling at 20 L/hour. Model volume after h hours and find when it reaches 700 L.
-4. Given two plans: A=₹399 + ₹2/message, B=₹699 + ₹1/message, find break-even point.
-5. Plot points for y = -x + 4 for x=-1,0,1,2,3 and identify intercepts.
+1. Collect like terms in 4x + 4 - 2x + 4.
+2. Factorise x^2 + 8x + 16.
+3. Solve 4(x + 1) = -8.
+4. What does it mean for two expressions to be equivalent?
+5. Write a formula for the perimeter of a rectangle with length x + 4 and width x + 4.
 
 ### Set D - Challenge
-1. Solve and verify: (x-3)/(x+1) + (2x)/(x^2-1) = 1, where x != ±1.
-2. Find all integer solutions of 2x + 3y = 24 with x >= 0, y >= 0.
-3. A projectile path is h(t) = -5t^2 + 20t + 1. Find maximum height and the time it occurs.
-4. Show two different methods to solve x^2 - 9x + 20 = 0 and compare efficiency.
-5. Create and solve one system-of-equations word problem with integer answers.
+1. Write and solve an equation for 'three less than twice a number is -9'.
+2. State one difference between expanding and factorising.
+3. Find the gradient of the line y = 4x + 4.
+4. Evaluate 2a + 3b when a = 4 and b = 4.
+5. Explain why algebra is useful for proving that a pattern always works.
 
 ---
-
 ## Chapter 5: 2D and 3D geometry: human and natural landscapes
 
 ### Video Resources
@@ -159,36 +187,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+2D+and+3D+geometry%3A+human+and+natural+landscapes+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+2D+and+3D+geometry%3A+human+and+natural+landscapes+revision)
 
-### Set A - Foundation
-1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
-2. A triangle has sides 7 cm, 8 cm, 9 cm. Find its semi-perimeter and area (Heron’s formula).
-3. Find volume of a cylinder with radius 3.5 cm and height 12 cm (use pi = 22/7).
-4. Construct (with ruler/compass) a 60° angle and bisect it; report resulting angles.
-5. A cuboid is 10 cm x 6 cm x 4 cm. Find total surface area.
 
-### Set B - Core Skills
-1. In ΔABC, AB=AC and ∠B=52°. Find ∠A and ∠C.
-2. A map uses a 1:200 scale drawing of a park as 15 cm by 9 cm. Find actual dimensions.
-3. Find the length of the diagonal of a rectangle 9 cm by 12 cm.
-4. A sector has radius 10 cm and angle 72°. Find arc length and sector area.
-5. A cone has radius 5 cm and slant height 13 cm. Find curved surface area.
+### Chapter Summary
+- calculating perimeter, area, surface area or volume in suitable cases
+- identifying properties of 2D shapes and 3D solids
+- using nets, cross-sections or scale diagrams to reason visually
+- selecting and converting units carefully
+- applying geometry to human-made and natural landscapes
+
+### Set A - Foundation
+1. Find the perimeter of a rectangle with length 14 cm and width 9 cm.
+2. Find the area of the same rectangle.
+3. Find the volume of a cuboid 8 cm by 5 cm by 4 cm.
+4. State one reason units matter in measurement.
+5. Convert 2.5 m to cm.
+
+### Set B - Core Practice
+1. Convert 1500 mL to litres.
+2. Find the area of a circle with radius 7 cm using pi = 22/7.
+3. State one difference between area and volume.
+4. Find the total surface area of a cube of side 5 cm.
+5. Explain why a net can help with surface-area reasoning.
 
 ### Set C - Application
-1. A room is 5.2 m by 4.6 m. Tiles are 40 cm by 40 cm. How many tiles are needed (ignore wastage)?
-2. Design a rectangular garden of area 96 m² with integer dimensions and minimum perimeter.
-3. A water tank is a cylinder of radius 1.2 m and height 2.5 m. Find capacity in liters.
-4. A drone moves 120 m east then 50 m north. Find direct distance from start and bearing context statement.
-5. Model and compare material needed for open-top vs closed-top box of same dimensions.
+1. Find the diagonal of a 3 by 4 rectangle.
+2. State one reason capacity and volume are closely related.
+3. A box measures 20 cm by 15 cm by 10 cm. Find its volume.
+4. Explain when a composite area method is needed.
+5. Find the area of a semicircle of radius 7 cm using pi = 22/7.
 
 ### Set D - Challenge
-1. A frustum has radii 6 cm and 3 cm, height 8 cm. Find its volume.
-2. Prove that the angle in a semicircle is a right angle using a circle diagram and reasoning.
-3. A ladder 13 m long reaches a wall with foot 5 m from wall. Find height reached; then height if foot moves to 7 m.
-4. Create a net for a triangular prism and calculate total surface area for your chosen dimensions.
-5. Investigate how scaling side lengths by factor k changes area and volume; test with k=1.5 and k=3.
+1. Find the area of a square of side 13 cm.
+2. Explain why scaling a shape by factor 2 changes area by factor 4.
+3. Find the perimeter of a semicircle of radius 7 cm using pi = 22/7.
+4. State one reason surface area matters in packaging.
+5. Convert 0.75 kg to grams.
 
 ---
-
 ## Chapter 6: Rates: interconnectedness of human-made systems
 
 ### Video Resources
@@ -196,36 +231,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Rates%3A+interconnectedness+of+human-made+systems+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Rates%3A+interconnectedness+of+human-made+systems+revision)
 
-### Set A - Foundation
-1. Simplify: 5x - 3(2x - 7) + 4.
-2. Factorize completely: 6x^2 - 15x.
-3. Solve: 3(2x - 5) = 4x + 9.
-4. If y = 4x - 3, find y when x = -2, 0, 5.
-5. Expand and simplify: (x + 4)(x - 7).
 
-### Set B - Core Skills
-1. Solve the pair of equations: 2x + y = 11 and x - y = 1.
-2. A rectangle has length (x+3) and width (x-1). Form and simplify its area expression.
-3. For f(x)=x^2-4x+1, find f(0), f(2), f(-1).
-4. Rearrange the formula v = u + at to make t the subject.
-5. Find the slope of the line through (2,5) and (8,17).
+### Chapter Summary
+- calculating unit rates and comparing rates of change
+- solving distance, time, speed and flow-rate problems
+- converting compound units when required
+- modelling real systems where one quantity depends on another
+- using rate reasoning to explain efficient or sustainable choices
+
+### Set A - Foundation
+1. Simplify the ratio 24:24.
+2. Write 4:4 as a fraction in the form part/whole for the first part.
+3. Share 32 in the ratio 4:4.
+4. If pens and pencils are in the ratio 4:4 and there are 28 pens, how many pencils are there?
+5. A map scale is 1:25000. Explain what it means.
+
+### Set B - Core Practice
+1. Write the ratio 0.4:0.4 as a whole-number ratio.
+2. A recipe uses flour and sugar in the ratio 4:4. If flour is 200 g, how much sugar is needed?
+3. Which is the better buy: 750 mL for Rs 48 or 1 L for Rs 62?
+4. A train covers 157 km in 2.5 hours. Find the average speed.
+5. In 'Rates: interconnectedness of human-made systems', give one situation where a ratio communicates information better than a difference.
 
 ### Set C - Application
-1. A cab fare is ₹80 fixed + ₹14 per km. Write a linear model and find fare for 18 km.
-2. A company’s profit p is modeled by p = -2x^2 + 40x - 96. Find profit at x=6 and x=10 and interpret.
-3. A tank has 500 L and leaks 12 L/hour while filling at 20 L/hour. Model volume after h hours and find when it reaches 700 L.
-4. Given two plans: A=₹399 + ₹2/message, B=₹699 + ₹1/message, find break-even point.
-5. Plot points for y = -x + 4 for x=-1,0,1,2,3 and identify intercepts.
+1. Explain why 2:3 and 4:6 describe the same proportional relationship.
+2. A bike travels 83 km on 5 L of fuel. Find the fuel efficiency in km/L.
+3. A school club has money shared in the ratio 4:4:8. If the total is Rs 1769, describe how to find each share.
+4. If 5 notebooks cost Rs 135, what do 8 notebooks cost at the same rate?
+5. Write one reason cross-multiplication works in simple proportion equations.
 
 ### Set D - Challenge
-1. Solve and verify: (x-3)/(x+1) + (2x)/(x^2-1) = 1, where x != ±1.
-2. Find all integer solutions of 2x + 3y = 24 with x >= 0, y >= 0.
-3. A projectile path is h(t) = -5t^2 + 20t + 1. Find maximum height and the time it occurs.
-4. Show two different methods to solve x^2 - 9x + 20 = 0 and compare efficiency.
-5. Create and solve one system-of-equations word problem with integer answers.
+1. A scale drawing of a park is 7.5 cm long at a scale of 1:4000. Find the real length in metres.
+2. Explain the difference between a ratio and a rate using one example of each.
+3. If 12 workers complete a task in 15 days at the same rate, how many worker-days is the task?
+4. A juice mix uses concentrate:water = 1:4. How much water is needed for 750 mL of concentrate?
+5. Decide whether this is proportional: 4 pens cost Rs 24 and 9 pens cost Rs 51.
 
 ---
-
 ## Chapter 7: Univariate data: accessing equal opportunities
 
 ### Video Resources
@@ -233,32 +275,40 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Univariate+data%3A+accessing+equal+opportunities+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Univariate+data%3A+accessing+equal+opportunities+revision)
 
-### Set A - Foundation
-1. Find mean, median, and mode of: 8, 11, 9, 11, 14, 7, 10, 11.
-2. A bag has 5 red, 3 blue, 2 green balls. Find P(red), P(not blue), and P(green or blue).
-3. Construct a frequency table for marks: 12,15,15,18,18,18,20,21,21,24.
-4. Find range and interquartile range for: 4,7,9,10,12,15,16,18,21.
-5. Convert this data to percentages: A=24, B=18, C=8 students.
 
-### Set B - Core Skills
-1. A spinner has sectors 90°, 120°, and 150°. Find probability of each outcome.
-2. From a class of 30, 18 like football, 12 like basketball, 7 like both. Draw Venn counts for each region.
-3. A die is rolled 120 times and ‘6’ appears 26 times. Find experimental probability and compare with theoretical.
-4. Given grouped data intervals 0-10, 10-20, 20-30 with frequencies 4,9,7, estimate mean using class midpoints.
-5. Interpret a line graph where values are 120, 132, 128, 140, 150 across five months; identify trend and anomaly.
+### Chapter Summary
+- summarising one-variable data with tables and diagrams
+- using mean, median, mode, range and quartiles appropriately
+- comparing distributions using centre and spread
+- recognising outliers and thinking about their effect on results
+- linking numerical summaries to issues of fairness and access
+
+### Set A - Foundation
+1. Find the mean of: 9, 13, 14, 16, 18, 23, 25, 26, 27.
+2. Find the median of: 9, 13, 14, 16, 18, 23, 25, 26, 27.
+3. Find the range of: 9, 13, 14, 16, 18, 23, 25, 26, 27.
+4. State one situation where a bar chart is more suitable than a line graph.
+5. Explain what an outlier is.
+
+### Set B - Core Practice
+1. What is the mode of 4, 6, 6, 8, 9, 9, 9, 12?
+2. A frequency table shows scores 1,2,3,4 with frequencies 2,5,4,1. How many results are there?
+3. Explain why the same mean can come from very different data sets.
+4. Suggest one question that would produce numerical data and one that would produce categorical data.
+5. A graph axis starts at 90 instead of 0. Why might that be misleading?
 
 ### Set C - Application
-1. Survey 20 students on daily screen-time categories; build a table and represent it as a bar graph.
-2. A weather report says 40% chance of rain for 5 independent days. Find probability of at least one rainy day.
-3. Choose two variables (e.g., study hours vs score) for 10 data points; sketch scatter plot and describe correlation.
-4. A shop tracks weekly sales for 8 weeks. Compute moving average (window=3) and comment on trend.
-5. Create a fair and an unfair game of chance and compute expected gain/loss per round.
+1. Find the mean of 12, 15, 18, 21, 24.
+2. A class of 24 learners has a median score of 16. Explain what that means.
+3. Choose which is better for showing change over time: bar chart or line graph. Explain.
+4. What is the total frequency if class intervals have frequencies 5, 8, 11 and 6?
+5. Write one conclusion that should not be made from a very small sample.
 
 ### Set D - Challenge
-1. Two hospitals report recovery rates: A=78/100, B=153/200. Which is higher and by how much? Discuss reliability.
-2. A coin is tossed 200 times with 118 heads. Use a suitable test/statistical argument to comment on fairness.
-3. Design a probability model for weather + transport delay and estimate risk of arriving late.
-4. Given data set with an outlier, compare mean vs median and justify which is better for reporting.
-5. Create and solve a criterion D task using real data from your school/community (minimum 2 representations).
+1. A data set has mean 12 and median 18. What might that suggest?
+2. Explain why grouped data only gives an estimate for the mean.
+3. What information does a scatter graph show?
+4. State one reason to keep raw data before making a graph.
+5. Name one ethical issue to consider when collecting human data.
 
 ---

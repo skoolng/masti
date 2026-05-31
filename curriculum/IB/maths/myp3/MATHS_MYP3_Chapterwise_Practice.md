@@ -11,36 +11,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Number%3A+discoveries+and+developments+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Number%3A+discoveries+and+developments+revision)
 
-### Set A - Foundation
-1. Convert each to the other two forms: (a) 3/8 (b) 0.45 (c) 125%.
-2. Arrange in ascending order: -2.5, 3/4, -7/3, 0.2, 1.15.
-3. Evaluate: 4^3 - 2^5 + 36/9.
-4. Find 18% of 350 and then increase the result by 20%.
-5. Round 98.7654 to (a) 2 d.p. (b) 1 s.f. (c) nearest whole number.
 
-### Set B - Core Skills
-1. A school canteen sold 240 meals; 35% were vegetarian. How many were not vegetarian?
-2. Simplify the ratio 84:126 and express it in the form 1:n.
-3. The temperature changed from -6°C to 9°C. Find the total rise.
-4. Express 0.00072 in standard form and compare it with 7.2 x 10^-5.
-5. A number is increased by 12% and becomes 448. Find the original number.
+### Chapter Summary
+- working with powers, roots, standard form and rational or irrational numbers
+- using index laws to simplify expressions and compare very large or small values
+- rounding to a suitable level of accuracy using decimal places or significant figures
+- interpreting number patterns and writing general rules from them
+- using precise notation to explain how number ideas connect
+
+### Set A - Foundation
+1. Write 81,141 in expanded form.
+2. Arrange these numbers in ascending order: 520, 3697, 29, 464.
+3. Round 82847 to the nearest 100.
+4. Find the value of 4^5.
+5. Write 1/8 as a decimal.
+
+### Set B - Core Practice
+1. Use divisibility rules to decide whether 942 is divisible by 3 and 9.
+2. Find the least common multiple of 16 and 24.
+3. Write 0.51 as a fraction in simplest form.
+4. Classify sqrt(8) as rational or irrational.
+5. Evaluate 2^0 and explain why the answer makes sense.
 
 ### Set C - Application
-1. A map scale is 1:50,000. If two towns are 7.6 cm apart on the map, find the real distance in km.
-2. A phone plan costs ₹299 plus ₹1.75 per minute. Write and use an expression for a 140-minute month.
-3. A family budget is split as 40% rent, 25% food, 15% transport, rest savings. If rent is ₹24,000, find total budget and savings.
-4. Population grew from 48,000 to 54,720 in one year. Find percentage growth.
-5. Design a 5-day expense table and compute mean, median, and range.
+1. Write a rule for finding the next term in 4, 7, 10, 13, ... and give the 10th term.
+2. Evaluate (6^2 - 5^2) / 11.
+3. A box holds 29 packets. 14 boxes arrive. Find the total number of packets.
+4. Explain why 0.4, 40% and 2/5 represent the same amount.
+5. Choose a real-life quantity that is easier to write in standard form and explain why.
 
 ### Set D - Challenge
-1. Find the smallest positive integer n such that 72n is a perfect square.
-2. A quantity doubles every 3 hours. If it starts at 120, model and find the amount after 15 hours.
-3. Two discounts of 15% and 10% are applied successively. Is this equal to a single 25% discount? Justify numerically.
-4. Create a real-life scenario where using rounded values changes the decision; show both exact and rounded calculations.
-5. A store marks up an item by 30% and later gives a 20% discount. Find net percentage change from original price.
+1. Use the chapter title 'Number: discoveries and developments' to write one sentence about how number forms can change the way information is communicated.
+2. Show two different ways to represent the number 4500.
+3. Evaluate sqrt(121) + 8.
+4. Identify which is larger without a calculator: 5^4 or 4^5.
+5. Find the missing number: 18, __, 30, 36 if the pattern adds the same amount each time.
 
 ---
-
 ## Chapter 2: Triangles: principles, processes and solutions
 
 ### Video Resources
@@ -48,36 +55,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Triangles%3A+principles%2C+processes+and+solutions+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Triangles%3A+principles%2C+processes+and+solutions+revision)
 
-### Set A - Foundation
-1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
-2. A triangle has sides 7 cm, 8 cm, 9 cm. Find its semi-perimeter and area (Heron’s formula).
-3. Find volume of a cylinder with radius 3.5 cm and height 12 cm (use pi = 22/7).
-4. Construct (with ruler/compass) a 60° angle and bisect it; report resulting angles.
-5. A cuboid is 10 cm x 6 cm x 4 cm. Find total surface area.
 
-### Set B - Core Skills
-1. In ΔABC, AB=AC and ∠B=52°. Find ∠A and ∠C.
-2. A map uses a 1:200 scale drawing of a park as 15 cm by 9 cm. Find actual dimensions.
-3. Find the length of the diagonal of a rectangle 9 cm by 12 cm.
-4. A sector has radius 10 cm and angle 72°. Find arc length and sector area.
-5. A cone has radius 5 cm and slant height 13 cm. Find curved surface area.
+### Chapter Summary
+- using angle sum and exterior angle facts in triangles
+- working with isosceles, equilateral, scalene and right triangles
+- applying congruence or Pythagoras in suitable cases
+- using triangle properties to justify a result
+- connecting triangle reasoning to engineered or natural structures
+
+### Set A - Foundation
+1. State the angle sum of a triangle.
+2. A triangle has angles 50 deg, 60 deg and x. Find x.
+3. State one property of an isosceles triangle.
+4. Find the hypotenuse of a right triangle with legs 3 and 4.
+5. Explain what congruent triangles have in common.
+
+### Set B - Core Practice
+1. If two angles of a triangle are equal, what can you say about the opposite sides?
+2. State the exterior angle theorem for triangles.
+3. Find the area of a triangle with base 10 cm and height 7 cm.
+4. State one way to recognise a right triangle from side lengths alone.
+5. Explain why similar shapes can have different areas even when they look alike.
 
 ### Set C - Application
-1. A room is 5.2 m by 4.6 m. Tiles are 40 cm by 40 cm. How many tiles are needed (ignore wastage)?
-2. Design a rectangular garden of area 96 m² with integer dimensions and minimum perimeter.
-3. A water tank is a cylinder of radius 1.2 m and height 2.5 m. Find capacity in liters.
-4. A drone moves 120 m east then 50 m north. Find direct distance from start and bearing context statement.
-5. Model and compare material needed for open-top vs closed-top box of same dimensions.
+1. A scale model uses factor 3. If one side is 4 cm on the original, what is the image side?
+2. If the scale factor between similar triangles is 2, how does the area scale?
+3. State one clue that two triangles might be congruent but not similar-only.
+4. Explain why right triangles are often used with Pythagoras or trigonometry.
+5. Find the third side if a right triangle has hypotenuse 13 and one leg 5.
 
 ### Set D - Challenge
-1. A frustum has radii 6 cm and 3 cm, height 8 cm. Find its volume.
-2. Prove that the angle in a semicircle is a right angle using a circle diagram and reasoning.
-3. A ladder 13 m long reaches a wall with foot 5 m from wall. Find height reached; then height if foot moves to 7 m.
-4. Create a net for a triangular prism and calculate total surface area for your chosen dimensions.
-5. Investigate how scaling side lengths by factor k changes area and volume; test with k=1.5 and k=3.
+1. Describe one reason a triangle is the simplest polygon for proof work.
+2. A triangle has angles 35 deg and 95 deg. Find the third angle.
+3. State whether SSS proves similarity or congruence when all sides match exactly.
+4. Explain why mirror-image triangles can still be congruent.
+5. A model triangle is half the side lengths of the original. What is the scale factor from original to model?
 
 ---
-
 ## Chapter 3: Linear relationships: impact of human decision-making
 
 ### Video Resources
@@ -85,36 +99,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Linear+relationships%3A+impact+of+human+decision-making+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Linear+relationships%3A+impact+of+human+decision-making+revision)
 
-### Set A - Foundation
-1. Simplify: 5x - 3(2x - 7) + 4.
-2. Factorize completely: 6x^2 - 15x.
-3. Solve: 3(2x - 5) = 4x + 9.
-4. If y = 4x - 3, find y when x = -2, 0, 5.
-5. Expand and simplify: (x + 4)(x - 7).
 
-### Set B - Core Skills
-1. Solve the pair of equations: 2x + y = 11 and x - y = 1.
-2. A rectangle has length (x+3) and width (x-1). Form and simplify its area expression.
-3. For f(x)=x^2-4x+1, find f(0), f(2), f(-1).
-4. Rearrange the formula v = u + at to make t the subject.
-5. Find the slope of the line through (2,5) and (8,17).
+### Chapter Summary
+- reading and building tables for linear patterns
+- finding gradient and intercept from equations, graphs or data
+- drawing graphs of linear equations and interpreting what they mean
+- moving between words, tables, graphs and rules for the same relationship
+- using linear models to represent decisions and trends
+
+### Set A - Foundation
+1. Find y when y = 5x + -2 and x = 2.
+2. State the gradient and y-intercept of y = 5x + -2.
+3. Plot the points (2, 8) and (4, 18) and describe the line.
+4. Find the gradient between (2, 8) and (4, 18).
+5. Write the equation of the line through (2, 8) with gradient 5.
+
+### Set B - Core Practice
+1. Make a table of values for y = 5x + -2 for x = -1, 0, 1, 2.
+2. Which line is steeper: y = 5x + 1 or y = 7x - 3?
+3. Find the x-intercept of y = 5x + -2.
+4. Explain the meaning of constant rate of change.
+5. A tank starts with 22 L and fills at 5 L per minute. How much water is there after 12 minutes?
 
 ### Set C - Application
-1. A cab fare is ₹80 fixed + ₹14 per km. Write a linear model and find fare for 18 km.
-2. A company’s profit p is modeled by p = -2x^2 + 40x - 96. Find profit at x=6 and x=10 and interpret.
-3. A tank has 500 L and leaks 12 L/hour while filling at 20 L/hour. Model volume after h hours and find when it reaches 700 L.
-4. Given two plans: A=₹399 + ₹2/message, B=₹699 + ₹1/message, find break-even point.
-5. Plot points for y = -x + 4 for x=-1,0,1,2,3 and identify intercepts.
+1. Find y when x = 0 for y = 5x + -2.
+2. Find the midpoint of (2, 8) and (4, 18).
+3. A streaming plan charges Rs 102 plus Rs 15 per movie. How many movies can be watched for Rs 237?
+4. State one advantage of finding an equation from two points instead of guessing from a graph.
+5. Compare the gradients of y = 5x + -2 and y = -5x + -2.
 
 ### Set D - Challenge
-1. Solve and verify: (x-3)/(x+1) + (2x)/(x^2-1) = 1, where x != ±1.
-2. Find all integer solutions of 2x + 3y = 24 with x >= 0, y >= 0.
-3. A projectile path is h(t) = -5t^2 + 20t + 1. Find maximum height and the time it occurs.
-4. Show two different methods to solve x^2 - 9x + 20 = 0 and compare efficiency.
-5. Create and solve one system-of-equations word problem with integer answers.
+1. Solve 5x + -2 = 33.
+2. Describe one situation where a linear graph should start at x = 0 and one where it should not.
+3. Find a rule for a sequence with first term 3 and common difference 5.
+4. Explain why lines with the same gradient never meet, if they have different intercepts.
+5. Find the distance along the x-axis between the points x = 2 and x = 4.
 
 ---
-
 ## Chapter 4: 3D shapes: products, processes and solutions
 
 ### Video Resources
@@ -122,36 +143,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+3D+shapes%3A+products%2C+processes+and+solutions+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+3D+shapes%3A+products%2C+processes+and+solutions+revision)
 
-### Set A - Foundation
-1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
-2. A triangle has sides 7 cm, 8 cm, 9 cm. Find its semi-perimeter and area (Heron’s formula).
-3. Find volume of a cylinder with radius 3.5 cm and height 12 cm (use pi = 22/7).
-4. Construct (with ruler/compass) a 60° angle and bisect it; report resulting angles.
-5. A cuboid is 10 cm x 6 cm x 4 cm. Find total surface area.
 
-### Set B - Core Skills
-1. In ΔABC, AB=AC and ∠B=52°. Find ∠A and ∠C.
-2. A map uses a 1:200 scale drawing of a park as 15 cm by 9 cm. Find actual dimensions.
-3. Find the length of the diagonal of a rectangle 9 cm by 12 cm.
-4. A sector has radius 10 cm and angle 72°. Find arc length and sector area.
-5. A cone has radius 5 cm and slant height 13 cm. Find curved surface area.
+### Chapter Summary
+- identifying faces, edges and vertices of common solids
+- interpreting nets and simple cross-sections
+- calculating surface area or volume of basic 3D shapes
+- connecting shape structure to packaging or product design
+- using diagrams to explain spatial reasoning clearly
+
+### Set A - Foundation
+1. Find the perimeter of a rectangle with length 14 cm and width 9 cm.
+2. State the number of faces, edges and vertices of a triangular prism.
+3. Find the volume of a cuboid 8 cm by 5 cm by 4 cm.
+4. State one reason units matter in measurement.
+5. Convert 2.5 m to cm.
+
+### Set B - Core Practice
+1. Convert 1500 mL to litres.
+2. Find the area of a circle with radius 7 cm using pi = 22/7.
+3. State one difference between area and volume.
+4. Find the total surface area of a cube of side 5 cm.
+5. Explain why a net can help with surface-area reasoning.
 
 ### Set C - Application
-1. A room is 5.2 m by 4.6 m. Tiles are 40 cm by 40 cm. How many tiles are needed (ignore wastage)?
-2. Design a rectangular garden of area 96 m² with integer dimensions and minimum perimeter.
-3. A water tank is a cylinder of radius 1.2 m and height 2.5 m. Find capacity in liters.
-4. A drone moves 120 m east then 50 m north. Find direct distance from start and bearing context statement.
-5. Model and compare material needed for open-top vs closed-top box of same dimensions.
+1. Find the diagonal of a 3 by 4 rectangle.
+2. State one reason capacity and volume are closely related.
+3. A box measures 20 cm by 15 cm by 10 cm. Find its volume.
+4. Explain when a composite area method is needed.
+5. Find the area of a semicircle of radius 7 cm using pi = 22/7.
 
 ### Set D - Challenge
-1. A frustum has radii 6 cm and 3 cm, height 8 cm. Find its volume.
-2. Prove that the angle in a semicircle is a right angle using a circle diagram and reasoning.
-3. A ladder 13 m long reaches a wall with foot 5 m from wall. Find height reached; then height if foot moves to 7 m.
-4. Create a net for a triangular prism and calculate total surface area for your chosen dimensions.
-5. Investigate how scaling side lengths by factor k changes area and volume; test with k=1.5 and k=3.
+1. Find the area of a square of side 13 cm.
+2. Explain why scaling a shape by factor 2 changes area by factor 4.
+3. Find the perimeter of a semicircle of radius 7 cm using pi = 22/7.
+4. State one reason surface area matters in packaging.
+5. Convert 0.75 kg to grams.
 
 ---
-
 ## Chapter 5: Bivariate data: what it means to be human
 
 ### Video Resources
@@ -159,36 +187,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Bivariate+data%3A+what+it+means+to+be+human+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Bivariate+data%3A+what+it+means+to+be+human+revision)
 
-### Set A - Foundation
-1. Find mean, median, and mode of: 8, 11, 9, 11, 14, 7, 10, 11.
-2. A bag has 5 red, 3 blue, 2 green balls. Find P(red), P(not blue), and P(green or blue).
-3. Construct a frequency table for marks: 12,15,15,18,18,18,20,21,21,24.
-4. Find range and interquartile range for: 4,7,9,10,12,15,16,18,21.
-5. Convert this data to percentages: A=24, B=18, C=8 students.
 
-### Set B - Core Skills
-1. A spinner has sectors 90°, 120°, and 150°. Find probability of each outcome.
-2. From a class of 30, 18 like football, 12 like basketball, 7 like both. Draw Venn counts for each region.
-3. A die is rolled 120 times and ‘6’ appears 26 times. Find experimental probability and compare with theoretical.
-4. Given grouped data intervals 0-10, 10-20, 20-30 with frequencies 4,9,7, estimate mean using class midpoints.
-5. Interpret a line graph where values are 120, 132, 128, 140, 150 across five months; identify trend and anomaly.
+### Chapter Summary
+- plotting and interpreting scatter graphs for paired data
+- describing positive, negative or no correlation
+- drawing and using a line of best fit when appropriate
+- commenting on interpolation, extrapolation and possible outliers
+- questioning whether a relationship shown by data is useful or trustworthy
+
+### Set A - Foundation
+1. Explain what positive correlation means on a scatter graph.
+2. Explain what negative correlation means on a scatter graph.
+3. State one example of a pair of variables that might show no correlation.
+4. State one situation where a bar chart is more suitable than a line graph.
+5. Explain what an outlier is.
+
+### Set B - Core Practice
+1. What is the mode of 4, 6, 6, 8, 9, 9, 9, 12?
+2. A frequency table shows scores 1,2,3,4 with frequencies 2,5,4,1. How many results are there?
+3. Explain why the same mean can come from very different data sets.
+4. Suggest one question that would produce numerical data and one that would produce categorical data.
+5. A graph axis starts at 90 instead of 0. Why might that be misleading?
 
 ### Set C - Application
-1. Survey 20 students on daily screen-time categories; build a table and represent it as a bar graph.
-2. A weather report says 40% chance of rain for 5 independent days. Find probability of at least one rainy day.
-3. Choose two variables (e.g., study hours vs score) for 10 data points; sketch scatter plot and describe correlation.
-4. A shop tracks weekly sales for 8 weeks. Compute moving average (window=3) and comment on trend.
-5. Create a fair and an unfair game of chance and compute expected gain/loss per round.
+1. Find the mean of 12, 15, 18, 21, 24.
+2. A class of 24 learners has a median score of 16. Explain what that means.
+3. Choose which is better for showing change over time: bar chart or line graph. Explain.
+4. What is the total frequency if class intervals have frequencies 5, 8, 11 and 6?
+5. Write one conclusion that should not be made from a very small sample.
 
 ### Set D - Challenge
-1. Two hospitals report recovery rates: A=78/100, B=153/200. Which is higher and by how much? Discuss reliability.
-2. A coin is tossed 200 times with 118 heads. Use a suitable test/statistical argument to comment on fairness.
-3. Design a probability model for weather + transport delay and estimate risk of arriving late.
-4. Given data set with an outlier, compare mean vs median and justify which is better for reporting.
-5. Create and solve a criterion D task using real data from your school/community (minimum 2 representations).
+1. A data set has mean 12 and median 18. What might that suggest?
+2. Explain why grouped data only gives an estimate for the mean.
+3. What information does a scatter graph show?
+4. State one reason to keep raw data before making a graph.
+5. Name one ethical issue to consider when collecting human data.
 
 ---
-
 ## Chapter 6: Geometric transformations: expressing beliefs and values
 
 ### Video Resources
@@ -196,36 +231,43 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Geometric+transformations%3A+expressing+beliefs+and+values+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Geometric+transformations%3A+expressing+beliefs+and+values+revision)
 
-### Set A - Foundation
-1. Find area and perimeter of a rectangle of length 14 cm and width 9 cm.
-2. A triangle has sides 7 cm, 8 cm, 9 cm. Find its semi-perimeter and area (Heron’s formula).
-3. Find volume of a cylinder with radius 3.5 cm and height 12 cm (use pi = 22/7).
-4. Construct (with ruler/compass) a 60° angle and bisect it; report resulting angles.
-5. A cuboid is 10 cm x 6 cm x 4 cm. Find total surface area.
 
-### Set B - Core Skills
-1. In ΔABC, AB=AC and ∠B=52°. Find ∠A and ∠C.
-2. A map uses a 1:200 scale drawing of a park as 15 cm by 9 cm. Find actual dimensions.
-3. Find the length of the diagonal of a rectangle 9 cm by 12 cm.
-4. A sector has radius 10 cm and angle 72°. Find arc length and sector area.
-5. A cone has radius 5 cm and slant height 13 cm. Find curved surface area.
+### Chapter Summary
+- combining translations, reflections, rotations and enlargements
+- using coordinates and scale factors accurately
+- describing which transformations preserve size and shape
+- comparing single and combined transformations
+- using transformation language to express ideas, values or design choices
+
+### Set A - Foundation
+1. Describe a translation by the vector (3, -2).
+2. State what a reflection in the x-axis does to a point (x, y).
+3. State what a reflection in the y-axis does to a point (x, y).
+4. Describe a rotation of 90 deg clockwise about the origin.
+5. What does an enlargement with scale factor 2 do?
+
+### Set B - Core Practice
+1. Find the image of (-1, 4) after reflection in the x-axis.
+2. Find the image of (5, -2) after reflection in the y-axis.
+3. Describe a half-turn about the origin.
+4. Explain why a rotation needs a centre, an angle and a direction.
+5. State what stays the same after a translation.
 
 ### Set C - Application
-1. A room is 5.2 m by 4.6 m. Tiles are 40 cm by 40 cm. How many tiles are needed (ignore wastage)?
-2. Design a rectangular garden of area 96 m² with integer dimensions and minimum perimeter.
-3. A water tank is a cylinder of radius 1.2 m and height 2.5 m. Find capacity in liters.
-4. A drone moves 120 m east then 50 m north. Find direct distance from start and bearing context statement.
-5. Model and compare material needed for open-top vs closed-top box of same dimensions.
+1. Which transformation changes orientation but not size: reflection or translation?
+2. State whether an enlargement with scale factor 1 changes a figure.
+3. Explain one way two transformations can be combined to make a design pattern.
+4. Find the image of (4, 0) after a 180 deg rotation about the origin.
+5. State one transformation that can take any point to itself besides doing nothing to the whole figure.
 
 ### Set D - Challenge
-1. A frustum has radii 6 cm and 3 cm, height 8 cm. Find its volume.
-2. Prove that the angle in a semicircle is a right angle using a circle diagram and reasoning.
-3. A ladder 13 m long reaches a wall with foot 5 m from wall. Find height reached; then height if foot moves to 7 m.
-4. Create a net for a triangular prism and calculate total surface area for your chosen dimensions.
-5. Investigate how scaling side lengths by factor k changes area and volume; test with k=1.5 and k=3.
+1. A shape is reflected in y = x. State what happens to coordinates (x, y).
+2. State one check you can do after plotting an image under a transformation.
+3. Find the image of (3, -1) after a translation by (-3, 4).
+4. Explain how symmetry is related to reflection.
+5. State whether a rotation preserves area.
 
 ---
-
 ## Chapter 7: Linear systems: social entrepreneurship
 
 ### Video Resources
@@ -233,32 +275,40 @@ Format used across all chapters: **4 sets per chapter** (Set A, Set B, Set C, Se
 - [YouTube lesson search](https://www.youtube.com/results?search_query=maths+Linear+systems%3A+social+entrepreneurship+lesson)
 - [IB MYP topic video search](https://www.google.com/search?q=IB+MYP+maths+Linear+systems%3A+social+entrepreneurship+revision)
 
-### Set A - Foundation
-1. Simplify: 5x - 3(2x - 7) + 4.
-2. Factorize completely: 6x^2 - 15x.
-3. Solve: 3(2x - 5) = 4x + 9.
-4. If y = 4x - 3, find y when x = -2, 0, 5.
-5. Expand and simplify: (x + 4)(x - 7).
 
-### Set B - Core Skills
-1. Solve the pair of equations: 2x + y = 11 and x - y = 1.
-2. A rectangle has length (x+3) and width (x-1). Form and simplify its area expression.
-3. For f(x)=x^2-4x+1, find f(0), f(2), f(-1).
-4. Rearrange the formula v = u + at to make t the subject.
-5. Find the slope of the line through (2,5) and (8,17).
+### Chapter Summary
+- solving pairs of linear equations by substitution, elimination or graphing
+- interpreting the point of intersection as a shared solution
+- forming systems from practical or financial contexts
+- checking solutions in both equations
+- comparing methods and explaining why one is efficient in a given case
+
+### Set A - Foundation
+1. Find y when y = 5x + -2 and x = 2.
+2. State the gradient and y-intercept of y = 5x + -2.
+3. Plot the points (2, 8) and (4, 18) and describe the line.
+4. Find the gradient between (2, 8) and (4, 18).
+5. Solve the system x + y = 10 and x - y = 2.
+
+### Set B - Core Practice
+1. Make a table of values for y = 5x + -2 for x = -1, 0, 1, 2.
+2. Which line is steeper: y = 5x + 1 or y = 7x - 3?
+3. Find the x-intercept of y = 5x + -2.
+4. Explain the meaning of constant rate of change.
+5. A tank starts with 22 L and fills at 5 L per minute. How much water is there after 12 minutes?
 
 ### Set C - Application
-1. A cab fare is ₹80 fixed + ₹14 per km. Write a linear model and find fare for 18 km.
-2. A company’s profit p is modeled by p = -2x^2 + 40x - 96. Find profit at x=6 and x=10 and interpret.
-3. A tank has 500 L and leaks 12 L/hour while filling at 20 L/hour. Model volume after h hours and find when it reaches 700 L.
-4. Given two plans: A=₹399 + ₹2/message, B=₹699 + ₹1/message, find break-even point.
-5. Plot points for y = -x + 4 for x=-1,0,1,2,3 and identify intercepts.
+1. Find y when x = 0 for y = 5x + -2.
+2. Find the midpoint of (2, 8) and (4, 18).
+3. A streaming plan charges Rs 102 plus Rs 15 per movie. How many movies can be watched for Rs 237?
+4. A cinema sells adult tickets for Rs 180 and child tickets for Rs 120. If 14 tickets cost Rs 2160, set up a system.
+5. Compare the gradients of y = 5x + -2 and y = -5x + -2.
 
 ### Set D - Challenge
-1. Solve and verify: (x-3)/(x+1) + (2x)/(x^2-1) = 1, where x != ±1.
-2. Find all integer solutions of 2x + 3y = 24 with x >= 0, y >= 0.
-3. A projectile path is h(t) = -5t^2 + 20t + 1. Find maximum height and the time it occurs.
-4. Show two different methods to solve x^2 - 9x + 20 = 0 and compare efficiency.
-5. Create and solve one system-of-equations word problem with integer answers.
+1. Solve 5x + -2 = 33.
+2. Describe one situation where a linear graph should start at x = 0 and one where it should not.
+3. Find a rule for a sequence with first term 3 and common difference 5.
+4. Explain why lines with the same gradient never meet, if they have different intercepts.
+5. Find the distance along the x-axis between the points x = 2 and x = 4.
 
 ---

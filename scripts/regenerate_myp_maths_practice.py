@@ -2180,6 +2180,7 @@ def rewrite_html_files() -> None:
         summary, blocks = chapter_sets(spec)
         replacement = html_replacement(summary, blocks)
         text = spec.path.read_text(encoding="utf-8")
+        text = ensure_scroll_css(text)
         content_start = text.find('  <div class="set-card">')
         script_anchor = text.rfind("\n<script>\n(function(){")
         script_prefix = ""
@@ -2197,6 +2198,26 @@ def rewrite_html_files() -> None:
             new_text += footer
         new_text += script_prefix + text[script_anchor:]
         spec.path.write_text(new_text, encoding="utf-8")
+
+
+def ensure_scroll_css(text: str) -> str:
+    scroll_rule = (
+        "html { height: auto; min-height: 100%; overflow-y: auto; }\n"
+        "body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); "
+        "line-height: 1.65; min-height: 100vh; overflow-x: hidden; overflow-y: auto; "
+        "-webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; }"
+    )
+    text, count = re.subn(
+        r"body \{ font-family: 'Segoe UI', Arial, sans-serif; background: var\(--bg\); color: var\(--text\); line-height: 1\.65; \}",
+        scroll_rule,
+        text,
+        count=1,
+    )
+    if count == 1:
+        return text
+    if "touch-action: pan-y;" not in text:
+        raise ValueError("Could not update scroll CSS in HTML template")
+    return text
 
 
 def parse_markdown_chapters(path: Path) -> list[tuple[int, str]]:
@@ -2254,6 +2275,8 @@ def verify_output() -> None:
         text = spec.path.read_text(encoding="utf-8")
         if "Chapter Highlights" not in text:
             raise ValueError(f"Missing summary block in {spec.path}")
+        if "touch-action: pan-y;" not in text or "-webkit-overflow-scrolling: touch;" not in text:
+            raise ValueError(f"Missing scroll CSS hardening in {spec.path}")
         questions = re.findall(r'<div class="q-text">(.*?)</div>', text)
         if len(questions) != 40:
             raise ValueError(f"Expected 40 questions in {spec.path}, found {len(questions)}")

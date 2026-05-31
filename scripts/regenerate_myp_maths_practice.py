@@ -2181,6 +2181,8 @@ def rewrite_html_files() -> None:
         replacement = html_replacement(summary, blocks)
         text = spec.path.read_text(encoding="utf-8")
         text = ensure_scroll_css(text)
+        text = ensure_scroll_shell(text)
+        text = ensure_scroll_script(text)
         content_start = text.find('  <div class="set-card">')
         script_anchor = text.rfind("\n<script>\n(function(){")
         script_prefix = ""
@@ -2202,22 +2204,91 @@ def rewrite_html_files() -> None:
 
 def ensure_scroll_css(text: str) -> str:
     scroll_rule = (
-        "html { height: auto; min-height: 100%; overflow-y: auto; }\n"
+        "* { box-sizing: border-box; margin: 0; padding: 0; }\n"
+        "html { height: 100%; overflow: hidden; }\n"
         "body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); "
-        "line-height: 1.65; min-height: 100vh; overflow-x: hidden; overflow-y: auto; "
-        "-webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; }"
+        "line-height: 1.65; height: 100%; min-height: 100%; overflow: hidden; }\n"
+        ".page-scroll { position: fixed; inset: 0; overflow-x: hidden; overflow-y: auto; "
+        "-webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; background: var(--bg); }"
     )
     text, count = re.subn(
-        r"body \{ font-family: 'Segoe UI', Arial, sans-serif; background: var\(--bg\); color: var\(--text\); line-height: 1\.65; \}",
+        r"\* \{ box-sizing: border-box; margin: 0; padding: 0; \}\n(?:html \{.*?\}\n)?body \{.*?\}(?:\n\.page-scroll \{.*?\})?",
         scroll_rule,
         text,
         count=1,
+        flags=re.S,
+    )
+    text = text.replace(
+        "@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }",
+        "@media print { .page-scroll { position: static !important; inset: auto !important; overflow: visible !important; height: auto !important; } header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; height: auto !important; overflow: visible !important; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }",
     )
     if count == 1:
         return text
-    if "touch-action: pan-y;" not in text:
+    if "touch-action: pan-y;" not in text or ".page-scroll" not in text or "position: fixed" not in text:
         raise ValueError("Could not update scroll CSS in HTML template")
     return text
+
+
+def ensure_scroll_shell(text: str) -> str:
+    if '<div class="page-scroll">' in text:
+        return text
+    body_tag = "<body>\n"
+    if body_tag not in text:
+        raise ValueError("Could not find <body> tag for scroll shell")
+    text = text.replace(body_tag, body_tag + '<div class="page-scroll">\n', 1)
+    script_anchor = text.rfind("\n<script>")
+    if script_anchor == -1:
+        raise ValueError("Could not find ending <script> tag for scroll shell")
+    return text[:script_anchor] + "\n</div>" + text[script_anchor:]
+
+
+def ensure_scroll_script(text: str) -> str:
+    if "pageScroll = document.querySelector('.page-scroll')" in text:
+        return text
+    old = "(function(){\nfunction printSet(btn){"
+    new = """(function(){
+var pageScroll = document.querySelector('.page-scroll');
+if (pageScroll) {
+  function scrollToTarget(target) {
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('keydown', function(e){
+    if (!pageScroll) return;
+    var tag = document.activeElement && document.activeElement.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var delta = 0;
+    if (e.key === 'ArrowDown') delta = 90;
+    else if (e.key === 'ArrowUp') delta = -90;
+    else if (e.key === 'PageDown' || (e.key === ' ' && !e.shiftKey)) delta = Math.max(240, Math.round(window.innerHeight * 0.85));
+    else if (e.key === 'PageUp' || (e.key === ' ' && e.shiftKey)) delta = -Math.max(240, Math.round(window.innerHeight * 0.85));
+    else if (e.key === 'Home') { e.preventDefault(); pageScroll.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    else if (e.key === 'End') { e.preventDefault(); pageScroll.scrollTo({ top: pageScroll.scrollHeight, behavior: 'smooth' }); return; }
+    if (delta) {
+      e.preventDefault();
+      pageScroll.scrollBy({ top: delta, behavior: 'smooth' });
+    }
+  }, { passive: false });
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var id = this.getAttribute('href');
+      var target = id ? document.querySelector(id) : null;
+      if (target) {
+        setTimeout(function(){ scrollToTarget(target); }, 0);
+      }
+    });
+  });
+  if (window.location.hash) {
+    var initialTarget = document.querySelector(window.location.hash);
+    if (initialTarget) {
+      setTimeout(function(){ scrollToTarget(initialTarget); }, 60);
+    }
+  }
+}
+function printSet(btn){"""
+    if old not in text:
+        raise ValueError("Could not inject scroll script fallback")
+    return text.replace(old, new, 1)
 
 
 def parse_markdown_chapters(path: Path) -> list[tuple[int, str]]:
@@ -2275,8 +2346,10 @@ def verify_output() -> None:
         text = spec.path.read_text(encoding="utf-8")
         if "Chapter Highlights" not in text:
             raise ValueError(f"Missing summary block in {spec.path}")
-        if "touch-action: pan-y;" not in text or "-webkit-overflow-scrolling: touch;" not in text:
+        if "touch-action: pan-y;" not in text or "-webkit-overflow-scrolling: touch;" not in text or ".page-scroll { position: fixed;" not in text:
             raise ValueError(f"Missing scroll CSS hardening in {spec.path}")
+        if '<div class="page-scroll">' not in text or "pageScroll = document.querySelector('.page-scroll')" not in text:
+            raise ValueError(f"Missing scroll wrapper fallback in {spec.path}")
         questions = re.findall(r'<div class="q-text">(.*?)</div>', text)
         if len(questions) != 40:
             raise ValueError(f"Expected 40 questions in {spec.path}, found {len(questions)}")

@@ -8,8 +8,9 @@
 
 :root { --primary: #4a6fa5; --accent: #e8734a; --green: #3aaa6e; --bg: #f8f9fb; --card: #ffffff; --border: #dde3ee; --text: #2d3748; --muted: #6b7a99; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { height: auto; min-height: 100%; overflow-y: auto; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; min-height: 100vh; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; }
+html { height: 100%; overflow: hidden; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; height: 100%; min-height: 100%; overflow: hidden; }
+.page-scroll { position: fixed; inset: 0; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior-y: auto; background: var(--bg); }
 header { background: linear-gradient(135deg,#1a3a6e 0%,var(--primary) 60%,#6b4fa5 100%); color:#fff; padding:36px 24px 28px; text-align:center; }
 header h1 { font-size:2rem; }
 header p { margin-top:8px; opacity:.85; font-size:.95rem; }
@@ -53,13 +54,14 @@ footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; 
 .vid-box a::before { content:"▶ "; }
 .working { background:#eef2ff; border-left:4px solid var(--primary); padding:10px 14px; margin-top:8px; border-radius:0 6px 6px 0; font-size:.84rem; line-height:1.9; }
 .working strong { color:var(--primary); }
-@media print { header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
+@media print { .page-scroll { position: static !important; inset: auto !important; overflow: visible !important; height: auto !important; } header, nav, footer { display: none !important; } .topic-videos { display: none !important; } details.ans { display: none !important; } body { background: #fff; color: #000; font-size: 11pt; height: auto !important; overflow: visible !important; } .topic { max-width: 100%; margin: 0; padding: 0 8px; } .set-card { box-shadow: none; border: 1px solid #bbb; page-break-inside: avoid; margin-bottom: 14px; } .q-item { page-break-inside: avoid; } }
 .print-set-btn { display: inline-flex; align-items: center; gap: 5px; background: #f0f4ff; border: 1px solid #4a6fa5; border-radius: 6px; padding: 4px 11px; font-size: .77rem; font-weight: 700; color: #4a6fa5; cursor: pointer; margin-bottom: 12px; transition: background .15s; }
 .print-set-btn:hover { background: #dce5ff; }
 
 </style>
 </head>
 <body>
+<div class="page-scroll">
 <header>
   <h1>📘 MATHS MYP3 Chapter 5 - Bivariate data: what it means to be human</h1>
   <p>1 Topic · 4 Practice Sets per Topic · 10 Questions per Set · Simple to Complex Progression</p>
@@ -463,6 +465,44 @@ footer { text-align:center; padding:30px; color:var(--muted); font-size:.82rem; 
 <script>
 
 (function(){
+var pageScroll = document.querySelector('.page-scroll');
+if (pageScroll) {
+  function scrollToTarget(target) {
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('keydown', function(e){
+    if (!pageScroll) return;
+    var tag = document.activeElement && document.activeElement.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var delta = 0;
+    if (e.key === 'ArrowDown') delta = 90;
+    else if (e.key === 'ArrowUp') delta = -90;
+    else if (e.key === 'PageDown' || (e.key === ' ' && !e.shiftKey)) delta = Math.max(240, Math.round(window.innerHeight * 0.85));
+    else if (e.key === 'PageUp' || (e.key === ' ' && e.shiftKey)) delta = -Math.max(240, Math.round(window.innerHeight * 0.85));
+    else if (e.key === 'Home') { e.preventDefault(); pageScroll.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    else if (e.key === 'End') { e.preventDefault(); pageScroll.scrollTo({ top: pageScroll.scrollHeight, behavior: 'smooth' }); return; }
+    if (delta) {
+      e.preventDefault();
+      pageScroll.scrollBy({ top: delta, behavior: 'smooth' });
+    }
+  }, { passive: false });
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var id = this.getAttribute('href');
+      var target = id ? document.querySelector(id) : null;
+      if (target) {
+        setTimeout(function(){ scrollToTarget(target); }, 0);
+      }
+    });
+  });
+  if (window.location.hash) {
+    var initialTarget = document.querySelector(window.location.hash);
+    if (initialTarget) {
+      setTimeout(function(){ scrollToTarget(initialTarget); }, 60);
+    }
+  }
+}
 function printSet(btn){
   var card=btn.closest('.set-card');
   var h3=card.querySelector('h3');

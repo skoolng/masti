@@ -1,10 +1,12 @@
-const CACHE_NAME = "algbrox-v4";
+const CACHE_NAME = "algbrox-v5";
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
-  "./manifest.webmanifest"
+  "./manifest.webmanifest",
+  "./curriculum/IB/english/myp1/notebooklm-video-hub.html",
+  "./curriculum/IB/maths/myp1/myp123-foundations-cheatsheets.html"
 ];
 
 self.addEventListener("install", (event) => {

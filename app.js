@@ -777,7 +777,8 @@ const MATHS_IB_STRUCTURE = {
   myp1: {
     label: "MYP 1",
     basePath: "curriculum/IB/maths/myp1/",
-    landingPage: null,
+    landingPage: "myp123-foundations-cheatsheets.html",
+    landingLabel: "MYP 1-3 Cheatsheets",
     chapters: [
       { file: "MYP1_Ch1_numbersandnumbersystemscivilizationsandhum_Practice.html", label: "Ch 1 · Number systems" },
       { file: "MYP1_Ch2_percentagesinequalityanddifference_Practice.html", label: "Ch 2 · Percentages" },
@@ -867,7 +868,8 @@ const ENGLISH_STRUCTURE = {
   myp1: {
     label: "MYP 1",
     basePath: "curriculum/IB/english/myp1/",
-    landingPage: null,
+    landingPage: "notebooklm-video-hub.html",
+    landingLabel: "NotebookLM Videos",
     chapters: [
       { file: "MYP1_Ch1_howcaniconnectwithothers_Practice.html", label: "Ch 1 · Connect with Others" },
       { file: "MYP1_Ch2_wherewouldwebewithoutfamily_Practice.html", label: "Ch 2 · Family" },
@@ -1481,21 +1483,69 @@ function openSubjectOverlay(subjectKey, gradeKey) {
 
 function renderCheatsheetGrid() {
   el.cheatsheetGrid.innerHTML = "";
+  const grouped = new Map();
+
   CHEATSHEETS.forEach((cs) => {
-    const card = document.createElement("a");
-    card.className = "cheatsheet-card";
-    card.href = cs.file;
-    card.target = "_blank";
-    card.rel = "noreferrer";
-    const img = document.createElement("img");
-    img.src = cs.file;
-    img.alt = cs.title;
-    img.loading = "lazy";
-    const title = document.createElement("p");
-    title.className = "cheatsheet-title";
-    title.textContent = cs.title;
-    card.append(img, title);
-    el.cheatsheetGrid.appendChild(card);
+    const groupName = cs.group || "Maths";
+    if (!grouped.has(groupName)) {
+      grouped.set(groupName, []);
+    }
+    grouped.get(groupName).push(cs);
+  });
+
+  grouped.forEach((items, groupName) => {
+    const section = document.createElement("section");
+    section.className = "cheatsheet-section";
+
+    const heading = document.createElement("h4");
+    heading.className = "cheatsheet-section-title";
+    heading.textContent = groupName;
+    section.appendChild(heading);
+
+    const grid = document.createElement("div");
+    grid.className = "cheatsheet-grid";
+
+    items.forEach((cs) => {
+      const card = document.createElement("a");
+      card.className = "cheatsheet-card" + (cs.type === "page" ? " text-card" : "");
+      card.href = cs.file;
+      card.target = "_blank";
+      card.rel = "noreferrer";
+
+      if (cs.type === "page") {
+        const body = document.createElement("div");
+        body.className = "cheatsheet-card-body";
+
+        const badge = document.createElement("span");
+        badge.className = "cheatsheet-badge";
+        badge.textContent = cs.badge || "Maths Hub";
+
+        const title = document.createElement("p");
+        title.className = "cheatsheet-title";
+        title.textContent = cs.title;
+
+        const desc = document.createElement("p");
+        desc.className = "cheatsheet-desc";
+        desc.textContent = cs.description || "";
+
+        body.append(badge, title, desc);
+        card.appendChild(body);
+      } else {
+        const img = document.createElement("img");
+        img.src = cs.file;
+        img.alt = cs.title;
+        img.loading = "lazy";
+        const title = document.createElement("p");
+        title.className = "cheatsheet-title";
+        title.textContent = cs.title;
+        card.append(img, title);
+      }
+
+      grid.appendChild(card);
+    });
+
+    section.appendChild(grid);
+    el.cheatsheetGrid.appendChild(section);
   });
 }
 
@@ -3200,17 +3250,25 @@ const PRACTICE_LABELS = {
 };
 
 const CHEATSHEETS = [
-  { title: "Ch 1: Patterns in Mathematics",    file: "cheatsheets/chapter1.png" },
-  { title: "Ch 2: Lines and Angles",           file: "cheatsheets/chapter2.png" },
-  { title: "Ch 3: Number Play",                file: "cheatsheets/chapter3.png" },
-  { title: "Ch 4: Data Handling",              file: "cheatsheets/chapter4.png" },
-  { title: "Ch 5: Prime Time",                 file: "cheatsheets/chapter5.png" },
-  { title: "Ch 6: Perimeter and Area",         file: "cheatsheets/chapter6.png" },
-  { title: "Ch 7: Fractions",                  file: "cheatsheets/chapter7.png" },
-  { title: "Ch 8: Playing with Constructions", file: "cheatsheets/chapter8.png" },
-  { title: "Ch 9: Symmetry",                   file: "cheatsheets/chapter9.png" },
-  { title: "Ch 10: The Other Side of Zero",    file: "cheatsheets/chapter10.png" },
-  { title: "All Important Algebra Rules",      file: "cheatsheets/Algebra Rules.png" }
+  {
+    group: "IB Maths",
+    type: "page",
+    badge: "MYP 1-3",
+    title: "IB Maths Foundations Cheatsheets",
+    description: "One-page revision hub for place value, properties, divisibility, fractions, algebra, geometry, data, equations, and core MYP 1-3 skills.",
+    file: "curriculum/IB/maths/myp1/myp123-foundations-cheatsheets.html"
+  },
+  { group: "CBSE Maths", title: "Ch 1: Patterns in Mathematics",    file: "cheatsheets/chapter1.png" },
+  { group: "CBSE Maths", title: "Ch 2: Lines and Angles",           file: "cheatsheets/chapter2.png" },
+  { group: "CBSE Maths", title: "Ch 3: Number Play",                file: "cheatsheets/chapter3.png" },
+  { group: "CBSE Maths", title: "Ch 4: Data Handling",              file: "cheatsheets/chapter4.png" },
+  { group: "CBSE Maths", title: "Ch 5: Prime Time",                 file: "cheatsheets/chapter5.png" },
+  { group: "CBSE Maths", title: "Ch 6: Perimeter and Area",         file: "cheatsheets/chapter6.png" },
+  { group: "CBSE Maths", title: "Ch 7: Fractions",                  file: "cheatsheets/chapter7.png" },
+  { group: "CBSE Maths", title: "Ch 8: Playing with Constructions", file: "cheatsheets/chapter8.png" },
+  { group: "CBSE Maths", title: "Ch 9: Symmetry",                   file: "cheatsheets/chapter9.png" },
+  { group: "CBSE Maths", title: "Ch 10: The Other Side of Zero",    file: "cheatsheets/chapter10.png" },
+  { group: "CBSE Maths", title: "All Important Algebra Rules",      file: "cheatsheets/Algebra Rules.png" }
 ];
 
 function startPractice(skillTag) {

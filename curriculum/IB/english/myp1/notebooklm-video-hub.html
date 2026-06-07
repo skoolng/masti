@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English IB MYP 1 NotebookLM Video Hub</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@500;700&display=swap");
+
+    :root {
+      --ink: #17324d;
+      --muted: #587086;
+      --line: #c7d5e2;
+      --paper: #f5f8fc;
+      --card: rgba(255, 255, 255, 0.92);
+      --brand: #126b7a;
+      --brand-strong: #0b4e59;
+      --accent: #f2b84b;
+      --glow: rgba(18, 107, 122, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Baloo 2", "Trebuchet MS", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(242, 184, 75, 0.22), transparent 28%),
+        linear-gradient(180deg, #eef6ff 0%, #f8fbff 44%, #edf8f7 100%);
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 36px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(18, 107, 122, 0.96), rgba(10, 41, 78, 0.96));
+      color: #fff;
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: 0 20px 44px rgba(11, 39, 61, 0.18);
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 16px 0 10px;
+      font-family: "Fredoka", "Baloo 2", sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+    }
+
+    .hero p,
+    .overview p,
+    .video-meta,
+    .support-card p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .overview {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 22px;
+    }
+
+    .overview-card,
+    .video-card,
+    .support-card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.74);
+      border-radius: 22px;
+      box-shadow: 0 16px 36px rgba(20, 53, 86, 0.08);
+    }
+
+    .overview-card {
+      padding: 18px 18px 16px;
+    }
+
+    .eyebrow {
+      color: var(--brand);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .overview-card strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .section-heading {
+      margin: 30px 0 14px;
+      font-size: 1.45rem;
+    }
+
+    .video-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .video-card {
+      overflow: hidden;
+    }
+
+    .video-body {
+      padding: 18px;
+    }
+
+    .video-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(18, 107, 122, 0.09);
+      color: var(--brand-strong);
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-family: "Fredoka", "Baloo 2", sans-serif;
+      font-size: 1.3rem;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0d2031;
+      border: 0;
+    }
+
+    .video-meta {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .jump-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 0;
+    }
+
+    .jump-links a {
+      text-decoration: none;
+      color: var(--brand-strong);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-weight: 700;
+      box-shadow: 0 10px 18px rgba(20, 53, 86, 0.05);
+    }
+
+    .jump-links a:hover,
+    .jump-links a:focus-visible {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px var(--glow);
+      outline: none;
+    }
+
+    .support-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 18px;
+    }
+
+    .support-card {
+      padding: 18px;
+    }
+
+    .support-card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .support-card li + li {
+      margin-top: 6px;
+    }
+
+    .tip-banner {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(242, 184, 75, 0.18), rgba(18, 107, 122, 0.08));
+      border: 1px solid rgba(242, 184, 75, 0.4);
+      color: #5a4307;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        padding: 18px 14px 28px;
+      }
+
+      .hero,
+      .overview-card,
+      .video-body,
+      .support-card {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .jump-links a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-tag">NotebookLM Video Streaming</div>
+      <h1>English IB MYP 1 Video Hub</h1>
+      <p class="hero-copy">
+        Students can now stream chapter-aligned NotebookLM videos directly inside the site to review ideas,
+        vocabulary, and big concepts before or after practice.
+      </p>
+      <div class="jump-links">
+        <a href="#chapter-1">Chapter 1</a>
+        <a href="#chapter-2">Chapter 2</a>
+        <a href="#chapter-3">Chapter 3</a>
+        <a href="#chapter-4">Chapter 4</a>
+        <a href="#chapter-5">Chapter 5</a>
+        <a href="#chapter-6">Chapter 6</a>
+      </div>
+    </section>
+
+    <section class="overview">
+      <article class="overview-card">
+        <div class="eyebrow">How To Use</div>
+        <strong>Watch first, then practise</strong>
+        <p>Play the video for the chapter you are studying, then switch to the chapter tab above for questions.</p>
+      </article>
+      <article class="overview-card">
+        <div class="eyebrow">Streaming</div>
+        <strong>No extra site needed</strong>
+        <p>Every video uses the browser’s built-in player, so learners can stay inside GitHub Pages.</p>
+      </article>
+      <article class="overview-card">
+        <div class="eyebrow">Teacher Tip</div>
+        <strong>Use short replay loops</strong>
+        <p>Pause after each section and ask students to explain one idea in their own words.</p>
+      </article>
+    </section>
+
+    <h2 class="section-heading">Chapter Videos</h2>
+    <section class="video-grid">
+      <article class="video-card" id="chapter-1">
+        <video controls preload="metadata">
+          <source src="./Quest_for_Connection.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+        <div class="video-body">
+          <div class="video-label">Chapter 1</div>
+          <h2>How Can I Connect With Others?</h2>
+          <p class="video-meta">NotebookLM concept video for communication, connection, and relationships.</p>
+        </div>
+      </article>
+
+      <article class="video-card" id="chapter-2">
+        <video controls preload="metadata">
+          <source src="./Without_Family.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+        <div class="video-body">
+          <div class="video-label">Chapter 2</div>
+          <h2>Where Would We Be Without Family?</h2>
+          <p class="video-meta">NotebookLM review video focused on family, belonging, and personal support systems.</p>
+        </div>
+      </article>
+
+      <article class="video-card" id="chapter-3">
+        <video controls preload="metadata">
+          <source src="./The_Global_Food_Tour.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+        <div class="video-body">
+          <div class="video-label">Chapter 3</div>
+          <h2>Eat to Live or Live to Eat?</h2>
+          <p class="video-meta">NotebookLM explanation of food, culture, choices, and the language around eating.</p>
+        </div>
+      </article>
+
+      <article class="video-card" id="chapter-4">
+        <video controls preload="metadata">
+          <source src="./How_Can_We_Find_Our_Way.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+        <div class="video-body">
+          <div class="video-label">Chapter 4</div>
+          <h2>How Can We Find Our Way?</h2>
+          <p class="video-meta">NotebookLM lesson video on direction, travel, movement, and understanding our surroundings.</p>
+        </div>
+      </article>
+
+      <article class="video-card" id="chapter-5">
+        <video controls preload="metadata">
+          <source src="./World_Without_Letters.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+        <div class="video-body">
+          <div class="video-label">Chapter 5</div>
+          <h2>What Would Life Be Like in a World Without Letters?</h2>
+          <p class="video-meta">NotebookLM chapter recap exploring literacy, symbols, messages, and written language.</p>
+        </div>
+      </article>
+
+      <article class="video-card" id="chapter-6">
+        <video controls preload="metadata">
+          <source src="./What_is_Poetry.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+        <div class="video-body">
+          <div class="video-label">Chapter 6</div>
+          <h2>What Is Poetry?</h2>
+          <p class="video-meta">NotebookLM overview video introducing poetic ideas, expression, mood, and meaning.</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="tip-banner">
+      Use the chapter tabs above this page to move from each streamed video straight into the matching practice set.
+    </div>
+
+    <section class="support-grid">
+      <article class="support-card">
+        <div class="eyebrow">Bonus Video</div>
+        <strong>Leadership Connection</strong>
+        <p>Optional extension for speaking, responsibility, and connection themes across the unit.</p>
+        <video controls preload="metadata" style="margin-top: 14px;">
+          <source src="./Leadership_Connection.mp4" type="video/mp4">
+          Your browser does not support MP4 playback.
+        </video>
+      </article>
+
+      <article class="support-card">
+        <div class="eyebrow">Student Moves</div>
+        <strong>Make the videos active</strong>
+        <ul>
+          <li>Pause and write down three new words.</li>
+          <li>Say one big idea aloud after each video.</li>
+          <li>Open the chapter practice tab and solve questions while the idea is fresh.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

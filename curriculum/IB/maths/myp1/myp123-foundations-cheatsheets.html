@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IB Maths MYP 1-3 Foundations Cheatsheets</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@500;700&display=swap");
+
+    :root {
+      --ink: #17324d;
+      --muted: #5c7085;
+      --paper: #f5f8fc;
+      --panel: rgba(255, 255, 255, 0.94);
+      --line: #d4e0ea;
+      --brand: #0c6170;
+      --brand-deep: #0a3558;
+      --accent: #f2b84b;
+      --soft: #e9f5f6;
+      --soft-gold: #fff4d9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Baloo 2", "Trebuchet MS", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(242, 184, 75, 0.20), transparent 24%),
+        linear-gradient(180deg, #edf6ff 0%, #f8fbff 42%, #eef8f5 100%);
+    }
+
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 18px 40px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(12, 97, 112, 0.98), rgba(10, 53, 88, 0.98));
+      color: #fff;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 20px 44px rgba(10, 53, 88, 0.18);
+    }
+
+    .hero-badge,
+    .topic-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-badge {
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 0.88rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Fredoka", "Baloo 2", sans-serif;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 14px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.08;
+    }
+
+    .hero-copy {
+      max-width: 860px;
+      margin-top: 10px;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .hero-links,
+    .summary-grid,
+    .topic-grid,
+    .checklist-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .hero-links {
+      margin-top: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .hero-links a {
+      text-decoration: none;
+      color: var(--brand-deep);
+      background: #fff;
+      border-radius: 18px;
+      padding: 12px 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .summary-grid {
+      margin-top: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .summary-card,
+    .topic-card,
+    .checklist-card {
+      background: var(--panel);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 22px;
+      box-shadow: 0 16px 30px rgba(17, 54, 84, 0.08);
+    }
+
+    .summary-card {
+      padding: 18px;
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1.02rem;
+    }
+
+    .eyebrow {
+      margin-bottom: 6px;
+      color: var(--brand);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 30px 0 14px;
+      font-size: 1.5rem;
+    }
+
+    .section-copy {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .topic-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .topic-card {
+      padding: 18px;
+    }
+
+    .topic-tag {
+      padding: 7px 12px;
+      background: var(--soft);
+      color: var(--brand);
+      font-size: 0.82rem;
+      margin-bottom: 12px;
+    }
+
+    .topic-card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 8px;
+    }
+
+    .topic-card p,
+    .checklist-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .rule-list {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      line-height: 1.65;
+    }
+
+    .rule-list li + li {
+      margin-top: 6px;
+    }
+
+    .formula-strip {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .formula-chip {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 8px 11px;
+      background: var(--soft-gold);
+      color: #6a4b08;
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.95rem;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    th,
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #eff6fb;
+      color: var(--brand-deep);
+      font-size: 0.84rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .checklist-grid {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 18px;
+    }
+
+    .checklist-card {
+      padding: 18px;
+    }
+
+    .checklist-card ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      line-height: 1.65;
+    }
+
+    .tip-banner {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(242, 184, 75, 0.18), rgba(12, 97, 112, 0.08));
+      border: 1px solid rgba(242, 184, 75, 0.42);
+      color: #684906;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        padding: 16px 12px 30px;
+      }
+
+      .hero,
+      .summary-card,
+      .topic-card,
+      .checklist-card {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hero-links {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-badge">IB Maths MYP 1-3 Foundations</div>
+      <h1>Maths Cheatsheets In One Place</h1>
+      <p class="hero-copy">
+        This page brings together the key maths rules and quick reminders students usually need across
+        MYP 1, MYP 2, and MYP 3. Use it before practice, during revision, or whenever you need a fast concept reset.
+      </p>
+      <div class="hero-links">
+        <a href="#numbers">Numbers</a>
+        <a href="#fractions">Fractions & Percent</a>
+        <a href="#algebra">Algebra</a>
+        <a href="#geometry">Geometry</a>
+        <a href="#data">Data & Probability</a>
+        <a href="#checklist">What To Know</a>
+      </div>
+    </section>
+
+    <section class="summary-grid">
+      <article class="summary-card">
+        <div class="eyebrow">Covers</div>
+        <strong>MYP 1 to MYP 3</strong>
+        <p>Core number rules, algebra tools, geometry facts, measurement, and data ideas.</p>
+      </article>
+      <article class="summary-card">
+        <div class="eyebrow">Best Use</div>
+        <strong>Read, then practise</strong>
+        <p>Skim the rule, solve 3 to 5 examples, then switch back to the chapter practice tabs.</p>
+      </article>
+      <article class="summary-card">
+        <div class="eyebrow">Focus</div>
+        <strong>Fast recall</strong>
+        <p>Each card highlights the rules students forget most often during MYP maths practice.</p>
+      </article>
+    </section>
+
+    <h2 id="numbers" class="section-title">Numbers, Place Value, and Properties</h2>
+    <p class="section-copy">
+      Number fluency is the base for almost everything else. These are the patterns and properties students should
+      know automatically by MYP 1 and still use confidently in MYP 2 and MYP 3.
+    </p>
+    <section class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-tag">Place Value</div>
+        <h3>Reading and Building Numbers</h3>
+        <ul class="rule-list">
+          <li>The value of a digit depends on its place: ones, tens, hundreds, thousands, and beyond.</li>
+          <li>In decimals, places move right as tenths, hundredths, thousandths.</li>
+          <li>Expanded form helps show value: `5,482 = 5,000 + 400 + 80 + 2`.</li>
+          <li>When comparing numbers, compare the greatest place value first.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">10 ones = 1 ten</span>
+          <span class="formula-chip">10 tenths = 1 one</span>
+          <span class="formula-chip">0.25 = 25 hundredths</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Operations</div>
+        <h3>Commutative, Associative, and Identity Rules</h3>
+        <ul class="rule-list">
+          <li><strong>Commutative:</strong> order can change for addition and multiplication. `a + b = b + a`, `ab = ba`.</li>
+          <li><strong>Associative:</strong> grouping can change for addition and multiplication. `(a + b) + c = a + (b + c)`.</li>
+          <li><strong>Identity:</strong> adding `0` or multiplying by `1` keeps the number the same.</li>
+          <li>Subtraction and division are <strong>not</strong> commutative or associative.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">7 + 4 = 4 + 7</span>
+          <span class="formula-chip">(2 × 3) × 5 = 2 × (3 × 5)</span>
+          <span class="formula-chip">n + 0 = n</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Number Rules</div>
+        <h3>Divisibility Rules</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Quick Test</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2</td><td>Last digit is even: 0, 2, 4, 6, 8.</td></tr>
+            <tr><td>3</td><td>Sum of digits is divisible by 3.</td></tr>
+            <tr><td>4</td><td>Last two digits form a number divisible by 4.</td></tr>
+            <tr><td>5</td><td>Last digit is 0 or 5.</td></tr>
+            <tr><td>6</td><td>Divisible by both 2 and 3.</td></tr>
+            <tr><td>8</td><td>Last three digits form a number divisible by 8.</td></tr>
+            <tr><td>9</td><td>Sum of digits is divisible by 9.</td></tr>
+            <tr><td>10</td><td>Last digit is 0.</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <h2 id="fractions" class="section-title">Fractions, Decimals, Percentages, Ratio, and Integers</h2>
+    <section class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-tag">Fractions</div>
+        <h3>Fraction Basics</h3>
+        <ul class="rule-list">
+          <li>Equivalent fractions come from multiplying or dividing numerator and denominator by the same non-zero number.</li>
+          <li>To add or subtract fractions, use a common denominator first.</li>
+          <li>To multiply fractions, multiply numerators and denominators.</li>
+          <li>To divide by a fraction, multiply by its reciprocal.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">a/b + c/b = (a + c)/b</span>
+          <span class="formula-chip">a/b × c/d = ac/bd</span>
+          <span class="formula-chip">a/b ÷ c/d = a/b × d/c</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Decimals & Percent</div>
+        <h3>Switching Forms</h3>
+        <ul class="rule-list">
+          <li>Percent means “out of 100”.</li>
+          <li>Convert percent to decimal by dividing by 100.</li>
+          <li>Convert decimal to percent by multiplying by 100.</li>
+          <li>Increase or decrease by a percent using multiplier form.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">35% = 0.35</span>
+          <span class="formula-chip">0.47 = 47%</span>
+          <span class="formula-chip">New value = original × (1 ± rate)</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Ratio & Integers</div>
+        <h3>Signs, Ratios, and Rates</h3>
+        <ul class="rule-list">
+          <li>Same signs multiply or divide to give a positive result.</li>
+          <li>Different signs multiply or divide to give a negative result.</li>
+          <li>Ratios compare quantities; rates compare quantities with different units.</li>
+          <li>Unit rate means “for one”.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">(+)(+) = +</span>
+          <span class="formula-chip">(-)(-) = +</span>
+          <span class="formula-chip">(-)(+) = -</span>
+          <span class="formula-chip">Unit rate = amount / 1 unit</span>
+        </div>
+      </article>
+    </section>
+
+    <h2 id="algebra" class="section-title">Algebra Rules and Equation Skills</h2>
+    <section class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-tag">Expressions</div>
+        <h3>Order of Operations and Like Terms</h3>
+        <ul class="rule-list">
+          <li>Use order of operations: brackets, powers, multiply/divide, add/subtract.</li>
+          <li>Like terms must have the same variable part and same powers.</li>
+          <li>`3x + 5x = 8x`, but `3x + 5y` cannot be combined.</li>
+          <li>Substitute carefully using brackets when numbers replace variables.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">2x + 4x = 6x</span>
+          <span class="formula-chip">3(a + 2)</span>
+          <span class="formula-chip">5² = 25</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Properties</div>
+        <h3>Distributive Property and Expansion</h3>
+        <ul class="rule-list">
+          <li>The distributive property spreads multiplication across addition or subtraction.</li>
+          <li>`a(b + c) = ab + ac`</li>
+          <li>`a(b - c) = ab - ac`</li>
+          <li>Factorising is the reverse of distribution.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">4(x + 3) = 4x + 12</span>
+          <span class="formula-chip">6y + 12 = 6(y + 2)</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Equations</div>
+        <h3>Balancing Equations</h3>
+        <ul class="rule-list">
+          <li>Do the same operation to both sides to keep an equation balanced.</li>
+          <li>Undo addition/subtraction before multiplication/division in simple equations.</li>
+          <li>Check by substituting the answer back into the original equation.</li>
+          <li>For linear graphs, remember `y = mx + c`: slope and intercept matter.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">x + 5 = 12 → x = 7</span>
+          <span class="formula-chip">3x = 21 → x = 7</span>
+          <span class="formula-chip">y = mx + c</span>
+        </div>
+      </article>
+    </section>
+
+    <h2 id="geometry" class="section-title">Geometry, Measurement, and Transformations</h2>
+    <section class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-tag">Angles & Shapes</div>
+        <h3>Essential Geometry Facts</h3>
+        <ul class="rule-list">
+          <li>Angles on a straight line add to `180°`.</li>
+          <li>Angles around a point add to `360°`.</li>
+          <li>Vertically opposite angles are equal.</li>
+          <li>Interior angles of a triangle add to `180°`.</li>
+          <li>Interior angles of a quadrilateral add to `360°`.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">Triangle sum = 180°</span>
+          <span class="formula-chip">Around a point = 360°</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Measurement</div>
+        <h3>Perimeter, Area, and Volume</h3>
+        <ul class="rule-list">
+          <li>Perimeter is the total distance around a shape.</li>
+          <li>Area measures the surface inside a 2D shape.</li>
+          <li>Volume measures the space inside a 3D object.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">Rectangle area = l × w</span>
+          <span class="formula-chip">Triangle area = 1/2 × b × h</span>
+          <span class="formula-chip">Prism volume = area of cross-section × length</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Coordinate & Transform</div>
+        <h3>Coordinates, Symmetry, and Moves</h3>
+        <ul class="rule-list">
+          <li>Coordinates are written `(x, y)`.</li>
+          <li>Translation slides a shape without turning it.</li>
+          <li>Reflection flips a shape in a mirror line.</li>
+          <li>Rotation turns a shape around a fixed point.</li>
+          <li>Congruent shapes are same size and shape; similar shapes keep shape but not size.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">(x, y)</span>
+          <span class="formula-chip">Translation = slide</span>
+          <span class="formula-chip">Reflection = flip</span>
+          <span class="formula-chip">Rotation = turn</span>
+        </div>
+      </article>
+    </section>
+
+    <h2 id="data" class="section-title">Data, Statistics, and Probability</h2>
+    <section class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-tag">Statistics</div>
+        <h3>Reading and Summarising Data</h3>
+        <ul class="rule-list">
+          <li><strong>Mean:</strong> add the values and divide by how many there are.</li>
+          <li><strong>Median:</strong> middle value when data is in order.</li>
+          <li><strong>Mode:</strong> value that appears most often.</li>
+          <li><strong>Range:</strong> largest value minus smallest value.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">Mean = sum / number of values</span>
+          <span class="formula-chip">Range = max - min</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Probability</div>
+        <h3>Chance and Simple Events</h3>
+        <ul class="rule-list">
+          <li>Probability is between `0` and `1`.</li>
+          <li>`0` means impossible, `1` means certain.</li>
+          <li>Probability = favourable outcomes / total outcomes.</li>
+          <li>Use fractions, decimals, or percentages to describe probability.</li>
+        </ul>
+        <div class="formula-strip">
+          <span class="formula-chip">P(event) = favourable / total</span>
+          <span class="formula-chip">0 ≤ P(event) ≤ 1</span>
+        </div>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-tag">Graphs</div>
+        <h3>Graph Habits</h3>
+        <ul class="rule-list">
+          <li>Always read the title, axis labels, and units first.</li>
+          <li>Scale marks must increase evenly.</li>
+          <li>Choose the graph type that matches the data: bar, line, pie, scatter, or stem-and-leaf.</li>
+          <li>Trend means the overall pattern in the data.</li>
+        </ul>
+      </article>
+    </section>
+
+    <h2 id="checklist" class="section-title">What Students Should Know Before Practice</h2>
+    <p class="section-copy">
+      This quick checklist helps students see whether they are ready for chapter work across MYP 1, MYP 2, and MYP 3.
+    </p>
+    <section class="checklist-grid">
+      <article class="checklist-card">
+        <div class="eyebrow">MYP 1 Ready</div>
+        <p>Students should be confident with place value, operations, fractions, percentages, perimeter, area, and simple algebraic expressions.</p>
+        <ul>
+          <li>Compare and order numbers</li>
+          <li>Use divisibility rules</li>
+          <li>Apply distributive property</li>
+          <li>Read simple tables and charts</li>
+        </ul>
+      </article>
+
+      <article class="checklist-card">
+        <div class="eyebrow">MYP 2 Ready</div>
+        <p>Students should build on MYP 1 by adding integers, ratio, rates, equations, geometry, and probability.</p>
+        <ul>
+          <li>Work with negative numbers</li>
+          <li>Solve one-step and two-step equations</li>
+          <li>Interpret rates and ratio</li>
+          <li>Calculate basic probability</li>
+        </ul>
+      </article>
+
+      <article class="checklist-card">
+        <div class="eyebrow">MYP 3 Ready</div>
+        <p>Students should combine number skill, algebra skill, geometry, and data reasoning more fluently.</p>
+        <ul>
+          <li>Plot coordinates and read graphs</li>
+          <li>Recognise linear patterns</li>
+          <li>Work with transformations</li>
+          <li>Compare bivariate data and trends</li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="tip-banner">
+      Use this page as the “before practice” revision sheet, then jump back to the maths chapter tabs above for MYP 1, MYP 2, or MYP 3 questions.
+    </div>
+  </main>
+</body>
+</html>
